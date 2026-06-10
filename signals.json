@@ -1,0 +1,23 @@
+# Last30Days Adaptation for Aibrief
+
+Aibrief should not become a clone of Last30Days. The useful ideas are workflow-level patterns:
+
+1. Research recent signals, not stale web pages.
+2. Search multiple disconnected communities.
+3. Rank by engagement and source quality.
+4. Merge duplicate narratives across sources.
+5. Extract best takes for shareable executive summaries.
+6. Export a self-contained HTML brief.
+
+Mapping:
+
+| Last30Days idea | Aibrief adaptation |
+| --- | --- |
+| last 30 days search | `QueryPlanner.window` |
+| Reddit/X/YouTube/HN/Polymarket/GitHub/web | `community.py` connector category |
+| engagement scoring | `ScoringAgent.engagement_bonus` |
+| cross-source clusters | `CrossSourceClusterAgent` |
+| best takes | `BestTakesAgent` |
+| HTML brief | `web/brief.html` |
+
+The current implementation uses seeded inputs so the repo runs without keys. Replace `community.py` with real API connectors when deployment credentials are available.

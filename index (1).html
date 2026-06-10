@@ -1,0 +1,66 @@
+# Aibrief إحاطة AI — Restarted Production Audit
+
+## Phase 1 — Full inspection
+
+Inspected Python workflow, connectors, graph state, memory, CLI, Docker, GitHub Actions, static web dashboard, generated brief, docs, and tests.
+
+Findings focused on runtime validation, safe ingestion, atomic output, deterministic approval rules, release hygiene, CI verification, and deployability.
+
+## Phase 2 — Severity report
+
+| Severity | Location | Problem | Impact | Fix |
+|---|---|---|---|---|
+| 🔴 CRITICAL | `aibrief/utils/validation.py` | URL validation allowed credentials, fragments, and private literal IP URLs. | Unsafe evidence URLs and future SSRF exposure. | Hardened `safe_url` with scheme, credential, fragment, and private/reserved IP rejection. |
+| 🔴 CRITICAL | `aibrief/default_config.py` | Invalid env thresholds raised raw exceptions or were not range-checked. | CI/container startup could fail without useful error or run with unsafe thresholds. | Added `validate_score`, `validate_ratio`, boolean parsing, and typed config validation. |
+| 🔴 CRITICAL | `aibrief/utils/io.py` / checkpoints | Atomic writes used deterministic `.tmp` names without fsync. | Concurrent or crashed runs could leave corrupt outputs. | Replaced with unique same-dir temp files, `os.replace`, and fsync. |
+| 🔴 CRITICAL | `aibrief/connectors/rss.py` | Feed URL fetch safety did not reject credentialed/private literal URLs. | Unsafe live ingestion path. | Added hardened RSS URL validation and explicit unsafe-feed skips. |
+| 🟡 MAJOR | `aibrief/memory/decision_log.py` | Decision log updates were append-only without process locking. | Concurrent scheduled/manual runs could interleave memory entries. | Added file locking and size-bounded atomic rewrite. |
+| 🟡 MAJOR | `aibrief/graph/aibrief_graph.py` | Node failures were logged but not captured in checkpoint state. | Failed-run forensics were incomplete. | Added state error capture before fail-fast re-raise. |
+| 🟡 MAJOR | `aibrief/graph/state.py` | Connector strings and lists were not bounded. | Oversized feed values could bloat JSON/HTML/log output. | Added field, list, status, and numeric bounds in `Signal.__post_init__`. |
+| 🟡 MAJOR | `aibrief/connectors/rss.py` | RSS parsing was less namespace-tolerant and had limited Atom support. | Legitimate feeds could be dropped. | Added local-name extraction and Atom link handling. |
+| 🟡 MAJOR | GitHub Actions | CI did not compile or verify generated artifacts. | Broken code or empty artifacts could be committed. | Added compile and artifact existence gates. |
+| 🟡 MAJOR | Docker/Compose | Runtime lacked healthcheck and hardening metadata. | Container failures harder to detect. | Added healthcheck, non-root runtime, no-new-privileges, and cap drop in Compose. |
+| 🟢 MINOR | `tests/test_pipeline.py` | Missing tests for RSS safety, env validation, Atom parsing, and decision-log cap. | Regression risk. | Expanded test suite from 5 to 9 tests. |
+| 🟢 MINOR | Docs | No operator runbook or security policy. | Poor handoff. | Added `docs/RUNBOOK.md` and `SECURITY.md`. |
+| 🟢 MINOR | Repo hygiene | Generated caches and bytecode were present in the working tree. | Dirty production package. | Removed caches before packaging. |
+
+## Phase 3 — Implemented fixes
+
+| File | Change type | Reason |
+|---|---|---|
+| `aibrief/utils/validation.py` | [CHANGED] | Hardened URL, config, limit, topic, score, ratio, and output-path validation. |
+| `aibrief/utils/io.py` | [CHANGED] | Implemented fsync-backed atomic writes and JSON root validation. |
+| `aibrief/default_config.py` | [CHANGED] | Added typed env parsing, threshold validation, `fail_fast`, and limit override. |
+| `aibrief/connectors/rss.py` | [CHANGED] | Added safe URL handling, Atom link support, XML bounds, and stronger errors. |
+| `aibrief/graph/state.py` | [CHANGED] | Added field/list bounds, numeric clamps, URL normalization, and status validation. |
+| `aibrief/graph/aibrief_graph.py` | [CHANGED] | Added atomic checkpoint writes, validated cache path, and failed-node state capture. |
+| `aibrief/memory/decision_log.py` | [CHANGED] | Added process lock and size-bounded atomic memory writes. |
+| `aibrief/cli.py` | [CHANGED] | Added config/value error handling. |
+| `tests/test_pipeline.py` | [CHANGED] | Added safety and regression tests. |
+| `Dockerfile` | [CHANGED] | Added healthcheck and retained non-root runtime. |
+| `docker-compose.yml` | [CHANGED] | Added local hardening flags without breaking generated-file writes. |
+| `.github/workflows/update-feed.yml` | [CHANGED] | Added compile and artifact verification gates. |
+| `pyproject.toml` | [CHANGED] | Bumped package to `0.3.0` and added project URLs. |
+| `aibrief/__init__.py` | [CHANGED] | Added package version. |
+| `Makefile` | [ADDED] | Added repeatable install/test/run/serve/package commands. |
+| `SECURITY.md` | [ADDED] | Added security policy and controls. |
+| `docs/RUNBOOK.md` | [ADDED] | Added production runbook. |
+| `README.md` | [CHANGED] | Updated run, release, and production controls. |
+
+## Phase 4 — Verification
+
+| Check | Result |
+|---|---|
+| Python compile | PASS |
+| Unit/safety tests | PASS — 9 passed |
+| Pipeline run | PASS |
+| `data/latest_report.json` | PASS |
+| `web/data/signals.json` | PASS |
+| `web/brief.html` | PASS |
+| Dashboard HTTP | PASS — 200 OK |
+| Brief HTTP | PASS — 200 OK |
+| JSON feed HTTP | PASS — 200 OK |
+
+## Production sign-off
+
+Aibrief إحاطة AI is ready as a static, rule-based production MVP. Public launch still requires external infrastructure: hosting, domain, CI secrets for optional free LLM/live sources, uptime monitoring, and alert routing.

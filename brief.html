@@ -1,0 +1,63 @@
+# AibriefAI QA/Test Report
+
+## Scope
+
+QA pass for the zero-cost Render/Gemini/Groq launch build.
+
+## Executed Gates
+
+| Gate | Result |
+|---|---:|
+| Python compile | PASS |
+| Unit tests | PASS — 12 passed |
+| Rule-based fallback pipeline | PASS |
+| Static dashboard artifact generation | PASS |
+| Freshness check | PASS |
+| HTML parse: `web/index.html` | PASS |
+| HTML parse: `web/brief.html` | PASS |
+| Static HTTP: `/` | PASS — 200 |
+| Static HTTP: `/brief.html` | PASS — 200 |
+| Static HTTP: `/data/signals.json` | PASS — 200 |
+| Static HTTP: `/health/` | PASS — 200 |
+| Static HTTP: `/health.json` | PASS — 200 |
+| Dynamic server `/health` | PASS — 200 |
+| Secret scan fallback | PASS |
+| Secret leak verification fallback | PASS |
+
+## Findings Fixed
+
+| Severity | Location | Problem | Fix |
+|---|---|---|---|
+| MAJOR | `scripts/check_signals_freshness.py` | Freshness check failed outside a Git repository even when `signals.json` was newly generated. | Added JSON timestamp detection, Git timestamp fallback, and file mtime fallback. |
+| MAJOR | `scripts/verify_no_secret_leak.sh` | Non-Git execution printed a Git error and could report a misleading PASS. | Added explicit Git/non-Git paths and working-tree fallback scan. |
+| MAJOR | `aibrief/utils/llm_client.py` | Empty Gemini/Groq 200 responses were treated as usable completions instead of triggering fallback. | Empty completions now raise `LLMError`, enabling Gemini → Groq → rule-based fallback. |
+| MAJOR | `aibrief/connectors/rss.py` | Localhost RSS fetches were allowed by default. | Local feed access now requires explicit `AIBRIEF_ALLOW_LOCAL_FEEDS=true`. |
+| MINOR | `scripts/secret_scan.sh` | Fallback scan excluded broad file classes and used assignment-based matching that could false-positive/false-negative. | Fallback scan now detects Gemini/Groq key material directly across the working tree. |
+| MINOR | `Makefile` | `make verify` did not include freshness or secret gates. | Added freshness and secret scan gates. |
+| MINOR | `tests/test_pipeline.py` | Coverage did not include freshness fallback, empty LLM response fallback, or localhost RSS rejection. | Added 3 QA regression tests. |
+
+## Verification Commands
+
+```bash
+python -m compileall -q aibrief scripts cli tests
+AIBRIEF_LLM_ENABLED=false python -m pytest -q
+AIBRIEF_LLM_ENABLED=false python scripts/run_pipeline.py --topic ai-agents --limit 8 --emit-html
+python scripts/check_signals_freshness.py --path web/data/signals.json --max-age-seconds 900
+python -m html.parser web/index.html >/dev/null
+python -m html.parser web/brief.html >/dev/null
+./scripts/secret_scan.sh
+./scripts/verify_no_secret_leak.sh
+```
+
+## Final Runtime Result
+
+```text
+signals=8
+approved=2
+held=6
+errors=0
+```
+
+## Sign-off
+
+AibriefAI passes local QA for the zero-cost static deployment path. Render/GitHub/UptimeRobot/Sentry live verification still requires connected accounts and real free-tier API keys.

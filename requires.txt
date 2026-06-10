@@ -1,0 +1,166 @@
+from __future__ import annotations
+
+import logging
+import os
+from pathlib import Path
+
+from aibrief.utils.validation import ValidationError, validate_limit, validate_ratio, validate_score
+
+LOGGER = logging.getLogger(__name__)
+
+DEFAULT_CONFIG = {
+    "project_name": "Aibrief — إحاطة AI",
+    "environment": "development",
+    "update_frequency": "Every 5 minutes",
+    "pipeline_interval_minutes": 5,
+    "languages": ["en", "ar"],
+    "max_debate_rounds": 2,
+    "score_threshold": 40,
+    "confidence_threshold": 0.60,
+    "high_priority_threshold": 75,
+    "checkpoint_enabled": True,
+    "fail_fast": True,
+    "last30days_mode": True,
+    "llm_enabled": True,
+    "gemini_model": "gemini-2.5-flash",
+    "groq_model": "llama-3.3-70b-versatile",
+    "llm_timeout_seconds": 25,
+    "llm_max_retries": 3,
+    "llm_backoff_seconds": 1.0,
+    "slow_run_seconds": 30.0,
+    "health_max_age_seconds": 600,
+    "cache_dir": str(Path(".aibrief/cache")),
+    "memory_log_path": str(Path(".aibrief/memory/aibrief_memory.md")),
+    "memory_log_max_bytes": 1_000_000,
+    "feed_output_path": str(Path("web/data/signals.json")),
+    "report_output_path": str(Path("data/latest_report.json")),
+    "html_brief_output_path": str(Path("web/brief.html")),
+    "health_web_root": "web",
+    "usage_log_dir": str(Path("data/usage")),
+    "alert_email_to": "Fmg_511@hotmail.com",
+    "hn_base_url": "https://hacker-news.firebaseio.com/v0",
+    "arxiv_base_url": "https://export.arxiv.org/api/query",
+    "reddit_base_url": "https://www.reddit.com",
+    "github_api_url": "https://api.github.com",
+    "source_weights": {
+        "arxiv": 30,
+        "github": 28,
+        "rss": 18,
+        "hackernews": 22,
+        "x_influencer": 16,
+        "reddit": 18,
+        "youtube": 17,
+        "polymarket": 20,
+        "web": 17,
+        "seed": 10,
+    },
+    "keyword_weights": {
+        "agent": 8,
+        "agents": 8,
+        "rag": 7,
+        "retrieval": 6,
+        "benchmark": 5,
+        "open source": 5,
+        "security": 6,
+        "database": 4,
+        "llm": 7,
+        "multimodal": 6,
+        "workflow": 5,
+        "automation": 5,
+        "evaluation": 5,
+        "governance": 4,
+        "arabic": 4,
+        "checkpoint": 6,
+        "memory": 5,
+        "risk": 5,
+        "review": 4,
+    },
+}
+
+
+def _env_bool(name: str, default: bool) -> bool:
+    raw = os.getenv(name)
+    if raw is None:
+        return default
+    if raw.strip().lower() in {"1", "true", "yes", "on"}:
+        return True
+    if raw.strip().lower() in {"0", "false", "no", "off"}:
+        return False
+    raise ValidationError(f"{name} must be boolean")
+
+
+def _env_float(name: str, default: float) -> float:
+    raw = os.getenv(name)
+    if raw is None or raw.strip() == "":
+        return default
+    try:
+        return float(raw)
+    except ValueError as exc:
+        raise ValidationError(f"{name} must be a number") from exc
+
+
+def _env_int(name: str, default: int) -> int:
+    raw = os.getenv(name)
+    if raw is None or raw.strip() == "":
+        return default
+    try:
+        return int(raw)
+    except ValueError as exc:
+        raise ValidationError(f"{name} must be an integer") from exc
+
+
+def config_from_env() -> dict:
+    """Return runtime config with validated optional environment overrides."""
+    config = DEFAULT_CONFIG.copy()
+    config["environment"] = os.getenv("ENVIRONMENT", config["environment"]).strip() or "development"
+    config["pipeline_interval_minutes"] = _env_int("PIPELINE_INTERVAL_MINUTES", int(config["pipeline_interval_minutes"]))
+    config["alert_email_to"] = os.getenv("ALERT_EMAIL_TO", config["alert_email_to"]).strip() or config["alert_email_to"]
+    config["gemini_model"] = os.getenv("GEMINI_MODEL", config["gemini_model"]).strip() or config["gemini_model"]
+    config["groq_model"] = os.getenv("GROQ_MODEL", config["groq_model"]).strip() or config["groq_model"]
+    config["llm_timeout_seconds"] = _env_float("LLM_TIMEOUT_SECONDS", float(config["llm_timeout_seconds"]))
+    config["llm_max_retries"] = _env_int("LLM_MAX_RETRIES", int(config["llm_max_retries"]))
+    config["llm_backoff_seconds"] = _env_float("LLM_BACKOFF_SECONDS", float(config["llm_backoff_seconds"]))
+    config["slow_run_seconds"] = _env_float("AIBRIEF_SLOW_RUN_SECONDS", float(config["slow_run_seconds"]))
+    config["health_max_age_seconds"] = _env_int("AIBRIEF_HEALTH_MAX_AGE_SECONDS", int(config["health_max_age_seconds"]))
+
+    env_map = {
+        "AIBRIEF_MEMORY_LOG_PATH": "memory_log_path",
+        "AIBRIEF_CACHE_DIR": "cache_dir",
+        "AIBRIEF_FEED_PATH": "feed_output_path",
+        "AIBRIEF_REPORT_PATH": "report_output_path",
+        "AIBRIEF_HTML_BRIEF_PATH": "html_brief_output_path",
+        "AIBRIEF_WEB_ROOT": "health_web_root",
+        "AIBRIEF_USAGE_LOG_DIR": "usage_log_dir",
+        "HN_BASE_URL": "hn_base_url",
+        "ARXIV_BASE_URL": "arxiv_base_url",
+        "REDDIT_BASE_URL": "reddit_base_url",
+        "GITHUB_API_URL": "github_api_url",
+    }
+    for env_name, key in env_map.items():
+        value = os.getenv(env_name)
+        if value:
+            config[key] = value
+    if os.getenv("AIBRIEF_SCORE_THRESHOLD"):
+        config["score_threshold"] = validate_score(os.environ["AIBRIEF_SCORE_THRESHOLD"], "AIBRIEF_SCORE_THRESHOLD")
+    if os.getenv("AIBRIEF_CONFIDENCE_THRESHOLD"):
+        config["confidence_threshold"] = validate_ratio(os.environ["AIBRIEF_CONFIDENCE_THRESHOLD"], "AIBRIEF_CONFIDENCE_THRESHOLD")
+    if os.getenv("AIBRIEF_LIMIT"):
+        config["limit"] = validate_limit(os.environ["AIBRIEF_LIMIT"])
+    config["checkpoint_enabled"] = _env_bool("AIBRIEF_CHECKPOINT_ENABLED", bool(config["checkpoint_enabled"]))
+    config["fail_fast"] = _env_bool("AIBRIEF_FAIL_FAST", bool(config["fail_fast"]))
+    config["llm_enabled"] = _env_bool("AIBRIEF_LLM_ENABLED", bool(config["llm_enabled"]))
+    return config
+
+
+def require_production_secrets(config: dict) -> None:
+    """Warn instead of blocking when free-tier LLM keys are absent.
+
+    AibriefAI remains launchable because every LLM-backed agent has a deterministic
+    rule-based fallback path.
+    """
+    if not bool(config.get("llm_enabled", True)):
+        return
+    has_gemini = bool(os.getenv("GEMINI_API_KEY", "").strip())
+    has_groq = bool(os.getenv("GROQ_API_KEY", "").strip())
+    if not has_gemini and not has_groq:
+        LOGGER.warning("No GEMINI_API_KEY or GROQ_API_KEY configured; continuing with rule-based fallback.")

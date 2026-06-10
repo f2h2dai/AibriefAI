@@ -1,0 +1,137 @@
+from __future__ import annotations
+
+import ipaddress
+import re
+from pathlib import Path
+from urllib.parse import urlparse, urlunparse
+
+MAX_TOPIC_LENGTH = 140
+MAX_LIMIT = 50
+MIN_LIMIT = 1
+ALLOWED_URL_SCHEMES = {"http", "https"}
+_CONTROL_CHARS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+_LOCAL_HOSTS = {"localhost", "127.0.0.1", "::1"}
+
+
+class ValidationError(ValueError):
+    """Raised when user, config, or connector input cannot be processed safely."""
+
+
+def strip_control_chars(value: str | None) -> str:
+    """Remove control characters that can corrupt logs, HTML, or JSON output."""
+    return _CONTROL_CHARS.sub("", str(value or "")).strip()
+
+
+def validate_topic(topic: str | None) -> str:
+    """Validate and normalize an analysis topic for CLI and workflow use."""
+    clean = strip_control_chars(topic)
+    if not clean:
+        raise ValidationError("topic cannot be empty")
+    if len(clean) > MAX_TOPIC_LENGTH:
+        raise ValidationError(f"topic must be {MAX_TOPIC_LENGTH} characters or fewer")
+    return clean
+
+
+def validate_limit(limit: int | str | None) -> int:
+    """Validate item limits to prevent accidental large local or scheduled runs."""
+    try:
+        value = int(limit if limit is not None else 10)
+    except (TypeError, ValueError) as exc:
+        raise ValidationError("limit must be an integer") from exc
+    if value < MIN_LIMIT:
+        raise ValidationError(f"limit must be at least {MIN_LIMIT}")
+    if value > MAX_LIMIT:
+        raise ValidationError(f"limit must be no more than {MAX_LIMIT}")
+    return value
+
+
+def validate_ratio(value: int | float | str | None, name: str) -> float:
+    """Validate a ratio-like configuration value in the inclusive range 0..1."""
+    try:
+        ratio = float(value)
+    except (TypeError, ValueError) as exc:
+        raise ValidationError(f"{name} must be a number") from exc
+    if not 0 <= ratio <= 1:
+        raise ValidationError(f"{name} must be between 0 and 1")
+    return ratio
+
+
+def validate_score(value: int | str | None, name: str = "score") -> int:
+    """Validate a score-like configuration value in the inclusive range 0..100."""
+    try:
+        score = int(value if value is not None else 0)
+    except (TypeError, ValueError) as exc:
+        raise ValidationError(f"{name} must be an integer") from exc
+    if not 0 <= score <= 100:
+        raise ValidationError(f"{name} must be between 0 and 100")
+    return score
+
+
+def _is_local_host(hostname: str | None) -> bool:
+    host = (hostname or "").lower().strip("[]")
+    return host in _LOCAL_HOSTS
+
+
+def _is_private_or_reserved_ip(hostname: str | None) -> bool:
+    host = (hostname or "").strip("[]")
+    try:
+        ip = ipaddress.ip_address(host)
+    except ValueError:
+        return False
+    return bool(ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved or ip.is_multicast)
+
+
+def safe_url(
+    url: str | None,
+    *,
+    require_https: bool = False,
+    allow_localhost: bool = False,
+    allow_http: bool = True,
+) -> str:
+    """Return a normalized safe URL or an empty string for unsupported values.
+
+    Rejects unsupported schemes, missing hosts, credentials, fragments, and
+    literal private/reserved IPs unless localhost is explicitly allowed.
+    """
+    clean = strip_control_chars(url)
+    if not clean:
+        return ""
+    parsed = urlparse(clean)
+    scheme = parsed.scheme.lower()
+    if scheme not in ALLOWED_URL_SCHEMES or not parsed.netloc:
+        return ""
+    if require_https and scheme != "https":
+        if not (allow_localhost and _is_local_host(parsed.hostname) and scheme == "http"):
+            return ""
+    if not allow_http and scheme == "http":
+        return ""
+    if parsed.username or parsed.password:
+        return ""
+    if _is_private_or_reserved_ip(parsed.hostname) and not (allow_localhost and _is_local_host(parsed.hostname)):
+        return ""
+    netloc = parsed.netloc.lower()
+    return urlunparse((scheme, netloc, parsed.path or "/", parsed.params, parsed.query, ""))
+
+
+def validate_output_path(path: str | Path, *, base_dir: str | Path = ".") -> Path:
+    """Normalize an output path. Relative paths are constrained under base_dir.
+
+    Absolute paths are allowed because CI/test runners and containers commonly
+    mount writable volumes outside the repository root.
+    """
+    target = Path(path).expanduser()
+    if target.is_absolute():
+        return target.resolve(strict=False)
+    base = Path(base_dir).resolve()
+    resolved = (base / target).resolve(strict=False)
+    try:
+        resolved.relative_to(base)
+    except ValueError as exc:
+        raise ValidationError(f"output path escapes project directory: {path}") from exc
+    return resolved
+
+
+def normalize_key(value: str | None) -> str:
+    """Create a stable comparison key for deduplication and grouping."""
+    clean = strip_control_chars(value).lower()
+    return re.sub(r"\s+", " ", clean)

@@ -1,0 +1,231 @@
+from __future__ import annotations
+
+import json
+import logging
+import os
+import socket
+import time
+import urllib.error
+import urllib.request
+from dataclasses import dataclass
+from typing import Any, Callable
+
+from aibrief.utils.observability import capture_exception, capture_message, log_llm_usage
+
+LOGGER = logging.getLogger(__name__)
+
+GEMINI_API_URL_TEMPLATE = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+GROQ_CHAT_COMPLETIONS_URL = "https://api.groq.com/openai/v1/chat/completions"
+DEFAULT_TIMEOUT_SECONDS = 25.0
+DEFAULT_MAX_RETRIES = 3
+DEFAULT_BACKOFF_SECONDS = 1.0
+
+
+class LLMError(RuntimeError):
+    """Raised when all configured free LLM providers fail."""
+
+
+@dataclass(frozen=True)
+class LLMResponse:
+    text: str
+    provider: str
+    model: str
+    input_tokens: int = 0
+    output_tokens: int = 0
+    fallback_used: bool = False
+
+
+class LLMClient:
+    """Unified free-tier LLM client for AibriefAI.
+
+    Provider order:
+    1. Google Gemini
+    2. Groq Llama
+    3. Caller-side rule-based fallback when this client raises LLMError.
+    """
+
+    def __init__(
+        self,
+        *,
+        gemini_api_key: str = "",
+        gemini_model: str = "gemini-2.5-flash",
+        groq_api_key: str = "",
+        groq_model: str = "llama-3.3-70b-versatile",
+        timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS,
+        max_retries: int = DEFAULT_MAX_RETRIES,
+        backoff_seconds: float = DEFAULT_BACKOFF_SECONDS,
+        usage_dir: str = "data/usage",
+    ) -> None:
+        self.gemini_api_key = gemini_api_key.strip()
+        self.gemini_model = (gemini_model or "gemini-2.5-flash").strip()
+        self.groq_api_key = groq_api_key.strip()
+        self.groq_model = (groq_model or "llama-3.3-70b-versatile").strip()
+        self.timeout_seconds = float(timeout_seconds)
+        self.max_retries = max(1, int(max_retries))
+        self.backoff_seconds = max(0.1, float(backoff_seconds))
+        self.usage_dir = usage_dir
+
+    @classmethod
+    def from_env(cls, usage_dir: str = "data/usage") -> "LLMClient":
+        return cls(
+            gemini_api_key=os.getenv("GEMINI_API_KEY", ""),
+            gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+            groq_api_key=os.getenv("GROQ_API_KEY", ""),
+            groq_model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+            timeout_seconds=float(os.getenv("LLM_TIMEOUT_SECONDS", str(DEFAULT_TIMEOUT_SECONDS))),
+            max_retries=int(os.getenv("LLM_MAX_RETRIES", str(DEFAULT_MAX_RETRIES))),
+            backoff_seconds=float(os.getenv("LLM_BACKOFF_SECONDS", str(DEFAULT_BACKOFF_SECONDS))),
+            usage_dir=usage_dir,
+        )
+
+    @property
+    def has_provider(self) -> bool:
+        return bool(self.gemini_api_key or self.groq_api_key)
+
+    def complete(
+        self,
+        *,
+        agent: str,
+        prompt: str,
+        system: str,
+        max_tokens: int = 500,
+        run_id: str | None = None,
+    ) -> LLMResponse:
+        errors: list[str] = []
+        if self.gemini_api_key:
+            try:
+                return self._complete_gemini(agent=agent, prompt=prompt, system=system, max_tokens=max_tokens, run_id=run_id)
+            except Exception as exc:
+                errors.append(f"gemini: {exc}")
+                capture_exception(exc, agent=agent, extra={"provider": "gemini", "model": self.gemini_model})
+
+        if self.groq_api_key:
+            try:
+                return self._complete_groq(
+                    agent=agent,
+                    prompt=prompt,
+                    system=system,
+                    max_tokens=max_tokens,
+                    run_id=run_id,
+                    fallback_used=bool(errors),
+                )
+            except Exception as exc:
+                errors.append(f"groq: {exc}")
+                capture_exception(exc, agent=agent, extra={"provider": "groq", "model": self.groq_model})
+
+        if not errors:
+            errors.append("no GEMINI_API_KEY or GROQ_API_KEY configured")
+        capture_message("llm_unavailable_rule_fallback", level="warning", agent=agent, extra={"errors": errors})
+        raise LLMError("; ".join(errors))
+
+    def _with_retry(self, provider: str, agent: str, fn: Callable[[], dict[str, Any]]) -> dict[str, Any]:
+        last_exc: BaseException | None = None
+        for attempt in range(1, self.max_retries + 1):
+            try:
+                return fn()
+            except urllib.error.HTTPError as exc:
+                last_exc = exc
+                if exc.code not in {408, 409, 425, 429, 500, 502, 503, 504} or attempt == self.max_retries:
+                    raise LLMError(f"{provider} HTTP {exc.code}") from exc
+            except (urllib.error.URLError, socket.timeout, TimeoutError, json.JSONDecodeError) as exc:
+                last_exc = exc
+                if attempt == self.max_retries:
+                    raise LLMError(f"{provider} transport failure: {exc}") from exc
+            sleep_for = min(8.0, self.backoff_seconds * (2 ** (attempt - 1)))
+            LOGGER.warning("llm_retry provider=%s agent=%s attempt=%s sleep=%s", provider, agent, attempt, sleep_for)
+            time.sleep(sleep_for)
+        raise LLMError(f"{provider} failed after retries: {last_exc}")
+
+    def _post_json(self, url: str, payload: dict[str, Any], headers: dict[str, str]) -> dict[str, Any]:
+        request = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            method="POST",
+            headers={"Content-Type": "application/json", **headers},
+        )
+        with urllib.request.urlopen(request, timeout=self.timeout_seconds) as response:  # nosec B310 - fixed HTTPS provider endpoints
+            return json.loads(response.read().decode("utf-8"))
+
+    def _complete_gemini(self, *, agent: str, prompt: str, system: str, max_tokens: int, run_id: str | None) -> LLMResponse:
+        url = GEMINI_API_URL_TEMPLATE.format(model=self.gemini_model)
+        payload = {
+            "system_instruction": {"parts": [{"text": system}]},
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": {"maxOutputTokens": int(max_tokens), "temperature": 0.2},
+        }
+        data = self._with_retry(
+            "gemini",
+            agent,
+            lambda: self._post_json(url, payload, {"x-goog-api-key": self.gemini_api_key}),
+        )
+        parts = data.get("candidates", [{}])[0].get("content", {}).get("parts", [])
+        text = "\n".join(str(part.get("text", "")).strip() for part in parts if isinstance(part, dict) and part.get("text")).strip()
+        if not text:
+            raise LLMError("gemini returned empty completion")
+        usage = data.get("usageMetadata") or {}
+        input_tokens = int(usage.get("promptTokenCount") or _estimate_tokens(system + "\n" + prompt))
+        output_tokens = int(usage.get("candidatesTokenCount") or _estimate_tokens(text))
+        log_llm_usage(
+            provider="gemini",
+            agent=agent,
+            model=self.gemini_model,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            estimated_cost_usd=0.0,
+            run_id=run_id,
+            usage_dir=self.usage_dir,
+        )
+        return LLMResponse(text=text, provider="gemini", model=self.gemini_model, input_tokens=input_tokens, output_tokens=output_tokens)
+
+    def _complete_groq(
+        self,
+        *,
+        agent: str,
+        prompt: str,
+        system: str,
+        max_tokens: int,
+        run_id: str | None,
+        fallback_used: bool,
+    ) -> LLMResponse:
+        payload = {
+            "model": self.groq_model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": prompt},
+            ],
+            "max_tokens": int(max_tokens),
+            "temperature": 0.2,
+        }
+        data = self._with_retry(
+            "groq",
+            agent,
+            lambda: self._post_json(GROQ_CHAT_COMPLETIONS_URL, payload, {"Authorization": f"Bearer {self.groq_api_key}"}),
+        )
+        text = str(data.get("choices", [{}])[0].get("message", {}).get("content", "")).strip()
+        if not text:
+            raise LLMError("groq returned empty completion")
+        usage = data.get("usage") or {}
+        input_tokens = int(usage.get("prompt_tokens") or _estimate_tokens(system + "\n" + prompt))
+        output_tokens = int(usage.get("completion_tokens") or _estimate_tokens(text))
+        log_llm_usage(
+            provider="groq",
+            agent=agent,
+            model=self.groq_model,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            estimated_cost_usd=0.0,
+            run_id=run_id,
+            usage_dir=self.usage_dir,
+        )
+        return LLMResponse(
+            text=text,
+            provider="groq",
+            model=self.groq_model,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            fallback_used=fallback_used,
+        )
+
+
+def _estimate_tokens(text: str) -> int:
+    return max(1, len(text or "") // 4)

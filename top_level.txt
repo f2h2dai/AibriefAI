@@ -1,0 +1,106 @@
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+from aibrief.default_config import config_from_env, require_production_secrets
+from aibrief.graph.aibrief_graph import AibriefAgentsGraph
+from aibrief.utils.health import write_health_files
+from aibrief.utils.html_brief import write_html_brief
+from aibrief.utils.io import read_json_file, write_report, write_web_feed
+from aibrief.utils.logging import configure_logging
+from aibrief.utils.observability import init_sentry
+from aibrief.utils.validation import ValidationError, validate_limit, validate_topic
+
+
+def positive_limit(value: str) -> int:
+    return validate_limit(value)
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(prog="aibrief", description="Aibrief إحاطة AI multi-agent intelligence CLI")
+    parser.add_argument("--log-level", default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"], help="stderr log level")
+    sub = parser.add_subparsers(dest="command")
+
+    analyze = sub.add_parser("analyze", help="Run the AibriefAgents workflow")
+    analyze.add_argument("--topic", default="ai-agents")
+    analyze.add_argument("--limit", type=positive_limit, default=10)
+    analyze.add_argument("--live", action="store_true", help="Try live RSS sources after Last30Days seed sources")
+    analyze.add_argument("--no-last30days", action="store_true", help="Disable community-style Last30Days feed and use RSS/seed only")
+    analyze.add_argument("--emit-html", action="store_true", help="Write web/brief.html shareable brief")
+    analyze.add_argument("--debug", action="store_true")
+
+    sub.add_parser("build-web", help="Generate static web feed from latest report")
+    sub.add_parser("build-brief", help="Generate shareable HTML brief from latest report")
+    sub.add_parser("clear-checkpoints", help="Clear checkpoint cache")
+    return parser
+
+
+def _load_report_or_exit(path: str) -> dict:
+    report = Path(path)
+    if not report.exists():
+        raise FileNotFoundError("missing data/latest_report.json; run analyze first")
+    return read_json_file(report)
+
+
+def _write_runtime_outputs(data: dict, config: dict, *, emit_html: bool) -> None:
+    write_report(data, config["report_output_path"])
+    write_web_feed(data, config["feed_output_path"])
+    write_health_files(data, config.get("health_web_root", "web"))
+    if emit_html:
+        write_html_brief(data, config["html_brief_output_path"])
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    configure_logging(getattr(args, "log_level", "INFO"))
+    if not args.command:
+        parser.print_help()
+        return 0
+
+    try:
+        config = config_from_env()
+        init_sentry(str(config.get("environment", "production")))
+
+        if args.command == "clear-checkpoints":
+            graph = AibriefAgentsGraph(config={**config, "llm_enabled": False})
+            print(f"cleared {graph.clear_checkpoints()} checkpoint files")
+            return 0
+
+        if args.command == "build-web":
+            data = _load_report_or_exit(config["report_output_path"])
+            write_web_feed(data, config["feed_output_path"])
+            write_health_files(data, config.get("health_web_root", "web"))
+            print(f"wrote {config['feed_output_path']} and web/health.json")
+            return 0
+
+        if args.command == "build-brief":
+            data = _load_report_or_exit(config["report_output_path"])
+            out = write_html_brief(data, config["html_brief_output_path"])
+            print(f"wrote {out}")
+            return 0
+
+        if args.command == "analyze":
+            require_production_secrets(config)
+            config["limit"] = validate_limit(args.limit)
+            config["live"] = bool(args.live)
+            config["last30days_mode"] = not args.no_last30days
+            topic = validate_topic(args.topic)
+            graph = AibriefAgentsGraph(config=config, debug=args.debug)
+            state, decision = graph.propagate(topic)
+            data = state.to_dict()
+            _write_runtime_outputs(data, config, emit_html=bool(args.emit_html))
+            print(json.dumps(decision, ensure_ascii=False, indent=2))
+            return 0
+    except (ValidationError, FileNotFoundError, json.JSONDecodeError, ValueError) as exc:
+        print(f"aibrief error: {exc}", file=sys.stderr)
+        return 2
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

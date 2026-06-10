@@ -1,0 +1,47 @@
+# Production Runbook
+
+## Local verification
+
+```bash
+make install
+make test
+make run
+make serve
+```
+
+Open `http://localhost:8000`.
+
+## Scheduled run
+
+GitHub Actions runs every 5 minutes and commits only:
+
+```text
+data/latest_report.json
+web/data/signals.json
+web/brief.html
+```
+
+## Failure handling
+
+1. Check the GitHub Actions job logs.
+2. Run `python scripts/run_pipeline.py --topic ai-agents --limit 8 --emit-html --log-level DEBUG`.
+3. Inspect `data/latest_report.json.errors`.
+4. If live RSS fails, rerun without `--live`; the seed path keeps the static site available.
+5. Clear checkpoints with `aibrief clear-checkpoints` only after copying failed-run artifacts.
+
+## Release gate
+
+```bash
+python -m compileall -q aibrief scripts cli
+python -m pytest -q
+python scripts/run_pipeline.py --topic "AI agents" --limit 8 --emit-html
+python -m http.server 8000 -d web
+```
+
+Required HTTP checks:
+
+```text
+/                  200
+/brief.html        200
+/data/signals.json 200
+```

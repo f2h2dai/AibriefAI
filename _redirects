@@ -1,0 +1,63 @@
+# AibriefAI Launch Infrastructure — Zero-Cost Stack
+
+## Confirmed launch stack
+
+```text
+Hosting: Render Static Site free tier
+Public URL: https://aibriefai.onrender.com
+Primary LLM: Google Gemini API free tier
+Fallback LLM: Groq Llama 3.3 70B free tier
+Pipeline: GitHub Actions every 5 minutes
+Monitoring: UptimeRobot + Sentry free tiers
+Monthly cost target: $0.00
+```
+
+## Render
+
+`render.yaml` defines a static site:
+
+```yaml
+services:
+  - type: web
+    name: aibriefai
+    runtime: static
+    plan: free
+    buildCommand: "true"
+    staticPublishPath: ./web
+    autoDeployTrigger: commit
+    renderSubdomainPolicy: enabled
+```
+
+Render only serves static files. GitHub Actions runs the pipeline and commits generated dashboard artifacts.
+
+## GitHub secrets
+
+```bash
+gh secret set GEMINI_API_KEY
+gh secret set GROQ_API_KEY
+gh secret set SENTRY_DSN
+gh secret set GITHUB_TOKEN
+
+gh variable set GEMINI_MODEL --body gemini-2.5-flash
+gh variable set GROQ_MODEL --body llama-3.3-70b-versatile
+```
+
+## Health and monitoring
+
+```text
+Health URL: https://aibriefai.onrender.com/health
+UptimeRobot interval: 5 minutes
+Alert email: Fmg_511@hotmail.com
+```
+
+GitHub Actions staleness workflow fails if `web/data/signals.json` has not received a commit in more than 15 minutes.
+
+## Verification
+
+```bash
+python -m compileall -q aibrief scripts cli
+AIBRIEF_LLM_ENABLED=false python -m pytest -q
+python scripts/run_pipeline.py --topic ai-agents --limit 8 --emit-html
+./scripts/secret_scan.sh
+./scripts/verify_no_secret_leak.sh
+```

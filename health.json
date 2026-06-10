@@ -1,0 +1,73 @@
+# AibriefAI Zero-Cost Render Launch
+
+## Stack
+
+| Layer | Service | Cost |
+|---|---|---:|
+| Static hosting | Render Static Site free tier | $0.00 |
+| Primary LLM | Google Gemini API free tier | $0.00 |
+| Fallback LLM | Groq Llama 3.3 70B free tier | $0.00 |
+| Pipeline | GitHub Actions scheduled workflow | $0.00 |
+| Data | HN Firebase, arXiv, GitHub, Reddit | $0.00 |
+| Monitoring | UptimeRobot + Sentry free tier | $0.00 |
+| Domain | `aibriefai.onrender.com` | $0.00 |
+
+## Render deployment
+
+```bash
+git add .
+git commit -m "Launch AibriefAI zero-cost Render stack"
+git push origin main
+```
+
+Render Dashboard:
+
+```text
+New → Static Site → Connect GitHub repo → Use render.yaml → Create Static Site
+```
+
+Expected URL:
+
+```text
+https://aibriefai.onrender.com
+```
+
+Verify:
+
+```bash
+curl -I https://aibriefai.onrender.com
+curl -fsS https://aibriefai.onrender.com/health
+curl -fsS https://aibriefai.onrender.com/data/signals.json | python -m json.tool >/dev/null
+```
+
+## GitHub Actions secrets
+
+```bash
+gh secret set GEMINI_API_KEY
+gh secret set GROQ_API_KEY
+gh secret set SENTRY_DSN
+gh secret set GITHUB_TOKEN
+
+gh variable set GEMINI_MODEL --body gemini-2.5-flash
+gh variable set GROQ_MODEL --body llama-3.3-70b-versatile
+```
+
+No key is required to launch. Missing LLM keys trigger rule-based fallback.
+
+## UptimeRobot monitor
+
+Import or manually create:
+
+```text
+Monitor type: HTTP(s)
+URL: https://aibriefai.onrender.com/health
+Interval: 5 minutes
+Expected status: 200
+Alert contact: Fmg_511@hotmail.com
+```
+
+Config file:
+
+```text
+infra/monitoring/uptimerobot/aibriefai-monitor.json
+```
