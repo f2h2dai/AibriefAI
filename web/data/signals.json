@@ -1,25 +1,11 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-10T22:20:27Z",
+  "generated_at": "2026-06-11T12:33:54Z",
   "topic": "AI agents",
   "mode": "gemini",
   "signals": [
     {
-      "id": "arxiv-016",
-      "source": "arxiv",
-      "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
-      "content": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previously required experienced human biologists. These emerging AI capabilities offer new opportunities for scientific discovery and biomedical advances, but they also shift the landscape of biosecurity risks. To address this, we introduce the Agentic Bio-Capabilities Benchmark (ABC-Bench), a suite of tasks to measure agentic biosecurity-relevant capabilities. ABC-Bench evaluates LLM agents on both benign and dual-use biology tasks: writing code to operate liquid handling robots, designing DNA fragments for in vitro assembly, and evading DNA synthesis screening. These tasks require a combination of biology and software expertise. All tested LLM agents outperformed the median expert human baseliner on all three tasks. Agents performed highly on tasks drawing on published knowledge and well-documented protocols, and more weakly on a task requiring novel bioinformatics reasoning. In three wet-lab validation experiments, we found that OpenAI's o4-mini-high produced scripts that, when run on an OpenTrons liquid handling robot, successfully assembled DNA with expected sequences.",
-      "url": "http://arxiv.org/abs/2606.11150v1",
-      "score": 71,
-      "status": "verified",
-      "topic": "AI Agents",
-      "brief_en": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biolo...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
-    },
-    {
-      "id": "github-007",
+      "id": "github-009",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -29,39 +15,11 @@
       "topic": "AI Agents",
       "brief_en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "arxiv-017",
-      "source": "arxiv",
-      "title": "OpenPCC: Open and Confidential LLM Serving on Commodity TEEs",
-      "content": "Generative AI applications such as personal AI agents, image generators, and chat assistants offer advanced capabilities to improve user experience. Behind the scenes, Large Language Models (LLMs) that power these services require a massive amount of computation and are usually deployed in the cloud, available as APIs, meaning that a user's request has to be sent to a Cloud Inference Service (CIS) for processing. However, the strong capabilities of LLM also mean that user's requests now contain much more personal sensitive or enterprise confidential information, demanding equally strong protection in CIS. While early industry efforts such as Apple Private Cloud Compute (PCC) and Google Private AI Compute have emerged to show the potential of secure CIS, they are not adoptable for deployment by others due to their reliance on proprietary hardware and closed ecosystem. In addition, they all suffer from their own design glitches that can undermine the ambitious goal of bringing in true privacy protection to end users. In this paper, we present our analysis of the fundamental requirements of building a secure yet open CIS. We then present OpenPCC, a Confidential CIS framework that does not rely on proprietary hardware but instead uses commercially available TEEs. We implement an open-source prototype and characterize it end-to-end on a Llama-3 8B vLLM workload, separating OpenPCC's own cost from the underlying TEE hardware. Our analysis and evaluation demonstrated the feasibility and security of the system.",
-      "url": "http://arxiv.org/abs/2606.11145v1",
-      "score": 64,
-      "status": "verified",
-      "topic": "AI Agents",
-      "brief_en": "Generative AI applications such as personal AI agents, image generators, and chat assistants offer advanced capabilities to improve user experience. Behind the scenes, Large Language Models (LLMs) that power these servic...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
-    },
-    {
-      "id": "arxiv-014",
-      "source": "arxiv",
-      "title": "DarkAgents",
-      "content": "We present DarkAgents: a multi-agent system that leverages the reasoning and code-generation capabilities of large language models (LLMs), together with deterministic tested human-written code, to build orchestrated pipelines for theoretical astroparticle physics research. While related approaches have been proposed in collider physics and cosmology, DarkAgents targets the specific challenges of this domain, such as model building, complex pipeline computations, multiple constraints and assumption auditing. The framework can be powered by different agentic command-line tools, including Mistral's, Anthropic's, OpenAI's and local LLMs via Ollama. As first implementation, we apply DarkAgents to the study of cosmological first order transitions, starting from a classically scale-invariant particle-physics model and ending with the fit to the NANOGrav nanohertz gravitational-waves spectrum. DarkAgent-PT provides as output i) the best-fit values of model parameters, ii) their existing experimental and observational constraints, iii) an audit report of the assumptions and priors entering both i) and ii), of particular relevance for astroparticle physics. Our test runs identify inconsistencies in some fits in the literature and produce novel ones based on the dissipative bulk-flow GW template. The code is publicly available at https://github.com/PhysicsZandi/DarkAgents.",
-      "url": "http://arxiv.org/abs/2606.11157v1",
-      "score": 58,
-      "status": "verified",
-      "topic": "AI Agents",
-      "brief_en": "We present DarkAgents: a multi-agent system that leverages the reasoning and code-generation capabilities of large language models (LLMs), together with deterministic tested human-written code, to build orchestrated pipe...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
-    },
-    {
-      "id": "github-009",
+      "id": "github-011",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -71,25 +29,39 @@
       "topic": "AI Agents",
       "brief_en": "AI agents running research on single-GPU nanochat training automatically",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "arxiv-012",
-      "source": "arxiv",
-      "title": "Flaws in the LLM Automation Narrative",
-      "content": "Large Language Models (LLMs) are increasingly described as performing at the level of human experts on knowledge economy tasks. These claims are primarily based on how LLMs perform on benchmarking tasks that measure average performance across standardized datasets. Primary limitations of many benchmarking tasks are that they often measure performance based on content directly included in LLM training data, and they frequently do not assess the reliability of LLM performance or the magnitude of LLM errors. However, in high stakes contexts, these qualities are critically important. Through a novel LLM benchmarking task that requires writing computer code to complete a data analysis task, we compare the performance of a frontier LLM against submissions from human experts and explicitly measure the variance of responses and the magnitude of errors. Our study reveals that the human experts perform better on average on a range of metrics and demonstrate less variability in performance. Our results provide evidence that LLMs do not consistently perform at the level of human experts and demonstrate the importance of measuring variance and assessing error magnitude in LLM benchmark evaluations.",
-      "url": "http://arxiv.org/abs/2606.11166v1",
-      "score": 48,
+      "id": "hackernews-002",
+      "source": "hackernews",
+      "title": "AI agent runs amok in Fedora and elsewhere",
+      "content": "AI agent runs amok in Fedora and elsewhere",
+      "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
+      "score": 49,
       "status": "verified",
-      "topic": "RAG",
-      "brief_en": "Large Language Models (LLMs) are increasingly described as performing at the level of human experts on knowledge economy tasks. These claims are primarily based on how LLMs perform on benchmarking tasks that measure aver...",
+      "topic": "AI Agents",
+      "brief_en": "AI agent runs amok in Fedora and elsewhere",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "github-005",
+      "id": "hackernews-003",
+      "source": "hackernews",
+      "title": "Build a Basic AI Agent from Scratch: Long Task Planning",
+      "content": "Build a Basic AI Agent from Scratch: Long Task Planning",
+      "url": "https://medium.com/@rogi23696/build-a-basic-ai-agent-from-scratch-long-task-planning-14e803f9bd6d",
+      "score": 49,
+      "status": "verified",
+      "topic": "AI Agents",
+      "brief_en": "Build a Basic AI Agent from Scratch: Long Task Planning",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
+    },
+    {
+      "id": "github-007",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -99,11 +71,11 @@
       "topic": "AI Agents",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "github-006",
+      "id": "github-008",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -113,11 +85,11 @@
       "topic": "AI Agents",
       "brief_en": "The agent engineering platform.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "github-008",
+      "id": "github-010",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -127,11 +99,11 @@
       "topic": "AI Agents",
       "brief_en": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "github-010",
+      "id": "github-012",
       "source": "github",
       "title": "infiniflow/ragflow",
       "content": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
@@ -141,25 +113,11 @@
       "topic": "AI Agents",
       "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     },
     {
-      "id": "arxiv-013",
-      "source": "arxiv",
-      "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models",
-      "content": "Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods mitigate this issue via token eviction, but typically assume a uniform budget distribution across all layers and heads. In contrast, existing non-uniform budget allocation methods are predominantly designed for the static prompt prefill phase, and they do not capture the stepwise context demands of autoregressive reasoning. To bridge this gap, we propose ReasonAlloc, a training-free framework that recasts decoding-time KV compression as a hierarchical budget allocation problem. ReasonAlloc operates at two complementary levels: an offline layer-wise preallocation strategy captures an architecture-driven demand pattern which we call ``\\textit{Reasoning Wave}'', while an online head-wise strategy reallocates resources during decoding to information-rich heads based on real-time utility. Evaluations on mathematical reasoning benchmarks (MATH-500, AIME~2024) using DeepSeek-R1-Distill-Llama-8B, DeepSeek-R1-Distill-Qwen-14B, and AceReason-14B show that ReasonAlloc outperforms uniform-budget R-KV, SnapKV, and Pyramid-RKV (a baseline enforcing a static, monotonically decreasing layer budget), with the largest gains at small budgets (128-512 tokens). ReasonAlloc is plug-and-play with existing token-eviction policies and introduces negligible inference-time overhead.",
-      "url": "http://arxiv.org/abs/2606.11164v1",
-      "score": 40,
-      "status": "verified",
-      "topic": "LLMs",
-      "brief_en": "Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods mitigate this issue ...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
-    },
-    {
-      "id": "github-003",
+      "id": "github-005",
       "source": "github",
       "title": "NousResearch/hermes-agent",
       "content": "The agent that grows with you",
@@ -169,8 +127,50 @@
       "topic": "AI Agents",
       "brief_en": "The agent that grows with you",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-10T22:20:27Z",
-      "updatedAt": "2026-06-10T22:20:27Z"
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
+    },
+    {
+      "id": "github-006",
+      "source": "github",
+      "title": "Significant-Gravitas/AutoGPT",
+      "content": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 32,
+      "status": "held",
+      "topic": "AI",
+      "brief_en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
+    },
+    {
+      "id": "hackernews-001",
+      "source": "hackernews",
+      "title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+      "content": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+      "url": "https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/",
+      "score": 25,
+      "status": "held",
+      "topic": "AI",
+      "brief_en": "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
+    },
+    {
+      "id": "hackernews-004",
+      "source": "hackernews",
+      "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+      "content": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "score": 25,
+      "status": "held",
+      "topic": "AI",
+      "brief_en": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-11T12:33:54Z",
+      "updatedAt": "2026-06-11T12:33:54Z"
     }
   ]
 }
