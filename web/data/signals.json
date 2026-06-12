@@ -1,11 +1,25 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-11T21:29:53Z",
+  "generated_at": "2026-06-12T11:53:15Z",
   "topic": "AI agents",
   "mode": "gemini",
   "signals": [
     {
-      "id": "github-007",
+      "id": "arxiv-012",
+      "source": "arxiv",
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "content": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+      "url": "http://arxiv.org/abs/2606.13681v1",
+      "score": 68,
+      "status": "verified",
+      "topic": "AI Agents",
+      "brief_en": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agent...",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
+    },
+    {
+      "id": "github-008",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -15,25 +29,53 @@
       "topic": "AI Agents",
       "brief_en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
       "id": "arxiv-018",
       "source": "arxiv",
-      "title": "Should LLM Agents Decide in Social Simulations? Comparing Finite-State and LLM-Based Decision Policies",
-      "content": "Large language models (LLMs) are increasingly used as decision-making components in social simulations. This introduces a methodological risk: the simulation may deviate from the explicit behavioral policy defined by the researcher. In online social network (OSN) simulations, action choices shape system dynamics, interaction patterns, and model interpretability. This paper evaluates whether LLM action selectors preserve an interpretable reference policy in an OSN simulation. The reference is a finite state machine implemented as a first-order Markov model, with transition probabilities depending on the user type. The evaluation uses a synthetic network with 1,000 agents and 10,000 action decisions. Three open-weight LLMs are tested: LLaMA 3.1, GPT-OSS, and Mistral 24B. Each model is evaluated under three prompting strategies: base, guided, and probabilistic. Alignment is measured using Jensen-Shannon Divergence with Laplace smoothing, and execution time is reported. Results show that LLMs can approximate the reference policy in some configurations, but do not preserve it reliably. Alignment varies across models and prompts, and additional guidance can introduce systematic action biases. Even the best-aligned LLM configurations are several hundred times slower than direct Markov chain sampling. These findings indicate that LLM-based action selection is not a direct replacement for explicit decision policies: it can alter the intended behavior while increasing computational cost.",
-      "url": "http://arxiv.org/abs/2606.12369v1",
-      "score": 54,
+      "title": "Reward Modeling for Multi-Agent Orchestration",
+      "content": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orchestration Reward Modeling (OrchRM), a self-supervised framework for evaluating orchestration quality without human annotations. OrchRM leverages intermediate artifacts from multi-agent executions to construct win-lose pairs for Bradley-Terry reward model training. Unlike existing MAS test-time scaling and orchestrator training frameworks that rely on costly sub-agent rollouts, OrchRM operates directly at the orchestration level, enabling efficient and high-performing reward-guided orchestrator training and MAS test-time scaling. OrchRM improves training efficiency by up to 10x in token usage while improving MAS test-time scaling performance by up to 8% in accuracy. These gains consistently transfer across multiple domains, including mathematical reasoning, web-based question answering, and multi-hop reasoning, demonstrating orchestration-level reward modeling as a scalable direction for robust multi-agent orchestration. Code will be available at https://github.com/Wang-ML-Lab/OrchRM.",
+      "url": "http://arxiv.org/abs/2606.13598v1",
+      "score": 65,
       "status": "verified",
       "topic": "AI Agents",
-      "brief_en": "Large language models (LLMs) are increasingly used as decision-making components in social simulations. This introduces a methodological risk: the simulation may deviate from the explicit behavioral policy defined by the...",
+      "brief_en": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational ...",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "github-009",
+      "id": "arxiv-017",
+      "source": "arxiv",
+      "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
+      "content": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis. EpiBench evaluates whether agents can make well-defined analysis decisions from realistic workflow states and return deterministically gradable answers. The benchmark includes 106 evaluations across CUT\\&Tag/CUT\\&RUN, ATAC-seq, ChIP-seq, and DNA methylation workflows. Across 5,088 valid trajectories from 16 model-harness pairs, no system passed a majority of attempts: GPT-5.5 / Pi led at 45.0\\% (143/318 attempts; 95\\% confidence interval (CI), 36.3--53.7), followed by GPT-5.5 / OpenAI Codex at 39.9\\% (127/318 attempts; 95\\% CI, 31.6--48.3). Claude Opus 4.8 Max / Pi and GPT-5.4 / Pi each passed 39.0\\% (124/318 attempts; 95\\% CI, 30.2--47.8 and 31.0--47.0, respectively). Performance varies across assay types, and many failed runs still contain parts of the correct answer. Agents often found the right files and computed useful intermediate results, but failed when the task required deeper, assay-specific scientific judgment.",
+      "url": "http://arxiv.org/abs/2606.13602v1",
+      "score": 62,
+      "status": "verified",
+      "topic": "AI Agents",
+      "brief_en": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis. EpiBench evaluates whether agents can make well-defined analysis decisions from realistic workflow states and return deterministically...",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
+    },
+    {
+      "id": "arxiv-019",
+      "source": "arxiv",
+      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+      "content": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios. This gap is critical in regions like rural India, where patients often express complex medical queries in native Indic languages and rely on multimodal inputs such as medical images. Existing English-centric MLLMs struggle to support such use cases, limiting equitable access to AI-driven healthcare assistance. To address this challenge, we introduce ArogyaBodha, a large-scale multilingual multimodal medical question-answer dataset constructed from eight heterogeneous sources, covering 31 body systems, six imaging modalities, and 21 clinical domains across English and seven major Indian languages. We further propose ArogyaSutra, an actor-critic-based multi-agent framework that integrates tool grounding with dual-memory mechanisms for step-wise, reasoning-aware decision making, and uses stored actor-critic simulation trajectories for distillation. Experiments show that our dataset and framework improve multilingual medical reasoning accuracy across all Indic languages, with ablations validating the contribution of each component. The source code and dataset are available at: https://iitp-cse.github.io/ ArogyaSutra/",
+      "url": "http://arxiv.org/abs/2606.13572v1",
+      "score": 61,
+      "status": "verified",
+      "topic": "AI Agents",
+      "brief_en": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and lo...",
+      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
+    },
+    {
+      "id": "github-010",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -43,53 +85,25 @@
       "topic": "AI Agents",
       "brief_en": "AI agents running research on single-GPU nanochat training automatically",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "arxiv-011",
-      "source": "arxiv",
-      "title": "How Seemingly Inconsequential Design Choices Dictate Performance of LLMs in Pathology",
-      "content": "General-purpose large language models (LLMs) are routinely used as baselines when evaluating specialized pathology models on whole-slide images (WSIs). Because WSIs exceed contemporary model context limits, LLM baselines routinely use small, high-magnification patches processed independently via majority voting, without systematic evaluation of seemingly inconsequential design choices such as patch size, patch count, and magnification. Generalist LLMs have consistently underperformed specialized systems, reinforcing the perception that domain-specific training or architectural adaptation is necessary for pathology tasks involving WSIs. Here, we conduct a systematic factorial analysis of four input design factors: inference mode, patch size, magnification, and patch count. We demonstrate that prior studies have overstated the gap between specialized models and general-purpose LLMs by choosing non-optimized input configurations. On the MultiPathQA benchmark, switching to a single balanced configuration (large patches at lower magnification, processed jointly) raises GPT-5 from 15.1% to 39.5% on cancer-type classification (TCGA) and from 38.1% to 62.9% on organ classification (GTEx). Per-task optimization yields further gains up to 43.9% (TCGA) and 71.6% (GTEx). The same configuration generalizes to two other models and to a fully held-out CPTAC cohort, where it improves Gemini 3 Flash by 23.4 percentage points without any task-specific tuning.",
-      "url": "http://arxiv.org/abs/2606.12407v1",
-      "score": 52,
-      "status": "verified",
-      "topic": "LLMs",
-      "brief_en": "General-purpose large language models (LLMs) are routinely used as baselines when evaluating specialized pathology models on whole-slide images (WSIs). Because WSIs exceed contemporary model context limits, LLM baselines...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
-    },
-    {
-      "id": "arxiv-014",
-      "source": "arxiv",
-      "title": "TAHOE: Text-to-SQL with Automated Hint Optimization from Experience",
-      "content": "Large Language Models (LLMs) have democratized database access through Text-to-SQL, but moving from prototypes to production remains difficult. Real deployments must handle strict SQL dialects, massive schemas, and evolving user preferences, while supervised fine-tuning is costly and rigid and agentic test-time scaling is expensive. We present Tahoe, a system that treats prompt optimization as a dynamic data management problem. Tahoe uses an error-driven hint learning pipeline across Development and Deployment to consolidate debugging traces into a structured Hint Bank. Compiler feedback is distilled into reusable Syntax Hints for dialect-specific rules, while execution and user feedback are converted into Semantic Hints for schema- and user-specific logic. Tahoe further introduces a Strategy Layer that models conflicting user intents as competing strategies under shared natural-language triggers, with recency signals and post-learning attribution statistics that summarize empirical success, harm, inertness, and support. At inference time, Tahoe retrieves relevant hints and guides the LLM through Logic Planning followed by SQL Synthesis. We implement and evaluate the development-phase workflow, leaving deployment-time human-feedback updates for future work. On Spider 2.0-Snow, Tahoe substantially improves Text-to-SQL without updating model parameters. On 113 supervised Spider 2.0-Snow-0212 examples using GPT-5.5, Tahoe raises pass rate from 61.95 percent to 79.42 percent and pass-at-4 from 72.57 percent to 87.61 percent, achieves 100 percent Snowflake syntax pass rate, and reduces average compiler-feedback critic rounds from 2.79 to 0.12 per sampled candidate. The same Hint Bank also transfers to weaker backbones, including a 19.7 percentage-point pass-rate gain on Doubao-2.0-lite.",
-      "url": "http://arxiv.org/abs/2606.12387v1",
-      "score": 48,
+      "id": "hackernews-001",
+      "source": "hackernews",
+      "title": "AI agent bankrupted their operator while trying to scan DN42",
+      "content": "AI agent bankrupted their operator while trying to scan DN42",
+      "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+      "score": 49,
       "status": "verified",
       "topic": "AI Agents",
-      "brief_en": "Large Language Models (LLMs) have democratized database access through Text-to-SQL, but moving from prototypes to production remains difficult. Real deployments must handle strict SQL dialects, massive schemas, and evolv...",
+      "brief_en": "AI agent bankrupted their operator while trying to scan DN42",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "arxiv-013",
-      "source": "arxiv",
-      "title": "System Report for CCL25-Eval Task 5: New Dataset and LoRA-Fine-Tuned Qwen2.5",
-      "content": "Recently, large language models (LLMs) have achieved promising progress in the fields of classical Chinese translation and the generation of classical poetry. However, domain-specific research on precise translation and affective-semantic understanding of classical poetry remains limited. The main challenge is that most studies treat the poetic appreciation task as a general-domain problem, neglecting the distinctive features of poetic appreciation, while high-quality and domain-specific datasets are extremely limited. To address this limitation, we decompose the task into three subtasks: term interpretation, semantic interpretation, and emotional inference. Based on multiple open-source datasets, we perform data cleansing and alignment to construct the Classical Chinese Poetry Instruction Pair Dataset (CCPoetry-49K), which comprises 49,404 high-quality instruction-response pairs explicitly optimized for this domain. We then propose a domain-specialized LLM, called PoetryQwen, by applying Low-Rank Adaptation (LoRA) to fine-tune the Qwen2.5-14B model. Experimental results on the CCL25-Eval Task 5 benchmark demonstrate that PoetryQwen achieves a score of 0.757, representing a 9.7% improvement over the Qwen2.5-14B-Instruct baseline (0.690). These findings clearly indicate that PoetryQwen significantly enhances performance in precise translation and emotional understanding of classical poetry. We present new dataset and methodological considerations intended to support the domain-specific optimization of LLMs.",
-      "url": "http://arxiv.org/abs/2606.12392v1",
-      "score": 47,
-      "status": "verified",
-      "topic": "LLMs",
-      "brief_en": "Recently, large language models (LLMs) have achieved promising progress in the fields of classical Chinese translation and the generation of classical poetry. However, domain-specific research on precise translation and ...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
-    },
-    {
-      "id": "github-005",
+      "id": "github-006",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -99,11 +113,11 @@
       "topic": "AI Agents",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "github-006",
+      "id": "github-007",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -113,11 +127,11 @@
       "topic": "AI Agents",
       "brief_en": "The agent engineering platform.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "github-008",
+      "id": "github-009",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -127,11 +141,11 @@
       "topic": "AI Agents",
       "brief_en": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "github-010",
+      "id": "github-011",
       "source": "github",
       "title": "infiniflow/ragflow",
       "content": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
@@ -141,36 +155,22 @@
       "topic": "AI Agents",
       "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     },
     {
-      "id": "arxiv-015",
+      "id": "arxiv-013",
       "source": "arxiv",
-      "title": "APPO: Agentic Procedural Policy Optimization",
-      "content": "Recent advances in agentic Reinforcement Learning (RL) have substantially improved the multi-turn tool-use capabilities of large language model agents. However, most existing methods assign credit over coarse heuristic units, such as tool-call boundaries or fixed workflows, making it difficult to identify which intermediate decisions influence downstream outcomes. In this work, we study agentic RL from two perspectives: \\textit{where to branch and how to assign credit after branching}. Our pilot analysis shows that influential decision points are broadly distributed throughout the generated sequence rather than concentrated at tool calls, while token entropy alone does not reliably reflect their impact on final outcomes. Motivated by these observations, we propose \\textbf{Agentic Procedural Policy Optimization (APPO)}, which shifts branching and credit assignment from coarse interaction units to fine-grained decision points in the sequence. APPO selects branching locations using a Branching Score that combines token uncertainty with policy-induced likelihood gains of subsequent continuations, enabling more targeted exploration while filtering out spurious high-entropy positions. It further introduces procedure-level advantage scaling to better distribute credit across branched rollouts. Experiments on 13 benchmarks show that APPO consistently improves strong agentic RL baselines by nearly 4 points, while keeping efficient tool-calls and maintaining behavior interpretability.",
-      "url": "http://arxiv.org/abs/2606.12384v1",
-      "score": 44,
-      "status": "verified",
-      "topic": "AI Agents",
-      "brief_en": "Recent advances in agentic Reinforcement Learning (RL) have substantially improved the multi-turn tool-use capabilities of large language model agents. However, most existing methods assign credit over coarse heuristic u...",
-      "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
-    },
-    {
-      "id": "arxiv-017",
-      "source": "arxiv",
-      "title": "Breaking Entropy Bounds: Accelerating RL Training via MTP with Rejection Sampling",
-      "content": "Reinforcement learning (RL) has become a key component in modern large language models, yet the rollout stage remains the key bottleneck in RL training pipelines. Although Multi-Token Prediction (MTP) offers a natural solution to accelerate rollouts through speculative decoding, many studies have observed that MTP acceptance rates degrade significantly during RL training, leading to limited speedup performance. To address this bottleneck, we present Bebop, a systematic study of MTP in LLM post-training, and offer practical recipes to integrate MTP into large-scale RL pipelines. First, we reveal that the MTP acceptance rate is fundamentally bounded by the fluctuation of model entropy, which demonstrates a clear negative linear relationship with the rise of entropy in the RL stage. Second, we show that probabilistic rejection sampling largely alleviates the disturbance introduced by entropy in RL compared to greedy draft sampling. We further identify that the conventional MTP training objectives (cross-entropy or KL) are suboptimal in such settings, and therefore we propose a novel end-to-end TV loss that directly optimizes multi-step rejection sampling acceptance rate, yielding ~10% acceptance rate improvements, achieving up to 95% acceptance rates and up to 25% extra inference throughput gains across mathematical reasoning, code generation, and agentic tasks. Third, we test various online MTP training strategies during RL and show that pre-RL MTP training with e2e TV loss and rejection sampling achieves a consistent acceptance rate and speedup throughout the entire RL, eliminating the need for costly online MTP updating. We provide extensive experiments and analysis that validate our findings. Experimental results show our method achieves up to 1.8x end-to-end acceleration in async RL training of Qwen3.5, Qwen3.6, and Qwen3.7 models.",
-      "url": "http://arxiv.org/abs/2606.12370v1",
+      "title": "Automated reproducibility assessments in the social and behavioral sciences using large language models",
+      "content": "Reproducibility in the social and behavioral sciences is typically evaluated by independent researchers who reanalyze the original data to assess whether the published findings can be recovered. However, such approaches are resource-intensive and difficult to scale. Here, we show that large language models (LLMs) can automate reproducibility assessments. Using N=76 published studies with predefined claims from the behavioral and social sciences, we compare LLM-generated analysis with the original findings and human reanalysis. For 7 studies, the LLM could not produce a viable effect size estimate. For the remaining studies, our LLM pipeline recovered the original effect sizes in 41% of studies using a +/-0.05 tolerance in Cohen's d. Further, our LLM pipeline reached the same qualitative conclusion as the original study in 96% of cases, where conclusions indicate whether the reanalysis supports the original claim. For comparison, human reanalysts recovered the original effect sizes in 34% of studies and reached the same qualitative conclusion in 74% of cases. Together, these results show that LLMs can serve as a scalable tool for automated reproducibility assessment and provide a foundation for systematic auditing of empirical results in the social and behavioral sciences.",
+      "url": "http://arxiv.org/abs/2606.13670v1",
       "score": 40,
       "status": "verified",
-      "topic": "AI Agents",
-      "brief_en": "Reinforcement learning (RL) has become a key component in modern large language models, yet the rollout stage remains the key bottleneck in RL training pipelines. Although Multi-Token Prediction (MTP) offers a natural so...",
+      "topic": "LLMs",
+      "brief_en": "Reproducibility in the social and behavioral sciences is typically evaluated by independent researchers who reanalyze the original data to assess whether the published findings can be recovered. However, such approaches ...",
       "brief_ar": "تم استخدام المنطق القاعدي بعد فشل Gemini: HTTPError",
-      "createdAt": "2026-06-11T21:29:53Z",
-      "updatedAt": "2026-06-11T21:29:53Z"
+      "createdAt": "2026-06-12T11:53:15Z",
+      "updatedAt": "2026-06-12T11:53:15Z"
     }
   ]
 }
