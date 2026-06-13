@@ -4,15 +4,16 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write
 
 concurrency:
   group: aibrief-feed
   cancel-in-progress: true
-
 
 jobs:
   update-feed:
@@ -23,8 +24,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.3
 
+      - name: Validate API Keys
+        shell: bash
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️ GEMINI_API_KEY missing"
+          else
+            echo "✅ GEMINI_API_KEY loaded"
+          fi
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "⚠️ GROQ_API_KEY missing"
+          else
+            echo "✅ GROQ_API_KEY loaded"
+          fi
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
       - name: Generate AibriefAI feed
         shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           set -euo pipefail
 
@@ -390,4 +411,6 @@ jobs:
           fi
 
           git commit -m "Update AibriefAI feed [skip ci]"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
