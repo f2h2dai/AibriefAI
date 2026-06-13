@@ -1,15 +1,137 @@
 {
   "project": "AibriefAI",
-  "generated_at": "2026-06-13T23:12:15Z",
+  "generated_at": "2026-06-13T23:20:29Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
-  "errors": 0,
-  "mode": "gemini",
-  "model": "gemini-2.5-flash",
+  "errors": 19,
+  "mode": "rule-based",
+  "model": null,
   "provider_counts": {
-    "gemini": 6,
+    "gemini": 0,
     "groq": 0,
-    "rule-based": 14
-  }
+    "rule-based": 18
+  },
+  "events": [
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-13T23:20:29Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    }
+  ]
 }
