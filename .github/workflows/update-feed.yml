@@ -28,7 +28,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate AibriefAI feed
+      - name: Generate AibriefAI command center
         shell: bash
         run: |
           set -euo pipefail
@@ -61,6 +61,15 @@ jobs:
               "groq": 0,
               "rule-based": 0
           }
+          PIPELINE_EVENTS = []
+
+          def log_event(level, agent, message):
+              PIPELINE_EVENTS.append({
+                  "time": NOW,
+                  "level": level,
+                  "agent": agent,
+                  "message": str(message)[:300]
+              })
 
           def fetch_json(url, timeout=12):
               req = urllib.request.Request(
@@ -99,6 +108,13 @@ jobs:
                   "open source": 8,
                   "github": 7,
                   "research": 7,
+                  "military": 12,
+                  "defense": 12,
+                  "drone": 12,
+                  "surveillance": 10,
+                  "osint": 10,
+                  "geopolitics": 9,
+                  "infrastructure": 8,
               }
 
               score = {
@@ -118,6 +134,8 @@ jobs:
           def topic_for(title, content):
               text = f"{title} {content}".lower()
 
+              if "military" in text or "defense" in text or "drone" in text or "warfare" in text:
+                  return "AI Warfare"
               if "agent" in text:
                   return "AI Agents"
               if "rag" in text or "retrieval" in text:
@@ -126,6 +144,8 @@ jobs:
                   return "LLMs"
               if "github" in text or "open source" in text:
                   return "Open Source"
+              if "government" in text or "policy" in text:
+                  return "AI Governance"
 
               return "AI"
 
@@ -135,7 +155,11 @@ jobs:
               if not c:
                   return f"{title} is relevant to AI operators tracking technical signals."
 
-              return c[:220] + ("..." if len(c) > 220 else "")
+              return c[:240] + ("..." if len(c) > 240 else "")
+
+          def summarize_rule_ar(title, content):
+              en = summarize_rule(title, content)
+              return "ملخص قائم على القواعد: " + en
 
           def parse_llm_json(text, rule_summary):
               text = text.strip()
@@ -144,7 +168,7 @@ jobs:
 
               return (
                   parsed.get("en") or rule_summary,
-                  parsed.get("ar") or "No Arabic brief returned."
+                  parsed.get("ar") or "لم يتم إرجاع ملخص عربي من النموذج."
               )
 
           def llm_brief(title, content):
@@ -152,11 +176,13 @@ jobs:
               global PROVIDER_COUNTS
 
               rule_summary = summarize_rule(title, content)
+              rule_summary_ar = summarize_rule_ar(title, content)
 
               prompt = (
                   "Create a concise bilingual AI intelligence brief.\n"
                   "Return JSON only with keys: en, ar.\n"
-                  "Style: factual, concise, OSINT-oriented, professional Arabic.\n"
+                  "Style: factual, concise, OSINT-oriented, strategic, professional Arabic.\n"
+                  "Do not exaggerate claims. Preserve uncertainty.\n"
                   f"Title: {title}\n"
                   f"Content: {content[:1500]}\n"
               )
@@ -189,25 +215,24 @@ jobs:
                           data = json.loads(r.read().decode("utf-8", "replace"))
 
                       text = data["candidates"][0]["content"]["parts"][0]["text"]
+                      en, ar = parse_llm_json(text, rule_summary)
                       PROVIDER_COUNTS["gemini"] += 1
-                      return parse_llm_json(text, rule_summary)
+                      return en, ar, "gemini"
 
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
 
                       if e.code == 429:
                           GEMINI_QUOTA_EXHAUSTED = True
+                          log_event("warning", "SentinelCommanderAgent", "Gemini quota exceeded. Routing to Groq fallback.")
                       else:
-                          PROVIDER_COUNTS["rule-based"] += 1
-                          return rule_summary, f"Gemini HTTP {e.code}: {body[:200]}"
+                          log_event("error", "GeminiRouter", f"Gemini HTTP {e.code}: {body[:200]}")
 
                   except urllib.error.URLError as e:
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return rule_summary, f"Gemini URLError: {e.reason}"
+                      log_event("error", "GeminiRouter", f"Gemini URL error: {e.reason}")
 
                   except Exception as e:
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return rule_summary, f"Gemini {type(e).__name__}: {e}"
+                      log_event("error", "GeminiRouter", f"Gemini error: {type(e).__name__}: {e}")
 
               if GROQ_API_KEY:
                   payload = json.dumps({
@@ -241,28 +266,23 @@ jobs:
                           data = json.loads(r.read().decode("utf-8", "replace"))
 
                       text = data["choices"][0]["message"]["content"]
+                      en, ar = parse_llm_json(text, rule_summary)
                       PROVIDER_COUNTS["groq"] += 1
-                      return parse_llm_json(text, rule_summary)
+                      return en, ar, "groq"
 
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return rule_summary, f"Groq HTTP {e.code}: {body[:200]}"
+                      log_event("error", "GroqRouter", f"Groq HTTP {e.code}: {body[:200]}")
 
                   except urllib.error.URLError as e:
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return rule_summary, f"Groq URLError: {e.reason}"
+                      log_event("error", "GroqRouter", f"Groq URL error: {e.reason}")
 
                   except Exception as e:
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return rule_summary, f"Groq {type(e).__name__}: {e}"
-
-              if GEMINI_QUOTA_EXHAUSTED:
-                  PROVIDER_COUNTS["rule-based"] += 1
-                  return rule_summary, "Gemini quota exceeded. Groq fallback key is missing. Rule-based brief used."
+                      log_event("error", "GroqRouter", f"Groq error: {type(e).__name__}: {e}")
 
               PROVIDER_COUNTS["rule-based"] += 1
-              return rule_summary, "No LLM key configured. Rule-based brief used."
+              log_event("info", "RaindropTriageAgent", "Rule-based fallback used for one signal.")
+              return rule_summary, rule_summary_ar, "rule-based"
 
           items = []
 
@@ -276,17 +296,18 @@ jobs:
                       url = item.get("url") or f"https://news.ycombinator.com/item?id={sid}"
                       content = title
 
-                      if re.search(r"ai|agent|llm|gemini|openai|rag|github|model", title, re.I):
+                      if re.search(r"ai|agent|llm|gemini|openai|rag|github|model|defense|drone|osint", title, re.I):
                           items.append({
                               "source": "hackernews",
                               "title": title,
                               "content": content,
                               "url": url,
+                              "collector": "NewsAgent",
                           })
-                  except Exception:
-                      pass
-          except Exception:
-              pass
+                  except Exception as e:
+                      log_event("warning", "NewsAgent", e)
+          except Exception as e:
+              log_event("error", "NewsAgent", e)
 
           try:
               q = urllib.parse.quote("AI agents language:Python")
@@ -300,12 +321,13 @@ jobs:
                       "title": repo.get("full_name") or repo.get("name") or "GitHub repository",
                       "content": repo.get("description") or "No description.",
                       "url": repo.get("html_url") or "https://github.com",
+                      "collector": "GitHubAgent",
                   })
-          except Exception:
-              pass
+          except Exception as e:
+              log_event("error", "GitHubAgent", e)
 
           try:
-              q = urllib.parse.quote('all:"AI agents" OR all:"large language model"')
+              q = urllib.parse.quote('all:"AI agents" OR all:"large language model" OR all:"autonomous systems"')
               xml = fetch_text(
                   f"https://export.arxiv.org/api/query?search_query={q}&start=0&max_results=8&sortBy=submittedDate&sortOrder=descending"
               )
@@ -323,17 +345,19 @@ jobs:
                       "title": title,
                       "content": summary,
                       "url": link,
+                      "collector": "AcademicAgent",
                   })
-          except Exception:
-              pass
+          except Exception as e:
+              log_event("error", "AcademicAgent", e)
 
           if not items:
               items = [
                   {
                       "source": "fallback",
-                      "title": "AibriefAI pipeline is live",
+                      "title": "AibriefAI command pipeline is live",
                       "content": "The scheduled GitHub Actions pipeline generated a fallback briefing because upstream sources were unavailable.",
                       "url": "https://github.com",
+                      "collector": "RaindropTriageAgent",
                   }
               ]
 
@@ -349,7 +373,7 @@ jobs:
               seen.add(key)
 
               score = score_text(raw["title"], raw["content"], raw["source"])
-              en, ar = llm_brief(raw["title"], raw["content"])
+              en, ar, provider = llm_brief(raw["title"], raw["content"])
 
               signals.append({
                   "id": f"{raw['source']}-{len(signals)+1:03d}",
@@ -360,6 +384,8 @@ jobs:
                   "score": score,
                   "status": "verified" if score >= 40 else "held",
                   "topic": topic_for(raw["title"], raw["content"]),
+                  "collector": raw.get("collector", "CollectorAgent"),
+                  "provider": provider,
                   "brief_en": en,
                   "brief_ar": ar,
                   "createdAt": NOW,
@@ -380,6 +406,16 @@ jobs:
               run_mode = "rule-based"
               run_model = None
 
+          agents = [
+              {"name": "NewsAgent", "status": "online", "role": "HN/news signal collection"},
+              {"name": "AcademicAgent", "status": "online", "role": "arXiv research monitoring"},
+              {"name": "GitHubAgent", "status": "online", "role": "open-source ecosystem tracking"},
+              {"name": "VerificationAgent", "status": "active", "role": "confidence and source checks"},
+              {"name": "VotingCommanderAgent", "status": "active", "role": "ranking and prioritization"},
+              {"name": "RaindropTriageAgent", "status": "active", "role": "fallbacks and failure triage"},
+              {"name": "SentinelCommanderAgent", "status": "command", "role": "provider routing and governance"},
+          ]
+
           feed = {
               "project": "AibriefAI — إحاطة AI",
               "generated_at": NOW,
@@ -387,6 +423,8 @@ jobs:
               "mode": run_mode,
               "model": run_model,
               "provider_counts": PROVIDER_COUNTS,
+              "agents": agents,
+              "events": PIPELINE_EVENTS[-20:],
               "signals": signals,
           }
 
@@ -396,10 +434,11 @@ jobs:
               "signals": len(signals),
               "approved": approved,
               "held": held,
-              "errors": 0,
+              "errors": len([e for e in PIPELINE_EVENTS if e["level"] == "error"]),
               "mode": run_mode,
               "model": run_model,
               "provider_counts": PROVIDER_COUNTS,
+              "events": PIPELINE_EVENTS[-20:],
           }
 
           health = {
@@ -410,6 +449,8 @@ jobs:
               "mode": run_mode,
               "model": run_model,
               "provider_counts": PROVIDER_COUNTS,
+              "agents": agents,
+              "events": PIPELINE_EVENTS[-10:],
           }
 
           Path("web/data/signals.json").write_text(
@@ -437,12 +478,13 @@ jobs:
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>AibriefAI — إحاطة AI</title>
+            <title>AibriefAI Command Center — إحاطة AI</title>
             <style>
               :root {{
                 color-scheme: dark;
                 --bg: #050505;
                 --panel: #0d0d0d;
+                --panel2: #111827;
                 --border: #262626;
                 --text: #f5f5f5;
                 --muted: #a3a3a3;
@@ -457,35 +499,35 @@ jobs:
                 margin: 0;
                 font-family: Inter, Arial, sans-serif;
                 background:
-                  radial-gradient(circle at top left, rgba(79, 70, 229, 0.16), transparent 34rem),
+                  radial-gradient(circle at top left, rgba(79, 70, 229, 0.18), transparent 34rem),
                   radial-gradient(circle at top right, rgba(16, 185, 129, 0.10), transparent 30rem),
                   var(--bg);
                 color: var(--text);
               }}
 
               main {{
-                max-width: 1180px;
+                max-width: 1240px;
                 margin: 0 auto;
-                padding: 56px 20px 80px;
+                padding: 42px 20px 80px;
               }}
 
               .hero {{
                 border: 1px solid var(--border);
                 border-radius: 30px;
-                padding: 44px;
-                background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+                padding: 34px;
+                background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
                 box-shadow: 0 30px 90px rgba(0,0,0,0.45);
               }}
 
               .meta {{
                 color: var(--muted);
-                font-size: 13px;
+                font-size: 12px;
                 text-transform: uppercase;
                 letter-spacing: .08em;
               }}
 
               h1 {{
-                font-size: clamp(42px, 8vw, 92px);
+                font-size: clamp(42px, 8vw, 86px);
                 line-height: .9;
                 margin: 18px 0;
                 letter-spacing: -0.07em;
@@ -494,8 +536,28 @@ jobs:
               .sub {{
                 color: #d4d4d4;
                 font-size: 18px;
-                max-width: 760px;
+                max-width: 880px;
                 line-height: 1.6;
+              }}
+
+              .command-grid {{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 12px;
+                margin-top: 22px;
+              }}
+
+              .command-card {{
+                border: 1px solid var(--border);
+                border-radius: 18px;
+                padding: 15px;
+                background: rgba(255,255,255,0.045);
+              }}
+
+              .command-card strong {{
+                display: block;
+                margin-top: 6px;
+                font-size: 17px;
               }}
 
               .toolbar {{
@@ -553,19 +615,29 @@ jobs:
                 flex-wrap: wrap;
               }}
 
-              .grid {{
+              .layout {{
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+                grid-template-columns: minmax(0, 1fr) 330px;
                 gap: 18px;
                 margin-top: 22px;
               }}
 
-              .card {{
+              .grid {{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+                gap: 18px;
+              }}
+
+              .card,
+              .side-panel {{
                 border: 1px solid var(--border);
                 border-radius: 24px;
-                padding: 22px;
                 background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
-                min-height: 310px;
+              }}
+
+              .card {{
+                padding: 22px;
+                min-height: 320px;
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
@@ -622,6 +694,50 @@ jobs:
                 text-align: center;
               }}
 
+              .side-panel {{
+                padding: 18px;
+                height: fit-content;
+                position: sticky;
+                top: 20px;
+              }}
+
+              .agent {{
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                border-bottom: 1px solid var(--border);
+                padding: 12px 0;
+              }}
+
+              .agent:last-child {{
+                border-bottom: 0;
+              }}
+
+              .agent small {{
+                color: var(--muted);
+                display: block;
+                margin-top: 4px;
+              }}
+
+              .status-dot {{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #10b981;
+                margin-top: 4px;
+                flex: 0 0 auto;
+              }}
+
+              @media (max-width: 900px) {{
+                .layout {{
+                  grid-template-columns: 1fr;
+                }}
+
+                .side-panel {{
+                  position: static;
+                }}
+              }}
+
               @media (max-width: 760px) {{
                 .hero {{
                   padding: 28px;
@@ -643,7 +759,36 @@ jobs:
               <section class="hero">
                 <div class="meta">Generated {escape(NOW)} · Mode: {escape(run_mode)} · Model: {escape(str(run_model))}</div>
                 <h1>AibriefAI<br><span dir="rtl" lang="ar">إحاطة AI</span></h1>
-                <p class="sub">Arabic/English AI briefing dashboard generated by GitHub Actions using free data sources and Gemini/Groq fallback.</p>
+                <p class="sub">
+                  Autonomous AI Intelligence Command Platform tracking AI agents, models, GitHub, arXiv, OSINT-style signals, strategic AI developments, and provider health.
+                </p>
+
+                <div class="command-grid">
+                  <div class="command-card">
+                    <div class="meta">COMMAND MODE</div>
+                    <strong>Sentinel Commander</strong>
+                  </div>
+                  <div class="command-card">
+                    <div class="meta">TRIAGE</div>
+                    <strong>Raindrop Active</strong>
+                  </div>
+                  <div class="command-card">
+                    <div class="meta">PROVIDER</div>
+                    <strong>{escape(run_mode)}</strong>
+                  </div>
+                  <div class="command-card">
+                    <div class="meta">SIGNALS</div>
+                    <strong>{len(signals)} tracked</strong>
+                  </div>
+                  <div class="command-card">
+                    <div class="meta">VERIFIED</div>
+                    <strong>{approved} approved</strong>
+                  </div>
+                  <div class="command-card">
+                    <div class="meta">FALLBACKS</div>
+                    <strong>{PROVIDER_COUNTS["rule-based"]} rule-based</strong>
+                  </div>
+                </div>
 
                 <div class="toolbar">
                   <input id="search" type="search" placeholder="Search signals, topics, briefs..." autocomplete="off">
@@ -671,11 +816,20 @@ jobs:
                 <div id="countdown">Next update in 5:00</div>
               </div>
 
-              <section class="grid" id="grid"></section>
+              <div class="layout">
+                <section class="grid" id="grid"></section>
+
+                <aside class="side-panel">
+                  <div class="meta">AGENT HEALTH</div>
+                  <h2>Operations Center</h2>
+                  <div id="agents"></div>
+                </aside>
+              </div>
             </main>
 
             <script>
               const SIGNALS = {json.dumps(signals, ensure_ascii=False)};
+              const AGENTS = {json.dumps(agents, ensure_ascii=False)};
 
               const state = {{
                 search: '',
@@ -726,7 +880,7 @@ jobs:
 
                 return '' +
                   '<article class="card" dir="' + dir + '" lang="' + lang + '">' +
-                    '<div class="meta">' + escapeHTML(sourceLabel(s.source)) + ' · ' + escapeHTML(s.topic) + '</div>' +
+                    '<div class="meta">' + escapeHTML(sourceLabel(s.source)) + ' · ' + escapeHTML(s.topic) + ' · ' + escapeHTML(s.provider) + '</div>' +
                     '<h2>' + escapeHTML(s.title) + '</h2>' +
                     '<p>' + escapeHTML(text) + '</p>' +
                     '<div class="card-footer">' +
@@ -758,6 +912,19 @@ jobs:
                 }});
               }}
 
+              function renderAgents() {{
+                document.getElementById('agents').innerHTML = AGENTS.map(function(agent) {{
+                  return '' +
+                    '<div class="agent">' +
+                      '<div>' +
+                        '<strong>' + escapeHTML(agent.name) + '</strong>' +
+                        '<small>' + escapeHTML(agent.role) + '</small>' +
+                      '</div>' +
+                      '<span class="status-dot" title="' + escapeHTML(agent.status) + '"></span>' +
+                    '</div>';
+                }}).join('');
+              }}
+
               function render() {{
                 let filtered = SIGNALS.slice();
 
@@ -773,7 +940,9 @@ jobs:
                       ' ' +
                       String(s.topic || '') +
                       ' ' +
-                      String(s.source || '')
+                      String(s.source || '') +
+                      ' ' +
+                      String(s.provider || '')
                     ).toLowerCase().includes(q);
                   }});
                 }}
@@ -924,6 +1093,7 @@ jobs:
                 copyToClipboard(btn.getAttribute('data-url'), btn);
               }});
 
+              renderAgents();
               renderTopics();
               render();
               startCountdown();
@@ -955,5 +1125,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update AibriefAI feed [skip ci]"
+          git commit -m "Upgrade AibriefAI command center [skip ci]"
           git push
