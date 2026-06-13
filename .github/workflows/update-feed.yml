@@ -16,6 +16,8 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GEMINI_MODEL: gemini-2.5-flash
+  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+  GROQ_MODEL: llama-3.3-70b-versatile
 
 jobs:
   update-feed:
@@ -47,8 +49,18 @@ jobs:
 
           NOW = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
           TOPIC = "AI agents"
+
           GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
           GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip()
+          GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
+          GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+
+          GEMINI_QUOTA_EXHAUSTED = False
+          PROVIDER_COUNTS = {
+              "gemini": 0,
+              "groq": 0,
+              "rule-based": 0
+          }
 
           def fetch_json(url, timeout=12):
               req = urllib.request.Request(
@@ -129,10 +141,10 @@ jobs:
               return c[:220] + ("..." if len(c) > 220 else "")
 
           def gemini_brief(title, content):
-              rule_summary = summarize_rule(title, content)
+              global GEMINI_QUOTA_EXHAUSTED
+              global PROVIDER_COUNTS
 
-              if not GEMINI_API_KEY:
-                  return rule_summary, "Gemini skipped: GEMINI_API_KEY is missing."
+              rule_summary = summarize_rule(title, content)
 
               prompt = (
                   "Create a concise bilingual AI intelligence brief.\n"
@@ -141,50 +153,118 @@ jobs:
                   f"Content: {content[:1500]}\n"
               )
 
-              payload = json.dumps({
-                  "contents": [{"parts": [{"text": prompt}]}],
-                  "generationConfig": {
-                      "temperature": 0.2,
-                      "maxOutputTokens": 512
-                  }
-              }).encode("utf-8")
-
-              url = (
-                  "https://generativelanguage.googleapis.com/v1beta/models/"
-                  + urllib.parse.quote(GEMINI_MODEL)
-                  + ":generateContent?key="
-                  + urllib.parse.quote(GEMINI_API_KEY)
-              )
-
-              try:
-                  req = urllib.request.Request(
-                      url,
-                      data=payload,
-                      method="POST",
-                      headers={"Content-Type": "application/json"},
-                  )
-
-                  with urllib.request.urlopen(req, timeout=25) as r:
-                      data = json.loads(r.read().decode("utf-8", "replace"))
-
-                  text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+              def parse_json_text(text):
+                  text = text.strip()
                   text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
                   parsed = json.loads(text)
 
                   return (
                       parsed.get("en") or rule_summary,
-                      parsed.get("ar") or "Gemini returned JSON without ar field."
+                      parsed.get("ar") or "No Arabic brief returned."
                   )
 
-              except urllib.error.HTTPError as e:
-                  body = e.read().decode("utf-8", "replace")
-                  return rule_summary, f"Gemini HTTP {e.code}: {body[:200]}"
+              if GEMINI_API_KEY and not GEMINI_QUOTA_EXHAUSTED:
+                  payload = json.dumps({
+                      "contents": [{"parts": [{"text": prompt}]}],
+                      "generationConfig": {
+                          "temperature": 0.2,
+                          "maxOutputTokens": 512
+                      }
+                  }).encode("utf-8")
 
-              except urllib.error.URLError as e:
-                  return rule_summary, f"Gemini URLError: {e.reason}"
+                  url = (
+                      "https://generativelanguage.googleapis.com/v1beta/models/"
+                      + urllib.parse.quote(GEMINI_MODEL)
+                      + ":generateContent?key="
+                      + urllib.parse.quote(GEMINI_API_KEY)
+                  )
 
-              except Exception as e:
-                  return rule_summary, f"Gemini {type(e).__name__}: {e}"
+                  try:
+                      req = urllib.request.Request(
+                          url,
+                          data=payload,
+                          method="POST",
+                          headers={"Content-Type": "application/json"},
+                      )
+
+                      with urllib.request.urlopen(req, timeout=25) as r:
+                          data = json.loads(r.read().decode("utf-8", "replace"))
+
+                      text = data["candidates"][0]["content"]["parts"][0]["text"]
+                      PROVIDER_COUNTS["gemini"] += 1
+                      return parse_json_text(text)
+
+                  except urllib.error.HTTPError as e:
+                      body = e.read().decode("utf-8", "replace")
+
+                      if e.code == 429:
+                          GEMINI_QUOTA_EXHAUSTED = True
+                      else:
+                          PROVIDER_COUNTS["rule-based"] += 1
+                          return rule_summary, f"Gemini HTTP {e.code}: {body[:200]}"
+
+                  except urllib.error.URLError as e:
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return rule_summary, f"Gemini URLError: {e.reason}"
+
+                  except Exception as e:
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return rule_summary, f"Gemini {type(e).__name__}: {e}"
+
+              if GROQ_API_KEY:
+                  payload = json.dumps({
+                      "model": GROQ_MODEL,
+                      "messages": [
+                          {
+                              "role": "system",
+                              "content": "Return JSON only with keys en and ar."
+                          },
+                          {
+                              "role": "user",
+                              "content": prompt
+                          }
+                      ],
+                      "temperature": 0.2,
+                      "max_tokens": 512
+                  }).encode("utf-8")
+
+                  try:
+                      req = urllib.request.Request(
+                          "https://api.groq.com/openai/v1/chat/completions",
+                          data=payload,
+                          method="POST",
+                          headers={
+                              "Content-Type": "application/json",
+                              "Authorization": "Bearer " + GROQ_API_KEY
+                          },
+                      )
+
+                      with urllib.request.urlopen(req, timeout=25) as r:
+                          data = json.loads(r.read().decode("utf-8", "replace"))
+
+                      text = data["choices"][0]["message"]["content"]
+                      PROVIDER_COUNTS["groq"] += 1
+                      return parse_json_text(text)
+
+                  except urllib.error.HTTPError as e:
+                      body = e.read().decode("utf-8", "replace")
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return rule_summary, f"Groq HTTP {e.code}: {body[:200]}"
+
+                  except urllib.error.URLError as e:
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return rule_summary, f"Groq URLError: {e.reason}"
+
+                  except Exception as e:
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return rule_summary, f"Groq {type(e).__name__}: {e}"
+
+              if GEMINI_QUOTA_EXHAUSTED:
+                  PROVIDER_COUNTS["rule-based"] += 1
+                  return rule_summary, "Gemini quota exceeded. Groq fallback key is missing. Rule-based brief used."
+
+              PROVIDER_COUNTS["rule-based"] += 1
+              return rule_summary, "No LLM key configured. Rule-based brief used."
 
           items = []
 
@@ -292,12 +372,23 @@ jobs:
           approved = sum(1 for s in signals if s["status"] == "verified")
           held = len(signals) - approved
 
+          if PROVIDER_COUNTS["groq"] > 0:
+              run_mode = "groq"
+              run_model = GROQ_MODEL
+          elif PROVIDER_COUNTS["gemini"] > 0:
+              run_mode = "gemini"
+              run_model = GEMINI_MODEL
+          else:
+              run_mode = "rule-based"
+              run_model = None
+
           feed = {
               "project": "AibriefAI — إحاطة AI",
               "generated_at": NOW,
               "topic": TOPIC,
-              "mode": "gemini" if GEMINI_API_KEY else "rule-based",
-              "model": GEMINI_MODEL if GEMINI_API_KEY else None,
+              "mode": run_mode,
+              "model": run_model,
+              "provider_counts": PROVIDER_COUNTS,
               "signals": signals,
           }
 
@@ -308,8 +399,9 @@ jobs:
               "approved": approved,
               "held": held,
               "errors": 0,
-              "mode": feed["mode"],
-              "model": feed["model"],
+              "mode": run_mode,
+              "model": run_model,
+              "provider_counts": PROVIDER_COUNTS,
           }
 
           health = {
@@ -317,8 +409,9 @@ jobs:
               "generated_at": NOW,
               "signals": len(signals),
               "approved": approved,
-              "mode": feed["mode"],
-              "model": feed["model"],
+              "mode": run_mode,
+              "model": run_model,
+              "provider_counts": PROVIDER_COUNTS,
           }
 
           Path("web/data/signals.json").write_text(
@@ -557,7 +650,7 @@ jobs:
               <section class="hero">
                 <div class="meta">Generated {escape(NOW)} · Mode: {escape(feed["mode"])} · Model: {escape(str(feed["model"]))}</div>
                 <h1>AibriefAI<br><span dir="rtl" lang="ar">إحاطة AI</span></h1>
-                <p class="sub">Arabic/English AI briefing dashboard generated by GitHub Actions using free data sources and Gemini when configured.</p>
+                <p class="sub">Arabic/English AI briefing dashboard generated by GitHub Actions using free data sources and Gemini/Groq when configured.</p>
 
                 <div class="toolbar">
                   <input id="search" type="search" placeholder="Search signals, topics, briefs..." autocomplete="off">
