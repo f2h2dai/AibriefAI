@@ -88,6 +88,7 @@ jobs:
                   "github": 7,
                   "research": 7,
               }
+
               score = {
                   "hackernews": 25,
                   "github": 22,
@@ -104,20 +105,27 @@ jobs:
 
           def topic_for(title, content):
               text = f"{title} {content}".lower()
+
               if "agent" in text:
                   return "AI Agents"
+
               if "rag" in text or "retrieval" in text:
                   return "RAG"
+
               if "model" in text or "llm" in text:
                   return "LLMs"
+
               if "github" in text or "open source" in text:
                   return "Open Source"
+
               return "AI"
 
           def summarize_rule(title, content):
               c = re.sub(r"\s+", " ", content or "").strip()
+
               if not c:
                   return f"{title} is relevant to AI operators tracking technical signals."
+
               return c[:220] + ("..." if len(c) > 220 else "")
 
           def gemini_brief(title, content):
@@ -182,6 +190,7 @@ jobs:
 
           try:
               ids = fetch_json("https://hacker-news.firebaseio.com/v0/topstories.json")[:25]
+
               for sid in ids[:10]:
                   try:
                       item = fetch_json(f"https://hacker-news.firebaseio.com/v0/item/{sid}.json")
@@ -332,19 +341,6 @@ jobs:
               encoding="utf-8"
           )
 
-          cards = []
-
-          for s in signals[:8]:
-              cards.append(f"""
-              <article class="card">
-                <div class="meta">{escape(s['source'])} · score {s['score']} · {escape(s['topic'])}</div>
-                <h2>{escape(s['title'])}</h2>
-                <p>{escape(s['brief_en'])}</p>
-                <p dir="rtl" lang="ar">{escape(s['brief_ar'])}</p>
-                <a href="{escape(s['url'])}" target="_blank" rel="noopener">Open source</a>
-              </article>
-              """)
-
           html = f"""<!doctype html>
           <html lang="en">
           <head>
@@ -352,62 +348,207 @@ jobs:
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>AibriefAI — إحاطة AI</title>
             <style>
+              :root {{
+                color-scheme: dark;
+                --bg: #050505;
+                --panel: #0d0d0d;
+                --panel-2: #111;
+                --border: #262626;
+                --text: #f5f5f5;
+                --muted: #a3a3a3;
+                --muted-2: #737373;
+                --indigo: #4f46e5;
+                --green: #10b981;
+                --yellow: #f59e0b;
+                --red: #ef4444;
+              }}
+
+              * {{
+                box-sizing: border-box;
+              }}
+
               body {{
                 margin: 0;
                 font-family: Inter, Arial, sans-serif;
-                background: #050505;
-                color: #f5f5f5;
+                background:
+                  radial-gradient(circle at top left, rgba(79, 70, 229, 0.16), transparent 34rem),
+                  radial-gradient(circle at top right, rgba(16, 185, 129, 0.10), transparent 30rem),
+                  var(--bg);
+                color: var(--text);
               }}
+
               main {{
-                max-width: 1120px;
+                max-width: 1180px;
                 margin: 0 auto;
-                padding: 56px 20px;
+                padding: 56px 20px 80px;
               }}
+
               .hero {{
-                border: 1px solid #222;
-                border-radius: 28px;
+                border: 1px solid var(--border);
+                border-radius: 30px;
                 padding: 44px;
-                background: radial-gradient(circle at top, #1b1b1b, #070707 65%);
+                background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+                box-shadow: 0 30px 90px rgba(0,0,0,0.45);
               }}
-              h1 {{
-                font-size: clamp(42px, 8vw, 92px);
-                line-height: .9;
-                margin: 0 0 18px;
-                letter-spacing: -0.07em;
-              }}
-              .sub {{
-                color: #bdbdbd;
-                font-size: 18px;
-                max-width: 760px;
-              }}
-              .grid {{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 18px;
-                margin-top: 28px;
-              }}
-              .card {{
-                border: 1px solid #242424;
-                border-radius: 22px;
-                padding: 22px;
-                background: #0d0d0d;
-              }}
+
               .meta {{
-                color: #8f8f8f;
+                color: var(--muted);
                 font-size: 13px;
                 text-transform: uppercase;
                 letter-spacing: .08em;
               }}
-              h2 {{
-                font-size: 20px;
-                line-height: 1.2;
+
+              h1 {{
+                font-size: clamp(42px, 8vw, 92px);
+                line-height: .9;
+                margin: 18px 0;
+                letter-spacing: -0.07em;
               }}
-              p {{
-                color: #d0d0d0;
+
+              .sub {{
+                color: #d4d4d4;
+                font-size: 18px;
+                max-width: 760px;
                 line-height: 1.6;
               }}
+
+              .toolbar {{
+                display: grid;
+                grid-template-columns: 1fr auto auto;
+                gap: 14px;
+                margin-top: 26px;
+              }}
+
+              input,
+              select,
+              button {{
+                border: 1px solid var(--border);
+                background: rgba(255,255,255,0.045);
+                color: var(--text);
+                border-radius: 14px;
+                padding: 12px 14px;
+                font-size: 14px;
+              }}
+
+              input {{
+                width: 100%;
+              }}
+
+              button {{
+                cursor: pointer;
+              }}
+
+              button:hover {{
+                background: rgba(255,255,255,0.09);
+              }}
+
+              .source-tabs,
+              .topic-pills {{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 16px;
+              }}
+
+              .tab.active,
+              .pill.active {{
+                background: var(--indigo);
+                border-color: var(--indigo);
+                color: #fff;
+              }}
+
+              .status-row {{
+                display: flex;
+                justify-content: space-between;
+                gap: 14px;
+                align-items: center;
+                color: var(--muted);
+                margin: 22px 2px 0;
+                flex-wrap: wrap;
+              }}
+
+              .grid {{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+                gap: 18px;
+                margin-top: 22px;
+              }}
+
+              .card {{
+                border: 1px solid var(--border);
+                border-radius: 24px;
+                padding: 22px;
+                background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
+                min-height: 310px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+              }}
+
+              .card h2 {{
+                font-size: 20px;
+                line-height: 1.2;
+                margin: 0;
+                letter-spacing: -0.03em;
+              }}
+
+              .card p {{
+                color: #d0d0d0;
+                line-height: 1.65;
+                margin: 0;
+              }}
+
+              .card-footer {{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                margin-top: auto;
+              }}
+
+              .badge {{
+                display: inline-flex;
+                align-items: center;
+                border-radius: 999px;
+                padding: 6px 10px;
+                font-size: 12px;
+                font-weight: 700;
+                color: #050505;
+              }}
+
+              .copy {{
+                padding: 8px 10px;
+                border-radius: 999px;
+                font-size: 12px;
+              }}
+
               a {{
                 color: #fff;
+                text-decoration-color: rgba(255,255,255,0.35);
+              }}
+
+              .empty {{
+                border: 1px dashed var(--border);
+                border-radius: 22px;
+                padding: 32px;
+                color: var(--muted);
+                grid-column: 1 / -1;
+                text-align: center;
+              }}
+
+              @media (max-width: 760px) {{
+                .hero {{
+                  padding: 28px;
+                }}
+
+                .toolbar {{
+                  grid-template-columns: 1fr;
+                }}
+
+                .status-row {{
+                  align-items: flex-start;
+                  flex-direction: column;
+                }}
               }}
             </style>
           </head>
@@ -417,11 +558,290 @@ jobs:
                 <div class="meta">Generated {escape(NOW)} · Mode: {escape(feed["mode"])} · Model: {escape(str(feed["model"]))}</div>
                 <h1>AibriefAI<br><span dir="rtl" lang="ar">إحاطة AI</span></h1>
                 <p class="sub">Arabic/English AI briefing dashboard generated by GitHub Actions using free data sources and Gemini when configured.</p>
+
+                <div class="toolbar">
+                  <input id="search" type="search" placeholder="Search signals, topics, briefs..." autocomplete="off">
+                  <select id="sort">
+                    <option value="score">Score ↓</option>
+                    <option value="latest">Latest</option>
+                    <option value="source">Source</option>
+                  </select>
+                  <button id="lang" type="button">EN</button>
+                </div>
+
+                <div class="source-tabs" id="sourceTabs">
+                  <button class="tab active" type="button" data-source="all">All</button>
+                  <button class="tab" type="button" data-source="hackernews">HN</button>
+                  <button class="tab" type="button" data-source="github">GitHub</button>
+                  <button class="tab" type="button" data-source="arxiv">arXiv</button>
+                  <button class="tab" type="button" data-source="reddit">Reddit</button>
+                </div>
+
+                <div class="topic-pills" id="topicPills"></div>
               </section>
-              <section class="grid">
-                {''.join(cards)}
-              </section>
+
+              <div class="status-row">
+                <div id="count">0 results found</div>
+                <div id="countdown">Next update in 5:00</div>
+              </div>
+
+              <section class="grid" id="grid"></section>
             </main>
+
+            <script>
+              const SIGNALS = {json.dumps(signals, ensure_ascii=False)};
+
+              const state = {{
+                search: '',
+                source: 'all',
+                topics: [],
+                sort: 'score',
+                lang: 'en'
+              }};
+
+              function escapeHTML(value) {{
+                return String(value || '')
+                  .replace(/&/g, '&amp;')
+                  .replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;')
+                  .replace(/"/g, '&quot;')
+                  .replace(/'/g, '&#039;');
+              }}
+
+              function badgeColor(score) {{
+                if (score >= 70) {{
+                  return '#10b981';
+                }}
+
+                if (score >= 40) {{
+                  return '#f59e0b';
+                }}
+
+                return '#ef4444';
+              }}
+
+              function sourceLabel(source) {{
+                const labels = {{
+                  hackernews: 'HN',
+                  github: 'GitHub',
+                  arxiv: 'arXiv',
+                  reddit: 'Reddit',
+                  fallback: 'Fallback'
+                }};
+
+                return labels[source] || source;
+              }}
+
+              function cardHTML(s) {{
+                const text = state.lang === 'ar' ? (s.brief_ar || s.brief_en || s.content || '') : (s.brief_en || s.content || '');
+                const dir = state.lang === 'ar' ? 'rtl' : 'ltr';
+                const lang = state.lang === 'ar' ? 'ar' : 'en';
+                const color = badgeColor(Number(s.score || 0));
+
+                return '' +
+                  '<article class="card" dir="' + dir + '" lang="' + lang + '">' +
+                    '<div class="meta">' + escapeHTML(sourceLabel(s.source)) + ' · ' + escapeHTML(s.topic) + '</div>' +
+                    '<h2>' + escapeHTML(s.title) + '</h2>' +
+                    '<p>' + escapeHTML(text) + '</p>' +
+                    '<div class="card-footer">' +
+                      '<span class="badge" style="background:' + color + '">Score ' + escapeHTML(s.score) + '</span>' +
+                      '<button class="copy" type="button" data-url="' + escapeHTML(s.url) + '">Copy URL</button>' +
+                    '</div>' +
+                    '<a href="' + escapeHTML(s.url) + '" target="_blank" rel="noopener">Open source</a>' +
+                  '</article>';
+              }}
+
+              function renderTopics() {{
+                const topics = Array.from(new Set(SIGNALS.map(function(s) {{
+                  return s.topic || 'AI';
+                }}))).sort();
+
+                document.getElementById('topicPills').innerHTML = topics.map(function(topic) {{
+                  const active = state.topics.includes(topic) ? ' active' : '';
+                  return '<button class="pill' + active + '" type="button" data-topic="' + escapeHTML(topic) + '">' + escapeHTML(topic) + '</button>';
+                }}).join('');
+              }}
+
+              function renderTabs() {{
+                document.querySelectorAll('.tab').forEach(function(btn) {{
+                  if (btn.getAttribute('data-source') === state.source) {{
+                    btn.classList.add('active');
+                  }} else {{
+                    btn.classList.remove('active');
+                  }}
+                }});
+              }}
+
+              function render() {{
+                let filtered = SIGNALS.slice();
+
+                if (state.search) {{
+                  const q = state.search.toLowerCase();
+                  filtered = filtered.filter(function(s) {{
+                    return (
+                      String(s.title || '') +
+                      ' ' +
+                      String(s.brief_en || '') +
+                      ' ' +
+                      String(s.brief_ar || '') +
+                      ' ' +
+                      String(s.topic || '') +
+                      ' ' +
+                      String(s.source || '')
+                    ).toLowerCase().includes(q);
+                  }});
+                }}
+
+                if (state.source !== 'all') {{
+                  filtered = filtered.filter(function(s) {{
+                    return s.source === state.source;
+                  }});
+                }}
+
+                if (state.topics.length) {{
+                  filtered = filtered.filter(function(s) {{
+                    return state.topics.includes(s.topic);
+                  }});
+                }}
+
+                if (state.sort === 'score') {{
+                  filtered.sort(function(a, b) {{
+                    return Number(b.score || 0) - Number(a.score || 0);
+                  }});
+                }}
+
+                if (state.sort === 'latest') {{
+                  filtered.sort(function(a, b) {{
+                    return String(b.updatedAt || b.createdAt || '').localeCompare(String(a.updatedAt || a.createdAt || ''));
+                  }});
+                }}
+
+                if (state.sort === 'source') {{
+                  filtered.sort(function(a, b) {{
+                    return String(a.source || '').localeCompare(String(b.source || ''));
+                  }});
+                }}
+
+                document.getElementById('grid').innerHTML =
+                  filtered.length ?
+                  filtered.map(cardHTML).join('') :
+                  '<p class="empty">No signals match</p>';
+
+                document.getElementById('count').textContent = filtered.length + ' results found';
+
+                renderTabs();
+                renderTopics();
+              }}
+
+              function copyToClipboard(text, button) {{
+                if (navigator.clipboard && navigator.clipboard.writeText) {{
+                  navigator.clipboard.writeText(text).then(function() {{
+                    button.textContent = 'Copied!';
+                    setTimeout(function() {{
+                      button.textContent = 'Copy URL';
+                    }}, 2000);
+                  }}).catch(function() {{
+                    fallbackCopy(text, button);
+                  }});
+                }} else {{
+                  fallbackCopy(text, button);
+                }}
+              }}
+
+              function fallbackCopy(text, button) {{
+                const input = document.createElement('input');
+                input.value = text;
+                document.body.appendChild(input);
+                input.select();
+                document.execCommand('copy');
+                document.body.removeChild(input);
+
+                button.textContent = 'Copied!';
+
+                setTimeout(function() {{
+                  button.textContent = 'Copy URL';
+                }}, 2000);
+              }}
+
+              function startCountdown() {{
+                let remaining = 5 * 60;
+
+                setInterval(function() {{
+                  const minutes = Math.floor(remaining / 60);
+                  const seconds = remaining % 60;
+
+                  document.getElementById('countdown').textContent =
+                    'Next update in ' + minutes + ':' + String(seconds).padStart(2, '0');
+
+                  remaining -= 1;
+
+                  if (remaining < 0) {{
+                    remaining = 5 * 60;
+                  }}
+                }}, 1000);
+              }}
+
+              document.getElementById('search').addEventListener('keyup', function() {{
+                state.search = this.value;
+                render();
+              }});
+
+              document.getElementById('sort').addEventListener('change', function() {{
+                state.sort = this.value;
+                render();
+              }});
+
+              document.getElementById('lang').addEventListener('click', function() {{
+                state.lang = state.lang === 'en' ? 'ar' : 'en';
+                this.textContent = state.lang.toUpperCase();
+                render();
+              }});
+
+              document.getElementById('sourceTabs').addEventListener('click', function(event) {{
+                const btn = event.target.closest('button[data-source]');
+
+                if (!btn) {{
+                  return;
+                }}
+
+                state.source = btn.getAttribute('data-source');
+                render();
+              }});
+
+              document.getElementById('topicPills').addEventListener('click', function(event) {{
+                const btn = event.target.closest('button[data-topic]');
+
+                if (!btn) {{
+                  return;
+                }}
+
+                const topic = btn.getAttribute('data-topic');
+
+                if (state.topics.includes(topic)) {{
+                  state.topics = state.topics.filter(function(t) {{
+                    return t !== topic;
+                  }});
+                }} else {{
+                  state.topics.push(topic);
+                }}
+
+                render();
+              }});
+
+              document.getElementById('grid').addEventListener('click', function(event) {{
+                const btn = event.target.closest('button.copy');
+
+                if (!btn) {{
+                  return;
+                }}
+
+                copyToClipboard(btn.getAttribute('data-url'), btn);
+              }});
+
+              renderTopics();
+              render();
+              startCountdown();
+            </script>
           </body>
           </html>"""
 
