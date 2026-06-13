@@ -412,5 +412,5 @@ jobs:
 
           git commit -m "Update AibriefAI feed [skip ci]"
           git fetch origin main
-          git rebase origin/main
+          git rebase -X theirs origin/main
           git push origin HEAD:main
