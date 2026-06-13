@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 permissions:
   contents: write
 
@@ -23,7 +24,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@6.0.3
 
       - name: Generate AibriefAI feed
         shell: bash
