@@ -95,6 +95,7 @@ jobs:
 
           def score_text(title, content, source):
               text = f"{title} {content}".lower()
+
               weights = {
                   "agent": 14,
                   "agents": 14,
@@ -148,6 +149,41 @@ jobs:
                   return "AI Governance"
 
               return "AI"
+
+          def score_reason(title, content, source, score):
+              text = f"{title} {content}".lower()
+              reasons = []
+
+              source_labels = {
+                  "github": "high-value open-source ecosystem signal",
+                  "arxiv": "academic/research signal",
+                  "hackernews": "live technology discussion signal",
+                  "reddit": "community narrative signal",
+                  "fallback": "system fallback signal"
+              }
+
+              reasons.append(source_labels.get(source, "monitored AI source"))
+
+              checks = [
+                  ("agent", "agentic AI relevance"),
+                  ("rag", "retrieval/RAG relevance"),
+                  ("llm", "large language model relevance"),
+                  ("model", "model capability relevance"),
+                  ("github", "implementation ecosystem relevance"),
+                  ("research", "research relevance"),
+                  ("military", "strategic/security relevance"),
+                  ("defense", "strategic/security relevance"),
+                  ("drone", "autonomous systems relevance"),
+                  ("osint", "OSINT relevance"),
+                  ("surveillance", "surveillance relevance"),
+                  ("infrastructure", "AI infrastructure relevance")
+              ]
+
+              for keyword, reason in checks:
+                  if keyword in text and reason not in reasons:
+                      reasons.append(reason)
+
+              return "; ".join(reasons[:4]) + f". Final score: {score}."
 
           def summarize_rule(title, content):
               c = re.sub(r"\s+", " ", content or "").strip()
@@ -340,6 +376,9 @@ jobs:
                   summary = " ".join((entry.findtext("a:summary", default="", namespaces=ns) or "").split())
                   link = entry.findtext("a:id", default="https://arxiv.org", namespaces=ns)
 
+                  if link.startswith("http://"):
+                      link = "https://" + link[len("http://"):]
+
                   items.append({
                       "source": "arxiv",
                       "title": title,
@@ -373,6 +412,7 @@ jobs:
               seen.add(key)
 
               score = score_text(raw["title"], raw["content"], raw["source"])
+              score_note = score_reason(raw["title"], raw["content"], raw["source"], score)
               en, ar, provider = llm_brief(raw["title"], raw["content"])
 
               signals.append({
@@ -382,6 +422,7 @@ jobs:
                   "content": raw["content"],
                   "url": raw["url"],
                   "score": score,
+                  "score_reason": score_note,
                   "status": "verified" if score >= 40 else "held",
                   "topic": topic_for(raw["title"], raw["content"]),
                   "collector": raw.get("collector", "CollectorAgent"),
@@ -567,6 +608,19 @@ jobs:
                 margin-top: 26px;
               }}
 
+              .field {{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+              }}
+
+              .field label {{
+                color: var(--muted);
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: .08em;
+              }}
+
               input,
               select,
               button {{
@@ -656,6 +710,14 @@ jobs:
                 margin: 0;
               }}
 
+              .score-reason {{
+                border-left: 3px solid var(--indigo);
+                padding-left: 10px;
+                color: #cfcfcf;
+                font-size: 13px;
+                line-height: 1.5;
+              }}
+
               .card-footer {{
                 display: flex;
                 justify-content: space-between;
@@ -739,12 +801,43 @@ jobs:
               }}
 
               @media (max-width: 760px) {{
+                main {{
+                  padding-top: 18px;
+                }}
+
                 .hero {{
-                  padding: 28px;
+                  padding: 20px;
+                  border-radius: 22px;
+                }}
+
+                h1 {{
+                  font-size: 42px;
+                  margin: 12px 0;
+                }}
+
+                .sub {{
+                  font-size: 15px;
+                  line-height: 1.45;
+                }}
+
+                .command-grid {{
+                  grid-template-columns: repeat(2, minmax(0, 1fr));
+                  gap: 8px;
+                  margin-top: 14px;
+                }}
+
+                .command-card {{
+                  padding: 10px;
+                  border-radius: 14px;
+                }}
+
+                .command-card strong {{
+                  font-size: 14px;
                 }}
 
                 .toolbar {{
                   grid-template-columns: 1fr;
+                  margin-top: 16px;
                 }}
 
                 .status-row {{
@@ -791,21 +884,32 @@ jobs:
                 </div>
 
                 <div class="toolbar">
-                  <input id="search" type="search" placeholder="Search signals, topics, briefs..." autocomplete="off">
-                  <select id="sort">
-                    <option value="score">Score ↓</option>
-                    <option value="latest">Latest</option>
-                    <option value="source">Source</option>
-                  </select>
-                  <button id="lang" type="button">EN</button>
+                  <div class="field">
+                    <label for="search">Search intelligence signals</label>
+                    <input id="search" type="search" placeholder="Agent, RAG, arXiv, GitHub..." autocomplete="off">
+                  </div>
+
+                  <div class="field">
+                    <label for="sort">Sort signals</label>
+                    <select id="sort">
+                      <option value="score">Score ↓</option>
+                      <option value="latest">Latest</option>
+                      <option value="source">Source</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label for="lang">Language</label>
+                    <button id="lang" type="button" aria-label="Switch briefing language to Arabic">العربية</button>
+                  </div>
                 </div>
 
-                <div class="source-tabs" id="sourceTabs">
-                  <button class="tab active" type="button" data-source="all">All</button>
-                  <button class="tab" type="button" data-source="hackernews">HN</button>
-                  <button class="tab" type="button" data-source="github">GitHub</button>
-                  <button class="tab" type="button" data-source="arxiv">arXiv</button>
-                  <button class="tab" type="button" data-source="reddit">Reddit</button>
+                <div class="source-tabs" id="sourceTabs" aria-label="Source filters">
+                  <button class="tab active" type="button" data-source="all" aria-pressed="true">All</button>
+                  <button class="tab" type="button" data-source="hackernews" aria-pressed="false">HN</button>
+                  <button class="tab" type="button" data-source="github" aria-pressed="false">GitHub</button>
+                  <button class="tab" type="button" data-source="arxiv" aria-pressed="false">arXiv</button>
+                  <button class="tab" type="button" data-source="reddit" aria-pressed="false">Reddit</button>
                 </div>
 
                 <div class="topic-pills" id="topicPills"></div>
@@ -883,6 +987,7 @@ jobs:
                     '<div class="meta">' + escapeHTML(sourceLabel(s.source)) + ' · ' + escapeHTML(s.topic) + ' · ' + escapeHTML(s.provider) + '</div>' +
                     '<h2>' + escapeHTML(s.title) + '</h2>' +
                     '<p>' + escapeHTML(text) + '</p>' +
+                    '<div class="score-reason"><strong>Why this matters:</strong> ' + escapeHTML(s.score_reason || 'Matched strategic AI signal criteria.') + '</div>' +
                     '<div class="card-footer">' +
                       '<span class="badge" style="background:' + color + '">Score ' + escapeHTML(s.score) + '</span>' +
                       '<button class="copy" type="button" data-url="' + escapeHTML(s.url) + '">Copy URL</button>' +
@@ -898,7 +1003,9 @@ jobs:
 
                 document.getElementById('topicPills').innerHTML = topics.map(function(topic) {{
                   const active = state.topics.includes(topic) ? ' active' : '';
-                  return '<button class="pill' + active + '" type="button" data-topic="' + escapeHTML(topic) + '">' + escapeHTML(topic) + '</button>';
+                  const pressed = state.topics.includes(topic) ? 'true' : 'false';
+
+                  return '<button class="pill' + active + '" type="button" aria-pressed="' + pressed + '" data-topic="' + escapeHTML(topic) + '">' + escapeHTML(topic) + '</button>';
                 }}).join('');
               }}
 
@@ -906,8 +1013,12 @@ jobs:
                 document.querySelectorAll('.tab').forEach(function(btn) {{
                   if (btn.getAttribute('data-source') === state.source) {{
                     btn.classList.add('active');
+                    btn.setAttribute('aria-pressed', 'true');
+                    btn.setAttribute('aria-current', 'true');
                   }} else {{
                     btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                    btn.removeAttribute('aria-current');
                   }}
                 }});
               }}
@@ -1036,7 +1147,7 @@ jobs:
                 }}, 1000);
               }}
 
-              document.getElementById('search').addEventListener('keyup', function() {{
+              document.getElementById('search').addEventListener('input', function() {{
                 state.search = this.value;
                 render();
               }});
@@ -1048,7 +1159,15 @@ jobs:
 
               document.getElementById('lang').addEventListener('click', function() {{
                 state.lang = state.lang === 'en' ? 'ar' : 'en';
-                this.textContent = state.lang.toUpperCase();
+
+                if (state.lang === 'ar') {{
+                  this.textContent = 'English';
+                  this.setAttribute('aria-label', 'Switch briefing language to English');
+                }} else {{
+                  this.textContent = 'العربية';
+                  this.setAttribute('aria-label', 'Switch briefing language to Arabic');
+                }}
+
                 render();
               }});
 
@@ -1125,5 +1244,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Upgrade AibriefAI command center [skip ci]"
+          git commit -m "Fix dashboard UX audit improvements [skip ci]"
           git push
