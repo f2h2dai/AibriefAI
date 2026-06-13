@@ -13,6 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GEMINI_MODEL: gemini-2.5-flash
 
@@ -36,7 +37,6 @@ jobs:
           import json
           import os
           import re
-          import time
           import urllib.error
           import urllib.parse
           import urllib.request
@@ -88,10 +88,18 @@ jobs:
                   "github": 7,
                   "research": 7,
               }
-              score = {"hackernews": 25, "github": 22, "arxiv": 30, "reddit": 18}.get(source, 15)
+              score = {
+                  "hackernews": 25,
+                  "github": 22,
+                  "arxiv": 30,
+                  "reddit": 18,
+                  "fallback": 20,
+              }.get(source, 15)
+
               for term, weight in weights.items():
                   if re.search(rf"\b{re.escape(term)}\b", text):
                       score += weight
+
               return max(0, min(100, score))
 
           def topic_for(title, content):
@@ -147,6 +155,7 @@ jobs:
                       method="POST",
                       headers={"Content-Type": "application/json"},
                   )
+
                   with urllib.request.urlopen(req, timeout=25) as r:
                       data = json.loads(r.read().decode("utf-8", "replace"))
 
@@ -179,6 +188,7 @@ jobs:
                       title = item.get("title") or ""
                       url = item.get("url") or f"https://news.ycombinator.com/item?id={sid}"
                       content = title
+
                       if re.search(r"ai|agent|llm|gemini|openai|rag|github|model", title, re.I):
                           items.append({
                               "source": "hackernews",
@@ -193,7 +203,10 @@ jobs:
 
           try:
               q = urllib.parse.quote("AI agents language:Python")
-              repos = fetch_json(f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=10")
+              repos = fetch_json(
+                  f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=10"
+              )
+
               for repo in repos.get("items", [])[:8]:
                   items.append({
                       "source": "github",
@@ -206,13 +219,18 @@ jobs:
 
           try:
               q = urllib.parse.quote('all:"AI agents" OR all:"large language model"')
-              xml = fetch_text(f"https://export.arxiv.org/api/query?search_query={q}&start=0&max_results=8&sortBy=submittedDate&sortOrder=descending")
+              xml = fetch_text(
+                  f"https://export.arxiv.org/api/query?search_query={q}&start=0&max_results=8&sortBy=submittedDate&sortOrder=descending"
+              )
+
               root = ET.fromstring(xml)
               ns = {"a": "http://www.w3.org/2005/Atom"}
+
               for entry in root.findall("a:entry", ns):
                   title = " ".join((entry.findtext("a:title", default="", namespaces=ns) or "").split())
                   summary = " ".join((entry.findtext("a:summary", default="", namespaces=ns) or "").split())
                   link = entry.findtext("a:id", default="https://arxiv.org", namespaces=ns)
+
                   items.append({
                       "source": "arxiv",
                       "title": title,
@@ -237,8 +255,10 @@ jobs:
 
           for raw in items:
               key = (raw["source"], raw["title"].lower().strip())
+
               if key in seen:
                   continue
+
               seen.add(key)
 
               score = score_text(raw["title"], raw["content"], raw["source"])
@@ -260,4 +280,174 @@ jobs:
               })
 
           signals = sorted(signals, key=lambda x: x["score"], reverse=True)[:12]
-          approved = sum(1 for s in signals if s["status"] == "verified
+          approved = sum(1 for s in signals if s["status"] == "verified")
+          held = len(signals) - approved
+
+          feed = {
+              "project": "AibriefAI — إحاطة AI",
+              "generated_at": NOW,
+              "topic": TOPIC,
+              "mode": "gemini" if GEMINI_API_KEY else "rule-based",
+              "model": GEMINI_MODEL if GEMINI_API_KEY else None,
+              "signals": signals,
+          }
+
+          report = {
+              "project": "AibriefAI",
+              "generated_at": NOW,
+              "signals": len(signals),
+              "approved": approved,
+              "held": held,
+              "errors": 0,
+              "mode": feed["mode"],
+              "model": feed["model"],
+          }
+
+          health = {
+              "status": "ok",
+              "generated_at": NOW,
+              "signals": len(signals),
+              "approved": approved,
+              "mode": feed["mode"],
+              "model": feed["model"],
+          }
+
+          Path("web/data/signals.json").write_text(
+              json.dumps(feed, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          Path("data/latest_report.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          Path("web/health.json").write_text(
+              json.dumps(health, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          Path("web/health/index.html").write_text(
+              json.dumps(health, ensure_ascii=False),
+              encoding="utf-8"
+          )
+
+          cards = []
+
+          for s in signals[:8]:
+              cards.append(f"""
+              <article class="card">
+                <div class="meta">{escape(s['source'])} · score {s['score']} · {escape(s['topic'])}</div>
+                <h2>{escape(s['title'])}</h2>
+                <p>{escape(s['brief_en'])}</p>
+                <p dir="rtl" lang="ar">{escape(s['brief_ar'])}</p>
+                <a href="{escape(s['url'])}" target="_blank" rel="noopener">Open source</a>
+              </article>
+              """)
+
+          html = f"""<!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>AibriefAI — إحاطة AI</title>
+            <style>
+              body {{
+                margin: 0;
+                font-family: Inter, Arial, sans-serif;
+                background: #050505;
+                color: #f5f5f5;
+              }}
+              main {{
+                max-width: 1120px;
+                margin: 0 auto;
+                padding: 56px 20px;
+              }}
+              .hero {{
+                border: 1px solid #222;
+                border-radius: 28px;
+                padding: 44px;
+                background: radial-gradient(circle at top, #1b1b1b, #070707 65%);
+              }}
+              h1 {{
+                font-size: clamp(42px, 8vw, 92px);
+                line-height: .9;
+                margin: 0 0 18px;
+                letter-spacing: -0.07em;
+              }}
+              .sub {{
+                color: #bdbdbd;
+                font-size: 18px;
+                max-width: 760px;
+              }}
+              .grid {{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 18px;
+                margin-top: 28px;
+              }}
+              .card {{
+                border: 1px solid #242424;
+                border-radius: 22px;
+                padding: 22px;
+                background: #0d0d0d;
+              }}
+              .meta {{
+                color: #8f8f8f;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: .08em;
+              }}
+              h2 {{
+                font-size: 20px;
+                line-height: 1.2;
+              }}
+              p {{
+                color: #d0d0d0;
+                line-height: 1.6;
+              }}
+              a {{
+                color: #fff;
+              }}
+            </style>
+          </head>
+          <body>
+            <main>
+              <section class="hero">
+                <div class="meta">Generated {escape(NOW)} · Mode: {escape(feed["mode"])} · Model: {escape(str(feed["model"]))}</div>
+                <h1>AibriefAI<br><span dir="rtl" lang="ar">إحاطة AI</span></h1>
+                <p class="sub">Arabic/English AI briefing dashboard generated by GitHub Actions using free data sources and Gemini when configured.</p>
+              </section>
+              <section class="grid">
+                {''.join(cards)}
+              </section>
+            </main>
+          </body>
+          </html>"""
+
+          Path("web/index.html").write_text(html, encoding="utf-8")
+          Path("web/brief.html").write_text(html, encoding="utf-8")
+          PY
+
+          python3 -m json.tool web/data/signals.json >/dev/null
+          python3 -m json.tool web/health.json >/dev/null
+          test -s web/index.html
+          test -s web/brief.html
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "aibrief-bot"
+          git config user.email "aibrief-bot@example.com"
+
+          git add web/index.html web/brief.html web/data/signals.json web/health.json web/health/index.html data/latest_report.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update AibriefAI feed [skip ci]"
+          git push
