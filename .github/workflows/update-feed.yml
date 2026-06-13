@@ -5,15 +5,16 @@ on:
   schedule:
     - cron: "*/5 * * * *"
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 permissions:
   contents: write
 
 concurrency:
   group: aibrief-feed
   cancel-in-progress: true
+
+env:
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  GEMINI_MODEL: gemini-2.5-flash
 
 jobs:
   update-feed:
@@ -22,30 +23,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.3
-
-      - name: Validate API Keys
-        shell: bash
-        run: |
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "⚠️ GEMINI_API_KEY missing"
-          else
-            echo "✅ GEMINI_API_KEY loaded"
-          fi
-          if [ -z "$GROQ_API_KEY" ]; then
-            echo "⚠️ GROQ_API_KEY missing"
-          else
-            echo "✅ GROQ_API_KEY loaded"
-          fi
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        uses: actions/checkout@v4
 
       - name: Generate AibriefAI feed
         shell: bash
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           set -euo pipefail
 
@@ -56,6 +37,7 @@ jobs:
           import os
           import re
           import time
+          import urllib.error
           import urllib.parse
           import urllib.request
           import xml.etree.ElementTree as ET
@@ -131,8 +113,10 @@ jobs:
               return c[:220] + ("..." if len(c) > 220 else "")
 
           def gemini_brief(title, content):
+              rule_summary = summarize_rule(title, content)
+
               if not GEMINI_API_KEY:
-                  return summarize_rule(title, content), "تم إنشاء هذه الإحاطة باستخدام المنطق القاعدي بسبب عدم توفر مفتاح Gemini."
+                  return rule_summary, "Gemini skipped: GEMINI_API_KEY is missing."
 
               prompt = (
                   "Create a concise bilingual AI intelligence brief.\n"
@@ -140,6 +124,7 @@ jobs:
                   f"Title: {title}\n"
                   f"Content: {content[:1500]}\n"
               )
+
               payload = json.dumps({
                   "contents": [{"parts": [{"text": prompt}]}],
                   "generationConfig": {
@@ -164,12 +149,25 @@ jobs:
                   )
                   with urllib.request.urlopen(req, timeout=25) as r:
                       data = json.loads(r.read().decode("utf-8", "replace"))
+
                   text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
                   text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
                   parsed = json.loads(text)
-                  return parsed.get("en") or summarize_rule(title, content), parsed.get("ar") or "لا توجد إحاطة عربية."
+
+                  return (
+                      parsed.get("en") or rule_summary,
+                      parsed.get("ar") or "Gemini returned JSON without ar field."
+                  )
+
+              except urllib.error.HTTPError as e:
+                  body = e.read().decode("utf-8", "replace")
+                  return rule_summary, f"Gemini HTTP {e.code}: {body[:200]}"
+
+              except urllib.error.URLError as e:
+                  return rule_summary, f"Gemini URLError: {e.reason}"
+
               except Exception as e:
-                  return summarize_rule(title, content), f"تم استخدام المنطق القاعدي بعد فشل Gemini: {type(e).__name__}"
+                  return rule_summary, f"Gemini {type(e).__name__}: {e}"
 
           items = []
 
@@ -236,6 +234,7 @@ jobs:
 
           seen = set()
           signals = []
+
           for raw in items:
               key = (raw["source"], raw["title"].lower().strip())
               if key in seen:
@@ -261,156 +260,4 @@ jobs:
               })
 
           signals = sorted(signals, key=lambda x: x["score"], reverse=True)[:12]
-          approved = sum(1 for s in signals if s["status"] == "verified")
-          held = len(signals) - approved
-
-          feed = {
-              "project": "AibriefAI — إحاطة AI",
-              "generated_at": NOW,
-              "topic": TOPIC,
-              "mode": "gemini" if GEMINI_API_KEY else "rule-based",
-              "signals": signals,
-          }
-
-          report = {
-              "project": "AibriefAI",
-              "generated_at": NOW,
-              "signals": len(signals),
-              "approved": approved,
-              "held": held,
-              "errors": 0,
-              "mode": feed["mode"],
-          }
-
-          health = {
-              "status": "ok",
-              "generated_at": NOW,
-              "signals": len(signals),
-              "approved": approved,
-              "mode": feed["mode"],
-          }
-
-          Path("web/data/signals.json").write_text(json.dumps(feed, ensure_ascii=False, indent=2), encoding="utf-8")
-          Path("data/latest_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-          Path("web/health.json").write_text(json.dumps(health, ensure_ascii=False, indent=2), encoding="utf-8")
-          Path("web/health/index.html").write_text(json.dumps(health, ensure_ascii=False), encoding="utf-8")
-
-          cards = []
-          for s in signals[:8]:
-              cards.append(f"""
-              <article class="card">
-                <div class="meta">{escape(s['source'])} · score {s['score']} · {escape(s['topic'])}</div>
-                <h2>{escape(s['title'])}</h2>
-                <p>{escape(s['brief_en'])}</p>
-                <p dir="rtl" lang="ar">{escape(s['brief_ar'])}</p>
-                <a href="{escape(s['url'])}" target="_blank" rel="noopener">Open source</a>
-              </article>
-              """)
-
-          html = f"""<!doctype html>
-          <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>AibriefAI — إحاطة AI</title>
-            <style>
-              body {{
-                margin: 0;
-                font-family: Inter, Arial, sans-serif;
-                background: #050505;
-                color: #f5f5f5;
-              }}
-              main {{
-                max-width: 1120px;
-                margin: 0 auto;
-                padding: 56px 20px;
-              }}
-              .hero {{
-                border: 1px solid #222;
-                border-radius: 28px;
-                padding: 44px;
-                background: radial-gradient(circle at top, #1b1b1b, #070707 65%);
-              }}
-              h1 {{
-                font-size: clamp(42px, 8vw, 92px);
-                line-height: .9;
-                margin: 0 0 18px;
-                letter-spacing: -0.07em;
-              }}
-              .sub {{
-                color: #bdbdbd;
-                font-size: 18px;
-                max-width: 760px;
-              }}
-              .grid {{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 18px;
-                margin-top: 28px;
-              }}
-              .card {{
-                border: 1px solid #242424;
-                border-radius: 22px;
-                padding: 22px;
-                background: #0d0d0d;
-              }}
-              .meta {{
-                color: #8f8f8f;
-                font-size: 13px;
-                text-transform: uppercase;
-                letter-spacing: .08em;
-              }}
-              h2 {{
-                font-size: 20px;
-                line-height: 1.2;
-              }}
-              p {{
-                color: #d0d0d0;
-                line-height: 1.6;
-              }}
-              a {{
-                color: #fff;
-              }}
-            </style>
-          </head>
-          <body>
-            <main>
-              <section class="hero">
-                <div class="meta">Generated {escape(NOW)} · Mode: {escape(feed["mode"])}</div>
-                <h1>AibriefAI<br><span dir="rtl" lang="ar">إحاطة AI</span></h1>
-                <p class="sub">Arabic/English AI briefing dashboard generated by GitHub Actions using free data sources and Gemini when configured.</p>
-              </section>
-              <section class="grid">
-                {''.join(cards)}
-              </section>
-            </main>
-          </body>
-          </html>"""
-          Path("web/index.html").write_text(html, encoding="utf-8")
-          Path("web/brief.html").write_text(html, encoding="utf-8")
-          PY
-
-          python3 -m json.tool web/data/signals.json >/dev/null
-          python3 -m json.tool web/health.json >/dev/null
-          test -s web/index.html
-          test -s web/brief.html
-
-      - name: Commit generated files
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          git config user.name "aibrief-bot"
-          git config user.email "aibrief-bot@example.com"
-
-          git add web/index.html web/brief.html web/data/signals.json web/health.json web/health/index.html data/latest_report.json
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-
-          git commit -m "Update AibriefAI feed [skip ci]"
-          git fetch origin main
-          git rebase -X theirs origin/main
-          git push origin HEAD:main
+          approved = sum(1 for s in signals if s["status"] == "verified
