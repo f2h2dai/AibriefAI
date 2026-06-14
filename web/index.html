@@ -143,6 +143,18 @@
       color: #fff;
     }
 
+    .tab:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+    }
+
+    .agent-reach-note {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 12px 0 0;
+    }
+
     .status-row {
       display: flex;
       justify-content: space-between;
@@ -391,12 +403,13 @@
       <div class="source-tabs" id="sourceTabs" aria-label="Source filters">
         <button class="tab active" type="button" data-source="all" aria-pressed="true">All</button>
         <button class="tab" type="button" data-source="hackernews" aria-pressed="false">HN</button>
-        <button class="tab" type="button" data-source="github" aria-pressed="false">GitHub</button>
-        <button class="tab" type="button" data-source="arxiv" aria-pressed="false">arXiv</button>
-        <button class="tab" type="button" data-source="reddit" aria-pressed="false">Reddit</button>
-        <button class="tab" type="button" data-source="twitter" aria-pressed="false">Twitter</button>
-        <button class="tab" type="button" data-source="youtube" aria-pressed="false">YouTube</button>
-      </div>
+              <button class="tab" type="button" data-source="github" aria-pressed="false">GitHub</button>
+              <button class="tab" type="button" data-source="arxiv" aria-pressed="false">arXiv</button>
+              <button class="tab" type="button" data-source="reddit" aria-pressed="false">Reddit</button>
+              <button class="tab" type="button" data-source="twitter" aria-pressed="false">Twitter</button>
+              <button class="tab" type="button" data-source="youtube" aria-pressed="false">YouTube</button>
+            </div>
+            <p class="agent-reach-note">Agent-Reach is installed best-effort from the official GitHub repo. Twitter/Reddit may require cookie/login session. Existing HN/GitHub/arXiv connectors continue normally.</p>
 
       <div class="topic-pills" id="topicPills"></div>
     </section>
@@ -464,6 +477,28 @@
       return labels[source] || source;
     }
 
+    const SOURCE_FILTERS = [
+      ['all', 'All'],
+      ['hackernews', 'HN'],
+      ['github', 'GitHub'],
+      ['arxiv', 'arXiv'],
+      ['reddit', 'Reddit'],
+      ['twitter', 'Twitter'],
+      ['youtube', 'YouTube']
+    ];
+
+    function sourceCounts() {
+      const counts = {};
+
+      SIGNALS.forEach(function(signal) {
+        const source = signal.source || 'unknown';
+        counts[source] = (counts[source] || 0) + 1;
+      });
+
+      counts.all = SIGNALS.length;
+      return counts;
+    }
+
     function cardHTML(s) {
       const text = state.lang === 'ar' ? (s.brief_ar || s.brief_en || s.content || '') : (s.brief_en || s.content || '');
       const dir = state.lang === 'ar' ? 'rtl' : 'ltr';
@@ -498,17 +533,19 @@
     }
 
     function renderTabs() {
-      document.querySelectorAll('.tab').forEach(function(btn) {
-        if (btn.getAttribute('data-source') === state.source) {
-          btn.classList.add('active');
-          btn.setAttribute('aria-pressed', 'true');
-          btn.setAttribute('aria-current', 'true');
-        } else {
-          btn.classList.remove('active');
-          btn.setAttribute('aria-pressed', 'false');
-          btn.removeAttribute('aria-current');
-        }
-      });
+      const counts = sourceCounts();
+
+      document.getElementById('sourceTabs').innerHTML = SOURCE_FILTERS.map(function(filter) {
+        const source = filter[0];
+        const label = filter[1];
+        const count = counts[source] || 0;
+        const active = source === state.source ? ' active' : '';
+        const pressed = source === state.source ? 'true' : 'false';
+        const disabled = source !== 'all' && count === 0 ? ' disabled aria-disabled="true"' : '';
+        const current = source === state.source ? ' aria-current="true"' : '';
+
+        return '<button class="tab' + active + '" type="button" data-source="' + escapeHTML(source) + '" aria-pressed="' + pressed + '"' + current + disabled + '>' + escapeHTML(label) + ' (' + count + ')</button>';
+      }).join('');
     }
 
     function renderAgents() {

@@ -11,7 +11,7 @@ dependencies = []
 
 [project.optional-dependencies]
 agent-reach = [
-  "agent-reach>=1.4.2",
+  "agent-reach @ git+https://github.com/Panniantong/Agent-Reach.git",
 ]
 dev = [
   "pytest>=8",
