@@ -18,6 +18,7 @@ env:
   GEMINI_MODEL: gemini-2.5-flash
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   GROQ_MODEL: llama-3.3-70b-versatile
+  TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
 
 jobs:
   update-feed:
@@ -27,6 +28,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install Agent-Reach
+        shell: bash
+        run: |
+          set +e
+          python3 -m pip install "agent-reach>=1.4.2" || echo "Agent-Reach unavailable; continuing with base connectors"
+          agent-reach doctor || true
+          set -e
 
       - name: Generate AibriefAI command center
         shell: bash
@@ -123,6 +132,8 @@ jobs:
                   "github": 22,
                   "arxiv": 30,
                   "reddit": 18,
+                  "twitter": 20,
+                  "youtube": 18,
                   "fallback": 20,
               }.get(source, 15)
 
@@ -159,6 +170,8 @@ jobs:
                   "arxiv": "academic/research signal",
                   "hackernews": "live technology discussion signal",
                   "reddit": "community narrative signal",
+                  "twitter": "Twitter/X discussion signal",
+                  "youtube": "video/tutorial signal",
                   "fallback": "system fallback signal"
               }
 
@@ -388,6 +401,23 @@ jobs:
                   })
           except Exception as e:
               log_event("error", "AcademicAgent", e)
+
+          try:
+              from aibrief.connectors.agent_reach import fetch_reddit_deep, fetch_twitter, fetch_youtube
+
+              agent_reach_items = []
+              agent_reach_items.extend(fetch_twitter() or [])
+              agent_reach_items.extend(fetch_youtube() or [])
+              agent_reach_items.extend(
+                  fetch_reddit_deep(["LocalLLaMA", "MachineLearning", "OpenAI", "singularity"], limit=10) or []
+              )
+
+              if agent_reach_items:
+                  items.extend(agent_reach_items)
+              else:
+                  log_event("warning", "AgentReachConnector", "Agent-Reach returned no optional social results.")
+          except Exception as e:
+              log_event("warning", "AgentReachConnector", f"Agent-Reach unavailable: {type(e).__name__}: {e}")
 
           if not items:
               items = [
@@ -910,6 +940,8 @@ jobs:
                   <button class="tab" type="button" data-source="github" aria-pressed="false">GitHub</button>
                   <button class="tab" type="button" data-source="arxiv" aria-pressed="false">arXiv</button>
                   <button class="tab" type="button" data-source="reddit" aria-pressed="false">Reddit</button>
+                  <button class="tab" type="button" data-source="twitter" aria-pressed="false">Twitter</button>
+                  <button class="tab" type="button" data-source="youtube" aria-pressed="false">YouTube</button>
                 </div>
 
                 <div class="topic-pills" id="topicPills"></div>
@@ -970,6 +1002,8 @@ jobs:
                   github: 'GitHub',
                   arxiv: 'arXiv',
                   reddit: 'Reddit',
+                  twitter: 'Twitter/X',
+                  youtube: 'YouTube',
                   fallback: 'Fallback'
                 }};
 
