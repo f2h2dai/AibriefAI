@@ -589,18 +589,17 @@ jobs:
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
                       err = f"Gemini HTTP {e.code}: {body[:300]}"
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return summarize_rule(title, content), err, "rule-based"
+                      if e.code == 429:
+                          GEMINI_QUOTA_EXHAUSTED = True
+                      log_event("warning", "GeminiRouter", err)
 
                   except urllib.error.URLError as e:
                       err = f"Gemini URLError: {e.reason}"
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return summarize_rule(title, content), err, "rule-based"
+                      log_event("warning", "GeminiRouter", err)
 
                   except Exception as e:
                       err = f"Gemini {type(e).__name__}: {str(e)}"
-                      PROVIDER_COUNTS["rule-based"] += 1
-                      return summarize_rule(title, content), err, "rule-based"
+                      log_event("warning", "GeminiRouter", err)
 
               if GROQ_API_KEY:
                   payload = json.dumps({
