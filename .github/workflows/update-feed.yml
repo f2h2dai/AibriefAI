@@ -624,7 +624,9 @@ jobs:
                           data=payload,
                           method="POST",
                           headers={
+                              "Accept": "application/json",
                               "Content-Type": "application/json",
+                              "User-Agent": "AibriefAI-GitHubActions/1.0",
                               "Authorization": "Bearer " + GROQ_API_KEY
                           },
                       )
