@@ -19,6 +19,7 @@ env:
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   GROQ_MODEL: llama-3.3-70b-versatile
   TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
+  X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
 
 jobs:
   update-feed:
@@ -33,7 +34,6 @@ jobs:
         shell: bash
         run: |
           set +e
-          python3 -m pip install --upgrade pip
           python3 -m pip install "git+https://github.com/Panniantong/Agent-Reach.git" || echo "Agent-Reach GitHub install unavailable; continuing with base connectors"
           agent-reach doctor || true
           set -e
@@ -133,7 +133,7 @@ jobs:
                   "github": 22,
                   "arxiv": 30,
                   "reddit": 18,
-                  "twitter": 20,
+                  "twitter": 28,
                   "youtube": 18,
                   "fallback": 20,
               }.get(source, 15)
@@ -404,9 +404,22 @@ jobs:
               log_event("error", "AcademicAgent", e)
 
           try:
-              from aibrief.connectors.agent_reach import fetch_reddit_deep, fetch_twitter, fetch_youtube
+              from aibrief.connectors.agent_reach import (
+                  fetch_reddit_deep,
+                  fetch_twitter,
+                  fetch_youtube,
+                  fetch_x_influencers,
+              )
 
               agent_reach_items = []
+              x_items = fetch_x_influencers(limit=20)
+              items += x_items
+
+              if x_items:
+                  log_event("info", "XInfluencerAgent", f"Collected {len(x_items)} X influencer signals.")
+              else:
+                  log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure TWITTER_COOKIE and X_INFLUENCERS.")
+
               agent_reach_items.extend(fetch_twitter() or [])
               agent_reach_items.extend(fetch_youtube() or [])
               agent_reach_items.extend(
@@ -419,6 +432,7 @@ jobs:
                   log_event("warning", "AgentReachConnector", "Agent-Reach returned no optional social results.")
           except Exception as e:
               log_event("warning", "AgentReachConnector", f"Agent-Reach unavailable: {type(e).__name__}: {e}")
+              log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure TWITTER_COOKIE and X_INFLUENCERS.")
 
           if not items:
               items = [
@@ -478,10 +492,15 @@ jobs:
               run_mode = "rule-based"
               run_model = None
 
+          x_degraded = not any(s["source"] == "twitter" for s in signals)
+          x_intel_class = "command-card degraded" if x_degraded else "command-card"
+          x_intel_status = "DEGRADED" if x_degraded else "ONLINE"
+
           agents = [
               {"name": "NewsAgent", "status": "online", "role": "HN/news signal collection"},
               {"name": "AcademicAgent", "status": "online", "role": "arXiv research monitoring"},
               {"name": "GitHubAgent", "status": "online", "role": "open-source ecosystem tracking"},
+              {"name": "XInfluencerAgent", "status": "critical" if x_degraded else "online", "role": "X/Twitter AI influencer and narrative tracking"},
               {"name": "VerificationAgent", "status": "active", "role": "confidence and source checks"},
               {"name": "VotingCommanderAgent", "status": "active", "role": "ranking and prioritization"},
               {"name": "RaindropTriageAgent", "status": "active", "role": "fallbacks and failure triage"},
@@ -624,6 +643,16 @@ jobs:
                 border-radius: 18px;
                 padding: 15px;
                 background: rgba(255,255,255,0.045);
+              }}
+
+              .command-card.degraded {{
+                border-color: #ef4444;
+                background: rgba(239,68,68,0.14);
+              }}
+
+              .command-card.degraded .meta,
+              .command-card.degraded strong {{
+                color: #fecaca;
               }}
 
               .command-card strong {{
@@ -904,6 +933,10 @@ jobs:
                     <div class="meta">COMMAND MODE</div>
                     <strong>Sentinel Commander</strong>
                   </div>
+                  <div class="{escape(x_intel_class)}">
+                    <div class="meta">X INTEL</div>
+                    <strong>{escape(x_intel_status)}</strong>
+                  </div>
                   <div class="command-card">
                     <div class="meta">TRIAGE</div>
                     <strong>Raindrop Active</strong>
@@ -953,10 +986,10 @@ jobs:
                   <button class="tab" type="button" data-source="github" aria-pressed="false">GitHub</button>
                   <button class="tab" type="button" data-source="arxiv" aria-pressed="false">arXiv</button>
                   <button class="tab" type="button" data-source="reddit" aria-pressed="false">Reddit</button>
-                  <button class="tab" type="button" data-source="twitter" aria-pressed="false">Twitter</button>
+                  <button class="tab" type="button" data-source="twitter" aria-pressed="false">Twitter/X</button>
                   <button class="tab" type="button" data-source="youtube" aria-pressed="false">YouTube</button>
                 </div>
-                <p class="agent-reach-note">Agent-Reach is installed best-effort. Twitter/Reddit may require cookie/login session. Existing HN/GitHub/arXiv connectors continue normally.</p>
+                <p class="agent-reach-note">X influencer search requires TWITTER_COOKIE and configured X_INFLUENCERS. Base connectors continue normally.</p>
 
                 <div class="topic-pills" id="topicPills"></div>
               </section>
@@ -1030,7 +1063,7 @@ jobs:
                 ['github', 'GitHub'],
                 ['arxiv', 'arXiv'],
                 ['reddit', 'Reddit'],
-                ['twitter', 'Twitter'],
+                ['twitter', 'Twitter/X'],
                 ['youtube', 'YouTube']
               ];
 

@@ -2,10 +2,25 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 from typing import Any
 
 DEFAULT_TIMEOUT_SECONDS = 45
+DEFAULT_X_QUERY = "AI OR agents OR LLM OR GPT OR reasoning"
+X_TOPIC_TERMS = (
+    "AI agents",
+    "LLM",
+    "GPT",
+    "Gemini",
+    "Claude",
+    "Groq",
+    "OpenAI",
+    "Anthropic",
+    "DeepMind",
+    "reasoning models",
+    "autonomous agents",
+)
 
 
 def fetch_twitter(query: str = "AI agents OR LLM OR GPT", limit: int = 10) -> list[dict[str, str]]:
@@ -43,6 +58,36 @@ def fetch_reddit_deep(subreddits: list[str] | tuple[str, ...] | str, limit: int 
     )
 
 
+def fetch_x_influencers(
+    handles: list[str] | tuple[str, ...] | str | None = None,
+    query: str = DEFAULT_X_QUERY,
+    limit: int = 20,
+) -> list[dict[str, str]]:
+    """Fetch critical Twitter/X influencer intelligence through Agent-Reach.
+
+    X influencer tracking is a first-class intelligence channel for AibriefAI,
+    but the connector must still fail closed so GitHub Actions can continue
+    running base HN/GitHub/arXiv collection when X auth or tooling is absent.
+    """
+    influencer_handles = _x_handles(handles)
+    if not influencer_handles:
+        return []
+
+    safe_limit = _safe_limit(limit, 20)
+    search_query = _x_search_query(influencer_handles, query)
+    commands = [
+        ["twitter-cli", "search", "--query", search_query, "--limit", str(safe_limit), "--json"],
+        ["opencli", "twitter", "search", "--query", search_query, "--limit", str(safe_limit), "--json"],
+    ]
+
+    try:
+        payload = _run_json_commands(commands)
+        records = _extract_records(payload)
+        return _normalize_records("twitter", records, "XInfluencerAgent")
+    except Exception:
+        return []
+
+
 def _fetch(source: str, args: list[str], collector: str) -> list[dict[str, str]]:
     try:
         payload = _run_agent_reach(args)
@@ -53,19 +98,17 @@ def _fetch(source: str, args: list[str], collector: str) -> list[dict[str, str]]
 
 
 def _run_agent_reach(args: list[str]) -> Any:
+    commands = [[command, *args] for command in _candidate_commands()]
+    return _run_json_commands(commands)
+
+
+def _run_json_commands(commands: list[list[str]]) -> Any:
     env = os.environ.copy()
     timeout = _timeout_seconds()
 
-    for command in _candidate_commands():
+    for command in commands:
         try:
-            completed = subprocess.run(
-                [command, *args],
-                capture_output=True,
-                check=False,
-                env=env,
-                text=True,
-                timeout=timeout,
-            )
+            completed = _run_command(command, env=env, timeout=timeout)
         except (FileNotFoundError, OSError, subprocess.TimeoutExpired, ValueError):
             continue
 
@@ -77,6 +120,17 @@ def _run_agent_reach(args: list[str]) -> Any:
             return parsed
 
     return []
+
+
+def _run_command(command: list[str], env: dict[str, str], timeout: int) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        command,
+        capture_output=True,
+        check=False,
+        env=env,
+        text=True,
+        timeout=timeout,
+    )
 
 
 def _candidate_commands() -> list[str]:
@@ -116,6 +170,39 @@ def _subreddit_arg(subreddits: list[str] | tuple[str, ...] | str) -> str:
         if name:
             names.append(name)
     return ",".join(names)
+
+
+def _x_handles(handles: list[str] | tuple[str, ...] | str | None) -> list[str]:
+    if handles is None:
+        raw_handles: list[Any] = os.getenv("X_INFLUENCERS", "").split(",")
+    elif isinstance(handles, str):
+        raw_handles = handles.split(",")
+    else:
+        raw_handles = list(handles or [])
+
+    normalized = []
+    seen = set()
+    for raw_handle in raw_handles:
+        handle = str(raw_handle).strip().removeprefix("@")
+        handle = re.sub(r"[^A-Za-z0-9_]", "", handle)
+        key = handle.lower()
+        if handle and key not in seen:
+            seen.add(key)
+            normalized.append(handle)
+    return normalized
+
+
+def _x_search_query(handles: list[str], query: str) -> str:
+    base_query = _first_text(query, DEFAULT_X_QUERY)
+    topic_parts = [base_query]
+    base_lower = base_query.lower()
+
+    for term in X_TOPIC_TERMS:
+        if term.lower() not in base_lower:
+            topic_parts.append(f'"{term}"' if " " in term else term)
+
+    handle_query = " OR ".join(f"from:{handle}" for handle in handles)
+    return f"({' OR '.join(topic_parts)}) ({handle_query})"
 
 
 def _parse_json(stdout: str) -> Any | None:
@@ -166,12 +253,16 @@ def _normalize_records(source: str, records: list[Any], collector: str) -> list[
             record.get("title"),
             record.get("headline"),
             record.get("name"),
+            record.get("tweet"),
             _short_title(record.get("text")),
+            _short_title(record.get("full_text")),
             _short_title(record.get("content")),
         )
         content = _first_text(
             record.get("content"),
             record.get("text"),
+            record.get("full_text"),
+            record.get("tweet"),
             record.get("description"),
             record.get("summary"),
             record.get("body"),
@@ -186,11 +277,18 @@ def _normalize_records(source: str, records: list[Any], collector: str) -> list[
                 record.get("permalink"),
                 record.get("html_url"),
                 record.get("canonical_url"),
+                record.get("tweet_url"),
+                record.get("post_url"),
             ),
         )
 
         if not title and not content:
             continue
+
+        if source == "twitter":
+            handle = _record_handle(record)
+            if handle and title and not title.lower().startswith(f"@{handle.lower()}"):
+                title = f"@{handle}: {title}"
 
         normalized.append(
             {
@@ -203,6 +301,31 @@ def _normalize_records(source: str, records: list[Any], collector: str) -> list[
         )
 
     return normalized
+
+
+def _record_handle(record: dict[str, Any]) -> str:
+    for key in ("handle", "username", "screen_name", "author_handle"):
+        value = _first_text(record.get(key)).removeprefix("@")
+        if value:
+            return value
+
+    for key in ("author", "user", "account"):
+        value = record.get(key)
+        if isinstance(value, dict):
+            handle = _first_text(
+                value.get("handle"),
+                value.get("username"),
+                value.get("screen_name"),
+                value.get("name"),
+            ).removeprefix("@")
+            if handle:
+                return handle
+        else:
+            handle = _first_text(value).removeprefix("@")
+            if handle:
+                return handle
+
+    return ""
 
 
 def _first_text(*values: Any) -> str:
@@ -228,10 +351,13 @@ def _normalize_url(source: str, url: str) -> str:
             "reddit": "https://www.reddit.com",
         }.get(source, "")
 
+    if source == "twitter" and url.startswith("/"):
+        return "https://x.com" + url
+
     if source == "reddit" and url.startswith("/"):
         return "https://www.reddit.com" + url
 
     return url
 
 
-__all__ = ["fetch_twitter", "fetch_youtube", "fetch_reddit_deep"]
+__all__ = ["fetch_twitter", "fetch_youtube", "fetch_reddit_deep", "fetch_x_influencers"]
