@@ -15,7 +15,8 @@ concurrency:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-  GEMINI_MODEL: gemini-2.5-flash
+  GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  GEMINI_MODEL: gemini-2.0-flash
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   GROQ_MODEL: llama-3.3-70b-versatile
   TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
@@ -69,7 +70,7 @@ jobs:
           TOPIC = "AI agents"
 
           GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-          GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip()
+          GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash").strip()
           GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
           GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
 
@@ -112,6 +113,36 @@ jobs:
                   return r.read(2_000_000).decode("utf-8", "replace")
 
           X_QUERY = "AI OR agents OR LLM OR GPT OR reasoning"
+
+          raw_cookie = os.getenv(
+              "TWITTER_COOKIE", ""
+          ).strip()
+
+          auth_token = ""
+          ct0 = ""
+
+          if raw_cookie:
+              for part in raw_cookie.split(";"):
+                  part = part.strip()
+                  if part.startswith("auth_token="):
+                      auth_token = part[len("auth_token="):]
+                  elif part.startswith("ct0="):
+                      ct0 = part[len("ct0="):]
+
+          if auth_token:
+              os.environ["TWITTER_AUTH_TOKEN"] = auth_token
+              log_event("INFO", "twitter",
+                  "auth_token parsed OK")
+          else:
+              log_event("WARN", "twitter",
+                  "auth_token missing from TWITTER_COOKIE")
+
+          if ct0:
+              os.environ["TWITTER_CT0"] = ct0
+              log_event("INFO", "twitter", "ct0 parsed OK")
+          else:
+              log_event("WARN", "twitter",
+                  "ct0 missing from TWITTER_COOKIE")
 
           def safe_log_text(value, limit=260):
               text = re.sub(r"\s+", " ", str(value or "")).strip()
@@ -557,18 +588,19 @@ jobs:
 
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
-
-                      if e.code == 429:
-                          GEMINI_QUOTA_EXHAUSTED = True
-                          log_event("warning", "SentinelCommanderAgent", "Gemini quota exceeded. Routing to Groq fallback.")
-                      else:
-                          log_event("error", "GeminiRouter", f"Gemini HTTP {e.code}: {body[:200]}")
+                      err = f"Gemini HTTP {e.code}: {body[:300]}"
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return summarize_rule(title, content), err, "rule-based"
 
                   except urllib.error.URLError as e:
-                      log_event("error", "GeminiRouter", f"Gemini URL error: {e.reason}")
+                      err = f"Gemini URLError: {e.reason}"
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return summarize_rule(title, content), err, "rule-based"
 
                   except Exception as e:
-                      log_event("error", "GeminiRouter", f"Gemini error: {type(e).__name__}: {e}")
+                      err = f"Gemini {type(e).__name__}: {str(e)}"
+                      PROVIDER_COUNTS["rule-based"] += 1
+                      return summarize_rule(title, content), err, "rule-based"
 
               if GROQ_API_KEY:
                   payload = json.dumps({
