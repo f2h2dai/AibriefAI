@@ -1,6 +1,6 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-15T23:10:00Z",
+  "generated_at": "2026-06-15T23:16:55Z",
   "topic": "AI agents",
   "mode": "rule-based",
   "model": null,
@@ -53,40 +53,124 @@
   ],
   "events": [
     {
-      "time": "2026-06-15T23:10:00Z",
-      "level": "INFO",
-      "agent": "twitter",
-      "message": "auth_token parsed OK"
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-15T23:10:00Z",
-      "level": "INFO",
-      "agent": "twitter",
-      "message": "ct0 parsed OK"
-    },
-    {
-      "time": "2026-06-15T23:10:00Z",
+      "time": "2026-06-15T23:16:55Z",
       "level": "info",
-      "agent": "AgentReachDoctor",
-      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:10:00Z",
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
       "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 93 X records."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:10:00Z",
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
       "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "Collected 20 X influencer signals."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:10:00Z",
-      "level": "warning",
-      "agent": "AgentReachConnector",
-      "message": "Agent-Reach returned no optional social results."
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 403: error code: 1010"
+    },
+    {
+      "time": "2026-06-15T23:16:55Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
   "signals": [
@@ -103,9 +187,9 @@
       "collector": "AcademicAgent",
       "provider": "rule-based",
       "brief_en": "Large language models increasingly serve as execution engines for agentic systems, yet they still consume context through a sequential text interface. This creates a mismatch with modern structured agent workflows, in which independent bran...",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: Large language models increasingly serve as execution engines for agentic systems, yet they still consume context through a sequential text interface. This creates a mismatch with modern structured agent workflows, in which independent bran...",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "github-009",
@@ -120,9 +204,9 @@
       "collector": "GitHubAgent",
       "provider": "rule-based",
       "brief_en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "arxiv-018",
@@ -137,9 +221,9 @@
       "collector": "AcademicAgent",
       "provider": "rule-based",
       "brief_en": "Sequential or time-stamped interaction logs provide objective records of digital application usage, yet their granularity and noise often obscure meaningful insights into people's work. Such insights are essential for improving digital prod...",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: Sequential or time-stamped interaction logs provide objective records of digital application usage, yet their granularity and noise often obscure meaningful insights into people's work. Such insights are essential for improving digital prod...",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "github-011",
@@ -154,9 +238,26 @@
       "collector": "GitHubAgent",
       "provider": "rule-based",
       "brief_en": "AI agents running research on single-GPU nanochat training automatically",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: AI agents running research on single-GPU nanochat training automatically",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
+    },
+    {
+      "id": "twitter-023",
+      "source": "twitter",
+      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
+      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12397 retweets: 774 replies: 1818 quotes: 559 views: 1563339 bookmarks: 1958 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2057614780727480741' text: 'what problem do you most hope AI will solve in the future?",
+      "url": "https://x.com",
+      "score": 52,
+      "score_reason": "Twitter/X discussion signal; agentic AI relevance. Final score: 52.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
+      "brief_ar": "ملخص قائم على القواعد: (also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "twitter-027",
@@ -171,9 +272,9 @@
       "collector": "XInfluencerAgent",
       "provider": "rule-based",
       "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "github-007",
@@ -188,9 +289,9 @@
       "collector": "GitHubAgent",
       "provider": "rule-based",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "github-008",
@@ -205,9 +306,9 @@
       "collector": "GitHubAgent",
       "provider": "rule-based",
       "brief_en": "The agent engineering platform.",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: The agent engineering platform.",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "github-010",
@@ -222,9 +323,9 @@
       "collector": "GitHubAgent",
       "provider": "rule-based",
       "brief_en": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: 🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "github-012",
@@ -239,26 +340,9 @@
       "collector": "GitHubAgent",
       "provider": "rule-based",
       "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
-    },
-    {
-      "id": "twitter-025",
-      "source": "twitter",
-      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
-      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12398 retweets: 774 replies: 1818 quotes: 559 views: 1563337 bookmarks: 1958 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2027578652477821175' text: 'Tonight, we reached an agreement with the Department of War to deploy our models in their classified network.",
-      "url": "https://x.com",
-      "score": 42,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 42.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "arxiv-013",
@@ -273,9 +357,9 @@
       "collector": "AcademicAgent",
       "provider": "rule-based",
       "brief_en": "Large language models (LLMs) are widely used in text-to-image (T2I) systems, but they are typically limited to text encoding, while denoising is handled by newly trained generative backbones. The emergence of representation autoencoders (RA...",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: Large language models (LLMs) are widely used in text-to-image (T2I) systems, but they are typically limited to text encoding, while denoising is handled by newly trained generative backbones. The emergence of representation autoencoders (RA...",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     },
     {
       "id": "arxiv-017",
@@ -290,9 +374,9 @@
       "collector": "AcademicAgent",
       "provider": "rule-based",
       "brief_en": "This chapter presents a framework for designing therapeutic sonic interaction technologies, with a focus on movement sonification: the real-time conversion of bodily motion into sound that serves as feedback during motor rehabilitation. Des...",
-      "brief_ar": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex",
-      "createdAt": "2026-06-15T23:10:00Z",
-      "updatedAt": "2026-06-15T23:10:00Z"
+      "brief_ar": "ملخص قائم على القواعد: This chapter presents a framework for designing therapeutic sonic interaction technologies, with a focus on movement sonification: the real-time conversion of bodily motion into sound that serves as feedback during motor rehabilitation. Des...",
+      "createdAt": "2026-06-15T23:16:55Z",
+      "updatedAt": "2026-06-15T23:16:55Z"
     }
   ]
 }
