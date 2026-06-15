@@ -30,11 +30,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Agent-Reach
+      - name: Install Agent-Reach and X routes
         shell: bash
         run: |
           set +e
+          export PATH="$HOME/.local/bin:$PATH"
           python3 -m pip install "git+https://github.com/Panniantong/Agent-Reach.git" || echo "Agent-Reach GitHub install unavailable; continuing with base connectors"
+          if command -v pipx >/dev/null 2>&1; then
+            pipx install twitter-cli || python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
+          else
+            python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
+          fi
+          which twitter || echo "twitter CLI unavailable after install attempt"
           agent-reach doctor || true
           set -e
 
@@ -49,6 +56,7 @@ jobs:
           import json
           import os
           import re
+          import subprocess
           import urllib.error
           import urllib.parse
           import urllib.request
@@ -102,6 +110,284 @@ jobs:
               )
               with urllib.request.urlopen(req, timeout=timeout) as r:
                   return r.read(2_000_000).decode("utf-8", "replace")
+
+          X_QUERY = "AI OR agents OR LLM OR GPT OR reasoning"
+
+          def safe_log_text(value, limit=260):
+              text = re.sub(r"\s+", " ", str(value or "")).strip()
+              cookie = os.getenv("TWITTER_COOKIE", "").strip()
+              if cookie:
+                  text = text.replace(cookie, "[redacted-twitter-cookie]")
+              return text[:limit] + ("..." if len(text) > limit else "")
+
+          def display_command(command):
+              parts = []
+              for part in command:
+                  text = str(part)
+                  if re.search(r"\s", text):
+                      parts.append('"' + text.replace('"', '\\"') + '"')
+                  else:
+                      parts.append(text)
+              return " ".join(parts)
+
+          def run_cli(command, timeout=45):
+              try:
+                  completed = subprocess.run(
+                      command,
+                      capture_output=True,
+                      check=False,
+                      env=os.environ.copy(),
+                      text=True,
+                      timeout=timeout,
+                  )
+                  return {
+                      "returncode": completed.returncode,
+                      "stdout": completed.stdout or "",
+                      "stderr": completed.stderr or "",
+                  }
+              except FileNotFoundError as e:
+                  return {"returncode": 127, "stdout": "", "stderr": str(e)}
+              except subprocess.TimeoutExpired as e:
+                  return {
+                      "returncode": 124,
+                      "stdout": e.stdout or "",
+                      "stderr": (e.stderr or "") + f" timed out after {timeout}s",
+                  }
+              except Exception as e:
+                  return {"returncode": 1, "stdout": "", "stderr": f"{type(e).__name__}: {e}"}
+
+          def log_command_failure(agent, command, result):
+              log_event(
+                  "warning",
+                  agent,
+                  f"{display_command(command)} exited {result['returncode']}. stderr: {safe_log_text(result.get('stderr')) or '(empty)'}",
+              )
+
+          def log_agent_reach_doctor():
+              command = ["agent-reach", "doctor"]
+              result = run_cli(command, timeout=30)
+              combined = f"{result.get('stdout', '')}\n{result.get('stderr', '')}"
+              route_lines = [
+                  safe_log_text(line, 120)
+                  for line in combined.splitlines()
+                  if re.search(r"twitter|x/twitter|twitter-cli|opencli|bird", line, re.I)
+              ]
+              route_summary = " | ".join(route_lines[:6]) or "No Twitter/X route details emitted."
+              level = "info" if result["returncode"] == 0 else "warning"
+              log_event(
+                  level,
+                  "AgentReachDoctor",
+                  f"{display_command(command)} exited {result['returncode']}. Twitter/X routes: {route_summary}. stderr: {safe_log_text(result.get('stderr')) or '(empty)'}",
+              )
+
+          def x_influencer_handles():
+              raw = os.getenv("X_INFLUENCERS", "")
+              handles = []
+              seen = set()
+              for item in raw.split(","):
+                  handle = re.sub(r"[^A-Za-z0-9_]", "", item.strip().removeprefix("@"))
+                  key = handle.lower()
+                  if handle and key not in seen:
+                      seen.add(key)
+                      handles.append(handle)
+              return handles
+
+          def parse_cli_json(stdout):
+              text = (stdout or "").strip()
+              if not text:
+                  return None
+              try:
+                  return json.loads(text)
+              except json.JSONDecodeError:
+                  pass
+              for line in reversed(text.splitlines()):
+                  try:
+                      return json.loads(line.strip())
+                  except json.JSONDecodeError:
+                      continue
+              return None
+
+          def extract_cli_records(payload):
+              if isinstance(payload, list):
+                  return payload
+              if isinstance(payload, dict):
+                  for key in ("results", "items", "data", "posts", "tweets"):
+                      value = payload.get(key)
+                      if isinstance(value, list):
+                          return value
+                  if any(key in payload for key in ("title", "text", "content", "url", "link")):
+                      return [payload]
+              return []
+
+          def first_cli_text(*values):
+              for value in values:
+                  if value is None:
+                      continue
+                  text = " ".join(str(value).split())
+                  if text:
+                      return text
+              return ""
+
+          def cli_record_handle(record, fallback):
+              for key in ("handle", "username", "screen_name", "author_handle"):
+                  value = first_cli_text(record.get(key)).removeprefix("@")
+                  if value:
+                      return value
+              for key in ("author", "user", "account"):
+                  value = record.get(key)
+                  if isinstance(value, dict):
+                      handle = first_cli_text(
+                          value.get("handle"),
+                          value.get("username"),
+                          value.get("screen_name"),
+                      ).removeprefix("@")
+                      if handle:
+                          return handle
+                  else:
+                      handle = first_cli_text(value).removeprefix("@")
+                      if handle:
+                          return handle
+              return fallback
+
+          def normalize_cli_tweet(record, fallback_handle):
+              title = first_cli_text(
+                  record.get("title"),
+                  record.get("headline"),
+                  record.get("tweet"),
+                  record.get("text"),
+                  record.get("full_text"),
+                  record.get("content"),
+              )
+              content = first_cli_text(
+                  record.get("content"),
+                  record.get("text"),
+                  record.get("full_text"),
+                  record.get("tweet"),
+                  record.get("description"),
+                  title,
+              )
+              url = first_cli_text(
+                  record.get("url"),
+                  record.get("link"),
+                  record.get("permalink"),
+                  record.get("tweet_url"),
+                  record.get("post_url"),
+              )
+              if url.startswith("/"):
+                  url = "https://x.com" + url
+              handle = cli_record_handle(record, fallback_handle)
+              if handle and title and not title.lower().startswith(f"@{handle.lower()}"):
+                  title = f"@{handle}: {title}"
+              if not title and not content:
+                  return None
+              return {
+                  "source": "twitter",
+                  "title": title or content[:90],
+                  "content": content or title,
+                  "url": url or "https://x.com",
+                  "collector": "XInfluencerAgent",
+              }
+
+          def parse_text_tweets(stdout, handle):
+              clean = re.sub(r"\x1b\[[0-9;]*m", "", stdout or "")
+              blocks = re.split(r"\n\s*\n", clean)
+              records = []
+              for block in blocks:
+                  lines = [line.strip(" \t-") for line in block.splitlines() if line.strip()]
+                  if not lines:
+                      continue
+                  url_match = re.search(r"https?://(?:x\.com|twitter\.com)/[^\s)]+", block)
+                  url = url_match.group(0) if url_match else ""
+                  content_lines = [
+                      line
+                      for line in lines
+                      if not line.lower().startswith(("warning", "error", "usage"))
+                  ]
+                  content = " ".join(content_lines)
+                  if len(content) < 8:
+                      continue
+                  records.append(
+                      {
+                          "source": "twitter",
+                          "title": f"@{handle}: {content[:90]}",
+                          "content": content,
+                          "url": url or "https://x.com",
+                          "collector": "XInfluencerAgent",
+                      }
+                  )
+              return records
+
+          def parse_twitter_cli_output(stdout, handle):
+              payload = parse_cli_json(stdout)
+              if payload is not None:
+                  records = []
+                  for record in extract_cli_records(payload):
+                      if isinstance(record, dict):
+                          normalized = normalize_cli_tweet(record, handle)
+                          if normalized:
+                              records.append(normalized)
+                  return records
+              return parse_text_tweets(stdout, handle)
+
+          def x_search_commands(query):
+              return [
+                  ["twitter", "search", query],
+                  ["opencli", "twitter", "search", query],
+                  ["bird", "search", query],
+              ]
+
+          def x_tweet_commands(url):
+              return [
+                  ["twitter", "tweet", url],
+                  ["opencli", "twitter", "tweet", url],
+                  ["bird", "tweet", url],
+              ]
+
+          def enrich_x_tweet(record):
+              url = record.get("url", "")
+              if not url.startswith(("https://x.com/", "https://twitter.com/")):
+                  return record
+              for command in x_tweet_commands(url):
+                  result = run_cli(command, timeout=30)
+                  if result["returncode"] != 0:
+                      log_command_failure("XInfluencerAgent", command, result)
+                      continue
+                  parsed = parse_twitter_cli_output(result.get("stdout", ""), "")
+                  if parsed:
+                      enriched = parsed[0]
+                      enriched["url"] = url
+                      return enriched
+              return record
+
+          def fetch_x_influencers_cli(limit=20):
+              handles = x_influencer_handles()
+              if not handles:
+                  log_event("critical", "XInfluencerAgent", "X_INFLUENCERS is not configured; X influencer search skipped.")
+                  return []
+
+              collected = []
+              for handle in handles:
+                  query = f"from:{handle} ({X_QUERY})"
+                  parsed = []
+                  for command in x_search_commands(query):
+                      result = run_cli(command, timeout=45)
+                      if result["returncode"] != 0:
+                          log_command_failure("XInfluencerAgent", command, result)
+                          continue
+                      parsed = parse_twitter_cli_output(result.get("stdout", ""), handle)
+                      if parsed:
+                          log_event("info", "XInfluencerAgent", f"{display_command(command)} exited 0. Parsed {len(parsed)} X records.")
+                          break
+                      log_event("warning", "XInfluencerAgent", f"{display_command(command)} exited 0 but produced no parseable X records.")
+
+                  for record in parsed:
+                      if len(collected) >= limit:
+                          break
+                      collected.append(enrich_x_tweet(record))
+                  if len(collected) >= limit:
+                      break
+
+              return collected[:limit]
 
           def score_text(title, content, source):
               text = f"{title} {content}".lower()
@@ -403,24 +689,23 @@ jobs:
           except Exception as e:
               log_event("error", "AcademicAgent", e)
 
-          try:
-              from aibrief.connectors.agent_reach import (
-                  fetch_reddit_deep,
-                  fetch_twitter,
-                  fetch_youtube,
-                  fetch_x_influencers,
-              )
+          log_agent_reach_doctor()
 
-              agent_reach_items = []
-              x_items = fetch_x_influencers(limit=20)
+          try:
+              x_items = fetch_x_influencers_cli(limit=20)
               items += x_items
 
               if x_items:
                   log_event("info", "XInfluencerAgent", f"Collected {len(x_items)} X influencer signals.")
               else:
                   log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure TWITTER_COOKIE and X_INFLUENCERS.")
+          except Exception as e:
+              log_event("critical", "XInfluencerAgent", f"X influencer search failed before collection: {type(e).__name__}: {safe_log_text(e)}")
 
-              agent_reach_items.extend(fetch_twitter() or [])
+          try:
+              from aibrief.connectors.agent_reach import fetch_reddit_deep, fetch_youtube
+
+              agent_reach_items = []
               agent_reach_items.extend(fetch_youtube() or [])
               agent_reach_items.extend(
                   fetch_reddit_deep(["LocalLLaMA", "MachineLearning", "OpenAI", "singularity"], limit=10) or []
@@ -432,7 +717,6 @@ jobs:
                   log_event("warning", "AgentReachConnector", "Agent-Reach returned no optional social results.")
           except Exception as e:
               log_event("warning", "AgentReachConnector", f"Agent-Reach unavailable: {type(e).__name__}: {e}")
-              log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure TWITTER_COOKIE and X_INFLUENCERS.")
 
           if not items:
               items = [
