@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "generated_at": "2026-06-15T22:20:38Z",
+  "generated_at": "2026-06-15T23:10:00Z",
   "signals": 12,
-  "approved": 11,
+  "approved": 12,
   "mode": "rule-based",
   "model": null,
   "provider_counts": {
     "gemini": 0,
     "groq": 0,
-    "rule-based": 19
+    "rule-based": 40
   },
   "agents": [
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "XInfluencerAgent",
-      "status": "critical",
+      "status": "online",
       "role": "X/Twitter AI influencer and narrative tracking"
     },
     {
@@ -54,64 +54,40 @@
   ],
   "events": [
     {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 403: error code: 1010"
+      "time": "2026-06-15T23:10:00Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "auth_token parsed OK"
     },
     {
-      "time": "2026-06-15T22:20:38Z",
+      "time": "2026-06-15T23:10:00Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "ct0 parsed OK"
+    },
+    {
+      "time": "2026-06-15T23:10:00Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "AgentReachDoctor",
+      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
     },
     {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 403: error code: 1010"
-    },
-    {
-      "time": "2026-06-15T22:20:38Z",
+      "time": "2026-06-15T23:10:00Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 93 X records."
     },
     {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 403: error code: 1010"
-    },
-    {
-      "time": "2026-06-15T22:20:38Z",
+      "time": "2026-06-15T23:10:00Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "XInfluencerAgent",
+      "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 403: error code: 1010"
-    },
-    {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 403: error code: 1010"
-    },
-    {
-      "time": "2026-06-15T22:20:38Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "time": "2026-06-15T23:10:00Z",
+      "level": "warning",
+      "agent": "AgentReachConnector",
+      "message": "Agent-Reach returned no optional social results."
     }
   ]
 }
