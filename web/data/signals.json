@@ -1,13 +1,13 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-15T23:20:02Z",
+  "generated_at": "2026-06-15T23:20:59Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 30,
-    "rule-based": 9
+    "groq": 22,
+    "rule-based": 17
   },
   "agents": [
     {
@@ -53,121 +53,121 @@
   ],
   "events": [
     {
-      "time": "2026-06-15T23:20:02Z",
-      "level": "warning",
-      "agent": "AgentReachConnector",
-      "message": "Agent-Reach returned no optional social results."
-    },
-    {
-      "time": "2026-06-15T23:20:02Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:02Z",
+      "time": "2026-06-15T23:20:59Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-15T23:20:59Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-15T23:20:59Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -186,10 +186,10 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows: Introducing Parallel-Synthesis, a framework enabling synthesizers to directly consume KV caches from parallel worker agents, outperforming text-based synthesis on 7 out of 9 datasets.",
-      "brief_ar": "نحو التركيب المباشر للمساحة الكامنة للفروع المتوازية في سير عمل العوامل-النموذج اللغوي الكبير: تقديم Parallel-Synthesis، إطار يسمح للمتراكب بتناول ذاكرة التخزين المؤقت للمفاتيح والقيم بشكل مباشر من العوامل العاملة المتوازية، متجاوزًا التركيب القائم على النص في 7 من 9 مجموعات بيانات",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_en": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows: Introducing Parallel-Synthesis, a framework enabling direct consumption of KV caches by a synthesizer, outperforming text-based synthesis on 7/9 datasets and reducing time-to-first-token by 2.5x-11x.",
+      "brief_ar": "نحو التركيب المباشر للفضاء الكامن للفروع المتوازية في سير عمل العوامل-النموذج اللغوي الكبير: تقديم Parallel-Synthesis، إطار يسمح للمُجمّع بتناول ذاكرة التخزين المؤقت KV مباشرة، متجاوزًا التركيب القائم على النص في 7 من 9 مجموعات بيانات وتقليل وقت الحصول على العلامة الأولى بنسبة 2.5-11 مرة.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "github-008",
@@ -205,8 +205,8 @@
       "provider": "groq",
       "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
       "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة من الإمكانيات للتنمية والتشغيل.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "arxiv-017",
@@ -220,10 +220,10 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows: A framework using large language models to transform low-level action sequences into high-level activities, providing insights into user interactions and improving digital products.",
-      "brief_ar": "استخلاص تسلسلات الإجراءات متعددة المجالات إلى سلاسل عمل قابلة للتفسير: إطار يستخدم نماذج اللغة الكبيرة لتحويل تسلسلات الإجراءات منخفضة المستوى إلى أنشطة عالية المستوى، مما يوفر رؤى حول تفاعلات المستخدمين وتحسين المنتجات الرقمية.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_en": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows: A framework using large language models to transform low-level action sequences into high-level activities, demonstrating effectiveness across various domains and tasks.",
+      "brief_ar": "استخلاص تسلسلات الإجراءات عبر المجالات إلى سلاسل عمل قابلة للتفسير: إطار يستخدم نماذج اللغة الكبيرة لتحويل تسلسلات الإجراءات منخفضة المستوى إلى أنشطة عالية المستوى، وبرهنت فعاليتها عبر مجالات ومهام متنوعة.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "github-010",
@@ -237,30 +237,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are being tested to run research on single-GPU nanochat training, with potential for automated discovery.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة، مع إمكانية اكتشاف آلي محتمل.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_en": "karpathy/autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes and potential strategic implications.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة تلقائيًا، مع نتائج غير مؤكدة وآثار إستراتيجية محتملة.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
-      "id": "twitter-027",
-      "source": "twitter",
-      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
-      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12398 retweets: 774 replies: 1818 quotes: 559 views: 1563341 bookmarks: 1958 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2047379615589777666' text: '1. We believe in iterative deployment; although GPT-5.5 is already a smart model, we expect rapid improvements. Iterative deployment is a big part of our safety strategy; we believe the world will be best equipped to win at the team sport of AI resilience this way.",
-      "url": "https://x.com",
-      "score": 52,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 52.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "A protocol is needed for the internet to be equally usable by humans and agents, with iterative deployment being a key safety strategy for AI resilience.",
-      "brief_ar": "يُعتبر بروتوكول إنترنت قابل للتشغيل من قبل البشر والوكلاء ضروريًا، مع اعتبار التوزيع التكراري استراتيجية أمنية رئيسية لتحمل المخاطر الذكية",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
-    },
-    {
-      "id": "twitter-031",
+      "id": "twitter-029",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -273,8 +256,8 @@
       "provider": "rule-based",
       "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
       "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "github-006",
@@ -289,9 +272,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليّة كفاءة وتحديد إجراءات",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليّة كفاءة وتحديد اتخاذ القرارات.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "github-007",
@@ -306,9 +289,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, leveraging open-source intelligence for strategic decision-making.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكيل لتطوير تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة لاتخاذ القرارات الاستراتيجية.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتحديث تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة لاتخاذ القرارات الاستراتيجية.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "github-009",
@@ -323,9 +306,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "github-011",
@@ -340,9 +323,26 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, integrating cutting-edge RAG with Agent capabilities to enhance context layers for LLMs.",
-      "brief_ar": "RAGFlow هو محرك رائد مفتوح المصدر لتحسين التوليد بالاسترجاع (RAG)، يدمج تقنيات RAG المتقدمة مع قدرات الوكيل لتحسين طبقات السياق للنماذج اللغوية الكبيرة.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_ar": "RAGFlow هو محرك توليد مدعوم بالاسترجاع مفتوح المصدر رائد، يدمج تقنيات RAG المتقدمة مع قدرات الوكيل لتحسين طبقات السياق للنماذج اللغوية الكبيرة.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
+    },
+    {
+      "id": "twitter-027",
+      "source": "twitter",
+      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
+      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12397 retweets: 774 replies: 1818 quotes: 559 views: 1563341 bookmarks: 1958 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2027578652477821175' text: 'Tonight, we reached an agreement with the Department of War to deploy our models in their classified network.",
+      "url": "https://x.com",
+      "score": 42,
+      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 42.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
+      "brief_ar": "ملخص قائم على القواعد: (also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "arxiv-012",
@@ -356,10 +356,10 @@
       "topic": "RAG",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "RepFusion leverages multimodal priors for denoising in representation space, utilizing large language models to improve text-to-image systems.",
-      "brief_ar": "RepFusion يستفيد من السابقة المتعددة الأوجه لتنقية المساحات التمثيلية، يستخدم نماذج اللغة الكبيرة لتحسين أنظمة النص إلى الصورة.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_en": "RepFusion leverages multimodal priors for denoising in representation space, outperforming baselines by utilizing large language models as noisy representation encoders.",
+      "brief_ar": "RepFusion يستفيد من السابقة المتعددة الأوضاع لتنقية المساحة التمثيلية، ويتفوق على القيم المرجعية من خلال استخدام نماذج اللغة الكبيرة كمشفرات تمثيلات ملوثة.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     },
     {
       "id": "arxiv-016",
@@ -374,9 +374,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "The Self-Aware Body framework designs therapeutic sonic interactions for motor rehabilitation, focusing on movement sonification. It addresses adoption barriers through a conceptual reframing, a practical design platform, and a user-centered methodology.",
-      "brief_ar": "إطار الجسم الواعي الذاتي يصمم تفاعلات صوتية علاجية لتحسين التأهيل الحركي، مع التركيز على تحويل الحركة إلى صوت. ويعالج عقبات التحويل من خلال إعادة صياغة مفاهيمية ومنصة تصميم عملية ومنهجية مركزية للمستخدم.",
-      "createdAt": "2026-06-15T23:20:02Z",
-      "updatedAt": "2026-06-15T23:20:02Z"
+      "brief_ar": "إطار الجسم الواعي الذاتي يصمم تفاعلات صوتية علاجية لتعافي الحركة، مع التركيز على تحويل الحركة إلى صوت. يعالج إطار العمل حواجز الاستخدام من خلال إعادة صياغة مفاهيمية ومنصة تصميم عملية ومنهجية مركزية على المستخدم.",
+      "createdAt": "2026-06-15T23:20:59Z",
+      "updatedAt": "2026-06-15T23:20:59Z"
     }
   ]
 }
