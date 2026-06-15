@@ -1,13 +1,13 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-14T23:00:14Z",
+  "generated_at": "2026-06-14T23:43:23Z",
   "topic": "AI agents",
   "mode": "rule-based",
   "model": null,
   "provider_counts": {
     "gemini": 0,
     "groq": 0,
-    "rule-based": 18
+    "rule-based": 17
   },
   "agents": [
     {
@@ -48,121 +48,121 @@
   ],
   "events": [
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 403: error code: 1010"
     },
     {
-      "time": "2026-06-14T23:00:14Z",
+      "time": "2026-06-14T23:43:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -170,7 +170,7 @@
   ],
   "signals": [
     {
-      "id": "arxiv-011",
+      "id": "arxiv-010",
       "source": "arxiv",
       "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
       "content": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
@@ -183,11 +183,11 @@
       "provider": "rule-based",
       "brief_en": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually ali...",
       "brief_ar": "ملخص قائم على القواعد: Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually ali...",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "github-007",
+      "id": "github-006",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -200,11 +200,11 @@
       "provider": "rule-based",
       "brief_en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
       "brief_ar": "ملخص قائم على القواعد: 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "arxiv-017",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "Reward Modeling for Multi-Agent Orchestration",
       "content": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orchestration Reward Modeling (OrchRM), a self-supervised framework for evaluating orchestration quality without human annotations. OrchRM leverages intermediate artifacts from multi-agent executions to construct win-lose pairs for Bradley-Terry reward model training. Unlike existing MAS test-time scaling and orchestrator training frameworks that rely on costly sub-agent rollouts, OrchRM operates directly at the orchestration level, enabling efficient and high-performing reward-guided orchestrator training and MAS test-time scaling. OrchRM improves training efficiency by up to 10x in token usage while improving MAS test-time scaling performance by up to 8% in accuracy. These gains consistently transfer across multiple domains, including mathematical reasoning, web-based question answering, and multi-hop reasoning, demonstrating orchestration-level reward modeling as a scalable direction for robust multi-agent orchestration. Code will be available at https://github.com/Wang-ML-Lab/OrchRM.",
@@ -217,11 +217,11 @@
       "provider": "rule-based",
       "brief_en": "Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orc...",
       "brief_ar": "ملخص قائم على القواعد: Multi-Agent Systems (MAS) built on Large Language Models (LLMs) require effective orchestration to coordinate specialized agents, yet training such orchestrators is hindered by limited supervision and high computational cost. We propose Orc...",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "arxiv-016",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis",
       "content": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis. EpiBench evaluates whether agents can make well-defined analysis decisions from realistic workflow states and return deterministically gradable answers. The benchmark includes 106 evaluations across CUT\\&Tag/CUT\\&RUN, ATAC-seq, ChIP-seq, and DNA methylation workflows. Across 5,088 valid trajectories from 16 model-harness pairs, no system passed a majority of attempts: GPT-5.5 / Pi led at 45.0\\% (143/318 attempts; 95\\% confidence interval (CI), 36.3--53.7), followed by GPT-5.5 / OpenAI Codex at 39.9\\% (127/318 attempts; 95\\% CI, 31.6--48.3). Claude Opus 4.8 Max / Pi and GPT-5.4 / Pi each passed 39.0\\% (124/318 attempts; 95\\% CI, 30.2--47.8 and 31.0--47.0, respectively). Performance varies across assay types, and many failed runs still contain parts of the correct answer. Agents often found the right files and computed useful intermediate results, but failed when the task required deeper, assay-specific scientific judgment.",
@@ -234,11 +234,11 @@
       "provider": "rule-based",
       "brief_en": "We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis. EpiBench evaluates whether agents can make well-defined analysis decisions from realistic workflow states and return deterministically gradable answers. T...",
       "brief_ar": "ملخص قائم على القواعد: We introduce EpiBench, a verifiable benchmark for short-horizon epigenomics analysis. EpiBench evaluates whether agents can make well-defined analysis decisions from realistic workflow states and return deterministically gradable answers. T...",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "arxiv-018",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
       "content": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios. This gap is critical in regions like rural India, where patients often express complex medical queries in native Indic languages and rely on multimodal inputs such as medical images. Existing English-centric MLLMs struggle to support such use cases, limiting equitable access to AI-driven healthcare assistance. To address this challenge, we introduce ArogyaBodha, a large-scale multilingual multimodal medical question-answer dataset constructed from eight heterogeneous sources, covering 31 body systems, six imaging modalities, and 21 clinical domains across English and seven major Indian languages. We further propose ArogyaSutra, an actor-critic-based multi-agent framework that integrates tool grounding with dual-memory mechanisms for step-wise, reasoning-aware decision making, and uses stored actor-critic simulation trajectories for distillation. Experiments show that our dataset and framework improve multilingual medical reasoning accuracy across all Indic languages, with ablations validating the contribution of each component. The source code and dataset are available at: https://iitp-cse.github.io/ ArogyaSutra/",
@@ -251,11 +251,11 @@
       "provider": "rule-based",
       "brief_en": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios...",
       "brief_ar": "ملخص قائم على القواعد: Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios...",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "github-009",
+      "id": "github-008",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -268,11 +268,11 @@
       "provider": "rule-based",
       "brief_en": "AI agents running research on single-GPU nanochat training automatically",
       "brief_ar": "ملخص قائم على القواعد: AI agents running research on single-GPU nanochat training automatically",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "github-005",
+      "id": "github-004",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -285,11 +285,11 @@
       "provider": "rule-based",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
       "brief_ar": "ملخص قائم على القواعد: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "github-006",
+      "id": "github-005",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -302,11 +302,11 @@
       "provider": "rule-based",
       "brief_en": "The agent engineering platform.",
       "brief_ar": "ملخص قائم على القواعد: The agent engineering platform.",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "github-008",
+      "id": "github-007",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -319,11 +319,11 @@
       "provider": "rule-based",
       "brief_en": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
       "brief_ar": "ملخص قائم على القواعد: 🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "github-010",
+      "id": "github-009",
       "source": "github",
       "title": "infiniflow/ragflow",
       "content": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
@@ -336,11 +336,11 @@
       "provider": "rule-based",
       "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "brief_ar": "ملخص قائم على القواعد: RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "arxiv-012",
+      "id": "arxiv-011",
       "source": "arxiv",
       "title": "Automated reproducibility assessments in the social and behavioral sciences using large language models",
       "content": "Reproducibility in the social and behavioral sciences is typically evaluated by independent researchers who reanalyze the original data to assess whether the published findings can be recovered. However, such approaches are resource-intensive and difficult to scale. Here, we show that large language models (LLMs) can automate reproducibility assessments. Using N=76 published studies with predefined claims from the behavioral and social sciences, we compare LLM-generated analysis with the original findings and human reanalysis. For 7 studies, the LLM could not produce a viable effect size estimate. For the remaining studies, our LLM pipeline recovered the original effect sizes in 41% of studies using a +/-0.05 tolerance in Cohen's d. Further, our LLM pipeline reached the same qualitative conclusion as the original study in 96% of cases, where conclusions indicate whether the reanalysis supports the original claim. For comparison, human reanalysts recovered the original effect sizes in 34% of studies and reached the same qualitative conclusion in 74% of cases. Together, these results show that LLMs can serve as a scalable tool for automated reproducibility assessment and provide a foundation for systematic auditing of empirical results in the social and behavioral sciences.",
@@ -353,11 +353,11 @@
       "provider": "rule-based",
       "brief_en": "Reproducibility in the social and behavioral sciences is typically evaluated by independent researchers who reanalyze the original data to assess whether the published findings can be recovered. However, such approaches are resource-intensi...",
       "brief_ar": "ملخص قائم على القواعد: Reproducibility in the social and behavioral sciences is typically evaluated by independent researchers who reanalyze the original data to assess whether the published findings can be recovered. However, such approaches are resource-intensi...",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     },
     {
-      "id": "arxiv-013",
+      "id": "arxiv-012",
       "source": "arxiv",
       "title": "Influcoder: Distilling Decoders' Gradient Influence Rankings into an Encoder for Data Attribution",
       "content": "With the growth of LLMs' (Large Language Models) capabilities, there has been an increasing push to curate high quality datasets by filtering samples in the training data. In general, Data Attribution (DA) methods aim to estimate how individual samples in a training dataset can precondition a model to generate certain outputs. As an example, one might be interested in which samples in the data could be the source of toxic behavior after training the LLM. Many methods quantify this conditioning through the paradigm of influence functions. While methods of this family are effective in its function, they lack the necessary processing speed and storage compactness to be practically implemented on large datasets. We propose a method, Influcoder, as a quick and cost-effective approach to influence-based Data Attribution at scale.",
@@ -370,8 +370,8 @@
       "provider": "rule-based",
       "brief_en": "With the growth of LLMs' (Large Language Models) capabilities, there has been an increasing push to curate high quality datasets by filtering samples in the training data. In general, Data Attribution (DA) methods aim to estimate how indivi...",
       "brief_ar": "ملخص قائم على القواعد: With the growth of LLMs' (Large Language Models) capabilities, there has been an increasing push to curate high quality datasets by filtering samples in the training data. In general, Data Attribution (DA) methods aim to estimate how indivi...",
-      "createdAt": "2026-06-14T23:00:14Z",
-      "updatedAt": "2026-06-14T23:00:14Z"
+      "createdAt": "2026-06-14T23:43:23Z",
+      "updatedAt": "2026-06-14T23:43:23Z"
     }
   ]
 }
