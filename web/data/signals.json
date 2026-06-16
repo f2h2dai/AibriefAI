@@ -1,13 +1,13 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-15T23:20:59Z",
+  "generated_at": "2026-06-16T18:13:46Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 22,
-    "rule-based": 17
+    "groq": 30,
+    "rule-based": 9
   },
   "agents": [
     {
@@ -53,121 +53,121 @@
   ],
   "events": [
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
+      "level": "warning",
+      "agent": "AgentReachConnector",
+      "message": "Agent-Reach returned no optional social results."
+    },
+    {
+      "time": "2026-06-16T18:13:46Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+    },
+    {
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-15T23:20:59Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-15T23:20:59Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-15T23:20:59Z",
+      "time": "2026-06-16T18:13:46Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -175,21 +175,21 @@
   ],
   "signals": [
     {
-      "id": "arxiv-015",
+      "id": "arxiv-019",
       "source": "arxiv",
-      "title": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
-      "content": "Large language models increasingly serve as execution engines for agentic systems, yet they still consume context through a sequential text interface. This creates a mismatch with modern structured agent workflows, in which independent branches explore subtasks, retrieve evidence, or generate candidate solutions before a final synthesis step. Existing systems typically merge these branches by concatenating their textual outputs, which discards the parallel structure and incurs redundant prefill computation. In this work, we introduce Parallel-Synthesis, a plug-and-play framework that enables a synthesizer to directly consume the KV caches produced by parallel worker agents. Parallel-Synthesis combines a cache mapper that calibrates independently generated branch caches with a fine-tuned synthesizer adapter that enables generation from this non-sequential cache interface. We train Parallel-Synthesis using data that exposes the synthesizer to parallel cache contexts, teaches aggregation across cached branches, and distills reasoning behavior from standard text-concatenation-based synthesis. Across nine downstream datasets spanning math, science QA, code generation, GAIA, and multi-agent database diagnosis, Parallel-Synthesis matches or outperforms text-based synthesis on seven datasets and remains close on the other two. It also reduces time-to-first-token by 2.5x-11x, suggesting that direct cache-based synthesis is a promising interface for more native and efficient synthesis over parallel agent branches.",
-      "url": "https://arxiv.org/abs/2606.14672v1",
-      "score": 68,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 68.",
+      "title": "Directory-Aware Query and Maintenance in Vector Databases",
+      "content": "Vector databases typically manage metadata as flat scalar attributes, which limits their ability to express hierarchical directory semantics commonly used to organize code repositories, enterprise documents, and agent memories. As a result, directory-scoped retrieval and structural updates are often implemented as application-layer workarounds, making recursive scope resolution expensive and directory maintenance difficult to keep consistent. This paper studies native directory semantics as a first-class capability for vector databases. We formalize two core operators: Directory-Semantic Query (DSQ) for hierarchically scoped retrieval, and Directory-Semantic Maintenance (DSM) for structural updates. We then evaluate three implementation strategies: query-time path expansion (PE-Online), ingestion-time path expansion (PE-Offline), and a Trie-based Hierarchical Index (TrieHI). Our analysis exposes the fundamental limitations of expansion-based designs: flattening the hierarchy incurs high recursive-query latency in PE-Online and unscalable write amplification during structural changes in both expansion strategies. In contrast, TrieHI keeps the directory topology as a native prefix tree, enabling efficient recursive retrieval through tree traversal and reducing maintenance cost through topological node manipulation. We benchmark these design points within ByteDance's Viking vector search engine and release two large-scale datasets, WIKI-Dir and ARXIV-Dir, to support future research on directory-semantic vector search. Finally, TrieHI has been integrated into OpenViking, an open-source context database for AI agents, where it supports filesystem-style context organization and directory-recursive retrieval.",
+      "url": "https://arxiv.org/abs/2606.16903v1",
+      "score": 75,
+      "score_reason": "academic/research signal; agentic AI relevance; research relevance. Final score: 75.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows: Introducing Parallel-Synthesis, a framework enabling direct consumption of KV caches by a synthesizer, outperforming text-based synthesis on 7/9 datasets and reducing time-to-first-token by 2.5x-11x.",
-      "brief_ar": "نحو التركيب المباشر للفضاء الكامن للفروع المتوازية في سير عمل العوامل-النموذج اللغوي الكبير: تقديم Parallel-Synthesis، إطار يسمح للمُجمّع بتناول ذاكرة التخزين المؤقت KV مباشرة، متجاوزًا التركيب القائم على النص في 7 من 9 مجموعات بيانات وتقليل وقت الحصول على العلامة الأولى بنسبة 2.5-11 مرة.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_en": "Directory-Aware Query and Maintenance in Vector Databases: This research introduces native directory semantics for vector databases, enabling efficient hierarchical retrieval and structural updates through the Directory-Semantic Query (DSQ) and Directory-Semantic Maintenance (DSM) operators.",
+      "brief_ar": "دليل-دراية الاستعلام والصيانة في قواعد البيانات المتجهة: هذا البحث يقدم семантиات الدليل الأصلي لقواعد البيانات المتجهة، مما يسمح بالاسترجاع الهيكلي والتحديثات الهيكلية الفعالة من خلال مشغل الاستعلام الدليل-المنطقي (DSQ) ومشغل الصيانة الدليل-المنطقي (DSM)",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "github-008",
@@ -204,26 +204,43 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة من الإمكانيات للتنمية والتشغيل.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها و تخصيصها و إطلاقها، وتقدم مجموعة من الإمكانيات للتنمية و النشر.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
-      "id": "arxiv-017",
+      "id": "arxiv-013",
       "source": "arxiv",
-      "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
-      "content": "Sequential or time-stamped interaction logs provide objective records of digital application usage, yet their granularity and noise often obscure meaningful insights into people's work. Such insights are essential for improving digital products in ways grounded in real-world user interactions. Prior research has applied deep learning models to cluster user actions into high-level activities, but these approaches are highly sensitive to noise and struggle to generalize across applications. To address this limitation, we introduce WorkflowView, a framework that uses large language models (LLMs) to abstract low-level action sequences into high-level activities. We establish the effectiveness and generality of our approach across three distinct, challenging sequential tasks and diverse domains: (a) zero-shot task description reconstruction from browser logs (achieving high semantic similarity, $μ_{sim} = 0.91$), (b) few-shot student dropout prediction using MOOC interaction logs (reaching weighted $F_1 = 0.90$ with only five few-shot examples), and (c) anonymized, privacy-preserving analysis of AI tool integration within document workflows in Microsoft Word. Our work demonstrates that LLM-based abstraction is a robust and efficient path forward for transforming low-level behavioral data into high-level, interpretable, and actionable insights. We also discuss practical considerations for deploying LLM-based inferences within logging infrastructures, including computational efficiency and user privacy.",
-      "url": "https://arxiv.org/abs/2606.14654v1",
-      "score": 57,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance; research relevance. Final score: 57.",
+      "title": "Consensus-based Agentic Large Language Model Framework for Harmonized Tariff Schedule Code Classification",
+      "content": "Accurate Harmonized Tariff Schedule (HTS) code classification is essential for customs clearance, duty assessment, trade statistics, and regulatory compliance in maritime logistics. However, exact HTS classification remains challenging because product descriptions are often short, incomplete, or ambiguous, while correct classification depends on hierarchical tariff structures, legal notes, and jurisdiction-specific rules. This paper proposes an agentic large language model (LLM) framework for Canadian 10-digit HTS code classification in smart-port and maritime logistics environments. The framework integrates multi-agent information retrieval, semantic retrieval over official tariff documents, evidence-grounded reasoning, consensus-based validation, element-wise voting across hierarchical code components, confidence estimation, and human-in-the-loop escalation. We evaluate the framework on a private dataset of 3,300 domain-expert-labeled product records collected from logistics and delivery contexts. Experimental results show that exact 10-digit classification remains difficult even for advanced LLMs, with performance decreasing from coarse chapter-level prediction to fine-grained tariff and statistical suffix assignment. These findings demonstrate the need for evidence-grounded, uncertainty-aware, and human-centered classification workflows rather than fully autonomous single-step prediction. The proposed framework supports more interpretable, accountable, and compliance-oriented HTS classification for maritime logistics and smart-port operations. Our code is available at https://github.com/Analytics-Everywhere-Lab/hts.",
+      "url": "https://arxiv.org/abs/2606.16987v1",
+      "score": 61,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 61.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "A consensus-based agentic large language model framework is proposed for Harmonized Tariff Schedule code classification, integrating multi-agent information retrieval, semantic retrieval, and evidence-grounded reasoning to improve accuracy in maritime logistics.",
+      "brief_ar": "يُقترح إطار عمل لغة كبيرة بالاعتماد على الإجماع لتصنيف رمز الجدول الجمركي المنسق، ويتضمن استرجاع المعلومات من خلال وكلاء متعددين، واسترجاع семанти، واعتماد استدلال قائم على الأدلة لتحسين الدقة في مجال اللوجستيات البحرية.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
+    },
+    {
+      "id": "arxiv-018",
+      "source": "arxiv",
+      "title": "Speaking the Language of Science: Toward a General-Purpose Generative Foundation Model for the Natural Sciences",
+      "content": "In this report, we present LOGOS (Language Of Generative Objects in Science), a scientific generative language model that unifies heterogeneous tasks across the natural sciences within a single autoregressive framework based on a shared scientific grammar. It encodes diverse scientific objects and their spatial interactions as token sequences over a common vocabulary. By representing spatial contact and constraint patterns as discrete tokens, the model captures complex structural interactions in a purely sequential manner, without relying on explicit coordinates or geometric neural networks. This unified representation enables a wide range of downstream tasks to be formulated consistently as next-token prediction in the same grammar space, creating strong alignment between continued multi-domain pre-training and downstream objectives. Across diverse tasks, LOGOS consistently matches or outperforms domain-specific baselines, providing preliminary evidence for the feasibility of \"one model fits all\" in the natural sciences. We train LOGOS models at different scales (1B, 3B, and 8B parameters) and find a consistent positive correlation between model size and performance. This suggests that the future of AI for Science (AI4S) may not lie in building an independent technical stack that is separated from large language models (LLMs). Instead, it may depend on deeply aligning scientific foundation models with LLMs through shared architectures, shared training paradigms, and shared inference infrastructure, so that LLMs can truly become a new entry point for AI4S. We release the model weights and associated resources to facilitate further research.",
+      "url": "https://arxiv.org/abs/2606.16905v1",
+      "score": 55,
+      "score_reason": "academic/research signal; large language model relevance; model capability relevance; research relevance. Final score: 55.",
       "status": "verified",
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows: A framework using large language models to transform low-level action sequences into high-level activities, demonstrating effectiveness across various domains and tasks.",
-      "brief_ar": "استخلاص تسلسلات الإجراءات عبر المجالات إلى سلاسل عمل قابلة للتفسير: إطار يستخدم نماذج اللغة الكبيرة لتحويل تسلسلات الإجراءات منخفضة المستوى إلى أنشطة عالية المستوى، وبرهنت فعاليتها عبر مجالات ومهام متنوعة.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_en": "LOGOS: A unified generative language model for natural sciences, capturing complex interactions through a shared scientific grammar and token sequences, showing promise for a 'one model fits all' approach.",
+      "brief_ar": "ЛОГOS: نموذج لغة مولد موحد للعلوم الطبيعية، يلتقط التفاعلات المعقدة من خلال قواعد علمية مشتركة وتسلسلات رموز، يظهر وعدا بنهج 'نموذج واحد يناسب الجميع'.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "github-010",
@@ -237,13 +254,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes and potential strategic implications.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة تلقائيًا، مع نتائج غير مؤكدة وآثار إستراتيجية محتملة.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training, with potential for automated discovery.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة، مع إمكانية اكتشاف آلي",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
-      "id": "twitter-029",
+      "id": "twitter-024",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -253,11 +270,28 @@
       "status": "verified",
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "provider": "groq",
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
+    },
+    {
+      "id": "arxiv-015",
+      "source": "arxiv",
+      "title": "Scalable Circuit Learning for Interpreting Large Language Models",
+      "content": "A prominent research direction in mechanistic interpretability is learning sparse circuits over LLM components to reveal how they jointly produce model behavior. However, raw neurons are polysemantic, making learned circuits hard to interpret. Sparse autoencoder (SAE) features alleviate this, but their high dimensionality makes existing intervention-based circuit learning methods computationally prohibitive. We propose CircuitLasso, a scalable circuit-learning approach based on sparse linear regression. CircuitLasso recovers circuits whose structural accuracy matches that of state-of-the-art intervention-based methods on the benchmark data, at a fraction of the computational cost. For interpretability, CircuitLasso efficiently uncovers relationships among SAE features, showing how human-interpretable semantic features propagate through the model and influence its predictions. Finally, we validate the utility of our learned circuits by leveraging their insights to achieve comparable performance at substantially lower cost on a domain-generalization task.",
+      "url": "https://arxiv.org/abs/2606.16939v1",
+      "score": 47,
+      "score_reason": "academic/research signal; retrieval/RAG relevance; large language model relevance; model capability relevance. Final score: 47.",
+      "status": "verified",
+      "topic": "RAG",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "Scalable Circuit Learning for Interpreting Large Language Models: A novel approach, CircuitLasso, enables efficient and interpretable circuit learning over LLM components, leveraging sparse linear regression to uncover relationships among SAE features and improve model understanding.",
+      "brief_ar": "التعلم الدائري القابل للتوسيع لتحليل النماذج اللغوية الكبيرة: نهج جديد، CircuitLasso، يتيح التعلم الدائري الفعال والقابل للتفسير على مكونات النماذج اللغوية الكبيرة، مستخدما الانحدار الخطي المتناثر لاكتشاف العلاقات بين سمات SAE وتحسين فهم النموذج.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "github-006",
@@ -272,9 +306,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليّة كفاءة وتحديد اتخاذ القرارات.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_ar": "Langflow أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكين آلي وتحسين اتخاذ القرارات.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "github-007",
@@ -288,10 +322,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, leveraging open-source intelligence for strategic decision-making.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتحديث تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة لاتخاذ القرارات الاستراتيجية.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, enabling the creation of custom AI agents for various tasks.",
+      "brief_ar": "langchain-ai/langchain: منصة هندسة الوكيل لتحديث تطبيقات الذكاء الاصطناعي، تمكن من إنشاء وكلاء ذكاء اصطناعي مخصصين لمهام متنوعة.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "github-009",
@@ -306,9 +340,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكية، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "github-011",
@@ -322,61 +356,27 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, integrating cutting-edge RAG with Agent capabilities to enhance context layers for LLMs.",
-      "brief_ar": "RAGFlow هو محرك توليد مدعوم بالاسترجاع مفتوح المصدر رائد، يدمج تقنيات RAG المتقدمة مع قدرات الوكيل لتحسين طبقات السياق للنماذج اللغوية الكبيرة.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
-    },
-    {
-      "id": "twitter-027",
-      "source": "twitter",
-      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
-      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12397 retweets: 774 replies: 1818 quotes: 559 views: 1563341 bookmarks: 1958 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2027578652477821175' text: 'Tonight, we reached an agreement with the Department of War to deploy our models in their classified network.",
-      "url": "https://x.com",
-      "score": 42,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 42.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
-      "brief_ar": "ملخص قائم على القواعد: (also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg ...",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, integrating RAG with agent capabilities to enhance context for LLMs.",
+      "brief_ar": "RAGFlow هو محرك توليد تعزيزي مفتوح المصدر يدمج بين تقنيات RAG والوكيل لتحسين سياق النماذج اللغوية الكبيرة.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     },
     {
       "id": "arxiv-012",
       "source": "arxiv",
-      "title": "RepFusion: Leveraging Multimodal Priors for Denoising in Representation Space",
-      "content": "Large language models (LLMs) are widely used in text-to-image (T2I) systems, but they are typically limited to text encoding, while denoising is handled by newly trained generative backbones. The emergence of representation autoencoders (RAEs) shifts the generation target toward semantically structured visual representations, creating a latent space that is more compatible with pretrained LLM priors. Inspired by multimodal LLMs (MLLMs), where an MLP projector is sufficient to align clean visual representations with a pretrained LLM, we repurpose the MLLM itself as a noisy representation encoder, extending this mechanism from clean to noisy inputs. We present RepFusion, which uses the resulting MLLM outputs as the conditioning signal for a diffusion transformer. In controlled comparisons at similar inference budgets, RepFusion outperforms baselines that devote comparable capacity to newly initialized denoisers. These results demonstrate that MLLMs provide strong priors for denoising visual representations and that, by conditioning on evolving noisy representations, test-time compute can be productively spent on repeated MLLM conditioning in modern T2I systems.",
-      "url": "https://arxiv.org/abs/2606.14700v1",
-      "score": 40,
-      "score_reason": "academic/research signal; retrieval/RAG relevance; large language model relevance; model capability relevance. Final score: 40.",
+      "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+      "content": "Large language models (LLMs) often fail when answering requires identifying a small but decisive piece of evidence within a long or complex context, such as a single line in a tool trace or a subtle detail in an image. We propose ContextRL, a context-aware reinforcement learning (RL) method that improves long-horizon reasoning and multimodal performance through an \\emph{indirect} auxiliary objective. Instead of supervising only the final answer, ContextRL presents the model with a query, an answer, and two highly similar contexts, and rewards it for selecting the context that supports the query--answer pair, thereby encouraging fine-grained grounding. We construct contrastive context data in two domains: for coding agents, trajectories serve as contexts, yielding 1k pairs built via condition filtering; for multimodal reasoning, images serve as contexts, yielding 7K pairs built via generative editing and similarity search. ContextRL achieves average gains of +2.2% over standard GRPO on 5 long-horizon benchmarks, and +1.8% across 12 diverse visual question answering benchmarks. To disentangle the effect of the proposed objective from that of additional data, we compare against data-augmentation baselines that repurpose the same contrastive contexts as standard query--context--answer examples. These baselines provide little to no improvement, showing that the gains arise from the proposed context-selection objective rather than from the contrastive data alone.",
+      "url": "https://arxiv.org/abs/2606.17053v1",
+      "score": 44,
+      "score_reason": "academic/research signal; agentic AI relevance; retrieval/RAG relevance; large language model relevance. Final score: 44.",
       "status": "verified",
-      "topic": "RAG",
+      "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "RepFusion leverages multimodal priors for denoising in representation space, outperforming baselines by utilizing large language models as noisy representation encoders.",
-      "brief_ar": "RepFusion يستفيد من السابقة المتعددة الأوضاع لتنقية المساحة التمثيلية، ويتفوق على القيم المرجعية من خلال استخدام نماذج اللغة الكبيرة كمشفرات تمثيلات ملوثة.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
-    },
-    {
-      "id": "arxiv-016",
-      "source": "arxiv",
-      "title": "The Self-Aware Body: A User-Centered Framework for Designing Therapeutic Sonic Interactions",
-      "content": "This chapter presents a framework for designing therapeutic sonic interaction technologies, with a focus on movement sonification: the real-time conversion of bodily motion into sound that serves as feedback during motor rehabilitation. Despite growing evidence for their effectiveness, technologies implementing movement sonification are yet to be systematically adopted as part of clinical practice, potentially due to a lack of standardized development methodologies as well as inadequate integration of clinical stakeholder perspectives into interaction design. The framework addresses these barriers through three interconnected contributions. The first is a conceptual reframing of the design task as the calibration of sonic variability to the perceptual affordances of the listener and the demands of the clinical context. The second is a practical design platform inspired by professional audio mixing workflows, which imposes a structured and learnable signal-flow architecture on the interaction design process and enables rapid iterative exploration. The third is a user-centered development methodology adapted from healthcare intervention science, which grounds design decisions in engagement with the clinicians and patients who will use the resulting systems. The HearWalk biofeedback system for hemiparetic gait rehabilitation illustrates the framework, and the chapter concludes by examining where large language models and AI tools can meaningfully assist each stage of this design process, as well as where human clinical and perceptual expertise remains irreplaceable.",
-      "url": "https://arxiv.org/abs/2606.14664v1",
-      "score": 40,
-      "score_reason": "academic/research signal; model capability relevance. Final score: 40.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "The Self-Aware Body framework designs therapeutic sonic interactions for motor rehabilitation, focusing on movement sonification. It addresses adoption barriers through a conceptual reframing, a practical design platform, and a user-centered methodology.",
-      "brief_ar": "إطار الجسم الواعي الذاتي يصمم تفاعلات صوتية علاجية لتعافي الحركة، مع التركيز على تحويل الحركة إلى صوت. يعالج إطار العمل حواجز الاستخدام من خلال إعادة صياغة مفاهيمية ومنصة تصميم عملية ومنهجية مركزية على المستخدم.",
-      "createdAt": "2026-06-15T23:20:59Z",
-      "updatedAt": "2026-06-15T23:20:59Z"
+      "brief_en": "Context-Aware RL for Agentic and Multimodal LLMs: Improving long-horizon reasoning and multimodal performance through indirect auxiliary objective, yielding +2.2% and +1.8% gains on benchmarks.",
+      "brief_ar": "الاستخبارات الاصطناعية المتصلة بالسياق للوكلاء واللغات متعددة التعريف: تحسين التفكير على المدى الطويل والأداء المتعدد التعريف من خلال هدف مساعد غير مباشر، مما يؤدي إلى مكاسب تبلغ +2.2٪ و +1.8٪ على المعايير.",
+      "createdAt": "2026-06-16T18:13:46Z",
+      "updatedAt": "2026-06-16T18:13:46Z"
     }
   ]
 }
