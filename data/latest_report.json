@@ -1,134 +1,128 @@
 {
   "project": "AibriefAI",
-  "generated_at": "2026-06-17T20:39:28Z",
+  "generated_at": "2026-06-18T11:40:38Z",
   "signals": 12,
-  "approved": 10,
-  "held": 2,
-  "errors": 9,
+  "approved": 12,
+  "held": 0,
+  "errors": 6,
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
     "groq": 30,
-    "rule-based": 9
+    "rule-based": 6
   },
   "events": [
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "auth_token parsed OK"
+    },
+    {
+      "time": "2026-06-18T11:40:38Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "ct0 parsed OK"
+    },
+    {
+      "time": "2026-06-18T11:40:38Z",
+      "level": "info",
+      "agent": "AgentReachDoctor",
+      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
+    },
+    {
+      "time": "2026-06-18T11:40:38Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 86 X records."
+    },
+    {
+      "time": "2026-06-18T11:40:38Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "Collected 20 X influencer signals."
+    },
+    {
+      "time": "2026-06-18T11:40:38Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-17T20:39:28Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-17T20:39:28Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-17T20:39:28Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-17T20:39:28Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-17T20:39:28Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-17T20:39:28Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-17T20:39:28Z",
+      "time": "2026-06-18T11:40:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
