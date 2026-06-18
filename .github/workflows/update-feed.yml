@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GEMINI_MODEL: gemini-2.0-flash
@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.3
 
       - name: Install Agent-Reach and X routes
         shell: bash
@@ -46,8 +46,28 @@ jobs:
           agent-reach doctor || true
           set -e
 
+      - name: Validate API Keys
+        shell: bash
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "⚠️ GEMINI_API_KEY missing"
+          else
+            echo "✅ GEMINI_API_KEY loaded"
+          fi
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "⚠️ GROQ_API_KEY missing"
+          else
+            echo "✅ GROQ_API_KEY loaded"
+          fi
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
       - name: Generate AibriefAI command center
         shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           set -euo pipefail
 
@@ -1666,5 +1686,17 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Fix dashboard UX audit improvements [skip ci]"
-          git push
+          git commit -m "Update AibriefAI feed [skip ci]"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase -X theirs origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt ${attempt} failed; retrying after remote update..."
+            sleep 5
+          done
+
+          echo "Failed to push generated files after 3 attempts"
+          exit 1
