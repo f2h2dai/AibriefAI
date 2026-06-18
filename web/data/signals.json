@@ -1,13 +1,13 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-18T11:40:38Z",
+  "generated_at": "2026-06-18T20:01:18Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 30,
-    "rule-based": 6
+    "groq": 29,
+    "rule-based": 12
   },
   "agents": [
     {
@@ -53,115 +53,121 @@
   ],
   "events": [
     {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "INFO",
-      "agent": "twitter",
-      "message": "auth_token parsed OK"
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "INFO",
-      "agent": "twitter",
-      "message": "ct0 parsed OK"
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "info",
-      "agent": "AgentReachDoctor",
-      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 86 X records."
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "Collected 20 X influencer signals."
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "warning",
-      "agent": "AgentReachConnector",
-      "message": "Agent-Reach returned no optional social results."
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-18T11:40:38Z",
+      "time": "2026-06-18T20:01:18Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-18T20:01:18Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -169,7 +175,7 @@
   ],
   "signals": [
     {
-      "id": "arxiv-016",
+      "id": "arxiv-021",
       "source": "arxiv",
       "title": "TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology",
       "content": "Artificial intelligence (AI) agents promise to accelerate drug discovery by compressing interpretation and decision-making loops, but practical deployment requires trusted evaluation on realistic program decisions. We introduce TherapeuticsBench Preclinical Pharmacology (TxBench-PP), a verifiable benchmark for small-molecule preclinical pharmacology and the first focused slice of a broader TherapeuticsBench effort across drug-discovery stages and therapeutic modalities. TxBench-PP tests whether agents can recover accurate conclusions from real-world assay data rather than memorized facts from literature. The benchmark contains 100 evaluations indexed by program stage, assay type, and task structure, spanning mechanism-of-action (MoA) and pharmacodynamic (PD) reasoning, compound-target engagement, causal target validation, developability and safety, and translational efficacy. Agents receive realistic workflow snapshots, inspect files in a coding environment, and return structured answers graded deterministically. Across 16 model-harness configurations, comprising 11 models and 4,800 trajectories, no system reliably recovered preclinical pharmacology decisions. The strongest configuration, Claude Opus 4.8 / Pi, passed 59.3\\% of endpoint attempts (178/300; 95\\% CI, 51.1-67.6), followed by GPT-5.5 / Pi at 55.3\\% (166/300; 47.0-63.6).",
@@ -181,12 +187,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "TxBench-PP: A benchmark for evaluating AI agent performance in small-molecule preclinical pharmacology, assessing ability to recover accurate conclusions from real-world assay data.",
-      "brief_ar": "TxBench-PP: معيار لتقويم أداء وكلاء الذكاء الاصطناعي في علم الصيدلة السريرية قبل السريرية للجزيئات الصغيرة، وتقييم القدرة على استخلاص استنتاجات دقيقة من بيانات الاختبارات العالمية",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_ar": "TxBench-PP: معيار تقييم أداء وكلاء الذكاء الاصطناعي في علم الصيدلة قبل السريرية للجزيئات الصغيرة، لتقييم القدرة على استخلاص استنتاجات دقيقة من بيانات الاختبارات العملية",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "arxiv-012",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "Enhancing Decision-Making with Large Language Models through Multi-Agent Fictitious Play",
       "content": "Large language model (LLM)-based multi-agent systems (MAS) have demonstrated great potential in solving tasks with execution complexity, by distributing subtasks across cooperative agents. However, this divide-and-conquer paradigm falls short on decision-making tasks that are also prevalent in the real world. These tasks require simultaneous reasoning from the stances of all involved stakeholders whose decisions are mutually dependent and thus cannot be solved in isolation. We characterize this challenge as stance entanglement, a form of decision complexity distinct from execution complexity. To address it, we propose Multi-Agent Fictitious Play (MAFP), a novel MAS paradigm that represents stakeholder stances as agents and formulates decision-making as an equilibrium-seeking process. Built on the game-theoretic principle of fictitious play, MAFP iteratively updates each agent's decision by best responding to the empirical mixture of other agents' past decisions. This enables agents to expose and address one another's weaknesses, progressively improving decision quality and robustness. We evaluate MAFP on challenging decision-making tasks that test the capability of deciding strategies for competitive scenarios prior to acting. MAFP outperforms both single-round and multi-round baselines on two complementary metrics, tournament strength and robustness, demonstrating its effectiveness in addressing stance entanglement.",
@@ -197,13 +203,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Enhancing Decision-Making with Large Language Models through Multi-Agent Fictitious Play: A novel approach to address stance entanglement in decision-making tasks by formulating it as an equilibrium-seeking process among stakeholder agents.",
-      "brief_ar": "تعزيز اتخاذ القرارات باستخدام نماذج اللغة الكبيرة من خلال اللعب الخيالي المتعدد الوكلاء: نهج جديد لمعالجة تشابك المواقف في مهام اتخاذ القرارات من خلال صياغتها كعملية بحث عن التوازن بين وكلاء أصحاب المصلحة.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_en": "Enhancing Decision-Making with Large Language Models through Multi-Agent Fictitious Play: A novel approach to address stance entanglement in decision-making tasks by formulating decision-making as an equilibrium-seeking process among stakeholder agents.",
+      "brief_ar": "تعزيز اتخاذ القرار باستخدام نماذج اللغة الكبيرة من خلال اللعب الخيالي المتعدد الوكلاء: نهج جديد لمعالجة تشابك الموقف في مهام اتخاذ القرار من خلال صياغة اتخاذ القرار كعملية بحث عن التوازن بين وكلاء أصحاب المصلحة.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "github-005",
+      "id": "github-010",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -214,13 +220,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم مجموعة واسعة من الإمكانيات للتطوير والتشغيل.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and innovation.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر فرصًا واسعة للتنمية والابتكار.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "arxiv-010",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "Learning User Simulators with Turing Rewards",
       "content": "Learning to simulate human users in interactive settings could advance the training of agent assistants, evaluation of personalization systems, research in the social sciences, and more. Existing approaches generally do so by training a large language model (LLM) to match a single ground truth response, either by maximizing the log probability or by using a similarity reward. We instead propose {Turing-RL}: a Turing-Test-based reinforcement learning approach for training user simulator models. {Turing-RL} uses a discriminative Turing reward with an LLM judge to score how indistinguishable a generated response is from the real user's given the user's history, and the user simulator LLM learns to produce responses indistinguishable from what the user could have said with such rewards. Across two different domains--conversational chat and Reddit forum discussion--we find that {Turing-RL} consistently outperforms baseline methods on both LLM and human evaluation metrics. Our study suggests that optimizing for indistinguishability, rather than response matching, is effective for learning user simulators.",
@@ -231,13 +237,30 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Learning User Simulators with Turing Rewards: A novel approach to train user simulator models using Turing-Test-based reinforcement learning, outperforming baseline methods in conversational chat and Reddit forum discussion domains.",
-      "brief_ar": "تعلم محاكي المستخدمين مع مكافآت تURING: نهج جديد لتدريب نماذج محاكي المستخدم باستخدام تعلم التعزيز القائم على اختبار تURING، والذي يتفوق على الأساليب الأساسية في مجالات الدردشة الحوارية ومناقشات منتدى Reddit.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_en": "Learning User Simulators with Turing Rewards: A new approach to training user simulator models using Turing-Test-based reinforcement learning, outperforming baseline methods in conversational chat and Reddit forum discussion.",
+      "brief_ar": "تعلم محاكي المستخدمين مع مكافآت تURING: نهج جديد لتدريب نماذج محاكي المستخدم باستخدام تعلم التعزيز القائم على اختبار تURING، يتفوق على أساليب البداية في محادثات الدردشة ومناقشات منتدى Reddit.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "github-007",
+      "id": "twitter-036",
+      "source": "twitter",
+      "title": "@sama: today I ran an AI workflow mapping for a client. GPT 5.5 xhigh hosted the loop on codex CL",
+      "content": "today I ran an AI workflow mapping for a client. GPT 5.5 xhigh hosted the loop on codex CLI, and I put a review gate in two places, first on the plan, then on every delivery. claude opus 4.8 high did the reviewing (bring back fable pls) and fed notes back to the main agent. the output came back noticeably sharper than a single-model run",
+      "url": "https://x.com",
+      "score": 60,
+      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 60.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "today I ran an AI workflow mapping for a client. GPT 5.5 xhigh hosted the loop on codex CLI, and I put a review gate in two places, first on the plan, then on every delivery. claude opus 4.8 high did the reviewing (bring back fable pls) and...",
+      "brief_ar": "ملخص قائم على القواعد: today I ran an AI workflow mapping for a client. GPT 5.5 xhigh hosted the loop on codex CLI, and I put a review gate in two places, first on the plan, then on every delivery. claude opus 4.8 high did the reviewing (bring back fable pls) and...",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
+    },
+    {
+      "id": "github-012",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -248,13 +271,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to accelerate research efficiency.",
-      "brief_ar": "كاروباثي/أوتو بحث: أمناع الإيتمان الموحود لتدريب محاولات الجديد على مورد البحث و التنمية",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training, with potential for automated discovery.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة، مع إمكانية اكتشاف آلي محتمل.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "twitter-035",
+      "id": "twitter-024",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -264,14 +287,14 @@
       "status": "verified",
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "provider": "groq",
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "github-003",
+      "id": "github-008",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -283,12 +306,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، تمكِّن من آليَّة كفاءة وصنع القرار.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليّة كفاءة وتحديد اتخاذ القرارات.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "github-004",
+      "id": "github-009",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -299,13 +322,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for building AI applications, leveraging open-source intelligence for strategic development.",
-      "brief_ar": "langchain-ai/langchain: منصة هندسة الوكيل لإنشاء تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة لمواجهة التطوير الاستراتيجي.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and integrating AI models.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتكامل نماذج الذكاء الاصطناعي.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "github-006",
+      "id": "github-011",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -317,12 +340,29 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكية، وتأتمتة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     },
     {
-      "id": "github-008",
+      "id": "twitter-033",
+      "source": "twitter",
+      "title": "@sama: setup is not complex, the main model just calls the other one''s CLI. you write one skill ",
+      "content": "setup is not complex, the main model just calls the other one''s CLI. you write one skill that lets codex call claude, and one that lets claude call codex, and now you have a council you can drop into any loop' author: id: '1455999313453195265' name: Shann³ screenName: shannholmberg profileImageUrl: https://pbs.twimg.com/profile_images/2018272759122440192/JJPUdPDs_normal.jpg verified: true metrics: likes: 0 retweets: 0 replies: 0 quotes: 0 views: 24 bookmarks: 2 createdAt: Thu Jun 18 20:00:06 +0000 2026 createdAtLocal: 2026-06-18 20:00 createdAtISO: '2026-06-18T20:00:06+00:00' media: type: photo url: https://pbs.twimg.com/media/HLHxL3KaUAA-wu7.jpg width: 1401 height: 1123 urls: [] isRetweet: false retweetedBy: null lang: en score: null quotedTweet: id: '2067328943351529568' text: 'how to add an LLM council into your /goal workflow",
+      "url": "https://x.com",
+      "score": 46,
+      "score_reason": "Twitter/X discussion signal; large language model relevance; model capability relevance. Final score: 46.",
+      "status": "verified",
+      "topic": "LLMs",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "setup is not complex, the main model just calls the other one''s CLI. you write one skill that lets codex call claude, and one that lets claude call codex, and now you have a council you can drop into any loop' author: id: '1455999313453195...",
+      "brief_ar": "ملخص قائم على القواعد: setup is not complex, the main model just calls the other one''s CLI. you write one skill that lets codex call claude, and one that lets claude call codex, and now you have a council you can drop into any loop' author: id: '1455999313453195...",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
+    },
+    {
+      "id": "github-013",
       "source": "github",
       "title": "infiniflow/ragflow",
       "content": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
@@ -333,44 +373,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, integrating RAG with agent capabilities to enhance context for LLMs.",
-      "brief_ar": "RAGFlow هو محرك رائد مفتوح المصدر لتحسين التوليد بالاسترجاع (RAG)، يدمج RAG مع قدرات الوكيل لتعزيز السياق للنماذج اللغوية الكبيرة.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
-    },
-    {
-      "id": "arxiv-009",
-      "source": "arxiv",
-      "title": "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games",
-      "content": "Deploying multimodal foundation models as closed-loop policies increasingly requires conditioning actions on observations that are no longer visible. However, existing benchmarks either expose the full state, conflate hidden-state reconstruction with other agent skills, or test recall only after an episode has ended. We introduce RNG-Bench (Reconstructive Non-Markov Games), a benchmark suite designed to isolate a base model's ability to reconstruct past observations and act on them during multi-step interaction. RNG-Bench includes two complementary games: Matching Pairs, where card identities briefly revealed at specific locations must later be recalled, and 3D Maze, where egocentric views must be integrated into a spatial map. Both games are evaluated under a unified harness with three controlled difficulty axes: grid size, visual pattern, and observation modality. The benchmark further introduces a head-to-head duel protocol to control for instance-level variance and a Memory Gap metric that disentangles forgetting from poor action selection. The hardest configurations require contexts of roughly 128K tokens and 350 image inputs per episode, and remain far from saturated by frontier MLLMs. Memory Gap analysis shows that most residual errors stem from forgetting earlier observations rather than from suboptimal decision making. Finally, fine-tuning Qwen3.5-9B on optimal-policy rollouts and filtered model demonstrations improves performance on RNG-Bench and transfers to existing benchmarks without degrading general multimodal capability.",
-      "url": "https://arxiv.org/abs/2606.19338v1",
-      "score": 44,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 44.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "Evaluating multimodal large language models in controllable non-Markov games requires new benchmarks. RNG-Bench assesses a model's ability to reconstruct past observations and act on them, with two games: Matching Pairs and 3D Maze, evaluated under controlled difficulty axes.",
-      "brief_ar": "تقييم نماذج اللغة الكبيرة متعددة الوضعيات في ألعاب غير ماركوفية قابلة للتحكم يتطلب معايير جديدة. RNG-Bench يقيم قدرة النموذج على إعادة بناء الملاحظات السابقة والعمل عليها، مع لعبتين: Matching Pairs و 3D Maze، يتم تقييمهما تحت محاور صعوبة محكمة.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
-    },
-    {
-      "id": "twitter-018",
-      "source": "twitter",
-      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
-      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12398 retweets: 773 replies: 1814 quotes: 558 views: 1563880 bookmarks: 1956 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2019139174339928189' text: 'First, the good part of the Anthropic ads: they are funny, and I laughed.",
-      "url": "https://x.com",
-      "score": 42,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance. Final score: 42.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "A protocol is needed for the internet to be equally usable by humans and agents, as stated by Sam Altman.",
-      "brief_ar": "يُحتاج إلى بروتوكول ليكون الإنترنت قابلًا للاستخدام بنفس القدر من قبل البشر والوكلاء، كما ذكر سام ألتمان.",
-      "createdAt": "2026-06-18T11:40:38Z",
-      "updatedAt": "2026-06-18T11:40:38Z"
+      "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, integrating RAG with Agent capabilities to enhance LLM context layers.",
+      "brief_ar": "RAGFlow هو محرك رائد مفتوح المصدر لتحسين التوليد باستخدام الاسترجاع (RAG)، يدمج RAG مع قدرات الوكيل لتعزيز طبقات السياق للنماذج اللغوية الكبيرة.",
+      "createdAt": "2026-06-18T20:01:18Z",
+      "updatedAt": "2026-06-18T20:01:18Z"
     }
   ]
 }
