@@ -1,13 +1,13 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-19T01:06:30Z",
+  "generated_at": "2026-06-19T01:10:52Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
     "groq": 30,
-    "rule-based": 0
+    "rule-based": 1
   },
   "agents": [
     {
@@ -53,57 +53,69 @@
   ],
   "events": [
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "INFO",
       "agent": "twitter",
       "message": "X access credential parsed OK"
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "INFO",
       "agent": "twitter",
       "message": "X session metadata parsed OK"
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "error",
       "agent": "AcademicAgent",
       "message": "The read operation timed out"
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "info",
       "agent": "AgentReachDoctor",
       "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 95 X records."
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 97 X records."
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-19T01:06:30Z",
+      "time": "2026-06-19T01:10:52Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+    },
+    {
+      "time": "2026-06-19T01:10:52Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-19T01:10:52Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
   "signals": [
     {
-      "id": "github-007",
+      "id": "github-008",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -114,13 +126,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم مجموعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and innovation.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات للتطوير والابتكار.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "github-009",
+      "id": "github-010",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -131,16 +143,16 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being trained on single-GPU nanochat, potentially automating research processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يخضعون للتدريب على nanochat منفرد-المعالج-الرسومي، ويتوقع أن يؤدي ذلك إلى تلقين عمليات البحث",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "karpathy/autoresearch: AI agents are being tested to run research on single-GPU nanochat training, with potential for automated discovery.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بجهاز كمبيوتر واحد GPU، مع إمكانية اكتشاف آلي",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "twitter-028",
+      "id": "twitter-029",
       "source": "twitter",
       "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
-      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12389 retweets: 773 replies: 1813 quotes: 558 views: 1564003 bookmarks: 1956 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '1963366714684707120' text: i never took the dead internet theory that seriously but it seems like there are really a lot of LLM-run twitter accounts now author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 33540 retweets: 1420 replies: 3328 quotes: 1668 views: 5784938 bookmarks: 2602 createdAt: Wed Sep 03 22:21:17 +0000 2025 createdAtLocal: 2025-09-03 22:21 createdAtISO: '2025-09-03T22:21:17+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '1965110064215458055' text: 'i have had the strangest experience reading this: i assume its all fake/bots, even though in this case i know codex growth is really strong and the trend here is real.",
+      "content": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12389 retweets: 773 replies: 1813 quotes: 558 views: 1564003 bookmarks: 1956 createdAt: Sun Apr 26 15:46:41 +0000 2026 createdAtLocal: 2026-04-26 15:46 createdAtISO: '2026-04-26T15:46:41+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2067774866602991933' text: \"NTTが公開した「大規模言語モデル入門」の資料が有益。\\n\\n自然言語処理の基礎知識やGPTモデルの仕組みについて、専門用語を極力使わずかなり噛み砕いて解説。難解なAIの仕組みをゼロからノンストレスで理解できる、未経験者や初心者にとって最高のバイブル。\\n\\ \\nこちら\\U0001F449 \\nhttps://t.co/nWHEyBTa04 https://t.co/MJiOxYWzIS\" author: id: '1249117291515543552' name: かずなり | 生成AI活用術 screenName: MacopeninSUTABA profileImageUrl: https://pbs.twimg.com/profile_images/1871687946988060673/xDsh_ngS_normal.jpg verified: true metrics: likes: 2 retweets: 0 replies: 0 quotes: 0 views: 174 bookmarks: 3 createdAt: Fri Jun 19 01:02:00 +0000 2026 createdAtLocal: 2026-06-19 01:02 createdAtISO: '2026-06-19T01:02:00+00:00' media: type: photo url: https://pbs.twimg.com/media/HK41iWvbkAAgkFy.png width: 739 height: 467 urls: https://speakerdeck.com/kyoun/llm-introduction-ses2023 isRetweet: false retweetedBy: null lang: ja score: null id: '1963366714684707120' text: i never took the dead internet theory that seriously but it seems like there are really a lot of LLM-run twitter accounts now author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 33540 retweets: 1420 replies: 3328 quotes: 1668 views: 5784938 bookmarks: 2602 createdAt: Wed Sep 03 22:21:17 +0000 2025 createdAtLocal: 2025-09-03 22:21 createdAtISO: '2025-09-03T22:21:17+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '1897348424984617215' text: 'GPT-4.5 rollout to plus users has started",
       "url": "https://x.com",
       "score": 52,
       "score_reason": "Twitter/X discussion signal; agentic AI relevance; large language model relevance. Final score: 52.",
@@ -148,13 +160,13 @@
       "topic": "AI Agents",
       "collector": "XInfluencerAgent",
       "provider": "groq",
-      "brief_en": "Sam Altman (@sama) notes the increasing presence of LLM-run Twitter accounts, sparking concerns about the authenticity of online interactions. He mentions the 'Dead Internet Theory' and expresses uncertainty about what is real and what is generated by bots.",
-      "brief_ar": "يشير سام ألتمان (@sama) إلى زيادة وجود حسابات تويتر التي تعمل بواسطة نموذج لغة كبير (LLM)، مما يثير مخاوف بشأن أصالة التفاعلات عبر الإنترنت. ويذكر نظرية \"الإنترنت الميت\" ويعبر عن عدم اليقين حول ما هو حقيقي وما يتم توليده بواسطة البوتات.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "A protocol is needed for the internet to be equally usable by people and agents, as emphasized by @sama. Recent discussions on large language models and their applications have highlighted the importance of accessible and user-friendly technologies.",
+      "brief_ar": "يُشدد @sama على ضرورة وجود بروتوكول للإنترنت يمكن استخدامه على قدم المساواة من قبل الأشخاص والوكلاء. أكدت المناقشات الأخيرة حول نماذج اللغة الكبيرة وتطبيقاتها على أهمية تقنيات يمكن الوصول إليها وسهلة الاستخدام.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "twitter-013",
+      "id": "twitter-025",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -165,13 +177,13 @@
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
       "provider": "groq",
-      "brief_en": "AI safety and wide distribution of benefits are core to our mission, emphasizing prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
-      "brief_ar": "سلامة الذكاء الاصطناعي والتوزيع الواسع للفوائد هي أساسية لرسالتنا، تشدد على منع المراقبة الجماعية المحلية ومسؤولية الإنسان عن أنظمة الأسلحة الآلية.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "github-005",
+      "id": "github-006",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -183,12 +195,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكِّن من آليَّة كفاءة وفاعليَّة في اتخاذ القرارات.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليّة كفاءة وتحسين اتخاذ القرارات.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "github-006",
+      "id": "github-007",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -200,12 +212,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, enabling the creation of custom AI agents for various tasks.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكيل لتطوير تطبيقات الذكاء الاصطناعي، تمكن من إنشاء وكلاء ذكاء اصطناعي مخصصين لمهام مختلفة.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتحويل التطبيقات إلى تطبيقات ذكية، تمكن من إنشاء وكلاء ذكاء اصطناعي مخصصين لمهام متنوعة.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "github-008",
+      "id": "github-009",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -218,11 +230,11 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "github-010",
+      "id": "github-011",
       "source": "github",
       "title": "infiniflow/ragflow",
       "content": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
@@ -233,47 +245,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, enhancing LLMs with a superior context layer.",
-      "brief_ar": "RAGFlow هو محرك توليد تعزيزي مفتوح المصدر يدمج تقنيات RAG مع قدرات الوكيل لإنشاء طبقة سياق متقدمة للنماذج اللغوية الكبيرة",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
-    },
-    {
-      "id": "twitter-011",
-      "source": "twitter",
-      "title": "@sama: ok: true schema_version: '1' data: id: '2067775843842081165' text: Llevo días desarrolland",
-      "content": "ok: true schema_version: '1' data: id: '2067775843842081165' text: Llevo días desarrollando un proyecto con IA, ayer comencé a tantear con  Gemma 4 de Google y me gusta. Así se ve un entor con sus app agents 😁 https://t.co/q3luwqprIM author: id: '281304156' name: ᗷしᗩᔑᔑしᝪᑭᏃ screenName: Bleasepic profileImageUrl: https://pbs.twimg.com/profile_images/1755033820871507968/JL4otlPR_normal.jpg verified: false metrics: likes: 0 retweets: 0 replies: 0 quotes: 0 views: 0 bookmarks: 0 createdAt: Fri Jun 19 01:05:53 +0000 2026 createdAtLocal: 2026-06-19 01:05 createdAtISO: '2026-06-19T01:05:53+00:00' media: type: photo url: https://pbs.twimg.com/media/HLI3K6PX0AAK-Yj.jpg width: 1319 height: 681 urls: [] isRetweet: false retweetedBy: null lang: es score: null id: '1905622840306704787' text: the gpt-4o update is GOOD author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 19342 retweets: 612 replies: 1561 quotes: 235 views: 2885949 bookmarks: 651 createdAt: Fri Mar 28 14:07:44 +0000 2025 createdAtLocal: 2025-03-28 14:07 createdAtISO: '2025-03-28T14:07:44+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '1984025727763935585' text: GPT-6 will be renamed GPT-6-7, you're welcome author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 42806 retweets: 2111 replies: 4099 quotes: 1662 views: 13996382 bookmarks: 2150 createdAt: Thu Oct 30 22:32:49 +0000 2025 createdAtLocal: 2025-10-30 22:32 createdAtISO: '2025-10-30T22:32:49+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2027578652477821175' text: 'Tonight, we reached an agreement with the Department of War to deploy our models in their classified network.",
-      "url": "https://x.com",
-      "score": 42,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 42.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "Sam Altman (@sama) comments on GPT updates, with a recent post stating the GPT-4o update is good. Another user is experimenting with Gemma 4 from Google, indicating potential advancements in AI technology.",
-      "brief_ar": "سام ألتمان (@sama) يعلق على تحديثات GPT، حيث نشر مؤخرًا أن تحديث GPT-4o جيد. يستخدم مستخدم آخر Gemma 4 من جوجل، مما يشير إلى تقدم محتمل في تكنولوجيا الذكاء الاصطناعي.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine, integrating RAG with agent capabilities to enhance context for LLMs.",
+      "brief_ar": "RAGFlow هو محرك رائد مفتوح المصدر لتحسين التوليد بالاسترجاع (RAG)، يدمج RAG مع قدرات الوكيل لتعزيز السياق للنماذج اللغة الكبيرة.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
       "id": "twitter-015",
-      "source": "twitter",
-      "title": "@sama: We are asking the DoW to offer these same terms to all AI companies, which in our opinion ",
-      "content": "We are asking the DoW to offer these same terms to all AI companies, which in our opinion we think everyone should be willing to accept. We have expressed our strong desire to see things de-escalate away from legal and governmental actions and towards reasonable agreements.",
-      "url": "https://x.com",
-      "score": 38,
-      "score_reason": "Twitter/X discussion signal. Final score: 38.",
-      "status": "held",
-      "topic": "AI Governance",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "We urge the DoW to extend these terms to all AI companies, which we believe should be acceptable to all. We express our strong desire for de-escalation from legal and governmental actions towards reasonable agreements.",
-      "brief_ar": "نحن نحث وزارة الدفاع على تقديم هذه الشروط لجميع شركات الذكاء الاصطناعي، التي نعتقد أنها يجب أن تكون مقبولة للجميع. نعرب عن رغبتنا القوية في التهدئة بعيداً عن الإجراءات القانونية والحكومية ونحو اتفاقات معقولة.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
-    },
-    {
-      "id": "twitter-019",
       "source": "twitter",
       "title": "@sama: More importantly, we believe everyone deserves to use AI and are committed to free access,",
       "content": "More importantly, we believe everyone deserves to use AI and are committed to free access, because we believe access creates agency. More Texans use ChatGPT for free than total people use Claude in the US, so we have a differently-shaped problem than they do. (If you want to pay for ChatGPT Plus or Pro, we don''t show you ads.)",
@@ -284,13 +262,13 @@
       "topic": "AI",
       "collector": "XInfluencerAgent",
       "provider": "groq",
-      "brief_en": "We believe everyone deserves to use AI and are committed to free access, as it creates agency. Notably, more Texans use ChatGPT for free than the total number of Claude users in the US.",
-      "brief_ar": "نعتقد أن الجميع يستحقون استخدام الذكاء الاصطناعي ونلتزم بالوصول المجاني، لأنه يخلق قوة تفعيل. ومن الملاحظ أن عدد المستخدمين المجانيين لتشات جي بي تي في تكساس أكثر من إجمالي مستخدمي كلود في الولايات المتحدة",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "We believe everyone deserves to use AI and are committed to free access, as it creates agency. Our user base for free ChatGPT surpasses Claude's total US users.",
+      "brief_ar": "نعتقد أن الجميع يستحقون استخدام الذكاء الاصطناعي ونلتزم بالوصول المجاني، لأنه يخلق قوة وفاعلية. عدد مستخدمي تشات جي بي تي المجاني يتجاوز عدد مستخدمي كلود في الولايات المتحدة",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     },
     {
-      "id": "twitter-020",
+      "id": "twitter-016",
       "source": "twitter",
       "title": "@sama: Anthropic serves an expensive product to rich people. We are glad they do that and we are ",
       "content": "Anthropic serves an expensive product to rich people. We are glad they do that and we are doing that too, but we also feel strongly that we need to bring AI to billions of people who can’t pay for subscriptions.",
@@ -301,10 +279,44 @@
       "topic": "AI",
       "collector": "XInfluencerAgent",
       "provider": "groq",
-      "brief_en": "Anthropic offers high-end AI products to affluent clients. We acknowledge their efforts and are working towards similar goals. However, we also prioritize making AI accessible to billions of people who cannot afford subscription-based services.",
-      "brief_ar": "يقدم أنثروبك منتجات ذكاء اصطناعي فاخرة للعملاء الأغنياء. نحن نقر بالجهد المبذول ونعمل نحو أهداف مماثلة. ومع ذلك ، فإننا نعتبر أيضًا جعل الذكاء الاصطناعي متاحًا لمليارات الأشخاص الذين لا يستطيعون تحمل تكاليف الخدمات المبنية على الاشتراك.",
-      "createdAt": "2026-06-19T01:06:30Z",
-      "updatedAt": "2026-06-19T01:06:30Z"
+      "brief_en": "Anthropic offers expensive AI products to affluent clients. We acknowledge their efforts and are working similarly, but also strive to make AI accessible to billions who cannot afford subscriptions.",
+      "brief_ar": "تُقدم Anthropic منتجات ذكاء اصطناعي باهظة الثمن للعملاء الأغنياء. نحن نقر بالجهد المبذول ونعمل بنفس الخطوات، ولكننا نطمح أيضًا إلى جعل الذكاء الاصطناعي متاحًا لمليارات الأشخاص الذين لا يستطيعون دفع اشتراكاتهم.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
+    },
+    {
+      "id": "twitter-017",
+      "source": "twitter",
+      "title": "@sama: Maybe even more importantly: Anthropic wants to control what people do with AI—they block ",
+      "content": "Maybe even more importantly: Anthropic wants to control what people do with AI—they block companies they don''t like from using their coding product (including us), they want to write the rules themselves for what people can and can''t use AI for, and now they also want to tell other companies what their business models can be.",
+      "url": "https://x.com",
+      "score": 38,
+      "score_reason": "Twitter/X discussion signal; model capability relevance. Final score: 38.",
+      "status": "held",
+      "topic": "LLMs",
+      "collector": "XInfluencerAgent",
+      "provider": "groq",
+      "brief_en": "Anthropic aims to control AI usage, blocking unwanted companies, including us, from using their product, and seeking to set rules for AI applications and business models.",
+      "brief_ar": "تستهدف أنثروبيك التحكم في استخدام الذكاء الاصطناعي، ومنع الشركات غير المرغوب فيها، بما في ذلك شركتنا، من استخدام منتجاتها، وتحديد القواعد لاستخدامات الذكاء الاصطناعي ونموذج العمل.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
+    },
+    {
+      "id": "twitter-018",
+      "source": "twitter",
+      "title": "@sama: We are committed to broad, democratic decision making in addition to access. We are also c",
+      "content": "We are committed to broad, democratic decision making in addition to access. We are also committed to building the most resilient ecosystem for advanced AI. We care a great deal about safe, broadly beneficial AGI, and we know the only way to get there is to work with the world to prepare.",
+      "url": "https://x.com",
+      "score": 38,
+      "score_reason": "Twitter/X discussion signal. Final score: 38.",
+      "status": "held",
+      "topic": "AI",
+      "collector": "XInfluencerAgent",
+      "provider": "groq",
+      "brief_en": "We commit to democratic decision-making and access, while building a resilient ecosystem for advanced AI, prioritizing safe and beneficial AGI through global collaboration.",
+      "brief_ar": "نلتزم بالdecision-making الديمقراطي وصولاً إلى بناء نظام بيئي مرن لتقنيات الذكاء الاصطناعي المتقدمة، مع التركيز على سلامة ومانعة الذكاء الاصطناعي العام من خلال التعاون العالمي.",
+      "createdAt": "2026-06-19T01:10:52Z",
+      "updatedAt": "2026-06-19T01:10:52Z"
     }
   ]
 }
