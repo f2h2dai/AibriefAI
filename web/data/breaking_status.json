@@ -14,20 +14,31 @@
     "classified": 0,
     "clustered": 23,
     "collected": 23,
-    "malformed_or_rejected": 1,
+    "malformed_or_rejected": 0,
     "overflow_pending": 0,
-    "pending_now": 0,
+    "pending_now": 1,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.277,
-      "projected_minutes_per_30d": 445.31,
+      "measured_seconds": 5.507,
+      "projected_minutes_per_30d": 264.35,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 1
   },
-  "pending_count": 0,
-  "status": "clear",
-  "updated_at": "2026-06-19T15:29:17Z",
+  "pending_count": 1,
+  "pending_feed": [
+    {
+      "confidence": null,
+      "id": "story-9adfa1635f0a328a2c706a6a",
+      "reason": "Gemini 429 rate limited",
+      "shown_at": "2026-06-19T15:37:03Z",
+      "source_url": "",
+      "status": "under review",
+      "title": "text: 'impressive targeting: email from a nice SF restaurant saying \"we noticed"
+    }
+  ],
+  "status": "review-pending",
+  "updated_at": "2026-06-19T15:37:03Z",
   "version": 1
 }
