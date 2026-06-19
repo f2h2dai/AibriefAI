@@ -2,8 +2,16 @@ name: Update Feed
 
 on:
   workflow_dispatch:
+    inputs:
+      send_notification:
+        description: "Send ntfy notification for this manual run"
+        required: false
+        default: "false"
   schedule:
-    - cron: "*/5 * * * *"
+    # 8 AM America/New_York during EDT. GitHub Actions cron uses UTC.
+    - cron: "0 12 * * *"
+    # 2 PM America/New_York during EDT. Website-only run, no notification.
+    - cron: "0 18 * * *"
 
 permissions:
   contents: write
@@ -68,6 +76,10 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_EVENT_SCHEDULE: "${{ github.event.schedule || '' }}"
+          SEND_NOTIFICATION: "${{ github.event.inputs.send_notification || 'false' }}"
         run: |
           set -euo pipefail
 
@@ -93,6 +105,11 @@ jobs:
           GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash").strip()
           GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
           GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+          NTFY_TOPIC = os.getenv("NTFY_TOPIC", "").strip()
+          GITHUB_EVENT_NAME = os.getenv("GITHUB_EVENT_NAME", "").strip()
+          GITHUB_EVENT_SCHEDULE = os.getenv("GITHUB_EVENT_SCHEDULE", "").strip()
+          SEND_NOTIFICATION = os.getenv("SEND_NOTIFICATION", "false").strip()
+          MORNING_CRON = "0 12 * * *"
 
           GEMINI_QUOTA_EXHAUSTED = False
           PROVIDER_COUNTS = {
@@ -132,6 +149,121 @@ jobs:
               with urllib.request.urlopen(req, timeout=timeout) as r:
                   return r.read(2_000_000).decode("utf-8", "replace")
 
+          def signal_key(signal):
+              source = str(signal.get("source") or "").strip().lower()
+              url = str(signal.get("url") or "").strip()
+              title = re.sub(r"\s+", " ", str(signal.get("title") or "")).strip().lower()
+              return source, url, title
+
+          def load_previous_signal_keys():
+              try:
+                  path = Path("web/data/signals.json")
+                  if not path.exists():
+                      return set()
+                  data = json.loads(path.read_text(encoding="utf-8"))
+                  return {
+                      signal_key(signal)
+                      for signal in data.get("signals", [])
+                      if signal_key(signal) != ("", "", "")
+                  }
+              except Exception as e:
+                  log_event(
+                      "warning",
+                      "NotificationAgent",
+                      f"Previous signal history unavailable: {type(e).__name__}",
+                  )
+                  return set()
+
+          PREVIOUS_SIGNAL_KEYS = load_previous_signal_keys()
+
+          def should_send_notification():
+              if not NTFY_TOPIC:
+                  return False, "NTFY_TOPIC missing"
+
+              if GITHUB_EVENT_NAME == "workflow_dispatch":
+                  if SEND_NOTIFICATION.lower() == "true":
+                      return True, "manual notification enabled"
+                  return False, "manual run without notification"
+
+              if GITHUB_EVENT_NAME == "schedule" and GITHUB_EVENT_SCHEDULE == MORNING_CRON:
+                  return True, "morning schedule"
+
+              return False, "not morning run"
+
+          def short_title(value, limit=92):
+              text = re.sub(r"\s+", " ", str(value or "")).strip()
+              if len(text) <= limit:
+                  return text
+              return text[: limit - 3].rstrip() + "..."
+
+          def send_ntfy_digest(signals, fresh_signals):
+              if not signals:
+                  return False, "zero signals"
+
+              if not fresh_signals:
+                  return False, "no fresh signals"
+
+              digest_signals = sorted(
+                  fresh_signals,
+                  key=lambda signal: int(signal.get("score") or 0),
+                  reverse=True,
+              )[:5]
+
+              lines = [
+                  f"AibriefAI / إحاطة — {NOW}",
+                  "",
+              ]
+
+              for signal in digest_signals:
+                  source = short_title(signal.get("source") or "unknown", 28)
+                  score = signal.get("score", 0)
+                  title = short_title(signal.get("title"), 92)
+                  lines.append(f"- {source} · score {score} · {title}")
+
+              lines.extend(["", "Open full command center"])
+              payload = "\n".join(lines).encode("utf-8")
+              topic = urllib.parse.quote(NTFY_TOPIC, safe="")
+
+              try:
+                  req = urllib.request.Request(
+                      f"https://ntfy.sh/{topic}",
+                      data=payload,
+                      method="POST",
+                      headers={
+                          "Title": "AibriefAI Morning Brief",
+                          "Priority": "default",
+                          "Tags": "robot,brain",
+                          "Click": "https://aibriefai.onrender.com/",
+                          "Content-Type": "text/plain; charset=utf-8",
+                      },
+                  )
+
+                  with urllib.request.urlopen(req, timeout=15) as response:
+                      response.read(1000)
+
+                  log_event("info", "NotificationAgent", "Morning ntfy notification sent.")
+                  return True, "sent"
+
+              except urllib.error.HTTPError as e:
+                  log_event(
+                      "warning",
+                      "NotificationAgent",
+                      f"ntfy notification failed with HTTP {e.code}",
+                  )
+                  return False, f"ntfy HTTP {e.code}"
+
+              except urllib.error.URLError:
+                  log_event("warning", "NotificationAgent", "ntfy notification failed with URL error.")
+                  return False, "ntfy URL error"
+
+              except Exception as e:
+                  log_event(
+                      "warning",
+                      "NotificationAgent",
+                      f"ntfy notification failed: {type(e).__name__}",
+                  )
+                  return False, f"ntfy {type(e).__name__}"
+
           X_QUERY = "AI OR agents OR LLM OR GPT OR reasoning"
 
           raw_cookie = os.getenv(
@@ -152,17 +284,17 @@ jobs:
           if auth_token:
               os.environ["TWITTER_AUTH_TOKEN"] = auth_token
               log_event("INFO", "twitter",
-                  "auth_token parsed OK")
+                  "X access credential parsed OK")
           else:
               log_event("WARN", "twitter",
-                  "auth_token missing from TWITTER_COOKIE")
+                  "X access configuration is incomplete")
 
           if ct0:
               os.environ["TWITTER_CT0"] = ct0
-              log_event("INFO", "twitter", "ct0 parsed OK")
+              log_event("INFO", "twitter", "X session metadata parsed OK")
           else:
               log_event("WARN", "twitter",
-                  "ct0 missing from TWITTER_COOKIE")
+                  "X session metadata is incomplete")
 
           def safe_log_text(value, limit=260):
               text = re.sub(r"\s+", " ", str(value or "")).strip()
@@ -413,7 +545,7 @@ jobs:
           def fetch_x_influencers_cli(limit=20):
               handles = x_influencer_handles()
               if not handles:
-                  log_event("critical", "XInfluencerAgent", "X_INFLUENCERS is not configured; X influencer search skipped.")
+                  log_event("critical", "XInfluencerAgent", "X influencer handles are not configured; X influencer search skipped.")
                   return []
 
               collected = []
@@ -751,7 +883,7 @@ jobs:
               if x_items:
                   log_event("info", "XInfluencerAgent", f"Collected {len(x_items)} X influencer signals.")
               else:
-                  log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure TWITTER_COOKIE and X_INFLUENCERS.")
+                  log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure X access and influencer handles.")
           except Exception as e:
               log_event("critical", "XInfluencerAgent", f"X influencer search failed before collection: {type(e).__name__}: {safe_log_text(e)}")
 
@@ -816,8 +948,25 @@ jobs:
               })
 
           signals = sorted(signals, key=lambda x: x["score"], reverse=True)[:12]
+          fresh_signals = [
+              signal
+              for signal in signals
+              if signal_key(signal) not in PREVIOUS_SIGNAL_KEYS
+          ]
           approved = sum(1 for s in signals if s["status"] == "verified")
           held = len(signals) - approved
+
+          notification_enabled, notification_reason = should_send_notification()
+          notification_sent = False
+
+          if notification_enabled:
+              notification_sent, notification_reason = send_ntfy_digest(signals, fresh_signals)
+
+          notification_metadata = {
+              "notification_enabled": notification_enabled,
+              "notification_sent": notification_sent,
+              "notification_reason": notification_reason,
+          }
 
           if PROVIDER_COUNTS["groq"] > 0:
               run_mode = "groq"
@@ -867,6 +1016,7 @@ jobs:
               "model": run_model,
               "provider_counts": PROVIDER_COUNTS,
               "events": PIPELINE_EVENTS[-20:],
+              **notification_metadata,
           }
 
           health = {
@@ -879,6 +1029,7 @@ jobs:
               "provider_counts": PROVIDER_COUNTS,
               "agents": agents,
               "events": PIPELINE_EVENTS[-10:],
+              **notification_metadata,
           }
 
           Path("web/data/signals.json").write_text(
@@ -1326,7 +1477,7 @@ jobs:
                   <button class="tab" type="button" data-source="twitter" aria-pressed="false">Twitter/X</button>
                   <button class="tab" type="button" data-source="youtube" aria-pressed="false">YouTube</button>
                 </div>
-                <p class="agent-reach-note">X influencer search requires TWITTER_COOKIE and configured X_INFLUENCERS. Base connectors continue normally.</p>
+                <p class="agent-reach-note">X influencer search requires configured X access and influencer handles. Base connectors continue normally.</p>
 
                 <div class="topic-pills" id="topicPills"></div>
               </section>
