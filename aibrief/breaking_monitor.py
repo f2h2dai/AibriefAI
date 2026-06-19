@@ -27,14 +27,15 @@ HIGH_IMPACT_PATTERNS = {
         "military",
         "defense",
         "intelligence",
-        "targeting",
-        "targets",
         "munitions",
         "project maven",
         "maven intelligent system",
         "grok gov",
         "grok gov model",
-        "iran",
+        "pentagon",
+        "department of defense",
+        "war with iran",
+        "operations against iran",
         "operation epic fury",
         "battlefield",
         "weapons",
@@ -993,6 +994,10 @@ def run_monitor_cycle(
     collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
     clustered = cluster_story_candidates(pending_reconsider + collected)
     survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
+    survivor_fingerprints = {candidate["story_fingerprint"] for candidate in survivors}
+    for fingerprint, entry in list(state.get("pending", {}).items()):
+        if entry.get("status") == "awaiting_classification" and fingerprint not in survivor_fingerprints:
+            state["pending"].pop(fingerprint, None)
 
     fresh = [
         candidate

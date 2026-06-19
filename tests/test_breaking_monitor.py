@@ -96,6 +96,13 @@ def negative_fixtures() -> list[dict]:
             "url": "https://example.test/changelog",
             "velocity": 80,
         },
+        {
+            "source": "twitter",
+            "title": "Impressive targeting from a restaurant email",
+            "content": "A normal marketing email had impressive targeting and good personalization.",
+            "url": "https://x.com/example/status/2",
+            "velocity": 100,
+        },
     ]
 
 
