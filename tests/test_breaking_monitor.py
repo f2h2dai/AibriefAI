@@ -7,6 +7,7 @@ from pathlib import Path
 from aibrief.breaking_monitor import (
     classify_with_gemini,
     cluster_story_candidates,
+    collect_local_signals,
     projected_monthly_runner_usage,
     public_breaking_status,
     run_monitor_cycle,
@@ -48,6 +49,18 @@ def positive_fixtures() -> list[dict]:
             "url": "https://example-news.test/frontier-lab-crisis",
             "published_at": "2026-06-19T08:30:00Z",
             "velocity": 90,
+        },
+        {
+            "source": "twitter",
+            "title": "X post: Pentagon statement says Grok Gov Model supported Project Maven operations",
+            "content": (
+                "A reported Pentagon statement says a custom Grok Gov Model inside Project Maven "
+                "supported military operations against Iran, targeting 2000 munitions across "
+                "2000 targets during Operation Epic Fury."
+            ),
+            "url": "https://x.com/example/status/260620245",
+            "published_at": "2026-06-19T08:40:00Z",
+            "velocity": 95,
         },
     ]
 
@@ -104,7 +117,7 @@ def classifier_for_all(batch, env):
 class BreakingMonitorTests(unittest.TestCase):
     def test_positive_fixtures_survive_stage1(self):
         clustered = cluster_story_candidates(positive_fixtures())
-        self.assertEqual(len(clustered), 4)
+        self.assertEqual(len(clustered), 5)
         self.assertTrue(all(survives_stage1(candidate) for candidate in clustered))
 
     def test_negative_fixtures_do_not_survive_stage1(self):
@@ -128,8 +141,26 @@ class BreakingMonitorTests(unittest.TestCase):
                 notify_func=notify,
             )
 
-        self.assertEqual(summary["alerted_now"], 4)
-        self.assertEqual(len(sent), 4)
+        self.assertEqual(summary["alerted_now"], 5)
+        self.assertEqual(len(sent), 5)
+
+    def test_x_focus_keeps_only_x_local_signals(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "signals.json"
+            path.write_text(
+                """{
+                  "signals": [
+                    {"source": "twitter", "title": "X item", "url": "https://x.com/a/status/1", "score": 80},
+                    {"source": "github", "title": "Repo item", "url": "https://github.com/example/repo", "score": 90}
+                  ]
+                }""",
+                encoding="utf-8",
+            )
+
+            signals = collect_local_signals(path, source_focus="x")
+
+        self.assertEqual(len(signals), 1)
+        self.assertEqual(signals[0]["source"], "twitter")
 
     def test_repeated_story_does_not_realert(self):
         sent = []

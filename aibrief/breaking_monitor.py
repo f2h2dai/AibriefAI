@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -27,7 +28,14 @@ HIGH_IMPACT_PATTERNS = {
         "defense",
         "intelligence",
         "targeting",
+        "targets",
+        "munitions",
         "project maven",
+        "maven intelligent system",
+        "grok gov",
+        "grok gov model",
+        "iran",
+        "operation epic fury",
         "battlefield",
         "weapons",
         "drone",
@@ -93,6 +101,16 @@ HIGH_IMPACT_PATTERNS = {
 
 CONSEQUENCE_PATTERNS = {
     "confirmed deployment": ["confirmed deployment", "deployed", "launched across", "operational"],
+    "military targeting or munition deployment": [
+        "targeting",
+        "targets",
+        "munitions",
+        "strike",
+        "strikes",
+        "military operations",
+        "support operations",
+        "operation epic fury",
+    ],
     "official filing": ["official filing", "sec filing", "court filing", "filed in court"],
     "government order": ["government order", "ordered", "directive", "sanctioned"],
     "court decision": ["court decision", "injunction", "ruling", "judge ordered"],
@@ -147,7 +165,11 @@ KNOWN_ENTITIES = [
     "DeepMind",
     "Gemini",
     "Grok",
+    "Grok Gov",
+    "Grok Gov Model",
     "xAI",
+    "Iran",
+    "Operation Epic Fury",
     "Meta",
     "Microsoft",
     "NVIDIA",
@@ -704,11 +726,23 @@ def collect_arxiv(limit: int = 10) -> list[dict]:
     return results
 
 
-def collect_local_signals(path: Path = Path("web/data/signals.json")) -> list[dict]:
+def collect_local_signals(
+    path: Path = Path("web/data/signals.json"),
+    source_focus: str = "",
+) -> list[dict]:
     if not path.exists():
         return []
     payload = json.loads(path.read_text(encoding="utf-8"))
     signals = payload if isinstance(payload, list) else payload.get("signals", [])
+    focus = source_focus.strip().lower()
+    if focus in {"x", "twitter"}:
+        signals = [
+            signal
+            for signal in signals
+            if str(signal.get("source", "")).lower() in {"twitter", "x", "x/twitter"}
+            or "x.com/" in str(signal.get("url", "")).lower()
+            or "twitter.com/" in str(signal.get("url", "")).lower()
+        ]
     return [
         {
             "source": signal.get("source", "local"),
@@ -722,14 +756,167 @@ def collect_local_signals(path: Path = Path("web/data/signals.json")) -> list[di
     ]
 
 
-def collect_candidates() -> list[dict]:
+def x_influencer_handles(env: dict[str, str]) -> list[str]:
+    raw = env.get("X_INFLUENCERS", "")
+    handles = []
+    for item in re.split(r"[\s,;]+", raw):
+        handle = item.strip().lstrip("@")
+        if handle:
+            handles.append(handle)
+    return handles[:12]
+
+
+def x_search_queries(env: dict[str, str]) -> list[str]:
+    terms = env.get(
+        "BREAKING_X_QUERY",
+        '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR Pentagon OR "Operation Epic Fury" OR Iran OR munitions OR targeting',
+    ).strip()
+    handles = x_influencer_handles(env)
+    if not handles:
+        return [terms]
+    return [f"from:{handle} ({terms})" for handle in handles]
+
+
+def x_search_commands(query: str) -> list[list[str]]:
+    return [
+        ["twitter", "search", query],
+        ["opencli", "twitter", "search", query],
+        ["bird", "search", query],
+    ]
+
+
+def normalize_x_record(record: dict, handle: str = "") -> dict | None:
+    text = normalize_text(
+        record.get("text")
+        or record.get("full_text")
+        or record.get("content")
+        or record.get("title")
+        or record.get("description")
+        or ""
+    )
+    if not text:
+        return None
+    url = (
+        record.get("url")
+        or record.get("permalink")
+        or record.get("link")
+        or record.get("tweet_url")
+        or ""
+    )
+    if not url and handle and record.get("id"):
+        url = f"https://x.com/{handle}/status/{record.get('id')}"
+    return {
+        "source": "twitter",
+        "title": text[:160],
+        "content": text,
+        "url": url,
+        "published_at": record.get("created_at") or record.get("date") or "",
+        "velocity": int(record.get("score") or record.get("likes") or record.get("like_count") or 40),
+    }
+
+
+def extract_json_records(payload) -> list[dict]:
+    if isinstance(payload, list):
+        return [item for item in payload if isinstance(item, dict)]
+    if not isinstance(payload, dict):
+        return []
+    for key in ("results", "tweets", "items", "data"):
+        value = payload.get(key)
+        if isinstance(value, list):
+            return [item for item in value if isinstance(item, dict)]
+    return [payload]
+
+
+def parse_x_cli_output(stdout: str, handle: str = "") -> list[dict]:
+    try:
+        payload = json.loads(stdout)
+    except json.JSONDecodeError:
+        payload = None
+    if payload is not None:
+        return [
+            normalized
+            for record in extract_json_records(payload)
+            for normalized in [normalize_x_record(record, handle)]
+            if normalized
+        ]
+
+    records = []
+    for line in stdout.splitlines():
+        text = normalize_text(line)
+        if not text:
+            continue
+        url_match = re.search(r"https?://(?:x\.com|twitter\.com)/[^\s)]+", text)
+        records.append(
+            {
+                "source": "twitter",
+                "title": text[:160],
+                "content": text,
+                "url": url_match.group(0) if url_match else "",
+                "published_at": "",
+                "velocity": 40,
+            }
+        )
+    return records
+
+
+def x_cli_env(env: dict[str, str]) -> dict[str, str]:
+    command_env = os.environ.copy()
+    command_env.update({key: value for key, value in env.items() if isinstance(value, str)})
+    cookie = command_env.get("TWITTER_COOKIE", "").strip()
+    if cookie:
+        for part in cookie.split(";"):
+            part = part.strip()
+            if part.startswith("auth_token="):
+                command_env["TWITTER_AUTH_TOKEN"] = part[len("auth_token="):]
+            elif part.startswith("ct0="):
+                command_env["TWITTER_CT0"] = part[len("ct0="):]
+    return command_env
+
+
+def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
+    collected = []
+    command_env = x_cli_env(env)
+    for query in x_search_queries(env):
+        for command in x_search_commands(query):
+            try:
+                completed = subprocess.run(
+                    command,
+                    capture_output=True,
+                    text=True,
+                    timeout=45,
+                    check=False,
+                    env=command_env,
+                )
+            except (FileNotFoundError, subprocess.TimeoutExpired):
+                continue
+            if completed.returncode != 0:
+                continue
+            handle_match = re.search(r"from:([A-Za-z0-9_]+)", query)
+            handle = handle_match.group(1) if handle_match else ""
+            parsed = parse_x_cli_output(completed.stdout, handle)
+            if parsed:
+                collected.extend(parsed)
+                break
+        if len(collected) >= limit:
+            break
+    return collected[:limit]
+
+
+def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
+    env = env or os.environ
+    source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
     candidates: list[dict] = []
+    if source_focus in {"x", "twitter"}:
+        candidates.extend(collect_x_cli(env))
+        candidates.extend(collect_local_signals(source_focus=source_focus))
+        if candidates:
+            return candidates
     for collector in (collect_hackernews, collect_arxiv):
         try:
             candidates.extend(collector())
         except Exception as exc:
             print(json.dumps({"level": "warning", "collector": collector.__name__, "error": type(exc).__name__}))
-    candidates.extend(collect_local_signals())
+    candidates.extend(collect_local_signals(source_focus=source_focus))
     return candidates
 
 
@@ -776,7 +963,7 @@ def run_monitor_cycle(
         for entry in state.get("pending", {}).values()
         if entry.get("status") == "awaiting_classification" and isinstance(entry.get("candidate"), dict)
     ]
-    collected = raw_candidates if raw_candidates is not None else collect_candidates()
+    collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
     clustered = cluster_story_candidates(pending_reconsider + collected)
     survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
 

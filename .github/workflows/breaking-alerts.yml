@@ -18,7 +18,11 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GEMINI_MODEL: gemini-2.0-flash
+  TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
   BREAKING_NOTIFY_MODE: "website"
+  BREAKING_SOURCE_FOCUS: "x"
+  BREAKING_X_QUERY: '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR Pentagon OR "Operation Epic Fury" OR Iran OR munitions OR targeting'
+  X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
   BREAKING_MAX_LLM_REQUESTS_PER_RUN: "1"
   BREAKING_MAX_CANDIDATES_PER_BATCH: "20"
   BREAKING_MIN_CONFIDENCE: "0.90"
@@ -31,7 +35,20 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.3
+        uses: actions/checkout@v7.0.0
+
+      - name: Install X route
+        shell: bash
+        run: |
+          set +e
+          export PATH="$HOME/.local/bin:$PATH"
+          if command -v pipx >/dev/null 2>&1; then
+            pipx install twitter-cli || python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
+          else
+            python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
+          fi
+          which twitter || echo "twitter CLI unavailable after install attempt"
+          set -e
 
       - name: Run breaking monitor
         shell: bash
