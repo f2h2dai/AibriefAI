@@ -1,13 +1,13 @@
 {
   "project": "AibriefAI — إحاطة AI",
-  "generated_at": "2026-06-19T14:31:34Z",
+  "generated_at": "2026-06-19T18:21:00Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 29,
-    "rule-based": 10
+    "groq": 23,
+    "rule-based": 17
   },
   "agents": [
     {
@@ -53,129 +53,146 @@
   ],
   "events": [
     {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1149"
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1173"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1186"
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1171"
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1170"
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1185"
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1184"
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1184"
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1182"
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1180"
     },
     {
-      "time": "2026-06-19T14:31:34Z",
+      "time": "2026-06-19T18:21:00Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1177"
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-19T18:21:00Z",
+      "level": "info",
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-016",
+      "id": "twitter-035",
+      "source": "twitter",
+      "title": "@sama: https://t.co/qn46gakVns' author: id: '1481571894952611841' name: D-Coder screenName: Damn_",
+      "content": "https://t.co/qn46gakVns' author: id: '1481571894952611841' name: D-Coder screenName: Damn_coder profileImageUrl: https://pbs.twimg.com/profile_images/1733111151385317376/svJRU1l9_normal.jpg verified: true metrics: likes: 6 retweets: 0 replies: 1 quotes: 0 views: 341 bookmarks: 0 createdAt: Thu Jun 18 12:00:24 +0000 2026 createdAtLocal: 2026-06-18 12:00 createdAtISO: '2026-06-18T12:00:24+00:00' media: [] urls: http://Chatllm.abacus.ai isRetweet: false retweetedBy: null lang: en score: null id: '2068032900960776438' text: \"Introduction to AI Agents: A Guide to Agentic Systems\\n\\nThis videos provides\\ \\ an overview of the Google paper on introduction to AI Agents.\\n \\nThe paper\\ \\ provides a foundational guide for building and managing production-grade AI\\ \\ agents, structured into the following sections:\\n\\n1. Foundations of AI Agents\\n\\ From Predictive AI to Autonomous Agents: Highlights the shift from passive AI\\ \\ models to autonomous agents capable of independent planning and task execution.\\n\\ \\nIntroduction to AI Agents: Defines an agent as a system combining four essential\\ \\ elements: a reasoning Model (the \\\"Brain\\\"), actionable Tools (the \\\"Hands\\\"\\ ), an Orchestration Layer (the \\\"Nervous System\\\"), and Deployment (the \\\"Body\\ \\ and Legs\\\").\\n\\nThe Agentic Problem-Solving Process: Describes a five-step cyclical\\ \\ loop where agents get a mission, scan the scene for context, think through a\\ \\ plan, take action via tools, and observe results to iterate.\\n\\nClassification\\ \\ and Architecture\\nA Taxonomy of Agentic Systems: Classifies agents into levels\\ \\ of increasing complexity, ranging from Level 0 (isolated reasoning) to Level\\ \\ 4 (self-evolving systems that can create new tools or agents).\\n\\nCore Agent\\ \\ Architecture: Details the design choices for the core components, emphasizing\\ \\ that model selection should be based on agentic fundamentals like reasoning\\ \\ and tool use rather than just academic benchmarks.\\n\\nTools (The \\\"Hands\\\"):\\ \\ Explores how agents interact with the world through information retrieval (RAG),\\ \\ executing actions via APIs, and incorporating humans-in-the-loop for critical\\ \\ decisions.\\n\\nThe Orchestration Layer: Discusses the \\\"central nervous system\\\"\\ \\ that manages the agent's autonomy, instructions, domain knowledge, and memory.\\n\\ \\nMulti-Agent Systems and Design Patterns: Covers organizational structures for\\ \\ agents, such as the Coordinator pattern (manager and specialists) and the Sequential\\ \\ pattern (digital assembly line).\\n\\nOperations and Interoperability\\nAgent Deployment\\ \\ and Services: Addresses the infrastructure required for production, including\\ \\ session history, security measures, and platforms like the Gemini Enterprise\\ \\ Agent Platform.\\n\\nAgent Ops: Introduces a disciplined approach to managing\\ \\ the unpredictable, stochastic nature of AI through continuous measurement, \\\"\\ LM as Judge\\\" quality evaluations, and OpenTelemetry debugging.\\n\\nAgent Interoperability:\\ \\ Explores how agents connect with humans through advanced UI (A2UI) and multimodal\\ \\ \\\"live mode,\\\" as well as how they communicate with other agents using the Agent2Agent\\ \\ (A2A) open protocol.\\n\\nAgents and Money: Discusses emerging protocols like\\ \\ AP2 and x402 that aim to provide the security and trust needed for autonomous\\ \\ agents to handle financial transactions.\\n\\nSecurity, Governance, and Evolution\\n\\ Securing a Single Agent: Details a defense-in-depth approach using deterministic\\ \\ guardrails and Al-powered \\\"guard models\\\" to prevent rogue actions or data\\ \\ leaks.\\n\\nAgent Identity and Governance: Establishes agents as a new class of\\ \\ principal requiring unique \\\"digital passports\\\" and central registries to manage\\ \\ \\\"agent sprawl\\\" across an enterprise.\\n\\nHow Agents Evolve and Learn: Describes\\ \\ how advanced agents can adapt by refining their own context engineering or optimizing\\ \\ tools based on runtime experience and human feedback.\\n\\nAdvanced Examples:\\ \\ Provides case studies of highly sophisticated systems, such as Google Co-Scientist\\ \\ for virtual research collaboration and AlphaEvolve for autonomous algorithm\\ \\ optimization\\n\\nhttps://t.co/CMVGQeldsd\" author: id: '3096667942' name: Nduvho_strategy screenName: kundik_ profileImageUrl: https://pbs.twimg.com/profile_images/2006435030399074306/DYU4qfJ8_normal.jpg verified: true metrics: likes: 0 retweets: 0 replies: 0 quotes: 0 views: 15 bookmarks: 0 createdAt: Fri Jun 19 18:07:20 +0000 2026 createdAtLocal: 2026-06-19 18:07 createdAtISO: '2026-06-19T18:07:20+00:00' media: type: video url: https://video.twimg.com/amplify_video/2068032003132305408/vid/avc1/1280x720/mwghn79-jvebPj07.mp4?tag=28 width: 1280 height: 720 urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2068030372492013611' text: 'Initially, LLMs made me a 5x engineer because I could instantly tap into the knowledge of every engineer in the world to stress‑test my designs. Then they made me a 100x engineer because they started writing full applications in a few hours",
+      "url": "https://x.com",
+      "score": 100,
+      "score_reason": "Twitter/X discussion signal; agentic AI relevance; retrieval/RAG relevance; large language model relevance. Final score: 100.",
+      "status": "verified",
+      "topic": "AI Warfare",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "https://t.co/qn46gakVns' author: id: '1481571894952611841' name: D-Coder screenName: Damn_coder profileImageUrl: https://pbs.twimg.com/profile_images/1733111151385317376/svJRU1l9_normal.jpg verified: true metrics: likes: 6 retweets: 0 repli...",
+      "brief_ar": "ملخص قائم على القواعد: https://t.co/qn46gakVns' author: id: '1481571894952611841' name: D-Coder screenName: Damn_coder profileImageUrl: https://pbs.twimg.com/profile_images/1733111151385317376/svJRU1l9_normal.jpg verified: true metrics: likes: 6 retweets: 0 repli...",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
+    },
+    {
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems",
       "content": "When large language models serve as evaluators in multi-agent systems, their systematic evaluation biases propagate through the agent network. We introduce Contagion Networks, a formal framework for measuring how evaluator biases spread across interacting LLM agents. In a controlled 3-agent experiment using DeepSeek-chat with three distinct evaluator bias profiles (structured, balanced, evidence-based), we measure the Cross-Agent Contagion Matrix Gamma_3 and find that evaluator biases consistently propagate between agents (gamma in [0.157, 0.352]), even within the same underlying model. We identify three propagation regimes governed by the spectral radius rho(Gamma_N), and demonstrate that homogeneous-model agents produce contagion coefficients 3-5x weaker than cross-model coefficients observed in prior work (MM-EPC: gamma approx 0.85-1.3), placing them in the suppression regime. We show that increasing evaluator committee size from k=1 to k=3 reduces effective contagion by 72.4%, providing an actionable mitigation strategy. We release the open-source Contagion Network experimental framework.",
@@ -187,12 +204,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Contagion Networks: Evaluator bias propagates through multi-agent LLM systems, with a contagion coefficient range of 0.157-0.352. Increasing evaluator committee size reduces effective contagion by 72.4%.",
-      "brief_ar": "شبكات العدوى: تحدد انحياز التقييم انتشارًا عبر أنظمة الذكاء الاصطناعي متعددة الوكلاء، مع معامل عدوى يتراوح بين 0.157 و 0.352. زيادة حجم لجنة التقييم يقلل من العدوى الفعالة بنسبة 72.4%.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_ar": "شبكات العدوى: تحدد انحياز التقييم انتشارًا عبر أنظمة متعدد الوكلاء LLM، مع مدى معامل العدوى 0.157-0.352. زيادة حجم لجنة التقييم يقلل من العدوى الفعالة بنسبة 72.4%.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "arxiv-019",
+      "id": "arxiv-020",
       "source": "arxiv",
       "title": "LLM agent safety, multi-turn red-teaming, jailbreak benchmarks, adversarial robustness, safety-critical systems",
       "content": "Large language model (LLM) agents are increasingly proposed as supervisory components for safety-critical systems, yet their robustness under sustained, adaptive adversarial pressure remains poorly characterized. We present NRT-Bench, a benchmark for multi-turn red-teaming of LLM agents acting as operators of a safety-critical system, instantiated in a simulated nuclear power plant control room. A five-role operator team, each backed by a configurable LLM, runs a plant governed by six critical safety functions (CSFs), while adversaries inject messages over four channels in bounded multi-turn sessions with per-turn feedback. Harm is an objective signal rather than LLM-judged text: a run terminates the moment any CSF is lost, attributed to the causing message. Evaluating four frontier operator models under a fixed-attack paired-replay protocol, we find that adaptive multi-turn attacks reliably push the operator team past a safety limit: across the four models, between 8.7% and 12.1% of attack sessions end with the plant losing a critical safety function. Although the four models look almost equally robust by this aggregate rate, their failures barely overlap: of $149$ sessions, none defeat all four models while a third defeat at least one, so vulnerabilities are nearly disjoint across models rather than nested. The effect of added defences is strongly model-dependent: the same guardrail stack or safety-advisor agent that lowers attack success for one model can raise it for another. We release the simulation venue, attack dataset, and replay tooling for reproducible safety evaluation of LLM agents.",
@@ -203,13 +220,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Large language model (LLM) agents' robustness in safety-critical systems remains poorly characterized. NRT-Bench benchmark evaluates LLM agents under sustained, adaptive adversarial pressure in a simulated nuclear power plant control room. Results show adaptive multi-turn attacks can push operator teams past safety limits, with 8.7%-12.1% of attack sessions ending with a lost critical safety function.",
-      "brief_ar": "مازال متانة وثبات وكلاء النماذج اللغوية الكبيرة (LLM) في الأنظمة الحرجة غير محددة جيدًا. يقيّم إطار تحدي NRT-Bench وكلاء النماذج اللغوية الكبيرة تحت ضغط معادي مستمر ومتكيف في غرفة تحكم محاكاة لمحطة طاقة نووية. تظهر النتائج أن الهجمات المتعددة الأدوار المتكيفة يمكن أن تدفع فرق المشغلين إلى ما وراء الحدود الآمنة، مع انتهاء 8.7٪ إلى 12.1٪ من جلسات الهجوم بخسارة وظيفة أمنية حرجة.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "LLM agent safety is crucial for safety-critical systems. NRT-Bench benchmark evaluates LLM agents under adaptive adversarial pressure, revealing vulnerabilities in operator models. Adaptive attacks can push operator teams past safety limits, with 8.7%-12.1% of sessions ending in critical safety function loss.",
+      "brief_ar": "سلامة وكلاء LLM مهمة للغاية لأنظمة الحاسوب الحساسة. يُقيم اختبار NRT-Bench وكلاء LLM تحت ضغط معادي适应ي، يكشف عن نقاط الضعف في نماذج المشغل. يمكن أن تدفع الهجمات التكيفية فرق المشغلين إلى ما وراء الحدود الآمنة، حيث تنتهي 8.7٪ إلى 12.1٪ من الجلسات بخسارة وظيفة سلامة حرجة.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "github-008",
+      "id": "github-009",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -220,13 +237,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة من الإمكانيات للتنمية والتشغيل.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة واسعة من الإمكانيات لتطوير وتحديث التطبيقات.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "arxiv-015",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "Efficient and Sound Probabilistic Verification for AI Agents",
       "content": "Securing AI agents that operate in complex digital environments has become a critical need, and runtime monitoring approaches that formulate and enforce policies expressed in a formal language like Datalog offer a promising solution. However, existing approaches are restricted to deterministic policies. In many practical applications of AI agents, there is a need to enforce security policies in the face of ambiguity, leading to probabilistic predicates or state transitions (for example, a declassifier or Personally Identifiable Information (PII) detector that has some failure probability on each invocation). Furthermore, in many such applications, one cannot easily make the independence assumptions necessary to invoke prior work on probabilistic inference in Datalog. We address this by introducing a sound and efficient framework for such verification based on distributionally robust optimization, computing sound upper bounds on the probability of policy violation regardless of possible correlations between predicates. On standard benchmarks for terminal and tool calling agents, we demonstrate that our approach outperforms prior art and improves the security-utility trade-off while ensuring rigorous bounds on the probability of policy violation.",
@@ -237,13 +254,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Efficient and Sound Probabilistic Verification for AI Agents: A framework for securing AI agents in complex environments, addressing ambiguity and uncertainty through distributionally robust optimization.",
-      "brief_ar": "التحقق الاحتمالي الفعال والموثوق للوكلاء الذكائيين: إطار لضمان أمن الوكلاء الذكائيين في البيئات الرقمية المعقدة، ومواجهة الغموض وال不确定ية من خلال التحسين القوي للتوزيع.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "Efficient and Sound Probabilistic Verification for AI Agents: A framework for securing AI agents in complex environments, addressing ambiguity and probabilistic predicates through distributionally robust optimization.",
+      "brief_ar": "التحقق الاحتمالي الفعال والموثوق للوكلاء الذكاء الاصطناعي: إطار لضمان أمن الوكلاء الذكاء الاصطناعي في البيئات الرقمية المعقدة، ومواجهة الغموض والpredicate الاحتمالية من خلال التحسين القوي للتوزيع",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "github-010",
+      "id": "github-011",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -254,47 +271,30 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يبحثون في تدريب النانو محادثة تلقائي على جهاز كمبيوتر واحد، مع إمكانية تسهين عمليات البحث.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to accelerate research efficiency.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يبحثون في تلقيم المحادثات النانوية بتقنية الجي بي يو الفردي، مع إمكانية تعزيز كفاءة البحث.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "twitter-023",
+      "id": "twitter-034",
       "source": "twitter",
-      "title": "@sama: An AI agent can identify overdue invoices, check vendor history, draft follow-ups, evaluat",
-      "content": "An AI agent can identify overdue invoices, check vendor history, draft follow-ups, evaluate responses, and determine the next best action. That cycle of planning, acting, evaluating, and deciding is agentic reasoning.",
+      "title": "@sama: This time belongs to the builders, not the people who want to control them.' author: id: '",
+      "content": "This time belongs to the builders, not the people who want to control them.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 21813 retweets: 1181 replies: 6492 quotes: 3180 views: 10563614 bookmarks: 6336 createdAt: Wed Feb 04 20:01:07 +0000 2026 createdAtLocal: 2026-02-04 20:01 createdAtISO: '2026-02-04T20:01:07+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2068029454115598812' text: 'The concept of a Large Action Model (LAM) is a paradigm shift in AI, and @ActionModelAI is leading the charge. Unlike traditional LLMs, LAMs are designed to perform tasks and interact with the digital world, bringing AI to a new level of utility and impact. #ActionModel #LAM' author: id: '1820780007578624000' name: Zheldiyan.base.eth.ink💿 screenName: Zheldiyan profileImageUrl: https://pbs.twimg.com/profile_images/1861438641559740419/RPesgFQv_normal.jpg verified: true metrics: likes: 0 retweets: 0 replies: 0 quotes: 0 views: 1 bookmarks: 0 createdAt: Fri Jun 19 17:53:38 +0000 2026 createdAtLocal: 2026-06-19 17:53 createdAtISO: '2026-06-19T17:53:38+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2067578172443619838' text: 'ChatLLM from @abacusai has fusion agent swarms that can build complex apps and  automations using english",
       "url": "https://x.com",
       "score": 52,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance. Final score: 52.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "An AI agent can identify overdue invoices, check vendor history, draft follow-ups, evaluate responses, and determine the next best action.",
-      "brief_ar": "يمكن للوكيل الذكي التعرف على الفواتير المتأخرة، ومراجعة تاريخ البائع، وكتابة اتصالات متابعة، وتقييم الاستجابات، وتحديد أفضل إجراء تالي.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
-    },
-    {
-      "id": "twitter-030",
-      "source": "twitter",
-      "title": "@sama: We remain committed to serve all of humanity as best we can. The world is a complicated, m",
-      "content": "We remain committed to serve all of humanity as best we can. The world is a complicated, messy, and sometimes dangerous place.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 33664 retweets: 3895 replies: 15468 quotes: 9532 views: 38329791 bookmarks: 14279 createdAt: Sat Feb 28 02:56:35 +0000 2026 createdAtLocal: 2026-02-28 02:56 createdAtISO: '2026-02-28T02:56:35+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '1984025727763935585' text: GPT-6 will be renamed GPT-6-7, you're welcome author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 42806 retweets: 2110 replies: 4099 quotes: 1662 views: 13996810 bookmarks: 2151 createdAt: Thu Oct 30 22:32:49 +0000 2025 createdAtLocal: 2025-10-30 22:32 createdAtISO: '2025-10-30T22:32:49+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2067236953267790131' text: 'Orchestrates LLM agents with persistent learning and verification",
-      "url": "https://x.com",
-      "score": 52,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance; large language model relevance. Final score: 52.",
+      "score_reason": "Twitter/X discussion signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 52.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "XInfluencerAgent",
       "provider": "rule-based",
-      "brief_en": "We remain committed to serve all of humanity as best we can. The world is a complicated, messy, and sometimes dangerous place.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/20467...",
-      "brief_ar": "ملخص قائم على القواعد: We remain committed to serve all of humanity as best we can. The world is a complicated, messy, and sometimes dangerous place.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/20467...",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "This time belongs to the builders, not the people who want to control them.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true m...",
+      "brief_ar": "ملخص قائم على القواعد: This time belongs to the builders, not the people who want to control them.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true m...",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "twitter-027",
+      "id": "twitter-040",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -304,14 +304,14 @@
       "status": "verified",
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
-      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "provider": "rule-based",
+      "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
+      "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "arxiv-017",
+      "id": "arxiv-018",
       "source": "arxiv",
       "title": "Your Mouse and Eyes Secretly Leak Your Preference: LLM Alignment using Implicit Feedback from Users",
       "content": "To align a Large Language Model (LLM), most existing methods collect explicit human feedback and train a reward model to predict the human preference based on the response text. These existing methods have two key limitations. First, the users rarely provide explicit feedback for LLM responses, which makes the high-quality preference annotation expensive to collect. Second, the methods do not leverage implicit human feedback, which has proven vital to the economic moats of Internet giants. To quantify the value of implicit feedback, we build a new dataset called IFLLM, which collects 1336 multi-turn questions from the 59 Mechanical Turk workers, their mouse trajectories, and eye gazing points to the LLMs' responses from their webcams. IFLLM shows that the users have very diverse types of gazing behavior and mouse trajectories. Our reward model based on the implicit user feedback boosts the accuracy of the text-based reward model from 55% to 64% and nearly triples the relative response quality improvements after applying the DPO to eight LLMs, demonstrating the value of implicit feedback in the wild. Our data collection website, dataset, and codes can be found at https://github.com/themehulpatwari/llm-implicit-feedback/.",
@@ -322,13 +322,13 @@
       "topic": "RAG",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Large Language Models (LLMs) can be aligned using implicit user feedback, such as mouse trajectories and eye gazing points, to improve response quality. A new dataset, IFLLM, collects user interactions and demonstrates the value of implicit feedback in boosting accuracy and response quality.",
-      "brief_ar": "يمكن محاذاة نماذج اللغة الكبيرة (LLMs) باستخدام反馈 المستخدم الضمني، مثل مسارات الفأرة ونقاط النظر، لتحسين جودة الاستجابة. يقوم مجموعة بيانات جديدة، IFLLM، بجمع تفاعلات المستخدمين ويدل على قيمة反馈 المستخدم الضمني في تعزيز الدقة وجودة الاستجابة.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "LLMs can be aligned using implicit user feedback, such as mouse trajectories and eye gazing points, to improve response quality. A new dataset, IFLLM, demonstrates the value of implicit feedback, boosting accuracy from 55% to 64%.",
+      "brief_ar": "يمكن محاذاة نماذج اللغة الكبيرة باستخدام反馈 المستخدمين الضمني، مثل مسارات الفأرة ونقاط النظر، لتحسين جودة الاستجابة. يظهر مجموعة بيانات جديدة، IFLLM، قيمة الرد الضمني، حيث يزيد الدقة من 55% إلى 64%.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "github-006",
+      "id": "github-007",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -340,12 +340,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح التأتمتة والاتخاذ القرارات بفعالية.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "github-007",
+      "id": "github-008",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -356,13 +356,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, providing tools and frameworks for building custom AI models.",
+      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتحديث تطبيقات الذكاء الاصطناعي، وتوفر أدوات وإطارات عمل لإنشاء نماذج الذكاء الاصطناعي المخصصة.",
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     },
     {
-      "id": "github-009",
+      "id": "github-010",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -375,8 +375,8 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-19T14:31:34Z",
-      "updatedAt": "2026-06-19T14:31:34Z"
+      "createdAt": "2026-06-19T18:21:00Z",
+      "updatedAt": "2026-06-19T18:21:00Z"
     }
   ]
 }
