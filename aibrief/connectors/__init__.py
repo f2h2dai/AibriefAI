@@ -1,2 +1,2 @@
-"""Optional source connectors for AibriefAI."""
+"""Optional source connectors for AIbrief."""
 

@@ -550,7 +550,7 @@ def gemini_prompt(candidates: list[dict]) -> str:
         for candidate in candidates
     ]
     return (
-        "Classify AibriefAI breaking AI stories. Return strict JSON only. "
+        "Classify AIbrief breaking AI stories. Return strict JSON only. "
         "Approve only rare high-impact stories with real-world consequence, "
         "corroboration, or an authoritative primary source. Do not treat supplied "
         "examples as verified unless evidence is in the candidate.\n\n"
@@ -648,7 +648,7 @@ def send_breaking_notification(story: dict, env: dict[str, str]) -> tuple[bool, 
         data=body.encode("utf-8"),
         method="POST",
         headers={
-            "Title": "\U0001f6a8 AibriefAI Breaking",
+            "Title": "\U0001f6a8 AIbrief Breaking",
             "Priority": "high",
             "Tags": "warning,rotating_light",
             "Click": click_url,
