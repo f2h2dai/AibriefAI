@@ -620,6 +620,24 @@ def retry_pending_notifications(state: dict, env: dict[str, str], notify_func, n
     return retried
 
 
+def publish_pending_website_only(state: dict, now: datetime) -> list[dict]:
+    published = []
+    for fingerprint, entry in list(state.get("pending", {}).items()):
+        if entry.get("status") != "approved":
+            continue
+        state["alerted"][fingerprint] = {
+            "alerted_at": isoformat(now),
+            "last_seen_at": isoformat(now),
+            "title": entry.get("title", ""),
+            "source_urls": entry.get("source_urls", []),
+            "confidence": entry.get("confidence", 0),
+            "notification_status": "website-only",
+        }
+        del state["pending"][fingerprint]
+        published.append({"fingerprint": fingerprint, "sent": False, "reason": "website-only"})
+    return published
+
+
 def collect_hackernews(limit: int = 20) -> list[dict]:
     url = "https://hn.algolia.com/api/v1/search_by_date?query=AI%20OR%20LLM%20OR%20OpenAI%20OR%20Grok&tags=story&hitsPerPage=" + str(limit)
     with urllib.request.urlopen(url, timeout=20) as response:
@@ -724,10 +742,14 @@ def run_monitor_cycle(
     max_candidates = int(env.get("BREAKING_MAX_CANDIDATES_PER_BATCH", str(DEFAULT_MAX_CANDIDATES)))
     min_confidence = float(env.get("BREAKING_MIN_CONFIDENCE", str(DEFAULT_MIN_CONFIDENCE)))
     cadence = int(env.get("BREAKING_CADENCE_MINUTES", str(DEFAULT_CADENCE_MINUTES)))
+    notify_mode = env.get("BREAKING_NOTIFY_MODE", "website").strip().lower()
 
     state = load_state(state_path)
     prune_alerted(state, now)
-    retried = retry_pending_notifications(state, env, notify_func, now)
+    if notify_mode == "ntfy":
+        retried = retry_pending_notifications(state, env, notify_func, now)
+    else:
+        retried = publish_pending_website_only(state, now)
 
     pending_reconsider = [
         entry.get("candidate")
@@ -778,7 +800,10 @@ def run_monitor_cycle(
             "reason": classification.get("reason", ""),
             "confidence": classification.get("confidence", 0),
         }
-        success, notification_reason = notify_func(story, env)
+        if notify_mode == "ntfy":
+            success, notification_reason = notify_func(story, env)
+        else:
+            success, notification_reason = True, "website-only"
         if success:
             state["alerted"][fingerprint] = {
                 "alerted_at": isoformat(now),
@@ -786,7 +811,7 @@ def run_monitor_cycle(
                 "title": story.get("title", ""),
                 "source_urls": story.get("source_urls", []),
                 "confidence": story.get("confidence", 0),
-                "notification_status": "sent",
+                "notification_status": notification_reason,
             }
             state.get("pending", {}).pop(fingerprint, None)
             alerted_now.append(fingerprint)

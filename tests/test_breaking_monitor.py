@@ -123,7 +123,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=positive_fixtures(),
                 state_path=Path(tmp) / "breaking_state.json",
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"NTFY_TOPIC_BREAKING": "test-topic"},
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -144,7 +144,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"NTFY_TOPIC_BREAKING": "test-topic"},
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -152,7 +152,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"NTFY_TOPIC_BREAKING": "test-topic"},
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -175,7 +175,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[1]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"NTFY_TOPIC_BREAKING": "test-topic"},
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
             )
@@ -183,7 +183,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"NTFY_TOPIC_BREAKING": "test-topic"},
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
             )
@@ -191,6 +191,26 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(first["pending_now"], 1)
         self.assertEqual(second["retried"][0]["sent"], True)
         self.assertEqual(len(attempts), 2)
+
+    def test_website_mode_does_not_send_notification(self):
+        attempts = []
+
+        def notify(story, env):
+            attempts.append(story["story_fingerprint"])
+            return True, "sent"
+
+        with tempfile.TemporaryDirectory() as tmp:
+            summary = run_monitor_cycle(
+                raw_candidates=[positive_fixtures()[2]],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=Path(tmp) / "breaking_status.json",
+                env={"BREAKING_NOTIFY_MODE": "website"},
+                classify_func=classifier_for_all,
+                notify_func=notify,
+            )
+
+        self.assertEqual(summary["alerted_now"], 1)
+        self.assertEqual(attempts, [])
 
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(
@@ -259,6 +279,8 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn('id="breaking"', html)
         self.assertIn("Breaking Watch is live.", html)
         self.assertIn("data/breaking_status.json", html)
+        self.assertIn("Website-only watch", html)
+        self.assertNotIn("only sends ntfy alerts", html)
 
 
 if __name__ == "__main__":

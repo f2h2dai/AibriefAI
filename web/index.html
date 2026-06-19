@@ -928,9 +928,8 @@
             <div class="breaking-kicker">Breaking lane</div>
             <h2>Breaking Watch is live.</h2>
             <p>
-              A separate high-priority monitor checks rare AI incidents every
-              15 minutes, batches survivors into one Gemini classification call,
-              dedupes stories, and only sends ntfy alerts for distinct approved events.
+              Website-only watch for rare AI incidents. Approved breaking stories
+              appear here on the dashboard.
             </p>
           </div>
           <div class="breaking-status-card" aria-live="polite">
@@ -944,11 +943,11 @@
                 <strong id="breakingUpdated">Loading</strong>
               </div>
               <div class="breaking-row">
-                <span>Urgent alerts</span>
+                <span>Website alerts</span>
                 <strong id="breakingAlertCount">0</strong>
               </div>
               <div class="breaking-row">
-                <span>Retry pending</span>
+                <span>Pending review</span>
                 <strong id="breakingPendingCount">0</strong>
               </div>
               <div class="breaking-row">
@@ -957,7 +956,7 @@
               </div>
             </div>
             <div class="breaking-last" id="breakingLastAlert">
-              No breaking alerts have been sent yet.
+              No breaking stories are showing yet.
             </div>
           </div>
         </div>
@@ -1231,9 +1230,9 @@
         const source = alert.source_url ? '<br><a href="' + escapeHTML(alert.source_url) + '" target="_blank" rel="noopener">Open source</a>' : '';
         lastAlert.innerHTML = '<strong>' + escapeHTML(alert.title) + '</strong><br>' + escapeHTML(formatDate(alert.alerted_at).replace('Generated ', 'Alerted ')) + escapeHTML(confidence) + source;
       } else if (Number(payload.pending_count || 0) > 0) {
-        lastAlert.textContent = 'A breaking story is approved but notification delivery is retrying.';
+        lastAlert.textContent = 'A breaking story is waiting for website publication.';
       } else {
-        lastAlert.textContent = 'No breaking alerts have been sent yet.';
+        lastAlert.textContent = 'No breaking stories are showing yet.';
       }
     }
 
