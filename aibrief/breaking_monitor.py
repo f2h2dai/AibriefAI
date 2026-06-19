@@ -427,13 +427,39 @@ def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
     return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
 
 
+def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
+    entries = []
+    for fingerprint, entry in state.get("pending", {}).items():
+        candidate = entry.get("candidate") if isinstance(entry.get("candidate"), dict) else entry
+        source_urls = candidate.get("source_urls") or entry.get("source_urls") or []
+        entries.append(
+            {
+                "id": fingerprint,
+                "title": candidate.get("title", entry.get("title", "")),
+                "shown_at": entry.get("last_seen_at", ""),
+                "source_url": source_urls[0] if source_urls else candidate.get("url", ""),
+                "confidence": candidate.get("confidence", 0),
+                "status": "under review"
+                if entry.get("status") == "awaiting_classification"
+                else entry.get("status", "pending"),
+                "reason": entry.get("classification_reason")
+                or entry.get("notification_status")
+                or "Awaiting Gemini classification retry.",
+            }
+        )
+    return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
+
+
 def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
     latest = latest_alert_entry(state)
     pending = state.get("pending", {})
     alerted = state.get("alerted", {})
     status = "clear"
-    if pending:
+    pending_entries = public_pending_entries(state)
+    if any(entry.get("status") == "approved" for entry in pending.values()):
         status = "retry-pending"
+    elif pending:
+        status = "review-pending"
     if latest:
         status = "alerted"
 
@@ -445,6 +471,7 @@ def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
         "alerted_count": len(alerted),
         "pending_count": len(pending),
         "feed": public_feed_entries(state),
+        "pending_feed": pending_entries,
         "last_alert": {
             "title": latest.get("title", "") if latest else "",
             "alerted_at": latest.get("alerted_at", "") if latest else "",
@@ -990,6 +1017,20 @@ def run_monitor_cycle(
     pending_now = []
     malformed_or_rejected = 0
     by_id = {candidate["candidate_id"]: candidate for candidate in batch}
+    classifier_unavailable = bool(batch) and not classifications and classification_reason != "classified"
+
+    if classifier_unavailable:
+        for candidate in batch:
+            fingerprint = candidate["story_fingerprint"]
+            state["pending"][fingerprint] = {
+                "status": "awaiting_classification",
+                "candidate": public_candidate(candidate),
+                "title": candidate.get("title", ""),
+                "source_urls": candidate.get("source_urls", []),
+                "classification_reason": classification_reason,
+                "last_seen_at": isoformat(now),
+            }
+            pending_now.append(fingerprint)
 
     for candidate_id, classification in classifications.items():
         candidate = by_id.get(candidate_id)
@@ -1032,10 +1073,11 @@ def run_monitor_cycle(
             }
             pending_now.append(fingerprint)
 
-    classified_ids = set(classifications.keys())
-    for candidate in batch:
-        if candidate["candidate_id"] not in classified_ids:
-            malformed_or_rejected += 1
+    if not classifier_unavailable:
+        classified_ids = set(classifications.keys())
+        for candidate in batch:
+            if candidate["candidate_id"] not in classified_ids:
+                malformed_or_rejected += 1
 
     elapsed = time.monotonic() - started
     summary = {

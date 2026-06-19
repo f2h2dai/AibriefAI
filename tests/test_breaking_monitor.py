@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -243,6 +244,29 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(summary["alerted_now"], 1)
         self.assertEqual(attempts, [])
 
+    def test_classifier_outage_keeps_candidate_pending_for_website(self):
+        def classifier_unavailable(batch, env):
+            return {}, "Gemini 429 rate limited"
+
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[positive_fixtures()[-1]],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website"},
+                classify_func=classifier_unavailable,
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["alerted_now"], 0)
+        self.assertEqual(summary["pending_now"], 1)
+        self.assertEqual(summary["malformed_or_rejected"], 0)
+        self.assertEqual(status["status"], "review-pending")
+        self.assertEqual(status["feed"], [])
+        self.assertEqual(len(status["pending_feed"]), 1)
+        self.assertEqual(status["pending_feed"][0]["status"], "under review")
+
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(
             validate_classifications(
@@ -315,6 +339,9 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("breakingFeedList", html)
         self.assertIn("data/breaking_status.json", html)
         self.assertIn("Website-only watch", html)
+        self.assertIn("pending_feed", html)
+        self.assertIn("Not confirmed breaking yet", html)
+        self.assertIn("Review pending", html)
         self.assertNotIn("only sends ntfy alerts", html)
 
 

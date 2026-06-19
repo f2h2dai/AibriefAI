@@ -1277,14 +1277,39 @@
       }).join('');
     }
 
-    function renderBreakingFeed(feed) {
+    function renderBreakingFeed(feed, pendingFeed) {
       const list = document.getElementById('breakingFeedList');
       const meta = document.getElementById('breakingFeedMeta');
       const items = Array.isArray(feed) ? feed : [];
+      const pending = Array.isArray(pendingFeed) ? pendingFeed : [];
 
-      meta.textContent = items.length ? items.length + ' story' + (items.length === 1 ? '' : 'ies') : 'No stories yet';
+      meta.textContent = items.length ?
+        items.length + ' approved ' + (items.length === 1 ? 'story' : 'stories') :
+        (pending.length ? pending.length + ' under review' : 'No stories yet');
 
       if (!items.length) {
+        if (pending.length) {
+          list.innerHTML = pending.map(function(item) {
+            const shownAt = item.shown_at ? formatDate(item.shown_at).replace('Generated ', 'Seen ') : 'Seen time unavailable';
+            const source = item.source_url ?
+              '<a href="' + escapeHTML(item.source_url) + '" target="_blank" rel="noopener">Open source</a>' :
+              '<span>Source unavailable</span>';
+
+            return '' +
+              '<article class="breaking-feed-item pending">' +
+                '<div class="breaking-feed-meta">' +
+                  '<span>' + escapeHTML(shownAt) + '</span>' +
+                  '<span>Under review</span>' +
+                  '<span>Not confirmed breaking yet</span>' +
+                '</div>' +
+                '<h3>' + escapeHTML(item.title || 'Untitled candidate') + '</h3>' +
+                '<p>' + escapeHTML(item.reason || 'Awaiting Gemini classification retry.') + '</p>' +
+                source +
+              '</article>';
+          }).join('');
+          return;
+        }
+
         list.innerHTML =
           '<div class="breaking-feed-empty">' +
             '<strong>No breaking stories right now.</strong><br>' +
@@ -1323,6 +1348,10 @@
         return 'Retry pending';
       }
 
+      if (status === 'review-pending') {
+        return 'Review pending';
+      }
+
       return 'Clear';
     }
 
@@ -1336,21 +1365,22 @@
       const status = payload.status || 'clear';
       const alert = payload.last_alert || {};
       const feed = Array.isArray(payload.feed) ? payload.feed : [];
+      const pendingFeed = Array.isArray(payload.pending_feed) ? payload.pending_feed : [];
 
       pill.textContent = breakingStatusLabel(status);
-      pill.className = 'breaking-pill' + (status === 'alerted' ? ' alerted' : '') + (status === 'retry-pending' ? ' pending' : '');
+      pill.className = 'breaking-pill' + (status === 'alerted' ? ' alerted' : '') + ((status === 'retry-pending' || status === 'review-pending') ? ' pending' : '');
       updated.textContent = formatDate(payload.updated_at).replace('Generated ', '') || 'Not checked yet';
       alertCount.textContent = String(feed.length || payload.alerted_count || 0);
       pendingCount.textContent = String(payload.pending_count || 0);
       cadence.textContent = String(payload.cadence_minutes || 15) + ' min';
-      renderBreakingFeed(feed);
+      renderBreakingFeed(feed, pendingFeed);
 
       if (alert.title) {
         const confidence = alert.confidence ? ' · confidence ' + Math.round(Number(alert.confidence) * 100) + '%' : '';
         const source = alert.source_url ? '<br><a href="' + escapeHTML(alert.source_url) + '" target="_blank" rel="noopener">Open source</a>' : '';
         lastAlert.innerHTML = '<strong>' + escapeHTML(alert.title) + '</strong><br>' + escapeHTML(formatDate(alert.alerted_at).replace('Generated ', 'Alerted ')) + escapeHTML(confidence) + source;
       } else if (Number(payload.pending_count || 0) > 0) {
-        lastAlert.textContent = 'A breaking story is waiting for website publication.';
+        lastAlert.textContent = 'A candidate is waiting for Gemini classification retry.';
       } else {
         lastAlert.textContent = 'No breaking stories are showing yet.';
       }
