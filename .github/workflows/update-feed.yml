@@ -178,7 +178,7 @@ jobs:
 
           def should_send_notification():
               if not NTFY_TOPIC:
-                  return False, "NTFY_TOPIC missing"
+                  return False, "notification topic missing"
 
               if GITHUB_EVENT_NAME == "workflow_dispatch":
                   if SEND_NOTIFICATION.lower() == "true":
