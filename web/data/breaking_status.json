@@ -10,24 +10,24 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "classification_reason": "no candidates",
+    "classification_reason": "Gemini 429 rate limited",
     "classified": 0,
-    "clustered": 42,
-    "collected": 42,
-    "malformed_or_rejected": 0,
+    "clustered": 23,
+    "collected": 23,
+    "malformed_or_rejected": 1,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 0.535,
-      "projected_minutes_per_30d": 25.68,
+      "measured_seconds": 9.277,
+      "projected_minutes_per_30d": 445.31,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 0
+    "stage1_survivors": 1
   },
   "pending_count": 0,
   "status": "clear",
-  "updated_at": "2026-06-19T15:15:44Z",
+  "updated_at": "2026-06-19T15:29:17Z",
   "version": 1
 }
