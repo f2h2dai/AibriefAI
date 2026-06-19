@@ -460,6 +460,153 @@
       text-transform: uppercase;
     }
 
+    .briefing {
+      padding-bottom: 64px;
+    }
+
+    .briefing-shell {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .briefing-bar {
+      align-items: center;
+      background: #111315;
+      color: #fff;
+      display: flex;
+      gap: 14px;
+      justify-content: space-between;
+      padding: 16px 18px;
+    }
+
+    .briefing-bar strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    .briefing-bar span {
+      color: #b9c1c8;
+      display: block;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .briefing-controls {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: minmax(0, 1fr) 150px 130px;
+      padding: 18px;
+    }
+
+    .briefing-controls input,
+    .briefing-controls select,
+    .briefing-controls button {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink);
+      font: inherit;
+      min-height: 42px;
+      padding: 0 12px;
+    }
+
+    .briefing-controls button {
+      background: var(--ink);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .briefing-status {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 0 18px 16px;
+    }
+
+    .signal-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      padding: 0 18px 20px;
+    }
+
+    .signal-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 250px;
+      padding: 18px;
+    }
+
+    .signal-meta {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .signal-chip,
+    .score-chip {
+      border-radius: 999px;
+      display: inline-flex;
+      font-size: 11px;
+      font-weight: 850;
+      padding: 6px 9px;
+      text-transform: uppercase;
+    }
+
+    .signal-chip {
+      background: #edf5fb;
+      color: var(--teal);
+    }
+
+    .score-chip {
+      background: #e9f7f1;
+      color: var(--green);
+    }
+
+    .signal-card h3 {
+      font-size: 20px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .signal-card p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .signal-reason {
+      border-left: 3px solid var(--teal);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      padding-left: 10px;
+    }
+
+    .signal-card a {
+      align-self: flex-start;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
+      margin-top: auto;
+    }
+
+    .empty-state {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      grid-column: 1 / -1;
+      padding: 30px;
+      text-align: center;
+    }
+
     .cta {
       background: linear-gradient(135deg, #e9f7f1, #edf5fb);
       border: 1px solid var(--line);
@@ -524,7 +671,8 @@
     @media (max-width: 620px) {
       .metrics,
       .agent-grid,
-      .toolbar {
+      .toolbar,
+      .briefing-controls {
         grid-template-columns: 1fr;
       }
 
@@ -728,12 +876,34 @@
         </div>
       </section>
 
-      <section class="cta" id="demo">
-        <div>
-          <h2>Launch the AibriefAI briefing desk.</h2>
-          <p>Use AibriefAI / إحاطة to turn fast-moving AI developments into a fresh, bilingual command dashboard.</p>
+      <section class="section briefing" id="demo">
+        <div class="section-head">
+          <h2>Live AI briefing desk.</h2>
+          <p>
+            Fresh generated signals from the current AibriefAI pipeline,
+            rendered directly from the public JSON feed.
+          </p>
         </div>
-        <a class="button primary" href="#demo">Open briefing</a>
+        <div class="briefing-shell">
+          <div class="briefing-bar">
+            <div>
+              <strong>Current Briefing</strong>
+              <span id="briefingGenerated">Loading generated feed...</span>
+            </div>
+            <span id="briefingCount">0 signals</span>
+          </div>
+          <div class="briefing-controls" aria-label="Briefing filters">
+            <input id="briefingSearch" type="search" placeholder="Search title, source, topic, summary">
+            <select id="briefingSource" aria-label="Filter by source">
+              <option value="all">All sources</option>
+            </select>
+            <button id="briefingLanguage" type="button" aria-pressed="false">العربية</button>
+          </div>
+          <div class="briefing-status" id="briefingStatus">Loading live briefing...</div>
+          <div class="signal-grid" id="signalGrid" aria-live="polite">
+            <div class="empty-state">Loading briefing signals...</div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -742,5 +912,170 @@
       <span>Florida-tech styled intelligence briefings</span>
     </footer>
   </div>
+  <script>
+    const state = {
+      signals: [],
+      search: '',
+      source: 'all',
+      language: 'en'
+    };
+
+    const sourceLabels = {
+      arxiv: 'arXiv',
+      github: 'GitHub',
+      hackernews: 'Hacker News',
+      reddit: 'Reddit',
+      twitter: 'X/Twitter',
+      youtube: 'YouTube',
+      fallback: 'Fallback'
+    };
+
+    function escapeHTML(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function sourceLabel(source) {
+      return sourceLabels[source] || source || 'Source';
+    }
+
+    function formatDate(value) {
+      if (!value) {
+        return 'Generated feed loaded';
+      }
+
+      const date = new Date(value);
+
+      if (Number.isNaN(date.getTime())) {
+        return 'Generated ' + value;
+      }
+
+      return 'Generated ' + date.toLocaleString([], {
+        dateStyle: 'medium',
+        timeStyle: 'short'
+      });
+    }
+
+    function signalText(signal) {
+      if (state.language === 'ar') {
+        return signal.brief_ar || signal.brief_en || signal.content || '';
+      }
+
+      return signal.brief_en || signal.content || signal.brief_ar || '';
+    }
+
+    function filteredSignals() {
+      const query = state.search.trim().toLowerCase();
+
+      return state.signals.filter(function(signal) {
+        const sourceMatch = state.source === 'all' || signal.source === state.source;
+        const searchText = [
+          signal.title,
+          signal.source,
+          signal.topic,
+          signal.brief_en,
+          signal.brief_ar,
+          signal.content
+        ].join(' ').toLowerCase();
+
+        return sourceMatch && (!query || searchText.includes(query));
+      }).sort(function(a, b) {
+        return Number(b.score || 0) - Number(a.score || 0);
+      });
+    }
+
+    function renderSourceOptions() {
+      const select = document.getElementById('briefingSource');
+      const sources = Array.from(new Set(state.signals.map(function(signal) {
+        return signal.source || 'unknown';
+      }))).sort();
+
+      select.innerHTML = '<option value="all">All sources</option>' + sources.map(function(source) {
+        return '<option value="' + escapeHTML(source) + '">' + escapeHTML(sourceLabel(source)) + '</option>';
+      }).join('');
+    }
+
+    function renderSignals() {
+      const grid = document.getElementById('signalGrid');
+      const status = document.getElementById('briefingStatus');
+      const count = document.getElementById('briefingCount');
+      const signals = filteredSignals();
+
+      count.textContent = signals.length + ' of ' + state.signals.length + ' signals';
+
+      if (!signals.length) {
+        status.textContent = 'No briefing signals match this filter.';
+        grid.innerHTML = '<div class="empty-state">No signals match this view.</div>';
+        return;
+      }
+
+      status.textContent = 'Showing live generated briefing cards. Sorted by score.';
+      grid.innerHTML = signals.map(function(signal) {
+        const dir = state.language === 'ar' ? 'rtl' : 'ltr';
+        const lang = state.language === 'ar' ? 'ar' : 'en';
+        const topic = signal.topic || 'AI';
+        const score = signal.score || 0;
+        const title = signal.title || 'Untitled signal';
+        const reason = signal.score_reason || 'Matched AibriefAI relevance criteria.';
+        const url = signal.url || '#';
+
+        return '' +
+          '<article class="signal-card" dir="' + dir + '" lang="' + lang + '">' +
+            '<div class="signal-meta">' +
+              '<span class="signal-chip">' + escapeHTML(sourceLabel(signal.source)) + '</span>' +
+              '<span class="signal-chip">' + escapeHTML(topic) + '</span>' +
+              '<span class="score-chip">Score ' + escapeHTML(score) + '</span>' +
+            '</div>' +
+            '<h3>' + escapeHTML(title) + '</h3>' +
+            '<p>' + escapeHTML(signalText(signal)) + '</p>' +
+            '<div class="signal-reason">' + escapeHTML(reason) + '</div>' +
+            '<a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open source</a>' +
+          '</article>';
+      }).join('');
+    }
+
+    async function loadBriefing() {
+      try {
+        const response = await fetch('data/signals.json', { cache: 'no-store' });
+
+        if (!response.ok) {
+          throw new Error('Feed request failed with ' + response.status);
+        }
+
+        const payload = await response.json();
+        state.signals = Array.isArray(payload) ? payload : (payload.signals || []);
+        document.getElementById('briefingGenerated').textContent = formatDate(payload.generated_at);
+        renderSourceOptions();
+        renderSignals();
+      } catch (error) {
+        document.getElementById('briefingStatus').textContent = 'Briefing feed could not be loaded.';
+        document.getElementById('signalGrid').innerHTML =
+          '<div class="empty-state">Could not load data/signals.json. Refresh after the feed workflow finishes.</div>';
+      }
+    }
+
+    document.getElementById('briefingSearch').addEventListener('input', function() {
+      state.search = this.value;
+      renderSignals();
+    });
+
+    document.getElementById('briefingSource').addEventListener('change', function() {
+      state.source = this.value;
+      renderSignals();
+    });
+
+    document.getElementById('briefingLanguage').addEventListener('click', function() {
+      state.language = state.language === 'en' ? 'ar' : 'en';
+      this.textContent = state.language === 'en' ? 'العربية' : 'English';
+      this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
+      renderSignals();
+    });
+
+    loadBriefing();
+  </script>
 </body>
 </html>
