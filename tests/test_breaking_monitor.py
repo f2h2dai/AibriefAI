@@ -272,12 +272,16 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["status"], "alerted")
         self.assertEqual(status["alerted_count"], 1)
         self.assertEqual(status["pending_count"], 0)
+        self.assertEqual(len(status["feed"]), 1)
+        self.assertEqual(status["feed"][0]["title"], "Confirmed frontier-lab breach")
         self.assertNotIn("topic", str(status).lower())
 
     def test_landing_page_exposes_breaking_watch_panel(self):
         html = Path("web/landing-template.html").read_text(encoding="utf-8")
         self.assertIn('id="breaking"', html)
         self.assertIn("Breaking Watch is live.", html)
+        self.assertIn("Breaking Feed", html)
+        self.assertIn("breakingFeedList", html)
         self.assertIn("data/breaking_status.json", html)
         self.assertIn("Website-only watch", html)
         self.assertNotIn("only sends ntfy alerts", html)

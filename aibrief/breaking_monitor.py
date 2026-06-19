@@ -387,6 +387,24 @@ def latest_alert_entry(state: dict) -> dict | None:
     return sorted(entries, key=lambda entry: entry.get("alerted_at", ""), reverse=True)[0]
 
 
+def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
+    entries = []
+    for fingerprint, entry in state.get("alerted", {}).items():
+        source_urls = entry.get("source_urls") or []
+        entries.append(
+            {
+                "id": fingerprint,
+                "title": entry.get("title", ""),
+                "shown_at": entry.get("alerted_at", ""),
+                "source_url": source_urls[0] if source_urls else "",
+                "confidence": entry.get("confidence", 0),
+                "status": entry.get("notification_status", "website-only"),
+                "reason": entry.get("reason", ""),
+            }
+        )
+    return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
+
+
 def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
     latest = latest_alert_entry(state)
     pending = state.get("pending", {})
@@ -404,6 +422,7 @@ def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
         "cadence_minutes": DEFAULT_CADENCE_MINUTES,
         "alerted_count": len(alerted),
         "pending_count": len(pending),
+        "feed": public_feed_entries(state),
         "last_alert": {
             "title": latest.get("title", "") if latest else "",
             "alerted_at": latest.get("alerted_at", "") if latest else "",
@@ -629,10 +648,11 @@ def publish_pending_website_only(state: dict, now: datetime) -> list[dict]:
             "alerted_at": isoformat(now),
             "last_seen_at": isoformat(now),
             "title": entry.get("title", ""),
-            "source_urls": entry.get("source_urls", []),
-            "confidence": entry.get("confidence", 0),
-            "notification_status": "website-only",
-        }
+                "source_urls": entry.get("source_urls", []),
+                "confidence": entry.get("confidence", 0),
+                "notification_status": "website-only",
+                "reason": entry.get("reason", ""),
+            }
         del state["pending"][fingerprint]
         published.append({"fingerprint": fingerprint, "sent": False, "reason": "website-only"})
     return published
@@ -812,6 +832,7 @@ def run_monitor_cycle(
                 "source_urls": story.get("source_urls", []),
                 "confidence": story.get("confidence", 0),
                 "notification_status": notification_reason,
+                "reason": story.get("reason", ""),
             }
             state.get("pending", {}).pop(fingerprint, None)
             alerted_now.append(fingerprint)

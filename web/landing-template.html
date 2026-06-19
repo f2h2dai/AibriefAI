@@ -550,6 +550,78 @@
       padding: 12px;
     }
 
+    .breaking-feed-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      grid-column: 1 / -1;
+      overflow: hidden;
+    }
+
+    .breaking-feed-head {
+      align-items: center;
+      background: #111315;
+      color: #fff;
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      padding: 14px 16px;
+    }
+
+    .breaking-feed-head span {
+      color: #b9c1c8;
+      font-size: 12px;
+    }
+
+    .breaking-feed-list {
+      display: grid;
+      gap: 12px;
+      padding: 16px;
+    }
+
+    .breaking-feed-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 8px;
+      padding: 14px;
+    }
+
+    .breaking-feed-item h3 {
+      font-size: 18px;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .breaking-feed-meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 12px;
+      gap: 8px;
+    }
+
+    .breaking-feed-item p {
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .breaking-feed-item a {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .breaking-feed-empty {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding: 22px;
+      text-align: center;
+    }
+
     .workflow {
       background: #111315;
       color: #fff;
@@ -943,7 +1015,7 @@
                 <strong id="breakingUpdated">Loading</strong>
               </div>
               <div class="breaking-row">
-                <span>Website alerts</span>
+                <span>Feed items</span>
                 <strong id="breakingAlertCount">0</strong>
               </div>
               <div class="breaking-row">
@@ -957,6 +1029,15 @@
             </div>
             <div class="breaking-last" id="breakingLastAlert">
               No breaking stories are showing yet.
+            </div>
+          </div>
+          <div class="breaking-feed-card">
+            <div class="breaking-feed-head">
+              <strong>Breaking Feed</strong>
+              <span id="breakingFeedMeta">Loading feed</span>
+            </div>
+            <div class="breaking-feed-list" id="breakingFeedList" aria-live="polite">
+              <div class="breaking-feed-empty">Loading breaking feed...</div>
             </div>
           </div>
         </div>
@@ -1196,6 +1277,43 @@
       }).join('');
     }
 
+    function renderBreakingFeed(feed) {
+      const list = document.getElementById('breakingFeedList');
+      const meta = document.getElementById('breakingFeedMeta');
+      const items = Array.isArray(feed) ? feed : [];
+
+      meta.textContent = items.length ? items.length + ' story' + (items.length === 1 ? '' : 'ies') : 'No stories yet';
+
+      if (!items.length) {
+        list.innerHTML =
+          '<div class="breaking-feed-empty">' +
+            '<strong>No breaking stories right now.</strong><br>' +
+            'When a story passes the breaking filter, it will appear here as a feed item.' +
+          '</div>';
+        return;
+      }
+
+      list.innerHTML = items.map(function(item) {
+        const confidence = item.confidence ? 'Confidence ' + Math.round(Number(item.confidence) * 100) + '%' : 'Confidence pending';
+        const shownAt = item.shown_at ? formatDate(item.shown_at).replace('Generated ', 'Shown ') : 'Shown time unavailable';
+        const source = item.source_url ?
+          '<a href="' + escapeHTML(item.source_url) + '" target="_blank" rel="noopener">Open source</a>' :
+          '<span>Source unavailable</span>';
+
+        return '' +
+          '<article class="breaking-feed-item">' +
+            '<div class="breaking-feed-meta">' +
+              '<span>' + escapeHTML(shownAt) + '</span>' +
+              '<span>' + escapeHTML(confidence) + '</span>' +
+              '<span>' + escapeHTML(item.status || 'website-only') + '</span>' +
+            '</div>' +
+            '<h3>' + escapeHTML(item.title || 'Untitled breaking story') + '</h3>' +
+            (item.reason ? '<p>' + escapeHTML(item.reason) + '</p>' : '') +
+            source +
+          '</article>';
+      }).join('');
+    }
+
     function breakingStatusLabel(status) {
       if (status === 'alerted') {
         return 'Alerted';
@@ -1217,13 +1335,15 @@
       const lastAlert = document.getElementById('breakingLastAlert');
       const status = payload.status || 'clear';
       const alert = payload.last_alert || {};
+      const feed = Array.isArray(payload.feed) ? payload.feed : [];
 
       pill.textContent = breakingStatusLabel(status);
       pill.className = 'breaking-pill' + (status === 'alerted' ? ' alerted' : '') + (status === 'retry-pending' ? ' pending' : '');
       updated.textContent = formatDate(payload.updated_at).replace('Generated ', '') || 'Not checked yet';
-      alertCount.textContent = String(payload.alerted_count || 0);
+      alertCount.textContent = String(feed.length || payload.alerted_count || 0);
       pendingCount.textContent = String(payload.pending_count || 0);
       cadence.textContent = String(payload.cadence_minutes || 15) + ' min';
+      renderBreakingFeed(feed);
 
       if (alert.title) {
         const confidence = alert.confidence ? ' · confidence ' + Math.round(Number(alert.confidence) * 100) + '%' : '';
@@ -1252,6 +1372,7 @@
         document.getElementById('breakingUpdated').textContent = 'Status file missing';
         document.getElementById('breakingLastAlert').textContent =
           'Breaking monitor exists, but the public status file has not been published yet.';
+        renderBreakingFeed([]);
       }
     }
 
