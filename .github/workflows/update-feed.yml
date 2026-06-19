@@ -1813,6 +1813,10 @@ jobs:
           </body>
           </html>"""
 
+          landing_template = Path("web/landing-template.html")
+          if landing_template.exists():
+              html = landing_template.read_text(encoding="utf-8")
+
           Path("web/index.html").write_text(html, encoding="utf-8")
           Path("web/brief.html").write_text(html, encoding="utf-8")
           PY
