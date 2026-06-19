@@ -434,6 +434,122 @@
       margin: 0;
     }
 
+    .breaking-watch {
+      padding-top: 22px;
+    }
+
+    .breaking-panel {
+      background: linear-gradient(135deg, #fff7ed, #ffffff 52%, #edf5fb);
+      border: 1px solid #f4d8b8;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 20px;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
+      padding: clamp(20px, 4vw, 34px);
+    }
+
+    .breaking-kicker {
+      align-items: center;
+      color: #a34700;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 8px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .breaking-kicker::before {
+      background: var(--amber);
+      border-radius: 999px;
+      content: "";
+      height: 9px;
+      width: 9px;
+    }
+
+    .breaking-panel h2 {
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.02;
+      margin: 12px 0 12px;
+      max-width: 740px;
+    }
+
+    .breaking-panel p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+      max-width: 720px;
+    }
+
+    .breaking-status-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .breaking-state {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .breaking-pill {
+      background: var(--green);
+      border-radius: 999px;
+      color: #fff;
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      padding: 7px 10px;
+      text-transform: uppercase;
+    }
+
+    .breaking-pill.pending {
+      background: var(--amber);
+    }
+
+    .breaking-pill.alerted {
+      background: #d9480f;
+    }
+
+    .breaking-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .breaking-row {
+      border-top: 1px solid var(--line);
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      padding-top: 10px;
+    }
+
+    .breaking-row span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .breaking-row strong {
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .breaking-last {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding: 12px;
+    }
+
     .workflow {
       background: #111315;
       color: #fff;
@@ -643,7 +759,8 @@
 
     @media (max-width: 960px) {
       .hero,
-      .cta {
+      .cta,
+      .breaking-panel {
         grid-template-columns: 1fr;
       }
 
@@ -702,6 +819,7 @@
         </span>
       </a>
       <div class="links" aria-label="Section links">
+        <a href="#breaking">Breaking</a>
         <a href="#platform">Signals</a>
         <a href="#workflow">Pipeline</a>
         <a href="#security">Trust</a>
@@ -799,6 +917,47 @@
                 <strong>Bilingual dashboard artifacts committed</strong>
                 <span>complete</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section breaking-watch" id="breaking">
+        <div class="breaking-panel">
+          <div>
+            <div class="breaking-kicker">Breaking lane</div>
+            <h2>Breaking Watch is live.</h2>
+            <p>
+              A separate high-priority monitor checks rare AI incidents every
+              15 minutes, batches survivors into one Gemini classification call,
+              dedupes stories, and only sends ntfy alerts for distinct approved events.
+            </p>
+          </div>
+          <div class="breaking-status-card" aria-live="polite">
+            <div class="breaking-state">
+              <strong>Breaking status</strong>
+              <span class="breaking-pill" id="breakingStatusPill">Loading</span>
+            </div>
+            <div class="breaking-list">
+              <div class="breaking-row">
+                <span>Last check</span>
+                <strong id="breakingUpdated">Loading</strong>
+              </div>
+              <div class="breaking-row">
+                <span>Urgent alerts</span>
+                <strong id="breakingAlertCount">0</strong>
+              </div>
+              <div class="breaking-row">
+                <span>Retry pending</span>
+                <strong id="breakingPendingCount">0</strong>
+              </div>
+              <div class="breaking-row">
+                <span>Cadence</span>
+                <strong id="breakingCadence">15 min</strong>
+              </div>
+            </div>
+            <div class="breaking-last" id="breakingLastAlert">
+              No breaking alerts have been sent yet.
             </div>
           </div>
         </div>
@@ -1038,6 +1197,65 @@
       }).join('');
     }
 
+    function breakingStatusLabel(status) {
+      if (status === 'alerted') {
+        return 'Alerted';
+      }
+
+      if (status === 'retry-pending') {
+        return 'Retry pending';
+      }
+
+      return 'Clear';
+    }
+
+    function renderBreakingStatus(payload) {
+      const pill = document.getElementById('breakingStatusPill');
+      const updated = document.getElementById('breakingUpdated');
+      const alertCount = document.getElementById('breakingAlertCount');
+      const pendingCount = document.getElementById('breakingPendingCount');
+      const cadence = document.getElementById('breakingCadence');
+      const lastAlert = document.getElementById('breakingLastAlert');
+      const status = payload.status || 'clear';
+      const alert = payload.last_alert || {};
+
+      pill.textContent = breakingStatusLabel(status);
+      pill.className = 'breaking-pill' + (status === 'alerted' ? ' alerted' : '') + (status === 'retry-pending' ? ' pending' : '');
+      updated.textContent = formatDate(payload.updated_at).replace('Generated ', '') || 'Not checked yet';
+      alertCount.textContent = String(payload.alerted_count || 0);
+      pendingCount.textContent = String(payload.pending_count || 0);
+      cadence.textContent = String(payload.cadence_minutes || 15) + ' min';
+
+      if (alert.title) {
+        const confidence = alert.confidence ? ' · confidence ' + Math.round(Number(alert.confidence) * 100) + '%' : '';
+        const source = alert.source_url ? '<br><a href="' + escapeHTML(alert.source_url) + '" target="_blank" rel="noopener">Open source</a>' : '';
+        lastAlert.innerHTML = '<strong>' + escapeHTML(alert.title) + '</strong><br>' + escapeHTML(formatDate(alert.alerted_at).replace('Generated ', 'Alerted ')) + escapeHTML(confidence) + source;
+      } else if (Number(payload.pending_count || 0) > 0) {
+        lastAlert.textContent = 'A breaking story is approved but notification delivery is retrying.';
+      } else {
+        lastAlert.textContent = 'No breaking alerts have been sent yet.';
+      }
+    }
+
+    async function loadBreakingWatch() {
+      try {
+        const response = await fetch('data/breaking_status.json', { cache: 'no-store' });
+
+        if (!response.ok) {
+          throw new Error('Breaking status request failed with ' + response.status);
+        }
+
+        renderBreakingStatus(await response.json());
+      } catch (error) {
+        const pill = document.getElementById('breakingStatusPill');
+        pill.textContent = 'Unavailable';
+        pill.className = 'breaking-pill pending';
+        document.getElementById('breakingUpdated').textContent = 'Status file missing';
+        document.getElementById('breakingLastAlert').textContent =
+          'Breaking monitor exists, but the public status file has not been published yet.';
+      }
+    }
+
     async function loadBriefing() {
       try {
         const response = await fetch('data/signals.json', { cache: 'no-store' });
@@ -1075,6 +1293,7 @@
       renderSignals();
     });
 
+    loadBreakingWatch();
     loadBriefing();
   </script>
 </body>

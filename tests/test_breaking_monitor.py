@@ -8,6 +8,7 @@ from aibrief.breaking_monitor import (
     classify_with_gemini,
     cluster_story_candidates,
     projected_monthly_runner_usage,
+    public_breaking_status,
     run_monitor_cycle,
     survives_stage1,
     validate_classifications,
@@ -121,6 +122,7 @@ class BreakingMonitorTests(unittest.TestCase):
             summary = run_monitor_cycle(
                 raw_candidates=positive_fixtures(),
                 state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=Path(tmp) / "breaking_status.json",
                 env={"NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
@@ -141,6 +143,7 @@ class BreakingMonitorTests(unittest.TestCase):
             run_monitor_cycle(
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
+                public_status_path=Path(tmp) / "breaking_status.json",
                 env={"NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
@@ -148,6 +151,7 @@ class BreakingMonitorTests(unittest.TestCase):
             second = run_monitor_cycle(
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
+                public_status_path=Path(tmp) / "breaking_status.json",
                 env={"NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
@@ -170,6 +174,7 @@ class BreakingMonitorTests(unittest.TestCase):
             first = run_monitor_cycle(
                 raw_candidates=[positive_fixtures()[1]],
                 state_path=path,
+                public_status_path=Path(tmp) / "breaking_status.json",
                 env={"NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
@@ -177,6 +182,7 @@ class BreakingMonitorTests(unittest.TestCase):
             second = run_monitor_cycle(
                 raw_candidates=[],
                 state_path=path,
+                public_status_path=Path(tmp) / "breaking_status.json",
                 env={"NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
@@ -225,6 +231,34 @@ class BreakingMonitorTests(unittest.TestCase):
         usage = projected_monthly_runner_usage(15, 60)
         self.assertEqual(usage["projected_runs_per_30d"], 2880)
         self.assertEqual(usage["projected_minutes_per_30d"], 2880)
+
+    def test_public_status_contains_no_secret_and_safe_counts(self):
+        status = public_breaking_status(
+            {
+                "updated_at": "2026-06-19T14:26:18Z",
+                "alerted": {
+                    "story-1": {
+                        "alerted_at": "2026-06-19T14:00:00Z",
+                        "title": "Confirmed frontier-lab breach",
+                        "source_urls": ["https://openai.com/security"],
+                        "confidence": 0.94,
+                    }
+                },
+                "pending": {},
+            },
+            {"stage1_survivors": 1},
+        )
+
+        self.assertEqual(status["status"], "alerted")
+        self.assertEqual(status["alerted_count"], 1)
+        self.assertEqual(status["pending_count"], 0)
+        self.assertNotIn("topic", str(status).lower())
+
+    def test_landing_page_exposes_breaking_watch_panel(self):
+        html = Path("web/landing-template.html").read_text(encoding="utf-8")
+        self.assertIn('id="breaking"', html)
+        self.assertIn("Breaking Watch is live.", html)
+        self.assertIn("data/breaking_status.json", html)
 
 
 if __name__ == "__main__":

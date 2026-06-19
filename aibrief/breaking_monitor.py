@@ -14,6 +14,7 @@ from pathlib import Path
 
 
 STATE_PATH = Path("data/breaking_state.json")
+PUBLIC_STATUS_PATH = Path("web/data/breaking_status.json")
 COMMAND_CENTER_URL = "https://aibriefai.onrender.com/"
 DEFAULT_CADENCE_MINUTES = 15
 DEFAULT_MAX_LLM_REQUESTS = 1
@@ -379,6 +380,52 @@ def save_state(state: dict, path: Path = STATE_PATH, now: datetime | None = None
     path.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
+def latest_alert_entry(state: dict) -> dict | None:
+    entries = list(state.get("alerted", {}).values())
+    if not entries:
+        return None
+    return sorted(entries, key=lambda entry: entry.get("alerted_at", ""), reverse=True)[0]
+
+
+def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
+    latest = latest_alert_entry(state)
+    pending = state.get("pending", {})
+    alerted = state.get("alerted", {})
+    status = "clear"
+    if pending:
+        status = "retry-pending"
+    if latest:
+        status = "alerted"
+
+    return {
+        "version": 1,
+        "updated_at": state.get("updated_at", ""),
+        "status": status,
+        "cadence_minutes": DEFAULT_CADENCE_MINUTES,
+        "alerted_count": len(alerted),
+        "pending_count": len(pending),
+        "last_alert": {
+            "title": latest.get("title", "") if latest else "",
+            "alerted_at": latest.get("alerted_at", "") if latest else "",
+            "source_url": (latest.get("source_urls") or [""])[0] if latest else "",
+            "confidence": latest.get("confidence", 0) if latest else 0,
+        },
+        "last_run": summary or {},
+    }
+
+
+def write_public_status(
+    state: dict,
+    summary: dict | None = None,
+    path: Path = PUBLIC_STATUS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(public_breaking_status(state, summary), indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
 def prune_alerted(state: dict, now: datetime | None = None) -> None:
     cutoff = (now or utc_now()) - timedelta(days=30)
     retained = {}
@@ -663,6 +710,7 @@ def run_monitor_cycle(
     *,
     raw_candidates: list[dict] | None = None,
     state_path: Path = STATE_PATH,
+    public_status_path: Path = PUBLIC_STATUS_PATH,
     env: dict[str, str] | None = None,
     classify_func=None,
     notify_func=None,
@@ -756,9 +804,8 @@ def run_monitor_cycle(
         if candidate["candidate_id"] not in classified_ids:
             malformed_or_rejected += 1
 
-    save_state(state, state_path, now)
     elapsed = time.monotonic() - started
-    return {
+    summary = {
         "collected": len(collected),
         "clustered": len(clustered),
         "stage1_survivors": len(survivors),
@@ -771,6 +818,9 @@ def run_monitor_cycle(
         "overflow_pending": len(overflow),
         "runner_usage_projection": projected_monthly_runner_usage(cadence, elapsed),
     }
+    save_state(state, state_path, now)
+    write_public_status(state, summary, public_status_path)
+    return summary
 
 
 def main() -> int:
