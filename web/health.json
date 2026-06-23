@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at": "2026-06-23T19:23:01Z",
+  "generated_at": "2026-06-23T22:47:12Z",
   "signals": 12,
   "approved": 11,
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 17,
+    "groq": 19,
     "rule-based": 0
   },
   "agents": [
@@ -54,67 +54,67 @@
   ],
   "events": [
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
+      "level": "warning",
+      "agent": "XInfluencerAgent",
+      "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+    },
+    {
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "critical",
       "agent": "XInfluencerAgent",
       "message": "X influencer search returned zero items. Configure X access and influencer handles."
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-23T19:23:01Z",
+      "time": "2026-06-23T22:47:12Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-06-23T19:23:01Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
-  "notification_enabled": true,
-  "notification_sent": true,
-  "notification_reason": "sent"
+  "notification_enabled": false,
+  "notification_sent": false,
+  "notification_reason": "not morning run"
 }
