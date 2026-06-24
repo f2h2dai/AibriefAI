@@ -17,6 +17,7 @@ from pathlib import Path
 STATE_PATH = Path("data/breaking_state.json")
 PUBLIC_STATUS_PATH = Path("web/data/breaking_status.json")
 COMMAND_CENTER_URL = "https://aibriefai.onrender.com/"
+DEFAULT_BIRDCLAW_EXPORT_PATH = Path("private/birdclaw-export.json")
 DEFAULT_CADENCE_MINUTES = 15
 DEFAULT_MAX_LLM_REQUESTS = 1
 DEFAULT_MAX_CANDIDATES = 20
@@ -207,6 +208,13 @@ def isoformat(value: datetime) -> str:
 
 def normalize_text(value: str) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def safe_int(value, default: int = 0) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
 
 
 def canonicalize_url(url: str) -> str:
@@ -784,6 +792,151 @@ def collect_local_signals(
     ]
 
 
+def birdclaw_export_paths(env: dict[str, str]) -> list[Path]:
+    raw = env.get("BIRDCLAW_EXPORT_PATH", str(DEFAULT_BIRDCLAW_EXPORT_PATH))
+    return [Path(item.strip()) for item in re.split(r"[;\n]+", raw) if item.strip()]
+
+
+def read_json_or_jsonl(path: Path):
+    text = path.read_text(encoding="utf-8")
+    if path.suffix.lower() == ".jsonl":
+        return [json.loads(line) for line in text.splitlines() if line.strip()]
+    return json.loads(text)
+
+
+def birdclaw_record_text(record: dict) -> str:
+    for key in ("text", "full_text", "content", "body", "tweet_text", "title", "summary"):
+        value = record.get(key)
+        if isinstance(value, str) and value.strip():
+            return normalize_text(value)
+    return ""
+
+
+def birdclaw_handle(record: dict) -> str:
+    for key in ("username", "screen_name", "handle", "author_username", "author_screen_name"):
+        value = record.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip().lstrip("@")
+    for key in ("author", "user", "profile"):
+        value = record.get(key)
+        if not isinstance(value, dict):
+            continue
+        for nested_key in ("username", "screen_name", "handle"):
+            nested = value.get(nested_key)
+            if isinstance(nested, str) and nested.strip():
+                return nested.strip().lstrip("@")
+    return ""
+
+
+def birdclaw_tweet_id(record: dict) -> str:
+    for key in ("tweet_id", "id_str", "id", "rest_id", "status_id"):
+        value = record.get(key)
+        if value is None:
+            continue
+        text = str(value).strip()
+        if re.fullmatch(r"\d{8,}", text):
+            return text
+    return ""
+
+
+def birdclaw_record_url(record: dict) -> str:
+    for key in ("url", "permalink", "link", "tweet_url"):
+        value = record.get(key)
+        if isinstance(value, str) and value.strip():
+            url = value.strip()
+            if "x.com/" in url or "twitter.com/" in url:
+                return url
+    handle = birdclaw_handle(record)
+    tweet_id = birdclaw_tweet_id(record)
+    if handle and tweet_id:
+        return f"https://x.com/{handle}/status/{tweet_id}"
+    return ""
+
+
+def is_private_birdclaw_record(record: dict) -> bool:
+    marker_text = " ".join(
+        str(record.get(key, "")).lower()
+        for key in ("kind", "type", "source", "collection", "table", "surface")
+    )
+    return any(marker in marker_text for marker in ("dm", "direct message", "direct_message", "directmessage"))
+
+
+def looks_like_public_birdclaw_tweet(record: dict) -> bool:
+    if is_private_birdclaw_record(record):
+        return False
+    text = birdclaw_record_text(record)
+    if not text:
+        return False
+    return bool(birdclaw_record_url(record))
+
+
+def extract_birdclaw_records(payload) -> list[dict]:
+    records: list[dict] = []
+    if isinstance(payload, list):
+        for item in payload:
+            records.extend(extract_birdclaw_records(item))
+        return records
+    if not isinstance(payload, dict):
+        return records
+    if looks_like_public_birdclaw_tweet(payload):
+        records.append(payload)
+    for key, value in payload.items():
+        if key.lower() in {"dm", "dms", "directmessages", "direct_messages", "direct-messages"}:
+            continue
+        if isinstance(value, (list, dict)):
+            records.extend(extract_birdclaw_records(value))
+    return records
+
+
+def normalize_birdclaw_record(record: dict) -> dict | None:
+    text = birdclaw_record_text(record)
+    url = birdclaw_record_url(record)
+    if not text or not url:
+        return None
+    velocity = max(
+        safe_int(record.get("score"), 40),
+        safe_int(record.get("like_count")),
+        safe_int(record.get("likes")),
+        safe_int(record.get("retweet_count")),
+        safe_int(record.get("reply_count")),
+        safe_int(record.get("quote_count")),
+        safe_int(record.get("bookmark_count")),
+    )
+    return {
+        "source": "birdclaw",
+        "title": text[:160],
+        "content": text,
+        "url": url,
+        "published_at": record.get("created_at") or record.get("createdAt") or record.get("date") or "",
+        "velocity": velocity,
+    }
+
+
+def collect_birdclaw_export(env: dict[str, str], limit: int = 20) -> list[dict]:
+    collected = []
+    seen = set()
+    for path in birdclaw_export_paths(env):
+        if not path.exists():
+            continue
+        try:
+            payload = read_json_or_jsonl(path)
+        except (OSError, json.JSONDecodeError) as exc:
+            print(json.dumps({"level": "warning", "collector": "birdclaw", "error": type(exc).__name__}))
+            continue
+        for record in extract_birdclaw_records(payload):
+            normalized = normalize_birdclaw_record(record)
+            if not normalized:
+                continue
+            key = normalized.get("url") or normalized.get("title")
+            if key in seen:
+                continue
+            seen.add(key)
+            collected.append(normalized)
+            if len(collected) >= limit:
+                return collected
+    return collected
+
+
 def x_influencer_handles(env: dict[str, str]) -> list[str]:
     raw = env.get("X_INFLUENCERS", "")
     handles = []
@@ -935,6 +1088,7 @@ def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
     source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
     candidates: list[dict] = []
     if source_focus in {"x", "twitter"}:
+        candidates.extend(collect_birdclaw_export(env))
         candidates.extend(collect_x_cli(env))
         candidates.extend(collect_local_signals(source_focus=source_focus))
         if candidates:

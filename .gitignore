@@ -1,0 +1,11 @@
+private/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+birdclaw-export*.json
+birdclaw-export*.jsonl
+__pycache__/
+*.py[cod]

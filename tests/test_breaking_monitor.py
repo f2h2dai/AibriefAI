@@ -8,6 +8,7 @@ from pathlib import Path
 from aibrief.breaking_monitor import (
     classify_with_gemini,
     cluster_story_candidates,
+    collect_birdclaw_export,
     collect_local_signals,
     projected_monthly_runner_usage,
     public_breaking_status,
@@ -169,6 +170,75 @@ class BreakingMonitorTests(unittest.TestCase):
 
         self.assertEqual(len(signals), 1)
         self.assertEqual(signals[0]["source"], "twitter")
+
+    def test_birdclaw_export_public_tweets_feed_breaking_candidates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "birdclaw-export.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "tweets": [
+                            {
+                                "id": "260620245123456789",
+                                "author": {"username": "defense_ai"},
+                                "text": (
+                                    "Pentagon sources describe Grok Gov Model inside Project Maven "
+                                    "supporting military operations against Iran with munitions targeting."
+                                ),
+                                "created_at": "2026-06-24T12:00:00Z",
+                                "like_count": 88,
+                            }
+                        ],
+                        "dms": [
+                            {
+                                "type": "dm",
+                                "text": "Private direct message mentioning Project Maven",
+                                "id": "dm_1",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            signals = collect_birdclaw_export({"BIRDCLAW_EXPORT_PATH": str(path)})
+            clustered = cluster_story_candidates(signals)
+
+        self.assertEqual(len(signals), 1)
+        self.assertEqual(signals[0]["source"], "birdclaw")
+        self.assertEqual(signals[0]["url"], "https://x.com/defense_ai/status/260620245123456789")
+        self.assertTrue(survives_stage1(clustered[0]))
+
+    def test_birdclaw_export_skips_dm_records(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "birdclaw-export.jsonl"
+            path.write_text(
+                "\n".join(
+                    [
+                        json.dumps(
+                            {
+                                "type": "direct_message",
+                                "text": "Private DM about a military AI story",
+                                "url": "https://x.com/example/status/1",
+                            }
+                        ),
+                        json.dumps(
+                            {
+                                "kind": "tweet",
+                                "text": "Public Project Maven post",
+                                "url": "https://x.com/example/status/2",
+                                "score": 50,
+                            }
+                        ),
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            signals = collect_birdclaw_export({"BIRDCLAW_EXPORT_PATH": str(path)})
+
+        self.assertEqual(len(signals), 1)
+        self.assertEqual(signals[0]["url"], "https://x.com/example/status/2")
 
     def test_repeated_story_does_not_realert(self):
         sent = []
