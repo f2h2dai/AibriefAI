@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-06-25T19:20:13Z",
+  "generated_at": "2026-06-25T23:02:14Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 35,
-    "rule-based": 2
+    "groq": 30,
+    "rule-based": 7
   },
   "agents": [
     {
@@ -53,76 +53,124 @@
   ],
   "events": [
     {
-      "time": "2026-06-25T19:20:13Z",
-      "level": "INFO",
-      "agent": "twitter",
-      "message": "X access credential parsed OK"
-    },
-    {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "INFO",
       "agent": "twitter",
       "message": "X session metadata parsed OK"
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "info",
       "agent": "AgentReachDoctor",
       "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 84 X records."
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 90 X records."
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1174"
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-25T19:20:13Z",
+      "time": "2026-06-25T23:02:14Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
       "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-06-25T23:02:14Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
   "signals": [
@@ -139,9 +187,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "The Unfireable Safety Kernel ensures execution-time AI alignment for AI agents and escapable AI systems, providing a robust security layer through process separation, pre-action enforcement, fail-closed defaults, and externalized evidence.",
-      "brief_ar": "نواة الأمان غير القابل للفصم توفر محاذاة ذكاء اصطناعي في وقت التنفيذ لعمليات ذكاء اصطناعي وأنظمة ذكاء اصطناعي قابلة للخروج، وتوفر طبقة أمان قوية من خلال فصل العمليات وتنفيذ ما قبل الإجراء وإغلاق الفشل وتعريف الأدلة الخارجية",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_ar": "نواة الأمان غير القابلة للفصم تقدم محاذاة ذكاء اصطناعي في وقت التنفيذ للوكلاء الذكاء الاصطناعي والأنظمة الذكاء الاصطناعي القابلة للخروج، وتوفر طبقة أمان قوية من خلال فصل المعالجة والتنفيذ قبل الإجراء والإغلاق الافتراضي والأدلة الخارجية",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "arxiv-015",
@@ -156,9 +204,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Empirical study of ERC-8004 decentralized AI agent ecosystem reveals limitations in trust assessment, with most registrations being placeholders and reputation signals being manipulable.",
-      "brief_ar": "دراسة تجريبية لبيئة وكيل الذكاء الاصطناعي اللامركزية ERC-8004 تكشف عن قيود في تقييم الثقة، حيث أن معظم التسجيلات هي محاذير ومؤشرات السمعة قابلة للتحريف.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_ar": "دراسة تجريبية لبيئة وكلاء الذكاء الاصطناعي اللامركزية ERC-8004 تكشف عن قيود في تقييم الثقة، حيث أن معظم التسجيلات هي محاذير ومؤشرات السمعة قابلة للتحريف.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "arxiv-017",
@@ -173,9 +221,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Autodata: An AI agent that generates high-quality synthetic data, outperforming traditional methods in computer science, legal reasoning, and mathematical tasks, with potential to revolutionize AI data creation.",
-      "brief_ar": "أوتوداتا: وسيط ذكاء اصطناعي لإنشاء بيانات مُصَنَّعة عالية الجودة، يتفوق على الطرق التقليدية في مهام علوم الحاسوب والمنطق القانوني والرياضيات، مع إمكانية تغيير طريقة بناء بيانات الذكاء الاصطناعي.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_ar": "أوتوداتا: عميل ذكاء اصطناعي يولد بيانات合θεة عالية الجودة، يتفوق على الطرق التقليدية في مهام علوم الحاسوب والمنطق القانوني والرياضيات، مع إمكانية ثورة في إنشاء بيانات الذكاء الاصطناعي.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "github-006",
@@ -189,10 +237,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, providing a valuable resource for developers and researchers.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، مما يوفر موردا قима للمطورين والباحثين.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "github-008",
@@ -206,10 +254,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يبحثون في تدريب.nanochat التلقائي على جهاز كمبيوتر واحد، مع إمكانية تسهين عمليات البحث.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being trained on single-GPU nanochat, potentially automating research processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يخضعون للتدريب على محادثة نانو واحدة-GPU، مما قد يؤدي إلى تلقين عمليات البحث.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "arxiv-010",
@@ -223,10 +271,10 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models. Standard benchmarks for MLLMs overlook order-irrelevant shuffling, a reliability property. Our audit of 18 MLLMs reveals none are order-invariant, with 24-50% flip rates. Capability predicts but doesn't eliminate flips, and prompt-level mitigation is unlikely to provide general order robustness.",
-      "brief_ar": "ال証ة نفسها، إجابة مختلفة: تدقيق حساسية الترتيب في نماذج اللغة الكبيرة متعددة الوضعيات. المعايير القياسية لنماذج اللغة الكبيرة متعددة الوضعيات ت忽ن خلط الترتيب غير ذي الصلة، خاصية موثوقية. تدقيقنا لـ 18 نموذجًا كشف أن لا واحد منهم غير حساس للترتيب، مع معدلات تحويل تتراوح بين 24-50%. القدرة تتنبأ ولكن لا تلغي التحويلات، ومن غير المحتمل أن توفر التخفيف على مستوى التحفيز متانة الترتيب العامة.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_en": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models. Standard benchmarks for MLLMs overlook order-irrelevant shuffling, a reliability property. Our audit reveals none of 18 MLLMs are order-invariant, with 24-50% flip rates. Capability predicts but doesn't eliminate flips, prompting future work on training-time and architectural approaches.",
+      "brief_ar": "إجابة مختلفة بنفس الأدلة: تدقيق حساسية الترتيب في نماذج اللغة الكبيرة متعددة الوضعيات. المعايير القياسية لنماذج اللغة الكبيرة متعددة الوضعيات ت忽ن خلط الترتيب غير المرتبط، خاصية موثوقية. كشف تدقيقنا أن لا واحدة من 18 نموذج تم تدقيقها غير حساسة للترتيب، مع معدلات تحويل تتراوح بين 24-50%. القدرة تتنبأ ولكن لا تلغي التحويل، مما يدفع إلى العمل المستقبلي على نهج الوقت التدريبي والهيكلي.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "arxiv-012",
@@ -241,12 +289,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "AI translation of literary texts is increasingly common, but readers still prefer human translations due to their ease, clarity, and immersive nature.",
-      "brief_ar": "ترجمة النصوص الأدبية بالذكاء الاصطناعي أصبحت شائعة بشكل متزايد، لكن القراء ما زالوا يفضلون الترجمات البشرية بسبب سهولتها ووضوحها وطبيعتها الغامرة.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_ar": "ترجمة الذكاء الاصطناعي للنصوص الأدبية أصبحت شائعة بشكل متزايد، لكن القراء ما زالوا يفضلون الترجمات البشرية بسبب سهولتها ووضوحها وطبيعتها الغامرة.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
-      "id": "twitter-020",
+      "id": "twitter-022",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -257,10 +305,10 @@
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
       "provider": "groq",
-      "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
-      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, emphasizing prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، تشدد على حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "github-004",
@@ -275,9 +323,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، مما يتيح آليّة كفاءة وتحديد اتخاذ القرارات.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_ar": "Langflow أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكّن من آليّة كفاءة وصنع قرار",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "github-005",
@@ -291,10 +339,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, providing tools and frameworks for building custom AI agents.",
-      "brief_ar": "langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي، توفر أدوات وإطارات عمل لإنشاء وكلاء ذكاء اصطناعي مخصصين.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI models. Its capabilities and applications are being explored.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكيل، توفر أدوات لإنشاء ونشر نماذج الذكاء الاصطناعي. يتم استكشاف قدراتها وتطبيقاتها.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "github-007",
@@ -309,9 +357,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     },
     {
       "id": "github-009",
@@ -325,10 +373,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information and tools for data-driven decision making.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى المعلومات المالية والأدوات لاتخاذ القرارات المستندة إلى البيانات.",
-      "createdAt": "2026-06-25T19:20:13Z",
-      "updatedAt": "2026-06-25T19:20:13Z"
+      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information and insights.",
+      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى المعلومات والمعلومات المالية.",
+      "createdAt": "2026-06-25T23:02:14Z",
+      "updatedAt": "2026-06-25T23:02:14Z"
     }
   ]
 }
