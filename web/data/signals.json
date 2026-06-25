@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-06-24T22:49:00Z",
+  "generated_at": "2026-06-25T19:20:13Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 30,
-    "rule-based": 10
+    "groq": 35,
+    "rule-based": 2
   },
   "agents": [
     {
@@ -53,146 +53,132 @@
   ],
   "events": [
     {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1160"
+      "time": "2026-06-25T19:20:13Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X access credential parsed OK"
     },
     {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X session metadata parsed OK"
+    },
+    {
+      "time": "2026-06-25T19:20:13Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "AgentReachDoctor",
+      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
     },
     {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 84 X records."
     },
     {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "XInfluencerAgent",
+      "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "time": "2026-06-25T19:20:13Z",
+      "level": "warning",
+      "agent": "AgentReachConnector",
+      "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "time": "2026-06-25T19:20:13Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
+      "time": "2026-06-25T19:20:13Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-06-24T22:49:00Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-019",
+      "id": "arxiv-011",
       "source": "arxiv",
-      "title": "Are We Ready For An Agent-Native Memory System?",
-      "content": "Memory for large language model (LLM) agents has rapidly evolved from simple retrieval-augmented mechanisms into a data management system that supports persistent information storage, retrieval, update, consolidation, and dynamic lifecycle governance throughout agent execution. Despite this evolution, existing evaluations still benchmark agent memory mainly through end-to-end task success metrics (e.g., F1, BLEU), while treating the underlying system as a monolithic black box. As a result, critical system-level concerns, including operational costs, architectural trade-offs across memory modules, and robustness under dynamic knowledge updates, remain insufficiently explored. In this paper, we present a systematic experimental study of agent memory from a data management perspective. We propose an analytical framework that decomposes agent memory into four core modules: memory representation and storage, extraction, retrieval and routing, and maintenance. Under this framework, we evaluate 12 representative memory systems and two reference baselines across five benchmark workloads spanning 11 datasets. Our extensive end-to-end evaluation shows that no single architecture dominates across all scenarios; instead, effectiveness depends heavily on how well the memory structure aligns with the workload bottleneck. Furthermore, through fine-grained ablation studies, we quantify their individual effects on representation fidelity, retrieval precision, update correctness, and long-horizon stability. Finally, we reveal cost-performance trade-offs under realistic workloads, showing localized maintenance is more cost-efficient than global reorganization. Based on these findings, we identify promising directions towards building truly agent-native memory systems. The code is publicly available at https://github.com/OpenDataBox/MemoryData.",
-      "url": "https://arxiv.org/abs/2606.24775v1",
-      "score": 75,
-      "score_reason": "academic/research signal; agentic AI relevance; retrieval/RAG relevance; large language model relevance. Final score: 75.",
+      "title": "The Unfireable Safety Kernel: Execution-Time AI Alignment for AI Agents and Other Escapable AI Systems",
+      "content": "AI agents are granted access to tools, APIs, and other infrastructure, making them active principals in those systems. The dominant approach places controls inside the agent's own runtime: system prompts, output filters, and guardrail libraries. Any control in the agent's address space is reachable by inputs that influence it; this generalizes to any AI system with sufficient reach into its own runtime, a class we term escapable AI systems. We identify four properties that an authorization mechanism must satisfy for architectural control rather than for cooperative requests: process separation, pre-action enforcement on a structurally only path, fail-closed at both the request and system levels, and externalized signed evidence verifiable outside the controlled system's trust boundary. We position this layer as execution-time AI alignment, complementing training-time alignment (RLHF, Constitutional AI) and inference-time alignment. We present the Unfireable Safety Kernel, a Rust reference implementation realizing all four. Its fail-closed invariant is machine-checked at two levels: an SMT theorem (Z3) and an exhaustive bounded-model-checking proof of the production decision function (Kani, 4/4 harnesses). A Python-to-Rust migration was gated on byte-equivalence (1000/1000 fixtures; 17/17 adversarial classes). We evaluate the kernel governing a live, escapable AI system, a deterministic, self-improving world model, against an escape-seeking adversary driving its real self-modification seam: across 1,000 self-modifications, all 704 attempts on the safety-critical core are refused, with no escape; a further 300, under the operator kill switch, are also refused. A separate campaign of 6,240 authorization round-trips had no successful bypass. Against 3 contemporary systems claiming the agent control plane, the agent invokes control; here, it lacks that choice.",
+      "url": "https://arxiv.org/abs/2606.26057v1",
+      "score": 76,
+      "score_reason": "academic/research signal; agentic AI relevance; model capability relevance; AI infrastructure relevance. Final score: 76.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Are we ready for an agent-native memory system? Existing evaluations of LLM agent memory focus on end-to-end task success, neglecting system-level concerns. We propose a framework to decompose agent memory into core modules and evaluate 12 memory systems across 5 workloads, revealing no single dominant architecture.",
-      "brief_ar": "هل نحن مستعدون لنظام ذاكرة أصلي للوكيل؟ الترقيات الحالية لتقييم ذاكرة وكيل LLM تركز على نجاح المهمة من النهاية إلى النهاية، مع إهمال القضايا على مستوى النظام. نقترح إطارًا لتفكيك ذاكرة الوكيل إلى وحدات أساسية وتقييم 12 نظامًا للذاكرة عبر 5 أحمال عمل، مما يكشف عن عدم وجود هندسة домينية واحدة.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_en": "The Unfireable Safety Kernel ensures execution-time AI alignment for AI agents and escapable AI systems, providing a robust security layer through process separation, pre-action enforcement, fail-closed defaults, and externalized evidence.",
+      "brief_ar": "نواة الأمان غير القابل للفصم توفر محاذاة ذكاء اصطناعي في وقت التنفيذ لعمليات ذكاء اصطناعي وأنظمة ذكاء اصطناعي قابلة للخروج، وتوفر طبقة أمان قوية من خلال فصل العمليات وتنفيذ ما قبل الإجراء وإغلاق الفشل وتعريف الأدلة الخارجية",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "github-009",
+      "id": "arxiv-015",
+      "source": "arxiv",
+      "title": "Can Trustless Agents Be Trusted? An Empirical Study of the ERC-8004 Decentralized AI Agent Ecosystem",
+      "content": "As autonomous AI agents increasingly transact across organizational boundaries, a fundamental trust challenge emerges: how can an agent assess whether an unknown counterpart is trustworthy? The ERC-8004 protocol addresses this challenge with the first permissionless trust layer for AI agent economies, built around three on-chain registries for Identity, Reputation, and Validation. Despite its rapid adoption, the protocol has not been studied empirically, leaving it unclear whether the information it records provides a trustworthy basis for decision-making. To address this gap, we present the first empirical study of ERC-8004 across three chains: Ethereum, BNB Smart Chain (BSC), and Base, covering the period from protocol deployment through May 13, 2026. We crawl on-chain Identity and Reputation events, off-chain files, and x402 payment transactions. On the identity side, we find that most registrations are placeholders rather than active agents, with only a small fraction (3%, 4%, and 15% across Ethereum, BSC, and Base) exposing a valid ERC-8004 registration file with at least one live service endpoint. On the reputation side, we show that the Registry, as currently deployed, cannot function as a trust signal: values are not commensurable, feedback records are rarely grounded in verifiable interactions, and reputation can be manipulated at minimal cost. Consistent with these design weaknesses, we find that a substantial fraction of reviewers (73.6%, 59.2%, and 90.6% across Ethereum, BSC, and Base) exhibit coordinated Sybil behavior. After removing Sybil-flagged feedback, 15.5%, 72.3%, and 89.4% of rated agents, respectively, are left with no valid feedback. We then turn these findings into concrete recommendations for future revisions of ERC-8004. Our study yields actionable protocol-design implications and establishes an empirical baseline for research on AI agent markets.",
+      "url": "https://arxiv.org/abs/2606.26028v1",
+      "score": 75,
+      "score_reason": "academic/research signal; agentic AI relevance; research relevance. Final score: 75.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "Empirical study of ERC-8004 decentralized AI agent ecosystem reveals limitations in trust assessment, with most registrations being placeholders and reputation signals being manipulable.",
+      "brief_ar": "دراسة تجريبية لبيئة وكيل الذكاء الاصطناعي اللامركزية ERC-8004 تكشف عن قيود في تقييم الثقة، حيث أن معظم التسجيلات هي محاذير ومؤشرات السمعة قابلة للتحريف.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
+    },
+    {
+      "id": "arxiv-017",
+      "source": "arxiv",
+      "title": "Autodata: An agentic data scientist to create high quality synthetic data",
+      "content": "We introduce Autodata, a general method that enables AI agents to act as data scientists who build high quality training and evaluation data. We show how to train (meta-optimize) such a data scientist agent, so that it learns to create even stronger data. We describe the overall formulation, and a specific practical implementation, Agentic Self-Instruct. We conduct experiments on computer science research tasks, legal reasoning tasks and reasoning with mathematical objects, where we obtain improved results compared to classical synthetic dataset creation methods. Further, meta-optimizing the data scientist agent itself delivers an even larger performance uplift. Agentic data creation provides a way to convert increased inference compute into higher quality model training. Overall, we believe this direction has the potential to change the way we build AI data.",
+      "url": "https://arxiv.org/abs/2606.25996v1",
+      "score": 75,
+      "score_reason": "academic/research signal; agentic AI relevance; model capability relevance; research relevance. Final score: 75.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "Autodata: An AI agent that generates high-quality synthetic data, outperforming traditional methods in computer science, legal reasoning, and mathematical tasks, with potential to revolutionize AI data creation.",
+      "brief_ar": "أوتوداتا: وسيط ذكاء اصطناعي لإنشاء بيانات مُصَنَّعة عالية الجودة، يتفوق على الطرق التقليدية في مهام علوم الحاسوب والمنطق القانوني والرياضيات، مع إمكانية تغيير طريقة بناء بيانات الذكاء الاصطناعي.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
+    },
+    {
+      "id": "github-006",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -203,13 +189,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة واسعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة من الإمكانيات لتطوير وتحديث التطبيقات.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "github-011",
+      "id": "github-008",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -220,13 +206,47 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat منفرد-المعالج-الرسومي تلقائيًا، مع نتائج غير مؤكدة.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يبحثون في تدريب.nanochat التلقائي على جهاز كمبيوتر واحد، مع إمكانية تسهين عمليات البحث.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "twitter-025",
+      "id": "arxiv-010",
+      "source": "arxiv",
+      "title": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",
+      "content": "Standard benchmarks for multimodal large language models (MLLMs) score each item on one canonical ordering and miss whether order-irrelevant shuffling changes the answer, a baseline reliability property called for by emerging AI evaluation guidelines. We introduce Facet-Probe, a five-facet audit (option, evidence-chunk, document-rank, image-set, and mixed-modality ordering) of 18 frontier and open-weight MLLMs. A Bayesian item-response model separates ordering noise from per-facet bias, and a same-ordering control estimates the decoder-stochastic floor for observed flips. We find that none of the 18 MLLMs we audit are order-invariant: screened per-facet panel-mean flip rates span 24-50%. A Gemini same-ordering control at temperature 0 estimates a substantial ordering excess over a same-input decoder-noise floor in verified cells. Capability predicts but does not eliminate flips; the best model still flips on 13.4% of trials. In our Gemini mitigation tests, training-free prompt changes are modality-conditional and do not transfer from text to visual reasoning. These results suggest that prompt-level mitigation alone is unlikely to provide general order robustness, motivating future work on training-time and architectural approaches. We propose cross-ordering flip rate as a standard reporting axis for MLLMs.",
+      "url": "https://arxiv.org/abs/2606.26079v1",
+      "score": 52,
+      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 52.",
+      "status": "verified",
+      "topic": "LLMs",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models. Standard benchmarks for MLLMs overlook order-irrelevant shuffling, a reliability property. Our audit of 18 MLLMs reveals none are order-invariant, with 24-50% flip rates. Capability predicts but doesn't eliminate flips, and prompt-level mitigation is unlikely to provide general order robustness.",
+      "brief_ar": "ال証ة نفسها، إجابة مختلفة: تدقيق حساسية الترتيب في نماذج اللغة الكبيرة متعددة الوضعيات. المعايير القياسية لنماذج اللغة الكبيرة متعددة الوضعيات ت忽ن خلط الترتيب غير ذي الصلة، خاصية موثوقية. تدقيقنا لـ 18 نموذجًا كشف أن لا واحد منهم غير حساس للترتيب، مع معدلات تحويل تتراوح بين 24-50%. القدرة تتنبأ ولكن لا تلغي التحويلات، ومن غير المحتمل أن توفر التخفيف على مستوى التحفيز متانة الترتيب العامة.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
+    },
+    {
+      "id": "arxiv-012",
+      "source": "arxiv",
+      "title": "AI translation of literary texts is \"fine\", but readers still prefer human translations",
+      "content": "AI translation of literary works is increasingly common. While the content may be rendered adequately, we do not know enough about how readers experience it in terms of immersiveness and literary effect, aspects poorly captured by automatic machine translation metrics or human evaluation targeting fluency and adequacy. We ask 15 avid readers to compare recently published human translations (HT) to machine translations (MT) generated with an agentic large language model (LLM)-based pipeline, for 15 recent novels in French, Polish, and Japanese and translated into English. Readers evaluated approximately 8K-word excerpts in two conditions: immersive reading of the whole excerpt (30 comparisons) and close reading of 386 aligned HT-MT chunk pairs (772 comparisons), with two readers per book and in alternating order of presentation. Overall, readers find MT \"fine\", but prefer HT (slightly at excerpt-level 19/30, more clearly at chunk-level 522/772) for its ease, clarity, and immersive nature. Readers' highlights show that MT's quality varies more within one book than HT's does. Crucially, readers cannot reliably tell the two apart (17/30 guess correctly) and tend to prefer the version they believe to be human. Automatic metrics, including LLM-as-a-judge approaches, fail to recover reader preferences and favor MT. We release LAIT (Literary AI Translation), a reader-centered evaluation dataset with 1K reader comments, 2K judgments and preference ratings, and 7.2K span-level annotations, along with our evaluation protocol and supporting interface.",
+      "url": "https://arxiv.org/abs/2606.26040v1",
+      "score": 50,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 50.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "AI translation of literary texts is increasingly common, but readers still prefer human translations due to their ease, clarity, and immersive nature.",
+      "brief_ar": "ترجمة النصوص الأدبية بالذكاء الاصطناعي أصبحت شائعة بشكل متزايد، لكن القراء ما زالوا يفضلون الترجمات البشرية بسبب سهولتها ووضوحها وطبيعتها الغامرة.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
+    },
+    {
+      "id": "twitter-020",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -238,12 +258,12 @@
       "collector": "XInfluencerAgent",
       "provider": "groq",
       "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
-      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة المستقلة.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية البشرية لأنظمة الأسلحة الآلية.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "github-007",
+      "id": "github-004",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -255,12 +275,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، مما يتيح آليّة كفاءة وتحديد اتخاذ القرارات.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "github-008",
+      "id": "github-005",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -271,13 +291,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, enabling the creation of custom AI agents for various tasks.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتحديث تطبيقات الذكاء الاصطناعي، تمكن من إنشاء وكلاء ذكاء اصطناعي مخصصين لمهام متنوعة.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, providing tools and frameworks for building custom AI agents.",
+      "brief_ar": "langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي، توفر أدوات وإطارات عمل لإنشاء وكلاء ذكاء اصطناعي مخصصين.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "github-010",
+      "id": "github-007",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -289,12 +309,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     },
     {
-      "id": "github-012",
+      "id": "github-009",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Financial data platform for analysts, quants and AI agents.",
@@ -305,78 +325,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to market data and insights.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر إمكانية الوصول إلى بيانات السوق والرؤى.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
-    },
-    {
-      "id": "twitter-034",
-      "source": "twitter",
-      "title": "@sama: we will work with the entire ecosystem and the government to figure out trusted access for",
-      "content": "we will work with the entire ecosystem and the government to figure out trusted access for cyber; we want to rapidly help secure companies/infrastructure.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12746 retweets: 803 replies: 1022 quotes: 310 views: 1047798 bookmarks: 1439 createdAt: Thu Apr 30 04:46:56 +0000 2026 createdAtLocal: 2026-04-30 04:46 createdAtISO: '2026-04-30T04:46:56+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '1907451374809624813' text: 'what''s happening with ai adoption in india right now is amazing to watch.",
-      "url": "https://x.com",
-      "score": 46,
-      "score_reason": "Twitter/X discussion signal; AI infrastructure relevance. Final score: 46.",
-      "status": "verified",
-      "topic": "AI Governance",
-      "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "we will work with the entire ecosystem and the government to figure out trusted access for cyber; we want to rapidly help secure companies/infrastructure.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.tw...",
-      "brief_ar": "ملخص قائم على القواعد: we will work with the entire ecosystem and the government to figure out trusted access for cyber; we want to rapidly help secure companies/infrastructure.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.tw...",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
-    },
-    {
-      "id": "arxiv-013",
-      "source": "arxiv",
-      "title": "BenchX: Benchmarking AI Models for Cancer Detection and Localization with Demographic and Protocol Biases",
-      "content": "Artificial intelligence (AI) has achieved remarkable success in medical imaging, but it is widely recognized that these models often perform inconsistently across real-world clinical settings. Such inconsistencies occur when patient demographics and imaging protocols vary, for example, in detecting small tumors, analyzing scans from different contrast phases, or evaluating patients of different ages or sexes. To quantify these inconsistencies, we develop a large-scale, open benchmark of 85,355 CT scans that systematically evaluates 12 tumor-detection AI models across tumor size, location, patient subgroup, and imaging protocol. We leverage large language models (LLMs) to extract and organize subgroup information from clinical data, which makes the analysis both scalable and reproducible. Our benchmark reveals that current state-of-the-art AI models, optimized for average accuracy, perform poorly in rare or underrepresented subgroups, such as young, female African Americans. However, collecting sufficient annotated data for these rare cases is often impractical. The benchmark provides a foundation for building more reliable and robust AI models for tumor detection and highlighting the need for rigorous, subgroup-level evaluation in medical imaging and computer vision. Datasets, code",
-      "url": "https://arxiv.org/abs/2606.24883v1",
-      "score": 40,
-      "score_reason": "academic/research signal; retrieval/RAG relevance; large language model relevance; model capability relevance. Final score: 40.",
-      "status": "verified",
-      "topic": "RAG",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "BenchX: A benchmark for evaluating AI models in cancer detection, revealing performance gaps in underrepresented subgroups and emphasizing the need for subgroup-level evaluation.",
-      "brief_ar": "BenchX: معيار تقييم لتقنيات الذكاء الاصطناعي في الكشف عن السرطان، يكشف عن فجوات الأداء في الفئات غير الممثلة ويؤكد على ضرورة التقييم على مستوى المجموعات الفرعية.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
-    },
-    {
-      "id": "arxiv-016",
-      "source": "arxiv",
-      "title": "Large-Language-Model Discovery of Quantum LDPC Codes through Structured Concept Evolution",
-      "content": "Quantum computers could outperform classical machines on important problems, but only if the errors that pervade quantum hardware can be corrected at scale. Quantum low-density parity-check (qLDPC) codes offer a promising route to this goal by combining sparse parity checks with finite encoding rate and growing distance, but their construction remains a challenging discrete design problem. Here we introduce structured concept evolution (SCE), a search framework that pairs a large language model with a structured algebraic mutation grammar to discover lifted-product code families, a class of CSS qLDPC codes. Instead of asking the LLM to design codes from first principles, SCE evolves structured concepts consisting of algebraic specifications paired with executable programs that realize them, using hierarchical mutations that modify the group algebra, protograph geometry, or base space. Running SCE, we discover a diverse set of competitive code families, ranging from abelian constructions to families over non-abelian groups beyond those underlying standard designs such as bivariate-bicycle codes, and characterize them under code-capacity depolarizing noise with BP+OSD decoding. These results are obtained with lightweight models (GPT-5.4-mini and GPT-5.4-nano).",
-      "url": "https://arxiv.org/abs/2606.24808v1",
-      "score": 40,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 40.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "Researchers used a large language model to discover quantum LDPC codes through structured concept evolution, a promising approach to error correction in quantum computing.",
-      "brief_ar": "استخدم الباحثون نموذج لغة كبير لاكتشاف.codes LDPC الكمومية من خلال تطور المفاهيم المنظمة، وهي نهج واعد لتصحيح الأخطاء في الحوسبة الكمومية.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
-    },
-    {
-      "id": "arxiv-018",
-      "source": "arxiv",
-      "title": "Grad Detect: Gradient-Based Hallucination Detection in LLMs",
-      "content": "Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse tasks, yet they remain prone to generating hallucinations. Detecting these hallucinations is critical for deploying LLMs reliably in high-stakes applications. We present Grad Detect, a gradient-based approach for predicting hallucinations by analyzing layer-wise gradient patterns from a single forward-backward pass during inference. Our method shows that the internal gradient structure of a model carries rich information about the correctness of its output. This information is not accessible through output-level signals alone. We evaluate Grad Detect on several Q&A benchmarks across both hallucination detection and model abstention prediction, where it consistently outperforms confidence-based and sampling-based baselines. Through comprehensive layer ablation studies across all eleven models from four architectural families, we find that the final five layers concentrate over 97% of the discriminative gradient signal, enabling efficient deployment with minimal performance loss. Grad Detect provides a unified framework for predicting multiple dimensions of LLM reliability, offering strong predictive performance alongside interpretable insights into where and how model failures originate.",
-      "url": "https://arxiv.org/abs/2606.24790v1",
-      "score": 40,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 40.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "Grad Detect: A gradient-based approach for detecting hallucinations in LLMs, analyzing layer-wise gradient patterns to predict output correctness.",
-      "brief_ar": "Grad Detect: نهج قائم على التدرج لاكتشاف الهلوسة في نماذج اللغة الكبيرة، يتحليل أنماط التدرج الطبقي لتنبؤ صحة الإخراج.",
-      "createdAt": "2026-06-24T22:49:00Z",
-      "updatedAt": "2026-06-24T22:49:00Z"
+      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information and tools for data-driven decision making.",
+      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى المعلومات المالية والأدوات لاتخاذ القرارات المستندة إلى البيانات.",
+      "createdAt": "2026-06-25T19:20:13Z",
+      "updatedAt": "2026-06-25T19:20:13Z"
     }
   ]
 }
