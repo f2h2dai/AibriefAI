@@ -10,25 +10,35 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "classification_reason": "no candidates",
+    "classification_reason": "Gemini 429 rate limited",
     "classified": 0,
-    "clustered": 22,
-    "collected": 22,
+    "clustered": 21,
+    "collected": 21,
     "malformed_or_rejected": 0,
     "overflow_pending": 0,
-    "pending_now": 0,
+    "pending_now": 1,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.928,
-      "projected_minutes_per_30d": 188.53,
+      "measured_seconds": 6.38,
+      "projected_minutes_per_30d": 306.24,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 0
+    "stage1_survivors": 1
   },
-  "pending_count": 0,
-  "pending_feed": [],
-  "status": "clear",
-  "updated_at": "2026-06-25T17:34:49Z",
+  "pending_count": 1,
+  "pending_feed": [
+    {
+      "confidence": null,
+      "id": "story-db5822b73c11729181259b80",
+      "reason": "Gemini 429 rate limited",
+      "shown_at": "2026-06-25T23:01:38Z",
+      "source_url": "",
+      "status": "under review",
+      "title": "a long, complex bill with many parts that require safety assessments, shutdown"
+    }
+  ],
+  "status": "review-pending",
+  "updated_at": "2026-06-25T23:01:38Z",
   "version": 1
 }
