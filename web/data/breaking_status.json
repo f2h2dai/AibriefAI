@@ -10,18 +10,18 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "classification_reason": "Awaiting Gemini classification retry.",
+    "classification_reason": "Gemini 429 rate limited",
     "classified": 0,
-    "clustered": 20,
-    "collected": 20,
+    "clustered": 32,
+    "collected": 30,
     "malformed_or_rejected": 0,
     "overflow_pending": 0,
     "pending_now": 2,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 0.031,
-      "projected_minutes_per_30d": 1.49,
+      "measured_seconds": 5.528,
+      "projected_minutes_per_30d": 265.33,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 2
@@ -31,8 +31,8 @@
     {
       "confidence": null,
       "id": "story-95273de0815ce17f7749ca9a",
-      "reason": "Awaiting Gemini classification retry.",
-      "shown_at": "2026-06-27T23:04:37Z",
+      "reason": "Gemini 429 rate limited",
+      "shown_at": "2026-06-27T23:06:48Z",
       "source_url": "https://x.com/EmpireEnjoyer3/status/2071006380992204875",
       "status": "under review",
       "title": "Our anti air defenses have increased. Ukraine is helping defend the Gulf States, and they are now striking deep into Russia. The American blocked worked on pres"
@@ -40,14 +40,14 @@
     {
       "confidence": null,
       "id": "story-e29b98ec137511e81485694a",
-      "reason": "Awaiting Gemini classification retry.",
-      "shown_at": "2026-06-27T23:04:37Z",
+      "reason": "Gemini 429 rate limited",
+      "shown_at": "2026-06-27T23:06:48Z",
       "source_url": "https://x.com/IntelFrontUnit/status/2071006741072867699",
       "status": "under review",
       "title": "SECURITY INTELLIGENCE REPORT Report ID: SEC\u2011KHI\u20112026\u20110628 Date: 28 June 2026 Subject: Karachi Terror Plot Foiled \u2013 5 Terrorists Eliminated \ud83d\udea8 Incident Summary On"
     }
   ],
   "status": "review-pending",
-  "updated_at": "2026-06-27T23:04:37Z",
+  "updated_at": "2026-06-27T23:06:48Z",
   "version": 1
 }
