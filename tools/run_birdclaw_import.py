@@ -33,6 +33,7 @@ def prepend_if_exists(env: dict[str, str], path: Path) -> None:
 def local_command_env() -> dict[str, str]:
     env = os.environ.copy()
     runtime = Path.home() / ".cache" / "codex-runtimes" / "codex-primary-runtime" / "dependencies"
+    prepend_if_exists(env, Path.cwd() / "private" / "bin")
     prepend_if_exists(env, runtime / "node" / "bin")
     prepend_if_exists(env, runtime / "bin")
     env.setdefault("BIRDCLAW_DISABLE_LIVE_WRITES", "1")
@@ -56,11 +57,23 @@ def birdclaw_command(raw: str, env: dict[str, str]) -> list[str]:
     return ["birdclaw"]
 
 
+def bird_command(env: dict[str, str]) -> list[str]:
+    bird = shutil.which("bird", path=env.get("PATH"))
+    if bird:
+        return [bird]
+    pnpm = shutil.which("pnpm", path=env.get("PATH")) or shutil.which("pnpm.cmd", path=env.get("PATH"))
+    if pnpm:
+        return [pnpm, "dlx", "@steipete/bird"]
+    return ["bird"]
+
+
 def run_checked(command: list[str], env: dict[str, str], *, timeout: int) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         command,
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="replace",
         check=False,
         env=env,
         timeout=timeout,
@@ -77,6 +90,15 @@ def write_export(text: str, export_path: Path) -> None:
             if line.strip():
                 json.loads(line)
     export_path.write_text(text.rstrip() + "\n", encoding="utf-8")
+
+
+def write_bird_fallback_export(text: str, export_path: Path) -> None:
+    payload = json.loads(text)
+    records = payload if isinstance(payload, list) else payload.get("tweets", payload.get("results", []))
+    if not isinstance(records, list):
+        records = []
+    export_path.parent.mkdir(parents=True, exist_ok=True)
+    export_path.write_text(json.dumps({"tweets": records}, indent=2) + "\n", encoding="utf-8")
 
 
 def status_summary() -> dict:
@@ -129,6 +151,18 @@ def main() -> int:
 
     write_export(completed.stdout, export_path)
     records = collect_birdclaw_export({"BIRDCLAW_EXPORT_PATH": str(export_path)}, limit=args.limit)
+    if not records:
+        print("Birdclaw returned no importable public X records; trying authenticated bird fallback...")
+        fallback = run_checked(
+            bird_command(env) + ["search", args.query, "-n", str(args.limit), "--json"],
+            env,
+            timeout=args.timeout,
+        )
+        if fallback.returncode == 0:
+            write_bird_fallback_export(fallback.stdout, export_path)
+            records = collect_birdclaw_export({"BIRDCLAW_EXPORT_PATH": str(export_path)}, limit=args.limit)
+        elif fallback.stderr.strip():
+            print(fallback.stderr.strip(), file=sys.stderr)
     print(f"Wrote {export_path} with {len(records)} public X records AIbrief can import.")
     if not records:
         print("No public X records were importable, so the website breaking feed will not change.")
