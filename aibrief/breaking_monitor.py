@@ -22,6 +22,12 @@ DEFAULT_CADENCE_MINUTES = 15
 DEFAULT_MAX_LLM_REQUESTS = 1
 DEFAULT_MAX_CANDIDATES = 20
 DEFAULT_MIN_CONFIDENCE = 0.90
+DEFAULT_X_INTEL_QUERY = (
+    '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR Pentagon OR DoD '
+    'OR "Department of Defense" OR "Operation Epic Fury" OR Iran OR munitions '
+    'OR targeting OR "AI targeting" OR "target selection" OR "military operations" '
+    'OR "official statement"'
+)
 
 HIGH_IMPACT_PATTERNS = {
     "military or intelligence AI deployment": [
@@ -34,13 +40,19 @@ HIGH_IMPACT_PATTERNS = {
         "grok gov",
         "grok gov model",
         "pentagon",
+        "dod",
         "department of defense",
+        "u.s. military",
+        "us military",
         "war with iran",
         "operations against iran",
         "operation epic fury",
         "battlefield",
         "weapons",
         "drone",
+        "target selection",
+        "ai targeting",
+        "kill chain",
     ],
     "frontier-model safety or security incident": [
         "frontier model",
@@ -106,12 +118,17 @@ CONSEQUENCE_PATTERNS = {
     "military targeting or munition deployment": [
         "targeting",
         "targets",
+        "target selection",
         "munitions",
         "strike",
         "strikes",
+        "airstrike",
+        "airstrikes",
         "military operations",
         "support operations",
         "operation epic fury",
+        "custom version",
+        "official statement",
     ],
     "official filing": ["official filing", "sec filing", "court filing", "filed in court"],
     "government order": ["government order", "ordered", "directive", "sanctioned"],
@@ -172,6 +189,8 @@ KNOWN_ENTITIES = [
     "xAI",
     "Iran",
     "Operation Epic Fury",
+    "DoD",
+    "U.S. military",
     "Meta",
     "Microsoft",
     "NVIDIA",
@@ -948,10 +967,7 @@ def x_influencer_handles(env: dict[str, str]) -> list[str]:
 
 
 def x_search_queries(env: dict[str, str]) -> list[str]:
-    terms = env.get(
-        "BREAKING_X_QUERY",
-        '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR Pentagon OR "Operation Epic Fury" OR Iran OR munitions OR targeting',
-    ).strip()
+    terms = env.get("BREAKING_X_QUERY", DEFAULT_X_INTEL_QUERY).strip()
     handles = x_influencer_handles(env)
     if not handles:
         return [terms]

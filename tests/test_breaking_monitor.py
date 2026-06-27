@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from aibrief.breaking_monitor import (
+    DEFAULT_X_INTEL_QUERY,
     classify_with_gemini,
     cluster_story_candidates,
     collect_birdclaw_export,
@@ -208,6 +209,12 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(signals[0]["source"], "birdclaw")
         self.assertEqual(signals[0]["url"], "https://x.com/defense_ai/status/260620245123456789")
         self.assertTrue(survives_stage1(clustered[0]))
+
+    def test_default_x_intel_query_targets_military_ai_claims(self):
+        self.assertIn("Grok Gov", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("Project Maven", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("DoD", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("AI targeting", DEFAULT_X_INTEL_QUERY)
 
     def test_birdclaw_export_skips_dm_records(self):
         with tempfile.TemporaryDirectory() as tmp:
