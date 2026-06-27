@@ -10,44 +10,25 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "classification_reason": "Awaiting Gemini classification retry.",
+    "classification_reason": "no candidates",
     "classified": 0,
-    "clustered": 20,
-    "collected": 20,
+    "clustered": 32,
+    "collected": 30,
     "malformed_or_rejected": 0,
     "overflow_pending": 0,
-    "pending_now": 2,
+    "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 0.078,
-      "projected_minutes_per_30d": 3.74,
+      "measured_seconds": 5.441,
+      "projected_minutes_per_30d": 261.18,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 2
+    "stage1_survivors": 0
   },
-  "pending_count": 2,
-  "pending_feed": [
-    {
-      "confidence": null,
-      "id": "story-11194f2aaa9348ef33f3ec3c",
-      "reason": "Awaiting Gemini classification retry.",
-      "shown_at": "2026-06-27T22:42:37Z",
-      "source_url": "https://x.com/Laraib_Fatiima/status/2071001194517110875",
-      "status": "under review",
-      "title": "US launches second night of strikes against Iran after ship struck by drone https://t.co/bUEZCme91j"
-    },
-    {
-      "confidence": null,
-      "id": "story-d8e1955cdf9a0ca1fb877858",
-      "reason": "Awaiting Gemini classification retry.",
-      "shown_at": "2026-06-27T22:42:37Z",
-      "source_url": "https://x.com/hrothenb/status/2071001260803629237",
-      "status": "under review",
-      "title": "\"US military says it struck multiple targets in Iran as ceasefire is strained by 2nd day of attacks\" - Associated Press https://t.co/3e0fz5vA0k"
-    }
-  ],
-  "status": "review-pending",
-  "updated_at": "2026-06-27T22:42:37Z",
+  "pending_count": 0,
+  "pending_feed": [],
+  "status": "clear",
+  "updated_at": "2026-06-27T22:54:34Z",
   "version": 1
 }
