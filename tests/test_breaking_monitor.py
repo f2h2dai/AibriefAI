@@ -423,13 +423,13 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("breakingFeedList", html)
         self.assertIn("data/breaking_status.json", html)
         self.assertIn("Website-only watch", html)
-        self.assertIn("Birdclaw bridge ready", html)
-        self.assertIn("Local X memory", html)
-        self.assertIn("private/birdclaw-export.json", html)
         self.assertIn("pending_feed", html)
         self.assertIn("Not confirmed breaking yet", html)
         self.assertIn("Review pending", html)
         self.assertNotIn("only sends ntfy alerts", html)
+        self.assertNotIn("Birdclaw bridge ready", html)
+        self.assertNotIn("Local X memory", html)
+        self.assertNotIn("private/birdclaw-export.json", html)
 
 
 if __name__ == "__main__":

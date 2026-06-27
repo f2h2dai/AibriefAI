@@ -512,69 +512,6 @@
       max-width: 720px;
     }
 
-    .birdclaw-bridge {
-      background: #111315;
-      border: 1px solid #2b3238;
-      border-radius: 8px;
-      color: #fff;
-      display: grid;
-      gap: 10px;
-      margin-top: 18px;
-      max-width: 720px;
-      padding: 16px;
-    }
-
-    .birdclaw-bridge-head {
-      align-items: flex-start;
-      display: flex;
-      gap: 12px;
-      justify-content: space-between;
-    }
-
-    .birdclaw-bridge strong {
-      display: block;
-      font-size: 18px;
-      margin-top: 4px;
-    }
-
-    .birdclaw-label {
-      color: #8ee2c1;
-      display: block;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .birdclaw-pill {
-      background: rgba(142, 226, 193, 0.16);
-      border: 1px solid rgba(142, 226, 193, 0.34);
-      border-radius: 999px;
-      color: #8ee2c1;
-      flex: 0 0 auto;
-      font-size: 12px;
-      font-weight: 900;
-      padding: 7px 10px;
-      text-transform: uppercase;
-    }
-
-    .birdclaw-bridge p {
-      color: #d6dde3;
-      line-height: 1.55;
-      margin: 0;
-      max-width: none;
-    }
-
-    .birdclaw-bridge code {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 6px;
-      color: #fff;
-      font-size: 12px;
-      overflow-wrap: anywhere;
-      padding: 2px 5px;
-    }
-
     .breaking-status-card {
       background: rgba(255, 255, 255, 0.78);
       border: 1px solid var(--line);
@@ -962,10 +899,6 @@
         grid-template-columns: 1fr;
       }
 
-      .birdclaw-bridge-head {
-        display: grid;
-      }
-
       .footer {
         display: block;
       }
@@ -1100,20 +1033,6 @@
               Website-only watch for rare AI incidents. Approved breaking stories
               appear here on the dashboard.
             </p>
-            <div class="birdclaw-bridge" aria-label="Birdclaw X memory bridge">
-              <div class="birdclaw-bridge-head">
-                <div>
-                  <span class="birdclaw-label">Local X memory</span>
-                  <strong>Birdclaw bridge ready</strong>
-                </div>
-                <span class="birdclaw-pill">Private by default</span>
-              </div>
-              <p>
-                AIbrief can read a local <code>private/birdclaw-export.json</code>
-                export from <code>tools/run_birdclaw_import.py</code>, skip DMs,
-                and show useful public X intel in the breaking filter.
-              </p>
-            </div>
           </div>
           <div class="breaking-status-card" aria-live="polite">
             <div class="breaking-state">
