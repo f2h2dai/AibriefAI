@@ -351,6 +351,64 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(len(status["pending_feed"]), 1)
         self.assertEqual(status["pending_feed"][0]["status"], "under review")
 
+    def test_quiet_x_run_does_not_wipe_pending_x_intel(self):
+        def classifier_unavailable(batch, env):
+            return {}, "Gemini 429 rate limited"
+
+        with tempfile.TemporaryDirectory() as tmp:
+            state_path = Path(tmp) / "breaking_state.json"
+            status_path = Path(tmp) / "breaking_status.json"
+            run_monitor_cycle(
+                raw_candidates=[positive_fixtures()[-1]],
+                state_path=state_path,
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+                classify_func=classifier_unavailable,
+            )
+            second = run_monitor_cycle(
+                raw_candidates=[],
+                state_path=state_path,
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+                classify_func=classifier_unavailable,
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(second["pending_now"], 1)
+        self.assertEqual(status["status"], "review-pending")
+        self.assertEqual(status["pending_count"], 1)
+        self.assertEqual(len(status["pending_feed"]), 1)
+
+    def test_x_rejection_stays_under_review_on_website(self):
+        def classifier_rejects(batch, env):
+            return (
+                {
+                    batch[0]["candidate_id"]: {
+                        "candidate_id": batch[0]["candidate_id"],
+                        "breaking": False,
+                        "confidence": 0.2,
+                        "reason": "Not confirmed by classifier.",
+                        "alert": "",
+                    }
+                },
+                "classified",
+            )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[positive_fixtures()[-1]],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+                classify_func=classifier_rejects,
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["pending_now"], 1)
+        self.assertEqual(status["status"], "review-pending")
+        self.assertEqual(status["pending_count"], 1)
+
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(
             validate_classifications(
@@ -451,9 +509,9 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("Not confirmed breaking yet", html)
         self.assertIn("Review pending", html)
         self.assertNotIn("only sends ntfy alerts", html)
-        self.assertNotIn("Birdclaw bridge ready", html)
-        self.assertNotIn("Local X memory", html)
-        self.assertNotIn("private/birdclaw-export.json", html)
+        self.assertIn("Birdclaw bridge ready", html)
+        self.assertIn("Local X memory", html)
+        self.assertIn("private/birdclaw-export.json", html)
 
 
 if __name__ == "__main__":

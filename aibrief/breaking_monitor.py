@@ -563,6 +563,10 @@ def public_candidate(candidate: dict) -> dict:
         "source": candidate.get("source"),
         "source_urls": candidate.get("source_urls", []),
         "url": candidate.get("url"),
+        "published_at": candidate.get("published_at"),
+        "velocity": candidate.get("velocity", 0),
+        "source_count": candidate.get("source_count", 1),
+        "authoritative": candidate.get("authoritative", False),
         "confidence": candidate.get("confidence"),
         "alert": candidate.get("alert"),
         "reason": candidate.get("reason"),
@@ -1136,6 +1140,23 @@ def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
     return candidates
 
 
+def should_keep_x_under_review(candidate: dict, env: dict[str, str], notify_mode: str) -> bool:
+    if notify_mode != "website":
+        return False
+    keep = str(env.get("BREAKING_KEEP_X_REVIEW", "true")).strip().lower()
+    if keep in {"0", "false", "no", "off"}:
+        return False
+    source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
+    source = str(candidate.get("source", "")).lower()
+    urls = " ".join(candidate.get("source_urls") or [candidate.get("url", "")]).lower()
+    return (
+        source_focus in {"x", "twitter"}
+        or source in {"birdclaw", "twitter", "x", "x/twitter"}
+        or "x.com/" in urls
+        or "twitter.com/" in urls
+    )
+
+
 def projected_monthly_runner_usage(cadence_minutes: int, run_seconds: float) -> dict:
     runs_per_month = (30 * 24 * 60) / max(cadence_minutes, 1)
     minutes_per_run = run_seconds / 60
@@ -1182,10 +1203,6 @@ def run_monitor_cycle(
     collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
     clustered = cluster_story_candidates(pending_reconsider + collected)
     survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
-    survivor_fingerprints = {candidate["story_fingerprint"] for candidate in survivors}
-    for fingerprint, entry in list(state.get("pending", {}).items()):
-        if entry.get("status") == "awaiting_classification" and fingerprint not in survivor_fingerprints:
-            state["pending"].pop(fingerprint, None)
 
     fresh = [
         candidate
@@ -1232,6 +1249,17 @@ def run_monitor_cycle(
             continue
         fingerprint = candidate["story_fingerprint"]
         if not classification.get("breaking") or float(classification.get("confidence", 0)) < min_confidence:
+            if should_keep_x_under_review(candidate, env, notify_mode):
+                state["pending"][fingerprint] = {
+                    "status": "awaiting_classification",
+                    "candidate": public_candidate(candidate),
+                    "title": candidate.get("title", ""),
+                    "source_urls": candidate.get("source_urls", []),
+                    "classification_reason": classification.get("reason") or "Not confirmed breaking yet.",
+                    "last_seen_at": isoformat(now),
+                }
+                pending_now.append(fingerprint)
+                continue
             state.get("pending", {}).pop(fingerprint, None)
             continue
 
