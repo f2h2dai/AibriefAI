@@ -470,12 +470,30 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 "status": "under review"
                 if entry.get("status") == "awaiting_classification"
                 else entry.get("status", "pending"),
-                "reason": entry.get("classification_reason")
-                or entry.get("notification_status")
-                or "Awaiting Gemini classification retry.",
+                "reason": public_status_reason(
+                    entry.get("classification_reason")
+                    or entry.get("notification_status")
+                    or "Awaiting Gemini classification retry."
+                ),
             }
         )
     return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
+
+
+def public_status_reason(reason: str) -> str:
+    text = normalize_text(reason)
+    if text in {"missing Gemini key", "Gemini URL error"}:
+        return "Awaiting Gemini classification retry."
+    return text or "Awaiting Gemini classification retry."
+
+
+def public_last_run(summary: dict | None) -> dict:
+    if not summary:
+        return {}
+    public = dict(summary)
+    if "classification_reason" in public:
+        public["classification_reason"] = public_status_reason(str(public.get("classification_reason", "")))
+    return public
 
 
 def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
@@ -506,7 +524,7 @@ def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
             "source_url": (latest.get("source_urls") or [""])[0] if latest else "",
             "confidence": latest.get("confidence", 0) if latest else 0,
         },
-        "last_run": summary or {},
+        "last_run": public_last_run(summary),
     }
 
 

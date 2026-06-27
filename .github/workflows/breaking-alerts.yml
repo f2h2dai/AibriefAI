@@ -2,6 +2,12 @@ name: Breaking Alerts
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/breaking-alerts.yml"
+      - "aibrief/breaking_monitor.py"
   schedule:
     # Repository visibility checked with: gh repo view f2h2dai/AibriefAI --json visibility,nameWithOwner
     # PUBLIC repository: start at every 15 minutes. GitHub schedule execution is near-real-time and may be delayed.
@@ -49,6 +55,16 @@ jobs:
           fi
           which twitter || echo "twitter CLI unavailable after install attempt"
           set -e
+
+      - name: Validate Gemini key
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::warning::GEMINI_API_KEY missing; breaking candidates will stay under review."
+          else
+            echo "GEMINI_API_KEY loaded for breaking classifier."
+          fi
 
       - name: Run breaking monitor
         shell: bash

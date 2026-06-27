@@ -415,6 +415,30 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["feed"][0]["title"], "Confirmed frontier-lab breach")
         self.assertNotIn("topic", str(status).lower())
 
+    def test_public_status_does_not_expose_missing_gemini_key(self):
+        status = public_breaking_status(
+            {
+                "updated_at": "2026-06-27T22:42:37Z",
+                "alerted": {},
+                "pending": {
+                    "story-1": {
+                        "status": "awaiting_classification",
+                        "last_seen_at": "2026-06-27T22:42:37Z",
+                        "classification_reason": "missing Gemini key",
+                        "candidate": {
+                            "title": "X story under review",
+                            "source_urls": ["https://x.com/example/status/1"],
+                        },
+                    }
+                },
+            },
+            {"classification_reason": "missing Gemini key", "stage1_survivors": 1},
+        )
+
+        self.assertEqual(status["pending_feed"][0]["reason"], "Awaiting Gemini classification retry.")
+        self.assertEqual(status["last_run"]["classification_reason"], "Awaiting Gemini classification retry.")
+        self.assertNotIn("missing Gemini key", json.dumps(status))
+
     def test_landing_page_exposes_breaking_watch_panel(self):
         html = Path("web/landing-template.html").read_text(encoding="utf-8")
         self.assertIn('id="breaking"', html)
