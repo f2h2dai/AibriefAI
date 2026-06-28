@@ -447,8 +447,10 @@ def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
                 "title": entry.get("title", ""),
                 "shown_at": entry.get("alerted_at", ""),
                 "source_url": source_urls[0] if source_urls else "",
+                "source": entry.get("source", ""),
+                "score": entry.get("score", 0),
                 "confidence": entry.get("confidence", 0),
-                "status": entry.get("notification_status", "website-only"),
+                "status": entry.get("notification_status", "x-intel"),
                 "reason": entry.get("reason", ""),
             }
         )
@@ -466,15 +468,15 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 "title": candidate.get("title", entry.get("title", "")),
                 "shown_at": entry.get("last_seen_at", ""),
                 "source_url": source_urls[0] if source_urls else candidate.get("url", ""),
+                "source": candidate.get("source", entry.get("source", "")),
+                "score": candidate.get("stage1_score", entry.get("score", 0)),
                 "confidence": candidate.get("confidence", 0),
-                "status": "under review"
+                "status": "x-intel"
                 if entry.get("status") == "awaiting_classification"
-                else entry.get("status", "pending"),
-                "reason": public_status_reason(
-                    entry.get("classification_reason")
-                    or entry.get("notification_status")
-                    or "Awaiting Gemini classification retry."
-                ),
+                else entry.get("status", "x-intel"),
+                "reason": entry.get("reason")
+                or candidate.get("content")
+                or "Public X intel from the local X/Birdclaw route.",
             }
         )
     return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
@@ -483,16 +485,16 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
 def public_status_reason(reason: str) -> str:
     text = normalize_text(reason)
     if text in {"missing Gemini key", "Gemini URL error"}:
-        return "Awaiting Gemini classification retry."
-    return text or "Awaiting Gemini classification retry."
+        return "Public X intel mode is active."
+    return text or "Public X intel from the local X/Birdclaw route."
 
 
 def public_last_run(summary: dict | None) -> dict:
     if not summary:
         return {}
     public = dict(summary)
-    if "classification_reason" in public:
-        public["classification_reason"] = public_status_reason(str(public.get("classification_reason", "")))
+    public.pop("classified", None)
+    public.pop("classification_reason", None)
     return public
 
 
@@ -505,9 +507,9 @@ def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
     if any(entry.get("status") == "approved" for entry in pending.values()):
         status = "retry-pending"
     elif pending:
-        status = "review-pending"
+        status = "x-intel"
     if latest:
-        status = "alerted"
+        status = "x-intel"
 
     return {
         "version": 1,
@@ -572,6 +574,25 @@ def public_candidate(candidate: dict) -> dict:
         "reason": candidate.get("reason"),
         "stage1_score": stage1_score(candidate),
     }
+
+
+def is_x_intel_candidate(candidate: dict, env: dict[str, str]) -> bool:
+    source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
+    source = str(candidate.get("source", "")).lower()
+    urls = " ".join(candidate.get("source_urls") or [candidate.get("url", "")]).lower()
+    return (
+        source_focus in {"x", "twitter"}
+        or source in {"birdclaw", "twitter", "x", "x/twitter"}
+        or "x.com/" in urls
+        or "twitter.com/" in urls
+    )
+
+
+def x_intel_reason(candidate: dict) -> str:
+    content = normalize_text(candidate.get("content", ""))
+    if content:
+        return content[:280]
+    return "Public X intel from the local X/Birdclaw route."
 
 
 def extract_json(text: str) -> dict:
@@ -741,20 +762,40 @@ def retry_pending_notifications(state: dict, env: dict[str, str], notify_func, n
 def publish_pending_website_only(state: dict, now: datetime) -> list[dict]:
     published = []
     for fingerprint, entry in list(state.get("pending", {}).items()):
-        if entry.get("status") != "approved":
-            continue
+        candidate = entry.get("candidate") if isinstance(entry.get("candidate"), dict) else entry
+        source_urls = candidate.get("source_urls") or entry.get("source_urls") or []
         state["alerted"][fingerprint] = {
             "alerted_at": isoformat(now),
             "last_seen_at": isoformat(now),
-            "title": entry.get("title", ""),
-                "source_urls": entry.get("source_urls", []),
-                "confidence": entry.get("confidence", 0),
-                "notification_status": "website-only",
-                "reason": entry.get("reason", ""),
-            }
+            "title": candidate.get("title", entry.get("title", "")),
+            "content": candidate.get("content", entry.get("content", "")),
+            "source": candidate.get("source", entry.get("source", "")),
+            "source_urls": source_urls,
+            "score": candidate.get("stage1_score", entry.get("score", 0)),
+            "confidence": entry.get("confidence", 0),
+            "notification_status": "x-intel",
+            "reason": entry.get("reason") or x_intel_reason(candidate),
+        }
         del state["pending"][fingerprint]
-        published.append({"fingerprint": fingerprint, "sent": False, "reason": "website-only"})
+        published.append({"fingerprint": fingerprint, "sent": False, "reason": "x-intel"})
     return published
+
+
+def publish_candidate_website_only(state: dict, candidate: dict, now: datetime) -> None:
+    fingerprint = candidate["story_fingerprint"]
+    state["alerted"][fingerprint] = {
+        "alerted_at": isoformat(now),
+        "last_seen_at": isoformat(now),
+        "title": candidate.get("title", ""),
+        "content": candidate.get("content", ""),
+        "source": candidate.get("source", ""),
+        "source_urls": candidate.get("source_urls", []),
+        "score": stage1_score(candidate),
+        "confidence": 0,
+        "notification_status": "x-intel",
+        "reason": x_intel_reason(candidate),
+    }
+    state.get("pending", {}).pop(fingerprint, None)
 
 
 def collect_hackernews(limit: int = 20) -> list[dict]:
@@ -1198,11 +1239,18 @@ def run_monitor_cycle(
     pending_reconsider = [
         entry.get("candidate")
         for entry in state.get("pending", {}).values()
-        if entry.get("status") == "awaiting_classification" and isinstance(entry.get("candidate"), dict)
+        if isinstance(entry.get("candidate"), dict)
     ]
     collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
     clustered = cluster_story_candidates(pending_reconsider + collected)
-    survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
+    if notify_mode == "website":
+        survivors = [
+            candidate
+            for candidate in clustered
+            if is_x_intel_candidate(candidate, env) or survives_stage1(candidate)
+        ]
+    else:
+        survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
 
     fresh = [
         candidate
@@ -1212,6 +1260,27 @@ def run_monitor_cycle(
     ]
     batch = fresh[:max_candidates]
     overflow = fresh[max_candidates:]
+
+    if notify_mode == "website":
+        alerted_now = []
+        for candidate in batch:
+            publish_candidate_website_only(state, candidate, now)
+            alerted_now.append(candidate["story_fingerprint"])
+        elapsed = time.monotonic() - started
+        summary = {
+            "collected": len(collected),
+            "clustered": len(clustered),
+            "stage1_survivors": len(survivors),
+            "x_intel_published": len(alerted_now),
+            "alerted_now": len(alerted_now),
+            "pending_now": 0,
+            "retried": retried,
+            "overflow_pending": len(overflow),
+            "runner_usage_projection": projected_monthly_runner_usage(cadence, elapsed),
+        }
+        save_state(state, state_path, now)
+        write_public_status(state, summary, public_status_path)
+        return summary
 
     for candidate in overflow:
         state["pending"][candidate["story_fingerprint"]] = {

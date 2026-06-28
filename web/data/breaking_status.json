@@ -1,53 +1,176 @@
 {
-  "alerted_count": 0,
+  "alerted_count": 20,
   "cadence_minutes": 15,
-  "feed": [],
-  "last_alert": {
-    "alerted_at": "",
-    "confidence": 0,
-    "source_url": "",
-    "title": ""
-  },
-  "last_run": {
-    "alerted_now": 0,
-    "classification_reason": "Gemini 429 rate limited",
-    "classified": 0,
-    "clustered": 32,
-    "collected": 30,
-    "malformed_or_rejected": 0,
-    "overflow_pending": 0,
-    "pending_now": 2,
-    "retried": [],
-    "runner_usage_projection": {
-      "cadence_minutes": 15,
-      "measured_seconds": 5.244,
-      "projected_minutes_per_30d": 251.7,
-      "projected_runs_per_30d": 2880
-    },
-    "stage1_survivors": 2
-  },
-  "pending_count": 2,
-  "pending_feed": [
+  "feed": [
     {
-      "confidence": null,
+      "confidence": 0,
       "id": "story-95273de0815ce17f7749ca9a",
-      "reason": "Gemini 429 rate limited",
-      "shown_at": "2026-06-28T00:17:55Z",
+      "reason": "Our anti air defenses have increased. Ukraine is helping defend the Gulf States, and they are now striking deep into Russia. The American blocked worked on pressuring Iran a large amount, and the air strikes by the U.S. and Israel hurt the IRGC greatly, but didn\u2019t topple them ful",
+      "score": 70,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
       "source_url": "https://x.com/EmpireEnjoyer3/status/2071006380992204875",
-      "status": "under review",
+      "status": "x-intel",
       "title": "Our anti air defenses have increased. Ukraine is helping defend the Gulf States, and they are now striking deep into Russia. The American blocked worked on pres"
     },
     {
-      "confidence": null,
+      "confidence": 0,
       "id": "story-e29b98ec137511e81485694a",
-      "reason": "Gemini 429 rate limited",
-      "shown_at": "2026-06-28T00:17:55Z",
+      "reason": "SECURITY INTELLIGENCE REPORT Report ID: SEC\u2011KHI\u20112026\u20110628 Date: 28 June 2026 Subject: Karachi Terror Plot Foiled \u2013 5 Terrorists Eliminated \ud83d\udea8 Incident Summary On 27 June 2026, a Afghan terrorist group attempted a VBIED (Vehicle\u2011Borne Improvised Explosive Device) attack on a Ranger",
+      "score": 70,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
       "source_url": "https://x.com/IntelFrontUnit/status/2071006741072867699",
-      "status": "under review",
+      "status": "x-intel",
       "title": "SECURITY INTELLIGENCE REPORT Report ID: SEC\u2011KHI\u20112026\u20110628 Date: 28 June 2026 Subject: Karachi Terror Plot Foiled \u2013 5 Terrorists Eliminated \ud83d\udea8 Incident Summary On"
+    },
+    {
+      "confidence": 0,
+      "id": "story-97d46317a468f439acd11bb6",
+      "reason": "U.S. Strikes Iran Again After Tehran Breaks Ceasefire With Tanker Attack https://t.co/ifsa4DcjET",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/Val4NoBigGov/status/2071006775940198871",
+      "status": "x-intel",
+      "title": "U.S. Strikes Iran Again After Tehran Breaks Ceasefire With Tanker Attack https://t.co/ifsa4DcjET"
+    },
+    {
+      "confidence": 0,
+      "id": "story-3a4795e0dcbc0fb32a159710",
+      "reason": "Netanyahu Sums Up Israel\u2019s Achievements in Lebanon So Far, and Promises a Solution to the Drones by Hugh Fitzgerald The biggest military challenge to Israel and the Western alliance today comes from drones; they are cheap to manufacture and deliver a powerful blow; they are launc",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/jihadwatchRS/status/2071006767840895055",
+      "status": "x-intel",
+      "title": "Netanyahu Sums Up Israel\u2019s Achievements in Lebanon So Far, and Promises a Solution to the Drones by Hugh Fitzgerald The biggest military challenge to Israel and"
+    },
+    {
+      "confidence": 0,
+      "id": "story-aa80a507b93ec5acbbea1635",
+      "reason": "@Gothtos @AIfortheenotme @ryangrim Don't believe known liars. If @IDF wasn't targeting media members reporting on the carnage we'd know more. How many journalists @IDF kill @netanyahu ?",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/champ_la17196/status/2071006758034915802",
+      "status": "x-intel",
+      "title": "@Gothtos @AIfortheenotme @ryangrim Don't believe known liars. If @IDF wasn't targeting media members reporting on the carnage we'd know more. How many journalis"
+    },
+    {
+      "confidence": 0,
+      "id": "story-583b84ffbeeb54416f63d72c",
+      "reason": "Let's be clear about what's been going on in Venezuela so the White House doesn't get away with politicizing these people's suffering for propaganda purposes: Trump removed Maduro from power, but left the oppressive government intact in return for their \"cooperation.\" The regime,",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/EricinAmericaX/status/2071006756654989689",
+      "status": "x-intel",
+      "title": "Let's be clear about what's been going on in Venezuela so the White House doesn't get away with politicizing these people's suffering for propaganda purposes: T"
+    },
+    {
+      "confidence": 0,
+      "id": "story-bb23c1c2ef602991f682d126",
+      "reason": "Republicans need to bring back Blackwater and finish the job in Iran and the world by tripling the defense budget. https://t.co/kG8eYWcjmz",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/EmpireEnjoyer3/status/2071006754947596591",
+      "status": "x-intel",
+      "title": "Republicans need to bring back Blackwater and finish the job in Iran and the world by tripling the defense budget. https://t.co/kG8eYWcjmz"
+    },
+    {
+      "confidence": 0,
+      "id": "story-2efb227b95cd4d82b27241eb",
+      "reason": "@FoxNews Trump's illegal airstrikes on Iran are reckless warmongering that puts the world at risk for his ego! \ud83d\ude21",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/RichardAngwin/status/2071006749050740757",
+      "status": "x-intel",
+      "title": "@FoxNews Trump's illegal airstrikes on Iran are reckless warmongering that puts the world at risk for his ego! \ud83d\ude21"
+    },
+    {
+      "confidence": 0,
+      "id": "story-6719e98b5c09a011b8fee396",
+      "reason": "24 hours after the government removed Hezbollah/IRGC signs on billboards thanking Iran and replacing them with \u201cLebanon First\u201d posters, the DevilsParty aka Hezbollah supporters are already setting them alight\u2026 every Hezbollah member, politician and supporter should be deported.",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/YouGet1ShotAtIt/status/2071006711390019949",
+      "status": "x-intel",
+      "title": "24 hours after the government removed Hezbollah/IRGC signs on billboards thanking Iran and replacing them with \u201cLebanon First\u201d posters, the DevilsParty aka Hezb"
+    },
+    {
+      "confidence": 0,
+      "id": "story-4936acfde5010c351d8d9639",
+      "reason": "Check with the pentagon if you want my education level, and years of experience, in management, thanks.",
+      "score": 40,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/HurmMatthew/status/2071006700807864697",
+      "status": "x-intel",
+      "title": "Check with the pentagon if you want my education level, and years of experience, in management, thanks."
+    },
+    {
+      "confidence": 0,
+      "id": "story-cc2a0bcc1155c0345fe20991",
+      "reason": "Nova Scotia is home to brave women who have been fighting for a free and democratic Iran, as well as a Canada free from interference and intimidation from IRGC terrorists. These are fellow Canadians who feel ignored by their Liberal government and the media. I was grateful that @",
+      "score": 10,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/rbatherson/status/2071006769573249486",
+      "status": "x-intel",
+      "title": "Nova Scotia is home to brave women who have been fighting for a free and democratic Iran, as well as a Canada free from interference and intimidation from IRGC"
+    },
+    {
+      "confidence": 0,
+      "id": "story-a0bcd446a2723e1a3ceb7993",
+      "reason": "As Chair of the Atlantic Caucus, I was grateful for the opportunity to meet with members of Halifax\u2019s Iranian community and hear directly about the experiences, challenges, and priorities that matter most to them. We had a thoughtful and engaging discussion on a range of issues a",
+      "score": 10,
+      "shown_at": "2026-06-28T07:36:11Z",
+      "source": "birdclaw",
+      "source_url": "https://x.com/CarolAnsteyMP/status/2070987555034558715",
+      "status": "x-intel",
+      "title": "As Chair of the Atlantic Caucus, I was grateful for the opportunity to meet with members of Halifax\u2019s Iranian community and hear directly about the experiences,"
     }
   ],
-  "status": "review-pending",
-  "updated_at": "2026-06-28T00:17:55Z",
+  "last_alert": {
+    "alerted_at": "2026-06-28T07:36:11Z",
+    "confidence": 0,
+    "source_url": "https://x.com/EmpireEnjoyer3/status/2071006380992204875",
+    "title": "Our anti air defenses have increased. Ukraine is helping defend the Gulf States, and they are now striking deep into Russia. The American blocked worked on pres"
+  },
+  "last_run": {
+    "alerted_now": 18,
+    "clustered": 20,
+    "collected": 20,
+    "overflow_pending": 0,
+    "pending_now": 0,
+    "retried": [
+      {
+        "fingerprint": "story-95273de0815ce17f7749ca9a",
+        "reason": "x-intel",
+        "sent": false
+      },
+      {
+        "fingerprint": "story-e29b98ec137511e81485694a",
+        "reason": "x-intel",
+        "sent": false
+      }
+    ],
+    "runner_usage_projection": {
+      "cadence_minutes": 15,
+      "measured_seconds": 0.109,
+      "projected_minutes_per_30d": 5.23,
+      "projected_runs_per_30d": 2880
+    },
+    "stage1_survivors": 20,
+    "x_intel_published": 18
+  },
+  "pending_count": 0,
+  "pending_feed": [],
+  "status": "x-intel",
+  "updated_at": "2026-06-28T07:36:11Z",
   "version": 1
 }

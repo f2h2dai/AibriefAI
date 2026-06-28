@@ -475,7 +475,7 @@
       box-shadow: var(--shadow);
       display: grid;
       gap: 20px;
-      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
       padding: clamp(20px, 4vw, 34px);
     }
 
@@ -581,6 +581,7 @@
       border-radius: 8px;
       display: grid;
       gap: 12px;
+      min-width: 0;
       padding: 18px;
     }
 
@@ -631,6 +632,7 @@
 
     .breaking-row strong {
       font-size: 14px;
+      overflow-wrap: anywhere;
       text-align: right;
     }
 
@@ -640,6 +642,7 @@
       border-radius: 8px;
       color: var(--muted);
       line-height: 1.5;
+      overflow-wrap: anywhere;
       padding: 12px;
     }
 
@@ -1094,11 +1097,11 @@
       <section class="section breaking-watch" id="breaking">
         <div class="breaking-panel">
           <div>
-            <div class="breaking-kicker">Breaking lane</div>
-            <h2>Breaking Watch is live.</h2>
+            <div class="breaking-kicker">X intel lane</div>
+            <h2>Public X Intel is live.</h2>
             <p>
-              Website-only watch for rare AI incidents. Approved breaking stories
-              appear here on the dashboard.
+              Website-only feed for useful public X posts. No model
+              gate, no approval queue, no hidden topic blocking the feed.
             </p>
             <div class="birdclaw-bridge" aria-label="Birdclaw X memory bridge">
               <div class="birdclaw-bridge-head">
@@ -1111,7 +1114,7 @@
               <p>
                 AIbrief can read a local <code>private/birdclaw-export.json</code>
                 export from <code>tools/run_birdclaw_import.py</code>, skip DMs,
-                and keep useful public X intel visible in the breaking filter.
+                and publish useful public X intel directly to this feed.
               </p>
             </div>
           </div>
@@ -1130,7 +1133,7 @@
                 <strong id="breakingAlertCount">0</strong>
               </div>
               <div class="breaking-row">
-                <span>Pending review</span>
+                <span>X intel queue</span>
                 <strong id="breakingPendingCount">0</strong>
               </div>
               <div class="breaking-row">
@@ -1139,12 +1142,12 @@
               </div>
             </div>
             <div class="breaking-last" id="breakingLastAlert">
-              No breaking stories are showing yet.
+              No public X intel is showing yet.
             </div>
           </div>
           <div class="breaking-feed-card">
             <div class="breaking-feed-head">
-              <strong>Breaking Feed</strong>
+              <strong>X Intel Feed</strong>
               <span id="breakingFeedMeta">Loading feed</span>
             </div>
             <div class="breaking-feed-list" id="breakingFeedList" aria-live="polite">
@@ -1395,8 +1398,8 @@
       const pending = Array.isArray(pendingFeed) ? pendingFeed : [];
 
       meta.textContent = items.length ?
-        items.length + ' approved ' + (items.length === 1 ? 'story' : 'stories') :
-        (pending.length ? pending.length + ' under review' : 'No stories yet');
+        items.length + ' X intel ' + (items.length === 1 ? 'item' : 'items') :
+        (pending.length ? pending.length + ' queued' : 'No X intel yet');
 
       if (!items.length) {
         if (pending.length) {
@@ -1410,11 +1413,11 @@
               '<article class="breaking-feed-item pending">' +
                 '<div class="breaking-feed-meta">' +
                   '<span>' + escapeHTML(shownAt) + '</span>' +
-                  '<span>Under review</span>' +
-                  '<span>Not confirmed breaking yet</span>' +
+                  '<span>X intel</span>' +
+                  '<span>' + escapeHTML(item.source || 'public source') + '</span>' +
                 '</div>' +
-                '<h3>' + escapeHTML(item.title || 'Untitled candidate') + '</h3>' +
-                '<p>' + escapeHTML(item.reason || 'Awaiting Gemini classification retry.') + '</p>' +
+                '<h3>' + escapeHTML(item.title || 'Untitled X intel') + '</h3>' +
+                '<p>' + escapeHTML(item.reason || 'Public X intel from the local X/Birdclaw route.') + '</p>' +
                 source +
               '</article>';
           }).join('');
@@ -1423,14 +1426,14 @@
 
         list.innerHTML =
           '<div class="breaking-feed-empty">' +
-            '<strong>No breaking stories right now.</strong><br>' +
-            'When a story passes the breaking filter, it will appear here as a feed item.' +
+            '<strong>No public X intel right now.</strong><br>' +
+            'When the X/Birdclaw route finds useful public posts, they will appear here directly.' +
           '</div>';
         return;
       }
 
       list.innerHTML = items.map(function(item) {
-        const confidence = item.confidence ? 'Confidence ' + Math.round(Number(item.confidence) * 100) + '%' : 'Confidence pending';
+        const score = item.score ? 'Score ' + escapeHTML(item.score) : 'X intel';
         const shownAt = item.shown_at ? formatDate(item.shown_at).replace('Generated ', 'Shown ') : 'Shown time unavailable';
         const source = item.source_url ?
           '<a href="' + escapeHTML(item.source_url) + '" target="_blank" rel="noopener">Open source</a>' :
@@ -1440,10 +1443,10 @@
           '<article class="breaking-feed-item">' +
             '<div class="breaking-feed-meta">' +
               '<span>' + escapeHTML(shownAt) + '</span>' +
-              '<span>' + escapeHTML(confidence) + '</span>' +
+              '<span>' + score + '</span>' +
               '<span>' + escapeHTML(item.status || 'website-only') + '</span>' +
             '</div>' +
-            '<h3>' + escapeHTML(item.title || 'Untitled breaking story') + '</h3>' +
+            '<h3>' + escapeHTML(item.title || 'Untitled X intel') + '</h3>' +
             (item.reason ? '<p>' + escapeHTML(item.reason) + '</p>' : '') +
             source +
           '</article>';
@@ -1455,12 +1458,16 @@
         return 'Alerted';
       }
 
+      if (status === 'x-intel') {
+        return 'X intel live';
+      }
+
       if (status === 'retry-pending') {
         return 'Retry pending';
       }
 
       if (status === 'review-pending') {
-        return 'Review pending';
+        return 'X intel live';
       }
 
       return 'Clear';
@@ -1479,7 +1486,7 @@
       const pendingFeed = Array.isArray(payload.pending_feed) ? payload.pending_feed : [];
 
       pill.textContent = breakingStatusLabel(status);
-      pill.className = 'breaking-pill' + (status === 'alerted' ? ' alerted' : '') + ((status === 'retry-pending' || status === 'review-pending') ? ' pending' : '');
+      pill.className = 'breaking-pill' + ((status === 'alerted' || status === 'x-intel') ? ' alerted' : '') + (status === 'retry-pending' ? ' pending' : '');
       updated.textContent = formatDate(payload.updated_at).replace('Generated ', '') || 'Not checked yet';
       alertCount.textContent = String(feed.length || payload.alerted_count || 0);
       pendingCount.textContent = String(payload.pending_count || 0);
@@ -1491,9 +1498,9 @@
         const source = alert.source_url ? '<br><a href="' + escapeHTML(alert.source_url) + '" target="_blank" rel="noopener">Open source</a>' : '';
         lastAlert.innerHTML = '<strong>' + escapeHTML(alert.title) + '</strong><br>' + escapeHTML(formatDate(alert.alerted_at).replace('Generated ', 'Alerted ')) + escapeHTML(confidence) + source;
       } else if (Number(payload.pending_count || 0) > 0) {
-        lastAlert.textContent = 'A candidate is waiting for Gemini classification retry.';
+        lastAlert.textContent = 'X intel is queued for the next website publish cycle.';
       } else {
-        lastAlert.textContent = 'No breaking stories are showing yet.';
+        lastAlert.textContent = 'No public X intel is showing yet.';
       }
     }
 

@@ -328,8 +328,11 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(summary["alerted_now"], 1)
         self.assertEqual(attempts, [])
 
-    def test_classifier_outage_keeps_candidate_pending_for_website(self):
+    def test_website_mode_publishes_x_intel_without_classifier(self):
+        calls = []
+
         def classifier_unavailable(batch, env):
+            calls.append(batch)
             return {}, "Gemini 429 rate limited"
 
         with tempfile.TemporaryDirectory() as tmp:
@@ -343,13 +346,15 @@ class BreakingMonitorTests(unittest.TestCase):
             )
             status = json.loads(status_path.read_text(encoding="utf-8"))
 
-        self.assertEqual(summary["alerted_now"], 0)
-        self.assertEqual(summary["pending_now"], 1)
-        self.assertEqual(summary["malformed_or_rejected"], 0)
-        self.assertEqual(status["status"], "review-pending")
-        self.assertEqual(status["feed"], [])
-        self.assertEqual(len(status["pending_feed"]), 1)
-        self.assertEqual(status["pending_feed"][0]["status"], "under review")
+        self.assertEqual(calls, [])
+        self.assertEqual(summary["alerted_now"], 1)
+        self.assertEqual(summary["pending_now"], 0)
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(len(status["feed"]), 1)
+        self.assertEqual(status["pending_feed"], [])
+        self.assertEqual(status["feed"][0]["status"], "x-intel")
+        self.assertNotIn("classification", json.dumps(status).lower())
 
     def test_quiet_x_run_does_not_wipe_pending_x_intel(self):
         def classifier_unavailable(batch, env):
@@ -374,13 +379,16 @@ class BreakingMonitorTests(unittest.TestCase):
             )
             status = json.loads(status_path.read_text(encoding="utf-8"))
 
-        self.assertEqual(second["pending_now"], 1)
-        self.assertEqual(status["status"], "review-pending")
-        self.assertEqual(status["pending_count"], 1)
-        self.assertEqual(len(status["pending_feed"]), 1)
+        self.assertEqual(second["pending_now"], 0)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(status["pending_count"], 0)
+        self.assertEqual(len(status["feed"]), 1)
 
-    def test_x_rejection_stays_under_review_on_website(self):
+    def test_website_mode_ignores_classifier_rejection_for_x_intel(self):
+        calls = []
+
         def classifier_rejects(batch, env):
+            calls.append(batch)
             return (
                 {
                     batch[0]["candidate_id"]: {
@@ -405,9 +413,11 @@ class BreakingMonitorTests(unittest.TestCase):
             )
             status = json.loads(status_path.read_text(encoding="utf-8"))
 
-        self.assertEqual(summary["pending_now"], 1)
-        self.assertEqual(status["status"], "review-pending")
-        self.assertEqual(status["pending_count"], 1)
+        self.assertEqual(calls, [])
+        self.assertEqual(summary["alerted_now"], 1)
+        self.assertEqual(summary["pending_now"], 0)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(status["pending_count"], 0)
 
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(
@@ -466,7 +476,7 @@ class BreakingMonitorTests(unittest.TestCase):
             {"stage1_survivors": 1},
         )
 
-        self.assertEqual(status["status"], "alerted")
+        self.assertEqual(status["status"], "x-intel")
         self.assertEqual(status["alerted_count"], 1)
         self.assertEqual(status["pending_count"], 0)
         self.assertEqual(len(status["feed"]), 1)
@@ -493,21 +503,23 @@ class BreakingMonitorTests(unittest.TestCase):
             {"classification_reason": "missing Gemini key", "stage1_survivors": 1},
         )
 
-        self.assertEqual(status["pending_feed"][0]["reason"], "Awaiting Gemini classification retry.")
-        self.assertEqual(status["last_run"]["classification_reason"], "Awaiting Gemini classification retry.")
+        self.assertEqual(status["pending_feed"][0]["reason"], "Public X intel from the local X/Birdclaw route.")
+        self.assertNotIn("classification_reason", status["last_run"])
         self.assertNotIn("missing Gemini key", json.dumps(status))
 
     def test_landing_page_exposes_breaking_watch_panel(self):
         html = Path("web/landing-template.html").read_text(encoding="utf-8")
         self.assertIn('id="breaking"', html)
-        self.assertIn("Breaking Watch is live.", html)
-        self.assertIn("Breaking Feed", html)
+        self.assertIn("Public X Intel is live.", html)
+        self.assertIn("X Intel Feed", html)
         self.assertIn("breakingFeedList", html)
         self.assertIn("data/breaking_status.json", html)
-        self.assertIn("Website-only watch", html)
+        self.assertIn("Website-only feed", html)
         self.assertIn("pending_feed", html)
-        self.assertIn("Not confirmed breaking yet", html)
-        self.assertIn("Review pending", html)
+        self.assertIn("X intel live", html)
+        self.assertNotIn("Not confirmed breaking yet", html)
+        self.assertNotIn("Review pending", html)
+        self.assertNotIn("Awaiting Gemini classification retry", html)
         self.assertNotIn("only sends ntfy alerts", html)
         self.assertIn("Birdclaw bridge ready", html)
         self.assertIn("Local X memory", html)

@@ -111,7 +111,7 @@ def status_summary() -> dict:
         "feed": len(payload.get("feed") or []),
         "pending_feed": len(payload.get("pending_feed") or []),
         "stage1_survivors": last_run.get("stage1_survivors", 0),
-        "classification_reason": last_run.get("classification_reason", ""),
+        "x_intel_published": last_run.get("x_intel_published", 0),
         "updated_at": payload.get("updated_at", ""),
     }
 
