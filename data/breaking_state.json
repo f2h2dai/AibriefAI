@@ -38,6 +38,20 @@
       ],
       "title": "#EEUU muy mal asesorado pens\u00f3 bajo amenazas golear a #Iran pero all\u00ed esta la respuesta que querian los asesores de #Trump en fin. #Teheran golpea la quinta flot"
     },
+    "story-20ea4590bf150f7dc7788364": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "Whether political elites organise into rent-seeking coalitions that capture public resources or civic networks that sustain governance is a central question in comparative politics. Yet observing these complex, informal, and adversarial ties at scale has historically required intensive manual coding, while automated text-as-data methods have largely been limited to simple co-occurrence. Recent large language model (LLM) approaches offer a path forward but often rely on proprietary APIs, lack cross-lingual capability, and struggle with scalable entity resolution. We present a modular, fully open-weight pipeline for multilingual joint entity-relation extraction that builds signed, temporal knowledge graphs from massive unstructured news corpora. It combines span-based named-entity recognition (NER) with a three-stage linking cascade mapping mentions to language-independent Wikidata identifiers; a high-throughput, ontology-constrained mixture-of-experts model then uses guided decoding to extract directed, signed relationships grounded in a domain ontology. A full-coverage spot-check against a 3491-relation gold standard shows high textual correctness (68.2% strict to 93.7% lenient). Two large-scale case studies validate the pipeline against the public record. In Austria, it reconstructs a political party's complete lifecycle, dating internal fractures and tracking personnel into successor factions and court convictions. In a Polish corpus, it uncovers the overlapping economic and governance networks of state-enterprise patronage, alongside the structurally balanced, signed conflict network of the polarized Civic Platform (Platforma Obywatelska, PO)--Law and Justice (Prawo i Sprawiedliwo\u015b\u0107, PiS) duopoly. By bridging raw multilingual text and structured relational data, our framework provides a robust, replicable foundation for cross-national empirical computational social science.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "Whether political elites organise into rent-seeking coalitions that capture public resources or civic networks that sustain governance is a central question in comparative politics. Yet observing these complex, informal, and adversarial ties at scale has historically required int",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27347v1"
+      ],
+      "title": "Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline"
+    },
     "story-24dd52da3437f30da51c2b2d": {
       "alerted_at": "2026-06-28T07:51:13Z",
       "confidence": 0,
@@ -49,6 +63,20 @@
       "source": "hackernews",
       "source_urls": [],
       "title": "Sumi \u2013 Open-source voice-to-text with local AI polishing"
+    },
+    "story-2bba7621256f6ebdbb33d9cd": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "Digital twins have emerged as a promising paradigm for personalized healthcare, enabling modeling of individual behavior and health trajectories. In cognitive health, early detection of Mild Cognitive Impairment (MCI) remains challenging, where language and conversational patterns serve as non-invasive biomarkers. In this work, we propose a language-based digital twin framework that leverages large language models (LLMs) to mimic the conversational behavior of elderly individuals by incorporating stylometric cues and contextual metadata. To evaluate fidelity and cognitive consistency, we introduce a multi-head conditional variational autoencoder (cVAE) that jointly measures reconstruction quality and predicts cognitive scores. Experiments on the I-CONECT dataset show that the digital twin preserves identity-specific characteristics and achieves reconstruction and MoCA prediction errors comparable to real data, while outperforming baseline GPT-generated responses. These results highlight the potential of language-based digital twins as a scalable and non-invasive approach for personalized and continuous cognitive health monitoring.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "Digital twins have emerged as a promising paradigm for personalized healthcare, enabling modeling of individual behavior and health trajectories. In cognitive health, early detection of Mild Cognitive Impairment (MCI) remains challenging, where language and conversational pattern",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27334v1"
+      ],
+      "title": "Language-Based Digital Twins for Elderly Cognitive Assistance"
     },
     "story-2c7994b3d1b8e5d634964235": {
       "alerted_at": "2026-06-28T07:51:13Z",
@@ -77,6 +105,20 @@
         "https://x.com/RichardAngwin/status/2071006749050740757"
       ],
       "title": "@FoxNews Trump's illegal airstrikes on Iran are reckless warmongering that puts the world at risk for his ego! \ud83d\ude21"
+    },
+    "story-30bdd7693e830c34a6e5cc54": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "About two weeks ago, I posted Engram here, a memory layer for AI agents. The response was great and pushed me to keep building. Here&#x27;s where things stand.<p>What changed since the last post:<p>DMR benchmark: 92.0% accuracy (460&#x2F;500). Retrieval hit rate is 96.4%. This is competitive with systems backed by graph databases and Python ML stacks. Engram is TypeScript + SQLite.<p>LOCOMO benchmark (long-conversation memory): 80.0% across all 10 conversations, 1,540 questions. Full context scores 88.4% but costs 30x more tokens.<p>Bi-temporal memory model. Every memory has valid_from&#x2F;valid_until timestamps. Point-in-time recall via asOf parameter. Contradiction detection automatically supersedes stale facts.<p>Hosted API launched on Fly.io with Stripe billing. Self-hosting remains free (bring your own Gemini key). Hosted tiers start at $29&#x2F;mo.<p>OpenAI-compatible base URL. One env var to use Groq, Cerebras, Ollama, or any OpenAI-compatible provider instead of Gemini.<p>70 tests passing. Published engram-sdk@0.5.5 on npm.<p>What I learned: Benchmark scores are fragile. 13 commits to my core vault module dropped LOCOMO from 84.5% to 62%. I had to treat the eval suite like a regression test, run it after every meaningful change. If you&#x27;re building a memory&#x2F;RAG system and not doing this, you&#x27;re flying blind.<p>The judge LLM matters more than you&#x27;d think. Switching from one model to another as the benchmark judge changed scores by 10+ points on the same data. Always disclose your judge model. We use Gemini 2.5 Flash.<p>Temporal context is everything. Memories without timestamps are almost useless for &quot;when&quot; questions. Prefixing memories with their conversation date and teaching the LLM to resolve relative dates (&quot;yesterday,&quot; &quot;last week&quot;) was the single biggest accuracy improvement.<p>The API is the product, not the SDK. 95% of users will hit a REST endpoint, not import a TypeScript module. I wish I&#x27;d built the hosted API sooner.<p>What&#x27;s next: LangChain&#x2F;CrewAI integrations, an Engram skill for OpenClaw agents, and getting the academic paper on arXiv.<p>Happy to answer questions about benchmarks, architecture, or the experience of building this as a PM who codes. GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;tstockham96&#x2F;engram\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;tstockham96&#x2F;engram</a> Site: <a href=\"https:&#x2F;&#x2F;engram.fyi\" rel=\"nofollow\">https:&#x2F;&#x2F;engram.fyi</a> npm: <a href=\"https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;engram-sdk\" rel=\"nofollow\">https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;engram-sdk</a> Hosted API: <a href=\"https:&#x2F;&#x2F;engram-hosted.fly.dev\" rel=\"nofollow\">https:&#x2F;&#x2F;engram-hosted.fly.dev</a>",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "About two weeks ago, I posted Engram here, a memory layer for AI agents. The response was great and pushed me to keep building. Here&#x27;s where things stand.<p>What changed since the last post:<p>DMR benchmark: 92.0% accuracy (460&#x2F;500). Retrieval hit rate is 96.4%. This is",
+      "score": 0,
+      "source": "hackernews",
+      "source_urls": [
+        "https://github.com/tstockham96/engram"
+      ],
+      "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
     },
     "story-3559e17b7dd9fa6b1d6059bb": {
       "alerted_at": "2026-06-28T07:36:11Z",
@@ -204,6 +246,34 @@
       ],
       "title": "@chrismartenson Iran won. Get out of the Middle East. Its over."
     },
+    "story-5e46ab220d1b6c06f80c0ea5": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable framework (RiVER) that trains LLMs on score-based optimization tasks without ground-truth solutions, using deterministic execution feedback as continuous-valued supervision. When applying group-relative RL to such continuous rewards, we identify two key challenges: \\emph{scale dominance}, where uncalibrated score magnitudes across test instances distort policy updates, and \\emph{frequency dominance}, where repeatedly sampled suboptimal solutions can outweigh rare but stronger candidates. RiVER addresses these challenges with calibrated reward shaping that uses instance-wise comparisons and emphasizes top-ranked solvers while retaining bounded feedback for other valid solutions. We train on 12 AtCoder Heuristic Contest tasks and evaluate on Algorithm Engineering Benchmark (ALE-Bench), LiveCodeBench, and USACO. RiVER advances Qwen3-8B and GLM-Z1-9B-0414 by 8.9\\% and 9.4\\% in ALE rating rank. More importantly, despite training exclusively on score-based tasks without any ground-truth solutions, RiVER also improves the backbones across exact-solution benchmarks such as LiveCodeBench and USACO by an absolute average improvement of 2.4\\% and 3.5\\%. By contrast, baselines trained with raw execution scores improve ALE rating but fail to transfer to exact-solution benchmarks. These results suggest that score-based optimization tasks, combined with proper reward calibration, can serve as effective training environments for general coding ability without ground-truth solutions.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27369v1"
+      ],
+      "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs"
+    },
+    "story-64bc9d30d3cf5fe1d2b703cb": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "Been running AI agents in production for a while and kept running into the same issues:<p>controlling what they can do tracking costs debugging failures making it safe for real workloads<p>So we built AgentRuntime, the infrastructure layer we wished we had. Not an agent framework, but the platform around agents:<p>policies memory workflows observability cost tracking RAG governance<p>Agents and policies are defined in YAML, so it&#x27;s infrastructure-as-code rather than a chatbot builder. Example \u2013 agents and policies in YAML agent.yaml \u2013 declarative agent config name: support_agent<p>model: provider: anthropic name: claude-3-5-sonnet<p>context_assembly: enabled: true<p><pre><code> embeddings: provider: openai model: text-embedding-3-small providers: - type: knowledge config: sources: [&quot;.&#x2F;docs&quot;] top_k: 3 </code></pre> policies&#x2F;safety.yaml \u2013 governance as code name: security-policy<p>rules: - id: block-file-deletion condition: tool.name == &quot;file_delete&quot; action: deny<p>CLI \u2013 run and inspect Create and run an agent agentctl agent create researcher --goal &quot;Research AI safety&quot; --llm gpt-4 agentctl agent run researcher agentctl runs watch &lt;run-id&gt;<p>Manage policies agentctl policy list agentctl policy activate security-policy 1.0.0<p>RAG \u2013 ingest docs and ground responses in your knowledge base agentctl context ingest .&#x2F;docs agentctl run --agent agent.yaml --goal &quot;How do I deploy?&quot;<p>Agent-level debugging agentctl debug -c agent.yaml -g &quot;Analyze this dataset.&quot;<p>Cost tracking is exposed via the API (per agent&#x2F;tenant), and the Web UI shows analytics. The workflow debugger (breakpoints, step-through) lives in the pkg layer; the CLI debug is for agent execution. What\u2019s in there Governance<p>Policy engine (CEL) Risk scoring Encrypted audit logs RBAC Multi-tenancy Fully YAML-configurable<p>Orchestration<p>Visual workflow designer (React Flow) DAG workflows Multi-agent coordination Conditional logic Plugin hot-reload Workflow marketplace<p>Memory &amp; Context<p>Working memory Persistent memory Semantic memory Event log<p>Context assembly combines:<p>policies workflow state memory tool outputs knowledge<p>RAG features:<p>embeddings (OpenAI or local) SQLite for development Postgres + vector stores in production<p>Observability<p>Cost attribution via API SLA monitoring Distributed tracing (OpenTelemetry) Prometheus metrics Deterministic replay (5 modes)<p>Production<p>Kubernetes operator (Agent, Workflow, Policy CRDs) Helm charts Istio config Auto-scaling Backup &#x2F; restore GraphQL + REST API<p>Implementation<p>~50k LOC of Go Hundreds of tests Built for production (in mind)<p>Runs on: Local<p>SQLite In-memory runtime<p>Production<p>Postgres Redis Qdrant &#x2F; Weaviate<p>Happy to answer questions or help people get started",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "Been running AI agents in production for a while and kept running into the same issues:<p>controlling what they can do tracking costs debugging failures making it safe for real workloads<p>So we built AgentRuntime, the infrastructure layer we wished we had. Not an agent framework",
+      "score": 0,
+      "source": "hackernews",
+      "source_urls": [
+        "https://github.com/NikoSokratous/agentctl"
+      ],
+      "title": "Show HN: Open-sourced AI Agent runtime (YAML-first)"
+    },
     "story-6719e98b5c09a011b8fee396": {
       "alerted_at": "2026-06-28T07:36:11Z",
       "confidence": 0,
@@ -217,6 +287,20 @@
         "https://x.com/YouGet1ShotAtIt/status/2071006711390019949"
       ],
       "title": "24 hours after the government removed Hezbollah/IRGC signs on billboards thanking Iran and replacing them with \u201cLebanon First\u201d posters, the DevilsParty aka Hezb"
+    },
+    "story-67f7a9585acd171bb9b371f3": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: when does sequence probability, that is, the conditional probability of a continuation given a prompt, actually align with correctness? In this paper, we set out to quantify this relationship across decoding methods, models, and benchmarks at four levels: across decoding methods, across hyperparameters within a method, across prompt-answer pairs within a dataset, and across repeated responses to the same prompt. We find that higher sequence probability is often predictive of correctness across prompt-answer pairs within a fixed dataset. However, this relationship does not generally transfer to decoding decisions: increasing sequence probability by changing hyperparameters or methods does not reliably improve accuracy. Further, sequence probability is not a good indicator of correctness for responses to the same prompt. These findings clarify when decoding can and cannot be expected to improve correctness, and provide practical guidance for decoding, self-consistency, and verifier-free self-improvement.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: whe",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27359v1"
+      ],
+      "title": "When are likely answers right? On Sequence Probability and Correctness in LLMs"
     },
     "story-69ec2729bcf34c50e8b97b9f": {
       "alerted_at": "2026-06-28T07:36:11Z",
@@ -272,6 +356,20 @@
       ],
       "title": "\u0645\u0648\u0632 \u0641\u0633\u0641\u0631 \u062f\u0627\u0631\u0647 \u0648 \u0641\u0633\u0641\u0631 \u0628\u0631\u0627\u06cc \u0628\u0647\u0628\u0648\u062f \u0639\u0645\u0644\u06a9\u0631\u062f \u0645\u063a\u0632 \u0639\u0627\u0644\u06cc\u0647\u060c \u0627\u06af\u0647 \u0627\u0648\u0646 \u0645\u0648\u0632 \ud83c\udf4c \u0631\u0648 \u062e\u0648\u0631\u062f\u0647 \u0628\u0648\u062f\u06cc \u0634\u0627\u06cc\u062f \u06a9\u0645\u06cc \u0628\u0627\u0647\u0648\u0634 \u0645\u06cc\u0634\u062f\u06cc \u0648 \u0645\u06cc\u0641\u0647\u0645\u06cc\u062f\u06cc \u06a9\u0647 \u0644\u0648\u06a9\u06cc\u0634\u0646 \u0627\u0635\u0644\u06cc \u0627\u0648\u0646 \u0642\u0633\u0645\u062a \u067e\u0627\u06cc\u06cc\u0646 \u0647\u0633\u062a \u06a9\u0647 \u0632\u062f\u0647 Iran Andr"
     },
+    "story-9132996c11e07415dca737ad": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "To avoid moderation and surveillance on social media, some users routinely invent indirect linguistic expressions (ILE) that camouflage sensitive meanings. Such expressions surface as algospeak, euphemisms, and adversarial obfuscation, depending on intent and context, and they involve recurring encoding mechanisms. We propose a comprehensive, mechanism-oriented taxonomy of ILE that abstracts away from communicative goals and instead categorizes the underlying operations through which meaning is encoded and recovered. We evaluate the taxonomy by incorporating it into LLM prompts and comparing it with four existing taxonomies and a no-taxonomy baseline, using 2,000 manually annotated TikTok and Bluesky posts. The proposed taxonomy attains the strongest document- and span-level performance across the three LLMs, achieving an improvement of 4.7% in accuracy and 5.4% in F1 over the best-performing benchmark. The empirical results reveal the importance of a comprehensive, mechanism-oriented taxonomy as a stable scaffold for detecting emerging coded language and a useful input to content moderation. Disclaimer: This paper contains content that may be profane, vulgar, or offensive.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "To avoid moderation and surveillance on social media, some users routinely invent indirect linguistic expressions (ILE) that camouflage sensitive meanings. Such expressions surface as algospeak, euphemisms, and adversarial obfuscation, depending on intent and context, and they in",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27314v1"
+      ],
+      "title": "Beyond Surface Forms: A Comprehensive, Mechanism-Oriented Taxonomy of Indirect Linguistic Encoding for LLM-Based Coded Language Detection"
+    },
     "story-9175996c3ed5b0e501129bfa": {
       "alerted_at": "2026-06-28T07:51:13Z",
       "confidence": 0,
@@ -325,6 +423,18 @@
         "https://x.com/Val4NoBigGov/status/2071006775940198871"
       ],
       "title": "U.S. Strikes Iran Again After Tehran Breaks Ceasefire With Tanker Attack https://t.co/ifsa4DcjET"
+    },
+    "story-9cfb033776c664fcf9e1a0d9": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "COLT converts natural language instructions into browser automation. You say &quot;Create a user with email admin@test.com and admin role&quot; \u2014 it executes it on a live browser and exports a standalone Playwright script. How it works:<p>1.Discover \u2014 crawls your web app autonomously, maps every page, form, modal, and element 2.Index \u2014 LLM-summarizes each state into a vector search index (discover once, run unlimited tasks) 3.Execute \u2014 ReAct agent loop drives the browser in real time with self-healing on failures 4.Record \u2014 exports reusable Playwright scripts, pytest tests, and typed Python functions<p>It handles Shadow DOM, cross-origin iframes, infinite scroll, pagination traps, and modals \u2014 the stuff that breaks most automation tools. What it&#x27;s not: Not a consumer AI browser. Not an RPA tool. It&#x27;s for engineering teams who want to generate E2E tests or automate internal tool workflows without writing selectors by hand. The key difference from other AI browser agents: they start from scratch every execution. COLT builds a persistent knowledge base of your app, so task #100 is as fast as task #1. Built with Python, Playwright, and ChromaDB. Works with Groq, OpenAI, Anthropic, or local Ollama models. Currently in closed beta \u2014 launching soon. Would love feedback on the approach, especially from anyone doing browser automation at scale",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "COLT converts natural language instructions into browser automation. You say &quot;Create a user with email admin@test.com and admin role&quot; \u2014 it executes it on a live browser and exports a standalone Playwright script. How it works:<p>1.Discover \u2014 crawls your web app autonomo",
+      "score": 0,
+      "source": "hackernews",
+      "source_urls": [],
+      "title": "Colt \u2013 Describe a browser task in English, get a Playwright script"
     },
     "story-a0bcd446a2723e1a3ceb7993": {
       "alerted_at": "2026-06-28T07:36:11Z",
@@ -534,6 +644,20 @@
       ],
       "title": "Show HN: PDR AI \u2013 Open-source startup accelerator engine for non-technical chaos"
     },
+    "story-f5d1a4017f4a986c7f5cb6db": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "A unified representation for text and vision is a natural pursuit, as it enables simpler multimodal modeling and more efficient training. However, representing images as discrete signals in the same way as text inevitably introduces severe information loss. Existing work struggles to balance low-level details and high-level semantics in discrete representations: reconstruction-oriented representations often lack semantic information, whereas semantically stronger features typically suffer from severe loss of detail. We present ViQ, a Visual Quantized Representations framework, which is designed to balance semantics and details in discrete representations while supporting inputs at native resolutions, thereby enabling it to serve as a unified and general discrete representation for arbitrary visual inputs. Our approach structures quantization learning into two stages: text-aligned pre-training and feature discretization. With text-aligned pre-training, we enhance the visual encoder semantic-rich supervision from the pretrained language model and enable it to process native-resolution visual inputs. During discretization, we propose a proximal representation learning strategy to progressively compact the feature space, along with a position-aware head-wise quantization mechanism that enables flexible processing of arbitrary resolutions. Extensive experiments on multimodal tasks demonstrate that ViQ achieves competitive performance compared to state-of-the-art multimodal vision encoders with continuous and high-dimensional visual features, while maintaining high precision in low-level reconstruction. We also show that multimodal training with visual quantized representations largely improves efficiency, yielding up to 20\\%-70\\% acceleration with different base LLMs and training recipes.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "A unified representation for text and vision is a natural pursuit, as it enables simpler multimodal modeling and more efficient training. However, representing images as discrete signals in the same way as text inevitably introduces severe information loss. Existing work struggle",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27313v1"
+      ],
+      "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution"
+    },
     "story-f5e0b2bc4ae95661e880b0f3": {
       "alerted_at": "2026-06-28T07:51:13Z",
       "confidence": 0,
@@ -547,9 +671,23 @@
         "https://github.com/dograh-hq/dograh"
       ],
       "title": "Show HN: We open sourced Vapi \u2013 UI included"
+    },
+    "story-fde856bc334be43d26cbd901": {
+      "alerted_at": "2026-06-28T10:16:43Z",
+      "confidence": 0,
+      "content": "The softmax activation in multihead attention (MHA) is the de facto standard for attention-based models in visual perception tasks. However, standard softmax can produce noisy attention patterns that dilute relevant features and degrade its performance. In this paper, we propose Denoising Attention or DnA, in which, first, a positive query identifies which image features belong to the correct class, and a negative query identifies closely associated but irrelevant image features. DnA then projects these interactions into two distinct subspaces with larger principal angles, promoting subspace separation and improved discriminability. Using a ViT-B backbone, our proposed DnA achieves an absolute gain of 0.8% on ImageNet-1K compared to the baseline. We further show improvements across multiple visual understanding tasks, including video understanding with video transformers (1.8%) and video LLMs (0.5%). Our extensive empirical analyses justify the design choices involving two interacting subspaces and the denoising effect of DnA.",
+      "last_seen_at": "2026-06-28T10:16:43Z",
+      "notification_status": "x-intel",
+      "reason": "The softmax activation in multihead attention (MHA) is the de facto standard for attention-based models in visual perception tasks. However, standard softmax can produce noisy attention patterns that dilute relevant features and degrade its performance. In this paper, we propose ",
+      "score": 0,
+      "source": "arxiv",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27372v1"
+      ],
+      "title": "DnA: Denoising Attention for Visual Tasks"
     }
   },
   "pending": {},
-  "updated_at": "2026-06-28T07:51:13Z",
+  "updated_at": "2026-06-28T10:16:43Z",
   "version": 1
 }

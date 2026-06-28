@@ -1,61 +1,116 @@
 {
-  "alerted_count": 40,
+  "alerted_count": 50,
   "cadence_minutes": 15,
   "feed": [
     {
       "confidence": 0,
-      "id": "story-564b19167576c9d073f13984",
-      "reason": "Hi HN, I&#x27;m Robel. I built LogClaw because I was tired of paying for Datadog and still waking up to pages that said &quot;something is wrong&quot; with no context.<p>LogClaw is an open-source log intelligence platform that runs on Kubernetes. It ingests logs via OpenTelemetry",
-      "score": 64,
-      "shown_at": "2026-06-28T07:51:13Z",
+      "id": "story-30bdd7693e830c34a6e5cc54",
+      "reason": "About two weeks ago, I posted Engram here, a memory layer for AI agents. The response was great and pushed me to keep building. Here&#x27;s where things stand.<p>What changed since the last post:<p>DMR benchmark: 92.0% accuracy (460&#x2F;500). Retrieval hit rate is 96.4%. This is",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
       "source": "hackernews",
-      "source_url": "https://logclaw.ai",
+      "source_url": "https://github.com/tstockham96/engram",
       "status": "x-intel",
-      "title": "Show HN: LogClaw \u2013 Open-source AI SRE that auto-creates tickets from logs"
+      "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
     },
     {
       "confidence": 0,
-      "id": "story-475e79bc911aa68feede6840",
-      "reason": "Hey HN! We&#x27;re Ashwin and Akshay from Spine AI (<a href=\"https:&#x2F;&#x2F;www.getspine.ai\">https:&#x2F;&#x2F;www.getspine.ai</a>). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, finan",
-      "score": 55,
-      "shown_at": "2026-06-28T07:51:13Z",
+      "id": "story-64bc9d30d3cf5fe1d2b703cb",
+      "reason": "Been running AI agents in production for a while and kept running into the same issues:<p>controlling what they can do tracking costs debugging failures making it safe for real workloads<p>So we built AgentRuntime, the infrastructure layer we wished we had. Not an agent framework",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
       "source": "hackernews",
-      "source_url": "https://getspine.ai",
+      "source_url": "https://github.com/NikoSokratous/agentctl",
       "status": "x-intel",
-      "title": "Launch HN: Spine Swarm (YC S23) \u2013 AI agents that collaborate on a visual canvas"
+      "title": "Show HN: Open-sourced AI Agent runtime (YAML-first)"
     },
     {
       "confidence": 0,
-      "id": "story-2c7994b3d1b8e5d634964235",
-      "reason": "We built an open-source proxy that sits between coding agents (Claude Code, OpenClaw, etc.) and the LLM, compressing tool outputs before they enter the context window.<p>Demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=-vFZ6MPrwjw#t=9s\" rel=\"nofollow\">https:&#x2F;&#x",
-      "score": 54,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "https://github.com/Compresr-ai/Context-Gateway",
-      "status": "x-intel",
-      "title": "Show HN: Context Gateway \u2013 Compress agent context before it hits the LLM"
-    },
-    {
-      "confidence": 0,
-      "id": "story-e27348b159b651a4af824945",
-      "reason": "Hey HN, we&#x27;re Alex and Tyler, co-founders of Voker.ai (<a href=\"https:&#x2F;&#x2F;voker.ai&#x2F;\">https:&#x2F;&#x2F;voker.ai&#x2F;</a>), an agent analytics platform for AI product teams. Voker gives full visibility into what users are asking of your agents, and whether your ",
-      "score": 44,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "https://voker.ai",
-      "status": "x-intel",
-      "title": "Launch HN: Voker (YC S24) \u2013 Analytics for AI Agents"
-    },
-    {
-      "confidence": 0,
-      "id": "story-9175996c3ed5b0e501129bfa",
-      "reason": "If you trace the timeline of how LLMs went from a technologist&#x27;s dream to early text-generation toys, to the world-shifting launch of ChatGPT, and finally to the daily drivers of modern programming (Sonnet, Opus), it has taken less than a decade. It\u2019s a thrilling, almost unb",
-      "score": 32,
-      "shown_at": "2026-06-28T07:51:13Z",
+      "id": "story-9cfb033776c664fcf9e1a0d9",
+      "reason": "COLT converts natural language instructions into browser automation. You say &quot;Create a user with email admin@test.com and admin role&quot; \u2014 it executes it on a live browser and exports a standalone Playwright script. How it works:<p>1.Discover \u2014 crawls your web app autonomo",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
       "source": "hackernews",
       "source_url": "",
       "status": "x-intel",
-      "title": "The AI Conundrum: We are living in highly subsidized, interesting times"
+      "title": "Colt \u2013 Describe a browser task in English, get a Playwright script"
+    },
+    {
+      "confidence": 0,
+      "id": "story-fde856bc334be43d26cbd901",
+      "reason": "The softmax activation in multihead attention (MHA) is the de facto standard for attention-based models in visual perception tasks. However, standard softmax can produce noisy attention patterns that dilute relevant features and degrade its performance. In this paper, we propose ",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27372v1",
+      "status": "x-intel",
+      "title": "DnA: Denoising Attention for Visual Tasks"
+    },
+    {
+      "confidence": 0,
+      "id": "story-5e46ab220d1b6c06f80c0ea5",
+      "reason": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27369v1",
+      "status": "x-intel",
+      "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs"
+    },
+    {
+      "confidence": 0,
+      "id": "story-67f7a9585acd171bb9b371f3",
+      "reason": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: whe",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27359v1",
+      "status": "x-intel",
+      "title": "When are likely answers right? On Sequence Probability and Correctness in LLMs"
+    },
+    {
+      "confidence": 0,
+      "id": "story-20ea4590bf150f7dc7788364",
+      "reason": "Whether political elites organise into rent-seeking coalitions that capture public resources or civic networks that sustain governance is a central question in comparative politics. Yet observing these complex, informal, and adversarial ties at scale has historically required int",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27347v1",
+      "status": "x-intel",
+      "title": "Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline"
+    },
+    {
+      "confidence": 0,
+      "id": "story-2bba7621256f6ebdbb33d9cd",
+      "reason": "Digital twins have emerged as a promising paradigm for personalized healthcare, enabling modeling of individual behavior and health trajectories. In cognitive health, early detection of Mild Cognitive Impairment (MCI) remains challenging, where language and conversational pattern",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27334v1",
+      "status": "x-intel",
+      "title": "Language-Based Digital Twins for Elderly Cognitive Assistance"
+    },
+    {
+      "confidence": 0,
+      "id": "story-9132996c11e07415dca737ad",
+      "reason": "To avoid moderation and surveillance on social media, some users routinely invent indirect linguistic expressions (ILE) that camouflage sensitive meanings. Such expressions surface as algospeak, euphemisms, and adversarial obfuscation, depending on intent and context, and they in",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27314v1",
+      "status": "x-intel",
+      "title": "Beyond Surface Forms: A Comprehensive, Mechanism-Oriented Taxonomy of Indirect Linguistic Encoding for LLM-Based Coded Language Detection"
+    },
+    {
+      "confidence": 0,
+      "id": "story-f5d1a4017f4a986c7f5cb6db",
+      "reason": "A unified representation for text and vision is a natural pursuit, as it enables simpler multimodal modeling and more efficient training. However, representing images as discrete signals in the same way as text inevitably introduces severe information loss. Existing work struggle",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27313v1",
+      "status": "x-intel",
+      "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution"
     },
     {
       "confidence": 0,
@@ -70,39 +125,6 @@
     },
     {
       "confidence": 0,
-      "id": "story-f118e38283b42a934624307a",
-      "reason": "Show HN: PDR AI \u2013 Open-source startup accelerator engine for non-technical chaos (marketing, PRDs, onboarding)<p>A couple weeks ago I shared PDR AI as an open-source tool for startup doc mess[](<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47258661\">https:&#x2F;&#x",
-      "score": 30,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "https://github.com/Deodat-Lawson/LaunchStack",
-      "status": "x-intel",
-      "title": "Show HN: PDR AI \u2013 Open-source startup accelerator engine for non-technical chaos"
-    },
-    {
-      "confidence": 0,
-      "id": "story-24dd52da3437f30da51c2b2d",
-      "reason": "I&#x27;m based in Taiwan and run 3-4 Claude Code agents in parallel most of the day. Typing instructions to all of them was the actual bottleneck, so I built a voice-to-text tool that runs both STT and LLM polish locally.<p>Architecture: two-stage pipeline. Stage 1 is speech reco",
-      "score": 30,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "",
-      "status": "x-intel",
-      "title": "Sumi \u2013 Open-source voice-to-text with local AI polishing"
-    },
-    {
-      "confidence": 0,
-      "id": "story-c55aff8dd9271ab3f308dc0e",
-      "reason": "Hi HN,<p>I&#x27;ve been building Ryvos for the past few months \u2014 an open-source autonomous AI assistant written in Rust. It&#x27;s the thing I wished existed: always-on, multi-channel, and actually secure.<p>The core idea: every tool call passes through a SecurityGate \u2014 5 tiers o",
-      "score": 30,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "https://ryvos.dev",
-      "status": "x-intel",
-      "title": "Show HN: Ryvos \u2013 Autonomous AI assistant in Rust(15MB RAM,50 tools,16 providers)"
-    },
-    {
-      "confidence": 0,
       "id": "story-180e247ced97955410db860c",
       "reason": "Value For Money is All You Need<p>A reflection on the future of token consumption in artificial intelligence<p>Token consumption now sits at the center of the growing use of artificial intelligence by businesses and individuals alike.<p>The &quot;TokenMaxxing&quot; trap<p>In the ",
       "score": 30,
@@ -111,55 +133,33 @@
       "source_url": "",
       "status": "x-intel",
       "title": "Value for Money Is All You Need"
-    },
-    {
-      "confidence": 0,
-      "id": "story-7655a87e393c7bcadc673768",
-      "reason": "Hey HN, I&#x27;m Marco, the creator of TypeWhisper.<p>TypeWhisper is a free, open-source speech-to-text app for macOS and Windows. Everything runs locally on your machine - no cloud, no telemetry, no data collection. Your voice never leaves your device.<p>What makes it different:",
-      "score": 30,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "https://typewhisper.com",
-      "status": "x-intel",
-      "title": "Show HN: TypeWhisper \u2013 speech-to-text with multiple engines, profiles"
-    },
-    {
-      "confidence": 0,
-      "id": "story-af5b137a6b7142d8fb3b6ee1",
-      "reason": "Agentic artificial intelligence shows great promise for radically improving the pace of innovation in hardware/software co-design research across computer architecture, systems, compilers, and VLSI. Thus far, however, applications of AI in these contexts have generally been demon",
-      "score": 30,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27350v1",
-      "status": "x-intel",
-      "title": "CHIA: An open-source framework for principled, agentic AI-driven hardware/software co-design research"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-06-28T07:51:13Z",
+    "alerted_at": "2026-06-28T10:16:43Z",
     "confidence": 0,
-    "source_url": "https://logclaw.ai",
-    "title": "Show HN: LogClaw \u2013 Open-source AI SRE that auto-creates tickets from logs"
+    "source_url": "https://github.com/tstockham96/engram",
+    "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
   },
   "last_run": {
-    "alerted_now": 20,
+    "alerted_now": 10,
     "clustered": 30,
     "collected": 30,
-    "overflow_pending": 10,
+    "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.267,
-      "projected_minutes_per_30d": 204.82,
+      "measured_seconds": 5.019,
+      "projected_minutes_per_30d": 240.91,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 30,
-    "x_intel_published": 20
+    "x_intel_published": 10
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-06-28T07:51:13Z",
+  "updated_at": "2026-06-28T10:16:43Z",
   "version": 1
 }
