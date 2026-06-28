@@ -1,12 +1,12 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-06-27T21:43:47Z",
+  "generated_at": "2026-06-28T16:00:35Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 21,
+    "groq": 17,
     "rule-based": 0
   },
   "agents": [
@@ -53,129 +53,129 @@
   ],
   "events": [
     {
-      "time": "2026-06-27T21:43:47Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "critical",
       "agent": "XInfluencerAgent",
       "message": "X influencer search returned zero items. Configure X access and influencer handles."
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-27T21:43:47Z",
+      "time": "2026-06-28T16:00:35Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+    },
+    {
+      "time": "2026-06-28T16:00:35Z",
+      "level": "info",
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "github-010",
+      "id": "github-006",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -187,12 +187,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, providing a valuable resource for developers and researchers.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، مما يوفر موردا قيمة للمطورين والباحثين.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها و تخصيصها و إطلاقها، مما يوفر موردا قима للمطورين و الباحثين.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "github-012",
+      "id": "github-008",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -205,11 +205,11 @@
       "provider": "groq",
       "brief_en": "karpathy/autoresearch: AI agents are being tested to run research on single-GPU nanochat training, with potential for automated discovery.",
       "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة، مع إمكانية اكتشاف آلي",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "arxiv-019",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "Prompt Injection in Automated Résumé Screening with Large Language Models: Single and Multi-Injection Settings",
       "content": "Large language models (LLMs) are increasingly used to screen and rank job applicants, creating incentives for candidates to strategically manipulate algorithmic hiring systems. We study prompt injection in automated résumé screening, defined as subtle self-promotional text that introduces no new qualifications but is designed to influence LLM evaluations. Using controlled experiments, we show that prompt injection reliably improves applicant rankings when résumé quality is homogeneous and few candidates inject. However, its effectiveness rapidly diminishes as more candidates inject, collapsing when manipulation becomes widespread. When candidate quality is heterogeneous, prompt injection is less effective on average, but can occasionally allow lower-quality candidates to outrank higher-quality ones, raising fairness concerns. Overall, LLM-based screening is most vulnerable when manipulation is rare and candidate quality differences are small. Code and resources are publicly available at: https://github.com/preetb1199/Prompt_Injection_ACL26",
@@ -221,12 +221,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Large language models are used to screen job applicants, creating incentives for strategic manipulation. Research shows prompt injection can improve rankings, but effectiveness diminishes as manipulation becomes widespread.",
-      "brief_ar": "تُستخدم نماذج اللغة الكبيرة لفرز المرشحين للوظائف، مما يخلق حوافز للاستغلال الاستراتيجي. تظهر الدراسات أن حقن الدفعة يمكن أن يحسن التصنيفات، ولكن الفعالية تتناقص مع انتشار الاستغلال.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_ar": "تُستخدم نماذج اللغة الكبيرة لفرز المتقدمين للوظائف، مما يخلق حوافز للاستغلال الاستراتيجي. تظهر الدراسات أن حقن العبارات يمكن أن يحسن التصنيفات، ولكن الفعالية تتناقص مع انتشار الاستغلال.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "github-008",
+      "id": "github-004",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -238,12 +238,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_ar": "Langflow أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكّن من آليّة كفاءة وصنع قرار",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "github-009",
+      "id": "github-005",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -254,13 +254,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI models. Its capabilities and limitations are subject to ongoing evaluation.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكيل، توفر أدوات لإنشاء ونشر نماذج الذكاء الاصطناعي. يتم تقييم قدراتها وقيودها بشكل مستمر.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, leveraging open-source intelligence for strategic decision-making.",
+      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة لاتخاذ القرارات الاستراتيجية.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "github-011",
+      "id": "github-007",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -272,12 +272,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكية، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "github-013",
+      "id": "github-009",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Financial data platform for analysts, quants and AI agents.",
@@ -288,13 +288,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information and insights.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر إمكانية الوصول إلى المعلومات والمعلومات المالية.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to market data and insights.",
+      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى بيانات السوق والرؤى.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "arxiv-016",
+      "id": "arxiv-012",
       "source": "arxiv",
       "title": "Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline",
       "content": "Whether political elites organise into rent-seeking coalitions that capture public resources or civic networks that sustain governance is a central question in comparative politics. Yet observing these complex, informal, and adversarial ties at scale has historically required intensive manual coding, while automated text-as-data methods have largely been limited to simple co-occurrence. Recent large language model (LLM) approaches offer a path forward but often rely on proprietary APIs, lack cross-lingual capability, and struggle with scalable entity resolution. We present a modular, fully open-weight pipeline for multilingual joint entity-relation extraction that builds signed, temporal knowledge graphs from massive unstructured news corpora. It combines span-based named-entity recognition (NER) with a three-stage linking cascade mapping mentions to language-independent Wikidata identifiers; a high-throughput, ontology-constrained mixture-of-experts model then uses guided decoding to extract directed, signed relationships grounded in a domain ontology. A full-coverage spot-check against a 3491-relation gold standard shows high textual correctness (68.2% strict to 93.7% lenient). Two large-scale case studies validate the pipeline against the public record. In Austria, it reconstructs a political party's complete lifecycle, dating internal fractures and tracking personnel into successor factions and court convictions. In a Polish corpus, it uncovers the overlapping economic and governance networks of state-enterprise patronage, alongside the structurally balanced, signed conflict network of the polarized Civic Platform (Platforma Obywatelska, PO)--Law and Justice (Prawo i Sprawiedliwość, PiS) duopoly. By bridging raw multilingual text and structured relational data, our framework provides a robust, replicable foundation for cross-national empirical computational social science.",
@@ -306,12 +306,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "This brief presents a multilingual joint entity-relation extraction pipeline to map political-elite networks in Europe, leveraging large language models and open-source tools to analyze news corpora and construct knowledge graphs.",
-      "brief_ar": "هذا التقرير يقدم خط أنابيب استخراج مشترك للكيان والعلاقة متعددة اللغات لتحليل شبكات النخبة السياسية في أوروبا، مستخدما نماذج اللغة الكبيرة وأدوات مفتوحة المصدر لتحليل مصادر الأخبار وبناء رسوم معرفية.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_ar": "هذا التقرير يقدم خط أنابيب استخراج مشترك للكيان والعلاقة متعددة اللغات لتحديد شبكات النخبة السياسية في أوروبا، مستخدما نماذج اللغة الكبيرة والأدوات المفتوحة المصدر لتحليل مصادر الأخبار وبناء رسوم معرفية.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "arxiv-018",
+      "id": "arxiv-014",
       "source": "arxiv",
       "title": "LLM-Based Examination of Eligibility Criteria from Securities Prospectuses at the German Central Bank",
       "content": "Verifying the eligibility of securities as collateral is a key responsibility of the German Central Bank. However, manually verifying these assets against legal and financial criteria within lengthy, semi-structured, and often bilingual prospectuses is a resource-intensive task. While previous efforts utilized traditional Named Entity Recognition (NER) for information extraction, these methods can struggle with OCR noise, linguistic variance, and rigid span-based constraints, and the need for manually annotated training data for each relevant annotation type. In this paper, we present the first case study applying Large Language Models (LLMs) to the eligibility examination process, shifting the paradigm toward a generative Information Extraction pipeline. Our approach decomposes the task into extraction, normalization, and interpretation, allowing for greater flexibility in handling noisy text and interleaved German-English content. We further introduce a value-based evaluation methodology using LLM-as-a-judge, which offers a more semantic assessment than location-based metrics. Our results demonstrate that LLM-based systems achieve high precision (up to 91%) in document-level eligibility, exhibiting a conservative operating profile that minimizes false acceptance.",
@@ -322,30 +322,13 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "The German Central Bank uses LLMs to examine securities prospectuses, improving eligibility verification with high precision (up to 91%) and a conservative approach to minimize false acceptance.",
-      "brief_ar": "يستخدم البنك المركزي الألماني نماذج اللغة الكبيرة لفحص نشرة الأوراق المالية، مما يحسن من عملية التحقق من الأهلية بدقة عالية (تصل إلى 91٪) ونهجًا محافظًا لتحقيق الحد الأدنى من القبول الخاطئ.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_en": "This brief examines the use of Large Language Models (LLMs) for verifying securities eligibility as collateral at the German Central Bank, achieving high precision (up to 91%) in document-level eligibility.",
+      "brief_ar": "هذا التقرير يبحث في استخدام نماذج اللغة الكبيرة (LLMs) لتحقق أهلية الأوراق المالية كضمانات لدى البنك المركزي الألماني، وتحقيق دقة عالية (تصل إلى 91%) في مستوى وثائق الأهلية.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "hackernews-002",
-      "source": "hackernews",
-      "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
-      "content": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
-      "url": "https://github.com/kageroumado/adrafinil",
-      "score": 39,
-      "score_reason": "live technology discussion signal; agentic AI relevance. Final score: 39.",
-      "status": "held",
-      "topic": "AI Agents",
-      "collector": "NewsAgent",
-      "provider": "groq",
-      "brief_en": "Adrafinil: A tool to keep lid-closed Macs awake during agent activity, enhancing automated task efficiency.",
-      "brief_ar": "أدRAFINIL: أداة للاحتفاظ بآلات Mac مغلقة الغطاء أثناء نشاط الوكلاء، مما يعزز كفاءة المهام الآلية.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
-    },
-    {
-      "id": "arxiv-021",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "CORTEX: A Structured Reasoning Benchmark for Trustworthy 3D Chest CT MLLMs",
       "content": "Reasoning in multimodal large language models (MLLMs) has shown strong promise in medical imaging. However, this reasoning is usually free-form text judged only by its final answer, making it hard to interpret and verify, especially in 3D radiology, where a diagnosis should be traceable to evidence in the scan. Existing chest CT question-answering datasets compound this by reducing expert radiology reports to answer-only pairs, dropping the reasoning that links findings to conclusions and omitting the patient history clinicians rely on. As a result, reasoning-capable 3D chest CT MLLMs remain out of reach, as neither the structured supervision needed to train them nor the protocol needed to verify their reasoning yet exists. We introduce CORTEX (Clinically Organized Reasoning and sTructured EXplanation), a structured reasoning benchmark for 3D chest CT. For each question, CORTEX restores the missing reasoning as a four-stage diagnostic trace mirroring a radiologist's workflow: task understanding, visual observation, diagnostic reasoning, and answer synthesis. We generate these traces using frontier large language models with broad medical and general-domain knowledge, then filter and verify them with a stage-level evaluation protocol combining automated rubric scoring with expert radiologist review. Crucially, both the reasoning structure and evaluation rubrics are designed in close collaboration with clinicians. Built on CT-RATE, a large, publicly available chest CT dataset without reasoning annotations, CORTEX comprises 76,177 validated reasoning traces across open-ended VQA, closed-ended VQA, and report generation, providing both the structured supervision and the stage-level evaluation protocol needed to build and evaluate trustworthy reasoning models for 3D chest CT. Our dataset and evaluation code will be made publicly available upon acceptance.",
@@ -357,12 +340,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "CORTEX: A benchmark for trustworthy 3D chest CT MLLMs, providing structured reasoning and traceable diagnoses.",
-      "brief_ar": "CORTEX: معيار لتحليل الصور الطبية الثلاثية الأبعاد الموثوق بها، يوفر استدلالًا منظمًا وتشخيصًا يمكن تتبعه.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_ar": "CORTEX: معيار لنموذج لغة كبير متعدد الوسائط موثوق في التصوير المقطعي المحوسب الصدري ثلاثي الأبعاد، يوفر استدلالًا منظمًا وتشخيصًا يمكن تتبعه.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     },
     {
-      "id": "arxiv-014",
+      "id": "arxiv-010",
       "source": "arxiv",
       "title": "Autoregressive Boltzmann Generators",
       "content": "Efficient sampling of molecular systems at thermodynamic equilibrium is a hallmark challenge in statistical physics. This challenge has driven the development of Boltzmann Generators (BGs), which allow rapid generation of uncorrelated equilibrium samples by combining a generative model with exact likelihoods and an importance sampling correction. However, modern BGs predominantly rely on normalizing flows (NFs), which either suffer from limited expressivity due to strict invertibility constraints (discrete time) or computationally expensive likelihoods (continuous time). In this paper, we propose Autoregressive Boltzmann Generators (ArBG) -- a novel autoregressive modelling framework -- that overcomes these limitations by departing from the flow-based BG paradigm. ArBG circumvents the topological constraints of flows and enables sequential inference-time interventions, while offering enhanced scalability by leveraging architectures effective in Large Language Models. We empirically demonstrate that ArBG leads to significant improvements over flow-based models across all benchmarks, but particularly in larger peptide systems such as the 10-residue Chignolin. Furthermore, we introduce Robin, a 132 million parameter transferable model trained with the ArBG framework which improves over the previous state-of-the-art, reducing the zero-shot energy error, E-W$_2$, on 8-residue systems by over 60$\\%$. The code can be found at the following link: https://github.com/danyalrehman/autobg.",
@@ -373,10 +356,27 @@
       "topic": "RAG",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Autoregressive Boltzmann Generators (ArBG) is a novel framework that overcomes limitations of normalizing flows in Boltzmann Generators, offering enhanced scalability and improved performance in molecular system sampling.",
-      "brief_ar": "مُولِدات بولتزمان التّيّارية (ArBG) هي إطار جديد يُغلب قيود التدفقات التّأملنية في مولدات بولتزمان، ويتوفر على قابلية توسّع محسّنة وأداء مُحسّن في عينة النّظم الجُزئيّة.",
-      "createdAt": "2026-06-27T21:43:47Z",
-      "updatedAt": "2026-06-27T21:43:47Z"
+      "brief_en": "Autoregressive Boltzmann Generators (ArBG) is a novel framework that overcomes limitations of traditional Boltzmann Generators, offering enhanced scalability and improved performance in sampling molecular systems at thermodynamic equilibrium.",
+      "brief_ar": "مُولِدات بولتزمان التّيّارية (ArBG) هي إطار جديد يُغلب قيود المُولِدات التقليدية لبولتزمان، ويتوفر على قابلية توسّع محسّنة وأداء مُحسّن في عيّنة أنظمة جزيئية في حالة توازن ترموديناميكي.",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
+    },
+    {
+      "id": "github-002",
+      "source": "github",
+      "title": "NousResearch/hermes-agent",
+      "content": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "score": 36,
+      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; research relevance. Final score: 36.",
+      "status": "held",
+      "topic": "AI Agents",
+      "collector": "GitHubAgent",
+      "provider": "groq",
+      "brief_en": "NousResearch/hermes-agent: An adaptive AI solution for evolving intelligence needs, leveraging Open-Source Intelligence (OSINT) for strategic insights.",
+      "brief_ar": "NousResearch/هرمس-وكل: حل ذكاء اصطناعي متكامل ينمو مع احتياجاتك، يستند إلى استخبارات المصادر المفتوحة (OSINT) لتوفير رؤى إستراتيجية",
+      "createdAt": "2026-06-28T16:00:35Z",
+      "updatedAt": "2026-06-28T16:00:35Z"
     }
   ]
 }
