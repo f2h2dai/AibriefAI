@@ -4,72 +4,6 @@
   "feed": [
     {
       "confidence": 0,
-      "id": "story-30bdd7693e830c34a6e5cc54",
-      "reason": "About two weeks ago, I posted Engram here, a memory layer for AI agents. The response was great and pushed me to keep building. Here&#x27;s where things stand.<p>What changed since the last post:<p>DMR benchmark: 92.0% accuracy (460&#x2F;500). Retrieval hit rate is 96.4%. This is",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "hackernews",
-      "source_url": "https://github.com/tstockham96/engram",
-      "status": "x-intel",
-      "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
-    },
-    {
-      "confidence": 0,
-      "id": "story-64bc9d30d3cf5fe1d2b703cb",
-      "reason": "Been running AI agents in production for a while and kept running into the same issues:<p>controlling what they can do tracking costs debugging failures making it safe for real workloads<p>So we built AgentRuntime, the infrastructure layer we wished we had. Not an agent framework",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "hackernews",
-      "source_url": "https://github.com/NikoSokratous/agentctl",
-      "status": "x-intel",
-      "title": "Show HN: Open-sourced AI Agent runtime (YAML-first)"
-    },
-    {
-      "confidence": 0,
-      "id": "story-9cfb033776c664fcf9e1a0d9",
-      "reason": "COLT converts natural language instructions into browser automation. You say &quot;Create a user with email admin@test.com and admin role&quot; \u2014 it executes it on a live browser and exports a standalone Playwright script. How it works:<p>1.Discover \u2014 crawls your web app autonomo",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "hackernews",
-      "source_url": "",
-      "status": "x-intel",
-      "title": "Colt \u2013 Describe a browser task in English, get a Playwright script"
-    },
-    {
-      "confidence": 0,
-      "id": "story-fde856bc334be43d26cbd901",
-      "reason": "The softmax activation in multihead attention (MHA) is the de facto standard for attention-based models in visual perception tasks. However, standard softmax can produce noisy attention patterns that dilute relevant features and degrade its performance. In this paper, we propose ",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27372v1",
-      "status": "x-intel",
-      "title": "DnA: Denoising Attention for Visual Tasks"
-    },
-    {
-      "confidence": 0,
-      "id": "story-5e46ab220d1b6c06f80c0ea5",
-      "reason": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27369v1",
-      "status": "x-intel",
-      "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs"
-    },
-    {
-      "confidence": 0,
-      "id": "story-67f7a9585acd171bb9b371f3",
-      "reason": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: whe",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27359v1",
-      "status": "x-intel",
-      "title": "When are likely answers right? On Sequence Probability and Correctness in LLMs"
-    },
-    {
-      "confidence": 0,
       "id": "story-20ea4590bf150f7dc7788364",
       "reason": "Whether political elites organise into rent-seeking coalitions that capture public resources or civic networks that sustain governance is a central question in comparative politics. Yet observing these complex, informal, and adversarial ties at scale has historically required int",
       "score": 0,
@@ -92,6 +26,50 @@
     },
     {
       "confidence": 0,
+      "id": "story-30bdd7693e830c34a6e5cc54",
+      "reason": "About two weeks ago, I posted Engram here, a memory layer for AI agents. The response was great and pushed me to keep building. Here&#x27;s where things stand.<p>What changed since the last post:<p>DMR benchmark: 92.0% accuracy (460&#x2F;500). Retrieval hit rate is 96.4%. This is",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "hackernews",
+      "source_url": "https://github.com/tstockham96/engram",
+      "status": "x-intel",
+      "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
+    },
+    {
+      "confidence": 0,
+      "id": "story-5e46ab220d1b6c06f80c0ea5",
+      "reason": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27369v1",
+      "status": "x-intel",
+      "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs"
+    },
+    {
+      "confidence": 0,
+      "id": "story-64bc9d30d3cf5fe1d2b703cb",
+      "reason": "Been running AI agents in production for a while and kept running into the same issues:<p>controlling what they can do tracking costs debugging failures making it safe for real workloads<p>So we built AgentRuntime, the infrastructure layer we wished we had. Not an agent framework",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "hackernews",
+      "source_url": "https://github.com/NikoSokratous/agentctl",
+      "status": "x-intel",
+      "title": "Show HN: Open-sourced AI Agent runtime (YAML-first)"
+    },
+    {
+      "confidence": 0,
+      "id": "story-67f7a9585acd171bb9b371f3",
+      "reason": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: whe",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27359v1",
+      "status": "x-intel",
+      "title": "When are likely answers right? On Sequence Probability and Correctness in LLMs"
+    },
+    {
+      "confidence": 0,
       "id": "story-9132996c11e07415dca737ad",
       "reason": "To avoid moderation and surveillance on social media, some users routinely invent indirect linguistic expressions (ILE) that camouflage sensitive meanings. Such expressions surface as algospeak, euphemisms, and adversarial obfuscation, depending on intent and context, and they in",
       "score": 0,
@@ -103,6 +81,17 @@
     },
     {
       "confidence": 0,
+      "id": "story-9cfb033776c664fcf9e1a0d9",
+      "reason": "COLT converts natural language instructions into browser automation. You say &quot;Create a user with email admin@test.com and admin role&quot; \u2014 it executes it on a live browser and exports a standalone Playwright script. How it works:<p>1.Discover \u2014 crawls your web app autonomo",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "hackernews",
+      "source_url": "",
+      "status": "x-intel",
+      "title": "Colt \u2013 Describe a browser task in English, get a Playwright script"
+    },
+    {
+      "confidence": 0,
       "id": "story-f5d1a4017f4a986c7f5cb6db",
       "reason": "A unified representation for text and vision is a natural pursuit, as it enables simpler multimodal modeling and more efficient training. However, representing images as discrete signals in the same way as text inevitably introduces severe information loss. Existing work struggle",
       "score": 0,
@@ -111,6 +100,17 @@
       "source_url": "https://arxiv.org/abs/2606.27313v1",
       "status": "x-intel",
       "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution"
+    },
+    {
+      "confidence": 0,
+      "id": "story-fde856bc334be43d26cbd901",
+      "reason": "The softmax activation in multihead attention (MHA) is the de facto standard for attention-based models in visual perception tasks. However, standard softmax can produce noisy attention patterns that dilute relevant features and degrade its performance. In this paper, we propose ",
+      "score": 0,
+      "shown_at": "2026-06-28T10:16:43Z",
+      "source": "arxiv",
+      "source_url": "https://arxiv.org/abs/2606.27372v1",
+      "status": "x-intel",
+      "title": "DnA: Denoising Attention for Visual Tasks"
     },
     {
       "confidence": 0,
@@ -138,11 +138,11 @@
   "last_alert": {
     "alerted_at": "2026-06-28T10:16:43Z",
     "confidence": 0,
-    "source_url": "https://github.com/tstockham96/engram",
-    "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
+    "source_url": "https://arxiv.org/abs/2606.27347v1",
+    "title": "Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline"
   },
   "last_run": {
-    "alerted_now": 10,
+    "alerted_now": 0,
     "clustered": 30,
     "collected": 30,
     "overflow_pending": 0,
@@ -150,16 +150,16 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.019,
-      "projected_minutes_per_30d": 240.91,
+      "measured_seconds": 5.507,
+      "projected_minutes_per_30d": 264.32,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 30,
-    "x_intel_published": 10
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-06-28T10:16:43Z",
+  "updated_at": "2026-06-28T15:07:30Z",
   "version": 1
 }
