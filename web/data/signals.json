@@ -1,12 +1,12 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-06-29T19:17:40Z",
+  "generated_at": "2026-06-29T22:18:54Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 17,
+    "groq": 18,
     "rule-based": 0
   },
   "agents": [
@@ -53,129 +53,129 @@
   ],
   "events": [
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
+      "level": "warning",
+      "agent": "XInfluencerAgent",
+      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+    },
+    {
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "critical",
       "agent": "XInfluencerAgent",
       "message": "X influencer search returned zero items. Configure X access and influencer handles."
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-06-29T19:17:40Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-014",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior",
       "content": "Embodied agents operating in decentralized and partially observable environments have attracted growing attention in recent years. However, existing large language model (LLM)-based agents often exhibit behaviors that are misaligned with their partners or inconsistent with the environment state, leading to inefficient cooperation and poor task success. To address this challenge, we propose a novel framework, Learning Laws of Cooperation (LLawCo), that enables embodied agents to autonomously align with both their partners and task objectives. Our framework allows agents to reflect on past failures to extract misaligned behavioral patterns, which are used to derive high-level behavioral laws, such as \"Talk when necessary\" and \"Wait for partner.\" These laws are explicitly incorporated into the agents' chains of thought via supervised fine-tuning, aligning their reasoning with task requirements and the behavior of other agents. To evaluate our approach, we introduce PARTNR-Dialog, a large-scale multi-agent communicative and cooperative planning benchmark built on the PARTNR environment. Experiments on existing tasks and our new benchmark demonstrate significant improvements in cooperative efficiency and task success rates. Across four backbone LLMs, our method achieves average success rate improvements of 4.5% on the PARTNR-Dialog benchmark and 6.8% on the TDW-MAT benchmark over state-of-the-art open-source communicative agent frameworks. See the LLawCo project page for details: https://www.merl.com/research/highlights/LLawCo",
@@ -187,12 +187,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "LLawCo: A framework for embodied agents to learn cooperative behaviors, improving task success rates by aligning agents with partners and environment state.",
-      "brief_ar": "LLawCo: إطار لتعلم السلوكيات التعاونية للوكلاء الماديين، مما يحسن من معدلات نجاح المهام من خلال محاذاة الوكلاء مع الشركاء و状態 البيئة.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_ar": "LLawCo: إطار لتعلم السلوكيات التعاونية للوكلاء الماديين، مما يحسن من معدلات نجاح المهام من خلال محاذاة الوكلاء مع الشركاء و状态 البيئة.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "github-006",
+      "id": "github-007",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -203,13 +203,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر فرصًا متعددة للتنمية والتشغيل.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم مجموعة من الإمكانيات لتطويرها ونشرها.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "arxiv-013",
+      "id": "arxiv-014",
       "source": "arxiv",
       "title": "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems",
       "content": "Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performance is often limited by miscoordination and, more fundamentally, the lack of fine-grained credit assignment across agents. Existing approaches typically rely on coarse-grained feedback, making it difficult to identify which agents or interaction steps are responsible for errors. We propose Gradient-Based Connections (GBC), an approach for fine-grained attribution and optimization of multi-agent systems. GBC models a MAS as a computational graph and introduces gradient-based connection weights to quantify the influence of each agent's output on downstream agents at the token level. By constructing an attribution graph and propagating task-specific loss signals backward, our method enables precise identification of error sources and targeted prompt optimization. We further develop AgentChord, an efficient implementation that leverages prefix-based gradient computation. Experiments on MultiWOZ and τ-bench show that GBC improves multi-agent performance and outperforms strong single-agent and multi-agent baselines, and higher attribution quality is associated with greater optimization effectiveness. Code is available at: https://github.com/yxc-cyber/AgentChord.",
@@ -221,12 +221,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems. GBC enhances multi-agent systems by introducing fine-grained credit assignment, enabling precise error identification and targeted optimization.",
-      "brief_ar": "GBC: اتصالات مبنية على التدرج لتحسين أنظمة الوكلاء المتعددة. تعزز GBC من أنظمة الوكلاء المتعددة من خلال إدخال مهام细ية دقيقة، مما يسمح بالتحديد الدقيق للخطأ والتحسين المستهدف.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_ar": "GBC: اتصالات مبنية على التدرج لتحسين أنظمة العوامل المتعددة. تعزز GBC من أنظمة العوامل المتعددة من خلال إدخال مهام细ية دقيقة، مما يسمح بالتحديد الدقيق للأخطاء والتحسين المستهدف.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "arxiv-017",
+      "id": "arxiv-018",
       "source": "arxiv",
       "title": "From Tokens to States: LLMs as a Special Case of World Models and the Continuous Path Beyond",
       "content": "The AI community has framed the relationship between large language models (LLMs) and world models as a dichotomy: LLMs predict tokens; world models simulate reality. Yann LeCun argues in 2022 that reaching general intelligence requires abandoning autoregressive token prediction in favour of latent-space architectures. This framing is unnecessarily binary. Two claims will be defended. First, LLMs are a degenerate special case of world models: the state space is the set of all token sequences, the only action is appending one token, and world models are therefore a strict generalisation of LLMs, not a replacement. Second, there is a natural continuous spectrum from NTP to JEPA, with multi-token prediction, future-summary prediction, and next-latent prediction as intermediate stations already populated by current research. Moving along this spectrum relaxes the LLM constraints one by one. It also progressively surrenders the two practical advantages that make LLMs trainable at scale: internet-scale self-supervised data, and a transformer architecture co-designed for discrete token prediction. Both are examined as open research questions: the data question (the cliff from self-supervised text to instrumented action-labelled environments) and the architecture question (whether the transformer generalises to continuous-state prediction, or whether a new primitive is needed).",
@@ -237,13 +237,13 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "The AI community has framed LLMs and world models as a dichotomy. However, LLMs can be seen as a special case of world models, with a state space of token sequences and a single action of appending a token. A continuous spectrum exists from token prediction to latent-space architectures, with intermediate stations such as multi-token prediction and future-summary prediction.",
-      "brief_ar": "إطلاق العنان إلى النماذج العالمية: النماذج اللغوية الكبيرة كحالة خاصة من النماذج العالمية والمنهج المستمر ما وراءها. يُعتبر النماذج اللغوية الكبيرة حالة خاصة من النماذج العالمية، حيث يُعتبر الفضاء الحالي مجموعة من جميع تسلسلات الرموز، والعمل الوحيد هو إضافة رمز واحد. تُشكل النماذج العالمية توسيعًا صارمًا للنماذج اللغوية الكبيرة، وليس بديلًا عنها. يوجد طيف مستمر من التنبؤ بالرموز إلى التنبؤ بالفضاءات الكامنة، مع محطات وسيطة مثل التنبؤ بالرموز المتعددة والتنبؤ بالملخصات المستقبلية.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "The AI community views LLMs and world models as distinct, with LLMs predicting tokens and world models simulating reality. However, LLMs can be seen as a special case of world models, with a state space of token sequences and a single action of appending a token. Research suggests a continuous spectrum from token prediction to latent-space architectures, with intermediate stages already being explored. This progression relaxes LLM constraints but also surrenders practical advantages, raising open research questions on data and architecture.",
+      "brief_ar": "يرى مجتمع الذكاء الاصطناعي النماذج اللغوية الكبيرة والنماذج العالمية على أنهما منفصلان، حيث تتنبأ النماذج اللغوية الكبيرة بالرموز والنماذج العالمية بتمثيل الواقع. ومع ذلك، يمكن اعتبار النماذج اللغوية الكبيرة حالة خاصة من النماذج العالمية، مع فضاء حالات من تسلسلات الرموز وعملية واحدة فقط هي إضافة رمز. تشير الأبحاث إلى وجود طيف مستمر من التنبؤ بالرموز إلى الهياكل الفضائية اللاتنة، مع مراحل وسطية يتم استكشافها بالفعل. هذا التطور يخفف من قيود النماذج اللغوية الكبيرة ولكنه يتنازل أيضًا عن المزايا العملية، مما يثير أسئلة بحثية مفتوحة حول البيانات والهيكل.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "github-008",
+      "id": "github-009",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -254,13 +254,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat واحد GPU تلقائيًا، مع نتائج غير مؤكدة.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being trained on single-GPU nanochat, potentially automating research processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يخضعون للتدريب على محادثة نانو واحدة-GPU، ويتوقع أن يؤدي ذلك إلى تلقين عمليات البحث بشكل tự độngي.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "arxiv-012",
+      "id": "arxiv-013",
       "source": "arxiv",
       "title": "HPRO: Hierarchical Progressive Reward Optimization via Preference Extraction for Emotional Text-to-Speech",
       "content": "Recently, Large Language Model (LLM)-based Text-to-Speech (TTS) models have achieved remarkable naturalness. However, the standard Supervised Fine-Tuning paradigm often converges to statistically averaged prosody, limiting emotional expressiveness. While preference-driven optimization offers a promising alternative, existing approaches suffer from two structural mismatches: information conflict, where content and emotion in a shared latent space produce conflicting gradients, leading to reward hacking and semantic degradation; and scale gap, where sparse sentence-level rewards struggle to guide dense frame-level generation. To overcome these challenges, we propose HPRO, a hierarchical progressive reward optimization framework. Within HPRO, we introduce the HD-Emo codec as a novel differentiable reward model to resolve the information conflict. It extracts speech into distinct content and style preference tokens, structurally isolating emotional optimization from semantic content. Building upon this structured preference space, HPRO bridges the scale gap by progressively aligning frame-, word- and sentence-level objectives. Experiments demonstrate that HPRO significantly enhances emotional expressiveness, while effectively preserving linguistic intelligibility. The code and audio samples are publicly available at https://xxh333.github.io/hpro-demo/.",
@@ -273,11 +273,11 @@
       "provider": "groq",
       "brief_en": "HPRO: A novel framework for Text-to-Speech models, enhancing emotional expressiveness while preserving linguistic intelligibility through hierarchical progressive reward optimization.",
       "brief_ar": "HPRO: إطار جديد لنمذجة النص إلى الكلام، يعزز التعبير العاطفي مع الحفاظ على الفهم اللغوي من خلال تحسين المكافأة التقدمي الهيئري.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "github-004",
+      "id": "github-005",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -289,12 +289,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكّن من آليّة كفاءة وصنع القرار.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "github-005",
+      "id": "github-006",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -305,13 +305,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for building AI applications, leveraging open-source intelligence for strategic development.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكيل لإنشاء تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة للموارد للتنمية الاستراتيجية.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and integrating AI models.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتكامل نماذج الذكاء الاصطناعي.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "github-007",
+      "id": "github-008",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -323,12 +323,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "github-009",
+      "id": "github-010",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Financial data platform for analysts, quants and AI agents.",
@@ -339,13 +339,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information for informed decision-making.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى المعلومات المالية لاتخاذ القرارات المستنيرة.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
+      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "arxiv-010",
+      "id": "arxiv-011",
       "source": "arxiv",
       "title": "RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning",
       "content": "Remote Sensing Image Change Captioning (RSICC) aims to describe changes between bi-temporal remote sensing images and holds significant research and application value. However, most existing methods rely on conventional deep learning architectures, and the limited model capacity constrains performance. Although large-model post-training techniques have achieved great success in general domains, their direct transfer to RSICC remains challenging due to data scarcity and the need for fine-grained change understanding. To address this, we propose RSICCLLM, the first post-training framework for large vision-language models in RSICC. Specifically, we design a data generation paradigm, release the instruction dataset RSICI, and establish a task-specific RSICC benchmark. We further introduce Difference-aware Supervised Fine-tuning to explicitly extract change representations and guide the model in perceiving and understanding temporal differences. In addition, we propose Dual-Negative Preference Optimization (DNPO), which employs two complementary negative-sample construction strategies to construct the preference dataset RSICP and further refine model performance. Extensive experiments validate the superior capability of RSICCLLM, which achieves outstanding results with only 7B parameters, surpassing models of substantially larger scales. The code and dataset will be made publicly available at https://github.com/keaill/RSICCLLM.",
@@ -356,13 +356,13 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "RSICCLLM is a multimodal large language model for remote sensing image change captioning, addressing data scarcity and fine-grained change understanding challenges through a post-training framework, data generation paradigm, and task-specific benchmark.",
-      "brief_ar": "RSICCLLM هو نموذج لغة كبير متعدد الوسائط لتعليق تغييرات الصور الملتقطة عن بعد، ويتمثل في معالجة نقص البيانات وفهم التغييرات الدقيقة من خلال إطار ما بعد التدريب ونموذج توليد البيانات ومعيار محدد للمهمة.",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "RSICCLLM is a multimodal large language model for Remote Sensing Image Change Captioning (RSICC), addressing data scarcity and fine-grained change understanding challenges. It achieves superior results with 7B parameters, outperforming larger models.",
+      "brief_ar": "RSICCLLM هو نموذج لغة كبير متعدد الوسائط لتعليق تغييرات الصور الملتقطة عن بعد (RSICC)، يعالج تحديات ندرة البيانات وفهم التغييرات الدقيقة. يحقق نتائج متفوقة مع 7B 매개 변수، متجاوزاً نماذج أكبر حجماً.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     },
     {
-      "id": "arxiv-015",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "Tandem Reinforcement Learning with Verifiable Rewards",
       "content": "Reinforcement learning with verifiable rewards (RLVR) has significantly improved the reasoning capability of large language models, reaching expert or even superhuman performance in domains such as competition math. However, whether weaker agents and humans can actually harness this capability is far less certain, with RLVR documented to drift reasoning toward idiosyncratic patterns such as poor readability and language mixing. Tandem training is a recently introduced paradigm that targets this compatibility problem: a trained, stronger senior co-generates each rollout with a frozen, weaker junior, and the two are rewarded as a team, so the senior is pushed to reason in ways the junior can follow. Yet this paradigm has so far been demonstrated only in proof-of-concept settings, leaving open whether it scales to the long chains of thought of the modern RLVR pipeline. In this work, we propose Tandem Reinforcement Learning (TRL), which carries the tandem training paradigm into RLVR. In TRL, the senior and a frozen junior alternate stochastically to co-generate the reasoning, the resulting generation is rewarded, and the standard GRPO loss is applied to the senior. Training Qwen3-4B-Instruct on competition math, we find that TRL matches vanilla GRPO on solo reasoning capability while three properties emerge together from the same rollout structure: stronger handoff robustness with the junior, reduced distributional drift from the junior, and a chain-of-thought more legible to the junior. Our results demonstrate a promising route for RLVR with practical payoffs in multi-model communication and human compatibility.",
@@ -373,10 +373,10 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Tandem Reinforcement Learning with Verifiable Rewards enhances large language models' reasoning capability, but its compatibility with weaker agents and humans is uncertain. Tandem training, where a stronger senior co-generates with a weaker junior, may address this issue.",
-      "brief_ar": "التعلم التعزيزي المزدوج مع مكافآت قابلة للتحقق يعزز قدرة النماذج اللغوية الكبيرة على التفكير، لكن توافقه مع الوكلاء والأشخاص الأضعف غير مؤكد. قد يعالج نمط التدريب المزدوج هذا القضية، حيث يشارك الكبير القوي في توليد مع القوي الأضعف",
-      "createdAt": "2026-06-29T19:17:40Z",
-      "updatedAt": "2026-06-29T19:17:40Z"
+      "brief_en": "Tandem Reinforcement Learning with Verifiable Rewards enhances large language models' reasoning capability, but its compatibility with weaker agents and humans is uncertain. Tandem training addresses this by co-generating rollouts with a senior and junior model, rewarding them as a team. This work proposes Tandem Reinforcement Learning, which applies tandem training to RLVR, resulting in improved handoff robustness, reduced distributional drift, and more legible chain-of-thought.",
+      "brief_ar": "تعزز التعلم التعاوني بالتقوية مع مكافآت قابلة للتحقق قدرة النماذج اللغوية الكبيرة على التفكير، لكن توافقها مع الوكلاء والأشخاص الأضعف غير مؤكد. يعالج التدريب التандمي هذه القضية من خلال توليد لفات مع نموذج كبير ونموذج صغير، ومكافأتهما كفريق. هذا العمل يقترح التعلم التعاوني بالتقوية، الذي يطبق التدريب التاندمي على RLVR، مما يؤدي إلى تحسين متانة التسليم، وتقليل الانحراف التوزيعي، وسلسلة أفكار أكثر وضوحا.",
+      "createdAt": "2026-06-29T22:18:54Z",
+      "updatedAt": "2026-06-29T22:18:54Z"
     }
   ]
 }

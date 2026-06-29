@@ -1,6 +1,6 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-06-29T19:17:40Z",
+  "generated_at": "2026-06-29T22:18:54Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
@@ -9,132 +9,132 @@
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 17,
+    "groq": 18,
     "rule-based": 0
   },
   "events": [
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
+      "level": "warning",
+      "agent": "XInfluencerAgent",
+      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+    },
+    {
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "critical",
       "agent": "XInfluencerAgent",
       "message": "X influencer search returned zero items. Configure X access and influencer handles."
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-29T19:17:40Z",
+      "time": "2026-06-29T22:18:54Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-06-29T19:17:40Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
-  "notification_enabled": true,
-  "notification_sent": true,
-  "notification_reason": "sent"
+  "notification_enabled": false,
+  "notification_sent": false,
+  "notification_reason": "not morning run"
 }
