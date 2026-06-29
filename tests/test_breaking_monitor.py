@@ -221,6 +221,8 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("AI targeting", DEFAULT_X_INTEL_QUERY)
         self.assertIn("2,000 targets", DEFAULT_X_INTEL_QUERY)
         self.assertIn("96 hours", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("MizarVision", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("Prince Sultan Air Base", DEFAULT_X_INTEL_QUERY)
 
     def test_default_x_filter_has_xhunt_top_ai_influencers(self):
         handles = x_influencer_handles({"BREAKING_MAX_X_HANDLES": "100"})
@@ -498,6 +500,38 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["status"], "x-intel")
         self.assertEqual(len(status["feed"]), 1)
         self.assertIn("Grok AI", status["feed"][0]["reason"])
+
+    def test_x_intel_accepts_mizarvision_satellite_targeting_claim(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "MizarVision AI-tagged satellite imagery aided targeting",
+                        "content": (
+                            "MizarVision is a Hangzhou-based AI software startup that processes "
+                            "commercial satellite imagery to autonomously map real-time positions "
+                            "of global military assets, including US stealth fighters and warships. "
+                            "The Chinese geospatial intelligence firm reportedly provided AI-tagged "
+                            "satellite imagery that aided Iranian forces in targeting U.S. military "
+                            "deployments at Saudi Arabia's Prince Sultan Air Base."
+                        ),
+                        "url": "https://x.com/example/status/mizarvision-targeting",
+                        "velocity": 100,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 1)
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(len(status["feed"]), 1)
+        self.assertIn("MizarVision", status["feed"][0]["reason"])
 
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(

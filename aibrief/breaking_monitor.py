@@ -27,7 +27,10 @@ DEFAULT_X_INTEL_QUERY = (
     'OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" '
     'OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" '
     'OR "Pentagon AI" OR "DoD AI" OR "Grok missiles" OR "Grok targets" '
-    'OR "2000 targets" OR "2,000 targets" OR "96 hours"'
+    'OR "2000 targets" OR "2,000 targets" OR "96 hours" '
+    'OR "MizarVision" OR "Meentropy" OR "AI-tagged satellite" '
+    'OR "AI tagged satellite" OR "geospatial intelligence" '
+    'OR "Prince Sultan Air Base" OR "stealth fighters" OR "warships"'
 )
 DEFAULT_X_INFLUENCERS = [
     "karpathy",
@@ -162,6 +165,17 @@ AI_WAR_EXACT_PATTERNS = [
     "grok pentagon",
     "grok iran",
     "xai pentagon",
+    "mizarvision",
+    "meentropy",
+    "ai-tagged satellite",
+    "ai tagged satellite",
+    "ai satellite imagery",
+    "geospatial intelligence",
+    "geospatial analysis",
+    "autonomously map",
+    "prince sultan air base",
+    "stealth fighters",
+    "warships",
     "2000 targets",
     "2,000 targets",
     "2000 missiles",
@@ -173,6 +187,10 @@ AI_WAR_AI_MARKERS = [
     "artificial intelligence",
     "machine learning",
     "computer vision",
+    "ai-tagged",
+    "geospatial",
+    "satellite imagery",
+    "remote sensing",
     "large language model",
     "llm",
     "grok",
@@ -207,6 +225,16 @@ AI_WAR_MILITARY_MARKERS = [
     "project maven",
     "iran",
     "irgc",
+    "air base",
+    "airbase",
+    "military assets",
+    "military deployments",
+    "stealth fighter",
+    "stealth fighters",
+    "warship",
+    "warships",
+    "u.s. forces",
+    "us forces",
 ]
 
 HIGH_IMPACT_PATTERNS = {
