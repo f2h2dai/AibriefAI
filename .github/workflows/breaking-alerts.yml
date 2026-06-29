@@ -27,6 +27,8 @@ env:
   BREAKING_SOURCE_FOCUS: "x"
   BREAKING_X_QUERY: '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" OR "Pentagon AI" OR "DoD AI"'
   X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
+  BREAKING_MAX_X_HANDLES: "100"
+  BREAKING_X_HANDLE_BATCH_SIZE: "10"
   BREAKING_MAX_CANDIDATES_PER_BATCH: "20"
   BREAKING_CADENCE_MINUTES: "15"
 

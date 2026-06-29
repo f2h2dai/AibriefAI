@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from aibrief.breaking_monitor import (
+    DEFAULT_X_INFLUENCERS,
     DEFAULT_X_INTEL_QUERY,
     classify_with_gemini,
     cluster_story_candidates,
@@ -16,6 +17,8 @@ from aibrief.breaking_monitor import (
     run_monitor_cycle,
     survives_stage1,
     validate_classifications,
+    x_influencer_handles,
+    x_search_queries,
 )
 
 
@@ -215,6 +218,28 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("Project Maven", DEFAULT_X_INTEL_QUERY)
         self.assertIn("DoD", DEFAULT_X_INTEL_QUERY)
         self.assertIn("AI targeting", DEFAULT_X_INTEL_QUERY)
+
+    def test_default_x_filter_has_xhunt_top_ai_influencers(self):
+        handles = x_influencer_handles({"BREAKING_MAX_X_HANDLES": "100"})
+        self.assertEqual(len(DEFAULT_X_INFLUENCERS), 100)
+        self.assertEqual(len(handles), 100)
+        self.assertEqual(handles[:4], ["karpathy", "sama", "gdb", "jeffdean"])
+        self.assertIn("steipete", handles)
+        self.assertEqual(handles[-1], "chamath")
+
+    def test_default_x_filter_batches_influencer_queries(self):
+        queries = x_search_queries(
+            {
+                "BREAKING_MAX_X_HANDLES": "100",
+                "BREAKING_X_HANDLE_BATCH_SIZE": "25",
+                "BREAKING_X_QUERY": '"AI targeting"',
+            }
+        )
+        self.assertEqual(len(queries), 4)
+        self.assertIn("from:karpathy", queries[0])
+        self.assertIn("from:jeffdean", queries[0])
+        self.assertIn("from:chamath", queries[-1])
+        self.assertTrue(all('"AI targeting"' in query for query in queries))
 
     def test_birdclaw_export_skips_dm_records(self):
         with tempfile.TemporaryDirectory() as tmp:

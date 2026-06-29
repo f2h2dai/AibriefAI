@@ -28,6 +28,108 @@ DEFAULT_X_INTEL_QUERY = (
     'OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" '
     'OR "Pentagon AI" OR "DoD AI"'
 )
+DEFAULT_X_INFLUENCERS = [
+    "karpathy",
+    "sama",
+    "gdb",
+    "jeffdean",
+    "ilyasut",
+    "ylecun",
+    "demishassabis",
+    "andrewyng",
+    "elonmusk",
+    "fchollet",
+    "miramurati",
+    "drjimfan",
+    "geoffreyhinton",
+    "drfeifei",
+    "officiallogank",
+    "_akhaliq",
+    "patrickc",
+    "hardmaru",
+    "dwarkesh_sp",
+    "polynoamial",
+    "lilianweng",
+    "johnschulman2",
+    "clementdelangue",
+    "jackclarksf",
+    "soumithchintala",
+    "alexandr_wang",
+    "jeremyphoward",
+    "garrytan",
+    "thom_wolf",
+    "ch402",
+    "oriolvinyalsml",
+    "janleike",
+    "davidsholz",
+    "miles_brundage",
+    "id_aa_carmack",
+    "aravsrinivas",
+    "_jasonwei",
+    "sundarpichai",
+    "sarahookr",
+    "swyx",
+    "saranormous",
+    "scobleizer",
+    "lexfridman",
+    "ericjang11",
+    "emollick",
+    "chrmanning",
+    "simonw",
+    "woj_zaremba",
+    "emostaque",
+    "amasad",
+    "goodside",
+    "alecrad",
+    "danielgross",
+    "chelseabfinn",
+    "srush_nlp",
+    "markchen90",
+    "bcherny",
+    "natolambert",
+    "_sholtodouglas",
+    "pabbeel",
+    "dylan522p",
+    "percyliang",
+    "steipete",
+    "arankomatsuzaki",
+    "amandaaskell",
+    "darioamodei",
+    "svlevine",
+    "rauchg",
+    "levie",
+    "satyanadella",
+    "reidhoffman",
+    "willdepue",
+    "sriramk",
+    "liamfedus",
+    "suchenzang",
+    "teknium",
+    "sleepinyourhat",
+    "nandodf",
+    "RichardSocher",
+    "martin_casado",
+    "suhail",
+    "sebastienbubeck",
+    "ibab",
+    "davidsacks",
+    "millionint",
+    "mustafasuleyman",
+    "levelsio",
+    "benthompson",
+    "shaneguml",
+    "chrszegedy",
+    "nearcyan",
+    "deedydas",
+    "rasbt",
+    "arohan",
+    "eshear",
+    "chhillee",
+    "collision",
+    "tim_dettmers",
+    "kchonyc",
+    "chamath",
+]
 
 AI_WAR_EXACT_PATTERNS = [
     "grok gov",
@@ -1113,13 +1215,18 @@ def collect_birdclaw_export(env: dict[str, str], limit: int = 20) -> list[dict]:
 
 
 def x_influencer_handles(env: dict[str, str]) -> list[str]:
-    raw = env.get("X_INFLUENCERS", "")
+    raw = env.get("X_INFLUENCERS", "").strip()
+    items = re.split(r"[\s,;]+", raw) if raw else DEFAULT_X_INFLUENCERS
+    max_handles = safe_int(env.get("BREAKING_MAX_X_HANDLES"), len(DEFAULT_X_INFLUENCERS))
     handles = []
-    for item in re.split(r"[\s,;]+", raw):
+    seen = set()
+    for item in items:
         handle = item.strip().lstrip("@")
-        if handle:
+        key = handle.lower()
+        if handle and key not in seen:
+            seen.add(key)
             handles.append(handle)
-    return handles[:12]
+    return handles[:max(1, max_handles)]
 
 
 def x_search_queries(env: dict[str, str]) -> list[str]:
@@ -1127,7 +1234,16 @@ def x_search_queries(env: dict[str, str]) -> list[str]:
     handles = x_influencer_handles(env)
     if not handles:
         return [terms]
-    return [f"from:{handle} ({terms})" for handle in handles]
+    batch_size = max(1, safe_int(env.get("BREAKING_X_HANDLE_BATCH_SIZE"), 10))
+    queries = []
+    for index in range(0, len(handles), batch_size):
+        batch = handles[index:index + batch_size]
+        if len(batch) == 1:
+            queries.append(f"from:{batch[0]} ({terms})")
+            continue
+        handle_filter = " OR ".join(f"from:{handle}" for handle in batch)
+        queries.append(f"({handle_filter}) ({terms})")
+    return queries
 
 
 def x_search_commands(query: str) -> list[list[str]]:
@@ -1244,8 +1360,8 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
                 continue
             if completed.returncode != 0:
                 continue
-            handle_match = re.search(r"from:([A-Za-z0-9_]+)", query)
-            handle = handle_match.group(1) if handle_match else ""
+            handle_matches = re.findall(r"from:([A-Za-z0-9_]+)", query)
+            handle = handle_matches[0] if len(handle_matches) == 1 else ""
             parsed = parse_x_cli_output(completed.stdout, handle)
             if parsed:
                 collected.extend(parsed)
