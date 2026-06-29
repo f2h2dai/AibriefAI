@@ -419,6 +419,30 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["status"], "x-intel")
         self.assertEqual(status["pending_count"], 0)
 
+    def test_x_intel_requires_ai_war_relevance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "General Iran airstrike commentary",
+                        "content": "A broad post about Iran, munitions, and airstrikes with no software-system claim.",
+                        "url": "https://x.com/example/status/war-only",
+                        "velocity": 100,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 0)
+        self.assertEqual(status["status"], "clear")
+        self.assertEqual(status["feed"], [])
+        self.assertEqual(status["pending_count"], 0)
+
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(
             validate_classifications(
@@ -503,27 +527,33 @@ class BreakingMonitorTests(unittest.TestCase):
             {"classification_reason": "missing Gemini key", "stage1_survivors": 1},
         )
 
-        self.assertEqual(status["pending_feed"][0]["reason"], "Public X intel from the local X/Birdclaw route.")
+        self.assertEqual(
+            status["pending_feed"][0]["reason"],
+            "Public X signal about AI use in military, defense, targeting, or intelligence operations.",
+        )
         self.assertNotIn("classification_reason", status["last_run"])
         self.assertNotIn("missing Gemini key", json.dumps(status))
 
     def test_landing_page_exposes_breaking_watch_panel(self):
         html = Path("web/landing-template.html").read_text(encoding="utf-8")
         self.assertIn('id="breaking"', html)
-        self.assertIn("Public X Intel is live.", html)
-        self.assertIn("X Intel Feed", html)
+        self.assertIn("AI war intel from X.", html)
+        self.assertIn("X Intel Feed /", html)
+        self.assertIn("رصد", html)
         self.assertIn("breakingFeedList", html)
         self.assertIn("data/breaking_status.json", html)
-        self.assertIn("Website-only feed", html)
+        self.assertIn("Public X signals about AI use", html)
         self.assertIn("pending_feed", html)
         self.assertIn("X intel live", html)
+        self.assertNotIn("Website-only feed", html)
         self.assertNotIn("Not confirmed breaking yet", html)
         self.assertNotIn("Review pending", html)
         self.assertNotIn("Awaiting Gemini classification retry", html)
         self.assertNotIn("only sends ntfy alerts", html)
-        self.assertIn("Birdclaw bridge ready", html)
-        self.assertIn("Local X memory", html)
-        self.assertIn("private/birdclaw-export.json", html)
+        self.assertNotIn("Birdclaw bridge ready", html)
+        self.assertNotIn("Local X memory", html)
+        self.assertNotIn("private/birdclaw-export.json", html)
+        self.assertNotIn("tools/run_birdclaw_import.py", html)
 
 
 if __name__ == "__main__":

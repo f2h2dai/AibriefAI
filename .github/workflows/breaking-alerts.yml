@@ -25,7 +25,7 @@ env:
   TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
   BREAKING_NOTIFY_MODE: "website"
   BREAKING_SOURCE_FOCUS: "x"
-  BREAKING_X_QUERY: '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR Pentagon OR "Operation Epic Fury" OR Iran OR munitions OR targeting'
+  BREAKING_X_QUERY: '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" OR "Pentagon AI" OR "DoD AI"'
   X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
   BREAKING_MAX_CANDIDATES_PER_BATCH: "20"
   BREAKING_CADENCE_MINUTES: "15"

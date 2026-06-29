@@ -1,165 +1,32 @@
 {
-  "alerted_count": 50,
+  "alerted_count": 0,
   "cadence_minutes": 15,
-  "feed": [
-    {
-      "confidence": 0,
-      "id": "story-20ea4590bf150f7dc7788364",
-      "reason": "Whether political elites organise into rent-seeking coalitions that capture public resources or civic networks that sustain governance is a central question in comparative politics. Yet observing these complex, informal, and adversarial ties at scale has historically required int",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27347v1",
-      "status": "x-intel",
-      "title": "Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline"
-    },
-    {
-      "confidence": 0,
-      "id": "story-2bba7621256f6ebdbb33d9cd",
-      "reason": "Digital twins have emerged as a promising paradigm for personalized healthcare, enabling modeling of individual behavior and health trajectories. In cognitive health, early detection of Mild Cognitive Impairment (MCI) remains challenging, where language and conversational pattern",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27334v1",
-      "status": "x-intel",
-      "title": "Language-Based Digital Twins for Elderly Cognitive Assistance"
-    },
-    {
-      "confidence": 0,
-      "id": "story-30bdd7693e830c34a6e5cc54",
-      "reason": "About two weeks ago, I posted Engram here, a memory layer for AI agents. The response was great and pushed me to keep building. Here&#x27;s where things stand.<p>What changed since the last post:<p>DMR benchmark: 92.0% accuracy (460&#x2F;500). Retrieval hit rate is 96.4%. This is",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "hackernews",
-      "source_url": "https://github.com/tstockham96/engram",
-      "status": "x-intel",
-      "title": "Show HN: Engram update \u2013 92% DMR, hosted API, lessons shipping agent memory"
-    },
-    {
-      "confidence": 0,
-      "id": "story-5e46ab220d1b6c06f80c0ea5",
-      "reason": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27369v1",
-      "status": "x-intel",
-      "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs"
-    },
-    {
-      "confidence": 0,
-      "id": "story-64bc9d30d3cf5fe1d2b703cb",
-      "reason": "Been running AI agents in production for a while and kept running into the same issues:<p>controlling what they can do tracking costs debugging failures making it safe for real workloads<p>So we built AgentRuntime, the infrastructure layer we wished we had. Not an agent framework",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "hackernews",
-      "source_url": "https://github.com/NikoSokratous/agentctl",
-      "status": "x-intel",
-      "title": "Show HN: Open-sourced AI Agent runtime (YAML-first)"
-    },
-    {
-      "confidence": 0,
-      "id": "story-67f7a9585acd171bb9b371f3",
-      "reason": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: whe",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27359v1",
-      "status": "x-intel",
-      "title": "When are likely answers right? On Sequence Probability and Correctness in LLMs"
-    },
-    {
-      "confidence": 0,
-      "id": "story-9132996c11e07415dca737ad",
-      "reason": "To avoid moderation and surveillance on social media, some users routinely invent indirect linguistic expressions (ILE) that camouflage sensitive meanings. Such expressions surface as algospeak, euphemisms, and adversarial obfuscation, depending on intent and context, and they in",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27314v1",
-      "status": "x-intel",
-      "title": "Beyond Surface Forms: A Comprehensive, Mechanism-Oriented Taxonomy of Indirect Linguistic Encoding for LLM-Based Coded Language Detection"
-    },
-    {
-      "confidence": 0,
-      "id": "story-9cfb033776c664fcf9e1a0d9",
-      "reason": "COLT converts natural language instructions into browser automation. You say &quot;Create a user with email admin@test.com and admin role&quot; \u2014 it executes it on a live browser and exports a standalone Playwright script. How it works:<p>1.Discover \u2014 crawls your web app autonomo",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "hackernews",
-      "source_url": "",
-      "status": "x-intel",
-      "title": "Colt \u2013 Describe a browser task in English, get a Playwright script"
-    },
-    {
-      "confidence": 0,
-      "id": "story-f5d1a4017f4a986c7f5cb6db",
-      "reason": "A unified representation for text and vision is a natural pursuit, as it enables simpler multimodal modeling and more efficient training. However, representing images as discrete signals in the same way as text inevitably introduces severe information loss. Existing work struggle",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27313v1",
-      "status": "x-intel",
-      "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution"
-    },
-    {
-      "confidence": 0,
-      "id": "story-fde856bc334be43d26cbd901",
-      "reason": "The softmax activation in multihead attention (MHA) is the de facto standard for attention-based models in visual perception tasks. However, standard softmax can produce noisy attention patterns that dilute relevant features and degrade its performance. In this paper, we propose ",
-      "score": 0,
-      "shown_at": "2026-06-28T10:16:43Z",
-      "source": "arxiv",
-      "source_url": "https://arxiv.org/abs/2606.27372v1",
-      "status": "x-intel",
-      "title": "DnA: Denoising Attention for Visual Tasks"
-    },
-    {
-      "confidence": 0,
-      "id": "story-0c52fef935fd4627ad5c383e",
-      "reason": "Hi HN,<p>My brother and I built Sova AI (https:&#x2F;&#x2F;ayconic.io&#x2F;sova), an Android agent that actually controls your installed apps.<p>We were incredibly frustrated with the current state of mobile AI. Built-in assistants like Gemini are deeply integrated into the OS, y",
-      "score": 31,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "",
-      "status": "x-intel",
-      "title": "Google banned our mobile AI agent app for doing what Gemini should do,but doesnt"
-    },
-    {
-      "confidence": 0,
-      "id": "story-180e247ced97955410db860c",
-      "reason": "Value For Money is All You Need<p>A reflection on the future of token consumption in artificial intelligence<p>Token consumption now sits at the center of the growing use of artificial intelligence by businesses and individuals alike.<p>The &quot;TokenMaxxing&quot; trap<p>In the ",
-      "score": 30,
-      "shown_at": "2026-06-28T07:51:13Z",
-      "source": "hackernews",
-      "source_url": "",
-      "status": "x-intel",
-      "title": "Value for Money Is All You Need"
-    }
-  ],
+  "feed": [],
   "last_alert": {
-    "alerted_at": "2026-06-28T10:16:43Z",
+    "alerted_at": "",
     "confidence": 0,
-    "source_url": "https://arxiv.org/abs/2606.27347v1",
-    "title": "Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline"
+    "source_url": "",
+    "title": ""
   },
   "last_run": {
     "alerted_now": 0,
-    "clustered": 30,
-    "collected": 30,
+    "clustered": 20,
+    "collected": 20,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.722,
-      "projected_minutes_per_30d": 322.68,
+      "measured_seconds": 0.109,
+      "projected_minutes_per_30d": 5.23,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 30,
+    "stage1_survivors": 0,
     "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
-  "status": "x-intel",
-  "updated_at": "2026-06-28T23:55:20Z",
+  "status": "clear",
+  "updated_at": "2026-06-29T00:18:09Z",
   "version": 1
 }

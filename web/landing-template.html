@@ -512,69 +512,6 @@
       max-width: 720px;
     }
 
-    .birdclaw-bridge {
-      background: #111315;
-      border: 1px solid #2b3238;
-      border-radius: 8px;
-      color: #fff;
-      display: grid;
-      gap: 10px;
-      margin-top: 18px;
-      max-width: 720px;
-      padding: 16px;
-    }
-
-    .birdclaw-bridge-head {
-      align-items: flex-start;
-      display: flex;
-      gap: 12px;
-      justify-content: space-between;
-    }
-
-    .birdclaw-bridge strong {
-      display: block;
-      font-size: 18px;
-      margin-top: 4px;
-    }
-
-    .birdclaw-label {
-      color: #8ee2c1;
-      display: block;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .birdclaw-pill {
-      background: rgba(142, 226, 193, 0.16);
-      border: 1px solid rgba(142, 226, 193, 0.34);
-      border-radius: 999px;
-      color: #8ee2c1;
-      flex: 0 0 auto;
-      font-size: 12px;
-      font-weight: 900;
-      padding: 7px 10px;
-      text-transform: uppercase;
-    }
-
-    .birdclaw-bridge p {
-      color: #d6dde3;
-      line-height: 1.55;
-      margin: 0;
-      max-width: none;
-    }
-
-    .birdclaw-bridge code {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 6px;
-      color: #fff;
-      font-size: 12px;
-      overflow-wrap: anywhere;
-      padding: 2px 5px;
-    }
-
     .breaking-status-card {
       background: rgba(255, 255, 255, 0.78);
       border: 1px solid var(--line);
@@ -965,10 +902,6 @@
         grid-template-columns: 1fr;
       }
 
-      .birdclaw-bridge-head {
-        display: grid;
-      }
-
       .footer {
         display: block;
       }
@@ -1097,26 +1030,13 @@
       <section class="section breaking-watch" id="breaking">
         <div class="breaking-panel">
           <div>
-            <div class="breaking-kicker">X intel lane</div>
-            <h2>Public X Intel is live.</h2>
+            <div class="breaking-kicker">X intel lane / رصد X</div>
+            <h2>AI war intel from X.</h2>
             <p>
-              Website-only feed for useful public X posts. No model
-              gate, no approval queue, no hidden topic blocking the feed.
+              Public X signals about AI use in military, defense, targeting,
+              and intelligence operations.
+              <span lang="ar" dir="rtl">رصد عام من X عن استخدام الذكاء الاصطناعي في العمليات العسكرية والدفاعية والاستخباراتية.</span>
             </p>
-            <div class="birdclaw-bridge" aria-label="Birdclaw X memory bridge">
-              <div class="birdclaw-bridge-head">
-                <div>
-                  <span class="birdclaw-label">Local X memory</span>
-                  <strong>Birdclaw bridge ready</strong>
-                </div>
-                <span class="birdclaw-pill">X intel first</span>
-              </div>
-              <p>
-                AIbrief can read a local <code>private/birdclaw-export.json</code>
-                export from <code>tools/run_birdclaw_import.py</code>, skip DMs,
-                and publish useful public X intel directly to this feed.
-              </p>
-            </div>
           </div>
           <div class="breaking-status-card" aria-live="polite">
             <div class="breaking-state">
@@ -1147,7 +1067,7 @@
           </div>
           <div class="breaking-feed-card">
             <div class="breaking-feed-head">
-              <strong>X Intel Feed</strong>
+              <strong>X Intel Feed / رصد X</strong>
               <span id="breakingFeedMeta">Loading feed</span>
             </div>
             <div class="breaking-feed-list" id="breakingFeedList" aria-live="polite">
@@ -1417,7 +1337,7 @@
                   '<span>' + escapeHTML(item.source || 'public source') + '</span>' +
                 '</div>' +
                 '<h3>' + escapeHTML(item.title || 'Untitled X intel') + '</h3>' +
-                '<p>' + escapeHTML(item.reason || 'Public X intel from the local X/Birdclaw route.') + '</p>' +
+                '<p>' + escapeHTML(item.reason || 'Public X signal about AI use in military or intelligence operations.') + '</p>' +
                 source +
               '</article>';
           }).join('');
@@ -1427,7 +1347,7 @@
         list.innerHTML =
           '<div class="breaking-feed-empty">' +
             '<strong>No public X intel right now.</strong><br>' +
-            'When the X/Birdclaw route finds useful public posts, they will appear here directly.' +
+            'When public X posts match AI military-intelligence criteria, they will appear here.' +
           '</div>';
         return;
       }

@@ -23,11 +23,75 @@ DEFAULT_MAX_LLM_REQUESTS = 1
 DEFAULT_MAX_CANDIDATES = 20
 DEFAULT_MIN_CONFIDENCE = 0.90
 DEFAULT_X_INTEL_QUERY = (
-    '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR Pentagon OR DoD '
-    'OR "Department of Defense" OR "Operation Epic Fury" OR Iran OR munitions '
-    'OR targeting OR "AI targeting" OR "target selection" OR "military operations" '
-    'OR "official statement"'
+    '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "AI targeting" '
+    'OR "AI target selection" OR "military AI" OR "defense AI" '
+    'OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" '
+    'OR "Pentagon AI" OR "DoD AI"'
 )
+
+AI_WAR_EXACT_PATTERNS = [
+    "grok gov",
+    "grok gov model",
+    "project maven",
+    "maven intelligent system",
+    "ai targeting",
+    "ai target selection",
+    "artificial intelligence targeting",
+    "algorithmic targeting",
+    "computer vision targeting",
+    "military ai",
+    "defense ai",
+    "defence ai",
+    "battlefield ai",
+    "autonomous weapons",
+    "autonomous weapon",
+    "ai weapons",
+    "ai weapon",
+    "pentagon ai",
+    "dod ai",
+    "department of defense ai",
+    "ai in war",
+    "grok military",
+    "xai pentagon",
+]
+
+AI_WAR_AI_MARKERS = [
+    "artificial intelligence",
+    "machine learning",
+    "computer vision",
+    "large language model",
+    "llm",
+    "grok",
+    "xai",
+    "maven",
+    "autonomous",
+    "algorithmic",
+]
+
+AI_WAR_MILITARY_MARKERS = [
+    "military",
+    "defense",
+    "defence",
+    "pentagon",
+    "dod",
+    "department of defense",
+    "munitions",
+    "munition",
+    "targeting",
+    "target selection",
+    "targets",
+    "battlefield",
+    "weapon",
+    "weapons",
+    "drone",
+    "drones",
+    "strike",
+    "airstrike",
+    "operation",
+    "project maven",
+    "iran",
+    "irgc",
+]
 
 HIGH_IMPACT_PATTERNS = {
     "military or intelligence AI deployment": [
@@ -447,7 +511,7 @@ def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
                 "title": entry.get("title", ""),
                 "shown_at": entry.get("alerted_at", ""),
                 "source_url": source_urls[0] if source_urls else "",
-                "source": entry.get("source", ""),
+                "source": public_source_name(entry.get("source", "")),
                 "score": entry.get("score", 0),
                 "confidence": entry.get("confidence", 0),
                 "status": entry.get("notification_status", "x-intel"),
@@ -468,7 +532,7 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 "title": candidate.get("title", entry.get("title", "")),
                 "shown_at": entry.get("last_seen_at", ""),
                 "source_url": source_urls[0] if source_urls else candidate.get("url", ""),
-                "source": candidate.get("source", entry.get("source", "")),
+                "source": public_source_name(candidate.get("source", entry.get("source", ""))),
                 "score": candidate.get("stage1_score", entry.get("score", 0)),
                 "confidence": candidate.get("confidence", 0),
                 "status": "x-intel"
@@ -476,7 +540,7 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 else entry.get("status", "x-intel"),
                 "reason": entry.get("reason")
                 or candidate.get("content")
-                or "Public X intel from the local X/Birdclaw route.",
+                or "Public X signal about AI use in military, defense, targeting, or intelligence operations.",
             }
         )
     return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
@@ -486,7 +550,14 @@ def public_status_reason(reason: str) -> str:
     text = normalize_text(reason)
     if text in {"missing Gemini key", "Gemini URL error"}:
         return "Public X intel mode is active."
-    return text or "Public X intel from the local X/Birdclaw route."
+    return text or "Public X signal about AI use in military, defense, targeting, or intelligence operations."
+
+
+def public_source_name(source: str) -> str:
+    normalized = normalize_text(source).lower()
+    if normalized in {"birdclaw", "twitter", "x/twitter"}:
+        return "x"
+    return normalized or "x"
 
 
 def public_last_run(summary: dict | None) -> dict:
@@ -576,23 +647,45 @@ def public_candidate(candidate: dict) -> dict:
     }
 
 
+def ai_war_relevant(candidate: dict) -> bool:
+    text = normalize_text(
+        " ".join(
+            str(candidate.get(key, ""))
+            for key in ("title", "content", "reason", "alert")
+        )
+    ).lower()
+    if not text:
+        return False
+    if any(pattern in text for pattern in AI_WAR_EXACT_PATTERNS):
+        return True
+    ai_hit = bool(re.search(r"\bai\b", text)) or any(marker in text for marker in AI_WAR_AI_MARKERS)
+    military_hit = any(marker in text for marker in AI_WAR_MILITARY_MARKERS)
+    return ai_hit and military_hit
+
+
 def is_x_intel_candidate(candidate: dict, env: dict[str, str]) -> bool:
-    source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
     source = str(candidate.get("source", "")).lower()
     urls = " ".join(candidate.get("source_urls") or [candidate.get("url", "")]).lower()
-    return (
-        source_focus in {"x", "twitter"}
-        or source in {"birdclaw", "twitter", "x", "x/twitter"}
-        or "x.com/" in urls
-        or "twitter.com/" in urls
-    )
+    is_x_source = source in {"birdclaw", "twitter", "x", "x/twitter"} or "x.com/" in urls or "twitter.com/" in urls
+    return is_x_source and ai_war_relevant(candidate)
 
 
 def x_intel_reason(candidate: dict) -> str:
     content = normalize_text(candidate.get("content", ""))
     if content:
         return content[:280]
-    return "Public X intel from the local X/Birdclaw route."
+    return "Public X signal about AI use in military, defense, targeting, or intelligence operations."
+
+
+def prune_irrelevant_x_intel(state: dict, env: dict[str, str]) -> None:
+    if env.get("BREAKING_SOURCE_FOCUS", "").strip().lower() not in {"x", "twitter"}:
+        return
+    for bucket_name in ("alerted", "pending"):
+        bucket = state.get(bucket_name, {})
+        for fingerprint, entry in list(bucket.items()):
+            candidate = entry.get("candidate") if isinstance(entry.get("candidate"), dict) else entry
+            if not is_x_intel_candidate(candidate, env):
+                del bucket[fingerprint]
 
 
 def extract_json(text: str) -> dict:
@@ -769,7 +862,7 @@ def publish_pending_website_only(state: dict, now: datetime) -> list[dict]:
             "last_seen_at": isoformat(now),
             "title": candidate.get("title", entry.get("title", "")),
             "content": candidate.get("content", entry.get("content", "")),
-            "source": candidate.get("source", entry.get("source", "")),
+            "source": public_source_name(candidate.get("source", entry.get("source", ""))),
             "source_urls": source_urls,
             "score": candidate.get("stage1_score", entry.get("score", 0)),
             "confidence": entry.get("confidence", 0),
@@ -788,7 +881,7 @@ def publish_candidate_website_only(state: dict, candidate: dict, now: datetime) 
         "last_seen_at": isoformat(now),
         "title": candidate.get("title", ""),
         "content": candidate.get("content", ""),
-        "source": candidate.get("source", ""),
+        "source": public_source_name(candidate.get("source", "")),
         "source_urls": candidate.get("source_urls", []),
         "score": stage1_score(candidate),
         "confidence": 0,
@@ -1231,6 +1324,8 @@ def run_monitor_cycle(
 
     state = load_state(state_path)
     prune_alerted(state, now)
+    if notify_mode == "website":
+        prune_irrelevant_x_intel(state, env)
     if notify_mode == "ntfy":
         retried = retry_pending_notifications(state, env, notify_func, now)
     else:
@@ -1244,10 +1339,12 @@ def run_monitor_cycle(
     collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
     clustered = cluster_story_candidates(pending_reconsider + collected)
     if notify_mode == "website":
+        source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
         survivors = [
             candidate
             for candidate in clustered
-            if is_x_intel_candidate(candidate, env) or survives_stage1(candidate)
+            if is_x_intel_candidate(candidate, env)
+            or (source_focus not in {"x", "twitter"} and survives_stage1(candidate))
         ]
     else:
         survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
