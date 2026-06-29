@@ -25,11 +25,14 @@ env:
   TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
   BREAKING_NOTIFY_MODE: "website"
   BREAKING_SOURCE_FOCUS: "x"
-  BREAKING_X_QUERY: '"Grok AI" OR "Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" OR "Pentagon AI" OR "DoD AI" OR "Grok missiles" OR "Grok targets" OR "2000 targets" OR "2,000 targets" OR "96 hours" OR "MizarVision" OR "Meentropy" OR "AI-tagged satellite" OR "AI tagged satellite" OR "geospatial intelligence" OR "Prince Sultan Air Base" OR "stealth fighters" OR "warships"'
+  BREAKING_X_QUERY: '"Grok AI" OR "Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" OR "Pentagon AI" OR "DoD AI" OR "Grok missiles" OR "Grok targets" OR "2000 targets" OR "2,000 targets" OR "96 hours" OR "MizarVision" OR "Meentropy" OR "AI-tagged satellite" OR "AI tagged satellite" OR "geospatial intelligence" OR "Prince Sultan Air Base" OR "stealth fighters" OR "warships" OR "frontier AI" OR "AI agents" OR "OpenAI" OR "Anthropic" OR "Gemini" OR "Grok" OR "xAI" OR "NVIDIA" OR "AI data center" OR "الذكاء الاصطناعي" OR "ذكاء اصطناعي" OR "غروك" OR "جيميناي" OR "البنتاغون" OR "إيران" OR "ايران"'
+  BREAKING_MIN_X_RELEVANCE: "2"
+  BREAKING_ALLOW_NEWS_FALLBACK: "true"
+  BREAKING_NEWS_FALLBACK_PER_QUERY: "5"
   X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
   BREAKING_MAX_X_HANDLES: "100"
   BREAKING_X_HANDLE_BATCH_SIZE: "10"
-  BREAKING_MAX_CANDIDATES_PER_BATCH: "20"
+  BREAKING_MAX_CANDIDATES_PER_BATCH: "30"
   BREAKING_CADENCE_MINUTES: "15"
 
 jobs:

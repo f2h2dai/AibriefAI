@@ -22,6 +22,7 @@ DEFAULT_CADENCE_MINUTES = 15
 DEFAULT_MAX_LLM_REQUESTS = 1
 DEFAULT_MAX_CANDIDATES = 20
 DEFAULT_MIN_CONFIDENCE = 0.90
+DEFAULT_MIN_X_RELEVANCE = 2
 DEFAULT_X_INTEL_QUERY = (
     '"Grok AI" OR "Grok Gov" OR "Grok Gov Model" OR "Project Maven" '
     'OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" '
@@ -30,8 +31,20 @@ DEFAULT_X_INTEL_QUERY = (
     'OR "2000 targets" OR "2,000 targets" OR "96 hours" '
     'OR "MizarVision" OR "Meentropy" OR "AI-tagged satellite" '
     'OR "AI tagged satellite" OR "geospatial intelligence" '
-    'OR "Prince Sultan Air Base" OR "stealth fighters" OR "warships"'
+    'OR "Prince Sultan Air Base" OR "stealth fighters" OR "warships" '
+    'OR "frontier AI" OR "AI agents" OR "OpenAI" OR "Anthropic" '
+    'OR "Gemini" OR "Grok" OR "xAI" OR "NVIDIA" OR "AI data center" '
+    'OR "الذكاء الاصطناعي" OR "ذكاء اصطناعي" OR "غروك" '
+    'OR "جيميناي" OR "البنتاغون" OR "إيران" OR "ايران"'
 )
+DEFAULT_AI_INTEL_NEWS_QUERIES = [
+    '"Grok AI" Pentagon Iran 2000 targets 96 hours',
+    '"Grok Gov Model" "Project Maven"',
+    '"MizarVision" AI satellite Iran "Prince Sultan Air Base"',
+    '"AI targeting" Pentagon Iran',
+    '"military AI" "Project Maven"',
+    '"geospatial intelligence" AI "Middle East"',
+]
 DEFAULT_X_INFLUENCERS = [
     "karpathy",
     "sama",
@@ -185,19 +198,33 @@ AI_WAR_EXACT_PATTERNS = [
 
 AI_WAR_AI_MARKERS = [
     "artificial intelligence",
+    "frontier ai",
     "machine learning",
     "computer vision",
+    "model",
+    "models",
+    "agent",
+    "agents",
     "ai-tagged",
     "geospatial",
     "satellite imagery",
     "remote sensing",
     "large language model",
     "llm",
+    "openai",
+    "anthropic",
+    "gemini",
     "grok",
     "xai",
+    "nvidia",
+    "gpu",
     "maven",
     "autonomous",
     "algorithmic",
+    "الذكاء الاصطناعي",
+    "ذكاء اصطناعي",
+    "غروك",
+    "جيميناي",
 ]
 
 AI_WAR_MILITARY_MARKERS = [
@@ -235,6 +262,58 @@ AI_WAR_MILITARY_MARKERS = [
     "warships",
     "u.s. forces",
     "us forces",
+    "عسكري",
+    "عسكرية",
+    "دفاع",
+    "الدفاع",
+    "البنتاغون",
+    "ايران",
+    "إيران",
+    "صاروخ",
+    "صواريخ",
+    "استهداف",
+    "هدف",
+    "اهداف",
+    "أهداف",
+    "درون",
+    "طائرة مسيرة",
+    "طائرات مسيرة",
+]
+
+X_INTEL_EVENT_MARKERS = [
+    "breaking",
+    "just in",
+    "exclusive",
+    "confirmed",
+    "reported",
+    "report",
+    "says",
+    "statement",
+    "official",
+    "leaked",
+    "used",
+    "deployed",
+    "launch",
+    "released",
+    "contract",
+    "government",
+    "military",
+    "targeting",
+    "satellite",
+    "missile",
+    "munitions",
+    "war",
+    "iran",
+    "عاجل",
+    "تقرير",
+    "مصادر",
+    "أكد",
+    "اعلن",
+    "أعلن",
+    "استخدم",
+    "استخدام",
+    "نشر",
+    "استهداف",
 ]
 
 HIGH_IMPACT_PATTERNS = {
@@ -442,6 +521,15 @@ def safe_int(value, default: int = 0) -> int:
         return int(value)
     except (TypeError, ValueError):
         return default
+
+
+def truthy(value, default: bool = False) -> bool:
+    if value is None:
+        return default
+    normalized = str(value).strip().lower()
+    if not normalized:
+        return default
+    return normalized not in {"0", "false", "no", "off"}
 
 
 def canonicalize_url(url: str) -> str:
@@ -792,6 +880,10 @@ def public_candidate(candidate: dict) -> dict:
 
 
 def ai_war_relevant(candidate: dict) -> bool:
+    return x_intel_relevance_score(candidate) >= DEFAULT_MIN_X_RELEVANCE
+
+
+def x_intel_relevance_score(candidate: dict) -> int:
     text = normalize_text(
         " ".join(
             str(candidate.get(key, ""))
@@ -799,19 +891,41 @@ def ai_war_relevant(candidate: dict) -> bool:
         )
     ).lower()
     if not text:
-        return False
+        return 0
+    score = 0
     if any(pattern in text for pattern in AI_WAR_EXACT_PATTERNS):
-        return True
+        score += 4
     ai_hit = bool(re.search(r"\bai\b", text)) or any(marker in text for marker in AI_WAR_AI_MARKERS)
     military_hit = any(marker in text for marker in AI_WAR_MILITARY_MARKERS)
-    return ai_hit and military_hit
+    event_hit = any(marker in text for marker in X_INTEL_EVENT_MARKERS)
+    if ai_hit:
+        score += 2
+    if military_hit:
+        score += 1
+    if event_hit and (ai_hit or score >= 4):
+        score += 1
+    return score
 
 
 def is_x_intel_candidate(candidate: dict, env: dict[str, str]) -> bool:
     source = str(candidate.get("source", "")).lower()
     urls = " ".join(candidate.get("source_urls") or [candidate.get("url", "")]).lower()
     is_x_source = source in {"birdclaw", "twitter", "x", "x/twitter"} or "x.com/" in urls or "twitter.com/" in urls
-    return is_x_source and ai_war_relevant(candidate)
+    min_relevance = max(1, safe_int(env.get("BREAKING_MIN_X_RELEVANCE"), DEFAULT_MIN_X_RELEVANCE))
+    return is_x_source and x_intel_relevance_score(candidate) >= min_relevance
+
+
+def is_news_fallback_candidate(candidate: dict, env: dict[str, str]) -> bool:
+    if not truthy(env.get("BREAKING_ALLOW_NEWS_FALLBACK"), True):
+        return False
+    source = str(candidate.get("source", "")).lower()
+    is_news_source = source in {"news", "google-news", "public-news", "rss"}
+    min_relevance = max(1, safe_int(env.get("BREAKING_MIN_X_RELEVANCE"), DEFAULT_MIN_X_RELEVANCE))
+    return is_news_source and x_intel_relevance_score(candidate) >= min_relevance
+
+
+def is_website_intel_candidate(candidate: dict, env: dict[str, str]) -> bool:
+    return is_x_intel_candidate(candidate, env) or is_news_fallback_candidate(candidate, env)
 
 
 def x_intel_reason(candidate: dict) -> str:
@@ -828,7 +942,7 @@ def prune_irrelevant_x_intel(state: dict, env: dict[str, str]) -> None:
         bucket = state.get(bucket_name, {})
         for fingerprint, entry in list(bucket.items()):
             candidate = entry.get("candidate") if isinstance(entry.get("candidate"), dict) else entry
-            if not is_x_intel_candidate(candidate, env):
+            if not is_website_intel_candidate(candidate, env):
                 del bucket[fingerprint]
 
 
@@ -1413,6 +1527,66 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
     return collected[:limit]
 
 
+def ai_intel_news_queries(env: dict[str, str]) -> list[str]:
+    raw = env.get("BREAKING_NEWS_FALLBACK_QUERIES", "").strip()
+    if not raw:
+        return DEFAULT_AI_INTEL_NEWS_QUERIES
+    queries = [item.strip() for item in re.split(r"\s*\|\|\s*", raw) if item.strip()]
+    return queries or DEFAULT_AI_INTEL_NEWS_QUERIES
+
+
+def collect_public_ai_intel_news(env: dict[str, str], limit: int = 20) -> list[dict]:
+    if not truthy(env.get("BREAKING_ALLOW_NEWS_FALLBACK"), True):
+        return []
+    collected = []
+    seen = set()
+    per_query_limit = max(1, safe_int(env.get("BREAKING_NEWS_FALLBACK_PER_QUERY"), 5))
+    for query in ai_intel_news_queries(env):
+        encoded = urllib.parse.quote_plus(query)
+        url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
+        request = urllib.request.Request(url, headers={"User-Agent": "AibriefAI/1.0"})
+        try:
+            with urllib.request.urlopen(request, timeout=15) as response:
+                payload = response.read(1_000_000)
+        except (OSError, urllib.error.URLError, urllib.error.HTTPError) as exc:
+            print(json.dumps({"level": "warning", "collector": "google-news", "error": type(exc).__name__}))
+            continue
+        try:
+            root = ET.fromstring(payload)
+        except ET.ParseError as exc:
+            print(json.dumps({"level": "warning", "collector": "google-news", "error": type(exc).__name__}))
+            continue
+        added_for_query = 0
+        for item in root.findall(".//item"):
+            title = normalize_text(item.findtext("title", ""))
+            link = normalize_text(item.findtext("link", ""))
+            published_at = normalize_text(item.findtext("pubDate", ""))
+            source_name = normalize_text(item.findtext("source", ""))
+            if not title or not link:
+                continue
+            key = link or title.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            content = normalize_text(" ".join(part for part in (title, source_name, query) if part))
+            collected.append(
+                {
+                    "source": "google-news",
+                    "title": title[:160],
+                    "content": content,
+                    "url": link,
+                    "published_at": published_at,
+                    "velocity": 60,
+                }
+            )
+            added_for_query += 1
+            if len(collected) >= limit:
+                return collected
+            if added_for_query >= per_query_limit:
+                break
+    return collected
+
+
 def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
     env = env or os.environ
     source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
@@ -1494,6 +1668,7 @@ def run_monitor_cycle(
         for entry in state.get("pending", {}).values()
         if isinstance(entry.get("candidate"), dict)
     ]
+    news_fallback_collected = 0
     collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
     clustered = cluster_story_candidates(pending_reconsider + collected)
     if notify_mode == "website":
@@ -1501,9 +1676,21 @@ def run_monitor_cycle(
         survivors = [
             candidate
             for candidate in clustered
-            if is_x_intel_candidate(candidate, env)
+            if is_website_intel_candidate(candidate, env)
             or (source_focus not in {"x", "twitter"} and survives_stage1(candidate))
         ]
+        if source_focus in {"x", "twitter"} and not survivors and raw_candidates is None:
+            fallback = collect_public_ai_intel_news(env, limit=max_candidates)
+            if fallback:
+                news_fallback_collected = len(fallback)
+                collected = collected + fallback
+                clustered = cluster_story_candidates(pending_reconsider + collected)
+                survivors = [
+                    candidate
+                    for candidate in clustered
+                    if is_website_intel_candidate(candidate, env)
+                    or (source_focus not in {"x", "twitter"} and survives_stage1(candidate))
+                ]
     else:
         survivors = [candidate for candidate in clustered if survives_stage1(candidate)]
 
@@ -1527,6 +1714,7 @@ def run_monitor_cycle(
             "clustered": len(clustered),
             "stage1_survivors": len(survivors),
             "x_intel_published": len(alerted_now),
+            "news_fallback_collected": news_fallback_collected,
             "alerted_now": len(alerted_now),
             "pending_now": 0,
             "retried": retried,

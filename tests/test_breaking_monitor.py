@@ -473,6 +473,113 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["feed"], [])
         self.assertEqual(status["pending_count"], 0)
 
+    def test_x_intel_accepts_strategic_ai_posts_from_x(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "Frontier AI agents update from OpenAI",
+                        "content": "OpenAI and Anthropic researchers are reporting new AI agents and Gemini model behavior from public X posts.",
+                        "url": "https://x.com/example/status/ai-intel",
+                        "velocity": 100,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={
+                    "BREAKING_NOTIFY_MODE": "website",
+                    "BREAKING_SOURCE_FOCUS": "x",
+                    "BREAKING_MIN_X_RELEVANCE": "2",
+                },
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 1)
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(len(status["feed"]), 1)
+
+    def test_x_intel_accepts_public_news_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "google-news",
+                        "title": "Grok AI and Project Maven report draws Pentagon attention",
+                        "content": "Public report about Grok AI, Project Maven, Pentagon AI targeting, and Iran.",
+                        "url": "https://news.example.test/grok-project-maven",
+                        "velocity": 60,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={
+                    "BREAKING_NOTIFY_MODE": "website",
+                    "BREAKING_SOURCE_FOCUS": "x",
+                    "BREAKING_ALLOW_NEWS_FALLBACK": "true",
+                },
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 1)
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(len(status["feed"]), 1)
+
+    def test_x_intel_can_disable_public_news_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "google-news",
+                        "title": "Grok AI and Project Maven report draws Pentagon attention",
+                        "content": "Public report about Grok AI, Project Maven, Pentagon AI targeting, and Iran.",
+                        "url": "https://news.example.test/grok-project-maven",
+                        "velocity": 60,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={
+                    "BREAKING_NOTIFY_MODE": "website",
+                    "BREAKING_SOURCE_FOCUS": "x",
+                    "BREAKING_ALLOW_NEWS_FALLBACK": "false",
+                },
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 0)
+        self.assertEqual(summary["x_intel_published"], 0)
+        self.assertEqual(status["feed"], [])
+
+    def test_x_intel_accepts_arabic_ai_war_posts_from_x(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "عاجل: استخدام الذكاء الاصطناعي في الاستهداف",
+                        "content": "مصادر تتحدث عن استخدام غروك والذكاء الاصطناعي في استهداف أهداف عسكرية في إيران.",
+                        "url": "https://x.com/example/status/arabic-ai-intel",
+                        "velocity": 100,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 1)
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(len(status["feed"]), 1)
+
     def test_x_intel_accepts_grok_iran_missile_claim(self):
         with tempfile.TemporaryDirectory() as tmp:
             status_path = Path(tmp) / "breaking_status.json"
