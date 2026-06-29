@@ -214,10 +214,13 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertTrue(survives_stage1(clustered[0]))
 
     def test_default_x_intel_query_targets_military_ai_claims(self):
+        self.assertIn("Grok AI", DEFAULT_X_INTEL_QUERY)
         self.assertIn("Grok Gov", DEFAULT_X_INTEL_QUERY)
         self.assertIn("Project Maven", DEFAULT_X_INTEL_QUERY)
         self.assertIn("DoD", DEFAULT_X_INTEL_QUERY)
         self.assertIn("AI targeting", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("2,000 targets", DEFAULT_X_INTEL_QUERY)
+        self.assertIn("96 hours", DEFAULT_X_INTEL_QUERY)
 
     def test_default_x_filter_has_xhunt_top_ai_influencers(self):
         handles = x_influencer_handles({"BREAKING_MAX_X_HANDLES": "100"})
@@ -467,6 +470,34 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["status"], "clear")
         self.assertEqual(status["feed"], [])
         self.assertEqual(status["pending_count"], 0)
+
+    def test_x_intel_accepts_grok_iran_missile_claim(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "Pentagon confirmed Grok AI helped fire missiles at targets in Iran",
+                        "content": (
+                            "JUST IN: The Pentagon confirmed Grok AI helped fire over 2,000 missiles "
+                            "at 2,000 targets in Iran in just 96 hours."
+                        ),
+                        "url": "https://x.com/example/status/grok-iran-2000",
+                        "velocity": 100,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["stage1_survivors"], 1)
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(len(status["feed"]), 1)
+        self.assertIn("Grok AI", status["feed"][0]["reason"])
 
     def test_malformed_gemini_output_cannot_alert(self):
         self.assertEqual(

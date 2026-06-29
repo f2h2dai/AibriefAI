@@ -23,10 +23,11 @@ DEFAULT_MAX_LLM_REQUESTS = 1
 DEFAULT_MAX_CANDIDATES = 20
 DEFAULT_MIN_CONFIDENCE = 0.90
 DEFAULT_X_INTEL_QUERY = (
-    '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "AI targeting" '
-    'OR "AI target selection" OR "military AI" OR "defense AI" '
+    '"Grok AI" OR "Grok Gov" OR "Grok Gov Model" OR "Project Maven" '
+    'OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" '
     'OR "battlefield AI" OR "autonomous weapons" OR "AI weapons" '
-    'OR "Pentagon AI" OR "DoD AI"'
+    'OR "Pentagon AI" OR "DoD AI" OR "Grok missiles" OR "Grok targets" '
+    'OR "2000 targets" OR "2,000 targets" OR "96 hours"'
 )
 DEFAULT_X_INFLUENCERS = [
     "karpathy",
@@ -132,6 +133,10 @@ DEFAULT_X_INFLUENCERS = [
 ]
 
 AI_WAR_EXACT_PATTERNS = [
+    "grok ai",
+    "grok helped",
+    "grok missiles",
+    "grok targets",
     "grok gov",
     "grok gov model",
     "project maven",
@@ -154,7 +159,14 @@ AI_WAR_EXACT_PATTERNS = [
     "department of defense ai",
     "ai in war",
     "grok military",
+    "grok pentagon",
+    "grok iran",
     "xai pentagon",
+    "2000 targets",
+    "2,000 targets",
+    "2000 missiles",
+    "2,000 missiles",
+    "96 hours",
 ]
 
 AI_WAR_AI_MARKERS = [
@@ -179,6 +191,8 @@ AI_WAR_MILITARY_MARKERS = [
     "department of defense",
     "munitions",
     "munition",
+    "missile",
+    "missiles",
     "targeting",
     "target selection",
     "targets",
