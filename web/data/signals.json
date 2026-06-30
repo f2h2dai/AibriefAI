@@ -1,12 +1,12 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-06-30T18:23:28Z",
+  "generated_at": "2026-06-30T22:53:32Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 16,
+    "groq": 18,
     "rule-based": 0
   },
   "agents": [
@@ -53,129 +53,129 @@
   ],
   "events": [
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
+      "level": "warning",
+      "agent": "XInfluencerAgent",
+      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+    },
+    {
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "critical",
       "agent": "XInfluencerAgent",
       "message": "X influencer search returned zero items. Configure X access and influencer handles."
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-06-30T18:23:28Z",
+      "time": "2026-06-30T22:53:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-06-30T18:23:28Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "github-005",
+      "id": "github-007",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -186,13 +186,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for AI application development.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم مجموعة واسعة من الإمكانيات للتطوير والتشغيل.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "arxiv-010",
+      "id": "arxiv-012",
       "source": "arxiv",
       "title": "PyMETA: A Benchmark Dataset for Hierarchical Student Code Error Classification with Python-Interpreter-Based Labels",
       "content": "With the advancement of Large Language Models (LLMs), code error detection has extended beyond traditional IDE diagnostics to context-sensitive debugging in educational scenarios. However, existing approaches lack large-scale datasets, multi-error analysis, and unified error taxonomies. To address this, we introduce PyMETA, a large-scale Python code error classification dataset of 48,646 student submissions, with single-error labels for all samples and a diagnostic subset of 97 expert-annotated multi-error samples. The dataset uses a three-level hierarchical taxonomy, from a binary error/no-error split down to 14 fine-grained error types grounded in Python's official exception hierarchy. We evaluate multi-level classification tasks on two finetuned models and four LLMs with prompting, comparing their classification performance and runtime cost. For multi-error prompting, the best model, Gemini 2.5 Pro, achieves 81.8% macro F1 under the \"contains\" criterion. We observe that: 1) prompted LLMs still underperform finetuned smaller models; 2) models exhibit significant disparities across error types; 3) most LLMs over-classify code as Logic Error, with GPT-3.5 showing the highest Logic Error Overprediction Rate and Gemini 2.5 Pro the lowest. Our work establishes a data foundation and provides insights for LLM-based code error research.",
@@ -203,13 +203,13 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "PyMETA is a large-scale dataset for hierarchical student code error classification in Python, featuring 48,646 submissions and a three-level error taxonomy. It evaluates the performance of LLMs and finetuned models in detecting code errors, highlighting disparities in error type classification and over-classification of Logic Errors.",
-      "brief_ar": "PyMETA هو مجموعة بيانات كبيرة النطاق لتصنيف أخطاء التعليمات البرمجية الهيئراتية للطلاب في بايثون، ويتميز ب 48,646 إرسالًا وتصنيفًا ثلاثي المستويات للأخطاء. يقيم أداء النماذج اللغوية الكبيرة والمدربة المحددة في الكشف عن أخطاء التعليمات البرمجية، مشيرًا إلى اختلافات في تصنيف أنواع الأخطاء وتكرار تصنيف أخطاء المنطق.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "PyMETA is a large-scale dataset for hierarchical student code error classification, featuring 48,646 Python code submissions and a three-level error taxonomy. It evaluates the performance of LLMs and finetuned models in detecting code errors, highlighting disparities in error type classification and over-classification of Logic Errors.",
+      "brief_ar": "PyMETA هو مجموعة بيانات كبيرة النطاق لتصنيف أخطاء التعليمات البرمجية الهيئراتية للطلاب، ويتميز ب 48,646 إرسالًا للبرمجيات بايثون وتصنيف أخطاء ثلاثي المستويات. يقيم أداء نماذج LLM والنماذج المحددة في الكشف عن أخطاء التعليمات البرمجية، مشيرًا إلى اختلافات في تصنيف أنواع الأخطاء وتكرار تصنيف أخطاء المنطق.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "arxiv-015",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "Attractor States Emerge in Multi-Turn LLM Conversations",
       "content": "Large language models (LLMs) are increasingly used in open-ended multi-agent settings, but the long-run dynamics of model--model interaction remain poorly understood. We study whether open-ended LLM discussions exhibit attractor-like behavior, i.e. topic-independent stable sets of behaviors which conversations settle into. Across 7 LLMs and 20 controversial topics, we compare self-play and mixed-play dyadic debates, tracking trajectories in representation space, discourse traits, and stances. We find self-play trajectories to be model-specific attractors that draw their conversation partners asymmetrically in mixed-play debates, influencing the other models' stylistic choices and behavior. For example, Claude Haiku is a strong attractor of other models in latent space, corresponding to other models taking on its traits like metacommentary, and models like GPT-4.1 nano are especially malleable. Our results suggest that open-ended LLM interactions are partially predictable from model-specific attractors, but shaped by structured and asymmetric partner influence. Overall, our analysis sheds some light on the complex behavior of open-ended multi-agent interaction, which we hope is helpful in designing, predicting, and monitoring autonomous agentic systems in the real world.",
@@ -220,13 +220,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Attractor States Emerge in Multi-Turn LLM Conversations: Research reveals that open-ended LLM discussions exhibit attractor-like behavior, with model-specific stable sets of behaviors influencing conversation partners in multi-agent settings.",
-      "brief_ar": "تظهر حالات الجاذب في محادثات LLM متعددة الدورات: تشير الأبحاث إلى أن مناقشات LLM المفتوحة تعرض سلوكًا شبيهًا بالجاذب، حيث تتأثر مجموعات السلوك المستقرة النوعية للنموذج بشريك المحادثة في بيئات متعددة الوكلاء.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "Attractor States Emerge in Multi-Turn LLM Conversations: Research reveals that open-ended LLM discussions exhibit attractor-like behavior, with model-specific attractors influencing conversation partners' stylistic choices and behavior.",
+      "brief_ar": "تظهر حالات الجاذب في محادثات LLM متعددة الدورات: تظهر الأبحاث أن مناقشات LLM المفتوحة تعرض سلوكًا شبيهًا بالجاذب، حيث تؤثر الجاذبات الخاصة بالنموذج على خيارات وأسلوب شركاء المحادثة.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "github-007",
+      "id": "github-009",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -237,13 +237,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents utilize single-GPU nanochat training for automated research, potentially accelerating discovery.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستخدمون تدريب nanochat على جهاز كمبيوتر واحد لتشغيل البحث آليًا، مما قد يسرع اكتشافات جديدة.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة تلقائيًا، مع نتائج غير مؤكدة.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "github-003",
+      "id": "github-005",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -255,12 +255,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، مما يتيح آليّة كفاءة وتحديد إتخاذ القرارات.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكِّن من آليَّة كفاءة وصنع القرار.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "github-004",
+      "id": "github-006",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -271,13 +271,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, leveraging open-source intelligence for strategic decision-making.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتنمية تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة المصدر لاتخاذ القرارات الاستراتيجية.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "github-006",
+      "id": "github-008",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -289,12 +289,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكية، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "github-008",
+      "id": "github-010",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Financial data platform for analysts, quants and AI agents.",
@@ -306,12 +306,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to market data and insights.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى بيانات السوق والرؤى.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts و quants ووكلاء الذكاء الاصطناعي، توفر الوصول إلى بيانات السوق والرؤى.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "arxiv-009",
+      "id": "arxiv-011",
       "source": "arxiv",
       "title": "DOPD: Dual On-policy Distillation",
       "content": "On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority.",
@@ -322,13 +322,13 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "DOPD: Dual On-policy Distillation enhances knowledge transfer by dynamically routing token-level supervision between teacher and student policies, alleviating 'privilege illusion' and outperforming Vanilla OPD in LLM and VLM settings.",
-      "brief_ar": "DOPD: التبخير المزدوج حسب السياسة يعزز نقل المعرفة من خلال توجيه إشراف المستوى الإشاري ديناميكيًا بين سياسات المعلم والطالب، ويتغلب على وهم الامتياز، ويتفوق على التبخير حسب السياسة الأصلي في إعدادات LLM وVLM.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "DOPD: Dual On-policy Distillation enhances knowledge transfer by leveraging advantage-aware dual distillation, mitigating 'privilege illusion' and outperforming Vanilla OPD in LLM and VLM settings.",
+      "brief_ar": "DOPD: التبخير المزدوج حسب السياسة يعزز نقل المعرفة من خلال الاستفادة من التبخير المزدوج المتأثر بالفائدة، والحد من 'وهم الامتياز' ويتفوق على التبخير حسب السياسة الأصلي في إعدادات LLM و VLM.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "arxiv-012",
+      "id": "arxiv-014",
       "source": "arxiv",
       "title": "Words Speak Louder Than Code: Investigating Cognitive Heuristics in LLM-Based Code Vulnerability Detection",
       "content": "Researchers and practitioners increasingly apply Large Language Models (LLMs) for automated vulnerability detection. Recent work has shown that LLMs are susceptible to the same cognitive heuristics that bias human judgment. Yet, no work has investigated whether these heuristics affect a model's assessment of code vulnerabilities. In this paper, we present the first systematic exploration of cognitive heuristics in LLM-driven code vulnerability detection. We introduce a controlled framework that holds the code fixed and only varies the surrounding context to trigger three cognitive heuristics: the halo effect through author attribution, the framing effect through task objectives and consequences, and the anchoring effect through prior analysis results. Within this framework, we evaluate eight LLMs across three programming languages and perform both quantitative and code-level analyses. Our findings demonstrate that all evaluated models are susceptible to these heuristics. Cross-model average susceptibility is highest for framing at 33.2%, followed by anchoring at 23.5% and halo at 18.4%. Code-level analysis reveals that vulnerabilities that require semantic reasoning for detection are more susceptible to cognitive heuristics than those identifiable through pattern matching. Furthermore, models often change their verdict from safe to vulnerable based on the cognitive condition, without accurately identifying the actual vulnerability. To highlight the practical impact, we demonstrate a proof-of-concept black-box cognitive attack that can suppress up to 97% of previously detected vulnerabilities. These findings indicate that cognitive susceptibility is a consistent and exploitable property of LLM-based vulnerability detection.",
@@ -340,12 +340,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Researchers found Large Language Models (LLMs) used for code vulnerability detection are susceptible to cognitive heuristics, with average susceptibility rates of 33.2% for framing, 23.5% for anchoring, and 18.4% for halo effects.",
-      "brief_ar": "وجد الباحثون أن نماذج اللغة الكبيرة (LLMs) المستخدمة لاكتشاف نقاط الضعف في الشفرة معرضة للتحيزات المعرفية، مع معدلات تعرض متوسطة تبلغ 33.2٪ للتحيز الإطاري و 23.5٪ للتحيز المراسي و 18.4٪ للتحيز الإشعاعي.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_ar": "وجد الباحثون أن نماذج اللغة الكبيرة (LLMs) المستخدمة لاكتشاف نقاط الضعف في الشفرة عرضة للانحيازات المعرفية، مع معدلات انحياز متوسطة تبلغ 33.2٪ للتعريف و 23.5٪ للتعيين و 18.4٪ للتأثير الإشعاعي.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "arxiv-013",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "AI Premium",
       "content": "Using 380 trillion tokens of realized AI consumption across more than four hundred large language models from the licensed proprietary OpenRouter dataset covering approximately 2 percent of current global monthly AI token consumption, we analyze how AI affects firms, markets, and workers. Leveraging the unprecedented size, scope and granularity data, we construct the AI Factor from growth in tokens, dollars, and users, estimate firm-level AI Betas from stock return comovement, and characterize the AI Premium. First, we build a high-frequency AI factor and decompose it into salient components. Second, we show that firms whose returns covary more positively with the AI factor--high AI beta firms--earn higher subsequent returns, and the AI premium is large and heterogeneous. A value-weighted long-short strategy earns 64.1 basis points per week, and the premium is large for loadings on the intensive, frontier-oriented margin of AI consumption-closed-source models, paying and seasoned users, and long prompts--but not on casual or open-weight use. Third, the premium reaches beyond technology firms into consumer-facing and capital-heavy parts of the economy, but is absent in emerging markets, including China. Fourth, the AI exposure is more positive in nonroutine interactive work and the more negative in analytical, scientific, and operations-control skills--an occupation one standard deviation higher in interaction-and-communication content has 0.36-standard-deviation higher market-implied AI premium. Additionally, we provide early evidence of the rise of the agentic economy.",
@@ -356,13 +356,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "AI Premium: Analyzing 380 trillion tokens from 400 large language models, we construct the AI Factor, estimate firm-level AI Betas, and characterize the AI Premium, finding a large and heterogeneous premium, particularly in intensive AI consumption and nonroutine interactive work.",
-      "brief_ar": "التميز الإصطناعي: من خلال تحليل 380 تريليون رمز من 400 نموذج لغة كبير، قمنا ببناء عامل الإصطناعي، وتقدير بيتا الإصطناعي على مستوى الشركة، ووصف الاضافات الإصطناعية، ووجدنا اضافات كبيرة ومتعددة، خاصة في استهلاك الإصطناعي المكثف والعمل التفاعلي غير الروتيني.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_en": "AI Premium: Analyzing 380 trillion tokens of AI consumption across 400 large language models, we construct the AI Factor and estimate firm-level AI Betas. High AI beta firms earn higher returns, with a value-weighted long-short strategy earning 64.1 basis points per week. The AI premium is large and heterogeneous, reaching beyond tech firms, but absent in emerging markets.",
+      "brief_ar": "الذكاء الاصطناعي المتميز: من خلال تحليل 380 تريليون رمز من استهلاك الذكاء الاصطناعي عبر أكثر من 400 نموذج لغة كبير، نبني عامل الذكاء الاصطناعي ونقدر بيتا الشركات للذكاء الاصطناعي. الشركات ذات بيتا الذكاء الاصطناعي العالي تحقق عوائد أعلى، مع استراتيجية طويلة وقصيرة موزونة بالقيمة تكتسب 64.1 نقطة أساس في الأسبوع. عائد الذكاء الاصطناعي كبير ومتنوع، يمتد إلى ما وراء الشركات التكنولوجية، لكنه غائب في الأسواق الناشئة.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     },
     {
-      "id": "arxiv-014",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "Uncertainty-Aware Generation and Decision-Making Under Ambiguity",
       "content": "With rapidly improving capabilities, Large Language Models (LLMs) are increasingly used in many complex real-world tasks. Beyond requiring in-depth knowledge and reasoning skills, many of these tasks exhibit a high degree of subjectivity and require that the outputs of the model can be trusted. While a lot of progress has been made to train better models, decision-making algorithms have received less attention. In this work, we present and evaluate various uncertainty-aware decision-making algorithms based on Bayesian decision theory and risk-averse decision making on the tasks of tutoring and automatic peer reviewing. Concretely, we take uncertainty over tutoring strategies and review scores into account when generating a tutor response or review and use conformal prediction to provide guarantees over strategy and score. We find empirically that these algorithms can improve the utility of the generations but need to be carefully implemented when ambiguity is high. For example, risk-averse rules can degrade performance by optimizing for generic outputs, while Bayesian methods tend to perform better. Our work uses techniques from decision theory to improve LLM-based decision-making and outlines open challenges for the community.",
@@ -374,9 +374,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Uncertainty-Aware Generation and Decision-Making Under Ambiguity: This brief explores the use of Large Language Models (LLMs) in complex tasks, emphasizing the need for trustworthy outputs and uncertainty-aware decision-making algorithms. Bayesian decision theory and risk-averse decision making are evaluated for tutoring and peer reviewing tasks, with conformal prediction providing guarantees over strategy and score.",
-      "brief_ar": "التنبؤ القائم على الشك والاتخاذ القرارات في ظل الغموض: هذا الملخص يستكشف استخدام نماذج اللغة الكبيرة (LLMs) في المهام المعقدة، مع التأكيد على الحاجة إلى مخرجات موثوقة وخوارزميات اتخاذ قرارات متأثرة بالشك. تم تقييم نظرية القرار البيزية و اتخاذ القرارات الحازمة للمخاطر لمهام التدريس والمراجعة من الأقران، مع تقديم التنبؤ المطابق للضمانات على الاستراتيجية والدرجة.",
-      "createdAt": "2026-06-30T18:23:28Z",
-      "updatedAt": "2026-06-30T18:23:28Z"
+      "brief_ar": "التوليد والاتخاذ القرار مع الوعي بالشك: هذا التقرير يبحث استخدام نماذج اللغة الكبيرة (LLMs) في المهام المعقدة، يشدد على الحاجة إلى مخرجات موثوقة وخوارزميات اتخاذ قرار مع الوعي بالشك. تم تقييم نظرية اتخاذ القرار البيزية و اتخاذ القرار الحذر لمهام التدريس والمراجعة من الأقران، مع تقديم التنبؤ المطابق الضمانات على الاستراتيجية والدرجة.",
+      "createdAt": "2026-06-30T22:53:32Z",
+      "updatedAt": "2026-06-30T22:53:32Z"
     }
   ]
 }
