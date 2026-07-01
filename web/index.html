@@ -1446,7 +1446,7 @@
 
     async function loadBriefing() {
       try {
-        const response = await fetch('data/signals.json', { cache: 'no-store' });
+        const response = await fetch('data/signals.json?v=' + Date.now(), { cache: 'no-store' });
 
         if (!response.ok) {
           throw new Error('Feed request failed with ' + response.status);

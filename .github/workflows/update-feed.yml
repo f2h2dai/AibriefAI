@@ -545,7 +545,7 @@ jobs:
           def fetch_x_influencers_cli(limit=20):
               handles = x_influencer_handles()
               if not handles:
-                  log_event("critical", "XInfluencerAgent", "X influencer handles are not configured; X influencer search skipped.")
+                  log_event("warning", "XInfluencerAgent", "X influencer handles are not configured; X influencer search skipped.")
                   return []
 
               collected = []
@@ -883,9 +883,9 @@ jobs:
               if x_items:
                   log_event("info", "XInfluencerAgent", f"Collected {len(x_items)} X influencer signals.")
               else:
-                  log_event("critical", "XInfluencerAgent", "X influencer search returned zero items. Configure X access and influencer handles.")
+                  log_event("warning", "XInfluencerAgent", "X influencer search returned zero items. Configure X access and influencer handles.")
           except Exception as e:
-              log_event("critical", "XInfluencerAgent", f"X influencer search failed before collection: {type(e).__name__}: {safe_log_text(e)}")
+              log_event("warning", "XInfluencerAgent", f"X influencer search failed before collection: {type(e).__name__}: {safe_log_text(e)}")
 
           try:
               from aibrief.connectors.agent_reach import fetch_reddit_deep, fetch_youtube
@@ -986,7 +986,7 @@ jobs:
               {"name": "NewsAgent", "status": "online", "role": "HN/news signal collection"},
               {"name": "AcademicAgent", "status": "online", "role": "arXiv research monitoring"},
               {"name": "GitHubAgent", "status": "online", "role": "open-source ecosystem tracking"},
-              {"name": "XInfluencerAgent", "status": "critical" if x_degraded else "online", "role": "X/Twitter AI influencer and narrative tracking"},
+              {"name": "XInfluencerAgent", "status": "degraded" if x_degraded else "online", "role": "X/Twitter AI influencer and narrative tracking"},
               {"name": "VerificationAgent", "status": "active", "role": "confidence and source checks"},
               {"name": "VotingCommanderAgent", "status": "active", "role": "ranking and prioritization"},
               {"name": "RaindropTriageAgent", "status": "active", "role": "fallbacks and failure triage"},
