@@ -1,12 +1,12 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-01T18:32:24Z",
+  "generated_at": "2026-07-01T22:48:33Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 16,
+    "groq": 8,
     "rule-based": 0
   },
   "agents": [
@@ -53,144 +53,127 @@
   ],
   "events": [
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
+      "level": "warning",
+      "agent": "XInfluencerAgent",
+      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+    },
+    {
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "XInfluencerAgent",
       "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "critical",
       "agent": "XInfluencerAgent",
       "message": "X influencer search returned zero items. Configure X access and influencer handles."
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-07-01T18:32:24Z",
+      "time": "2026-07-01T22:48:33Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-07-01T18:32:24Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
-    {
-      "id": "arxiv-016",
-      "source": "arxiv",
-      "title": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents",
-      "content": "AI agents increasingly operate inside digital accounts by exercising privileges that users already hold, raising a new control question: whether an existing account entitlement must be exercised manually or may be exercised through a user-authorized automated proxy. We define \\emph{delegation rights} as the revocable, identity-preserving, scope-limited, and mode-specific authority of an account holder to authorize such proxy execution. We develop a three-party incomplete-contracts model with a User, an AI Agent provider, and a Platform. The contested object is not platform ownership, account transferability, data portability, or unrestricted API access, but residual control over the mode of account execution. Under Platform Control, the platform can protect infrastructure, identity systems, privacy boundaries, and third parties, but its discretionary veto weakens the User--Agent coalition's disagreement payoff and depresses relationship-specific investment. Under User Control, hold-up is reduced, but security, privacy, congestion, and third-party risks may remain insufficiently internalized. We then analyze \\emph{Certified Delegation}, under which access protection is conditional on verifiable authorization, revocability, auditability, rate-limit compliance, data minimization, and risk mitigation. Certification is therefore not merely a technical safety screen; it is a conditional allocation of residual control. Illustrative mechanism simulations show how this regime can reduce deadweight loss by restoring delegation incentives while bounding residual risk.",
-      "url": "https://arxiv.org/abs/2606.31935v1",
-      "score": 76,
-      "score_reason": "academic/research signal; agentic AI relevance; model capability relevance; AI infrastructure relevance. Final score: 76.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "Delegation Rights: Property, Agency, and Investment Incentives in the Age of AI Agents. AI agents operate within digital accounts, raising control questions. Delegation rights define the authority to authorize proxy execution, balancing user control and platform protection.",
-      "brief_ar": "حقوق التفويض: الملكية والوكالة والحوافز الاستثمارية في عصر وكلاء الذكاء الاصطناعي. يعمل وكلاء الذكاء الاصطناعي داخل الحسابات الرقمية، مما يثير أسئلة عن السيطرة. تحدد حقوق التفويض السلطة لتفويض تنفيذ الوكيل، بالتوازن بين سيطرة المستخدم وحماية المنصة.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
-    },
     {
       "id": "github-005",
       "source": "github",
@@ -203,27 +186,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم فرصًا واسعة النطاق للتنمية والتشغيل.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
-    },
-    {
-      "id": "arxiv-015",
-      "source": "arxiv",
-      "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
-      "content": "Recent multimodal large language models (MLLMs) have strong potential as embodied agents, but their ability to collaborate in visually grounded environments remains underexplored. To address this gap, we introduce MECoBench, a multimodal embodied cooperation benchmark with an evaluation platform spanning diverse real-world tasks, two cooperation structures, and three collaboration modes. Through extensive experiments across various MLLMs, we summarize three key findings: (i) Collaboration generally improves embodied task completion, but its benefits depend on balancing collaborative gains against coordination complexity. (ii) Communication is essential to collaboration gains, while the best collaboration mode depends on team size and model capability. (iii) Moreover, collaboration improves robustness under noisy priors and exploration conditions. Generally, MECoBench provides a systematic testbed for understanding the mechanisms and limits of multimodal embodied collaboration. Code and dataset are available at https://github.com/q-i-n-g/MECoBench.",
-      "url": "https://arxiv.org/abs/2606.31966v1",
-      "score": 65,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 65.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "MECoBench: A benchmark for evaluating multimodal agent collaboration in embodied environments, providing insights into the benefits and limitations of collaborative task completion.",
-      "brief_ar": "MECoBench: معيار تقييم لتعاون الوكلاء المتعددة التحويل في البيئات الملموسة، يوفر رؤى حول فوائد وقيود إكمال المهام التعاونية.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for AI application development.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
       "id": "github-007",
@@ -237,27 +203,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents automate single-GPU nanochat training research",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يقومون بتشغيل البحث تلقائياً على تدريب المحادثة النانوية باستخدام جهاز جرافيكس واحد",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
-    },
-    {
-      "id": "arxiv-010",
-      "source": "arxiv",
-      "title": "CoMet: Context and Multiplicity Decomposition for Multimodal Uncertainty Estimation",
-      "content": "Uncertainty estimation has been a long-standing challenge in AI models; it amounts to \"knowing what you don't know,\" and metacognition is notoriously difficult even for humans (cf. the Dunning-Kruger effect). Although it is still far from solved even in simpler classification systems, tackling it in multimodal large language models (MLLMs) is becoming increasingly important. Within MLLMs, uncertainty can stem from any of the diverse sources as well as from their relationships, and further can stem from the unbounded answers in the open-ended setting. To tackle the issues, we propose CoMet, an MLLM uncertainty estimation method by decomposing uncertainty into a context-specific term and a multiplicity-specific term. The former captures ambiguity induced by the given context (e.g., task or prompt), while the latter captures how many plausible answers determined by the context remain compatible with the given input. We train a lightweight post-hoc uncertainty module to estimate these quantities, which enables efficient uncertainty estimation without autoregressive answer generation or repeated sampling. Experiments on various open-ended multimodal benchmarks, hallucination detection, and multiple-choice visual question answering benchmarks show that CoMet consistently improves uncertainty estimation over existing baselines while remaining efficient in practice. Code is available at https://github.com/princetonvisualai/comet_uncertainty",
-      "url": "https://arxiv.org/abs/2606.32012v1",
-      "score": 47,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance; implementation ecosystem relevance. Final score: 47.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "CoMet: A method for estimating uncertainty in multimodal large language models by decomposing it into context-specific and multiplicity-specific terms, enabling efficient uncertainty estimation without autoregressive answer generation.",
-      "brief_ar": "CoMet: طريقة لتقدير عدم اليقين في نماذج اللغة الكبيرة متعددة الوضعيات عن طريق تفكيكه إلى مصطلح محدد السياق ومصطلح محدد التعدد، مما يسمح بتقدير عدم اليقين بكفاءة دون الحاجة إلى توليد إجابات متكررة.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being trained on single-GPU nanochat, potentially automating research processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يخضعون للتدريب على محادثة نانو واحدة-GPU، ويتوقع أن يؤدي ذلك إلى تلقين عمليات البحث",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
       "id": "github-003",
@@ -272,9 +221,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليّة كفاءة وتحديث اتخاذ القرارات.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكاء اصطناعي، تمكِّن من آليَّة كفؤة وصنع قرار",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
       "id": "github-004",
@@ -288,10 +237,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents. Its capabilities and limitations are subject to ongoing open-source intelligence (OSINT) analysis.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي. وتخضع قدراتها وlimitationsها لتحليل استخبارات المصدر المفتوح (OSINT) المستمر.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI models. Its capabilities and limitations are subject to ongoing evaluation.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكيل، توفر أدوات لإنشاء ونشر نماذج الذكاء الاصطناعي. وتخضع قدراته وقيوده للتقييم المستمر.",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
       "id": "github-006",
@@ -305,10 +254,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Enhance online accessibility for AI agents, streamlining tasks through automated browsing.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة لعمليات الذكاء الاصطناعي، وتسهيل المهام عبر التصفح الآلي.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
       "id": "github-008",
@@ -322,61 +271,44 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information and insights.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى المعلومات والمعلومات المالية.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to comprehensive market data and insights.",
+      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر إمكانية الوصول إلى بيانات السوق الشاملة والرؤى",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
-      "id": "arxiv-013",
-      "source": "arxiv",
-      "title": "GR2 Technical Report",
-      "content": "Industrial recommendation systems serve billions of users through a multi-stage funnel -- retrieval, early-stage ranking, and re-ranking -- where the final re-ranking step disproportionately shapes user engagement and downstream performance, particularly for carousel and grid display formats. Despite growing enthusiasm for Large Language Models (LLMs) in recommendation, three gaps hinder industrial adoption: (1) most efforts target retrieval and ranking, leaving re-ranking -- the stage closest to the final user experience -- largely underexplored; (2) LLMs are typically deployed zero-shot or via supervised fine-tuning, underutilizing the reasoning capabilities unlocked by reinforcement learning (RL) on verifiable rewards; (3) deployed catalogs index billions of items with non-semantic identifiers that lie outside any base-LLM vocabulary. We present GR2 (Generative Reasoning Re-Ranker), an end-to-end framework that combines (i) mid-training on semantic IDs produced by a tokenizer with >=99% uniqueness, (ii) reasoning-trace distilled from a stronger teacher via targeted prompting and rejection sampling, and (iii) RL with verifiable rewards purpose-built for re-ranking. To make GR2 resource-viable, we further (iv) introduce a context compressor that amortizes training cost, On-Policy Distillation (OPD) as a scalable alternative to SFT -- which we find collapses at industrial scale -- and reasoning distillation for low-latency serving. GR2 delivers +18.7% R@1, +7.1% R@3, and +9.6% N@3 over legacy baselines on industrial-scale traffic. We further find that reward design is critical in re-ranking: LLMs often hack rewards by preserving the incoming order or exploiting position bias, motivating conditional verifiable rewards as essential industrial components.",
-      "url": "https://arxiv.org/abs/2606.31984v1",
-      "score": 40,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 40.",
-      "status": "verified",
-      "topic": "RAG",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "GR2 Technical Report: Industrial recommendation systems rely on a multi-stage funnel. Despite Large Language Models' (LLMs) growing enthusiasm, three gaps hinder adoption: underexplored re-ranking, underutilized reasoning capabilities, and non-semantic item identifiers. GR2 addresses these gaps with mid-training, reasoning-trace distillation, and reinforcement learning, achieving +18.7% R@1, +7.1% R@3, and +9.6% improvements.",
-      "brief_ar": "تقرير تقني GR2: تعتمد أنظمة التوصية الصناعية على مرشح متعدد المراحل. على الرغم من الحماس المتزايد لطرازات اللغة الكبيرة (LLMs)، ثلاثة فجوات تعوق الاستخدام الصناعي: مرحلة إعادة الترتيب غير مكتشفة، وreasoning قوي غير مستغل، ومعرفات عناصر غير семантиكية. يعالج GR2 هذه الفجوات من خلال التدريب المتوسط، وتنقية أثر المنطق، والتعلم التعزيزي، يحقق تحسينات +18.7% R@1، +7.1% R@3، و +9.6%.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
-    },
-    {
-      "id": "arxiv-012",
-      "source": "arxiv",
-      "title": "CoLT: Teaching Multi-Modal Models to Think with Chain of Latent Thoughts",
-      "content": "Chain-of-thought (CoT) reasoning has enabled multi-modal large language models (MLLMs) to tackle complex visual reasoning tasks by generating explicit intermediate reasoning steps in natural language. However, this text-based reasoning paradigm is inherently slow at inference time with even thousands of tokens and fundamentally constrained by the expressiveness of natural language. In this paper, we propose CoLT, (Chain of Latent Thoughts), a novel framework that teaches multi-modal models to reason through a chain of latent thought representations instead of verbose text tokens, which can perform thinking with as few as 3 steps. Naively forcing the model to think with latent states easily produces meaningless semantics and makes training unstable. To effectively regulate the latent reasoning process, we introduce a lightweight external decoder that provides step-level supervision for each latent reasoning step in two complementary directions: a forward mode that decodes latent thoughts into the textual reasoning of the next step, and a backward mode that aligns decoder hidden states with the model's latent thoughts given preceding textual context. We further incorporate internal supervision that encourages coherent step-by-step latent transitions. The decoder and internal supervision are removed during inference to maintain high efficiency of latent reasoning. Extensive experiments on eight benchmarks demonstrate that CoLT not only outperforms existing latent reasoning methods such as CODI and SIM-CoT, but also surpasses latent visual reasoning approaches that rely on auxiliary images with costly annotation requirements. Compared to text CoT methods, CoLT can notably reduce the inference time by 10.1$\\times$ and text decoding time by 22.6$\\times$. Code is released at https://github.com/hulianyuyy/CoLT.",
-      "url": "https://arxiv.org/abs/2606.31986v1",
-      "score": 37,
-      "score_reason": "academic/research signal; retrieval/RAG relevance; large language model relevance; model capability relevance. Final score: 37.",
+      "id": "github-001",
+      "source": "github",
+      "title": "NousResearch/hermes-agent",
+      "content": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "score": 36,
+      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; research relevance. Final score: 36.",
       "status": "held",
-      "topic": "RAG",
-      "collector": "AcademicAgent",
+      "topic": "AI Agents",
+      "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "CoLT: A novel framework teaching multi-modal models to reason through a chain of latent thought representations, enabling efficient thinking with as few as 3 steps.",
-      "brief_ar": "CoLT: إطار جديد يعلم النماذج متعددة الوضعية التفكير من خلال سلسلة من تمثيلات الفكر الخفية، مما يسمح بالتفكير الفعال بثلاث خطوات فقط.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "NousResearch/hermes-agent: An adaptive AI solution for evolving intelligence needs, leveraging Open-Source Intelligence (OSINT) for strategic insights.",
+      "brief_ar": "NousResearch/هرمس-وكل: حل ذكاء اصطناعي متكيف ينمو مع احتياجاتك الاستخباراتية، يستفيد من الاستخبارات المفتوحة المصدر (OSINT) لتقديم رؤى إستراتيجية",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     },
     {
-      "id": "arxiv-014",
-      "source": "arxiv",
-      "title": "ERA: Entropy-Guided Visual Token Pruning with Rectified Attention for Efficient MLLMs",
-      "content": "Multimodal Large Language Models (MLLMs) incur prohibitive inference costs due to long visual token sequences. Training-free visual token reduction provides an efficient solution. However, existing methods distort attention distributions, giving rise to a phenomenon we term Attention Logit Collapse. To address this issue, we propose ERA, an Entropy-guided visual token pruning framework with Rectified Attention for efficient MLLMs. Specifically, ERA comprises three crucial components: Dual-view Entropy Pruning (DEP), Bias-aware Token Recycling (BTR), and Logit-preserving Attention Rectification (LAR). First, DEP identifies representative anchor tokens by jointly modeling visual diversity and head-wise saliency. BTR then recycles pruned tokens into their corresponding anchors while estimating a cluster-level logit bias. Building upon this, LAR injects the estimated bias into attention logits, effectively rectifying the collapse induced by token reduction. Together, these components preserve visual evidence even under aggressive compression, enabling robust performance across single-image, multi-image, and video settings on a wide range of MLLMs. Beyond delivering practical acceleration, ERA establishes logit-preserving visual token pruning as a principled framework for efficient MLLMs, unifying theoretical foundation, algorithmic design, and practical deployment. The code is at https://github.com/924973292/ERA.",
-      "url": "https://arxiv.org/abs/2606.31982v1",
-      "score": 37,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance; implementation ecosystem relevance. Final score: 37.",
+      "id": "github-002",
+      "source": "github",
+      "title": "Significant-Gravitas/AutoGPT",
+      "content": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 32,
+      "score_reason": "high-value open-source ecosystem signal. Final score: 32.",
       "status": "held",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
+      "topic": "AI",
+      "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "ERA: A framework for efficient MLLMs via entropy-guided visual token pruning and rectified attention, addressing Attention Logit Collapse and preserving visual evidence under compression.",
-      "brief_ar": "ERA: إطار عمل لتحسين كفاءة نماذج اللغة الكبيرة متعددة الوضعيات من خلال تقليص رموز البصريات الموجهة بالانتروبيا والانتباه المُصحح، ومواجهة انهيار لوغاريتمات الانتباه والحفاظ على الأدلة البصرية تحت الانضغاط.",
-      "createdAt": "2026-07-01T18:32:24Z",
-      "updatedAt": "2026-07-01T18:32:24Z"
+      "brief_en": "AutoGPT aims to make AI accessible to all, providing tools for users to focus on high-priority tasks.",
+      "brief_ar": "يهدف AutoGPT إلى جعل الذكاء الاصطناعي متاحًا للجميع، بتوفير الأدوات اللازمة لتركيز المستخدمين على المهام الهامة.",
+      "createdAt": "2026-07-01T22:48:33Z",
+      "updatedAt": "2026-07-01T22:48:33Z"
     }
   ]
 }
