@@ -8,6 +8,7 @@ from tools.compare_x_sources import (
     compare_sources,
     normalize_record,
     parse_handles,
+    x_cli_env,
 )
 
 
@@ -19,6 +20,14 @@ class CompareXSourcesTests(unittest.TestCase):
         self.assertEqual([item["handle"] for item in plan], ["sama", "karpathy"])
         self.assertEqual(plan[0]["query"], "from:sama (AI OR agents OR LLM OR GPT OR reasoning)")
         self.assertEqual(plan[1]["kind"], "named-account")
+
+    def test_x_cli_env_exports_common_cookie_aliases(self):
+        env = x_cli_env({"TWITTER_COOKIE": "auth_token=auth123; ct0=csrf456"})
+
+        self.assertEqual(env["TWITTER_AUTH_TOKEN"], "auth123")
+        self.assertEqual(env["AUTH_TOKEN"], "auth123")
+        self.assertEqual(env["TWITTER_CT0"], "csrf456")
+        self.assertEqual(env["CT0"], "csrf456")
 
     def test_record_overlap_prefers_tweet_id(self):
         agent = normalize_record(

@@ -283,6 +283,7 @@ jobs:
 
           if auth_token:
               os.environ["TWITTER_AUTH_TOKEN"] = auth_token
+              os.environ["AUTH_TOKEN"] = auth_token
               log_event("INFO", "twitter",
                   "X access credential parsed OK")
           else:
@@ -291,6 +292,7 @@ jobs:
 
           if ct0:
               os.environ["TWITTER_CT0"] = ct0
+              os.environ["CT0"] = ct0
               log_event("INFO", "twitter", "X session metadata parsed OK")
           else:
               log_event("WARN", "twitter",

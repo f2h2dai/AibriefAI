@@ -17,6 +17,7 @@ from aibrief.breaking_monitor import (
     run_monitor_cycle,
     survives_stage1,
     validate_classifications,
+    x_cli_env,
     x_influencer_handles,
     x_search_queries,
 )
@@ -245,6 +246,14 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("from:jeffdean", queries[0])
         self.assertIn("from:chamath", queries[-1])
         self.assertTrue(all('"AI targeting"' in query for query in queries))
+
+    def test_x_cli_env_exports_common_cookie_aliases(self):
+        env = x_cli_env({"TWITTER_COOKIE": "auth_token=auth123; ct0=csrf456"})
+
+        self.assertEqual(env["TWITTER_AUTH_TOKEN"], "auth123")
+        self.assertEqual(env["AUTH_TOKEN"], "auth123")
+        self.assertEqual(env["TWITTER_CT0"], "csrf456")
+        self.assertEqual(env["CT0"], "csrf456")
 
     def test_birdclaw_export_skips_dm_records(self):
         with tempfile.TemporaryDirectory() as tmp:

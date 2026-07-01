@@ -372,8 +372,10 @@ def x_cli_env(base_env: dict[str, str]) -> dict[str, str]:
             part = part.strip()
             if part.startswith("auth_token="):
                 env["TWITTER_AUTH_TOKEN"] = part[len("auth_token=") :]
+                env["AUTH_TOKEN"] = part[len("auth_token=") :]
             elif part.startswith("ct0="):
                 env["TWITTER_CT0"] = part[len("ct0=") :]
+                env["CT0"] = part[len("ct0=") :]
     return env
 
 
