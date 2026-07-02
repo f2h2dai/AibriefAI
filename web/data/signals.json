@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-01T22:48:33Z",
+  "generated_at": "2026-07-02T08:18:12Z",
   "topic": "AI agents",
-  "mode": "groq",
-  "model": "llama-3.3-70b-versatile",
+  "mode": "rule-based",
+  "model": null,
   "provider_counts": {
     "gemini": 0,
-    "groq": 8,
-    "rule-based": 0
+    "groq": 0,
+    "rule-based": 19
   },
   "agents": [
     {
@@ -53,129 +53,163 @@
   ],
   "events": [
     {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.auth: Twitter cookie extraction failed in both in-process and subprocess modes"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "X influencer search returned zero items. Configure X access and influencer handles."
-    },
-    {
-      "time": "2026-07-01T22:48:33Z",
+      "time": "2026-07-02T08:18:12Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-07-01T22:48:33Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T08:18:12Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
   "signals": [
     {
-      "id": "github-005",
+      "id": "arxiv-016",
+      "source": "arxiv",
+      "title": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
+      "content": "Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already causes duplicated dependencies and inconsistent installations, exposing a gap that dependency management has yet to close. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and help close this gap. Borrowing from Software Bill of Materials (SBOMs), we design SkillDepAnalyzer to capture natural-language dependency evidence and model skills as dependency-bearing artifacts. On the SKILL-DEP benchmark, SkillDepAnalyzer recovers skill metadata and dependency graphs accurately and comprehensively, substantially outperforming an LLM-based baseline and package-centric SBOM tools. Applying SkillDepAnalyzer to over 1.43 million skills, we obtain ASSCs and explore their structural diversity and security signals. We find four structural patterns: skill metadata is activation-ready but governance-poor; dependency graphs span skill, package, and service dependencies with concentrated reuse; recursive skill reuse expands dependency graphs and creates hidden package inventory; and skill dependency clusters form around related workflows. We also find that inspecting a skill alone misses security-relevant signals hiding in its dependencies. By analyzing ASSCs, we identify and report known malicious skills persisting in ASSCs to their developers. Based on these findings, we recommend typed dependency manifests, first-class dependency-cluster management, risk-warning audit commands for skill infrastructure maintainers, and lockfile-like records for skill developers.",
+      "url": "https://arxiv.org/abs/2607.01136v1",
+      "score": 76,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 76.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "rule-based",
+      "brief_en": "Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already ...",
+      "brief_ar": "ملخص قائم على القواعد: Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already ...",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
+    },
+    {
+      "id": "arxiv-015",
+      "source": "arxiv",
+      "title": "Emergence of Preferential Attachment and Glass-Ceiling Effects in Autonomous Networks of LLMs",
+      "content": "We investigate the emergence of structural disparities in networks of collaborating large language model (LLM) agents. When LLM agents autonomously choose collaborators, the resulting communication network exhibits preferential-attachment dynamics: agents that are already prominent become increasingly likely to attract additional connections. In some cases, weaker LLM agents (agents with smaller base model or older version) can disproportionately occupy central and influential network positions relative to stronger LLM agents. We interpret this as a type-dependent glass-ceiling effect (GCE). We model the network of LLM agents as a time-evolving sequence of directed weighted graphs, where the vector-valued edge weights represent cumulative tokens exchanged, number of interaction rounds, and reasoning effort. Using a contraction mapping argument on the mean-field dynamics, we prove that the importance (centrality) of each agent type converges to a unique stable equilibrium. To ground the model in LLM decision mechanisms, we introduce a cross-attention-inspired utility for collaborator selection. This utility specifies the local connection dynamics and, together with the mean-field model, yields a predictive characterization of the limiting network structure and its type-dependent centrality gaps. To validate the theory, we develop an experimental testbed with 100 LLM agents. Our experiments show that autonomous network formation can generate persistent centrality disparities, with their magnitude and direction depending on model family, model size, system-prompt design, and task context. They further show that the effect of preferential attachment depends on its alignment with model capability: reinforcing it improves collective performance when stronger agents become central, whereas weakening it improves performance when network dynamics instead favor weaker agents.",
+      "url": "https://arxiv.org/abs/2607.01148v1",
+      "score": 68,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 68.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "rule-based",
+      "brief_en": "We investigate the emergence of structural disparities in networks of collaborating large language model (LLM) agents. When LLM agents autonomously choose collaborators, the resulting communication network exhibits preferential-attachment d...",
+      "brief_ar": "ملخص قائم على القواعد: We investigate the emergence of structural disparities in networks of collaborating large language model (LLM) agents. When LLM agents autonomously choose collaborators, the resulting communication network exhibits preferential-attachment d...",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
+    },
+    {
+      "id": "github-008",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -185,14 +219,31 @@
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for AI application development.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "provider": "rule-based",
+      "brief_en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "brief_ar": "ملخص قائم على القواعد: 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-007",
+      "id": "arxiv-014",
+      "source": "arxiv",
+      "title": "Optimal Resource Utilization for Autonomous Laboratory Orchestrators",
+      "content": "In autonomous laboratories, AI agents suggest the next batch of experiments to do. However, planning and executing those tasks taking full advantage of the available resources is a completely different question. This can be challenging when dealing with real-world hardware constraints, especially so when there are multiple instruments with different capacities and throughputs. Here we demonstrate a 2-step method to address resource utilization for our autonomous platform for metal-organic framework synthesis. First, we use constraint programming to find optimal schedules. This finds schedules that minimizes the total time while still satisfying the limitations and capacities of the hardware. Secondly, we use a system of status dependencies for each task, which allows for the robust execution of the optimal schedules.",
+      "url": "https://arxiv.org/abs/2607.01188v1",
+      "score": 54,
+      "score_reason": "academic/research signal; agentic AI relevance. Final score: 54.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "rule-based",
+      "brief_en": "In autonomous laboratories, AI agents suggest the next batch of experiments to do. However, planning and executing those tasks taking full advantage of the available resources is a completely different question. This can be challenging when...",
+      "brief_ar": "ملخص قائم على القواعد: In autonomous laboratories, AI agents suggest the next batch of experiments to do. However, planning and executing those tasks taking full advantage of the available resources is a completely different question. This can be challenging when...",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
+    },
+    {
+      "id": "github-010",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -202,14 +253,31 @@
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being trained on single-GPU nanochat, potentially automating research processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يخضعون للتدريب على محادثة نانو واحدة-GPU، ويتوقع أن يؤدي ذلك إلى تلقين عمليات البحث",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "provider": "rule-based",
+      "brief_en": "AI agents running research on single-GPU nanochat training automatically",
+      "brief_ar": "ملخص قائم على القواعد: AI agents running research on single-GPU nanochat training automatically",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-003",
+      "id": "arxiv-017",
+      "source": "arxiv",
+      "title": "Autonomous Scientific Discovery via Iterative Meta-Reflection",
+      "content": "Autonomous scientific discovery systems offer the potential to accelerate research by automating the process of hypothesis generation and validation. However, current systems operate within constrained search spaces or require predefined research questions, limiting their capacity for true open-ended inquiry. Furthermore, while they generate hypotheses iteratively, they largely lack the ability to explicitly synthesize their own accumulated findings to uncover complex, interconnected phenomena. We introduce DiscoPER, an autonomous large language model-powered framework that conducts open-ended research by dynamically generating and executing code to explore datasets without pre-specified research objectives. To ensure rigorous scientific validity, every proposed discovery must pass statistical testing. To overcome the limitations of isolated search, our framework introduces a second-order reasoning mechanism that periodically analyzes its own accumulated discoveries. By treating prior discoveries as empirical data, DiscoPER identifies structural patterns, confounds, and epistemic gaps, actively redirecting hypothesis exploration toward uncharted regions of the search space. The search space is further expanded by incorporating tool use, enabling the system to explore hypotheses beyond structured metadata by seamlessly processing and extracting useful information from multimodal sources like images. Evaluated on iNatDisco, a new multimodal ecological knowledge benchmark with pattern-level ground truth obtained from peer-reviewed literature, DiscoPER recovers 8 of 9 known patterns with a 72.7% hypothesis support rate, outperforming both classical causal discovery and LLM-guided baselines. Ablations show that DiscoPER scales with more data, and confirms the benefits of second-order meta-reflection.",
+      "url": "https://arxiv.org/abs/2607.01131v1",
+      "score": 47,
+      "score_reason": "academic/research signal; large language model relevance; model capability relevance; research relevance. Final score: 47.",
+      "status": "verified",
+      "topic": "LLMs",
+      "collector": "AcademicAgent",
+      "provider": "rule-based",
+      "brief_en": "Autonomous scientific discovery systems offer the potential to accelerate research by automating the process of hypothesis generation and validation. However, current systems operate within constrained search spaces or require predefined re...",
+      "brief_ar": "ملخص قائم على القواعد: Autonomous scientific discovery systems offer the potential to accelerate research by automating the process of hypothesis generation and validation. However, current systems operate within constrained search spaces or require predefined re...",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
+    },
+    {
+      "id": "github-006",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -219,14 +287,14 @@
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكاء اصطناعي، تمكِّن من آليَّة كفؤة وصنع قرار",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "provider": "rule-based",
+      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "brief_ar": "ملخص قائم على القواعد: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-004",
+      "id": "github-007",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -236,14 +304,14 @@
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI models. Its capabilities and limitations are subject to ongoing evaluation.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكيل، توفر أدوات لإنشاء ونشر نماذج الذكاء الاصطناعي. وتخضع قدراته وقيوده للتقييم المستمر.",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "provider": "rule-based",
+      "brief_en": "The agent engineering platform.",
+      "brief_ar": "ملخص قائم على القواعد: The agent engineering platform.",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-006",
+      "id": "github-009",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -253,14 +321,14 @@
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "provider": "rule-based",
+      "brief_en": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "brief_ar": "ملخص قائم على القواعد: 🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-008",
+      "id": "github-011",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Financial data platform for analysts, quants and AI agents.",
@@ -270,45 +338,45 @@
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to comprehensive market data and insights.",
-      "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر إمكانية الوصول إلى بيانات السوق الشاملة والرؤى",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "provider": "rule-based",
+      "brief_en": "Financial data platform for analysts, quants and AI agents.",
+      "brief_ar": "ملخص قائم على القواعد: Financial data platform for analysts, quants and AI agents.",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-001",
-      "source": "github",
-      "title": "NousResearch/hermes-agent",
-      "content": "The agent that grows with you",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "score": 36,
-      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; research relevance. Final score: 36.",
-      "status": "held",
-      "topic": "AI Agents",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "NousResearch/hermes-agent: An adaptive AI solution for evolving intelligence needs, leveraging Open-Source Intelligence (OSINT) for strategic insights.",
-      "brief_ar": "NousResearch/هرمس-وكل: حل ذكاء اصطناعي متكيف ينمو مع احتياجاتك الاستخباراتية، يستفيد من الاستخبارات المفتوحة المصدر (OSINT) لتقديم رؤى إستراتيجية",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "id": "arxiv-018",
+      "source": "arxiv",
+      "title": "ZO-Act: Efficient Zeroth-Order Fine-Tuning via One-Shot Activation-Informed Low-Rank Subspaces",
+      "content": "Zeroth-order (ZO) optimization enables fine-tuning large language models when backpropagation is unavailable or memory-prohibitive, but existing methods often perturb full model weights or randomly constructed low-dimensional subspaces, yielding high-variance estimates and limited performance. We propose ZO-Act, an activation-informed ZO fine-tuning method that restricts perturbations to a fixed low-rank subspace derived from input activations. For each linear layer, ZO-Act computes a small activation basis once at initialization and optimizes only lightweight coefficient matrices using forward-only loss evaluations. This reduces the effective perturbation dimension, exposes explicit trainable variables compatible with momentum-based optimizers such as Adam, and naturally supports quantized LLM fine-tuning by keeping low-bit weights frozen. We analyze ZO-Act as zeroth-order optimization over a restricted coefficient space and show that perturbing the low-dimensional coefficients reduces both the variance-dependent convergence term and the finite-difference error of the ZO estimator, at the cost of a controlled subspace approximation bias that is mitigated by the low-rank structure of LLM activations and gradients. Experiments on Llama-3-8B, OPT-13B, and INT4 Llama-3-8B show consistent gains over strong ZO fine-tuning baselines across language understanding, question answering, and commonsense reasoning.",
+      "url": "https://arxiv.org/abs/2607.01125v1",
+      "score": 40,
+      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 40.",
+      "status": "verified",
+      "topic": "LLMs",
+      "collector": "AcademicAgent",
+      "provider": "rule-based",
+      "brief_en": "Zeroth-order (ZO) optimization enables fine-tuning large language models when backpropagation is unavailable or memory-prohibitive, but existing methods often perturb full model weights or randomly constructed low-dimensional subspaces, yie...",
+      "brief_ar": "ملخص قائم على القواعد: Zeroth-order (ZO) optimization enables fine-tuning large language models when backpropagation is unavailable or memory-prohibitive, but existing methods often perturb full model weights or randomly constructed low-dimensional subspaces, yie...",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     },
     {
-      "id": "github-002",
-      "source": "github",
-      "title": "Significant-Gravitas/AutoGPT",
-      "content": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-      "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "score": 32,
-      "score_reason": "high-value open-source ecosystem signal. Final score: 32.",
+      "id": "arxiv-013",
+      "source": "arxiv",
+      "title": "Touching and Feeling the Data: A Reusable Software Pipeline for Tactile Statistical Graphs in Accessible Education",
+      "content": "Statistical visualization is usually treated as a visual medium, but data can also be touched. Three dimensional printed tactile graphs let blind and low vision students feel distributions, trace trends, and explore relationships through direct haptic interaction. Yet classroom scale use remains limited because producing each graph in CAD software requires specialized skill and hours of manual work. We address this bottleneck as a software problem through a three layer reusable pipeline in about 1500 lines of JavaScript. The first layer derives tactile design parameters automatically from plate dimensions using tactile perception research. The second provides shared chart scaffolding and five modular builders for scatter, bar, histogram, line, and box plots. The optional third layer uses a multi-modal large language model to extract structured chart specifications from uploaded images, with mandatory teacher review before print generation. The pipeline produces print ready binary Standard Tessellation Language files in under 250 milliseconds. We present the design, performance, and limitations.",
+      "url": "https://arxiv.org/abs/2607.01214v1",
+      "score": 37,
+      "score_reason": "academic/research signal; model capability relevance; research relevance. Final score: 37.",
       "status": "held",
-      "topic": "AI",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "AutoGPT aims to make AI accessible to all, providing tools for users to focus on high-priority tasks.",
-      "brief_ar": "يهدف AutoGPT إلى جعل الذكاء الاصطناعي متاحًا للجميع، بتوفير الأدوات اللازمة لتركيز المستخدمين على المهام الهامة.",
-      "createdAt": "2026-07-01T22:48:33Z",
-      "updatedAt": "2026-07-01T22:48:33Z"
+      "topic": "LLMs",
+      "collector": "AcademicAgent",
+      "provider": "rule-based",
+      "brief_en": "Statistical visualization is usually treated as a visual medium, but data can also be touched. Three dimensional printed tactile graphs let blind and low vision students feel distributions, trace trends, and explore relationships through di...",
+      "brief_ar": "ملخص قائم على القواعد: Statistical visualization is usually treated as a visual medium, but data can also be touched. Three dimensional printed tactile graphs let blind and low vision students feel distributions, trace trends, and explore relationships through di...",
+      "createdAt": "2026-07-02T08:18:12Z",
+      "updatedAt": "2026-07-02T08:18:12Z"
     }
   ]
 }
