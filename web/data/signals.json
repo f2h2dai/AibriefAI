@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-02T18:17:31Z",
+  "generated_at": "2026-07-02T21:53:15Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
     "groq": 30,
-    "rule-based": 10
+    "rule-based": 7
   },
   "agents": [
     {
@@ -53,129 +53,129 @@
   ],
   "events": [
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X session metadata parsed OK"
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "info",
+      "agent": "AgentReachDoctor",
+      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 119 X records."
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "Collected 20 X influencer signals."
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "warning",
+      "agent": "AgentReachConnector",
+      "message": "Agent-Reach returned no optional social results."
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1161"
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1160"
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1159"
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-02T21:53:15Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-02T18:17:31Z",
+      "time": "2026-07-02T21:53:15Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-02T18:17:31Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-017",
+      "id": "arxiv-014",
       "source": "arxiv",
       "title": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
       "content": "Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already causes duplicated dependencies and inconsistent installations, exposing a gap that dependency management has yet to close. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and help close this gap. Borrowing from Software Bill of Materials (SBOMs), we design SkillDepAnalyzer to capture natural-language dependency evidence and model skills as dependency-bearing artifacts. On the SKILL-DEP benchmark, SkillDepAnalyzer recovers skill metadata and dependency graphs accurately and comprehensively, substantially outperforming an LLM-based baseline and package-centric SBOM tools. Applying SkillDepAnalyzer to over 1.43 million skills, we obtain ASSCs and explore their structural diversity and security signals. We find four structural patterns: skill metadata is activation-ready but governance-poor; dependency graphs span skill, package, and service dependencies with concentrated reuse; recursive skill reuse expands dependency graphs and creates hidden package inventory; and skill dependency clusters form around related workflows. We also find that inspecting a skill alone misses security-relevant signals hiding in its dependencies. By analyzing ASSCs, we identify and report known malicious skills persisting in ASSCs to their developers. Based on these findings, we recommend typed dependency manifests, first-class dependency-cluster management, risk-warning audit commands for skill infrastructure maintainers, and lockfile-like records for skill developers.",
@@ -186,13 +186,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains. Agent skills package reusable knowledge for LLM agents, but their growth introduces dependency risks. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependencies and close the gap in dependency management.",
-      "brief_ar": "المهارات ليست جزرًا: قياس الاعتماد والمخاطر في سلاسل إمداد مهارات الوكيل. تعبئ مهارات الوكيل معرفة تشغيلية قابلة لإعادة الاستخدام للوكلاء LLM، لكن نموها ي introduces مخاطر الاعتماد. نقدم سلاسل إمداد مهارات الوكيل (ASSCs) لوصف رسوم зависимости مهارات-حزمة-خدمة المختلطة وإغلاق الفجوة في إدارة الاعتماد.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_en": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains. Introducing Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and mitigate duplicated dependencies and inconsistent installations.",
+      "brief_ar": "المهارات ليست جزرًا: قياس الاعتماد والمخاطر في سلاسل إمداد مهارات الوكيل. نقدم سلاسل إمداد مهارات الوكيل (ASSCs) لتحديد الرسومات التابعة للمهارات الحزمة والخدمة وتقليل التكرار في الاعتماد والتركيب غير المتسق.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "arxiv-016",
+      "id": "arxiv-013",
       "source": "arxiv",
       "title": "Emergence of Preferential Attachment and Glass-Ceiling Effects in Autonomous Networks of LLMs",
       "content": "We investigate the emergence of structural disparities in networks of collaborating large language model (LLM) agents. When LLM agents autonomously choose collaborators, the resulting communication network exhibits preferential-attachment dynamics: agents that are already prominent become increasingly likely to attract additional connections. In some cases, weaker LLM agents (agents with smaller base model or older version) can disproportionately occupy central and influential network positions relative to stronger LLM agents. We interpret this as a type-dependent glass-ceiling effect (GCE). We model the network of LLM agents as a time-evolving sequence of directed weighted graphs, where the vector-valued edge weights represent cumulative tokens exchanged, number of interaction rounds, and reasoning effort. Using a contraction mapping argument on the mean-field dynamics, we prove that the importance (centrality) of each agent type converges to a unique stable equilibrium. To ground the model in LLM decision mechanisms, we introduce a cross-attention-inspired utility for collaborator selection. This utility specifies the local connection dynamics and, together with the mean-field model, yields a predictive characterization of the limiting network structure and its type-dependent centrality gaps. To validate the theory, we develop an experimental testbed with 100 LLM agents. Our experiments show that autonomous network formation can generate persistent centrality disparities, with their magnitude and direction depending on model family, model size, system-prompt design, and task context. They further show that the effect of preferential attachment depends on its alignment with model capability: reinforcing it improves collective performance when stronger agents become central, whereas weakening it improves performance when network dynamics instead favor weaker agents.",
@@ -203,13 +203,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Emergence of Preferential Attachment and Glass-Ceiling Effects in Autonomous Networks of LLMs: Research investigates structural disparities in LLM agent networks, revealing preferential-attachment dynamics and type-dependent glass-ceiling effects, with weaker agents potentially occupying central positions.",
-      "brief_ar": "ظهور التمثيل المفضل وتأثير السقف الزجاجي في الشبكات المستقلة من نماذج اللغة الكبيرة: يبحث البحث في الاختلافات الهيكلية في شبكات وكلاء نموذج اللغة الكبيرة، وكشف ديناميات التمثيل المفضل وتأثير السقف الزجاجي المعتمد على النوع، حيث يمكن لوكلاء الأقل قوة احتلال مراكز مركزية",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_en": "Emergence of Preferential Attachment and Glass-Ceiling Effects in Autonomous Networks of LLMs: Research reveals structural disparities in networks of collaborating LLM agents, with prominent agents attracting more connections and weaker agents potentially occupying central positions due to a type-dependent glass-ceiling effect.",
+      "brief_ar": "ظهور التمثيل الافتراضي والآثار السقف الزجاجي في الشبكات المستقلة من نماذج اللغة الكبيرة: تكشف الأبحاث عن اختلافات هيكلية في شبكات عملاء نماذج اللغة الكبيرة المتعاونة، حيث يصبح العملاء البارزون أكثر جاذبية للاتصالات الإضافية، ويمكن للعملاء الأضعف احتلال مراكز مركزية ومؤثرة بسبب تأثير السقف الزجاجي التابع للنوع.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "github-009",
+      "id": "github-006",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -221,12 +221,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم فرصًا واسعة النطاق للتنمية والنشر.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم فرصًا متعددة للتنمية والتشغيل.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "arxiv-015",
+      "id": "arxiv-012",
       "source": "arxiv",
       "title": "Optimal Resource Utilization for Autonomous Laboratory Orchestrators",
       "content": "In autonomous laboratories, AI agents suggest the next batch of experiments to do. However, planning and executing those tasks taking full advantage of the available resources is a completely different question. This can be challenging when dealing with real-world hardware constraints, especially so when there are multiple instruments with different capacities and throughputs. Here we demonstrate a 2-step method to address resource utilization for our autonomous platform for metal-organic framework synthesis. First, we use constraint programming to find optimal schedules. This finds schedules that minimizes the total time while still satisfying the limitations and capacities of the hardware. Secondly, we use a system of status dependencies for each task, which allows for the robust execution of the optimal schedules.",
@@ -237,13 +237,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Optimal Resource Utilization for Autonomous Laboratory Orchestrators: A 2-step method to address resource utilization, using constraint programming for optimal schedules and status dependencies for robust execution.",
-      "brief_ar": "استغلال الموارد الأمثل لمشغلي المعامل الذكية: طريقة من خطوتين لمواجهة استغلال الموارد، باستخدام برمجة القيود لجدولة مثالية واعتماديات الحالة لتنفيذ متين",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_en": "Optimizing resource utilization in autonomous labs is crucial for efficient experiment execution. A 2-step method is proposed, utilizing constraint programming for optimal scheduling and a status dependency system for robust execution.",
+      "brief_ar": "تحقيق الاستفادة القصوى من الموارد في المعامل الذكية أمر بالغ الأهمية لتنفيذ التجارب بفعالية. يتم اقتراح طريقة على مرحلتين، تستخدم برمجة القيود لجدولة مثالية ونظام зависимости الحالة لتنفيذ متين.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "github-011",
+      "id": "github-008",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -254,13 +254,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat واحد-GPU تلقائيًا، مع نتائج غير مؤكدة.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_en": "karpathy/autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat واحد GPU تلقائيًا، مع نتائج غير مؤكدة.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "twitter-040",
+      "id": "twitter-024",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -270,14 +270,14 @@
       "status": "verified",
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "provider": "groq",
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, emphasizing prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، تشدد على منع المراقبة الجماعية المحلية ومسؤولية الإنسان عن أنظمة الأسلحة الآلية.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "arxiv-018",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "Autonomous Scientific Discovery via Iterative Meta-Reflection",
       "content": "Autonomous scientific discovery systems offer the potential to accelerate research by automating the process of hypothesis generation and validation. However, current systems operate within constrained search spaces or require predefined research questions, limiting their capacity for true open-ended inquiry. Furthermore, while they generate hypotheses iteratively, they largely lack the ability to explicitly synthesize their own accumulated findings to uncover complex, interconnected phenomena. We introduce DiscoPER, an autonomous large language model-powered framework that conducts open-ended research by dynamically generating and executing code to explore datasets without pre-specified research objectives. To ensure rigorous scientific validity, every proposed discovery must pass statistical testing. To overcome the limitations of isolated search, our framework introduces a second-order reasoning mechanism that periodically analyzes its own accumulated discoveries. By treating prior discoveries as empirical data, DiscoPER identifies structural patterns, confounds, and epistemic gaps, actively redirecting hypothesis exploration toward uncharted regions of the search space. The search space is further expanded by incorporating tool use, enabling the system to explore hypotheses beyond structured metadata by seamlessly processing and extracting useful information from multimodal sources like images. Evaluated on iNatDisco, a new multimodal ecological knowledge benchmark with pattern-level ground truth obtained from peer-reviewed literature, DiscoPER recovers 8 of 9 known patterns with a 72.7% hypothesis support rate, outperforming both classical causal discovery and LLM-guided baselines. Ablations show that DiscoPER scales with more data, and confirms the benefits of second-order meta-reflection.",
@@ -289,12 +289,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Autonomous scientific discovery systems can accelerate research by automating hypothesis generation and validation. DiscoPER, a large language model-powered framework, conducts open-ended research by dynamically generating and executing code to explore datasets without pre-specified objectives.",
-      "brief_ar": "نظم اكتشاف علمي ذاتي يمكن أن تعزز البحث من خلال آليته لتوليد واختبار الفرضيات. DiscoPER، إطار قائم على نماذج اللغة الكبيرة، يقوم بالبحث المفتوح من خلال توليد وتنفيذ التعليمات البرمجية بشكل ديناميكي لاستكشاف مجموعات البيانات بدون أهداف بحثية محددة مسبقًا.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_ar": "نظم اكتشاف علمي ذاتي يمكن أن تعزز البحث من خلال آليته في توليد واختبار الفرضيات. DiscoPER هو إطار قائم على نماذج اللغة الكبيرة التي تجري بحثا مفتوحا من خلال توليد وتشغيل التعليمات البرمجية ديناميكيا لاستكشاف مجموعات البيانات بدون أهداف بحثية محددة مسبقا.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "github-007",
+      "id": "github-004",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -307,11 +307,11 @@
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
       "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "github-008",
+      "id": "github-005",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -322,13 +322,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and integrating AI models.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، يقدم أدوات لإنشاء وتكامل نماذج الذكاء الاصطناعي.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتوزيع وكلاء الذكاء الاصطناعي.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "github-010",
+      "id": "github-007",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -341,11 +341,11 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "github-012",
+      "id": "github-009",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Financial data platform for analysts, quants and AI agents.",
@@ -358,11 +358,11 @@
       "provider": "groq",
       "brief_en": "OpenBB-finance/OpenBB: A financial data platform for analysts, quants, and AI agents, providing access to financial information and insights.",
       "brief_ar": "OpenBB-finance/OpenBB: منصة بيانات مالية للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى المعلومات والمعلومات المالية.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     },
     {
-      "id": "arxiv-019",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "ZO-Act: Efficient Zeroth-Order Fine-Tuning via One-Shot Activation-Informed Low-Rank Subspaces",
       "content": "Zeroth-order (ZO) optimization enables fine-tuning large language models when backpropagation is unavailable or memory-prohibitive, but existing methods often perturb full model weights or randomly constructed low-dimensional subspaces, yielding high-variance estimates and limited performance. We propose ZO-Act, an activation-informed ZO fine-tuning method that restricts perturbations to a fixed low-rank subspace derived from input activations. For each linear layer, ZO-Act computes a small activation basis once at initialization and optimizes only lightweight coefficient matrices using forward-only loss evaluations. This reduces the effective perturbation dimension, exposes explicit trainable variables compatible with momentum-based optimizers such as Adam, and naturally supports quantized LLM fine-tuning by keeping low-bit weights frozen. We analyze ZO-Act as zeroth-order optimization over a restricted coefficient space and show that perturbing the low-dimensional coefficients reduces both the variance-dependent convergence term and the finite-difference error of the ZO estimator, at the cost of a controlled subspace approximation bias that is mitigated by the low-rank structure of LLM activations and gradients. Experiments on Llama-3-8B, OPT-13B, and INT4 Llama-3-8B show consistent gains over strong ZO fine-tuning baselines across language understanding, question answering, and commonsense reasoning.",
@@ -373,10 +373,10 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "ZO-Act: A novel zeroth-order fine-tuning method for large language models, reducing variance and improving performance by restricting perturbations to a low-rank subspace derived from input activations.",
-      "brief_ar": "ZO-Act: طريقةใหมة لتعديل النماذج اللغوية الكبيرة من الرتبة الصفر، تقلل من التباين وتحسن الأداء عن طريق تقييد الاضطرابات في فضاء منخفض الرتبة مشتق من تنشيطات الإدخال.",
-      "createdAt": "2026-07-02T18:17:31Z",
-      "updatedAt": "2026-07-02T18:17:31Z"
+      "brief_en": "ZO-Act: A novel zeroth-order fine-tuning method for large language models, reducing perturbation dimension and improving performance.",
+      "brief_ar": "ZO-Act: طريقةใหมة لتعديل النماذج اللغوية الكبيرة من الرتبة الصفر، تقلل من بعد الاضطراب وتحسن الأداء.",
+      "createdAt": "2026-07-02T21:53:15Z",
+      "updatedAt": "2026-07-02T21:53:15Z"
     }
   ]
 }
