@@ -17,6 +17,7 @@ from aibrief.breaking_monitor import (
     run_monitor_cycle,
     survives_stage1,
     validate_classifications,
+    x_auth_summary,
     x_cli_env,
     x_influencer_handles,
     x_search_queries,
@@ -254,6 +255,20 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(env["AUTH_TOKEN"], "auth123")
         self.assertEqual(env["TWITTER_CT0"], "csrf456")
         self.assertEqual(env["CT0"], "csrf456")
+
+    def test_x_auth_summary_reports_presence_without_values(self):
+        summary = x_auth_summary({"TWITTER_COOKIE": "auth_token=auth123; ct0=csrf456"})
+
+        self.assertEqual(
+            summary,
+            {
+                "twitter_cookie_present": True,
+                "auth_token_present": True,
+                "ct0_present": True,
+            },
+        )
+        self.assertNotIn("auth123", json.dumps(summary))
+        self.assertNotIn("csrf456", json.dumps(summary))
 
     def test_birdclaw_export_skips_dm_records(self):
         with tempfile.TemporaryDirectory() as tmp:

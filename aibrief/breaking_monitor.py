@@ -792,6 +792,32 @@ def public_source_name(source: str) -> str:
     return normalized or "x"
 
 
+def candidate_source_counts(candidates: list[dict]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for candidate in candidates:
+        source = public_source_name(str(candidate.get("source", "")))
+        counts[source] = counts.get(source, 0) + 1
+    return dict(sorted(counts.items()))
+
+
+def x_auth_summary(env: dict[str, str]) -> dict[str, bool]:
+    cookie = env.get("TWITTER_COOKIE", "").strip()
+    auth_present = False
+    ct0_present = False
+    if cookie:
+        for part in cookie.split(";"):
+            part = part.strip()
+            if part.startswith("auth_token=") and part[len("auth_token="):].strip():
+                auth_present = True
+            elif part.startswith("ct0=") and part[len("ct0="):].strip():
+                ct0_present = True
+    return {
+        "twitter_cookie_present": bool(cookie),
+        "auth_token_present": auth_present,
+        "ct0_present": ct0_present,
+    }
+
+
 def public_last_run(summary: dict | None) -> dict:
     if not summary:
         return {}
@@ -1673,6 +1699,9 @@ def run_monitor_cycle(
     ]
     news_fallback_collected = 0
     collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
+    initial_collected = list(collected)
+    initial_source_counts = candidate_source_counts(initial_collected)
+    initial_x_relevant = sum(1 for candidate in initial_collected if is_website_intel_candidate(candidate, env))
     clustered = cluster_story_candidates(pending_reconsider + collected)
     if notify_mode == "website":
         source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
@@ -1714,10 +1743,14 @@ def run_monitor_cycle(
         elapsed = time.monotonic() - started
         summary = {
             "collected": len(collected),
+            "initial_collected": len(initial_collected),
+            "initial_source_counts": initial_source_counts,
+            "initial_x_relevant": initial_x_relevant,
             "clustered": len(clustered),
             "stage1_survivors": len(survivors),
             "x_intel_published": len(alerted_now),
             "news_fallback_collected": news_fallback_collected,
+            "x_auth": x_auth_summary(env),
             "alerted_now": len(alerted_now),
             "pending_now": 0,
             "retried": retried,
