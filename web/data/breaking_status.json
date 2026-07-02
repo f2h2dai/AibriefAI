@@ -1,7 +1,18 @@
 {
-  "alerted_count": 66,
+  "alerted_count": 67,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-3a873d952fbd84392ddfc637",
+      "reason": "Chinese satellite imagery of Middle East bases is helping Iran, US intelligence says - ABC News & Headlines \u2013 Australian Broadcasting Corporation ABC News & Headlines \u2013 Australian Broadcasting Corporation \"MizarVision\" AI satellite Iran \"Prince Sultan Air Base\"",
+      "score": 45,
+      "shown_at": "2026-07-02T07:54:29Z",
+      "source": "google-news",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
+      "status": "x-intel",
+      "title": "Chinese satellite imagery of Middle East bases is helping Iran, US intelligence says - ABC News & Headlines \u2013 Australian Broadcasting Corporation"
+    },
     {
       "confidence": 0,
       "id": "story-0e30124d7840cb6027a4f3ac",
@@ -122,27 +133,16 @@
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaUFLOWZqWWtaU3VJWXZZdWVWR1c0a3Q1b0xscnlqM05ocW5WT1ZuclBmWFZ1ck0yT19wMEd2Y0xGWldscWQ0bEdwNGV4Sk1KWGZaX3ZWZm8xd2xqWGNDMmF0b2dWc2FENGlheEtyLWRNQUNoRVlMVVpKX0VJdEllSnM5dnBFalhmWkMtTVNac1lyTnl5eXl5M2lGV1lYRF9p",
       "status": "x-intel",
       "title": "The military embraced AI long before Claude - The Verge"
-    },
-    {
-      "confidence": 0,
-      "id": "story-01e5ff9ef114f015cd5e7978",
-      "reason": "Palantir Maven Smart System Deploys AI Kill-Chain to U.S. DoD - abhs.in abhs.in \"military AI\" \"Project Maven\"",
-      "score": 45,
-      "shown_at": "2026-06-29T18:23:39Z",
-      "source": "google-news",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRWhfb2t2aDB1ZTVWU0JoMXVtdUFjamJtSnV1QU5QaVNyenBJUnNTRWpIbUhSR1VDc0p4cEhFUjY1U2tKdkRXNEk4OVRjYnhidWkycEdCUkdJWXFFNTVfRDJTQnBHUFVBSGYxekFGYXNzR09rbzFXendVZ2tBRXVpMlVrdk9jN09JLVJHSXl1RQ",
-      "status": "x-intel",
-      "title": "Palantir Maven Smart System Deploys AI Kill-Chain to U.S. DoD - abhs.in"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-01T10:56:52Z",
+    "alerted_at": "2026-07-02T07:54:29Z",
     "confidence": 0,
-    "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWExUUnAzeE5FbXVqUTRiZVBUTXFyQkh0dUNCU2FzaWNOQW0yYXNDTjRJckRtWDJIeFdXQnV3VjVrS3VqQ1ZPLXVEMEdtOGEwMGxXMkJsRUlzeTFCajNtTmdNQ3FmTlI1eTFleDlUa0pCQzhmUm5rMTladU1FTFN2YldMd01HVmF0ZXQtSGpFMUo3ZWZFNGRZ0gGeAUFVX3lxTE1jNzJpZThhZ1d6TFN2U1ZUT012Y1RRUDhjWm5vS3NBQjFjVlE4NEhxQ09TbDhVUTY4dERKMUdBVkFBOGpBSTllTERZR0ZYNVNxWUhNeFo1N0FOQlg1N0d2blpXWHVFR2pja2FsNU1tNExKNWI2QktCY2QtdDNRSkFFRnVVNnNLa1R3RVM2a3kyZHRJVDZldzN1TUFIek5B",
-    "title": "From Project Maven to Operation Sindoor: AI's new role in war - Frontline Magazine"
+    "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
+    "title": "Chinese satellite imagery of Middle East bases is helping Iran, US intelligence says - ABC News & Headlines \u2013 Australian Broadcasting Corporation"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 60,
     "collected": 60,
     "news_fallback_collected": 30,
@@ -151,16 +151,16 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.098,
-      "projected_minutes_per_30d": 148.71,
+      "measured_seconds": 4.823,
+      "projected_minutes_per_30d": 231.5,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 30,
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-01T23:07:05Z",
+  "updated_at": "2026-07-02T07:54:29Z",
   "version": 1
 }
