@@ -19,3 +19,6 @@ dev = [
 
 [tool.setuptools.packages.find]
 include = ["aibrief*"]
+
+[tool.setuptools.package-data]
+aibrief = ["capability_catalog.json"]

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "feed_pipeline",
+    "name": "AIbrief Feed Pipeline",
+    "type": "pipeline",
+    "summary": "Generate the static AIbrief briefing files from public AI signals.",
+    "keywords": ["feed", "briefing", "signals", "pipeline", "generate", "static", "report"],
+    "triggers": ["update feed", "generate briefing", "run pipeline"],
+    "inputs": ["source signals", "GEMINI_API_KEY", "GROQ_API_KEY"],
+    "outputs": ["web/index.html", "web/brief.html", "web/data/signals.json", "data/latest_report.json"],
+    "context": "Use for normal scheduled briefing generation and static output refreshes."
+  },
+  {
+    "id": "x_intel_collector",
+    "name": "Logged-in X Intel Collector",
+    "type": "collector",
+    "summary": "Collect public X posts for AI, defense, military, and strategic technology intelligence.",
+    "keywords": ["x", "twitter", "posts", "intel", "ai war", "defense", "military", "grok", "maven", "iran"],
+    "triggers": ["x intel", "twitter feed", "logged-in x", "public x posts"],
+    "inputs": ["TWITTER_COOKIE", "X_INFLUENCERS", "BREAKING_X_QUERY"],
+    "outputs": ["twitter candidate records"],
+    "context": "Use when the task asks for public X posts, military AI claims, influencer monitoring, or X freshness."
+  },
+  {
+    "id": "birdclaw_import",
+    "name": "Birdclaw Local Export Importer",
+    "type": "tool",
+    "summary": "Import a private local Birdclaw export and normalize public tweet records while skipping DMs.",
+    "keywords": ["birdclaw", "local", "export", "import", "private", "x", "tweet", "dm"],
+    "triggers": ["birdclaw export", "local x memory", "private birdclaw"],
+    "inputs": ["private/birdclaw-export.json"],
+    "outputs": ["birdclaw candidate records"],
+    "context": "Use only for local/private exports. Never expose private paths or DM content on the website."
+  },
+  {
+    "id": "breaking_monitor",
+    "name": "Breaking X Intel Monitor",
+    "type": "monitor",
+    "summary": "Publish website-only breaking X intelligence without sending notifications.",
+    "keywords": ["breaking", "monitor", "alert", "x intel", "website-only", "filter", "fresh"],
+    "triggers": ["breaking filter", "breaking feed", "x intel is zero", "fresh news"],
+    "inputs": ["candidate records", "data/breaking_state.json"],
+    "outputs": ["web/data/breaking_status.json"],
+    "context": "Use for the public breaking-status feed, relevance thresholds, dedupe state, and freshness diagnostics."
+  },
+  {
+    "id": "llm_router",
+    "name": "Gemini/Groq LLM Router",
+    "type": "service",
+    "summary": "Route summarization and ranking requests through Gemini or Groq with rule-based fallback.",
+    "keywords": ["gemini", "groq", "llm", "model", "ranking", "summary", "fallback", "api key"],
+    "triggers": ["missing gemini key", "groq key", "llm fallback", "model routing"],
+    "inputs": ["GEMINI_API_KEY", "GROQ_API_KEY"],
+    "outputs": ["ranked signal summaries"],
+    "context": "Use when debugging model keys, provider fallback, summarization quality, or signal scoring."
+  },
+  {
+    "id": "ntfy_morning_digest",
+    "name": "ntfy Morning Digest",
+    "type": "notification",
+    "summary": "Send a zero-cost morning phone digest through ntfy only when explicitly scheduled or requested.",
+    "keywords": ["ntfy", "notification", "morning", "digest", "phone", "topic", "8am"],
+    "triggers": ["morning notification", "ntfy digest", "phone alert"],
+    "inputs": ["NTFY_TOPIC", "scheduled workflow context"],
+    "outputs": ["ntfy.sh POST result", "notification metadata"],
+    "context": "Use for the 8 AM digest path. Do not hardcode topics or expose notification secrets."
+  },
+  {
+    "id": "render_static_deploy",
+    "name": "Render Static Website Deployment",
+    "type": "deployment",
+    "summary": "Serve the generated AIbrief static website from the web directory on Render.",
+    "keywords": ["render", "deploy", "website", "static", "web", "onrender", "hosting"],
+    "triggers": ["deploy website", "render deploy", "website down", "static output"],
+    "inputs": ["web/ directory", "render.yaml"],
+    "outputs": ["https://aibriefai.onrender.com/"],
+    "context": "Use for Render configuration, static output checks, redirects, and public website deployment."
+  },
+  {
+    "id": "github_actions_workflows",
+    "name": "GitHub Actions Workflow Runner",
+    "type": "automation",
+    "summary": "Run scheduled and manual GitHub Actions workflows for feed generation and breaking updates.",
+    "keywords": ["github", "actions", "workflow", "cron", "schedule", "checkout", "artifact", "cache", "node"],
+    "triggers": ["workflow failed", "actions logs", "cron run", "github actions"],
+    "inputs": [".github/workflows/*.yml", "GitHub secrets"],
+    "outputs": ["committed generated files", "Actions logs"],
+    "context": "Use for workflow YAML, secret wiring, Node action versions, schedules, and CI diagnostics."
+  },
+  {
+    "id": "freshness_health_checks",
+    "name": "Freshness and Health Checks",
+    "type": "quality_gate",
+    "summary": "Validate generated JSON, freshness age, health output, and static site existence.",
+    "keywords": ["freshness", "health", "lint", "json", "stale", "checks", "validate"],
+    "triggers": ["stale data", "health check", "freshness check", "json parse"],
+    "inputs": ["web/data/signals.json", "web/health.json"],
+    "outputs": ["pass/fail diagnostics"],
+    "context": "Use to prove the generated website files are current, parseable, and deployable."
+  },
+  {
+    "id": "secret_safety_scan",
+    "name": "Secret Safety Scanner",
+    "type": "security",
+    "summary": "Check generated files and logs for leaked secrets, tokens, cookies, and private topics.",
+    "keywords": ["secret", "token", "cookie", "leak", "security", "scan", "private", "topic"],
+    "triggers": ["secret leak", "cookie exposed", "token scan", "private path"],
+    "inputs": ["generated HTML", "generated JSON", "workflow logs"],
+    "outputs": ["secret scan result"],
+    "context": "Use whenever secrets, cookies, API keys, ntfy topics, or private local exports are involved."
+  },
+  {
+    "id": "agent_reach_connector",
+    "name": "Agent-Reach Optional Social Connector",
+    "type": "connector",
+    "summary": "Collect optional social and video records from Agent-Reach when the package is available.",
+    "keywords": ["agent-reach", "youtube", "reddit", "social", "connector", "optional"],
+    "triggers": ["agent reach", "youtube signals", "reddit signals"],
+    "inputs": ["agent-reach CLI"],
+    "outputs": ["normalized social records"],
+    "context": "Use for optional social-source enrichment. The main pipeline must continue if this package is absent."
+  },
+  {
+    "id": "dashboard_builder",
+    "name": "Command Center Dashboard Builder",
+    "type": "frontend",
+    "summary": "Render the AIbrief command center pages, filters, status panels, and briefing cards.",
+    "keywords": ["dashboard", "frontend", "html", "brief", "cards", "filter", "layout", "design"],
+    "triggers": ["change design", "website layout", "brief page", "filter UI"],
+    "inputs": ["ranked signals", "breaking status"],
+    "outputs": ["web/index.html", "web/brief.html"],
+    "context": "Use for visible website changes, public labels, filters, layout, and generated HTML safety."
+  }
+]
