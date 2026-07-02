@@ -1492,6 +1492,7 @@ def x_cli_env(env: dict[str, str]) -> dict[str, str]:
         for part in cookie.split(";"):
             part = part.strip()
             if part.startswith("auth_token="):
+                # Different X CLIs read different auth variable names.
                 command_env["TWITTER_AUTH_TOKEN"] = part[len("auth_token="):]
                 command_env["AUTH_TOKEN"] = part[len("auth_token="):]
             elif part.startswith("ct0="):
