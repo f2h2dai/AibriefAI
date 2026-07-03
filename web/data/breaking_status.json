@@ -1,7 +1,29 @@
 {
-  "alerted_count": 71,
+  "alerted_count": 73,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-64b98ceab81f1ab451c07059",
+      "reason": "Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to models to infrastructure, and will help us scale intelligence, serve more people, and expand access to AI.' author: screenName: OpenAI name: OpenAI id: '2052462271667028211",
+      "score": 41,
+      "shown_at": "2026-07-03T20:34:18Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: Chips are foundational to the AI economy. Building our own expands our full-stack platform"
+    },
+    {
+      "confidence": 0,
+      "id": "story-f9d2bee9aee73b1cb4c0359e",
+      "reason": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12362 ret",
+      "score": 10,
+      "shown_at": "2026-07-03T20:34:18Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents"
+    },
     {
       "confidence": 0,
       "id": "story-9941845f2203fa9b2b341c32",
@@ -111,66 +133,44 @@
       "source_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSFl6MU94ZFAzVzlBRG1ibHl4RzVDS1E1QXM0UG5pZGhEUldXblRDT1poWFQyS2NzbUdHVG9kOXJkdFJ3ZVdZcXh4alVYdU5CeDRDQzh1eUFlbzlkYVBRN2gwZkM1eDFpVFA3cXJPNTdIeDVZSkhGc1VzMURXeG8tVnJTM3FSOHJzNXBVZ1RiYXF6THdtU2FudktJZGJGUlcyMWptaTh6dHZSSG9hSG9QMklzM3U1VUQ5cHBIUWFhQ2JsNG1nMXBuZ3ZCV0UyZDlBcDRwT3I2eDBibjI0VGdCeDFKNmFUREVEMFM4bGVfM0R2U0tSVVE",
       "status": "x-intel",
       "title": "Fact Check Team: AI is already changing warfare, the debate now is who controls it - National Desk"
-    },
-    {
-      "confidence": 0,
-      "id": "story-6d5a75c9dcf6e5038d423e78",
-      "reason": "Project Maven: The Pentagon's AI system reshaping modern warfare - T\u00fcrkiye Today T\u00fcrkiye Today \"military AI\" \"Project Maven\"",
-      "score": 45,
-      "shown_at": "2026-06-30T16:38:37Z",
-      "source": "google-news",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNa1p3VjRFLTZqeUNna21STkwxWUtwVlBWMGRIZEk2WWNmQlloZmE5RzlQbUNOZUI0dExZaWRNVC1zeDVlc0VHYVlKaFdrWERMcFVFX29ISFE0ajdhSk51Sk1ha19uUnlfM09SUG5hWGd6Rk5mTmlaYl9oendjRXJNOXQ1UjJ3Y191MHNlSDc4eDdMbUNtSFctbWlJUTZPUTFUQWw0QTBsV1pXOGN1",
-      "status": "x-intel",
-      "title": "Project Maven: The Pentagon's AI system reshaping modern warfare - T\u00fcrkiye Today"
-    },
-    {
-      "confidence": 0,
-      "id": "story-7d3e3ac2960e32c7b136ca5e",
-      "reason": "Speeding Up the \u201cKill Chain\u201d: Pentagon Bombs Thousands of Targets in Iran Using Palantir AI - Democracy Now! Democracy Now! \"AI targeting\" Pentagon Iran",
-      "score": 75,
-      "shown_at": "2026-06-30T08:48:04Z",
-      "source": "google-news",
-      "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE",
-      "status": "x-intel",
-      "title": "Speeding Up the \u201cKill Chain\u201d: Pentagon Bombs Thousands of Targets in Iran Using Palantir AI - Democracy Now!"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-02T20:45:51Z",
+    "alerted_at": "2026-07-03T20:34:18Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
+    "title": "@sama: Chips are foundational to the AI economy. Building our own expands our full-stack platform"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 1,
-    "collected": 1,
-    "initial_collected": 1,
+    "alerted_now": 2,
+    "clustered": 2,
+    "collected": 2,
+    "initial_collected": 2,
     "initial_source_counts": {
-      "x": 1
+      "x": 2
     },
-    "initial_x_relevant": 1,
+    "initial_x_relevant": 2,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.27,
-      "projected_minutes_per_30d": 156.97,
+      "measured_seconds": 1.872,
+      "projected_minutes_per_30d": 89.86,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 1,
+    "stage1_survivors": 2,
     "x_auth": {
       "auth_token_present": true,
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-03T15:57:09Z",
+  "updated_at": "2026-07-03T20:34:18Z",
   "version": 1
 }
