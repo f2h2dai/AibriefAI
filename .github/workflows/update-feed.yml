@@ -7,6 +7,12 @@ on:
         description: "Send ntfy notification for this manual run"
         required: false
         default: "false"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-feed.yml"
+      - "data/feed_refresh_request.txt"
   schedule:
     # 8 AM America/New_York during EDT. GitHub Actions cron uses UTC.
     - cron: "0 12 * * *"
