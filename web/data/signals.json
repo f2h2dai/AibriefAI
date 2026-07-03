@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-03T21:44:43Z",
+  "generated_at": "2026-07-03T22:43:17Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 29,
-    "rule-based": 11
+    "groq": 30,
+    "rule-based": 9
   },
   "agents": [
     {
@@ -53,121 +53,121 @@
   ],
   "events": [
     {
-      "time": "2026-07-03T21:44:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1183"
+      "time": "2026-07-03T22:43:17Z",
+      "level": "warning",
+      "agent": "AgentReachConnector",
+      "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+    },
+    {
+      "time": "2026-07-03T22:43:17Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1175"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1173"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1186"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-03T21:44:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-03T21:44:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
-    },
-    {
-      "time": "2026-07-03T21:44:43Z",
+      "time": "2026-07-03T22:43:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -175,7 +175,7 @@
   ],
   "signals": [
     {
-      "id": "github-009",
+      "id": "github-008",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -186,13 +186,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات لتطوير وتحديث التطبيقات.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "arxiv-016",
+      "id": "arxiv-015",
       "source": "arxiv",
       "title": "Controllable Sim Agents with Behavior Latents",
       "content": "Realistic traffic simulation requires agents that imitate logged behavior and can also be steered along interpretable axes. Such controllability enables engineers to isolate variables, reproduce specific edge cases, and test autonomous systems without real-world risk. We introduce Controllable Neural Variational Agents (CNeVA), a controllable simulated-agent framework that learns to infer a per-agent Gaussian behavior latent from per-channel discounted returns via a closed-form conjugate variational update, conditioning a rectified-flow trajectory generator trained on a mixed channel-mask curriculum for classifier-free guidance. To tackle scarcity in reward signals, we propose soft eligibility gates that replace hard binary thresholds with smooth exponential decay, preserving the gradient signal for near-threshold agents. On the Waymo Open Motion Dataset, CNeVA attains competitive realism on the benchmark while exposing per-channel controllability that the higher-ranked imitation models lack. Speed- and acceleration-based steering produces monotone responses without stall-induced reward hacking. Safety controllability is monotone and substantial with the introduction of soft eligibility. We manage to achieve steerable map compliance under a context-residual return measure. Furthermore, our experiment demonstrates that steering metrics must be read alongside physical-plausibility guardrails to avoid reward-hacking confounds.",
@@ -204,12 +204,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Controllable Sim Agents with Behavior Latents: A framework for realistic traffic simulation, enabling controllable agents that imitate logged behavior and can be steered along interpretable axes, allowing for safer testing of autonomous systems.",
-      "brief_ar": "وكلاء محاكاة قابلون للتحكم مع متغيرات سلوكية: إطار عمل لمحاكاة حركة المرور الواقعية، يتيح وكلاء قابلين للتحكم يقلدون السلوك المسجل ويمكن توجيههم على طول محاور متفسرة، مما يسمح باختبار أنظمة مستقلة بأمان",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_ar": "وكلاء محاكاة قابلون للتحكم مع سلوكيات كامنة: إطار عمل لمحاكاة حركة المرور الواقعية، يتيح وكلاء قابلين للتحكم يقلدون السلوك المسجل ويمكن توجيههم على طول محاور قابلة للتفسير، مما يسمح باختبار أنظمة ذاتية التحكم بأمان أكبر",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "github-011",
+      "id": "github-010",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -220,13 +220,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: Single-GPU nanochat training enables AI agents to run research automatically, potentially accelerating discovery.",
-      "brief_ar": "karpathy/autoresearch: تدريب محادثة نانو على جهاز gpu واحد يسمح للوكلاء الذكاء الاصطناعي بالبحث التلقائي، مما قد يسرع اكتشافات جديدة.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_en": "Karpathy's autoresearch: AI agents utilize single-GPU nanochat training for automated research, potentially streamlining discovery processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستخدمون تدريب nanochat على جهاز كمبيوتر واحد لتشغيل البحث آليًا، ويسهم ذلك في تسهيل عمليات الاكتشاف المحتملة.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "arxiv-014",
+      "id": "arxiv-013",
       "source": "arxiv",
       "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
       "content": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilization. In this work, we propose Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT), a training-free inference method for improving long-context reasoning. RECONTEXT uses model-internal relevance signals to construct a query-conditioned evidence pool and replays it before final generation while preserving the full original context. This recursive selection process separates evidence organization from answer generation without training, external memory, or context pruning. We also provide a theoretical analysis based on associative memory, which characterizes the context as a memory store, the question as a retrieval cue, attention as cue-trace association, and replay as trace reactivation. Experiments on eight long-context datasets with 128K context length show that RECONTEXT consistently improves evidence utilization across Qwen3-4B, Qwen3-8B, and Llama3-8B, achieving the best average rank on all three backbones. Code is available at https://github.com/Yanjun-Zhao/ReContext.",
@@ -238,12 +238,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "ReContext: A training-free inference method for improving long-context reasoning in LLMs by recursively replaying relevant evidence from the input context.",
-      "brief_ar": "ReContext: طريقة استدلال بدون تدريب لتحسين الاستدلال في سياقات طويلة في نماذج اللغة الكبيرة من خلال إعادة تشغيل الأدلة ذات الصلة من السياق الإدخالي بشكل متكرر.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_ar": "ReContext: طريقة استدلال بدون تدريب لتحسين العرض السياقي الطويل في نماذج اللغة الكبيرة من خلال إعادة تشغيل الأدلة ذات الصلة بشكل متكرر من السياق الإدخالي.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "arxiv-018",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "Will Scaling Improve Social Simulation with LLMs?",
       "content": "Large Language Model (LLM) social simulations are a promising research method, but they are not yet faithful enough to be adopted widely. In this work, we investigate whether the current scaling paradigm in language modeling is likely to close these gaps, or whether simulation fidelity is orthogonal to general capabilities and therefore deserving of more research attention. We use scaling laws to study the relationship between LLMs' compute scale, general capability benchmarks, and the fidelity of social simulation in three representative sub-domains: opinion modeling, behavioral simulation, and longitudinal forecasting. Surprisingly, we discover strong compute scaling in all three settings, using a suite of 85 transformer LLMs with the Qwen3 architecture pre-trained on the DCLM web text corpus under fixed-compute budgets from $10^{18}$ to $10^{20}$ FLOPs. Then we evaluate 35 larger and more capable open-weight models up to 70B parameters, allowing us to predict downstream accuracy from loss. This reveals that the majority of behavioral and opinion simulation tasks will rapidly improve with scale, particularly when they involve populations that are well-represented in English web corpora. Longitudinal forecasting and underrepresented opinions scale more slowly, especially when they are less correlated with general knowledge and reasoning benchmarks like MMLU. In behavior simulation, scaling fails to improve model calibration with human cognitive biases like risk aversion, as well as human heuristics like learning correlated rewards from related tasks. On these tasks, even fine-tuned models fail to noticeably scale up performance from 0.5B to 8B parameters. Taken together, we conclude that scale will improve social simulations in most settings, but outliers exist, and improvements will be less reliable in low-resource domains.",
@@ -255,12 +255,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Will scaling improve social simulation with LLMs? Research investigates the relationship between LLMs' compute scale, general capability benchmarks, and social simulation fidelity, revealing strong compute scaling in opinion modeling, behavioral simulation, and longitudinal forecasting.",
-      "brief_ar": "هل سيتحسن模拟 المجتمع مع نماذج اللغة الكبيرة من خلال التوسع؟ يبحث البحث في العلاقة بين مقياس الحوسبة في نماذج اللغة الكبيرة ومقاييس القدرة العامة ودقة模拟 المجتمع، وكشف عن تحسينات قوية في مجالات مثل نمذجة الرأي و模拟 السلوك والتنبؤ الطويل الأمد.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_ar": "هل سيتحسن模拟 المجتمع مع نماذج اللغة الكبيرة من خلال التوسع؟ يبحث البحث في العلاقة بين مقياس الحوسبة للنماذج وقياسات القدرة العامة وصدق模拟 المجتمع، وكشف عن توسع حوسبي قوي في نمذجة الرأي و模拟 السلوك والتنبؤ الطويل الأمد.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "github-007",
+      "id": "github-006",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -272,12 +272,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_ar": "Langflow أداة قوية لإنشاء وتحديث الوكلاء والعمليات التي تعمل بالذكاء الاصطناعي، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "github-008",
+      "id": "github-007",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -288,13 +288,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and integrating AI models.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتكامل نماذج الذكاء الاصطناعي.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for building AI applications, leveraging open-source intelligence for strategic development.",
+      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لإنشاء تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة المصدر لتطوير استراتيجي",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "github-010",
+      "id": "github-009",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -307,11 +307,11 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "github-012",
+      "id": "github-011",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Open Data Platform for analysts, quants and AI agents.",
@@ -324,28 +324,28 @@
       "provider": "groq",
       "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
       "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "twitter-031",
+      "id": "twitter-028",
       "source": "twitter",
       "title": "@sama: Chips are foundational to the AI economy. Building our own expands our full-stack platform",
-      "content": "Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to models to infrastructure, and will help us scale intelligence, serve more people, and expand access to AI.' author: screenName: OpenAI name: OpenAI id: '2019139174339928189' text: 'First, the good part of the Anthropic ads: they are funny, and I laughed.",
+      "content": "Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to models to infrastructure, and will help us scale intelligence, serve more people, and expand access to AI.' author: screenName: OpenAI name: OpenAI id: '2067427678529974740' text: We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence. author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 8651 retweets: 317 replies: 575 quotes: 119 views: 1067551 bookmarks: 654 createdAt: Thu Jun 18 02:02:24 +0000 2026 createdAtLocal: 2026-06-18 02:02 createdAtISO: '2026-06-18T02:02:24+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null quotedTweet: id: '2067402274662744465' text: I'm always thrilled to have more Noams at @OpenAI, but I'm especially thrilled to welcome @NoamShazeer! author: screenName: polynoamial name: Noam Brown id: '2070612055225483692' text: 'in other news, we updated the 5.5 instant model used in chatgpt this week.",
       "url": "https://x.com",
       "score": 46,
       "score_reason": "Twitter/X discussion signal; model capability relevance; AI infrastructure relevance. Final score: 46.",
       "status": "verified",
       "topic": "LLMs",
       "collector": "XInfluencerAgent",
-      "provider": "rule-based",
-      "brief_en": "Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to models to infrastructure, and will help us scale intelligence, serve more people, and expand access to AI.' author: screenName: Open...",
-      "brief_ar": "ملخص قائم على القواعد: Chips are foundational to the AI economy. Building our own expands our full-stack platform from products to models to infrastructure, and will help us scale intelligence, serve more people, and expand access to AI.' author: screenName: Open...",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "provider": "groq",
+      "brief_en": "OpenAI is developing its own chips to expand its full-stack platform, enhancing its AI capabilities and increasing access to intelligence.",
+      "brief_ar": "تطوير OpenAI لرقائقها الخاصة لتوسيع منصةها الكاملة، مما يعزز قدراتها الاصطناعية ويزيد من الوصول إلى الذكاء.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "arxiv-019",
+      "id": "arxiv-018",
       "source": "arxiv",
       "title": "Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation",
       "content": "Post-training large language models (LLMs) without real-world interaction feedback or human-labeled supervision remains challenging, particularly in specialized domains where expert annotations are costly to obtain. Recent annotation-free self-evolution methods address this by using the model's own outputs as supervision signals, constructing a teacher via additional context and aggregating predictions across multiple rollouts through majority voting to produce pseudo-labels. However, these approaches are not without drawbacks: SFT- and GRPO-based variants suffer out-of-domain performance degradation, while reward-based on-policy RL inflates calibration error. In this paper, we propose Neuron On-Policy Self-Distillation (Neuron-OPSD), a data-centric framework for annotation-free self-distillation that leverages internal neuron activations to guide both training-data selection and teacher context construction. The model is then trained via on-policy distillation from the teacher distribution, requiring no ground-truth labels at any stage. Across specialized-domain benchmarks, Neuron-OPSD improves in-domain task performance while preserving cross-domain generalization and mitigating calibration collapse over prior annotation-free baselines. This framework is particularly relevant to settings where online interaction or external supervision is costly or infeasible, and is conceptually distinct from offline RL approaches that rely on logged, reward-labeled trajectories.",
@@ -357,12 +357,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation improves post-training LLM performance in specialized domains without human-labeled supervision, leveraging internal neuron activations for data selection and teacher context construction.",
-      "brief_ar": "اختيار البيانات المتأصل مع التبخير الذاتي للنموذج اللغوي الكبير بدون تعليمات يطور الأداء بعد التدريب للنماذج اللغوية الكبيرة في المجالات المتخصصة بدون إشراف مسبق أو تعليمات بشرية، يستخدم التنشيطات العصبية الداخلية لاختيار البيانات وبناء سياق المعلم.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_ar": "اختيار البيانات الم сознательный للعصبونات لتصريف الذاتي للمعلمين اللغة الكبيرة بدون تعليمات بشرية، يستفيد من تنشيط العصبونات الداخلية لاختيار البيانات وبناء سياق المعلم.",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     },
     {
-      "id": "arxiv-020",
+      "id": "arxiv-019",
       "source": "arxiv",
       "title": "When Do LLM Personas Support Visualization Design? A Cross-Model Study of Color Assignment and Chart Choice",
       "content": "Large language model personas are increasingly used to approximate diverse users during early-stage visualization design, but it remains unclear whether persona-conditioned outputs reflect stable personality effects or artifacts of model choice and task framing. We examine this question across two visualization-relevant tasks: color assignment for abstract and concrete concepts, and chart-idiom preference ratings across task contexts. Using 43 Big Five profiles across GPT-4o-mini, GPT-4.1-mini, and GPT-5-mini, we find that personality-color coupling is highly model-configuration dependent: absent in GPT-4o-mini for all six concepts, consistent in GPT-4.1-mini across all six, and partial in GPT-5-mini for two of six. Concept type further shapes the signal: for abstract concepts, personality explains more hue variance than model identity, while concrete concepts show smaller and comparable effects. In chart choice, trait-aligned cluster aggregation produces stable top-idiom rankings across all nine cluster-context combinations, but a no-persona baseline recovers the same top choice in 8 of 9 model-context cells, indicating that task context drives rank-1 selection more than personality. These findings position LLM personas as exploratory probes for visualization design, not substitutes for human participants, and motivate multi-model testing, concept-type disaggregation, and no-persona baselines in future studies.",
@@ -373,10 +373,10 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "LLM personas can support visualization design by approximating diverse users, but their outputs may reflect model choice and task framing rather than stable personality effects. A cross-model study found that personality-color coupling is model-configuration dependent and concept-type shapes the signal.",
-      "brief_ar": "يمكن أن تدعم شخصيات LLM تصميم التصور من خلال تقريب مستخدمين متنوعين، ولكن مخرجاتها قد تعكس اختيار النموذج وإطار المهمة بدلاً من الآثار الثابتة للشخصية. وجدت دراسة متعددة النماذج أن الارتباط بين الشخصية واللون يعتمد على تكوين النموذج ويشكل نوع المفاهيم الإشارة.",
-      "createdAt": "2026-07-03T21:44:43Z",
-      "updatedAt": "2026-07-03T21:44:43Z"
+      "brief_en": "LLM personas can support visualization design as exploratory probes, but their outputs are model-configuration dependent and may not reflect stable personality effects. They can be used to inform design decisions, but human participants are still necessary for validation.",
+      "brief_ar": "يمكن أن تدعم شخصيات LLM تصميم التصور كأدوات استكشافية، ولكن مخرجاتها تعتمد على تكوين النموذج وقد لا تعكس آثار الشخصية المستقرة. يمكن استخدامها لإعلام قرارات التصميم، ولكن المشاركين البشر لا يزالون ضروريين للتحقق",
+      "createdAt": "2026-07-03T22:43:17Z",
+      "updatedAt": "2026-07-03T22:43:17Z"
     }
   ]
 }
