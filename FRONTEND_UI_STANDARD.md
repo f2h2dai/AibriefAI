@@ -2,6 +2,8 @@
 
 This standard applies to all new React web interface work in AIbrief. The current public site is static generated HTML, but any future React surface must follow these rules.
 
+Architecture decision record: `docs/adr/0001-frontend-ui-foundation.md`.
+
 ## Component Foundation
 
 1. Use `@base-ui/react` as the default component foundation for React web interfaces.
