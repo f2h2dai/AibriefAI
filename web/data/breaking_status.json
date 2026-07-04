@@ -1,7 +1,18 @@
 {
-  "alerted_count": 75,
+  "alerted_count": 76,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-8920908dafe626700823e199",
+      "reason": "ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence. author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.co",
+      "score": 9,
+      "shown_at": "2026-07-04T23:46:24Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation"
+    },
     {
       "confidence": 0,
       "id": "story-ee6607d307fbd6787a07f8d8",
@@ -122,27 +133,16 @@
       "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOajJWZTlkS0NZUThTX1EwREFzSW9Cajdvdkc4WTF2UV9yYlZDZzg5STl0bjA3VEp4YnFIeEktRnJEbUZISVV4Y3c5QVVuZjhnNmJqSkltR0c3c3BwQWxjdmQ4dmlST3BLbm1pZ1l0Njd1bW1qQW9yZmdBSDlHVGl6b01mSFdXRHdob0tDQ3J1MUM1R3ZHNXl2Z19GRVNtTXgxcnE2WG40a18wQQ",
       "status": "x-intel",
       "title": "Space42\u2019s Khalid Al Awadhi on how UAE is reshaping the space economy - Gulf Business"
-    },
-    {
-      "confidence": 0,
-      "id": "story-c6f377e369cec71ea806e25e",
-      "reason": "US Military Deployed Elon Musk\u2019s Grok AI For Iran Airstrikes, Court Briefing Reveals - Outlook India Outlook India \"Grok Gov Model\" \"Project Maven\"",
-      "score": 75,
-      "shown_at": "2026-07-01T10:56:52Z",
-      "source": "google-news",
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONWJVQWNMNlh5N3BvLVctbEpSNzA2eFdfNVRHU2cxaTFYb01vaXg4MTRLXzVGeFpSMGRaM0J2SG1MdkRER2FtamhqSmxIT1BMbEtpeElrMTRTUlJmT2RHUW1HQ2k0cjNWYzFybGdpWUpKTHlXT3Bud0RLTFpHM1hSd0o4dElKS1BsajQ4R09xd2VRSkNHZkRqbXJPMnE5MzlhRHh6Q3B0THJVSDFfN3dOS3h6Rkh1ZFBTTUdmQ3pVZ2M0cEXSAdABQVVfeXFMTkxTTXZ6QnNvX19tbmhNd0xpeFMybF83cVJlOUNtcG1KRW13b0RUN3lmRXYySWRCaUo0cEg0dDdKbm1iZ3dlUkZ3b3hBVXpJVXhzWFpiR3kzZlZWdFZTRkhuLXY4cU01MVgyZU54M0lvby12ZlZZUUFzN1FERzVGYlRQWWVjX0F4YkloOVV0aktQTmVQTzhKcDVLdmRsZ3N3UzNUWUZzZElvVnljVTFHUVZNejhncUYtQjY3ZGszUnNzWG8xLWxFenBRa2hCcnhHVA",
-      "status": "x-intel",
-      "title": "US Military Deployed Elon Musk\u2019s Grok AI For Iran Airstrikes, Court Briefing Reveals - Outlook India"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-04T15:47:06Z",
+    "alerted_at": "2026-07-04T23:46:24Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
+    "title": "@sama: ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 1,
     "collected": 1,
     "initial_collected": 1,
@@ -156,8 +156,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.638,
-      "projected_minutes_per_30d": 222.64,
+      "measured_seconds": 0.724,
+      "projected_minutes_per_30d": 34.76,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 1,
@@ -166,11 +166,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-04T20:14:58Z",
+  "updated_at": "2026-07-04T23:46:24Z",
   "version": 1
 }
