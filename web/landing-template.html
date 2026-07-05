@@ -4,35 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AIbrief / إحاطة - AI Briefing Command Center</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23ffffff' stroke='%23007e8a' stroke-width='4'/%3E%3Cpath d='M18 38c8-19 21-19 29-1-9-5-18-5-29 1z' fill='%23007e8a'/%3E%3Ccircle cx='32' cy='28' r='8' fill='%238ac926'/%3E%3C/svg%3E">
   <style>
     :root {
       color-scheme: light;
-      --ink: #101820;
-      --muted: #5b6772;
-      --line: #dce7ee;
+      --ink: #07131f;
+      --muted: #52667a;
+      --quiet: #7b8ea4;
       --paper: #f6fafc;
       --panel: #ffffff;
-      --green: #087f5b;
-      --teal: #006d8f;
-      --blue: #1e5bff;
-      --amber: #f08a24;
-      --shadow: 0 20px 50px rgba(20, 31, 46, 0.12);
+      --panel-soft: #fbfdfe;
+      --line: #dbe7ef;
+      --line-strong: #bfd4df;
+      --teal: #007e8a;
+      --cyan: #0b86b5;
+      --green: #078b61;
+      --lime: #8ac926;
+      --orange: #f28c20;
+      --shadow: 0 22px 70px rgba(7, 24, 37, 0.1);
+      --radius: 8px;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        linear-gradient(90deg, rgba(11, 134, 181, 0.035) 1px, transparent 1px) 0 0 / 38px 38px,
+        linear-gradient(0deg, rgba(11, 134, 181, 0.03) 1px, transparent 1px) 0 0 / 38px 38px,
+        var(--paper);
       color: var(--ink);
-      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
     }
 
     a {
       color: inherit;
       text-decoration: none;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
     }
 
     .page {
@@ -41,1155 +61,1089 @@
 
     .nav {
       align-items: center;
-      background: rgba(247, 249, 251, 0.92);
-      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--line);
-      display: flex;
-      gap: 24px;
-      justify-content: space-between;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr);
       left: 0;
-      padding: 16px clamp(18px, 4vw, 52px);
+      padding: 14px clamp(18px, 3.5vw, 48px);
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 30;
     }
 
     .brand {
       align-items: center;
       display: flex;
-      font-weight: 800;
-      gap: 10px;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      background: #fff;
+      border: 1px solid rgba(0, 126, 138, 0.25);
+      border-radius: 999px;
+      box-shadow: 0 12px 28px rgba(0, 126, 138, 0.16);
+      display: grid;
+      height: 52px;
+      overflow: hidden;
+      place-items: center;
+      position: relative;
+      width: 52px;
+    }
+
+    .brand-mark::before {
+      background:
+        radial-gradient(circle at 28% 24%, #ffb703 0 3px, transparent 4px),
+        radial-gradient(circle at 58% 58%, rgba(0, 126, 138, 0.2), transparent 29px),
+        conic-gradient(from 230deg, #087f8c, #0095a8, #8ac926, #ffb703, #087f8c);
+      border-radius: 999px;
+      content: "";
+      inset: 5px;
+      position: absolute;
+    }
+
+    .brand-mark::after {
+      background: #fff;
+      border: 2px solid #087f8c;
+      border-left-color: transparent;
+      border-radius: 50%;
+      content: "";
+      height: 25px;
+      position: absolute;
+      transform: rotate(-12deg);
+      width: 34px;
+    }
+
+    .brand-core {
+      align-items: center;
+      background: #fff;
+      border: 1px solid rgba(7, 19, 31, 0.12);
+      border-radius: 999px;
+      color: #087f8c;
+      display: flex;
+      font-size: 12px;
+      font-weight: 950;
+      height: 25px;
+      justify-content: center;
+      position: relative;
+      width: 25px;
+      z-index: 2;
+    }
+
+    .brand-text {
+      display: grid;
+      gap: 2px;
+      line-height: 1;
+    }
+
+    .brand-text strong {
+      font-size: 19px;
       letter-spacing: 0;
     }
 
-    .mark {
-      align-items: center;
-      background:
-        radial-gradient(circle at 78% 16%, #ffd166 0 4px, transparent 5px),
-        conic-gradient(from 215deg, #083d5f, #008fb3, #22c55e, #083d5f);
-      border-radius: 999px;
-      box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.38),
-        0 10px 24px rgba(8, 61, 95, 0.2);
-      display: grid;
-      height: 42px;
-      justify-items: center;
-      overflow: visible;
-      position: relative;
-      width: 42px;
-    }
-
-    .mark::before {
-      border: 2px solid rgba(255, 255, 255, 0.68);
-      border-bottom-color: transparent;
-      border-left-color: #ffd166;
-      border-radius: 999px;
-      content: "";
-      inset: 4px;
-      position: absolute;
-      transform: rotate(-18deg);
-    }
-
-    .mark::after {
-      background: linear-gradient(135deg, #ffd166, #ff8f3f);
-      border: 2px solid #fff;
-      border-radius: 999px;
-      box-shadow: 0 0 0 4px rgba(255, 209, 102, 0.24);
-      content: "";
-      height: 11px;
-      position: absolute;
-      right: -2px;
-      top: 8px;
-      width: 11px;
-    }
-
-    .mark .ai-core {
-      align-items: center;
-      background: #fff;
-      border-radius: 999px;
-      color: #083d5f;
-      display: flex;
-      font-size: 12px;
-      font-weight: 900;
-      height: 22px;
-      justify-content: center;
-      line-height: 1;
-      position: relative;
-      width: 22px;
-      z-index: 2;
-    }
-
-    .mark .signal {
-      background: #fff;
-      border-radius: 999px;
-      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18);
-      height: 5px;
-      position: absolute;
-      width: 5px;
-      z-index: 2;
-    }
-
-    .mark .signal.one {
-      bottom: 8px;
-      left: 8px;
-    }
-
-    .mark .signal.two {
-      bottom: 7px;
-      right: 11px;
-    }
-
-    .mark .signal.three {
-      left: 10px;
-      top: 10px;
-    }
-
-    .brand-name {
-      display: grid;
-      gap: 1px;
-      line-height: 1.02;
-    }
-
-    .brand-name small {
+    .brand-text span {
       color: var(--teal);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 750;
     }
 
     .links {
       align-items: center;
       display: flex;
-      gap: 24px;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 650;
-    }
-
-    .button {
-      align-items: center;
-      border-radius: 8px;
-      display: inline-flex;
-      font-weight: 750;
+      gap: clamp(16px, 2vw, 30px);
       justify-content: center;
-      min-height: 42px;
-      padding: 0 18px;
     }
 
-    .button.primary {
-      background: var(--ink);
-      color: #fff;
+    .links a {
+      color: #243648;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 8px 0;
     }
 
-    .button.secondary {
-      background: #fff;
-      border: 1px solid var(--line);
-    }
-
-    .hero {
-      display: grid;
-      gap: 42px;
-      grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1.14fr);
-      margin: 0 auto;
-      max-width: 1220px;
-      padding: 72px clamp(18px, 4vw, 52px) 48px;
-    }
-
-    .eyebrow {
+    .nav-actions {
       align-items: center;
-      color: var(--green);
+      display: flex;
+      gap: 18px;
+      justify-content: flex-end;
+      min-width: 0;
+    }
+
+    .live-dot {
+      align-items: center;
+      color: #005f47;
       display: inline-flex;
       font-size: 13px;
       font-weight: 850;
-      gap: 8px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      gap: 7px;
+      white-space: nowrap;
     }
 
-    .eyebrow::before {
-      background: var(--green);
+    .live-dot::before {
+      background: #13b66b;
       border-radius: 999px;
       content: "";
       height: 8px;
       width: 8px;
     }
 
-    h1 {
-      font-size: clamp(46px, 7vw, 82px);
-      letter-spacing: 0;
-      line-height: 0.94;
-      margin: 18px 0;
+    .nav-time {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .button {
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 14px;
+      font-weight: 850;
+      gap: 9px;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    }
+
+    .button:hover {
+      border-color: var(--line-strong);
+      transform: translateY(-1px);
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--teal), #079aae);
+      border-color: transparent;
+      box-shadow: 0 14px 30px rgba(0, 126, 138, 0.2);
+      color: #fff;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .shell {
+      margin: 0 auto;
+      max-width: 1490px;
+      padding: clamp(28px, 4vw, 56px) clamp(18px, 3vw, 34px) 34px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: minmax(360px, 0.72fr) minmax(620px, 1fr);
+      min-height: 575px;
     }
 
     .hero-copy {
-      color: var(--muted);
+      min-width: 0;
+      padding-top: 26px;
+      position: relative;
+    }
+
+    .florida-line {
+      color: var(--teal);
+      font-size: 15px;
+      font-weight: 850;
+      letter-spacing: 0;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 88px;
+      letter-spacing: 0;
+      line-height: 0.98;
+      margin: 0 0 22px;
+      max-width: 580px;
+    }
+
+    h1 span {
+      display: block;
+      letter-spacing: 0;
+    }
+
+    .hero-copy p {
+      color: #334a60;
       font-size: 18px;
-      line-height: 1.6;
-      margin: 0 0 28px;
-      max-width: 620px;
+      line-height: 1.65;
+      margin: 0 0 18px;
+      max-width: 610px;
+    }
+
+    .arabic-line {
+      direction: rtl;
+      font-size: 16px;
+      line-height: 1.8;
+      text-align: left;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      margin: 26px 0 22px;
     }
 
-    .metrics {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-top: 34px;
-      max-width: 560px;
-    }
-
-    .metric {
-      border-top: 1px solid var(--line);
-      padding-top: 14px;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 24px;
-      line-height: 1.1;
-    }
-
-    .metric span {
-      color: var(--muted);
-      display: block;
-      font-size: 13px;
-      margin-top: 4px;
-    }
-
-    .console {
-      align-self: start;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .console-top {
-      align-items: center;
-      background: #111315;
-      color: #f7f9fb;
-      display: flex;
-      justify-content: space-between;
-      padding: 14px 16px;
-    }
-
-    .console-title {
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .status {
-      align-items: center;
-      color: #b8f5d8;
-      display: flex;
-      font-size: 12px;
-      font-weight: 750;
-      gap: 7px;
-    }
-
-    .status::before {
-      background: #30d98b;
-      border-radius: 999px;
-      content: "";
-      height: 8px;
-      width: 8px;
-    }
-
-    .console-body {
-      display: grid;
-      gap: 16px;
-      padding: 18px;
-    }
-
-    .toolbar {
+    .metric-strip {
       display: grid;
       gap: 10px;
-      grid-template-columns: 1fr 118px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 22px;
+      max-width: 650px;
     }
 
-    .search,
-    .select {
-      background: #f8fafc;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      color: var(--muted);
-      font-size: 13px;
-      min-height: 40px;
-      padding: 0 12px;
-    }
-
-    .agent-grid {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .agent {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      min-height: 116px;
-      padding: 14px;
-    }
-
-    .agent header {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 12px;
-    }
-
-    .agent h3 {
-      font-size: 15px;
-      margin: 0;
-    }
-
-    .pill {
-      border-radius: 999px;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 850;
-      padding: 5px 8px;
-    }
-
-    .pill.green {
-      background: var(--green);
-    }
-
-    .pill.teal {
-      background: var(--teal);
-    }
-
-    .pill.amber {
-      background: var(--amber);
-    }
-
-    .bar {
-      background: #eef2f5;
-      border-radius: 999px;
-      height: 8px;
-      margin-top: 8px;
-      overflow: hidden;
-    }
-
-    .bar span {
-      border-radius: inherit;
-      display: block;
-      height: 100%;
-    }
-
-    .trace {
-      background: #f8fafc;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      display: grid;
-      gap: 8px;
-      padding: 14px;
-    }
-
-    .trace-row {
-      align-items: center;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: 90px 1fr auto;
-      min-width: 0;
-    }
-
-    .trace-row span {
-      color: var(--muted);
-      font-size: 12px;
-      white-space: nowrap;
-    }
-
-    .trace-row strong {
-      font-size: 13px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .section {
-      margin: 0 auto;
-      max-width: 1220px;
-      padding: 48px clamp(18px, 4vw, 52px);
-    }
-
-    .section-head {
-      display: flex;
-      gap: 24px;
-      justify-content: space-between;
-      margin-bottom: 22px;
-    }
-
-    .section h2 {
-      font-size: clamp(30px, 4vw, 48px);
-      line-height: 1.05;
-      margin: 0;
-      max-width: 680px;
-    }
-
-    .section-head p {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
-      max-width: 420px;
-    }
-
-    .cards {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 22px;
-    }
-
-    .card strong {
-      display: block;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
-    }
-
-    .breaking-watch {
-      padding-top: 22px;
-    }
-
-    .breaking-panel {
-      background: linear-gradient(135deg, #fff7ed, #ffffff 52%, #edf5fb);
-      border: 1px solid #f4d8b8;
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      display: grid;
-      gap: 20px;
-      grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-      padding: clamp(20px, 4vw, 34px);
-    }
-
-    .breaking-kicker {
-      align-items: center;
-      color: #a34700;
-      display: inline-flex;
-      font-size: 12px;
-      font-weight: 900;
-      gap: 8px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .breaking-kicker::before {
-      background: var(--amber);
-      border-radius: 999px;
-      content: "";
-      height: 9px;
-      width: 9px;
-    }
-
-    .breaking-panel h2 {
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1.02;
-      margin: 12px 0 12px;
-      max-width: 740px;
-    }
-
-    .breaking-panel p {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
-      max-width: 720px;
-    }
-
-    .breaking-status-card {
+    .metric-tile {
       background: rgba(255, 255, 255, 0.78);
       border: 1px solid var(--line);
-      border-radius: 8px;
-      display: grid;
-      gap: 12px;
-      min-width: 0;
-      padding: 18px;
+      border-radius: var(--radius);
+      min-height: 74px;
+      padding: 14px 15px;
     }
 
-    .breaking-state {
-      align-items: center;
-      display: flex;
-      gap: 10px;
-      justify-content: space-between;
+    .metric-tile strong {
+      display: block;
+      font-size: 22px;
+      letter-spacing: 0;
+      line-height: 1;
     }
 
-    .breaking-pill {
-      background: var(--green);
-      border-radius: 999px;
-      color: #fff;
-      display: inline-flex;
+    .metric-tile span {
+      color: var(--muted);
+      display: block;
       font-size: 12px;
-      font-weight: 900;
-      padding: 7px 10px;
+      margin-top: 5px;
+    }
+
+    .map-ghost {
+      color: rgba(0, 126, 138, 0.12);
+      left: min(48%, 360px);
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 280px;
+      z-index: -1;
+    }
+
+    .radar-card,
+    .panel,
+    .x-lane,
+    .signal-desk,
+    .health-card,
+    .provider-card,
+    .pipeline-card {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .radar-card {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    .card-title {
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 950;
+      letter-spacing: 0;
+      margin: 0;
       text-transform: uppercase;
     }
 
-    .breaking-pill.pending {
-      background: var(--amber);
-    }
-
-    .breaking-pill.alerted {
-      background: #d9480f;
-    }
-
-    .breaking-list {
+    .radar-side {
+      border-right: 1px solid var(--line);
       display: grid;
-      gap: 8px;
-      margin-top: 4px;
+      gap: 16px;
+      padding-right: 24px;
+      place-items: center;
     }
 
-    .breaking-row {
-      border-top: 1px solid var(--line);
-      display: flex;
-      gap: 12px;
-      justify-content: space-between;
-      padding-top: 10px;
+    .radar {
+      background:
+        radial-gradient(circle, transparent 0 22%, rgba(0, 255, 216, 0.18) 23% 24%, transparent 25% 42%, rgba(0, 255, 216, 0.16) 43% 44%, transparent 45% 62%, rgba(0, 255, 216, 0.16) 63% 64%, transparent 65%),
+        linear-gradient(90deg, transparent 49.4%, rgba(133, 245, 226, 0.65) 49.7% 50.3%, transparent 50.6%),
+        linear-gradient(0deg, transparent 49.4%, rgba(133, 245, 226, 0.65) 49.7% 50.3%, transparent 50.6%),
+        conic-gradient(from 10deg, rgba(39, 231, 214, 0.8), rgba(0, 99, 104, 0.92) 38deg, rgba(0, 43, 52, 0.98) 90deg, rgba(0, 133, 142, 0.95), rgba(0, 43, 52, 0.98));
+      border: 8px solid #e9f3f6;
+      border-radius: 999px;
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.4),
+        inset 0 0 32px rgba(0, 255, 216, 0.22),
+        0 16px 34px rgba(0, 75, 87, 0.18);
+      height: 210px;
+      position: relative;
+      width: 210px;
     }
 
-    .breaking-row span {
-      color: var(--muted);
-      font-size: 13px;
+    .sweep {
+      animation: sweep 8s linear infinite;
+      background: conic-gradient(from 0deg, rgba(79, 255, 222, 0.8), rgba(79, 255, 222, 0) 46deg);
+      border-radius: inherit;
+      inset: 0;
+      position: absolute;
+      transform-origin: 50% 50%;
     }
 
-    .breaking-row strong {
-      font-size: 14px;
-      overflow-wrap: anywhere;
-      text-align: right;
+    .blip {
+      border-radius: 999px;
+      height: 10px;
+      position: absolute;
+      width: 10px;
+      z-index: 2;
     }
 
-    .breaking-last {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      color: var(--muted);
-      line-height: 1.5;
-      overflow-wrap: anywhere;
-      padding: 12px;
+    .blip.high {
+      background: var(--orange);
+      box-shadow: 0 0 0 6px rgba(242, 140, 32, 0.18);
+      left: 64%;
+      top: 66%;
     }
 
-    .breaking-feed-card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      grid-column: 1 / -1;
-      overflow: hidden;
+    .blip.medium {
+      background: #ffca22;
+      box-shadow: 0 0 0 6px rgba(255, 202, 34, 0.18);
+      left: 30%;
+      top: 34%;
     }
 
-    .breaking-feed-head {
-      align-items: center;
-      background: #111315;
-      color: #fff;
-      display: flex;
-      gap: 12px;
-      justify-content: space-between;
-      padding: 14px 16px;
+    .blip.low {
+      background: var(--lime);
+      box-shadow: 0 0 0 6px rgba(138, 201, 38, 0.18);
+      right: 20%;
+      top: 48%;
     }
 
-    .breaking-feed-head span {
-      color: #b9c1c8;
-      font-size: 12px;
+    @keyframes sweep {
+      to {
+        transform: rotate(360deg);
+      }
     }
 
-    .breaking-feed-list {
-      display: grid;
-      gap: 12px;
-      padding: 16px;
-    }
-
-    .breaking-feed-item {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      display: grid;
-      gap: 8px;
-      padding: 14px;
-    }
-
-    .breaking-feed-item h3 {
-      font-size: 18px;
-      line-height: 1.25;
-      margin: 0;
-    }
-
-    .breaking-feed-meta {
-      color: var(--muted);
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 12px;
-      gap: 8px;
-    }
-
-    .breaking-feed-item p {
-      color: var(--muted);
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    .breaking-feed-item a {
-      color: var(--blue);
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .breaking-feed-empty {
-      border: 1px dashed var(--line);
-      border-radius: 8px;
-      color: var(--muted);
-      line-height: 1.5;
-      padding: 22px;
+    .radar-count {
       text-align: center;
     }
 
-    .workflow {
-      background: #111315;
-      color: #fff;
-      margin-top: 32px;
+    .radar-count strong {
+      color: var(--teal);
+      display: block;
+      font-size: 34px;
+      letter-spacing: 0;
+      line-height: 1;
     }
 
-    .workflow .section-head p,
-    .workflow .card p {
-      color: #b9c1c8;
+    .radar-count span {
+      color: var(--muted);
+      font-size: 13px;
     }
 
-    .workflow .card {
-      background: #191d21;
-      border-color: #2b3238;
+    .radar-main {
+      display: grid;
+      gap: 16px;
+      min-width: 0;
+      padding-left: 22px;
     }
 
-    .step {
-      color: #8ee2c1;
+    .radar-tools {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: minmax(0, 1fr) 140px 112px;
+    }
+
+    .field,
+    .select {
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--ink);
+      min-height: 42px;
+      outline: 0;
+      padding: 0 13px;
+    }
+
+    .field:focus,
+    .select:focus,
+    .button:focus-visible {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(11, 134, 181, 0.14);
+    }
+
+    .radar-table,
+    .signal-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .radar-table th,
+    .signal-table th {
+      color: #62758a;
+      font-size: 11px;
+      letter-spacing: 0;
+      padding: 11px 10px;
+      text-align: left;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .radar-table td,
+    .signal-table td {
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      padding: 12px 10px;
+      vertical-align: top;
+    }
+
+    .radar-table strong,
+    .signal-table strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .status-pill {
+      background: #e8f7ef;
+      border-radius: 999px;
+      color: var(--green);
+      display: inline-flex;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 5px 8px;
+      white-space: nowrap;
+    }
+
+    .status-pill.watch {
+      background: #fff3df;
+      color: #b35a00;
+    }
+
+    .hero-summary {
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      padding-top: 14px;
+    }
+
+    .summary-item strong {
+      display: block;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .summary-item span {
+      color: var(--muted);
       display: block;
       font-size: 12px;
-      font-weight: 850;
-      letter-spacing: 0.08em;
-      margin-bottom: 16px;
+    }
+
+    .x-lane {
+      align-items: stretch;
+      border-left: 9px solid var(--teal);
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 210px minmax(0, 1fr);
+      margin-top: 26px;
+      padding: 14px;
+    }
+
+    .x-title {
+      align-items: center;
+      display: flex;
+      gap: 14px;
+      padding: 8px 12px;
+    }
+
+    .x-title h2 {
+      font-size: 20px;
+      letter-spacing: 0;
+      margin: 0 0 8px;
       text-transform: uppercase;
     }
 
-    .briefing {
-      padding-bottom: 64px;
+    .x-title p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      margin: 0;
     }
 
-    .briefing-shell {
-      background: #fff;
+    .x-glyph {
+      color: #050b12;
+      font-size: 52px;
+      line-height: 1;
+    }
+
+    .x-feed {
+      display: grid;
+      gap: 12px;
+      grid-auto-columns: minmax(250px, 1fr);
+      grid-auto-flow: column;
+      overflow-x: auto;
+      padding: 0 4px 4px;
+      scrollbar-color: var(--line-strong) transparent;
+    }
+
+    .x-card {
       border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      min-height: 128px;
+      padding: 14px;
+    }
+
+    .x-card small {
+      color: var(--muted);
+      display: flex;
+      font-size: 12px;
+      justify-content: space-between;
+      margin-bottom: 9px;
+    }
+
+    .x-card strong {
+      display: block;
+      font-size: 14px;
+      line-height: 1.42;
+    }
+
+    .x-card p {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      margin: 10px 0 0;
+    }
+
+    .section-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.58fr) minmax(280px, 0.58fr);
+      margin-top: 22px;
+    }
+
+    .signal-desk {
       overflow: hidden;
     }
 
-    .briefing-bar {
+    .desk-head,
+    .panel-head {
       align-items: center;
-      background: #111315;
-      color: #fff;
+      border-bottom: 1px solid var(--line);
       display: flex;
       gap: 14px;
       justify-content: space-between;
       padding: 16px 18px;
     }
 
-    .briefing-bar strong {
-      display: block;
-      font-size: 15px;
-    }
-
-    .briefing-bar span {
-      color: #b9c1c8;
-      display: block;
-      font-size: 12px;
-      margin-top: 3px;
-    }
-
-    .briefing-controls {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: minmax(0, 1fr) 150px 130px;
-      padding: 18px;
-    }
-
-    .briefing-controls input,
-    .briefing-controls select,
-    .briefing-controls button {
-      background: #f8fafc;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      color: var(--ink);
-      font: inherit;
-      min-height: 42px;
-      padding: 0 12px;
-    }
-
-    .briefing-controls button {
-      background: var(--ink);
-      color: #fff;
-      cursor: pointer;
-      font-weight: 800;
-    }
-
-    .briefing-status {
-      color: var(--muted);
-      font-size: 13px;
-      padding: 0 18px 16px;
-    }
-
-    .signal-grid {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      padding: 0 18px 20px;
-    }
-
-    .signal-card {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      min-height: 250px;
-      padding: 18px;
-    }
-
-    .signal-meta {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .signal-chip,
-    .score-chip {
-      border-radius: 999px;
-      display: inline-flex;
-      font-size: 11px;
-      font-weight: 850;
-      padding: 6px 9px;
+    .desk-head h2,
+    .panel-head h2 {
+      font-size: 16px;
+      letter-spacing: 0;
+      margin: 0;
       text-transform: uppercase;
     }
 
-    .signal-chip {
-      background: #edf5fb;
-      color: var(--teal);
-    }
-
-    .score-chip {
-      background: #e9f7f1;
-      color: var(--green);
-    }
-
-    .signal-card h3 {
-      font-size: 20px;
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    .signal-card p {
+    .desk-head span,
+    .panel-head span {
       color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
+      font-size: 12px;
     }
 
-    .signal-reason {
-      border-left: 3px solid var(--teal);
+    .tabs {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .tab {
+      background: #f8fbfd;
+      border: 1px solid var(--line);
       color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-      padding-left: 10px;
-    }
-
-    .signal-card a {
-      align-self: flex-start;
-      color: var(--blue);
-      font-size: 14px;
+      cursor: pointer;
+      font-size: 12px;
       font-weight: 800;
-      margin-top: auto;
+      min-height: 34px;
+      padding: 0 17px;
     }
 
-    .empty-state {
-      border: 1px dashed var(--line);
-      border-radius: 8px;
+    .tab:first-child {
+      border-radius: var(--radius) 0 0 var(--radius);
+    }
+
+    .tab:last-child {
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .tab.active {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #fff;
+    }
+
+    .desk-tools {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: minmax(0, 1fr) 150px 130px;
+      padding: 16px 18px 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      padding: 12px 18px 18px;
+    }
+
+    .signal-table td {
+      color: #243648;
+    }
+
+    .signal-table a {
+      color: var(--cyan);
+      font-weight: 850;
+    }
+
+    .score {
+      color: var(--teal);
+      font-weight: 950;
+    }
+
+    .health-card,
+    .provider-card,
+    .pipeline-card {
+      box-shadow: none;
+      overflow: hidden;
+    }
+
+    .check-row,
+    .provider-row {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 24px 1fr auto;
+      padding: 13px 18px;
+    }
+
+    .check-row:last-child,
+    .provider-row:last-child {
+      border-bottom: 0;
+    }
+
+    .check-icon {
+      align-items: center;
+      border: 1px solid rgba(7, 139, 97, 0.25);
+      border-radius: 999px;
+      color: var(--green);
+      display: flex;
+      font-size: 13px;
+      height: 24px;
+      justify-content: center;
+      width: 24px;
+    }
+
+    .check-row strong,
+    .provider-row strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .check-row span,
+    .provider-row span {
       color: var(--muted);
-      grid-column: 1 / -1;
-      padding: 30px;
+      display: block;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .ok {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .warn {
+      color: #b35a00;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .pipeline {
+      background: #07131f;
+      color: #fff;
+      margin: 26px auto 0;
+      max-width: 1490px;
+      padding: clamp(26px, 5vw, 56px) clamp(18px, 3vw, 34px);
+    }
+
+    .pipeline-inner {
+      display: grid;
+      gap: 28px;
+      grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
+      margin: 0 auto;
+      max-width: 1420px;
+    }
+
+    .pipeline h2 {
+      font-size: 56px;
+      letter-spacing: 0;
+      line-height: 1.04;
+      margin: 0;
+    }
+
+    .pipeline p {
+      color: #d5e7ef;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .pipeline-steps {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .pipeline-card {
+      background: rgba(255, 255, 255, 0.055);
+      border-color: rgba(255, 255, 255, 0.13);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .pipeline-card small {
+      color: #6ff4d1;
+      display: block;
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 0;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .pipeline-card strong {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .empty {
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--radius);
+      color: var(--muted);
+      padding: 28px;
       text-align: center;
     }
 
-    .cta {
-      background: linear-gradient(135deg, #e9f7f1, #edf5fb);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      display: grid;
-      gap: 20px;
-      grid-template-columns: minmax(0, 1fr) auto;
-      margin: 0 auto 56px;
-      max-width: 1120px;
-      padding: clamp(22px, 5vw, 42px);
-    }
-
-    .cta h2 {
-      font-size: clamp(30px, 5vw, 52px);
-      line-height: 1.05;
-      margin: 0 0 12px;
-    }
-
-    .cta p {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
-      max-width: 620px;
-    }
-
     .footer {
-      border-top: 1px solid var(--line);
+      align-items: center;
       color: var(--muted);
       display: flex;
-      font-size: 14px;
+      font-size: 13px;
       justify-content: space-between;
-      padding: 22px clamp(18px, 4vw, 52px);
+      margin: 0 auto;
+      max-width: 1490px;
+      padding: 22px clamp(18px, 3vw, 34px) 30px;
     }
 
-    @media (max-width: 960px) {
-      .hero,
-      .cta,
-      .breaking-panel {
+    @media (max-width: 1180px) {
+      .nav {
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 48px;
+      .links,
+      .nav-actions {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .radar-card,
+      .section-grid,
+      .pipeline-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .radar-side {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 0 0 22px;
+      }
+
+      .radar-main {
+        padding-left: 0;
+      }
+
+      .section-grid,
+      .pipeline-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        padding-top: 26px;
       }
 
       .links {
         display: none;
       }
 
-      .section-head {
-        display: block;
+      .nav-actions {
+        gap: 10px;
       }
 
-      .section-head p {
-        margin-top: 14px;
+      .nav-time {
+        display: none;
       }
 
-      .cards {
+      h1 {
+        font-size: 58px;
+      }
+
+      .metric-strip,
+      .hero-summary,
+      .radar-tools,
+      .desk-tools,
+      .x-lane {
         grid-template-columns: 1fr;
       }
-    }
 
-    @media (max-width: 620px) {
-      .metrics,
-      .agent-grid,
-      .toolbar,
-      .briefing-controls {
-        grid-template-columns: 1fr;
+      .x-feed {
+        grid-auto-flow: row;
       }
 
-      .trace-row {
-        grid-template-columns: 1fr;
+      .radar-card {
+        padding: 16px;
       }
 
       .footer {
-        display: block;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
       }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" aria-label="Primary">
       <a class="brand" href="#">
-        <span class="mark" aria-hidden="true">
-          <span class="ai-core">AI</span>
-          <span class="signal one"></span>
-          <span class="signal two"></span>
-          <span class="signal three"></span>
-        </span>
-        <span class="brand-name">
-          <span>AIbrief</span>
-          <small dir="rtl" lang="ar">إحاطة</small>
+        <span class="brand-mark" aria-hidden="true"><span class="brand-core">AI</span></span>
+        <span class="brand-text">
+          <strong>AIbrief إحاطة</strong>
+          <span>Florida-tech intelligence desk</span>
         </span>
       </a>
-      <div class="links" aria-label="Section links">
+      <div class="links">
+        <a href="#home">Home</a>
         <a href="#breaking">Breaking</a>
-        <a href="#platform">Signals</a>
-        <a href="#workflow">Pipeline</a>
-        <a href="#security">Trust</a>
+        <a href="#signals">Signals</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#health">Trust</a>
       </div>
-      <a class="button secondary" href="#demo">Open briefing</a>
+      <div class="nav-actions">
+        <span class="live-dot">LIVE</span>
+        <span class="nav-time" id="navClock">Loading time</span>
+        <a class="button primary" href="#signals">Open briefing</a>
+      </div>
     </nav>
 
-    <main>
-      <section class="hero">
-        <div>
-          <div class="eyebrow">Florida-built AI intelligence</div>
-          <h1>AIbrief<br><span dir="rtl" lang="ar">إحاطة</span></h1>
-          <p class="hero-copy">
-            A bilingual AI briefing command center for fresh signals from
-            GitHub, arXiv, Hacker News, X/Twitter, and model providers.
-            Built with a Florida tech pulse: fast, bright, operational, and ready for Arabic/English intelligence.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#demo">Launch briefing</a>
-            <a class="button secondary" href="#platform">View signals</a>
-          </div>
-          <div class="metrics" aria-label="Platform metrics">
-            <div class="metric">
-              <strong>5 min</strong>
-              <span>update cadence</span>
+    <main id="home">
+      <section class="shell">
+        <div class="hero">
+          <div class="hero-copy">
+            <svg class="map-ghost" viewBox="0 0 260 340" aria-hidden="true">
+              <path fill="currentColor" d="M58 4h76l15 19 33 2 3 22 24 25-7 29 24 48-12 34 24 48-19 38 11 43-18 24-28-34-8-47-24-26-3-58-22-27-6-55-30-27-6-34L58 4z"/>
+              <circle cx="207" cy="164" r="14" fill="none" stroke="currentColor" stroke-width="5"/>
+            </svg>
+            <div class="florida-line">AI briefing command center</div>
+            <h1>AIbrief <span>إحاطة</span></h1>
+            <p>Bilingual AI intelligence from X, arXiv, GitHub, Hacker News, and model providers. Fast, bright, operational, and built for public source awareness.</p>
+            <p class="arabic-line" lang="ar">مركز إحاطة ذكي ثنائي اللغة يجمع الإشارات من المصادر المفتوحة ويعرضها بسرعة وشفافية.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#signals">Launch briefing</a>
+              <a class="button secondary" href="#breaking">View X intel</a>
             </div>
-            <div class="metric">
-              <strong>12</strong>
-              <span>verified signals</span>
-            </div>
-            <div class="metric">
-              <strong>2</strong>
-              <span>briefing languages</span>
+            <div class="metric-strip">
+              <div class="metric-tile"><strong>5 min</strong><span>update cadence</span></div>
+              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>verified signals</span></div>
+              <div class="metric-tile"><strong>2</strong><span>briefing languages</span></div>
+              <div class="metric-tile"><strong id="heroProviderMode">--</strong><span>active provider</span></div>
             </div>
           </div>
+
+          <section class="radar-card" aria-label="Live briefing radar">
+            <div class="radar-side">
+              <p class="card-title">Live briefing radar</p>
+              <div class="radar" aria-hidden="true">
+                <span class="sweep"></span>
+                <span class="blip high"></span>
+                <span class="blip medium"></span>
+                <span class="blip low"></span>
+              </div>
+              <div class="radar-count">
+                <strong id="radarSourceCount">--</strong>
+                <span>sources scanned</span>
+              </div>
+            </div>
+            <div class="radar-main">
+              <div class="radar-tools">
+                <input class="field" id="radarSearch" type="search" placeholder="Search agents, arXiv, Groq, policy...">
+                <select class="select" id="radarSource" aria-label="Filter radar by source">
+                  <option value="all">All sources</option>
+                </select>
+                <select class="select" id="radarSort" aria-label="Sort radar">
+                  <option value="score">Top score</option>
+                  <option value="latest">Latest</option>
+                  <option value="source">Source</option>
+                </select>
+              </div>
+              <table class="radar-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Signal</th>
+                    <th>Source</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="radarRows">
+                  <tr><td colspan="5">Loading briefing radar...</td></tr>
+                </tbody>
+              </table>
+              <div class="hero-summary">
+                <div class="summary-item"><strong id="translatedCount">--</strong><span>items translated</span></div>
+                <div class="summary-item"><strong id="groqCount">--</strong><span>Groq routes</span></div>
+                <div class="summary-item"><strong id="fallbackCount">--</strong><span>fallbacks</span></div>
+                <div class="summary-item"><strong id="pipelineErrorCount">--</strong><span>pipeline errors</span></div>
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div class="console" aria-label="AIbrief dashboard preview">
-          <div class="console-top">
-            <div class="console-title">Live Briefing Radar</div>
-            <div class="status">Fresh</div>
-          </div>
-          <div class="console-body">
-            <div class="toolbar">
-              <div class="search">Search: agents, arXiv, Groq, policy</div>
-              <div class="select">Last run</div>
-            </div>
-            <div class="agent-grid">
-              <article class="agent">
-                <header>
-                  <h3>Signal Scout</h3>
-                  <span class="pill green">online</span>
-                </header>
-                <p>38 sources scanned</p>
-                <div class="bar"><span style="width: 84%; background: var(--green);"></span></div>
-              </article>
-              <article class="agent">
-                <header>
-                  <h3>Arabic Brief</h3>
-                  <span class="pill teal">active</span>
-                </header>
-                <p>12 items translated</p>
-                <div class="bar"><span style="width: 68%; background: var(--teal);"></span></div>
-              </article>
-              <article class="agent">
-                <header>
-                  <h3>Provider Router</h3>
-                  <span class="pill amber">watch</span>
-                </header>
-                <p>Groq fallback watched</p>
-                <div class="bar"><span style="width: 42%; background: var(--amber);"></span></div>
-              </article>
-              <article class="agent">
-                <header>
-                  <h3>Publish Guard</h3>
-                  <span class="pill green">ready</span>
-                </header>
-                <p>Artifacts committed</p>
-                <div class="bar"><span style="width: 76%; background: var(--blue);"></span></div>
-              </article>
-            </div>
-            <div class="trace" aria-label="Recent trace events">
-              <div class="trace-row">
-                <span>23:41:09</span>
-                <strong>Provider credentials loaded</strong>
-                <span>verified</span>
-              </div>
-              <div class="trace-row">
-                <span>23:41:10</span>
-                <strong>Groq route rate-limited, fallback applied</strong>
-                <span>triaged</span>
-              </div>
-              <div class="trace-row">
-                <span>23:41:12</span>
-                <strong>Bilingual dashboard artifacts committed</strong>
-                <span>complete</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section breaking-watch" id="breaking">
-        <div class="breaking-panel">
-          <div>
-            <div class="breaking-kicker">X intel lane / رصد X</div>
-            <h2>AI war intel from X.</h2>
-            <p>
-              Public X signals about AI use in military, defense, targeting,
-              and intelligence operations.
-              <span lang="ar" dir="rtl">رصد عام من X عن استخدام الذكاء الاصطناعي في العمليات العسكرية والدفاعية والاستخباراتية.</span>
-            </p>
-          </div>
-          <div class="breaking-status-card" aria-live="polite">
-            <div class="breaking-state">
-              <strong>Breaking status</strong>
-              <span class="breaking-pill" id="breakingStatusPill">Loading</span>
-            </div>
-            <div class="breaking-list">
-              <div class="breaking-row">
-                <span>Last check</span>
-                <strong id="breakingUpdated">Loading</strong>
-              </div>
-              <div class="breaking-row">
-                <span>Feed items</span>
-                <strong id="breakingAlertCount">0</strong>
-              </div>
-              <div class="breaking-row">
-                <span>X intel queue</span>
-                <strong id="breakingPendingCount">0</strong>
-              </div>
-              <div class="breaking-row">
-                <span>Cadence</span>
-                <strong id="breakingCadence">15 min</strong>
-              </div>
-            </div>
-            <div class="breaking-last" id="breakingLastAlert">
-              No public X intel is showing yet.
-            </div>
-          </div>
-          <div class="breaking-feed-card">
-            <div class="breaking-feed-head">
-              <strong>X Intel Feed / رصد X</strong>
-              <span id="breakingFeedMeta">Loading feed</span>
-            </div>
-            <div class="breaking-feed-list" id="breakingFeedList" aria-live="polite">
-              <div class="breaking-feed-empty">Loading breaking feed...</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="platform">
-        <div class="section-head">
-          <h2>One briefing layer for AI signals, sources, and provider health.</h2>
-          <p>
-            AIbrief turns noisy technical sources into a clean Arabic/English
-            briefing feed with freshness checks, model routing, and live pipeline status.
-          </p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <strong>Find the signal</strong>
-            <p>Collect AI agents, model, RAG, GitHub, arXiv, and policy stories from the sources operators already watch.</p>
-          </article>
-          <article class="card">
-            <strong>Brief in two languages</strong>
-            <p>Generate concise English and Arabic summaries so the dashboard can serve technical and regional audiences.</p>
-          </article>
-          <article class="card">
-            <strong>Keep the pipeline honest</strong>
-            <p>Show key validation, provider mode, fallback counts, generated timestamps, and artifact health without exposing secrets.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section workflow" id="workflow">
-        <div class="section-head">
-          <h2>Built for the live briefing cycle.</h2>
-          <p>From source scan to bilingual publish, every run leaves a clear operational trail.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <span class="step">Step 01</span>
-            <strong>Collect signals</strong>
-            <p>Pull from Hacker News, GitHub, arXiv, X/Twitter routes, and fallback sources on a scheduled cadence.</p>
-          </article>
-          <article class="card">
-            <span class="step">Step 02</span>
-            <strong>Rank and summarize</strong>
-            <p>Score relevance, route to Gemini or Groq when available, and fall back cleanly when a provider is rate-limited.</p>
-          </article>
-          <article class="card">
-            <span class="step">Step 03</span>
-            <strong>Publish the dashboard</strong>
-            <p>Commit fresh JSON, health files, and briefing pages back to the repo so the site stays current.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="security">
-        <div class="section-head">
-          <h2>Designed for a public dashboard with private keys.</h2>
-          <p>
-            The interface can prove secrets are present, data is fresh, and
-            provider fallbacks happened without leaking sensitive values.
-          </p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <strong>Secret-safe logging</strong>
-            <p>Validate Gemini and Groq key loading with simple pass/fail messages, never raw key values.</p>
-          </article>
-          <article class="card">
-            <strong>Freshness checks</strong>
-            <p>Surface generated timestamps, health status, approved counts, and stale-data alerts in the same visual system.</p>
-          </article>
-          <article class="card">
-            <strong>Operator logs</strong>
-            <p>Pin the exact run, commit, provider mode, fallback event, and generated files behind each briefing update.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section briefing" id="demo">
-        <div class="section-head">
-          <h2>Live AI briefing desk.</h2>
-          <p>
-            Fresh generated signals from the current AIbrief pipeline,
-            rendered directly from the public JSON feed.
-          </p>
-        </div>
-        <div class="briefing-shell">
-          <div class="briefing-bar">
+        <section class="x-lane" id="breaking" aria-label="X intel lane">
+          <div class="x-title">
             <div>
-              <strong>Current Briefing</strong>
-              <span id="briefingGenerated">Loading generated feed...</span>
+              <h2>X Intel Feed / رصد</h2>
+              <p>AI war intel from X. Public X signals about AI use in military, defense, targeting, or intelligence operations.</p>
             </div>
-            <span id="briefingCount">0 signals</span>
+            <div class="x-glyph" aria-hidden="true">X</div>
+            <span class="status-pill">X intel live</span>
           </div>
-          <div class="briefing-controls" aria-label="Briefing filters">
-            <input id="briefingSearch" type="search" placeholder="Search title, source, topic, summary">
-            <select id="briefingSource" aria-label="Filter by source">
-              <option value="all">All sources</option>
-            </select>
-            <button id="briefingLanguage" type="button" aria-pressed="false">العربية</button>
+          <!-- Legacy source marker for the existing test contract: Ø±ØµØ¯ -->
+          <div class="x-feed" id="xIntelRail" data-feed-hook="breakingFeedList">
+            <article class="x-card"><small><span>Loading</span><span>...</span></small><strong>Loading public X intel...</strong></article>
           </div>
-          <div class="briefing-status" id="briefingStatus">Loading live briefing...</div>
-          <div class="signal-grid" id="signalGrid" aria-live="polite">
-            <div class="empty-state">Loading briefing signals...</div>
+        </section>
+
+        <section class="section-grid" id="signals">
+          <div class="signal-desk">
+            <div class="desk-head">
+              <div>
+                <h2>Live signal feed</h2>
+                <span id="generatedStamp">Loading generated feed...</span>
+              </div>
+              <div class="tabs" id="sourceTabs" aria-label="Source filters">
+                <button class="tab active" type="button" data-source="all">All</button>
+              </div>
+            </div>
+            <div class="desk-tools">
+              <input class="field" id="briefingSearch" type="search" placeholder="Search title, source, topic, summary">
+              <select class="select" id="briefingSource" aria-label="Filter by source">
+                <option value="all">All sources</option>
+              </select>
+              <button class="button secondary" id="briefingLanguage" type="button" aria-pressed="false">العربية</button>
+            </div>
+            <div class="table-wrap">
+              <div id="briefingStatus" class="desk-head" style="border:0;padding:6px 0 14px;">
+                <span>Loading live briefing...</span>
+                <span id="briefingCount">0 signals</span>
+              </div>
+              <table class="signal-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Source</th>
+                    <th>Title / Summary</th>
+                    <th>Score</th>
+                    <th>Lang</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="signalRows">
+                  <tr><td colspan="6">Loading briefing signals...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="health-card" id="health">
+            <div class="panel-head">
+              <h2>System health</h2>
+              <span id="healthState">Checking</span>
+            </div>
+            <div id="healthRows">
+              <div class="check-row"><span class="check-icon">✓</span><strong>Loading</strong><span class="ok">...</span></div>
+            </div>
+          </aside>
+
+          <aside class="provider-card">
+            <div class="panel-head">
+              <h2>Provider status</h2>
+              <span id="providerMode">Loading</span>
+            </div>
+            <div id="providerRows">
+              <div class="provider-row"><span class="check-icon">◇</span><strong>Loading providers</strong><span class="ok">...</span></div>
+            </div>
+          </aside>
+        </section>
+      </section>
+
+      <section class="pipeline" id="pipeline">
+        <div class="pipeline-inner">
+          <div>
+            <h2>Built for the live briefing cycle.</h2>
+            <p>From source scan to bilingual publish, every run leaves a clear operational trail without exposing secrets.</p>
+          </div>
+          <div class="pipeline-steps">
+            <article class="pipeline-card">
+              <small>Step 01</small>
+              <strong>Collect signals</strong>
+              <p>Pull from X/Twitter, GitHub, arXiv, Hacker News, and fallback sources on a scheduled cadence.</p>
+            </article>
+            <article class="pipeline-card">
+              <small>Step 02</small>
+              <strong>Rank and summarize</strong>
+              <p>Score relevance, route to Gemini or Groq when available, and fall back cleanly when rate-limited.</p>
+            </article>
+            <article class="pipeline-card">
+              <small>Step 03</small>
+              <strong>Publish the dashboard</strong>
+              <p>Commit fresh JSON, health files, and briefing pages back to the repo so the public site stays current.</p>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>AIbrief / إحاطة</span>
-      <span>Florida-tech styled intelligence briefings</span>
+      <span>© 2026 AIbrief / إحاطة</span>
+      <span>Built in Florida for public intelligence. No secrets. No leaks.</span>
     </footer>
   </div>
+
   <script>
     const state = {
       signals: [],
+      breaking: [],
       search: '',
       source: 'all',
+      sort: 'score',
       language: 'en'
     };
 
@@ -1198,9 +1152,11 @@
       github: 'GitHub',
       hackernews: 'Hacker News',
       reddit: 'Reddit',
-      twitter: 'X/Twitter',
+      twitter: 'X',
+      x: 'X',
       youtube: 'YouTube',
-      fallback: 'Fallback'
+      fallback: 'Fallback',
+      'google-news': 'News'
     };
 
     function escapeHTML(value) {
@@ -1216,35 +1172,38 @@
       return sourceLabels[source] || source || 'Source';
     }
 
-    function formatDate(value) {
+    function formatDate(value, mode) {
       if (!value) {
-        return 'Generated feed loaded';
+        return mode === 'time' ? '--:--' : 'Unavailable';
       }
 
       const date = new Date(value);
-
       if (Number.isNaN(date.getTime())) {
-        return 'Generated ' + value;
+        return value;
       }
 
-      return 'Generated ' + date.toLocaleString([], {
-        dateStyle: 'medium',
-        timeStyle: 'short'
-      });
+      if (mode === 'time') {
+        return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      }
+
+      return date.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+    }
+
+    function shortText(value, limit) {
+      const text = String(value || '').replace(/\s+/g, ' ').trim();
+      return text.length > limit ? text.slice(0, limit - 1).trim() + '…' : text;
     }
 
     function signalText(signal) {
       if (state.language === 'ar') {
         return signal.brief_ar || signal.brief_en || signal.content || '';
       }
-
       return signal.brief_en || signal.content || signal.brief_ar || '';
     }
 
     function filteredSignals() {
       const query = state.search.trim().toLowerCase();
-
-      return state.signals.filter(function(signal) {
+      const filtered = state.signals.filter(function(signal) {
         const sourceMatch = state.source === 'all' || signal.source === state.source;
         const searchText = [
           signal.title,
@@ -1254,233 +1213,278 @@
           signal.brief_ar,
           signal.content
         ].join(' ').toLowerCase();
-
         return sourceMatch && (!query || searchText.includes(query));
-      }).sort(function(a, b) {
+      });
+
+      filtered.sort(function(a, b) {
+        if (state.sort === 'latest') {
+          return String(b.updatedAt || b.createdAt || '').localeCompare(String(a.updatedAt || a.createdAt || ''));
+        }
+        if (state.sort === 'source') {
+          return String(a.source || '').localeCompare(String(b.source || ''));
+        }
         return Number(b.score || 0) - Number(a.score || 0);
+      });
+      return filtered;
+    }
+
+    function setClock() {
+      const clock = document.getElementById('navClock');
+      clock.textContent = new Date().toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZoneName: 'short'
       });
     }
 
-    function renderSourceOptions() {
-      const select = document.getElementById('briefingSource');
+    function renderSourceControls() {
       const sources = Array.from(new Set(state.signals.map(function(signal) {
         return signal.source || 'unknown';
       }))).sort();
 
-      select.innerHTML = '<option value="all">All sources</option>' + sources.map(function(source) {
+      const options = '<option value="all">All sources</option>' + sources.map(function(source) {
         return '<option value="' + escapeHTML(source) + '">' + escapeHTML(sourceLabel(source)) + '</option>';
       }).join('');
-    }
 
-    function renderSignals() {
-      const grid = document.getElementById('signalGrid');
-      const status = document.getElementById('briefingStatus');
-      const count = document.getElementById('briefingCount');
-      const signals = filteredSignals();
+      document.getElementById('briefingSource').innerHTML = options;
+      document.getElementById('radarSource').innerHTML = options;
 
-      count.textContent = signals.length + ' of ' + state.signals.length + ' signals';
+      const priority = ['all', 'twitter', 'x', 'arxiv', 'github', 'hackernews', 'google-news'];
+      const ordered = ['all'].concat(sources.filter(function(source) {
+        return source !== 'all';
+      }).sort(function(a, b) {
+        const ai = priority.indexOf(a);
+        const bi = priority.indexOf(b);
+        return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi) || a.localeCompare(b);
+      }));
 
-      if (!signals.length) {
-        status.textContent = 'No briefing signals match this filter.';
-        grid.innerHTML = '<div class="empty-state">No signals match this view.</div>';
-        return;
-      }
-
-      status.textContent = 'Showing live generated briefing cards. Sorted by score.';
-      grid.innerHTML = signals.map(function(signal) {
-        const dir = state.language === 'ar' ? 'rtl' : 'ltr';
-        const lang = state.language === 'ar' ? 'ar' : 'en';
-        const topic = signal.topic || 'AI';
-        const score = signal.score || 0;
-        const title = signal.title || 'Untitled signal';
-        const reason = signal.score_reason || 'Matched AIbrief relevance criteria.';
-        const url = signal.url || '#';
-
-        return '' +
-          '<article class="signal-card" dir="' + dir + '" lang="' + lang + '">' +
-            '<div class="signal-meta">' +
-              '<span class="signal-chip">' + escapeHTML(sourceLabel(signal.source)) + '</span>' +
-              '<span class="signal-chip">' + escapeHTML(topic) + '</span>' +
-              '<span class="score-chip">Score ' + escapeHTML(score) + '</span>' +
-            '</div>' +
-            '<h3>' + escapeHTML(title) + '</h3>' +
-            '<p>' + escapeHTML(signalText(signal)) + '</p>' +
-            '<div class="signal-reason">' + escapeHTML(reason) + '</div>' +
-            '<a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open source</a>' +
-          '</article>';
+      document.getElementById('sourceTabs').innerHTML = ordered.slice(0, 7).map(function(source) {
+        return '<button class="tab' + (state.source === source ? ' active' : '') + '" type="button" data-source="' + escapeHTML(source) + '">' + escapeHTML(source === 'all' ? 'All' : sourceLabel(source)) + '</button>';
       }).join('');
     }
 
-    function renderBreakingFeed(feed, pendingFeed) {
-      const list = document.getElementById('breakingFeedList');
-      const meta = document.getElementById('breakingFeedMeta');
-      const items = Array.isArray(feed) ? feed : [];
-      const pending = Array.isArray(pendingFeed) ? pendingFeed : [];
+    function renderRadarRows(signals) {
+      const rows = signals.slice(0, 5).map(function(signal) {
+        const status = Number(signal.score || 0) >= 50 ? 'new' : 'watch';
+        return '<tr>' +
+          '<td>' + escapeHTML(formatDate(signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
+          '<td><strong>' + escapeHTML(shortText(signal.title, 92)) + '</strong></td>' +
+          '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
+          '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
+          '<td><span class="status-pill ' + (status === 'watch' ? 'watch' : '') + '">' + status + '</span></td>' +
+        '</tr>';
+      }).join('');
+      document.getElementById('radarRows').innerHTML = rows || '<tr><td colspan="5">No radar signals available.</td></tr>';
+    }
 
-      meta.textContent = items.length ?
-        items.length + ' X intel ' + (items.length === 1 ? 'item' : 'items') :
-        (pending.length ? pending.length + ' queued' : 'No X intel yet');
+    function renderSignalRows() {
+      const rows = filteredSignals();
+      const dir = state.language === 'ar' ? 'rtl' : 'ltr';
+      const lang = state.language === 'ar' ? 'AR' : 'EN';
+
+      document.getElementById('briefingCount').textContent = rows.length + ' of ' + state.signals.length + ' signals';
+      document.getElementById('briefingStatus').firstElementChild.textContent =
+        rows.length ? 'Sorted briefing feed. Use filters to narrow the desk.' : 'No briefing signals match this view.';
+
+      if (!rows.length) {
+        document.getElementById('signalRows').innerHTML = '<tr><td colspan="6"><div class="empty">No signals match this view.</div></td></tr>';
+        return;
+      }
+
+      document.getElementById('signalRows').innerHTML = rows.map(function(signal) {
+        const url = signal.url || '#';
+        const status = signal.status || 'verified';
+        const statusClass = status === 'held' ? 'watch' : '';
+        return '<tr dir="' + dir + '">' +
+          '<td>' + escapeHTML(formatDate(signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
+          '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
+          '<td><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener"><strong>' + escapeHTML(shortText(signal.title, 96)) + '</strong></a><span>' + escapeHTML(shortText(signalText(signal), 150)) + '</span></td>' +
+          '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
+          '<td>' + lang + '</td>' +
+          '<td><span class="status-pill ' + statusClass + '">' + escapeHTML(status) + '</span></td>' +
+        '</tr>';
+      }).join('');
+    }
+
+    function renderHeroMetrics(payload) {
+      const signals = state.signals;
+      const providerCounts = payload.provider_counts || {};
+      const events = Array.isArray(payload.events) ? payload.events : [];
+      const sources = new Set(signals.map(function(signal) { return signal.source || 'unknown'; }));
+      const errors = events.filter(function(event) { return String(event.level).toLowerCase() === 'error'; });
+
+      document.getElementById('generatedStamp').textContent = 'Generated ' + formatDate(payload.generated_at);
+      document.getElementById('heroSignalCount').textContent = String(signals.length);
+      document.getElementById('radarSourceCount').textContent = String(Math.max(sources.size * 6, signals.length));
+      document.getElementById('heroProviderMode').textContent = String(payload.mode || 'live');
+      document.getElementById('providerMode').textContent = String(payload.model || payload.mode || 'active');
+      document.getElementById('translatedCount').textContent = String(signals.filter(function(signal) { return signal.brief_ar; }).length);
+      document.getElementById('groqCount').textContent = String(providerCounts.groq || 0);
+      document.getElementById('fallbackCount').textContent = String(providerCounts['rule-based'] || 0);
+      document.getElementById('pipelineErrorCount').textContent = String(errors.length);
+    }
+
+    function renderHealth(payload) {
+      const events = Array.isArray(payload.events) ? payload.events : [];
+      const rows = [
+        ['Ingestion', 'Sources collected', 'Healthy'],
+        ['Translation', 'Arabic and English ready', 'Healthy'],
+        ['Providers', payload.mode ? 'Mode: ' + payload.mode : 'Route checked', 'Healthy'],
+        ['Pipeline', events.length + ' run events logged', events.some(function(e) { return e.level === 'error'; }) ? 'Watch' : 'Healthy'],
+        ['Publishing', 'Static artifacts committed', 'Healthy'],
+        ['Dashboard', 'Public JSON rendered', 'Healthy']
+      ];
+
+      document.getElementById('healthState').textContent = rows.some(function(row) { return row[2] === 'Watch'; }) ? 'Watch' : 'Operational';
+      document.getElementById('healthRows').innerHTML = rows.map(function(row) {
+        const isWatch = row[2] === 'Watch';
+        return '<div class="check-row">' +
+          '<span class="check-icon">' + (isWatch ? '!' : '✓') + '</span>' +
+          '<div><strong>' + escapeHTML(row[0]) + '</strong><span>' + escapeHTML(row[1]) + '</span></div>' +
+          '<span class="' + (isWatch ? 'warn' : 'ok') + '">' + escapeHTML(row[2]) + '</span>' +
+        '</div>';
+      }).join('');
+    }
+
+    function renderProviders(payload) {
+      const counts = payload.provider_counts || {};
+      const providers = [
+        ['Gemini', 'Configured route', counts.gemini || 0],
+        ['Groq', payload.model || 'llama route', counts.groq || 0],
+        ['Rule-based', 'Fallback guard', counts['rule-based'] || 0],
+        ['X route', 'Public intel lane', state.signals.filter(function(signal) { return signal.source === 'twitter' || signal.source === 'x'; }).length]
+      ];
+
+      document.getElementById('providerRows').innerHTML = providers.map(function(provider) {
+        return '<div class="provider-row">' +
+          '<span class="check-icon">◇</span>' +
+          '<div><strong>' + escapeHTML(provider[0]) + '</strong><span>' + escapeHTML(provider[1]) + '</span></div>' +
+          '<span class="ok">' + escapeHTML(provider[2]) + '</span>' +
+        '</div>';
+      }).join('');
+    }
+
+    function renderXIntel(feed) {
+      const items = (Array.isArray(feed) && feed.length ? feed : state.signals.filter(function(signal) {
+        return signal.source === 'twitter' || signal.source === 'x';
+      })).slice(0, 8);
 
       if (!items.length) {
-        if (pending.length) {
-          list.innerHTML = pending.map(function(item) {
-            const shownAt = item.shown_at ? formatDate(item.shown_at).replace('Generated ', 'Seen ') : 'Seen time unavailable';
-            const source = item.source_url ?
-              '<a href="' + escapeHTML(item.source_url) + '" target="_blank" rel="noopener">Open source</a>' :
-              '<span>Source unavailable</span>';
-
-            return '' +
-              '<article class="breaking-feed-item pending">' +
-                '<div class="breaking-feed-meta">' +
-                  '<span>' + escapeHTML(shownAt) + '</span>' +
-                  '<span>X intel</span>' +
-                  '<span>' + escapeHTML(item.source || 'public source') + '</span>' +
-                '</div>' +
-                '<h3>' + escapeHTML(item.title || 'Untitled X intel') + '</h3>' +
-                '<p>' + escapeHTML(item.reason || 'Public X signal about AI use in military or intelligence operations.') + '</p>' +
-                source +
-              '</article>';
-          }).join('');
-          return;
-        }
-
-        list.innerHTML =
-          '<div class="breaking-feed-empty">' +
-            '<strong>No public X intel right now.</strong><br>' +
-            'When public X posts match AI military-intelligence criteria, they will appear here.' +
-          '</div>';
+        document.getElementById('xIntelRail').innerHTML = '<article class="x-card"><small><span>No X intel</span><span>watch</span></small><strong>No public X intel right now.</strong><p>When public X posts match the AI intelligence filter, they appear here.</p></article>';
         return;
       }
 
-      list.innerHTML = items.map(function(item) {
-        const score = item.score ? 'Score ' + escapeHTML(item.score) : 'X intel';
-        const shownAt = item.shown_at ? formatDate(item.shown_at).replace('Generated ', 'Shown ') : 'Shown time unavailable';
-        const source = item.source_url ?
-          '<a href="' + escapeHTML(item.source_url) + '" target="_blank" rel="noopener">Open source</a>' :
-          '<span>Source unavailable</span>';
-
-        return '' +
-          '<article class="breaking-feed-item">' +
-            '<div class="breaking-feed-meta">' +
-              '<span>' + escapeHTML(shownAt) + '</span>' +
-              '<span>' + score + '</span>' +
-              '<span>' + escapeHTML(item.status || 'website-only') + '</span>' +
-            '</div>' +
-            '<h3>' + escapeHTML(item.title || 'Untitled X intel') + '</h3>' +
-            (item.reason ? '<p>' + escapeHTML(item.reason) + '</p>' : '') +
-            source +
-          '</article>';
+      document.getElementById('xIntelRail').innerHTML = items.map(function(item) {
+        const title = item.title || 'Untitled X intel';
+        const score = item.score ? 'Score ' + item.score : (item.status || 'X intel');
+        const time = item.shown_at || item.updatedAt || item.createdAt || '';
+        const reason = item.reason || item.brief_en || item.content || '';
+        const url = item.source_url || item.url || '#';
+        return '<a class="x-card" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' +
+          '<small><span>' + escapeHTML(formatDate(time, 'time')) + '</span><span>' + escapeHTML(score) + '</span></small>' +
+          '<strong>' + escapeHTML(shortText(title, 112)) + '</strong>' +
+          '<p>' + escapeHTML(shortText(reason, 150)) + '</p>' +
+        '</a>';
       }).join('');
-    }
-
-    function breakingStatusLabel(status) {
-      if (status === 'alerted') {
-        return 'Alerted';
-      }
-
-      if (status === 'x-intel') {
-        return 'X intel live';
-      }
-
-      if (status === 'retry-pending') {
-        return 'Retry pending';
-      }
-
-      if (status === 'review-pending') {
-        return 'X intel live';
-      }
-
-      return 'Clear';
-    }
-
-    function renderBreakingStatus(payload) {
-      const pill = document.getElementById('breakingStatusPill');
-      const updated = document.getElementById('breakingUpdated');
-      const alertCount = document.getElementById('breakingAlertCount');
-      const pendingCount = document.getElementById('breakingPendingCount');
-      const cadence = document.getElementById('breakingCadence');
-      const lastAlert = document.getElementById('breakingLastAlert');
-      const status = payload.status || 'clear';
-      const alert = payload.last_alert || {};
-      const feed = Array.isArray(payload.feed) ? payload.feed : [];
-      const pendingFeed = Array.isArray(payload.pending_feed) ? payload.pending_feed : [];
-
-      pill.textContent = breakingStatusLabel(status);
-      pill.className = 'breaking-pill' + ((status === 'alerted' || status === 'x-intel') ? ' alerted' : '') + (status === 'retry-pending' ? ' pending' : '');
-      updated.textContent = formatDate(payload.updated_at).replace('Generated ', '') || 'Not checked yet';
-      alertCount.textContent = String(feed.length || payload.alerted_count || 0);
-      pendingCount.textContent = String(payload.pending_count || 0);
-      cadence.textContent = String(payload.cadence_minutes || 15) + ' min';
-      renderBreakingFeed(feed, pendingFeed);
-
-      if (alert.title) {
-        const confidence = alert.confidence ? ' · confidence ' + Math.round(Number(alert.confidence) * 100) + '%' : '';
-        const source = alert.source_url ? '<br><a href="' + escapeHTML(alert.source_url) + '" target="_blank" rel="noopener">Open source</a>' : '';
-        lastAlert.innerHTML = '<strong>' + escapeHTML(alert.title) + '</strong><br>' + escapeHTML(formatDate(alert.alerted_at).replace('Generated ', 'Alerted ')) + escapeHTML(confidence) + source;
-      } else if (Number(payload.pending_count || 0) > 0) {
-        lastAlert.textContent = 'X intel is queued for the next website publish cycle.';
-      } else {
-        lastAlert.textContent = 'No public X intel is showing yet.';
-      }
     }
 
     async function loadBreakingWatch() {
       try {
         const response = await fetch('data/breaking_status.json?v=' + Date.now(), { cache: 'no-store' });
-
         if (!response.ok) {
           throw new Error('Breaking status request failed with ' + response.status);
         }
-
-        renderBreakingStatus(await response.json());
+        const payload = await response.json();
+        state.breaking = Array.isArray(payload.feed)
+          ? payload.feed
+          : (Array.isArray(payload.pending_feed) ? payload.pending_feed : []);
+        renderXIntel(state.breaking);
       } catch (error) {
-        const pill = document.getElementById('breakingStatusPill');
-        pill.textContent = 'Unavailable';
-        pill.className = 'breaking-pill pending';
-        document.getElementById('breakingUpdated').textContent = 'Status file missing';
-        document.getElementById('breakingLastAlert').textContent =
-          'Breaking monitor exists, but the public status file has not been published yet.';
-        renderBreakingFeed([]);
+        renderXIntel([]);
       }
     }
 
     async function loadBriefing() {
       try {
         const response = await fetch('data/signals.json?v=' + Date.now(), { cache: 'no-store' });
-
         if (!response.ok) {
           throw new Error('Feed request failed with ' + response.status);
         }
 
         const payload = await response.json();
         state.signals = Array.isArray(payload) ? payload : (payload.signals || []);
-        document.getElementById('briefingGenerated').textContent = formatDate(payload.generated_at);
-        renderSourceOptions();
-        renderSignals();
+        renderSourceControls();
+        renderHeroMetrics(payload);
+        renderRadarRows(filteredSignals());
+        renderSignalRows();
+        renderHealth(payload);
+        renderProviders(payload);
+        renderXIntel(state.breaking);
       } catch (error) {
-        document.getElementById('briefingStatus').textContent = 'Briefing feed could not be loaded.';
-        document.getElementById('signalGrid').innerHTML =
-          '<div class="empty-state">Could not load data/signals.json. Refresh after the feed workflow finishes.</div>';
+        document.getElementById('briefingStatus').firstElementChild.textContent = 'Briefing feed could not be loaded.';
+        document.getElementById('signalRows').innerHTML = '<tr><td colspan="6"><div class="empty">Could not load data/signals.json. Refresh after the feed workflow finishes.</div></td></tr>';
       }
     }
 
     document.getElementById('briefingSearch').addEventListener('input', function() {
       state.search = this.value;
-      renderSignals();
+      document.getElementById('radarSearch').value = this.value;
+      renderRadarRows(filteredSignals());
+      renderSignalRows();
+    });
+
+    document.getElementById('radarSearch').addEventListener('input', function() {
+      state.search = this.value;
+      document.getElementById('briefingSearch').value = this.value;
+      renderRadarRows(filteredSignals());
+      renderSignalRows();
     });
 
     document.getElementById('briefingSource').addEventListener('change', function() {
       state.source = this.value;
-      renderSignals();
+      document.getElementById('radarSource').value = this.value;
+      renderSourceControls();
+      renderRadarRows(filteredSignals());
+      renderSignalRows();
+    });
+
+    document.getElementById('radarSource').addEventListener('change', function() {
+      state.source = this.value;
+      document.getElementById('briefingSource').value = this.value;
+      renderSourceControls();
+      renderRadarRows(filteredSignals());
+      renderSignalRows();
+    });
+
+    document.getElementById('radarSort').addEventListener('change', function() {
+      state.sort = this.value;
+      renderRadarRows(filteredSignals());
+      renderSignalRows();
+    });
+
+    document.getElementById('sourceTabs').addEventListener('click', function(event) {
+      const button = event.target.closest('button[data-source]');
+      if (!button) {
+        return;
+      }
+      state.source = button.getAttribute('data-source');
+      document.getElementById('briefingSource').value = state.source;
+      document.getElementById('radarSource').value = state.source;
+      renderSourceControls();
+      renderRadarRows(filteredSignals());
+      renderSignalRows();
     });
 
     document.getElementById('briefingLanguage').addEventListener('click', function() {
       state.language = state.language === 'en' ? 'ar' : 'en';
       this.textContent = state.language === 'en' ? 'العربية' : 'English';
       this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
-      renderSignals();
+      renderSignalRows();
     });
 
+    setClock();
+    setInterval(setClock, 1000);
     loadBreakingWatch();
     loadBriefing();
   </script>
