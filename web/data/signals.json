@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-06T19:48:10Z",
+  "generated_at": "2026-07-06T22:44:42Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 29,
-    "rule-based": 11
+    "groq": 28,
+    "rule-based": 12
   },
   "agents": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "XInfluencerAgent",
-      "status": "degraded",
+      "status": "online",
       "role": "X/Twitter AI influencer and narrative tracking"
     },
     {
@@ -53,121 +53,121 @@
   ],
   "events": [
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1183"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1183"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1174"
     },
     {
-      "time": "2026-07-06T19:48:10Z",
+      "time": "2026-07-06T22:44:42Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -186,10 +186,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة واسعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, providing a valuable resource for developers and researchers.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، مما يوفر موردا قима للمطورين والباحثين.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "arxiv-016",
@@ -203,10 +203,10 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Controllable Sim Agents with Behavior Latents: A framework for realistic traffic simulation, enabling controllable agents that mimic logged behavior and can be steered along interpretable axes, allowing for safer testing of autonomous systems.",
-      "brief_ar": "وكلاء محاكاة قابلة للتحكم مع قيم سلوكية كامنة: إطار عمل لتحاكي حركة المرور الواقعية، يتيح وكلاء قابلة للتحكم التي تقلد السلوك المسجل ويمكن توجيهها على طول محاور قابلة للتفسير، مما يسمح باختبار أنظمة مستقلة بأمان أكبر.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_en": "Introducing CNeVA, a controllable simulated-agent framework for realistic traffic simulation, enabling engineers to isolate variables and test autonomous systems without real-world risk.",
+      "brief_ar": "نقدم إطار محاكاة وسيط مراقب يسمى CNeVA، لتحقيق محاكاة مرور واقعية، وتمكين المهندسين من عزل المتغيرات واختبار الأنظمة المستقلة بدون مخاطر في العالم الحقيقي.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "github-011",
@@ -220,10 +220,27 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستكشفون تلقين المحادثات النانوية على جهاز كمبيوتر واحد مع إمكانية توفير العمليات البحثية.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_en": "karpathy/autoresearch: AI agents automate single-GPU nanochat training research, potentially accelerating language model development.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يقومون بتشغيل البحث على تدريب nanochat على جهاز كمبيوتر واحد GPU تلقائيًا، مما قد يسرع من تطوير نماذج اللغة.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
+    },
+    {
+      "id": "twitter-029",
+      "source": "twitter",
+      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
+      "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
+      "url": "https://x.com",
+      "score": 48,
+      "score_reason": "Twitter/X discussion signal; surveillance relevance. Final score: 48.",
+      "status": "verified",
+      "topic": "AI Governance",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
+      "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "arxiv-014",
@@ -238,9 +255,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "ReContext: A training-free inference method for improving long-context reasoning in LLMs by recursively replaying relevant evidence from the input context.",
-      "brief_ar": "ReContext: طريقة استدلال بدون تدريب لتحسين التفكير في السياقات الطويلة في نماذج اللغة الكبيرة من خلال إعادة تشغيل الأدلة ذات الصلة بشكل متكرر من السياق الإدخالي.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_ar": "ReContext: طريقة استدلال بدون تدريب لتحسين الاستدلال في سياقات طويلة في نماذج اللغة الكبيرة من خلال إعادة تشغيل الأدلة ذات الصلة بشكل متكرر من السياق الإدخالي.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "arxiv-018",
@@ -255,9 +272,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Will scaling improve social simulation with LLMs? Research investigates the relationship between LLMs' compute scale, general capability benchmarks, and social simulation fidelity, revealing strong compute scaling in opinion modeling, behavioral simulation, and longitudinal forecasting.",
-      "brief_ar": "هل سيتحسن模拟 المجتمع مع نماذج اللغة الكبيرة من خلال التوسع؟ يبحث البحث في العلاقة بين مقياس الحوسبة لنماذج اللغة الكبيرة وبenchmarks القدرة العامة وصدق模拟 المجتمع، يكشف عن تسارع قوي في الحوسبة في مجالات نمذجة الرأي و模拟 السلوك والتنبؤ الطويل الأمد.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_ar": "هل سيتحسن模拟 المجتمع مع نماذج اللغة الكبيرة من خلال التوسع؟ يبحث البحث في العلاقة بين مقياس الحوسبة لنماذج اللغة الكبيرة ومتطلبات القدرة العامة و دقة محاكاة المجتمع، وكشف عن توسع حوسبي قوي في نمذجة الرأي ومحاكاة السلوك والتنبؤ الطويل الأمد.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "github-007",
@@ -271,10 +288,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكّن من آليّة كفاءة وصنع قرار",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "github-008",
@@ -290,8 +307,8 @@
       "provider": "groq",
       "brief_en": "Langchain-ai/langchain: An agent engineering platform for building AI applications, leveraging open-source intelligence for strategic development.",
       "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكيل لإنشاء تطبيقات الذكاء الاصطناعي، تستفيد من الاستخبارات المفتوحة لتنمية استراتيجية",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "github-010",
@@ -306,9 +323,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "github-012",
@@ -323,9 +340,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
-      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts و quants ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "arxiv-019",
@@ -340,9 +357,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Neuron-Aware Data Selection for Annotation-Free LLM Self-Distillation improves post-training LLM performance in specialized domains without human-labeled supervision, leveraging internal neuron activations for data selection and teacher context construction.",
-      "brief_ar": "اختيار البيانات المعتمد على العصبونات للاستillation الذاتية للنماذج اللغوية الكبيرة بدون تعليمات يطور الأداء بعد التدريب للنماذج اللغوية الكبيرة في المجالات المتخصصة بدون إشراف تمييز بشري، يستفيد من تنشيطات العصبونات الداخلية لاختيار البيانات وبناء سياق المعلم.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_ar": "اختيار البيانات القائم على العصبونات للاستillation الذاتي للنماذج اللغوية الكبيرة بدون تعليمات يطور الأداء بعد التدريب للنماذج اللغوية الكبيرة في المجالات المتخصصة بدون إشراف مسبق، يستخدم تنشيطات العصبونات الداخلية لاختيار البيانات وبناء سياق المعلم.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     },
     {
       "id": "arxiv-020",
@@ -356,27 +373,10 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "LLM personas can support visualization design as exploratory probes, but their outputs are model-configuration dependent and may not reflect stable personality effects. They can be used to inform color assignment and chart choice, but human participants are still necessary for reliable results.",
-      "brief_ar": "يمكن أن تدعم شخصيات LLM تصميم التصور كأدوات استكشافية، ولكن مخرجاتها تعتمد على تكوين النموذج وقد لا تعكس آثار الشخصية المستقرة. يمكن استخدامها لتحديد任务 تعيين الألوان واختيار المخططات، ولكن المشاركين البشر لا يزالون ضروريين للحصول على نتائج موثوقة.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
-    },
-    {
-      "id": "github-004",
-      "source": "github",
-      "title": "cheahjs/free-llm-api-resources",
-      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 25829. Updated: 2026-07-06T19:46:49Z.",
-      "url": "https://github.com/cheahjs/free-llm-api-resources",
-      "score": 39,
-      "score_reason": "high-value open-source ecosystem signal; large language model relevance; implementation ecosystem relevance. Final score: 39.",
-      "status": "held",
-      "topic": "LLMs",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Free LLM API resources: A GitHub repository tracking free LLM inference resources, API providers, SDK compatibility, and rate limits, updated as of 2026-07-06.",
-      "brief_ar": "موارد API LLM المجانية: مستودع GitHub يتتبع موارد الاستدلال LLM المجانية ومقدمي API ومتوافقيات SDK وأحكام الرسوم، محدث حتى 2026-07-06.",
-      "createdAt": "2026-07-06T19:48:10Z",
-      "updatedAt": "2026-07-06T19:48:10Z"
+      "brief_en": "LLM personas can support visualization design by approximating diverse users, but their outputs may reflect model choice and task framing rather than stable personality effects. A cross-model study found that personality-color coupling is model-configuration dependent and concept-type shapes the signal.",
+      "brief_ar": "يمكن أن تدعم شخصيات LLM تصميم التصور من خلال تقريب مستخدمين متنوعين، ولكن مخرجاتها قد تعكس اختيار الطراز وتهيئة المهمة بدلاً من الآثار الثابتة للشخصية. وجدت دراسة متعددة النماذج أن الارتباط بين الشخصية واللون يعتمد على تكوين الطراز ويشكل نوع المفاهيم الإشارة.",
+      "createdAt": "2026-07-06T22:44:42Z",
+      "updatedAt": "2026-07-06T22:44:42Z"
     }
   ]
 }
