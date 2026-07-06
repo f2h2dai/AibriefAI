@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-06T18:34:17Z",
+  "generated_at": "2026-07-06T19:46:40Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
     "groq": 30,
-    "rule-based": 9
+    "rule-based": 10
   },
   "agents": [
     {
@@ -52,6 +52,12 @@
     }
   ],
   "events": [
+    {
+      "time": "2026-07-06T19:46:40Z",
+      "level": "info",
+      "agent": "GitHubAgent",
+      "message": "Added curated free LLM API resources GitHub signal."
+    },
     {
       "time": "2026-07-06T18:34:17Z",
       "level": "warning",
@@ -174,6 +180,23 @@
     }
   ],
   "signals": [
+    {
+      "id": "github-free-llm-api-resources",
+      "source": "github",
+      "title": "cheahjs/free-llm-api-resources",
+      "content": "A curated list of free LLM inference resources accessible via API, covering Google AI Studio, Groq, Cerebras, OpenRouter, NVIDIA NIM, Mistral and more, with rate-limit notes and OpenAI SDK compatibility for builders.",
+      "url": "https://github.com/cheahjs/free-llm-api-resources",
+      "score": 90,
+      "score_reason": "high-value open-source ecosystem signal; large language model relevance; AI infrastructure relevance; implementation ecosystem relevance; provider-route relevance. Final score: 90.",
+      "status": "verified",
+      "topic": "AI Infrastructure",
+      "collector": "GitHubAgent",
+      "provider": "rule-based",
+      "brief_en": "cheahjs/free-llm-api-resources tracks free LLM API providers, rate limits, and OpenAI-compatible endpoints so builders can test models without starting with paid billing.",
+      "brief_ar": "يرصد مستودع cheahjs/free-llm-api-resources مزودي واجهات LLM المجانية وحدود الاستخدام والتوافق مع OpenAI SDK، ما يساعد المطورين على التجربة من دون بدء الفوترة المدفوعة.",
+      "createdAt": "2026-07-06T19:46:40Z",
+      "updatedAt": "2026-07-06T19:46:40Z"
+    },
     {
       "id": "github-008",
       "source": "github",
@@ -358,23 +381,6 @@
       "provider": "groq",
       "brief_en": "LLM personas can support visualization design as exploratory probes, but their outputs are model-configuration dependent and may not reflect stable personality effects. Multi-model testing and no-persona baselines are recommended for future studies.",
       "brief_ar": "يمكن أن تدعم شخصيات LLM تصميم التصور كأدوات استكشافية، ولكن مخرجاتها تعتمد على تكوين النموذج وقد لا تعكس آثار الشخصية المستقرة. يوصى باختبار متعدد النماذج وخطوط أساس بدون شخصيات لمستقبل الدراسات.",
-      "createdAt": "2026-07-06T18:34:17Z",
-      "updatedAt": "2026-07-06T18:34:17Z"
-    },
-    {
-      "id": "twitter-023",
-      "source": "twitter",
-      "title": "@sama: More importantly, we believe everyone deserves to use AI and are committed to free access,",
-      "content": "More importantly, we believe everyone deserves to use AI and are committed to free access, because we believe access creates agency. More Texans use ChatGPT for free than total people use Claude in the US, so we have a differently-shaped problem than they do. (If you want to pay for ChatGPT Plus or Pro, we don''t show you ads.)",
-      "url": "https://x.com",
-      "score": 38,
-      "score_reason": "Twitter/X discussion signal. Final score: 38.",
-      "status": "held",
-      "topic": "AI",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "We believe everyone deserves to use AI and are committed to free access, as it creates agency. Our user base for free ChatGPT surpasses Claude's total US users.",
-      "brief_ar": "نعتقد أن الجميع يستحقون استخدام الذكاء الاصطناعي ونلتزم بالوصول المجاني، لأنه يخلق قوة وفاعلية. عدد مستخدمي تشات جي بي تي المجاني يتجاوز عدد مستخدمي كلود في الولايات المتحدة",
       "createdAt": "2026-07-06T18:34:17Z",
       "updatedAt": "2026-07-06T18:34:17Z"
     }

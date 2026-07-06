@@ -1,18 +1,24 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-07-06T18:34:17Z",
+  "generated_at": "2026-07-06T19:46:40Z",
   "signals": 12,
-  "approved": 11,
-  "held": 1,
+  "approved": 12,
+  "held": 0,
   "errors": 9,
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
     "groq": 30,
-    "rule-based": 9
+    "rule-based": 10
   },
   "events": [
+    {
+      "time": "2026-07-06T19:46:40Z",
+      "level": "info",
+      "agent": "GitHubAgent",
+      "message": "Added curated free LLM API resources GitHub signal."
+    },
     {
       "time": "2026-07-06T18:34:17Z",
       "level": "warning",
