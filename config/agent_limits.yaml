@@ -1,0 +1,67 @@
+required_agents:
+  - daily_ai_brief
+  - saudi_business_brief
+  - sentinel_scan
+  - oracle_db_ops_review
+  - drone_physical_ai_research
+
+limits:
+  daily_ai_brief:
+    owner: AibriefAI
+    cost_center: aibriefai
+    max_ai_credits: 4
+    max_runtime_minutes: 10
+    max_tool_calls: 80
+    workflows:
+      - .github/workflows/update-feed.yml
+    emergency_stop: pause update-feed workflow and disable scheduled runs
+
+  saudi_business_brief:
+    owner: AibriefAI
+    cost_center: aibriefai
+    max_ai_credits: 3
+    max_runtime_minutes: 12
+    max_tool_calls: 60
+    workflows:
+      - planned/saudi-business-brief
+    emergency_stop: require manual approval before next run
+
+  sentinel_scan:
+    owner: Sentinel
+    cost_center: sentinel
+    max_ai_credits: 5
+    max_runtime_minutes: 15
+    max_tool_calls: 120
+    workflows:
+      - .github/workflows/breaking-alerts.yml
+    emergency_stop: switch notify mode to website and disable scheduled scans
+
+  oracle_db_ops_review:
+    owner: Oracle Operations
+    cost_center: oracle-db-ops
+    max_ai_credits: 2
+    max_runtime_minutes: 8
+    max_tool_calls: 40
+    workflows:
+      - planned/oracle-db-ops-review
+    emergency_stop: block production-like database review jobs
+
+  drone_physical_ai_research:
+    owner: Physical AI Research
+    cost_center: drone-physical-ai
+    max_ai_credits: 3
+    max_runtime_minutes: 15
+    max_tool_calls: 80
+    workflows:
+      - planned/drone-physical-ai-research
+    emergency_stop: disable scheduled physical-AI research agents
+
+  compare_x_sources:
+    owner: Sentinel
+    cost_center: sentinel
+    max_ai_credits: 1
+    max_runtime_minutes: 25
+    max_tool_calls: 60
+    workflows:
+      - .github/workflows/compare-x-sources.yml
+    emergency_stop: disable report commits and require manual run review

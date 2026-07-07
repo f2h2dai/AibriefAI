@@ -28,6 +28,7 @@ concurrency:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  AGENT_LIMIT_ID: daily_ai_brief
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GEMINI_MODEL: gemini-2.0-flash
@@ -44,6 +45,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
+
+      - name: Agent limit preflight
+        shell: bash
+        run: python3 scripts/check_agent_limits.py --agent "$AGENT_LIMIT_ID" --all-workflows
 
       - name: Install Agent-Reach and X routes
         shell: bash

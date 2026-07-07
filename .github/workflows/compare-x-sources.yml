@@ -37,6 +37,7 @@ concurrency:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  AGENT_LIMIT_ID: compare_x_sources
   X_COMPARE_KEYWORDS: ${{ inputs.keywords }}
   X_COMPARE_LIMIT: ${{ inputs.limit }}
   X_COMPARE_MAX_QUERIES: ${{ inputs.max_queries }}
@@ -54,6 +55,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
+
+      - name: Agent limit preflight
+        shell: bash
+        run: python3 scripts/check_agent_limits.py --agent "$AGENT_LIMIT_ID" --all-workflows
 
       - name: Setup Node for Birdclaw
         uses: actions/setup-node@v6.4.0
