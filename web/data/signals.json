@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-07T18:33:15Z",
+  "generated_at": "2026-07-07T19:15:48Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 28,
-    "rule-based": 10
+    "groq": 30,
+    "rule-based": 9
   },
   "agents": [
     {
@@ -53,129 +53,129 @@
   ],
   "events": [
     {
-      "time": "2026-07-07T18:33:15Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1177"
+      "time": "2026-07-07T19:15:48Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+    },
+    {
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1175"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1186"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1184"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1184"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1182"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1180"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T18:33:15Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
-    },
-    {
-      "time": "2026-07-07T18:33:15Z",
+      "time": "2026-07-07T19:15:48Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-018",
+      "id": "arxiv-019",
       "source": "arxiv",
       "title": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
       "content": "Language agents, i.e., LLM agents, progress rapidly and are increasingly deployed in production environments. This trend underscores the urgent need for rigorous and realistic evaluations. However, most existing benchmarks evaluate agents in simplified, idealized settings. They typically rely on pre-packaged tool interfaces, overlook critical steps, and assume inputs are clean and fully specified. Consequently, they understate the difficulty of real deployments, where uncertainty and noise are ubiquitous and agents must proactively explore the environment to uncover new tools. To bridge this gap, we present AgentGym2, a new evaluation framework with task instances grounded in real-world end-to-end working demands. Beyond reasoning and planning, it measures agents' ability to execute end-to-end procedures, discover tools via exploration, compose tools for unseen tasks, and remain robust to noisy and underspecified information. Experiments on 15 proprietary and open-source models show that even SOTA systems like Gemini and GPT-5 struggle on AgentGym2, revealing a substantial gap between the capability of current agents and the demands of real-world applications.",
@@ -187,12 +187,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "AgentGym2 evaluates large language model agents in real-world environments, revealing a gap between current capabilities and real-world demands.",
-      "brief_ar": "يقيّم AgentGym2 وكلاء النماذج اللغوية الكبيرة في بيئات العالم الحقيقي، يكشف عن فجوة بين القدرات الحالية ومتطلبات التطبيقات الحقيقية.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_ar": "يقيّم AgentGym2 وكلاء النماذج اللغوية الكبيرة في بيئات العالم الحقيقي، يكشف عن فجوة بين القدرات الحالية ومتطلبات التطبيقات في العالم الحقيقي.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "github-007",
+      "id": "github-008",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -203,30 +203,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, providing a valuable resource for developers and researchers.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها و تخصيصها و تسليمها، مما يوفر موردا قيمًا للمطورين و الباحثين.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "twitter-021",
-      "source": "twitter",
-      "title": "@sama: we are releasing GPT-5 soon but want to set accurate expectations: this is an experimental",
-      "content": "we are releasing GPT-5 soon but want to set accurate expectations: this is an experimental model that incorporates new research techniques we will use in future models. we think you will love GPT-5, but we don''t plan to release a model with IMO gold level of capability for many months.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 6134 retweets: 687 replies: 501 quotes: 266 views: 1187067 bookmarks: 713 createdAt: Sat Jul 19 13:54:09 +0000 2025 createdAtLocal: 2025-07-19 13:54 createdAtISO: '2025-07-19T13:54:09+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null quotedTweet: id: '1946477742855532918' text: '1/N I’m excited to share that our latest @OpenAI experimental reasoning LLM has achieved a longstanding grand challenge in AI: gold medal-level performance on the world’s most prestigious math competition—the International Math Olympiad (IMO). https://t.co/SG3k6EknaC' author: screenName: alexwei_ name: Alexander Wei id: '1895203654103351462' text: 'GPT-4.5 is ready!",
-      "url": "https://x.com",
-      "score": 55,
-      "score_reason": "Twitter/X discussion signal; large language model relevance; model capability relevance; research relevance. Final score: 55.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "OpenAI announces the upcoming release of GPT-5, an experimental model incorporating new research techniques, with no plans for an IMO gold-level capable model in the near future.",
-      "brief_ar": "تعلن OpenAI عن إطلاق قريب ل GPT-5، وهو نموذج تجريبي يدمج تقنيات بحثية جديدة، بدون خطط لإطلاق نموذج ذو قدرات من مستوى IMO الذهبي في المستقبل القريب.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
-    },
-    {
-      "id": "github-009",
+      "id": "github-010",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -237,13 +220,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, with uncertain outcomes.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة تلقائيًا، مع نتائج غير مؤكدة.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستكشفون تلقين المحادثات النانوية على جهاز كمبيوتر واحد مع إمكانية تسهين عمليات البحث.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "arxiv-016",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "Curated retrieval versus open web search in public AI information services: a coverage-trust trade-off",
       "content": "Public institutions increasingly use large language models (LLMs) to answer citizens' questions, often pairing a curated knowledge base with live web search, yet whether the sources behind these answers can be trusted has received little empirical scrutiny. We report a pre-launch expert evaluation of Evrópuvefur, an independent, government-funded service run by the University of Iceland that answers questions about the European Union, conducted as Iceland prepared for its referendum of 29 August 2026 on whether to resume EU accession talks. Five domain experts produced 551 evaluations of 449 AI-generated answers, scoring each against a seven-criterion quality rubric and, separately, flagging individual cited sources. We compared two retrieval paths: a curated local corpus (RAG) and open web search. In more than a third of the reviewed web-search answers (35%, 65 of 187), at least one cited source was flagged, almost always as untrustworthy or irrelevant; curated sources were flagged far less often and only for being out of date. Web search answered more questions, but at the cost of source quality; the curated corpus was trustworthy yet limited in coverage, and the model declined to respond when it fell short. The citation mix also passed over strong sources: across all 287 web-search answers, the system never cited RÚV, the public broadcaster and the country's most widely used news source. A companion prompt ablation shows how weak prompt-level steering is: a trusted-domain list in the system prompt raised the share of citations to listed domains only from 12% to 21%. Fluency and topical fit did not predict source trustworthiness. We argue that source trustworthiness is a measurable yet largely invisible dimension of information quality in public AI services, and we discuss transparency-oriented responses and their trade-offs.",
@@ -254,13 +237,30 @@
       "topic": "RAG",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "A pre-launch evaluation of Evrópuvefur, a government-funded AI service, found a trade-off between curated retrieval and open web search. While web search answered more questions, 35% of its answers cited untrustworthy or irrelevant sources. In contrast, the curated corpus was trustworthy but limited in coverage.",
-      "brief_ar": "تظهر تقييم ما قبل الإطلاق لخدمة Evrópuvefur المدعومة من الحكومة أن هناك تنازلاً بين الاسترجاع المُحكم والبحث المفتوح على الويب. في حين أجاب البحث على الويب على أكثر أسئلة، فإن 35% من إجاباته أشارت إلى مصادر غير موثوقة أو غير ذات صلة. وعلى العكس من ذلك، فإن القاعدة المحلية المُحكمة كانت موثوقة ولكن محدودة في التغطية.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_en": "Curated retrieval versus open web search in public AI information services: a coverage-trust trade-off. Expert evaluation of Evrópuvefur, a government-funded EU info service, reveals trade-offs between curated and web-search answers, with curated sources being more trustworthy but limited in coverage.",
+      "brief_ar": "الاسترجاع المُحكم مقابل البحث المفتوح على الويب في خدمات المعلومات العامة بالذكاء الاصطناعي: تسوية بين تغطية الموثوقية. التقييم الخبير لخدمة Evrópuvefur، التي تمولها الحكومة، وكالة معلومات الاتحاد الأوروبي، يكشف عن تسويات بين الإجابات المُحكمة والبحث على الويب، مع مصادر مُحكمة أكثر موثوقية ولكن محدودة التغطية.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "github-005",
+      "id": "twitter-028",
+      "source": "twitter",
+      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
+      "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
+      "url": "https://x.com",
+      "score": 48,
+      "score_reason": "Twitter/X discussion signal; surveillance relevance. Final score: 48.",
+      "status": "verified",
+      "topic": "AI Governance",
+      "collector": "XInfluencerAgent",
+      "provider": "groq",
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, emphasizing prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، تشدد على منع المراقبة الجماعية المحلية ومسؤولية الإنسان عن أنظمة الأسلحة الآلية.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
+    },
+    {
+      "id": "github-006",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -272,12 +272,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكية تعتمد على الذكاء الاصطناعي، مما يتيح التأتمتة والاتخاذ القرارات بفعالية.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_ar": "Langflow أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي وعمليات عمل، تمكين آلي وتحسين اتخاذ القرارات.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "github-006",
+      "id": "github-007",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -288,13 +288,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, enabling the creation of custom AI agents for various tasks.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي، تمكن من إنشاء وكلاء ذكاء اصطناعي مخصصين لمهام متنوعة.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications.",
+      "brief_ar": "langchain-ai/langchain: منصة هندسة الوكيل لتطوير تطبيقات الذكاء الاصطناعي.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "github-008",
+      "id": "github-009",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -306,12 +306,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكية، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "github-010",
+      "id": "github-011",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Open Data Platform for analysts, quants and AI agents.",
@@ -323,29 +323,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
-      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "twitter-026",
-      "source": "twitter",
-      "title": "@sama: We''re excited to make this model, the result of billions of dollars of research, availabl",
-      "content": "We''re excited to make this model, the result of billions of dollars of research, available to the world to get AI into the hands of the most people possible. We believe far more good than bad will come from it; for example, gpt-oss-120b performs about as well as o3 on challenging health issues. We have worked hard to mitigate the most serious safety issues, especially around biosecurity. gpt-oss models perform comparably to our frontier models on internal safety benchmarks.",
-      "url": "https://x.com",
-      "score": 45,
-      "score_reason": "Twitter/X discussion signal; model capability relevance; research relevance. Final score: 45.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "XInfluencerAgent",
-      "provider": "groq",
-      "brief_en": "Sama releases AI model, result of billion-dollar research, to increase global access and promote beneficial use, while mitigating safety concerns, especially biosecurity.",
-      "brief_ar": "الساما تصدر موديل الإي المتم نتيج بل مليار دولار البحوث لتوفير الوصول العالمي وتعزيز الإستخدام الإيجابي",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
-    },
-    {
-      "id": "arxiv-015",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "ChatImage: Navigating Long-Form LLM Answers through Interactive Images",
       "content": "Large Language Models (LLMs) can produce detailed answers to complex queries, but these answers are typically presented as dense linear text, which makes fine-grained inspection, navigation, and return visits difficult. We present ChatImage, a system that converts long-form LLM answers into interactive visual images. Given a textual answer, ChatImage first normalizes its content into structured visual modules, plans a visual layout, and renders a coherent image. It then applies a second grounding pass to the rendered image with vision grounding models such as LocateAnything and MiMo-Vision, with optional SAM-style mask refinement, to identify the visible regions that should support interaction. From these grounded regions, ChatImage overlays transparent clickable hotspots on the image. Each hotspot opens a detail panel and a region-scoped follow-up thread, allowing the user to inspect and query a specific part of the answer without re-reading the full response. Instead of treating planned coordinates as the final interaction geometry, ChatImage uses them as priors and grounds the interaction targets after rendering, which improves consistency between visual content and clickable regions. We release a reference implementation and introduce a 30-question benchmark covering infographic, map, and scene-based answer formats. Evaluation with configured external models reports interaction-loop completion, a strict visual-alignment gate, and a SAM-based mask-completeness diagnostic.",
@@ -356,16 +339,16 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "ChatImage: A system converting long-form LLM answers into interactive visual images for easier inspection and navigation.",
-      "brief_ar": "ChatImage: نظام يحول الإجابات الشاملة للنماذج اللغوية الكبيرة إلى صور تفاعلية لتحقيق التفتيش والتنقل بسهولة",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_en": "ChatImage: A system that converts long-form LLM answers into interactive visual images for easier inspection and navigation.",
+      "brief_ar": "ChatImage: نظام يُحول الإجابات الطويلة للنماذج اللغوية الكبيرة إلى صور تفاعلية لتحقيق التفتيش والتنقل بسهولة",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     },
     {
-      "id": "github-002",
+      "id": "github-003",
       "source": "github",
       "title": "cheahjs/free-llm-api-resources",
-      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 26155. Updated: 2026-07-07T18:16:42Z.",
+      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 26169. Updated: 2026-07-07T19:11:21Z.",
       "url": "https://github.com/cheahjs/free-llm-api-resources",
       "score": 39,
       "score_reason": "high-value open-source ecosystem signal; large language model relevance; implementation ecosystem relevance. Final score: 39.",
@@ -373,10 +356,27 @@
       "topic": "LLMs",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Free LLM API resources: A GitHub repository tracking free LLM inference resources, API providers, and rate limits, with 26,155 stars, last updated 2026-07-07.",
-      "brief_ar": "مصادر للموارد الحرة لبرمجيات اللغة الكبيرة: مستودع غيت هاب يتتبع مصادر الاستدلال الحرة لبرمجيات اللغة الكبيرة، ومقدمي واجهة برمجة التطبيقات، وحدود معدل، مع 26,155 نجمة، آخر تحديث 2026-07-07.",
-      "createdAt": "2026-07-07T18:33:15Z",
-      "updatedAt": "2026-07-07T18:33:15Z"
+      "brief_en": "Free LLM API resources: A curated list of accessible APIs for LLM inference, tracking providers, SDK compatibility, and rate limits. (GitHub stars: 26,169, updated: 2026-07-07T19:11:21Z)",
+      "brief_ar": "موارد API LLM المجانية: قائمة منقحة من APIs المتاحة لاستدلال LLM، تتبع مزودي الخدمات ومتوافقية SDK وأقصى حد للمعدل. (نجمات GitHub: 26,169، محدث: 2026-07-07T19:11:21Z)",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
+    },
+    {
+      "id": "twitter-020",
+      "source": "twitter",
+      "title": "@sama: ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation",
+      "content": "ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence. author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 8651 retweets: 317 replies: 575 quotes: 118 views: 1072543 bookmarks: 652 createdAt: Thu Jun 18 02:02:24 +0000 2026 createdAtLocal: 2026-06-18 02:02 createdAtISO: '2026-06-18T02:02:24+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null quotedTweet: id: '2067402274662744465' text: I'm always thrilled to have more Noams at @OpenAI, but I'm especially thrilled to welcome @NoamShazeer! author: screenName: polynoamial name: Noam Brown id: '2073791666553844074' text: our older kid put two words together for the first time and i am approximately as amazed by this cognitive feat as i am by GPT-5.6 discovering new math author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 13350 retweets: 348 replies: 1340 quotes: 239 views: 1761356 bookmarks: 765 createdAt: Sun Jul 05 15:30:37 +0000 2026 createdAtLocal: 2026-07-05 15:30 createdAtISO: '2026-07-05T15:30:37+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2069121360744550796' text: 'We want to help all companies be secure, working with the USG and the security ecosystem.",
+      "url": "https://x.com",
+      "score": 38,
+      "score_reason": "Twitter/X discussion signal. Final score: 38.",
+      "status": "held",
+      "topic": "AI",
+      "collector": "XInfluencerAgent",
+      "provider": "groq",
+      "brief_en": "OpenAI CEO Sam Altman attributes the success of Noams in AI to divine benevolence, without providing further explanation.",
+      "brief_ar": "يعزّي سام ألتمان، الرئيس التنفيذي لشركة OpenAI، نجاح النومز في مجال الذكاء الاصطناعي إلى النعمة الإلهية، دون تقديم أي تفسير إضافي.",
+      "createdAt": "2026-07-07T19:15:48Z",
+      "updatedAt": "2026-07-07T19:15:48Z"
     }
   ]
 }
