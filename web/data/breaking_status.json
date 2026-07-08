@@ -1,7 +1,18 @@
 {
-  "alerted_count": 83,
+  "alerted_count": 84,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-5c92345c67150eae980df9b9",
+      "reason": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems. The DoW agrees with these pr",
+      "score": 12,
+      "shown_at": "2026-07-08T18:53:43Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
+    },
     {
       "confidence": 0,
       "id": "story-1b51c5f9959adc1d9330c3d5",
@@ -122,56 +133,44 @@
       "source_url": "https://x.com",
       "status": "x-intel",
       "title": "@sama: Chips are foundational to the AI economy. Building our own expands our full-stack platform"
-    },
-    {
-      "confidence": 0,
-      "id": "story-f9d2bee9aee73b1cb4c0359e",
-      "reason": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12362 ret",
-      "score": 10,
-      "shown_at": "2026-07-03T20:34:18Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-07T22:39:32Z",
+    "alerted_at": "2026-07-08T18:53:43Z",
     "confidence": 0,
-    "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPR0ZobmVHcV9TSmo0ZDI2aUxCSVlCOC1FSnh2RjQtTjhWZm9tbWxVajRPaEFSU3A3cC1DMjVhOHZWUlV3U3BsNm0zT0xtQUtZZzVRYlE0N09MLTBNNG5iRnBZak9SSjZHdHZTNmZiWmFtMG1YMnJ0WUUwVkRGdUxHYUNPdUtYY0lDSVo0T29ZSXg",
-    "title": "Iran taking help of Chinese satellite images to hit US military bases - Interesting Engineering"
+    "source_url": "https://x.com",
+    "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 60,
-    "collected": 60,
-    "initial_collected": 30,
+    "alerted_now": 1,
+    "clustered": 1,
+    "collected": 1,
+    "initial_collected": 1,
     "initial_source_counts": {
-      "arxiv": 10,
-      "hackernews": 20
+      "x": 1
     },
-    "initial_x_relevant": 0,
-    "news_fallback_collected": 30,
+    "initial_x_relevant": 1,
+    "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.343,
-      "projected_minutes_per_30d": 160.44,
+      "measured_seconds": 1.015,
+      "projected_minutes_per_30d": 48.72,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 30,
+    "stage1_survivors": 1,
     "x_auth": {
       "auth_token_present": true,
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-08T13:17:30Z",
+  "updated_at": "2026-07-08T18:53:43Z",
   "version": 1
 }
