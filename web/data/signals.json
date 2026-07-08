@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-07T22:21:35Z",
+  "generated_at": "2026-07-08T17:12:01Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 20,
-    "rule-based": 0
+    "groq": 30,
+    "rule-based": 11
   },
   "agents": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "XInfluencerAgent",
-      "status": "degraded",
+      "status": "online",
       "role": "X/Twitter AI influencer and narrative tracking"
     },
     {
@@ -53,146 +53,146 @@
   ],
   "events": [
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:ylecun (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:demishassabis (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:OpenAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:AnthropicAI (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:GoogleDeepMind (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 1. stderr: WARNING twitter_cli.client: Failed to init ClientTransaction: 'NoneType' object has no attribute 'group'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "opencli twitter search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'opencli'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "bird search \"from:flwy0711 (AI OR agents OR LLM OR GPT OR reasoning)\" exited 127. stderr: [Errno 2] No such file or directory: 'bird'"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "XInfluencerAgent",
-      "message": "X influencer search returned zero items. Configure X access and influencer handles."
+      "time": "2026-07-08T17:12:01Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "AgentReachConnector",
-      "message": "Agent-Reach returned no optional social results."
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-07T22:21:35Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
+      "time": "2026-07-08T17:12:01Z",
+      "level": "info",
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-020",
+      "id": "arxiv-017",
       "source": "arxiv",
-      "title": "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
-      "content": "Language agents, i.e., LLM agents, progress rapidly and are increasingly deployed in production environments. This trend underscores the urgent need for rigorous and realistic evaluations. However, most existing benchmarks evaluate agents in simplified, idealized settings. They typically rely on pre-packaged tool interfaces, overlook critical steps, and assume inputs are clean and fully specified. Consequently, they understate the difficulty of real deployments, where uncertainty and noise are ubiquitous and agents must proactively explore the environment to uncover new tools. To bridge this gap, we present AgentGym2, a new evaluation framework with task instances grounded in real-world end-to-end working demands. Beyond reasoning and planning, it measures agents' ability to execute end-to-end procedures, discover tools via exploration, compose tools for unseen tasks, and remain robust to noisy and underspecified information. Experiments on 15 proprietary and open-source models show that even SOTA systems like Gemini and GPT-5 struggle on AgentGym2, revealing a substantial gap between the capability of current agents and the demands of real-world applications.",
-      "url": "https://arxiv.org/abs/2607.05174v1",
-      "score": 66,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 66.",
+      "title": "Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade",
+      "content": "Large language model (LLM) agents solving multi-step tasks frequently commit to trajectories that are doomed to fail, yet continue to consume substantial inference compute before the failure becomes observable. We show that failure is predictable early from the agent's internal representations: lightweight per-round probes on hidden activations anticipate eventual episode failure as early as the first interaction round, where scorers reading only the agent's observable behavior are barely better than chance. We turn this signal into a practical abort cascade: one distribution-free calibrated gate per round, with per-round recall budgets jointly searched so that eventually-successful episodes survive all gates at a user-specified global rate; this episode-level guarantee is the one that matters in deployment, since false-abort risk accumulates across gates. Across two agent models on TextCraft, the cascade meets every recall target from 90% to 97% and, at the 90% target, saves 47.1% +/- 10.3% (Qwen-2.5-7B) and 37.2% +/- 8.8% (Llama-3.2-3B) of inference compute, 1.6--1.7x the best single-gate policy. An otherwise-identical cascade reading only behavior saves roughly half as much, and adding behavioral features to the probe yields no further gain: the hidden states capture what behavior reveals. Finally, we characterize the sample complexity of certifying high recall targets, telling practitioners which recall promises their data can, and provably cannot, back. The code will be released soon.",
+      "url": "https://arxiv.org/abs/2607.06503v1",
+      "score": 68,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 68.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "AgentGym2: A benchmarking framework for large language model agents in real-world environments, evaluating their ability to execute end-to-end procedures, discover tools, and remain robust to noise and uncertainty.",
-      "brief_ar": "AgentGym2: إطار تقييم لعمليات نمذجة اللغة الكبيرة في بيئات العالم الحقيقي، يقيم قدرة الوكلاء على تنفيذ الإجراءات من النهاية إلى النهاية، اكتشاف الأدوات، والبقاء متينًا في مواجهة الضوضاء وال不确定ية.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_en": "Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade. LLM agents can predict failure early, saving up to 47.1% of inference compute.",
+      "brief_ar": "محدود من البداية: الإلغاء المبكر لحلقات وكلاء LLM من خلال سلسلة اختبار محكومة بالاستدعاء. يمكن للوكلاء LLM توقع الفشل في وقت مبكر، مما يوفر ما يصل إلى 47.1% من حسابات الاستدلال.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "github-009",
+      "id": "github-010",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -204,12 +204,63 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for AI application development.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها و تخصيصها و إطلاقها، وتقدم مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "github-011",
+      "id": "hackernews-002",
+      "source": "hackernews",
+      "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+      "content": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+      "score": 56,
+      "score_reason": "live technology discussion signal; agentic AI relevance; implementation ecosystem relevance. Final score: 56.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "NewsAgent",
+      "provider": "groq",
+      "brief_en": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+      "brief_ar": "GitLost: خدعنا وكيل GitHub الذكي ليكشف المستودعات الخاصة",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
+    },
+    {
+      "id": "arxiv-018",
+      "source": "arxiv",
+      "title": "Data Analysis in the Wild: Benchmarking Large Language Models Against Real-World Data Complexities",
+      "content": "Current benchmarks for evaluating Large Language Models (LLMs) in data analysis often fail to reflect real-world settings. They typically focus on fact retrieval from small tables and overlook the challenges of large multi-tabular datasets, external knowledge integration, and exploratory insight discovery. We introduce DataGovBench, a benchmark derived from governmental open data designed to evaluate LLMs in practical scenarios. The benchmark includes two tasks: Table QA that requires solving complex decomposable questions and producing textual answers or visualizations, and Table Insight that evaluates the ability of models to generate expert-level findings through exploratory data analysis. Comprehensive experiments with state-of-the-art LLMs, both with and without agentic frameworks, reveal significant performance gaps across both tasks. These results suggest that current LLM-based systems remain far from satisfying the demands of real-world data analytics. DataGovBench provides a challenging benchmark for advancing research on LLMs capable of both answering analytical queries and discovering insights from data. Code and sample data are available at https://github.com/SoHasegawa/datagovbench.",
+      "url": "https://arxiv.org/abs/2607.06482v1",
+      "score": 54,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 54.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "DataGovBench: A new benchmark for Large Language Models (LLMs) in data analysis, focusing on real-world complexities and evaluating LLMs in practical scenarios.",
+      "brief_ar": "DataGovBench: معيار جديد للنماذج اللغوية الكبيرة (LLMs) في تحليل البيانات، يركز على التعقيدات في العالم الحقيقي وتقييم LLMs في السيناريوهات العملية.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
+    },
+    {
+      "id": "arxiv-020",
+      "source": "arxiv",
+      "title": "From Voting to Agent Collaboration: Answer-Type-Aware LLM Pipelines for BioASQ 14b",
+      "content": "Biomedical question answering requires not only accurate extraction of information from scientific literature but also reliable integration of evidence across multiple documents. This study presents a question-type-specific large language model (LLM) framework for BioASQ 14b Task B, designed to improve answer robustness and evidence grounding in biomedical question answering. Rather than applying a single prompting strategy to all questions, the framework selects different inference procedures for yes/no, factoid, and list questions according to their distinct reasoning and evaluation requirements. For yes/no questions, snippet shuffling and self-reflection are used to reduce sensitivity to evidence ordering and improve decision stability. For factoid questions, full-snippet input is combined with chain-of-thought-based in-context learning to support accurate biomedical entity identification. For list questions, a multi-agent architecture is employed, in which evidence extraction, candidate generation, answer verification, and final aggregation are handled collaboratively. Preliminary experiments on BioASQ 13b were used to identify effective inference strategies for each question type, and the resulting framework was subsequently evaluated in the official BioASQ 14b Task B challenge. In the official evaluation, our framework showed competitive performance across multiple batches and achieved first place in the factoid subtask of Batch 4. These results demonstrate the effectiveness of combining question-type-specific inference, ensemble prediction, and agent-based verification for reliable biomedical question answering.",
+      "url": "https://arxiv.org/abs/2607.06452v1",
+      "score": 54,
+      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 54.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "This study presents a question-type-specific LLM framework for BioASQ 14b Task B, improving answer robustness and evidence grounding in biomedical question answering by selecting different inference procedures for yes/no, factoid, and list questions.",
+      "brief_ar": "تقدم هذه الدراسة إطارًا لنموذج اللغة الكبير المحدد بنوع السؤال لل任务 ب من BioASQ 14b، مما يحسن من متانة الإجابة وترسخ الأدلة في الإجابة على الأسئلة الطبية الحيوية عن طريق اختيار إجراءات استدلال مختلفة للأسئلة بنعم/لا، والأسئلة الحقيقية، والأسئلة القائمة.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
+    },
+    {
+      "id": "github-012",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -220,30 +271,47 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents utilize single-GPU nanochat training for automated research, potentially streamlining discovery processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستخدمون تدريب nanochat على جهاز كمبيوتر واحد لتشغيل البحث آليًا، مما قد ي简د من عمليات الاكتشاف.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستكشفون تلقين المحادثات النانوية على جهاز كمبيوتر واحد مع إمكانية توفير العمليات البحثية.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "arxiv-018",
-      "source": "arxiv",
-      "title": "Curated retrieval versus open web search in public AI information services: a coverage-trust trade-off",
-      "content": "Public institutions increasingly use large language models (LLMs) to answer citizens' questions, often pairing a curated knowledge base with live web search, yet whether the sources behind these answers can be trusted has received little empirical scrutiny. We report a pre-launch expert evaluation of Evrópuvefur, an independent, government-funded service run by the University of Iceland that answers questions about the European Union, conducted as Iceland prepared for its referendum of 29 August 2026 on whether to resume EU accession talks. Five domain experts produced 551 evaluations of 449 AI-generated answers, scoring each against a seven-criterion quality rubric and, separately, flagging individual cited sources. We compared two retrieval paths: a curated local corpus (RAG) and open web search. In more than a third of the reviewed web-search answers (35%, 65 of 187), at least one cited source was flagged, almost always as untrustworthy or irrelevant; curated sources were flagged far less often and only for being out of date. Web search answered more questions, but at the cost of source quality; the curated corpus was trustworthy yet limited in coverage, and the model declined to respond when it fell short. The citation mix also passed over strong sources: across all 287 web-search answers, the system never cited RÚV, the public broadcaster and the country's most widely used news source. A companion prompt ablation shows how weak prompt-level steering is: a trusted-domain list in the system prompt raised the share of citations to listed domains only from 12% to 21%. Fluency and topical fit did not predict source trustworthiness. We argue that source trustworthiness is a measurable yet largely invisible dimension of information quality in public AI services, and we discuss transparency-oriented responses and their trade-offs.",
-      "url": "https://arxiv.org/abs/2607.05217v1",
-      "score": 49,
-      "score_reason": "academic/research signal; retrieval/RAG relevance; large language model relevance; model capability relevance. Final score: 49.",
+      "id": "twitter-024",
+      "source": "twitter",
+      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
+      "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
+      "url": "https://x.com",
+      "score": 48,
+      "score_reason": "Twitter/X discussion signal; surveillance relevance. Final score: 48.",
       "status": "verified",
-      "topic": "RAG",
+      "topic": "AI Governance",
+      "collector": "XInfluencerAgent",
+      "provider": "groq",
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, emphasizing prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، وشددنا على حظر المراقبة الجماعية المحلية ومسؤولية الإنسان عن الأنظمة الأوتوماتيكية للأسلحة",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
+    },
+    {
+      "id": "arxiv-019",
+      "source": "arxiv",
+      "title": "WordVoice: Explicit and Decoupled Multi-Dimensional Word-Level Control for LLM-Based TTS",
+      "content": "While recent Large Language Model (LLM)-based Text-to-Speech (TTS) systems have achieved remarkable naturalness, they predominantly rely on implicit end-to-end generation paradigms, resulting in coarse-grained control. In scenarios demanding precise stylistic interventions and strict temporal alignment, such as audiobook narration and video dubbing, the inability to explicitly manipulate word-level acoustic attributes remains a critical bottleneck. This limitation is primarily amplified by the severe scarcity of fine-grained annotated datasets and the architectural challenge of integrating multi-dimensional control signals into discrete autoregressive generation. To address this, we propose a unified framework for highly precise word-level control. First, we construct WordVoice-5A, a massive 4.7k-hour bilingual dataset featuring five-dimensional word-level annotations (duration, boundary, energy, pitch and tone) developed through a rigorous linguistically-guided pipeline. Second, we introduce WordVoice to transform the implicit generation process into an explicit, highly controllable paradigm. Specifically, we introduce a bound-token mechanism within the LLM to formulate an explicit ``acoustic planning'' process, enabling adaptive multi-task prosodic planning and flexible manual intervention. Furthermore, we augment the token-to-waveform stage with a fine-grained acoustic modulation module, bridging the resolution gap to strictly align word-level attributes between highly compressed discrete tokens and continuous waveforms. Extensive experiments demonstrate that WordVoice achieves superior, decoupled control over multiple acoustic dimensions while maintaining competitive zero-shot synthesis stability. The code and audio samples are publicly available at https://xxh333.github.io/wordvoice-demo/.",
+      "url": "https://arxiv.org/abs/2607.06461v1",
+      "score": 47,
+      "score_reason": "academic/research signal; large language model relevance; model capability relevance; implementation ecosystem relevance. Final score: 47.",
+      "status": "verified",
+      "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "A study evaluated the trustworthiness of AI-generated answers from a curated knowledge base and open web search, finding that while web search answered more questions, it often cited untrustworthy sources, whereas the curated corpus was more reliable but limited in coverage.",
-      "brief_ar": "دراسة قيمت مصداقية الإجابات التي تم إنشاؤها بواسطة الذكاء الاصطناعي من قاعدة معرفة منضبطة ونتائج البحث المفتوح على الويب، ووجدت أن البحث المفتوح على الويب أجاب على أكثر الأسئلة، ولكنه غالبًا ما استشهد بمصادر غير موثوقة، في حين كانت القاعدة المنضبطة أكثر موثوقية ولكنها محدودة في التغطية.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_en": "WordVoice: A framework for explicit word-level control in LLM-based TTS, addressing the limitation of implicit end-to-end generation paradigms with a 4.7k-hour bilingual dataset and a bound-token mechanism.",
+      "brief_ar": "WordVoice: إطار لتحكم واضح على مستوى الكلمة في أنظمة التحدث باللغة الطبيعية القائمة على نماذج اللغة الكبيرة، يعالج القيود الناجمة عن أنماط التوليد من النهاية إلى النهاية الضمنية باستخدام مجموعة بيانات ثنائية اللغة تبلغ 4.7 آلاف ساعة وآلية توكن مقيدة.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "github-007",
+      "id": "github-008",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -255,12 +323,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكية مدعومة بالذكاء الاصطناعي، مما يتيح آليات أتمتة وصنع قرارات فعالة.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أوتوماتيكية وآليات اتخاذ قرارات فعالة.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "github-008",
+      "id": "github-009",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -271,13 +339,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي.",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "github-010",
+      "id": "github-011",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -290,11 +358,11 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     },
     {
-      "id": "github-012",
+      "id": "github-013",
       "source": "github",
       "title": "OpenBB-finance/OpenBB",
       "content": "Open Data Platform for analysts, quants and AI agents.",
@@ -306,77 +374,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
-      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts و quants ووكلاء الذكاء الاصطناعي، توفر إمكانية الوصول إلى البيانات المالية والرؤى",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
-    },
-    {
-      "id": "arxiv-017",
-      "source": "arxiv",
-      "title": "ChatImage: Navigating Long-Form LLM Answers through Interactive Images",
-      "content": "Large Language Models (LLMs) can produce detailed answers to complex queries, but these answers are typically presented as dense linear text, which makes fine-grained inspection, navigation, and return visits difficult. We present ChatImage, a system that converts long-form LLM answers into interactive visual images. Given a textual answer, ChatImage first normalizes its content into structured visual modules, plans a visual layout, and renders a coherent image. It then applies a second grounding pass to the rendered image with vision grounding models such as LocateAnything and MiMo-Vision, with optional SAM-style mask refinement, to identify the visible regions that should support interaction. From these grounded regions, ChatImage overlays transparent clickable hotspots on the image. Each hotspot opens a detail panel and a region-scoped follow-up thread, allowing the user to inspect and query a specific part of the answer without re-reading the full response. Instead of treating planned coordinates as the final interaction geometry, ChatImage uses them as priors and grounds the interaction targets after rendering, which improves consistency between visual content and clickable regions. We release a reference implementation and introduce a 30-question benchmark covering infographic, map, and scene-based answer formats. Evaluation with configured external models reports interaction-loop completion, a strict visual-alignment gate, and a SAM-based mask-completeness diagnostic.",
-      "url": "https://arxiv.org/abs/2607.05290v1",
-      "score": 40,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 40.",
-      "status": "verified",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "ChatImage: A system converting long-form LLM answers into interactive visual images for easier inspection and navigation.",
-      "brief_ar": "ChatImage: نظام يُحَوِّل الإجابات الطويلة للنماذج اللغوية الكبيرة إلى صور تفاعلية لتحقيق التفتيش والتنقل بسهولة",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
-    },
-    {
-      "id": "github-004",
-      "source": "github",
-      "title": "cheahjs/free-llm-api-resources",
-      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 26191. Updated: 2026-07-07T22:15:33Z.",
-      "url": "https://github.com/cheahjs/free-llm-api-resources",
-      "score": 39,
-      "score_reason": "high-value open-source ecosystem signal; large language model relevance; implementation ecosystem relevance. Final score: 39.",
-      "status": "held",
-      "topic": "LLMs",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Free LLM API resources: A list of accessible inference resources via API, tracking providers, SDK compatibility, and rate limits. (GitHub stars: 26191, Updated: 2026-07-07T22:15:33Z)",
-      "brief_ar": "موارد API LLM المجانية: قائمة بموارد الاستدلال القابلة للوصول عبر API، وتتبع مزودي الخدمات وتوافق SDK وأحكام الرسوم. (نجمات GitHub: 26191، تم التحديث: 2026-07-07T22:15:33Z)",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
-    },
-    {
-      "id": "arxiv-014",
-      "source": "arxiv",
-      "title": "Selective Disclosure Watermarking for Large Language Models",
-      "content": "Watermarking methods embed imperceptible and verifiable signals into text generated by large language models (LLMs). Existing approaches include zero-bit schemes for distinguishing synthetic text from human writing and multi-bit schemes for embedding metadata. However, current multi-bit watermarking methods do not allow selective disclosure: verifying any part of the watermark requires revealing the entire embedded message. This lack of control leads to unnecessary information exposure and raises privacy concerns. We propose Hierarchical Vocabulary Routing (HeRo), a watermarking framework that enables selective disclosure of embedded metadata. The method recursively partitions the vocabulary and distributes watermark information across hierarchical layers, so that different verifiers can decode only the portions of the payload corresponding to their access level. We show that the proposed scheme preserves the unbiasedness of the underlying sampling process and thus maintains text quality. Experiments demonstrate that our framework supports fine-grained access control while achieving high detection accuracy and low latency. Code is available at https://github.com/xuyangc03/hero-watermark.",
-      "url": "https://arxiv.org/abs/2607.05353v1",
-      "score": 37,
-      "score_reason": "academic/research signal; large language model relevance; model capability relevance; implementation ecosystem relevance. Final score: 37.",
-      "status": "held",
-      "topic": "LLMs",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "Selective Disclosure Watermarking for Large Language Models: A novel approach enabling controlled verification of embedded metadata in LLM-generated text, addressing privacy concerns and information exposure.",
-      "brief_ar": "التحكم الانتقائي في وضع العلامات المائية للنماذج اللغوية الكبيرة: نهج جديد يسمح بالتحقق المُتحكم فيه للبيانات المدمجة في النصوص التي تُولدها النماذج اللغوية الكبيرة، ومعالجة مخاوف الخصوصية وتسرب المعلومات.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
-    },
-    {
-      "id": "github-005",
-      "source": "github",
-      "title": "NousResearch/hermes-agent",
-      "content": "The agent that grows with you",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "score": 36,
-      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; research relevance. Final score: 36.",
-      "status": "held",
-      "topic": "AI Agents",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "NousResearch/hermes-agent: An adaptive AI solution for evolving intelligence needs, providing strategic OSINT insights.",
-      "brief_ar": "NousResearch/هرمس-وكل: حل ذكاء اصطناعي متكيف لتحقيق الاحتياجات الاستخباراتية المتطورة، يقدم رؤى استراتيجية للاستخبارات المفتوحة.",
-      "createdAt": "2026-07-07T22:21:35Z",
-      "updatedAt": "2026-07-07T22:21:35Z"
+      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
+      "createdAt": "2026-07-08T17:12:01Z",
+      "updatedAt": "2026-07-08T17:12:01Z"
     }
   ]
 }
