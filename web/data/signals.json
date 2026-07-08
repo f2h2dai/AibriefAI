@@ -1,12 +1,12 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-08T17:12:01Z",
+  "generated_at": "2026-07-08T21:49:24Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 30,
+    "groq": 29,
     "rule-based": 11
   },
   "agents": [
@@ -53,129 +53,129 @@
   ],
   "events": [
     {
-      "time": "2026-07-08T17:12:01Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1170"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1168"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1175"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-08T17:12:01Z",
+      "time": "2026-07-08T21:49:24Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1178"
+    },
+    {
+      "time": "2026-07-08T21:49:24Z",
       "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-017",
+      "id": "arxiv-016",
       "source": "arxiv",
       "title": "Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade",
       "content": "Large language model (LLM) agents solving multi-step tasks frequently commit to trajectories that are doomed to fail, yet continue to consume substantial inference compute before the failure becomes observable. We show that failure is predictable early from the agent's internal representations: lightweight per-round probes on hidden activations anticipate eventual episode failure as early as the first interaction round, where scorers reading only the agent's observable behavior are barely better than chance. We turn this signal into a practical abort cascade: one distribution-free calibrated gate per round, with per-round recall budgets jointly searched so that eventually-successful episodes survive all gates at a user-specified global rate; this episode-level guarantee is the one that matters in deployment, since false-abort risk accumulates across gates. Across two agent models on TextCraft, the cascade meets every recall target from 90% to 97% and, at the 90% target, saves 47.1% +/- 10.3% (Qwen-2.5-7B) and 37.2% +/- 8.8% (Llama-3.2-3B) of inference compute, 1.6--1.7x the best single-gate policy. An otherwise-identical cascade reading only behavior saves roughly half as much, and adding behavioral features to the probe yields no further gain: the hidden states capture what behavior reveals. Finally, we characterize the sample complexity of certifying high recall targets, telling practitioners which recall promises their data can, and provably cannot, back. The code will be released soon.",
@@ -187,12 +187,12 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade. LLM agents can predict failure early, saving up to 47.1% of inference compute.",
-      "brief_ar": "محدود من البداية: الإلغاء المبكر لحلقات وكلاء LLM من خلال سلسلة اختبار محكومة بالاستدعاء. يمكن للوكلاء LLM توقع الفشل في وقت مبكر، مما يوفر ما يصل إلى 47.1% من حسابات الاستدلال.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_ar": "مهدد بالفشل منذ البداية: الإلغاء المبكر لحلقات وكيل LLM من خلال سلسلة اختبار محكومة بالاستدعاء. يمكن لوكلاء LLM التنبؤ بالفشل في وقت مبكر، مما يوفر ما يصل إلى 47.1% من حسابات الاستدلال.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "github-010",
+      "id": "github-009",
       "source": "github",
       "title": "Shubhamsaboo/awesome-llm-apps",
       "content": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
@@ -203,30 +203,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for AI application development.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وإطلاقها، وتقدم مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات للتنمية والتشغيل.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "hackernews-002",
-      "source": "hackernews",
-      "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-      "content": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
-      "score": 56,
-      "score_reason": "live technology discussion signal; agentic AI relevance; implementation ecosystem relevance. Final score: 56.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "NewsAgent",
-      "provider": "groq",
-      "brief_en": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-      "brief_ar": "GitLost: خدعنا وكيل GitHub الذكي ليكشف المستودعات الخاصة",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
-    },
-    {
-      "id": "arxiv-018",
+      "id": "arxiv-017",
       "source": "arxiv",
       "title": "Data Analysis in the Wild: Benchmarking Large Language Models Against Real-World Data Complexities",
       "content": "Current benchmarks for evaluating Large Language Models (LLMs) in data analysis often fail to reflect real-world settings. They typically focus on fact retrieval from small tables and overlook the challenges of large multi-tabular datasets, external knowledge integration, and exploratory insight discovery. We introduce DataGovBench, a benchmark derived from governmental open data designed to evaluate LLMs in practical scenarios. The benchmark includes two tasks: Table QA that requires solving complex decomposable questions and producing textual answers or visualizations, and Table Insight that evaluates the ability of models to generate expert-level findings through exploratory data analysis. Comprehensive experiments with state-of-the-art LLMs, both with and without agentic frameworks, reveal significant performance gaps across both tasks. These results suggest that current LLM-based systems remain far from satisfying the demands of real-world data analytics. DataGovBench provides a challenging benchmark for advancing research on LLMs capable of both answering analytical queries and discovering insights from data. Code and sample data are available at https://github.com/SoHasegawa/datagovbench.",
@@ -237,13 +220,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "DataGovBench: A new benchmark for Large Language Models (LLMs) in data analysis, focusing on real-world complexities and evaluating LLMs in practical scenarios.",
-      "brief_ar": "DataGovBench: معيار جديد للنماذج اللغوية الكبيرة (LLMs) في تحليل البيانات، يركز على التعقيدات في العالم الحقيقي وتقييم LLMs في السيناريوهات العملية.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_en": "DataGovBench: A benchmark for Large Language Models in real-world data analysis, evaluating table QA and table insight tasks, revealing performance gaps in current LLM-based systems.",
+      "brief_ar": "DataGovBench: معيار تقييم للأنموذج اللغوي الكبير في تحليل البيانات في العالم الحقيقي، يقيم مهام الاستفسار من الجدول واكتشاف رؤى الجدول، يكشف عن فجوات الأداء في أنظمة LLM الحالية.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "arxiv-020",
+      "id": "arxiv-019",
       "source": "arxiv",
       "title": "From Voting to Agent Collaboration: Answer-Type-Aware LLM Pipelines for BioASQ 14b",
       "content": "Biomedical question answering requires not only accurate extraction of information from scientific literature but also reliable integration of evidence across multiple documents. This study presents a question-type-specific large language model (LLM) framework for BioASQ 14b Task B, designed to improve answer robustness and evidence grounding in biomedical question answering. Rather than applying a single prompting strategy to all questions, the framework selects different inference procedures for yes/no, factoid, and list questions according to their distinct reasoning and evaluation requirements. For yes/no questions, snippet shuffling and self-reflection are used to reduce sensitivity to evidence ordering and improve decision stability. For factoid questions, full-snippet input is combined with chain-of-thought-based in-context learning to support accurate biomedical entity identification. For list questions, a multi-agent architecture is employed, in which evidence extraction, candidate generation, answer verification, and final aggregation are handled collaboratively. Preliminary experiments on BioASQ 13b were used to identify effective inference strategies for each question type, and the resulting framework was subsequently evaluated in the official BioASQ 14b Task B challenge. In the official evaluation, our framework showed competitive performance across multiple batches and achieved first place in the factoid subtask of Batch 4. These results demonstrate the effectiveness of combining question-type-specific inference, ensemble prediction, and agent-based verification for reliable biomedical question answering.",
@@ -254,13 +237,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "This study presents a question-type-specific LLM framework for BioASQ 14b Task B, improving answer robustness and evidence grounding in biomedical question answering by selecting different inference procedures for yes/no, factoid, and list questions.",
-      "brief_ar": "تقدم هذه الدراسة إطارًا لنموذج اللغة الكبير المحدد بنوع السؤال لل任务 ب من BioASQ 14b، مما يحسن من متانة الإجابة وترسخ الأدلة في الإجابة على الأسئلة الطبية الحيوية عن طريق اختيار إجراءات استدلال مختلفة للأسئلة بنعم/لا، والأسئلة الحقيقية، والأسئلة القائمة.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_en": "This study presents a question-type-specific LLM framework for BioASQ 14b Task B, improving answer robustness and evidence grounding in biomedical question answering.",
+      "brief_ar": "تقدم هذه الدراسة إطار عمل لنموذج اللغة الكبير يعتمد على نوع السؤال لتحسين صلابة الإجابة وتأصيل الأدلة في إجابة الأسئلة الطبية الحيوية",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "github-012",
+      "id": "github-011",
       "source": "github",
       "title": "karpathy/autoresearch",
       "content": "AI agents running research on single-GPU nanochat training automatically",
@@ -271,13 +254,47 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to streamline research processes.",
-      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستكشفون تلقين المحادثات النانوية على جهاز كمبيوتر واحد مع إمكانية توفير العمليات البحثية.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_en": "karpathy/autoresearch: AI agents conduct single-GPU nanochat training research, potentially accelerating language model development.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يقومون بتدريب محادثات نانو على جهاز كمبيوتر واحد معالج رسومات، مما قد يسرع من تطوير نماذج اللغة.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "twitter-024",
+      "id": "twitter-034",
+      "source": "twitter",
+      "title": "@sama: We will work as quickly as we can to get this model in your hands and we hope you will lov",
+      "content": "We will work as quickly as we can to get this model in your hands and we hope you will love it.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 18418 retweets: 1127 replies: 1931 quotes: 507 views: 2238364 bookmarks: 1928 createdAt: Fri Jun 26 20:37:49 +0000 2026 createdAtLocal: 2026-06-26 20:37 createdAtISO: '2026-06-26T20:37:49+00:00' media: [] urls: [] isRetweet: false retweetedBy: null lang: en score: null id: '2019441198734209374' text: 'The companies that succeed in the future are going to make very heavy use of AI. People will manage teams of agents to do very complex things.",
+      "url": "https://x.com",
+      "score": 52,
+      "score_reason": "Twitter/X discussion signal; agentic AI relevance; model capability relevance. Final score: 52.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "XInfluencerAgent",
+      "provider": "rule-based",
+      "brief_en": "We will work as quickly as we can to get this model in your hands and we hope you will love it.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal....",
+      "brief_ar": "ملخص قائم على القواعد: We will work as quickly as we can to get this model in your hands and we hope you will love it.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal....",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
+    },
+    {
+      "id": "hackernews-002",
+      "source": "hackernews",
+      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+      "content": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+      "url": "https://microsoft.github.io/flint-chart/#/",
+      "score": 49,
+      "score_reason": "live technology discussion signal; agentic AI relevance. Final score: 49.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "NewsAgent",
+      "provider": "groq",
+      "brief_en": "Microsoft releases Flint, a visualization language for AI agents, to enhance their decision-making capabilities.",
+      "brief_ar": "أطلقت مايكروسوفت Flint، لغة مرئية للوكلاء الذكاء الاصطناعي، لتعزيز قدراتهم في اتخاذ القرارات.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
+    },
+    {
+      "id": "twitter-025",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -288,13 +305,13 @@
       "topic": "AI Governance",
       "collector": "XInfluencerAgent",
       "provider": "groq",
-      "brief_en": "AI safety and wide distribution of benefits are core to our mission, emphasizing prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
-      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي أساسية لرسالتنا، وشددنا على حظر المراقبة الجماعية المحلية ومسؤولية الإنسان عن الأنظمة الأوتوماتيكية للأسلحة",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_en": "AI safety and wide distribution of benefits are core to our mission, with key principles including prohibitions on domestic mass surveillance and human responsibility for autonomous weapon systems.",
+      "brief_ar": "سلامة الذكاء الاصطناعي وتوزيع المنافع على نطاق واسع هي核心 مهمتنا، مع مبادئ رئيسية تشمل حظر المراقبة الجماعية المحلية والمسؤولية الإنسانية لأنظمة الأسلحة الآلية.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "arxiv-019",
+      "id": "arxiv-018",
       "source": "arxiv",
       "title": "WordVoice: Explicit and Decoupled Multi-Dimensional Word-Level Control for LLM-Based TTS",
       "content": "While recent Large Language Model (LLM)-based Text-to-Speech (TTS) systems have achieved remarkable naturalness, they predominantly rely on implicit end-to-end generation paradigms, resulting in coarse-grained control. In scenarios demanding precise stylistic interventions and strict temporal alignment, such as audiobook narration and video dubbing, the inability to explicitly manipulate word-level acoustic attributes remains a critical bottleneck. This limitation is primarily amplified by the severe scarcity of fine-grained annotated datasets and the architectural challenge of integrating multi-dimensional control signals into discrete autoregressive generation. To address this, we propose a unified framework for highly precise word-level control. First, we construct WordVoice-5A, a massive 4.7k-hour bilingual dataset featuring five-dimensional word-level annotations (duration, boundary, energy, pitch and tone) developed through a rigorous linguistically-guided pipeline. Second, we introduce WordVoice to transform the implicit generation process into an explicit, highly controllable paradigm. Specifically, we introduce a bound-token mechanism within the LLM to formulate an explicit ``acoustic planning'' process, enabling adaptive multi-task prosodic planning and flexible manual intervention. Furthermore, we augment the token-to-waveform stage with a fine-grained acoustic modulation module, bridging the resolution gap to strictly align word-level attributes between highly compressed discrete tokens and continuous waveforms. Extensive experiments demonstrate that WordVoice achieves superior, decoupled control over multiple acoustic dimensions while maintaining competitive zero-shot synthesis stability. The code and audio samples are publicly available at https://xxh333.github.io/wordvoice-demo/.",
@@ -305,13 +322,13 @@
       "topic": "LLMs",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "WordVoice: A framework for explicit word-level control in LLM-based TTS, addressing the limitation of implicit end-to-end generation paradigms with a 4.7k-hour bilingual dataset and a bound-token mechanism.",
-      "brief_ar": "WordVoice: إطار لتحكم واضح على مستوى الكلمة في أنظمة التحدث باللغة الطبيعية القائمة على نماذج اللغة الكبيرة، يعالج القيود الناجمة عن أنماط التوليد من النهاية إلى النهاية الضمنية باستخدام مجموعة بيانات ثنائية اللغة تبلغ 4.7 آلاف ساعة وآلية توكن مقيدة.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_en": "WordVoice: A framework for explicit word-level control in LLM-based TTS, addressing the need for precise stylistic interventions and temporal alignment in applications like audiobook narration and video dubbing.",
+      "brief_ar": "WordVoice: إطار للتحكم 明确 على مستوى الكلمة في أنظمة TTS القائمة على LLM، يعالج الحاجة إلى تدخلات أسلوبية دقيقة وتنسيق زمني في التطبيقات مثل رواية الكتب الصوتية والدبلجة الصوتية.",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "github-008",
+      "id": "github-007",
       "source": "github",
       "title": "langflow-ai/langflow",
       "content": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
@@ -323,12 +340,12 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، مما يتيح آليات أوتوماتيكية وآليات اتخاذ قرارات فعالة.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "brief_ar": "Langflow أداة قوية لإنشاء وتطوير وحدات وعمليات ذكية تعمل بالذكاء الاصطناعي، تمكِّن من آليَّة كفءة وصنع القرار",
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "github-009",
+      "id": "github-008",
       "source": "github",
       "title": "langchain-ai/langchain",
       "content": "The agent engineering platform.",
@@ -341,11 +358,11 @@
       "provider": "groq",
       "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
       "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     },
     {
-      "id": "github-011",
+      "id": "github-010",
       "source": "github",
       "title": "browser-use/browser-use",
       "content": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
@@ -358,25 +375,8 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
-    },
-    {
-      "id": "github-013",
-      "source": "github",
-      "title": "OpenBB-finance/OpenBB",
-      "content": "Open Data Platform for analysts, quants and AI agents.",
-      "url": "https://github.com/OpenBB-finance/OpenBB",
-      "score": 46,
-      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance. Final score: 46.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
-      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
-      "createdAt": "2026-07-08T17:12:01Z",
-      "updatedAt": "2026-07-08T17:12:01Z"
+      "createdAt": "2026-07-08T21:49:24Z",
+      "updatedAt": "2026-07-08T21:49:24Z"
     }
   ]
 }
