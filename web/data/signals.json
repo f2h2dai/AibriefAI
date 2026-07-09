@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-09T18:26:35Z",
+  "generated_at": "2026-07-09T22:51:34Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 29,
-    "rule-based": 9
+    "groq": 30,
+    "rule-based": 8
   },
   "agents": [
     {
@@ -53,124 +53,124 @@
   ],
   "events": [
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 85 X records."
+    },
+    {
+      "time": "2026-07-09T22:51:34Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "Collected 20 X influencer signals."
+    },
+    {
+      "time": "2026-07-09T22:51:34Z",
+      "level": "warning",
+      "agent": "AgentReachConnector",
+      "message": "Agent-Reach returned no optional social results."
+    },
+    {
+      "time": "2026-07-09T22:51:34Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1182"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1179"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1177"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1175"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1175"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1172"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T18:26:35Z",
+      "time": "2026-07-09T22:51:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-09T18:26:35Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1186"
-    },
-    {
-      "time": "2026-07-09T18:26:35Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-07-09T18:26:35Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
@@ -186,10 +186,10 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "STRACE: A framework for optimizing long-horizon agents by analyzing structural trajectory and extracting causal relationships, improving optimization efficiency and effectiveness.",
-      "brief_ar": "STRACE: إطار لتحسين وكلاء الأفق الطويل من خلال تحليل المسار الهيكلي واستخراج العلاقات السببية، مما يحسن كفاءة وفعالية التحسين.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "STRACE: A framework for optimizing long-horizon agents by analyzing structural trajectory and extracting causal patterns, improving optimization efficiency and effectiveness.",
+      "brief_ar": "STRACE: إطار لتحسين وحدات الإجراء على المدى الطويل من خلال تحليل المسار الهيكلي واستخراج الأنماط السببية، مما يحسن كفاءة وفعاليّة التحسين.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "arxiv-014",
@@ -204,9 +204,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "SkillCenter is a large-scale, open skill library for autonomous AI agents, featuring 216,938 structured skills across 24 domains, with 114,565 source-grounded skills from peer-reviewed sources and 102,373 community skills.",
-      "brief_ar": "SkillCenter هو مكتبة مهارات مفتوحة واسعة النطاق لعمليات الذكاء الاصطناعي المستقلة، وتضم 216,938 مهارة منظمّة عبر 24 مجالاً، مع 114,565 مهارة مُستندة إلى مصادر مراجعة الأقران و102,373 مهارة مجتمعية.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_ar": "SkillCenter هو مكتبة مهارات مفتوحة واسعة النطاق لعمليات الذكاء الاصطناعي المستقلة، وتضم 216,938 مهارة منظمة عبر 24 مجالا، مع 114,565 مهارة مدعومة بمصادر مراجعة الأقران و102,373 مهارة مجتمعية.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-007",
@@ -220,10 +220,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for AI application development.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة تضم أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخه وتعديله وتسليمه، ويوفر مجموعة واسعة من الإمكانيات لتطوير تطبيقات الذكاء الاصطناعي.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات لتطوير وتحديث التطبيقات.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "arxiv-018",
@@ -238,9 +238,9 @@
       "collector": "AcademicAgent",
       "provider": "groq",
       "brief_en": "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling, enabling continuous autonomous operation without context degradation.",
-      "brief_ar": "هندسة ذاكرة هرمية تتغلب على حدود السياق في النمذجة الحاسوبية متعددة الوكلاء على المدى الطويل، مما يسمح بالتشغيل المستقل المستمر دون تدهور السياق.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_ar": "هندسة ذاكرة هرمية تتفوق على حدود السياق في النمذجة الحاسوبية متعددة الوكلاء على المدى الطويل، تمكن من التشغيل المستمر الذاتي دون تدهور السياق.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-009",
@@ -254,13 +254,13 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: Single-GPU nanochat training enables AI agents to run research automatically, potentially accelerating discovery.",
-      "brief_ar": "karpathy/autoresearch: تدريب محادثات نانو على جهاز gpu واحد يسمح للوكلاء الذكاء الاصطناعي بالبحث التلقائي، مما قد يسرع اكتشافات جديدة.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, potentially streamlining the development process.",
+      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة تلقائيًا، مما قد ي简م عملية التطوير.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
-      "id": "twitter-031",
+      "id": "twitter-036",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -273,8 +273,8 @@
       "provider": "rule-based",
       "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
       "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-005",
@@ -288,10 +288,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكية تعتمد على الذكاء الاصطناعي، مما يتيح التأتمتة والاتخاذ القرارات بفعالية.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكية تعتمد على الذكاء الاصطناعي.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-006",
@@ -305,10 +305,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications, enabling the creation of custom AI agents for various tasks.",
-      "brief_ar": "Langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي، تمكن من إنشاء وكلاء ذكاء اصطناعي مخصصين لمهام متنوعة.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
+      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-008",
@@ -323,9 +323,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
-      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمتة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-010",
@@ -340,9 +340,9 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
-      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts و quants ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "arxiv-013",
@@ -356,16 +356,16 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass. Jailbreak bypasses database engines by reading storage files directly, leveraging Large Language Models to regenerate table reading components, achieving up to 27x speedups in analytical throughput.",
-      "brief_ar": "كسر قفل قاعدة البيانات: تجديد ذكاء أداء قراء التخزين لتحايل قاعدة البيانات. Jailbreak يتجاوز محركات قاعدة البيانات من خلال قراءة ملفات التخزين مباشرة، مستفيدا من نماذج اللغة الكبيرة لإعادة إنشاء مكونات قراءة الجدول، يحقق حتى 27 ضعفًا في سرعة الإنتاجية التحليلية.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass. Jailbreak bypasses database engines, reading storage files directly and materializing data as in-memory columnar buffers, leveraging LLM-assisted code synthesis for database storage decoding.",
+      "brief_ar": "كسر قفل قاعدة البيانات: تجديد ذكاء أداء قراء التخزين من أجل تجاوز قاعدة البيانات. Jailbreak يتجاوز محركات قاعدة البيانات، وقراءة ملفات التخزين مباشرة وتجسيد البيانات كمحافظ عمودية في الذاكرة، مستفيدا من تركيب الشفرة المساعدة للغة الكبيرة لفك تشفير تخزين قاعدة البيانات.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     },
     {
       "id": "github-002",
       "source": "github",
       "title": "cheahjs/free-llm-api-resources",
-      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 26568. Updated: 2026-07-09T18:21:43Z.",
+      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 26593. Updated: 2026-07-09T22:44:38Z.",
       "url": "https://github.com/cheahjs/free-llm-api-resources",
       "score": 39,
       "score_reason": "high-value open-source ecosystem signal; large language model relevance; implementation ecosystem relevance. Final score: 39.",
@@ -373,10 +373,10 @@
       "topic": "LLMs",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Free LLM API resources: A GitHub repository tracking free LLM inference resources, API providers, SDK compatibility, and rate limits, with 26568 stars, last updated 2026-07-09.",
-      "brief_ar": "مصادر API LLM المجانية: مستودع GitHub يتبع مصادر الاستدلال LLM المجانية ومقدمي API ومتوافقية SDK وأقصى حد للمعدل، مع 26568 نجمة، آخر تحديث 2026-07-09.",
-      "createdAt": "2026-07-09T18:26:35Z",
-      "updatedAt": "2026-07-09T18:26:35Z"
+      "brief_en": "Free LLM API resources: A GitHub repository tracking free LLM inference resources, API providers, SDK compatibility, and rate limits, with 26593 stars, last updated 2026-07-09.",
+      "brief_ar": "مصادر API LLM المجانية: مستودع GitHub يتتبع مصادر الاستدلال LLM المجانية ومقدمي API ومتوافقية SDK وأحكام الراتب، مع 26593 نجمة، آخر تحديث 2026-07-09.",
+      "createdAt": "2026-07-09T22:51:34Z",
+      "updatedAt": "2026-07-09T22:51:34Z"
     }
   ]
 }
