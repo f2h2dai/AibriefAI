@@ -1,7 +1,18 @@
 {
-  "alerted_count": 87,
+  "alerted_count": 88,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-d2970a998ba12a7f956822d3",
+      "reason": "codex is the core of our new work product and what makes it so good. codex is not going anywhere.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 342",
+      "score": 10,
+      "shown_at": "2026-07-10T20:43:19Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: codex is the core of our new work product and what makes it so good. codex is not going an"
+    },
     {
       "confidence": 0,
       "id": "story-664d39a9b7f755f8dffb306a",
@@ -122,27 +133,16 @@
       "source_url": "https://x.com",
       "status": "x-intel",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
-    },
-    {
-      "confidence": 0,
-      "id": "story-8920908dafe626700823e199",
-      "reason": "ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence. author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.co",
-      "score": 9,
-      "shown_at": "2026-07-04T23:46:24Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: ok: true schema_version: '1' data: id: '2067427678529974740' text: We offer no explanation"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-10T15:32:39Z",
+    "alerted_at": "2026-07-10T20:43:19Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
+    "title": "@sama: codex is the core of our new work product and what makes it so good. codex is not going an"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 1,
     "collected": 1,
     "initial_collected": 1,
@@ -156,8 +156,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 0.803,
-      "projected_minutes_per_30d": 38.55,
+      "measured_seconds": 0.868,
+      "projected_minutes_per_30d": 41.67,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 1,
@@ -166,11 +166,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-10T19:05:53Z",
+  "updated_at": "2026-07-10T20:43:19Z",
   "version": 1
 }
