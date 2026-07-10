@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-07-09T22:51:34Z",
+  "generated_at": "2026-07-10T13:51:17Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 30,
-    "rule-based": 8
+    "groq": 31,
+    "rule-based": 7
   },
   "agents": [
     {
@@ -53,160 +53,160 @@
   ],
   "events": [
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 85 X records."
+      "agent": "AgentReachDoctor",
+      "message": "agent-reach doctor exited 0. Twitter/X routes: ✅ Twitter/X 推文 — twitter-cli | （当前后端：twitter-cli）. stderr: (empty)"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"from:sama (AI OR agents OR LLM OR GPT OR reasoning)\" exited 0. Parsed 114 X records."
+    },
+    {
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-09T22:51:34Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-07-09T22:51:34Z",
+      "time": "2026-07-10T13:51:17Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
   "signals": [
     {
-      "id": "arxiv-012",
+      "id": "arxiv-017",
       "source": "arxiv",
-      "title": "From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization",
-      "content": "The optimization of long-horizon agents increasingly relies on reflection-based mechanisms, where a large language model (LLM) acts as an optimizer to diagnose agent failures and improve agent policies. However, real execution traces are difficult to use directly for optimization: large trace collections are often redundant and heterogeneous, making optimization inefficient and prone to overfitting to low-value failures; meanwhile, each individual trajectory also contains many irrelevant steps, while naive context reduction methods such as truncation or sliding windows can discard causally important evidence and produce misleading optimization signals. To resolve this dilemma, we introduce STRACE (Structural TRajectory Analysis and Causal Extraction), a framework that constructs high signal-noise optimization contexts for more precise and effective optimization. At the batch level, STRACE mines failure patterns to filter redundant traces and retain representative failures; within each selected trace, it performs causal localization over a textual dependency graph to remove non-causal steps and identify the true root-cause module for optimization. Empirical results demonstrate that STRACE significantly outperforms standard context-filtering baselines. Notably, on a challenging formal verification task (VeruSAGE-Bench), it successfully optimizes human-expert designed agents, delivering $1.4\\times$ success-rate improvement (42.5% to 58.5%). The code is available at https://github.com/moomight/STRACE .",
-      "url": "https://arxiv.org/abs/2607.07702v1",
+      "title": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+      "content": "Large language model (LLM)-based web search agents are transforming information seeking from simple factoid question answering into complex, deep-and-wide search and research-oriented tasks. A single ReAct-style agent is constrained by one long trajectory and limited context, making it difficult to handle depth and coverage simultaneously. Existing multi-agent systems improve search coverage through parallel execution and aggregation, but still exhibit clear limitations in recursive depth, collaboration adaptability, and evidence-grounded expansion. We propose WebSwarm, a progressive recursive delegation framework that jointly constructs task decomposition, recursive expansion, and agent collaboration during inference. WebSwarm dynamically instantiates agentic search nodes, each coupling a local objective with a search mode that specifies how the node should organize search and collaboration. Each node can either solve its objective itself or further delegate child nodes; after solving, it returns evidence and results upward, enabling parent nodes to further expand, revise, or aggregate the search process. To guide this process, WebSwarm first probes how task-relevant information is organized on the web to ground subsequent node expansion, and reuses process-level experience across homogeneous sibling nodes. Experiments on BrowseComp-Plus, WideSearch, DeepWideSearch, and GISA show that WebSwarm consistently outperforms single-agent and multi-agent baselines on deep, wide, and interleaved deep-and-wide tasks. Further analyses of ablation, task difficulty, web tool efficiency, and model generalization explain WebSwarm's effectiveness and provide insights for multi-agent search systems.",
+      "url": "https://arxiv.org/abs/2607.08662v1",
       "score": 75,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 75.",
+      "score_reason": "academic/research signal; agentic AI relevance; retrieval/RAG relevance; large language model relevance. Final score: 75.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "STRACE: A framework for optimizing long-horizon agents by analyzing structural trajectory and extracting causal patterns, improving optimization efficiency and effectiveness.",
-      "brief_ar": "STRACE: إطار لتحسين وحدات الإجراء على المدى الطويل من خلال تحليل المسار الهيكلي واستخراج الأنماط السببية، مما يحسن كفاءة وفعاليّة التحسين.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "WebSwarm: A recursive multi-agent framework for deep-and-wide web search, enhancing information seeking through task decomposition, recursive expansion, and agent collaboration.",
+      "brief_ar": "WebSwarm: إطار متعدد الوكلاء التكراري للبحث الشبكي العميق والواسع، يعزز استكشاف المعلومات من خلال تفكيك المهام والتوسع التكراري وتعاون الوكلاء.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
-      "id": "arxiv-014",
+      "id": "arxiv-011",
       "source": "arxiv",
-      "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
-      "content": "Autonomous AI agents can execute complex tasks with limited human review, yet they often lack the grounded operational knowledge to make their outputs not just executable but correct, secure, and maintainable. We introduce SkillCenter, to our knowledge the largest open skill library for agents by total count: 216,938 structured skills across 24 domain bundles. A SkillGate-filtered pipeline contributes 114,565 source-grounded skills from peer-reviewed journals, ArXiv, and over 24,000 technical sources, integrated with 102,373 community skills from GitHub and the ClawHub marketplace. We present the end-to-end framework that builds the pipeline subset: multi-source acquisition, an LLM-based quality gate (SkillGate), template-driven generation, iterative source-grounding, and quality-controlled publishing. Source grounding is a traceability guarantee: each retained claim maps to an exact quotation in its source. All skills ship as offline-searchable SQLite FTS5 bundles.",
-      "url": "https://arxiv.org/abs/2607.07676v1",
-      "score": 71,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; implementation ecosystem relevance. Final score: 71.",
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "content": "The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they often rely on sandboxed environments and single-turn evaluation paradigms. Moreover, their scenario-based task taxonomies mix multiple model capabilities within the same task category, making it difficult to identify the root causes of agent failures. To address these limitations, we introduce UniClawBench, the first capability-driven benchmark designed to evaluate proactive agents in dynamic, real-world settings. UniClawBench is built around five foundational model capabilities: Skill Usage, Exploration, Long-Context Reasoning, Multimodal Understanding, and Cross-Platform Coordination. Based on these capabilities, we design 400 bilingual real-world tasks. Unlike previous benchmarks that rely on static, pre-recorded answers, our benchmark evaluates agents in live Docker containers using fine-grained, step-by-step completion checkpoints. Furthermore, we design a closed-loop evaluation strategy comprising an executor agent, a hidden supervisor agent, and a user agent to simulate realistic multi-turn human feedback without leaking grading criteria. To disentangle base model capabilities from framework-level design choices, we evaluate state-of-the-art models under multiple agent frameworks. Through comprehensive comparisons across both models and frameworks, we show how base model capabilities and agent framework designs jointly shape performance in real-world environments. To facilitate future research, we make our benchmark and code publicly available at https://github.com/HKU-MMLab/UniClawBench.",
+      "url": "https://arxiv.org/abs/2607.08768v1",
+      "score": 72,
+      "score_reason": "academic/research signal; agentic AI relevance; model capability relevance; implementation ecosystem relevance. Final score: 72.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "SkillCenter is a large-scale, open skill library for autonomous AI agents, featuring 216,938 structured skills across 24 domains, with 114,565 source-grounded skills from peer-reviewed sources and 102,373 community skills.",
-      "brief_ar": "SkillCenter هو مكتبة مهارات مفتوحة واسعة النطاق لعمليات الذكاء الاصطناعي المستقلة، وتضم 216,938 مهارة منظمة عبر 24 مجالا، مع 114,565 مهارة مدعومة بمصادر مراجعة الأقران و102,373 مهارة مجتمعية.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks, evaluating agents in dynamic settings with 400 bilingual tasks and a closed-loop evaluation strategy.",
+      "brief_ar": "UniClawBench: معيار عالمي لتقويم الوكلاء الفعّالين في مهام العالم الحقيقي، يقوم بتقويم الوكلاء في بيئات ديناميكية باستخدام 400 مهمة ثنائية اللغة و استراتيجية تقييم مغلقة",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
       "id": "github-007",
@@ -220,27 +220,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and deployment.",
-      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم مجموعة واسعة من الإمكانيات لتطوير وتحديث التطبيقات.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
-    },
-    {
-      "id": "arxiv-018",
-      "source": "arxiv",
-      "title": "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling",
-      "content": "Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a three-layer hierarchical memory architecture that keeps injected context bounded and constant in project duration (mid-term project state: median 301 tokens, max 4,050, across 104 runs) by capping each state category and evicting completed work, enabling continuous autonomous operation without context degradation. The system orchestrates five specialist worker agents under domain-expert principal investigators, enforcing physical constraints through physics-based checklists and structured-domain knowledge. Comprehensive benchmarking demonstrates robust autonomous pharmacokinetic-pharmacodynamic model selection without human intervention, consistent result quality across both lower-cost and frontier LLMs, improved PK parameter recovery relative to single-agent baselines, and stable model selection across linguistically diverse prompts of the same task. Feature-level ablation across physiologically based pharmacokinetic (PBPK) models spanning a broad complexity range shows that PI-agent oversight improves debugging efficiency while preserving final accuracy across conditions. The architecture is structurally domain-agnostic, adding a new scientific domain requires only a new PI agent configuration.",
-      "url": "https://arxiv.org/abs/2607.07666v1",
-      "score": 65,
-      "score_reason": "academic/research signal; agentic AI relevance; large language model relevance; model capability relevance. Final score: 65.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling, enabling continuous autonomous operation without context degradation.",
-      "brief_ar": "هندسة ذاكرة هرمية تتفوق على حدود السياق في النمذجة الحاسوبية متعددة الوكلاء على المدى الطويل، تمكن من التشغيل المستمر الذاتي دون تدهور السياق.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "Shubhamsaboo/awesome-llm-apps: A collection of 100+ AI agent and RAG apps that can be cloned, customized, and shipped, offering a wide range of possibilities for development and innovation.",
+      "brief_ar": "Shubhamsaboo/awesome-llm-apps: مجموعة من أكثر من 100 تطبيق لعميل الذكاء الاصطناعي و RAG يمكن استنساخها وتعديلها وتسليمها، وتقدم فرصًا واسعة للاستفادة والابتكار.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
       "id": "github-009",
@@ -254,13 +237,30 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Karpathy's autoresearch: AI agents are being tested to run research on single-GPU nanochat training automatically, potentially streamlining the development process.",
-      "brief_ar": "karpathy/autoresearch: يتم اختبار وكلاء الذكاء الاصطناعي لتشغيل البحث على تدريب nanochat بشريحة جرافيكس واحدة تلقائيًا، مما قد ي简م عملية التطوير.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "karpathy/autoresearch: AI agents are exploring single-GPU nanochat training automation, with potential to accelerate research efficiency.",
+      "brief_ar": "karpathy/autoresearch: وكلاء الذكاء الاصطناعي يستكشفون تلقين المحادثات النانوية على جهاز كمبيوتر واحد مع إمكانية تعزيز كفاءة البحث.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
-      "id": "twitter-036",
+      "id": "arxiv-013",
+      "source": "arxiv",
+      "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
+      "content": "Large language model (LLM) applications increasingly use explicit workflows for tool use, retrieval, branching, checkpointing, and human approval. Existing workflow systems already address many execution concerns. This paper proposes a Lisp-inspired but language-independent conceptual model: symbolic forms, object identity, and live-image thinking are used as explanatory lenses, not implementation commitments. In this model, workflow definitions, workflow instances, inference records, context snapshots, and dependency relations are represented as persistent knowledge objects in a shared knowledge substrate. Its central semantic distinction is between derive and infer: derive is deterministic computation over available state; infer is mediated LLM judgment under declared context and executor-controlled capability policy. The result is a preliminary conceptual account of semantic persistence: workflows do not merely produce knowledge and leave traces, but can themselves be represented as inspectable, resumable, and reviewable knowledge objects, while formal transition semantics remain future work.",
+      "url": "https://arxiv.org/abs/2607.08740v1",
+      "score": 48,
+      "score_reason": "academic/research signal; large language model relevance; model capability relevance. Final score: 48.",
+      "status": "verified",
+      "topic": "RAG",
+      "collector": "AcademicAgent",
+      "provider": "groq",
+      "brief_en": "This paper proposes a conceptual model for LLM-mediated workflows, representing workflow definitions and instances as persistent knowledge objects, enabling inspectable, resumable, and reviewable workflows.",
+      "brief_ar": "يقترح هذا البحث نموذجًا مفاهيميًا للعمليات المُدارة بواسطة نماذج اللغة الكبيرة، وتمثيل تعريفات ومراحل العمل كأجسام معرفية متينة، ممكنة للفحص والاستئناف والمراجعة",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
+    },
+    {
+      "id": "twitter-034",
       "source": "twitter",
       "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
       "content": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems.  The DoW agrees with these principles, reflects them in law and policy, and we put them into our agreement.",
@@ -273,8 +273,8 @@
       "provider": "rule-based",
       "brief_en": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
       "brief_ar": "ملخص قائم على القواعد: AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weap...",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
       "id": "github-005",
@@ -288,10 +288,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
-      "brief_ar": "Langflow هو أداة قوية لإنشاء وتحديث وحدات وعمليات ذكية تعتمد على الذكاء الاصطناعي.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows, enabling efficient automation and decision-making.",
+      "brief_ar": "Langflow أداة قوية لإنشاء وتحديث وكلاء ذكاء اصطناعي ومسارات عمل، تمكّن من آليّة كفاءة وصنع القرار.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
       "id": "github-006",
@@ -305,10 +305,10 @@
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Langchain-ai/langchain is an agent engineering platform, providing tools for building and deploying AI agents.",
-      "brief_ar": "Langchain-ai/langchain هو منصة هندسة الوكلاء، توفر أدوات لإنشاء وتحديث وكلاء الذكاء الاصطناعي.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "Langchain-ai/langchain: An agent engineering platform for developing AI applications.",
+      "brief_ar": "langchain-ai/langchain: منصة هندسة الوكلاء لتطوير تطبيقات الذكاء الاصطناعي.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
       "id": "github-008",
@@ -324,8 +324,8 @@
       "provider": "groq",
       "brief_en": "Enable AI agents to access websites, automating online tasks with ease.",
       "brief_ar": "جعل المواقع الإلكترونية متاحة للوكلاء الذكاء الاصطناعي، وتأتمة المهام عبر الإنترنت بسهولة.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
       "id": "github-010",
@@ -340,43 +340,43 @@
       "collector": "GitHubAgent",
       "provider": "groq",
       "brief_en": "OpenBB: An open data platform for analysts, quants, and AI agents, providing access to financial data and insights.",
-      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_ar": "OpenBB: منصة بيانات مفتوحة للanalysts، quants، ووكلاء الذكاء الاصطناعي، توفر الوصول إلى البيانات المالية والرؤى.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
-      "id": "arxiv-013",
+      "id": "arxiv-015",
       "source": "arxiv",
-      "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
-      "content": "Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver layers that are not designed for bulk columnar analytics. We present Jailbreak, an approach that bypasses the database engine entirely by reading storage files directly and materializing data as in-memory columnar buffers. Jailbreak's key insight is that database file formats, while complex, are fully specified by their source code and documentation, artifacts that Large Language Models (LLMs) can ingest to regenerate operator-specific table reading components without human-engineered parsing logic. Jailbreak leverages LLM-assisted code synthesis for database storage decoding, turning a traditionally opaque format into a directly queryable artifact. We evaluate Jailbreak on PostgreSQL and MySQL storage files, targeting analytical snapshot scenarios common in read replicas and offline processing pipelines. The generated reader produces Apache Arrow buffers consumable directly by most of the widely known query engines, including DuckDB, Apache Spark, and GPU-accelerated frameworks such as cuDF and Spark RAPIDS. We validate correctness against JDBC/ODBC-based baselines using the TPC-H benchmark across all query results, and demonstrate significant performance improvements in end-to-end analytical throughput, achieving up to 27x speedups. Our results showcase that LLM-assisted storage reader synthesis is a viable and generalizable methodology for breaking data lock-in across database systems, with applications beyond PostgreSQL and MySQL for any system whose file format is available to the LLM from documentation or source code.",
-      "url": "https://arxiv.org/abs/2607.07696v1",
+      "title": "How YouTube Frames ChatGPT Use in Education: An Epistemic Network Analysis with Supporting Multimodal Metadata",
+      "content": "We examine educational YouTube videos through multimodal metadata, such as transcripts, titles, thumbnails, and viewer comments, to investigate how ChatGPT is framed across creator groups and how those framings relate to audience response and platform reach. Little is known about how large language models are presented to learners in informal, creator-driven public discourse. Following PRISMA, we selected 52 videos for analysis. We identified three structurally distinct discourse groups: (G1) videos that positioned ChatGPT as a conceptual scaffold for thinking, (G2) videos oriented toward retrieval practice and skill-building, and (G3) videos that framed ChatGPT as a tool for output generation. Epistemic Network Analysis revealed statistically significant group differences with large effect sizes. Multimodal metadata consistently reflected these distinctions across transcript discourse, titles, and thumbnails. Viewers of learning-oriented content described ChatGPT as a thinking partner or tutor, whereas viewers of output-oriented content raised concerns about over-reliance, surface-level learning, and cognitive offloading. G3 achieved comparable platform reach to G2, yet with substantially weaker learning-oriented framing. This may suggest that output-oriented content competes for visibility despite lower pedagogical depth. These findings reveal a structural tension in self-directed AI learning: content that prioritizes quick outputs reaches far more learners than content that promotes deep engagement. This gap raises critical questions about whose vision of AI literacy scales and what learners are actually left with.",
+      "url": "https://arxiv.org/abs/2607.08698v1",
       "score": 40,
-      "score_reason": "academic/research signal; agentic AI relevance; retrieval/RAG relevance; large language model relevance. Final score: 40.",
+      "score_reason": "academic/research signal; model capability relevance. Final score: 40.",
       "status": "verified",
-      "topic": "AI Agents",
+      "topic": "RAG",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass. Jailbreak bypasses database engines, reading storage files directly and materializing data as in-memory columnar buffers, leveraging LLM-assisted code synthesis for database storage decoding.",
-      "brief_ar": "كسر قفل قاعدة البيانات: تجديد ذكاء أداء قراء التخزين من أجل تجاوز قاعدة البيانات. Jailbreak يتجاوز محركات قاعدة البيانات، وقراءة ملفات التخزين مباشرة وتجسيد البيانات كمحافظ عمودية في الذاكرة، مستفيدا من تركيب الشفرة المساعدة للغة الكبيرة لفك تشفير تخزين قاعدة البيانات.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "Analyzing YouTube's framing of ChatGPT in education, we identified 3 discourse groups: conceptual scaffold, retrieval practice, and output generation. Viewer responses and platform reach varied significantly across groups, highlighting a tension between output-oriented and learning-oriented content.",
+      "brief_ar": "باستخدام تحليل الشبكة المعرفية، قمنا بدراسة كيفية عرض ChatGPT في التعليم على يوتيوب. حددنا ثلاث مجموعات من الخطاب: الإطار المفاهيمي، وممارسة الاسترجاع، وإنشاء الإخراج. أظهرت استجابات المشاهدين ومدى انتشار المنصة اختلافات كبيرة بين المجموعات، مما يبرز التوتر بين المحتوى الموجه للإخراج والموجه للتعلم.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     },
     {
-      "id": "github-002",
-      "source": "github",
-      "title": "cheahjs/free-llm-api-resources",
-      "content": "A list of free LLM inference resources accessible via API. Tracks free LLM API providers, SDK compatibility, and rate limits for builders. GitHub stars: 26593. Updated: 2026-07-09T22:44:38Z.",
-      "url": "https://github.com/cheahjs/free-llm-api-resources",
-      "score": 39,
-      "score_reason": "high-value open-source ecosystem signal; large language model relevance; implementation ecosystem relevance. Final score: 39.",
-      "status": "held",
-      "topic": "LLMs",
-      "collector": "GitHubAgent",
+      "id": "arxiv-018",
+      "source": "arxiv",
+      "title": "UltraX: Refining Pre-Training Data at Scale with Adaptive Programmatic Editing",
+      "content": "As available training data approaches its physical limit, gains from Scaling Laws have begun to diminish. Consequently, improving Large Language Models (LLMs) now depends less on data expansion and more on higher-quality data utilization. However, in the context of large-scale corpora, existing refinement methodologies face significant limitations in quality, efficiency, and reliability: Rule-based approaches are constrained by fixed heuristics and struggle with instance-level variations; LLM-based approaches improve quality but fail to meet the efficiency and reliability requirements of large-scale data processing. To address these challenges, we propose UltraX, a function-calling refinement framework for large-scale pre-training data that completes the editing function space by introducing insertion in addition to deletion and modification, enabling fine-grained instance-level editing. Specifically, UltraX builds a reliable program-supervision generation pipeline. In this pipeline, dataset-adaptive prompt optimization first guides an expert LLM to produce high-quality end-to-end refined texts, and Line Alignment Mapping and Dynamic Context Replacement then convert original-refined text pairs into structured program supervision. Meanwhile, UltraX improves supervision quality and stabilizes the training distribution with low-confidence example filtering and ratio-controlled sampling by operation combination. During inference and execution, it normalizes and validates model outputs through sliding-window prediction, global operation aggregation, and systematic post-processing, improving the stability and reliability of large-scale execution. Experiments show that UltraX achieves the highest average performance across all corpora and also matches or surpasses baselines with fewer training tokens, demonstrating stronger data efficiency and refinement reliability.",
+      "url": "https://arxiv.org/abs/2607.08646v1",
+      "score": 40,
+      "score_reason": "academic/research signal; retrieval/RAG relevance; large language model relevance; model capability relevance. Final score: 40.",
+      "status": "verified",
+      "topic": "RAG",
+      "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "Free LLM API resources: A GitHub repository tracking free LLM inference resources, API providers, SDK compatibility, and rate limits, with 26593 stars, last updated 2026-07-09.",
-      "brief_ar": "مصادر API LLM المجانية: مستودع GitHub يتتبع مصادر الاستدلال LLM المجانية ومقدمي API ومتوافقية SDK وأحكام الراتب، مع 26593 نجمة، آخر تحديث 2026-07-09.",
-      "createdAt": "2026-07-09T22:51:34Z",
-      "updatedAt": "2026-07-09T22:51:34Z"
+      "brief_en": "UltraX: A framework for refining pre-training data at scale with adaptive programmatic editing, addressing limitations in existing methodologies to improve Large Language Models.",
+      "brief_ar": "UltraX: إطار لتحسين بيانات ما قبل التدريب بمقياس كبير مع تحرير برمجي قابل للتكيف، لمواجهة القيود في المناهج الحالية لتحسين نماذج اللغة الكبيرة.",
+      "createdAt": "2026-07-10T13:51:17Z",
+      "updatedAt": "2026-07-10T13:51:17Z"
     }
   ]
 }
