@@ -1,7 +1,58 @@
 {
-  "alerted_count": 94,
+  "alerted_count": 97,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-43dfbc6ba8c7c092b79e23dd",
+      "reason": "OpenClaw will live in a foundation as an open source project that OpenAI will continue to support. The future is going to be extremely multi-agent and it''s important to us to support open source as part of that.' author: id: '1605' name: Sam Altman screenName: sama profileImageU",
+      "score": 15,
+      "shown_at": "2026-07-11T19:52:23Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: OpenClaw will live in a foundation as an open source project that OpenAI will continue to",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "id": "story-b29917f5e16c0d4c1631c280",
+      "reason": "(also the internet; there should be a protocol that is equally usable by people and agents)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12358 ret",
+      "score": 13,
+      "shown_at": "2026-07-11T19:52:23Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: (also the internet; there should be a protocol that is equally usable by people and agents",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "id": "story-dfd23a1b16e18d1b78e188a1",
+      "reason": "(most of the world has only used models like GPT-4o!)' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 10889 retweets: 740 replies: 1361 quotes: 324 v",
+      "score": 13,
+      "shown_at": "2026-07-11T19:52:23Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: (most of the world has only used models like GPT-4o!)' author: id: '1605' name: Sam Altman",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "id": "story-029435ade03fe51d14dbee39",
@@ -143,44 +194,16 @@
       "webswarm_evidence_terms": [],
       "webswarm_mode": "",
       "webswarm_node": ""
-    },
-    {
-      "confidence": 0,
-      "id": "story-08ac5cada554252c8237ae6e",
-      "reason": "We will work as quickly as we can to get this model in your hands and we hope you will love it.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 18418",
-      "score": 13,
-      "shown_at": "2026-07-08T22:42:53Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: We will work as quickly as we can to get this model in your hands and we hope you will lov",
-      "webswarm_evidence_terms": [],
-      "webswarm_mode": "",
-      "webswarm_node": ""
-    },
-    {
-      "confidence": 0,
-      "id": "story-5c92345c67150eae980df9b9",
-      "reason": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems. The DoW agrees with these pr",
-      "score": 12,
-      "shown_at": "2026-07-08T18:53:43Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
-      "webswarm_evidence_terms": [],
-      "webswarm_mode": "",
-      "webswarm_node": ""
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-11T14:03:38Z",
+    "alerted_at": "2026-07-11T19:52:23Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: super proud of the team; big triumph of technology.' author: id: '1605' name: Sam Altman s"
+    "title": "@sama: OpenClaw will live in a foundation as an open source project that OpenAI will continue to"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 3,
     "clustered": 4,
     "collected": 4,
     "initial_collected": 4,
@@ -194,8 +217,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 1.12,
-      "projected_minutes_per_30d": 53.77,
+      "measured_seconds": 1.08,
+      "projected_minutes_per_30d": 51.82,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 4,
@@ -221,11 +244,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 3
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-11T18:36:15Z",
+  "updated_at": "2026-07-11T19:52:23Z",
   "version": 1
 }
