@@ -1143,7 +1143,7 @@
       breaking: [],
       search: '',
       source: 'all',
-      sort: 'score',
+      sort: 'latest',
       language: 'en'
     };
 
@@ -1218,7 +1218,7 @@
 
       filtered.sort(function(a, b) {
         if (state.sort === 'latest') {
-          return String(b.updatedAt || b.createdAt || '').localeCompare(String(a.updatedAt || a.createdAt || ''));
+          return String(b.sourcePublishedAt || b.updatedAt || b.createdAt || '').localeCompare(String(a.sourcePublishedAt || a.updatedAt || a.createdAt || ''));
         }
         if (state.sort === 'source') {
           return String(a.source || '').localeCompare(String(b.source || ''));
@@ -1268,7 +1268,7 @@
       const rows = signals.slice(0, 5).map(function(signal) {
         const status = Number(signal.score || 0) >= 50 ? 'new' : 'watch';
         return '<tr>' +
-          '<td>' + escapeHTML(formatDate(signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
+          '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
           '<td><strong>' + escapeHTML(shortText(signal.title, 92)) + '</strong></td>' +
           '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
           '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
@@ -1297,7 +1297,7 @@
         const status = signal.status || 'verified';
         const statusClass = status === 'held' ? 'watch' : '';
         return '<tr dir="' + dir + '">' +
-          '<td>' + escapeHTML(formatDate(signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
+          '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
           '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
           '<td><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener"><strong>' + escapeHTML(shortText(signal.title, 96)) + '</strong></a><span>' + escapeHTML(shortText(signalText(signal), 150)) + '</span></td>' +
           '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
@@ -1378,7 +1378,7 @@
       document.getElementById('xIntelRail').innerHTML = items.map(function(item) {
         const title = item.title || 'Untitled X intel';
         const score = item.score ? 'Score ' + item.score : (item.status || 'X intel');
-        const time = item.shown_at || item.updatedAt || item.createdAt || '';
+        const time = item.shown_at || item.sourcePublishedAt || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
         const url = item.source_url || item.url || '#';
         return '<a class="x-card" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' +
