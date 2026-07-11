@@ -32,6 +32,7 @@ DEFAULT_MAX_LLM_REQUESTS = 1
 DEFAULT_MAX_CANDIDATES = 20
 DEFAULT_MIN_CONFIDENCE = 0.90
 DEFAULT_MIN_X_RELEVANCE = 2
+DEFAULT_PUBLIC_FEED_MAX_AGE_HOURS = 72
 DEFAULT_X_INTEL_QUERY = (
     '"Grok AI" OR "Grok Gov" OR "Grok Gov Model" OR "Project Maven" '
     'OR "AI targeting" OR "AI target selection" OR "military AI" OR "defense AI" '
@@ -751,9 +752,26 @@ def latest_alert_entry(state: dict) -> dict | None:
     return sorted(entries, key=lambda entry: entry.get("alerted_at", ""), reverse=True)[0]
 
 
+def public_feed_recent(entry: dict, now: datetime | None = None, max_age_hours: int = DEFAULT_PUBLIC_FEED_MAX_AGE_HOURS) -> bool:
+    value = entry.get("alerted_at") or entry.get("last_seen_at") or ""
+    if not value:
+        return False
+    try:
+        timestamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    if timestamp.tzinfo is None:
+        timestamp = timestamp.replace(tzinfo=timezone.utc)
+    age = (now or utc_now()) - timestamp.astimezone(timezone.utc)
+    return age <= timedelta(hours=max_age_hours)
+
+
 def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
     entries = []
+    now = utc_now()
     for fingerprint, entry in state.get("alerted", {}).items():
+        if not public_feed_recent(entry, now):
+            continue
         source_urls = entry.get("source_urls") or []
         entries.append(
             {

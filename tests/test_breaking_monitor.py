@@ -12,10 +12,12 @@ from aibrief.breaking_monitor import (
     cluster_story_candidates,
     collect_birdclaw_export,
     collect_local_signals,
+    isoformat,
     projected_monthly_runner_usage,
     public_breaking_status,
     run_monitor_cycle,
     survives_stage1,
+    utc_now,
     validate_classifications,
     x_auth_summary,
     x_cli_env,
@@ -705,12 +707,13 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(usage["projected_minutes_per_30d"], 2880)
 
     def test_public_status_contains_no_secret_and_safe_counts(self):
+        now = isoformat(utc_now())
         status = public_breaking_status(
             {
-                "updated_at": "2026-06-19T14:26:18Z",
+                "updated_at": now,
                 "alerted": {
                     "story-1": {
-                        "alerted_at": "2026-06-19T14:00:00Z",
+                        "alerted_at": now,
                         "title": "Confirmed frontier-lab breach",
                         "source_urls": ["https://openai.com/security"],
                         "confidence": 0.94,
@@ -727,6 +730,27 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(len(status["feed"]), 1)
         self.assertEqual(status["feed"][0]["title"], "Confirmed frontier-lab breach")
         self.assertNotIn("topic", str(status).lower())
+
+    def test_public_status_hides_stale_x_intel_feed_entries(self):
+        status = public_breaking_status(
+            {
+                "updated_at": isoformat(utc_now()),
+                "alerted": {
+                    "old-story": {
+                        "alerted_at": "2026-06-19T14:00:00Z",
+                        "title": "Old X intel should not dominate the rail",
+                        "source_urls": ["https://x.com/example/status/old"],
+                        "confidence": 0,
+                    }
+                },
+                "pending": {},
+            },
+            {"stage1_survivors": 0},
+        )
+
+        self.assertEqual(status["status"], "x-intel")
+        self.assertEqual(status["alerted_count"], 1)
+        self.assertEqual(status["feed"], [])
 
     def test_public_status_does_not_expose_missing_gemini_key(self):
         status = public_breaking_status(

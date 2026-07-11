@@ -19,6 +19,19 @@ class FeedSourceTests(unittest.TestCase):
         self.assertIn("NVIDIA NIM", workflow)
         self.assertIn("OpenAI SDK compatibility", workflow)
 
+    def test_update_feed_uses_source_freshness_not_only_generation_time(self):
+        workflow = (ROOT / ".github" / "workflows" / "update-feed.yml").read_text(encoding="utf-8")
+        landing = (ROOT / "web" / "landing-template.html").read_text(encoding="utf-8")
+
+        self.assertIn("sourcePublishedAt", workflow)
+        self.assertIn("freshnessStatus", workflow)
+        self.assertIn("freshness_adjustment", workflow)
+        self.assertIn("pushed:>=", workflow)
+        self.assertIn("sort=updated", workflow)
+        self.assertIn("freshness_counts", workflow)
+        self.assertIn("sort: 'latest'", workflow)
+        self.assertIn("sourcePublishedAt || signal.updatedAt", landing)
+
 
 if __name__ == "__main__":
     unittest.main()
