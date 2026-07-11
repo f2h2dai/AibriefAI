@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/breaking-alerts.yml"
       - "aibrief/breaking_monitor.py"
+      - "aibrief/webswarm.py"
   schedule:
     # Repository visibility checked with: gh repo view f2h2dai/AibriefAI --json visibility,nameWithOwner
     # PUBLIC repository: start at every 15 minutes. GitHub schedule execution is near-real-time and may be delayed.

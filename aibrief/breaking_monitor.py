@@ -13,6 +13,15 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from aibrief.webswarm import (
+    annotate_candidates as annotate_webswarm_candidates,
+    build_ai_brief_webswarm_plan,
+    expand_news_queries,
+    expand_x_query,
+    plan_public_summary,
+    webswarm_enabled,
+)
+
 
 STATE_PATH = Path("data/breaking_state.json")
 PUBLIC_STATUS_PATH = Path("web/data/breaking_status.json")
@@ -628,6 +637,9 @@ def candidate_from_raw(raw: dict) -> dict:
         "action_hits": action_hits,
         "entities": named_entities(text),
         "event_verbs": event_verbs(text),
+        "webswarm_node": raw.get("webswarm_node", ""),
+        "webswarm_mode": raw.get("webswarm_mode", ""),
+        "webswarm_evidence_terms": raw.get("webswarm_evidence_terms", []),
     }
 
 
@@ -651,6 +663,12 @@ def merge_cluster(existing: dict, candidate: dict) -> dict:
     existing["authoritative"] = bool(existing.get("authoritative")) or bool(candidate.get("authoritative"))
     existing["domain_hits"] = sorted(set(existing.get("domain_hits", [])) | set(candidate.get("domain_hits", [])))
     existing["action_hits"] = sorted(set(existing.get("action_hits", [])) | set(candidate.get("action_hits", [])))
+    existing["webswarm_node"] = existing.get("webswarm_node") or candidate.get("webswarm_node", "")
+    existing["webswarm_mode"] = existing.get("webswarm_mode") or candidate.get("webswarm_mode", "")
+    existing["webswarm_evidence_terms"] = sorted(
+        set(existing.get("webswarm_evidence_terms", []))
+        | set(candidate.get("webswarm_evidence_terms", []))
+    )
     return existing
 
 
@@ -748,6 +766,9 @@ def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
                 "confidence": entry.get("confidence", 0),
                 "status": entry.get("notification_status", "x-intel"),
                 "reason": entry.get("reason", ""),
+                "webswarm_node": entry.get("webswarm_node", ""),
+                "webswarm_mode": entry.get("webswarm_mode", ""),
+                "webswarm_evidence_terms": entry.get("webswarm_evidence_terms", []),
             }
         )
     return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
@@ -773,6 +794,12 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 "reason": entry.get("reason")
                 or candidate.get("content")
                 or "Public X signal about AI use in military, defense, targeting, or intelligence operations.",
+                "webswarm_node": candidate.get("webswarm_node", entry.get("webswarm_node", "")),
+                "webswarm_mode": candidate.get("webswarm_mode", entry.get("webswarm_mode", "")),
+                "webswarm_evidence_terms": candidate.get(
+                    "webswarm_evidence_terms",
+                    entry.get("webswarm_evidence_terms", []),
+                ),
             }
         )
     return sorted(entries, key=lambda item: item.get("shown_at", ""), reverse=True)[:limit]
@@ -902,6 +929,9 @@ def public_candidate(candidate: dict) -> dict:
         "alert": candidate.get("alert"),
         "reason": candidate.get("reason"),
         "stage1_score": stage1_score(candidate),
+        "webswarm_node": candidate.get("webswarm_node", ""),
+        "webswarm_mode": candidate.get("webswarm_mode", ""),
+        "webswarm_evidence_terms": candidate.get("webswarm_evidence_terms", []),
     }
 
 
@@ -1152,6 +1182,12 @@ def publish_pending_website_only(state: dict, now: datetime) -> list[dict]:
             "confidence": entry.get("confidence", 0),
             "notification_status": "x-intel",
             "reason": entry.get("reason") or x_intel_reason(candidate),
+            "webswarm_node": candidate.get("webswarm_node", entry.get("webswarm_node", "")),
+            "webswarm_mode": candidate.get("webswarm_mode", entry.get("webswarm_mode", "")),
+            "webswarm_evidence_terms": candidate.get(
+                "webswarm_evidence_terms",
+                entry.get("webswarm_evidence_terms", []),
+            ),
         }
         del state["pending"][fingerprint]
         published.append({"fingerprint": fingerprint, "sent": False, "reason": "x-intel"})
@@ -1171,6 +1207,9 @@ def publish_candidate_website_only(state: dict, candidate: dict, now: datetime) 
         "confidence": 0,
         "notification_status": "x-intel",
         "reason": x_intel_reason(candidate),
+        "webswarm_node": candidate.get("webswarm_node", ""),
+        "webswarm_mode": candidate.get("webswarm_mode", ""),
+        "webswarm_evidence_terms": candidate.get("webswarm_evidence_terms", []),
     }
     state.get("pending", {}).pop(fingerprint, None)
 
@@ -1413,6 +1452,7 @@ def x_influencer_handles(env: dict[str, str]) -> list[str]:
 
 def x_search_queries(env: dict[str, str]) -> list[str]:
     terms = env.get("BREAKING_X_QUERY", DEFAULT_X_INTEL_QUERY).strip()
+    terms = expand_x_query(terms, env)
     handles = x_influencer_handles(env)
     if not handles:
         return [terms]
@@ -1559,9 +1599,9 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
 def ai_intel_news_queries(env: dict[str, str]) -> list[str]:
     raw = env.get("BREAKING_NEWS_FALLBACK_QUERIES", "").strip()
     if not raw:
-        return DEFAULT_AI_INTEL_NEWS_QUERIES
+        return expand_news_queries(list(DEFAULT_AI_INTEL_NEWS_QUERIES), env)
     queries = [item.strip() for item in re.split(r"\s*\|\|\s*", raw) if item.strip()]
-    return queries or DEFAULT_AI_INTEL_NEWS_QUERIES
+    return expand_news_queries(queries or list(DEFAULT_AI_INTEL_NEWS_QUERIES), env)
 
 
 def collect_public_ai_intel_news(env: dict[str, str], limit: int = 20) -> list[dict]:
@@ -1616,6 +1656,13 @@ def collect_public_ai_intel_news(env: dict[str, str], limit: int = 20) -> list[d
     return collected
 
 
+def annotate_collected_candidates(candidates: list[dict], env: dict[str, str]) -> list[dict]:
+    if not candidates or not webswarm_enabled(env):
+        return candidates
+    plan = build_ai_brief_webswarm_plan(source_focus=env.get("BREAKING_SOURCE_FOCUS", "x"))
+    return annotate_webswarm_candidates(candidates, plan)
+
+
 def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
     env = env or os.environ
     source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
@@ -1625,14 +1672,14 @@ def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
         candidates.extend(collect_x_cli(env))
         candidates.extend(collect_local_signals(source_focus=source_focus))
         if candidates:
-            return candidates
+            return annotate_collected_candidates(candidates, env)
     for collector in (collect_hackernews, collect_arxiv):
         try:
             candidates.extend(collector())
         except Exception as exc:
             print(json.dumps({"level": "warning", "collector": collector.__name__, "error": type(exc).__name__}))
     candidates.extend(collect_local_signals(source_focus=source_focus))
-    return candidates
+    return annotate_collected_candidates(candidates, env)
 
 
 def should_keep_x_under_review(candidate: dict, env: dict[str, str], notify_mode: str) -> bool:
@@ -1698,7 +1745,7 @@ def run_monitor_cycle(
         if isinstance(entry.get("candidate"), dict)
     ]
     news_fallback_collected = 0
-    collected = raw_candidates if raw_candidates is not None else collect_candidates(env)
+    collected = annotate_collected_candidates(raw_candidates, env) if raw_candidates is not None else collect_candidates(env)
     initial_collected = list(collected)
     initial_source_counts = candidate_source_counts(initial_collected)
     initial_x_relevant = sum(1 for candidate in initial_collected if is_website_intel_candidate(candidate, env))
@@ -1712,7 +1759,7 @@ def run_monitor_cycle(
             or (source_focus not in {"x", "twitter"} and survives_stage1(candidate))
         ]
         if source_focus in {"x", "twitter"} and not survivors and raw_candidates is None:
-            fallback = collect_public_ai_intel_news(env, limit=max_candidates)
+            fallback = annotate_collected_candidates(collect_public_ai_intel_news(env, limit=max_candidates), env)
             if fallback:
                 news_fallback_collected = len(fallback)
                 collected = collected + fallback
@@ -1751,6 +1798,7 @@ def run_monitor_cycle(
             "x_intel_published": len(alerted_now),
             "news_fallback_collected": news_fallback_collected,
             "x_auth": x_auth_summary(env),
+            "webswarm": plan_public_summary(env),
             "alerted_now": len(alerted_now),
             "pending_now": 0,
             "retried": retried,
@@ -1856,6 +1904,7 @@ def run_monitor_cycle(
         "classified": len(classifications),
         "classification_reason": classification_reason,
         "malformed_or_rejected": malformed_or_rejected,
+        "webswarm": plan_public_summary(env),
         "alerted_now": len(alerted_now),
         "pending_now": len(pending_now),
         "retried": retried,
