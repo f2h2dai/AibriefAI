@@ -4,23 +4,6 @@
   "feed": [
     {
       "confidence": 0,
-      "id": "story-68860c34c79a1919cc450b68",
-      "reason": "it is possible this direction keeps going!' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12107 retweets: 456 replies: 1711 quotes: 307 views: 19006",
-      "score": 15,
-      "shown_at": "2026-07-12T19:52:09Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: it is possible this direction keeps going!' author: id: '1605' name: Sam Altman screenName",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
       "id": "story-05f1330fdf8fbb2d7e168429",
       "reason": "We are asking the DoW to offer these same terms to all AI companies, which in our opinion we think everyone should be willing to accept. We have expressed our strong desire to see things de-escalate away from legal and governmental actions and towards reasonable agreements.",
       "score": 12,
@@ -46,6 +29,23 @@
       "source_url": "https://x.com",
       "status": "x-intel",
       "title": "@sama: We remain committed to serve all of humanity as best we can. The world is a complicated, m",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "id": "story-68860c34c79a1919cc450b68",
+      "reason": "it is possible this direction keeps going!' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 12107 retweets: 456 replies: 1711 quotes: 307 views: 19006",
+      "score": 15,
+      "shown_at": "2026-07-12T19:52:09Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: it is possible this direction keeps going!' author: id: '1605' name: Sam Altman screenName",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -209,10 +209,10 @@
     "alerted_at": "2026-07-12T19:52:09Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: it is possible this direction keeps going!' author: id: '1605' name: Sam Altman screenName"
+    "title": "@sama: We are asking the DoW to offer these same terms to all AI companies, which in our opinion"
   },
   "last_run": {
-    "alerted_now": 3,
+    "alerted_now": 0,
     "clustered": 4,
     "collected": 4,
     "initial_collected": 4,
@@ -226,8 +226,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.26,
-      "projected_minutes_per_30d": 156.47,
+      "measured_seconds": 0.896,
+      "projected_minutes_per_30d": 43.0,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 4,
@@ -253,11 +253,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 3
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-12T19:52:09Z",
+  "updated_at": "2026-07-12T20:52:55Z",
   "version": 1
 }
