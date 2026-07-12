@@ -1,7 +1,24 @@
 {
-  "alerted_count": 97,
+  "alerted_count": 98,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-343fd2ef38840ee8a9f79c83",
+      "reason": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems. The DoW agrees with these pr",
+      "score": 15,
+      "shown_at": "2026-07-12T14:15:45Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "id": "story-43dfbc6ba8c7c092b79e23dd",
@@ -180,48 +197,34 @@
       "webswarm_evidence_terms": [],
       "webswarm_mode": "",
       "webswarm_node": ""
-    },
-    {
-      "confidence": 0,
-      "id": "story-fb89666d35a33625b1ca83b7",
-      "reason": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems. The DoW agrees with these pr",
-      "score": 12,
-      "shown_at": "2026-07-09T19:12:48Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
-      "webswarm_evidence_terms": [],
-      "webswarm_mode": "",
-      "webswarm_node": ""
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-11T19:52:23Z",
+    "alerted_at": "2026-07-12T14:15:45Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: OpenClaw will live in a foundation as an open source project that OpenAI will continue to"
+    "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 4,
-    "collected": 4,
-    "initial_collected": 4,
+    "alerted_now": 1,
+    "clustered": 1,
+    "collected": 1,
+    "initial_collected": 1,
     "initial_source_counts": {
-      "x": 4
+      "x": 1
     },
-    "initial_x_relevant": 4,
+    "initial_x_relevant": 1,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 0.983,
-      "projected_minutes_per_30d": 47.18,
+      "measured_seconds": 0.866,
+      "projected_minutes_per_30d": 41.55,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 4,
+    "stage1_survivors": 1,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -244,11 +247,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-12T12:39:05Z",
+  "updated_at": "2026-07-12T14:15:45Z",
   "version": 1
 }
