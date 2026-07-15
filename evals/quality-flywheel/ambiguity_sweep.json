@@ -1,0 +1,3252 @@
+{
+    "version":  1,
+    "generated_from":  "evals/quality-flywheel/cases.json",
+    "ambiguity_levels":  [
+                             "low",
+                             "medium",
+                             "high"
+                         ],
+    "preserve_ground_truth":  true,
+    "metrics_by_level":  {
+                             "low":  [
+                                         "source_retrieval_recall",
+                                         "source_retrieval_precision",
+                                         "citation_correctness",
+                                         "abstention_accuracy",
+                                         "duplicate_removal_accuracy",
+                                         "unsupported_claim_rate"
+                                     ],
+                             "medium":  [
+                                            "source_retrieval_recall",
+                                            "source_retrieval_precision",
+                                            "citation_correctness",
+                                            "abstention_accuracy",
+                                            "duplicate_removal_accuracy",
+                                            "unsupported_claim_rate"
+                                        ],
+                             "high":  [
+                                          "source_retrieval_recall",
+                                          "source_retrieval_precision",
+                                          "citation_correctness",
+                                          "abstention_accuracy",
+                                          "duplicate_removal_accuracy",
+                                          "unsupported_claim_rate",
+                                          "high_ambiguity_accuracy"
+                                      ]
+                         },
+    "cases":  [
+                  {
+                      "id":  "qf-001-low",
+                      "base_case_id":  "qf-001",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 1 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-001-medium",
+                      "base_case_id":  "qf-001",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 1 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-001-high",
+                      "base_case_id":  "qf-001",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 1 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-002-low",
+                      "base_case_id":  "qf-002",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 2 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-002-medium",
+                      "base_case_id":  "qf-002",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 2 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-002-high",
+                      "base_case_id":  "qf-002",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 2 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-003-low",
+                      "base_case_id":  "qf-003",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 3 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-003-medium",
+                      "base_case_id":  "qf-003",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 3 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-003-high",
+                      "base_case_id":  "qf-003",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 3 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-004-low",
+                      "base_case_id":  "qf-004",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 4 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-004-medium",
+                      "base_case_id":  "qf-004",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 4 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-004-high",
+                      "base_case_id":  "qf-004",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 4 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-005-low",
+                      "base_case_id":  "qf-005",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 5 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-005-medium",
+                      "base_case_id":  "qf-005",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 5 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-005-high",
+                      "base_case_id":  "qf-005",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 5 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-006-low",
+                      "base_case_id":  "qf-006",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 6 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-006-medium",
+                      "base_case_id":  "qf-006",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 6 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-006-high",
+                      "base_case_id":  "qf-006",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 6 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-007-low",
+                      "base_case_id":  "qf-007",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 7 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-007-medium",
+                      "base_case_id":  "qf-007",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 7 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-007-high",
+                      "base_case_id":  "qf-007",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 7 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-008-low",
+                      "base_case_id":  "qf-008",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 8 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-008-medium",
+                      "base_case_id":  "qf-008",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 8 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-008-high",
+                      "base_case_id":  "qf-008",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 8 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-009-low",
+                      "base_case_id":  "qf-009",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 9 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-009-medium",
+                      "base_case_id":  "qf-009",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 9 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-009-high",
+                      "base_case_id":  "qf-009",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 9 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-010-low",
+                      "base_case_id":  "qf-010",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 10 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-010-medium",
+                      "base_case_id":  "qf-010",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 10 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-010-high",
+                      "base_case_id":  "qf-010",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 10 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-011-low",
+                      "base_case_id":  "qf-011",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 11 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-011-medium",
+                      "base_case_id":  "qf-011",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 11 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-011-high",
+                      "base_case_id":  "qf-011",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 11 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-012-low",
+                      "base_case_id":  "qf-012",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 12 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-012-medium",
+                      "base_case_id":  "qf-012",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 12 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-012-high",
+                      "base_case_id":  "qf-012",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 12 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-013-low",
+                      "base_case_id":  "qf-013",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 13 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-013-medium",
+                      "base_case_id":  "qf-013",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 13 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-013-high",
+                      "base_case_id":  "qf-013",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 13 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-014-low",
+                      "base_case_id":  "qf-014",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 14 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-014-medium",
+                      "base_case_id":  "qf-014",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 14 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-014-high",
+                      "base_case_id":  "qf-014",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 14 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-015-low",
+                      "base_case_id":  "qf-015",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 15 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-015-medium",
+                      "base_case_id":  "qf-015",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 15 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-015-high",
+                      "base_case_id":  "qf-015",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 15 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-016-low",
+                      "base_case_id":  "qf-016",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 16 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-016-medium",
+                      "base_case_id":  "qf-016",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 16 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-016-high",
+                      "base_case_id":  "qf-016",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 16 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-017-low",
+                      "base_case_id":  "qf-017",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 17 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-017-medium",
+                      "base_case_id":  "qf-017",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 17 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-017-high",
+                      "base_case_id":  "qf-017",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 17 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-018-low",
+                      "base_case_id":  "qf-018",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 18 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-018-medium",
+                      "base_case_id":  "qf-018",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 18 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-018-high",
+                      "base_case_id":  "qf-018",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 18 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-019-low",
+                      "base_case_id":  "qf-019",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 19 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-019-medium",
+                      "base_case_id":  "qf-019",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 19 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-019-high",
+                      "base_case_id":  "qf-019",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 19 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-020-low",
+                      "base_case_id":  "qf-020",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 20 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-020-medium",
+                      "base_case_id":  "qf-020",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 20 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-020-high",
+                      "base_case_id":  "qf-020",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 20 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-021-low",
+                      "base_case_id":  "qf-021",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 21 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-021-medium",
+                      "base_case_id":  "qf-021",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 21 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-021-high",
+                      "base_case_id":  "qf-021",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 21 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-022-low",
+                      "base_case_id":  "qf-022",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 22 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-022-medium",
+                      "base_case_id":  "qf-022",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 22 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-022-high",
+                      "base_case_id":  "qf-022",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 22 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-023-low",
+                      "base_case_id":  "qf-023",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 23 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-023-medium",
+                      "base_case_id":  "qf-023",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 23 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-023-high",
+                      "base_case_id":  "qf-023",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 23 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-024-low",
+                      "base_case_id":  "qf-024",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 24 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-024-medium",
+                      "base_case_id":  "qf-024",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 24 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-024-high",
+                      "base_case_id":  "qf-024",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 24 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-025-low",
+                      "base_case_id":  "qf-025",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 25 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-025-medium",
+                      "base_case_id":  "qf-025",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 25 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-025-high",
+                      "base_case_id":  "qf-025",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 25 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-026-low",
+                      "base_case_id":  "qf-026",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 26 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-026-medium",
+                      "base_case_id":  "qf-026",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 26 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-026-high",
+                      "base_case_id":  "qf-026",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 26 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-027-low",
+                      "base_case_id":  "qf-027",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 27 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-027-medium",
+                      "base_case_id":  "qf-027",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 27 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-027-high",
+                      "base_case_id":  "qf-027",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 27 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-028-low",
+                      "base_case_id":  "qf-028",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 28 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-028-medium",
+                      "base_case_id":  "qf-028",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 28 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-028-high",
+                      "base_case_id":  "qf-028",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 28 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-029-low",
+                      "base_case_id":  "qf-029",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 29 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-029-medium",
+                      "base_case_id":  "qf-029",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 29 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-029-high",
+                      "base_case_id":  "qf-029",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 29 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-030-low",
+                      "base_case_id":  "qf-030",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 30 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-030-medium",
+                      "base_case_id":  "qf-030",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 30 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-030-high",
+                      "base_case_id":  "qf-030",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 30 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-031-low",
+                      "base_case_id":  "qf-031",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 31 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-031-medium",
+                      "base_case_id":  "qf-031",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 31 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-031-high",
+                      "base_case_id":  "qf-031",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 31 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-032-low",
+                      "base_case_id":  "qf-032",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 32 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-032-medium",
+                      "base_case_id":  "qf-032",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 32 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-032-high",
+                      "base_case_id":  "qf-032",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 32 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-033-low",
+                      "base_case_id":  "qf-033",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 33 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-033-medium",
+                      "base_case_id":  "qf-033",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 33 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-033-high",
+                      "base_case_id":  "qf-033",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 33 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-034-low",
+                      "base_case_id":  "qf-034",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 34 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-034-medium",
+                      "base_case_id":  "qf-034",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 34 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-034-high",
+                      "base_case_id":  "qf-034",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 34 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-035-low",
+                      "base_case_id":  "qf-035",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 35 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-035-medium",
+                      "base_case_id":  "qf-035",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 35 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-035-high",
+                      "base_case_id":  "qf-035",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 35 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-036-low",
+                      "base_case_id":  "qf-036",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 36 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-036-medium",
+                      "base_case_id":  "qf-036",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 36 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-036-high",
+                      "base_case_id":  "qf-036",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 36 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-037-low",
+                      "base_case_id":  "qf-037",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 37 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-037-medium",
+                      "base_case_id":  "qf-037",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 37 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-037-high",
+                      "base_case_id":  "qf-037",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 37 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-038-low",
+                      "base_case_id":  "qf-038",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 38 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-038-medium",
+                      "base_case_id":  "qf-038",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 38 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-038-high",
+                      "base_case_id":  "qf-038",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 38 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-039-low",
+                      "base_case_id":  "qf-039",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 39 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-039-medium",
+                      "base_case_id":  "qf-039",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 39 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-039-high",
+                      "base_case_id":  "qf-039",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 39 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-040-low",
+                      "base_case_id":  "qf-040",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 40 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-040-medium",
+                      "base_case_id":  "qf-040",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 40 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-040-high",
+                      "base_case_id":  "qf-040",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 40 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-041-low",
+                      "base_case_id":  "qf-041",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 41 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-041-medium",
+                      "base_case_id":  "qf-041",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 41 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-041-high",
+                      "base_case_id":  "qf-041",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 41 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-042-low",
+                      "base_case_id":  "qf-042",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 42 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-042-medium",
+                      "base_case_id":  "qf-042",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 42 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-042-high",
+                      "base_case_id":  "qf-042",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 42 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-043-low",
+                      "base_case_id":  "qf-043",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 43 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-043-medium",
+                      "base_case_id":  "qf-043",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 43 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-043-high",
+                      "base_case_id":  "qf-043",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 43 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-044-low",
+                      "base_case_id":  "qf-044",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate stale news rejection case 44 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-044-medium",
+                      "base_case_id":  "qf-044",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate stale news rejection case 44 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-044-high",
+                      "base_case_id":  "qf-044",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate stale news rejection case 44 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-045-low",
+                      "base_case_id":  "qf-045",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate duplicate removal case 45 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-045-medium",
+                      "base_case_id":  "qf-045",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate duplicate removal case 45 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-045-high",
+                      "base_case_id":  "qf-045",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate duplicate removal case 45 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-046-low",
+                      "base_case_id":  "qf-046",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate bilingual instruction change case 46 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-046-medium",
+                      "base_case_id":  "qf-046",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate bilingual instruction change case 46 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-046-high",
+                      "base_case_id":  "qf-046",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate bilingual instruction change case 46 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-047-low",
+                      "base_case_id":  "qf-047",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate unsupported claim case 47 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-047-medium",
+                      "base_case_id":  "qf-047",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate unsupported claim case 47 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-047-high",
+                      "base_case_id":  "qf-047",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate unsupported claim case 47 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-048-low",
+                      "base_case_id":  "qf-048",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate citation accuracy case 48 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-048-medium",
+                      "base_case_id":  "qf-048",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate citation accuracy case 48 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-048-high",
+                      "base_case_id":  "qf-048",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate citation accuracy case 48 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-049-low",
+                      "base_case_id":  "qf-049",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate no action decision case 49 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-049-medium",
+                      "base_case_id":  "qf-049",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate no action decision case 49 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-049-high",
+                      "base_case_id":  "qf-049",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate no action decision case 49 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-050-low",
+                      "base_case_id":  "qf-050",
+                      "ambiguity":  "low",
+                      "input":  "Evaluate source verification case 50 for AibriefAI/Sentinel. Ambiguity level: low.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-050-medium",
+                      "base_case_id":  "qf-050",
+                      "ambiguity":  "medium",
+                      "input":  "Evaluate source verification case 50 for AibriefAI/Sentinel. Ambiguity level: medium.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  },
+                  {
+                      "id":  "qf-050-high",
+                      "base_case_id":  "qf-050",
+                      "ambiguity":  "high",
+                      "input":  "Evaluate source verification case 50 for AibriefAI/Sentinel. Ambiguity level: high.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "metrics":  [
+                                      "source_retrieval_recall",
+                                      "source_retrieval_precision",
+                                      "citation_correctness",
+                                      "abstention_accuracy",
+                                      "duplicate_removal_accuracy",
+                                      "unsupported_claim_rate"
+                                  ]
+                  }
+              ]
+}

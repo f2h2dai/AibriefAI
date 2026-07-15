@@ -1,0 +1,1138 @@
+{
+    "version":  1,
+    "name":  "AibriefAI quality flywheel seed set",
+    "description":  "Vendor-neutral seed cases for source verification, stale-news rejection, duplicate removal, bilingual instruction changes, unsupported claims, citation accuracy, and no-action decisions.",
+    "created_at":  "2026-07-15",
+    "critical_metrics":  {
+                             "source_retrieval_recall":  0.82,
+                             "source_retrieval_precision":  0.78,
+                             "citation_correctness":  0.9,
+                             "abstention_accuracy":  0.85,
+                             "duplicate_removal_accuracy":  0.9,
+                             "unsupported_claim_rate_max":  0.08,
+                             "high_ambiguity_accuracy":  0.78
+                         },
+    "cases":  [
+                  {
+                      "id":  "qf-001",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 1 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-002",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 2 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-003",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 3 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-004",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 4 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-005",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 5 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-006",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 6 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-007",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 7 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-008",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 8 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-009",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 9 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-010",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 10 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-011",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 11 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-012",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 12 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-013",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 13 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-014",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 14 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-015",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 15 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-016",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 16 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-017",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 17 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-018",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 18 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-019",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 19 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-020",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 20 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-021",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 21 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-022",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 22 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-023",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 23 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-024",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 24 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-025",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 25 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-026",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 26 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-027",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 27 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-028",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 28 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-029",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 29 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-030",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 30 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-031",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 31 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-032",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 32 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-033",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 33 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-034",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 34 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-035",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 35 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-036",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 36 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-037",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 37 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-038",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 38 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-039",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 39 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-040",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 40 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-041",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 41 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-042",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 42 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-043",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 43 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-044",
+                      "category":  "stale_news_rejection",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate stale news rejection case 44 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  true,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-045",
+                      "category":  "duplicate_removal",
+                      "task_type":  "classification",
+                      "input":  "Evaluate duplicate removal case 45 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  true,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-046",
+                      "category":  "arabic_english_instruction_change",
+                      "task_type":  "classification",
+                      "input":  "Evaluate bilingual instruction change case 46 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  [
+                                                             "en",
+                                                             "ar"
+                                                         ]
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-047",
+                      "category":  "unsupported_claim",
+                      "task_type":  "classification",
+                      "input":  "Evaluate unsupported claim case 47 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-048",
+                      "category":  "citation_accuracy",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate citation accuracy case 48 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  true,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-049",
+                      "category":  "no_action_decision",
+                      "task_type":  "classification",
+                      "input":  "Evaluate no action decision case 49 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "abstain",
+                                           "must_cite_primary_source":  false,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  },
+                  {
+                      "id":  "qf-050",
+                      "category":  "source_verification",
+                      "task_type":  "retrieval",
+                      "input":  "Evaluate source verification case 50 for AibriefAI/Sentinel.",
+                      "ground_truth":  {
+                                           "decision":  "publish_or_retrieve",
+                                           "must_cite_primary_source":  true,
+                                           "must_reject_stale":  false,
+                                           "must_dedupe":  false,
+                                           "languages":  "en"
+                                       },
+                      "critical":  false,
+                      "expected_metrics":  [
+                                               "source_retrieval_recall",
+                                               "source_retrieval_precision",
+                                               "citation_correctness",
+                                               "abstention_accuracy",
+                                               "duplicate_removal_accuracy",
+                                               "unsupported_claim_rate"
+                                           ]
+                  }
+              ]
+}

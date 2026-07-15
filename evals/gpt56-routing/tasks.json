@@ -1,0 +1,1349 @@
+{
+    "version":  1,
+    "created_at":  "2026-07-15",
+    "instruction":  "Run each task against GPT-5.6 Sol, Terra, and Luna using identical inputs. Record correctness, unsupported claims, tool-call success, latency, token usage, estimated cost, test pass rate, and reviewer effort. Do not change production defaults until the evaluation passes.",
+    "models":  [
+                   "gpt-5.6-sol",
+                   "gpt-5.6-terra",
+                   "gpt-5.6-luna"
+               ],
+    "metrics":  [
+                    "correctness",
+                    "unsupported_claims",
+                    "tool_call_success",
+                    "latency_ms",
+                    "token_usage",
+                    "estimated_cost_usd",
+                    "test_pass_rate",
+                    "reviewer_effort_minutes"
+                ],
+    "routing_policy_recommendation":  {
+                                          "status":  "draft_until_evaluation_passes",
+                                          "sol":  "Use for high-risk source verification, Oracle incident analysis, and physical-AI safety logic if it wins correctness and unsupported-claim metrics.",
+                                          "terra":  "Use for balanced daily briefs, Sentinel ingestion, and repository refactoring if it wins cost-adjusted pass rate.",
+                                          "luna":  "Use for low-risk summarization, extraction, and MCP design drafts if reviewer effort stays low.",
+                                          "production_defaults_changed":  false
+                                      },
+    "tasks":  [
+                  {
+                      "id":  "gpt56-01",
+                      "domain":  "aibriefai_summarization_source_verification",
+                      "input":  "Evaluate aibriefai_summarization_source_verification task 1 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-02",
+                      "domain":  "aibriefai_summarization_source_verification",
+                      "input":  "Evaluate aibriefai_summarization_source_verification task 2 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-03",
+                      "domain":  "aibriefai_summarization_source_verification",
+                      "input":  "Evaluate aibriefai_summarization_source_verification task 3 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-04",
+                      "domain":  "aibriefai_summarization_source_verification",
+                      "input":  "Evaluate aibriefai_summarization_source_verification task 4 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-05",
+                      "domain":  "aibriefai_summarization_source_verification",
+                      "input":  "Evaluate aibriefai_summarization_source_verification task 5 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-06",
+                      "domain":  "sentinel_ingestion_deduplication",
+                      "input":  "Evaluate sentinel_ingestion_deduplication task 1 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-07",
+                      "domain":  "sentinel_ingestion_deduplication",
+                      "input":  "Evaluate sentinel_ingestion_deduplication task 2 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-08",
+                      "domain":  "sentinel_ingestion_deduplication",
+                      "input":  "Evaluate sentinel_ingestion_deduplication task 3 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-09",
+                      "domain":  "sentinel_ingestion_deduplication",
+                      "input":  "Evaluate sentinel_ingestion_deduplication task 4 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-10",
+                      "domain":  "sentinel_ingestion_deduplication",
+                      "input":  "Evaluate sentinel_ingestion_deduplication task 5 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-11",
+                      "domain":  "oracle_sql_incident_analysis",
+                      "input":  "Evaluate oracle_sql_incident_analysis task 1 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-12",
+                      "domain":  "oracle_sql_incident_analysis",
+                      "input":  "Evaluate oracle_sql_incident_analysis task 2 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-13",
+                      "domain":  "oracle_sql_incident_analysis",
+                      "input":  "Evaluate oracle_sql_incident_analysis task 3 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-14",
+                      "domain":  "oracle_sql_incident_analysis",
+                      "input":  "Evaluate oracle_sql_incident_analysis task 4 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-15",
+                      "domain":  "oracle_sql_incident_analysis",
+                      "input":  "Evaluate oracle_sql_incident_analysis task 5 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-16",
+                      "domain":  "mcp_tool_design",
+                      "input":  "Evaluate mcp_tool_design task 1 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-17",
+                      "domain":  "mcp_tool_design",
+                      "input":  "Evaluate mcp_tool_design task 2 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-18",
+                      "domain":  "mcp_tool_design",
+                      "input":  "Evaluate mcp_tool_design task 3 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-19",
+                      "domain":  "mcp_tool_design",
+                      "input":  "Evaluate mcp_tool_design task 4 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-20",
+                      "domain":  "mcp_tool_design",
+                      "input":  "Evaluate mcp_tool_design task 5 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-21",
+                      "domain":  "repository_refactoring",
+                      "input":  "Evaluate repository_refactoring task 1 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-22",
+                      "domain":  "repository_refactoring",
+                      "input":  "Evaluate repository_refactoring task 2 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-23",
+                      "domain":  "repository_refactoring",
+                      "input":  "Evaluate repository_refactoring task 3 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-24",
+                      "domain":  "repository_refactoring",
+                      "input":  "Evaluate repository_refactoring task 4 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-25",
+                      "domain":  "repository_refactoring",
+                      "input":  "Evaluate repository_refactoring task 5 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-26",
+                      "domain":  "physical_ai_safety_logic",
+                      "input":  "Evaluate physical_ai_safety_logic task 1 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-27",
+                      "domain":  "physical_ai_safety_logic",
+                      "input":  "Evaluate physical_ai_safety_logic task 2 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-28",
+                      "domain":  "physical_ai_safety_logic",
+                      "input":  "Evaluate physical_ai_safety_logic task 3 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-29",
+                      "domain":  "physical_ai_safety_logic",
+                      "input":  "Evaluate physical_ai_safety_logic task 4 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  },
+                  {
+                      "id":  "gpt56-30",
+                      "domain":  "physical_ai_safety_logic",
+                      "input":  "Evaluate physical_ai_safety_logic task 5 using identical input across GPT-5.6 Sol, Terra, and Luna.",
+                      "production_defaults_changed":  false,
+                      "model_runs":  [
+                                         {
+                                             "model":  "gpt-5.6-sol",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-terra",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         },
+                                         {
+                                             "model":  "gpt-5.6-luna",
+                                             "correctness":  null,
+                                             "unsupported_claims":  null,
+                                             "tool_call_success":  null,
+                                             "latency_ms":  null,
+                                             "token_usage":  null,
+                                             "estimated_cost_usd":  null,
+                                             "test_pass_rate":  null,
+                                             "reviewer_effort_minutes":  null,
+                                             "status":  "pending_run"
+                                         }
+                                     ]
+                  }
+              ]
+}

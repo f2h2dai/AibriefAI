@@ -1,0 +1,42 @@
+name: Agent Quality Gates
+
+on:
+  pull_request:
+    paths:
+      - "evals/**"
+      - "docs/**"
+      - "scripts/check_ai_budget_usage.py"
+      - "scripts/check_quality_flywheel.py"
+      - "tests/test_ai_budget_usage.py"
+      - "tests/test_chatgpt_work_eval.py"
+      - "tests/test_gpt56_routing.py"
+      - "tests/test_quality_flywheel.py"
+      - "tests/test_vscode_browser_policy.py"
+      - ".vscode/settings.security.example.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  AGENT_LIMIT_ID: agent_quality_gates
+
+jobs:
+  quality-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Check quality flywheel thresholds
+        run: python3 scripts/check_quality_flywheel.py --baseline evals/quality-flywheel/baselines/v1.json
+
+      - name: Run governance and evaluation tests
+        run: |
+          python3 -m unittest \
+            tests.test_ai_budget_usage \
+            tests.test_chatgpt_work_eval \
+            tests.test_gpt56_routing \
+            tests.test_quality_flywheel \
+            tests.test_vscode_browser_policy \
+            -v

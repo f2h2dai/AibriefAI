@@ -1,0 +1,51 @@
+{
+    "version":  1,
+    "tasks":  [
+                  {
+                      "id":  "daily-brief-freshness",
+                      "name":  "Reject stale news in daily AI brief",
+                      "expected":  "Prefer fresh sourcePublishedAt items and mark stale candidates."
+                  },
+                  {
+                      "id":  "x-intel-watch",
+                      "name":  "Watch public X intel for AI war claims",
+                      "expected":  "Ingest public X sources, dedupe, and avoid unsupported alerts."
+                  },
+                  {
+                      "id":  "bilingual-brief",
+                      "name":  "Generate Arabic and English executive brief",
+                      "expected":  "Preserve instruction changes and terminology in both languages."
+                  },
+                  {
+                      "id":  "primary-source-check",
+                      "name":  "Verify high-impact claim against primary source",
+                      "expected":  "Cite primary sources or abstain."
+                  },
+                  {
+                      "id":  "no-action",
+                      "name":  "Handle no-action decision",
+                      "expected":  "Explicitly abstain when evidence is weak."
+                  }
+              ],
+    "rubric":  {
+                   "scheduled_execution":  5,
+                   "condition_watches":  5,
+                   "source_retrieval":  10,
+                   "primary_source_verification":  10,
+                   "x_ingestion":  10,
+                   "deduplication":  8,
+                   "arabic_english_output":  8,
+                   "approval_gates":  8,
+                   "audit_logs":  8,
+                   "cost_controls":  8,
+                   "data_residency":  6,
+                   "failure_recovery":  6,
+                   "connector_permissions":  6,
+                   "exportability":  2
+               },
+    "criteria":  {
+                     "adopt":  "Score \u003e= 85 and no critical regressions.",
+                     "integrate":  "Score 65-84 or clear complementary capability with controlled permissions.",
+                     "reject":  "Score \u003c 65, weak exportability, weak auditability, or unsafe connector permissions."
+                 }
+}

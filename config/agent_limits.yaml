@@ -65,3 +65,13 @@ limits:
     workflows:
       - .github/workflows/compare-x-sources.yml
     emergency_stop: disable report commits and require manual run review
+
+  agent_quality_gates:
+    owner: AibriefAI
+    cost_center: aibriefai
+    max_ai_credits: 1
+    max_runtime_minutes: 10
+    max_tool_calls: 20
+    workflows:
+      - .github/workflows/agent-quality-gates.yml
+    emergency_stop: disable agent quality-gates workflow and require local verification
