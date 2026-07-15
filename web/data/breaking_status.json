@@ -1,7 +1,24 @@
 {
-  "alerted_count": 114,
+  "alerted_count": 115,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-17f1346c13a5ce3a9837cfd0",
+      "reason": "AI safety and wide distribution of benefits are the core of our mission. Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems. The DoW agrees with these pr",
+      "score": 15,
+      "shown_at": "2026-07-15T14:10:47Z",
+      "source": "x",
+      "source_url": "https://x.com",
+      "status": "x-intel",
+      "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "id": "story-39f58f8c3fc2dffb21f89ca8",
@@ -188,51 +205,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "id": "story-bac613c76118844fa1383c5e",
-      "reason": "We are asking the DoW to offer these same terms to all AI companies, which in our opinion we think everyone should be willing to accept. We have expressed our strong desire to see things de-escalate away from legal and governmental actions and towards reasonable agreements.",
-      "score": 12,
-      "shown_at": "2026-07-13T15:35:50Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@sama: We are asking the DoW to offer these same terms to all AI companies, which in our opinion",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-14T19:56:25Z",
+    "alerted_at": "2026-07-15T14:10:47Z",
     "confidence": 0,
     "source_url": "https://x.com",
-    "title": "@sama: welcome.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pb"
+    "title": "@sama: AI safety and wide distribution of benefits are the core of our mission. Two of our most i"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 3,
-    "collected": 3,
-    "initial_collected": 3,
+    "alerted_now": 1,
+    "clustered": 1,
+    "collected": 1,
+    "initial_collected": 1,
     "initial_source_counts": {
-      "x": 3
+      "x": 1
     },
-    "initial_x_relevant": 3,
+    "initial_x_relevant": 1,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 1.039,
-      "projected_minutes_per_30d": 49.89,
+      "measured_seconds": 1.077,
+      "projected_minutes_per_30d": 51.69,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 3,
+    "stage1_survivors": 1,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -255,11 +255,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-15T12:03:08Z",
+  "updated_at": "2026-07-15T14:10:47Z",
   "version": 1
 }
