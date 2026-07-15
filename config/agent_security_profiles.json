@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "default_decision": "deny",
+  "profiles": {
+    "llm_post_training_lab": {
+      "phase": "cloud_gateway_test",
+      "cloud_gateway_allowed": true,
+      "data_classes": ["public", "synthetic", "toy", "low-risk"],
+      "allowed_data": ["public_prompts", "toy_datasets", "verifier_scores", "synthetic_examples", "local_demo_event_metadata"],
+      "blocked_data": ["private_documents", "secrets", "production_credentials", "personal_archive_data"],
+      "tool_allowlist": ["agent.run.start", "agent.run.finish", "verifier.score", "verifier.bypass_attempt"],
+      "tool_denylist": ["filesystem.private.*", "database.*", "archive.*", "credentials.*"],
+      "approval_required": ["new_event_schema", "nonpublic_data_class"],
+      "audit_storage": "local_hash_chain_plus_redacted_cloud_receipt",
+      "rollback": "disable_cloud_mode_and_revert_adapter"
+    },
+    "x_bookmarks_slack": {
+      "phase": "cloud_gateway_test",
+      "cloud_gateway_allowed": true,
+      "data_classes": ["public", "low-risk"],
+      "allowed_data": ["public_x_links", "public_extracted_text", "summary_output", "slack_delivery_metadata"],
+      "blocked_data": ["private_dms", "cookies", "personal_tokens", "internal_credentials"],
+      "tool_allowlist": ["x.public_bookmark.read", "summary.generate", "slack.delivery.prepare"],
+      "tool_denylist": ["x.dm.*", "browser.cookies.*", "credentials.*", "slack.admin.*"],
+      "approval_required": ["slack.delivery.send", "new_destination"],
+      "audit_storage": "local_hash_chain_plus_redacted_cloud_receipt",
+      "rollback": "disable_delivery_and_cloud_mode"
+    },
+    "aibriefai": {
+      "phase": "pattern_transfer",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["public", "low-risk"],
+      "allowed_data": ["public_web_results", "public_llm_synthesis", "public_notification_metadata"],
+      "blocked_data": ["secrets", "cookies", "credentials", "private_documents"],
+      "tool_allowlist": ["source.public.validate", "llm.classify", "website.publish", "notification.send_approved"],
+      "tool_denylist": ["source.private.*", "filesystem.private.*", "credentials.*"],
+      "approval_required": ["notification.send", "cloud_gateway_enable"],
+      "audit_storage": "local_hash_chain",
+      "rollback": "website_only_mode_and_revert_security_adapter"
+    },
+    "sentinel_ai": {
+      "phase": "pattern_transfer",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["policy_metadata", "public", "low-risk"],
+      "allowed_data": ["policy_registry", "tool_route_metadata", "safe_action_classification", "redacted_event_metadata"],
+      "blocked_data": ["secrets", "operational_payloads", "database_context", "archive_content", "security_feeds"],
+      "tool_allowlist": ["policy.read", "policy.evaluate", "tool.route_allowlisted", "audit.append"],
+      "tool_denylist": ["policy.self_approve", "tool.unregistered", "audit.delete", "secret.read"],
+      "approval_required": ["policy.change", "tool.allowlist.change", "escalation.resolve"],
+      "audit_storage": "local_hash_chain",
+      "rollback": "restore_previous_policy_registry"
+    },
+    "oracle_mcp_server": {
+      "phase": "local_ags1_only",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["database_private", "operational_sensitive"],
+      "allowed_data": ["local_redacted_query_metadata"],
+      "blocked_data": ["database_prompts", "sql_context", "schema_details", "awr_outputs", "credentials", "operational_metadata"],
+      "tool_allowlist": ["oracle.readonly.query_allowlisted", "oracle.metadata.redacted", "audit.append", "session.replay"],
+      "tool_denylist": ["oracle.drop", "oracle.truncate", "oracle.delete_unbounded", "oracle.update_unapproved", "oracle.ddl", "cloud.*"],
+      "approval_required": ["oracle.query.execute", "result.export", "policy.change"],
+      "audit_storage": "local_only_hash_chain",
+      "rollback": "terminate_session_and_restore_readonly_policy"
+    },
+    "ai_of_me": {
+      "phase": "local_ags1_only",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["personal_private", "archive_private"],
+      "allowed_data": ["local_action_metadata", "local_content_hashes"],
+      "blocked_data": ["personal_files", "archive_content", "embeddings", "ocr_output", "private_memory_records"],
+      "tool_allowlist": ["local.source.search", "local.vault.read_authorized", "local.draft.write", "local.audit.read"],
+      "tool_denylist": ["network.*", "cloud.*", "export.unapproved", "filesystem.delete"],
+      "approval_required": ["export", "file_outside_roots", "policy.change"],
+      "audit_storage": "local_only_hash_chain",
+      "rollback": "revert_reviewed_local_policy"
+    },
+    "archiveflow": {
+      "phase": "local_ags1_only",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["archive_private", "ocr_private"],
+      "allowed_data": ["local_action_metadata", "local_content_hashes", "redacted_display_values"],
+      "blocked_data": ["archive_content", "ocr_output", "extracted_text", "original_files", "credentials"],
+      "tool_allowlist": ["document.analyze", "archive.write_approved", "archive.search", "archive.read", "archive.export_approved"],
+      "tool_denylist": ["network.*", "cloud.*", "archive.delete", "export.unapproved"],
+      "approval_required": ["archive.write", "archive.export", "archive.index_export"],
+      "audit_storage": "local_only_hash_chain_and_replay",
+      "rollback": "revert_local_gateway_and_preserve_audit"
+    },
+    "physical_ai": {
+      "phase": "management_agents_only",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["project_management_metadata"],
+      "allowed_data": ["project_management_tasks", "documentation_metadata", "task_routes", "policy_checks"],
+      "blocked_data": ["live_camera_feeds", "sensor_data", "site_maps", "security_procedures", "restricted_area_logic"],
+      "tool_allowlist": ["project.task.read", "documentation.draft", "task.route", "policy.check"],
+      "tool_denylist": ["camera.*", "sensor.*", "site_map.*", "detection.*", "actuator.*"],
+      "approval_required": ["external_delivery", "new_tool_route"],
+      "audit_storage": "local_only_hash_chain",
+      "rollback": "disable_management_agent_routes"
+    },
+    "drone_security": {
+      "phase": "management_agents_only",
+      "cloud_gateway_allowed": false,
+      "data_classes": ["project_management_metadata"],
+      "allowed_data": ["project_management_tasks", "documentation_metadata", "task_routes", "policy_checks"],
+      "blocked_data": ["drone_detection_data", "live_camera_feeds", "sensor_data", "site_maps", "security_procedures", "restricted_area_logic"],
+      "tool_allowlist": ["project.task.read", "documentation.draft", "task.route", "policy.check"],
+      "tool_denylist": ["drone.telemetry.*", "camera.*", "sensor.*", "detection.*", "actuator.*"],
+      "approval_required": ["external_delivery", "new_tool_route"],
+      "audit_storage": "local_only_hash_chain",
+      "rollback": "disable_management_agent_routes"
+    }
+  }
+}

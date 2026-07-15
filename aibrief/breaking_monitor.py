@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from aibrief.security_gateway import SecurityGateway
 from aibrief.webswarm import (
     annotate_candidates as annotate_webswarm_candidates,
     build_ai_brief_webswarm_plan,
@@ -1743,6 +1744,11 @@ def run_monitor_cycle(
     env = env or os.environ
     classify_func = classify_func or classify_with_gemini
     notify_func = notify_func or send_breaking_notification
+    security_gateway = SecurityGateway(env)
+
+    def guarded_notify(story: dict, call_env: dict[str, str]) -> tuple[bool, str]:
+        return security_gateway.run_delivery(story, notify_func, call_env)
+
     max_candidates = int(env.get("BREAKING_MAX_CANDIDATES_PER_BATCH", str(DEFAULT_MAX_CANDIDATES)))
     min_confidence = float(env.get("BREAKING_MIN_CONFIDENCE", str(DEFAULT_MIN_CONFIDENCE)))
     cadence = int(env.get("BREAKING_CADENCE_MINUTES", str(DEFAULT_CADENCE_MINUTES)))
@@ -1753,7 +1759,7 @@ def run_monitor_cycle(
     if notify_mode == "website":
         prune_irrelevant_x_intel(state, env)
     if notify_mode == "ntfy":
-        retried = retry_pending_notifications(state, env, notify_func, now)
+        retried = retry_pending_notifications(state, env, guarded_notify, now)
     else:
         retried = publish_pending_website_only(state, now)
 
@@ -1764,6 +1770,7 @@ def run_monitor_cycle(
     ]
     news_fallback_collected = 0
     collected = annotate_collected_candidates(raw_candidates, env) if raw_candidates is not None else collect_candidates(env)
+    collected = security_gateway.filter_public_candidates(collected)
     initial_collected = list(collected)
     initial_source_counts = candidate_source_counts(initial_collected)
     initial_x_relevant = sum(1 for candidate in initial_collected if is_website_intel_candidate(candidate, env))
@@ -1822,6 +1829,7 @@ def run_monitor_cycle(
             "retried": retried,
             "overflow_pending": len(overflow),
             "runner_usage_projection": projected_monthly_runner_usage(cadence, elapsed),
+            "security": security_gateway.summary(),
         }
         save_state(state, state_path, now)
         write_public_status(state, summary, public_status_path)
@@ -1836,7 +1844,7 @@ def run_monitor_cycle(
             "last_seen_at": isoformat(now),
         }
 
-    classifications, classification_reason = classify_func(batch, env)
+    classifications, classification_reason = security_gateway.run_classification(batch, classify_func, env)
     alerted_now = []
     pending_now = []
     malformed_or_rejected = 0
@@ -1884,7 +1892,7 @@ def run_monitor_cycle(
             "confidence": classification.get("confidence", 0),
         }
         if notify_mode == "ntfy":
-            success, notification_reason = notify_func(story, env)
+            success, notification_reason = guarded_notify(story, env)
         else:
             success, notification_reason = True, "website-only"
         if success:
@@ -1928,6 +1936,7 @@ def run_monitor_cycle(
         "retried": retried,
         "overflow_pending": len(overflow),
         "runner_usage_projection": projected_monthly_runner_usage(cadence, elapsed),
+        "security": security_gateway.summary(),
     }
     save_state(state, state_path, now)
     write_public_status(state, summary, public_status_path)
