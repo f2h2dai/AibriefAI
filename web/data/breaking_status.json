@@ -1,7 +1,26 @@
 {
-  "alerted_count": 135,
+  "alerted_count": 136,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "id": "story-c65e81e9fc355e160496d120",
+      "reason": "How the U.S. Military Learned to Embrace AI Warfare - Lawfare Lawfare \"military AI\" \"Project Maven\"",
+      "score": 45,
+      "shown_at": "2026-07-17T18:07:08Z",
+      "source": "google-news",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeHpSNWtBSjlOTnZMMjVwZ0djVlVic1Q5NXJEeGljc3U0U2FBcVdac3NTb0JST21xWTJNa1J0azMwZ2NEeVo3T2w4Z3dISVppMGhMQWdBUFVaVFVtU1JCV2xBLTdXYXFuckVNRlVuVDgyNzVPY1daTm45R3dETEpqMjhtYXpRWkFDSTlENVUyUndKQQ",
+      "status": "x-intel",
+      "title": "How the U.S. Military Learned to Embrace AI Warfare - Lawfare",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "military AI",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "id": "story-50078ef5ed729e46f03b40fb",
@@ -191,33 +210,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "id": "story-2bd8e0cc94df90247e046f59",
-      "reason": "We''re launching three new initiatives to support the efforts he outlines.' author: id: '1353836358901501952' name: Anthropic screenName: AnthropicAI profileImageUrl: https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_normal.jpg verified: true metrics: likes: 5498 ",
-      "score": 19,
-      "shown_at": "2026-07-16T14:33:22Z",
-      "source": "x",
-      "source_url": "https://x.com",
-      "status": "x-intel",
-      "title": "@AnthropicAI: We''re launching three new initiatives to support the efforts he outlines.' author: id: '1",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-17T14:05:14Z",
+    "alerted_at": "2026-07-17T18:07:08Z",
     "confidence": 0,
-    "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ",
-    "title": "China\u2019s AI Satellite Maps Are Allegedly Helping Iran Target U.S. Bases, Triggering Urgent Pentagon Force Protection Fears - Defence Security Asia"
+    "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeHpSNWtBSjlOTnZMMjVwZ0djVlVic1Q5NXJEeGljc3U0U2FBcVdac3NTb0JST21xWTJNa1J0azMwZ2NEeVo3T2w4Z3dISVppMGhMQWdBUFVaVFVtU1JCV2xBLTdXYXFuckVNRlVuVDgyNzVPY1daTm45R3dETEpqMjhtYXpRWkFDSTlENVUyUndKQQ",
+    "title": "How the U.S. Military Learned to Embrace AI Warfare - Lawfare"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 60,
     "collected": 60,
     "initial_collected": 30,
@@ -232,8 +234,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.801,
-      "projected_minutes_per_30d": 182.44,
+      "measured_seconds": 3.974,
+      "projected_minutes_per_30d": 190.76,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 30,
@@ -259,11 +261,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-17T16:48:29Z",
+  "updated_at": "2026-07-17T18:07:08Z",
   "version": 1
 }
