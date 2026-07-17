@@ -130,5 +130,16 @@
     "inputs": ["ranked signals", "breaking status"],
     "outputs": ["web/index.html", "web/brief.html"],
     "context": "Use for visible website changes, public labels, filters, layout, and generated HTML safety."
+  },
+  {
+    "id": "agent_operations_dashboard",
+    "name": "Agent Operations Dashboard",
+    "type": "orchestrator",
+    "summary": "Coordinate five bounded workers, calculate strict action scores, and expose run metrics without creating a second scheduler.",
+    "keywords": ["orchestrator", "workers", "action score", "act now", "metrics", "threshold", "operations"],
+    "triggers": ["agent operations", "act now dashboard", "threshold scenario", "worker status"],
+    "inputs": ["web/data/signals.json", "pipeline events", "configured production threshold"],
+    "outputs": ["web/data/metrics.json", "web/data/runs.json", "operations dashboard"],
+    "context": "Use for source-backed operations metrics and bounded worker coordination. The browser slider is analysis-only and cannot write production configuration."
   }
 ]
