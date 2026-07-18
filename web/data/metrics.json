@@ -1,29 +1,33 @@
 {
-  "generated_at": "2026-07-18T00:25:30Z",
+  "generated_at": "2026-07-18T00:34:53Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 11,
+  "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.0,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-18T00:25:30Z",
+  "latest_successful_run": "2026-07-18T00:34:53Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "fu351/Doberman-Core",
-    "action_score": 79.5,
-    "url": "https://github.com/fu351/Doberman-Core"
+    "id": "twitter-033",
+    "title": "@: And the third is a breakthrough deep research. https://t.co/4y5W09zsbU' author: screenName",
+    "action_score": 78.75,
+    "url": "https://x.com/sama/status/1945900345378697650"
   },
   "source_contribution": {
-    "github": 8,
-    "hackernews": 2,
-    "twitter": 1,
-    "arxiv": 1
+    "twitter": 4,
+    "github": 7,
+    "hackernews": 1
   },
-  "failed_sources": [],
-  "runtime_seconds": 67.659,
+  "failed_sources": [
+    {
+      "source": "GroqRouter",
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1133"
+    }
+  ],
+  "runtime_seconds": 119.126,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -58,7 +62,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 1,
+    "public_x_signals": 4,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -83,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-18T00:25:30Z",
+    "planned_at": "2026-07-18T00:34:53Z",
     "production_threshold": 70.0
   }
 }
