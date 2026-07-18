@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-07-18T00:34:53Z",
+  "generated_at": "2026-07-18T12:44:05Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-18T00:34:53Z",
+  "latest_successful_run": "2026-07-18T12:44:05Z",
   "highest_ranked_signal": {
-    "id": "twitter-033",
+    "id": "twitter-034",
     "title": "@: And the third is a breakthrough deep research. https://t.co/4y5W09zsbU' author: screenName",
     "action_score": 78.75,
     "url": "https://x.com/sama/status/1945900345378697650"
   },
   "source_contribution": {
     "twitter": 4,
-    "github": 7,
-    "hackernews": 1
+    "github": 8
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1133"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1142"
     }
   ],
-  "runtime_seconds": 119.126,
+  "runtime_seconds": 131.837,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-18T00:34:53Z",
+    "planned_at": "2026-07-18T12:44:05Z",
     "production_threshold": 70.0
   }
 }
