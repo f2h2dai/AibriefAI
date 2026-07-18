@@ -54,14 +54,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v5
 
       - name: Agent limit preflight
         shell: bash
         run: python3 scripts/check_agent_limits.py --agent "$AGENT_LIMIT_ID" --all-workflows
 
       - name: Setup Node for Birdclaw
-        uses: actions/setup-node@v6.4.0
+        uses: actions/setup-node@v6
         with:
           node-version: "26.x"
 
