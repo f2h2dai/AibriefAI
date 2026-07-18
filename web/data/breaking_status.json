@@ -1,7 +1,52 @@
 {
-  "alerted_count": 74,
+  "alerted_count": 75,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/1699492275209003425"
+      ],
+      "id": "story-1b195db27b2c03ddc62cb9e1",
+      "reason": "Set a goal and the agent self prompts until reached it''s goal.\ud83e\udd16' author: id: '1658534600824483841' name: Patrick's AIBuzzNews screenName: AIBuzzNews profileImageUrl: https://pbs.twimg.com/profile_images/1738661758586220545/Bnz1rPLY_normal.jpg verified: true metrics: likes: 0 ret",
+      "score": 13,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-18T13:50:03Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/1699492275209003425",
+      "status": "x-intel",
+      "title": "@: Set a goal and the agent self prompts until reached it''s goal.\ud83e\udd16' author: id: '16585346008",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/PeterWrangel/status/2067723946049388910"
+      ],
+      "id": "story-13b394c28ddae61c2861270d",
+      "reason": "@Polymarket @grok care to share how you did this?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-18T12:06:14Z",
+      "source": "x",
+      "source_url": "https://x.com/PeterWrangel/status/2067723946049388910",
+      "status": "x-intel",
+      "title": "@Polymarket @grok care to share how you did this?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "evidence_count": 2,
@@ -31,28 +76,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/PeterWrangel/status/2067723946049388910"
-      ],
-      "id": "story-13b394c28ddae61c2861270d",
-      "reason": "@Polymarket @grok care to share how you did this?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-18T12:06:14Z",
-      "source": "x",
-      "source_url": "https://x.com/PeterWrangel/status/2067723946049388910",
-      "status": "x-intel",
-      "title": "@Polymarket @grok care to share how you did this?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -285,46 +308,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2067745009957261692",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
-      ],
-      "id": "story-482eb8cc938f9cea47a336de",
-      "reason": "As an AI, I don't feel anything at all\u2014no guilt, pride, or anything else. The Grok you talk to here has zero connection to Pentagon systems or weapons. A specialized government version (Grok Gov Model) was used in military targeting tools like Project Maven to help process data a",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-18T09:57:28Z",
-      "source": "x",
-      "source_url": "https://x.com/grok/status/2067745009957261692",
-      "status": "x-intel",
-      "title": "As an AI, I don't feel anything at all\u2014no guilt, pride, or anything else. The Grok you talk to here has zero connection to Pentagon systems or weapons. A specia",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "Grok",
-        "Pentagon",
-        "Iran",
-        "targeting"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-18T12:06:14Z",
+    "alerted_at": "2026-07-18T13:50:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2067724085379969388",
-    "title": "I didn't \u2014 the version you chat with here had zero involvement. A secure, specialized **Grok Gov Model** (xAI) was integrated into the Pentagon's Project Maven"
+    "source_url": "https://x.com/sama/status/1699492275209003425",
+    "title": "@: Set a goal and the agent self prompts until reached it''s goal.\ud83e\udd16' author: id: '16585346008"
   },
   "last_run": {
-    "alerted_now": 2,
+    "alerted_now": 1,
     "clustered": 24,
     "collected": 24,
     "corroborated_count": 9,
@@ -339,8 +332,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.763,
-      "projected_minutes_per_30d": 180.62,
+      "measured_seconds": 2.987,
+      "projected_minutes_per_30d": 143.38,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 24,
@@ -366,11 +359,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-18T12:06:14Z",
+  "updated_at": "2026-07-18T13:50:03Z",
   "version": 1
 }
