@@ -1289,6 +1289,11 @@ def is_x_intel_candidate(candidate: dict, env: dict[str, str]) -> bool:
 def is_news_fallback_candidate(candidate: dict, env: dict[str, str]) -> bool:
     if not truthy(env.get("BREAKING_ALLOW_NEWS_FALLBACK"), True):
         return False
+    if env.get("BREAKING_SOURCE_FOCUS", "").strip().lower() in {"x", "twitter"} and not truthy(
+        env.get("BREAKING_PUBLISH_NEWS_FALLBACK"),
+        False,
+    ):
+        return False
     source = str(candidate.get("source", "")).lower()
     is_news_source = source in {"news", "google-news", "public-news", "rss"}
     min_relevance = max(1, safe_int(env.get("BREAKING_MIN_X_RELEVANCE"), DEFAULT_MIN_X_RELEVANCE))
@@ -1780,7 +1785,7 @@ def x_search_queries(env: dict[str, str]) -> list[str]:
 
 def x_search_commands(query: str) -> list[list[str]]:
     return [
-        ["twitter", "search", query],
+        ["twitter", "search", query, "--json", "--max", "20", "--full-text"],
         ["opencli", "twitter", "search", query],
         ["bird", "search", query],
     ]
@@ -1891,6 +1896,17 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
             except (FileNotFoundError, subprocess.TimeoutExpired):
                 continue
             if completed.returncode != 0:
+                print(
+                    json.dumps(
+                        {
+                            "level": "warning",
+                            "collector": command[0],
+                            "returncode": completed.returncode,
+                            "error": normalize_text(completed.stderr)[:240],
+                        },
+                        ensure_ascii=False,
+                    )
+                )
                 continue
             handle_matches = re.findall(r"from:([A-Za-z0-9_]+)", query)
             handle = handle_matches[0] if len(handle_matches) == 1 else ""
@@ -1898,6 +1914,7 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
             if parsed:
                 collected.extend(parsed)
                 break
+            print(json.dumps({"level": "warning", "collector": command[0], "error": "unparseable output"}))
         if len(collected) >= limit:
             break
     return collected[:limit]
@@ -2085,7 +2102,12 @@ def run_monitor_cycle(
             if is_website_intel_candidate(candidate, env)
             or (source_focus not in {"x", "twitter"} and survives_stage1(candidate))
         ]
-        if source_focus in {"x", "twitter"} and not survivors and raw_candidates is None:
+        if (
+            source_focus in {"x", "twitter"}
+            and not survivors
+            and raw_candidates is None
+            and truthy(env.get("BREAKING_PUBLISH_NEWS_FALLBACK"), False)
+        ):
             fallback = annotate_collected_candidates(collect_public_ai_intel_news(env, limit=max_candidates), env)
             if fallback:
                 news_fallback_collected = len(fallback)
