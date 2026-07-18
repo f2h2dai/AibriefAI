@@ -652,7 +652,7 @@ jobs:
 
           def x_search_commands(query):
               return [
-                  ["twitter", "search", query],
+                  ["twitter", "search", query, "--json", "--max", "20", "--full-text"],
                   ["opencli", "twitter", "search", query],
                   ["bird", "search", query],
               ]

@@ -27,6 +27,8 @@ from aibrief.breaking_monitor import (
     x_cli_env,
     x_influencer_handles,
     normalize_x_record,
+    parse_x_cli_output,
+    x_search_commands,
     x_search_queries,
 )
 
@@ -246,6 +248,34 @@ class BreakingMonitorTests(unittest.TestCase):
             canonical_x_post_url("https://twitter.com/DefenseAI/status/260620245123456789?s=20#thread"),
             "https://x.com/DefenseAI/status/260620245123456789",
         )
+
+    def test_twitter_cli_search_forces_structured_json_output(self):
+        command = x_search_commands('"Project Maven"')[0]
+
+        self.assertEqual(command[:3], ["twitter", "search", '"Project Maven"'])
+        self.assertIn("--json", command)
+        self.assertIn("--max", command)
+        self.assertIn("--full-text", command)
+
+    def test_twitter_cli_json_envelope_preserves_original_post(self):
+        records = parse_x_cli_output(
+            json.dumps(
+                {
+                    "ok": True,
+                    "schema_version": "1",
+                    "data": [
+                        {
+                            "id": "260620245123456789",
+                            "text": "Pentagon Project Maven AI targeting update",
+                            "author": {"username": "DeptofDefense"},
+                        }
+                    ],
+                }
+            )
+        )
+
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["url"], "https://x.com/DeptofDefense/status/260620245123456789")
 
     def test_default_x_intel_query_targets_military_ai_claims(self):
         self.assertIn("Grok AI", DEFAULT_X_INTEL_QUERY)
@@ -670,7 +700,7 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["status"], "x-intel")
         self.assertEqual(len(status["feed"]), 1)
 
-    def test_x_intel_accepts_public_news_fallback(self):
+    def test_x_intel_does_not_publish_news_as_x_fallback(self):
         with tempfile.TemporaryDirectory() as tmp:
             status_path = Path(tmp) / "breaking_status.json"
             summary = run_monitor_cycle(
@@ -693,10 +723,9 @@ class BreakingMonitorTests(unittest.TestCase):
             )
             status = json.loads(status_path.read_text(encoding="utf-8"))
 
-        self.assertEqual(summary["stage1_survivors"], 1)
-        self.assertEqual(summary["x_intel_published"], 1)
-        self.assertEqual(status["status"], "x-intel")
-        self.assertEqual(len(status["feed"]), 1)
+        self.assertEqual(summary["stage1_survivors"], 0)
+        self.assertEqual(summary["x_intel_published"], 0)
+        self.assertEqual(status["feed"], [])
 
     def test_x_intel_can_disable_public_news_fallback(self):
         with tempfile.TemporaryDirectory() as tmp:
