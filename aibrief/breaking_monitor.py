@@ -55,6 +55,42 @@ DEFAULT_AI_INTEL_NEWS_QUERIES = [
     '"military AI" "Project Maven"',
     '"geospatial intelligence" AI "Middle East"',
 ]
+DEFAULT_X_QUERY_FAMILIES = [
+    '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "Pentagon AI" OR "DoD AI"',
+    '"AI targeting" OR "algorithmic targeting" OR "autonomous weapons" OR "military AI"',
+    '"MizarVision" OR "AI-tagged satellite" OR "geospatial intelligence" OR "military assets"',
+    '"Operation Epic Fury" OR "Grok missiles" OR "2,000 targets" OR "96 hours"',
+    '"الذكاء الاصطناعي" عسكري OR "غروك" البنتاغون OR "ذكاء اصطناعي" استهداف OR "طائرات مسيرة"',
+]
+DEFAULT_X_ACCOUNT_QUERY = (
+    '"AI" OR "Grok" OR "Project Maven" OR "autonomous" OR "targeting" '
+    'OR "geospatial" OR "satellite" OR "الذكاء الاصطناعي" OR "غروك"'
+)
+DEFAULT_X_PRIORITY_ACCOUNTS = [
+    "DeptofDefense",
+    "DoD_CDAO",
+    "CENTCOM",
+    "DARPA",
+    "DIU_x",
+    "NATO",
+    "NATO_ACT",
+    "C4ISRNET",
+    "DefenseNews",
+    "BreakingDefense",
+    "TheWarZoneWire",
+    "bellingcat",
+    "IISS_org",
+    "RUSI_org",
+    "CSIS",
+    "Maxar",
+    "BlackSky_Inc",
+    "planet",
+    "PalantirTech",
+    "anduriltech",
+    "shieldaitech",
+    "xai",
+    "Grok",
+]
 DEFAULT_X_INFLUENCERS = [
     "karpathy",
     "sama",
@@ -156,6 +192,45 @@ DEFAULT_X_INFLUENCERS = [
     "tim_dettmers",
     "kchonyc",
     "chamath",
+]
+
+SENSITIVE_MILITARY_CLAIM_MARKERS = [
+    "targeting",
+    "target selection",
+    "munition",
+    "missile",
+    "airstrike",
+    "strike",
+    "military operation",
+    "military deployment",
+    "military assets",
+    "weapon",
+    "warship",
+    "stealth fighter",
+    "air base",
+    "project maven",
+    "operation epic fury",
+    "mizarvision",
+    "casualties",
+    "killed",
+    "استهداف",
+    "صاروخ",
+    "صواريخ",
+    "عملية عسكرية",
+    "أهداف عسكرية",
+    "قاعده جوية",
+    "قاعدة جوية",
+]
+
+CORROBORATION_STRONG_TERMS = [
+    "grok gov model",
+    "project maven",
+    "operation epic fury",
+    "mizarvision",
+    "prince sultan air base",
+    "ai-tagged satellite",
+    "geospatial intelligence",
+    "grok missiles",
 ]
 
 AI_WAR_EXACT_PATTERNS = [
@@ -551,6 +626,76 @@ def canonicalize_url(url: str) -> str:
     return urllib.parse.urlunparse((parsed.scheme.lower() or "https", host, path, "", "", ""))
 
 
+def x_record_handle(record: dict, fallback: str = "") -> str:
+    for key in (
+        "username",
+        "userName",
+        "screen_name",
+        "screenName",
+        "handle",
+        "author_username",
+        "author_screen_name",
+    ):
+        value = record.get(key)
+        if isinstance(value, str) and value.strip():
+            return re.sub(r"[^A-Za-z0-9_]", "", value.strip().lstrip("@"))
+    for key in ("author", "user", "account", "profile"):
+        value = record.get(key)
+        if isinstance(value, dict):
+            nested = x_record_handle(value)
+            if nested:
+                return nested
+    legacy = record.get("legacy")
+    if isinstance(legacy, dict):
+        nested = x_record_handle(legacy)
+        if nested:
+            return nested
+    return re.sub(r"[^A-Za-z0-9_]", "", fallback.strip().lstrip("@"))
+
+
+def x_record_post_id(record: dict) -> str:
+    for key in ("tweet_id", "id_str", "id", "rest_id", "status_id", "post_id"):
+        value = record.get(key)
+        if value is None:
+            continue
+        text = str(value).strip()
+        if re.fullmatch(r"\d{8,}", text):
+            return text
+    legacy = record.get("legacy")
+    if isinstance(legacy, dict):
+        return x_record_post_id(legacy)
+    return ""
+
+
+def canonical_x_post_url(record_or_url, fallback_handle: str = "") -> str:
+    record = record_or_url if isinstance(record_or_url, dict) else {}
+    url_values = []
+    if isinstance(record_or_url, str):
+        url_values.append(record_or_url)
+    else:
+        for key in ("url", "permalink", "link", "tweet_url", "post_url", "expanded_url"):
+            value = record.get(key)
+            if isinstance(value, str):
+                url_values.append(value)
+    handle = x_record_handle(record, fallback_handle)
+    post_id = x_record_post_id(record)
+    for value in url_values:
+        decoded = urllib.parse.unquote(value.strip())
+        match = re.search(
+            r"(?:https?://)?(?:www\.)?(?:x\.com|twitter\.com)/([A-Za-z0-9_]+)/status(?:es)?/(\d+)",
+            decoded,
+            re.IGNORECASE,
+        )
+        if match:
+            return f"https://x.com/{match.group(1)}/status/{match.group(2)}"
+        id_match = re.search(r"/(?:i/web/)?status(?:es)?/(\d+)", decoded, re.IGNORECASE)
+        if id_match:
+            post_id = post_id or id_match.group(1)
+    if handle and post_id:
+        return f"https://x.com/{handle}/status/{post_id}"
+    return ""
+
+
 def source_host(url: str) -> str:
     return urllib.parse.urlparse(canonicalize_url(url)).netloc
 
@@ -558,6 +703,20 @@ def source_host(url: str) -> str:
 def stable_id(*parts: str) -> str:
     raw = "|".join(normalize_text(part).lower() for part in parts if part)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:20]
+
+
+def unique_strings(*groups) -> list[str]:
+    values = []
+    seen = set()
+    for group in groups:
+        if isinstance(group, str):
+            group = [group]
+        for value in group or []:
+            text = normalize_text(value)
+            if text and text not in seen:
+                seen.add(text)
+                values.append(text)
+    return values
 
 
 def find_hits(text: str, pattern_map: dict[str, list[str]]) -> list[str]:
@@ -616,13 +775,19 @@ def title_terms(title: str) -> str:
 def candidate_from_raw(raw: dict) -> dict:
     title = normalize_text(raw.get("title", ""))
     content = normalize_text(raw.get("content") or raw.get("summary") or raw.get("description") or "")
-    url = canonicalize_url(raw.get("url", ""))
     source = normalize_text(raw.get("source", "unknown")).lower() or "unknown"
+    raw_url = raw.get("url", "")
+    url = canonical_x_post_url(raw) if source in {"birdclaw", "twitter", "x", "x/twitter"} else ""
+    url = url or canonicalize_url(raw_url)
     published_at = normalize_text(raw.get("published_at") or raw.get("createdAt") or raw.get("updatedAt") or "")
     text = f"{title} {content}"
     domain_hits = find_hits(text, HIGH_IMPACT_PATTERNS)
     action_hits = find_hits(text, CONSEQUENCE_PATTERNS)
     velocity = int(raw.get("velocity") or raw.get("points") or raw.get("score") or 0)
+
+    source_urls = unique_strings(url, raw.get("source_urls", []), raw.get("evidence_urls", []))
+    supporting_sources = unique_strings(raw.get("supporting_sources", []))
+    evidence_count = max(safe_int(raw.get("evidence_count"), 0), len(source_urls), 1)
 
     return {
         "candidate_id": raw.get("candidate_id") or stable_id(source, url, title),
@@ -632,7 +797,13 @@ def candidate_from_raw(raw: dict) -> dict:
         "url": url,
         "published_at": published_at,
         "velocity": velocity,
-        "source_count": int(raw.get("source_count") or 1),
+        "source_count": max(int(raw.get("source_count") or 1), evidence_count),
+        "source_urls": source_urls,
+        "evidence_urls": source_urls,
+        "supporting_sources": supporting_sources,
+        "evidence_count": evidence_count,
+        "evidence_status": raw.get("evidence_status", "source-only"),
+        "sensitive_military_claim": bool(raw.get("sensitive_military_claim")),
         "authoritative": bool(raw.get("authoritative")) or is_authoritative(url),
         "domain_hits": domain_hits,
         "action_hits": action_hits,
@@ -655,11 +826,34 @@ def story_fingerprint(candidate: dict) -> str:
 
 
 def merge_cluster(existing: dict, candidate: dict) -> dict:
-    urls = sorted(set(existing.get("source_urls", [])) | {candidate.get("url", "")})
-    sources = sorted(set(existing.get("sources", [])) | {candidate.get("source", "unknown")})
-    existing["source_urls"] = [url for url in urls if url]
+    urls = unique_strings(
+        existing.get("source_urls", []),
+        candidate.get("source_urls", []),
+        candidate.get("url", ""),
+    )
+    evidence_urls = unique_strings(existing.get("evidence_urls", []), candidate.get("evidence_urls", []), urls)
+    sources = unique_strings(existing.get("sources", []), candidate.get("sources", []), candidate.get("source", "unknown"))
+    supporting_sources = unique_strings(
+        existing.get("supporting_sources", []),
+        candidate.get("supporting_sources", []),
+    )
+    existing["source_urls"] = urls
+    existing["evidence_urls"] = evidence_urls
     existing["sources"] = sources
-    existing["source_count"] = max(int(existing.get("source_count", 1)), len(sources))
+    existing["supporting_sources"] = supporting_sources
+    existing["evidence_count"] = max(
+        int(existing.get("evidence_count", 1)),
+        int(candidate.get("evidence_count", 1)),
+        len(evidence_urls),
+    )
+    existing["sensitive_military_claim"] = bool(existing.get("sensitive_military_claim")) or bool(
+        candidate.get("sensitive_military_claim")
+    )
+    if existing.get("sensitive_military_claim"):
+        existing["evidence_status"] = "corroborated" if existing["evidence_count"] >= 2 else "single-source"
+    else:
+        existing["evidence_status"] = "source-only"
+    existing["source_count"] = max(int(existing.get("source_count", 1)), len(sources), len(evidence_urls))
     existing["velocity"] = max(int(existing.get("velocity", 0)), int(candidate.get("velocity", 0)))
     existing["authoritative"] = bool(existing.get("authoritative")) or bool(candidate.get("authoritative"))
     existing["domain_hits"] = sorted(set(existing.get("domain_hits", [])) | set(candidate.get("domain_hits", [])))
@@ -679,8 +873,9 @@ def cluster_story_candidates(raw_candidates: list[dict]) -> list[dict]:
         candidate = candidate_from_raw(raw)
         fingerprint = story_fingerprint(candidate)
         candidate["story_fingerprint"] = fingerprint
-        candidate["source_urls"] = [candidate["url"]] if candidate.get("url") else []
-        candidate["sources"] = [candidate.get("source", "unknown")]
+        candidate["source_urls"] = unique_strings(candidate.get("url", ""), candidate.get("source_urls", []))
+        candidate["evidence_urls"] = unique_strings(candidate.get("evidence_urls", []), candidate["source_urls"])
+        candidate["sources"] = unique_strings(candidate.get("source", "unknown"), candidate.get("supporting_sources", []))
         if fingerprint in clustered:
             clustered[fingerprint] = merge_cluster(clustered[fingerprint], candidate)
         else:
@@ -779,11 +974,15 @@ def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
                 "title": entry.get("title", ""),
                 "shown_at": entry.get("alerted_at", ""),
                 "source_url": source_urls[0] if source_urls else "",
+                "evidence_urls": entry.get("evidence_urls", source_urls),
                 "source": public_source_name(entry.get("source", "")),
                 "score": entry.get("score", 0),
                 "confidence": entry.get("confidence", 0),
                 "status": entry.get("notification_status", "x-intel"),
                 "reason": entry.get("reason", ""),
+                "evidence_count": entry.get("evidence_count", max(1, len(source_urls))),
+                "evidence_status": entry.get("evidence_status", "source-only"),
+                "sensitive_military_claim": entry.get("sensitive_military_claim", False),
                 "webswarm_node": entry.get("webswarm_node", ""),
                 "webswarm_mode": entry.get("webswarm_mode", ""),
                 "webswarm_evidence_terms": entry.get("webswarm_evidence_terms", []),
@@ -803,6 +1002,7 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 "title": candidate.get("title", entry.get("title", "")),
                 "shown_at": entry.get("last_seen_at", ""),
                 "source_url": source_urls[0] if source_urls else candidate.get("url", ""),
+                "evidence_urls": candidate.get("evidence_urls", source_urls),
                 "source": public_source_name(candidate.get("source", entry.get("source", ""))),
                 "score": candidate.get("stage1_score", entry.get("score", 0)),
                 "confidence": candidate.get("confidence", 0),
@@ -812,6 +1012,9 @@ def public_pending_entries(state: dict, limit: int = 6) -> list[dict]:
                 "reason": entry.get("reason")
                 or candidate.get("content")
                 or "Public X signal about AI use in military, defense, targeting, or intelligence operations.",
+                "evidence_count": candidate.get("evidence_count", max(1, len(source_urls))),
+                "evidence_status": candidate.get("evidence_status", "source-only"),
+                "sensitive_military_claim": candidate.get("sensitive_military_claim", False),
                 "webswarm_node": candidate.get("webswarm_node", entry.get("webswarm_node", "")),
                 "webswarm_mode": candidate.get("webswarm_mode", entry.get("webswarm_mode", "")),
                 "webswarm_evidence_terms": candidate.get(
@@ -942,6 +1145,11 @@ def public_candidate(candidate: dict) -> dict:
         "published_at": candidate.get("published_at"),
         "velocity": candidate.get("velocity", 0),
         "source_count": candidate.get("source_count", 1),
+        "evidence_urls": candidate.get("evidence_urls", candidate.get("source_urls", [])),
+        "evidence_count": candidate.get("evidence_count", 1),
+        "evidence_status": candidate.get("evidence_status", "source-only"),
+        "supporting_sources": candidate.get("supporting_sources", []),
+        "sensitive_military_claim": candidate.get("sensitive_military_claim", False),
         "authoritative": candidate.get("authoritative", False),
         "confidence": candidate.get("confidence"),
         "alert": candidate.get("alert"),
@@ -981,12 +1189,101 @@ def x_intel_relevance_score(candidate: dict) -> int:
     return score
 
 
+def is_sensitive_military_claim(candidate: dict) -> bool:
+    text = normalize_text(
+        " ".join(str(candidate.get(key, "")) for key in ("title", "content", "reason", "alert"))
+    ).lower()
+    return ai_war_relevant(candidate) and any(marker in text for marker in SENSITIVE_MILITARY_CLAIM_MARKERS)
+
+
+def corroboration_terms(candidate: dict) -> set[str]:
+    text = normalize_text(f"{candidate.get('title', '')} {candidate.get('content', '')}").lower()
+    generic = STOPWORDS | {
+        "artificial",
+        "intelligence",
+        "military",
+        "defense",
+        "defence",
+        "reported",
+        "report",
+        "source",
+        "sources",
+        "using",
+        "used",
+        "الذكاء",
+        "الاصطناعي",
+        "عسكري",
+        "عسكرية",
+        "مصادر",
+        "تقرير",
+    }
+    return {
+        token
+        for token in re.findall(r"[a-z0-9\u0600-\u06ff]+", text)
+        if len(token) >= 4 and token not in generic
+    }
+
+
+def evidence_supports_candidate(candidate: dict, evidence: dict) -> bool:
+    candidate_text = normalize_text(f"{candidate.get('title', '')} {candidate.get('content', '')}").lower()
+    evidence_text = normalize_text(f"{evidence.get('title', '')} {evidence.get('content', '')}").lower()
+    if any(term in candidate_text and term in evidence_text for term in CORROBORATION_STRONG_TERMS):
+        return True
+    return len(corroboration_terms(candidate) & corroboration_terms(evidence)) >= 3
+
+
+def annotate_secondary_evidence(candidates: list[dict], evidence_candidates: list[dict] | None = None) -> list[dict]:
+    evidence_candidates = evidence_candidates or []
+    annotated = []
+    for original in candidates:
+        candidate = dict(original)
+        source = normalize_text(candidate.get("source", "")).lower()
+        raw_url = candidate.get("url", "")
+        primary_url = (
+            canonical_x_post_url(candidate)
+            if source in {"birdclaw", "twitter", "x", "x/twitter"}
+            else canonicalize_url(raw_url)
+        ) or canonicalize_url(raw_url)
+        if primary_url:
+            candidate["url"] = primary_url
+        evidence_urls = unique_strings(primary_url, candidate.get("source_urls", []), candidate.get("evidence_urls", []))
+        supporting_sources = unique_strings(candidate.get("supporting_sources", []))
+        sensitive = is_sensitive_military_claim(candidate)
+        if sensitive:
+            for evidence in evidence_candidates:
+                evidence_url = canonicalize_url(evidence.get("url", ""))
+                if not evidence_url or source_host(evidence_url) in {"x.com", "twitter.com"}:
+                    continue
+                if evidence_url in evidence_urls or not evidence_supports_candidate(candidate, evidence):
+                    continue
+                evidence_urls.append(evidence_url)
+                supporting_sources = unique_strings(supporting_sources, evidence.get("source", "public-news"))
+                if len(evidence_urls) >= 3:
+                    break
+        candidate["source_urls"] = evidence_urls
+        candidate["evidence_urls"] = evidence_urls
+        candidate["supporting_sources"] = supporting_sources
+        candidate["evidence_count"] = max(1, len(evidence_urls))
+        candidate["sensitive_military_claim"] = sensitive
+        candidate["evidence_status"] = (
+            "corroborated" if sensitive and len(evidence_urls) >= 2
+            else "single-source" if sensitive
+            else "source-only"
+        )
+        candidate["source_count"] = max(safe_int(candidate.get("source_count"), 1), len(evidence_urls))
+        annotated.append(candidate)
+    return annotated
+
+
 def is_x_intel_candidate(candidate: dict, env: dict[str, str]) -> bool:
     source = str(candidate.get("source", "")).lower()
     urls = " ".join(candidate.get("source_urls") or [candidate.get("url", "")]).lower()
     is_x_source = source in {"birdclaw", "twitter", "x", "x/twitter"} or "x.com/" in urls or "twitter.com/" in urls
+    has_original_post = bool(
+        re.search(r"(?:x\.com|twitter\.com)/[a-z0-9_]+/status(?:es)?/[^\s/?#]+", urls, re.IGNORECASE)
+    )
     min_relevance = max(1, safe_int(env.get("BREAKING_MIN_X_RELEVANCE"), DEFAULT_MIN_X_RELEVANCE))
-    return is_x_source and x_intel_relevance_score(candidate) >= min_relevance
+    return is_x_source and has_original_post and x_intel_relevance_score(candidate) >= min_relevance
 
 
 def is_news_fallback_candidate(candidate: dict, env: dict[str, str]) -> bool:
@@ -1200,6 +1497,11 @@ def publish_pending_website_only(state: dict, now: datetime) -> list[dict]:
             "confidence": entry.get("confidence", 0),
             "notification_status": "x-intel",
             "reason": entry.get("reason") or x_intel_reason(candidate),
+            "evidence_urls": candidate.get("evidence_urls", source_urls),
+            "evidence_count": candidate.get("evidence_count", max(1, len(source_urls))),
+            "evidence_status": candidate.get("evidence_status", "source-only"),
+            "supporting_sources": candidate.get("supporting_sources", []),
+            "sensitive_military_claim": candidate.get("sensitive_military_claim", False),
             "webswarm_node": candidate.get("webswarm_node", entry.get("webswarm_node", "")),
             "webswarm_mode": candidate.get("webswarm_mode", entry.get("webswarm_mode", "")),
             "webswarm_evidence_terms": candidate.get(
@@ -1225,6 +1527,11 @@ def publish_candidate_website_only(state: dict, candidate: dict, now: datetime) 
         "confidence": 0,
         "notification_status": "x-intel",
         "reason": x_intel_reason(candidate),
+        "evidence_urls": candidate.get("evidence_urls", candidate.get("source_urls", [])),
+        "evidence_count": candidate.get("evidence_count", max(1, len(candidate.get("source_urls", [])))),
+        "evidence_status": candidate.get("evidence_status", "source-only"),
+        "supporting_sources": candidate.get("supporting_sources", []),
+        "sensitive_military_claim": candidate.get("sensitive_military_claim", False),
         "webswarm_node": candidate.get("webswarm_node", ""),
         "webswarm_mode": candidate.get("webswarm_mode", ""),
         "webswarm_evidence_terms": candidate.get("webswarm_evidence_terms", []),
@@ -1329,44 +1636,15 @@ def birdclaw_record_text(record: dict) -> str:
 
 
 def birdclaw_handle(record: dict) -> str:
-    for key in ("username", "screen_name", "handle", "author_username", "author_screen_name"):
-        value = record.get(key)
-        if isinstance(value, str) and value.strip():
-            return value.strip().lstrip("@")
-    for key in ("author", "user", "profile"):
-        value = record.get(key)
-        if not isinstance(value, dict):
-            continue
-        for nested_key in ("username", "screen_name", "handle"):
-            nested = value.get(nested_key)
-            if isinstance(nested, str) and nested.strip():
-                return nested.strip().lstrip("@")
-    return ""
+    return x_record_handle(record)
 
 
 def birdclaw_tweet_id(record: dict) -> str:
-    for key in ("tweet_id", "id_str", "id", "rest_id", "status_id"):
-        value = record.get(key)
-        if value is None:
-            continue
-        text = str(value).strip()
-        if re.fullmatch(r"\d{8,}", text):
-            return text
-    return ""
+    return x_record_post_id(record)
 
 
 def birdclaw_record_url(record: dict) -> str:
-    for key in ("url", "permalink", "link", "tweet_url"):
-        value = record.get(key)
-        if isinstance(value, str) and value.strip():
-            url = value.strip()
-            if "x.com/" in url or "twitter.com/" in url:
-                return url
-    handle = birdclaw_handle(record)
-    tweet_id = birdclaw_tweet_id(record)
-    if handle and tweet_id:
-        return f"https://x.com/{handle}/status/{tweet_id}"
-    return ""
+    return canonical_x_post_url(record)
 
 
 def is_private_birdclaw_record(record: dict) -> bool:
@@ -1468,22 +1746,36 @@ def x_influencer_handles(env: dict[str, str]) -> list[str]:
     return handles[:max(1, max_handles)]
 
 
-def x_search_queries(env: dict[str, str]) -> list[str]:
-    terms = env.get("BREAKING_X_QUERY", DEFAULT_X_INTEL_QUERY).strip()
-    terms = expand_x_query(terms, env)
-    handles = x_influencer_handles(env)
-    if not handles:
-        return [terms]
-    batch_size = max(1, safe_int(env.get("BREAKING_X_HANDLE_BATCH_SIZE"), 10))
+def batched_x_handle_queries(handles: list[str], terms: str, batch_size: int) -> list[str]:
     queries = []
     for index in range(0, len(handles), batch_size):
         batch = handles[index:index + batch_size]
         if len(batch) == 1:
             queries.append(f"from:{batch[0]} ({terms})")
-            continue
-        handle_filter = " OR ".join(f"from:{handle}" for handle in batch)
-        queries.append(f"({handle_filter}) ({terms})")
+        elif batch:
+            handle_filter = " OR ".join(f"from:{handle}" for handle in batch)
+            queries.append(f"({handle_filter}) ({terms})")
     return queries
+
+
+def x_search_queries(env: dict[str, str]) -> list[str]:
+    custom_terms = env.get("BREAKING_X_QUERY", "").strip()
+    handles = x_influencer_handles(env)
+    batch_size = max(1, safe_int(env.get("BREAKING_X_HANDLE_BATCH_SIZE"), 10))
+    if custom_terms:
+        terms = expand_x_query(custom_terms, env)
+        return batched_x_handle_queries(handles, terms, batch_size) if handles else [terms]
+
+    priority_handles = unique_strings(DEFAULT_X_PRIORITY_ACCOUNTS)
+    remaining_handles = [
+        handle for handle in handles
+        if handle.lower() not in {priority.lower() for priority in priority_handles}
+    ]
+    queries = list(DEFAULT_X_QUERY_FAMILIES)
+    queries.extend(batched_x_handle_queries(priority_handles, DEFAULT_X_ACCOUNT_QUERY, batch_size))
+    queries.extend(batched_x_handle_queries(remaining_handles, DEFAULT_X_ACCOUNT_QUERY, batch_size))
+    max_queries = max(1, safe_int(env.get("BREAKING_MAX_X_QUERIES"), 12))
+    return queries[:max_queries]
 
 
 def x_search_commands(query: str) -> list[list[str]]:
@@ -1505,15 +1797,9 @@ def normalize_x_record(record: dict, handle: str = "") -> dict | None:
     )
     if not text:
         return None
-    url = (
-        record.get("url")
-        or record.get("permalink")
-        or record.get("link")
-        or record.get("tweet_url")
-        or ""
-    )
-    if not url and handle and record.get("id"):
-        url = f"https://x.com/{handle}/status/{record.get('id')}"
+    url = canonical_x_post_url(record, handle)
+    if not url:
+        return None
     return {
         "source": "twitter",
         "title": text[:160],
@@ -1555,12 +1841,15 @@ def parse_x_cli_output(stdout: str, handle: str = "") -> list[dict]:
         if not text:
             continue
         url_match = re.search(r"https?://(?:x\.com|twitter\.com)/[^\s)]+", text)
+        url = canonical_x_post_url(url_match.group(0), handle) if url_match else ""
+        if not url:
+            continue
         records.append(
             {
                 "source": "twitter",
                 "title": text[:160],
                 "content": text,
-                "url": url_match.group(0) if url_match else "",
+                "url": url,
                 "published_at": "",
                 "velocity": 40,
             }
@@ -1622,8 +1911,13 @@ def ai_intel_news_queries(env: dict[str, str]) -> list[str]:
     return expand_news_queries(queries or list(DEFAULT_AI_INTEL_NEWS_QUERIES), env)
 
 
-def collect_public_ai_intel_news(env: dict[str, str], limit: int = 20) -> list[dict]:
-    if not truthy(env.get("BREAKING_ALLOW_NEWS_FALLBACK"), True):
+def collect_public_ai_intel_news(
+    env: dict[str, str],
+    limit: int = 20,
+    *,
+    secondary_evidence: bool = False,
+) -> list[dict]:
+    if not secondary_evidence and not truthy(env.get("BREAKING_ALLOW_NEWS_FALLBACK"), True):
         return []
     collected = []
     seen = set()
@@ -1655,7 +1949,7 @@ def collect_public_ai_intel_news(env: dict[str, str], limit: int = 20) -> list[d
             if key in seen:
                 continue
             seen.add(key)
-            content = normalize_text(" ".join(part for part in (title, source_name, query) if part))
+            content = normalize_text(" ".join(part for part in (title, source_name) if part))
             collected.append(
                 {
                     "source": "google-news",
@@ -1690,6 +1984,16 @@ def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
         candidates.extend(collect_x_cli(env))
         candidates.extend(collect_local_signals(source_focus=source_focus))
         if candidates:
+            evidence_candidates = []
+            if truthy(env.get("BREAKING_ENABLE_SECONDARY_EVIDENCE"), True) and any(
+                is_sensitive_military_claim(candidate) for candidate in candidates
+            ):
+                evidence_candidates = collect_public_ai_intel_news(
+                    env,
+                    limit=max(10, safe_int(env.get("BREAKING_SECONDARY_EVIDENCE_LIMIT"), 20)),
+                    secondary_evidence=True,
+                )
+            candidates = annotate_secondary_evidence(candidates, evidence_candidates)
             return annotate_collected_candidates(candidates, env)
     for collector in (collect_hackernews, collect_arxiv):
         try:
@@ -1763,10 +2067,15 @@ def run_monitor_cycle(
         if isinstance(entry.get("candidate"), dict)
     ]
     news_fallback_collected = 0
-    collected = annotate_collected_candidates(raw_candidates, env) if raw_candidates is not None else collect_candidates(env)
+    collected = (
+        annotate_collected_candidates(annotate_secondary_evidence(raw_candidates), env)
+        if raw_candidates is not None
+        else collect_candidates(env)
+    )
     initial_collected = list(collected)
     initial_source_counts = candidate_source_counts(initial_collected)
     initial_x_relevant = sum(1 for candidate in initial_collected if is_website_intel_candidate(candidate, env))
+    corroborated_count = sum(1 for candidate in initial_collected if candidate.get("evidence_status") == "corroborated")
     clustered = cluster_story_candidates(pending_reconsider + collected)
     if notify_mode == "website":
         source_focus = env.get("BREAKING_SOURCE_FOCUS", "").strip().lower()
@@ -1811,6 +2120,7 @@ def run_monitor_cycle(
             "initial_collected": len(initial_collected),
             "initial_source_counts": initial_source_counts,
             "initial_x_relevant": initial_x_relevant,
+            "corroborated_count": corroborated_count,
             "clustered": len(clustered),
             "stage1_survivors": len(survivors),
             "x_intel_published": len(alerted_now),
