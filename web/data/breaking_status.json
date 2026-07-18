@@ -1,7 +1,30 @@
 {
-  "alerted_count": 106,
+  "alerted_count": 107,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/ssoziweiz/status/2067722715541147759"
+      ],
+      "id": "story-9c2e1c456218979aad3c2be5",
+      "reason": "@grok @Polymarket So u are denying??? Poly market has just informed us They didn\u2019t say public grok or private grok They said @grok https://t.co/Yb9P6fHIZU",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-18T22:26:39Z",
+      "source": "x",
+      "source_url": "https://x.com/ssoziweiz/status/2067722715541147759",
+      "status": "x-intel",
+      "title": "@grok @Polymarket So u are denying??? Poly market has just informed us They didn\u2019t say public grok or private grok They said @grok https://t.co/Yb9P6fHIZU",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "evidence_count": 3,
@@ -288,42 +311,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/sama/status/2029622732594499630"
-      ],
-      "id": "story-854bf70edbe76d632da2a1e0",
-      "reason": "https://t.co/ubjMduTFjS' author: id: '2781760593' name: Flavio Adamo screenName: flavioAd profileImageUrl: https://pbs.twimg.com/profile_images/1888748760680873984/3IkCAhjw_normal.jpg verified: true metrics: likes: 10 retweets: 0 replies: 0 quotes: 0 views: 748 bookmarks: 0 creat",
-      "score": 50,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-18T19:32:09Z",
-      "source": "x",
-      "source_url": "https://x.com/sama/status/2029622732594499630",
-      "status": "x-intel",
-      "title": "@: https://t.co/ubjMduTFjS' author: id: '2781760593' name: Flavio Adamo screenName: flavioAd",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-18T20:29:14Z",
+    "alerted_at": "2026-07-18T22:26:39Z",
     "confidence": 0,
-    "source_url": "https://x.com/Conflict_Radar/status/2067198511670510063",
-    "title": "NEW: The Pentagon has officially admitted for the first time that Elon Musk\u2019s Grok AI was used to launch over 2,000 munitions at 2,000 distinct targets inside I"
+    "source_url": "https://x.com/ssoziweiz/status/2067722715541147759",
+    "title": "@grok @Polymarket So u are denying??? Poly market has just informed us They didn\u2019t say public grok or private grok They said @grok https://t.co/Yb9P6fHIZU"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 24,
     "collected": 24,
-    "corroborated_count": 11,
+    "corroborated_count": 9,
     "initial_collected": 24,
     "initial_source_counts": {
       "x": 24
@@ -335,8 +335,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.699,
-      "projected_minutes_per_30d": 177.57,
+      "measured_seconds": 3.086,
+      "projected_minutes_per_30d": 148.15,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 24,
@@ -362,11 +362,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-18T21:28:31Z",
+  "updated_at": "2026-07-18T22:26:39Z",
   "version": 1
 }
