@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v5
 
       - name: Agent limit preflight
         shell: bash
@@ -113,6 +113,7 @@ jobs:
           from pathlib import Path
 
           from aibrief.agents.orchestrator import AgentOperationsOrchestrator, write_operations_artifacts
+          from aibrief.breaking_monitor import DEFAULT_X_PRIORITY_ACCOUNTS, canonical_x_post_url
 
           NOW_DT = datetime.now(timezone.utc)
           NOW = NOW_DT.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -390,7 +391,11 @@ jobs:
                   )
                   return False, f"ntfy {type(e).__name__}"
 
-          X_QUERY = "AI OR agents OR LLM OR GPT OR reasoning"
+          X_QUERY = (
+              'AI OR agents OR LLM OR GPT OR reasoning OR "Project Maven" OR "Grok Gov" '
+              'OR "AI targeting" OR "military AI" OR "geospatial intelligence" '
+              'OR "الذكاء الاصطناعي" OR "غروك" OR "استهداف"'
+          )
 
           raw_cookie = os.getenv(
               "TWITTER_COOKIE", ""
@@ -492,16 +497,18 @@ jobs:
               )
 
           def x_influencer_handles():
-              raw = os.getenv("X_INFLUENCERS", "")
+              raw = os.getenv("X_INFLUENCERS", "").strip()
+              source = re.split(r"[\s,;]+", raw) if raw else DEFAULT_X_PRIORITY_ACCOUNTS
               handles = []
               seen = set()
-              for item in raw.split(","):
+              for item in source:
                   handle = re.sub(r"[^A-Za-z0-9_]", "", item.strip().removeprefix("@"))
                   key = handle.lower()
                   if handle and key not in seen:
                       seen.add(key)
                       handles.append(handle)
-              return handles
+              max_handles = max(1, int(os.getenv("X_INFLUENCER_LIMIT", "24")))
+              return handles[:max_handles]
 
           def parse_cli_json(stdout):
               text = (stdout or "").strip()
@@ -577,19 +584,11 @@ jobs:
                   record.get("description"),
                   title,
               )
-              url = first_cli_text(
-                  record.get("url"),
-                  record.get("link"),
-                  record.get("permalink"),
-                  record.get("tweet_url"),
-                  record.get("post_url"),
-              )
-              if url.startswith("/"):
-                  url = "https://x.com" + url
               handle = cli_record_handle(record, fallback_handle)
+              url = canonical_x_post_url(record, handle)
               if handle and title and not title.lower().startswith(f"@{handle.lower()}"):
                   title = f"@{handle}: {title}"
-              if not title and not content:
+              if (not title and not content) or not url:
                   return None
               published = first_cli_text(
                   record.get("createdAtISO"),
@@ -602,7 +601,7 @@ jobs:
                   "source": "twitter",
                   "title": title or content[:90],
                   "content": content or title,
-                  "url": url or "https://x.com",
+                  "url": url,
                   "collector": "XInfluencerAgent",
                   "source_published_at": source_timestamp({"source_published_at": published}) or NOW,
               }
@@ -616,7 +615,9 @@ jobs:
                   if not lines:
                       continue
                   url_match = re.search(r"https?://(?:x\.com|twitter\.com)/[^\s)]+", block)
-                  url = url_match.group(0) if url_match else ""
+                  url = canonical_x_post_url(url_match.group(0), handle) if url_match else ""
+                  if not url:
+                      continue
                   content_lines = [
                       line
                       for line in lines
@@ -630,7 +631,7 @@ jobs:
                           "source": "twitter",
                           "title": f"@{handle}: {content[:90]}",
                           "content": content,
-                          "url": url or "https://x.com",
+                          "url": url,
                           "collector": "XInfluencerAgent",
                           "source_published_at": NOW,
                       }
@@ -664,7 +665,8 @@ jobs:
               ]
 
           def enrich_x_tweet(record):
-              url = record.get("url", "")
+              url = canonical_x_post_url(record.get("url", ""))
+              record["url"] = url
               if not url.startswith(("https://x.com/", "https://twitter.com/")):
                   return record
               for command in x_tweet_commands(url):
