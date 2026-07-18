@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T23:51:30Z",
+  "generated_at": "2026-07-18T00:25:30Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
@@ -9,20 +9,21 @@
   "source_failure_rate": 0.0,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-17T23:51:30Z",
+  "latest_successful_run": "2026-07-18T00:25:30Z",
   "highest_ranked_signal": {
-    "id": "github-009",
-    "title": "voly-codes/voly",
-    "action_score": 75.5,
-    "url": "https://github.com/voly-codes/voly"
+    "id": "github-007",
+    "title": "fu351/Doberman-Core",
+    "action_score": 79.5,
+    "url": "https://github.com/fu351/Doberman-Core"
   },
   "source_contribution": {
     "github": 8,
     "hackernews": 2,
-    "arxiv": 2
+    "twitter": 1,
+    "arxiv": 1
   },
   "failed_sources": [],
-  "runtime_seconds": 23.09,
+  "runtime_seconds": 67.659,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -57,7 +58,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 0,
+    "public_x_signals": 1,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -82,7 +83,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-17T23:51:30Z",
+    "planned_at": "2026-07-18T00:25:30Z",
     "production_threshold": 70.0
   }
 }

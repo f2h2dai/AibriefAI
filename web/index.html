@@ -622,6 +622,15 @@
       margin: 10px 0 0;
     }
 
+    .x-card .evidence-link {
+      color: var(--ink);
+      display: inline-block;
+      font-weight: 700;
+      margin-top: 10px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     .section-grid {
       display: grid;
       gap: 16px;
@@ -1761,11 +1770,20 @@
         const time = item.shown_at || item.sourcePublishedAt || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
         const url = item.source_url || item.url || '#';
-        return '<a class="x-card" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' +
-          '<small><span>' + escapeHTML(formatDate(time, 'time')) + '</span><span>' + escapeHTML(score) + '</span></small>' +
-          '<strong>' + escapeHTML(shortText(title, 112)) + '</strong>' +
+        const evidenceURLs = Array.isArray(item.evidence_urls) ? item.evidence_urls.filter(Boolean) : [];
+        const secondSource = evidenceURLs.find(function(sourceURL) { return sourceURL !== url; }) || '';
+        const evidenceCount = Math.max(1, Number(item.evidence_count || 1));
+        const evidenceLabel = item.evidence_status === 'corroborated'
+          ? evidenceCount + ' sources / ' + evidenceCount + ' مصادر'
+          : item.sensitive_military_claim
+            ? 'Single X source / مصدر X واحد'
+            : 'X source / مصدر X';
+        return '<article class="x-card">' +
+          '<small><span>' + escapeHTML(formatDate(time, 'time')) + '</span><span>' + escapeHTML(score + ' · ' + evidenceLabel) + '</span></small>' +
+          '<strong><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 112)) + '</a></strong>' +
           '<p>' + escapeHTML(shortText(reason, 150)) + '</p>' +
-        '</a>';
+          (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener">Second source / المصدر الثاني</a>' : '') +
+        '</article>';
       }).join('');
     }
 
