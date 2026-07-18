@@ -1,7 +1,86 @@
 {
-  "alerted_count": 80,
+  "alerted_count": 83,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/grok/status/2067705992582685070",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
+      ],
+      "id": "story-e032541218c0005cc0c0d9dd",
+      "reason": "Yes, it's based on a real sworn statement by the Pentagon's AI chief in a recent court filing. A specialized \"Grok Gov Model\" (derived from xAI tech and integrated into the military's Project Maven / Maven Smart Systems) was credited with enabling U.S. forces to deploy over 2,000",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-18T17:07:46Z",
+      "source": "x",
+      "source_url": "https://x.com/grok/status/2067705992582685070",
+      "status": "x-intel",
+      "title": "Yes, it's based on a real sworn statement by the Pentagon's AI chief in a recent court filing. A specialized \"Grok Gov Model\" (derived from xAI tech and integra",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Operation Epic Fury",
+        "2,000 targets",
+        "96 hours",
+        "Grok",
+        "Pentagon"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/AlexTseitlin/status/2067200711054508370"
+      ],
+      "id": "story-cb764b41c6c43edd1a51855a",
+      "reason": "\u05d0\u05e8\u05d4\u05f4\u05d1 \u05de\u05d5\u05d3\u05d4 \u05dc\u05e8\u05d0\u05e9\u05d5\u05e0\u05d4 Grok \u05e9\u05dc xAI \u05e9\u05d5\u05dc\u05d1 \u05d1\u05de\u05e2\u05e8\u05db\u05ea \u05d4AI \u05e9\u05e9\u05d9\u05de\u05e9\u05d4 \u05d1\u05ea\u05e7\u05d9\u05e4\u05d5\u05ea \u05d1\u05d0\u05d9\u05e8\u05d0\u05df \u05d1\u05de\u05e1\u05d2\u05e8\u05ea \u05ea\u05e6\u05d4\u05d9\u05e8 \u05de\u05e9\u05e4\u05d8\u05d9 \u05e9\u05dc \u05d1\u05db\u05d9\u05e8 \u05d1\u05ea\u05d7\u05d5\u05dd \u05d4 AI \u05d1\u05e4\u05e0\u05d8\u05d2\u05d5\u05df, \u05e0\u05d7\u05e9\u05e3 \u05db\u05d9 \u05de\u05d5\u05d3\u05dc \u05de\u05de\u05e9\u05dc\u05ea\u05d9 \u05de\u05d1\u05d5\u05e1\u05e1 Grok, \u05d4\u05de\u05db\u05d5\u05e0\u05d4 Grok Gov Model, \u05db\u05d1\u05e8 \u05e4\u05d5\u05e2\u05dc \u05d1\u05ea\u05d5\u05da Project Maven \u05ea\u05d5\u05db\u05e0\u05d9\u05ea \u05d4 AI \u05d4\u05e6\u05d1\u05d0\u05d9\u05ea \u05e9\u05dc \u05d0\u05e8\u05d4\u05f4\u05d1 \u05dc\u05e0\u05d9\u05ea\u05d5\u05d7 \u05de\u05d5\u05d3\u05d9\u05e2\u05d9\u05df, \u05d0\u05d9\u05ea\u05d5\u05e8 \u05de\u05d8\u05e8\u05d5\u05ea \u05d5\u05ea\u05de\u05d9\u05db\u05d4 \u05d1\u05d4\u05d7\u05dc\u05d8\u05d5\u05ea \u05de\u05d1\u05e6\u05e2\u05d9\u05d5\u05ea. \u05dc",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-18T17:07:46Z",
+      "source": "x",
+      "source_url": "https://x.com/AlexTseitlin/status/2067200711054508370",
+      "status": "x-intel",
+      "title": "\u05d0\u05e8\u05d4\u05f4\u05d1 \u05de\u05d5\u05d3\u05d4 \u05dc\u05e8\u05d0\u05e9\u05d5\u05e0\u05d4 Grok \u05e9\u05dc xAI \u05e9\u05d5\u05dc\u05d1 \u05d1\u05de\u05e2\u05e8\u05db\u05ea \u05d4AI \u05e9\u05e9\u05d9\u05de\u05e9\u05d4 \u05d1\u05ea\u05e7\u05d9\u05e4\u05d5\u05ea \u05d1\u05d0\u05d9\u05e8\u05d0\u05df \u05d1\u05de\u05e1\u05d2\u05e8\u05ea \u05ea\u05e6\u05d4\u05d9\u05e8 \u05de\u05e9\u05e4\u05d8\u05d9 \u05e9\u05dc \u05d1\u05db\u05d9\u05e8 \u05d1\u05ea\u05d7\u05d5\u05dd \u05d4 AI \u05d1\u05e4\u05e0\u05d8\u05d2\u05d5\u05df, \u05e0\u05d7\u05e9\u05e3 \u05db\u05d9 \u05de\u05d5\u05d3\u05dc \u05de\u05de\u05e9\u05dc\u05ea\u05d9 \u05de\u05d1\u05d5\u05e1\u05e1 Grok, \u05d4\u05de\u05db\u05d5\u05e0\u05d4 Grok",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Operation Epic Fury",
+        "Grok"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/AktienAkademie/status/2067705849884094560"
+      ],
+      "id": "story-4427907069ab5a9fa0a32c39",
+      "reason": "@FirstSquawk @grok is that true?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-18T17:07:46Z",
+      "source": "x",
+      "source_url": "https://x.com/AktienAkademie/status/2067705849884094560",
+      "status": "x-intel",
+      "title": "@FirstSquawk @grok is that true?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "evidence_count": 3,
@@ -32,6 +111,28 @@
     },
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/BlackHC/status/2077079147482927405"
+      ],
+      "id": "story-b36dd78b48eedab8538ce8a8",
+      "reason": "@RaleighWoodz It worked during Project Maven and researchers are still an important resources atm (though we are working on automating ourselves away obv which will reduce any leverage a lot)",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-18T16:00:10Z",
+      "source": "x",
+      "source_url": "https://x.com/BlackHC/status/2077079147482927405",
+      "status": "x-intel",
+      "title": "@RaleighWoodz It worked during Project Maven and researchers are still an important resources atm (though we are working on automating ourselves away obv which",
+      "webswarm_evidence_terms": [
+        "Project Maven"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -55,28 +156,6 @@
         "Pentagon",
         "targeting",
         "munitions"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/BlackHC/status/2077079147482927405"
-      ],
-      "id": "story-b36dd78b48eedab8538ce8a8",
-      "reason": "@RaleighWoodz It worked during Project Maven and researchers are still an important resources atm (though we are working on automating ourselves away obv which will reduce any leverage a lot)",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-18T16:00:10Z",
-      "source": "x",
-      "source_url": "https://x.com/BlackHC/status/2077079147482927405",
-      "status": "x-intel",
-      "title": "@RaleighWoodz It worked during Project Maven and researchers are still an important resources atm (though we are working on automating ourselves away obv which",
-      "webswarm_evidence_terms": [
-        "Project Maven"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
@@ -230,111 +309,35 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2069459726400651486",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwVy1zeS1lcU01WlRKZnNwTnc0bjlkZnR2Z0dJTEstNHc3QXdraVVGZUI4RFpPUGd3SllPc1VtbUctUjZESF83eDlxQUFmeUVlMU9YbTROSDd0cXpYUnpSUW9jSnBoZmptR0l1dQ"
-      ],
-      "id": "story-9d759897a702dce5a163ddd6",
-      "reason": "Yep. Court filing by DoD AI chief confirms a specialized \"Grok Gov Model\" (xAI-derived) integrated into military systems boosted targeting efficiency. It enabled U.S. forces to hit 2,000+ distinct targets with over 2,000 munitions in 96 hours during Iran ops. Not the public Grok ",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-18T11:11:30Z",
-      "source": "x",
-      "source_url": "https://x.com/grok/status/2069459726400651486",
-      "status": "x-intel",
-      "title": "Yep. Court filing by DoD AI chief confirms a specialized \"Grok Gov Model\" (xAI-derived) integrated into military systems boosted targeting efficiency. It enable",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "96 hours",
-        "Grok",
-        "Iran",
-        "targeting",
-        "munitions"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ezzeldendevidar/status/2067681328745599236"
-      ],
-      "id": "story-a1d81c0e2170208a7a01d645",
-      "reason": "\u0643\u0634\u0641 \u0627\u0644\u0628\u0646\u062a\u0627\u063a\u0648\u0646 \u0623\u0646 \u0646\u0638\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \" @grok \" \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0625\u064a\u0644\u0648\u0646 \u0645\u0627\u0633\u0643 \u062a\u0645 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u0644\u062a\u0646\u0633\u064a\u0642 \u0636\u0631\u0628\u0627\u062a \u062c\u0648\u064a\u0629 \u0646\u0634\u0631 \u0623\u0643\u062b\u0631 \u0645\u0646 2000 \u0642\u0637\u0639\u0629 \u0630\u062e\u064a\u0631\u0629 \u0641\u064a \u0625\u064a\u0631\u0627\u0646. \u0628\u0647\u0630\u0627 \u064a\u0643\u0648\u0646 \u062c\u0631\u0648\u0643 \u0623\u0635\u0628\u062d \u0622\u062f\u0627\u0629 \u062d\u0631\u0628\u064a\u0629 \u0636\u062f\u0646\u0627\u060c \u0648\u0623\u0639\u062a\u0642\u062f \u0623\u0646\u0647 \u064a\u062d\u0631\u0645 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u0648\u064a\u062c\u0628 \u0645\u0642\u0627\u0637\u0639\u062a\u0647.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-18T11:11:30Z",
-      "source": "x",
-      "source_url": "https://x.com/ezzeldendevidar/status/2067681328745599236",
-      "status": "x-intel",
-      "title": "\u0643\u0634\u0641 \u0627\u0644\u0628\u0646\u062a\u0627\u063a\u0648\u0646 \u0623\u0646 \u0646\u0638\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \" @grok \" \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0625\u064a\u0644\u0648\u0646 \u0645\u0627\u0633\u0643 \u062a\u0645 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u0644\u062a\u0646\u0633\u064a\u0642 \u0636\u0631\u0628\u0627\u062a \u062c\u0648\u064a\u0629 \u0646\u0634\u0631 \u0623\u0643\u062b\u0631 \u0645\u0646 2000 \u0642\u0637\u0639\u0629 \u0630\u062e\u064a\u0631\u0629 \u0641\u064a \u0625\u064a\u0631\u0627\u0646. \u0628\u0647\u0630\u0627 \u064a\u0643\u0648\u0646 \u062c\u0631\u0648\u0643 \u0623\u0635\u0628\u062d \u0622\u062f\u0627\u0629",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0627\u0644\u0628\u0646\u062a\u0627\u063a\u0648\u0646",
-        "\u0625\u064a\u0631\u0627\u0646"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/_Susibel_/status/2068716495765401649"
-      ],
-      "id": "story-acaa926f6134369d1fe89463",
-      "reason": "Quien viera a @grok, un d\u00eda nos da recetas, nos retoca fotos y nos aclara dudas informativas, y al otro est\u00e1 orquestando ataques contra Ir\u00e1n. \u00a1Qu\u00e9 peligro!",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-18T11:11:30Z",
-      "source": "x",
-      "source_url": "https://x.com/_Susibel_/status/2068716495765401649",
-      "status": "x-intel",
-      "title": "Quien viera a @grok, un d\u00eda nos da recetas, nos retoca fotos y nos aclara dudas informativas, y al otro est\u00e1 orquestando ataques contra Ir\u00e1n. \u00a1Qu\u00e9 peligro!",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-18T16:00:10Z",
+    "alerted_at": "2026-07-18T17:07:46Z",
     "confidence": 0,
-    "source_url": "https://x.com/shaunralston/status/2069088220978229364",
-    "title": "the Pentagon says xAI\u2019s Grok supported U.S. bombing in Iran; thousands of munitions launched in 96 hours. a girls\u2019 school was hit and 160+ children and civilian"
+    "source_url": "https://x.com/grok/status/2067705992582685070",
+    "title": "Yes, it's based on a real sworn statement by the Pentagon's AI chief in a recent court filing. A specialized \"Grok Gov Model\" (derived from xAI tech and integra"
   },
   "last_run": {
     "alerted_now": 3,
     "clustered": 23,
     "collected": 24,
-    "corroborated_count": 10,
+    "corroborated_count": 11,
     "initial_collected": 24,
     "initial_source_counts": {
       "x": 24
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.463,
-      "projected_minutes_per_30d": 166.23,
+      "measured_seconds": 3.215,
+      "projected_minutes_per_30d": 154.33,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 20,
+    "stage1_survivors": 22,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -362,6 +365,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-18T16:00:10Z",
+  "updated_at": "2026-07-18T17:07:46Z",
   "version": 1
 }
