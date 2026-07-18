@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T12:44:05Z",
+  "generated_at": "2026-07-18T19:02:35Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,24 +9,24 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-18T12:44:05Z",
+  "latest_successful_run": "2026-07-18T19:02:35Z",
   "highest_ranked_signal": {
-    "id": "twitter-034",
-    "title": "@: And the third is a breakthrough deep research. https://t.co/4y5W09zsbU' author: screenName",
-    "action_score": 78.75,
-    "url": "https://x.com/sama/status/1945900345378697650"
+    "id": "github-008",
+    "title": "LeelaissakAttota/agentic-financial-intelligence-platform",
+    "action_score": 79.5,
+    "url": "https://github.com/LeelaissakAttota/agentic-financial-intelligence-platform"
   },
   "source_contribution": {
-    "twitter": 4,
-    "github": 8
+    "github": 8,
+    "twitter": 4
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1142"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1182"
     }
   ],
-  "runtime_seconds": 131.837,
+  "runtime_seconds": 129.606,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-18T12:44:05Z",
+    "planned_at": "2026-07-18T19:02:35Z",
     "production_threshold": 70.0
   }
 }
