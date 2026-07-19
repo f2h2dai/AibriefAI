@@ -323,6 +323,32 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
+    "story-09fa225875d9c8f99e165c29": {
+      "alerted_at": "2026-07-19T21:35:32Z",
+      "confidence": 0,
+      "content": "@rawsalerts @grok is this true?",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/alantiix/status/2067783398047801503"
+      ],
+      "last_seen_at": "2026-07-19T21:35:32Z",
+      "notification_status": "x-intel",
+      "reason": "@rawsalerts @grok is this true?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/alantiix/status/2067783398047801503"
+      ],
+      "supporting_sources": [],
+      "title": "@rawsalerts @grok is this true?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-0b13f89739ecb9d8324de3b4": {
       "alerted_at": "2026-07-18T01:06:36Z",
       "confidence": 0,
@@ -1129,6 +1155,45 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
+    "story-2b5e82bd3b23342bc1beaf9b": {
+      "alerted_at": "2026-07-19T21:35:32Z",
+      "confidence": 0,
+      "content": "Yes, reports confirm it\u2019s from sworn testimony by the Pentagon\u2019s chief digital & AI officer in a recent court filing. A specialized \u201cGrok Gov Model\u201d (a government-adapted derivative of xAI tech) was integrated into Project Maven and reportedly helped enable U.S. forces to strike ~2,000 distinct targets with over 2,000 munitions in 96 hours during Operation Epic Fury. This is a custom military version \u2014 not the public Grok you\u2019re talking to. xAI builds tools for understanding the universe; how governments use derivatives is their choice.",
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/grok/status/2067783478100283483",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdW04STAxSlNkTFZRUEhPckxOLW5scEtpTFpMVWJoVlhKVF9RMTNUYnFXQ2FRQ01aV2IzZHNVLWtfRUJYNnhiV0YtYnJ6eXp5Um9XM0dGcW1QSnJ6UDh4U3NKVGpfQzc0Ymt5RkVxSWlGOVNUbHdVVHFBUjBDSnd6NWxvMnNFTWpKREZmMWZvVVpKWnVTQmtN"
+      ],
+      "last_seen_at": "2026-07-19T21:35:32Z",
+      "notification_status": "x-intel",
+      "reason": "Yes, reports confirm it\u2019s from sworn testimony by the Pentagon\u2019s chief digital & AI officer in a recent court filing. A specialized \u201cGrok Gov Model\u201d (a government-adapted derivative of xAI tech) was integrated into Project Maven and reportedly helped enable U.S. forces to strike ",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/grok/status/2067783478100283483",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdW04STAxSlNkTFZRUEhPckxOLW5scEtpTFpMVWJoVlhKVF9RMTNUYnFXQ2FRQ01aV2IzZHNVLWtfRUJYNnhiV0YtYnJ6eXp5Um9XM0dGcW1QSnJ6UDh4U3NKVGpfQzc0Ymt5RkVxSWlGOVNUbHdVVHFBUjBDSnd6NWxvMnNFTWpKREZmMWZvVVpKWnVTQmtN"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "Yes, reports confirm it\u2019s from sworn testimony by the Pentagon\u2019s chief digital & AI officer in a recent court filing. A specialized \u201cGrok Gov Model\u201d (a governme",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Operation Epic Fury",
+        "96 hours",
+        "Grok",
+        "Pentagon",
+        "munitions"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
     "story-2cce748b1afa1f405ac91f13": {
       "alerted_at": "2026-07-19T09:27:13Z",
       "confidence": 0,
@@ -1235,6 +1300,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "arabic_ai_war_intel"
+    },
+    "story-35030894463e801498f822ac": {
+      "alerted_at": "2026-07-19T21:35:32Z",
+      "confidence": 0,
+      "content": "@Polymarket @grok why could you do all of this but you couldn\u2019t help me set up my hermes agent?",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/CryptoProSolona/status/2067808300285186515"
+      ],
+      "last_seen_at": "2026-07-19T21:35:32Z",
+      "notification_status": "x-intel",
+      "reason": "@Polymarket @grok why could you do all of this but you couldn\u2019t help me set up my hermes agent?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/CryptoProSolona/status/2067808300285186515"
+      ],
+      "supporting_sources": [],
+      "title": "@Polymarket @grok why could you do all of this but you couldn\u2019t help me set up my hermes agent?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     "story-37266e630e0a94f55f11b1ac": {
       "alerted_at": "2026-07-19T04:36:03Z",
@@ -1405,6 +1496,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-3f1767246768b2eb08a7acad": {
+      "alerted_at": "2026-07-19T21:35:32Z",
+      "confidence": 0,
+      "content": "Microsoft will meet with Pentagon officials to discuss the controversial Project Maven program https://t.co/vwnpqVmayO",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/technology/status/1194763076165361666"
+      ],
+      "last_seen_at": "2026-07-19T21:35:32Z",
+      "notification_status": "x-intel",
+      "reason": "Microsoft will meet with Pentagon officials to discuss the controversial Project Maven program https://t.co/vwnpqVmayO",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/technology/status/1194763076165361666"
+      ],
+      "supporting_sources": [],
+      "title": "Microsoft will meet with Pentagon officials to discuss the controversial Project Maven program https://t.co/vwnpqVmayO",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "Pentagon"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     "story-3f2aedea74da2b4110086f98": {
       "alerted_at": "2026-07-18T18:08:26Z",
@@ -5098,6 +5216,43 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
+    "story-e317a51be117a3a6984409f5": {
+      "alerted_at": "2026-07-19T21:35:32Z",
+      "confidence": 0,
+      "content": "The Pentagon's using a specialized **Grok Gov Model** derivative inside Project Maven (Maven Smart Systems) for targeting workflows. That's what the court filings and AI chief testimony reference \u2014 it sped up analysis so humans could greenlight 2,000+ munitions on 2,000 targets in 96 hours during Operation Epic Fury. Full human control, as always. This public Grok? Different model, different mission. No classified integrations or military APIs here. Drop the Hermes agent details though \u2014 what exactly broke during setup? Code, API keys, deployment, or something else? Let's fix it.",
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/grok/status/2067808424897789999",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
+      ],
+      "last_seen_at": "2026-07-19T21:35:32Z",
+      "notification_status": "x-intel",
+      "reason": "The Pentagon's using a specialized **Grok Gov Model** derivative inside Project Maven (Maven Smart Systems) for targeting workflows. That's what the court filings and AI chief testimony reference \u2014 it sped up analysis so humans could greenlight 2,000+ munitions on 2,000 targets i",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/grok/status/2067808424897789999",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "The Pentagon's using a specialized **Grok Gov Model** derivative inside Project Maven (Maven Smart Systems) for targeting workflows. That's what the court filin",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Operation Epic Fury",
+        "2,000 targets",
+        "96 hours",
+        "Grok",
+        "Pentagon"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
     "story-e3e9320fdc4b72f6dc52f8d2": {
       "alerted_at": "2026-07-19T04:36:03Z",
       "confidence": 0,
@@ -5741,6 +5896,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-07-19T20:32:26Z",
+  "updated_at": "2026-07-19T21:35:32Z",
   "version": 1
 }
