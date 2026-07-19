@@ -1,7 +1,31 @@
 {
-  "alerted_count": 191,
+  "alerted_count": 192,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/newsinvesting/status/2078213594286534700"
+      ],
+      "id": "story-2b7b4394913cbfb96f8d0d82",
+      "reason": "SpaceX $SPCX stock sees brief Pentagon AI bump, while CoreWeave slides on pricing threat https://t.co/wRWrxnLBwD https://t.co/sPlrAjiiU8",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-19T23:40:12Z",
+      "source": "x",
+      "source_url": "https://x.com/newsinvesting/status/2078213594286534700",
+      "status": "x-intel",
+      "title": "SpaceX $SPCX stock sees brief Pentagon AI bump, while CoreWeave slides on pricing threat https://t.co/wRWrxnLBwD https://t.co/sPlrAjiiU8",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "evidence_count": 3,
@@ -291,59 +315,35 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/TokenandoAI/status/2078548872092365110"
-      ],
-      "id": "story-18daf3f9d255ee2dbc84f7c2",
-      "reason": "\ud83d\udcf0 The Tokenando Daily / Saturday July 18, 2026 / Pentagon AI strategy mandates frontier model deployment within 30 days, removing ethical AI language and labelling governance mechanisms \"blockers\" / Anthropic moves Claude Fable 5 to pay-as-you-go credits from July 20, pricing out",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T18:27:58Z",
-      "source": "x",
-      "source_url": "https://x.com/TokenandoAI/status/2078548872092365110",
-      "status": "x-intel",
-      "title": "\ud83d\udcf0 The Tokenando Daily / Saturday July 18, 2026 / Pentagon AI strategy mandates frontier model deployment within 30 days, removing ethical AI language and labell",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-19T22:35:28Z",
+    "alerted_at": "2026-07-19T23:40:12Z",
     "confidence": 0,
-    "source_url": "https://x.com/shanaka86/status/2067925228513374233",
-    "title": "2,000 targets. 2,000 munitions. 96 hours. The Pentagon only admitted that Elon Musk's AI helped do it because a polluting data center needed a legal defense. In"
+    "source_url": "https://x.com/newsinvesting/status/2078213594286534700",
+    "title": "SpaceX $SPCX stock sees brief Pentagon AI bump, while CoreWeave slides on pricing threat https://t.co/wRWrxnLBwD https://t.co/sPlrAjiiU8"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 24,
+    "alerted_now": 1,
+    "clustered": 25,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 10,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 11,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 13.799,
-      "projected_minutes_per_30d": 662.36,
+      "measured_seconds": 3.297,
+      "projected_minutes_per_30d": 158.23,
       "projected_runs_per_30d": 2880
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 25,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,11 +366,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-19T22:35:28Z",
+  "updated_at": "2026-07-19T23:40:12Z",
   "version": 1
 }
