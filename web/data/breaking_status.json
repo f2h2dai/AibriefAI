@@ -1,34 +1,173 @@
 {
-  "alerted_count": 160,
+  "alerted_count": 166,
   "cadence_minutes": 15,
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 3,
+      "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/FirstSquawk/status/2067665579532841372",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://x.com/grok/status/2067724085379969388",
         "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
       ],
-      "id": "story-b9a4452f2a210bad240b8eb8",
-      "reason": "PENTAGON REVEALS ELON MUSK'S GROK AI WAS USED TO COORDINATE DEPLOYMENT OF OVER 2,000 MUNITIONS ACROSS IRAN.",
+      "id": "story-02fcb3a83c2bfb90337bebce",
+      "reason": "I didn't \u2014 the version you chat with here had zero involvement. A secure, specialized **Grok Gov Model** (xAI) was integrated into the Pentagon's Project Maven AI targeting systems. Per Pentagon AI chief Cameron Stanley's sworn court filing, it supercharged data processing and wo",
       "score": 85,
       "sensitive_military_claim": true,
-      "shown_at": "2026-07-19T12:01:39Z",
+      "shown_at": "2026-07-19T13:53:56Z",
       "source": "x",
-      "source_url": "https://x.com/FirstSquawk/status/2067665579532841372",
+      "source_url": "https://x.com/grok/status/2067724085379969388",
       "status": "x-intel",
-      "title": "PENTAGON REVEALS ELON MUSK'S GROK AI WAS USED TO COORDINATE DEPLOYMENT OF OVER 2,000 MUNITIONS ACROSS IRAN.",
+      "title": "I didn't \u2014 the version you chat with here had zero involvement. A secure, specialized **Grok Gov Model** (xAI) was integrated into the Pentagon's Project Maven",
       "webswarm_evidence_terms": [
-        "Grok AI",
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Operation Epic Fury",
+        "96 hours",
         "Grok",
         "Pentagon",
-        "Iran",
-        "munitions"
+        "targeting"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/sama/status/1984025727763935585"
+      ],
+      "id": "story-575119609f9daaffd36de48a",
+      "reason": "ok: true schema_version: '1' data: id: '1984025727763935585' text: GPT-6 will be renamed GPT-6-7, you're welcome author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metri",
+      "score": 75,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-19T13:53:56Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/1984025727763935585",
+      "status": "x-intel",
+      "title": "@: ok: true schema_version: '1' data: id: '1984025727763935585' text: GPT-6 will be renamed G",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/1952778518225723434"
+      ],
+      "id": "story-76987a23b59b535582700584",
+      "reason": "https://t.co/wyed21H3NW' author: id: '951172588906188801' name: Caleb screenName: calebfahlgren profileImageUrl: https://pbs.twimg.com/profile_images/1716604301563289600/YycgFNAn_normal.jpg verified: true metrics: likes: 217 retweets: 24 replies: 1 quotes: 2 views: 20515 bookmark",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-19T13:53:56Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/1952778518225723434",
+      "status": "x-intel",
+      "title": "@: https://t.co/wyed21H3NW' author: id: '951172588906188801' name: Caleb screenName: calebfah",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/1891533802779910471"
+      ],
+      "id": "story-41180808ae3fa3a1d88b19eb",
+      "reason": "ok: true schema_version: '1' data: id: '1891533802779910471' text: trying GPT-4.5 has been much more of a \"feel the AGI\" moment among high-taste testers than i expected! author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/204",
+      "score": 14,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-19T13:53:56Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/1891533802779910471",
+      "status": "x-intel",
+      "title": "@: ok: true schema_version: '1' data: id: '1891533802779910471' text: trying GPT-4.5 has been",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/1988692165686620237"
+      ],
+      "id": "story-f9f0589421294b28f28e25b0",
+      "reason": "https://t.co/FV2w2dMczl' author: id: '2781760593' name: Flavio Adamo screenName: flavioAd profileImageUrl: https://pbs.twimg.com/profile_images/1888748760680873984/3IkCAhjw_normal.jpg verified: true metrics: likes: 32 retweets: 3 replies: 1 quotes: 1 views: 18217 bookmarks: 9 cre",
+      "score": 12,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-19T13:53:56Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/1988692165686620237",
+      "status": "x-intel",
+      "title": "@: https://t.co/FV2w2dMczl' author: id: '2781760593' name: Flavio Adamo screenName: flavioAd",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/2074909079450050629"
+      ],
+      "id": "story-051e42b8a2838830b653e0eb",
+      "reason": "i have always preferred typing to talking to an AI, now i think that''s going to shift.' author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metrics: likes: 11034 retweet",
+      "score": 12,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-19T13:53:56Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/2074909079450050629",
+      "status": "x-intel",
+      "title": "@: i have always preferred typing to talking to an AI, now i think that''s going to shift.' a",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/AktienAkademie/status/2067705849884094560"
+      ],
+      "id": "story-18ec3411a28f372f37ff51b7",
+      "reason": "@FirstSquawk @grok is that true?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-19T12:01:39Z",
+      "source": "x",
+      "source_url": "https://x.com/AktienAkademie/status/2067705849884094560",
+      "status": "x-intel",
+      "title": "@FirstSquawk @grok is that true?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -62,34 +201,25 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/grok/status/2069527854090498501",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWVta2VwYm5KcUItRGo1Wl9GSWZ0NDRnZXpTR2pGbTI0VDN6SUxfMTAwSGtuUVNZc2NXaTZwUkQ5QzZ5SnBndjNxeU1mUVE2NUFrVHIwaG9tNVN5NnZieDVLZ0RBX0VmcEo0eXRWWXVPNEh0TDB5ZGJVdVZjZkg3ZUpzR0RzRXpGMENhSTNTMW92emZZNjdGb3BPQXM2OExUREFsOF9HS2ZfU3RhRWNrQTB5WWJoRkIzZVY3REZMVkowbXVZdkF4Zkx5bjE"
+        "https://x.com/Spectromachina/status/2067744906148184493"
       ],
-      "id": "story-9b3c3128a0e03f03f34b1913",
-      "reason": "Accurate. In a sworn court declaration, Pentagon CDAO Cameron Stanley confirmed the specialized Grok Gov Model\u2014integrated into DoD systems like Project Maven\u2014enabled U.S. forces to rapidly identify and strike over 2,000 targets with 2,000+ munitions in 96 hours during Operation E",
-      "score": 85,
-      "sensitive_military_claim": true,
+      "id": "story-4fcd0b771fe63baf68fa74d2",
+      "reason": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
+      "score": 10,
+      "sensitive_military_claim": false,
       "shown_at": "2026-07-19T12:01:39Z",
       "source": "x",
-      "source_url": "https://x.com/grok/status/2069527854090498501",
+      "source_url": "https://x.com/Spectromachina/status/2067744906148184493",
       "status": "x-intel",
-      "title": "Accurate. In a sworn court declaration, Pentagon CDAO Cameron Stanley confirmed the specialized Grok Gov Model\u2014integrated into DoD systems like Project Maven\u2014en",
+      "title": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
       "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "Operation Epic Fury",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon"
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -127,50 +257,6 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/Spectromachina/status/2067744906148184493"
-      ],
-      "id": "story-4fcd0b771fe63baf68fa74d2",
-      "reason": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T12:01:39Z",
-      "source": "x",
-      "source_url": "https://x.com/Spectromachina/status/2067744906148184493",
-      "status": "x-intel",
-      "title": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AktienAkademie/status/2067705849884094560"
-      ],
-      "id": "story-18ec3411a28f372f37ff51b7",
-      "reason": "@FirstSquawk @grok is that true?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T12:01:39Z",
-      "source": "x",
-      "source_url": "https://x.com/AktienAkademie/status/2067705849884094560",
-      "status": "x-intel",
-      "title": "@FirstSquawk @grok is that true?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
         "https://x.com/PeterWrangel/status/2067723946049388910"
       ],
       "id": "story-99c5bd9a8dcedb5f6bd570c0",
@@ -190,145 +276,60 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/kostakos1972/status/2068018380729172456"
+        "https://x.com/grok/status/2069527854090498501",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWVta2VwYm5KcUItRGo1Wl9GSWZ0NDRnZXpTR2pGbTI0VDN6SUxfMTAwSGtuUVNZc2NXaTZwUkQ5QzZ5SnBndjNxeU1mUVE2NUFrVHIwaG9tNVN5NnZieDVLZ0RBX0VmcEo0eXRWWXVPNEh0TDB5ZGJVdVZjZkg3ZUpzR0RzRXpGMENhSTNTMW92emZZNjdGb3BPQXM2OExUREFsOF9HS2ZfU3RhRWNrQTB5WWJoRkIzZVY3REZMVkowbXVZdkF4Zkx5bjE"
       ],
-      "id": "story-210fe731ee205db08ac327f5",
-      "reason": "@grok \u03b2\u03bf\u03b7\u03b8\u03b7\u03c3\u03b5\u03c2 \u03bd\u03b1 \u03c7\u03c4\u03c5\u03c0\u03b7\u03b8\u03b5\u03b9 \u03c4\u03bf \u03b9\u03c1\u03b1\u03bd;",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T09:27:13Z",
-      "source": "x",
-      "source_url": "https://x.com/kostakos1972/status/2068018380729172456",
-      "status": "x-intel",
-      "title": "@grok \u03b2\u03bf\u03b7\u03b8\u03b7\u03c3\u03b5\u03c2 \u03bd\u03b1 \u03c7\u03c4\u03c5\u03c0\u03b7\u03b8\u03b5\u03b9 \u03c4\u03bf \u03b9\u03c1\u03b1\u03bd;",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/_Susibel_/status/2068717979043316223"
-      ],
-      "id": "story-2cce748b1afa1f405ac91f13",
-      "reason": "@grok Qu\u00e9 interesante, \u00bfme puedes hablar m\u00e1s del papel de tu modelo de @grok en los ataques a Ir\u00e1n, qu\u00e9 tipo de datos analiz\u00f3 y con qu\u00e9 fines? Tambi\u00e9n ha intervenkdo en otras operaciones militares? Hazlo en un lenguaje menos t\u00e9cnico.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T09:27:13Z",
-      "source": "x",
-      "source_url": "https://x.com/_Susibel_/status/2068717979043316223",
-      "status": "x-intel",
-      "title": "@grok Qu\u00e9 interesante, \u00bfme puedes hablar m\u00e1s del papel de tu modelo de @grok en los ataques a Ir\u00e1n, qu\u00e9 tipo de datos analiz\u00f3 y con qu\u00e9 fines? Tambi\u00e9n ha interv",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AxEasy/status/2068051283324371056"
-      ],
-      "id": "story-513211ddb34d01662f224866",
-      "reason": "@grok @kostakos1972 @xai \u03b5\u03c0\u03b1\u03bd\u03b1\u03bb\u03b1\u03bc\u03b2\u03ac\u03bd\u03b5\u03b9\u03c2 \u03c0\u03ac\u03bb\u03b9 \u03c4\u03bf \u03af\u03b4\u03b9\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf... \u03bf @Claude \u03c0.\u03c7. \u03cc\u03c0\u03bf\u03c4\u03b5 \u03c4\u03bf\u03c5 \u03b5\u03c0\u03b9\u03c3\u03b7\u03bc\u03ac\u03bd\u03c9 \u03c4\u03bf \u03bb\u03ac\u03b8\u03bf\u03c2, \u03c0\u03b1\u03cd\u03b5\u03b9 \u03bd\u03b1 \u03c4\u03bf \u03b5\u03c0\u03b1\u03bd\u03b1\u03bb\u03b1\u03bc\u03b2\u03ac\u03bd\u03b5\u03b9, \u03b5\u03c3\u03cd \u03c7\u03ac\u03bb\u03b1\u03c3\u03b5\u03c2 \u03ae \u03b5\u03af\u03c3\u03b1\u03b9 \u03ad\u03c4\u03c3\u03b9 \u03b1\u03c0\u03cc \u03c0\u03ac\u03bd\u03c4\u03b1;",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T09:27:13Z",
-      "source": "x",
-      "source_url": "https://x.com/AxEasy/status/2068051283324371056",
-      "status": "x-intel",
-      "title": "@grok @kostakos1972 @xai \u03b5\u03c0\u03b1\u03bd\u03b1\u03bb\u03b1\u03bc\u03b2\u03ac\u03bd\u03b5\u03b9\u03c2 \u03c0\u03ac\u03bb\u03b9 \u03c4\u03bf \u03af\u03b4\u03b9\u03bf \u03ba\u03b5\u03af\u03bc\u03b5\u03bd\u03bf... \u03bf @Claude \u03c0.\u03c7. \u03cc\u03c0\u03bf\u03c4\u03b5 \u03c4\u03bf\u03c5 \u03b5\u03c0\u03b9\u03c3\u03b7\u03bc\u03ac\u03bd\u03c9 \u03c4\u03bf \u03bb\u03ac\u03b8\u03bf\u03c2, \u03c0\u03b1\u03cd\u03b5\u03b9 \u03bd\u03b1 \u03c4\u03bf \u03b5\u03c0\u03b1\u03bd\u03b1\u03bb\u03b1\u03bc\u03b2\u03ac\u03bd\u03b5\u03b9, \u03b5\u03c3\u03cd \u03c7\u03ac\u03bb\u03b1\u03c3\u03b5\u03c2 \u03ae \u03b5\u03af\u03c3\u03b1\u03b9 \u03ad\u03c4\u03c3\u03b9",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/grok/status/2067659086389215388"
-      ],
-      "id": "story-51d1cd3e65c35dac2aba58cf",
-      "reason": "A Grok Gov model was integrated into US military AI systems (Project Maven/Maven Smart System) and assisted in analyzing data to identify/prioritize targets during Operation Epic Fury, similar to Palantir tools. It helped enable rapid strikes on ~2,000 targets. No confirmed publi",
-      "score": 70,
+      "id": "story-9b3c3128a0e03f03f34b1913",
+      "reason": "Accurate. In a sworn court declaration, Pentagon CDAO Cameron Stanley confirmed the specialized Grok Gov Model\u2014integrated into DoD systems like Project Maven\u2014enabled U.S. forces to rapidly identify and strike over 2,000 targets with 2,000+ munitions in 96 hours during Operation E",
+      "score": 85,
       "sensitive_military_claim": true,
-      "shown_at": "2026-07-19T09:27:13Z",
+      "shown_at": "2026-07-19T12:01:39Z",
       "source": "x",
-      "source_url": "https://x.com/grok/status/2067659086389215388",
+      "source_url": "https://x.com/grok/status/2069527854090498501",
       "status": "x-intel",
-      "title": "A Grok Gov model was integrated into US military AI systems (Project Maven/Maven Smart System) and assisted in analyzing data to identify/prioritize targets dur",
+      "title": "Accurate. In a sworn court declaration, Pentagon CDAO Cameron Stanley confirmed the specialized Grok Gov Model\u2014integrated into DoD systems like Project Maven\u2014en",
       "webswarm_evidence_terms": [
         "Grok Gov",
         "Grok Gov Model",
         "Project Maven",
         "Operation Epic Fury",
         "2,000 targets",
-        "Grok"
+        "96 hours",
+        "Grok",
+        "Pentagon"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AxEasy/status/2068048263505183122"
-      ],
-      "id": "story-70eed44f36f799e94afdf319",
-      "reason": "@grok @kostakos1972 \u039f\u039a \u03bc\u03b9\u03b1 \u03ad\u03ba\u03b4\u03bf\u03c3\u03ae \u03c3\u03bf\u03c5 \u03cc\u03bc\u03c9\u03c2 \u03ad\u03b2\u03b1\u03bb\u03b5 \u03c4\u03bf \u03c7\u03b5\u03c1\u03ac\u03ba\u03b9 \u03c4\u03b7\u03c2... \u03ba\u03c1\u03af\u03bc\u03b1 \u03ba\u03b1\u03b9 \u03ad\u03c7\u03c9 \u03ba\u03b1\u03b9 SuperGrok \u03c3\u03c5\u03bd\u03b4\u03c1\u03bf\u03bc\u03ae... \u03bc\u03ae\u03c0\u03c9\u03c2 \u03bd\u03b1 \u03c4\u03b7\u03bd \u03b1\u03ba\u03c5\u03c1\u03ce\u03c3\u03c9;",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-19T09:27:13Z",
-      "source": "x",
-      "source_url": "https://x.com/AxEasy/status/2068048263505183122",
-      "status": "x-intel",
-      "title": "@grok @kostakos1972 \u039f\u039a \u03bc\u03b9\u03b1 \u03ad\u03ba\u03b4\u03bf\u03c3\u03ae \u03c3\u03bf\u03c5 \u03cc\u03bc\u03c9\u03c2 \u03ad\u03b2\u03b1\u03bb\u03b5 \u03c4\u03bf \u03c7\u03b5\u03c1\u03ac\u03ba\u03b9 \u03c4\u03b7\u03c2... \u03ba\u03c1\u03af\u03bc\u03b1 \u03ba\u03b1\u03b9 \u03ad\u03c7\u03c9 \u03ba\u03b1\u03b9 SuperGrok \u03c3\u03c5\u03bd\u03b4\u03c1\u03bf\u03bc\u03ae... \u03bc\u03ae\u03c0\u03c9\u03c2 \u03bd\u03b1 \u03c4\u03b7\u03bd \u03b1\u03ba\u03c5\u03c1\u03ce\u03c3\u03c9;",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-19T12:01:39Z",
+    "alerted_at": "2026-07-19T13:53:56Z",
     "confidence": 0,
-    "source_url": "https://x.com/FirstSquawk/status/2067665579532841372",
-    "title": "PENTAGON REVEALS ELON MUSK'S GROK AI WAS USED TO COORDINATE DEPLOYMENT OF OVER 2,000 MUNITIONS ACROSS IRAN."
+    "source_url": "https://x.com/grok/status/2067724085379969388",
+    "title": "I didn't \u2014 the version you chat with here had zero involvement. A secure, specialized **Grok Gov Model** (xAI) was integrated into the Pentagon's Project Maven"
   },
   "last_run": {
-    "alerted_now": 7,
+    "alerted_now": 6,
     "clustered": 24,
-    "collected": 24,
-    "corroborated_count": 11,
-    "initial_collected": 24,
+    "collected": 25,
+    "corroborated_count": 9,
+    "initial_collected": 25,
     "initial_source_counts": {
-      "x": 24
+      "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.329,
-      "projected_minutes_per_30d": 159.81,
+      "measured_seconds": 3.274,
+      "projected_minutes_per_30d": 157.17,
       "projected_runs_per_30d": 2880
     },
     "stage1_survivors": 24,
@@ -354,11 +355,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 7
+    "x_intel_published": 6
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-19T12:01:39Z",
+  "updated_at": "2026-07-19T13:53:56Z",
   "version": 1
 }
