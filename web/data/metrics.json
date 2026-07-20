@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:43:14Z",
+  "generated_at": "2026-07-20T19:43:12Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,24 +9,24 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-20T13:43:14Z",
+  "latest_successful_run": "2026-07-20T19:43:12Z",
   "highest_ranked_signal": {
-    "id": "github-004",
-    "title": "MontrealAI/skillos",
-    "action_score": 75.5,
-    "url": "https://github.com/MontrealAI/skillos"
+    "id": "github-010",
+    "title": "gadievron/raptor",
+    "action_score": 80.25,
+    "url": "https://github.com/gadievron/raptor"
   },
   "source_contribution": {
-    "github": 9,
-    "twitter": 3
+    "github": 8,
+    "twitter": 4
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Expecting ',' delimiter: line 3 column 106 (char 251)"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1160"
     }
   ],
-  "runtime_seconds": 144.216,
+  "runtime_seconds": 136.957,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -61,7 +61,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 3,
+    "public_x_signals": 4,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-20T13:43:14Z",
+    "planned_at": "2026-07-20T19:43:12Z",
     "production_threshold": 70.0
   }
 }
