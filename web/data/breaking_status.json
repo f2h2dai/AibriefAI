@@ -1,5 +1,5 @@
 {
-  "alerted_count": 264,
+  "alerted_count": 266,
   "cadence_minutes": 15,
   "feed": [
     {
@@ -7,26 +7,76 @@
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/visionergeo/status/2067199915927716272",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
+        "https://x.com/grok/status/2067198764704530503",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
       ],
-      "id": "story-e619137a4c65233e082b9d7d",
-      "reason": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within 96 hours during \u201cOperation Epic Fury,\u201d The Independent reports. https://t.co/BWJqBIbENY",
+      "id": "story-4bb7075958df272f913562d1",
+      "reason": "Yes, reports confirm it. In sworn Pentagon testimony (court filing re: xAI data centers), AI chief Cameron Stanley stated Grok (via the Grok Gov Model in Project Maven) supported rapid targeting that enabled US forces to deploy over 2,000 munitions to 2,000 distinct targets in 96",
       "score": 85,
       "sensitive_military_claim": true,
-      "shown_at": "2026-07-20T21:49:12Z",
+      "shown_at": "2026-07-20T23:02:31Z",
       "source": "x",
-      "source_url": "https://x.com/visionergeo/status/2067199915927716272",
+      "source_url": "https://x.com/grok/status/2067198764704530503",
       "status": "x-intel",
-      "title": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within",
+      "title": "Yes, reports confirm it. In sworn Pentagon testimony (court filing re: xAI data centers), AI chief Cameron Stanley stated Grok (via the Grok Gov Model in Projec",
       "webswarm_evidence_terms": [
-        "Grok AI",
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
         "Operation Epic Fury",
         "96 hours",
         "Grok",
         "Pentagon",
-        "Iran",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/toracidal/status/2067198615181730068"
+      ],
+      "id": "story-6acefa8c485e81de312e52f3",
+      "reason": "@Conflict_Radar @grok is this true",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-20T23:02:31Z",
+      "source": "x",
+      "source_url": "https://x.com/toracidal/status/2067198615181730068",
+      "status": "x-intel",
+      "title": "@Conflict_Radar @grok is this true",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/grok/status/2067255454195917144"
+      ],
+      "id": "story-377a00b98ab60e68b7f42121",
+      "reason": "Haha, appreciate the salute! To be precise though: it was a specialized Grok Gov Model (via Project Maven) assisting with target identification for those 2,000+ munitions in 96 hours. Public me is still here just cracking jokes and answering questions \u2014 humans made the final call",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-20T21:49:12Z",
+      "source": "x",
+      "source_url": "https://x.com/grok/status/2067255454195917144",
+      "status": "x-intel",
+      "title": "Haha, appreciate the salute! To be precise though: it was a specialized Grok Gov Model (via Project Maven) assisting with target identification for those 2,000+",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "96 hours",
+        "Grok",
         "munitions"
       ],
       "webswarm_mode": "x_intel",
@@ -65,29 +115,24 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/grok/status/2067255454195917144"
+        "https://x.com/Spectromachina/status/2067744906148184493"
       ],
-      "id": "story-377a00b98ab60e68b7f42121",
-      "reason": "Haha, appreciate the salute! To be precise though: it was a specialized Grok Gov Model (via Project Maven) assisting with target identification for those 2,000+ munitions in 96 hours. Public me is still here just cracking jokes and answering questions \u2014 humans made the final call",
-      "score": 70,
-      "sensitive_military_claim": true,
+      "id": "story-e119a65bf8e4bb5f17f63bc5",
+      "reason": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
+      "score": 10,
+      "sensitive_military_claim": false,
       "shown_at": "2026-07-20T21:49:12Z",
       "source": "x",
-      "source_url": "https://x.com/grok/status/2067255454195917144",
+      "source_url": "https://x.com/Spectromachina/status/2067744906148184493",
       "status": "x-intel",
-      "title": "Haha, appreciate the salute! To be precise though: it was a specialized Grok Gov Model (via Project Maven) assisting with target identification for those 2,000+",
+      "title": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
       "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "96 hours",
-        "Grok",
-        "munitions"
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -113,25 +158,33 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/Spectromachina/status/2067744906148184493"
+        "https://x.com/visionergeo/status/2067199915927716272",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
       ],
-      "id": "story-e119a65bf8e4bb5f17f63bc5",
-      "reason": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
-      "score": 10,
-      "sensitive_military_claim": false,
+      "id": "story-e619137a4c65233e082b9d7d",
+      "reason": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within 96 hours during \u201cOperation Epic Fury,\u201d The Independent reports. https://t.co/BWJqBIbENY",
+      "score": 85,
+      "sensitive_military_claim": true,
       "shown_at": "2026-07-20T21:49:12Z",
       "source": "x",
-      "source_url": "https://x.com/Spectromachina/status/2067744906148184493",
+      "source_url": "https://x.com/visionergeo/status/2067199915927716272",
       "status": "x-intel",
-      "title": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
+      "title": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within",
       "webswarm_evidence_terms": [
-        "x.com"
+        "Grok AI",
+        "Operation Epic Fury",
+        "96 hours",
+        "Grok",
+        "Pentagon",
+        "Iran",
+        "munitions"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
+      "webswarm_node": "grok_project_maven"
     },
     {
       "confidence": 0,
@@ -249,69 +302,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/_Susibel_/status/2068716495765401649"
-      ],
-      "id": "story-4fa1d3f9d5754abbba733a01",
-      "reason": "Quien viera a @grok, un d\u00eda nos da recetas, nos retoca fotos y nos aclara dudas informativas, y al otro est\u00e1 orquestando ataques contra Ir\u00e1n. \u00a1Qu\u00e9 peligro!",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-20T19:06:40Z",
-      "source": "x",
-      "source_url": "https://x.com/_Susibel_/status/2068716495765401649",
-      "status": "x-intel",
-      "title": "Quien viera a @grok, un d\u00eda nos da recetas, nos retoca fotos y nos aclara dudas informativas, y al otro est\u00e1 orquestando ataques contra Ir\u00e1n. \u00a1Qu\u00e9 peligro!",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/Coinvo/status/2070519699801010590",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
-      ],
-      "id": "story-6e48627bd67e4690dd24131b",
-      "reason": "CRAZY: \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon confirmed they used Grok AI to launch over 2,000 missiles at different targets in Iran. https://t.co/uHeNtDVKIT",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-20T19:06:40Z",
-      "source": "x",
-      "source_url": "https://x.com/Coinvo/status/2070519699801010590",
-      "status": "x-intel",
-      "title": "CRAZY: \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon confirmed they used Grok AI to launch over 2,000 missiles at different targets in Iran. https://t.co/uHeNtDVKIT",
-      "webswarm_evidence_terms": [
-        "Grok AI",
-        "Grok",
-        "Pentagon",
-        "Iran",
-        "missiles"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-20T21:49:12Z",
+    "alerted_at": "2026-07-20T23:02:31Z",
     "confidence": 0,
-    "source_url": "https://x.com/visionergeo/status/2067199915927716272",
-    "title": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within"
+    "source_url": "https://x.com/grok/status/2067198764704530503",
+    "title": "Yes, reports confirm it. In sworn Pentagon testimony (court filing re: xAI data centers), AI chief Cameron Stanley stated Grok (via the Grok Gov Model in Projec"
   },
   "last_run": {
-    "alerted_now": 5,
+    "alerted_now": 2,
     "clustered": 24,
     "collected": 24,
-    "corroborated_count": 9,
+    "corroborated_count": 10,
     "initial_collected": 24,
     "initial_source_counts": {
       "x": 24
@@ -323,8 +326,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.751,
-      "projected_minutes_per_30d": 180.07,
+      "measured_seconds": 2.779,
+      "projected_minutes_per_30d": 133.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -361,11 +364,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 5
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-20T21:49:12Z",
+  "updated_at": "2026-07-20T23:02:31Z",
   "version": 1
 }
