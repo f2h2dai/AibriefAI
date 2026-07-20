@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v5
 
       - name: Agent limit preflight
         shell: bash
@@ -91,6 +91,7 @@ jobs:
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           GITHUB_EVENT_SCHEDULE: "${{ github.event.schedule || '' }}"
           SEND_NOTIFICATION: "${{ github.event.inputs.send_notification || 'false' }}"
+          ACTION_SCORE_THRESHOLD: "${{ vars.ACTION_SCORE_THRESHOLD || '70' }}"
         run: |
           set -euo pipefail
 
@@ -101,6 +102,7 @@ jobs:
           import os
           import re
           import subprocess
+          import time
           import urllib.error
           import urllib.parse
           import urllib.request
@@ -110,8 +112,12 @@ jobs:
           from html import escape
           from pathlib import Path
 
+          from aibrief.agents.orchestrator import AgentOperationsOrchestrator, write_operations_artifacts
+          from aibrief.breaking_monitor import DEFAULT_X_PRIORITY_ACCOUNTS, canonical_x_post_url
+
           NOW_DT = datetime.now(timezone.utc)
           NOW = NOW_DT.strftime("%Y-%m-%dT%H:%M:%SZ")
+          PIPELINE_STARTED = time.monotonic()
           FRESH_SOURCE_DAYS = 7
           STALE_SOURCE_DAYS = 21
           TOPIC = "AI agents"
@@ -125,6 +131,7 @@ jobs:
           GITHUB_EVENT_SCHEDULE = os.getenv("GITHUB_EVENT_SCHEDULE", "").strip()
           SEND_NOTIFICATION = os.getenv("SEND_NOTIFICATION", "false").strip()
           MORNING_CRON = "0 12 * * *"
+          ACTION_SCORE_THRESHOLD = float(os.getenv("ACTION_SCORE_THRESHOLD", "70"))
 
           GEMINI_QUOTA_EXHAUSTED = False
           PROVIDER_COUNTS = {
@@ -384,7 +391,11 @@ jobs:
                   )
                   return False, f"ntfy {type(e).__name__}"
 
-          X_QUERY = "AI OR agents OR LLM OR GPT OR reasoning"
+          X_QUERY = (
+              'AI OR agents OR LLM OR GPT OR reasoning OR "Project Maven" OR "Grok Gov" '
+              'OR "AI targeting" OR "military AI" OR "geospatial intelligence" '
+              'OR "الذكاء الاصطناعي" OR "غروك" OR "استهداف"'
+          )
 
           raw_cookie = os.getenv(
               "TWITTER_COOKIE", ""
@@ -486,16 +497,18 @@ jobs:
               )
 
           def x_influencer_handles():
-              raw = os.getenv("X_INFLUENCERS", "")
+              raw = os.getenv("X_INFLUENCERS", "").strip()
+              source = re.split(r"[\s,;]+", raw) if raw else DEFAULT_X_PRIORITY_ACCOUNTS
               handles = []
               seen = set()
-              for item in raw.split(","):
+              for item in source:
                   handle = re.sub(r"[^A-Za-z0-9_]", "", item.strip().removeprefix("@"))
                   key = handle.lower()
                   if handle and key not in seen:
                       seen.add(key)
                       handles.append(handle)
-              return handles
+              max_handles = max(1, int(os.getenv("X_INFLUENCER_LIMIT", "24")))
+              return handles[:max_handles]
 
           def parse_cli_json(stdout):
               text = (stdout or "").strip()
@@ -571,19 +584,11 @@ jobs:
                   record.get("description"),
                   title,
               )
-              url = first_cli_text(
-                  record.get("url"),
-                  record.get("link"),
-                  record.get("permalink"),
-                  record.get("tweet_url"),
-                  record.get("post_url"),
-              )
-              if url.startswith("/"):
-                  url = "https://x.com" + url
               handle = cli_record_handle(record, fallback_handle)
+              url = canonical_x_post_url(record, handle)
               if handle and title and not title.lower().startswith(f"@{handle.lower()}"):
                   title = f"@{handle}: {title}"
-              if not title and not content:
+              if (not title and not content) or not url:
                   return None
               published = first_cli_text(
                   record.get("createdAtISO"),
@@ -596,7 +601,7 @@ jobs:
                   "source": "twitter",
                   "title": title or content[:90],
                   "content": content or title,
-                  "url": url or "https://x.com",
+                  "url": url,
                   "collector": "XInfluencerAgent",
                   "source_published_at": source_timestamp({"source_published_at": published}) or NOW,
               }
@@ -610,7 +615,9 @@ jobs:
                   if not lines:
                       continue
                   url_match = re.search(r"https?://(?:x\.com|twitter\.com)/[^\s)]+", block)
-                  url = url_match.group(0) if url_match else ""
+                  url = canonical_x_post_url(url_match.group(0), handle) if url_match else ""
+                  if not url:
+                      continue
                   content_lines = [
                       line
                       for line in lines
@@ -624,7 +631,7 @@ jobs:
                           "source": "twitter",
                           "title": f"@{handle}: {content[:90]}",
                           "content": content,
-                          "url": url or "https://x.com",
+                          "url": url,
                           "collector": "XInfluencerAgent",
                           "source_published_at": NOW,
                       }
@@ -645,7 +652,7 @@ jobs:
 
           def x_search_commands(query):
               return [
-                  ["twitter", "search", query],
+                  ["twitter", "search", query, "--json", "--max", "20", "--full-text"],
                   ["opencli", "twitter", "search", query],
                   ["bird", "search", query],
               ]
@@ -658,7 +665,8 @@ jobs:
               ]
 
           def enrich_x_tweet(record):
-              url = record.get("url", "")
+              url = canonical_x_post_url(record.get("url", ""))
+              record["url"] = url
               if not url.startswith(("https://x.com/", "https://twitter.com/")):
                   return record
               for command in x_tweet_commands(url):
@@ -1149,6 +1157,30 @@ jobs:
               key=lambda x: (freshness_rank(x), x["score"]),
               reverse=True,
           )[:12]
+          source_failures_by_agent = {}
+          for event in PIPELINE_EVENTS:
+              if event.get("level") != "error":
+                  continue
+              source_name = event.get("agent", "unknown")
+              source_failures_by_agent.setdefault(
+                  source_name,
+                  {
+                      "source": source_name,
+                      "reason": event.get("message", "source or provider failure"),
+                  },
+              )
+          source_failures = list(source_failures_by_agent.values())
+          operations_result = AgentOperationsOrchestrator().process_existing_run(
+              signals,
+              mode="global_ai",
+              configured_threshold=ACTION_SCORE_THRESHOLD,
+              generated_at=NOW,
+              provider_counts=PROVIDER_COUNTS,
+              events=PIPELINE_EVENTS,
+              runtime_seconds=time.monotonic() - PIPELINE_STARTED,
+              source_failures=source_failures,
+          )
+          signals = operations_result["signals"]
           fresh_signals = [
               signal
               for signal in signals
@@ -1219,6 +1251,10 @@ jobs:
               **freshness_metadata,
               "agents": agents,
               "events": PIPELINE_EVENTS[-20:],
+              "operations": {
+                  "metrics": operations_result["metrics"],
+                  "run": operations_result["run"],
+              },
               "signals": signals,
           }
 
@@ -1270,6 +1306,8 @@ jobs:
               json.dumps(health, ensure_ascii=False),
               encoding="utf-8"
           )
+
+          write_operations_artifacts(operations_result)
 
           html = f"""<!doctype html>
           <html lang="en">
@@ -2109,6 +2147,8 @@ jobs:
           PY
 
           python3 -m json.tool web/data/signals.json >/dev/null
+          python3 -m json.tool web/data/metrics.json >/dev/null
+          python3 -m json.tool web/data/runs.json >/dev/null
           python3 -m json.tool web/health.json >/dev/null
           test -s web/index.html
           test -s web/brief.html
@@ -2121,7 +2161,7 @@ jobs:
           git config user.name "aibrief-bot"
           git config user.email "aibrief-bot@example.com"
 
-          git add web/index.html web/brief.html web/data/signals.json web/health.json web/health/index.html data/latest_report.json
+          git add web/index.html web/brief.html web/data/signals.json web/data/metrics.json web/data/runs.json web/health.json web/health/index.html data/latest_report.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"

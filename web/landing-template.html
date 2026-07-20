@@ -30,10 +30,12 @@
     }
 
     html {
+      overflow-x: hidden;
       scroll-behavior: smooth;
     }
 
     body {
+      overflow-x: hidden;
       margin: 0;
       background:
         linear-gradient(90deg, rgba(11, 134, 181, 0.035) 1px, transparent 1px) 0 0 / 38px 38px,
@@ -620,6 +622,15 @@
       margin: 10px 0 0;
     }
 
+    .x-card .evidence-link {
+      color: var(--ink);
+      display: inline-block;
+      font-weight: 700;
+      margin-top: 10px;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     .section-grid {
       display: grid;
       gap: 16px;
@@ -773,6 +784,283 @@
       font-weight: 900;
     }
 
+    .operations-console {
+      border-top: 1px solid var(--line);
+      margin-top: 30px;
+      padding-top: 28px;
+    }
+
+    .operations-head {
+      align-items: end;
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .operations-head h2 {
+      font-size: 30px;
+      margin: 0 0 7px;
+    }
+
+    .operations-head p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .orchestrator-badge {
+      align-items: center;
+      border: 1px solid rgba(0, 126, 138, 0.25);
+      border-radius: var(--radius);
+      color: var(--teal);
+      display: inline-flex;
+      font-size: 12px;
+      font-weight: 900;
+      gap: 8px;
+      min-height: 36px;
+      padding: 0 12px;
+      white-space: nowrap;
+    }
+
+    .orchestrator-badge::before {
+      background: var(--green);
+      border-radius: 999px;
+      content: "";
+      height: 7px;
+      width: 7px;
+    }
+
+    .operations-metrics {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .ops-metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      min-height: 96px;
+      padding: 15px;
+    }
+
+    .ops-metric strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    .ops-metric span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .ops-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr) minmax(260px, 0.75fr);
+      margin-top: 14px;
+    }
+
+    .ops-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      min-width: 0;
+      padding: 18px;
+    }
+
+    .ops-panel h3 {
+      font-size: 14px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .ops-panel-head {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .ops-panel-head span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .scenario-scale {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 6px 0 10px;
+    }
+
+    .scenario-scale span:nth-child(2) {
+      text-align: center;
+    }
+
+    .scenario-scale span:last-child {
+      text-align: right;
+    }
+
+    .scenario-scale strong,
+    .scenario-scale small {
+      display: block;
+    }
+
+    .scenario-scale small {
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    .threshold-slider {
+      accent-color: var(--teal);
+      direction: rtl;
+      width: 100%;
+    }
+
+    .scenario-readout {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin-top: 16px;
+    }
+
+    .scenario-readout div {
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
+    }
+
+    .scenario-readout strong,
+    .scenario-readout span {
+      display: block;
+    }
+
+    .scenario-readout strong {
+      font-size: 18px;
+    }
+
+    .scenario-readout span {
+      color: var(--muted);
+      font-size: 10px;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
+    .scenario-note {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.5;
+      margin: 12px 0 0;
+    }
+
+    .worker-list,
+    .source-bars,
+    .ranked-list,
+    .warning-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .worker-row,
+    .source-row,
+    .ranked-item,
+    .warning-item {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 9px;
+    }
+
+    .worker-row:last-child,
+    .source-row:last-child,
+    .ranked-item:last-child,
+    .warning-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .worker-row,
+    .source-row {
+      align-items: center;
+      display: grid;
+      gap: 9px;
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .worker-row strong,
+    .source-row strong {
+      font-size: 12px;
+    }
+
+    .worker-state {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .worker-state.failed {
+      color: #b35a00;
+    }
+
+    .source-bar {
+      background: #e8f0f4;
+      border-radius: 2px;
+      grid-column: 1 / -1;
+      height: 5px;
+      overflow: hidden;
+    }
+
+    .source-bar i {
+      background: var(--teal);
+      display: block;
+      height: 100%;
+    }
+
+    .ops-table-wrap {
+      overflow-x: auto;
+    }
+
+    .ops-table {
+      border-collapse: collapse;
+      font-size: 12px;
+      width: 100%;
+    }
+
+    .ops-table th,
+    .ops-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      text-align: left;
+    }
+
+    .ranked-item a {
+      color: var(--cyan);
+      display: block;
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.4;
+    }
+
+    .ranked-item span,
+    .warning-item span {
+      color: var(--muted);
+      display: block;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .warning-item strong {
+      color: #9b4f00;
+      font-size: 12px;
+    }
+
     .pipeline {
       background: #07131f;
       color: #fff;
@@ -863,8 +1151,13 @@
       .hero,
       .radar-card,
       .section-grid,
+      .ops-grid,
       .pipeline-inner {
         grid-template-columns: 1fr;
+      }
+
+      .operations-metrics {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
       .radar-side {
@@ -908,8 +1201,15 @@
       .hero-summary,
       .radar-tools,
       .desk-tools,
-      .x-lane {
+      .x-lane,
+      .operations-metrics,
+      .scenario-readout {
         grid-template-columns: 1fr;
+      }
+
+      .operations-head {
+        align-items: flex-start;
+        flex-direction: column;
       }
 
       .x-feed {
@@ -1041,6 +1341,91 @@
           </div>
         </section>
 
+        <section class="operations-console" id="operations" aria-labelledby="operationsTitle">
+          <div class="operations-head">
+            <div>
+              <h2 id="operationsTitle">Agent operations</h2>
+              <p>One orchestrator, five bounded workers, and evidence-gated action intelligence.</p>
+            </div>
+            <span class="orchestrator-badge" id="orchestratorState">Orchestrator checking</span>
+          </div>
+
+          <div class="operations-metrics" aria-label="Live operations statistics">
+            <div class="ops-metric"><strong id="metricCollected">--</strong><span>Collected today</span></div>
+            <div class="ops-metric"><strong id="metricVerified">--</strong><span>Verified signals</span></div>
+            <div class="ops-metric"><strong id="metricActNow">--</strong><span>Act now</span></div>
+            <div class="ops-metric"><strong id="metricDuplicate">--</strong><span>Duplicate rate</span></div>
+            <div class="ops-metric"><strong id="metricUnsupported">--</strong><span>Unsupported claims</span></div>
+            <div class="ops-metric"><strong id="metricFailures">--</strong><span>Source failure rate</span></div>
+            <div class="ops-metric"><strong id="metricPrimary">--</strong><span>Primary-source links</span></div>
+            <div class="ops-metric"><strong id="metricCost">--</strong><span>Daily API cost</span></div>
+            <div class="ops-metric"><strong id="metricLatestRun">--</strong><span>Latest successful run</span></div>
+            <div class="ops-metric"><strong id="metricHighest">--</strong><span>Highest action score</span></div>
+          </div>
+
+          <div class="ops-grid">
+            <section class="ops-panel" aria-labelledby="scenarioTitle">
+              <div class="ops-panel-head">
+                <h3 id="scenarioTitle">Threshold scenario</h3>
+                <span>Analysis only</span>
+              </div>
+              <div class="scenario-scale" aria-hidden="true">
+                <span><strong>Conservative</strong><small>85</small></span>
+                <span><strong>Balanced</strong><small>70</small></span>
+                <span><strong>Exploratory</strong><small>55</small></span>
+              </div>
+              <label for="actionThreshold">Minimum action score: <strong id="thresholdValue">70</strong></label>
+              <input class="threshold-slider" id="actionThreshold" type="range" min="55" max="85" value="70" step="1" aria-describedby="scenarioIsolationNote">
+              <div class="scenario-readout" aria-live="polite">
+                <div><strong id="scenarioVisible">--</strong><span>Visible</span></div>
+                <div><strong id="scenarioActNow">--</strong><span>Act now</span></div>
+                <div><strong id="scenarioCost">--</strong><span>Est. cost</span></div>
+                <div><strong id="scenarioRisk">--</strong><span>False-positive risk</span></div>
+                <div><strong id="scenarioSources">--</strong><span>Sources</span></div>
+              </div>
+              <p class="scenario-note" id="scenarioIsolationNote">This control recalculates the browser view only. The production threshold remains server-configured and is never written by this page.</p>
+              <div class="source-bars" id="scenarioSourceDistribution" aria-label="Scenario source distribution"></div>
+            </section>
+
+            <section class="ops-panel" aria-labelledby="teamTitle">
+              <div class="ops-panel-head"><h3 id="teamTitle">Bounded worker team</h3><span>5 workers</span></div>
+              <div class="worker-list" id="workerList"><span>Loading worker state...</span></div>
+            </section>
+
+            <section class="ops-panel" aria-labelledby="sourceTitle">
+              <div class="ops-panel-head"><h3 id="sourceTitle">Source contribution</h3><span>Current run</span></div>
+              <div class="source-bars" id="sourceContribution"><span>Loading source mix...</span></div>
+            </section>
+          </div>
+
+          <div class="ops-grid">
+            <section class="ops-panel" aria-labelledby="runsTitle">
+              <div class="ops-panel-head"><h3 id="runsTitle">Recent run performance</h3><span id="runCount">0 runs</span></div>
+              <div class="ops-table-wrap">
+                <table class="ops-table">
+                  <thead><tr><th>Run</th><th>Status</th><th>Signals</th><th>Act now</th><th>Runtime</th><th>Cost</th></tr></thead>
+                  <tbody id="runRows"><tr><td colspan="6">Loading run history...</td></tr></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="ops-panel" aria-labelledby="topSignalsTitle">
+              <div class="ops-panel-head"><h3 id="topSignalsTitle">Top signals</h3><span>Action score</span></div>
+              <div class="ranked-list" id="topSignalsList"><span>Loading ranked signals...</span></div>
+            </section>
+
+            <section class="ops-panel" aria-labelledby="actNowTitle">
+              <div class="ops-panel-head"><h3 id="actNowTitle">Act-now items</h3><span>Strict evidence gate</span></div>
+              <div class="ranked-list" id="actNowList"><span>Checking action gate...</span></div>
+            </section>
+          </div>
+
+          <section class="ops-panel" aria-labelledby="warningTitle" style="margin-top:14px;">
+            <div class="ops-panel-head"><h3 id="warningTitle">Failed-source warnings</h3><span>Isolated failures</span></div>
+            <div class="warning-list" id="sourceWarnings"><span>No failed sources reported.</span></div>
+          </section>
+        </section>
+
         <section class="section-grid" id="signals">
           <div class="signal-desk">
             <div class="desk-head">
@@ -1137,14 +1522,18 @@
     </footer>
   </div>
 
+  <script src="operations-dashboard.js"></script>
   <script>
     const state = {
       signals: [],
       breaking: [],
+      metrics: {},
+      runs: [],
       search: '',
       source: 'all',
       sort: 'latest',
-      language: 'en'
+      language: 'en',
+      scenarioThreshold: 70
     };
 
     const sourceLabels = {
@@ -1381,12 +1770,199 @@
         const time = item.shown_at || item.sourcePublishedAt || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
         const url = item.source_url || item.url || '#';
-        return '<a class="x-card" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' +
-          '<small><span>' + escapeHTML(formatDate(time, 'time')) + '</span><span>' + escapeHTML(score) + '</span></small>' +
-          '<strong>' + escapeHTML(shortText(title, 112)) + '</strong>' +
+        const evidenceURLs = Array.isArray(item.evidence_urls) ? item.evidence_urls.filter(Boolean) : [];
+        const secondSource = evidenceURLs.find(function(sourceURL) { return sourceURL !== url; }) || '';
+        const evidenceCount = Math.max(1, Number(item.evidence_count || 1));
+        const evidenceLabel = item.evidence_status === 'corroborated'
+          ? evidenceCount + ' sources / ' + evidenceCount + ' مصادر'
+          : item.sensitive_military_claim
+            ? 'Single X source / مصدر X واحد'
+            : 'X source / مصدر X';
+        return '<article class="x-card">' +
+          '<small><span>' + escapeHTML(formatDate(time, 'time')) + '</span><span>' + escapeHTML(score + ' · ' + evidenceLabel) + '</span></small>' +
+          '<strong><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 112)) + '</a></strong>' +
           '<p>' + escapeHTML(shortText(reason, 150)) + '</p>' +
-        '</a>';
+          (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener">Second source / المصدر الثاني</a>' : '') +
+        '</article>';
       }).join('');
+    }
+
+    function percent(value) {
+      return Math.round(Number(value || 0) * 100) + '%';
+    }
+
+    function money(value) {
+      return '$' + Number(value || 0).toFixed(2);
+    }
+
+    function fallbackMetrics(payload) {
+      const total = state.signals.length;
+      const duplicates = state.signals.filter(function(signal) { return Boolean(signal.duplicate_of); }).length;
+      const unsupported = state.signals.filter(function(signal) { return Number(signal.unsupported_claims || 0) > 0; }).length;
+      const primary = state.signals.filter(function(signal) { return Boolean(signal.primary_source_url); }).length;
+      const distribution = {};
+      state.signals.forEach(function(signal) {
+        const source = String(signal.source || 'unknown');
+        distribution[source] = (distribution[source] || 0) + 1;
+      });
+      const errors = (Array.isArray(payload.events) ? payload.events : []).filter(function(event) {
+        return String(event.level || '').toLowerCase() === 'error';
+      });
+      const failedBySource = {};
+      errors.forEach(function(event) {
+        const source = String(event.agent || 'Source');
+        if (!failedBySource[source]) {
+          failedBySource[source] = { source: source, reason: event.message };
+        }
+      });
+      const failedSources = Object.values(failedBySource);
+      const scenario = window.AIbriefScenario.recalculate(state.signals, 70);
+      const highest = state.signals.slice().sort(function(a, b) {
+        return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
+      })[0];
+      return {
+        generated_at: payload.generated_at,
+        configured_threshold: 70,
+        signals_collected_today: total,
+        verified_signals: state.signals.filter(function(signal) { return signal.status === 'verified'; }).length,
+        act_now_items: scenario.act_now_count,
+        duplicate_rate: total ? duplicates / total : 0,
+        unsupported_claim_rate: total ? unsupported / total : 0,
+        source_failure_rate: failedSources.length ? failedSources.length / Math.max(Object.keys(distribution).length + failedSources.length, 1) : 0,
+        primary_source_link_rate: total ? primary / total : 0,
+        daily_api_cost_usd: state.signals.reduce(function(sum, signal) { return sum + Number(signal.estimated_cost_usd || 0); }, 0),
+        latest_successful_run: payload.generated_at,
+        highest_ranked_signal: highest ? { title: highest.title, action_score: window.AIbriefScenario.actionScore(highest), url: highest.url } : null,
+        source_contribution: distribution,
+        failed_sources: failedSources,
+        orchestrator: { name: 'AIbrief Operations Orchestrator', status: 'complete' },
+        workers: [
+          { name: 'Signal Scout', status: 'complete', bounded: true },
+          { name: 'Brief Composer', status: 'complete', bounded: true },
+          { name: 'Brief Planner', status: 'complete', bounded: true },
+          { name: 'Intelligence Analyst', status: 'complete', bounded: true },
+          { name: 'Public Signal Watcher', status: 'complete', bounded: true }
+        ]
+      };
+    }
+
+    function renderSourceBars(targetId, distribution) {
+      const target = document.getElementById(targetId);
+      const entries = Object.entries(distribution || {}).sort(function(a, b) { return b[1] - a[1]; });
+      const maximum = Math.max.apply(null, entries.map(function(entry) { return Number(entry[1] || 0); }).concat([1]));
+      target.innerHTML = entries.map(function(entry) {
+        const width = Math.round(Number(entry[1] || 0) / maximum * 100);
+        return '<div class="source-row"><strong>' + escapeHTML(sourceLabel(entry[0])) + '</strong><span>' + escapeHTML(entry[1]) + '</span><div class="source-bar"><i style="width:' + width + '%"></i></div></div>';
+      }).join('') || '<span>No source contribution in this scenario.</span>';
+    }
+
+    function renderOperationsMetrics() {
+      const metrics = state.metrics || {};
+      const highest = metrics.highest_ranked_signal || {};
+      document.getElementById('metricCollected').textContent = String(metrics.signals_collected_today || 0);
+      document.getElementById('metricVerified').textContent = String(metrics.verified_signals || 0);
+      document.getElementById('metricActNow').textContent = String(metrics.act_now_items || 0);
+      document.getElementById('metricDuplicate').textContent = percent(metrics.duplicate_rate);
+      document.getElementById('metricUnsupported').textContent = percent(metrics.unsupported_claim_rate);
+      document.getElementById('metricFailures').textContent = percent(metrics.source_failure_rate);
+      document.getElementById('metricPrimary').textContent = percent(metrics.primary_source_link_rate);
+      document.getElementById('metricCost').textContent = money(metrics.daily_api_cost_usd);
+      document.getElementById('metricLatestRun').textContent = metrics.latest_successful_run ? formatDate(metrics.latest_successful_run, 'time') : '--';
+      document.getElementById('metricHighest').textContent = highest.action_score == null ? '--' : String(highest.action_score);
+      document.getElementById('orchestratorState').textContent = (metrics.orchestrator && metrics.orchestrator.status === 'partial') ? 'Orchestrator partial' : 'Orchestrator complete';
+      renderSourceBars('sourceContribution', metrics.source_contribution || {});
+    }
+
+    function renderWorkerTeam() {
+      const workers = Array.isArray(state.metrics.workers) ? state.metrics.workers : [];
+      document.getElementById('workerList').innerHTML = workers.map(function(worker) {
+        const failed = worker.status === 'failed';
+        return '<div class="worker-row"><strong>' + escapeHTML(worker.name) + '</strong><span class="worker-state' + (failed ? ' failed' : '') + '">' + escapeHTML(worker.status || 'ready') + '</span></div>';
+      }).join('') || '<span>Worker status unavailable.</span>';
+    }
+
+    function renderRecentRuns() {
+      const runs = state.runs.slice().sort(function(a, b) {
+        return String(b.generated_at || '').localeCompare(String(a.generated_at || ''));
+      }).slice(0, 6);
+      document.getElementById('runCount').textContent = runs.length + ' runs';
+      document.getElementById('runRows').innerHTML = runs.map(function(run) {
+        return '<tr><td>' + escapeHTML(formatDate(run.generated_at, 'time')) + '</td><td>' + escapeHTML(run.status || 'complete') + '</td><td>' + escapeHTML(run.signals || 0) + '</td><td>' + escapeHTML(run.act_now_items || 0) + '</td><td>' + escapeHTML(Number(run.runtime_seconds || 0).toFixed(1)) + 's</td><td>' + escapeHTML(money(run.daily_api_cost_usd)) + '</td></tr>';
+      }).join('') || '<tr><td colspan="6">No run history available yet.</td></tr>';
+    }
+
+    function renderRankedOperations() {
+      const ranked = state.signals.slice().sort(function(a, b) {
+        return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
+      });
+      document.getElementById('topSignalsList').innerHTML = ranked.slice(0, 5).map(function(signal) {
+        return '<div class="ranked-item"><a href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener">' + escapeHTML(shortText(signal.title, 92)) + '</a><span>' + escapeHTML(sourceLabel(signal.source)) + ' · action ' + escapeHTML(window.AIbriefScenario.actionScore(signal)) + '</span></div>';
+      }).join('') || '<span>No ranked signals available.</span>';
+
+      const threshold = Number(state.metrics.configured_threshold || 70);
+      const actNow = ranked.filter(function(signal) { return window.AIbriefScenario.qualifiesForActNow(signal, threshold); });
+      document.getElementById('actNowList').innerHTML = actNow.slice(0, 5).map(function(signal) {
+        return '<div class="ranked-item"><a href="' + escapeHTML(signal.primary_source_url || signal.url || '#') + '" target="_blank" rel="noopener">' + escapeHTML(shortText(signal.title, 92)) + '</a><span>' + escapeHTML(signal.evidence_count || 0) + ' evidence links · action ' + escapeHTML(window.AIbriefScenario.actionScore(signal)) + '</span></div>';
+      }).join('') || '<span>No item passes the production evidence gate.</span>';
+    }
+
+    function renderSourceWarnings() {
+      const failures = Array.isArray(state.metrics.failed_sources) ? state.metrics.failed_sources : [];
+      document.getElementById('sourceWarnings').innerHTML = failures.slice(0, 8).map(function(failure) {
+        const source = typeof failure === 'string' ? failure : (failure.source || 'Source');
+        const reason = typeof failure === 'string' ? 'Isolated failure' : (failure.reason || 'Isolated failure');
+        return '<div class="warning-item"><strong>' + escapeHTML(source) + '</strong><span>' + escapeHTML(shortText(reason, 180)) + '</span></div>';
+      }).join('') || '<span>No failed sources reported.</span>';
+    }
+
+    function renderThresholdScenario() {
+      const scenario = window.AIbriefScenario.recalculate(state.signals, state.scenarioThreshold);
+      document.getElementById('thresholdValue').textContent = String(scenario.threshold);
+      document.getElementById('scenarioVisible').textContent = String(scenario.visible_signals);
+      document.getElementById('scenarioActNow').textContent = String(scenario.act_now_count);
+      document.getElementById('scenarioCost').textContent = money(scenario.estimated_daily_cost);
+      document.getElementById('scenarioRisk').textContent = scenario.estimated_false_positive_risk;
+      document.getElementById('scenarioSources').textContent = String(Object.keys(scenario.source_distribution).length);
+      renderSourceBars('scenarioSourceDistribution', scenario.source_distribution);
+    }
+
+    function renderOperations() {
+      renderOperationsMetrics();
+      renderWorkerTeam();
+      renderRecentRuns();
+      renderRankedOperations();
+      renderSourceWarnings();
+      renderThresholdScenario();
+    }
+
+    async function loadOperations(payload) {
+      const embedded = payload.operations || {};
+      state.metrics = embedded.metrics || fallbackMetrics(payload);
+      state.runs = embedded.run ? [embedded.run] : [{
+        run_id: 'current-' + String(payload.generated_at || 'run'),
+        generated_at: payload.generated_at,
+        status: 'complete',
+        signals: state.metrics.signals_collected_today || state.signals.length,
+        act_now_items: state.metrics.act_now_items || 0,
+        runtime_seconds: state.metrics.runtime_seconds || 0,
+        daily_api_cost_usd: state.metrics.daily_api_cost_usd || 0
+      }];
+      try {
+        const responses = await Promise.all([
+          fetch('data/metrics.json?v=' + Date.now(), { cache: 'no-store' }),
+          fetch('data/runs.json?v=' + Date.now(), { cache: 'no-store' })
+        ]);
+        if (responses[0].ok) {
+          state.metrics = await responses[0].json();
+        }
+        if (responses[1].ok) {
+          const history = await responses[1].json();
+          state.runs = Array.isArray(history) ? history : (history.runs || state.runs);
+        }
+      } catch (error) {
+        // Embedded operations data keeps the dashboard usable before the first metrics artifact exists.
+      }
+      renderOperations();
     }
 
     async function loadBreakingWatch() {
@@ -1421,6 +1997,7 @@
         renderHealth(payload);
         renderProviders(payload);
         renderXIntel(state.breaking);
+        await loadOperations(payload);
       } catch (error) {
         document.getElementById('briefingStatus').firstElementChild.textContent = 'Briefing feed could not be loaded.';
         document.getElementById('signalRows').innerHTML = '<tr><td colspan="6"><div class="empty">Could not load data/signals.json. Refresh after the feed workflow finishes.</div></td></tr>';
@@ -1481,6 +2058,11 @@
       this.textContent = state.language === 'en' ? 'العربية' : 'English';
       this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
       renderSignalRows();
+    });
+
+    document.getElementById('actionThreshold').addEventListener('input', function() {
+      state.scenarioThreshold = Number(this.value);
+      renderThresholdScenario();
     });
 
     setClock();

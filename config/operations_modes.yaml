@@ -1,0 +1,8 @@
+{
+  "modes": {
+    "global_ai": {"languages": ["en", "ar"], "output": "full_brief"},
+    "saudi_act_now": {"region": "Saudi Arabia", "languages": ["ar"], "output": "act_now_only"},
+    "x_public_watch": {"sources": ["x"], "access": "public_read_only", "output": "signal_queue"},
+    "bookmarks_import": {"source": "user_export", "output": "analysis_queue"}
+  }
+}

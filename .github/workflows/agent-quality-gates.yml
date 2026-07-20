@@ -7,10 +7,13 @@ on:
       - "docs/**"
       - "scripts/check_ai_budget_usage.py"
       - "scripts/check_quality_flywheel.py"
+      - "scripts/route_secret_alert.py"
+      - "config/secret-alert-policy.yml"
       - "tests/test_ai_budget_usage.py"
       - "tests/test_chatgpt_work_eval.py"
       - "tests/test_gpt56_routing.py"
       - "tests/test_quality_flywheel.py"
+      - "tests/test_secret_alert_routing.py"
       - "tests/test_vscode_browser_policy.py"
       - "tests/test_security_gateway.py"
       - "tests/test_security_profiles.py"
@@ -34,6 +37,9 @@ jobs:
 
       - name: Check quality flywheel thresholds
         run: python3 scripts/check_quality_flywheel.py --baseline evals/quality-flywheel/baselines/v1.json
+
+      - name: Verify secret alert router in dry-run mode
+        run: python3 -m unittest tests.test_secret_alert_routing -v
 
       - name: Run governance and evaluation tests
         run: |

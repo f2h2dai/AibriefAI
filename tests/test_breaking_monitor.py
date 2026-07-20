@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import ast
 import json
 import tempfile
 import unittest
@@ -8,6 +9,9 @@ from pathlib import Path
 from aibrief.breaking_monitor import (
     DEFAULT_X_INFLUENCERS,
     DEFAULT_X_INTEL_QUERY,
+    DEFAULT_X_PRIORITY_ACCOUNTS,
+    annotate_secondary_evidence,
+    canonical_x_post_url,
     classify_with_gemini,
     cluster_story_candidates,
     collect_birdclaw_export,
@@ -22,6 +26,9 @@ from aibrief.breaking_monitor import (
     x_auth_summary,
     x_cli_env,
     x_influencer_handles,
+    normalize_x_record,
+    parse_x_cli_output,
+    x_search_commands,
     x_search_queries,
 )
 
@@ -222,6 +229,59 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(signals[0]["url"], "https://x.com/defense_ai/status/260620245123456789")
         self.assertTrue(survives_stage1(clustered[0]))
 
+    def test_x_urls_are_canonical_original_post_links(self):
+        canonical = canonical_x_post_url(
+            {
+                "rest_id": "260620245123456789",
+                "author": {"userName": "Defense_AI"},
+                "url": "https://twitter.com/i/web/status/260620245123456789?s=20#tracking",
+            }
+        )
+        normalized = normalize_x_record(
+            {
+                "id_str": "260620245123456789",
+                "user": {"screenName": "Defense_AI"},
+                "text": "Project Maven military AI targeting update",
+            }
+        )
+
+        self.assertEqual(canonical, "https://x.com/Defense_AI/status/260620245123456789")
+        self.assertEqual(normalized["url"], canonical)
+
+    def test_canonical_x_url_removes_tracking_and_twitter_host(self):
+        self.assertEqual(
+            canonical_x_post_url("https://twitter.com/DefenseAI/status/260620245123456789?s=20#thread"),
+            "https://x.com/DefenseAI/status/260620245123456789",
+        )
+
+    def test_twitter_cli_search_forces_structured_json_output(self):
+        command = x_search_commands('"Project Maven"')[0]
+
+        self.assertEqual(command[:3], ["twitter", "search", '"Project Maven"'])
+        self.assertIn("--json", command)
+        self.assertIn("--max", command)
+        self.assertIn("--full-text", command)
+
+    def test_twitter_cli_json_envelope_preserves_original_post(self):
+        records = parse_x_cli_output(
+            json.dumps(
+                {
+                    "ok": True,
+                    "schema_version": "1",
+                    "data": [
+                        {
+                            "id": "260620245123456789",
+                            "text": "Pentagon Project Maven AI targeting update",
+                            "author": {"username": "DeptofDefense"},
+                        }
+                    ],
+                }
+            )
+        )
+
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["url"], "https://x.com/DeptofDefense/status/260620245123456789")
+
     def test_default_x_intel_query_targets_military_ai_claims(self):
         self.assertIn("Grok AI", DEFAULT_X_INTEL_QUERY)
         self.assertIn("Grok Gov", DEFAULT_X_INTEL_QUERY)
@@ -254,6 +314,119 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("from:jeffdean", queries[0])
         self.assertIn("from:chamath", queries[-1])
         self.assertTrue(all('"AI targeting"' in query for query in queries))
+
+    def test_default_x_queries_add_military_accounts_and_arabic_searches(self):
+        queries = x_search_queries(
+            {
+                "BREAKING_MAX_X_HANDLES": "10",
+                "BREAKING_X_HANDLE_BATCH_SIZE": "10",
+                "BREAKING_MAX_X_QUERIES": "12",
+            }
+        )
+
+        self.assertIn("DeptofDefense", DEFAULT_X_PRIORITY_ACCOUNTS)
+        self.assertTrue(any("from:DeptofDefense" in query for query in queries))
+        self.assertTrue(any("الذكاء الاصطناعي" in query for query in queries))
+        self.assertTrue(any("MizarVision" in query for query in queries))
+
+    def test_sensitive_x_claim_gets_second_source_metadata(self):
+        [candidate] = annotate_secondary_evidence(
+            [
+                {
+                    "source": "twitter",
+                    "title": "Pentagon confirms Grok Gov Model in Project Maven targeting",
+                    "content": "Grok Gov Model supported Project Maven military targeting operations in Iran.",
+                    "url": "https://x.com/defense_ai/status/260620245123456789?s=20",
+                }
+            ],
+            [
+                {
+                    "source": "google-news",
+                    "title": "Pentagon details Grok Gov Model support for Project Maven",
+                    "content": "A report examines Project Maven targeting operations in Iran.",
+                    "url": "https://news.example.test/project-maven-grok",
+                }
+            ],
+        )
+
+        self.assertTrue(candidate["sensitive_military_claim"])
+        self.assertEqual(candidate["evidence_status"], "corroborated")
+        self.assertEqual(candidate["evidence_count"], 2)
+        self.assertEqual(candidate["source_urls"][0], "https://x.com/defense_ai/status/260620245123456789")
+        self.assertIn("https://news.example.test/project-maven-grok", candidate["evidence_urls"])
+
+    def test_single_source_sensitive_x_claim_stays_visible(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "Grok Gov Model used for Project Maven targeting",
+                        "content": "An X post says Project Maven supported military targeting operations in Iran.",
+                        "url": "https://x.com/defense_ai/status/260620245123456789",
+                        "velocity": 80,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["x_intel_published"], 1)
+        self.assertEqual(status["feed"][0]["evidence_status"], "single-source")
+        self.assertEqual(status["feed"][0]["evidence_count"], 1)
+
+    def test_generic_x_homepage_is_not_published_as_original_post(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            status_path = Path(tmp) / "breaking_status.json"
+            summary = run_monitor_cycle(
+                raw_candidates=[
+                    {
+                        "source": "twitter",
+                        "title": "Project Maven military AI targeting update",
+                        "content": "A public X claim about Pentagon AI targeting operations in Iran.",
+                        "url": "https://x.com",
+                        "velocity": 80,
+                    }
+                ],
+                state_path=Path(tmp) / "breaking_state.json",
+                public_status_path=status_path,
+                env={"BREAKING_NOTIFY_MODE": "website", "BREAKING_SOURCE_FOCUS": "x"},
+            )
+            status = json.loads(status_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(summary["x_intel_published"], 0)
+        self.assertEqual(status["feed"], [])
+
+    def test_public_feed_exposes_second_evidence_link(self):
+        now = isoformat(utc_now())
+        urls = [
+            "https://x.com/defense_ai/status/260620245123456789",
+            "https://news.example.test/project-maven-grok",
+        ]
+        status = public_breaking_status(
+            {
+                "updated_at": now,
+                "alerted": {
+                    "story-1": {
+                        "alerted_at": now,
+                        "title": "Grok Gov Model and Project Maven",
+                        "source": "x",
+                        "source_urls": urls,
+                        "evidence_urls": urls,
+                        "evidence_count": 2,
+                        "evidence_status": "corroborated",
+                    }
+                },
+                "pending": {},
+            }
+        )
+
+        self.assertEqual(status["feed"][0]["source_url"], urls[0])
+        self.assertEqual(status["feed"][0]["evidence_urls"], urls)
+        self.assertEqual(status["feed"][0]["evidence_status"], "corroborated")
 
     def test_x_cli_env_exports_common_cookie_aliases(self):
         env = x_cli_env({"TWITTER_COOKIE": "auth_token=auth123; ct0=csrf456"})
@@ -552,7 +725,7 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertEqual(status["status"], "x-intel")
         self.assertEqual(len(status["feed"]), 1)
 
-    def test_x_intel_accepts_public_news_fallback(self):
+    def test_x_intel_does_not_publish_news_as_x_fallback(self):
         with tempfile.TemporaryDirectory() as tmp:
             status_path = Path(tmp) / "breaking_status.json"
             summary = run_monitor_cycle(
@@ -575,10 +748,9 @@ class BreakingMonitorTests(unittest.TestCase):
             )
             status = json.loads(status_path.read_text(encoding="utf-8"))
 
-        self.assertEqual(summary["stage1_survivors"], 1)
-        self.assertEqual(summary["x_intel_published"], 1)
-        self.assertEqual(status["status"], "x-intel")
-        self.assertEqual(len(status["feed"]), 1)
+        self.assertEqual(summary["stage1_survivors"], 0)
+        self.assertEqual(summary["x_intel_published"], 0)
+        self.assertEqual(status["feed"], [])
 
     def test_x_intel_can_disable_public_news_fallback(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -719,6 +891,18 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn('cron: "0 18 * * *"', workflow)
         self.assertNotIn('*/15 * * * *"', workflow)
 
+    def test_update_feed_inline_python_syntax(self):
+        workflow = Path(".github/workflows/update-feed.yml").read_text(encoding="utf-8")
+        marker = "python3 - <<'PY'"
+        start = workflow.index(marker) + len(marker)
+        end = workflow.index("\n          PY", start)
+        script = "\n".join(
+            line[10:] if line.startswith("          ") else line
+            for line in workflow[start:end].splitlines()
+        )
+
+        ast.parse(script)
+
     def test_no_generated_secret_topic_is_tracked(self):
         tracked_text = "\n".join(
             path.read_text(encoding="utf-8", errors="ignore")
@@ -815,6 +999,8 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("Public X signals about AI use", html)
         self.assertIn("pending_feed", html)
         self.assertIn("X intel live", html)
+        self.assertIn("Second source / المصدر الثاني", html)
+        self.assertIn("Single X source / مصدر X واحد", html)
         self.assertNotIn("Website-only feed", html)
         self.assertNotIn("Not confirmed breaking yet", html)
         self.assertNotIn("Review pending", html)
