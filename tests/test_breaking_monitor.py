@@ -160,7 +160,12 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=positive_fixtures(),
                 state_path=Path(tmp) / "breaking_state.json",
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
+                env={
+                    "BREAKING_NOTIFY_MODE": "ntfy",
+                    "NTFY_TOPIC_BREAKING": "test-topic",
+                    "AIBRIEF_DELIVERY_APPROVED": "true",
+                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
+                },
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -489,7 +494,12 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
+                env={
+                    "BREAKING_NOTIFY_MODE": "ntfy",
+                    "NTFY_TOPIC_BREAKING": "test-topic",
+                    "AIBRIEF_DELIVERY_APPROVED": "true",
+                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
+                },
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -497,7 +507,12 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
+                env={
+                    "BREAKING_NOTIFY_MODE": "ntfy",
+                    "NTFY_TOPIC_BREAKING": "test-topic",
+                    "AIBRIEF_DELIVERY_APPROVED": "true",
+                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
+                },
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -520,7 +535,12 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[1]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
+                env={
+                    "BREAKING_NOTIFY_MODE": "ntfy",
+                    "NTFY_TOPIC_BREAKING": "test-topic",
+                    "AIBRIEF_DELIVERY_APPROVED": "true",
+                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
+                },
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
             )
@@ -528,7 +548,12 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
+                env={
+                    "BREAKING_NOTIFY_MODE": "ntfy",
+                    "NTFY_TOPIC_BREAKING": "test-topic",
+                    "AIBRIEF_DELIVERY_APPROVED": "true",
+                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
+                },
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
             )
