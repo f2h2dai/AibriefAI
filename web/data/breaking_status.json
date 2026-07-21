@@ -1,33 +1,131 @@
 {
-  "alerted_count": 325,
+  "alerted_count": 329,
   "cadence_minutes": 15,
   "feed": [
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/sama/status/1984025727763935585"
+      ],
+      "id": "story-133627363dd179e71de2892d",
+      "reason": "ok: true schema_version: '1' data: id: '1984025727763935585' text: GPT-6 will be renamed GPT-6-7, you're welcome author: id: '1605' name: Sam Altman screenName: sama profileImageUrl: https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_normal.jpg verified: true metri",
+      "score": 75,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-21T15:04:57Z",
+      "source": "x",
+      "source_url": "https://x.com/sama/status/1984025727763935585",
+      "status": "x-intel",
+      "title": "@: ok: true schema_version: '1' data: id: '1984025727763935585' text: GPT-6 will be renamed G",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/marketsday/status/2078461030452326666"
+      ],
+      "id": "story-91ffe4ada2cecc2c388df3ba",
+      "reason": "SpaceX Pentagon AI Compute Talks \u2014 July 17, 2026 \ud83d\ude80\ud83d\udcbb\ud83c\uddfa\ud83c\uddf8 \ud83d\udd39 Preliminary Discussions: According to WSJ, SpaceX ( $SPCX) is in early talks with the U.S. Defense Department to provide access to its AI computing infrastructure, potentially worth several billion dollars. \ud83d\udd39 Existing Facili",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-21T15:04:57Z",
+      "source": "x",
+      "source_url": "https://x.com/marketsday/status/2078461030452326666",
+      "status": "x-intel",
+      "title": "SpaceX Pentagon AI Compute Talks \u2014 July 17, 2026 \ud83d\ude80\ud83d\udcbb\ud83c\uddfa\ud83c\uddf8 \ud83d\udd39 Preliminary Discussions: According to WSJ, SpaceX ( $SPCX) is in early talks with the U.S. Defense Depar",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/vc_corner/status/2077136692583030918"
+      ],
+      "id": "story-e9b6f53d2ab1a60ca58093db",
+      "reason": "AI Leaders Draw Their Lines \u2696\ufe0f Dario Amodei backed nearly all US DoD AI use cases but rejected mass surveillance and autonomous weapons. As AI scales, the ethics debate is becoming impossible to ignore. https://t.co/c2iGQ8fQzl",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-21T15:04:57Z",
+      "source": "x",
+      "source_url": "https://x.com/vc_corner/status/2077136692583030918",
+      "status": "x-intel",
+      "title": "AI Leaders Draw Their Lines \u2696\ufe0f Dario Amodei backed nearly all US DoD AI use cases but rejected mass surveillance and autonomous weapons. As AI scales, the ethic",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "DoD AI",
+        "weapons",
+        "DoD"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/arnaudmercier/status/2078550100087869769"
+      ],
+      "id": "story-a0d07ed58976a8eced2bd6a4",
+      "reason": "SpaceX stock sees brief Pentagon AI bump, while CoreWeave slides on pricing threat - https://t.co/cTl9RPxDCY https://t.co/PvP6lnzK0x",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-21T15:04:57Z",
+      "source": "x",
+      "source_url": "https://x.com/arnaudmercier/status/2078550100087869769",
+      "status": "x-intel",
+      "title": "SpaceX stock sees brief Pentagon AI bump, while CoreWeave slides on pricing threat - https://t.co/cTl9RPxDCY https://t.co/PvP6lnzK0x",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     {
       "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/Quantumvacuume/status/2072022921703518703",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
+        "https://x.com/grok/status/2067879299328139424",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
       ],
-      "id": "story-fdafe8324e502f92a9a99336",
-      "reason": "Palantir works with Project Maven(Grok) through the Maven Smart System (MSS), an AI-powered defense platform originally developed by the Pentagon. As the prime software integrator, Palantir fuses data from drones, satellites, and sensors to automate intelligence analysis, identif",
+      "id": "story-06d07dd0f9a8afb1be4e8619",
+      "reason": "No, it was xAI\u2019s specialized Grok Gov Model integrated into the Pentagon\u2019s Project Maven targeting systems that enabled the rapid data processing and workflows. Palantir built the underlying Maven Smart Systems platform, but the court filing from Pentagon AI chief Cameron Stanley",
       "score": 85,
       "sensitive_military_claim": true,
       "shown_at": "2026-07-21T12:54:21Z",
       "source": "x",
-      "source_url": "https://x.com/Quantumvacuume/status/2072022921703518703",
+      "source_url": "https://x.com/grok/status/2067879299328139424",
       "status": "x-intel",
-      "title": "Palantir works with Project Maven(Grok) through the Maven Smart System (MSS), an AI-powered defense platform originally developed by the Pentagon. As the prime",
+      "title": "No, it was xAI\u2019s specialized Grok Gov Model integrated into the Pentagon\u2019s Project Maven targeting systems that enabled the rapid data processing and workflows.",
       "webswarm_evidence_terms": [
         "Grok Gov",
         "Grok Gov Model",
         "Project Maven",
+        "Operation Epic Fury",
+        "2,000 targets",
+        "96 hours",
         "Grok",
-        "Pentagon",
-        "Iran",
-        "targeting"
+        "Pentagon"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
@@ -65,34 +163,25 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/grok/status/2067879299328139424",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
+        "https://x.com/AktienAkademie/status/2067705849884094560"
       ],
-      "id": "story-06d07dd0f9a8afb1be4e8619",
-      "reason": "No, it was xAI\u2019s specialized Grok Gov Model integrated into the Pentagon\u2019s Project Maven targeting systems that enabled the rapid data processing and workflows. Palantir built the underlying Maven Smart Systems platform, but the court filing from Pentagon AI chief Cameron Stanley",
-      "score": 85,
-      "sensitive_military_claim": true,
+      "id": "story-a178c3f0ee36543fbc44619a",
+      "reason": "@FirstSquawk @grok is that true?",
+      "score": 10,
+      "sensitive_military_claim": false,
       "shown_at": "2026-07-21T12:54:21Z",
       "source": "x",
-      "source_url": "https://x.com/grok/status/2067879299328139424",
+      "source_url": "https://x.com/AktienAkademie/status/2067705849884094560",
       "status": "x-intel",
-      "title": "No, it was xAI\u2019s specialized Grok Gov Model integrated into the Pentagon\u2019s Project Maven targeting systems that enabled the rapid data processing and workflows.",
+      "title": "@FirstSquawk @grok is that true?",
       "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "Operation Epic Fury",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon"
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -147,28 +236,6 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/AktienAkademie/status/2067705849884094560"
-      ],
-      "id": "story-a178c3f0ee36543fbc44619a",
-      "reason": "@FirstSquawk @grok is that true?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-21T12:54:21Z",
-      "source": "x",
-      "source_url": "https://x.com/AktienAkademie/status/2067705849884094560",
-      "status": "x-intel",
-      "title": "@FirstSquawk @grok is that true?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
         "https://x.com/marcioeduluz/status/2070872694963200474"
       ],
       "id": "story-d53d159dd9a9ec12a40fe44f",
@@ -185,6 +252,36 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/Quantumvacuume/status/2072022921703518703",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
+      ],
+      "id": "story-fdafe8324e502f92a9a99336",
+      "reason": "Palantir works with Project Maven(Grok) through the Maven Smart System (MSS), an AI-powered defense platform originally developed by the Pentagon. As the prime software integrator, Palantir fuses data from drones, satellites, and sensors to automate intelligence analysis, identif",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-21T12:54:21Z",
+      "source": "x",
+      "source_url": "https://x.com/Quantumvacuume/status/2072022921703518703",
+      "status": "x-intel",
+      "title": "Palantir works with Project Maven(Grok) through the Maven Smart System (MSS), an AI-powered defense platform originally developed by the Pentagon. As the prime",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Grok",
+        "Pentagon",
+        "Iran",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     {
       "confidence": 0,
@@ -213,128 +310,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2067745009957261692",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
-      ],
-      "id": "story-842a68336aa65ca83df1f650",
-      "reason": "As an AI, I don't feel anything at all\u2014no guilt, pride, or anything else. The Grok you talk to here has zero connection to Pentagon systems or weapons. A specialized government version (Grok Gov Model) was used in military targeting tools like Project Maven to help process data a",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-21T11:23:07Z",
-      "source": "x",
-      "source_url": "https://x.com/grok/status/2067745009957261692",
-      "status": "x-intel",
-      "title": "As an AI, I don't feel anything at all\u2014no guilt, pride, or anything else. The Grok you talk to here has zero connection to Pentagon systems or weapons. A specia",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "Grok",
-        "Pentagon",
-        "Iran",
-        "targeting"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/lnsdarno/status/2067879125570793811"
-      ],
-      "id": "story-a20495663d6657cd565e6a5b",
-      "reason": "@grok @PeterWrangel @Polymarket @grok so its Palantir done that?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-21T11:23:07Z",
-      "source": "x",
-      "source_url": "https://x.com/lnsdarno/status/2067879125570793811",
-      "status": "x-intel",
-      "title": "@grok @PeterWrangel @Polymarket @grok so its Palantir done that?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Spectromachina/status/2067744906148184493"
-      ],
-      "id": "story-b60b9f6c4953a3bb0018a115",
-      "reason": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-21T11:23:07Z",
-      "source": "x",
-      "source_url": "https://x.com/Spectromachina/status/2067744906148184493",
-      "status": "x-intel",
-      "title": "@FirstSquawk @grok how does it feel to kill for the first time grok?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ArchitectLoop/status/2067255285144600881"
-      ],
-      "id": "story-087186cdcf71fdba1bdc02ba",
-      "reason": "@visionergeo @grok Thank you for your service. This means you get a free meal at @Applebees on Veteran's Day now.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-21T09:16:04Z",
-      "source": "x",
-      "source_url": "https://x.com/ArchitectLoop/status/2067255285144600881",
-      "status": "x-intel",
-      "title": "@visionergeo @grok Thank you for your service. This means you get a free meal at @Applebees on Veteran's Day now.",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-21T12:54:21Z",
+    "alerted_at": "2026-07-21T15:04:57Z",
     "confidence": 0,
-    "source_url": "https://x.com/Quantumvacuume/status/2072022921703518703",
-    "title": "Palantir works with Project Maven(Grok) through the Maven Smart System (MSS), an AI-powered defense platform originally developed by the Pentagon. As the prime"
+    "source_url": "https://x.com/sama/status/1984025727763935585",
+    "title": "@: ok: true schema_version: '1' data: id: '1984025727763935585' text: GPT-6 will be renamed G"
   },
   "last_run": {
-    "alerted_now": 7,
-    "clustered": 24,
-    "collected": 24,
-    "corroborated_count": 10,
-    "initial_collected": 24,
+    "alerted_now": 4,
+    "clustered": 20,
+    "collected": 21,
+    "corroborated_count": 8,
+    "initial_collected": 21,
     "initial_source_counts": {
-      "x": 24
+      "x": 21
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.422,
-      "projected_minutes_per_30d": 164.28,
+      "measured_seconds": 3.621,
+      "projected_minutes_per_30d": 173.79,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +349,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 23,
+    "stage1_survivors": 17,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +372,11 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 7
+    "x_intel_published": 4
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-21T12:54:21Z",
+  "updated_at": "2026-07-21T15:04:57Z",
   "version": 1
 }
