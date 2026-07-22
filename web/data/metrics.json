@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-22T13:16:13Z",
+  "generated_at": "2026-07-22T19:18:06Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 12,
+  "verified_signals": 10,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.0,
-  "primary_source_link_rate": 1.0,
+  "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-22T13:16:13Z",
+  "latest_successful_run": "2026-07-22T19:18:06Z",
   "highest_ranked_signal": {
-    "id": "arxiv-018",
-    "title": "BioSecBench-Surveillance: A Verifiable Benchmark for AI Agents in Pathogen Genomic Surveillance",
-    "action_score": 80.0,
-    "url": "https://arxiv.org/abs/2607.19262v1"
+    "id": "github-008",
+    "title": "Renadalmutairi/SAQR-Multi-Agent-Financial-Crime-Intelligence-Platform",
+    "action_score": 75.5,
+    "url": "https://github.com/Renadalmutairi/SAQR-Multi-Agent-Financial-Crime-Intelligence-Platform"
   },
   "source_contribution": {
-    "arxiv": 3,
-    "github": 9
+    "github": 9,
+    "hackernews": 3
   },
   "failed_sources": [],
-  "runtime_seconds": 28.007,
+  "runtime_seconds": 30.228,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -81,7 +81,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-22T13:16:13Z",
+    "planned_at": "2026-07-22T19:18:06Z",
     "production_threshold": 70.0
   }
 }
