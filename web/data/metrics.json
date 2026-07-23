@@ -1,32 +1,28 @@
 {
-  "generated_at": "2026-07-23T13:19:06Z",
+  "generated_at": "2026-07-23T19:16:24Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.0,
   "primary_source_link_rate": 0.75,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-23T13:19:06Z",
+  "latest_successful_run": "2026-07-23T19:16:24Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "hec-ovi/censurado-web-brain",
+    "id": "arxiv-016",
+    "title": "IteraSim RAG: A Multi-Stage Retrieval-Augmented Agentic Back-End for OpenFOAM-Based Computational Fluid Dynamics",
     "action_score": 77.5,
-    "url": "https://github.com/hec-ovi/censurado-web-brain"
+    "url": "https://arxiv.org/abs/2607.20346v1"
   },
   "source_contribution": {
     "github": 8,
-    "hackernews": 4
+    "hackernews": 3,
+    "arxiv": 1
   },
-  "failed_sources": [
-    {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    }
-  ],
-  "runtime_seconds": 33.88,
+  "failed_sources": [],
+  "runtime_seconds": 26.393,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +82,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-23T13:19:06Z",
+    "planned_at": "2026-07-23T19:16:24Z",
     "production_threshold": 70.0
   }
 }
