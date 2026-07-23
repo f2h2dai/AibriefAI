@@ -1,27 +1,32 @@
 {
-  "generated_at": "2026-07-22T19:18:06Z",
+  "generated_at": "2026-07-23T13:19:06Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 10,
+  "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.0,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 0.75,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-22T19:18:06Z",
+  "latest_successful_run": "2026-07-23T13:19:06Z",
   "highest_ranked_signal": {
     "id": "github-008",
-    "title": "Renadalmutairi/SAQR-Multi-Agent-Financial-Crime-Intelligence-Platform",
-    "action_score": 75.5,
-    "url": "https://github.com/Renadalmutairi/SAQR-Multi-Agent-Financial-Crime-Intelligence-Platform"
+    "title": "hec-ovi/censurado-web-brain",
+    "action_score": 77.5,
+    "url": "https://github.com/hec-ovi/censurado-web-brain"
   },
   "source_contribution": {
-    "github": 9,
-    "hackernews": 3
+    "github": 8,
+    "hackernews": 4
   },
-  "failed_sources": [],
-  "runtime_seconds": 30.228,
+  "failed_sources": [
+    {
+      "source": "AcademicAgent",
+      "reason": "The read operation timed out"
+    }
+  ],
+  "runtime_seconds": 33.88,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -81,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-22T19:18:06Z",
+    "planned_at": "2026-07-23T13:19:06Z",
     "production_threshold": 70.0
   }
 }
