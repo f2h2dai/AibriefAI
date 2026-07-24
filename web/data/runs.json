@@ -629,6 +629,50 @@
           "bounded": true
         }
       ]
+    },
+    {
+      "run_id": "operations-2026-07-24T13:12:33Z",
+      "generated_at": "2026-07-24T13:12:33Z",
+      "mode": "global_ai",
+      "status": "complete",
+      "configured_threshold": 70.0,
+      "signals": 12,
+      "act_now_items": 0,
+      "runtime_seconds": 19.83,
+      "daily_api_cost_usd": 0.0,
+      "failed_sources": [
+        {
+          "source": "AcademicAgent",
+          "reason": "HTTP Error 429: Unknown Error"
+        }
+      ],
+      "workers": [
+        {
+          "name": "Brief Planner",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Signal Scout",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Public Signal Watcher",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Brief Composer",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Intelligence Analyst",
+          "status": "complete",
+          "bounded": true
+        }
+      ]
     }
   ]
 }
