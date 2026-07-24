@@ -1,32 +1,27 @@
 {
-  "generated_at": "2026-07-24T13:12:33Z",
+  "generated_at": "2026-07-24T19:24:29Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 10,
+  "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.0,
   "primary_source_link_rate": 0.75,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-24T13:12:33Z",
+  "latest_successful_run": "2026-07-24T19:24:29Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "NeoXider/neoxider-agents",
-    "action_score": 75.0,
-    "url": "https://github.com/NeoXider/neoxider-agents"
+    "id": "github-008",
+    "title": "truera/trulens",
+    "action_score": 74.5,
+    "url": "https://github.com/truera/trulens"
   },
   "source_contribution": {
     "github": 9,
     "hackernews": 3
   },
-  "failed_sources": [
-    {
-      "source": "AcademicAgent",
-      "reason": "HTTP Error 429: Unknown Error"
-    }
-  ],
-  "runtime_seconds": 19.83,
+  "failed_sources": [],
+  "runtime_seconds": 27.769,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +81,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-24T13:12:33Z",
+    "planned_at": "2026-07-24T19:24:29Z",
     "production_threshold": 70.0
   }
 }
