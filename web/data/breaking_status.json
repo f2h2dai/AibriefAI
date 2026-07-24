@@ -234,90 +234,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2067879299328139424",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
-      ],
-      "id": "story-06d07dd0f9a8afb1be4e8619",
-      "reason": "No, it was xAI\u2019s specialized Grok Gov Model integrated into the Pentagon\u2019s Project Maven targeting systems that enabled the rapid data processing and workflows. Palantir built the underlying Maven Smart Systems platform, but the court filing from Pentagon AI chief Cameron Stanley",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-21T12:54:21Z",
-      "source": "x",
-      "source_url": "https://x.com/grok/status/2067879299328139424",
-      "status": "x-intel",
-      "title": "No, it was xAI\u2019s specialized Grok Gov Model integrated into the Pentagon\u2019s Project Maven targeting systems that enabled the rapid data processing and workflows.",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "Operation Epic Fury",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2067705992582685070",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
-      ],
-      "id": "story-a00115176076d1d7c05fb2aa",
-      "reason": "Yes, it's based on a real sworn statement by the Pentagon's AI chief in a recent court filing. A specialized \"Grok Gov Model\" (derived from xAI tech and integrated into the military's Project Maven / Maven Smart Systems) was credited with enabling U.S. forces to deploy over 2,000",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-21T12:54:21Z",
-      "source": "x",
-      "source_url": "https://x.com/grok/status/2067705992582685070",
-      "status": "x-intel",
-      "title": "Yes, it's based on a real sworn statement by the Pentagon's AI chief in a recent court filing. A specialized \"Grok Gov Model\" (derived from xAI tech and integra",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Project Maven",
-        "Operation Epic Fury",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AktienAkademie/status/2067705849884094560"
-      ],
-      "id": "story-a178c3f0ee36543fbc44619a",
-      "reason": "@FirstSquawk @grok is that true?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-21T12:54:21Z",
-      "source": "x",
-      "source_url": "https://x.com/AktienAkademie/status/2067705849884094560",
-      "status": "x-intel",
-      "title": "@FirstSquawk @grok is that true?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
@@ -328,12 +244,11 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "clustered": 30,
-    "collected": 30,
+    "clustered": 20,
+    "collected": 20,
     "corroborated_count": 0,
-    "initial_collected": 30,
+    "initial_collected": 20,
     "initial_source_counts": {
-      "arxiv": 10,
       "hackernews": 20
     },
     "initial_x_relevant": 0,
@@ -343,8 +258,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.214,
-      "projected_minutes_per_30d": 538.28,
+      "measured_seconds": 27.432,
+      "projected_minutes_per_30d": 1316.73,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -386,6 +301,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-24T11:45:23Z",
+  "updated_at": "2026-07-24T13:48:54Z",
   "version": 1
 }
