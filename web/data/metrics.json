@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-25T12:54:56Z",
+  "generated_at": "2026-07-25T19:06:02Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 11,
+  "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.0,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-25T12:54:56Z",
+  "latest_successful_run": "2026-07-25T19:06:02Z",
   "highest_ranked_signal": {
     "id": "arxiv-013",
     "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
@@ -17,12 +17,12 @@
     "url": "https://arxiv.org/abs/2607.21557v1"
   },
   "source_contribution": {
-    "github": 8,
+    "github": 9,
     "hackernews": 1,
-    "arxiv": 3
+    "arxiv": 2
   },
   "failed_sources": [],
-  "runtime_seconds": 26.374,
+  "runtime_seconds": 22.438,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -82,7 +82,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-25T12:54:56Z",
+    "planned_at": "2026-07-25T19:06:02Z",
     "production_threshold": 70.0
   }
 }
