@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T19:24:29Z",
+  "generated_at": "2026-07-25T12:54:56Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
@@ -7,21 +7,22 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.0,
-  "primary_source_link_rate": 0.75,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-24T19:24:29Z",
+  "latest_successful_run": "2026-07-25T12:54:56Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "truera/trulens",
-    "action_score": 74.5,
-    "url": "https://github.com/truera/trulens"
+    "id": "arxiv-013",
+    "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+    "action_score": 78.75,
+    "url": "https://arxiv.org/abs/2607.21557v1"
   },
   "source_contribution": {
-    "github": 9,
-    "hackernews": 3
+    "github": 8,
+    "hackernews": 1,
+    "arxiv": 3
   },
   "failed_sources": [],
-  "runtime_seconds": 27.769,
+  "runtime_seconds": 26.374,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -81,7 +82,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-24T19:24:29Z",
+    "planned_at": "2026-07-25T12:54:56Z",
     "production_threshold": 70.0
   }
 }
