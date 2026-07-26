@@ -1,27 +1,28 @@
 {
-  "generated_at": "2026-07-26T12:52:29Z",
+  "generated_at": "2026-07-26T19:09:14Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 10,
+  "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.0,
-  "primary_source_link_rate": 0.75,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-26T12:52:29Z",
+  "latest_successful_run": "2026-07-26T19:09:14Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "flyset/Mnemosyne",
-    "action_score": 72.0,
-    "url": "https://github.com/flyset/Mnemosyne"
+    "id": "github-007",
+    "title": "houseofprayerzinzendorf150/LLM-Agent-Factory",
+    "action_score": 78.0,
+    "url": "https://github.com/houseofprayerzinzendorf150/LLM-Agent-Factory"
   },
   "source_contribution": {
     "github": 9,
-    "hackernews": 3
+    "hackernews": 1,
+    "arxiv": 2
   },
   "failed_sources": [],
-  "runtime_seconds": 24.247,
+  "runtime_seconds": 23.376,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -81,7 +82,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-26T12:52:29Z",
+    "planned_at": "2026-07-26T19:09:14Z",
     "production_threshold": 70.0
   }
 }
