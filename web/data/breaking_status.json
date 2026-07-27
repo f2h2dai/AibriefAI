@@ -347,12 +347,11 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "clustered": 30,
-    "collected": 30,
+    "clustered": 20,
+    "collected": 20,
     "corroborated_count": 0,
-    "initial_collected": 30,
+    "initial_collected": 20,
     "initial_source_counts": {
-      "arxiv": 10,
       "hackernews": 20
     },
     "initial_x_relevant": 0,
@@ -362,8 +361,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.348,
-      "projected_minutes_per_30d": 352.72,
+      "measured_seconds": 6.106,
+      "projected_minutes_per_30d": 293.08,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -405,6 +404,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-27T00:13:48Z",
+  "updated_at": "2026-07-27T04:06:30Z",
   "version": 1
 }
