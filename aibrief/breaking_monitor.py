@@ -806,7 +806,10 @@ def x_snowflake_timestamp(candidate: dict) -> datetime | None:
         if not match:
             continue
         try:
-            timestamp_ms = (int(match.group(1)) >> 22) + TWITTER_SNOWFLAKE_EPOCH_MS
+            post_id = match.group(1)
+            if not 15 <= len(post_id) <= 20:
+                continue
+            timestamp_ms = (int(post_id) >> 22) + TWITTER_SNOWFLAKE_EPOCH_MS
             return datetime.fromtimestamp(timestamp_ms / 1000, tz=timezone.utc)
         except (OverflowError, OSError, ValueError):
             continue
@@ -814,6 +817,7 @@ def x_snowflake_timestamp(candidate: dict) -> datetime | None:
 
 
 def source_published_timestamp(candidate: dict) -> datetime | None:
+    explicit_timestamp = None
     for key in (
         "published_at",
         "source_published_at",
@@ -825,8 +829,16 @@ def source_published_timestamp(candidate: dict) -> datetime | None:
     ):
         parsed = parse_source_timestamp(candidate.get(key))
         if parsed:
-            return parsed
-    return x_snowflake_timestamp(candidate)
+            explicit_timestamp = parsed
+            break
+
+    snowflake_timestamp = x_snowflake_timestamp(candidate)
+    if explicit_timestamp and snowflake_timestamp:
+        delta = abs((explicit_timestamp - snowflake_timestamp).total_seconds())
+        if delta > 24 * 60 * 60:
+            return snowflake_timestamp
+
+    return explicit_timestamp or snowflake_timestamp
 
 
 def x_post_is_fresh(
