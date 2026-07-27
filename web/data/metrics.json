@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-07-26T19:09:14Z",
+  "generated_at": "2026-07-27T14:06:04Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 11,
+  "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.0,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-26T19:09:14Z",
+  "latest_successful_run": "2026-07-27T14:06:04Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "houseofprayerzinzendorf150/LLM-Agent-Factory",
-    "action_score": 78.0,
-    "url": "https://github.com/houseofprayerzinzendorf150/LLM-Agent-Factory"
+    "id": "arxiv-015",
+    "title": "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture",
+    "action_score": 82.5,
+    "url": "https://arxiv.org/abs/2607.22445v1"
   },
   "source_contribution": {
-    "github": 9,
+    "github": 8,
     "hackernews": 1,
-    "arxiv": 2
+    "arxiv": 3
   },
   "failed_sources": [],
-  "runtime_seconds": 23.376,
+  "runtime_seconds": 25.729,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -82,7 +82,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-26T19:09:14Z",
+    "planned_at": "2026-07-27T14:06:04Z",
     "production_threshold": 70.0
   }
 }
