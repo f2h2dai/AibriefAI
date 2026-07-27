@@ -1,28 +1,27 @@
 {
-  "generated_at": "2026-07-27T14:06:04Z",
+  "generated_at": "2026-07-27T19:26:26Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 12,
+  "verified_signals": 8,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.0,
-  "primary_source_link_rate": 0.9167,
+  "primary_source_link_rate": 0.6667,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-27T14:06:04Z",
+  "latest_successful_run": "2026-07-27T19:26:26Z",
   "highest_ranked_signal": {
-    "id": "arxiv-015",
-    "title": "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture",
-    "action_score": 82.5,
-    "url": "https://arxiv.org/abs/2607.22445v1"
+    "id": "github-011",
+    "title": "jaramigo/challenge-alura-bimbambuy-agent",
+    "action_score": 77.25,
+    "url": "https://github.com/jaramigo/challenge-alura-bimbambuy-agent"
   },
   "source_contribution": {
     "github": 8,
-    "hackernews": 1,
-    "arxiv": 3
+    "hackernews": 4
   },
   "failed_sources": [],
-  "runtime_seconds": 25.729,
+  "runtime_seconds": 26.396,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -82,7 +81,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-27T14:06:04Z",
+    "planned_at": "2026-07-27T19:26:26Z",
     "production_threshold": 70.0
   }
 }
