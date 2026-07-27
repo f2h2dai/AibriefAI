@@ -55,13 +55,15 @@ jobs:
         run: |
           set +e
           export PATH="$HOME/.local/bin:$PATH"
+          TWITTER_CLI_SOURCE="git+https://github.com/public-clis/twitter-cli.git@7c634e0d396b1e7af9f63315b414925fe4f29ae7"
           python3 -m pip install "git+https://github.com/Panniantong/Agent-Reach.git" || echo "Agent-Reach GitHub install unavailable; continuing with base connectors"
           if command -v pipx >/dev/null 2>&1; then
-            pipx install twitter-cli || python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
+            pipx install "$TWITTER_CLI_SOURCE" || python3 -m pip install "$TWITTER_CLI_SOURCE" || echo "twitter-cli install unavailable; X route will degrade"
           else
-            python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
+            python3 -m pip install "$TWITTER_CLI_SOURCE" || echo "twitter-cli install unavailable; X route will degrade"
           fi
           which twitter || echo "twitter CLI unavailable after install attempt"
+          twitter --version || true
           agent-reach doctor || true
           set -e
 
