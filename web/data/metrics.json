@@ -1,27 +1,32 @@
 {
-  "generated_at": "2026-07-27T19:26:26Z",
+  "generated_at": "2026-07-27T20:58:52Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 8,
+  "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.0,
-  "primary_source_link_rate": 0.6667,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-27T19:26:26Z",
+  "latest_successful_run": "2026-07-27T20:58:52Z",
   "highest_ranked_signal": {
-    "id": "github-011",
-    "title": "jaramigo/challenge-alura-bimbambuy-agent",
-    "action_score": 77.25,
-    "url": "https://github.com/jaramigo/challenge-alura-bimbambuy-agent"
+    "id": "github-008",
+    "title": "huangruiteng/loopx",
+    "action_score": 75.5,
+    "url": "https://github.com/huangruiteng/loopx"
   },
   "source_contribution": {
-    "github": 8,
-    "hackernews": 4
+    "github": 6,
+    "twitter": 6
   },
-  "failed_sources": [],
-  "runtime_seconds": 26.396,
+  "failed_sources": [
+    {
+      "source": "GroqRouter",
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1133"
+    }
+  ],
+  "runtime_seconds": 124.898,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -56,7 +61,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 0,
+    "public_x_signals": 6,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -81,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-27T19:26:26Z",
+    "planned_at": "2026-07-27T20:58:52Z",
     "production_threshold": 70.0
   }
 }
