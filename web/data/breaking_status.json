@@ -1,148 +1,93 @@
 {
-  "alerted_count": 354,
+  "alerted_count": 12,
   "cadence_minutes": 15,
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 10,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/noahhtan/status/2081765135425613925",
+        "https://x.com/WPAOG/status/2081846425697091693",
+        "https://x.com/RafterBot/status/2081182890742935886",
+        "https://x.com/TheiaNews/status/2081296035561804032",
+        "https://x.com/andre_dataist/status/2081143378557669456",
+        "https://x.com/PShannon30308/status/2081381243057319942",
+        "https://x.com/noahintel/status/2081557160165527787",
+        "https://x.com/ArmaniTrump/status/2081561234252447864",
+        "https://x.com/naynaval/status/2081645407726338308",
+        "https://x.com/dmills3710/status/2081772356150722691"
+      ],
+      "id": "story-0641d6343e209cb433321257",
+      "reason": "Last month, the White House released a memorandum that gives the Pentagon 90 days to rewrite the policy on autonomous weapons. In a new piece for @just_security, I highlight a major problem: nobody can agree on what defines an \"autonomous weapon,\" and that ambiguity shapes everyt",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-27T21:05:46Z",
+      "source": "x",
+      "source_published_at": "2026-07-27T15:34:20Z",
+      "source_url": "https://x.com/noahhtan/status/2081765135425613925",
+      "status": "x-intel",
+      "title": "Last month, the White House released a memorandum that gives the Pentagon 90 days to rewrite the policy on autonomous weapons. In a new piece for @just_security",
+      "webswarm_evidence_terms": [
+        "DoD",
+        "autonomous weapons",
+        "battlefield",
+        "defense",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 4,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/AlexMurdock5499/status/2081145972391108927",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE",
+        "https://x.com/AlexMurdock5499/status/2081162581935308903",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA"
+      ],
+      "id": "story-b949334bfa677a6b669806cb",
+      "reason": "AI is already being used in active conflicts. Here's what has been publicly reported: Ukraine-Russia war: - AI is heavily used in drone targeting, navigation, and swarm coordination. - Both sides rely on commercial components, open-source software, and computer vision models for ",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-27T21:05:46Z",
+      "source": "x",
+      "source_published_at": "2026-07-25T22:34:00Z",
+      "source_url": "https://x.com/AlexMurdock5499/status/2081145972391108927",
+      "status": "x-intel",
+      "title": "AI is already being used in active conflicts. Here's what has been publicly reported: Ukraine-Russia war: - AI is heavily used in drone targeting, navigation, a",
+      "webswarm_evidence_terms": [
+        "AI",
+        "Project Maven",
+        "military",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/shanaka86/status/2067925228513374233",
+        "https://x.com/Jinxx22231917/status/2081674936607723683",
         "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
         "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
       ],
-      "id": "story-15b0443c7676c34a6588f337",
-      "reason": "2,000 targets. 2,000 munitions. 96 hours. The Pentagon only admitted that Elon Musk's AI helped do it because a polluting data center needed a legal defense. In a sworn filing this week, the Pentagon's chief AI officer, Cameron Stanley, stated that xAI's Grok Gov Model was runnin",
+      "id": "story-177d728a1fb6428450fb19ff",
+      "reason": "ToWIT: the Pentagon confirmed that a specialized government version of Elon Musk's AI, called Grok Gov, supported the deployment of over 2,000 munitions during the conflict with Iran. In a sworn court declaration filed in June 2026, Cameron Stanley, the Pentagon's chief digital a",
       "score": 85,
       "sensitive_military_claim": true,
-      "shown_at": "2026-07-26T06:48:45Z",
+      "shown_at": "2026-07-27T21:05:46Z",
       "source": "x",
-      "source_url": "https://x.com/shanaka86/status/2067925228513374233",
+      "source_published_at": "2026-07-27T09:35:55Z",
+      "source_url": "https://x.com/Jinxx22231917/status/2081674936607723683",
       "status": "x-intel",
-      "title": "2,000 targets. 2,000 munitions. 96 hours. The Pentagon only admitted that Elon Musk's AI helped do it because a polluting data center needed a legal defense. In",
+      "title": "ToWIT: the Pentagon confirmed that a specialized government version of Elon Musk's AI, called Grok Gov, supported the deployment of over 2,000 munitions during",
       "webswarm_evidence_terms": [
         "Grok Gov",
-        "Grok Gov Model",
-        "Operation Epic Fury",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon",
-        "Iran"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/c14english/status/2069527659634127235",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
-      ],
-      "id": "story-16eba48c38143ed45151ce4e",
-      "reason": "\ud83d\udea8\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 Just in: Pentagon AI chief Cameron Stanley confirmed that @Grok AI assisted US forces in deploying over 2,000 munitions against 2,000 targets in Iran within 96 hours during Operation Epic Fury.",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-26T06:48:45Z",
-      "source": "x",
-      "source_url": "https://x.com/c14english/status/2069527659634127235",
-      "status": "x-intel",
-      "title": "\ud83d\udea8\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 Just in: Pentagon AI chief Cameron Stanley confirmed that @Grok AI assisted US forces in deploying over 2,000 munitions against 2,000 targets in Iran with",
-      "webswarm_evidence_terms": [
-        "Grok AI",
-        "Operation Epic Fury",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon",
-        "Iran",
-        "munitions"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/Polymarket/status/2067720669865877813",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
-      ],
-      "id": "story-23abef25ab5aa706a744d609",
-      "reason": "JUST IN: Pentagon AI chief announces SpaceX's Grok helped U.S. forces deploy over 2,000 munitions against Iran in 96 hours.",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-26T06:48:45Z",
-      "source": "x",
-      "source_url": "https://x.com/Polymarket/status/2067720669865877813",
-      "status": "x-intel",
-      "title": "JUST IN: Pentagon AI chief announces SpaceX's Grok helped U.S. forces deploy over 2,000 munitions against Iran in 96 hours.",
-      "webswarm_evidence_terms": [
-        "96 hours",
-        "Grok",
-        "Pentagon",
-        "Iran",
-        "munitions"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/IntCyberDigest/status/2067338911521657161",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
-      ],
-      "id": "story-45a4dc26148da4d13b655cba",
-      "reason": "\u203c\ufe0f\ud83d\udea8 Grok AI was used by the US to help fire more than 2,000 munitions at 2,000 separate targets inside Iran within 96 hours. The disclosure comes from a sworn declaration by Cameron Stanley, the Pentagon's chief digital and AI officer, filed June 15 in the NAACP's lawsuit against",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-26T06:48:45Z",
-      "source": "x",
-      "source_url": "https://x.com/IntCyberDigest/status/2067338911521657161",
-      "status": "x-intel",
-      "title": "\u203c\ufe0f\ud83d\udea8 Grok AI was used by the US to help fire more than 2,000 munitions at 2,000 separate targets inside Iran within 96 hours. The disclosure comes from a sworn d",
-      "webswarm_evidence_terms": [
-        "Grok AI",
-        "Grok Gov",
-        "Grok Gov Model",
-        "Operation Epic Fury",
-        "96 hours",
-        "Grok",
-        "Pentagon",
-        "Iran"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/visionergeo/status/2067199915927716272",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
-      ],
-      "id": "story-e4d1e5e016f54c8bffb75c21",
-      "reason": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within 96 hours during \u201cOperation Epic Fury,\u201d The Independent reports. https://t.co/BWJqBIbENY",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-26T06:48:45Z",
-      "source": "x",
-      "source_url": "https://x.com/visionergeo/status/2067199915927716272",
-      "status": "x-intel",
-      "title": "\u203c\ufe0f\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 The Pentagon has admitted for the first time that Elon Musk\u2019s Grok AI was used to fire over 2,000 munitions at 2,000 distinct targets inside Iran within",
-      "webswarm_evidence_terms": [
-        "Grok AI",
         "Operation Epic Fury",
         "96 hours",
         "Grok",
@@ -155,215 +100,254 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 3,
+      "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/valuetainment/status/2069403156371370472",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
+        "https://x.com/SanaUrooj252482/status/2081676603420250243",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
       ],
-      "id": "story-efe4f5170583af77c68828d2",
-      "reason": "JUST IN: The Pentagon confirmed Grok AI helped fire over 2,000 missiles at 2,000 targets in Iran in just 96 hours. https://t.co/ahOnfd36OQ",
+      "id": "story-6831a7d03458348724b159d3",
+      "reason": "Combat Drones: Enhancing, Not Replacing, Attack Helicopters Modern combat drones are changing warfare and exposing gaps in international law. They are not replacing attack helicopters or fighter jets. Instead, they are being used alongside them to improve missions, reduce risks f",
       "score": 85,
       "sensitive_military_claim": true,
-      "shown_at": "2026-07-26T06:48:45Z",
+      "shown_at": "2026-07-27T21:05:46Z",
       "source": "x",
-      "source_url": "https://x.com/valuetainment/status/2069403156371370472",
+      "source_published_at": "2026-07-27T09:42:32Z",
+      "source_url": "https://x.com/SanaUrooj252482/status/2081676603420250243",
       "status": "x-intel",
-      "title": "JUST IN: The Pentagon confirmed Grok AI helped fire over 2,000 missiles at 2,000 targets in Iran in just 96 hours. https://t.co/ahOnfd36OQ",
+      "title": "Combat Drones: Enhancing, Not Replacing, Attack Helicopters Modern combat drones are changing warfare and exposing gaps in international law. They are not repla",
       "webswarm_evidence_terms": [
-        "Grok AI",
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Pentagon",
-        "Iran",
-        "missiles"
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/MorePerfectUS/status/1948026215295492556"
+        "https://x.com/sama/status/2069121360744550796"
       ],
-      "id": "story-034390170154af572147cbcb",
-      "reason": "The Pentagon just announced a no-bid contract that will be awarded to Palantir for \"the integration of artificial intelligence (AI) into the field of geospatial intelligence.\" This means Palantir will have unprecedented access to maps, satellite imagery, GPS data, and more.",
-      "score": 40,
+      "id": "story-f716e8de3c10cc5e3eaf9181",
+      "reason": "And also cheaper and more efficient.' author: id: '1963466798' name: Dan McAteer screenName: daniel_mac8 profileImageUrl: https://pbs.twimg.com/profile_images/1972999017551249408/kNdZGnUv_normal.jpg verified: true metrics: likes: 26 retweets: 0 replies: 3 quotes: 0 views: 1758 bo",
+      "score": 72,
       "sensitive_military_claim": false,
-      "shown_at": "2026-07-24T20:21:25Z",
+      "shown_at": "2026-07-27T21:05:46Z",
       "source": "x",
-      "source_url": "https://x.com/MorePerfectUS/status/1948026215295492556",
+      "source_published_at": "2026-07-27T20:58:52Z",
+      "source_url": "https://x.com/sama/status/2069121360744550796",
       "status": "x-intel",
-      "title": "The Pentagon just announced a no-bid contract that will be awarded to Palantir for \"the integration of artificial intelligence (AI) into the field of geospatial",
+      "title": "@: And also cheaper and more efficient.' author: id: '1963466798' name: Dan McAteer screenNam",
       "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "satellite imagery",
-        "geospatial"
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/HumphreeeGoKart/status/2081413068383461776"
+      ],
+      "id": "story-fb9e1d03de8f8a7ab356215e",
+      "reason": "\"Left click, right click, left click. Magically\" 120 Iranian schoolgirls are dead. Maven Smart System is the Palantir's Ai targeting platform. Little or no human oversight. Just automatic targeting, weapons selection, and a mouse click. Boom. Palantir's Maven Smart System: https:",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-27T21:05:46Z",
+      "source": "x",
+      "source_published_at": "2026-07-26T16:15:20Z",
+      "source_url": "https://x.com/HumphreeeGoKart/status/2081413068383461776",
+      "status": "x-intel",
+      "title": "\"Left click, right click, left click. Magically\" 120 Iranian schoolgirls are dead. Maven Smart System is the Palantir's Ai targeting platform. Little or no huma",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/dezamann/status/2081399288043888937"
+      ],
+      "id": "story-10db1be2e373180f5e60d546",
+      "reason": "Tech executives enabling AI warfare will be judged by history. OpenAI removing military bans raises ethical alarms as AI targeting harms civilians. End military contracts and prioritize human rights.",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-27T21:05:46Z",
+      "source": "x",
+      "source_published_at": "2026-07-26T15:20:35Z",
+      "source_url": "https://x.com/dezamann/status/2081399288043888937",
+      "status": "x-intel",
+      "title": "Tech executives enabling AI warfare will be judged by history. OpenAI removing military bans raises ethical alarms as AI targeting harms civilians. End military",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/CedricLeighton/status/1309611653487566848"
+        "https://x.com/sama/status/1952778518225723434"
       ],
-      "id": "story-16cfff0ffb6bc7097a64a48e",
-      "reason": "Robert Cardillo, former head of the National Geospatial Intelligence Agency, tells @wolfblitzer on @CNN that President Trump has violated his oath of office. Trump \u201cis not interested in facts\u201d. Only pursues his own interests.",
+      "id": "story-cf08c8cbaeaf7c175aa7b921",
+      "reason": "https://t.co/wyed21H3NW' author: id: '951172588906188801' name: Caleb screenName: calebfahlgren profileImageUrl: https://pbs.twimg.com/profile_images/1716604301563289600/YycgFNAn_normal.jpg verified: true metrics: likes: 217 retweets: 24 replies: 1 quotes: 2 views: 20515 bookmark",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-27T21:05:46Z",
+      "source": "x",
+      "source_published_at": "2026-07-27T20:58:52Z",
+      "source_url": "https://x.com/sama/status/1952778518225723434",
+      "status": "x-intel",
+      "title": "@: https://t.co/wyed21H3NW' author: id: '951172588906188801' name: Caleb screenName: calebfah",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/1895203654103351462"
+      ],
+      "id": "story-c517284ce807b24ff95c2b95",
+      "reason": "https://t.co/tjYgywqPHm' author: id: '1017486609707667456' name: Chansoo Byeon screenName: Chansoo profileImageUrl: https://pbs.twimg.com/profile_images/1642973743436779521/BFSbPnbf_normal.jpg verified: true metrics: likes: 96 retweets: 6 replies: 1 quotes: 0 views: 17716 bookmar",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-27T21:05:46Z",
+      "source": "x",
+      "source_published_at": "2026-07-27T20:58:52Z",
+      "source_url": "https://x.com/sama/status/1895203654103351462",
+      "status": "x-intel",
+      "title": "@: https://t.co/tjYgywqPHm' author: id: '1017486609707667456' name: Chansoo Byeon screenName:",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Amelh789/status/2081573193697919249"
+      ],
+      "id": "story-b182de540e66d781af0cbef8",
+      "reason": "History will judge tech leaders that enable AI warfare. OpenAI dropped bans on military use and it risks harm. Reports link Lavender-style systems to kill lists with weak checks and many civilians in Gaza. End military AI contracts.",
       "score": 40,
       "sensitive_military_claim": false,
-      "shown_at": "2026-07-24T20:21:25Z",
+      "shown_at": "2026-07-27T21:05:46Z",
       "source": "x",
-      "source_url": "https://x.com/CedricLeighton/status/1309611653487566848",
+      "source_published_at": "2026-07-27T02:51:37Z",
+      "source_url": "https://x.com/Amelh789/status/2081573193697919249",
       "status": "x-intel",
-      "title": "Robert Cardillo, former head of the National Geospatial Intelligence Agency, tells @wolfblitzer on @CNN that President Trump has violated his oath of office. Tr",
+      "title": "History will judge tech leaders that enable AI warfare. OpenAI dropped bans on military use and it risks harm. Reports link Lavender-style systems to kill lists",
       "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/ChinaSelect/status/2044785208952524828",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMitAFBVV95cUxQb19Qbnp1enoyOGRLWDRBVDZubUJkdVlaS25KeWpCTGI5YWJrYWxiOV8xS1FUcWRxN0w2dC15NDVfS3ltbUtDcHNBWXpzLXJ3UURRT2w0dkF6X0trMm1pRGU5TldPM3plX01WeVR2QjhLQ3NmdkJuVEM5ZV8wc0xxWWhzdWVOeEJTTGxQMFBJMlpySXdEbjlqYXdiVmpJdENXQ2RzZldWdHZJamwycFJFeGk2QWc"
+        "https://x.com/johnrobb/status/2081732895547269403"
       ],
-      "id": "story-37bd7cffcb9bd902976fdafc",
-      "reason": "A Chinese firm, MizarVision, posted detailed satellite imagery of U.S. forces in the Middle East while not disclosing its data sources. @ChinaSelect analysis found @AirbusSpace satellites had multiple daily windows, up to 10 hours, where they could have captured imagery of U.S. t",
-      "score": 85,
+      "id": "story-21caf2bce5e924298c5e79b2",
+      "reason": "The Ukraine war didn't just drive innovation in drones (autonomous weapons). It's driving innovation in AI fueled social warfare.",
+      "score": 40,
       "sensitive_military_claim": true,
-      "shown_at": "2026-07-24T20:21:25Z",
+      "shown_at": "2026-07-27T21:05:46Z",
       "source": "x",
-      "source_url": "https://x.com/ChinaSelect/status/2044785208952524828",
+      "source_published_at": "2026-07-27T13:26:13Z",
+      "source_url": "https://x.com/johnrobb/status/2081732895547269403",
       "status": "x-intel",
-      "title": "A Chinese firm, MizarVision, posted detailed satellite imagery of U.S. forces in the Middle East while not disclosing its data sources. @ChinaSelect analysis fo",
+      "title": "The Ukraine war didn't just drive innovation in drones (autonomous weapons). It's driving innovation in AI fueled social warfare.",
       "webswarm_evidence_terms": [
-        "MizarVision",
-        "satellite imagery",
-        "military assets"
+        "autonomous weapons",
+        "weapons"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/shanaka86/status/2030948398384439313",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc"
+        "https://x.com/_lovablecurves/status/2081755515445449188"
       ],
-      "id": "story-39ea358dbcd93723ff9548ba",
-      "reason": "BREAKING: A Chinese AI startup called MizarVision is publishing high-resolution satellite imagery of every US military base, every carrier strike group, every F-22 deployment, every THAAD battery, and every Patriot missile position in the Middle East. Labelled. Geolocated. AI-ann",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-24T20:21:25Z",
+      "id": "story-4e9d234657f9ec42eba80019",
+      "reason": "Defense contractors are pouring record amounts into military AI startups\u2026. \u2026.with one recent tally reaching $4.1 billion. National-security applications remain one of the most consistent sources of AI investment\u2026 - so perhaps an AI dating app is not the gold mine you would think ",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-27T21:05:46Z",
       "source": "x",
-      "source_url": "https://x.com/shanaka86/status/2030948398384439313",
+      "source_published_at": "2026-07-27T14:56:06Z",
+      "source_url": "https://x.com/_lovablecurves/status/2081755515445449188",
       "status": "x-intel",
-      "title": "BREAKING: A Chinese AI startup called MizarVision is publishing high-resolution satellite imagery of every US military base, every carrier strike group, every F",
+      "title": "Defense contractors are pouring record amounts into military AI startups\u2026. \u2026.with one recent tally reaching $4.1 billion. National-security applications remain",
       "webswarm_evidence_terms": [
-        "MizarVision",
-        "commercial satellite imagery",
-        "satellite imagery",
-        "military assets"
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/pspengle/status/2080665145320050727",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMFgwOVprS0FlRnJVMVI4TUhyM2psakttZGVyRF9MSzJSbkVkQm1sbGlHSTJfT0h6YUwzMTdYMWYxVlNtQk1HaFFYN2dtV1BHVnRtUFRlY0M2WVlkRGRpcXJ5aHRLdWZ1NDJBTERiOWxOajFqUmlEei1teWhZckM2ODgxVkJ3UXFwMXBLMkllOEtCdnJ4T1kyRjlxMDFtbm5VYVE",
-        "https://news.google.com/rss/articles/CBMitAFBVV95cUxQb19Qbnp1enoyOGRLWDRBVDZubUJkdVlaS25KeWpCTGI5YWJrYWxiOV8xS1FUcWRxN0w2dC15NDVfS3ltbUtDcHNBWXpzLXJ3UURRT2w0dkF6X0trMm1pRGU5TldPM3plX01WeVR2QjhLQ3NmdkJuVEM5ZV8wc0xxWWhzdWVOeEJTTGxQMFBJMlpySXdEbjlqYXdiVmpJdENXQ2RzZldWdHZJamwycFJFeGk2QWc"
-      ],
-      "id": "story-7c6cd143591d7ba97188b8b8",
-      "reason": "New surveillance commons means the end of military concealment China\u2019s MizarVision has turned commercial satellite imagery into open intel during Iran war \u2014 exposing US assets that were later attacked \u00bbOn February 26, 2026 \u2013 48 hours before the United States and Israel launched O",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-24T20:21:25Z",
-      "source": "x",
-      "source_url": "https://x.com/pspengle/status/2080665145320050727",
-      "status": "x-intel",
-      "title": "New surveillance commons means the end of military concealment China\u2019s MizarVision has turned commercial satellite imagery into open intel during Iran war \u2014 exp",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "commercial satellite imagery",
-        "Prince Sultan Air Base",
-        "satellite imagery",
-        "military assets",
-        "air base"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/AhmedAmin_CS/status/2044862747477770338",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbXBHWG11YU1WMkxQZmNKekVMZXZrWDd2MlVkcVktNVp3aWJvZ01KN3VISUtSZHdnTUxobmMxWDRVMGJrY2hJVTJoZVgyRUFsQm1zcHBOWUhXWEhLeFRmdjUyQ04yVjRLV0I4ZTU4QnYyaUhEaE5uX2pxWExXaGFNV0hzZ0F6MVpGckNtN1FrdzdhUWktVVUtc3ZpUGMyUFBaLXBiQlJGSldwcWc"
-      ],
-      "id": "story-942b95a96ef7d0e3b47a2eac",
-      "reason": "What the hearing undersells: MizarVision has under $3M in funding and ~200 employees. They don\u2019t own a single satellite \u2014 they\u2019re buying commercial imagery through untraceable brokers and adding value through AI. This is the real shift. Geospatial intelligence at military-grade q",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-24T20:21:25Z",
-      "source": "x",
-      "source_url": "https://x.com/AhmedAmin_CS/status/2044862747477770338",
-      "status": "x-intel",
-      "title": "What the hearing undersells: MizarVision has under $3M in funding and ~200 employees. They don\u2019t own a single satellite \u2014 they\u2019re buying commercial imagery thro",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-26T06:48:45Z",
+    "alerted_at": "2026-07-27T21:05:46Z",
     "confidence": 0,
-    "source_url": "https://x.com/shanaka86/status/2067925228513374233",
-    "title": "2,000 targets. 2,000 munitions. 96 hours. The Pentagon only admitted that Elon Musk's AI helped do it because a polluting data center needed a legal defense. In"
+    "source_url": "https://x.com/noahhtan/status/2081765135425613925",
+    "title": "Last month, the White House released a memorandum that gives the Pentagon 90 days to rewrite the policy on autonomous weapons. In a new piece for @just_security"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 30,
-    "collected": 30,
-    "corroborated_count": 0,
-    "initial_collected": 30,
+    "alerted_now": 16,
+    "clustered": 16,
+    "collected": 26,
+    "corroborated_count": 4,
+    "initial_collected": 26,
     "initial_source_counts": {
-      "arxiv": 10,
-      "hackernews": 20
+      "x": 26
     },
-    "initial_x_relevant": 0,
+    "initial_x_relevant": 26,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.555,
-      "projected_minutes_per_30d": 410.62,
+      "measured_seconds": 5.065,
+      "projected_minutes_per_30d": 243.13,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -377,7 +361,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 0,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -400,11 +384,12 @@
       "ct0_present": true,
       "twitter_cookie_present": true
     },
-    "x_intel_published": 0
+    "x_collector_status": "healthy",
+    "x_intel_published": 16
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-27T19:55:31Z",
+  "updated_at": "2026-07-27T21:05:46Z",
   "version": 1
 }
