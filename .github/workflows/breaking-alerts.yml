@@ -68,6 +68,111 @@ jobs:
         run: |
           set +e
           export PATH="$HOME/.local/bin:$PATH"
+          TWITTER_CLI_SOURCE="git+https://github.com/public-clis/twitter-cli.git@7c634e0d396b1e7af9f63315b414925fe4f29ae7"
+          if command -v pipx >/dev/null 2>&1; then
+            pipx install "$TWITTER_CLI_SOURCE" || python3 -m pip install "$TWITTER_CLI_SOURCE" || echo "twitter-cli install unavailable; X route will degrade"
+          else
+            python3 -m pip install "$TWITTER_CLI_SOURCE" || echo "twitter-cli install unavailable; X route will degrade"
+          fi
+          if command -v twitter >/dev/null 2>&1; then
+            twitter --version
+          else
+            echo "twitter CLI unavailable after install attempt"
+          fi
+          set -e
+
+      - name: Run breaking monitor
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m aibrief.breaking_monitor
+
+      - name: Commit breaking state
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- data/breaking_state.json web/data/breaking_status.json; then
+            echo "No breaking state changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/breaking_state.json web/data/breaking_status.json
+          git commit -m "Update breaking alert state [skip ci]"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+name: Breaking Alerts
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/breaking-alerts.yml"
+      - "aibrief/breaking_monitor.py"
+      - "aibrief/webswarm.py"
+  schedule:
+    # Repository visibility checked with: gh repo view f2h2dai/AibriefAI --json visibility,nameWithOwner
+    # PUBLIC repository: start at every 15 minutes. GitHub schedule execution is near-real-time and may be delayed.
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aibrief-breaking-alerts
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  AGENT_LIMIT_ID: sentinel_scan
+  TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
+  BREAKING_NOTIFY_MODE: "website"
+  BREAKING_SOURCE_FOCUS: "x"
+  BREAKING_MIN_X_RELEVANCE: "2"
+  BREAKING_ALLOW_NEWS_FALLBACK: "true"
+  BREAKING_PUBLISH_NEWS_FALLBACK: "false"
+  BREAKING_ENABLE_SECONDARY_EVIDENCE: "true"
+  BREAKING_NEWS_FALLBACK_PER_QUERY: "5"
+  X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
+  BREAKING_MAX_X_HANDLES: "100"
+  BREAKING_X_HANDLE_BATCH_SIZE: "10"
+  BREAKING_MAX_X_QUERIES: "12"
+  BREAKING_SECONDARY_EVIDENCE_LIMIT: "20"
+  BREAKING_MAX_CANDIDATES_PER_BATCH: "30"
+  BREAKING_CADENCE_MINUTES: "15"
+  AIBRIEF_DATA_CLASSIFICATION: "public"
+  AIBRIEF_CLOUD_GATEWAY_ENABLED: "false"
+  AIBRIEF_SECURITY_AUDIT_LOG: ".aibrief/audit/security-events.jsonl"
+  AIBRIEF_SECURITY_REQUIRE_AUDIT: "true"
+  AIBRIEF_SECURITY_MAX_LLM_CALLS: "1"
+  AIBRIEF_SECURITY_MAX_DELIVERY_CALLS: "5"
+  AIBRIEF_MAX_CLOUD_PAYLOAD_CHARS: "30000"
+  AIBRIEF_MAX_LLM_COST_USD: "0.25"
+  AIBRIEF_REQUIRE_DELIVERY_APPROVAL: "true"
+  AIBRIEF_DELIVERY_APPROVED: "false"
+
+jobs:
+  breaking-alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Agent limit preflight
+        shell: bash
+        run: python3 scripts/check_agent_limits.py --agent "$AGENT_LIMIT_ID" --all-workflows
+
+      - name: Install X route
+        shell: bash
+        run: |
+          set +e
+          export PATH="$HOME/.local/bin:$PATH"
           if command -v pipx >/dev/null 2>&1; then
             pipx install twitter-cli || python3 -m pip install twitter-cli || echo "twitter-cli install unavailable; X route will degrade"
           else
