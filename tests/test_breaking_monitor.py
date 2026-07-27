@@ -203,7 +203,7 @@ class BreakingMonitorTests(unittest.TestCase):
                     {
                         "tweets": [
                             {
-                                "id": "260620245123456789",
+                                "id": "2081765135425613925",
                                 "author": {"username": "defense_ai"},
                                 "text": (
                                     "Pentagon sources describe Grok Gov Model inside Project Maven "
@@ -230,32 +230,32 @@ class BreakingMonitorTests(unittest.TestCase):
 
         self.assertEqual(len(signals), 1)
         self.assertEqual(signals[0]["source"], "birdclaw")
-        self.assertEqual(signals[0]["url"], "https://x.com/defense_ai/status/260620245123456789")
+        self.assertEqual(signals[0]["url"], "https://x.com/defense_ai/status/2081765135425613925")
         self.assertTrue(survives_stage1(clustered[0]))
 
     def test_x_urls_are_canonical_original_post_links(self):
         canonical = canonical_x_post_url(
             {
-                "rest_id": "260620245123456789",
+                "rest_id": "2081765135425613925",
                 "author": {"userName": "Defense_AI"},
-                "url": "https://twitter.com/i/web/status/260620245123456789?s=20#tracking",
+                "url": "https://twitter.com/i/web/status/2081765135425613925?s=20#tracking",
             }
         )
         normalized = normalize_x_record(
             {
-                "id_str": "260620245123456789",
+                "id_str": "2081765135425613925",
                 "user": {"screenName": "Defense_AI"},
                 "text": "Project Maven military AI targeting update",
             }
         )
 
-        self.assertEqual(canonical, "https://x.com/Defense_AI/status/260620245123456789")
+        self.assertEqual(canonical, "https://x.com/Defense_AI/status/2081765135425613925")
         self.assertEqual(normalized["url"], canonical)
 
     def test_canonical_x_url_removes_tracking_and_twitter_host(self):
         self.assertEqual(
-            canonical_x_post_url("https://twitter.com/DefenseAI/status/260620245123456789?s=20#thread"),
-            "https://x.com/DefenseAI/status/260620245123456789",
+            canonical_x_post_url("https://twitter.com/DefenseAI/status/2081765135425613925?s=20#thread"),
+            "https://x.com/DefenseAI/status/2081765135425613925",
         )
 
     def test_twitter_cli_search_forces_structured_json_output(self):
@@ -286,7 +286,7 @@ class BreakingMonitorTests(unittest.TestCase):
                     "schema_version": "1",
                     "data": [
                         {
-                            "id": "260620245123456789",
+                            "id": "2081765135425613925",
                             "text": "Pentagon Project Maven AI targeting update",
                             "author": {"username": "DeptofDefense"},
                         }
@@ -296,7 +296,7 @@ class BreakingMonitorTests(unittest.TestCase):
         )
 
         self.assertEqual(len(records), 1)
-        self.assertEqual(records[0]["url"], "https://x.com/DeptofDefense/status/260620245123456789")
+        self.assertEqual(records[0]["url"], "https://x.com/DeptofDefense/status/2081765135425613925")
 
     def test_twitter_cli_camel_case_timestamp_is_preserved(self):
         [record] = parse_x_cli_output(
@@ -331,6 +331,19 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertTrue(x_post_is_fresh(recent, {}, now))
         self.assertFalse(x_post_is_fresh(old, {}, now))
         self.assertEqual(source_published_timestamp(old).year, 2025)
+
+    def test_x_freshness_rejects_timestamp_that_conflicts_with_snowflake(self):
+        now = datetime(2026, 7, 27, 21, 0, tzinfo=timezone.utc)
+        stale = {
+            "url": "https://x.com/sama/status/1952778518225723434",
+            "published_at": "2026-07-27T20:58:52Z",
+        }
+
+        self.assertEqual(
+            source_published_timestamp(stale),
+            datetime(2025, 8, 5, 17, 7, 34, 272000, tzinfo=timezone.utc),
+        )
+        self.assertFalse(x_post_is_fresh(stale, {}, now))
 
     def test_semantic_x_duplicates_cluster_as_one_event(self):
         candidates = [
@@ -417,7 +430,7 @@ class BreakingMonitorTests(unittest.TestCase):
                     "source": "twitter",
                     "title": "Pentagon confirms Grok Gov Model in Project Maven targeting",
                     "content": "Grok Gov Model supported Project Maven military targeting operations in Iran.",
-                    "url": "https://x.com/defense_ai/status/260620245123456789?s=20",
+                    "url": "https://x.com/defense_ai/status/2081765135425613925?s=20",
                 }
             ],
             [
@@ -433,7 +446,7 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertTrue(candidate["sensitive_military_claim"])
         self.assertEqual(candidate["evidence_status"], "corroborated")
         self.assertEqual(candidate["evidence_count"], 2)
-        self.assertEqual(candidate["source_urls"][0], "https://x.com/defense_ai/status/260620245123456789")
+        self.assertEqual(candidate["source_urls"][0], "https://x.com/defense_ai/status/2081765135425613925")
         self.assertIn("https://news.example.test/project-maven-grok", candidate["evidence_urls"])
 
     def test_single_source_sensitive_x_claim_stays_visible(self):
@@ -445,7 +458,7 @@ class BreakingMonitorTests(unittest.TestCase):
                         "source": "twitter",
                         "title": "Grok Gov Model used for Project Maven targeting",
                         "content": "An X post says Project Maven supported military targeting operations in Iran.",
-                        "url": "https://x.com/defense_ai/status/260620245123456789",
+                        "url": "https://x.com/defense_ai/status/2081765135425613925",
                         "published_at": isoformat(utc_now()),
                         "velocity": 80,
                     }
@@ -485,7 +498,7 @@ class BreakingMonitorTests(unittest.TestCase):
     def test_public_feed_exposes_second_evidence_link(self):
         now = isoformat(utc_now())
         urls = [
-            "https://x.com/defense_ai/status/260620245123456789",
+            "https://x.com/defense_ai/status/2081765135425613925",
             "https://news.example.test/project-maven-grok",
         ]
         status = public_breaking_status(
