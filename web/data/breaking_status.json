@@ -5,30 +5,6 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/Olanrew17770010/status/2081919665803088091"
-      ],
-      "id": "story-f2c0429ef83d9460714ebea4",
-      "reason": "Algorithms at War: Legal Accountability in the Age of Autonomous Weapons Systems https://t.co/DLePCvGI6C #Amazon via @Amazon",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-28T04:25:34Z",
-      "source": "x",
-      "source_published_at": "2026-07-28T01:48:23Z",
-      "source_url": "https://x.com/Olanrew17770010/status/2081919665803088091",
-      "status": "x-intel",
-      "title": "Algorithms at War: Legal Accountability in the Age of Autonomous Weapons Systems https://t.co/DLePCvGI6C #Amazon via @Amazon",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/christinayiotis/status/2081917178509455835"
@@ -49,6 +25,30 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Olanrew17770010/status/2081919665803088091"
+      ],
+      "id": "story-f2c0429ef83d9460714ebea4",
+      "reason": "Algorithms at War: Legal Accountability in the Age of Autonomous Weapons Systems https://t.co/DLePCvGI6C #Amazon via @Amazon",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-28T04:25:34Z",
+      "source": "x",
+      "source_published_at": "2026-07-28T01:48:23Z",
+      "source_url": "https://x.com/Olanrew17770010/status/2081919665803088091",
+      "status": "x-intel",
+      "title": "Algorithms at War: Legal Accountability in the Age of Autonomous Weapons Systems https://t.co/DLePCvGI6C #Amazon via @Amazon",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -306,27 +306,27 @@
   "last_alert": {
     "alerted_at": "2026-07-28T04:25:34Z",
     "confidence": 0,
-    "source_url": "https://x.com/Olanrew17770010/status/2081919665803088091",
-    "title": "Algorithms at War: Legal Accountability in the Age of Autonomous Weapons Systems https://t.co/DLePCvGI6C #Amazon via @Amazon"
+    "source_url": "https://x.com/christinayiotis/status/2081917178509455835",
+    "title": "\u201cThe White House recently published a National Security Presidential Memorandum directing the executive branch to \u2018responsibly accelerate the use of AI across i"
   },
   "last_run": {
-    "alerted_now": 2,
+    "alerted_now": 0,
     "clustered": 18,
     "collected": 26,
-    "corroborated_count": 0,
+    "corroborated_count": 1,
     "initial_collected": 26,
     "initial_source_counts": {
       "x": 26
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.42,
-      "projected_minutes_per_30d": 356.14,
+      "measured_seconds": 10.976,
+      "projected_minutes_per_30d": 526.83,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +340,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +364,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-28T04:25:34Z",
+  "updated_at": "2026-07-28T07:08:04Z",
   "version": 1
 }
