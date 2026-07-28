@@ -1527,6 +1527,8 @@
     const state = {
       signals: [],
       breaking: [],
+      breakingStatus: null,
+      briefingPayload: null,
       metrics: {},
       runs: [],
       search: '',
@@ -1716,8 +1718,12 @@
 
     function renderHealth(payload) {
       const events = Array.isArray(payload.events) ? payload.events : [];
+      const xStatus = state.breakingStatus && state.breakingStatus.last_run
+        ? state.breakingStatus.last_run.x_collector_status
+        : '';
+      const xDegraded = xStatus === 'degraded';
       const rows = [
-        ['Ingestion', 'Sources collected', 'Healthy'],
+        ['Ingestion', xDegraded ? 'X collector degraded; fallback sources active' : 'Sources collected', xDegraded ? 'Watch' : 'Healthy'],
         ['Translation', 'Arabic and English ready', 'Healthy'],
         ['Providers', payload.mode ? 'Mode: ' + payload.mode : 'Route checked', 'Healthy'],
         ['Pipeline', events.length + ' run events logged', events.some(function(e) { return e.level === 'error'; }) ? 'Watch' : 'Healthy'],
@@ -1738,11 +1744,14 @@
 
     function renderProviders(payload) {
       const counts = payload.provider_counts || {};
+      const xStatus = state.breakingStatus && state.breakingStatus.last_run
+        ? state.breakingStatus.last_run.x_collector_status
+        : '';
       const providers = [
         ['Gemini', 'Configured route', counts.gemini || 0],
         ['Groq', payload.model || 'llama route', counts.groq || 0],
         ['Rule-based', 'Fallback guard', counts['rule-based'] || 0],
-        ['X route', 'Public intel lane', state.signals.filter(function(signal) { return signal.source === 'twitter' || signal.source === 'x'; }).length]
+        ['X route', xStatus === 'degraded' ? 'Collector degraded' : 'Public intel lane', state.breaking.length]
       ];
 
       document.getElementById('providerRows').innerHTML = providers.map(function(provider) {
@@ -1767,7 +1776,7 @@
       document.getElementById('xIntelRail').innerHTML = items.map(function(item) {
         const title = item.title || 'Untitled X intel';
         const score = item.score ? 'Score ' + item.score : (item.status || 'X intel');
-        const time = item.shown_at || item.sourcePublishedAt || item.updatedAt || item.createdAt || '';
+        const time = item.source_published_at || item.sourcePublishedAt || item.shown_at || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
         const url = item.source_url || item.url || '#';
         const evidenceURLs = Array.isArray(item.evidence_urls) ? item.evidence_urls.filter(Boolean) : [];
@@ -1972,10 +1981,15 @@
           throw new Error('Breaking status request failed with ' + response.status);
         }
         const payload = await response.json();
+        state.breakingStatus = payload;
         state.breaking = Array.isArray(payload.feed)
           ? payload.feed
           : (Array.isArray(payload.pending_feed) ? payload.pending_feed : []);
         renderXIntel(state.breaking);
+        if (state.briefingPayload) {
+          renderHealth(state.briefingPayload);
+          renderProviders(state.briefingPayload);
+        }
       } catch (error) {
         renderXIntel([]);
       }
@@ -1989,6 +2003,7 @@
         }
 
         const payload = await response.json();
+        state.briefingPayload = payload;
         state.signals = Array.isArray(payload) ? payload : (payload.signals || []);
         renderSourceControls();
         renderHeroMetrics(payload);
