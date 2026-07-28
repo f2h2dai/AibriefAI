@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-07-28T13:25:35Z",
+  "generated_at": "2026-07-28T19:22:35Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-28T13:25:35Z",
+  "latest_successful_run": "2026-07-28T19:22:35Z",
   "highest_ranked_signal": {
-    "id": "github-014",
-    "title": "GiulioDER/RE-call",
-    "action_score": 74.25,
-    "url": "https://github.com/GiulioDER/RE-call"
+    "id": "twitter-021",
+    "title": "@: •  High-volume automation through fast, cheap processing options.' author: id: '2217132804",
+    "action_score": 75.5,
+    "url": "https://x.com/sama/status/2074709023807664454"
   },
   "source_contribution": {
-    "github": 8,
-    "arxiv": 2,
-    "twitter": 2
+    "twitter": 4,
+    "github": 8
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1157"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 157.929,
+  "runtime_seconds": 147.478,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -62,7 +61,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 2,
+    "public_x_signals": 4,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-28T13:25:35Z",
+    "planned_at": "2026-07-28T19:22:35Z",
     "production_threshold": 70.0
   }
 }
