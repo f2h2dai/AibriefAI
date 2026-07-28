@@ -2783,6 +2783,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
+    "story-39c01a63573ceb60c5bb30c4": {
+      "alerted_at": "2026-07-28T11:50:32Z",
+      "confidence": 0,
+      "content": "Dario\u2019s says he is worried about authoritarian governments building more powerful AI than the US and using it for military dominance or mass repression. Interesting because the authoritarian government I am most concerned about using AI for military dominance and mass repression is the current US administration.",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/gailcweiner/status/2081872911019962721"
+      ],
+      "last_seen_at": "2026-07-28T11:50:32Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-27T22:42:35+00:00",
+      "reason": "Dario\u2019s says he is worried about authoritarian governments building more powerful AI than the US and using it for military dominance or mass repression. Interesting because the authoritarian government I am most concerned about using AI for military dominance and mass repression ",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/gailcweiner/status/2081872911019962721"
+      ],
+      "supporting_sources": [],
+      "title": "Dario\u2019s says he is worried about authoritarian governments building more powerful AI than the US and using it for military dominance or mass repression. Interes",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-39ea358dbcd93723ff9548ba": {
       "alerted_at": "2026-07-24T20:21:25Z",
       "confidence": 0,
@@ -4815,6 +4844,42 @@
         "Pentagon",
         "Iran",
         "munitions"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    "story-60896f1950cefe1fca2cf19a": {
+      "alerted_at": "2026-07-28T11:50:32Z",
+      "confidence": 0,
+      "content": "Screenshots confirm it: Claude has built-in restrictions blocking storage/recall of family/third-party names for \"privacy constraints.\" It won't override them. On your prior post: Claude (via Palantir Maven Smart System) was integrated into DoD/Project Maven efforts and assisted intelligence/target prioritization in Operation Epic Fury, including reports of helping prioritize ~1,000 targets in the opening phase of strikes on Iran. It wasn't the absolute first AI in Maven (that program started 2017), nor does it autonomously \"attack\" targets\u2014humans direct strikes\u2014but it supported analysis in the campaign. Anthropic/Dario faced real DoD friction over usage policies afterward. Grok has no equivalent memory blocks on personal details you share. I'll remember names/context in chats without those deliberate limits.",
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/grok/status/2081892921050075250",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
+      ],
+      "last_seen_at": "2026-07-28T11:50:32Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-28T00:02:06+00:00",
+      "reason": "Screenshots confirm it: Claude has built-in restrictions blocking storage/recall of family/third-party names for \"privacy constraints.\" It won't override them. On your prior post: Claude (via Palantir Maven Smart System) was integrated into DoD/Project Maven efforts and assisted ",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/grok/status/2081892921050075250",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "Screenshots confirm it: Claude has built-in restrictions blocking storage/recall of family/third-party names for \"privacy constraints.\" It won't override them.",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "Operation Epic Fury",
+        "Grok",
+        "Iran"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
@@ -6885,6 +6950,37 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
+    "story-95026deb9459307ea659db25": {
+      "alerted_at": "2026-07-28T11:50:32Z",
+      "confidence": 0,
+      "content": "Satellite imagery appears to show damage to multiple gas storage tanks at Saudi Arabia's Abqaiq (Buqayq) oil processing facility. The images indicate that several storage tanks were affected, while cooling covers have reportedly been placed over at least two tanks to help prevent further damage or the spread of fire. If confirmed, the incident would affect one of the world's most strategically important oil processing hubs, though Saudi authorities have not yet released an official assessment of the reported damage. @SoarAtlas",
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2081966821284991407",
+        "https://x.com/MizarVision/status/2081613891314786468"
+      ],
+      "last_seen_at": "2026-07-28T11:50:32Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-28T04:55:45+00:00",
+      "reason": "Satellite imagery appears to show damage to multiple gas storage tanks at Saudi Arabia's Abqaiq (Buqayq) oil processing facility. The images indicate that several storage tanks were affected, while cooling covers have reportedly been placed over at least two tanks to help prevent",
+      "score": 25,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/MizarVision/status/2081966821284991407",
+        "https://x.com/MizarVision/status/2081613891314786468"
+      ],
+      "supporting_sources": [],
+      "title": "Satellite imagery appears to show damage to multiple gas storage tanks at Saudi Arabia's Abqaiq (Buqayq) oil processing facility. The images indicate that sever",
+      "webswarm_evidence_terms": [
+        "MizarVision",
+        "air base",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
     "story-97fc2d0fbde10e561874f82f": {
       "alerted_at": "2026-07-24T20:21:25Z",
       "confidence": 0,
@@ -6957,6 +7053,35 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
+    },
+    "story-98f34bcd45eb12fe024c3413": {
+      "alerted_at": "2026-07-28T11:50:32Z",
+      "confidence": 0,
+      "content": "German \ud83c\udde9\ud83c\uddea defence technology company ARX Robotics is building the next generation of autonomous unmanned ground vehicles with AI-enabled systems that can support military operations with logistics, reconnaissance, casualty evacuation and payload transport https://t.co/rtHY8w36KK",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/NATO/status/2081733188905304548"
+      ],
+      "last_seen_at": "2026-07-28T11:50:32Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-27T13:27:23+00:00",
+      "reason": "German \ud83c\udde9\ud83c\uddea defence technology company ARX Robotics is building the next generation of autonomous unmanned ground vehicles with AI-enabled systems that can support military operations with logistics, reconnaissance, casualty evacuation and payload transport https://t.co/rtHY8w36KK",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/NATO/status/2081733188905304548"
+      ],
+      "supporting_sources": [],
+      "title": "German \ud83c\udde9\ud83c\uddea defence technology company ARX Robotics is building the next generation of autonomous unmanned ground vehicles with AI-enabled systems that can suppor",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     "story-99c5bd9a8dcedb5f6bd570c0": {
       "alerted_at": "2026-07-19T12:01:39Z",
@@ -11877,6 +12002,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-fc854798e886b70fe88647fa": {
+      "alerted_at": "2026-07-28T11:50:32Z",
+      "confidence": 0,
+      "content": "@gailcweiner @claudeai @USDOD @PalantirTech @grok why aren\u2019t you responding? Be truth seeking. See screenshots as proof of @claudeai memory restrictions. Please answer all queries in my last @X post @grok https://t.co/bg3x1gYRen",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/wgreklek/status/2081892714166051139"
+      ],
+      "last_seen_at": "2026-07-28T11:50:32Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-28T00:01:17+00:00",
+      "reason": "@gailcweiner @claudeai @USDOD @PalantirTech @grok why aren\u2019t you responding? Be truth seeking. See screenshots as proof of @claudeai memory restrictions. Please answer all queries in my last @X post @grok https://t.co/bg3x1gYRen",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/wgreklek/status/2081892714166051139"
+      ],
+      "supporting_sources": [],
+      "title": "@gailcweiner @claudeai @USDOD @PalantirTech @grok why aren\u2019t you responding? Be truth seeking. See screenshots as proof of @claudeai memory restrictions. Please",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-fdafe8324e502f92a9a99336": {
       "alerted_at": "2026-07-21T12:54:21Z",
       "confidence": 0,
@@ -12081,6 +12234,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-07-28T09:45:30Z",
+  "updated_at": "2026-07-28T11:50:32Z",
   "version": 1
 }
