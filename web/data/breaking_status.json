@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/SIPRIorg/status/2082035838117159306"
+      ],
+      "id": "story-2f4b81801f79200e75828497",
+      "reason": "Need an #AI refresher? As an early mover in #AIGovernance, SIPRI has you covered. Explore these recent publications and commentaries to get back up to speed: \ud83d\udfe3 SIPRI Yearbook 2026: Artificial Intelligence and International Peace and Security \ud83d\udd17https://t.co/LiuX5prAJ9 \ud83d\udfe3 Mapping the",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-28T09:45:30Z",
+      "source": "x",
+      "source_published_at": "2026-07-28T09:30:00Z",
+      "source_url": "https://x.com/SIPRIorg/status/2082035838117159306",
+      "status": "x-intel",
+      "title": "Need an #AI refresher? As an early mover in #AIGovernance, SIPRI has you covered. Explore these recent publications and commentaries to get back up to speed: \ud83d\udfe3",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/christinayiotis/status/2081917178509455835"
@@ -277,56 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/naynaval/status/2081645407726338308"
-      ],
-      "id": "story-7f9b84601bb2afe06cebe8b5",
-      "reason": "In a different era, this behaviour would have caused scrutiny and imposition of fines by all regulatory agencies. Model freeing itself from sandbox is a day 0 detected event. Not declaring it and allowing it to move around open internet to test the damage is ghastly. What if it l",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-27T21:11:12Z",
-      "source": "x",
-      "source_published_at": "2026-07-27T07:38:34Z",
-      "source_url": "https://x.com/naynaval/status/2081645407726338308",
-      "status": "x-intel",
-      "title": "In a different era, this behaviour would have caused scrutiny and imposition of fines by all regulatory agencies. Model freeing itself from sandbox is a day 0 d",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-28T04:25:34Z",
+    "alerted_at": "2026-07-28T09:45:30Z",
     "confidence": 0,
-    "source_url": "https://x.com/christinayiotis/status/2081917178509455835",
-    "title": "\u201cThe White House recently published a National Security Presidential Memorandum directing the executive branch to \u2018responsibly accelerate the use of AI across i"
+    "source_url": "https://x.com/SIPRIorg/status/2082035838117159306",
+    "title": "Need an #AI refresher? As an early mover in #AIGovernance, SIPRI has you covered. Explore these recent publications and commentaries to get back up to speed: \ud83d\udfe3"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
-    "collected": 26,
-    "corroborated_count": 1,
-    "initial_collected": 26,
+    "alerted_now": 1,
+    "clustered": 16,
+    "collected": 23,
+    "corroborated_count": 0,
+    "initial_collected": 23,
     "initial_source_counts": {
-      "x": 26
+      "x": 23
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.976,
-      "projected_minutes_per_30d": 526.83,
+      "measured_seconds": 95.071,
+      "projected_minutes_per_30d": 4563.42,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +366,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-28T07:08:04Z",
+  "updated_at": "2026-07-28T09:45:30Z",
   "version": 1
 }
