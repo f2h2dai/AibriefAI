@@ -74,4 +74,5 @@ limits:
     max_tool_calls: 20
     workflows:
       - .github/workflows/agent-quality-gates.yml
+      - .github/workflows/browser-router-check.yml
     emergency_stop: disable agent quality-gates workflow and require local verification
