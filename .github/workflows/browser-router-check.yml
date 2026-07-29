@@ -10,6 +10,7 @@ on:
       - "aibrief/connectors/browser_router.py"
       - "aibrief/capability_catalog.json"
       - "config/browser_router.json"
+      - "config/agent_limits.yaml"
       - "scripts/check_lightpanda.py"
       - "skills/lightpanda/**"
       - "tests/test_browser_router.py"
@@ -21,6 +22,7 @@ on:
       - "aibrief/connectors/browser_router.py"
       - "aibrief/capability_catalog.json"
       - "config/browser_router.json"
+      - "config/agent_limits.yaml"
       - "scripts/check_lightpanda.py"
       - "skills/lightpanda/**"
       - "tests/test_browser_router.py"
@@ -32,6 +34,7 @@ permissions:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  AGENT_LIMIT_ID: agent_quality_gates
 
 jobs:
   browser-router:
@@ -41,6 +44,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Agent limit preflight
+        run: python3 scripts/check_agent_limits.py --agent "$AGENT_LIMIT_ID" --all-workflows
 
       - name: Validate browser policy and readiness
         run: python3 scripts/check_lightpanda.py
