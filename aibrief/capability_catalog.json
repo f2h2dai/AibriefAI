@@ -141,5 +141,40 @@
     "inputs": ["web/data/signals.json", "pipeline events", "configured production threshold"],
     "outputs": ["web/data/metrics.json", "web/data/runs.json", "operations dashboard"],
     "context": "Use for source-backed operations metrics and bounded worker coordination. The browser slider is analysis-only and cannot write production configuration."
+  },
+  {
+    "id": "lightpanda_web_execution",
+    "name": "Lightpanda Web Execution Layer",
+    "type": "browser_router",
+    "summary": "Use Lightpanda for public deterministic web extraction and navigation with Chromium compatibility fallback.",
+    "keywords": [
+      "lightpanda",
+      "browser",
+      "headless",
+      "crawl",
+      "extract",
+      "navigation",
+      "pandascript",
+      "mcp",
+      "web automation"
+    ],
+    "triggers": [
+      "lightpanda browser",
+      "crawl dynamic website",
+      "extract public web evidence",
+      "replay pandascript"
+    ],
+    "inputs": [
+      "config/browser_router.json",
+      "Lightpanda binary",
+      "public HTTP(S) URL",
+      "reviewed skills/lightpanda/*.js"
+    ],
+    "outputs": [
+      "structured public web evidence",
+      "deterministic browser replay",
+      "explicit Chromium fallback result"
+    ],
+    "context": "Use for public JavaScript-driven sources and reviewed deterministic flows. Never pass X sessions, authentication, secrets, forms, uploads, or private-network targets to Lightpanda; keep Chromium as fallback while beta."
   }
 ]
