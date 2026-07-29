@@ -18,6 +18,7 @@ class CapabilityRegistryTests(unittest.TestCase):
         self.assertIn("x_intel_collector", capability_ids)
         self.assertIn("birdclaw_import", capability_ids)
         self.assertIn("render_static_deploy", capability_ids)
+        self.assertIn("lightpanda_web_execution", capability_ids)
         self.assertGreaterEqual(len(catalog), 10)
 
     def test_ranker_selects_relevant_x_capabilities_only(self):
@@ -40,6 +41,16 @@ class CapabilityRegistryTests(unittest.TestCase):
         self.assertIn("render_static_deploy", capability_ids)
         self.assertIn("dashboard_builder", capability_ids)
         self.assertNotIn("birdclaw_import", capability_ids)
+
+    def test_ranker_selects_lightpanda_for_public_web_automation(self):
+        matches = rank_capabilities(
+            "Use Lightpanda to crawl a dynamic public website, extract evidence, and replay a PandaScript",
+            max_capabilities=3,
+        )
+        capability_ids = [match.capability["id"] for match in matches]
+
+        self.assertIn("lightpanda_web_execution", capability_ids)
+        self.assertNotIn("x_intel_collector", capability_ids)
 
     def test_selected_context_payload_is_smaller_than_loading_all_tools(self):
         catalog = load_capability_catalog()
