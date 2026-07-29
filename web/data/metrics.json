@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-07-29T13:40:16Z",
+  "generated_at": "2026-07-29T19:15:12Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-29T13:40:16Z",
+  "latest_successful_run": "2026-07-29T19:15:12Z",
   "highest_ranked_signal": {
-    "id": "github-010",
-    "title": "allcolor/PawFlow-Agents",
+    "id": "twitter-035",
+    "title": "@: https://t.co/ubjMduTFjS' author: id: '2781760593' name: Flavio Adamo screenName: flavioAd ",
     "action_score": 77.5,
-    "url": "https://github.com/allcolor/PawFlow-Agents"
+    "url": "https://x.com/sama/status/2029622732594499630"
   },
   "source_contribution": {
-    "github": 6,
-    "twitter": 3,
-    "arxiv": 3
+    "twitter": 5,
+    "github": 7
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Expecting ',' delimiter: line 3 column 112 (char 258)"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1165"
     }
   ],
-  "runtime_seconds": 142.257,
+  "runtime_seconds": 140.344,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -62,7 +61,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 3,
+    "public_x_signals": 5,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-29T13:40:16Z",
+    "planned_at": "2026-07-29T19:15:12Z",
     "production_threshold": 70.0
   }
 }
