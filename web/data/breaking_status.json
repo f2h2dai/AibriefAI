@@ -5,6 +5,58 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/kshetrapulse/status/2082312586700455950"
+      ],
+      "id": "story-eac9b902bde51d40aca61839",
+      "reason": "The US and UAE have launched Task Force Talon Synapse, their first joint military AI task force, to enhance intelligence, #cybersecurity, and regional security. Read more on our website. https://t.co/WrsBrQghQi #artificialintelligence #militaryai #us #uae #defense #middleeast htt",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-29T21:50:09Z",
+      "source": "x",
+      "source_published_at": "2026-07-29T03:49:42Z",
+      "source_url": "https://x.com/kshetrapulse/status/2082312586700455950",
+      "status": "x-intel",
+      "title": "The US and UAE have launched Task Force Talon Synapse, their first joint military AI task force, to enhance intelligence, #cybersecurity, and regional security.",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/ShowsAli/status/2082390744728297905"
+      ],
+      "id": "story-341717861d044310b80bddcd",
+      "reason": "Task Force Talon Synapse Accelerates Military AI The United States Central Command and the United Arab Emirates have formalized an agreement to establish a bilateral task force based in Abu Dhabi. Launching in the coming weeks, Task Force Talon Synapse consists of approximately 2",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-29T21:50:09Z",
+      "source": "x",
+      "source_published_at": "2026-07-29T09:00:17Z",
+      "source_url": "https://x.com/ShowsAli/status/2082390744728297905",
+      "status": "x-intel",
+      "title": "Task Force Talon Synapse Accelerates Military AI The United States Central Command and the United Arab Emirates have formalized an agreement to establish a bila",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/PShannon30308/status/2082561261339038028"
@@ -251,81 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/unusual_whales/status/2082168459643756993"
-      ],
-      "id": "story-0991867e18f523a837f2e4ef",
-      "reason": "The Pentagon is moving to build commercial hyperscale AI data centers across multiple U.S. military bases, per POLITICO",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-29T17:35:26Z",
-      "source": "x",
-      "source_published_at": "2026-07-28T18:17:00Z",
-      "source_url": "https://x.com/unusual_whales/status/2082168459643756993",
-      "status": "x-intel",
-      "title": "The Pentagon is moving to build commercial hyperscale AI data centers across multiple U.S. military bases, per POLITICO",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/PShannon30308/status/2082437823974486109"
-      ],
-      "id": "story-2b3494f245402b21380902ff",
-      "reason": "Again we see the one thing that is common among them all -- speed. Right behind that is adapting dumb weapons with the addition of autonomy and AI.",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-29T17:35:26Z",
-      "source": "x",
-      "source_published_at": "2026-07-29T12:07:21Z",
-      "source_url": "https://x.com/PShannon30308/status/2082437823974486109",
-      "status": "x-intel",
-      "title": "Again we see the one thing that is common among them all -- speed. Right behind that is adapting dumb weapons with the addition of autonomy and AI.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-29T20:54:48Z",
+    "alerted_at": "2026-07-29T21:50:09Z",
     "confidence": 0,
-    "source_url": "https://x.com/PShannon30308/status/2082561261339038028",
-    "title": "Delian (Greece) is building a new defense prime to protect the West and its allies in the era of autonomous warfare by integrating hardware and software to deli"
+    "source_url": "https://x.com/kshetrapulse/status/2082312586700455950",
+    "title": "The US and UAE have launched Task Force Talon Synapse, their first joint military AI task force, to enhance intelligence, #cybersecurity, and regional security."
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 19,
+    "alerted_now": 2,
+    "clustered": 23,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.295,
-      "projected_minutes_per_30d": 494.18,
+      "measured_seconds": 7.716,
+      "projected_minutes_per_30d": 370.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -363,11 +366,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-29T20:54:48Z",
+  "updated_at": "2026-07-29T21:50:09Z",
   "version": 1
 }
