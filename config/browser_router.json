@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "default_backend": "lightpanda",
+  "fallback_backend": "chromium",
+  "lightpanda": {
+    "enabled": true,
+    "binary": "lightpanda",
+    "obey_robots": true,
+    "disable_telemetry": true,
+    "disable_core_dumps": true,
+    "timeout_seconds": 45,
+    "max_output_chars": 500000,
+    "dump_format": "markdown"
+  },
+  "policies": {
+    "public_only": true,
+    "allow_localhost": false,
+    "deny_authentication": true,
+    "deny_form_submission": true,
+    "deny_file_upload": true,
+    "deny_x_session": true
+  },
+  "routes": {
+    "extract": "lightpanda",
+    "crawl": "lightpanda",
+    "navigate": "lightpanda",
+    "pandascript": "lightpanda",
+    "authentication": "chromium",
+    "x_session": "chromium",
+    "complex_compatibility": "chromium"
+  }
+}
