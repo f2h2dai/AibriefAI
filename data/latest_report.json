@@ -1,146 +1,146 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-07-29T19:15:12Z",
+  "generated_at": "2026-07-30T13:21:54Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
-  "errors": 16,
+  "errors": 20,
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 24,
-    "rule-based": 16
+    "groq": 22,
+    "rule-based": 20
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 0,
+  "max_source_age_days": 0.85,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "events": [
     {
-      "time": "2026-07-29T19:15:12Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1168"
-    },
-    {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1166"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1176"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1165"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1175"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1153"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1174"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1151"
+      "message": "Groq error: JSONDecodeError: Expecting ',' delimiter: line 3 column 104 (char 250)"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1150"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1185"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1147"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1183"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1147"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1182"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1146"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1181"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1144"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1180"
     },
     {
-      "time": "2026-07-29T19:15:12Z",
+      "time": "2026-07-30T13:21:54Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-07-30T13:21:54Z",
+      "level": "info",
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
-  "notification_enabled": false,
-  "notification_sent": false,
-  "notification_reason": "not morning run"
+  "notification_enabled": true,
+  "notification_sent": true,
+  "notification_reason": "sent"
 }
