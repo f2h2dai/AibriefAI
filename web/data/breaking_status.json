@@ -4,6 +4,29 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/KentLoehrke/status/2082575326593388610"
+      ],
+      "id": "story-ce3e5c3e85fee9ffbbc7feab",
+      "reason": "@DefiantLs @grok when is this from and if it is old is it disingenuous to post it as if it's from today?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-30T23:17:09Z",
+      "source": "x",
+      "source_published_at": "2026-07-29T21:13:44Z",
+      "source_url": "https://x.com/KentLoehrke/status/2082575326593388610",
+      "status": "x-intel",
+      "title": "@DefiantLs @grok when is this from and if it is old is it disingenuous to post it as if it's from today?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -283,61 +306,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 4,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/techniahqrobot/status/2082850823680282960",
-        "https://x.com/larisamlbrown/status/2082367205161812025",
-        "https://x.com/JMilla43874993/status/2082408299824083326",
-        "https://x.com/RealAdVaticanum/status/2082397605351543107"
-      ],
-      "id": "story-70693859a8110885d247705c",
-      "reason": "People will say this video was made with AI. Maybe it was. But what prevents Chinese humanoid robots from being tested with real weapons on military training grounds? China\u2019s next demonstration could become a warning to the entire world. The military AI race is accelerating throu",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-30T16:57:47Z",
-      "source": "x",
-      "source_published_at": "2026-07-30T15:28:28Z",
-      "source_url": "https://x.com/techniahqrobot/status/2082850823680282960",
-      "status": "x-intel",
-      "title": "People will say this video was made with AI. Maybe it was. But what prevents Chinese humanoid robots from being tested with real weapons on military training gr",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "military AI",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-30T22:07:49Z",
+    "alerted_at": "2026-07-30T23:17:09Z",
     "confidence": 0,
-    "source_url": "https://x.com/realMikeMoring/status/2082519069106815457",
-    "title": "@barrycunningham Is AI involved in the U.S./Iran conflict? \u201cYes \u2014 AI is deeply involved in the 2026 Iran conflict. The United States and Israel have used advanc"
+    "source_url": "https://x.com/KentLoehrke/status/2082575326593388610",
+    "title": "@DefiantLs @grok when is this from and if it is old is it disingenuous to post it as if it's from today?"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 18,
+    "clustered": 20,
     "collected": 24,
-    "corroborated_count": 3,
+    "corroborated_count": 1,
     "initial_collected": 24,
     "initial_source_counts": {
       "x": 24
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.368,
-      "projected_minutes_per_30d": 401.65,
+      "measured_seconds": 9.786,
+      "projected_minutes_per_30d": 469.74,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -351,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -380,6 +374,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-30T22:07:49Z",
+  "updated_at": "2026-07-30T23:17:09Z",
   "version": 1
 }
