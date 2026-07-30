@@ -1771,6 +1771,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-1bfb9b6aa5263d69d20df5d1": {
+      "alerted_at": "2026-07-30T01:26:47Z",
+      "confidence": 0,
+      "content": "\"Australia's approach to lethal autonomous weapons 2024\" https://t.co/1nWXRgnxtx",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/LynMyer28562546/status/2082565270611349697"
+      ],
+      "last_seen_at": "2026-07-30T01:26:47Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-29T20:33:47+00:00",
+      "reason": "\"Australia's approach to lethal autonomous weapons 2024\" https://t.co/1nWXRgnxtx",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/LynMyer28562546/status/2082565270611349697"
+      ],
+      "supporting_sources": [],
+      "title": "\"Australia's approach to lethal autonomous weapons 2024\" https://t.co/1nWXRgnxtx",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
     "story-1c0e600f3bf69060b1be60f1": {
       "alerted_at": "2026-07-28T13:30:53Z",
       "confidence": 0,
@@ -1793,6 +1821,35 @@
       "supporting_sources": [],
       "title": "@: https://t.co/wyed21H3NW' author: id: '951172588906188801' name: Caleb screenName: calebfah",
       "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-1c2896d39fafa324724c8d2d": {
+      "alerted_at": "2026-07-30T01:26:47Z",
+      "confidence": 0,
+      "content": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprises must take to ensure that agents are only able to operate on the data they give it, the ability to have audit trails and governance of what agents can do, figure out what systems should remain deterministic vs. nondeterministic, get access controls under control, have the ability to quickly block and defend if an agent goes rogue, and much more. Even in the happy path case with a good actor, if you give an agent a task like \"find all of our most important IP on project Maven\" it will gladly go out and execute that work -no matter how long- and find any resource relevant to the task. It might run into data with out of date access controls or reveal something that you shouldn't know about. Then, in the non-happy path case with a malicious actor the risk is clearly far worse. In theory, you had to worry about this for people as well, but with AI the risks are inherently amplified. Agents will happily spend any amount of time on a task, don\u2019t actually face any *real* risks by going rogue, and don\u2019t have the inherent judgment (yet) that a person does that a task might make no sense. This means you need an all new way of managing data and protecting environments. This obviously creates a huge opportunity for the startup and security ecosystems because there will be many different approaches to how we lock down agents or at least the underlying systems they work with. It should update everyone\u2019s timelines on diffusion, though, as it also means that enterprises will have another step of work they have to go through for agents to handle more autonomous work.",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/levie/status/2082514776392175844"
+      ],
+      "last_seen_at": "2026-07-30T01:26:47Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-29T17:13:08+00:00",
+      "reason": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprise",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/levie/status/2082514776392175844"
+      ],
+      "supporting_sources": [],
+      "title": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of a",
+      "webswarm_evidence_terms": [
+        "Project Maven",
         "x.com",
         "AI"
       ],
@@ -3424,6 +3481,36 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
+    },
+    "story-38a7ee4deb2ca0730cff7a13": {
+      "alerted_at": "2026-07-30T01:26:47Z",
+      "confidence": 0,
+      "content": "\ud83d\udce1 GeoWiFi \u2014 OSINT Tool for WiFi Geolocation An open-source OSINT tool that locates WiFi access points by querying multiple public geolocation databases using a BSSID or SSID, making it valuable for wireless investigations and geospatial intelligence. \u2728 Features \u2022 \ud83d\udccd Search WiFi locations using BSSID or SSID \u2022 \ud83c\udf10 Queries multiple public databases including WiGLE, Apple, Google, Combain, WiFiDB, and Mylnikov \u2022 \ud83d\uddfa\ufe0f Export results as interactive HTML maps or JSON \u2022 \ud83d\udd0d Correlates location data from multiple geolocation providers \u2022 \ud83c\udff7\ufe0f Identifies WiFi hardware vendors from BSSID information \u2022 \ud83d\udc33 Supports both Python and Docker deployments \u2022 \u26a1 Lightweight CLI designed for OSINT and wireless reconnaissance \u2022 \ud83d\udee1\ufe0f Useful for WiFi investigations, geolocation research, and threat intelligence workflows \ud83d\udd17 GitHub Repository: https://t.co/7QJQLT6Ztg #OSINT #GeoINT #WiFi #WirelessSecurity #CyberSecurity #ThreatIntelligence #OpenSource #Python #InfoSec #GitHub",
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/VivekIntel/status/2082084291648139518",
+        "https://x.com/VivekIntel/status/2081661081873739947"
+      ],
+      "last_seen_at": "2026-07-30T01:26:47Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-28T12:42:33+00:00",
+      "reason": "\ud83d\udce1 GeoWiFi \u2014 OSINT Tool for WiFi Geolocation An open-source OSINT tool that locates WiFi access points by querying multiple public geolocation databases using a BSSID or SSID, making it valuable for wireless investigations and geospatial intelligence. \u2728 Features \u2022 \ud83d\udccd Search WiFi lo",
+      "score": 55,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/VivekIntel/status/2082084291648139518",
+        "https://x.com/VivekIntel/status/2081661081873739947"
+      ],
+      "supporting_sources": [],
+      "title": "\ud83d\udce1 GeoWiFi \u2014 OSINT Tool for WiFi Geolocation An open-source OSINT tool that locates WiFi access points by querying multiple public geolocation databases using a",
+      "webswarm_evidence_terms": [
+        "geospatial",
+        "geospatial intelligence"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
     },
     "story-38d87915a53d7baa5e238870": {
       "alerted_at": "2026-07-29T11:57:13Z",
@@ -6033,6 +6120,36 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-63429a592b04ec04dd159362": {
+      "alerted_at": "2026-07-30T01:26:47Z",
+      "confidence": 0,
+      "content": "Taiwanese authorities just detained an Nvidia sales manager and seized 50 high-end AI servers valued at $22 million bound for China. The raid on Nvidia\u2019s Taipei office marks a dramatic escalation in closing supply chain backdoors that bypass trade restrictions designed to curb Beijing\u2019s military AI ambitions. Investigators say the network forged customs declarations to ship servers through Japan before routing them into Chinese markets. The crackdown has already led to seven detentions, implicating key figures at server manufacturer Super Micro Computer and regional distributor Albatron Technology. Because Taiwan currently lacks a specific criminal law for unauthorized chip exports, prosecutors are charging suspects with forgery and breach of trust under the penal code. Nvidia maintains that diverted products receive no support or updates, but the case highlights how aggressively black-market brokers target global hardware networks. As illicit channels continue finding ways to feed Beijing's demand for advanced hardware, can Western trade controls ever fully secure the global supply chain?",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Unveiled_ChinaX/status/2082116847873495460"
+      ],
+      "last_seen_at": "2026-07-30T01:26:47Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-28T14:51:55+00:00",
+      "reason": "Taiwanese authorities just detained an Nvidia sales manager and seized 50 high-end AI servers valued at $22 million bound for China. The raid on Nvidia\u2019s Taipei office marks a dramatic escalation in closing supply chain backdoors that bypass trade restrictions designed to curb Be",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Unveiled_ChinaX/status/2082116847873495460"
+      ],
+      "supporting_sources": [],
+      "title": "Taiwanese authorities just detained an Nvidia sales manager and seized 50 high-end AI servers valued at $22 million bound for China. The raid on Nvidia\u2019s Taipei",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-63c0c11c272dc50a3da2931a": {
       "alerted_at": "2026-07-20T15:28:36Z",
       "confidence": 0,
@@ -6979,6 +7096,35 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
+    },
+    "story-766ac7d7fd351ac0ceb66b89": {
+      "alerted_at": "2026-07-30T01:26:47Z",
+      "confidence": 0,
+      "content": "BREAKING: The United States military has targeted storage facilities belonging to the IRGC Navy in Borazjan and the ballistic missile base of the IRGC Aerospace Force in Jam, Bushehr Province, in the northern Persian Gulf. According to available information, these facilities had already been destroyed in previous strikes. According to numerous eyewitness messages received from Bushehr Province, multiple explosions were heard between approximately 03:37 and 03:40 local time. Residents in Borazjan, Bushehr, Choghadak, and Jam reported between two and five loud explosions, with some saying the blasts shook windows. Witnesses in Borazjan also reported hearing fighter aircraft overhead for several minutes before and after the explosions. The reported explosions are consistent with renewed strikes against military facilities in the Borazjan and Jam areas. The exact targets and the extent of the damage have not been independently confirmed. The accompanying satellite images show the same IRGC Aerospace Force ballistic missile base in Jam and the IRGC Navy facility in Borazjan after they were bombed by the United States Navy and U.S. Air Force during Operation Epic Fury in March. The satellite imagery is from Vantor. #OperationEpicFury",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/BabakTaghvaee1/status/2082628371280765432"
+      ],
+      "last_seen_at": "2026-07-30T01:26:47Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-30T00:44:31+00:00",
+      "reason": "BREAKING: The United States military has targeted storage facilities belonging to the IRGC Navy in Borazjan and the ballistic missile base of the IRGC Aerospace Force in Jam, Bushehr Province, in the northern Persian Gulf. According to available information, these facilities had ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/BabakTaghvaee1/status/2082628371280765432"
+      ],
+      "supporting_sources": [],
+      "title": "BREAKING: The United States military has targeted storage facilities belonging to the IRGC Navy in Borazjan and the ballistic missile base of the IRGC Aerospace",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     "story-7674cb3162248ce7c6ef8408": {
       "alerted_at": "2026-07-18T19:32:09Z",
@@ -14587,6 +14733,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-07-29T23:53:43Z",
+  "updated_at": "2026-07-30T01:26:47Z",
   "version": 1
 }
