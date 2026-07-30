@@ -4,6 +4,56 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/AlterNet/status/2082484984506388756"
+      ],
+      "id": "story-fc55756e41068a0bf8882423",
+      "reason": "Pentagon flamed after photo reveals AI request details and commander\u2019s name https://t.co/HLFFXUXize",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-30T20:56:25Z",
+      "source": "x",
+      "source_published_at": "2026-07-29T15:14:45Z",
+      "source_url": "https://x.com/AlterNet/status/2082484984506388756",
+      "status": "x-intel",
+      "title": "Pentagon flamed after photo reveals AI request details and commander\u2019s name https://t.co/HLFFXUXize",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/bakovskyy95107/status/2082558554871910475"
+      ],
+      "id": "story-854704bc515050cf667e220d",
+      "reason": "\ud83d\udea8 Sam Altman is in Washington this week. He\u2019s meeting with White House Chief of Staff Susie Wiles ahead of the Aug. 1 AI framework deadline. This is not a casual chat. The White House is finalizing the rules for how frontier AI models get reviewed before public release. OpenAI, A",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-07-30T20:56:25Z",
+      "source": "x",
+      "source_published_at": "2026-07-29T20:07:06Z",
+      "source_url": "https://x.com/bakovskyy95107/status/2082558554871910475",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 Sam Altman is in Washington this week. He\u2019s meeting with White House Chief of Staff Susie Wiles ahead of the Aug. 1 AI framework deadline. This is not a casua",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -259,85 +309,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/TheKhaleej/status/2082538596586627388"
-      ],
-      "id": "story-5b6098561c7b97b1ca173f3f",
-      "reason": "The UAE and the US are launching their first joint military AI task force, marking a new step in defense cooperation. The Abu Dhabi-based team will focus on developing AI applications for military operations. https://t.co/wSaLMPtnfb",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-30T15:23:24Z",
-      "source": "x",
-      "source_published_at": "2026-07-29T18:47:47Z",
-      "source_url": "https://x.com/TheKhaleej/status/2082538596586627388",
-      "status": "x-intel",
-      "title": "The UAE and the US are launching their first joint military AI task force, marking a new step in defense cooperation. The Abu Dhabi-based team will focus on dev",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/IBTimesUK/status/2082833980596818301"
-      ],
-      "id": "story-b687588e2018d8c096a66683",
-      "reason": "A Pentagon AI image intended to showcase innovation instead fuels debate over military AI integration. #PeteHegseth #Pentagon #ArtificialIntelligence #DefenseTech #usmilitary Read More: https://t.co/Cuhg7T4p2J https://t.co/bFIcheJNRD",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-07-30T15:23:24Z",
-      "source": "x",
-      "source_published_at": "2026-07-30T14:21:32Z",
-      "source_url": "https://x.com/IBTimesUK/status/2082833980596818301",
-      "status": "x-intel",
-      "title": "A Pentagon AI image intended to showcase innovation instead fuels debate over military AI integration. #PeteHegseth #Pentagon #ArtificialIntelligence #DefenseTe",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "Pentagon AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-30T19:52:12Z",
+    "alerted_at": "2026-07-30T20:56:25Z",
     "confidence": 0,
-    "source_url": "https://x.com/smallwars/status/2082898590343795120",
-    "title": "H.R. 9729 mandates human authority over autonomous weapons, but \"machine speed\" warfare creates a dilemma. While algorithms reach 98.8% accuracy, human operator"
+    "source_url": "https://x.com/AlterNet/status/2082484984506388756",
+    "title": "Pentagon flamed after photo reveals AI request details and commander\u2019s name https://t.co/HLFFXUXize"
   },
   "last_run": {
-    "alerted_now": 5,
-    "clustered": 19,
+    "alerted_now": 2,
+    "clustered": 21,
     "collected": 24,
-    "corroborated_count": 0,
+    "corroborated_count": 2,
     "initial_collected": 24,
     "initial_source_counts": {
       "x": 24
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.566,
-      "projected_minutes_per_30d": 267.17,
+      "measured_seconds": 7.309,
+      "projected_minutes_per_30d": 350.84,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -375,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 5
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-30T19:52:12Z",
+  "updated_at": "2026-07-30T20:56:25Z",
   "version": 1
 }
