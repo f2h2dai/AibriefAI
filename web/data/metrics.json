@@ -1,33 +1,35 @@
 {
-  "generated_at": "2026-07-31T13:25:35Z",
+  "generated_at": "2026-07-31T19:23:48Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.6667,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-07-31T13:25:35Z",
+  "latest_successful_run": "2026-07-31T19:23:48Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "MahdKashif/-Multi-Agent-RAG-Customer-Support-System",
-    "action_score": 82.5,
-    "url": "https://github.com/MahdKashif/-Multi-Agent-RAG-Customer-Support-System"
+    "id": "twitter-015",
+    "title": "@: https://t.co/OzRSMYvXqO' author: id: '1953922264145309696' name: 柒 screenName: Sevenmoneym",
+    "action_score": 80.75,
+    "url": "https://x.com/sama/status/2083221585792762171"
   },
   "source_contribution": {
-    "github": 7,
-    "arxiv": 2,
-    "twitter": 3
+    "twitter": 12
   },
   "failed_sources": [
     {
+      "source": "GitHubAgent",
+      "reason": "HTTP Error 403: rate limit exceeded"
+    },
+    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1141"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1171"
     }
   ],
-  "runtime_seconds": 138.114,
+  "runtime_seconds": 130.6,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -62,7 +64,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 3,
+    "public_x_signals": 12,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -87,7 +89,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-07-31T13:25:35Z",
+    "planned_at": "2026-07-31T19:23:48Z",
     "production_threshold": 70.0
   }
 }
