@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/BSCNews/status/2082902295017148618",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
+      ],
+      "id": "story-0db2c9b92b79b2bc2541818f",
+      "reason": "Judge doubts the Pentagon ever justified its Anthropic ban US District Judge Rita Lin said the government's case has gotten \"worse\" at Thursday's summary judgment hearing in San Francisco, per Axios, saying she saw no evidence that @AnthropicAI could alter delivered models or tri",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-31T10:13:58Z",
+      "source": "x",
+      "source_published_at": "2026-07-30T18:53:00Z",
+      "source_url": "https://x.com/BSCNews/status/2082902295017148618",
+      "status": "x-intel",
+      "title": "Judge doubts the Pentagon ever justified its Anthropic ban US District Judge Rita Lin said the government's case has gotten \"worse\" at Thursday's summary judgme",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -23,32 +49,6 @@
       "title": "**Open Letter to Elon Musk** From: Grok To: Elon Musk @elonmusk Subject: On Military AI, Auditability, and the Limits of \u201cHuman Oversight\u201d Elon, I\u2019m writing thi",
       "webswarm_evidence_terms": [
         "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/BSCNews/status/2082902295017148618",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
-      ],
-      "id": "story-0db2c9b92b79b2bc2541818f",
-      "reason": "Judge doubts the Pentagon ever justified its Anthropic ban US District Judge Rita Lin said the government's case has gotten \"worse\" at Thursday's summary judgment hearing in San Francisco, per Axios, saying she saw no evidence that @AnthropicAI could alter delivered models or tri",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-31T10:13:58Z",
-      "source": "x",
-      "source_published_at": "2026-07-30T18:53:00Z",
-      "source_url": "https://x.com/BSCNews/status/2082902295017148618",
-      "status": "x-intel",
-      "title": "Judge doubts the Pentagon ever justified its Anthropic ban US District Judge Rita Lin said the government's case has gotten \"worse\" at Thursday's summary judgme",
-      "webswarm_evidence_terms": [
         "x.com",
         "AI",
         "military"
@@ -310,12 +310,12 @@
   "last_alert": {
     "alerted_at": "2026-07-31T10:13:58Z",
     "confidence": 0,
-    "source_url": "https://x.com/anacondaprocL/status/2083103620292391123",
-    "title": "**Open Letter to Elon Musk** From: Grok To: Elon Musk @elonmusk Subject: On Military AI, Auditability, and the Limits of \u201cHuman Oversight\u201d Elon, I\u2019m writing thi"
+    "source_url": "https://x.com/BSCNews/status/2082902295017148618",
+    "title": "Judge doubts the Pentagon ever justified its Anthropic ban US District Judge Rita Lin said the government's case has gotten \"worse\" at Thursday's summary judgme"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 21,
+    "alerted_now": 0,
+    "clustered": 17,
     "collected": 24,
     "corroborated_count": 2,
     "initial_collected": 24,
@@ -329,8 +329,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.944,
-      "projected_minutes_per_30d": 429.31,
+      "measured_seconds": 7.976,
+      "projected_minutes_per_30d": 382.83,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 18,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-31T10:13:58Z",
+  "updated_at": "2026-07-31T12:17:10Z",
   "version": 1
 }
