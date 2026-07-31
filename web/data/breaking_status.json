@@ -4,6 +4,42 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 8,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/BennyLam/status/2083159425460642205",
+        "https://x.com/techniahqrobot/status/2082850823680282960",
+        "https://x.com/AndreLamartin/status/2083068048466944377",
+        "https://x.com/connerben/status/2083182483688804403",
+        "https://x.com/tbuzzdaily/status/2083065493204705554",
+        "https://x.com/smallwars/status/2082898590343795120",
+        "https://x.com/Deepneuron/status/2082958473843896570",
+        "https://x.com/randgroup/status/2082555258048479595"
+      ],
+      "id": "story-b0516937c616266a827b5aa0",
+      "reason": "China's military is distilling US frontier models into battlefield AI - and the chips America still permits to export are exactly enough to run them. Reuters and the Jamestown Foundation reviewed 80+ Chinese papers and patents showing military-linked researchers distilling OpenAI",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-07-31T17:59:48Z",
+      "source": "x",
+      "source_published_at": "2026-07-31T11:54:44Z",
+      "source_url": "https://x.com/BennyLam/status/2083159425460642205",
+      "status": "x-intel",
+      "title": "China's military is distilling US frontier models into battlefield AI - and the chips America still permits to export are exactly enough to run them. Reuters an",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "battlefield AI",
+        "defense",
+        "defense AI",
+        "military AI",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -283,57 +319,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/smallwars/status/2082898590343795120",
-        "https://x.com/sgi_info/status/2082697642967286246"
-      ],
-      "id": "story-6e7268b50545d10e8cae16ba",
-      "reason": "H.R. 9729 mandates human authority over autonomous weapons, but \"machine speed\" warfare creates a dilemma. While algorithms reach 98.8% accuracy, human operators face fatigue and stress during high-tempo engagements. Meaningful judgment resides in front-loaded constraints, author",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-07-30T19:52:12Z",
-      "source": "x",
-      "source_published_at": "2026-07-30T18:38:16Z",
-      "source_url": "https://x.com/smallwars/status/2082898590343795120",
-      "status": "x-intel",
-      "title": "H.R. 9729 mandates human authority over autonomous weapons, but \"machine speed\" warfare creates a dilemma. While algorithms reach 98.8% accuracy, human operator",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-07-31T14:44:56Z",
+    "alerted_at": "2026-07-31T17:59:48Z",
     "confidence": 0,
-    "source_url": "https://x.com/topsecretstocks/status/2082405571269980174",
-    "title": "$EOSE IMPORTANT NUGGETS \ud83e\udd5c Are you invested? Let me know in the comments \ud83d\udc47 \ud83d\udea8 Military AI Data-Center Buildout / BlackRock / Power is the bottleneck 1/ Snapshot B"
+    "source_url": "https://x.com/BennyLam/status/2083159425460642205",
+    "title": "China's military is distilling US frontier models into battlefield AI - and the chips America still permits to export are exactly enough to run them. Reuters an"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 14,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 23,
-    "corroborated_count": 0,
+    "corroborated_count": 2,
     "initial_collected": 23,
     "initial_source_counts": {
       "x": 23
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 90.264,
-      "projected_minutes_per_30d": 4332.68,
+      "measured_seconds": 8.055,
+      "projected_minutes_per_30d": 386.65,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +358,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +382,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-07-31T16:24:49Z",
+  "updated_at": "2026-07-31T17:59:48Z",
   "version": 1
 }

@@ -10864,6 +10864,53 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-b0516937c616266a827b5aa0": {
+      "alerted_at": "2026-07-31T17:59:48Z",
+      "confidence": 0,
+      "content": "China's military is distilling US frontier models into battlefield AI - and the chips America still permits to export are exactly enough to run them. Reuters and the Jamestown Foundation reviewed 80+ Chinese papers and patents showing military-linked researchers distilling OpenAI and Anthropic outputs into deployable systems. PLA Unit 96941 used GPT-3.5 to analyze military software, then transferred that knowledge into a model running entirely inside Chinese military networks. The National University of Defense Technology shrunk an image-recognition model until it could process live video on a drone with no external link. China's Academy of Military Sciences ran distilled models in simulated maritime operations with warships and unmanned subs. The export control framework assumes capability scales with silicon. Distillation breaks that equivalence: frontier reasoning travels as text, then gets compressed into small models that run on the commodity chips US rules still allow. For Chinese military AI, the bottleneck is no longer hardware - it's API access. OpenAI says it has detected Chinese actors attempting exactly this. The part nobody is pricing: safety. Anthropic warns distilled models can lose safety protections while retaining valuable capabilities. US labs advertise alignment as their moat; distillation turns that moat into a veneer. The red-teaming, the RLHF, the guardrails - none of it survives the transfer. America may be exporting its most capable intelligence to its chief adversary with the safety stripped out. This is the DeepSeek lesson inverted. Compute controls forced Chinese labs to be efficient; the PLA is now doing the same to capability itself. Any distillable frontier model is a weapons-grade export with no control regime attached. The next US-China AI fight won't be over chips. It will be over what models are allowed to say. https://t.co/W2skhicsRc #Distillation #USChina #AIMilitary #ExportControls",
+      "evidence_count": 8,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/BennyLam/status/2083159425460642205",
+        "https://x.com/techniahqrobot/status/2082850823680282960",
+        "https://x.com/AndreLamartin/status/2083068048466944377",
+        "https://x.com/connerben/status/2083182483688804403",
+        "https://x.com/tbuzzdaily/status/2083065493204705554",
+        "https://x.com/smallwars/status/2082898590343795120",
+        "https://x.com/Deepneuron/status/2082958473843896570",
+        "https://x.com/randgroup/status/2082555258048479595"
+      ],
+      "last_seen_at": "2026-07-31T17:59:48Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-07-31T11:54:44+00:00",
+      "reason": "China's military is distilling US frontier models into battlefield AI - and the chips America still permits to export are exactly enough to run them. Reuters and the Jamestown Foundation reviewed 80+ Chinese papers and patents showing military-linked researchers distilling OpenAI",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/BennyLam/status/2083159425460642205",
+        "https://x.com/techniahqrobot/status/2082850823680282960",
+        "https://x.com/AndreLamartin/status/2083068048466944377",
+        "https://x.com/connerben/status/2083182483688804403",
+        "https://x.com/tbuzzdaily/status/2083065493204705554",
+        "https://x.com/smallwars/status/2082898590343795120",
+        "https://x.com/Deepneuron/status/2082958473843896570",
+        "https://x.com/randgroup/status/2082555258048479595"
+      ],
+      "supporting_sources": [],
+      "title": "China's military is distilling US frontier models into battlefield AI - and the chips America still permits to export are exactly enough to run them. Reuters an",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "battlefield AI",
+        "defense",
+        "defense AI",
+        "military AI",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
     "story-b13193c9b31d2ec53141c8eb": {
       "alerted_at": "2026-07-20T02:58:35Z",
       "confidence": 0,
@@ -16047,6 +16094,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-07-31T16:24:49Z",
+  "updated_at": "2026-07-31T17:59:48Z",
   "version": 1
 }
