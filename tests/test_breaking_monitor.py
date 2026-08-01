@@ -142,6 +142,13 @@ def classifier_for_all(batch, env):
     )
 
 
+def fresh_x_url(handle: str = "defense_ai") -> str:
+    twitter_epoch_ms = 1_288_834_974_657
+    timestamp_ms = int(utc_now().timestamp() * 1000)
+    post_id = (timestamp_ms - twitter_epoch_ms) << 22
+    return f"https://x.com/{handle}/status/{post_id}"
+
+
 class BreakingMonitorTests(unittest.TestCase):
     def test_positive_fixtures_survive_stage1(self):
         clustered = cluster_story_candidates(positive_fixtures())
@@ -164,12 +171,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=positive_fixtures(),
                 state_path=Path(tmp) / "breaking_state.json",
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={
-                    "BREAKING_NOTIFY_MODE": "ntfy",
-                    "NTFY_TOPIC_BREAKING": "test-topic",
-                    "AIBRIEF_DELIVERY_APPROVED": "true",
-                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
-                },
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -450,6 +452,7 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("https://news.example.test/project-maven-grok", candidate["evidence_urls"])
 
     def test_single_source_sensitive_x_claim_stays_visible(self):
+        source_url = fresh_x_url()
         with tempfile.TemporaryDirectory() as tmp:
             status_path = Path(tmp) / "breaking_status.json"
             summary = run_monitor_cycle(
@@ -458,7 +461,7 @@ class BreakingMonitorTests(unittest.TestCase):
                         "source": "twitter",
                         "title": "Grok Gov Model used for Project Maven targeting",
                         "content": "An X post says Project Maven supported military targeting operations in Iran.",
-                        "url": "https://x.com/defense_ai/status/2081765135425613925",
+                        "url": source_url,
                         "published_at": isoformat(utc_now()),
                         "velocity": 80,
                     }
@@ -498,7 +501,7 @@ class BreakingMonitorTests(unittest.TestCase):
     def test_public_feed_exposes_second_evidence_link(self):
         now = isoformat(utc_now())
         urls = [
-            "https://x.com/defense_ai/status/2081765135425613925",
+            fresh_x_url(),
             "https://news.example.test/project-maven-grok",
         ]
         status = public_breaking_status(
@@ -590,12 +593,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={
-                    "BREAKING_NOTIFY_MODE": "ntfy",
-                    "NTFY_TOPIC_BREAKING": "test-topic",
-                    "AIBRIEF_DELIVERY_APPROVED": "true",
-                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
-                },
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -603,12 +601,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[0]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={
-                    "BREAKING_NOTIFY_MODE": "ntfy",
-                    "NTFY_TOPIC_BREAKING": "test-topic",
-                    "AIBRIEF_DELIVERY_APPROVED": "true",
-                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
-                },
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=notify,
             )
@@ -631,12 +624,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[positive_fixtures()[1]],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={
-                    "BREAKING_NOTIFY_MODE": "ntfy",
-                    "NTFY_TOPIC_BREAKING": "test-topic",
-                    "AIBRIEF_DELIVERY_APPROVED": "true",
-                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
-                },
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
             )
@@ -644,12 +632,7 @@ class BreakingMonitorTests(unittest.TestCase):
                 raw_candidates=[],
                 state_path=path,
                 public_status_path=Path(tmp) / "breaking_status.json",
-                env={
-                    "BREAKING_NOTIFY_MODE": "ntfy",
-                    "NTFY_TOPIC_BREAKING": "test-topic",
-                    "AIBRIEF_DELIVERY_APPROVED": "true",
-                    "AIBRIEF_SECURITY_AUDIT_LOG": str(Path(tmp) / "security-events.jsonl"),
-                },
+                env={"BREAKING_NOTIFY_MODE": "ntfy", "NTFY_TOPIC_BREAKING": "test-topic"},
                 classify_func=classifier_for_all,
                 notify_func=failing_then_success,
             )
