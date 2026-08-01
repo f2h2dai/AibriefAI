@@ -1,32 +1,34 @@
 {
-  "generated_at": "2026-08-01T22:40:36Z",
+  "generated_at": "2026-08-01T22:46:51Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.2,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-01T22:40:36Z",
+  "latest_successful_run": "2026-08-01T22:46:51Z",
   "highest_ranked_signal": {
-    "id": "twitter-029",
-    "title": "@BEITWORLDWIDE: Alright. Here's the list of research topics we need to pursue: IP Extraction and Ownership Florida Airport check-in systems (1990 airportss ",
-    "action_score": 79.25,
-    "url": "https://x.com/BEITWORLDWIDE/status/2083607836454498404"
+    "id": "github-007",
+    "title": "Hefrock/agent-skills",
+    "action_score": 76.75,
+    "url": "https://github.com/Hefrock/agent-skills"
   },
   "source_contribution": {
-    "twitter": 4,
-    "github": 8
+    "github": 8,
+    "twitter": 2,
+    "hackernews": 1,
+    "arxiv": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 126)"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 34.454,
+  "runtime_seconds": 32.278,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -61,7 +63,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 4,
+    "public_x_signals": 2,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -86,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-01T22:40:36Z",
+    "planned_at": "2026-08-01T22:46:51Z",
     "production_threshold": 70.0
   }
 }
