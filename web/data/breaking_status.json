@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/sama/status/2083221585792762171"
+      ],
+      "id": "story-bb416928fa8574c1de7eb7d3",
+      "reason": "https://t.co/OzRSMYvXqO' author: id: '1953922264145309696' name: \u67d2 screenName: Sevenmoneymaker profileImageUrl: https://pbs.twimg.com/profile_images/2019399915663990784/r7QPMuQt_normal.jpg verified: true metrics: likes: 24 retweets: 0 replies: 0 quotes: 0 views: 829 bookmarks: 0 ",
+      "score": 18,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-01T20:05:31Z",
+      "source": "x",
+      "source_published_at": "2026-07-31T16:01:45Z",
+      "source_url": "https://x.com/sama/status/2083221585792762171",
+      "status": "x-intel",
+      "title": "@: https://t.co/OzRSMYvXqO' author: id: '1953922264145309696' name: \u67d2 screenName: Sevenmoneym",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/9ja_Narratives/status/2083590109182447940"
       ],
       "id": "story-b532b4a2f18c8ba399ab33a1",
@@ -296,58 +320,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/MilitaryWatchM/status/2083428931349135780"
-      ],
-      "id": "story-edc72d5bfc70eccaa6142953",
-      "reason": "Chinese President Xi Calls for Accelerated Military AI Integration as Forces Pursue \u2018Intelligent Warfare\u2019 Xi Jinping called for faster military integration of artificial intelligence across the PLA... https://t.co/pz1UrOFyMs https://t.co/fHw4ba3gU7",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-01T07:40:32Z",
-      "source": "x",
-      "source_published_at": "2026-08-01T05:45:40Z",
-      "source_url": "https://x.com/MilitaryWatchM/status/2083428931349135780",
-      "status": "x-intel",
-      "title": "Chinese President Xi Calls for Accelerated Military AI Integration as Forces Pursue \u2018Intelligent Warfare\u2019 Xi Jinping called for faster military integration of a",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-01T18:54:53Z",
+    "alerted_at": "2026-08-01T20:05:31Z",
     "confidence": 0,
-    "source_url": "https://x.com/9ja_Narratives/status/2083590109182447940",
-    "title": "This \u201cChinese future warfare\u201d clip is an AI-assisted concept video\u2014not verified PLA combat footage. China is advancing military AI, but so are the US, UK and Au"
+    "source_url": "https://x.com/sama/status/2083221585792762171",
+    "title": "@: https://t.co/OzRSMYvXqO' author: id: '1953922264145309696' name: \u67d2 screenName: Sevenmoneym"
   },
   "last_run": {
-    "alerted_now": 1,
+    "alerted_now": 4,
     "clustered": 18,
-    "collected": 25,
-    "corroborated_count": 5,
-    "initial_collected": 25,
+    "collected": 24,
+    "corroborated_count": 4,
+    "initial_collected": 24,
     "initial_source_counts": {
-      "x": 25
+      "x": 24
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.386,
-      "projected_minutes_per_30d": 498.52,
+      "measured_seconds": 10.567,
+      "projected_minutes_per_30d": 507.24,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -361,7 +359,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -385,11 +383,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 4
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-01T18:54:53Z",
+  "updated_at": "2026-08-01T20:05:31Z",
   "version": 1
 }
