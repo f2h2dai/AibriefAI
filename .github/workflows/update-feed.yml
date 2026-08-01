@@ -720,6 +720,7 @@ jobs:
                   f"{query} since:{since_date}"
                   for query in base_queries
               ]
+              per_query_limit = 3
               for query in queries:
                   handle_matches = re.findall(r"from:([A-Za-z0-9_]+)", query)
                   handle = handle_matches[0] if len(handle_matches) == 1 else ""
@@ -735,13 +736,17 @@ jobs:
                           break
                       log_event("warning", "XInfluencerAgent", f"{display_command(command)} exited 0 but produced no parseable X records.")
 
+                  added_for_query = 0
                   for record in parsed:
                       if len(collected) >= limit:
+                          break
+                      if added_for_query >= per_query_limit:
                           break
                       if record["url"] in seen_urls:
                           continue
                       seen_urls.add(record["url"])
                       collected.append(record)
+                      added_for_query += 1
                   if len(collected) >= limit:
                       break
 
