@@ -611,6 +611,8 @@ jobs:
               if not timedelta(minutes=-10) <= age <= timedelta(days=X_MAX_SOURCE_AGE_DAYS):
                   return None
               content = first_cli_text(normalized.get("content"), normalized.get("title"))
+              if len(content) < 40:
+                  return None
               handle = x_record_handle(record, fallback_handle)
               if not handle:
                   match = re.search(r"https://x\.com/([^/]+)/status/", url, re.I)
