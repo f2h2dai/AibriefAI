@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/9ja_Narratives/status/2083590109182447940"
+      ],
+      "id": "story-b532b4a2f18c8ba399ab33a1",
+      "reason": "This \u201cChinese future warfare\u201d clip is an AI-assisted concept video\u2014not verified PLA combat footage. China is advancing military AI, but so are the US, UK and Australia. The fiction is dramatic. The real question is who keeps control when machines can select targets. https://t.co/",
+      "score": 70,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-01T18:54:53Z",
+      "source": "x",
+      "source_published_at": "2026-08-01T16:26:07Z",
+      "source_url": "https://x.com/9ja_Narratives/status/2083590109182447940",
+      "status": "x-intel",
+      "title": "This \u201cChinese future warfare\u201d clip is an AI-assisted concept video\u2014not verified PLA combat footage. China is advancing military AI, but so are the US, UK and Au",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/WIONews/status/2083588146483392787"
       ],
       "id": "story-69a1da24fd2db39972a35077",
@@ -273,33 +299,6 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2082537163615346828",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ"
-      ],
-      "id": "story-029c1087945e3f62cab1df51",
-      "reason": "Russia is expanding hardened military infrastructure at Lipetsk Air Base. Satellite imagery captured between September 2025 and July 2026 shows 12 reinforced shelters in the base\u2019s dispersal area, with two additional structures reportedly under construction. The shelters appear t",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-01T09:35:19Z",
-      "source": "x",
-      "source_published_at": "2026-07-29T18:42:06Z",
-      "source_url": "https://x.com/MizarVision/status/2082537163615346828",
-      "status": "x-intel",
-      "title": "Russia is expanding hardened military infrastructure at Lipetsk Air Base. Satellite imagery captured between September 2025 and July 2026 shows 12 reinforced sh",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "satellite imagery",
-        "military assets",
-        "air base"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -326,29 +325,29 @@
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-01T17:53:19Z",
+    "alerted_at": "2026-08-01T18:54:53Z",
     "confidence": 0,
-    "source_url": "https://x.com/WIONews/status/2083588146483392787",
-    "title": "China used OpenAI and Anthropic outputs to train military AI systems: Report READ: https://t.co/pmKaLnlrTc https://t.co/pmKaLnlrTc"
+    "source_url": "https://x.com/9ja_Narratives/status/2083590109182447940",
+    "title": "This \u201cChinese future warfare\u201d clip is an AI-assisted concept video\u2014not verified PLA combat footage. China is advancing military AI, but so are the US, UK and Au"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 16,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 7,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.579,
-      "projected_minutes_per_30d": 459.8,
+      "measured_seconds": 10.386,
+      "projected_minutes_per_30d": 498.52,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -391,6 +390,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-01T17:53:19Z",
+  "updated_at": "2026-08-01T18:54:53Z",
   "version": 1
 }
