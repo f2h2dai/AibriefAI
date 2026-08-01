@@ -137,13 +137,21 @@ jobs:
           from pathlib import Path
 
           from aibrief.agents.orchestrator import AgentOperationsOrchestrator, write_operations_artifacts
-          from aibrief.breaking_monitor import DEFAULT_X_PRIORITY_ACCOUNTS, canonical_x_post_url
+          from aibrief.breaking_monitor import (
+              DEFAULT_X_PRIORITY_ACCOUNTS,
+              canonical_x_post_url,
+              normalize_x_record,
+              source_published_timestamp,
+              x_record_handle,
+              x_search_queries as build_x_search_queries,
+          )
 
           NOW_DT = datetime.now(timezone.utc)
           NOW = NOW_DT.strftime("%Y-%m-%dT%H:%M:%SZ")
           PIPELINE_STARTED = time.monotonic()
           FRESH_SOURCE_DAYS = 7
           STALE_SOURCE_DAYS = 21
+          X_MAX_SOURCE_AGE_DAYS = max(1, int(os.getenv("X_MAX_SOURCE_AGE_DAYS", "7")))
           TOPIC = "AI agents"
 
           GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
@@ -592,42 +600,28 @@ jobs:
               return fallback
 
           def normalize_cli_tweet(record, fallback_handle):
-              title = first_cli_text(
-                  record.get("title"),
-                  record.get("headline"),
-                  record.get("tweet"),
-                  record.get("text"),
-                  record.get("full_text"),
-                  record.get("content"),
-              )
-              content = first_cli_text(
-                  record.get("content"),
-                  record.get("text"),
-                  record.get("full_text"),
-                  record.get("tweet"),
-                  record.get("description"),
-                  title,
-              )
-              handle = cli_record_handle(record, fallback_handle)
-              url = canonical_x_post_url(record, handle)
-              if handle and title and not title.lower().startswith(f"@{handle.lower()}"):
-                  title = f"@{handle}: {title}"
-              if (not title and not content) or not url:
+              normalized = normalize_x_record(record, fallback_handle)
+              if not normalized:
                   return None
-              published = first_cli_text(
-                  record.get("createdAtISO"),
-                  record.get("created_at"),
-                  record.get("createdAt"),
-                  record.get("date"),
-                  record.get("published_at"),
-              )
+              url = normalized["url"]
+              published_dt = source_published_timestamp({**record, **normalized, "url": url})
+              if not published_dt:
+                  return None
+              age = NOW_DT - published_dt
+              if not timedelta(minutes=-10) <= age <= timedelta(days=X_MAX_SOURCE_AGE_DAYS):
+                  return None
+              content = first_cli_text(normalized.get("content"), normalized.get("title"))
+              handle = x_record_handle(record, fallback_handle)
+              if not handle:
+                  match = re.search(r"https://x\.com/([^/]+)/status/", url, re.I)
+                  handle = match.group(1) if match else "x"
               return {
                   "source": "twitter",
-                  "title": title or content[:90],
-                  "content": content or title,
+                  "title": f"@{handle}: {content[:140]}",
+                  "content": content,
                   "url": url,
                   "collector": "XInfluencerAgent",
-                  "source_published_at": source_timestamp({"source_published_at": published}) or NOW,
+                  "source_published_at": isoformat_dt(published_dt),
               }
 
           def parse_text_tweets(stdout, handle):
@@ -642,24 +636,31 @@ jobs:
                   url = canonical_x_post_url(url_match.group(0), handle) if url_match else ""
                   if not url:
                       continue
-                  content_lines = [
-                      line
-                      for line in lines
-                      if not line.lower().startswith(("warning", "error", "usage"))
-                  ]
-                  content = " ".join(content_lines)
+                  text_match = re.search(
+                      r"(?im)^\s*(?:text|full_text|content):\s*['\"]?(.*?)['\"]?\s*$",
+                      block,
+                  )
+                  content = first_cli_text(text_match.group(1) if text_match else "")
+                  if not content:
+                      content_lines = [
+                          line
+                          for line in lines
+                          if not line.lower().startswith(
+                              (
+                                  "warning", "error", "usage", "ok:", "schema_version:",
+                                  "data:", "id:", "author:", "url:", "createdat",
+                                  "likecount:", "replycount:", "retweetcount:",
+                              )
+                          )
+                          and "https://x.com/" not in line
+                          and "https://twitter.com/" not in line
+                      ]
+                      content = " ".join(content_lines)
                   if len(content) < 8:
                       continue
-                  records.append(
-                      {
-                          "source": "twitter",
-                          "title": f"@{handle}: {content[:90]}",
-                          "content": content,
-                          "url": url,
-                          "collector": "XInfluencerAgent",
-                          "source_published_at": NOW,
-                      }
-                  )
+                  normalized = normalize_cli_tweet({"text": content, "url": url}, handle)
+                  if normalized:
+                      records.append(normalized)
               return records
 
           def parse_twitter_cli_output(stdout, handle):
@@ -706,14 +707,16 @@ jobs:
               return record
 
           def fetch_x_influencers_cli(limit=20):
-              handles = x_influencer_handles()
-              if not handles:
-                  log_event("warning", "XInfluencerAgent", "X influencer handles are not configured; X influencer search skipped.")
-                  return []
-
               collected = []
-              for handle in handles:
-                  query = f"from:{handle} ({X_QUERY})"
+              seen_urls = set()
+              since_date = (NOW_DT - timedelta(days=X_MAX_SOURCE_AGE_DAYS)).strftime("%Y-%m-%d")
+              queries = [
+                  f"{query} since:{since_date}"
+                  for query in build_x_search_queries(os.environ)
+              ]
+              for query in queries:
+                  handle_matches = re.findall(r"from:([A-Za-z0-9_]+)", query)
+                  handle = handle_matches[0] if len(handle_matches) == 1 else ""
                   parsed = []
                   for command in x_search_commands(query):
                       result = run_cli(command, timeout=45)
@@ -729,7 +732,10 @@ jobs:
                   for record in parsed:
                       if len(collected) >= limit:
                           break
-                      collected.append(enrich_x_tweet(record))
+                      if record["url"] in seen_urls:
+                          continue
+                      seen_urls.add(record["url"])
+                      collected.append(record)
                   if len(collected) >= limit:
                       break
 
@@ -1133,6 +1139,17 @@ jobs:
           signals = []
 
           for raw in items:
+              if raw.get("source") == "twitter":
+                  published_dt = source_published_timestamp(raw)
+                  if not published_dt:
+                      log_event("warning", "XInfluencerAgent", "Rejected X post without a trustworthy source timestamp.")
+                      continue
+                  age = NOW_DT - published_dt
+                  if not timedelta(minutes=-10) <= age <= timedelta(days=X_MAX_SOURCE_AGE_DAYS):
+                      log_event("info", "XInfluencerAgent", "Rejected stale X post before ranking.")
+                      continue
+                  raw["source_published_at"] = isoformat_dt(published_dt)
+
               key = (raw["source"], raw["title"].lower().strip())
 
               if key in seen:
