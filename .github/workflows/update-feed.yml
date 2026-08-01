@@ -712,9 +712,13 @@ jobs:
               collected = []
               seen_urls = set()
               since_date = (NOW_DT - timedelta(days=X_MAX_SOURCE_AGE_DAYS)).strftime("%Y-%m-%d")
+              base_queries = sorted(
+                  build_x_search_queries(os.environ),
+                  key=lambda query: 0 if "from:" in query else 1,
+              )
               queries = [
                   f"{query} since:{since_date}"
-                  for query in build_x_search_queries(os.environ)
+                  for query in base_queries
               ]
               for query in queries:
                   handle_matches = re.findall(r"from:([A-Za-z0-9_]+)", query)
