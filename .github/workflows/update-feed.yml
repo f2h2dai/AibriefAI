@@ -12,6 +12,9 @@ on:
       - main
     paths:
       - ".github/workflows/update-feed.yml"
+      - "config/browser_router.json"
+      - "scripts/check_lightpanda.py"
+      - "scripts/install_lightpanda.py"
       - "data/feed_refresh_request.txt"
   schedule:
     # 8 AM America/New_York during EDT. GitHub Actions cron uses UTC.
@@ -29,6 +32,7 @@ concurrency:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   AGENT_LIMIT_ID: daily_ai_brief
+  LIGHTPANDA_VERSION: "0.3.6"
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GEMINI_MODEL: gemini-2.0-flash
@@ -49,6 +53,24 @@ jobs:
       - name: Agent limit preflight
         shell: bash
         run: python3 scripts/check_agent_limits.py --agent "$AGENT_LIMIT_ID" --all-workflows
+
+      - name: Cache Lightpanda
+        uses: actions/cache@v5
+        with:
+          path: ${{ runner.temp }}/lightpanda/0.3.6
+          key: lightpanda-${{ runner.os }}-${{ runner.arch }}-0.3.6
+
+      - name: Install verified Lightpanda
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/install_lightpanda.py \
+            --version "$LIGHTPANDA_VERSION" \
+            --destination "$RUNNER_TEMP/lightpanda/$LIGHTPANDA_VERSION/lightpanda" \
+            --github-env "$GITHUB_ENV"
+
+      - name: Require Lightpanda runtime
+        run: python3 scripts/check_lightpanda.py --require-binary
 
       - name: Install Agent-Reach and X routes
         shell: bash
