@@ -31,6 +31,7 @@ class UpdateFeedXFreshnessTests(unittest.TestCase):
         self.assertIn("if len(content) < 40:", workflow)
         self.assertIn('key=lambda query: 0 if "from:" in query else 1', workflow)
         self.assertIn("per_query_limit = 3", workflow)
+        self.assertIn("x_signal_quota = 5", workflow)
         self.assertNotIn("collected.append(enrich_x_tweet(record))", workflow)
         self.assertNotIn(
             '"source_published_at": source_timestamp({"source_published_at": published}) or NOW',
