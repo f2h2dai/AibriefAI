@@ -1,34 +1,32 @@
 {
-  "generated_at": "2026-08-01T22:52:35Z",
+  "generated_at": "2026-08-01T22:59:02Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 12,
+  "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.2,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-01T22:52:35Z",
+  "latest_successful_run": "2026-08-01T22:59:02Z",
   "highest_ranked_signal": {
-    "id": "github-010",
-    "title": "junghan0611/agent-config",
-    "action_score": 80.5,
-    "url": "https://github.com/junghan0611/agent-config"
+    "id": "twitter-038",
+    "title": "@GursimranonX: 🚨 Indian Army shoots down Pakistani surveillance drone in Jammu’s Khour sector Pakistani drone was spotted hovering close to vital military ",
+    "action_score": 75.25,
+    "url": "https://x.com/GursimranonX/status/2083126631837979055"
   },
   "source_contribution": {
-    "github": 8,
-    "twitter": 2,
-    "hackernews": 1,
-    "arxiv": 1
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1170"
     }
   ],
-  "runtime_seconds": 39.383,
+  "runtime_seconds": 40.761,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -63,7 +61,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 2,
+    "public_x_signals": 5,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -88,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-01T22:52:35Z",
+    "planned_at": "2026-08-01T22:59:02Z",
     "production_threshold": 70.0
   }
 }
