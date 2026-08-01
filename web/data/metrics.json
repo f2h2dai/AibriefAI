@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-08-01T12:50:08Z",
+  "generated_at": "2026-08-01T19:06:44Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-01T12:50:08Z",
+  "latest_successful_run": "2026-08-01T19:06:44Z",
   "highest_ranked_signal": {
     "id": "github-011",
-    "title": "deepakj111/deep-research-agent",
-    "action_score": 75.5,
-    "url": "https://github.com/deepakj111/deep-research-agent"
+    "title": "fouzan122/ai-customer-support-bot",
+    "action_score": 77.5,
+    "url": "https://github.com/fouzan122/ai-customer-support-bot"
   },
   "source_contribution": {
-    "github": 6,
-    "twitter": 5,
-    "hackernews": 1
+    "github": 8,
+    "twitter": 4
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1114"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1144"
     }
   ],
-  "runtime_seconds": 133.279,
+  "runtime_seconds": 144.734,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -62,7 +61,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 5,
+    "public_x_signals": 4,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-01T12:50:08Z",
+    "planned_at": "2026-08-01T19:06:44Z",
     "production_threshold": 70.0
   }
 }
