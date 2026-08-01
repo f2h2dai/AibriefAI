@@ -1204,11 +1204,19 @@ jobs:
           if len(visible_signals) >= 6:
               signals = visible_signals
 
-          signals = sorted(
+          ranked_signals = sorted(
               signals,
               key=lambda x: (freshness_rank(x), x["score"]),
               reverse=True,
-          )[:12]
+          )
+          x_signal_quota = 5
+          x_signals = [signal for signal in ranked_signals if signal["source"] == "twitter"][:x_signal_quota]
+          other_signals = [signal for signal in ranked_signals if signal["source"] != "twitter"]
+          signals = sorted(
+              x_signals + other_signals[:12 - len(x_signals)],
+              key=lambda x: (freshness_rank(x), x["score"]),
+              reverse=True,
+          )
           source_failures_by_agent = {}
           for event in PIPELINE_EVENTS:
               if event.get("level") != "error":
