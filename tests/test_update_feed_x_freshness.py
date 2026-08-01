@@ -28,6 +28,7 @@ class UpdateFeedXFreshnessTests(unittest.TestCase):
         self.assertIn("source_published_timestamp", workflow)
         self.assertIn("since:{since_date}", workflow)
         self.assertIn("collected.append(record)", workflow)
+        self.assertIn("if len(content) < 40:", workflow)
         self.assertNotIn("collected.append(enrich_x_tweet(record))", workflow)
         self.assertNotIn(
             '"source_published_at": source_timestamp({"source_published_at": published}) or NOW',
