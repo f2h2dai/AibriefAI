@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/PShannon30308/status/2083646078445052151"
+      ],
+      "id": "story-e69a8d6740415c886cbb3581",
+      "reason": "Figure 03 is produced by Figure AI, a U.S. robotics company. F.03 refers to Figure AI's third-generation humanoid robot, Figure 03. It's a full platform redesign from its predecessor (the F.02), sharing no components with it. Key points about Figure 03: Design: it's leaner and mo",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-01T21:07:48Z",
+      "source": "x",
+      "source_published_at": "2026-08-01T20:08:32Z",
+      "source_url": "https://x.com/PShannon30308/status/2083646078445052151",
+      "status": "x-intel",
+      "title": "Figure 03 is produced by Figure AI, a U.S. robotics company. F.03 refers to Figure AI's third-generation humanoid robot, Figure 03. It's a full platform redesig",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/sama/status/2083221585792762171"
       ],
       "id": "story-bb416928fa8574c1de7eb7d3",
@@ -297,42 +321,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2083353607370416632"
-      ],
-      "id": "story-17714580e6fe52d073b0c7c7",
-      "reason": "Imagine Video 1.5 launched last month as our best video model yet, with more lifelike motion and sound. Today it goes even further with text-to-video support, image and voice references, and native 1080p. https://t.co/OWP5rCxlru https://t.co/bHUf5pz62S",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-01T11:04:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-01T00:46:21Z",
-      "source_url": "https://x.com/grok/status/2083353607370416632",
-      "status": "x-intel",
-      "title": "Imagine Video 1.5 launched last month as our best video model yet, with more lifelike motion and sound. Today it goes even further with text-to-video support, i",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-01T20:05:31Z",
+    "alerted_at": "2026-08-01T21:07:48Z",
     "confidence": 0,
-    "source_url": "https://x.com/sama/status/2083221585792762171",
-    "title": "@: https://t.co/OzRSMYvXqO' author: id: '1953922264145309696' name: \u67d2 screenName: Sevenmoneym"
+    "source_url": "https://x.com/PShannon30308/status/2083646078445052151",
+    "title": "Figure 03 is produced by Figure AI, a U.S. robotics company. F.03 refers to Figure AI's third-generation humanoid robot, Figure 03. It's a full platform redesig"
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 24,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 24,
     "initial_source_counts": {
       "x": 24
@@ -344,8 +345,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.567,
-      "projected_minutes_per_30d": 507.24,
+      "measured_seconds": 10.286,
+      "projected_minutes_per_30d": 493.74,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -359,7 +360,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -383,11 +384,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-01T20:05:31Z",
+  "updated_at": "2026-08-01T21:07:48Z",
   "version": 1
 }
