@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/Boris_Gauty/status/2083058524439892417"
+      ],
+      "id": "story-554275649444592acac3a669",
+      "reason": "@BrendaMateck @grok stp fais le r\u00e9sum\u00e9 de ce qu\u2019elle dit dans ce post Facebook et explique pourquoi c\u2019est malsain ce qu\u2019elle fait",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-02T10:20:10Z",
+      "source": "x",
+      "source_published_at": "2026-07-31T05:13:48Z",
+      "source_url": "https://x.com/Boris_Gauty/status/2083058524439892417",
+      "status": "x-intel",
+      "title": "@BrendaMateck @grok stp fais le r\u00e9sum\u00e9 de ce qu\u2019elle dit dans ce post Facebook et explique pourquoi c\u2019est malsain ce qu\u2019elle fait",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/ForensicPsyMD/status/2083557328863793601"
       ],
       "id": "story-601a0b1a9dc9640b8eb307da",
@@ -268,57 +292,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/XQOPTRX/status/2083632435703492825"
-      ],
-      "id": "story-f87aa34b5be0970c18aacaf5",
-      "reason": "\ud83e\udd16 Google Removes AI Image Tool From Google Earth Google has withdrawn a newly launched AI image-generation feature from Google Earth following concerns that it could create convincing fake images tied to real-world locations. Researchers demonstrated that the tool could generate ",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-01T23:08:51Z",
-      "source": "x",
-      "source_published_at": "2026-08-01T19:14:19Z",
-      "source_url": "https://x.com/XQOPTRX/status/2083632435703492825",
-      "status": "x-intel",
-      "title": "\ud83e\udd16 Google Removes AI Image Tool From Google Earth Google has withdrawn a newly launched AI image-generation feature from Google Earth following concerns that it",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-02T08:42:39Z",
+    "alerted_at": "2026-08-02T10:20:10Z",
     "confidence": 0,
-    "source_url": "https://x.com/ForensicPsyMD/status/2083557328863793601",
-    "title": "China Is Training Military AI on Outputs From OpenAI and Anthropic Models \u2013 SOFX https://t.co/iscoaoIcU6"
+    "source_url": "https://x.com/Boris_Gauty/status/2083058524439892417",
+    "title": "@BrendaMateck @grok stp fais le r\u00e9sum\u00e9 de ce qu\u2019elle dit dans ce post Facebook et explique pourquoi c\u2019est malsain ce qu\u2019elle fait"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 12,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.152,
-      "projected_minutes_per_30d": 535.28,
+      "measured_seconds": 14.752,
+      "projected_minutes_per_30d": 708.08,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -332,7 +331,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 6,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -361,6 +360,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-02T08:42:39Z",
+  "updated_at": "2026-08-02T10:20:10Z",
   "version": 1
 }
