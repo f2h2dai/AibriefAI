@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Shahjees/status/2083851345862533379"
+      ],
+      "id": "story-ad1e445aba4d26ec67bb0e31",
+      "reason": "\u201cThe real AI threat may not arrive as a rebellion. It may emerge gradually as society hands machines more authority in exchange for speed and convenience.\u201d https://t.co/yFzMF08UKL",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-02T20:42:55Z",
+      "source": "x",
+      "source_published_at": "2026-08-02T09:44:11Z",
+      "source_url": "https://x.com/Shahjees/status/2083851345862533379",
+      "status": "x-intel",
+      "title": "\u201cThe real AI threat may not arrive as a rebellion. It may emerge gradually as society hands machines more authority in exchange for speed and convenience.\u201d http",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/Wwjrd69420/status/2083982738214830128"
@@ -23,30 +47,6 @@
         "x.com",
         "AI",
         "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Shahjees/status/2083851345862533379"
-      ],
-      "id": "story-ad1e445aba4d26ec67bb0e31",
-      "reason": "\u201cThe real AI threat may not arrive as a rebellion. It may emerge gradually as society hands machines more authority in exchange for speed and convenience.\u201d https://t.co/yFzMF08UKL",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-02T20:42:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-02T09:44:11Z",
-      "source_url": "https://x.com/Shahjees/status/2083851345862533379",
-      "status": "x-intel",
-      "title": "\u201cThe real AI threat may not arrive as a rebellion. It may emerge gradually as society hands machines more authority in exchange for speed and convenience.\u201d http",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -309,27 +309,27 @@
   "last_alert": {
     "alerted_at": "2026-08-02T20:42:55Z",
     "confidence": 0,
-    "source_url": "https://x.com/Wwjrd69420/status/2083982738214830128",
-    "title": "Anthropic has now been barred from providing services to the U.S. military due to its refusal to work on autonomous weapons systems and domestic surveillance op"
+    "source_url": "https://x.com/Shahjees/status/2083851345862533379",
+    "title": "\u201cThe real AI threat may not arrive as a rebellion. It may emerge gradually as society hands machines more authority in exchange for speed and convenience.\u201d http"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 0,
+    "clustered": 20,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.84,
-      "projected_minutes_per_30d": 424.34,
+      "measured_seconds": 8.86,
+      "projected_minutes_per_30d": 425.3,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 17,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-02T20:42:55Z",
+  "updated_at": "2026-08-02T21:37:20Z",
   "version": 1
 }
