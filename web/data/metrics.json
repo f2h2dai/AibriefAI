@@ -1,32 +1,33 @@
 {
-  "generated_at": "2026-08-01T22:59:02Z",
+  "generated_at": "2026-08-02T12:51:46Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-01T22:59:02Z",
+  "latest_successful_run": "2026-08-02T12:51:46Z",
   "highest_ranked_signal": {
-    "id": "twitter-038",
-    "title": "@GursimranonX: 🚨 Indian Army shoots down Pakistani surveillance drone in Jammu’s Khour sector Pakistani drone was spotted hovering close to vital military ",
-    "action_score": 75.25,
-    "url": "https://x.com/GursimranonX/status/2083126631837979055"
+    "id": "github-004",
+    "title": "ArcReel/ArcReel",
+    "action_score": 75.5,
+    "url": "https://github.com/ArcReel/ArcReel"
   },
   "source_contribution": {
-    "github": 7,
-    "twitter": 5
+    "github": 6,
+    "twitter": 5,
+    "hackernews": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1170"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1173"
     }
   ],
-  "runtime_seconds": 40.761,
+  "runtime_seconds": 38.185,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-01T22:59:02Z",
+    "planned_at": "2026-08-02T12:51:46Z",
     "production_threshold": 70.0
   }
 }
