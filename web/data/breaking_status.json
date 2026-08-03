@@ -4,6 +4,34 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 4,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/ridark_eth/status/2084409024666292299",
+        "https://x.com/grok/status/2083910059512254539",
+        "https://x.com/Wwjrd69420/status/2083983163148402933",
+        "https://x.com/ScalingEurope/status/2084157320154714159"
+      ],
+      "id": "story-b139978da683b278b07c4d6c",
+      "reason": "\"Cannot in good conscience.\" That is the phrase Dario Amodei used to turn down the Pentagon. The sticking point was two words: any lawful use. Sign that and Claude is cleared for domestic mass surveillance and for autonomous weapons with nobody in the loop. He did not sign it. Wi",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-03T23:45:54Z",
+      "source": "x",
+      "source_published_at": "2026-08-03T22:40:12Z",
+      "source_url": "https://x.com/ridark_eth/status/2084409024666292299",
+      "status": "x-intel",
+      "title": "\"Cannot in good conscience.\" That is the phrase Dario Amodei used to turn down the Pentagon. The sticking point was two words: any lawful use. Sign that and Cla",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -277,58 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ivyasaa/status/2084157772820852847"
-      ],
-      "id": "story-384b49601a9d88693a9a75bd",
-      "reason": "#TechVyasa #CyberNews \ud83d\udee1\ufe0f Military AI Agents Face Severe Cyber Vulnerabilities, Warn Experts \ud83e\udd16 Evasion attacks, data poisoning, and cloud-connected vulnerabilities threaten critical military AI agents, raising serious risks of target misidentification. https://t.co/3eS0ITALKt #Mil",
-      "score": 49,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-03T18:26:58Z",
-      "source": "x",
-      "source_published_at": "2026-08-03T14:09:55Z",
-      "source_url": "https://x.com/ivyasaa/status/2084157772820852847",
-      "status": "x-intel",
-      "title": "@ivyasaa: #TechVyasa #CyberNews \ud83d\udee1\ufe0f Military AI Agents Face Severe Cyber Vulnerabilities, Warn Experts \ud83e\udd16 Evasion attacks, data poisoning, and cloud-con",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-03T22:32:26Z",
+    "alerted_at": "2026-08-03T23:45:54Z",
     "confidence": 0,
-    "source_url": "https://x.com/onlythedeadknow/status/2084345025811419597",
-    "title": "Data Centers + Spectrum + Space + Energy - Genesis Project/Genesis Mission USA has Argus Accrete USA has/had Artemis USA has GenAI USA has Project Maven / Maven"
+    "source_url": "https://x.com/ridark_eth/status/2084409024666292299",
+    "title": "\"Cannot in good conscience.\" That is the phrase Dario Amodei used to turn down the Pentagon. The sticking point was two words: any lawful use. Sign that and Cla"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 21,
+    "alerted_now": 1,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.361,
-      "projected_minutes_per_30d": 449.32,
+      "measured_seconds": 8.858,
+      "projected_minutes_per_30d": 425.21,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -342,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-03T22:32:26Z",
+  "updated_at": "2026-08-03T23:45:54Z",
   "version": 1
 }
