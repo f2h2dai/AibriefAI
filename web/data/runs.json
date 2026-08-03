@@ -1,45 +1,6 @@
 {
   "runs": [
     {
-      "run_id": "operations-2026-07-22T19:18:06Z",
-      "generated_at": "2026-07-22T19:18:06Z",
-      "mode": "global_ai",
-      "status": "complete",
-      "configured_threshold": 70.0,
-      "signals": 12,
-      "act_now_items": 0,
-      "runtime_seconds": 30.228,
-      "daily_api_cost_usd": 0.0,
-      "failed_sources": [],
-      "workers": [
-        {
-          "name": "Brief Planner",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Signal Scout",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Public Signal Watcher",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Brief Composer",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Intelligence Analyst",
-          "status": "complete",
-          "bounded": true
-        }
-      ]
-    },
-    {
       "run_id": "operations-2026-07-23T13:19:06Z",
       "generated_at": "2026-07-23T13:19:06Z",
       "mode": "global_ai",
@@ -1244,6 +1205,50 @@
       "signals": 12,
       "act_now_items": 0,
       "runtime_seconds": 45.443,
+      "daily_api_cost_usd": 0.0,
+      "failed_sources": [
+        {
+          "source": "GroqRouter",
+          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+        }
+      ],
+      "workers": [
+        {
+          "name": "Brief Planner",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Signal Scout",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Public Signal Watcher",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Brief Composer",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Intelligence Analyst",
+          "status": "complete",
+          "bounded": true
+        }
+      ]
+    },
+    {
+      "run_id": "operations-2026-08-03T14:09:55Z",
+      "generated_at": "2026-08-03T14:09:55Z",
+      "mode": "global_ai",
+      "status": "complete",
+      "configured_threshold": 70.0,
+      "signals": 12,
+      "act_now_items": 0,
+      "runtime_seconds": 40.224,
       "daily_api_cost_usd": 0.0,
       "failed_sources": [
         {
