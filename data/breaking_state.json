@@ -12908,6 +12908,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-ab52c9af0d523a4f6bf21e0c": {
+      "alerted_at": "2026-08-04T07:23:13Z",
+      "confidence": 0,
+      "content": "Alibaba open-weights a 2.4T model, AI targeting on 50,000 drones, and more #AI #OpenWeights #EdgeAI #EnterpriseAI https://t.co/Cy7x4SdcrY",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/SVf4data/status/2084496017005715783"
+      ],
+      "last_seen_at": "2026-08-04T07:23:13Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-04T04:25:53+00:00",
+      "reason": "Alibaba open-weights a 2.4T model, AI targeting on 50,000 drones, and more #AI #OpenWeights #EdgeAI #EnterpriseAI https://t.co/Cy7x4SdcrY",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/SVf4data/status/2084496017005715783"
+      ],
+      "supporting_sources": [],
+      "title": "Alibaba open-weights a 2.4T model, AI targeting on 50,000 drones, and more #AI #OpenWeights #EdgeAI #EnterpriseAI https://t.co/Cy7x4SdcrY",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-abd7cdee9f93f6bc6fda602a": {
       "alerted_at": "2026-07-18T23:29:49Z",
       "confidence": 0,
@@ -18462,6 +18491,36 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
+    "story-f251c78721430c8633aac13b": {
+      "alerted_at": "2026-08-04T07:23:13Z",
+      "confidence": 0,
+      "content": "Export controls assumed AI capability lives in silicon. Reuters just proved it walks out through the API - and once it does, no export control can take it back. On July 31, Reuters and the Jamestown Foundation reviewed 80+ Chinese papers and patents. The finding: PLA-linked researchers are training military AI on outputs from OpenAI and Anthropic models. Not on smuggled chips. On text. The method is model distillation, standard industry practice. You feed prompts to a powerful \"teacher\" model, then train a smaller \"student\" model on its outputs, inheriting the reasoning at a fraction of the compute cost. The review documents where it ends up. PLA Unit 96941, the army's main cyber unit, distilled GPT-3.5 to summarize classified source code. Researchers at the North University of China used Claude 3 Haiku to generate synthetic training data for social media monitoring. NUDT distilled a US image model small enough to run on drones for live navigation and targeting analysis. Here is the part Washington should internalize. Export controls are built for physical goods: chips can be counted, seized, sanctioned. A distilled capability is a copy. It runs on domestic silicon, permanently severed from the US supply chain the moment training ends. Anthropic told Reuters it sells no commercial access to Claude in China and warned distilled copies cannot be controlled or monitored. You can gate hardware. You cannot un-copy knowledge. Now the uncomfortable irony. The debate has been framed around open weights leaking capability to China. The review suggests the leak was the closed API all along. Distillation turns a closed frontier model into an effectively open one for anyone with API credits - no weights required. The timing matters. Washington and Beijing are preparing for AI governance talks. The US side frames this as theft, citing watermarks of US models in Chinese outputs. Beijing calls it \"AI hegemonism.\" Both argue over a technique both industries use routinely - US labs distill too, and the frontier was trained on the open internet. The first AI war is being fought with each side's best models as ammunition, and the US models are serving both sides. The next control regime will target the API, not the fab. That fight has already started. #ExportControls #AISecurity #USChina #ChinaAI",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/BennyLam/status/2084498423898620212"
+      ],
+      "last_seen_at": "2026-08-04T07:23:13Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-04T04:35:27+00:00",
+      "reason": "Export controls assumed AI capability lives in silicon. Reuters just proved it walks out through the API - and once it does, no export control can take it back. On July 31, Reuters and the Jamestown Foundation reviewed 80+ Chinese papers and patents. The finding: PLA-linked resea",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/BennyLam/status/2084498423898620212"
+      ],
+      "supporting_sources": [],
+      "title": "Export controls assumed AI capability lives in silicon. Reuters just proved it walks out through the API - and once it does, no export control can take it back.",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-f2c0429ef83d9460714ebea4": {
       "alerted_at": "2026-07-28T04:25:34Z",
       "confidence": 0,
@@ -19815,6 +19874,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-08-04T04:42:37Z",
+  "updated_at": "2026-08-04T07:23:13Z",
   "version": 1
 }
