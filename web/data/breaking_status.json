@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Aaron_Harme/status/2084612290356093307"
+      ],
+      "id": "story-7dd1b52de1c54cc083077fea",
+      "reason": "Twenty thousand Google employees walked out in 2018. They won something real. The company ended forced arbitration for harassment claims, and much of tech followed. Claire Stapleton, one of the organizers, has a book out today about how they pulled it off from inside, using Googl",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-04T22:42:38Z",
+      "source": "x",
+      "source_published_at": "2026-08-04T12:07:54Z",
+      "source_url": "https://x.com/Aaron_Harme/status/2084612290356093307",
+      "status": "x-intel",
+      "title": "Twenty thousand Google employees walked out in 2018. They won something real. The company ended forced arbitration for harassment claims, and much of tech follo",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -276,57 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/TradedVC/status/2084682470222430302"
-      ],
-      "id": "story-f2c37a80cae5d72900c4ea89",
-      "reason": "Space-Eyes, a Miami-based defense technology startup led by founder and CEO Jatin Bains, plans to go public through a merger with McKinley Acquisition Corp. in a deal that values the combined company at approximately $638 million. The AI-focused company, which develops counter-dr",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-04T16:49:19Z",
-      "source": "x",
-      "source_published_at": "2026-08-04T16:46:47Z",
-      "source_url": "https://x.com/TradedVC/status/2084682470222430302",
-      "status": "x-intel",
-      "title": "Space-Eyes, a Miami-based defense technology startup led by founder and CEO Jatin Bains, plans to go public through a merger with McKinley Acquisition Corp. in",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-04T20:06:39Z",
+    "alerted_at": "2026-08-04T22:42:38Z",
     "confidence": 0,
-    "source_url": "https://x.com/HealthRanger/status/2084533495167131688",
-    "title": "New infographic: SKYNET IS COMING. The Pentagon wants AI-enhanced autonomous weapons. Guess how they'll be used? Eventually they will be turned against YOU. Bec"
+    "source_url": "https://x.com/Aaron_Harme/status/2084612290356093307",
+    "title": "Twenty thousand Google employees walked out in 2018. They won something real. The company ended forced arbitration for harassment claims, and much of tech follo"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 22,
+    "alerted_now": 1,
+    "clustered": 21,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.636,
-      "projected_minutes_per_30d": 366.51,
+      "measured_seconds": 9.859,
+      "projected_minutes_per_30d": 473.22,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 17,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-04T21:33:24Z",
+  "updated_at": "2026-08-04T22:42:38Z",
   "version": 1
 }
