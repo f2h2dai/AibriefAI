@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Coktenli/status/2084725656315699217"
+      ],
+      "id": "story-9d1489d6771dd82a1f41bfca",
+      "reason": "The Race To Write NATO\u2019s Military AI Rulebook Has Begun \u2013 OpEd https://t.co/xsXPiBkhy2",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-04T23:42:18Z",
+      "source": "x",
+      "source_published_at": "2026-08-04T19:38:23Z",
+      "source_url": "https://x.com/Coktenli/status/2084725656315699217",
+      "status": "x-intel",
+      "title": "The Race To Write NATO\u2019s Military AI Rulebook Has Begun \u2013 OpEd https://t.co/xsXPiBkhy2",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/Aaron_Harme/status/2084612290356093307"
@@ -278,56 +304,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/vc_corner/status/2084671691469242522"
-      ],
-      "id": "story-ed04a83edfc5b7574168abd4",
-      "reason": "AI drones raise concerns \u26a1 Short film explores future risks Autonomous weapons spark debate https://t.co/iy69CnCf2q",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-04T16:49:19Z",
-      "source": "x",
-      "source_published_at": "2026-08-04T16:03:57Z",
-      "source_url": "https://x.com/vc_corner/status/2084671691469242522",
-      "status": "x-intel",
-      "title": "AI drones raise concerns \u26a1 Short film explores future risks Autonomous weapons spark debate https://t.co/iy69CnCf2q",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-04T22:42:38Z",
+    "alerted_at": "2026-08-04T23:42:18Z",
     "confidence": 0,
-    "source_url": "https://x.com/Aaron_Harme/status/2084612290356093307",
-    "title": "Twenty thousand Google employees walked out in 2018. They won something real. The company ended forced arbitration for harassment claims, and much of tech follo"
+    "source_url": "https://x.com/Coktenli/status/2084725656315699217",
+    "title": "The Race To Write NATO\u2019s Military AI Rulebook Has Begun \u2013 OpEd https://t.co/xsXPiBkhy2"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 21,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.859,
-      "projected_minutes_per_30d": 473.22,
+      "measured_seconds": 7.942,
+      "projected_minutes_per_30d": 381.23,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 17,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,6 +372,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-04T22:42:38Z",
+  "updated_at": "2026-08-04T23:42:18Z",
   "version": 1
 }
