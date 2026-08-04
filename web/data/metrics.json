@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-08-04T13:40:18Z",
+  "generated_at": "2026-08-04T19:36:43Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 11,
+  "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-04T13:40:18Z",
+  "latest_successful_run": "2026-08-04T19:36:43Z",
   "highest_ranked_signal": {
-    "id": "arxiv-017",
-    "title": "ACEM: A Cost Estimation Model for Agentic Software Engineering",
-    "action_score": 82.5,
-    "url": "https://arxiv.org/abs/2608.02582v1"
+    "id": "twitter-040",
+    "title": "@TradedVC: Space-Eyes, a Miami-based defense technology startup led by founder and CEO Jatin Bains, plans to go public through a merger with McKinley A",
+    "action_score": 79.0,
+    "url": "https://x.com/TradedVC/status/2084682470222430302"
   },
   "source_contribution": {
-    "arxiv": 3,
-    "github": 4,
-    "twitter": 5
+    "twitter": 5,
+    "github": 7
   },
   "failed_sources": [
     {
@@ -27,7 +26,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 43.354,
+  "runtime_seconds": 57.425,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-04T13:40:18Z",
+    "planned_at": "2026-08-04T19:36:43Z",
     "production_threshold": 70.0
   }
 }
