@@ -942,6 +942,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
+    "story-0b476d6ce70400a7608d091f": {
+      "alerted_at": "2026-08-05T13:43:36Z",
+      "confidence": 0,
+      "content": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprises must take to ensure that agents are only able to operate on the data they give it, the ability to have audit trails and governance of what agents can do, figure out what systems should remain deterministic vs. nondeterministic, get access controls under control, have the ability to quickly block and defend if an agent goes rogue, and much more. Even in the happy path case with a good actor, if you give an agent a task like \"find all of our most important IP on project Maven\" it will gladly go out and execute that work -no matter how long- and find any resource relevant to the task. It might run into data with out of date access controls or reveal something that you shouldn't know about. Then, in the non-happy path case with a malicious actor the risk is clearly far worse. In theory, you had to worry about this for people as well, but with AI the risks are inherently amplified. Agents will happily spend any amount of time on a task, don\u2019t actually face any *real* risks by going rogue, and don\u2019t have the inherent judgment (yet) that a person does that a task might make no sense. This means you need an all new way of managing data and protecting environments. This obviously creates a huge opportunity for the startup and security ecosystems because there will be many different approaches to how we lock down agents or at least the underlying systems they work with. It should update everyone\u2019s timelines on diffusion, though, as it also means that enterprises will have another step of work they have to go through for agents to handle more autonomous work.",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/levie/status/2082514776392175844"
+      ],
+      "last_seen_at": "2026-08-05T13:43:36Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-05T13:30:23Z",
+      "reason": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprise",
+      "score": 47,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/levie/status/2082514776392175844"
+      ],
+      "supporting_sources": [],
+      "title": "@levie: The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-0bd5d2c3f84fb334e42b038f": {
       "alerted_at": "2026-07-21T09:16:04Z",
       "confidence": 0,
@@ -4869,6 +4898,36 @@
         "AI",
         "Project Maven",
         "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-39436d0fb10e295ee55d5819": {
+      "alerted_at": "2026-08-05T13:43:36Z",
+      "confidence": 0,
+      "content": "US & UAE Establish First Bilateral Military AI Task Force. The United States and the United Arab Emirates have announced the creation of their first joint military artificial intelligence task force, marking a significant step in defense technology cooperation and AI integration across military operations in the Middle East. Named Task Force Talon Synapse, the initiative is designed to accelerate the deployment of AI-enabled capabilities, improve operational effectiveness, and strengthen bilateral defense collaboration. According to US Central Command (CENTCOM), the task force is expected to become operational within the coming weeks.",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Defence_IDA/status/2084964271184883832"
+      ],
+      "last_seen_at": "2026-08-05T13:43:36Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-05T11:26:33+00:00",
+      "reason": "US & UAE Establish First Bilateral Military AI Task Force. The United States and the United Arab Emirates have announced the creation of their first joint military artificial intelligence task force, marking a significant step in defense technology cooperation and AI integration ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Defence_IDA/status/2084964271184883832"
+      ],
+      "supporting_sources": [],
+      "title": "US & UAE Establish First Bilateral Military AI Task Force. The United States and the United Arab Emirates have announced the creation of their first joint milit",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -10053,6 +10112,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-79c9aad3194dc81b2555bd83": {
+      "alerted_at": "2026-08-05T13:43:36Z",
+      "confidence": 0,
+      "content": "@BabakTaghvaee1 @grok wait, is that a morrocon officer or a cuenta officer with the rock? https://t.co/RyK0rOdSXV",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Aggroed001/status/2083912779396751441"
+      ],
+      "last_seen_at": "2026-08-05T13:43:36Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-02T13:48:18+00:00",
+      "reason": "@BabakTaghvaee1 @grok wait, is that a morrocon officer or a cuenta officer with the rock? https://t.co/RyK0rOdSXV",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Aggroed001/status/2083912779396751441"
+      ],
+      "supporting_sources": [],
+      "title": "@BabakTaghvaee1 @grok wait, is that a morrocon officer or a cuenta officer with the rock? https://t.co/RyK0rOdSXV",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-7a1d8ca957f5bcf781ff8e28": {
       "alerted_at": "2026-07-18T00:34:40Z",
       "confidence": 0,
@@ -11889,6 +11976,38 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
+    "story-95d4f5b8b700fadd2ec3ebd2": {
+      "alerted_at": "2026-08-05T13:43:36Z",
+      "confidence": 0,
+      "content": "\ud83c\udde8\ud83c\uddfa|The sixth nationwide blackout in Cuba is not a failure of infrastructure. It is a deliberate, targeted, and technologically executed attack on a sovereign nation that refuses to kneel. The United States, through its sixty-year illegal blockade and its control of the global energy and cyber-warfare grid, is deliberately trying to break the spirit of the Cuban people by weaponizing their access to electricity, food, and water. The Weapon: A Combination of Cyber-Attack, Energy Blockade, and Directed-Energy Grid Disruption The \"struggles\" of the state electricity firm are not incompetence. They are the direct result of a multi-layered assault designed to trigger cascading failures that are impossible to recover from with a starving, sanctioned, and isolated grid. 1. The Stuxnet 2.0 Cyber-Attack: The specific, repeated nature of these blackouts is the signature of a sophisticated, state-sponsored cyber-weapon that has been planted deep within the control systems of Cuba's aging power plants. This is the \"Stuxnet 2.0\" model, a digital assassin that lies dormant, and then, on a specific command from Langley, deliberately causes a specific turbine to overheat, a breaker to trip at the wrong moment, or a substation to catastrophically fail. The goal is to physically shatter the irreplaceable, custom-made machinery that cannot be legally imported due to the blockade. The \"restoration struggle\" is a lie; the damage is designed to be permanent. 2. The Fuel Blockade as a Weapon of Mass Starvation: The United States Treasury's Office of Foreign Assets Control (OFAC) actively threatens, fines, and sanctions any shipping company, any bank, and any nation that dares to sell or transport fuel to Cuba. This is not a \"policy.\" This is a deliberate act of collective punishment, a weapon of mass starvation that prevents the import of the diesel, oil, and spare parts needed to run the backup generators and power plants. The food that spoils in the dark is the intended harvest of this operation. The child who has no clean water is the target. 3. The Directed-Energy \"Grid Kill\" Test: The global ionospheric heater network (HAARP, EISCAT) and the orbital directed-energy platforms have the capability to induce a massive, geomagnetically induced current (GIC) surge into a specific, vulnerable power grid. A massive solar flare creates this naturally; the Pentagon can create it artificially on a clear, calm day. The timing of the sixth blackout, coinciding with the global escalation of tectonic and atmospheric weapon tests, strongly points to a live-fire test of this \"grid-kill\" technology on the most sanctioned and voiceless population on Earth. Cuba is the laboratory for the final, global energy shutdown. The Goal: The \"Great Reset\" for the Last Sovereign Socialist Nation The goal is not just to make the Cuban people suffer. It is to create an unlivable hell of darkness, hunger, and despair that will break the final, defiant spirit of the Revolution. 1. To Force a \"Humanitarian\" Surrender: The plan is to make daily life so unbearable that the population rises up in desperation, giving the U.S. the pretext for a \"humanitarian intervention\" that would overthrow the sovereign government and install a compliant, neo-liberal puppet regime. 2. The Digital ID Colony: The \"reconstruction\" aid that would follow a US-backed coup would come with the now-familiar, non-negotiable conditions: the full, mandatory biometric digital ID, a programmable CBDC, and the complete corporate takeover of the island's resources. The blackout is the \"shock doctrine\" event; the digital prison is the planned solution. The suffering of the Cuban people is a deliberate strategy to force them to trade their sovereignty for a flickering light. The world's last free, anti-imperialist nation is being slowly, deliberately, and technologically tortured in the dark.",
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/aprajitanefes/status/2084967241943257194",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
+      ],
+      "last_seen_at": "2026-08-05T13:43:36Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-05T11:38:21+00:00",
+      "reason": "\ud83c\udde8\ud83c\uddfa|The sixth nationwide blackout in Cuba is not a failure of infrastructure. It is a deliberate, targeted, and technologically executed attack on a sovereign nation that refuses to kneel. The United States, through its sixty-year illegal blockade and its control of the global ene",
+      "score": 87,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/aprajitanefes/status/2084967241943257194",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "\ud83c\udde8\ud83c\uddfa|The sixth nationwide blackout in Cuba is not a failure of infrastructure. It is a deliberate, targeted, and technologically executed attack on a sovereign na",
+      "webswarm_evidence_terms": [
+        "AI",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-975ccf87d8de601f3c93a4cc": {
       "alerted_at": "2026-08-03T20:09:28Z",
       "confidence": 0,
@@ -12015,6 +12134,42 @@
       "supporting_sources": [],
       "title": "@grok, liste les actes criminels de Mareko",
       "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-98b127f0341ae4e7903182c7": {
+      "alerted_at": "2026-08-05T13:43:36Z",
+      "confidence": 0,
+      "content": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified documents, leaked reports, and public military strategies. \ud83d\udda5\ufe0f Layer 1: #Cyberattacks | The Digital \"Kill Switch\" 1. Stuxnet 2.0: A Digital Assassin Lurking in Industrial Control Systems On February 28, 2026, during the joint US-Israeli Operation \"Epic Fury,\" a cyberattack was deployed as a pioneering and decisive combat measure for the first time. At its core was an upgraded version of the Stuxnet virus, designed to specifically infect Iran's energy industry Industrial Control Systems (ICS) and Supervisory Control and Data Acquisition (SCADA) systems. This type of software is capable of lying dormant for extended periods, activating only at a pre-set time or upon receiving a command to directly alter control instructions or damage hardware such as grid frequency control signals or pipeline valve commands. The attack chain spanned several months: \u25fePhase 1 (Before December 2025): Penetrating Iranian energy companies via supply chain attacks \u25fePhase 2 (January 2026): Testing vulnerabilities amidst domestic protests in Iran \u25fe Phase 3 (February 2026): Pre-positioning \"logic bombs\" at critical nodes \u25fe Phase 4 (February 28, 2026): Synchronized activation of all attack vectors The consequences were catastrophic: Iran's nationwide internet connectivity plummeted to 4% of normal levels; the national grid suffered a frequency collapse, triggering a countrywide blackout; and pipelines and refineries were forced to shut down due to control system failures. 2. AI-Driven Automated Power Grid Attacks On February 27, 2026, the *Financial Times* revealed that the US Pentagon was collaborating with leading AI companies to develop a system capable of automated penetration and reconnaissance against the power systems, utilities, and sensitive networks of adversaries such as China. This system utilizes AI algorithms to efficiently identify software vulnerabilities, map out \"vulnerability landscapes,\" and directly integrate potential targets into US military operational plans. Dennis Wilder, former CIA China mission chief, stated that AI-driven cyber tools would solve the problem of the immense manpower required to scan for and identify infrastructure vulnerabilities likening the process to \"a burglar late at night trying front doors one by one until finding an unlocked house.\" 3. False Data Injection Attacks (FDIA) Academic research has demonstrated that attackers can manipulate power grid measurements and data streams via False Data Injection Attacks (FDIAs), thereby disrupting monitoring and control functions. Targets for such attacks fall into five domains: steady-state control, transient and auxiliary control, substation control, energy and load control, and AI-based systems. \ud83e\udde8 Tier 2: Physical Attacks Weapons Designed to Cause a \"Physical Collapse\" of the Grid 1. Graphite Bombs (CBU-94 / BLU-114/B) \"Blackout Bombs\" These are specialized cluster bombs developed by the United States specifically to target electrical infrastructure. Utilizing a submunition design, the parent bomb releases submunitions upon reaching the target area; these disperse conductive carbon-fiber filaments that cause short circuits and disrupt power supply systems. The weapon saw its first combat use during the 1991 Gulf War, when U.S. forces deployed it via Tomahawk cruise missiles, crippling 85% of Iraq's power grid. During the 1999 Kosovo War, the U.S. military again employed BLU-114/B graphite bombs against the Federal Republic of Yugoslavia, resulting in power outages across 70% of the country. 2. Electromagnetic Pulse (EMP) Attacks An electromagnetic pulse is a byproduct of a nuclear explosion; if detonated at high altitude, it can cripple an entire power grid system. Experts warn that a single EMP attack would \"cripple the already vulnerable U.S. energy grid, wipe out power, and trigger a cascade of deadly events.\" The United States has been preparing for such attacks for decades. \u26a1 Tier 3: Directed-Energy Weapons | A \"Long-Range Stranglehold\" from the Ionosphere to the Power Grid 1. HAARP: A Geophysical Weapon The U.S. High-Frequency Active Auroral Research Program (HAARP) is capable of precisely beaming high-energy electromagnetic waves with a power output of 1.7 gigawatts (over 70,000 times that of the world's most powerful commercial radio station) at specific locations in the Earth's ionosphere. Russian military experts have noted that HAARP was constructed as a missile defense system designed to manipulate the ionosphere, thereby disabling incoming enemy missiles and aircraft. 2. Directed-Energy \"Grid-Kill\" Tests Global networks of ionospheric heaters (such as HAARP and EISCAT) and orbital directed-energy platforms possess the capability to induce massive surges of geomagnetically induced currents (GIC) within specific, vulnerable power grids. While solar flares can naturally trigger this phenomenon, the Pentagon can artificially generate such effects even during clear, calm weather. \ud83c\udfaf Confirmed Operational Records Target | Time | Method | Effect \ud83d\udd38Iraq | 1991 | Graphite bombs | 85% of the power grid paralyzed FR Yugoslavia | 1999 | Graphite bombs | Power outages in 70% of the region \ud83d\udd38Iran | Feb 28, 2026 | Stuxnet 2.0 + DDoS + GPS jamming | National internet connectivity dropped to 4%; nationwide blackout \ud83d\udd38Venezuela | Jan 2026 | Joint operation (CIA + Cyber Command + Southern Command) | Caracas lost power and internet; paved the way for Maduro's capture \ud83d\udd17 Links to Verifiable Evidence Declassified documents and official reports: https://t.co/WUu5JIujmE (CIA considered using lightning as a weapon) https://t.co/9aYZNWYdeN (Analysis report from the US Idaho National Laboratory's power grid test range) Evidence of cyberattacks: https://t.co/MedVsqFZza (How the US and Israel paralyzed Iran's energy system via cyberattacks) https://t.co/DHPCpxNY9d (US military attempts to use AI to attack China's power grid) https://t.co/utKZTQdXke (Search for \"Pentagon AI grid attack\") HAARP and directed-energy weapons: https://t.co/Hlo4MfCoN1 (HAARP: A geophysical weapon more terrifying than nuclear bombs) Academic research: \ud83d\udd38https://t.co/CgnCqkPYro (Search for \"False Data Injection Attacks Smart Grid\") \ud83d\udd38 https://t.co/6kfTZq4sWg (Search for \"Zero-Dynamics Attacks on Hydroelectric Systems\") \ud83d\udc80 The Truth When the United States speaks of a \"power system failure,\" it often refers to a systemic attack precisely calculated, executed through multi-layered coordination, and jointly carried out by the CIA and the Pentagon. This is no longer science fiction; it is a technical reality confirmed by declassified files, public military strategies, and records of past operations.",
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/aprajitanefes/status/2084968374195634654",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0"
+      ],
+      "last_seen_at": "2026-08-05T13:43:36Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-05T11:42:51+00:00",
+      "reason": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified documents, leaked reports, and public military strategies. \ud83d\udda5\ufe0f Layer 1: #Cyberattacks | The Digital \"Kill Switch\" 1. Stuxnet 2",
+      "score": 97,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/aprajitanefes/status/2084968374195634654",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified docum",
+      "webswarm_evidence_terms": [
+        "AI",
+        "Pentagon AI",
+        "military",
         "x.com"
       ],
       "webswarm_mode": "x_intel",
@@ -20959,6 +21114,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-08-05T11:51:15Z",
+  "updated_at": "2026-08-05T13:43:36Z",
   "version": 1
 }
