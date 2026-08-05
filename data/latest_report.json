@@ -1,146 +1,140 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-08-04T19:36:43Z",
+  "generated_at": "2026-08-05T13:30:23Z",
   "signals": 12,
-  "approved": 12,
-  "held": 0,
-  "errors": 9,
+  "approved": 11,
+  "held": 1,
+  "errors": 3,
   "mode": "groq",
   "model": "llama-3.3-70b-versatile",
   "provider_counts": {
     "gemini": 0,
-    "groq": 32,
-    "rule-based": 9
+    "groq": 30,
+    "rule-based": 2
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 0.97,
+  "max_source_age_days": 6.85,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "events": [
     {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X access credential parsed OK"
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X session metadata parsed OK"
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "error",
+      "agent": "GitHubAgent",
+      "message": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "AgentReachDoctor",
+      "message": "agent-reach doctor exited 0. Twitter/X routes: 还有 8 个可选渠道可以解锁（Twitter/X 推文、Reddit 帖子和评论、Facebook. stderr: (empty)"
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"(from:DeptofDefense OR from:DoD_CDAO OR from:CENTCOM OR from:DARPA OR from:DIU_x OR from:NATO OR from:NATO_ACT OR from:C4ISRNET OR from:DefenseNews OR from:BreakingDefense) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"satellite\\\" "
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"(from:TheWarZoneWire OR from:bellingcat OR from:IISS_org OR from:RUSI_org OR from:CSIS OR from:Maxar OR from:BlackSky_Inc OR from:planet OR from:PalantirTech OR from:anduriltech) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"satell"
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"(from:shieldaitech OR from:xai OR from:Grok) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"satellite\\\" OR \\\"الذكاء الاصطناعي\\\" OR \\\"غروك\\\") since:2026-07-29\" --json --max 20 --full-text exited 0. Parsed 18 X records."
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"(from:sama OR from:karpathy OR from:AndrewYNg OR from:ylecun OR from:demishassabis OR from:OpenAI OR from:AnthropicAI OR from:GoogleDeepMind OR from:flwy0711) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"satellite\\\" OR \\\"الذكاء ال"
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"\\\"Grok Gov\\\" OR \\\"Grok Gov Model\\\" OR \\\"Project Maven\\\" OR \\\"Pentagon AI\\\" OR \\\"DoD AI\\\" since:2026-07-29\" --json --max 20 --full-text exited 0. Parsed 17 X records."
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"\\\"AI targeting\\\" OR \\\"algorithmic targeting\\\" OR \\\"autonomous weapons\\\" OR \\\"military AI\\\" since:2026-07-29\" --json --max 20 --full-text exited 0. Parsed 16 X records."
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-07-29\" --json --max 20 --full-text exited 0. Parsed 20 X records."
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
+      "level": "info",
+      "agent": "XInfluencerAgent",
+      "message": "Collected 20 X influencer signals."
+    },
+    {
+      "time": "2026-08-05T13:30:23Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
     },
     {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 283)"
     },
     {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     },
     {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
+      "time": "2026-08-05T13:30:23Z",
       "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
-    },
-    {
-      "time": "2026-08-04T19:36:43Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
-  "notification_enabled": false,
-  "notification_sent": false,
-  "notification_reason": "not morning run"
+  "notification_enabled": true,
+  "notification_sent": true,
+  "notification_reason": "sent"
 }
