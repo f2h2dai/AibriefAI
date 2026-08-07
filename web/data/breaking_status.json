@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/PShannon30308/status/2085697610359157088"
+      ],
+      "id": "story-20572569fcdbb569e2415aa5",
+      "reason": "U. S. and NATO are creating an AI- shared military network so their forces can work as one during combat operations.",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-07T12:26:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T12:00:35Z",
+      "source_url": "https://x.com/PShannon30308/status/2085697610359157088",
+      "status": "x-intel",
+      "title": "U. S. and NATO are creating an AI- shared military network so their forces can work as one during combat operations.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/RUSI_org/status/2084678755948077486"
       ],
       "id": "story-783c419dcfc01832607b3d51",
@@ -266,55 +291,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/IsraelMFA/status/2084655100560101653"
-      ],
-      "id": "story-6321a94ddf419e69a77b997d",
-      "reason": "Dear @grok, What are the only sovereign states that have ever existed in the Land of Israel?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-07T08:46:20Z",
-      "source": "x",
-      "source_published_at": "2026-08-04T14:58:01Z",
-      "source_url": "https://x.com/IsraelMFA/status/2084655100560101653",
-      "status": "x-intel",
-      "title": "Dear @grok, What are the only sovereign states that have ever existed in the Land of Israel?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-07T11:31:11Z",
+    "alerted_at": "2026-08-07T12:26:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/RUSI_org/status/2084678755948077486",
-    "title": "'The software architecture for autonomous systems will shape interoperability with allies, determine how rapidly industry can scale production during a crisis,"
+    "source_url": "https://x.com/PShannon30308/status/2085697610359157088",
+    "title": "U. S. and NATO are creating an AI- shared military network so their forces can work as one during combat operations."
   },
   "last_run": {
     "alerted_now": 1,
     "clustered": 19,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 14,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 13.885,
-      "projected_minutes_per_30d": 666.46,
+      "measured_seconds": 11.834,
+      "projected_minutes_per_30d": 568.02,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -328,7 +330,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -357,6 +359,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-07T11:31:11Z",
+  "updated_at": "2026-08-07T12:26:50Z",
   "version": 1
 }
