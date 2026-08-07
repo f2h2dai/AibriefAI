@@ -7,31 +7,6 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/HealthRanger/status/2085147115114692661"
-      ],
-      "id": "story-200187d3dd16b051cd46fbfe",
-      "reason": "Full Skynet: Why the Pentagon\u2019s AI-First Military Is a Nightmare That Threatens Humanity (new article) https://t.co/WK3PMXCerp",
-      "score": 44,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-07T14:45:28Z",
-      "source": "x",
-      "source_published_at": "2026-08-05T23:33:07Z",
-      "source_url": "https://x.com/HealthRanger/status/2085147115114692661",
-      "status": "x-intel",
-      "title": "@HealthRanger: Full Skynet: Why the Pentagon\u2019s AI-First Military Is a Nightmare That Threatens Humanity (new article) https://t.co/WK3PMXCerp",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
         "https://x.com/SteveLucier8/status/2085102810941776158"
       ],
       "id": "story-0da221fdf4d6b24fb0ac1cc7",
@@ -46,6 +21,31 @@
       "title": "The U.S./Israeli conglomerate has merged military AI that can autonomously deploy killer robots and surveil the entire planet using a network of satellites. It'",
       "webswarm_evidence_terms": [
         "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/HealthRanger/status/2085147115114692661"
+      ],
+      "id": "story-200187d3dd16b051cd46fbfe",
+      "reason": "Full Skynet: Why the Pentagon\u2019s AI-First Military Is a Nightmare That Threatens Humanity (new article) https://t.co/WK3PMXCerp",
+      "score": 44,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-07T14:45:28Z",
+      "source": "x",
+      "source_published_at": "2026-08-05T23:33:07Z",
+      "source_url": "https://x.com/HealthRanger/status/2085147115114692661",
+      "status": "x-intel",
+      "title": "@HealthRanger: Full Skynet: Why the Pentagon\u2019s AI-First Military Is a Nightmare That Threatens Humanity (new article) https://t.co/WK3PMXCerp",
+      "webswarm_evidence_terms": [
         "x.com",
         "AI",
         "military"
@@ -309,27 +309,27 @@
   "last_alert": {
     "alerted_at": "2026-08-07T14:45:28Z",
     "confidence": 0,
-    "source_url": "https://x.com/HealthRanger/status/2085147115114692661",
-    "title": "@HealthRanger: Full Skynet: Why the Pentagon\u2019s AI-First Military Is a Nightmare That Threatens Humanity (new article) https://t.co/WK3PMXCerp"
+    "source_url": "https://x.com/SteveLucier8/status/2085102810941776158",
+    "title": "The U.S./Israeli conglomerate has merged military AI that can autonomously deploy killer robots and surveil the entire planet using a network of satellites. It'"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 22,
+    "alerted_now": 0,
+    "clustered": 21,
     "collected": 25,
     "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 17.8,
-      "projected_minutes_per_30d": 854.41,
+      "measured_seconds": 10.014,
+      "projected_minutes_per_30d": 480.67,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 18,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-07T14:45:28Z",
+  "updated_at": "2026-08-07T15:37:52Z",
   "version": 1
 }
