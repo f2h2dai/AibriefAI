@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-08-07T12:35:43Z",
+  "generated_at": "2026-08-07T18:55:31Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-07T12:35:43Z",
+  "latest_successful_run": "2026-08-07T18:55:31Z",
   "highest_ranked_signal": {
-    "id": "arxiv-011",
-    "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
-    "action_score": 80.25,
-    "url": "https://arxiv.org/abs/2608.06366v1"
+    "id": "twitter-038",
+    "title": "@TechPulse24_7: Military AI risk is not one bad model. It is the full kill chain, where surveillance noise and automation can move faster than human context",
+    "action_score": 77.5,
+    "url": "https://x.com/TechPulse24_7/status/2085780827011452929"
   },
   "source_contribution": {
-    "arxiv": 4,
-    "github": 3,
-    "twitter": 5
+    "twitter": 5,
+    "github": 7
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1153"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1158"
     }
   ],
-  "runtime_seconds": 41.335,
+  "runtime_seconds": 37.715,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-07T12:35:43Z",
+    "planned_at": "2026-08-07T18:55:31Z",
     "production_threshold": 70.0
   }
 }
