@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Amar656333/status/2085788270995063055"
+      ],
+      "id": "story-7eedc60b21ff4c061bf638dd",
+      "reason": "@misraetel Its not just about surveilance. Palantir is being used in conflict areas like Gaza. Palantir fed data to Israel that was used in their AI targeting programs like \u201cLavender\u201d and \u201cWheres Daddy\u201d. Do you see a problem with AI\u2014which routinely makes mistakes\u2014influencing life",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-08T15:53:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T18:00:50Z",
+      "source_url": "https://x.com/Amar656333/status/2085788270995063055",
+      "status": "x-intel",
+      "title": "@misraetel Its not just about surveilance. Palantir is being used in conflict areas like Gaza. Palantir fed data to Israel that was used in their AI targeting p",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -295,57 +320,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/holonabove/status/2085190915035910199"
-      ],
-      "id": "story-91a9b1e30575bd7094579141",
-      "reason": "The Economy at Scale template is coming fully into view\u2026 and the Valar story carries a signal impossible to ignore... Isaiah Taylor\u2019s great grandfather literally worked on the Manhattan Project\u2026 generations later Taylor names his reactor Ward after him... The first Atomic Age unl",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-08T09:52:12Z",
-      "source": "x",
-      "source_published_at": "2026-08-06T02:27:09Z",
-      "source_url": "https://x.com/holonabove/status/2085190915035910199",
-      "status": "x-intel",
-      "title": "The Economy at Scale template is coming fully into view\u2026 and the Valar story carries a signal impossible to ignore... Isaiah Taylor\u2019s great grandfather literall",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons",
-        "defense"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-08T15:20:30Z",
+    "alerted_at": "2026-08-08T15:53:51Z",
     "confidence": 0,
-    "source_url": "https://x.com/aprajitanefes/status/2085975467237290151",
-    "title": "\ud83c\uddee\ud83c\uddf3\ud83e\ude78| #India | The Pune, Maharashtra Exercise Was No Drill, It Was a Rehearsal for Occupation They told you it was a \"joint counter-terrorism exercise\" the 8th i"
+    "source_url": "https://x.com/Amar656333/status/2085788270995063055",
+    "title": "@misraetel Its not just about surveilance. Palantir is being used in conflict areas like Gaza. Palantir fed data to Israel that was used in their AI targeting p"
   },
   "last_run": {
     "alerted_now": 1,
     "clustered": 20,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.709,
-      "projected_minutes_per_30d": 322.02,
+      "measured_seconds": 5.839,
+      "projected_minutes_per_30d": 280.29,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -359,7 +359,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -388,6 +388,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T15:20:30Z",
+  "updated_at": "2026-08-08T15:53:51Z",
   "version": 1
 }
