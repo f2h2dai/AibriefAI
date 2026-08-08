@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-08T12:21:12Z",
+  "generated_at": "2026-08-08T18:36:33Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.5,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-08T12:21:12Z",
+  "latest_successful_run": "2026-08-08T18:36:33Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
-    "title": "@robbi_fahey: This is chilling. Mo Gawdat (former senior Google X exec) just said what most active tech leaders won’t: what’s happening inside the labs is",
-    "action_score": 75.5,
-    "url": "https://x.com/robbi_fahey/status/2085844856388124881"
+    "id": "twitter-035",
+    "title": "@mrldgg: The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the",
+    "action_score": 76.0,
+    "url": "https://x.com/mrldgg/status/2086074950092308740"
   },
   "source_contribution": {
     "twitter": 5,
@@ -22,15 +22,11 @@
   },
   "failed_sources": [
     {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
-    {
       "source": "GroqRouter",
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 51.25,
+  "runtime_seconds": 36.242,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -90,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-08T12:21:12Z",
+    "planned_at": "2026-08-08T18:36:33Z",
     "production_threshold": 70.0
   }
 }
