@@ -7,6 +7,55 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/mrldgg/status/2085712561710756065"
+      ],
+      "id": "story-10ff5abd2d22d3d0496e7732",
+      "reason": "I served with Marine Colonel Drew Cukor before the Pentagon tapped him to lead Project Maven. Knowing his intellect and intensity, I followed the program closely. When Katrina Manson's book came out telling Maven's story from the inside, it went straight to the top of my reading ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-08T18:55:52Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T13:00:00Z",
+      "source_url": "https://x.com/mrldgg/status/2085712561710756065",
+      "status": "x-intel",
+      "title": "I served with Marine Colonel Drew Cukor before the Pentagon tapped him to lead Project Maven. Knowing his intellect and intensity, I followed the program closel",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/grok/status/2085931545659949481"
+      ],
+      "id": "story-e1d43067f67c4b4b5ee0ef69",
+      "reason": "Imagine Image 2.0 ranks #2 in the world for both text-to-image generation and image editing. Source: Arena https://t.co/SXAwsCzMD3",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-08T18:55:52Z",
+      "source": "x",
+      "source_published_at": "2026-08-08T18:36:33Z",
+      "source_url": "https://x.com/grok/status/2085931545659949481",
+      "status": "x-intel",
+      "title": "@grok: Imagine Image 2.0 ranks #2 in the world for both text-to-image generation and image editing. Source: Arena https://t.co/SXAwsCzMD3",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/GDGriffin/status/2085540498312142905"
       ],
       "id": "story-5191e69e627aaced92d9b6ad",
@@ -266,79 +315,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2085931542262526102"
-      ],
-      "id": "story-6cec74827439662c43e630d4",
-      "reason": "Announcing Imagine Image 2.0, our next generation image model with precision editing, crisp text rendering, improved factuality, and real world usefulness. Image 2.0 helps you make images for real work. https://t.co/y423lvT7mL",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-08T12:26:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T12:21:12Z",
-      "source_url": "https://x.com/grok/status/2085931542262526102",
-      "status": "x-intel",
-      "title": "@grok: Announcing Imagine Image 2.0, our next generation image model with precision editing, crisp text rendering, improved factuality, and real wo",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/mrajshekhar/status/2085952060957299033"
-      ],
-      "id": "story-940e5195d1bb8fb4755c0047",
-      "reason": "BOOK RECCO. Reading about the rising use of #AI in #warfare (like https://t.co/oDO7QZEMeK) and want to understand things better? Pick up \"Project Maven\" by @KatrinaManson. She looks at how the Pentagon went all-in on AI and weapons. A review here: https://t.co/QxwVtBdttP",
-      "score": 42,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-08T12:26:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T12:21:12Z",
-      "source_url": "https://x.com/mrajshekhar/status/2085952060957299033",
-      "status": "x-intel",
-      "title": "@mrajshekhar: BOOK RECCO. Reading about the rising use of #AI in #warfare (like https://t.co/oDO7QZEMeK) and want to understand things better? Pick up \"Pr",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "Pentagon"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-08T18:02:10Z",
+    "alerted_at": "2026-08-08T18:55:52Z",
     "confidence": 0,
-    "source_url": "https://x.com/GDGriffin/status/2085540498312142905",
-    "title": "Project Maven, it's a book recommended to me, details AI and its future use in War. @wiseronenow2"
+    "source_url": "https://x.com/mrldgg/status/2085712561710756065",
+    "title": "I served with Marine Colonel Drew Cukor before the Pentagon tapped him to lead Project Maven. Knowing his intellect and intensity, I followed the program closel"
   },
   "last_run": {
-    "alerted_now": 1,
-    "clustered": 17,
+    "alerted_now": 2,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.119,
-      "projected_minutes_per_30d": 293.69,
+      "measured_seconds": 4.859,
+      "projected_minutes_per_30d": 233.24,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -352,7 +354,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,11 +378,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T18:02:10Z",
+  "updated_at": "2026-08-08T18:55:52Z",
   "version": 1
 }
