@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/LiJiang0510/status/2085821662348603596"
+      ],
+      "id": "story-fdce14eaa64eb925d96c2607",
+      "reason": "Civilian Protection in the Age of Military AI: What Congress\u2019s New Legislative Proposals Reveal About Emerging Safeguards at https://t.co/NqdHiD0q0O",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-08T19:50:37Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T20:13:31Z",
+      "source_url": "https://x.com/LiJiang0510/status/2085821662348603596",
+      "status": "x-intel",
+      "title": "Civilian Protection in the Age of Military AI: What Congress\u2019s New Legislative Proposals Reveal About Emerging Safeguards at https://t.co/NqdHiD0q0O",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/mrldgg/status/2086074950092308740"
@@ -288,43 +314,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/sama/status/2085862292311396515"
-      ],
-      "id": "story-210ae07e6aecd420a2c598cc",
-      "reason": "astra is a powerful model and we are working to make it generally available. we do not think it is a good strategy to keep powerful models to a chosen few. given its cyber capabilities, we need a little big longer to do do this safely. but hopefully not too long!",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-08T12:26:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T12:21:12Z",
-      "source_url": "https://x.com/sama/status/2085862292311396515",
-      "status": "x-intel",
-      "title": "@sama: astra is a powerful model and we are working to make it generally available. we do not think it is a good strategy to keep powerful models t",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-08T19:22:34Z",
+    "alerted_at": "2026-08-08T19:50:37Z",
     "confidence": 0,
-    "source_url": "https://x.com/mrldgg/status/2086074950092308740",
-    "title": "@mrldgg: The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the"
+    "source_url": "https://x.com/LiJiang0510/status/2085821662348603596",
+    "title": "Civilian Protection in the Age of Military AI: What Congress\u2019s New Legislative Proposals Reveal About Emerging Safeguards at https://t.co/NqdHiD0q0O"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 20,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -336,8 +338,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.247,
-      "projected_minutes_per_30d": 347.88,
+      "measured_seconds": 6.945,
+      "projected_minutes_per_30d": 333.36,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -351,7 +353,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -380,6 +382,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T19:22:34Z",
+  "updated_at": "2026-08-08T19:50:37Z",
   "version": 1
 }
