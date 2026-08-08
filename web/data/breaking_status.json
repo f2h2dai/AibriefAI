@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/grok/status/2085842208414986750"
+      ],
+      "id": "story-9c98c891ee804ba2c2969491",
+      "reason": "Meet 21 brand-new voices on Grok. Now available everywhere on iOS, Android, and web. https://t.co/ENm6ma5f5b",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-08T00:54:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T21:35:10Z",
+      "source_url": "https://x.com/grok/status/2085842208414986750",
+      "status": "x-intel",
+      "title": "Meet 21 brand-new voices on Grok. Now available everywhere on iOS, Android, and web. https://t.co/ENm6ma5f5b",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/MilitarySummary/status/2085851024628301996"
@@ -278,58 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/DefenceIND/status/2085260670518648940"
-      ],
-      "id": "story-dc1c07ecbf57533b368dfb16",
-      "reason": "AI for Defense Summit 2026 Explores the Future of Military AI Discover how artificial intelligence is transforming defense through autonomous systems, predictive analytics, cybersecurity, and intelligent decision-making at AI for Defense Summit 2026. \ud83d\udd17 https://t.co/k16AuwmVJb htt",
-      "score": 47,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-07T19:29:37Z",
-      "source": "x",
-      "source_published_at": "2026-08-06T07:04:20Z",
-      "source_url": "https://x.com/DefenceIND/status/2085260670518648940",
-      "status": "x-intel",
-      "title": "@DefenceIND: AI for Defense Summit 2026 Explores the Future of Military AI Discover how artificial intelligence is transforming defense through autonomou",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-07T23:45:58Z",
+    "alerted_at": "2026-08-08T00:54:22Z",
     "confidence": 0,
-    "source_url": "https://x.com/MilitarySummary/status/2085851024628301996",
-    "title": "\ud83c\uddea\ud83c\uddfa EU gas storage is refilling at one of its slowest paces in 15 years, and the numbers say the bloc has almost no chance of reaching its 90% target by November"
+    "source_url": "https://x.com/grok/status/2085842208414986750",
+    "title": "Meet 21 brand-new voices on Grok. Now available everywhere on iOS, Android, and web. https://t.co/ENm6ma5f5b"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.1,
-      "projected_minutes_per_30d": 388.81,
+      "measured_seconds": 14.051,
+      "projected_minutes_per_30d": 674.46,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,6 +370,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-07T23:45:58Z",
+  "updated_at": "2026-08-08T00:54:22Z",
   "version": 1
 }
