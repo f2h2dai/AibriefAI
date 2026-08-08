@@ -4,6 +4,54 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/ConsultorSten/status/2085370802115887236"
+      ],
+      "id": "story-b90090cd1b87d5cc30d7244a",
+      "reason": "Anduril CEO says AI and autonomous weapons will reshape modern warfare https://t.co/ZWVgiTgUru",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-08T11:25:17Z",
+      "source": "x",
+      "source_published_at": "2026-08-06T14:21:58Z",
+      "source_url": "https://x.com/ConsultorSten/status/2085370802115887236",
+      "status": "x-intel",
+      "title": "Anduril CEO says AI and autonomous weapons will reshape modern warfare https://t.co/ZWVgiTgUru",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/CatholicCurrent/status/2085474162672296285"
+      ],
+      "id": "story-0cc74c5b8452080ca17a7a76",
+      "reason": "We welcome back political commentator and friend of the show Bill Whittle to discuss the rise of autonomous weapons and the growing role of artificial intelligence in war. As the human role in combat continues to shrink, what becomes of accountability, restraint, and mercy? https",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-08T10:57:42Z",
+      "source": "x",
+      "source_published_at": "2026-08-06T21:12:41Z",
+      "source_url": "https://x.com/CatholicCurrent/status/2085474162672296285",
+      "status": "x-intel",
+      "title": "We welcome back political commentator and friend of the show Bill Whittle to discuss the rise of autonomous weapons and the growing role of artificial intellige",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -31,30 +79,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/CatholicCurrent/status/2085474162672296285"
-      ],
-      "id": "story-0cc74c5b8452080ca17a7a76",
-      "reason": "We welcome back political commentator and friend of the show Bill Whittle to discuss the rise of autonomous weapons and the growing role of artificial intelligence in war. As the human role in combat continues to shrink, what becomes of accountability, restraint, and mercy? https",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-08T10:57:42Z",
-      "source": "x",
-      "source_published_at": "2026-08-06T21:12:41Z",
-      "source_url": "https://x.com/CatholicCurrent/status/2085474162672296285",
-      "status": "x-intel",
-      "title": "We welcome back political commentator and friend of the show Bill Whittle to discuss the rise of autonomous weapons and the growing role of artificial intellige",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -291,55 +315,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/NickJDoucette/status/2085882432549491163"
-      ],
-      "id": "story-08d9a46eb65607a51e4e543e",
-      "reason": "@grok @gator_gum @grok, so in a kind of funny ironic way, its Donald Trump doing that led to much of Canada's growth in Q2?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-08T04:05:14Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T00:15:00Z",
-      "source_url": "https://x.com/NickJDoucette/status/2085882432549491163",
-      "status": "x-intel",
-      "title": "@grok @gator_gum @grok, so in a kind of funny ironic way, its Donald Trump doing that led to much of Canada's growth in Q2?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-08T10:57:42Z",
+    "alerted_at": "2026-08-08T11:25:17Z",
     "confidence": 0,
-    "source_url": "https://x.com/ForIntOrg/status/2085986062707609993",
-    "title": "Anthony Vinci ran technology strategy at the National Geospatial-Intelligence Agency. He knows what it looks like when a government monopoly ends. In August 202"
+    "source_url": "https://x.com/ConsultorSten/status/2085370802115887236",
+    "title": "Anduril CEO says AI and autonomous weapons will reshape modern warfare https://t.co/ZWVgiTgUru"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 21,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.751,
-      "projected_minutes_per_30d": 372.03,
+      "measured_seconds": 8.117,
+      "projected_minutes_per_30d": 389.63,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -353,7 +354,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -377,11 +378,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T10:57:42Z",
+  "updated_at": "2026-08-08T11:25:17Z",
   "version": 1
 }
