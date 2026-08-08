@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/MapmyIndia/status/2084900150175248719"
+      ],
+      "id": "story-7d07480f65bdaf3188505a78",
+      "reason": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the power of geospatial intelligence, and how MapmyIndia is building the next generation of location intelligent products, plat",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-08T05:54:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-05T07:11:46Z",
+      "source_url": "https://x.com/MapmyIndia/status/2084900150175248719",
+      "status": "x-intel",
+      "title": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the pow",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -24,30 +48,6 @@
         "geospatial",
         "geospatial intelligence",
         "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/MapmyIndia/status/2084900150175248719"
-      ],
-      "id": "story-7d07480f65bdaf3188505a78",
-      "reason": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the power of geospatial intelligence, and how MapmyIndia is building the next generation of location intelligent products, plat",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-08T05:54:19Z",
-      "source": "x",
-      "source_published_at": "2026-08-05T07:11:46Z",
-      "source_url": "https://x.com/MapmyIndia/status/2084900150175248719",
-      "status": "x-intel",
-      "title": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the pow",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
@@ -312,27 +312,27 @@
   "last_alert": {
     "alerted_at": "2026-08-08T05:54:19Z",
     "confidence": 0,
-    "source_url": "https://x.com/osint42/status/2085867079081865595",
-    "title": "OSINT TERM #1 : GEOINT GEOINT (Geospatial Intelligence) is the process of extracting intelligence from geographic information, such as satellite imagery, maps,"
+    "source_url": "https://x.com/MapmyIndia/status/2084900150175248719",
+    "title": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the pow"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 20,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.99,
-      "projected_minutes_per_30d": 287.54,
+      "measured_seconds": 7.632,
+      "projected_minutes_per_30d": 366.36,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T05:54:19Z",
+  "updated_at": "2026-08-08T06:35:19Z",
   "version": 1
 }
