@@ -5,30 +5,6 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/splashstarx/status/2085638508304027885"
-      ],
-      "id": "story-e468d55afd4fac591997ebe7",
-      "reason": "\ud83d\udd25 A federal judge blocked the Pentagon from labeling Anthropic a \"supply-chain risk,\" halting Trump's ban on federal use of its AI. Read more: https://t.co/4aCVDHWBWB #TechNews #BreakingNews https://t.co/YjLNujZEG9",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-08T17:00:22Z",
-      "source": "x",
-      "source_published_at": "2026-08-07T08:05:44Z",
-      "source_url": "https://x.com/splashstarx/status/2085638508304027885",
-      "status": "x-intel",
-      "title": "\ud83d\udd25 A federal judge blocked the Pentagon from labeling Anthropic a \"supply-chain risk,\" halting Trump's ban on federal use of its AI. Read more: https://t.co/4aCV",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/mrldgg/status/2086074950092308740"
@@ -48,6 +24,30 @@
         "x.com",
         "AI",
         "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/splashstarx/status/2085638508304027885"
+      ],
+      "id": "story-e468d55afd4fac591997ebe7",
+      "reason": "\ud83d\udd25 A federal judge blocked the Pentagon from labeling Anthropic a \"supply-chain risk,\" halting Trump's ban on federal use of its AI. Read more: https://t.co/4aCVDHWBWB #TechNews #BreakingNews https://t.co/YjLNujZEG9",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-08T17:00:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T08:05:44Z",
+      "source_url": "https://x.com/splashstarx/status/2085638508304027885",
+      "status": "x-intel",
+      "title": "\ud83d\udd25 A federal judge blocked the Pentagon from labeling Anthropic a \"supply-chain risk,\" halting Trump's ban on federal use of its AI. Read more: https://t.co/4aCV",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -317,27 +317,27 @@
   "last_alert": {
     "alerted_at": "2026-08-08T17:00:22Z",
     "confidence": 0,
-    "source_url": "https://x.com/splashstarx/status/2085638508304027885",
-    "title": "\ud83d\udd25 A federal judge blocked the Pentagon from labeling Anthropic a \"supply-chain risk,\" halting Trump's ban on federal use of its AI. Read more: https://t.co/4aCV"
+    "source_url": "https://x.com/mrldgg/status/2086074950092308740",
+    "title": "The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the process entirely. E"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.699,
-      "projected_minutes_per_30d": 369.54,
+      "measured_seconds": 88.666,
+      "projected_minutes_per_30d": 4255.98,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -351,7 +351,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -375,11 +375,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T17:00:22Z",
+  "updated_at": "2026-08-08T17:34:34Z",
   "version": 1
 }
