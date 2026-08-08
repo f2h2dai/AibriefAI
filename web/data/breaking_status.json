@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/mrldgg/status/2086074950092308740"
+      ],
+      "id": "story-eccf0eab767d1535d0a1e032",
+      "reason": "The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the process entirely. Eight months after its creation, AI-enabled computer vision was operating in combat, refined by operator feedback instead",
+      "score": 48,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-08T19:22:34Z",
+      "source": "x",
+      "source_published_at": "2026-08-08T18:36:33Z",
+      "source_url": "https://x.com/mrldgg/status/2086074950092308740",
+      "status": "x-intel",
+      "title": "@mrldgg: The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/mrldgg/status/2085712561710756065"
       ],
       "id": "story-10ff5abd2d22d3d0496e7732",
@@ -286,61 +312,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 4,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/PShannon30308/status/2086062495295275361",
-        "https://x.com/robbi_fahey/status/2085844856388124881",
-        "https://x.com/CIGIonline/status/2085377917169676636",
-        "https://x.com/Skoorbkaz/status/2085381600645087592"
-      ],
-      "id": "story-283b8a923fb44b11edfcf82b",
-      "reason": "Every autonomous weapons system can be understood as a bounded decision structure. Regardless of platform or mission, it takes in information from its environment, operates within defined controls, produces actions, and is evaluated against measurable outcomes. The specifics vary",
-      "score": 93,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-08T12:26:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T12:10:30Z",
-      "source_url": "https://x.com/PShannon30308/status/2086062495295275361",
-      "status": "x-intel",
-      "title": "Every autonomous weapons system can be understood as a bounded decision structure. Regardless of platform or mission, it takes in information from its environme",
-      "webswarm_evidence_terms": [
-        "DoD",
-        "autonomous weapons",
-        "targeting",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-08T18:55:52Z",
+    "alerted_at": "2026-08-08T19:22:34Z",
     "confidence": 0,
-    "source_url": "https://x.com/mrldgg/status/2085712561710756065",
-    "title": "I served with Marine Colonel Drew Cukor before the Pentagon tapped him to lead Project Maven. Knowing his intellect and intensity, I followed the program closel"
+    "source_url": "https://x.com/mrldgg/status/2086074950092308740",
+    "title": "@mrldgg: The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.859,
-      "projected_minutes_per_30d": 233.24,
+      "measured_seconds": 7.247,
+      "projected_minutes_per_30d": 347.88,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -354,7 +351,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -378,11 +375,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T18:55:52Z",
+  "updated_at": "2026-08-08T19:22:34Z",
   "version": 1
 }
