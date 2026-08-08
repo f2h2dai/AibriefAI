@@ -5,26 +5,26 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "source-only",
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/MapmyIndia/status/2084900150175248719"
+        "https://x.com/YIYONG19680604/status/2085442623586947265"
       ],
-      "id": "story-7d07480f65bdaf3188505a78",
-      "reason": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the power of geospatial intelligence, and how MapmyIndia is building the next generation of location intelligent products, plat",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-08T05:54:19Z",
+      "id": "story-2414eb81c36bc9fd27218781",
+      "reason": "@NBCNews AI-powered indoor facial recognition blurs the line between surveillance and lethal strikes, eroding the ethical red line for autonomous weapons.",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-08T07:34:21Z",
       "source": "x",
-      "source_published_at": "2026-08-05T07:11:46Z",
-      "source_url": "https://x.com/MapmyIndia/status/2084900150175248719",
+      "source_published_at": "2026-08-06T19:07:21Z",
+      "source_url": "https://x.com/YIYONG19680604/status/2085442623586947265",
       "status": "x-intel",
-      "title": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the pow",
+      "title": "@NBCNews AI-powered indoor facial recognition blurs the line between surveillance and lethal strikes, eroding the ethical red line for autonomous weapons.",
       "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
+        "autonomous weapons",
+        "weapons"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -310,29 +310,29 @@
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-08T05:54:19Z",
+    "alerted_at": "2026-08-08T07:34:21Z",
     "confidence": 0,
-    "source_url": "https://x.com/MapmyIndia/status/2084900150175248719",
-    "title": "Watch @_rohanverma , Joint Managing Director, MapmyIndia, live on @ETNOWlive's All About Your Company as he shares insights on India's AI-native future, the pow"
+    "source_url": "https://x.com/YIYONG19680604/status/2085442623586947265",
+    "title": "@NBCNews AI-powered indoor facial recognition blurs the line between surveillance and lethal strikes, eroding the ethical red line for autonomous weapons."
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 23,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.632,
-      "projected_minutes_per_30d": 366.36,
+      "measured_seconds": 9.216,
+      "projected_minutes_per_30d": 442.38,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-08T06:35:19Z",
+  "updated_at": "2026-08-08T07:34:21Z",
   "version": 1
 }
