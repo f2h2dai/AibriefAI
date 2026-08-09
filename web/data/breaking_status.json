@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/_rygo6/status/2085633984785260893"
+      ],
+      "id": "story-02ef32deb6db76e10fd88d8e",
+      "reason": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the realm of AI and the web better than anything else I can think of. https://t.co/PBAq2CZdTZ",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-09T09:42:21Z",
+      "source": "x",
+      "source_published_at": "2026-08-07T07:47:45Z",
+      "source_url": "https://x.com/_rygo6/status/2085633984785260893",
+      "status": "x-intel",
+      "title": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/_rygo6/status/2086359880659820944"
       ],
       "id": "story-55149370a1a5f04a8d920d47",
@@ -24,30 +48,6 @@
         "x.com",
         "AI",
         "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/_rygo6/status/2085633984785260893"
-      ],
-      "id": "story-02ef32deb6db76e10fd88d8e",
-      "reason": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the realm of AI and the web better than anything else I can think of. https://t.co/PBAq2CZdTZ",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-09T09:42:21Z",
-      "source": "x",
-      "source_published_at": "2026-08-07T07:47:45Z",
-      "source_url": "https://x.com/_rygo6/status/2085633984785260893",
-      "status": "x-intel",
-      "title": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -314,27 +314,27 @@
   "last_alert": {
     "alerted_at": "2026-08-09T09:42:21Z",
     "confidence": 0,
-    "source_url": "https://x.com/_rygo6/status/2086359880659820944",
-    "title": "... but it is what's happening? Don't you think? The particular part of this segment I always liked is that it answers a question I always asked. Which is, why"
+    "source_url": "https://x.com/_rygo6/status/2085633984785260893",
+    "title": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.999,
-      "projected_minutes_per_30d": 239.95,
+      "measured_seconds": 7.703,
+      "projected_minutes_per_30d": 369.75,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +348,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T09:42:21Z",
+  "updated_at": "2026-08-09T10:15:32Z",
   "version": 1
 }
