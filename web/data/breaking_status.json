@@ -4,6 +4,34 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2086410102530060373",
+        "https://x.com/MizarVision/status/2085397388076736790"
+      ],
+      "id": "story-28d3c5013bd0473aa555b904",
+      "reason": "High-resolution satellite imagery appears to show that a Russian Volna Kupol Garant electronic warfare system deployed near Gelendzhik, Krasnodar Krai, was destroyed or severely damaged in a Ukrainian strike. The system is specifically designed to disrupt Starlink satellite commu",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-09T11:31:12Z",
+      "source": "x",
+      "source_published_at": "2026-08-09T11:11:46Z",
+      "source_url": "https://x.com/MizarVision/status/2086410102530060373",
+      "status": "x-intel",
+      "title": "High-resolution satellite imagery appears to show that a Russian Volna Kupol Garant electronic warfare system deployed near Gelendzhik, Krasnodar Krai, was dest",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "military",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -282,59 +310,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/DailyAIWireNews/status/2086121754888409496",
-        "https://x.com/PShannon30308/status/2086062495295275361",
-        "https://x.com/robbi_fahey/status/2085844856388124881"
-      ],
-      "id": "story-81980350ecc1f79c69497e50",
-      "reason": "https://t.co/yloPfhzigY AI's Dual Nature: Authoritarian Tool vs. Societal Benefit AI can amplify disinformation and autonomous weapons while concentrating power, making democratic safeguards and responsible regulation urgent. #AI #Ethics #AISafety",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-08T23:51:22Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T16:05:59Z",
-      "source_url": "https://x.com/DailyAIWireNews/status/2086121754888409496",
-      "status": "x-intel",
-      "title": "https://t.co/yloPfhzigY AI's Dual Nature: Authoritarian Tool vs. Societal Benefit AI can amplify disinformation and autonomous weapons while concentrating power",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "targeting",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-09T09:42:21Z",
+    "alerted_at": "2026-08-09T11:31:12Z",
     "confidence": 0,
-    "source_url": "https://x.com/_rygo6/status/2085633984785260893",
-    "title": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the"
+    "source_url": "https://x.com/MizarVision/status/2086410102530060373",
+    "title": "High-resolution satellite imagery appears to show that a Russian Volna Kupol Garant electronic warfare system deployed near Gelendzhik, Krasnodar Krai, was dest"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 17,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 13,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.605,
-      "projected_minutes_per_30d": 413.03,
+      "measured_seconds": 8.86,
+      "projected_minutes_per_30d": 425.28,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +349,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,11 +373,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T10:59:36Z",
+  "updated_at": "2026-08-09T11:31:12Z",
   "version": 1
 }
