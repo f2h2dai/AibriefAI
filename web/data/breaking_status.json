@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Daseingram/status/2086506086534709722"
+      ],
+      "id": "story-0b6f82c44c6261263751da45",
+      "reason": "\ud83c\udf1f \ud83c\udf0d IDENTITY IS BECOMING LOCATION-AWARE. The next generation of security won\u2019t rely on a single signal. It will combine who you are with where you are. Biometrics. Geospatial intelligence. AI. Location data. Digital identity. From secure borders and smart cities to financial secu",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-09T20:59:38Z",
+      "source": "x",
+      "source_published_at": "2026-08-09T17:33:11Z",
+      "source_url": "https://x.com/Daseingram/status/2086506086534709722",
+      "status": "x-intel",
+      "title": "\ud83c\udf1f \ud83c\udf0d IDENTITY IS BECOMING LOCATION-AWARE. The next generation of security won\u2019t rely on a single signal. It will combine who you are with where you are. Biometri",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/mow1186293_mow/status/2086442294702383419"
@@ -26,30 +50,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Daseingram/status/2086506086534709722"
-      ],
-      "id": "story-0b6f82c44c6261263751da45",
-      "reason": "\ud83c\udf1f \ud83c\udf0d IDENTITY IS BECOMING LOCATION-AWARE. The next generation of security won\u2019t rely on a single signal. It will combine who you are with where you are. Biometrics. Geospatial intelligence. AI. Location data. Digital identity. From secure borders and smart cities to financial secu",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-09T20:59:38Z",
-      "source": "x",
-      "source_published_at": "2026-08-09T17:33:11Z",
-      "source_url": "https://x.com/Daseingram/status/2086506086534709722",
-      "status": "x-intel",
-      "title": "\ud83c\udf1f \ud83c\udf0d IDENTITY IS BECOMING LOCATION-AWARE. The next generation of security won\u2019t rely on a single signal. It will combine who you are with where you are. Biometri",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     },
     {
       "confidence": 0,
@@ -316,27 +316,27 @@
   "last_alert": {
     "alerted_at": "2026-08-09T20:59:38Z",
     "confidence": 0,
-    "source_url": "https://x.com/mow1186293_mow/status/2086442294702383419",
-    "title": "\u305d\u308c\u306f\u76e3\u8996\u30b7\u30b9\u30c6\u30e0\u3067\u3042\u308a\u3001 \u5175\u5668\u30b7\u30b9\u30c6\u30e0\u3067\u3042\u308a\u3001 \u901a\u4fe1\u30b7\u30b9\u30c6\u30e0\u3067\u3059\u3002 \u4eba\u5de5\u77e5\u80fd\u3001\u96fb\u78c1\u6c17\u5b66\u3001\u30d1\u30bf\u30fc\u30f3\u8a8d\u8b58\u3001 \u6570\u5b66\u3001\u4eba\u4f53\u89e3\u5256\u5b66\u306e\u4ea4\u5dee\u70b9\u3067\u69cb\u7bc9\u3055\u308c\u305f\u3082\u306e\u3067\u3059\u3002 \u305d\u308c\u306f\u3001\u4f55\u5341\u5104\u3082\u306e\u30c7\u30fc\u30bf\u30dd\u30a4\u30f3\u30c8\u306e\u7523\u7269\u3067\u3042\u308a\u3001\u3055\u3082\u306a\u3051\u308c\u3070\u898b\u904e\u3054\u3055\u308c\u3066\u3057\u307e\u3046\u30b7\u30b0\u30ca\u30eb\u3084\u30d1\u30bf\u30fc\u30f3\u3092 \u691c\u51fa\u3059\u308b\u80fd\u529b\u3068\u7d50\u3073\u3064\u3044\u3066\u3044\u307e\u3059\u3002 \u305d\u308c\u306f\u3001\u516c\u8846\u306e\u8996\u754c\u304b\u3089\u96a0\u3055\u308c\u3066\u3044\u308b"
+    "source_url": "https://x.com/Daseingram/status/2086506086534709722",
+    "title": "\ud83c\udf1f \ud83c\udf0d IDENTITY IS BECOMING LOCATION-AWARE. The next generation of security won\u2019t rely on a single signal. It will combine who you are with where you are. Biometri"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 22,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.523,
-      "projected_minutes_per_30d": 457.11,
+      "measured_seconds": 15.153,
+      "projected_minutes_per_30d": 727.34,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -350,7 +350,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -374,11 +374,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T20:59:38Z",
+  "updated_at": "2026-08-09T21:34:10Z",
   "version": 1
 }
