@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/schitzoziris/status/2086398129973375246"
+      ],
+      "id": "story-dca7efb63463541eb5a0bc26",
+      "reason": "The USA #AFRICOM is using #Africa as a Testing Ground for AI \ud83e\udd16 Autonomous Weapons ! They don\u2019t mention the Terrorists they mention are USA Privatised Military #Blackwater #ISIS #BokoHaram etc etc https://t.co/JqOM3Imhrs",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-09T12:01:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-09T10:24:12Z",
+      "source_url": "https://x.com/schitzoziris/status/2086398129973375246",
+      "status": "x-intel",
+      "title": "The USA #AFRICOM is using #Africa as a Testing Ground for AI \ud83e\udd16 Autonomous Weapons ! They don\u2019t mention the Terrorists they mention are USA Privatised Military #",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -286,56 +311,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/AJLUnited/status/2086227400090694135"
-      ],
-      "id": "story-294d9e61c50d9eb929e5d747",
-      "reason": "\u2753 How can we break through bias to make AI systems more inclusive? This thought-provoking question from a @BowdoinCollege freshman got Dr. Joy (@jovialjoy) thinking about the consequences not only of exclusion from new technologies \u2013 but also inclusion. The most accurate AI syste",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-08T23:51:22Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T23:05:47Z",
-      "source_url": "https://x.com/AJLUnited/status/2086227400090694135",
-      "status": "x-intel",
-      "title": "\u2753 How can we break through bias to make AI systems more inclusive? This thought-provoking question from a @BowdoinCollege freshman got Dr. Joy (@jovialjoy) thin",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-09T11:31:12Z",
+    "alerted_at": "2026-08-09T12:01:19Z",
     "confidence": 0,
-    "source_url": "https://x.com/MizarVision/status/2086410102530060373",
-    "title": "High-resolution satellite imagery appears to show that a Russian Volna Kupol Garant electronic warfare system deployed near Gelendzhik, Krasnodar Krai, was dest"
+    "source_url": "https://x.com/schitzoziris/status/2086398129973375246",
+    "title": "The USA #AFRICOM is using #Africa as a Testing Ground for AI \ud83e\udd16 Autonomous Weapons ! They don\u2019t mention the Terrorists they mention are USA Privatised Military #"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 13,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.86,
-      "projected_minutes_per_30d": 425.28,
+      "measured_seconds": 84.137,
+      "projected_minutes_per_30d": 4038.56,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -349,7 +350,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -378,6 +379,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T11:31:12Z",
+  "updated_at": "2026-08-09T12:01:19Z",
   "version": 1
 }
