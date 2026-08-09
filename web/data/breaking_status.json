@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/the_piaz/status/2086496785338372553"
+      ],
+      "id": "story-fa62693a2fdf60e7048ae55a",
+      "reason": "The history of American targeting practices in this conflict is grim. Programs like Maven, developed with Palantir, used AI for targeting, leading to devastating war crimes. #WarCrimes #AI #Targeting https://t.co/fC6FmNXfVD",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-09T17:55:29Z",
+      "source": "x",
+      "source_published_at": "2026-08-09T16:56:13Z",
+      "source_url": "https://x.com/the_piaz/status/2086496785338372553",
+      "status": "x-intel",
+      "title": "The history of American targeting practices in this conflict is grim. Programs like Maven, developed with Palantir, used AI for targeting, leading to devastatin",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/PShannon30308/status/2086500261762060552"
@@ -287,47 +311,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2086410102530060373",
-        "https://x.com/MizarVision/status/2085397388076736790"
-      ],
-      "id": "story-28d3c5013bd0473aa555b904",
-      "reason": "High-resolution satellite imagery appears to show that a Russian Volna Kupol Garant electronic warfare system deployed near Gelendzhik, Krasnodar Krai, was destroyed or severely damaged in a Ukrainian strike. The system is specifically designed to disrupt Starlink satellite commu",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-09T11:31:12Z",
-      "source": "x",
-      "source_published_at": "2026-08-09T11:11:46Z",
-      "source_url": "https://x.com/MizarVision/status/2086410102530060373",
-      "status": "x-intel",
-      "title": "High-resolution satellite imagery appears to show that a Russian Volna Kupol Garant electronic warfare system deployed near Gelendzhik, Krasnodar Krai, was dest",
-      "webswarm_evidence_terms": [
-        "AI",
-        "MizarVision",
-        "military",
-        "satellite imagery",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-09T17:21:55Z",
+    "alerted_at": "2026-08-09T17:55:29Z",
     "confidence": 0,
-    "source_url": "https://x.com/PShannon30308/status/2086500261762060552",
-    "title": "On Requirements: The Beginning Read about autonomous systems and the conversation quickly turns to technology -- Artificial intelligence. Sensors. Drones. Robot"
+    "source_url": "https://x.com/the_piaz/status/2086496785338372553",
+    "title": "The history of American targeting practices in this conflict is grim. Programs like Maven, developed with Palantir, used AI for targeting, leading to devastatin"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 19,
+    "clustered": 21,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -339,8 +335,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.443,
-      "projected_minutes_per_30d": 549.26,
+      "measured_seconds": 9.263,
+      "projected_minutes_per_30d": 444.64,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -354,7 +350,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -383,6 +379,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T17:21:55Z",
+  "updated_at": "2026-08-09T17:55:29Z",
   "version": 1
 }
