@@ -163,29 +163,6 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2085375503343530352"
-      ],
-      "id": "story-f7f40a0fe94efa054bf269c4",
-      "reason": "Navy creates new robotic and autonomous systems DRPM https://t.co/jBm7Qq4ewc",
-      "score": 39,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-09T13:12:57Z",
-      "source": "x",
-      "source_published_at": "2026-08-06T14:40:39Z",
-      "source_url": "https://x.com/BreakingDefense/status/2085375503343530352",
-      "status": "x-intel",
-      "title": "@BreakingDefense: Navy creates new robotic and autonomous systems DRPM https://t.co/jBm7Qq4ewc",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/schitzoziris/status/2086398129973375246"
@@ -311,6 +288,30 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/AnanjanN/status/2086226500819313101"
+      ],
+      "id": "story-142c45a45f814bee141e7a9a",
+      "reason": "So not only are autonomous weapons an authoritarian threat, they could also potentially be jailbroken to do pretty much anything in the future. Yay!",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-09T08:01:31Z",
+      "source": "x",
+      "source_published_at": "2026-08-08T23:02:12Z",
+      "source_url": "https://x.com/AnanjanN/status/2086226500819313101",
+      "status": "x-intel",
+      "title": "So not only are autonomous weapons an authoritarian threat, they could also potentially be jailbroken to do pretty much anything in the future. Yay!",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
@@ -320,23 +321,23 @@
     "title": "@haunticon: It is a surveillance system, a weapons system, and a communications system\u2014built at the intersection of artificial intelligence, electromagn"
   },
   "last_run": {
-    "alerted_now": 1,
+    "alerted_now": 0,
     "clustered": 18,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 14,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.752,
-      "projected_minutes_per_30d": 468.08,
+      "measured_seconds": 7.955,
+      "projected_minutes_per_30d": 381.85,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -350,7 +351,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -374,11 +375,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T14:33:04Z",
+  "updated_at": "2026-08-09T15:04:46Z",
   "version": 1
 }
