@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T12:22:56Z",
+  "generated_at": "2026-08-09T18:39:16Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 10,
@@ -9,9 +9,9 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-09T12:22:56Z",
+  "latest_successful_run": "2026-08-09T18:39:16Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
+    "id": "twitter-032",
     "title": "@haunticon: It is a surveillance system, a weapons system, and a communications system—built at the intersection of artificial intelligence, electromagn",
     "action_score": 80.5,
     "url": "https://x.com/haunticon/status/2086199347864281473"
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 36.806,
+  "runtime_seconds": 40.862,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-09T12:22:56Z",
+    "planned_at": "2026-08-09T18:39:16Z",
     "production_threshold": 70.0
   }
 }
