@@ -7,6 +7,29 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/PShannon30308/status/2086500261762060552"
+      ],
+      "id": "story-94657711a1a2041544340667",
+      "reason": "On Requirements: The Beginning Read about autonomous systems and the conversation quickly turns to technology -- Artificial intelligence. Sensors. Drones. Robotics. Machine vision. Target recognition. Navigation. Communications. Swarms. Decision speed. Lethality. That makes sense",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-09T17:21:55Z",
+      "source": "x",
+      "source_published_at": "2026-08-09T17:10:02Z",
+      "source_url": "https://x.com/PShannon30308/status/2086500261762060552",
+      "status": "x-intel",
+      "title": "On Requirements: The Beginning Read about autonomous systems and the conversation quickly turns to technology -- Artificial intelligence. Sensors. Drones. Robot",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/AlloLiberte/status/2085928441908469916"
       ],
       "id": "story-8573dc1306e8593d3a98a85a",
@@ -292,56 +315,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/_rygo6/status/2085633984785260893"
-      ],
-      "id": "story-02ef32deb6db76e10fd88d8e",
-      "reason": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the realm of AI and the web better than anything else I can think of. https://t.co/PBAq2CZdTZ",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-09T09:42:21Z",
-      "source": "x",
-      "source_published_at": "2026-08-07T07:47:45Z",
-      "source_url": "https://x.com/_rygo6/status/2085633984785260893",
-      "status": "x-intel",
-      "title": "Posting again in light of the rise of AI. Remarkable how this 3 minute segment from a 20 year old video game perfectly explains what is happening and why in the",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-09T16:51:20Z",
+    "alerted_at": "2026-08-09T17:21:55Z",
     "confidence": 0,
-    "source_url": "https://x.com/AlloLiberte/status/2085928441908469916",
-    "title": "\"\ud83d\udd05 \u064a\u0632\u0639\u0645 \u0627\u0644\u062a\u0633\u0631\u064a\u0628 \u0623\u0646\u0651 \u0627\u0644\u0645\u062f\u0639\u0648\u0651\u064a\u0646 \u062f\u064f\u0639\u0648\u0627 \u0644\u0645\u0646\u0627\u0642\u0634\u0629 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0648\u0622\u0641\u0627\u0642 \u0627\u0644\u0637\u0627\u0642\u0629 \u0627\u0644\u0646\u0648\u0648\u064a\u0629\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0627\u0644\u062a\u0636\u0644\u064a\u0644 \u0627\u0644\u0625\u0639\u0644\u0627\u0645\u064a \u0648\u0627\u0644\u0645\u0631\u0627\u0642\u0628\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0648\u0627\u0644\u0623\u0645\u0646 \u0627"
+    "source_url": "https://x.com/PShannon30308/status/2086500261762060552",
+    "title": "On Requirements: The Beginning Read about autonomous systems and the conversation quickly turns to technology -- Artificial intelligence. Sensors. Drones. Robot"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 15,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.969,
-      "projected_minutes_per_30d": 526.49,
+      "measured_seconds": 11.443,
+      "projected_minutes_per_30d": 549.26,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -355,7 +354,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -384,6 +383,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-09T16:51:20Z",
+  "updated_at": "2026-08-09T17:21:55Z",
   "version": 1
 }
