@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/NeoSpaceGroup/status/2086766769692389601"
+      ],
+      "id": "story-c4ce8a9d80acaffc51ecff4e",
+      "reason": "Neo Space Group is thrilled to announce our participation in #LEAP2026 \u2013 showcasing how geospatial intelligence, resilient satcom, PNT (Positioning, Navigation & Timing), and advanced real\u2011time decision support converge to deliver unmatched operational advantage. See More. Connec",
+      "score": 70,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-10T22:19:00Z",
+      "source": "x",
+      "source_published_at": "2026-08-10T10:49:02Z",
+      "source_url": "https://x.com/NeoSpaceGroup/status/2086766769692389601",
+      "status": "x-intel",
+      "title": "Neo Space Group is thrilled to announce our participation in #LEAP2026 \u2013 showcasing how geospatial intelligence, resilient satcom, PNT (Positioning, Navigation",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/birdabo/status/2086810047649317313"
       ],
       "id": "story-e1f64d5e60f55d23b6befb5e",
@@ -269,57 +293,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/castrass/status/2086062474449576432"
-      ],
-      "id": "story-a647db730840d3f18f83edf0",
-      "reason": "@WhiteHouse Unsure why a model aircraft display is needed*right* there. DC has plenty of actual military assets all around it.",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-10T16:09:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T12:10:25Z",
-      "source_url": "https://x.com/castrass/status/2086062474449576432",
-      "status": "x-intel",
-      "title": "@WhiteHouse Unsure why a model aircraft display is needed*right* there. DC has plenty of actual military assets all around it.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-10T21:41:22Z",
+    "alerted_at": "2026-08-10T22:19:00Z",
     "confidence": 0,
-    "source_url": "https://x.com/birdabo/status/2086810047649317313",
-    "title": "chinese part of twitter is a literal gold mine. &gt; tech. &gt; design. &gt; hardware. &gt; open weight models drop before anyone reports it. my timeline is ins"
+    "source_url": "https://x.com/NeoSpaceGroup/status/2086766769692389601",
+    "title": "Neo Space Group is thrilled to announce our participation in #LEAP2026 \u2013 showcasing how geospatial intelligence, resilient satcom, PNT (Positioning, Navigation"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 21,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 13.972,
-      "projected_minutes_per_30d": 670.67,
+      "measured_seconds": 9.371,
+      "projected_minutes_per_30d": 449.79,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -333,7 +332,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -362,6 +361,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-10T21:41:22Z",
+  "updated_at": "2026-08-10T22:19:00Z",
   "version": 1
 }
