@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/brane_mija64426/status/2086889047075479618"
+      ],
+      "id": "story-a88ceaab3a298a181db4b3ae",
+      "reason": "\ud83e\udd25\ud83d\udc41 Space-Eyes deal: enter Trump Jr.? American defense-tech upstart Space-Eyes is merging with SPAC McKinley Acquisition Corp. in a deal that pegs the combined company at $638 million. But the thing is Eric Trump, the US president's son, is significantly upping his stake: he's now",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-10T20:59:06Z",
+      "source": "x",
+      "source_published_at": "2026-08-10T18:54:56Z",
+      "source_url": "https://x.com/brane_mija64426/status/2086889047075479618",
+      "status": "x-intel",
+      "title": "\ud83e\udd25\ud83d\udc41 Space-Eyes deal: enter Trump Jr.? American defense-tech upstart Space-Eyes is merging with SPAC McKinley Acquisition Corp. in a deal that pegs the combined c",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/thewarzonewire/status/2086061109920845943"
       ],
       "id": "story-14d1be1e4f979f124ce5d778",
@@ -275,59 +299,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/NewsTongueX/status/2086795767826575562",
-        "https://x.com/TheWorldCorresp/status/2086770188481953857"
-      ],
-      "id": "story-5820f50e1f01e3c1ee6be372",
-      "reason": "\ud83d\udd34 Pentagon needs autonomous AI for speed; humans retain targeting authority Garrett Berntsen, Chief AI Officer at Accenture Federal Services and former Deputy Chief Data and Artificial Intelligence Officer for Scaled Capabilities, told Breaking Defense that open-source AI prolife",
-      "score": 97,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-10T14:06:30Z",
-      "source": "x",
-      "source_published_at": "2026-08-10T12:44:16Z",
-      "source_url": "https://x.com/NewsTongueX/status/2086795767826575562",
-      "status": "x-intel",
-      "title": "\ud83d\udd34 Pentagon needs autonomous AI for speed; humans retain targeting authority Garrett Berntsen, Chief AI Officer at Accenture Federal Services and former Deputy C",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "defense",
-        "targeting",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-10T19:13:48Z",
+    "alerted_at": "2026-08-10T20:59:06Z",
     "confidence": 0,
-    "source_url": "https://x.com/thewarzonewire/status/2086061109920845943",
-    "title": "This ICBM-Launched Satellite Could Transmit Nuclear Codes When Nothing Else Was Left To The Emergency Rocket Communications System was designed to autonomously"
+    "source_url": "https://x.com/brane_mija64426/status/2086889047075479618",
+    "title": "\ud83e\udd25\ud83d\udc41 Space-Eyes deal: enter Trump Jr.? American defense-tech upstart Space-Eyes is merging with SPAC McKinley Acquisition Corp. in a deal that pegs the combined c"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 20,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 14,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.29,
-      "projected_minutes_per_30d": 493.92,
+      "measured_seconds": 7.678,
+      "projected_minutes_per_30d": 368.55,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +362,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-10T20:01:51Z",
+  "updated_at": "2026-08-10T20:59:06Z",
   "version": 1
 }
