@@ -4,6 +4,34 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/VargheseEzhuthu/status/2086545836473995378",
+        "https://x.com/TheWorldCorresp/status/2086770188481953857",
+        "https://x.com/TheWorldCorresp/status/2086770984107815332"
+      ],
+      "id": "story-96256e37a44dbc2dc92ceb99",
+      "reason": "\ud83c\uddee\ud83c\uddf3 India\u2019s Defence Export Story Is Getting Bigger \ud83d\ude80 India recorded a massive \u20b938,424 Cr in defence exports in FY26, up 62.66% YoY. Now the next export opportunities could come from: \ud83d\ude80 BrahMos \ud83d\udee9\ufe0f Drones & autonomous weapons \ud83c\udfaf Precision-guided munitions \ud83d\udce1 Electronic warfare & advan",
+      "score": 97,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-10T15:14:59Z",
+      "source": "x",
+      "source_published_at": "2026-08-09T20:11:08Z",
+      "source_url": "https://x.com/VargheseEzhuthu/status/2086545836473995378",
+      "status": "x-intel",
+      "title": "\ud83c\uddee\ud83c\uddf3 India\u2019s Defence Export Story Is Getting Bigger \ud83d\ude80 India recorded a massive \u20b938,424 Cr in defence exports in FY26, up 62.66% YoY. Now the next export opportuni",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "defense",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -291,62 +319,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2086674646233977228",
-        "https://x.com/MizarVision/status/2086674852828602831",
-        "https://x.com/MizarVision/status/2086410102530060373"
-      ],
-      "id": "story-8c3c964c32106a20cbd86d05",
-      "reason": "New high-resolution satellite imagery released by Iranian state media provides a clearer look at damage to a helicopter maintenance hangar at the U.S. Army\u2019s Camp Buehring in Kuwait. The damage at this location was already visible in satellite imagery from April 14, following Ira",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-10T06:20:44Z",
-      "source": "x",
-      "source_published_at": "2026-08-10T04:42:58Z",
-      "source_url": "https://x.com/MizarVision/status/2086674646233977228",
-      "status": "x-intel",
-      "title": "New high-resolution satellite imagery released by Iranian state media provides a clearer look at damage to a helicopter maintenance hangar at the U.S. Army\u2019s Ca",
-      "webswarm_evidence_terms": [
-        "AI",
-        "MizarVision",
-        "commercial satellite imagery",
-        "military",
-        "satellite imagery",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-10T14:06:30Z",
+    "alerted_at": "2026-08-10T15:14:59Z",
     "confidence": 0,
-    "source_url": "https://x.com/NewsTongueX/status/2086795767826575562",
-    "title": "\ud83d\udd34 Pentagon needs autonomous AI for speed; humans retain targeting authority Garrett Berntsen, Chief AI Officer at Accenture Federal Services and former Deputy C"
+    "source_url": "https://x.com/VargheseEzhuthu/status/2086545836473995378",
+    "title": "\ud83c\uddee\ud83c\uddf3 India\u2019s Defence Export Story Is Getting Bigger \ud83d\ude80 India recorded a massive \u20b938,424 Cr in defence exports in FY26, up 62.66% YoY. Now the next export opportuni"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 13,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 7,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 15,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.108,
-      "projected_minutes_per_30d": 485.18,
+      "measured_seconds": 8.633,
+      "projected_minutes_per_30d": 414.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -360,7 +358,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -384,11 +382,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-10T14:06:30Z",
+  "updated_at": "2026-08-10T15:14:59Z",
   "version": 1
 }
