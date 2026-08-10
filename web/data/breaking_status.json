@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/castrass/status/2086062474449576432"
+      ],
+      "id": "story-a647db730840d3f18f83edf0",
+      "reason": "@WhiteHouse Unsure why a model aircraft display is needed*right* there. DC has plenty of actual military assets all around it.",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-10T16:09:55Z",
+      "source": "x",
+      "source_published_at": "2026-08-08T12:10:25Z",
+      "source_url": "https://x.com/castrass/status/2086062474449576432",
+      "status": "x-intel",
+      "title": "@WhiteHouse Unsure why a model aircraft display is needed*right* there. DC has plenty of actual military assets all around it.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -291,60 +316,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/BrunellaCapitan/status/2086734777579602309",
-        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVWpxZUZqVzZqV3QwQ0ZYME9INGVCRlM0UDEzenljeW9fRm01T2xNYkpua0taUmdSTDlqM3JsU1dxZHJsMUFITVFIRWxaMTBUdlJTdTU1VHZzMmdTUmNFRklTMnRZXzdZUXRnamlwRG5VeVlnYW9fTzJsR08wM2FhTmNOR001aEJGUWxOZnhmRTc5RW12eW5TWXhsRTF0UUVnRWFBdWwyVGVtVndJaGlZWjRVcnVreWgxU1R4LUlHemxwVVNZWkNKTg",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
-      ],
-      "id": "story-8f76b3a0785f54e4de14c8ca",
-      "reason": "\ud83d\udea8 XILLING LIST #Lavender AI targeting engine built by Israel\u2019s elite Unit 8200 transformed human beings into numerical threat scores from 1 to 100. Fed by an endless torrent of mass surveillance, (Palantir) location metrics, and intercepted communications, marks thousands of inno",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-10T09:46:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-10T08:41:55Z",
-      "source_url": "https://x.com/BrunellaCapitan/status/2086734777579602309",
-      "status": "x-intel",
-      "title": "\ud83d\udea8 XILLING LIST #Lavender AI targeting engine built by Israel\u2019s elite Unit 8200 transformed human beings into numerical threat scores from 1 to 100. Fed by an en",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-10T15:14:59Z",
+    "alerted_at": "2026-08-10T16:09:55Z",
     "confidence": 0,
-    "source_url": "https://x.com/VargheseEzhuthu/status/2086545836473995378",
-    "title": "\ud83c\uddee\ud83c\uddf3 India\u2019s Defence Export Story Is Getting Bigger \ud83d\ude80 India recorded a massive \u20b938,424 Cr in defence exports in FY26, up 62.66% YoY. Now the next export opportuni"
+    "source_url": "https://x.com/castrass/status/2086062474449576432",
+    "title": "@WhiteHouse Unsure why a model aircraft display is needed*right* there. DC has plenty of actual military assets all around it."
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 15,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 7,
+    "corroborated_count": 6,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.633,
-      "projected_minutes_per_30d": 414.39,
+      "measured_seconds": 10.154,
+      "projected_minutes_per_30d": 487.37,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -387,6 +384,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-10T15:14:59Z",
+  "updated_at": "2026-08-10T16:09:55Z",
   "version": 1
 }
