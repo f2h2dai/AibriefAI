@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-08-09T18:39:16Z",
+  "generated_at": "2026-08-10T12:39:13Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 10,
+  "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-09T18:39:16Z",
+  "latest_successful_run": "2026-08-10T12:39:13Z",
   "highest_ranked_signal": {
-    "id": "twitter-032",
-    "title": "@haunticon: It is a surveillance system, a weapons system, and a communications system—built at the intersection of artificial intelligence, electromagn",
-    "action_score": 80.5,
-    "url": "https://x.com/haunticon/status/2086199347864281473"
+    "id": "twitter-041",
+    "title": "@TheWorldCorresp: 🚨 #Ukraine #Technology #Geopolitics — Former Ukrainian Armed Forces Commander-in-Chief Valerii Zaluzhnyi issued a stark warning regarding th",
+    "action_score": 80.25,
+    "url": "https://x.com/TheWorldCorresp/status/2086770188481953857"
   },
   "source_contribution": {
     "twitter": 5,
-    "github": 7
+    "github": 6,
+    "hackernews": 1
   },
   "failed_sources": [
     {
@@ -26,7 +27,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 40.862,
+  "runtime_seconds": 42.131,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-09T18:39:16Z",
+    "planned_at": "2026-08-10T12:39:13Z",
     "production_threshold": 70.0
   }
 }
