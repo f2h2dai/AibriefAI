@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-08-10T12:39:13Z",
+  "generated_at": "2026-08-10T18:56:34Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-10T12:39:13Z",
+  "latest_successful_run": "2026-08-10T18:56:34Z",
   "highest_ranked_signal": {
-    "id": "twitter-041",
-    "title": "@TheWorldCorresp: 🚨 #Ukraine #Technology #Geopolitics — Former Ukrainian Armed Forces Commander-in-Chief Valerii Zaluzhnyi issued a stark warning regarding th",
-    "action_score": 80.25,
-    "url": "https://x.com/TheWorldCorresp/status/2086770188481953857"
+    "id": "twitter-039",
+    "title": "@BrunellaCapitan: 🚨 XILLING LIST #Lavender AI targeting engine built by Israel’s elite Unit 8200 transformed human beings into numerical threat scores from 1 ",
+    "action_score": 77.5,
+    "url": "https://x.com/BrunellaCapitan/status/2086734777579602309"
   },
   "source_contribution": {
     "twitter": 5,
-    "github": 6,
-    "hackernews": 1
+    "github": 7
   },
   "failed_sources": [
     {
@@ -27,7 +26,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 42.131,
+  "runtime_seconds": 44.556,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-10T12:39:13Z",
+    "planned_at": "2026-08-10T18:56:34Z",
     "production_threshold": 70.0
   }
 }
