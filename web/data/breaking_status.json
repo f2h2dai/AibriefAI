@@ -4,6 +4,55 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/RenasDavid/status/2086881453804044687"
+      ],
+      "id": "story-5713ceac504283cf9f47cf4d",
+      "reason": "The Missing Link in European Defense: The problem with military AI isn\u2019t the EU AI Act exemption\u2014it\u2019s that ethical guardrails stop when software leaves the lab and enters the battlefield. https://t.co/JAIztwLKDj",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-11T04:37:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-10T18:24:45Z",
+      "source_url": "https://x.com/RenasDavid/status/2086881453804044687",
+      "status": "x-intel",
+      "title": "The Missing Link in European Defense: The problem with military AI isn\u2019t the EU AI Act exemption\u2014it\u2019s that ethical guardrails stop when software leaves the lab",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Softyyy_tweets/status/2085964128611705191"
+      ],
+      "id": "story-2de8ff7c3f12c9fc46beb25f",
+      "reason": "Hey @grok Can you do better than both gemini and chatgpt ?? https://t.co/0ShgKdMGZS",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-11T04:37:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-08T05:39:38Z",
+      "source_url": "https://x.com/Softyyy_tweets/status/2085964128611705191",
+      "status": "x-intel",
+      "title": "Hey @grok Can you do better than both gemini and chatgpt ?? https://t.co/0ShgKdMGZS",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 6,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -258,79 +307,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/thewarzonewire/status/2086061109920845943"
-      ],
-      "id": "story-14d1be1e4f979f124ce5d778",
-      "reason": "This ICBM-Launched Satellite Could Transmit Nuclear Codes When Nothing Else Was Left To The Emergency Rocket Communications System was designed to autonomously transmit nuclear codes in the event of a nuclear attack. From the TWZ vault: https://t.co/7tK2v8rLOB https://t.co/CITUv0",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-10T19:13:48Z",
-      "source": "x",
-      "source_published_at": "2026-08-08T12:05:00Z",
-      "source_url": "https://x.com/thewarzonewire/status/2086061109920845943",
-      "status": "x-intel",
-      "title": "This ICBM-Launched Satellite Could Transmit Nuclear Codes When Nothing Else Was Left To The Emergency Rocket Communications System was designed to autonomously",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/the_piaz/status/2086496785338372553"
-      ],
-      "id": "story-4a8fa50d30cf08ff368c0cb8",
-      "reason": "The history of American targeting practices in this conflict is grim. Programs like Maven, developed with Palantir, used AI for targeting, leading to devastating war crimes. #WarCrimes #AI #Targeting https://t.co/fC6FmNXfVD",
-      "score": 41,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-10T19:13:48Z",
-      "source": "x",
-      "source_published_at": "2026-08-09T16:56:13Z",
-      "source_url": "https://x.com/the_piaz/status/2086496785338372553",
-      "status": "x-intel",
-      "title": "@the_piaz: The history of American targeting practices in this conflict is grim. Programs like Maven, developed with Palantir, used AI for targeting, l",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-11T03:03:49Z",
+    "alerted_at": "2026-08-11T04:37:22Z",
     "confidence": 0,
-    "source_url": "https://x.com/DavisDecory/status/2086954900022231282",
-    "title": "Op-ed Title: \"THE STATE OF AI AND THE NEED TO DEMOCRATIZE THE SUPER INTELLIGENCE BUT A MORE OF A NEED TO CREATE A BILL OF RIGHTS FOR THE PROLIFERATION OF THIS N"
+    "source_url": "https://x.com/RenasDavid/status/2086881453804044687",
+    "title": "The Missing Link in European Defense: The problem with military AI isn\u2019t the EU AI Act exemption\u2014it\u2019s that ethical guardrails stop when software leaves the lab"
   },
   "last_run": {
     "alerted_now": 2,
-    "clustered": 14,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.605,
-      "projected_minutes_per_30d": 365.04,
+      "measured_seconds": 14.079,
+      "projected_minutes_per_30d": 675.77,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -373,6 +375,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-11T03:03:49Z",
+  "updated_at": "2026-08-11T04:37:22Z",
   "version": 1
 }
