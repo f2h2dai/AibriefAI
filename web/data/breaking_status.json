@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/brane_mija64426/status/2086889047075479618"
+      ],
+      "id": "story-a0c0f4529c9744a1ea56adab",
+      "reason": "\ud83e\udd25\ud83d\udc41 Space-Eyes deal: enter Trump Jr.? American defense-tech upstart Space-Eyes is merging with SPAC McKinley Acquisition Corp. in a deal that pegs the combined company at $638 million. But the thing is Eric Trump, the US president's son, is significantly upping his stake: he's now",
+      "score": 48,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-11T20:24:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-10T18:54:56Z",
+      "source_url": "https://x.com/brane_mija64426/status/2086889047075479618",
+      "status": "x-intel",
+      "title": "@brane_mija64426: \ud83e\udd25\ud83d\udc41 Space-Eyes deal: enter Trump Jr.? American defense-tech upstart Space-Eyes is merging with SPAC McKinley Acquisition Corp. in a deal that",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/BreakingDefense/status/2087177352358838519"
       ],
       "id": "story-47913fd20e97d6fd24952942",
@@ -278,58 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/SIPRIorg/status/2087132105381749059"
-      ],
-      "id": "story-d72eae5e545d1e4b963ae8f7",
-      "reason": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety of products, actors and relationships involved. Read it now \u27a1\ufe0f https://t.co/OLhkbhPl4v https://t.co/ZkhrEXcbVn",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-11T13:38:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-11T11:00:45Z",
-      "source_url": "https://x.com/SIPRIorg/status/2087132105381749059",
-      "status": "x-intel",
-      "title": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety o",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-11T19:43:51Z",
+    "alerted_at": "2026-08-11T20:24:22Z",
     "confidence": 0,
-    "source_url": "https://x.com/BreakingDefense/status/2087177352358838519",
-    "title": "@BreakingDefense: The US Air Force says it wants an AI tool to help manage sustainment of Minuteman III ICBMs https://t.co/JYDJTE2Acg https://t.co/E9h5BwWemD"
+    "source_url": "https://x.com/brane_mija64426/status/2086889047075479618",
+    "title": "@brane_mija64426: \ud83e\udd25\ud83d\udc41 Space-Eyes deal: enter Trump Jr.? American defense-tech upstart Space-Eyes is merging with SPAC McKinley Acquisition Corp. in a deal that"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 14,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 7,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.293,
-      "projected_minutes_per_30d": 302.06,
+      "measured_seconds": 9.907,
+      "projected_minutes_per_30d": 475.53,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,6 +370,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-11T19:43:51Z",
+  "updated_at": "2026-08-11T20:24:22Z",
   "version": 1
 }
