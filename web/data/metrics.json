@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-08-10T18:56:34Z",
+  "generated_at": "2026-08-11T12:36:54Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-10T18:56:34Z",
+  "latest_successful_run": "2026-08-11T12:36:54Z",
   "highest_ranked_signal": {
-    "id": "twitter-039",
-    "title": "@BrunellaCapitan: 🚨 XILLING LIST #Lavender AI targeting engine built by Israel’s elite Unit 8200 transformed human beings into numerical threat scores from 1 ",
-    "action_score": 77.5,
-    "url": "https://x.com/BrunellaCapitan/status/2086734777579602309"
+    "id": "github-012",
+    "title": "gadievron/raptor",
+    "action_score": 80.25,
+    "url": "https://github.com/gadievron/raptor"
   },
   "source_contribution": {
+    "github": 6,
     "twitter": 5,
-    "github": 7
+    "arxiv": 1
   },
   "failed_sources": [
     {
@@ -26,7 +27,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 44.556,
+  "runtime_seconds": 43.84,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-10T18:56:34Z",
+    "planned_at": "2026-08-11T12:36:54Z",
     "production_threshold": 70.0
   }
 }
