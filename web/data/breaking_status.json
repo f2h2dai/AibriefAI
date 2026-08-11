@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/flatyyy0/status/2087154363038847179"
+      ],
+      "id": "story-c45568171e6911db02d858d0",
+      "reason": "\ud83d\udea8 An F-16 just flew a real mission mostly under AI control \u2014 with a human pilot only watching, ready to take over with the flip of a switch. DARPA\u2019s VENOM program did it. Full autonomous combat aviation is no longer sci-fi. This is the moment military AI stopped being a demo. htt",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-11T16:32:28Z",
+      "source": "x",
+      "source_published_at": "2026-08-11T12:29:12Z",
+      "source_url": "https://x.com/flatyyy0/status/2087154363038847179",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 An F-16 just flew a real mission mostly under AI control \u2014 with a human pilot only watching, ready to take over with the flip of a switch. DARPA\u2019s VENOM progr",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/whatthewomensay/status/2087166774466797600"
@@ -278,57 +304,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/techshotsapp/status/2087126294651932735"
-      ],
-      "id": "story-55e2777d5bf0bedd1f20dbd4",
-      "reason": "A Controversial Hire: OpenAI\u2019s New Executive Strains Ties with Washington OpenAI\u2019s hiring of Dean Ball as Head of Strategic Futures has sparked friction with the White House. Pentagon AI chief Emil Michael previously dubbed Ball the AI world's \"supreme village idiot,\" and officia",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-11T11:27:54Z",
-      "source": "x",
-      "source_published_at": "2026-08-11T10:37:40Z",
-      "source_url": "https://x.com/techshotsapp/status/2087126294651932735",
-      "status": "x-intel",
-      "title": "A Controversial Hire: OpenAI\u2019s New Executive Strains Ties with Washington OpenAI\u2019s hiring of Dean Ball as Head of Strategic Futures has sparked friction with th",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-11T14:42:10Z",
+    "alerted_at": "2026-08-11T16:32:28Z",
     "confidence": 0,
-    "source_url": "https://x.com/whatthewomensay/status/2087166774466797600",
-    "title": "On the season finale of #IfYouWereInCharge, hosts @sanambna &amp; @kramdas discuss the US use of #AI targeting in the war on #Iran: a thousand targets a day, fo"
+    "source_url": "https://x.com/flatyyy0/status/2087154363038847179",
+    "title": "\ud83d\udea8 An F-16 just flew a real mission mostly under AI control \u2014 with a human pilot only watching, ready to take over with the flip of a switch. DARPA\u2019s VENOM progr"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 13,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.264,
-      "projected_minutes_per_30d": 396.66,
+      "measured_seconds": 10.627,
+      "projected_minutes_per_30d": 510.08,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -342,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 17,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-11T15:37:29Z",
+  "updated_at": "2026-08-11T16:32:28Z",
   "version": 1
 }
