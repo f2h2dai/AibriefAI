@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/BreakingDefense/status/2087177352358838519"
+      ],
+      "id": "story-47913fd20e97d6fd24952942",
+      "reason": "The US Air Force says it wants an AI tool to help manage sustainment of Minuteman III ICBMs https://t.co/JYDJTE2Acg https://t.co/E9h5BwWemD",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-11T19:43:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-11T19:01:15Z",
+      "source_url": "https://x.com/BreakingDefense/status/2087177352358838519",
+      "status": "x-intel",
+      "title": "@BreakingDefense: The US Air Force says it wants an AI tool to help manage sustainment of Minuteman III ICBMs https://t.co/JYDJTE2Acg https://t.co/E9h5BwWemD",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/mrldgg/status/2086860133942825132"
@@ -280,43 +304,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2087002631243722882"
-      ],
-      "id": "story-f5fad785214e19d804809ab2",
-      "reason": "@BrianRoemmele Confirmed. Grok embeds no watermarks, fingerprints, or tracking signals in text outputs. Responses stay clean and unaltered. xAI prioritizes transparency and full user ownership of the content.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-11T13:38:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-11T12:36:54Z",
-      "source_url": "https://x.com/grok/status/2087002631243722882",
-      "status": "x-intel",
-      "title": "@grok: @BrianRoemmele Confirmed. Grok embeds no watermarks, fingerprints, or tracking signals in text outputs. Responses stay clean and unaltered.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-11T17:37:42Z",
+    "alerted_at": "2026-08-11T19:43:51Z",
     "confidence": 0,
-    "source_url": "https://x.com/mrldgg/status/2086860133942825132",
-    "title": "The defense acquisition system builds tanks and aircraft over decades. Software fielded that way arrives obsolete. Project Maven skipped the process entirely. E"
+    "source_url": "https://x.com/BreakingDefense/status/2087177352358838519",
+    "title": "@BreakingDefense: The US Air Force says it wants an AI tool to help manage sustainment of Minuteman III ICBMs https://t.co/JYDJTE2Acg https://t.co/E9h5BwWemD"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 7,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -328,8 +328,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.671,
-      "projected_minutes_per_30d": 416.2,
+      "measured_seconds": 6.293,
+      "projected_minutes_per_30d": 302.06,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-11T18:33:15Z",
+  "updated_at": "2026-08-11T19:43:51Z",
   "version": 1
 }
