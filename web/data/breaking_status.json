@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/AGHuff/status/2087599468971544583"
+      ],
+      "id": "story-f0c4e60e3b591e5ed41eef4a",
+      "reason": "Proof before fielding. The Army is adopting military AI faster than it can test it. Commercial benchmarks fail under uncertainty, deception, and weather. Medicine already built the fix. Clinical epidemiology methods transfer. Link to article/preprint: https://t.co/Wl5wNUgBM0",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-12T18:33:26Z",
+      "source": "x",
+      "source_published_at": "2026-08-12T17:57:53Z",
+      "source_url": "https://x.com/AGHuff/status/2087599468971544583",
+      "status": "x-intel",
+      "title": "Proof before fielding. The Army is adopting military AI faster than it can test it. Commercial benchmarks fail under uncertainty, deception, and weather. Medici",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/AEIfdp/status/2087184764574855509"
@@ -282,45 +308,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/IsraelArmyX/status/2087378050526896143"
-      ],
-      "id": "story-d5e95623ef9dab407eaef886",
-      "reason": "\ud83c\uddfa\ud83c\uddf8 US: \"Our military AI processes 10 million variables from the battlefield every second. It takes 0.3 seconds to identify a target.\" \ud83c\uddee\ud83c\uddf7 Iran: \"Your AI relies on digital signatures. Our soldiers communicate via handwritten notes and carrier pigeons. Your $10 billion computer is u",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-12T03:32:54Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T03:18:03Z",
-      "source_url": "https://x.com/IsraelArmyX/status/2087378050526896143",
-      "status": "x-intel",
-      "title": "\ud83c\uddfa\ud83c\uddf8 US: \"Our military AI processes 10 million variables from the battlefield every second. It takes 0.3 seconds to identify a target.\" \ud83c\uddee\ud83c\uddf7 Iran: \"Your AI relies o",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-12T17:39:14Z",
+    "alerted_at": "2026-08-12T18:33:26Z",
     "confidence": 0,
-    "source_url": "https://x.com/AEIfdp/status/2087184764574855509",
-    "title": "\u201cThe technology will arrive either way. The real open question is whether the United States or its adversaries decides what it does.\u201d John G. Ferrari and Dillon"
+    "source_url": "https://x.com/AGHuff/status/2087599468971544583",
+    "title": "Proof before fielding. The Army is adopting military AI faster than it can test it. Commercial benchmarks fail under uncertainty, deception, and weather. Medici"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -332,8 +332,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.805,
-      "projected_minutes_per_30d": 230.66,
+      "measured_seconds": 84.819,
+      "projected_minutes_per_30d": 4071.33,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 18,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,6 +376,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-12T17:39:14Z",
+  "updated_at": "2026-08-12T18:33:26Z",
   "version": 1
 }
