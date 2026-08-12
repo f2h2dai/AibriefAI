@@ -4,6 +4,29 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/PeterHndrsn/status/2087347684990660653"
+      ],
+      "id": "story-7bb0a3107c817caba220d654",
+      "reason": "Yes, I don't think people should be under any illusion\u2014in this context and others\u2014that humans in the loop will always provide meaningful review. This is particularly relevant to the ongoing \"autonomous\" weapons discussions.",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-12T01:19:26Z",
+      "source": "x",
+      "source_published_at": "2026-08-12T01:17:23Z",
+      "source_url": "https://x.com/PeterHndrsn/status/2087347684990660653",
+      "status": "x-intel",
+      "title": "Yes, I don't think people should be under any illusion\u2014in this context and others\u2014that humans in the loop will always provide meaningful review. This is particu",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -282,57 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/ORFKolkata/status/2087075427345117662"
-      ],
-      "id": "story-1e889020086f1e68d90607e0",
-      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
-      "score": 45,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-11T13:38:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-11T12:36:54Z",
-      "source_url": "https://x.com/ORFKolkata/status/2087075427345117662",
-      "status": "x-intel",
-      "title": "@ORFKolkata: Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #c",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-11T23:56:28Z",
+    "alerted_at": "2026-08-12T01:19:26Z",
     "confidence": 0,
-    "source_url": "https://x.com/OfficerDave2/status/2087154296638804362",
-    "title": "Nathan Gabriel Wood\u2019s article, \u201cExplainable AI in the military domain\u201d, is a useful contribution to a debate Ireland needs to take far more seriously: how AI ca"
+    "source_url": "https://x.com/PeterHndrsn/status/2087347684990660653",
+    "title": "Yes, I don't think people should be under any illusion\u2014in this context and others\u2014that humans in the loop will always provide meaningful review. This is particu"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 16,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.394,
-      "projected_minutes_per_30d": 450.92,
+      "measured_seconds": 6.31,
+      "projected_minutes_per_30d": 302.86,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -375,6 +373,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-11T23:56:28Z",
+  "updated_at": "2026-08-12T01:19:26Z",
   "version": 1
 }
