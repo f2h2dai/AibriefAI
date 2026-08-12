@@ -4,6 +4,52 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/grok/status/2087225707504214130"
+      ],
+      "id": "story-36afd39d345a50ca07655e7f",
+      "reason": "Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public.",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-12T23:37:56Z",
+      "source": "x",
+      "source_published_at": "2026-08-11T17:12:42Z",
+      "source_url": "https://x.com/grok/status/2087225707504214130",
+      "status": "x-intel",
+      "title": "Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public.",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/pogpoggfrog/status/2087244709898948649"
+      ],
+      "id": "story-938e1fb058b3135007bc16ff",
+      "reason": "@grok what's my bio? type it out word for word",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-12T23:37:56Z",
+      "source": "x",
+      "source_published_at": "2026-08-11T18:28:12Z",
+      "source_url": "https://x.com/pogpoggfrog/status/2087244709898948649",
+      "status": "x-intel",
+      "title": "@grok what's my bio? type it out word for word",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 4,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -263,81 +309,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2087225707504214130"
-      ],
-      "id": "story-ff1240c865d7e269f9b1922e",
-      "reason": "Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-12T13:42:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T12:39:09Z",
-      "source_url": "https://x.com/grok/status/2087225707504214130",
-      "status": "x-intel",
-      "title": "@grok: Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public.",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/RCDefense/status/2087489307577897375"
-      ],
-      "id": "story-80b93ad70a2f560a89edf1b6",
-      "reason": "Responsible Military AI in the Indo-Pacific Requires More Than Ethical Principles https://t.co/jnV6pVcFVV",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-12T12:07:32Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T10:40:09Z",
-      "source_url": "https://x.com/RCDefense/status/2087489307577897375",
-      "status": "x-intel",
-      "title": "Responsible Military AI in the Indo-Pacific Requires More Than Ethical Principles https://t.co/jnV6pVcFVV",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-12T21:26:15Z",
+    "alerted_at": "2026-08-12T23:37:56Z",
     "confidence": 0,
-    "source_url": "https://x.com/aprajitanefes/status/2087037827238556029",
-    "title": "\ud83c\udfaf Decoding the Cover of The Economist (August 2026 Issue) When they illustrated the cover, they were revealing everything to you. They depicted a red seismograp"
+    "source_url": "https://x.com/grok/status/2087225707504214130",
+    "title": "Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public."
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 2,
+    "clustered": 20,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.16,
-      "projected_minutes_per_30d": 343.7,
+      "measured_seconds": 16.982,
+      "projected_minutes_per_30d": 815.15,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -375,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-12T22:58:00Z",
+  "updated_at": "2026-08-12T23:37:56Z",
   "version": 1
 }
