@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-08-12T19:01:05Z",
+  "generated_at": "2026-08-13T12:39:48Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-12T19:01:05Z",
+  "latest_successful_run": "2026-08-13T12:39:48Z",
   "highest_ranked_signal": {
-    "id": "twitter-032",
-    "title": "@elenaantoniou3: The core of the broken pledge lies in a promise made during Google's 2014 acquisition of DeepMind, and a series of events that dismantled it",
-    "action_score": 80.75,
-    "url": "https://x.com/elenaantoniou3/status/2087186349552029776"
+    "id": "arxiv-010",
+    "title": "The Role Specialization Model (RSM): Coordinating LLM-Based Tools in Agentic Software Development - An Exploratory Case Study",
+    "action_score": 82.5,
+    "url": "https://arxiv.org/abs/2608.12311v1"
   },
   "source_contribution": {
-    "github": 7,
+    "arxiv": 3,
+    "github": 4,
     "twitter": 5
   },
   "failed_sources": [
@@ -26,7 +27,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 46.714,
+  "runtime_seconds": 44.312,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-12T19:01:05Z",
+    "planned_at": "2026-08-13T12:39:48Z",
     "production_threshold": 70.0
   }
 }

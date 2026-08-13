@@ -1,50 +1,6 @@
 {
   "runs": [
     {
-      "run_id": "operations-2026-08-01T12:50:08Z",
-      "generated_at": "2026-08-01T12:50:08Z",
-      "mode": "global_ai",
-      "status": "complete",
-      "configured_threshold": 70.0,
-      "signals": 12,
-      "act_now_items": 0,
-      "runtime_seconds": 133.279,
-      "daily_api_cost_usd": 0.0,
-      "failed_sources": [
-        {
-          "source": "GroqRouter",
-          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 1114"
-        }
-      ],
-      "workers": [
-        {
-          "name": "Brief Planner",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Signal Scout",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Public Signal Watcher",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Brief Composer",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Intelligence Analyst",
-          "status": "complete",
-          "bounded": true
-        }
-      ]
-    },
-    {
       "run_id": "operations-2026-08-01T19:06:44Z",
       "generated_at": "2026-08-01T19:06:44Z",
       "mode": "global_ai",
@@ -1297,6 +1253,50 @@
       "signals": 12,
       "act_now_items": 0,
       "runtime_seconds": 46.714,
+      "daily_api_cost_usd": 0.0,
+      "failed_sources": [
+        {
+          "source": "GroqRouter",
+          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
+        }
+      ],
+      "workers": [
+        {
+          "name": "Brief Planner",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Signal Scout",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Public Signal Watcher",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Brief Composer",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Intelligence Analyst",
+          "status": "complete",
+          "bounded": true
+        }
+      ]
+    },
+    {
+      "run_id": "operations-2026-08-13T12:39:48Z",
+      "generated_at": "2026-08-13T12:39:48Z",
+      "mode": "global_ai",
+      "status": "complete",
+      "configured_threshold": 70.0,
+      "signals": 12,
+      "act_now_items": 0,
+      "runtime_seconds": 44.312,
       "daily_api_cost_usd": 0.0,
       "failed_sources": [
         {
