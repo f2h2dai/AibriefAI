@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/Radio_FreeSyria/status/2087963852054884421",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
+      ],
+      "id": "story-3fec43b4a31c7f377328e72a",
+      "reason": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the air, on the sea and underwater. The Middle East-specific initiative was unveiled only 16 days after CENTCOM announced T",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-13T18:35:31Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T18:05:49Z",
+      "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
+      "status": "x-intel",
+      "title": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 8,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -37,32 +63,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/Radio_FreeSyria/status/2087963852054884421",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
-      ],
-      "id": "story-3fec43b4a31c7f377328e72a",
-      "reason": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the air, on the sea and underwater. The Middle East-specific initiative was unveiled only 16 days after CENTCOM announced T",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T18:35:31Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T18:05:49Z",
-      "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
-      "status": "x-intel",
-      "title": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -328,27 +328,27 @@
   "last_alert": {
     "alerted_at": "2026-08-13T18:35:31Z",
     "confidence": 0,
-    "source_url": "https://x.com/MizarVision/status/2087958370972045766",
-    "title": "New satellite imagery released by Iranian media shows damage from earlier Iranian strikes on targets in the UAE and Bahrain. The images reportedly show damage t"
+    "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
+    "title": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 17,
+    "alerted_now": 0,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 8,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.641,
-      "projected_minutes_per_30d": 270.76,
+      "measured_seconds": 9.361,
+      "projected_minutes_per_30d": 449.32,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -362,7 +362,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -386,11 +386,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T18:35:31Z",
+  "updated_at": "2026-08-13T19:42:48Z",
   "version": 1
 }
