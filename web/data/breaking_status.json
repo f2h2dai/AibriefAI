@@ -5,25 +5,22 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/vijay_piragaash/status/2087548817852051695"
+        "https://x.com/PShannon30308/status/2087260796795421159"
       ],
-      "id": "story-c4546c88604e52c50d1e0c92",
-      "reason": "\ud83d\udd34 BREAKING GLOBAL UPDATE - The Geopolitical Pivot Point Eastern Front Escalation - Frontline Dynamics Shift as Global Military Coalitions Intensify Involvement THE BIG PICTURE - Strategic dynamics along the Eastern European front have hit a decisive inflection point. Rapid, high-",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T05:05:10Z",
+      "id": "story-d573eb2c27093974cece898b",
+      "reason": "Adapting components is the name of the game. One autonomous tracked carrier and whatever you can imagine bolted onto the top of it.",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-13T06:43:01Z",
       "source": "x",
-      "source_published_at": "2026-08-12T14:36:37Z",
-      "source_url": "https://x.com/vijay_piragaash/status/2087548817852051695",
+      "source_published_at": "2026-08-11T19:32:08Z",
+      "source_url": "https://x.com/PShannon30308/status/2087260796795421159",
       "status": "x-intel",
-      "title": "\ud83d\udd34 BREAKING GLOBAL UPDATE - The Geopolitical Pivot Point Eastern Front Escalation - Frontline Dynamics Shift as Global Military Coalitions Intensify Involvement",
+      "title": "Adapting components is the name of the game. One autonomous tracked carrier and whatever you can imagine bolted onto the top of it.",
       "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -47,6 +44,32 @@
       "title": "Satellite imagery from August 12, published by Soar Atlas and attributed to Vantor, reveals damage following Ukraine\u2019s large-scale strike on the Russian port of",
       "webswarm_evidence_terms": [
         "MizarVision",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/vijay_piragaash/status/2087548817852051695"
+      ],
+      "id": "story-c4546c88604e52c50d1e0c92",
+      "reason": "\ud83d\udd34 BREAKING GLOBAL UPDATE - The Geopolitical Pivot Point Eastern Front Escalation - Frontline Dynamics Shift as Global Military Coalitions Intensify Involvement THE BIG PICTURE - Strategic dynamics along the Eastern European front have hit a decisive inflection point. Rapid, high-",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-13T05:05:10Z",
+      "source": "x",
+      "source_published_at": "2026-08-12T14:36:37Z",
+      "source_url": "https://x.com/vijay_piragaash/status/2087548817852051695",
+      "status": "x-intel",
+      "title": "\ud83d\udd34 BREAKING GLOBAL UPDATE - The Geopolitical Pivot Point Eastern Front Escalation - Frontline Dynamics Shift as Global Military Coalitions Intensify Involvement",
+      "webswarm_evidence_terms": [
+        "military AI",
         "x.com",
         "AI",
         "military"
@@ -278,55 +301,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/pogpoggfrog/status/2087244709898948649"
-      ],
-      "id": "story-938e1fb058b3135007bc16ff",
-      "reason": "@grok what's my bio? type it out word for word",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-12T23:37:56Z",
-      "source": "x",
-      "source_published_at": "2026-08-11T18:28:12Z",
-      "source_url": "https://x.com/pogpoggfrog/status/2087244709898948649",
-      "status": "x-intel",
-      "title": "@grok what's my bio? type it out word for word",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-13T05:05:10Z",
+    "alerted_at": "2026-08-13T06:43:01Z",
     "confidence": 0,
-    "source_url": "https://x.com/vijay_piragaash/status/2087548817852051695",
-    "title": "\ud83d\udd34 BREAKING GLOBAL UPDATE - The Geopolitical Pivot Point Eastern Front Escalation - Frontline Dynamics Shift as Global Military Coalitions Intensify Involvement"
+    "source_url": "https://x.com/PShannon30308/status/2087260796795421159",
+    "title": "Adapting components is the name of the game. One autonomous tracked carrier and whatever you can imagine bolted onto the top of it."
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.095,
-      "projected_minutes_per_30d": 388.57,
+      "measured_seconds": 8.274,
+      "projected_minutes_per_30d": 397.17,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +340,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +364,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T05:05:10Z",
+  "updated_at": "2026-08-13T06:43:01Z",
   "version": 1
 }
