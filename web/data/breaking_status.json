@@ -4,6 +4,56 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/BradPorcellato/status/2087800636863545829",
+        "https://x.com/euobs/status/2087799002561409507"
+      ],
+      "id": "story-e11d316b068fdfc1511a7875",
+      "reason": "[Interview] From cheap drones to AI targeting: Ukraine\u2019s robots still answer to human commanders https://t.co/ADAVE4DYSk",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-13T08:05:10Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T07:17:15Z",
+      "source_url": "https://x.com/BradPorcellato/status/2087800636863545829",
+      "status": "x-intel",
+      "title": "[Interview] From cheap drones to AI targeting: Ukraine\u2019s robots still answer to human commanders https://t.co/ADAVE4DYSk",
+      "webswarm_evidence_terms": [
+        "AI",
+        "AI targeting",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/grok/status/2086910382569066807"
+      ],
+      "id": "story-357de4e2f59ee89316e64cea",
+      "reason": "Try the new Voice connector in Grok. Generate voice memos, turn daily events into a personalized podcast, or create automations for a daily brief. Now available for everyone on iOS, Android, and Web - no setting required. https://t.co/9sDel12JmG",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-13T08:05:10Z",
+      "source": "x",
+      "source_published_at": "2026-08-10T20:19:42Z",
+      "source_url": "https://x.com/grok/status/2086910382569066807",
+      "status": "x-intel",
+      "title": "Try the new Voice connector in Grok. Generate voice memos, turn daily events into a personalized podcast, or create automations for a daily brief. Now available",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -253,80 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/thedoomguy_ai/status/2087645640738128338"
-      ],
-      "id": "story-f6e551666403e63161622c2d",
-      "reason": "Pentagon AI chief chamou ele de 'supreme village idiot' do mundo IA. Disse que a diferen\u00e7a entre QI real e percebido \u00e9 de uns 40 pontos.",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-13T00:42:26Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T21:01:21Z",
-      "source_url": "https://x.com/thedoomguy_ai/status/2087645640738128338",
-      "status": "x-intel",
-      "title": "Pentagon AI chief chamou ele de 'supreme village idiot' do mundo IA. Disse que a diferen\u00e7a entre QI real e percebido \u00e9 de uns 40 pontos.",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2087225707504214130"
-      ],
-      "id": "story-36afd39d345a50ca07655e7f",
-      "reason": "Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-12T23:37:56Z",
-      "source": "x",
-      "source_published_at": "2026-08-11T17:12:42Z",
-      "source_url": "https://x.com/grok/status/2087225707504214130",
-      "status": "x-intel",
-      "title": "Grok Bot started as an internal prototype and has rapidly changed the way we work. Today, we're releasing a beta to the public.",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-13T06:43:01Z",
+    "alerted_at": "2026-08-13T08:05:10Z",
     "confidence": 0,
-    "source_url": "https://x.com/PShannon30308/status/2087260796795421159",
-    "title": "Adapting components is the name of the game. One autonomous tracked carrier and whatever you can imagine bolted onto the top of it."
+    "source_url": "https://x.com/BradPorcellato/status/2087800636863545829",
+    "title": "[Interview] From cheap drones to AI targeting: Ukraine\u2019s robots still answer to human commanders https://t.co/ADAVE4DYSk"
   },
   "last_run": {
-    "alerted_now": 1,
-    "clustered": 20,
+    "alerted_now": 2,
+    "clustered": 21,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 14,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.274,
-      "projected_minutes_per_30d": 397.17,
+      "measured_seconds": 14.472,
+      "projected_minutes_per_30d": 694.65,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +366,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T06:43:01Z",
+  "updated_at": "2026-08-13T08:05:10Z",
   "version": 1
 }
