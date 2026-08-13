@@ -5,24 +5,25 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/KPFK/status/2087910397151945024"
+        "https://x.com/offthebookstv/status/2087991875890274618"
       ],
-      "id": "story-b2582c74aa4c8780e6120f5b",
-      "reason": "Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in warfare. #AI #AutomationBias https://t.co/cWo05mUwXP",
-      "score": 74,
-      "sensitive_military_claim": true,
+      "id": "story-23df388ade1c2f0bbb63f388",
+      "reason": "In Oct 2022, the US imposed export controls on advanced AI chips like NVIDIA's A100/H100 to China &amp; Russia. The goal: prevent military AI development by adversarial states. #AI #ExportControls #US https://t.co/26FnIRrB0z",
+      "score": 40,
+      "sensitive_military_claim": false,
       "shown_at": "2026-08-13T20:20:15Z",
       "source": "x",
-      "source_published_at": "2026-08-13T19:02:23Z",
-      "source_url": "https://x.com/KPFK/status/2087910397151945024",
+      "source_published_at": "2026-08-13T19:57:10Z",
+      "source_url": "https://x.com/offthebookstv/status/2087991875890274618",
       "status": "x-intel",
-      "title": "@KPFK: Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in war",
+      "title": "In Oct 2022, the US imposed export controls on advanced AI chips like NVIDIA's A100/H100 to China &amp; Russia. The goal: prevent military AI development by adv",
       "webswarm_evidence_terms": [
-        "AI targeting",
+        "military AI",
         "x.com",
-        "AI"
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -56,25 +57,24 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "source-only",
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/offthebookstv/status/2087991875890274618"
+        "https://x.com/KPFK/status/2087910397151945024"
       ],
-      "id": "story-23df388ade1c2f0bbb63f388",
-      "reason": "In Oct 2022, the US imposed export controls on advanced AI chips like NVIDIA's A100/H100 to China &amp; Russia. The goal: prevent military AI development by adversarial states. #AI #ExportControls #US https://t.co/26FnIRrB0z",
-      "score": 40,
-      "sensitive_military_claim": false,
+      "id": "story-b2582c74aa4c8780e6120f5b",
+      "reason": "Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in warfare. #AI #AutomationBias https://t.co/cWo05mUwXP",
+      "score": 74,
+      "sensitive_military_claim": true,
       "shown_at": "2026-08-13T20:20:15Z",
       "source": "x",
-      "source_published_at": "2026-08-13T19:57:10Z",
-      "source_url": "https://x.com/offthebookstv/status/2087991875890274618",
+      "source_published_at": "2026-08-13T19:02:23Z",
+      "source_url": "https://x.com/KPFK/status/2087910397151945024",
       "status": "x-intel",
-      "title": "In Oct 2022, the US imposed export controls on advanced AI chips like NVIDIA's A100/H100 to China &amp; Russia. The goal: prevent military AI development by adv",
+      "title": "@KPFK: Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in war",
       "webswarm_evidence_terms": [
-        "military AI",
+        "AI targeting",
         "x.com",
-        "AI",
-        "military"
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -328,27 +328,27 @@
   "last_alert": {
     "alerted_at": "2026-08-13T20:20:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/KPFK/status/2087910397151945024",
-    "title": "@KPFK: Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in war"
+    "source_url": "https://x.com/offthebookstv/status/2087991875890274618",
+    "title": "In Oct 2022, the US imposed export controls on advanced AI chips like NVIDIA's A100/H100 to China &amp; Russia. The goal: prevent military AI development by adv"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 16,
+    "alerted_now": 0,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 8,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.876,
-      "projected_minutes_per_30d": 282.05,
+      "measured_seconds": 9.969,
+      "projected_minutes_per_30d": 478.5,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -362,7 +362,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -386,11 +386,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T20:20:15Z",
+  "updated_at": "2026-08-13T21:10:57Z",
   "version": 1
 }
