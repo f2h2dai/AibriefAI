@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/GlobalAIWatcher/status/2087834530899988581"
+      ],
+      "id": "story-d2138b52ac5381ade0b6a493",
+      "reason": "\ud83c\uddfa\ud83c\uddf3 UN's inaugural military AI talks see SIPRI citing a push for norms similar to the Paris Agreement\u2014targeting binding regulation by 2027. While \ud83c\uddf0\ud83c\uddf7 and \ud83c\uddf3\ud83c\uddf1 gain geopolitical influence, major military powers may face constraints. Decision-makers should track draft proposals. https:",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-13T12:08:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T09:31:56Z",
+      "source_url": "https://x.com/GlobalAIWatcher/status/2087834530899988581",
+      "status": "x-intel",
+      "title": "\ud83c\uddfa\ud83c\uddf3 UN's inaugural military AI talks see SIPRI citing a push for norms similar to the Paris Agreement\u2014targeting binding regulation by 2027. While \ud83c\uddf0\ud83c\uddf7 and \ud83c\uddf3\ud83c\uddf1 gain",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/TimesOfAI_/status/2087418884479488403"
       ],
       "id": "story-6b481a501150e7fecb285f34",
@@ -284,55 +310,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/PShannon30308/status/2087616294807912905"
-      ],
-      "id": "story-2206ab3feed697476e381c9e",
-      "reason": "@nypost There are zero stats or records kept of transgender murders according to Grok. Does anybody know of a site that's keeping the numbers?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-13T00:42:26Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T19:04:45Z",
-      "source_url": "https://x.com/PShannon30308/status/2087616294807912905",
-      "status": "x-intel",
-      "title": "@nypost There are zero stats or records kept of transgender murders according to Grok. Does anybody know of a site that's keeping the numbers?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-13T11:27:22Z",
+    "alerted_at": "2026-08-13T12:08:22Z",
     "confidence": 0,
-    "source_url": "https://x.com/TimesOfAI_/status/2087418884479488403",
-    "title": "\ud83e\udd16 Is AI reshaping how financial advice gets made? \ud83d\udcbc New AI tools are automating proposal generation for wealth-management firms, streamlining a time-consuming p"
+    "source_url": "https://x.com/GlobalAIWatcher/status/2087834530899988581",
+    "title": "\ud83c\uddfa\ud83c\uddf3 UN's inaugural military AI talks see SIPRI citing a push for norms similar to the Paris Agreement\u2014targeting binding regulation by 2027. While \ud83c\uddf0\ud83c\uddf7 and \ud83c\uddf3\ud83c\uddf1 gain"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 23,
+    "clustered": 20,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.408,
-      "projected_minutes_per_30d": 307.58,
+      "measured_seconds": 6.346,
+      "projected_minutes_per_30d": 304.62,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -375,6 +378,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T11:27:22Z",
+  "updated_at": "2026-08-13T12:08:22Z",
   "version": 1
 }
