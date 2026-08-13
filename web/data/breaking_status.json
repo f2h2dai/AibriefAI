@@ -4,6 +4,34 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MarketArena_/status/2087138299500433675",
+        "https://x.com/NUS_CIL/status/2087543644723236872"
+      ],
+      "id": "story-f3d20bd3ee66abfbf145ab91",
+      "reason": "\ud83c\uddf9\ud83c\uddfc TAIWAN PLANS A \u201cDRONE HELLSCAPE\u201d ACROSS THE TAIWAN STRAIT Taiwan is accelerating its asymmetric-warfare strategy, aiming to increase drone production from roughly 15,000 per month to more than 100,000 by 2030. The government plans to invest about $6.5B over six years and procu",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-13T22:00:47Z",
+      "source": "x",
+      "source_published_at": "2026-08-11T11:25:22Z",
+      "source_url": "https://x.com/MarketArena_/status/2087138299500433675",
+      "status": "x-intel",
+      "title": "\ud83c\uddf9\ud83c\uddfc TAIWAN PLANS A \u201cDRONE HELLSCAPE\u201d ACROSS THE TAIWAN STRAIT Taiwan is accelerating its asymmetric-warfare strategy, aiming to increase drone production from ro",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "defense",
+        "military AI",
+        "targeting",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -296,59 +324,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2087763216759759121",
-        "https://news.google.com/rss/articles/CBMijgJBVV95cUxQWHJyYng4dXAwVkhBay04OU1Hd0VZbUFPTXN1NllnN3ZJUVRvdlR1R2VZOGNKU2VDNlFEaUhvWFU2aThhUV9fQlp6SXkxMWdpQU9USEFfMl9XZzRwcjRsbWNHUzdtVmt3LVFQOWNmUElFazhTLV96MWNoaWF0amE5U05DUVRYS01GeTJpTzlmYlVfXy0zazB4X0NpbGwwd2dOR2hHbTRZN3dJQXNlelpHYklZZ1RfNEREQjlaOTR4bFNwWGlINGVSS3RHOEVJRExESnhFcTV2N1F4RzNhXy1qU1RySnUyb0ZKUUdVTzBNcUNqcGhVbTdLSGJ4eDlaR0NheTdvV1g3TEJONy1aQlE"
-      ],
-      "id": "story-17bc22a04c70754ce6b022a1",
-      "reason": "Satellite imagery from August 12, published by Soar Atlas and attributed to Vantor, reveals damage following Ukraine\u2019s large-scale strike on the Russian port of Novorossiysk. The imagery shows multiple visible impact points on a grain storage and shipment facility inside the port",
-      "score": 88,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T15:39:14Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T12:39:48Z",
-      "source_url": "https://x.com/MizarVision/status/2087763216759759121",
-      "status": "x-intel",
-      "title": "@MizarVision: Satellite imagery from August 12, published by Soar Atlas and attributed to Vantor, reveals damage following Ukraine\u2019s large-scale strike on",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-13T20:20:15Z",
+    "alerted_at": "2026-08-13T22:00:47Z",
     "confidence": 0,
-    "source_url": "https://x.com/offthebookstv/status/2087991875890274618",
-    "title": "In Oct 2022, the US imposed export controls on advanced AI chips like NVIDIA's A100/H100 to China &amp; Russia. The goal: prevent military AI development by adv"
+    "source_url": "https://x.com/MarketArena_/status/2087138299500433675",
+    "title": "\ud83c\uddf9\ud83c\uddfc TAIWAN PLANS A \u201cDRONE HELLSCAPE\u201d ACROSS THE TAIWAN STRAIT Taiwan is accelerating its asymmetric-warfare strategy, aiming to increase drone production from ro"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 8,
+    "corroborated_count": 6,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.969,
-      "projected_minutes_per_30d": 478.5,
+      "measured_seconds": 7.269,
+      "projected_minutes_per_30d": 348.91,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -386,11 +387,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T21:10:57Z",
+  "updated_at": "2026-08-13T22:00:47Z",
   "version": 1
 }
