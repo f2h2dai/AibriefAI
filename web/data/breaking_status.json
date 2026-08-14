@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/EarthDailyA/status/2088292662818320562"
+      ],
+      "id": "story-0d06cd03d1e915ed46a1c705",
+      "reason": "What does it take to turn satellite data into operational intelligence for public safety? @financialpost looks at @EarthDailyA\u2019s work bringing AI, daily Earth observation, and geospatial intelligence together to support next-generation border monitoring. https://t.co/rZyJHfCJBk",
+      "score": 70,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-14T22:12:41Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T15:52:24Z",
+      "source_url": "https://x.com/EarthDailyA/status/2088292662818320562",
+      "status": "x-intel",
+      "title": "What does it take to turn satellite data into operational intelligence for public safety? @financialpost looks at @EarthDailyA\u2019s work bringing AI, daily Earth o",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/pontotoc2/status/2088068329013698979"
@@ -274,45 +298,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/WayneTechSPFX/status/2087669911376290002"
-      ],
-      "id": "story-decb86812faf1029525ad4d9",
-      "reason": "\ud83d\udc8aAirplane \u2022 Cabal Operations: DEWS | Fires | Military | Texas 2 US Army service members were killed when an AH-64 Apache attack helicopter from Fort Hood crashed into a field near Salado, Texas. The violent impact near Dove Hollow Lane sparked the Dove Hollow Fire, which burned o",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-14T18:12:47Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T22:37:48Z",
-      "source_url": "https://x.com/WayneTechSPFX/status/2087669911376290002",
-      "status": "x-intel",
-      "title": "\ud83d\udc8aAirplane \u2022 Cabal Operations: DEWS | Fires | Military | Texas 2 US Army service members were killed when an AH-64 Apache attack helicopter from Fort Hood crashe",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T21:46:33Z",
+    "alerted_at": "2026-08-14T22:12:41Z",
     "confidence": 0,
-    "source_url": "https://x.com/pontotoc2/status/2088068329013698979",
-    "title": "Anthropic: 'We held to our exceptions for two reasons. First, we do not believe that today\u2019s frontier AI models are reliable enough to be used in fully autonomo"
+    "source_url": "https://x.com/EarthDailyA/status/2088292662818320562",
+    "title": "What does it take to turn satellite data into operational intelligence for public safety? @financialpost looks at @EarthDailyA\u2019s work bringing AI, daily Earth o"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 21,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -324,8 +322,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.083,
-      "projected_minutes_per_30d": 292.01,
+      "measured_seconds": 7.878,
+      "projected_minutes_per_30d": 378.12,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,6 +366,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T21:46:33Z",
+  "updated_at": "2026-08-14T22:12:41Z",
   "version": 1
 }
