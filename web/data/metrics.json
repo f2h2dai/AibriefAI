@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T19:02:23Z",
+  "generated_at": "2026-08-14T12:36:08Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -7,19 +7,19 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-13T19:02:23Z",
+  "latest_successful_run": "2026-08-14T12:36:08Z",
   "highest_ranked_signal": {
-    "id": "twitter-034",
-    "title": "@TRAVISRMASON: Google’s involvement with the intelligence community is deeply embedded in the foundational infrastructure of modern defense, intelligence c",
+    "id": "arxiv-015",
+    "title": "AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models",
     "action_score": 82.5,
-    "url": "https://x.com/TRAVISRMASON/status/2087743507339366646"
+    "url": "https://arxiv.org/abs/2608.13472v1"
   },
   "source_contribution": {
+    "arxiv": 4,
     "twitter": 5,
-    "github": 6,
-    "hackernews": 1
+    "github": 3
   },
   "failed_sources": [
     {
@@ -27,7 +27,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 46.982,
+  "runtime_seconds": 47.312,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-13T19:02:23Z",
+    "planned_at": "2026-08-14T12:36:08Z",
     "production_threshold": 70.0
   }
 }
