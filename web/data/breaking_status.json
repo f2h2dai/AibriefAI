@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/bakerybruh/status/2088148358363808188"
+      ],
+      "id": "story-e96041b30bb235bf7fc9bd7b",
+      "reason": "The most expected country ever, the one using ai targeting systems to recklessly kill tens of thousands... There could only ever be one machine of death and destruction so primed with the blood of the innocent...",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-14T20:22:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T06:18:59Z",
+      "source_url": "https://x.com/bakerybruh/status/2088148358363808188",
+      "status": "x-intel",
+      "title": "The most expected country ever, the one using ai targeting systems to recklessly kill tens of thousands... There could only ever be one machine of death and des",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/GenAISpotlight/status/2088265225392795947"
       ],
       "id": "story-113515b351df5a20a099ec90",
@@ -285,42 +310,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/GoogleDeepMind/status/2087948366294515977"
-      ],
-      "id": "story-4ee537aaf993b1b32096852a",
-      "reason": "Gemini 3.7 Flash is here. It\u2019s stronger for coding, knowledge work, and web development. \ud83e\uddf5",
-      "score": 13,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-14T13:37:51Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T12:36:08Z",
-      "source_url": "https://x.com/GoogleDeepMind/status/2087948366294515977",
-      "status": "x-intel",
-      "title": "@GoogleDeepMind: Gemini 3.7 Flash is here. It\u2019s stronger for coding, knowledge work, and web development. \ud83e\uddf5",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T19:13:00Z",
+    "alerted_at": "2026-08-14T20:22:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/GenAISpotlight/status/2088265225392795947",
-    "title": "\ud83d\ude80 \ud835\uddd5\ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\uddf2\ud835\uddf1 \ud835\udde1\ud835\ude03\ud835\uddf6\ud835\uddf1\ud835\uddf6\ud835\uddee \ud835\uddd4\ud835\udddc \ud835\udde0\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf9\ud835\uddf2 \ud835\udde6\ud835\ude02\ud835\uddff\ud835\uddf3\ud835\uddee\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\udddc\ud835\uddfb\ud835\ude00\ud835\uddf6\ud835\uddf1\ud835\uddf2 \ud835\udde5\ud835\ude02\ud835\ude00\ud835\ude00\ud835\uddf6\ud835\uddee\ud835\uddfb \ud835\uddea\ud835\uddf2\ud835\uddee\ud835\uddfd\ud835\uddfc\ud835\uddfb US export controls were supposed to keep Nvidia chips out of Russian hands, and the board inside Moscow"
+    "source_url": "https://x.com/bakerybruh/status/2088148358363808188",
+    "title": "The most expected country ever, the one using ai targeting systems to recklessly kill tens of thousands... There could only ever be one machine of death and des"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -332,8 +334,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.511,
-      "projected_minutes_per_30d": 312.51,
+      "measured_seconds": 5.904,
+      "projected_minutes_per_30d": 283.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +349,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +373,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T19:55:46Z",
+  "updated_at": "2026-08-14T20:22:50Z",
   "version": 1
 }
