@@ -5,6 +5,29 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/GoogleDeepMind/status/2087948366294515977"
+      ],
+      "id": "story-4ee537aaf993b1b32096852a",
+      "reason": "Gemini 3.7 Flash is here. It\u2019s stronger for coding, knowledge work, and web development. \ud83e\uddf5",
+      "score": 13,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-14T13:37:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T12:36:08Z",
+      "source_url": "https://x.com/GoogleDeepMind/status/2087948366294515977",
+      "status": "x-intel",
+      "title": "@GoogleDeepMind: Gemini 3.7 Flash is here. It\u2019s stronger for coding, knowledge work, and web development. \ud83e\uddf5",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/osintwarnews/status/2088178095845159063"
@@ -289,57 +312,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/KPFK/status/2087910397151945024"
-      ],
-      "id": "story-b2582c74aa4c8780e6120f5b",
-      "reason": "Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in warfare. #AI #AutomationBias https://t.co/cWo05mUwXP",
-      "score": 74,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T20:20:15Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T19:02:23Z",
-      "source_url": "https://x.com/KPFK/status/2087910397151945024",
-      "status": "x-intel",
-      "title": "@KPFK: Ever wondered how human oversight in AI targeting can lead to automation bias? Discover the implications of rubber-stamping decisions in war",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T12:05:11Z",
+    "alerted_at": "2026-08-14T13:37:51Z",
     "confidence": 0,
-    "source_url": "https://x.com/osintwarnews/status/2088178095845159063",
-    "title": "F-35 Lightning II: The Apex of Modern Air Combat The F-35 incorporates some of the most advanced and powerful technologies in the world. Sitting in the cockpit,"
+    "source_url": "https://x.com/GoogleDeepMind/status/2087948366294515977",
+    "title": "@GoogleDeepMind: Gemini 3.7 Flash is here. It\u2019s stronger for coding, knowledge work, and web development. \ud83e\uddf5"
   },
   "last_run": {
     "alerted_now": 1,
     "clustered": 19,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.621,
-      "projected_minutes_per_30d": 221.79,
+      "measured_seconds": 5.047,
+      "projected_minutes_per_30d": 242.27,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -353,7 +351,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -382,6 +380,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T12:05:11Z",
+  "updated_at": "2026-08-14T13:37:51Z",
   "version": 1
 }
