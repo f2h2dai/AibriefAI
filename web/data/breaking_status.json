@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/osintwarnews/status/2088178095845159063"
+      ],
+      "id": "story-cdcf778c14a00c1de4dfe895",
+      "reason": "F-35 Lightning II: The Apex of Modern Air Combat The F-35 incorporates some of the most advanced and powerful technologies in the world. Sitting in the cockpit, the pilot views external camera feeds directly on their helmet-mounted display, enabling a 360-degree panoramic vision ",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-14T12:05:11Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T08:17:09Z",
+      "source_url": "https://x.com/osintwarnews/status/2088178095845159063",
+      "status": "x-intel",
+      "title": "F-35 Lightning II: The Apex of Modern Air Combat The F-35 incorporates some of the most advanced and powerful technologies in the world. Sitting in the cockpit,",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/rosyprosperity/status/2087695692202414503"
@@ -288,58 +314,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/Radio_FreeSyria/status/2087963852054884421",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
-      ],
-      "id": "story-3fec43b4a31c7f377328e72a",
-      "reason": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the air, on the sea and underwater. The Middle East-specific initiative was unveiled only 16 days after CENTCOM announced T",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T18:35:31Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T18:05:49Z",
-      "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
-      "status": "x-intel",
-      "title": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T11:25:53Z",
+    "alerted_at": "2026-08-14T12:05:11Z",
     "confidence": 0,
-    "source_url": "https://x.com/rosyprosperity/status/2087695692202414503",
-    "title": "Lewis Carroll described AI capex in 1871: it takes all the running you can do to keep in the same place. Everything I think about AI capex going forward, run as"
+    "source_url": "https://x.com/osintwarnews/status/2088178095845159063",
+    "title": "F-35 Lightning II: The Apex of Modern Air Combat The F-35 incorporates some of the most advanced and powerful technologies in the world. Sitting in the cockpit,"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.441,
-      "projected_minutes_per_30d": 213.15,
+      "measured_seconds": 4.621,
+      "projected_minutes_per_30d": 221.79,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -353,7 +353,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -382,6 +382,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T11:25:53Z",
+  "updated_at": "2026-08-14T12:05:11Z",
   "version": 1
 }
