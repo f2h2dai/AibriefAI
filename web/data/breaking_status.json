@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/SynMaxInt/status/2087887775391535264"
+      ],
+      "id": "story-140b329c93d316cd03b0360e",
+      "reason": "Tens of millions of km\u00b2, imaged daily. SynMax is bringing @EarthDailyA 's daily, AI-ready satellite imagery into Theia, sharpening maritime domain awareness across the world's oceans. Full announcement: https://t.co/QyzqlQ77pI https://t.co/KmjjLHNryS",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-14T08:01:07Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T13:03:31Z",
+      "source_url": "https://x.com/SynMaxInt/status/2087887775391535264",
+      "status": "x-intel",
+      "title": "Tens of millions of km\u00b2, imaged daily. SynMax is bringing @EarthDailyA 's daily, AI-ready satellite imagery into Theia, sharpening maritime domain awareness acr",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/Radio_FreeSyria/status/2087963852054884421"
@@ -300,40 +324,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/TheWorldCorresp/status/2087805951596183939"
-      ],
-      "id": "story-0fe3a06683e8155321037bef",
-      "reason": "BREAKING NEWS: The war in Ukraine and the development of artificial intelligence have spawned a new generation of defense entrepreneurs. Tech startups, often founded by young former engineers with an average age of 30, are revolutionizing the industry, attracting billions of doll",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T15:39:14Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T07:38:23Z",
-      "source_url": "https://x.com/TheWorldCorresp/status/2087805951596183939",
-      "status": "x-intel",
-      "title": "BREAKING NEWS: The war in Ukraine and the development of artificial intelligence have spawned a new generation of defense entrepreneurs. Tech startups, often fo",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T00:42:39Z",
+    "alerted_at": "2026-08-14T08:01:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
-    "title": "@Radio_FreeSyria: US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating on"
+    "source_url": "https://x.com/SynMaxInt/status/2087887775391535264",
+    "title": "Tens of millions of km\u00b2, imaged daily. SynMax is bringing @EarthDailyA 's daily, AI-ready satellite imagery into Theia, sharpening maritime domain awareness acr"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 17,
     "collected": 25,
     "corroborated_count": 6,
@@ -341,15 +341,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.775,
-      "projected_minutes_per_30d": 373.22,
+      "measured_seconds": 7.813,
+      "projected_minutes_per_30d": 375.01,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -363,7 +363,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -387,11 +387,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T06:40:36Z",
+  "updated_at": "2026-08-14T08:01:07Z",
   "version": 1
 }
