@@ -4,6 +4,60 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/orfonline/status/2087791146575761540",
+        "https://x.com/NUS_CIL/status/2087543644723236872",
+        "https://x.com/MarketArena_/status/2087138299500433675"
+      ],
+      "id": "story-1d7808593d44d9e69a3aa573",
+      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-14T09:18:24Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T06:39:33Z",
+      "source_url": "https://x.com/orfonline/status/2087791146575761540",
+      "status": "x-intel",
+      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "defense",
+        "military AI",
+        "targeting",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/SkyeSharkie/status/2088007323977646480"
+      ],
+      "id": "story-19a1f32ef23c1c03a1bdffdc",
+      "reason": "The international treaties on AI that some people want are absurd and a danger to technological progress. I, however, don't disagree that we need international treaties - we need to ban autonomous weapons in the same way, or evenly more robustly than chemical/bio/etc. - however, ",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-14T09:18:24Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T20:58:33Z",
+      "source_url": "https://x.com/SkyeSharkie/status/2088007323977646480",
+      "status": "x-intel",
+      "title": "The international treaties on AI that some people want are absurd and a danger to technological progress. I, however, don't disagree that we need international",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -273,68 +327,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/SCMPNews/status/2087936581638168912"
-      ],
-      "id": "story-9c6b98486652a2423e5e0ec1",
-      "reason": "Lightweight, low-cost, heat-seeking missiles could be used to identify stealth fighters in future air combat with strong accuracy. Read more: https://t.co/56aZYxPjuP #china #tech #military #ai https://t.co/P9VXesKKS5",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T17:39:46Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T16:17:27Z",
-      "source_url": "https://x.com/SCMPNews/status/2087936581638168912",
-      "status": "x-intel",
-      "title": "Lightweight, low-cost, heat-seeking missiles could be used to identify stealth fighters in future air combat with strong accuracy. Read more: https://t.co/56aZY",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Teferi31311460/status/2087894345349202003"
-      ],
-      "id": "story-5d5e850581b0b58d2f1b64a5",
-      "reason": "\u201cAI warfare is much discussed, but often little understood. Rather than a single overarching programme, military AI today consists of overlapping machine learning algorithms rapidly automating tasks previously carried out by humans. In turn, human oversight and accountability are",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-13T16:33:04Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T13:29:37Z",
-      "source_url": "https://x.com/Teferi31311460/status/2087894345349202003",
-      "status": "x-intel",
-      "title": "\u201cAI warfare is much discussed, but often little understood. Rather than a single overarching programme, military AI today consists of overlapping machine learni",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T08:01:07Z",
+    "alerted_at": "2026-08-14T09:18:24Z",
     "confidence": 0,
-    "source_url": "https://x.com/SynMaxInt/status/2087887775391535264",
-    "title": "Tens of millions of km\u00b2, imaged daily. SynMax is bringing @EarthDailyA 's daily, AI-ready satellite imagery into Theia, sharpening maritime domain awareness acr"
+    "source_url": "https://x.com/orfonline/status/2087791146575761540",
+    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
   },
   "last_run": {
-    "alerted_now": 1,
-    "clustered": 17,
+    "alerted_now": 2,
+    "clustered": 14,
     "collected": 25,
     "corroborated_count": 6,
     "initial_collected": 25,
@@ -348,8 +351,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.813,
-      "projected_minutes_per_30d": 375.01,
+      "measured_seconds": 6.36,
+      "projected_minutes_per_30d": 305.3,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -363,7 +366,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -387,11 +390,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T08:01:07Z",
+  "updated_at": "2026-08-14T09:18:24Z",
   "version": 1
 }
