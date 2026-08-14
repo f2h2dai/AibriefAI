@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Radio_FreeSyria/status/2087963852054884421"
+      ],
+      "id": "story-a6b8fe9122e9992f0935d319",
+      "reason": "US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating one-way weapons in the air, on the sea and underwater. The Middle East-specific initiative was unveiled only 16 days after CENTCOM announced T",
+      "score": 83,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-14T00:42:39Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T19:02:23Z",
+      "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
+      "status": "x-intel",
+      "title": "@Radio_FreeSyria: US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating on",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -299,57 +324,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/TheWorldCorresp/status/2087805954620305899"
-      ],
-      "id": "story-16108951bb453290ecb8b10e",
-      "reason": "\ud83c\udfaf THE \"DISRUPTOR\" REVOLUTION From the ashes of the conflict in Ukraine, a new defense industry has arisen. Companies like California-based Anduril Industries are developing low-cost, autonomous weapons systems that promise to change the game, taking market share from traditional ",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-13T15:39:14Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T07:38:23Z",
-      "source_url": "https://x.com/TheWorldCorresp/status/2087805954620305899",
-      "status": "x-intel",
-      "title": "\ud83c\udfaf THE \"DISRUPTOR\" REVOLUTION From the ashes of the conflict in Ukraine, a new defense industry has arisen. Companies like California-based Anduril Industries ar",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons",
-        "defense"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-13T22:00:47Z",
+    "alerted_at": "2026-08-14T00:42:39Z",
     "confidence": 0,
-    "source_url": "https://x.com/MarketArena_/status/2087138299500433675",
-    "title": "\ud83c\uddf9\ud83c\uddfc TAIWAN PLANS A \u201cDRONE HELLSCAPE\u201d ACROSS THE TAIWAN STRAIT Taiwan is accelerating its asymmetric-warfare strategy, aiming to increase drone production from ro"
+    "source_url": "https://x.com/Radio_FreeSyria/status/2087963852054884421",
+    "title": "@Radio_FreeSyria: US Central Command today announced the launch of Task Force Falcon Strike, the first planned multinational attack-drone force integrating on"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 7,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.728,
-      "projected_minutes_per_30d": 466.94,
+      "measured_seconds": 7.666,
+      "projected_minutes_per_30d": 367.99,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -363,7 +363,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -387,11 +387,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-13T23:41:12Z",
+  "updated_at": "2026-08-14T00:42:39Z",
   "version": 1
 }
