@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Rainmaker1973/status/2087347083120427061"
+      ],
+      "id": "story-91bbb2b1929bb3f7423f5e9d",
+      "reason": "The second longest train journey in the entire world. 96 hours across Canada. [\ud83d\udcf9 karaandnate] https://t.co/tnzW6bbOjM",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-14T23:44:17Z",
+      "source": "x",
+      "source_published_at": "2026-08-12T01:15:00Z",
+      "source_url": "https://x.com/Rainmaker1973/status/2087347083120427061",
+      "status": "x-intel",
+      "title": "The second longest train journey in the entire world. 96 hours across Canada. [\ud83d\udcf9 karaandnate] https://t.co/tnzW6bbOjM",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -276,57 +300,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/GenAISpotlight/status/2088265225392795947"
-      ],
-      "id": "story-113515b351df5a20a099ec90",
-      "reason": "\ud83d\ude80 \ud835\uddd5\ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\uddf2\ud835\uddf1 \ud835\udde1\ud835\ude03\ud835\uddf6\ud835\uddf1\ud835\uddf6\ud835\uddee \ud835\uddd4\ud835\udddc \ud835\udde0\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf9\ud835\uddf2 \ud835\udde6\ud835\ude02\ud835\uddff\ud835\uddf3\ud835\uddee\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\udddc\ud835\uddfb\ud835\ude00\ud835\uddf6\ud835\uddf1\ud835\uddf2 \ud835\udde5\ud835\ude02\ud835\ude00\ud835\ude00\ud835\uddf6\ud835\uddee\ud835\uddfb \ud835\uddea\ud835\uddf2\ud835\uddee\ud835\uddfd\ud835\uddfc\ud835\uddfb US export controls were supposed to keep Nvidia chips out of Russian hands, and the board inside Moscow's S-71 missile shows how that's failing. Ukraine's investigators pulled an Nvidia Jetson, a low-power module built to r",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-14T19:13:00Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T14:03:22Z",
-      "source_url": "https://x.com/GenAISpotlight/status/2088265225392795947",
-      "status": "x-intel",
-      "title": "\ud83d\ude80 \ud835\uddd5\ud835\uddee\ud835\uddfb\ud835\uddfb\ud835\uddf2\ud835\uddf1 \ud835\udde1\ud835\ude03\ud835\uddf6\ud835\uddf1\ud835\uddf6\ud835\uddee \ud835\uddd4\ud835\udddc \ud835\udde0\ud835\uddfc\ud835\uddf1\ud835\ude02\ud835\uddf9\ud835\uddf2 \ud835\udde6\ud835\ude02\ud835\uddff\ud835\uddf3\ud835\uddee\ud835\uddf0\ud835\uddf2\ud835\ude00 \ud835\udddc\ud835\uddfb\ud835\ude00\ud835\uddf6\ud835\uddf1\ud835\uddf2 \ud835\udde5\ud835\ude02\ud835\ude00\ud835\ude00\ud835\uddf6\ud835\uddee\ud835\uddfb \ud835\uddea\ud835\uddf2\ud835\uddee\ud835\uddfd\ud835\uddfc\ud835\uddfb US export controls were supposed to keep Nvidia chips out of Russian hands, and the board inside Moscow",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-14T22:40:05Z",
+    "alerted_at": "2026-08-14T23:44:17Z",
     "confidence": 0,
-    "source_url": "https://x.com/AryJeayBackup/status/2087947059114446953",
-    "title": "Iran published high-quality satellite imagery of US assets it destroyed in the UAE & Bahrain. \ud83c\udde6\ud83c\uddea Destruction of AN/TPS-57 radar at Al Dhafra Air Base, UAE \ud83c\udde7\ud83c\udded De"
+    "source_url": "https://x.com/Rainmaker1973/status/2087347083120427061",
+    "title": "The second longest train journey in the entire world. 96 hours across Canada. [\ud83d\udcf9 karaandnate] https://t.co/tnzW6bbOjM"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 20,
+    "alerted_now": 1,
+    "clustered": 21,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.973,
-      "projected_minutes_per_30d": 286.68,
+      "measured_seconds": 8.447,
+      "projected_minutes_per_30d": 405.47,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +339,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 17,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +363,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-14T23:18:13Z",
+  "updated_at": "2026-08-14T23:44:17Z",
   "version": 1
 }
