@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/owocki/status/2088643029200674900"
+      ],
+      "id": "story-02ec07e596a3e34f57ef98d3",
+      "reason": "TRANSGRESSIVE TAKE \ud83d\udea8: the progress narrative is wrong. the narrative: we're in an upward spiral, life keeps getting better. and it's got receipts - since 1800: - life expectancy doubled - extreme poverty ~90% \u2192 under 10% - literacy, a tenth of humanity \u2192 most of it - child mortal",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-15T19:34:41Z",
+      "source": "x",
+      "source_published_at": "2026-08-15T15:04:37Z",
+      "source_url": "https://x.com/owocki/status/2088643029200674900",
+      "status": "x-intel",
+      "title": "TRANSGRESSIVE TAKE \ud83d\udea8: the progress narrative is wrong. the narrative: we're in an upward spiral, life keeps getting better. and it's got receipts - since 1800:",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/ORFMumbai/status/2088181332971061371"
       ],
       "id": "story-026e72bdb9a57ab8e7c7f196",
@@ -284,57 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/QBVizMedia/status/2088515482420654234"
-      ],
-      "id": "story-35a271e21b1be76608a0f236",
-      "reason": "Overwhelming power certainly brings peaceful order to a world that is still immature. Now, with AI and unmanned drones having become primary military assets, how does that 1992 DPG actually play a role today? 1992 Defense Planning Guidance https://t.co/k9U4CkKPL6 via @YouTube",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-15T13:40:50Z",
-      "source": "x",
-      "source_published_at": "2026-08-15T06:37:48Z",
-      "source_url": "https://x.com/QBVizMedia/status/2088515482420654234",
-      "status": "x-intel",
-      "title": "Overwhelming power certainly brings peaceful order to a world that is still immature. Now, with AI and unmanned drones having become primary military assets, ho",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T18:47:46Z",
+    "alerted_at": "2026-08-15T19:34:41Z",
     "confidence": 0,
-    "source_url": "https://x.com/ORFMumbai/status/2088181332971061371",
-    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
+    "source_url": "https://x.com/owocki/status/2088643029200674900",
+    "title": "TRANSGRESSIVE TAKE \ud83d\udea8: the progress narrative is wrong. the narrative: we're in an upward spiral, life keeps getting better. and it's got receipts - since 1800:"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 21,
+    "alerted_now": 1,
+    "clustered": 22,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 13,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.521,
-      "projected_minutes_per_30d": 361.02,
+      "measured_seconds": 6.478,
+      "projected_minutes_per_30d": 310.93,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,11 +371,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T19:14:37Z",
+  "updated_at": "2026-08-15T19:34:41Z",
   "version": 1
 }
