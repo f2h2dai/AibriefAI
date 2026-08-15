@@ -309,22 +309,22 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "clustered": 18,
+    "clustered": 25,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 10,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.808,
-      "projected_minutes_per_30d": 374.78,
+      "measured_seconds": 8.495,
+      "projected_minutes_per_30d": 407.75,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -338,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,6 +367,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T20:37:05Z",
+  "updated_at": "2026-08-15T20:57:12Z",
   "version": 1
 }
