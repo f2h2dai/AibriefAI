@@ -4,6 +4,33 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/orfonline/status/2088558819488260528",
+        "https://x.com/ORFKolkata/status/2088181330404397276",
+        "https://x.com/orfonline/status/2088241729354784898"
+      ],
+      "id": "story-857f250e6c5ef2b62bc5dc57",
+      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-15T09:47:09Z",
+      "source": "x",
+      "source_published_at": "2026-08-15T09:30:00Z",
+      "source_url": "https://x.com/orfonline/status/2088558819488260528",
+      "status": "x-intel",
+      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -281,57 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/algotradingdesk/status/2087703936258150696"
-      ],
-      "id": "story-233499d1f62dc77e15a44c44",
-      "reason": "\ud83c\uddfa\ud83c\uddf8 AppLovin (APP) AppLovin is in focus as its AI-powered advertising platform continues to expand beyond mobile gaming. The company\u2019s AXON advertising technology uses machine learning to improve user targeting and monetisation, creating a major growth opportunity as advertisers s",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-15T01:24:16Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T00:53:00Z",
-      "source_url": "https://x.com/algotradingdesk/status/2087703936258150696",
-      "status": "x-intel",
-      "title": "\ud83c\uddfa\ud83c\uddf8 AppLovin (APP) AppLovin is in focus as its AI-powered advertising platform continues to expand beyond mobile gaming. The company\u2019s AXON advertising technolog",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T09:16:51Z",
+    "alerted_at": "2026-08-15T09:47:09Z",
     "confidence": 0,
-    "source_url": "https://x.com/anacondaprocL/status/2088543912235593781",
-    "title": "\ud83d\uded1 Facts Around 1,100\u20131,300 frontier lab employees (@OpenAI , @AnthropicAI , @Google , @Meta , etc.) signed the Pacing the Frontier letter (late July 2026) after"
+    "source_url": "https://x.com/orfonline/status/2088558819488260528",
+    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 22,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.252,
-      "projected_minutes_per_30d": 348.11,
+      "measured_seconds": 5.787,
+      "projected_minutes_per_30d": 277.77,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -374,6 +376,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T09:16:51Z",
+  "updated_at": "2026-08-15T09:47:09Z",
   "version": 1
 }
