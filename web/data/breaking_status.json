@@ -4,32 +4,28 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 5,
-      "evidence_status": "source-only",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/CLS_Group/status/2088158830974669017",
-        "https://x.com/Daseingram/status/2088155233901797771",
-        "https://x.com/orbis86_x/status/2088015235928178834",
-        "https://x.com/armada_ai/status/2088029274389553167",
-        "https://x.com/tacticalabs/status/2088136907826090174"
+        "https://x.com/ORFMumbai/status/2088181332971061371"
       ],
-      "id": "story-84f0e57f2766c81f4d8e1816",
-      "reason": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy, cattle and timber, organisations are increasingly expected to understand where products come from and demonstrate that ",
-      "score": 85,
-      "sensitive_military_claim": false,
+      "id": "story-026e72bdb9a57ab8e7c7f196",
+      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
+      "score": 40,
+      "sensitive_military_claim": true,
       "shown_at": "2026-08-15T18:47:46Z",
       "source": "x",
-      "source_published_at": "2026-08-14T07:00:36Z",
-      "source_url": "https://x.com/CLS_Group/status/2088158830974669017",
+      "source_published_at": "2026-08-14T08:30:00Z",
+      "source_url": "https://x.com/ORFMumbai/status/2088181332971061371",
       "status": "x-intel",
-      "title": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy,",
+      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
       "webswarm_evidence_terms": [
-        "geospatial",
-        "geospatial intelligence",
-        "satellite imagery"
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -57,28 +53,32 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_count": 5,
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/ORFMumbai/status/2088181332971061371"
+        "https://x.com/CLS_Group/status/2088158830974669017",
+        "https://x.com/Daseingram/status/2088155233901797771",
+        "https://x.com/orbis86_x/status/2088015235928178834",
+        "https://x.com/armada_ai/status/2088029274389553167",
+        "https://x.com/tacticalabs/status/2088136907826090174"
       ],
-      "id": "story-026e72bdb9a57ab8e7c7f196",
-      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
-      "score": 40,
-      "sensitive_military_claim": true,
+      "id": "story-84f0e57f2766c81f4d8e1816",
+      "reason": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy, cattle and timber, organisations are increasingly expected to understand where products come from and demonstrate that ",
+      "score": 85,
+      "sensitive_military_claim": false,
       "shown_at": "2026-08-15T18:47:46Z",
       "source": "x",
-      "source_published_at": "2026-08-14T08:30:00Z",
-      "source_url": "https://x.com/ORFMumbai/status/2088181332971061371",
+      "source_published_at": "2026-08-14T07:00:36Z",
+      "source_url": "https://x.com/CLS_Group/status/2088158830974669017",
       "status": "x-intel",
-      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
+      "title": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy,",
       "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "weapons"
+        "geospatial",
+        "geospatial intelligence",
+        "satellite imagery"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
+      "webswarm_node": "mizarvision_geoint"
     },
     {
       "confidence": 0,
@@ -314,27 +314,27 @@
   "last_alert": {
     "alerted_at": "2026-08-15T18:47:46Z",
     "confidence": 0,
-    "source_url": "https://x.com/CLS_Group/status/2088158830974669017",
-    "title": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy,"
+    "source_url": "https://x.com/ORFMumbai/status/2088181332971061371",
+    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 20,
+    "alerted_now": 0,
+    "clustered": 21,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.978,
-      "projected_minutes_per_30d": 286.94,
+      "measured_seconds": 7.521,
+      "projected_minutes_per_30d": 361.02,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +348,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T18:47:46Z",
+  "updated_at": "2026-08-15T19:14:37Z",
   "version": 1
 }
