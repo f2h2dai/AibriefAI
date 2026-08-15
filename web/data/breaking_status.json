@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Luke08Skywalker/status/2088451501316255908"
+      ],
+      "id": "story-9ebb07677d4522ef63671923",
+      "reason": "A comprehensive Congressional Research Service (CRS) report and independent intelligence tracking confirm that at least 42 to 45 U.S. military aircraft have been officially lost or severely damaged during the conflict. https://t.co/Mqqw9col3p",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-15T02:29:18Z",
+      "source": "x",
+      "source_published_at": "2026-08-15T02:23:34Z",
+      "source_url": "https://x.com/Luke08Skywalker/status/2088451501316255908",
+      "status": "x-intel",
+      "title": "A comprehensive Congressional Research Service (CRS) report and independent intelligence tracking confirm that at least 42 to 45 U.S. military aircraft have bee",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/algotradingdesk/status/2087703936258150696"
@@ -276,57 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/NewsTongueX/status/2087414532670959711"
-      ],
-      "id": "story-ff460220340a853785bd7ebe",
-      "reason": "\ud83d\udd34 Hegseth's Pentagon board picks have ties to Trump family venture fund Defense Secretary Pete Hegseth appointed Marc Andreessen and Blake Masters to the Defense Policy Board, a federal advisory committee on Pentagon strategy. Both men have financial ties to 1789 Capital, a ventu",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-14T20:52:50Z",
-      "source": "x",
-      "source_published_at": "2026-08-12T05:43:01Z",
-      "source_url": "https://x.com/NewsTongueX/status/2087414532670959711",
-      "status": "x-intel",
-      "title": "\ud83d\udd34 Hegseth's Pentagon board picks have ties to Trump family venture fund Defense Secretary Pete Hegseth appointed Marc Andreessen and Blake Masters to the Defens",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons",
-        "defense"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T01:24:16Z",
+    "alerted_at": "2026-08-15T02:29:18Z",
     "confidence": 0,
-    "source_url": "https://x.com/algotradingdesk/status/2087703936258150696",
-    "title": "\ud83c\uddfa\ud83c\uddf8 AppLovin (APP) AppLovin is in focus as its AI-powered advertising platform continues to expand beyond mobile gaming. The company\u2019s AXON advertising technolog"
+    "source_url": "https://x.com/Luke08Skywalker/status/2088451501316255908",
+    "title": "A comprehensive Congressional Research Service (CRS) report and independent intelligence tracking confirm that at least 42 to 45 U.S. military aircraft have bee"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 22,
+    "alerted_now": 1,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.788,
-      "projected_minutes_per_30d": 421.82,
+      "measured_seconds": 7.405,
+      "projected_minutes_per_30d": 355.42,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -364,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T01:24:16Z",
+  "updated_at": "2026-08-15T02:29:18Z",
   "version": 1
 }
