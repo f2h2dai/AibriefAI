@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/PalantirTech/status/2087965585628094516"
+      ],
+      "id": "story-814f4af7e400a99fc338e60c",
+      "reason": "The future will be built by American workers supercharged by AI. Without any background in software engineering, Palantir American Tech Fellow Brittany Molenaar from Grand Rapids, Michigan, built the tool she knew her clinic needed, an anti-sepsis platform that reduced time to fi",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-15T22:56:35Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T18:12:42Z",
+      "source_url": "https://x.com/PalantirTech/status/2087965585628094516",
+      "status": "x-intel",
+      "title": "The future will be built by American workers supercharged by AI. Without any background in software engineering, Palantir American Tech Fellow Brittany Molenaar",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -273,40 +297,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AnthropicAI/status/2088343978873966687"
-      ],
-      "id": "story-3e9a17cd266ad7f38c4cff0a",
-      "reason": "We\u2019ve written an FAQ to answer some of the questions we've received about watermarking. In summary: \u2022 We\u2019re implementing watermarking to comply with the EU AI Act. Other major model developers have signed the same Code of Practice and will also be implementing watermarking; \u2022 Our",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-15T18:47:46Z",
-      "source": "x",
-      "source_published_at": "2026-08-15T18:27:55Z",
-      "source_url": "https://x.com/AnthropicAI/status/2088343978873966687",
-      "status": "x-intel",
-      "title": "@AnthropicAI: We\u2019ve written an FAQ to answer some of the questions we've received about watermarking. In summary: \u2022 We\u2019re implementing watermarking to com",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T22:11:50Z",
+    "alerted_at": "2026-08-15T22:56:35Z",
     "confidence": 0,
-    "source_url": "https://x.com/altinbase21/status/2088710172029890569",
-    "title": "Alternate History: Operation Epic Fury \u2014 F-35s and HIMARS Only 28 February 2026 Operation Epic Fury begins with a restriction that shocks the Pentagon: the Unit"
+    "source_url": "https://x.com/PalantirTech/status/2087965585628094516",
+    "title": "The future will be built by American workers supercharged by AI. Without any background in software engineering, Palantir American Tech Fellow Brittany Molenaar"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 22,
     "collected": 25,
     "corroborated_count": 1,
@@ -314,15 +314,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 11,
+    "initial_x_relevant": 13,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 19.657,
-      "projected_minutes_per_30d": 943.54,
+      "measured_seconds": 13.455,
+      "projected_minutes_per_30d": 645.86,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -336,7 +336,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -360,11 +360,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T22:36:26Z",
+  "updated_at": "2026-08-15T22:56:35Z",
   "version": 1
 }
