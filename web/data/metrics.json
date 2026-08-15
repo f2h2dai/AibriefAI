@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T18:53:01Z",
+  "generated_at": "2026-08-15T12:13:40Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-14T18:53:01Z",
+  "latest_successful_run": "2026-08-15T12:13:40Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "gadievron/raptor",
-    "action_score": 80.25,
-    "url": "https://github.com/gadievron/raptor"
+    "id": "github-004",
+    "title": "mufans/knowledge-base",
+    "action_score": 74.5,
+    "url": "https://github.com/mufans/knowledge-base"
   },
   "source_contribution": {
     "github": 7,
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 52.571,
+  "runtime_seconds": 45.983,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-14T18:53:01Z",
+    "planned_at": "2026-08-15T12:13:40Z",
     "production_threshold": 70.0
   }
 }
