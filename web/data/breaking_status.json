@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/PalantirTech/status/2087524620169539710"
+      ],
+      "id": "story-de2733b96efb28da202a9703",
+      "reason": "The most ambitious startups in AI are building their future on Foundry and AIP. Now it's your turn. Applications for Cohort 003 are open now. We're selecting an elite cohort of startups to build agentic AI products on AIP, with hands-on support from the Palantir team. Ship your p",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-15T10:13:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-12T13:00:28Z",
+      "source_url": "https://x.com/PalantirTech/status/2087524620169539710",
+      "status": "x-intel",
+      "title": "The most ambitious startups in AI are building their future on Foundry and AIP. Now it's your turn. Applications for Cohort 003 are open now. We're selecting an",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -282,39 +306,13 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Luke08Skywalker/status/2088451501316255908"
-      ],
-      "id": "story-9ebb07677d4522ef63671923",
-      "reason": "A comprehensive Congressional Research Service (CRS) report and independent intelligence tracking confirm that at least 42 to 45 U.S. military aircraft have been officially lost or severely damaged during the conflict. https://t.co/Mqqw9col3p",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-15T02:29:18Z",
-      "source": "x",
-      "source_published_at": "2026-08-15T02:23:34Z",
-      "source_url": "https://x.com/Luke08Skywalker/status/2088451501316255908",
-      "status": "x-intel",
-      "title": "A comprehensive Congressional Research Service (CRS) report and independent intelligence tracking confirm that at least 42 to 45 U.S. military aircraft have bee",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T09:47:09Z",
+    "alerted_at": "2026-08-15T10:13:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/orfonline/status/2088558819488260528",
-    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
+    "source_url": "https://x.com/PalantirTech/status/2087524620169539710",
+    "title": "The most ambitious startups in AI are building their future on Foundry and AIP. Now it's your turn. Applications for Cohort 003 are open now. We're selecting an"
   },
   "last_run": {
     "alerted_now": 1,
@@ -325,15 +323,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 13,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.787,
-      "projected_minutes_per_30d": 277.77,
+      "measured_seconds": 14.022,
+      "projected_minutes_per_30d": 673.04,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,6 +374,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T09:47:09Z",
+  "updated_at": "2026-08-15T10:13:03Z",
   "version": 1
 }
