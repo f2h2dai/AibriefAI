@@ -4,6 +4,37 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 5,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/altinbase21/status/2088710172029890569",
+        "https://x.com/altinbase21/status/2088710283359359341",
+        "https://x.com/BabakTaghvaee1/status/2087840405697990901",
+        "https://x.com/defense_civil25/status/2088490426273784174",
+        "https://x.com/usairforce_x/status/2088128027263991968"
+      ],
+      "id": "story-63fbd2f697abcd8f46b566c4",
+      "reason": "Alternate History: Operation Epic Fury \u2014 F-35s and HIMARS Only 28 February 2026 Operation Epic Fury begins with a restriction that shocks the Pentagon: the United States will attack Iran using only F-35 Lightning II fighters and HIMARS rocket artillery. No B-2 bombers. No Tomahaw",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-15T22:11:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-15T19:31:26Z",
+      "source_url": "https://x.com/altinbase21/status/2088710172029890569",
+      "status": "x-intel",
+      "title": "Alternate History: Operation Epic Fury \u2014 F-35s and HIMARS Only 28 February 2026 Operation Epic Fury begins with a restriction that shocks the Pentagon: the Unit",
+      "webswarm_evidence_terms": [
+        "Iran",
+        "Operation Epic Fury",
+        "Pentagon",
+        "missiles",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -266,61 +297,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 5,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/CLS_Group/status/2088158830974669017",
-        "https://x.com/Daseingram/status/2088155233901797771",
-        "https://x.com/orbis86_x/status/2088015235928178834",
-        "https://x.com/armada_ai/status/2088029274389553167",
-        "https://x.com/tacticalabs/status/2088136907826090174"
-      ],
-      "id": "story-84f0e57f2766c81f4d8e1816",
-      "reason": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy, cattle and timber, organisations are increasingly expected to understand where products come from and demonstrate that ",
-      "score": 85,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-15T18:47:46Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T07:00:36Z",
-      "source_url": "https://x.com/CLS_Group/status/2088158830974669017",
-      "status": "x-intel",
-      "title": "As demand for agricultural commodities continues to grow, so does the need for greater transparency across global supply chains. \ud83e\udeb5 From coffee and cocoa to soy,",
-      "webswarm_evidence_terms": [
-        "geospatial",
-        "geospatial intelligence",
-        "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T21:55:24Z",
+    "alerted_at": "2026-08-15T22:11:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/DIU_x/status/2088338417537167517",
-    "title": "After a thoughtful search, DIU is proud to announce we've selected two new portfolio directors. Dr. Jarred Conley will lead Autonomous Warfare. Autonomous syste"
+    "source_url": "https://x.com/altinbase21/status/2088710172029890569",
+    "title": "Alternate History: Operation Epic Fury \u2014 F-35s and HIMARS Only 28 February 2026 Operation Epic Fury begins with a restriction that shocks the Pentagon: the Unit"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 14,
+    "initial_x_relevant": 10,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.455,
-      "projected_minutes_per_30d": 549.86,
+      "measured_seconds": 84.837,
+      "projected_minutes_per_30d": 4072.18,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +336,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,6 +365,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T21:55:24Z",
+  "updated_at": "2026-08-15T22:11:50Z",
   "version": 1
 }
