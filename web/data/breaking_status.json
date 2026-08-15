@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Suzanne_Medes/status/2088669678587834457"
+      ],
+      "id": "story-fba744028ed3ca5e7ad3a699",
+      "reason": "\"No Consent Required\" They didn\u2019t call it a draft, but that\u2019s exactly what it was. In the middle of the Cold War, The United States quietly pulled the highest-scoring children out of normal classrooms and began shaping them for one purpose: national power, technological supremacy",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-15T18:14:28Z",
+      "source": "x",
+      "source_published_at": "2026-08-15T16:50:31Z",
+      "source_url": "https://x.com/Suzanne_Medes/status/2088669678587834457",
+      "status": "x-intel",
+      "title": "\"No Consent Required\" They didn\u2019t call it a draft, but that\u2019s exactly what it was. In the middle of the Cold War, The United States quietly pulled the highest-s",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -280,56 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AndrewYNg/status/2088302050706686198"
-      ],
-      "id": "story-5bf40243bf89f80850ac81b6",
-      "reason": "New: A map of the most important skills in AI Engineering. https://t.co/VVkn1Dqp1N",
-      "score": 12,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-15T12:18:36Z",
-      "source": "x",
-      "source_published_at": "2026-08-15T12:13:40Z",
-      "source_url": "https://x.com/AndrewYNg/status/2088302050706686198",
-      "status": "x-intel",
-      "title": "@AndrewYNg: New: A map of the most important skills in AI Engineering. https://t.co/VVkn1Dqp1N",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T17:12:11Z",
+    "alerted_at": "2026-08-15T18:14:28Z",
     "confidence": 0,
-    "source_url": "https://x.com/Daseingram/status/2088155233901797771",
-    "title": "\ud83c\udf1f \ud83e\uddec THE NEXT GENERATION OF BIOMETRICS MAY GO BEYOND THE BODY. As identity technology evolves, biometrics is expanding toward increasingly sophisticated ways of"
+    "source_url": "https://x.com/Suzanne_Medes/status/2088669678587834457",
+    "title": "\"No Consent Required\" They didn\u2019t call it a draft, but that\u2019s exactly what it was. In the middle of the Cold War, The United States quietly pulled the highest-s"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 23,
+    "alerted_now": 1,
+    "clustered": 21,
     "collected": 25,
-    "corroborated_count": 0,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 9,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.896,
-      "projected_minutes_per_30d": 331.0,
+      "measured_seconds": 7.017,
+      "projected_minutes_per_30d": 336.8,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 8,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T17:55:24Z",
+  "updated_at": "2026-08-15T18:14:28Z",
   "version": 1
 }
