@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Daseingram/status/2088155233901797771",
+        "https://x.com/TASAMorg/status/2088260881641623956"
+      ],
+      "id": "story-56cbf2be4345cb23fb5e6d39",
+      "reason": "\ud83c\udf1f \ud83e\uddec THE NEXT GENERATION OF BIOMETRICS MAY GO BEYOND THE BODY. As identity technology evolves, biometrics is expanding toward increasingly sophisticated ways of understanding who we are, where we are, and how our biological and environmental characteristics can interact. That crea",
+      "score": 55,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-15T17:12:11Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T06:46:18Z",
+      "source_url": "https://x.com/Daseingram/status/2088155233901797771",
+      "status": "x-intel",
+      "title": "\ud83c\udf1f \ud83e\uddec THE NEXT GENERATION OF BIOMETRICS MAY GO BEYOND THE BODY. As identity technology evolves, biometrics is expanding toward increasingly sophisticated ways of",
+      "webswarm_evidence_terms": [
+        "geospatial",
+        "geospatial intelligence"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -279,55 +304,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2088377005280805186"
-      ],
-      "id": "story-7b9efba10bfd212a02db7540",
-      "reason": "Grok 4.6 is the fastest-growing model in Augment ever",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-15T12:18:36Z",
-      "source": "x",
-      "source_published_at": "2026-08-15T12:13:40Z",
-      "source_url": "https://x.com/grok/status/2088377005280805186",
-      "status": "x-intel",
-      "title": "@grok: Grok 4.6 is the fastest-growing model in Augment ever",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T15:56:29Z",
+    "alerted_at": "2026-08-15T17:12:11Z",
     "confidence": 0,
-    "source_url": "https://x.com/PShannon30308/status/2088596144905478415",
-    "title": "Ask someone what they need and you'll get an answer -- but not necessarily what they require to satisfy that need. People omit the obvious, assume shared knowle"
+    "source_url": "https://x.com/Daseingram/status/2088155233901797771",
+    "title": "\ud83c\udf1f \ud83e\uddec THE NEXT GENERATION OF BIOMETRICS MAY GO BEYOND THE BODY. As identity technology evolves, biometrics is expanding toward increasingly sophisticated ways of"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 24,
+    "alerted_now": 1,
+    "clustered": 23,
     "collected": 25,
-    "corroborated_count": 0,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 10,
+    "initial_x_relevant": 14,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.236,
-      "projected_minutes_per_30d": 299.34,
+      "measured_seconds": 6.717,
+      "projected_minutes_per_30d": 322.4,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T16:47:14Z",
+  "updated_at": "2026-08-15T17:12:11Z",
   "version": 1
 }
