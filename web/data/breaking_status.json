@@ -7,6 +7,29 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/PShannon30308/status/2088596144905478415"
+      ],
+      "id": "story-cefd1201f2701ae0044ca35a",
+      "reason": "Ask someone what they need and you'll get an answer -- but not necessarily what they require to satisfy that need. People omit the obvious, assume shared knowledge, describe today's solution, and sometimes don't recognize what they know until something challenges it. Requirements",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-15T15:56:29Z",
+      "source": "x",
+      "source_published_at": "2026-08-15T11:58:19Z",
+      "source_url": "https://x.com/PShannon30308/status/2088596144905478415",
+      "status": "x-intel",
+      "title": "Ask someone what they need and you'll get an answer -- but not necessarily what they require to satisfy that need. People omit the obvious, assume shared knowle",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/perde_arkasi1/status/2087904679011254460"
       ],
       "id": "story-4d099d0d242e61f77821f91a",
@@ -279,55 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ConnieSkosey/status/2088085686570127474"
-      ],
-      "id": "story-8c0896444f30b93800d17299",
-      "reason": "A National Library of Medicine (Jan 2021) report of 69 studies with more than 57,000 patients showed fatality rates of 45% among covid-19 patients receiving invasive mechanical ventilation (ventilators). The fatality rate increased to 84 % in older patients. In New York hospitals",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-15T12:18:36Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T02:09:57Z",
-      "source_url": "https://x.com/ConnieSkosey/status/2088085686570127474",
-      "status": "x-intel",
-      "title": "A National Library of Medicine (Jan 2021) report of 69 studies with more than 57,000 patients showed fatality rates of 45% among covid-19 patients receiving inv",
-      "webswarm_evidence_terms": [
-        "96 hours"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T14:44:59Z",
+    "alerted_at": "2026-08-15T15:56:29Z",
     "confidence": 0,
-    "source_url": "https://x.com/perde_arkasi1/status/2087904679011254460",
-    "title": "\"\u0627\u0644\u064a\u0648\u0645 \u062a\u0631\u0643\u064a\u0627 \u062a\u0648\u0636\u062d \u0644\u0644\u0645\u0631\u0647 \u0627\u0644\u0623\u0648\u0644\u0649 \u0645\u0627\u0630\u0627 \u062a\u0631\u064a\u062f \u0645\u0646 \u0627\u062a\u0641\u0627\u0642\u064a\u0629 \u0645\u0643\u0629 \ud83d\udd34 \u0627\u0644\u0645\u062a\u062d\u062f\u062b \u0628\u0627\u0633\u0645 \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u062a\u0631\u0643\u064a\u0629 \u0627\u0644\u0644\u0648\u0627\u0621 \u0627\u0644\u0628\u062d\u0631\u064a \u0632\u0643\u064a \u0623\u0643\u062a\u0648\u0631\u0643 \u062d\u0648\u0644 \u0627\u062a\u0641\u0627\u0642\u064a\u0629 \u0645\u0643\u0629 - \u0625\u0646 \u0627\u0644\u0627\u062a\u0641\u0627\u0642\u064a\u0629 \u062f\u0641\u0627\u0639\u064a\u0629 \u0648\u0644\u064a\u0633\u062a"
+    "source_url": "https://x.com/PShannon30308/status/2088596144905478415",
+    "title": "Ask someone what they need and you'll get an answer -- but not necessarily what they require to satisfy that need. People omit the obvious, assume shared knowle"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 23,
+    "alerted_now": 1,
+    "clustered": 24,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.023,
-      "projected_minutes_per_30d": 481.09,
+      "measured_seconds": 8.182,
+      "projected_minutes_per_30d": 392.73,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T15:42:31Z",
+  "updated_at": "2026-08-15T15:56:29Z",
   "version": 1
 }
