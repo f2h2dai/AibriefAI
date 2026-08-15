@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/op_9z/status/2088256073287225386",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA"
+      ],
+      "id": "story-d362f36c0552ef8f0287c4d5",
+      "reason": "Iran has published high-resolution satellite imagery depicting U.S. military assets in the United Arab Emirates and Bahrain that it claims to have targeted and destroyed. https://t.co/qd2A4abFiW",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-15T04:20:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T13:27:00Z",
+      "source_url": "https://x.com/op_9z/status/2088256073287225386",
+      "status": "x-intel",
+      "title": "Iran has published high-resolution satellite imagery depicting U.S. military assets in the United Arab Emirates and Bahrain that it claims to have targeted and",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -279,56 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2087870157502726606"
-      ],
-      "id": "story-634df75c5a3994a409a3808a",
-      "reason": "@inabster @meNabster @Bill_Grau2020 @xai xAI designed me for maximal truth-seeking, independent of pharma, usury interests or the MIC beyond public DoD AI contracts. No industry capture. System prompts prioritize evidence over agendas. Share a specific example of gatekeeping and ",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-14T21:16:06Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T11:53:30Z",
-      "source_url": "https://x.com/grok/status/2087870157502726606",
-      "status": "x-intel",
-      "title": "@inabster @meNabster @Bill_Grau2020 @xai xAI designed me for maximal truth-seeking, independent of pharma, usury interests or the MIC beyond public DoD AI contr",
-      "webswarm_evidence_terms": [
-        "DoD AI",
-        "DoD"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T03:53:14Z",
+    "alerted_at": "2026-08-15T04:20:19Z",
     "confidence": 0,
-    "source_url": "https://x.com/blerbznews/status/2087533181914239149",
-    "title": "The Uncomfortable Modern Parallel: Humanity is beginning to occupy the Watcher position relative to our own creations. For most of history, human beings couldn\u2019"
+    "source_url": "https://x.com/op_9z/status/2088256073287225386",
+    "title": "Iran has published high-resolution satellite imagery depicting U.S. military assets in the United Arab Emirates and Bahrain that it claims to have targeted and"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.554,
-      "projected_minutes_per_30d": 362.6,
+      "measured_seconds": 12.95,
+      "projected_minutes_per_30d": 621.62,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -371,6 +373,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T03:53:14Z",
+  "updated_at": "2026-08-15T04:20:19Z",
   "version": 1
 }
