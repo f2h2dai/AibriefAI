@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/TASAMorg/status/2088250354227921106",
+        "https://x.com/satnow_online/status/2088306430629568580"
+      ],
+      "id": "story-b0ede1d1487a7cf69db95ea2",
+      "reason": "Strategic Vision Document | T\u00fcrkiye Geospatial Intelligence Symposium \u201cGeospatial Intelligence And Artificial Intelligence\u201d Link &gt; https://t.co/0tFvU56e77 #global #national #artificial #data https://t.co/D4BTbmFkhV",
+      "score": 55,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-15T08:26:48Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T13:04:16Z",
+      "source_url": "https://x.com/TASAMorg/status/2088250354227921106",
+      "status": "x-intel",
+      "title": "Strategic Vision Document | T\u00fcrkiye Geospatial Intelligence Symposium \u201cGeospatial Intelligence And Artificial Intelligence\u201d Link &gt; https://t.co/0tFvU56e77 #g",
+      "webswarm_evidence_terms": [
+        "geospatial",
+        "geospatial intelligence"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -282,57 +307,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/PlayzResi40675/status/2087750816761540906",
-        "https://news.google.com/rss/articles/CBMijgJBVV95cUxQWHJyYng4dXAwVkhBay04OU1Hd0VZbUFPTXN1NllnN3ZJUVRvdlR1R2VZOGNKU2VDNlFEaUhvWFU2aThhUV9fQlp6SXkxMWdpQU9USEFfMl9XZzRwcjRsbWNHUzdtVmt3LVFQOWNmUElFazhTLV96MWNoaWF0amE5U05DUVRYS01GeTJpTzlmYlVfXy0zazB4X0NpbGwwd2dOR2hHbTRZN3dJQXNlelpHYklZZ1RfNEREQjlaOTR4bFNwWGlINGVSS3RHOEVJRExESnhFcTV2N1F4RzNhXy1qU1RySnUyb0ZKUUdVTzBNcUNqcGhVbTdLSGJ4eDlaR0NheTdvV1g3TEJONy1aQlE"
-      ],
-      "id": "story-dd2fc19ee7db84ad70feddaa",
-      "reason": "@kaskaide1 What about this mizarvision satellite imagery https://t.co/miZqofOXi4",
-      "score": 25,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-14T22:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T03:59:17Z",
-      "source_url": "https://x.com/PlayzResi40675/status/2087750816761540906",
-      "status": "x-intel",
-      "title": "@kaskaide1 What about this mizarvision satellite imagery https://t.co/miZqofOXi4",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-15T05:16:19Z",
+    "alerted_at": "2026-08-15T08:26:48Z",
     "confidence": 0,
-    "source_url": "https://x.com/unikornaio/status/2087821360072397181",
-    "title": "[Exhibit 15 Part II] XVII. MEDIA PROMOTION AND FINANCIAL CONTAGION AI-14 established that AI-related risks can reach private-credit funds, banks, insurers, pens"
+    "source_url": "https://x.com/TASAMorg/status/2088250354227921106",
+    "title": "Strategic Vision Document | T\u00fcrkiye Geospatial Intelligence Symposium \u201cGeospatial Intelligence And Artificial Intelligence\u201d Link &gt; https://t.co/0tFvU56e77 #g"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 20,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.478,
-      "projected_minutes_per_30d": 358.95,
+      "measured_seconds": 7.602,
+      "projected_minutes_per_30d": 364.88,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-15T07:58:31Z",
+  "updated_at": "2026-08-15T08:26:48Z",
   "version": 1
 }
