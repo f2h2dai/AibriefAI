@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/CPGBML/status/2088363565954543617",
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNUc3V2plM3E1M0hsd3ltQTQ0UVhIMXNCc2c5TWNGSUFPb2t3bkhHcjdSOEhsVWl2WDJiUk9JNGcwSjZpdGtBRTFVWjFfWEh5clJFVE4zdVZ1UmppWDhIRXJyNW5IcHA1eGt4bnZtbmh2UVdXTFZ3cWxnWTd1ZlBoLTh3SjdlYTc1dmcyRmxUd1BpeXYyaU54NE90SEFOWVpLWEtKMlViNU14SjFNQXc0T29hS3Nnb0VDTURGMFl3Z1hlZHB3ZUlr"
+      ],
+      "id": "story-3347bdbc038d5ddcb1f641e9",
+      "reason": "Unprecedented US military losses Iranian military sources have published a major list of US military assets hit during 15 days of fighting starting on 8 July. In the air operations sector alone: 11 fighter aircraft and helicopters were destroyed or damaged on the ground; 17 recon",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-16T09:18:01Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T20:34:08Z",
+      "source_url": "https://x.com/CPGBML/status/2088363565954543617",
+      "status": "x-intel",
+      "title": "Unprecedented US military losses Iranian military sources have published a major list of US military assets hit during 15 days of fighting starting on 8 July. I",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 7,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -275,56 +301,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/orbis86_x/status/2088015235928178834"
-      ],
-      "id": "story-fc7b43c402a908b5e650f718",
-      "reason": "\ud83e\udd16\ud83c\udfd9\ufe0f Excited to welcome Navchetan Singh, Co-Founder & CEO of YCurb, as a speaker at the \ud835\udde5\ud835\uddfc\ud835\uddef\ud835\uddfc\ud835\ude01\ud835\uddf6\ud835\uddf0\ud835\ude00 & \ud835\uddd4\ud835\udddc \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde6\ud835\uddf5\ud835\uddfc\ud835\ude04\ud835\uddf0\ud835\uddee\ud835\ude00\ud835\uddf2 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff2 presented by @svhcapital. Navchetan Singh leads YCurb, an urban technology company building the digital operating layer for city curbs. YCurb\u2019s zero-hardware ",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T03:11:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-13T21:30:00Z",
-      "source_url": "https://x.com/orbis86_x/status/2088015235928178834",
-      "status": "x-intel",
-      "title": "\ud83e\udd16\ud83c\udfd9\ufe0f Excited to welcome Navchetan Singh, Co-Founder & CEO of YCurb, as a speaker at the \ud835\udde5\ud835\uddfc\ud835\uddef\ud835\uddfc\ud835\ude01\ud835\uddf6\ud835\uddf0\ud835\ude00 & \ud835\uddd4\ud835\udddc \ud835\uddda\ud835\uddf9\ud835\uddfc\ud835\uddef\ud835\uddee\ud835\uddf9 \ud835\udde6\ud835\uddf5\ud835\uddfc\ud835\ude04\ud835\uddf0\ud835\uddee\ud835\ude00\ud835\uddf2 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udff2 presented by @svhcapital. Navchetan Si",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T07:51:41Z",
+    "alerted_at": "2026-08-16T09:18:01Z",
     "confidence": 0,
-    "source_url": "https://x.com/sentdefender/status/2088772206272684442",
-    "title": "More than 1,300 Strava users have publicly logged workouts from U.S. military sites across the U.S. Central Command (CENTCOM) area, according to an investigatio"
+    "source_url": "https://x.com/CPGBML/status/2088363565954543617",
+    "title": "Unprecedented US military losses Iranian military sources have published a major list of US military assets hit during 15 days of fighting starting on 8 July. I"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 24,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 8,
+    "initial_x_relevant": 14,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.404,
-      "projected_minutes_per_30d": 355.38,
+      "measured_seconds": 7.494,
+      "projected_minutes_per_30d": 359.71,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -338,7 +340,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 7,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -362,11 +364,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T08:53:33Z",
+  "updated_at": "2026-08-16T09:18:01Z",
   "version": 1
 }
