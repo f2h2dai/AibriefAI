@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-08-16T12:13:57Z",
+  "generated_at": "2026-08-16T18:27:20Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-16T12:13:57Z",
+  "latest_successful_run": "2026-08-16T18:27:20Z",
   "highest_ranked_signal": {
     "id": "twitter-037",
-    "title": "@AfghanOSINT0: Anti-junta forces carried out FPV drone strikes in Myanmar’s Magway Region, reportedly using explosive-equipped drones to target Burmese mil",
-    "action_score": 73.5,
-    "url": "https://x.com/AfghanOSINT0/status/2088854345332691425"
+    "title": "@agtprpnabsrdty: Anthropic's road toward a two trillion dollar IPO runs through Palantir's classified Pentagon contracts and Jeffrey Epstein's old contact li",
+    "action_score": 80.5,
+    "url": "https://x.com/agtprpnabsrdty/status/2088996206709981296"
   },
   "source_contribution": {
     "twitter": 5,
-    "github": 7
+    "github": 6,
+    "hackernews": 1
   },
   "failed_sources": [
     {
@@ -26,7 +27,7 @@
       "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on requests per minute (RPM): Limit 30, Used 30, R"
     }
   ],
-  "runtime_seconds": 45.52,
+  "runtime_seconds": 45.268,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-16T12:13:57Z",
+    "planned_at": "2026-08-16T18:27:20Z",
     "production_threshold": 70.0
   }
 }
