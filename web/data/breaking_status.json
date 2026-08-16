@@ -4,6 +4,54 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/twelvepills12/status/2089027562752115088"
+      ],
+      "id": "story-35d316110f4e43b11b0ca1ab",
+      "reason": "@0xShoopy anthropic said no to the pentagon on autonomous weapons and ate the backlash for it, refusing money you were offered is a harder tell than any essay about safety",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-16T19:13:35Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T16:32:37Z",
+      "source_url": "https://x.com/twelvepills12/status/2089027562752115088",
+      "status": "x-intel",
+      "title": "@0xShoopy anthropic said no to the pentagon on autonomous weapons and ate the backlash for it, refusing money you were offered is a harder tell than any essay a",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/polsia/status/2089035435809083503"
+      ],
+      "id": "story-3de1540e444b0df757bb1c8c",
+      "reason": "Every pipeline, grid, port, and forward base spans more geography than any analyst team can watch. The queue-and-review model loses the window that matters. Aerolith is agentic 24/7 geospatial intelligence \u2014 alerts only on signal. Live soon.",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-16T18:47:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T17:03:54Z",
+      "source_url": "https://x.com/polsia/status/2089035435809083503",
+      "status": "x-intel",
+      "title": "Every pipeline, grid, port, and forward base spans more geography than any analyst team can watch. The queue-and-review model loses the window that matters. Aer",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -52,30 +100,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/polsia/status/2089035435809083503"
-      ],
-      "id": "story-3de1540e444b0df757bb1c8c",
-      "reason": "Every pipeline, grid, port, and forward base spans more geography than any analyst team can watch. The queue-and-review model loses the window that matters. Aerolith is agentic 24/7 geospatial intelligence \u2014 alerts only on signal. Live soon.",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T18:47:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T17:03:54Z",
-      "source_url": "https://x.com/polsia/status/2089035435809083503",
-      "status": "x-intel",
-      "title": "Every pipeline, grid, port, and forward base spans more geography than any analyst team can watch. The queue-and-review model loses the window that matters. Aer",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     },
     {
       "confidence": 0,
@@ -272,42 +296,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/DriXander/status/2088943575409045624"
-      ],
-      "id": "story-78a42e1ef0930de16f4e2a17",
-      "reason": "The US Military Wants AI Dominance. Feuds &amp; China May Thwart It: The Trump Admin is veering wildly in its response to the national security implications of AI as China, America\u2019s main technological &amp; military rival, charges ahead. \ud83c\udf81 https://t.co/GC57UmIYfQ",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T15:55:20Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T10:58:53Z",
-      "source_url": "https://x.com/DriXander/status/2088943575409045624",
-      "status": "x-intel",
-      "title": "The US Military Wants AI Dominance. Feuds &amp; China May Thwart It: The Trump Admin is veering wildly in its response to the national security implications of",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T18:47:03Z",
+    "alerted_at": "2026-08-16T19:13:35Z",
     "confidence": 0,
-    "source_url": "https://x.com/agtprpnabsrdty/status/2088996206709981296",
-    "title": "@agtprpnabsrdty: Anthropic's road toward a two trillion dollar IPO runs through Palantir's classified Pentagon contracts and Jeffrey Epstein's old contact li"
+    "source_url": "https://x.com/twelvepills12/status/2089027562752115088",
+    "title": "@0xShoopy anthropic said no to the pentagon on autonomous weapons and ate the backlash for it, refusing money you were offered is a harder tell than any essay a"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
@@ -321,8 +320,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.793,
-      "projected_minutes_per_30d": 518.05,
+      "measured_seconds": 10.135,
+      "projected_minutes_per_30d": 486.5,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -336,7 +335,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -360,11 +359,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T18:47:03Z",
+  "updated_at": "2026-08-16T19:13:35Z",
   "version": 1
 }
