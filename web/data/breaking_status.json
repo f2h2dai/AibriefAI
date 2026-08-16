@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/EurLiberalForum/status/2087845323318108530"
+      ],
+      "id": "story-08c63d7781c5e963d622ea5a",
+      "reason": "What if Europe\u2019s greatest danger isn\u2019t becoming weaker than its authoritarian rivals, but becoming more like them? Luke Kemp argues that fear, concentrated power and new technologies could be pushing us towards a new \u201cSilicon Goliath\u201d, where data, surveillance \ud83d\udce1 and autonomous we",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-16T07:17:38Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T10:14:50Z",
+      "source_url": "https://x.com/EurLiberalForum/status/2087845323318108530",
+      "status": "x-intel",
+      "title": "What if Europe\u2019s greatest danger isn\u2019t becoming weaker than its authoritarian rivals, but becoming more like them? Luke Kemp argues that fear, concentrated powe",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/UAPWatchers/status/2088313728643076381"
@@ -268,57 +292,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/Warmind_2/status/2088405586958245901"
-      ],
-      "id": "story-a70049db288fcd8d3f8c28f4",
-      "reason": "@Aluminumovercst @Drone_Wars_ AI targeting is being trained to specifically attack humans",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T02:10:31Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T23:21:07Z",
-      "source_url": "https://x.com/Warmind_2/status/2088405586958245901",
-      "status": "x-intel",
-      "title": "@Aluminumovercst @Drone_Wars_ AI targeting is being trained to specifically attack humans",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T05:59:04Z",
+    "alerted_at": "2026-08-16T07:17:38Z",
     "confidence": 0,
-    "source_url": "https://x.com/UAPWatchers/status/2088313728643076381",
-    "title": "12/ The distribution trail shows us how seriously the report entered the intelligence system. Recipients included elements of the Air Force, Navy, Army, Marine"
+    "source_url": "https://x.com/EurLiberalForum/status/2087845323318108530",
+    "title": "What if Europe\u2019s greatest danger isn\u2019t becoming weaker than its authoritarian rivals, but becoming more like them? Luke Kemp argues that fear, concentrated powe"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 21,
+    "alerted_now": 1,
+    "clustered": 20,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 12,
+    "initial_x_relevant": 11,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.609,
-      "projected_minutes_per_30d": 365.21,
+      "measured_seconds": 9.686,
+      "projected_minutes_per_30d": 464.94,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -332,7 +331,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -356,11 +355,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T06:39:47Z",
+  "updated_at": "2026-08-16T07:17:38Z",
   "version": 1
 }
