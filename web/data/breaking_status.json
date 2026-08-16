@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/EuromaidanPress/status/2088379643225141369"
+      ],
+      "id": "story-7e1793831e74a6c8001c9708",
+      "reason": "More than 100 drones were detected near Romania over the past 96 hours, with NATO fighter jets scrambled seven times, Romanian Defense Minister Radu Miru\u021b\u0103 said. The drones were detected amid an unprecedented wave of Russian attacks on Ukrainian Danube ports. Most were destroyed ",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-16T22:35:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T21:38:01Z",
+      "source_url": "https://x.com/EuromaidanPress/status/2088379643225141369",
+      "status": "x-intel",
+      "title": "More than 100 drones were detected near Romania over the past 96 hours, with NATO fighter jets scrambled seven times, Romanian Defense Minister Radu Miru\u021b\u0103 said",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -281,56 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/thetect0nic/status/2089013114876371441"
-      ],
-      "id": "story-f7c1a114a3cdc191b4e1bdf4",
-      "reason": "Officials keep reaching for a Cold War analogy. CIA Director Ratcliffe called advanced AI \"akin to digital nuclear weapons.\" The comparison breaks on contact. Nuclear weapons stayed in state hands and changed little in eighty years. Frontier models are privately built, globally a",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T20:10:43Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T15:35:13Z",
-      "source_url": "https://x.com/thetect0nic/status/2089013114876371441",
-      "status": "x-intel",
-      "title": "Officials keep reaching for a Cold War analogy. CIA Director Ratcliffe called advanced AI \"akin to digital nuclear weapons.\" The comparison breaks on contact. N",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T21:54:22Z",
+    "alerted_at": "2026-08-16T22:35:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/MarioNawfal/status/2089092332834492582",
-    "title": "\ud83c\uddfa\ud83c\uddf8\ud83c\udde8\ud83c\uddf3 The U.S. military is RACING for AI dominance, but internal feuds and China keep getting in the way... The Pentagon banned Anthropic\u2019s AI from defense syste"
+    "source_url": "https://x.com/EuromaidanPress/status/2088379643225141369",
+    "title": "More than 100 drones were detected near Romania over the past 96 hours, with NATO fighter jets scrambled seven times, Romanian Defense Minister Radu Miru\u021b\u0103 said"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 13,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.867,
-      "projected_minutes_per_30d": 425.61,
+      "measured_seconds": 7.335,
+      "projected_minutes_per_30d": 352.07,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T22:10:52Z",
+  "updated_at": "2026-08-16T22:35:03Z",
   "version": 1
 }
