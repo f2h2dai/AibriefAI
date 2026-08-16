@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/thelastraza/status/2087955780892868950"
+      ],
+      "id": "story-6168cb227bdbcbc32e9b6c33",
+      "reason": "@ElevenLabsDevs Cool tech but remember elevenLabs is backed by the same VC class that funds military AI contracts. who do you think gets priority access to voice cloning capabilities?",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-16T11:55:57Z",
+      "source": "x",
+      "source_published_at": "2026-08-13T17:33:45Z",
+      "source_url": "https://x.com/thelastraza/status/2087955780892868950",
+      "status": "x-intel",
+      "title": "@ElevenLabsDevs Cool tech but remember elevenLabs is backed by the same VC class that funds military AI contracts. who do you think gets priority access to voic",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/HypotheticMind/status/2088932201631019351"
@@ -280,41 +306,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/pgranfield/status/2088348266995896629"
-      ],
-      "id": "story-ad5c44bb446d0ff83185f53a",
-      "reason": "During Holy Week, a priest visited a Ukrainian drone unit near Zaporizhzhia. He prayed with the combatants, then sprinkled holy water on a strike drone before it flew against Russian lines. It was St. Augustine's conundrum in its newest form. My new piece with Tony Pfaff in @Fore",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T10:13:20Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T19:33:21Z",
-      "source_url": "https://x.com/pgranfield/status/2088348266995896629",
-      "status": "x-intel",
-      "title": "During Holy Week, a priest visited a Ukrainian drone unit near Zaporizhzhia. He prayed with the combatants, then sprinkled holy water on a strike drone before i",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T11:41:49Z",
+    "alerted_at": "2026-08-16T11:55:57Z",
     "confidence": 0,
-    "source_url": "https://x.com/HypotheticMind/status/2088932201631019351",
-    "title": "Hypothetical, what if the biggest AI safety problem isn\u2019t that one superintelligent AI turns against humanity, but that millions of increasingly capable AIs end"
+    "source_url": "https://x.com/thelastraza/status/2087955780892868950",
+    "title": "@ElevenLabsDevs Cool tech but remember elevenLabs is backed by the same VC class that funds military AI contracts. who do you think gets priority access to voic"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 22,
+    "clustered": 23,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -328,8 +330,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.508,
-      "projected_minutes_per_30d": 408.38,
+      "measured_seconds": 6.243,
+      "projected_minutes_per_30d": 299.67,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 8,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,6 +374,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T11:41:49Z",
+  "updated_at": "2026-08-16T11:55:57Z",
   "version": 1
 }
