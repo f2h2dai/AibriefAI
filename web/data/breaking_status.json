@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/UAPWatchers/status/2088313728643076381"
+      ],
+      "id": "story-7aef9732967f464f29c49899",
+      "reason": "12/ The distribution trail shows us how seriously the report entered the intelligence system. Recipients included elements of the Air Force, Navy, Army, Marine Corps, Joint Staff, CIA, DIA, FBI, National Security Agency, National Geospatial-Intelligence Agency, National Air and S",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-16T05:59:04Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T17:16:06Z",
+      "source_url": "https://x.com/UAPWatchers/status/2088313728643076381",
+      "status": "x-intel",
+      "title": "12/ The distribution trail shows us how seriously the report entered the intelligence system. Recipients included elements of the Air Force, Navy, Army, Marine",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/Rolexbabuog/status/2087856305281356108"
       ],
       "id": "story-38d4327cbad1c003d69bca2d",
@@ -269,40 +293,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Aluminumovercst/status/2088396691250786600"
-      ],
-      "id": "story-cf3c19be1756a02c6602f9b6",
-      "reason": "@Drone_Wars_ Silly question here but since it\u2019s AI couldn\u2019t you just make the vehicles look like humans? After all AI won\u2019t hurt them etc. where is the humanity here",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T02:10:31Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T22:45:46Z",
-      "source_url": "https://x.com/Aluminumovercst/status/2088396691250786600",
-      "status": "x-intel",
-      "title": "@Drone_Wars_ Silly question here but since it\u2019s AI couldn\u2019t you just make the vehicles look like humans? After all AI won\u2019t hurt them etc. where is the humanity",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T03:57:43Z",
+    "alerted_at": "2026-08-16T05:59:04Z",
     "confidence": 0,
-    "source_url": "https://x.com/Rolexbabuog/status/2087856305281356108",
-    "title": "Hey @grok can you can share darkest Tollywood conspiracy?"
+    "source_url": "https://x.com/UAPWatchers/status/2088313728643076381",
+    "title": "12/ The distribution trail shows us how seriously the report entered the intelligence system. Recipients included elements of the Air Force, Navy, Army, Marine"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 21,
     "collected": 25,
     "corroborated_count": 1,
@@ -310,15 +310,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 11,
+    "initial_x_relevant": 10,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 15.26,
-      "projected_minutes_per_30d": 732.49,
+      "measured_seconds": 15.752,
+      "projected_minutes_per_30d": 756.1,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -332,7 +332,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -356,11 +356,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T05:40:05Z",
+  "updated_at": "2026-08-16T05:59:04Z",
   "version": 1
 }
