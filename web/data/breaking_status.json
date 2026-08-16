@@ -58,30 +58,6 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/TheAIphiles/status/2089022727633908000"
-      ],
-      "id": "story-6c236722a1e7cb525cc31956",
-      "reason": "The Pentagon is setting up a legal minefield for AI contractors - Washington Examiner https://t.co/VCr733p72o #CyberSecurity",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T21:13:09Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T18:27:20Z",
-      "source_url": "https://x.com/TheAIphiles/status/2089022727633908000",
-      "status": "x-intel",
-      "title": "@TheAIphiles: The Pentagon is setting up a legal minefield for AI contractors - Washington Examiner https://t.co/VCr733p72o #CyberSecurity",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
         "https://x.com/RedbayUAV/status/2088468224283123766"
       ],
       "id": "story-646a0d51da5b0795f6c13030",
@@ -100,6 +76,30 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/TheAIphiles/status/2089022727633908000"
+      ],
+      "id": "story-6c236722a1e7cb525cc31956",
+      "reason": "The Pentagon is setting up a legal minefield for AI contractors - Washington Examiner https://t.co/VCr733p72o #CyberSecurity",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-16T21:13:09Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T18:27:20Z",
+      "source_url": "https://x.com/TheAIphiles/status/2089022727633908000",
+      "status": "x-intel",
+      "title": "@TheAIphiles: The Pentagon is setting up a legal minefield for AI contractors - Washington Examiner https://t.co/VCr733p72o #CyberSecurity",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -309,8 +309,8 @@
     "title": "I am checking out UpGrow for real Instagram follower growth with AI targeting. UpGrow offers one free Pro month for this post. https://t.co/7bUiIVMK1l"
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 21,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
@@ -324,8 +324,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.002,
-      "projected_minutes_per_30d": 480.11,
+      "measured_seconds": 7.79,
+      "projected_minutes_per_30d": 373.9,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +339,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,11 +363,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T21:13:09Z",
+  "updated_at": "2026-08-16T21:34:16Z",
   "version": 1
 }
