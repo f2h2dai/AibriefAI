@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/IsraelArmyX/status/2089017659891564944"
+      ],
+      "id": "story-0e73e112fecc0ee9d1fd68a5",
+      "reason": "\ud83d\udea8 BREAKING: \ud83c\uddee\ud83c\uddf1 Israel: \"Our military AI generates precise coordinates so rapidly that there isn't even time for a radio signal from your command center to reach you. Before you can even decide to fire, you are already in our crosshairs.\" \ud83c\uddee\ud83c\uddf7 Iran: \"Your AI relies on electronic foo",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-16T23:54:56Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T15:53:16Z",
+      "source_url": "https://x.com/IsraelArmyX/status/2089017659891564944",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 BREAKING: \ud83c\uddee\ud83c\uddf1 Israel: \"Our military AI generates precise coordinates so rapidly that there isn't even time for a radio signal from your command center to reach",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/EuromaidanPress/status/2088379643225141369"
       ],
       "id": "story-7e1793831e74a6c8001c9708",
@@ -276,61 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 4,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/thetect0nic/status/2089009902622552308",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0",
-        "https://x.com/HFI_Research/status/2088142091066933726"
-      ],
-      "id": "story-3f3c31bec5f2ed8677966821",
-      "reason": "\ud83e\uddf5 Thread | \ud83c\uddfa\ud83c\uddf2 \ud83c\udde8\ud83c\uddf3 Unilateral Disarmament The Pentagon banned Anthropic's Claude for \"supply chain risk.\" Then it built its most sensitive cyberwar experiments on Anthropic's newest model anyway. A New York Times investigation this morning traces the contradiction in detail. Worth ",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T20:10:43Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T15:22:27Z",
-      "source_url": "https://x.com/thetect0nic/status/2089009902622552308",
-      "status": "x-intel",
-      "title": "\ud83e\uddf5 Thread | \ud83c\uddfa\ud83c\uddf2 \ud83c\udde8\ud83c\uddf3 Unilateral Disarmament The Pentagon banned Anthropic's Claude for \"supply chain risk.\" Then it built its most sensitive cyberwar experiments on",
-      "webswarm_evidence_terms": [
-        "Iran",
-        "Operation Epic Fury",
-        "Pentagon",
-        "targeting"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T22:35:03Z",
+    "alerted_at": "2026-08-16T23:54:56Z",
     "confidence": 0,
-    "source_url": "https://x.com/EuromaidanPress/status/2088379643225141369",
-    "title": "More than 100 drones were detected near Romania over the past 96 hours, with NATO fighter jets scrambled seven times, Romanian Defense Minister Radu Miru\u021b\u0103 said"
+    "source_url": "https://x.com/IsraelArmyX/status/2089017659891564944",
+    "title": "\ud83d\udea8 BREAKING: \ud83c\uddee\ud83c\uddf1 Israel: \"Our military AI generates precise coordinates so rapidly that there isn't even time for a radio signal from your command center to reach"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 17,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 13,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.922,
-      "projected_minutes_per_30d": 332.26,
+      "measured_seconds": 8.779,
+      "projected_minutes_per_30d": 421.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 8,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T23:33:06Z",
+  "updated_at": "2026-08-16T23:54:56Z",
   "version": 1
 }
