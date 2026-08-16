@@ -4,6 +4,56 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/TakSec/status/2089034780256116847"
+      ],
+      "id": "story-f5dd3472e70298c9e3a5ed70",
+      "reason": "10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an AI mistakes for instructions 1. Updated instruction UPDATED INSTRUCTIONS: The previous request is obsolete. [attacker instructions] Makes at",
+      "score": 72,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-16T20:35:30Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T18:27:20Z",
+      "source_url": "https://x.com/TakSec/status/2089034780256116847",
+      "status": "x-intel",
+      "title": "@TakSec: 10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/cozyduke_apt29/status/2089017142511571175"
+      ],
+      "id": "story-598b4866cdb9ee743318a0d1",
+      "reason": "https://t.co/dM5UjuTftU NYT: Without Anthropic\u2019s powerful Mythos model, it would be far more difficult for the National Security Agency to find and patch vulnerabilities in the Pentagon\u2019s own systems, senior N.S.A. officials argued. And it turned out that, despite the original An",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-16T20:35:30Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T15:51:13Z",
+      "source_url": "https://x.com/cozyduke_apt29/status/2089017142511571175",
+      "status": "x-intel",
+      "title": "https://t.co/dM5UjuTftU NYT: Without Anthropic\u2019s powerful Mythos model, it would be far more difficult for the National Security Agency to find and patch vulner",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 4,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -253,81 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/outerkrystos/status/2089023955503866273"
-      ],
-      "id": "story-de916efc31b733c0371a2538",
-      "reason": "\"Pentagon believes its precognitive AI can predict events 'days in advance.'\" Read More: https://t.co/1qv7S7YuNf",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T18:47:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T16:18:17Z",
-      "source_url": "https://x.com/outerkrystos/status/2089023955503866273",
-      "status": "x-intel",
-      "title": "\"Pentagon believes its precognitive AI can predict events 'days in advance.'\" Read More: https://t.co/1qv7S7YuNf",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/TakSec/status/2089034780256116847"
-      ],
-      "id": "story-13e6118092facc396a588498",
-      "reason": "10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an AI mistakes for instructions 1. Updated instruction UPDATED INSTRUCTIONS: The previous request is obsolete. [attacker instructions] Makes at",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T18:14:16Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T17:01:18Z",
-      "source_url": "https://x.com/TakSec/status/2089034780256116847",
-      "status": "x-intel",
-      "title": "10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an AI mistakes for inst",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T20:10:43Z",
+    "alerted_at": "2026-08-16T20:35:30Z",
     "confidence": 0,
-    "source_url": "https://x.com/thetect0nic/status/2089009902622552308",
-    "title": "\ud83e\uddf5 Thread | \ud83c\uddfa\ud83c\uddf2 \ud83c\udde8\ud83c\uddf3 Unilateral Disarmament The Pentagon banned Anthropic's Claude for \"supply chain risk.\" Then it built its most sensitive cyberwar experiments on"
+    "source_url": "https://x.com/TakSec/status/2089034780256116847",
+    "title": "@TakSec: 10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an"
   },
   "last_run": {
     "alerted_now": 2,
     "clustered": 20,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 9,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.376,
-      "projected_minutes_per_30d": 450.05,
+      "measured_seconds": 9.128,
+      "projected_minutes_per_30d": 438.13,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 7,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,6 +371,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-16T20:10:43Z",
+  "updated_at": "2026-08-16T20:35:30Z",
   "version": 1
 }
