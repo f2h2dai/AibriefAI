@@ -1,146 +1,146 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-08-17T12:18:01Z",
+  "generated_at": "2026-08-17T18:38:04Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
-  "errors": 37,
+  "errors": 43,
   "mode": "rule-based",
   "model": null,
   "provider_counts": {
     "gemini": 0,
     "groq": 0,
-    "rule-based": 37
+    "rule-based": 43
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 0.95,
+  "max_source_age_days": 1.31,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "events": [
     {
-      "time": "2026-08-17T12:18:01Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-08-17T12:18:01Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
-    },
-    {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-08-17T12:18:01Z",
+      "time": "2026-08-17T18:38:04Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
+    },
+    {
+      "time": "2026-08-17T18:38:04Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
+    },
+    {
+      "time": "2026-08-17T18:38:04Z",
       "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
-  "notification_enabled": true,
-  "notification_sent": true,
-  "notification_reason": "sent"
+  "notification_enabled": false,
+  "notification_sent": false,
+  "notification_reason": "not morning run"
 }

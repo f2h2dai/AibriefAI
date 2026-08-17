@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T12:18:01Z",
+  "generated_at": "2026-08-17T18:38:04Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,16 +9,16 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-17T12:18:01Z",
+  "latest_successful_run": "2026-08-17T18:38:04Z",
   "highest_ranked_signal": {
-    "id": "twitter-034",
-    "title": "@MarioNawfal: 🇺🇸🇨🇳 The U.S. military is RACING for AI dominance, but internal feuds and China keep getting in the way... The Pentagon banned Anthropic’s A",
-    "action_score": 78.5,
-    "url": "https://x.com/MarioNawfal/status/2089092332834492582"
+    "id": "github-014",
+    "title": "Renzo-Tognella/DecisionsSearch",
+    "action_score": 75.5,
+    "url": "https://github.com/Renzo-Tognella/DecisionsSearch"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 7
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 25.748,
+  "runtime_seconds": 26.924,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-17T12:18:01Z",
+    "planned_at": "2026-08-17T18:38:04Z",
     "production_threshold": 70.0
   }
 }
