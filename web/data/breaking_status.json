@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/FAB87F/status/2089489722477293891"
+      ],
+      "id": "story-257ee3abfb8d4f8e2b86c1e1",
+      "reason": "\ud83c\uddfa\ud83c\udde6 Ukraine is dramatically shortening the distance between seeing a Russian target and striking it. According to The New York Times, access to commercial satellite imagery has expanded significantly across the Ukrainian military. One of the key providers is US geospatial-intellig",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-17T23:58:21Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T23:09:05Z",
+      "source_url": "https://x.com/FAB87F/status/2089489722477293891",
+      "status": "x-intel",
+      "title": "\ud83c\uddfa\ud83c\udde6 Ukraine is dramatically shortening the distance between seeing a Russian target and striking it. According to The New York Times, access to commercial satell",
+      "webswarm_evidence_terms": [
+        "commercial satellite imagery",
+        "satellite imagery",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/XlGjfmYpCchopJ6/status/2089272193998074019"
       ],
       "id": "story-aba78097c0180b3db12c3434",
@@ -270,57 +295,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/staysaneticg/status/2089419727932195236"
-      ],
-      "id": "story-a1e5ad41453996291e1c462c",
-      "reason": "US military\u2019s race for AI dominance is hitting roadblocks from internal feuds while China sprints ahead. Will DC infighting tip the balance in Beijing\u2019s favor? #AIDominance #ChinaTech #NationalSecurity https://t.co/SnuVUUVIa2",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T19:06:15Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T18:30:57Z",
-      "source_url": "https://x.com/staysaneticg/status/2089419727932195236",
-      "status": "x-intel",
-      "title": "US military\u2019s race for AI dominance is hitting roadblocks from internal feuds while China sprints ahead. Will DC infighting tip the balance in Beijing\u2019s favor?",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T23:43:29Z",
+    "alerted_at": "2026-08-17T23:58:21Z",
     "confidence": 0,
-    "source_url": "https://x.com/XlGjfmYpCchopJ6/status/2089272193998074019",
-    "title": "\u79c1\u306eQuery\u300e\u7c73\u30c7\u30fc\u30bf\u89e3\u6790\u5927\u624b\u30d1\u30e9\u30f3\u30c6\u30a3\u30a2\u30fb\u30c6\u30af\u30ce\u30ed\u30b8\u30fc\u30ba\u306e\u300c\u30e1\u30fc\u30d6\u30f3\u30fb\u30b9\u30de\u30fc\u30c8\u30fb\u30b7\u30b9\u30c6\u30e0\uff08MSS\uff09\u300d\u2192\u3053\u306e\u300c\u30e1\u30fc\u30d6\u30f3\u300d\u306e\u30cd\u30fc\u30df\u30f3\u30b0\u306f\u3001\u30c9\u30e9\u30de\u300e\u30a6\u30a8\u30b9\u30c8\u30ef\u30fc\u30eb\u30c9\u300f\u306e\u4e3b\u8981\u767b\u5834\u4eba\u7269\u306e\u540d\u524d\u300c\u30e1\u30a4\u30f4\u300d\u3068\u306a\u306b\u304b\u95a2\u4fc2\u304c\u3042\u308b\u3068\u3044\u3046\u60c5\u5831\u304c\u3042\u308b\u304b? \u300fAI\u306e\u56de\u7b54\u300e\u8abf\u3079\u305f\u9650\u308a\u3001Project Maven\uff0fMaven Smart Syst"
+    "source_url": "https://x.com/FAB87F/status/2089489722477293891",
+    "title": "\ud83c\uddfa\ud83c\udde6 Ukraine is dramatically shortening the distance between seeing a Russian target and striking it. According to The New York Times, access to commercial satell"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 22,
+    "clustered": 23,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.141,
-      "projected_minutes_per_30d": 246.79,
+      "measured_seconds": 6.377,
+      "projected_minutes_per_30d": 306.08,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +334,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,6 +363,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T23:43:29Z",
+  "updated_at": "2026-08-17T23:58:21Z",
   "version": 1
 }
