@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/InsiderGeo/status/2088345640078029158"
+      ],
+      "id": "story-3ecf07ea2a75791d8afd2700",
+      "reason": "Of the more than 100 drones detected near Romanian airspace over the past 96 hours, around 10 are believed to have violated Romanian airspace. The remaining incidents involved repeated alerts and drones detected close to Romania\u2019s borders. On one occasion, Romania experienced fou",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-17T09:55:02Z",
+      "source": "x",
+      "source_published_at": "2026-08-14T19:22:54Z",
+      "source_url": "https://x.com/InsiderGeo/status/2088345640078029158",
+      "status": "x-intel",
+      "title": "Of the more than 100 drones detected near Romanian airspace over the past 96 hours, around 10 are believed to have violated Romanian airspace. The remaining inc",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/MizarVision/status/2089255937483702462"
@@ -265,56 +289,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/amuse/status/2089111464921501985"
-      ],
-      "id": "story-a4b1d9ac142b89e08bb6c043",
-      "reason": "PRO TIP: If you\u2019re not using Grok @bot you\u2019re missing out. It has replaced OpenClaw, Hermes, &amp; my local model ($10K Mac Minis). Get a Comet Pro Remote KVM to let the bot access your Mac environment. I\u2019m going to sell my Minis (for more than I paid) next week. https://t.co/u0G",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T05:21:30Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T22:06:01Z",
-      "source_url": "https://x.com/amuse/status/2089111464921501985",
-      "status": "x-intel",
-      "title": "PRO TIP: If you\u2019re not using Grok @bot you\u2019re missing out. It has replaced OpenClaw, Hermes, &amp; my local model ($10K Mac Minis). Get a Comet Pro Remote KVM t",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T08:23:25Z",
+    "alerted_at": "2026-08-17T09:55:02Z",
     "confidence": 0,
-    "source_url": "https://x.com/MizarVision/status/2089255937483702462",
-    "title": "Satellite imagery published by Soar and attributed to Vantor shows the aftermath of a Ukrainian drone strike on a Wildberries sorting hub in Russian-occupied Si"
+    "source_url": "https://x.com/InsiderGeo/status/2088345640078029158",
+    "title": "Of the more than 100 drones detected near Romanian airspace over the past 96 hours, around 10 are believed to have violated Romanian airspace. The remaining inc"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 14,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.196,
-      "projected_minutes_per_30d": 441.42,
+      "measured_seconds": 7.104,
+      "projected_minutes_per_30d": 340.99,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -328,7 +328,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -352,11 +352,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T09:06:09Z",
+  "updated_at": "2026-08-17T09:55:02Z",
   "version": 1
 }
