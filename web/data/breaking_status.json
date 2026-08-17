@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/mrldgg/status/2089034449837076603"
+      ],
+      "id": "story-b56cf44ef2df7deb241398dc",
+      "reason": "Eight months after its establishment, Project Maven had computer vision capability operating in combat, not a lab or a test environment, but in theater alongside deployed forces. The Pentagon's traditional acquisition process would have taken years. Maven's team bypassed it throu",
+      "score": 73,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-17T12:22:54Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T12:18:01Z",
+      "source_url": "https://x.com/mrldgg/status/2089034449837076603",
+      "status": "x-intel",
+      "title": "@mrldgg: Eight months after its establishment, Project Maven had computer vision capability operating in combat, not a lab or a test environment, but",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "Pentagon"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/AFGlobalStrike/status/2088364926716825879"
       ],
       "id": "story-c42ababda5178306d6c4cd30",
@@ -275,56 +299,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/yunta_tsai/status/2089223114416898288"
-      ],
-      "id": "story-a8db5134e03b666fa5140bcd",
-      "reason": "OMG. I asked my Chief Engineer on Grok @bot to bring up the feature and it's done. \ud83d\ude33 I can text my @maticrobots now through my Grok @bot\u2014anywhere and anytime. https://t.co/DEj8zBYAxS",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T06:45:06Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T05:29:41Z",
-      "source_url": "https://x.com/yunta_tsai/status/2089223114416898288",
-      "status": "x-intel",
-      "title": "OMG. I asked my Chief Engineer on Grok @bot to bring up the feature and it's done. \ud83d\ude33 I can text my @maticrobots now through my Grok @bot\u2014anywhere and anytime. h",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T11:47:14Z",
+    "alerted_at": "2026-08-17T12:22:54Z",
     "confidence": 0,
-    "source_url": "https://x.com/AFGlobalStrike/status/2088364926716825879",
-    "title": "A law rooted in the Cold War helped bring accountability in a modern case at @Whiteman_AFB. According to @RealAFOSI, the case shows how Special Agents, Security"
+    "source_url": "https://x.com/mrldgg/status/2089034449837076603",
+    "title": "@mrldgg: Eight months after its establishment, Project Maven had computer vision capability operating in combat, not a lab or a test environment, but"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 19,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.292,
-      "projected_minutes_per_30d": 398.0,
+      "measured_seconds": 6.328,
+      "projected_minutes_per_30d": 303.74,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -338,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,6 +367,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T11:47:14Z",
+  "updated_at": "2026-08-17T12:22:54Z",
   "version": 1
 }
