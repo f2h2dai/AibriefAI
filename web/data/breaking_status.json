@@ -4,6 +4,56 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/thepointscorer/status/2089194726536933794",
+        "https://x.com/TheTruthRealm/status/2088958450571329926"
+      ],
+      "id": "story-469e697d73f4f892c3539789",
+      "reason": "Read the Robots series of fiction by Issac Asimov and consider the dangers of autonomous weapons and weapon systems ... AI is a clear and present danger ...",
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-17T03:59:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T03:36:52Z",
+      "source_url": "https://x.com/thepointscorer/status/2089194726536933794",
+      "status": "x-intel",
+      "title": "Read the Robots series of fiction by Issac Asimov and consider the dangers of autonomous weapons and weapon systems ... AI is a clear and present danger ...",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/DarylGKimball/status/2089015021879669052"
+      ],
+      "id": "story-da121d428bcc9d67d056f8b3",
+      "reason": "\"The U.S. Military Wants A.I. Dominance. Feuds and China May Thwart It.\" Plus, the WH frontier AI review policy makes no sense. https://t.co/6V4krC1TvA via @NYTimes",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-17T03:59:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T15:42:47Z",
+      "source_url": "https://x.com/DarylGKimball/status/2089015021879669052",
+      "status": "x-intel",
+      "title": "\"The U.S. Military Wants A.I. Dominance. Feuds and China May Thwart It.\" Plus, the WH frontier AI review policy makes no sense. https://t.co/6V4krC1TvA via @NYT",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -253,82 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/InsiderGeo/status/2088342131442167938"
-      ],
-      "id": "story-e551422a48a867db91b90bb5",
-      "reason": "NEW: More than 100 drones have been detected near Romanian airspace over the past 96 hours, according to Romania\u2019s interim Defence Minister Radu Miru\u021b\u0103. Several dozen were launched in swarms during seven Russian attacks on Ukrainian Danube ports, with NATO fighter jets scrambled ",
-      "score": 70,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-16T20:56:14Z",
-      "source": "x",
-      "source_published_at": "2026-08-14T19:08:58Z",
-      "source_url": "https://x.com/InsiderGeo/status/2088342131442167938",
-      "status": "x-intel",
-      "title": "NEW: More than 100 drones have been detected near Romanian airspace over the past 96 hours, according to Romania\u2019s interim Defence Minister Radu Miru\u021b\u0103. Several",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/cozyduke_apt29/status/2089017142511571175"
-      ],
-      "id": "story-598b4866cdb9ee743318a0d1",
-      "reason": "https://t.co/dM5UjuTftU NYT: Without Anthropic\u2019s powerful Mythos model, it would be far more difficult for the National Security Agency to find and patch vulnerabilities in the Pentagon\u2019s own systems, senior N.S.A. officials argued. And it turned out that, despite the original An",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T20:35:30Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T15:51:13Z",
-      "source_url": "https://x.com/cozyduke_apt29/status/2089017142511571175",
-      "status": "x-intel",
-      "title": "https://t.co/dM5UjuTftU NYT: Without Anthropic\u2019s powerful Mythos model, it would be far more difficult for the National Security Agency to find and patch vulner",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T02:08:08Z",
+    "alerted_at": "2026-08-17T03:59:51Z",
     "confidence": 0,
-    "source_url": "https://x.com/FurkanGozukara/status/2089098075486757067",
-    "title": "The tech lobby claims that replacing human military decisions with AI will reduce civilian casualties. Max Tegmark points to Israel's use of AI targeting in Gaz"
+    "source_url": "https://x.com/thepointscorer/status/2089194726536933794",
+    "title": "Read the Robots series of fiction by Issac Asimov and consider the dangers of autonomous weapons and weapon systems ... AI is a clear and present danger ..."
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 19,
+    "alerted_now": 2,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 10,
+    "initial_x_relevant": 11,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.936,
-      "projected_minutes_per_30d": 284.91,
+      "measured_seconds": 17.093,
+      "projected_minutes_per_30d": 820.45,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -342,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 8,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,11 +366,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T03:11:03Z",
+  "updated_at": "2026-08-17T03:59:51Z",
   "version": 1
 }
