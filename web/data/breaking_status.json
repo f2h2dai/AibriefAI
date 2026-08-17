@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/SentinelNigeria/status/2089371799549079989"
+      ],
+      "id": "story-d6b34082e99e48cac0cea7cd",
+      "reason": "Security intelligence shouldn't live in silos. Sentinel brings threat intelligence, OSINT, digital privacy, public safety, physical security, geospatial intelligence and more into one ecosystem. One ecosystem. Multiple layers of security intelligence. \ud83d\udee1\ufe0f\ud83c\udf0d https://t.co/cCvof3TDgI",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-17T22:41:22Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T15:20:30Z",
+      "source_url": "https://x.com/SentinelNigeria/status/2089371799549079989",
+      "status": "x-intel",
+      "title": "Security intelligence shouldn't live in silos. Sentinel brings threat intelligence, OSINT, digital privacy, public safety, physical security, geospatial intelli",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/shipwreckedcrew/status/2089034192671895794"
       ],
       "id": "story-842364b3e1832c9de10176a9",
@@ -273,57 +297,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/MiddleOfMayhem/status/2089139033041744180"
-      ],
-      "id": "story-1faeedfd7ed677b34e7eb1a3",
-      "reason": "Two years before UFO \u201cwhistleblower\u201d David Grusch went public with wild claims about crashed UFOs and recovered \u201cnon-human biologics,\u201d he was introduced to a Peter Thiel-connected venture investor who was evaluating a new space-defense startup. 2021: EVEN ROGERS Jesse Michels cam",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T16:52:18Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T23:55:34Z",
-      "source_url": "https://x.com/MiddleOfMayhem/status/2089139033041744180",
-      "status": "x-intel",
-      "title": "Two years before UFO \u201cwhistleblower\u201d David Grusch went public with wild claims about crashed UFOs and recovered \u201cnon-human biologics,\u201d he was introduced to a Pe",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T22:14:05Z",
+    "alerted_at": "2026-08-17T22:41:22Z",
     "confidence": 0,
-    "source_url": "https://x.com/shipwreckedcrew/status/2089034192671895794",
-    "title": "Hey @grok can you estimate the acreage of farmland in the United States taken over by data centers and compare that to the acreage of farmland taken over by sol"
+    "source_url": "https://x.com/SentinelNigeria/status/2089371799549079989",
+    "title": "Security intelligence shouldn't live in silos. Sentinel brings threat intelligence, OSINT, digital privacy, public safety, physical security, geospatial intelli"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 18,
+    "clustered": 22,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 12,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 15.842,
-      "projected_minutes_per_30d": 760.41,
+      "measured_seconds": 7.748,
+      "projected_minutes_per_30d": 371.89,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -337,7 +336,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,6 +365,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T22:14:05Z",
+  "updated_at": "2026-08-17T22:41:22Z",
   "version": 1
 }
