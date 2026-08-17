@@ -4,30 +4,27 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/DanKornas/status/2089349025883394119",
-        "https://x.com/0xShoopy/status/2089002732950614124",
-        "https://x.com/MarioNawfal/status/2089092332834492582"
+        "https://x.com/MizarVision/status/2089373313181123039"
       ],
-      "id": "story-f157430a0acb7289bc99710c",
-      "reason": "AI failures are scattered across headlines. This repo puts the evidence in one place. Awful AI is a curated GitHub list tracking concerning uses and misuses of AI for builders, researchers, and anyone studying AI\u2019s social impact. It helps you examine recurring risks by organizing",
-      "score": 66,
+      "id": "story-be275e0eb0f52a43b1a8d057",
+      "reason": "Latest satellite imagery shows extensive damage at Russia\u2019s Kamensky Combine in Kamensk-Shakhtinsky, Rostov Oblast, following the recent Ukrainian strike. At least six workshops at the solid rocket propellant and explosives production facility appear to have been damaged or destr",
+      "score": 40,
       "sensitive_military_claim": true,
-      "shown_at": "2026-08-17T15:16:34Z",
+      "shown_at": "2026-08-17T15:47:12Z",
       "source": "x",
-      "source_published_at": "2026-08-17T13:50:00Z",
-      "source_url": "https://x.com/DanKornas/status/2089349025883394119",
+      "source_published_at": "2026-08-17T15:26:31Z",
+      "source_url": "https://x.com/MizarVision/status/2089373313181123039",
       "status": "x-intel",
-      "title": "AI failures are scattered across headlines. This repo puts the evidence in one place. Awful AI is a curated GitHub list tracking concerning uses and misuses of",
+      "title": "Latest satellite imagery shows extensive damage at Russia\u2019s Kamensky Combine in Kamensk-Shakhtinsky, Rostov Oblast, following the recent Ukrainian strike. At le",
       "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "defense",
-        "weapons"
+        "MizarVision",
+        "satellite imagery"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
+      "webswarm_node": "mizarvision_geoint"
     },
     {
       "confidence": 0,
@@ -54,6 +51,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/DanKornas/status/2089349025883394119",
+        "https://x.com/0xShoopy/status/2089002732950614124",
+        "https://x.com/MarioNawfal/status/2089092332834492582"
+      ],
+      "id": "story-f157430a0acb7289bc99710c",
+      "reason": "AI failures are scattered across headlines. This repo puts the evidence in one place. Awful AI is a curated GitHub list tracking concerning uses and misuses of AI for builders, researchers, and anyone studying AI\u2019s social impact. It helps you examine recurring risks by organizing",
+      "score": 66,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-17T15:16:34Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T13:50:00Z",
+      "source_url": "https://x.com/DanKornas/status/2089349025883394119",
+      "status": "x-intel",
+      "title": "AI failures are scattered across headlines. This repo puts the evidence in one place. Awful AI is a curated GitHub list tracking concerning uses and misuses of",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "defense",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -279,57 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/LD14Democrats/status/2089039299778154633"
-      ],
-      "id": "story-8a8aedcabdcc506c30c4be9e",
-      "reason": "NYTimes - free article https://t.co/tEmZcW3QxK #China, America\u2019s main technological and military rival, charges ahead. While we have an incompetent, deranged pres. tryng to manage our response to #AI https://t.co/rvVgjBI7ap",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T10:54:21Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T17:19:16Z",
-      "source_url": "https://x.com/LD14Democrats/status/2089039299778154633",
-      "status": "x-intel",
-      "title": "NYTimes - free article https://t.co/tEmZcW3QxK #China, America\u2019s main technological and military rival, charges ahead. While we have an incompetent, deranged pr",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T15:16:34Z",
+    "alerted_at": "2026-08-17T15:47:12Z",
     "confidence": 0,
-    "source_url": "https://x.com/DanKornas/status/2089349025883394119",
-    "title": "AI failures are scattered across headlines. This repo puts the evidence in one place. Awful AI is a curated GitHub list tracking concerning uses and misuses of"
+    "source_url": "https://x.com/MizarVision/status/2089373313181123039",
+    "title": "Latest satellite imagery shows extensive damage at Russia\u2019s Kamensky Combine in Kamensk-Shakhtinsky, Rostov Oblast, following the recent Ukrainian strike. At le"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 15,
+    "initial_x_relevant": 13,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.461,
-      "projected_minutes_per_30d": 406.15,
+      "measured_seconds": 10.863,
+      "projected_minutes_per_30d": 521.42,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +366,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T15:16:34Z",
+  "updated_at": "2026-08-17T15:47:12Z",
   "version": 1
 }
