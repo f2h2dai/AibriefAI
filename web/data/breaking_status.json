@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/BreakingDefense/status/2089408920708137083"
+      ],
+      "id": "story-4bbe7f958a96ffe49abc20a7",
+      "reason": "Project Talon Portfolio puts mission autonomy at the center of future CCA operations. Truly autonomous aircraft can make decisions without continuous human input. [Sponsored by @northropgrumman] https://t.co/PW02i3dPUu",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-17T19:06:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T18:38:04Z",
+      "source_url": "https://x.com/BreakingDefense/status/2089408920708137083",
+      "status": "x-intel",
+      "title": "@BreakingDefense: Project Talon Portfolio puts mission autonomy at the center of future CCA operations. Truly autonomous aircraft can make decisions without c",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/staysaneticg/status/2089419727932195236"
       ],
       "id": "story-a1e5ad41453996291e1c462c",
@@ -23,30 +47,6 @@
         "x.com",
         "AI",
         "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2089408920708137083"
-      ],
-      "id": "story-4bbe7f958a96ffe49abc20a7",
-      "reason": "Project Talon Portfolio puts mission autonomy at the center of future CCA operations. Truly autonomous aircraft can make decisions without continuous human input. [Sponsored by @northropgrumman] https://t.co/PW02i3dPUu",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T19:06:15Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T18:38:04Z",
-      "source_url": "https://x.com/BreakingDefense/status/2089408920708137083",
-      "status": "x-intel",
-      "title": "@BreakingDefense: Project Talon Portfolio puts mission autonomy at the center of future CCA operations. Truly autonomous aircraft can make decisions without c",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -309,27 +309,27 @@
   "last_alert": {
     "alerted_at": "2026-08-17T19:06:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/staysaneticg/status/2089419727932195236",
-    "title": "US military\u2019s race for AI dominance is hitting roadblocks from internal feuds while China sprints ahead. Will DC infighting tip the balance in Beijing\u2019s favor?"
+    "source_url": "https://x.com/BreakingDefense/status/2089408920708137083",
+    "title": "@BreakingDefense: Project Talon Portfolio puts mission autonomy at the center of future CCA operations. Truly autonomous aircraft can make decisions without c"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 17,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 15,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.586,
-      "projected_minutes_per_30d": 412.14,
+      "measured_seconds": 6.302,
+      "projected_minutes_per_30d": 302.48,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T19:06:15Z",
+  "updated_at": "2026-08-17T19:39:00Z",
   "version": 1
 }
