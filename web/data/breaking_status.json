@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2089255937483702462"
+      ],
+      "id": "story-a5382cd2efc950cc57c8666d",
+      "reason": "Satellite imagery published by Soar and attributed to Vantor shows the aftermath of a Ukrainian drone strike on a Wildberries sorting hub in Russian-occupied Simferopol, Crimea. The facility was struck on July 24. The satellite imagery, dated August 4, shows visible damage to the",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-17T08:23:25Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T07:40:06Z",
+      "source_url": "https://x.com/MizarVision/status/2089255937483702462",
+      "status": "x-intel",
+      "title": "Satellite imagery published by Soar and attributed to Vantor shows the aftermath of a Ukrainian drone strike on a Wildberries sorting hub in Russian-occupied Si",
+      "webswarm_evidence_terms": [
+        "MizarVision",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/1Nicdar/status/2088682028027834748"
@@ -265,41 +289,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/WORLDINSIGHTCH/status/2089063897110085724"
-      ],
-      "id": "story-a68571f1448496604b918b1a",
-      "reason": "**The United States is burning through its strategic ammunition reserves at a rate that exposes a critical vulnerability in Western global deterrence.** \ud83d\udc47 Decode the geopolitical shift. \u2935\ufe0f Follow, Reply & \ud83d\udc97 ! The relentless pace of Operation Epic Fury has unmasked a classified cr",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-17T05:21:30Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T18:57:00Z",
-      "source_url": "https://x.com/WORLDINSIGHTCH/status/2089063897110085724",
-      "status": "x-intel",
-      "title": "**The United States is burning through its strategic ammunition reserves at a rate that exposes a critical vulnerability in Western global deterrence.** \ud83d\udc47 Decod",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-17T06:45:06Z",
+    "alerted_at": "2026-08-17T08:23:25Z",
     "confidence": 0,
-    "source_url": "https://x.com/1Nicdar/status/2088682028027834748",
-    "title": "Hey @grok, is this true? https://t.co/NcYX5zFGhh"
+    "source_url": "https://x.com/MizarVision/status/2089255937483702462",
+    "title": "Satellite imagery published by Soar and attributed to Vantor shows the aftermath of a Ukrainian drone strike on a Wildberries sorting hub in Russian-occupied Si"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 19,
     "collected": 25,
     "corroborated_count": 1,
@@ -314,8 +313,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.263,
-      "projected_minutes_per_30d": 348.63,
+      "measured_seconds": 12.959,
+      "projected_minutes_per_30d": 622.05,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -329,7 +328,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -353,11 +352,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T07:39:09Z",
+  "updated_at": "2026-08-17T08:23:25Z",
   "version": 1
 }
