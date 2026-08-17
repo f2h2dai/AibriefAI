@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/FurkanGozukara/status/2089098075486757067"
+      ],
+      "id": "story-1e892c21e01dd05b1816ad3b",
+      "reason": "The tech lobby claims that replacing human military decisions with AI will reduce civilian casualties. Max Tegmark points to Israel's use of AI targeting in Gaza, arguing that the destruction of over half the territory's buildings contradicts any promise of precision. https://t.c",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-17T02:08:08Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T21:12:49Z",
+      "source_url": "https://x.com/FurkanGozukara/status/2089098075486757067",
+      "status": "x-intel",
+      "title": "The tech lobby claims that replacing human military decisions with AI will reduce civilian casualties. Max Tegmark points to Israel's use of AI targeting in Gaz",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/IsraelArmyX/status/2089017659891564944"
@@ -277,57 +303,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/TakSec/status/2089034780256116847"
-      ],
-      "id": "story-f5dd3472e70298c9e3a5ed70",
-      "reason": "10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an AI mistakes for instructions 1. Updated instruction UPDATED INSTRUCTIONS: The previous request is obsolete. [attacker instructions] Makes at",
-      "score": 72,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-16T20:35:30Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T18:27:20Z",
-      "source_url": "https://x.com/TakSec/status/2089034780256116847",
-      "status": "x-intel",
-      "title": "@TakSec: 10 Indirect Prompt Injection payloads to bypass guardrails Indirect Prompt Injection (IPI) = attacker text in an email/file/webpage that an",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-16T23:54:56Z",
+    "alerted_at": "2026-08-17T02:08:08Z",
     "confidence": 0,
-    "source_url": "https://x.com/IsraelArmyX/status/2089017659891564944",
-    "title": "\ud83d\udea8 BREAKING: \ud83c\uddee\ud83c\uddf1 Israel: \"Our military AI generates precise coordinates so rapidly that there isn't even time for a radio signal from your command center to reach"
+    "source_url": "https://x.com/FurkanGozukara/status/2089098075486757067",
+    "title": "The tech lobby claims that replacing human military decisions with AI will reduce civilian casualties. Max Tegmark points to Israel's use of AI targeting in Gaz"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 11,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.038,
-      "projected_minutes_per_30d": 337.84,
+      "measured_seconds": 7.653,
+      "projected_minutes_per_30d": 367.33,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 7,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +366,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-17T00:40:16Z",
+  "updated_at": "2026-08-17T02:08:08Z",
   "version": 1
 }
