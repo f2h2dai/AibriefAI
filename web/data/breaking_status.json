@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/IsaacNaor/status/2089632800198770792"
+      ],
+      "id": "story-b3f4eb751c21b500afd37270",
+      "reason": "Smack Technologies raises $61m as the Pentagon\u2019s hurry becomes a battlefield-AI business model https://t.co/gojaG9pPMU /via @TNW https://t.co/GRwX9Bfcc4",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-18T11:47:47Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T08:37:37Z",
+      "source_url": "https://x.com/IsaacNaor/status/2089632800198770792",
+      "status": "x-intel",
+      "title": "Smack Technologies raises $61m as the Pentagon\u2019s hurry becomes a battlefield-AI business model https://t.co/gojaG9pPMU /via @TNW https://t.co/GRwX9Bfcc4",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/MaltegoHQ/status/2089623333406937597"
       ],
       "id": "story-1908d29dfdc1451e6126301b",
@@ -275,56 +299,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Pirat_Nation/status/2089246851073519962"
-      ],
-      "id": "story-2f401d5938297874134ca405",
-      "reason": "The backlash against generative AI in video games may be starting to affect how games are made. Some games have faced strong criticism after players found generative AI was used to create certain assets or content, in some cases, players refused to buy the games or left negative ",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-18T03:58:21Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T07:04:00Z",
-      "source_url": "https://x.com/Pirat_Nation/status/2089246851073519962",
-      "status": "x-intel",
-      "title": "The backlash against generative AI in video games may be starting to affect how games are made. Some games have faced strong criticism after players found gener",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T09:46:39Z",
+    "alerted_at": "2026-08-18T11:47:47Z",
     "confidence": 0,
-    "source_url": "https://x.com/MaltegoHQ/status/2089623333406937597",
-    "title": "Explore how #Maltego brings #OSINT and geospatial intelligence together to uncover the operational footprint of adversary activity across the digital and physic"
+    "source_url": "https://x.com/IsaacNaor/status/2089632800198770792",
+    "title": "Smack Technologies raises $61m as the Pentagon\u2019s hurry becomes a battlefield-AI business model https://t.co/gojaG9pPMU /via @TNW https://t.co/GRwX9Bfcc4"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 22,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.012,
-      "projected_minutes_per_30d": 432.59,
+      "measured_seconds": 7.484,
+      "projected_minutes_per_30d": 359.22,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -338,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -362,11 +362,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T11:15:54Z",
+  "updated_at": "2026-08-18T11:47:47Z",
   "version": 1
 }
