@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-08-17T18:38:04Z",
+  "generated_at": "2026-08-18T12:19:34Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-17T18:38:04Z",
+  "latest_successful_run": "2026-08-18T12:19:34Z",
   "highest_ranked_signal": {
-    "id": "github-014",
-    "title": "Renzo-Tognella/DecisionsSearch",
-    "action_score": 75.5,
-    "url": "https://github.com/Renzo-Tognella/DecisionsSearch"
+    "id": "arxiv-015",
+    "title": "Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis",
+    "action_score": 78.75,
+    "url": "https://arxiv.org/abs/2608.16775v1"
   },
   "source_contribution": {
-    "github": 7,
-    "twitter": 5
+    "arxiv": 5,
+    "twitter": 5,
+    "github": 2
   },
   "failed_sources": [
     {
@@ -26,7 +27,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 26.924,
+  "runtime_seconds": 34.522,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-17T18:38:04Z",
+    "planned_at": "2026-08-18T12:19:34Z",
     "production_threshold": 70.0
   }
 }
