@@ -4,6 +4,60 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/NewsTongueX/status/2089618514059382892",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNlFsZkFEaG9pWTczM0NqOTFtVXlKZk1GOGw2OGtVVjREd3ppNFBaWHpFcTBla3hzaW16WmxIaC03NlNqVnZ2djB5U2g3OUh3N1V3LW55TjBOTG8xNXhJdTFocDUwSl9SUlEtdHRWajl4ZXFYcmJfMEFsaW5ISHBobEJWRkwwTnN3WG9FVU1B"
+      ],
+      "id": "story-41146ff59f473eb82447056f",
+      "reason": "\ud83d\udd34 Pentagon deploys Claude AI for targeting; evaluation capacity lags Central Command used Anthropic's Claude through Palantir's Maven Smart System to generate roughly 1,000 targets in the first 24 hours of Operation Epic Fury, more than double the 2003 Iraq invasion opening phase",
+      "score": 87,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-18T19:05:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T18:36:49Z",
+      "source_url": "https://x.com/NewsTongueX/status/2089618514059382892",
+      "status": "x-intel",
+      "title": "@NewsTongueX: \ud83d\udd34 Pentagon deploys Claude AI for targeting; evaluation capacity lags Central Command used Anthropic's Claude through Palantir's Maven Smart",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "Operation Epic Fury",
+        "Pentagon",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/AndrassyAdrienn/status/2089689287688122713"
+      ],
+      "id": "story-80f36267daf61097116cdf70",
+      "reason": "https://t.co/lyvbL6OkSW The reel discusses an interview or exchange where journalist Shane Harris asked Anthropic\u2019s AI Claude how it feels about being used by the U.S. military for target selection (linked to Project Maven). Instead of giving a typical corporate deflection, Claud",
+      "score": 80,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-18T19:05:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T18:36:49Z",
+      "source_url": "https://x.com/AndrassyAdrienn/status/2089689287688122713",
+      "status": "x-intel",
+      "title": "@AndrassyAdrienn: https://t.co/lyvbL6OkSW The reel discusses an interview or exchange where journalist Shane Harris asked Anthropic\u2019s AI Claude how it feels a",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -248,82 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/8teAPi/status/2089405244602265677"
-      ],
-      "id": "story-d12c828c64c3695ef6fe3cbf",
-      "reason": "Autonomous weapons: yea or nay? https://t.co/2bHGmbazen",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T15:54:38Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T17:33:24Z",
-      "source_url": "https://x.com/8teAPi/status/2089405244602265677",
-      "status": "x-intel",
-      "title": "Autonomous weapons: yea or nay? https://t.co/2bHGmbazen",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ainewsusa/status/2089695590804345037"
-      ],
-      "id": "story-e29a20bc602c4ca26b674d7b",
-      "reason": "The FAA\u2019s Minneapolis center lost radar &amp; comms for 2 hours on Aug 6 \u2014 1,100+ flights disrupted. But the real story? Trump\u2019s Marine One departure 2 days prior may be the trigger. Palantir\u2019s military AI stands to profit from the chaos. \ud83e\uddf5 #AI #ArtificialIntelligence https://t.c",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-18T15:22:04Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T12:47:08Z",
-      "source_url": "https://x.com/ainewsusa/status/2089695590804345037",
-      "status": "x-intel",
-      "title": "The FAA\u2019s Minneapolis center lost radar &amp; comms for 2 hours on Aug 6 \u2014 1,100+ flights disrupted. But the real story? Trump\u2019s Marine One departure 2 days pri",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T18:22:50Z",
+    "alerted_at": "2026-08-18T19:05:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/BrownlieKim1966/status/2089731802642460778",
-    "title": "Pros and Cons of Autonomous Weapons Systems https://t.co/po4oAQBqGG"
+    "source_url": "https://x.com/NewsTongueX/status/2089618514059382892",
+    "title": "@NewsTongueX: \ud83d\udd34 Pentagon deploys Claude AI for targeting; evaluation capacity lags Central Command used Anthropic's Claude through Palantir's Maven Smart"
   },
   "last_run": {
     "alerted_now": 2,
-    "clustered": 14,
+    "clustered": 13,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 15,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.404,
-      "projected_minutes_per_30d": 355.4,
+      "measured_seconds": 6.043,
+      "projected_minutes_per_30d": 290.06,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -337,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 8,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,6 +370,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T18:22:50Z",
+  "updated_at": "2026-08-18T19:05:15Z",
   "version": 1
 }
