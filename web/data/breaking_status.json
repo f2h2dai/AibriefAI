@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/caspr_exe/status/2089440583206993990",
+        "https://x.com/DanKornas/status/2089349025883394119",
+        "https://x.com/TheTruthRealm/status/2088958450571329926"
+      ],
+      "id": "story-1d5d3fe59454dce8a41e3043",
+      "reason": "In February the President called Anthropic a radical left, woke company and said its selfishness was putting American troops in danger. The Pentagon had given Dario Amodei three days to drop two conditions: no fully autonomous weapons, and no mass surveillance of Americans. He sa",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-18T05:06:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T19:53:49Z",
+      "source_url": "https://x.com/caspr_exe/status/2089440583206993990",
+      "status": "x-intel",
+      "title": "In February the President called Anthropic a radical left, woke company and said its selfishness was putting American troops in danger. The Pentagon had given D",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -272,40 +298,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/shipwreckedcrew/status/2089034192671895794"
-      ],
-      "id": "story-842364b3e1832c9de10176a9",
-      "reason": "Hey @grok can you estimate the acreage of farmland in the United States taken over by data centers and compare that to the acreage of farmland taken over by solar panels.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-17T22:14:05Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T16:58:58Z",
-      "source_url": "https://x.com/shipwreckedcrew/status/2089034192671895794",
-      "status": "x-intel",
-      "title": "Hey @grok can you estimate the acreage of farmland in the United States taken over by data centers and compare that to the acreage of farmland taken over by sol",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T04:33:26Z",
+    "alerted_at": "2026-08-18T05:06:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/JCPResearch/status/2089555540020285853",
-    "title": "\ubbf8 \uad6d\ubc29\ubd80\uc640 \uad70 \uc870\uc9c1\uc758 AI \ub3c4\uc785 \uac00\uc18d \uc694\uad6c\uac00 \uc77c\ubd80 \ubc29\uc704\uae30\uc220 \uc2a4\ud0c0\ud2b8\uc5c5\uc758 \uc790\uae08\uc870\ub2ec\uacfc \uc81c\ud488 \uc0c1\uc6a9\ud654 \uc77c\uc815\uc744 \uc55e\ub2f9\uae30\uace0 \uc788\uc74c. \uad70\uc6a9 AI \uc758\uc0ac\uacb0\uc815 \ub3c4\uad6c\ub97c \uac1c\ubc1c\ud558\ub294 Smack Technologies\ub294 $61m \uaddc\ubaa8\uc758 Series B\ub97c \uc870\ub2ec. CEO Andy Markoff\ub294 \ud1b5\uc2e0\uc774 \uad50\ub780\ub41c \ubbf8\ub798 \uc804\uc7a5"
+    "source_url": "https://x.com/caspr_exe/status/2089440583206993990",
+    "title": "In February the President called Anthropic a radical left, woke company and said its selfishness was putting American troops in danger. The Pentagon had given D"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 23,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -319,8 +322,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 3.977,
-      "projected_minutes_per_30d": 190.88,
+      "measured_seconds": 6.079,
+      "projected_minutes_per_30d": 291.79,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,6 +366,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T04:33:26Z",
+  "updated_at": "2026-08-18T05:06:15Z",
   "version": 1
 }
