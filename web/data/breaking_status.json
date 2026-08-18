@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/Dawnp3T/status/2089752810300862630"
+      ],
+      "id": "story-8d1bbce898dd463a584403ec",
+      "reason": "Portcoast uses reality capture and 3D digital twins to help Vietnam\u2019s largest ports double cargo capacity by 2030\u2014demonstrating how autonomy, geospatial intelligence, and AI can modernize critical infrastructure.https://t.co/2Ce1cLS9TY https://t.co/QqRJUY6sPm",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-18T21:58:29Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T16:34:30Z",
+      "source_url": "https://x.com/Dawnp3T/status/2089752810300862630",
+      "status": "x-intel",
+      "title": "Portcoast uses reality capture and 3D digital twins to help Vietnam\u2019s largest ports double cargo capacity by 2030\u2014demonstrating how autonomy, geospatial intelli",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/futurist_lens/status/2089790731321831890"
       ],
       "id": "story-13a27cc8bf70e4f06816f8e8",
@@ -284,42 +308,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/directorblue/status/2089747005719322755"
-      ],
-      "id": "story-151e4cdcb5a00a9bbd6cc9d0",
-      "reason": "Drones, autonomous weapons and AI are changing the art of war faster than at any point in history. We\u2019ve investigated the latest: from tiny loitering bombs to huge underwater vehicles... Ranked: The 20 Most Important Military Drones in the World Today \ud83e\uddf5 https://t.co/MauFPzeJfp",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T16:19:31Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T16:11:26Z",
-      "source_url": "https://x.com/directorblue/status/2089747005719322755",
-      "status": "x-intel",
-      "title": "Drones, autonomous weapons and AI are changing the art of war faster than at any point in history. We\u2019ve investigated the latest: from tiny loitering bombs to h",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T19:55:16Z",
+    "alerted_at": "2026-08-18T21:58:29Z",
     "confidence": 0,
-    "source_url": "https://x.com/futurist_lens/status/2089790731321831890",
-    "title": "Elon Musk on the $1.8T space economy forecast: \u201cIt will be much bigger.\u201d I spent weeks researching the public space ecosystem so you don\u2019t have to. Here\u2019s the u"
+    "source_url": "https://x.com/Dawnp3T/status/2089752810300862630",
+    "title": "Portcoast uses reality capture and 3D digital twins to help Vietnam\u2019s largest ports double cargo capacity by 2030\u2014demonstrating how autonomy, geospatial intelli"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 14,
     "collected": 25,
     "corroborated_count": 4,
     "initial_collected": 25,
@@ -333,8 +332,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.367,
-      "projected_minutes_per_30d": 353.62,
+      "measured_seconds": 8.128,
+      "projected_minutes_per_30d": 390.16,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,11 +371,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T21:44:36Z",
+  "updated_at": "2026-08-18T21:58:29Z",
   "version": 1
 }
