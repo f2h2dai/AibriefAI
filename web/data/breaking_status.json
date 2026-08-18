@@ -4,6 +4,58 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/BrownlieKim1966/status/2089731802642460778",
+        "https://x.com/MadTopsy88/status/2089695715291201850"
+      ],
+      "id": "story-3ac13c4c1406996083fc5e7f",
+      "reason": "Pros and Cons of Autonomous Weapons Systems https://t.co/po4oAQBqGG",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-18T18:22:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T15:11:01Z",
+      "source_url": "https://x.com/BrownlieKim1966/status/2089731802642460778",
+      "status": "x-intel",
+      "title": "Pros and Cons of Autonomous Weapons Systems https://t.co/po4oAQBqGG",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/guilherme94jose/status/2089766779174150273"
+      ],
+      "id": "story-e8961ca5248efd4ca27902ad",
+      "reason": "There is a problem that is sometimes overlooked. We talk a great deal about military AI and all the challenges surrounding it, but one question tends to escape attention. How will AI align in a potential war between allies if each side relies on algorithms that reason differently",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-18T18:22:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T17:30:00Z",
+      "source_url": "https://x.com/guilherme94jose/status/2089766779174150273",
+      "status": "x-intel",
+      "title": "There is a problem that is sometimes overlooked. We talk a great deal about military AI and all the challenges surrounding it, but one question tends to escape",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "defense AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -246,81 +298,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/10secwarww2/status/2089113403256344805"
-      ],
-      "id": "story-12ab29a7fe3da6485f6695ed",
-      "reason": "With drones, AI targeting and long-range weapons changing warfare, is protecting civilians becoming easier or are we simply creating new ways for tragedies like My Lai to happen? https://t.co/Eed2tExqmq",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T14:03:33Z",
-      "source": "x",
-      "source_published_at": "2026-08-16T22:13:43Z",
-      "source_url": "https://x.com/10secwarww2/status/2089113403256344805",
-      "status": "x-intel",
-      "title": "With drones, AI targeting and long-range weapons changing warfare, is protecting civilians becoming easier or are we simply creating new ways for tragedies like",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/MadTopsy88/status/2089695715291201850"
-      ],
-      "id": "story-21f622d464d068e28b65b477",
-      "reason": "No global treaty or international ban outlawing Lethal Autonomous Weapons Systems (LAWS), called \"killer robots\". Use governed by existing International Humanitarian Law (IHL), Law of Armed Conflict (LOAC), proportionality, and accountability in warfare. https://t.co/bCrTkd4DIu h",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T14:03:33Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T12:47:37Z",
-      "source_url": "https://x.com/MadTopsy88/status/2089695715291201850",
-      "status": "x-intel",
-      "title": "No global treaty or international ban outlawing Lethal Autonomous Weapons Systems (LAWS), called \"killer robots\". Use governed by existing International Humanit",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T17:50:56Z",
+    "alerted_at": "2026-08-18T18:22:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/dnvolz/status/2089395815521390684",
-    "title": "On today's front page of @nytimes : U.S. Military Is Tripped Up in A.I. Race A Fight With Anthropic Is Just One Hurdle w/ @SangerNYT, @AnaSwanson and @julianbar"
+    "source_url": "https://x.com/BrownlieKim1966/status/2089731802642460778",
+    "title": "Pros and Cons of Autonomous Weapons Systems https://t.co/po4oAQBqGG"
   },
   "last_run": {
-    "alerted_now": 1,
-    "clustered": 17,
+    "alerted_now": 2,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.977,
-      "projected_minutes_per_30d": 382.88,
+      "measured_seconds": 7.404,
+      "projected_minutes_per_30d": 355.4,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 8,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -358,11 +361,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T17:50:56Z",
+  "updated_at": "2026-08-18T18:22:50Z",
   "version": 1
 }
