@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-08-18T12:19:34Z",
+  "generated_at": "2026-08-18T18:36:49Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-18T12:19:34Z",
+  "latest_successful_run": "2026-08-18T18:36:49Z",
   "highest_ranked_signal": {
-    "id": "arxiv-015",
-    "title": "Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis",
-    "action_score": 78.75,
-    "url": "https://arxiv.org/abs/2608.16775v1"
+    "id": "twitter-035",
+    "title": "@AndrassyAdrienn: https://t.co/lyvbL6OkSW The reel discusses an interview or exchange where journalist Shane Harris asked Anthropic’s AI Claude how it feels a",
+    "action_score": 78.0,
+    "url": "https://x.com/AndrassyAdrienn/status/2089689287688122713"
   },
   "source_contribution": {
-    "arxiv": 5,
     "twitter": 5,
-    "github": 2
+    "github": 7
   },
   "failed_sources": [
     {
@@ -27,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 34.522,
+  "runtime_seconds": 29.931,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-18T12:19:34Z",
+    "planned_at": "2026-08-18T18:36:49Z",
     "production_threshold": 70.0
   }
 }
