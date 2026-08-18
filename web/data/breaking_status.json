@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/MaltegoHQ/status/2089623333406937597"
+      ],
+      "id": "story-1908d29dfdc1451e6126301b",
+      "reason": "Explore how #Maltego brings #OSINT and geospatial intelligence together to uncover the operational footprint of adversary activity across the digital and physical worlds. Access the report: https://t.co/UkrWfwT9Pm https://t.co/zPejiXwTzD",
+      "score": 70,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-18T09:46:39Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T08:00:00Z",
+      "source_url": "https://x.com/MaltegoHQ/status/2089623333406937597",
+      "status": "x-intel",
+      "title": "Explore how #Maltego brings #OSINT and geospatial intelligence together to uncover the operational footprint of adversary activity across the digital and physic",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/thejohnfleming/status/2089612442363957295"
       ],
       "id": "story-9b75af543542e86a236ac237",
@@ -275,56 +299,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/cyber_gilgamesh/status/2089335111326089234"
-      ],
-      "id": "story-d8c0802212022d50a9fc690a",
-      "reason": "@AI_EmeraldApple @Pirat_Nation ohhh here we go again with \"losing AI race against china \" china boogeyman horror fairy tales. nobody buys this crap any more , try something else. \ud83d\ude00\ud83d\ude00\ud83d\ude00",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-18T03:58:21Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T12:54:43Z",
-      "source_url": "https://x.com/cyber_gilgamesh/status/2089335111326089234",
-      "status": "x-intel",
-      "title": "@AI_EmeraldApple @Pirat_Nation ohhh here we go again with \"losing AI race against china \" china boogeyman horror fairy tales. nobody buys this crap any more , t",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T09:00:39Z",
+    "alerted_at": "2026-08-18T09:46:39Z",
     "confidence": 0,
-    "source_url": "https://x.com/thejohnfleming/status/2089612442363957295",
-    "title": "AI chaos inside the Pentagon\u2026 https://t.co/wO26JJI8ut"
+    "source_url": "https://x.com/MaltegoHQ/status/2089623333406937597",
+    "title": "Explore how #Maltego brings #OSINT and geospatial intelligence together to uncover the operational footprint of adversary activity across the digital and physic"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 23,
+    "clustered": 22,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.756,
-      "projected_minutes_per_30d": 324.29,
+      "measured_seconds": 5.671,
+      "projected_minutes_per_30d": 272.23,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -338,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,6 +367,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T09:00:39Z",
+  "updated_at": "2026-08-18T09:46:39Z",
   "version": 1
 }
