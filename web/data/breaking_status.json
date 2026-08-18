@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/ainewsusa/status/2089695590804345037"
+      ],
+      "id": "story-e29a20bc602c4ca26b674d7b",
+      "reason": "The FAA\u2019s Minneapolis center lost radar &amp; comms for 2 hours on Aug 6 \u2014 1,100+ flights disrupted. But the real story? Trump\u2019s Marine One departure 2 days prior may be the trigger. Palantir\u2019s military AI stands to profit from the chaos. \ud83e\uddf5 #AI #ArtificialIntelligence https://t.c",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-18T15:22:04Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T12:47:08Z",
+      "source_url": "https://x.com/ainewsusa/status/2089695590804345037",
+      "status": "x-intel",
+      "title": "The FAA\u2019s Minneapolis center lost radar &amp; comms for 2 hours on Aug 6 \u2014 1,100+ flights disrupted. But the real story? Trump\u2019s Marine One departure 2 days pri",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/10secwarww2/status/2089113403256344805"
@@ -274,60 +300,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/NewsTongueX/status/2089618514059382892",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE",
-        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNlFsZkFEaG9pWTczM0NqOTFtVXlKZk1GOGw2OGtVVjREd3ppNFBaWHpFcTBla3hzaW16WmxIaC03NlNqVnZ2djB5U2g3OUh3N1V3LW55TjBOTG8xNXhJdTFocDUwSl9SUlEtdHRWajl4ZXFYcmJfMEFsaW5ISHBobEJWRkwwTnN3WG9FVU1B"
-      ],
-      "id": "story-46d3f7a1a98d26729e27a76e",
-      "reason": "\ud83d\udd34 Pentagon deploys Claude AI for targeting; evaluation capacity lags Central Command used Anthropic's Claude through Palantir's Maven Smart System to generate roughly 1,000 targets in the first 24 hours of Operation Epic Fury, more than double the 2003 Iraq invasion opening phase",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T07:50:50Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T07:40:51Z",
-      "source_url": "https://x.com/NewsTongueX/status/2089618514059382892",
-      "status": "x-intel",
-      "title": "\ud83d\udd34 Pentagon deploys Claude AI for targeting; evaluation capacity lags Central Command used Anthropic's Claude through Palantir's Maven Smart System to generate r",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "Operation Epic Fury",
-        "Pentagon",
-        "targeting"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T14:03:33Z",
+    "alerted_at": "2026-08-18T15:22:04Z",
     "confidence": 0,
-    "source_url": "https://x.com/10secwarww2/status/2089113403256344805",
-    "title": "With drones, AI targeting and long-range weapons changing warfare, is protecting civilians becoming easier or are we simply creating new ways for tragedies like"
+    "source_url": "https://x.com/ainewsusa/status/2089695590804345037",
+    "title": "The FAA\u2019s Minneapolis center lost radar &amp; comms for 2 hours on Aug 6 \u2014 1,100+ flights disrupted. But the real story? Trump\u2019s Marine One departure 2 days pri"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
     "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.164,
-      "projected_minutes_per_30d": 343.88,
+      "measured_seconds": 7.537,
+      "projected_minutes_per_30d": 361.8,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +339,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +363,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T14:49:46Z",
+  "updated_at": "2026-08-18T15:22:04Z",
   "version": 1
 }
