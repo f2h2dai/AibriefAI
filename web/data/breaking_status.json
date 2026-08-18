@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/dnvolz/status/2089395815521390684"
+      ],
+      "id": "story-6831864751e5475223be411b",
+      "reason": "On today's front page of @nytimes : U.S. Military Is Tripped Up in A.I. Race A Fight With Anthropic Is Just One Hurdle w/ @SangerNYT, @AnaSwanson and @julianbarnes https://t.co/03cCjlSzWz",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-18T17:50:56Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T16:55:56Z",
+      "source_url": "https://x.com/dnvolz/status/2089395815521390684",
+      "status": "x-intel",
+      "title": "On today's front page of @nytimes : U.S. Military Is Tripped Up in A.I. Race A Fight With Anthropic Is Just One Hurdle w/ @SangerNYT, @AnaSwanson and @julianbar",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/DanKornas/status/2089349025883394119"
@@ -271,58 +295,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/GMR172026/status/2089670764375298392"
-      ],
-      "id": "story-8bbafb5a495d9af7a23c5742",
-      "reason": "\ud83d\udee1\ufe0f Smack Technologies raises $61M Series B for military AI https://t.co/Op2888vEs3 AI investment is expanding across foundation models, enterprise AI and defense applications. #AI #Anthropic #GenerativeAI #DefenseAI #AIFunding https://t.co/jcCkpndmZe",
-      "score": 48,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-18T13:17:57Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T11:08:29Z",
-      "source_url": "https://x.com/GMR172026/status/2089670764375298392",
-      "status": "x-intel",
-      "title": "\ud83d\udee1\ufe0f Smack Technologies raises $61M Series B for military AI https://t.co/Op2888vEs3 AI investment is expanding across foundation models, enterprise AI and defens",
-      "webswarm_evidence_terms": [
-        "AI",
-        "military",
-        "military AI",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T16:55:28Z",
+    "alerted_at": "2026-08-18T17:50:56Z",
     "confidence": 0,
-    "source_url": "https://x.com/DanKornas/status/2089349025883394119",
-    "title": "@DanKornas: AI failures are scattered across headlines. This repo puts the evidence in one place. Awful AI is a curated GitHub list tracking concerning"
+    "source_url": "https://x.com/dnvolz/status/2089395815521390684",
+    "title": "On today's front page of @nytimes : U.S. Military Is Tripped Up in A.I. Race A Fight With Anthropic Is Just One Hurdle w/ @SangerNYT, @AnaSwanson and @julianbar"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 17,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.185,
-      "projected_minutes_per_30d": 392.89,
+      "measured_seconds": 7.977,
+      "projected_minutes_per_30d": 382.88,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -360,11 +358,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T17:18:45Z",
+  "updated_at": "2026-08-18T17:50:56Z",
   "version": 1
 }
