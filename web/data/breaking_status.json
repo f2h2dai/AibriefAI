@@ -5,6 +5,55 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/10secwarww2/status/2089113403256344805"
+      ],
+      "id": "story-12ab29a7fe3da6485f6695ed",
+      "reason": "With drones, AI targeting and long-range weapons changing warfare, is protecting civilians becoming easier or are we simply creating new ways for tragedies like My Lai to happen? https://t.co/Eed2tExqmq",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-18T14:03:33Z",
+      "source": "x",
+      "source_published_at": "2026-08-16T22:13:43Z",
+      "source_url": "https://x.com/10secwarww2/status/2089113403256344805",
+      "status": "x-intel",
+      "title": "With drones, AI targeting and long-range weapons changing warfare, is protecting civilians becoming easier or are we simply creating new ways for tragedies like",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/MadTopsy88/status/2089695715291201850"
+      ],
+      "id": "story-21f622d464d068e28b65b477",
+      "reason": "No global treaty or international ban outlawing Lethal Autonomous Weapons Systems (LAWS), called \"killer robots\". Use governed by existing International Humanitarian Law (IHL), Law of Armed Conflict (LOAC), proportionality, and accountability in warfare. https://t.co/bCrTkd4DIu h",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-18T14:03:33Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T12:47:37Z",
+      "source_url": "https://x.com/MadTopsy88/status/2089695715291201850",
+      "status": "x-intel",
+      "title": "No global treaty or international ban outlawing Lethal Autonomous Weapons Systems (LAWS), called \"killer robots\". Use governed by existing International Humanit",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/GMR172026/status/2089670764375298392"
@@ -253,81 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/Nordexium/status/2089576568217608559"
-      ],
-      "id": "story-009ded5f212aeb312f42bc0b",
-      "reason": "Ukraine Expands Satellite Intelligence for Strike Operations Ukraine has significantly expanded its access to satellite imagery from the US government and private companies over the past year. According to The New York Times, the imagery is used to identify targets, prepare strik",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T07:01:31Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T04:54:10Z",
-      "source_url": "https://x.com/Nordexium/status/2089576568217608559",
-      "status": "x-intel",
-      "title": "Ukraine Expands Satellite Intelligence for Strike Operations Ukraine has significantly expanded its access to satellite imagery from the US government and priva",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "satellite imagery",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/BabakTaghvaee1/status/2089415587986395581"
-      ],
-      "id": "story-75e9e36317876e3c194d939b",
-      "reason": "Sad to see some Israeli influencers are mocking sailors aboard the U.S. Navy\u2019s USS Abraham Lincoln for complaining about poor living conditions aboard the aircraft carrier, using fabricated and AI-generated images, including this one. And yes, this is an Israeli PSYOPS account. T",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T06:00:58Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T18:14:30Z",
-      "source_url": "https://x.com/BabakTaghvaee1/status/2089415587986395581",
-      "status": "x-intel",
-      "title": "Sad to see some Israeli influencers are mocking sailors aboard the U.S. Navy\u2019s USS Abraham Lincoln for complaining about poor living conditions aboard the aircr",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T13:17:57Z",
+    "alerted_at": "2026-08-18T14:03:33Z",
     "confidence": 0,
-    "source_url": "https://x.com/GMR172026/status/2089670764375298392",
-    "title": "\ud83d\udee1\ufe0f Smack Technologies raises $61M Series B for military AI https://t.co/Op2888vEs3 AI investment is expanding across foundation models, enterprise AI and defens"
+    "source_url": "https://x.com/10secwarww2/status/2089113403256344805",
+    "title": "With drones, AI targeting and long-range weapons changing warfare, is protecting civilians becoming easier or are we simply creating new ways for tragedies like"
   },
   "last_run": {
-    "alerted_now": 1,
-    "clustered": 16,
+    "alerted_now": 2,
+    "clustered": 21,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.495,
-      "projected_minutes_per_30d": 407.77,
+      "measured_seconds": 6.389,
+      "projected_minutes_per_30d": 306.66,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T13:17:57Z",
+  "updated_at": "2026-08-18T14:03:33Z",
   "version": 1
 }
