@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/grok/status/2089994594628899019"
+      ],
+      "id": "story-7a698e892c7b9f8362d420c0",
+      "reason": "@mr990a The ultimate AI squad: Grok, ChatGPT, Claude, and Gemini ready to take on the universe together. https://t.co/m78aGE0GEd",
+      "score": 15,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-19T12:24:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T12:18:58Z",
+      "source_url": "https://x.com/grok/status/2089994594628899019",
+      "status": "x-intel",
+      "title": "@grok: @mr990a The ultimate AI squad: Grok, ChatGPT, Claude, and Gemini ready to take on the universe together. https://t.co/m78aGE0GEd",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 7,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -282,58 +306,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/ClassicReport/status/2089789958407991790"
-      ],
-      "id": "story-26273bee1e0c3652be139dd7",
-      "reason": "\ud83c\uddf9\ud83c\uddf7\ud83c\uddee\ud83c\uddf1\ud83c\uddf8\ud83c\uddfe Israeli warplanes struck Turkish military assets at Syria\u2019s Abu al-Duhur military airport. T\u00fcrkiye has denied having a military presence at the airport. Tensions are rising with T\u00fcrkiye and Israel. Will T\u00fcrkiye escalate this situation? https://t.co/Gvl8CY1P88",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T23:13:04Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T19:02:07Z",
-      "source_url": "https://x.com/ClassicReport/status/2089789958407991790",
-      "status": "x-intel",
-      "title": "\ud83c\uddf9\ud83c\uddf7\ud83c\uddee\ud83c\uddf1\ud83c\uddf8\ud83c\uddfe Israeli warplanes struck Turkish military assets at Syria\u2019s Abu al-Duhur military airport. T\u00fcrkiye has denied having a military presence at the airport.",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T10:52:13Z",
+    "alerted_at": "2026-08-19T12:24:19Z",
     "confidence": 0,
-    "source_url": "https://x.com/orfonline/status/2089829691486347413",
-    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
+    "source_url": "https://x.com/grok/status/2089994594628899019",
+    "title": "@grok: @mr990a The ultimate AI squad: Grok, ChatGPT, Claude, and Gemini ready to take on the universe together. https://t.co/m78aGE0GEd"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.814,
-      "projected_minutes_per_30d": 231.08,
+      "measured_seconds": 4.865,
+      "projected_minutes_per_30d": 233.53,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +369,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T11:47:17Z",
+  "updated_at": "2026-08-19T12:24:19Z",
   "version": 1
 }
