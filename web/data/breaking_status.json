@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/shehzadyounis/status/2089641064596639842"
+      ],
+      "id": "story-bcb1d09d74982597dcab92d8",
+      "reason": "Are Allies\u2019 Military AI Systems Interoperable? The U.S., South Korea, and Japan are pursuing different AI-driven combat systems. That will lead to different recommendations on the same battlefield. https://t.co/z9hrFgwuYr",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-19T00:52:43Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T09:10:28Z",
+      "source_url": "https://x.com/shehzadyounis/status/2089641064596639842",
+      "status": "x-intel",
+      "title": "Are Allies\u2019 Military AI Systems Interoperable? The U.S., South Korea, and Japan are pursuing different AI-driven combat systems. That will lead to different rec",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/hnamekawa/status/2089557380405379172"
@@ -271,63 +297,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 6,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2089718444488806766",
-        "https://x.com/futurist_lens/status/2089790731321831890",
-        "https://x.com/MizarVision/status/2089373313181123039",
-        "https://x.com/MizarVision/status/2089255937483702462",
-        "https://x.com/MizarVision/status/2089742084890579394",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ"
-      ],
-      "id": "story-d83f4187dd61fa47b9daab65",
-      "reason": "Latest high-resolution satellite imagery from Planet shows the warehouse struck by Ukraine at the Severnoye Domodedovo logistics complex in Moscow Oblast. The image, taken this morning at approximately 08:30 local time, shows the building heavily destroyed and still burning. This",
-      "score": 88,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T19:37:34Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T14:17:56Z",
-      "source_url": "https://x.com/MizarVision/status/2089718444488806766",
-      "status": "x-intel",
-      "title": "Latest high-resolution satellite imagery from Planet shows the warehouse struck by Ukraine at the Severnoye Domodedovo logistics complex in Moscow Oblast. The i",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "geospatial",
-        "geospatial intelligence",
-        "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-18T23:35:31Z",
+    "alerted_at": "2026-08-19T00:52:43Z",
     "confidence": 0,
-    "source_url": "https://x.com/hnamekawa/status/2089557380405379172",
-    "title": "Project Maven P.6\u3088\u308a \uff08\u8a33\u6ce8 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8 \u30e1\u30fc\u30d9\u30f3\u306e\u4e2d\u5fc3\u4eba\u7269\u3067\u3042\u308b\uff09\u30af\u30fc\u30ab\u30fc\u306e\u6700\u3082\u8ad6\u4e89\u3092\u547c\u3093\u3060\u6c7a\u65ad\u306e\u4e00\u3064\u306f\u3001 \u6700\u5c0f\u9650\u306e\u30c6\u30b9\u30c8\u3057\u304b\u3057\u3066\u3044\u306a\u3044\u30b7\u30b9\u30c6\u30e0\u3092\u73fe\u5b9f\u306e\u6226\u4e89\u306b\u6301\u3061\u8fbc\u3093\u3060\u3053\u3068\u3060\u3002 \u5927\u4f50\u306f\u3001\u5e38\u306b\u4ee5\u4e0b\u306e\u3088\u3046\u306b\u8a00\u3063\u305f\u3002"
+    "source_url": "https://x.com/shehzadyounis/status/2089641064596639842",
+    "title": "Are Allies\u2019 Military AI Systems Interoperable? The U.S., South Korea, and Japan are pursuing different AI-driven combat systems. That will lead to different rec"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 20,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.204,
-      "projected_minutes_per_30d": 249.81,
+      "measured_seconds": 5.1,
+      "projected_minutes_per_30d": 244.81,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -365,11 +360,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-18T23:56:33Z",
+  "updated_at": "2026-08-19T00:52:43Z",
   "version": 1
 }
