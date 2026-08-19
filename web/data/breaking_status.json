@@ -5,6 +5,31 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/AyaksSevket/status/2090106927871152513"
+      ],
+      "id": "story-2b4b71145d0ae1446b6f3214",
+      "reason": "Pentagon AI Push Drives Smack Technologies\u2019 $61 Million Funding Round The funding reflects growing Pentagon demand for faster, decentralized AI systems designed to support real-time battlefield decisions. https://t.co/szChXdBb6o https://t.co/Gai9hq5C6N \u2013 Current Technology News, ",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-19T16:54:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T16:01:38Z",
+      "source_url": "https://x.com/AyaksSevket/status/2090106927871152513",
+      "status": "x-intel",
+      "title": "Pentagon AI Push Drives Smack Technologies\u2019 $61 Million Funding Round The funding reflects growing Pentagon demand for faster, decentralized AI systems designed",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/Microinteracti1/status/2090096093514092999"
@@ -282,58 +307,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/NarenNp/status/2089908537224991060"
-      ],
-      "id": "story-84cee2ed490505b84cad522d",
-      "reason": "\ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude01\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd4\ud835\udddc: \ud835\udde7\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\udddc\ud835\ude00 \ud835\udde1\ud835\uddfc\ud835\ude01 \ud835\uddd8\ud835\uddfb\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5. \ud835\uddea\ud835\uddf2 \ud835\udde1\ud835\uddf2\ud835\uddf2\ud835\uddf1 \ud835\uddd4\ud835\ude00\ud835\ude00\ud835\ude02\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf0\ud835\uddf2. A model that achieves 95% accuracy in a laboratory may still fail when the battlefield changes, communications degrade, sensors behave differently\u2014or an adversary deliberately tries to deceive it. And the challenge is getting",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T03:10:14Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T02:53:18Z",
-      "source_url": "https://x.com/NarenNp/status/2089908537224991060",
-      "status": "x-intel",
-      "title": "\ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude01\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd4\ud835\udddc: \ud835\udde7\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\udddc\ud835\ude00 \ud835\udde1\ud835\uddfc\ud835\ude01 \ud835\uddd8\ud835\uddfb\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5. \ud835\uddea\ud835\uddf2 \ud835\udde1\ud835\uddf2\ud835\uddf2\ud835\uddf1 \ud835\uddd4\ud835\ude00\ud835\ude00\ud835\ude02\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf0\ud835\uddf2. A model that achieves 95% accuracy in a laboratory may still fail when the battlefield changes, communica",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T16:19:38Z",
+    "alerted_at": "2026-08-19T16:54:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/Microinteracti1/status/2090096093514092999",
-    "title": "Ukraine\u2019s Ministry of Defense confirms that its forces now employ more than 70 AI and computer vision systems to strike enemy targets, with over 200 Ukrainian c"
+    "source_url": "https://x.com/AyaksSevket/status/2090106927871152513",
+    "title": "Pentagon AI Push Drives Smack Technologies\u2019 $61 Million Funding Round The funding reflects growing Pentagon demand for faster, decentralized AI systems designed"
   },
   "last_run": {
-    "alerted_now": 2,
+    "alerted_now": 1,
     "clustered": 20,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.221,
-      "projected_minutes_per_30d": 298.59,
+      "measured_seconds": 5.549,
+      "projected_minutes_per_30d": 266.33,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T16:19:38Z",
+  "updated_at": "2026-08-19T16:54:03Z",
   "version": 1
 }
