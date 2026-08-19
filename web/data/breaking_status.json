@@ -4,6 +4,38 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 7,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/orfonline/status/2089829691486347413",
+        "https://x.com/DanKornas/status/2089349025883394119",
+        "https://x.com/orfonline/status/2089343991917777029",
+        "https://x.com/MadTopsy88/status/2089695715291201850",
+        "https://x.com/orfonline/status/2089706380848451929",
+        "https://x.com/orfonline/status/2089434588183466119",
+        "https://x.com/techmeditator/status/2089990449037738112"
+      ],
+      "id": "story-a1cd24a3da0a4194bd12ee4f",
+      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-19T10:52:13Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T21:40:00Z",
+      "source_url": "https://x.com/orfonline/status/2089829691486347413",
+      "status": "x-intel",
+      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "defense",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -276,57 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/BerkeleyRisk/status/2089834000475103724"
-      ],
-      "id": "story-911afd2659396468cf56ee2a",
-      "reason": "Join BRSL and @CSRisks next week for a zoom webinar covering @garretthinck and Ted Fujimoto's forthcoming paper on how AI capabilities for intelligence surveillance, and reconnaissance (ISR) promise to radically augment the detection, tracking, and targeting of military assets.",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T22:47:17Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T21:57:07Z",
-      "source_url": "https://x.com/BerkeleyRisk/status/2089834000475103724",
-      "status": "x-intel",
-      "title": "Join BRSL and @CSRisks next week for a zoom webinar covering @garretthinck and Ted Fujimoto's forthcoming paper on how AI capabilities for intelligence surveill",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T10:19:12Z",
+    "alerted_at": "2026-08-19T10:52:13Z",
     "confidence": 0,
-    "source_url": "https://x.com/techsnif/status/2089933359392678299",
-    "title": "Smack Technologies raises $61M Series B for military AI tools"
+    "source_url": "https://x.com/orfonline/status/2089829691486347413",
+    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.726,
-      "projected_minutes_per_30d": 274.84,
+      "measured_seconds": 4.718,
+      "projected_minutes_per_30d": 226.46,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -369,6 +376,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T10:19:12Z",
+  "updated_at": "2026-08-19T10:52:13Z",
   "version": 1
 }
