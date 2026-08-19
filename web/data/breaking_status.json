@@ -4,6 +4,33 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/mikenov/status/2089305029442211878",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV2x0TnNUQ0FfWC1Gd19ONXN4MTQ5eE1wNkJVSnNhTUhsaERpZGoxZkFhZzN0WWVUS3pzVHY1amYwWnR3bmc5VjNnbV9WODl4VUthLWNxRWNrNDRqWEtfbUt5NExVYURLZ1d3Y2lDWmplU0lpcjRLT0UzZmhyLVp4MVl1dENBWVRFR3RubUs4azgwZw",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA"
+      ],
+      "id": "story-5618d062693d03f6bbbac5a9",
+      "reason": "GLOBAL #SECURITY AND #INTELLIGENCE #NEWS REVIEW - AI REPORT: IRAN'S MILITARY STRATEGY Iran's military is on the defensive; deep underground - Search Iran's Underground Military Strategy https://t.co/46wd3zbKcr While it is true that Iran relies heavily on extensive subterranean ne",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-19T02:12:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-17T10:55:11Z",
+      "source_url": "https://x.com/mikenov/status/2089305029442211878",
+      "status": "x-intel",
+      "title": "GLOBAL #SECURITY AND #INTELLIGENCE #NEWS REVIEW - AI REPORT: IRAN'S MILITARY STRATEGY Iran's military is on the defensive; deep underground - Search Iran's Unde",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -271,45 +298,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ShowsAli/status/2089191415007887751"
-      ],
-      "id": "story-4f41536f4b431dc258c9b4a1",
-      "reason": "The United States is preparing to warn dozens of partner countries that they must choose between its artificial intelligence coalition and China's competing framework or risk exclusion. According to a draft State Department letter addressed to 35 signatories of the U.S. AI Opport",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-18T19:37:34Z",
-      "source": "x",
-      "source_published_at": "2026-08-17T03:23:43Z",
-      "source_url": "https://x.com/ShowsAli/status/2089191415007887751",
-      "status": "x-intel",
-      "title": "The United States is preparing to warn dozens of partner countries that they must choose between its artificial intelligence coalition and China's competing fra",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T00:52:43Z",
+    "alerted_at": "2026-08-19T02:12:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/shehzadyounis/status/2089641064596639842",
-    "title": "Are Allies\u2019 Military AI Systems Interoperable? The U.S., South Korea, and Japan are pursuing different AI-driven combat systems. That will lead to different rec"
+    "source_url": "https://x.com/mikenov/status/2089305029442211878",
+    "title": "GLOBAL #SECURITY AND #INTELLIGENCE #NEWS REVIEW - AI REPORT: IRAN'S MILITARY STRATEGY Iran's military is on the defensive; deep underground - Search Iran's Unde"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -321,8 +322,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.1,
-      "projected_minutes_per_30d": 244.81,
+      "measured_seconds": 6.728,
+      "projected_minutes_per_30d": 322.96,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -336,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,6 +366,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T00:52:43Z",
+  "updated_at": "2026-08-19T02:12:15Z",
   "version": 1
 }
