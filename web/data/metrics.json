@@ -1,36 +1,32 @@
 {
-  "generated_at": "2026-08-19T12:18:58Z",
+  "generated_at": "2026-08-19T18:33:57Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.5,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-19T12:18:58Z",
+  "latest_successful_run": "2026-08-19T18:33:57Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
-    "title": "@commandante_: Iran has weighed striking US military targets in Europe if Trump escalates the war. Iranian forces have assessed hitting US assets in south-",
-    "action_score": 75.5,
-    "url": "https://x.com/commandante_/status/2089983447133540806"
+    "id": "github-009",
+    "title": "KCNyu/clawock",
+    "action_score": 77.5,
+    "url": "https://github.com/KCNyu/clawock"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 7
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
-    {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
     {
       "source": "GroqRouter",
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 46.172,
+  "runtime_seconds": 27.493,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -90,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-19T12:18:58Z",
+    "planned_at": "2026-08-19T18:33:57Z",
     "production_threshold": 70.0
   }
 }
