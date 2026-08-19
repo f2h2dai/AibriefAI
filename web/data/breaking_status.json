@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/startupwire_in/status/2089918125626298473"
+      ],
+      "id": "story-29ee10baa6240d5778efa84d",
+      "reason": "NeoGeo, a geospatial intelligence startup, has raised $20 million in Series A funding to fuel global expansion while scaling its AI-powered intelligence and software products. #NeoGeo #Geospatial #AI #SeriesA #IndiaRising #Innovation #Deeptech https://t.co/OA6jmBpmPF",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-19T03:56:38Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T03:31:24Z",
+      "source_url": "https://x.com/startupwire_in/status/2089918125626298473",
+      "status": "x-intel",
+      "title": "NeoGeo, a geospatial intelligence startup, has raised $20 million in Series A funding to fuel global expansion while scaling its AI-powered intelligence and sof",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/NarenNp/status/2089908537224991060"
@@ -276,56 +300,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Dawnp3T/status/2089752810300862630"
-      ],
-      "id": "story-8d1bbce898dd463a584403ec",
-      "reason": "Portcoast uses reality capture and 3D digital twins to help Vietnam\u2019s largest ports double cargo capacity by 2030\u2014demonstrating how autonomy, geospatial intelligence, and AI can modernize critical infrastructure.https://t.co/2Ce1cLS9TY https://t.co/QqRJUY6sPm",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-18T21:58:29Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T16:34:30Z",
-      "source_url": "https://x.com/Dawnp3T/status/2089752810300862630",
-      "status": "x-intel",
-      "title": "Portcoast uses reality capture and 3D digital twins to help Vietnam\u2019s largest ports double cargo capacity by 2030\u2014demonstrating how autonomy, geospatial intelli",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T03:10:14Z",
+    "alerted_at": "2026-08-19T03:56:38Z",
     "confidence": 0,
-    "source_url": "https://x.com/NarenNp/status/2089908537224991060",
-    "title": "\ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf6\ud835\ude01\ud835\uddee\ud835\uddff\ud835\ude06 \ud835\uddd4\ud835\udddc: \ud835\udde7\ud835\uddf2\ud835\ude00\ud835\ude01\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\udddc\ud835\ude00 \ud835\udde1\ud835\uddfc\ud835\ude01 \ud835\uddd8\ud835\uddfb\ud835\uddfc\ud835\ude02\ud835\uddf4\ud835\uddf5. \ud835\uddea\ud835\uddf2 \ud835\udde1\ud835\uddf2\ud835\uddf2\ud835\uddf1 \ud835\uddd4\ud835\ude00\ud835\ude00\ud835\ude02\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf0\ud835\uddf2. A model that achieves 95% accuracy in a laboratory may still fail when the battlefield changes, communica"
+    "source_url": "https://x.com/startupwire_in/status/2089918125626298473",
+    "title": "NeoGeo, a geospatial intelligence startup, has raised $20 million in Series A funding to fuel global expansion while scaling its AI-powered intelligence and sof"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 13,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.042,
-      "projected_minutes_per_30d": 290.0,
+      "measured_seconds": 6.503,
+      "projected_minutes_per_30d": 312.15,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +339,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,6 +368,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T03:10:14Z",
+  "updated_at": "2026-08-19T03:56:38Z",
   "version": 1
 }
