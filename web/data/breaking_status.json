@@ -5,6 +5,31 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Iykconic/status/2089978415151452345"
+      ],
+      "id": "story-d4af8fa6c2e0cb0b03d5b880",
+      "reason": "Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository. I'm still figuring out what to call it. One of the sections is what I call the Pentagon AI. The idea is simple. You don't need to stick to o",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-19T07:51:48Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T07:30:58Z",
+      "source_url": "https://x.com/Iykconic/status/2089978415151452345",
+      "status": "x-intel",
+      "title": "Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository. I'm still figuring o",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/hnamekawa/status/2089906682407334273"
@@ -273,42 +298,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/MAGAsFix/status/2089539968615993570"
-      ],
-      "id": "story-b1757194cb4b75d8cd1554a5",
-      "reason": "Why are we leveraging everything; money, energy, land, and our children\u2019s future for AI at this scale? What\u2019s the next phase when governments start placing military assets at data centers? What does that trajectory actually mean for you and me? Once full technocratic control is l",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-18T22:22:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T02:28:44Z",
-      "source_url": "https://x.com/MAGAsFix/status/2089539968615993570",
-      "status": "x-intel",
-      "title": "Why are we leveraging everything; money, energy, land, and our children\u2019s future for AI at this scale? What\u2019s the next phase when governments start placing mili",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T04:30:59Z",
+    "alerted_at": "2026-08-19T07:51:48Z",
     "confidence": 0,
-    "source_url": "https://x.com/hnamekawa/status/2089906682407334273",
-    "title": "Project Maven P.31\u3088\u308a 2008\u5e741\u6708\u306e\u6587\u66f8\u306b\u3066\u3001\uff08\u8a33\u6ce8 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8 \u30e1\u30fc\u30d9\u30f3\u306e\u4e2d\u5fc3\u4eba\u7269\u3067\u3042\u308b\uff09\u30af\u30fc\u30ab\u30fc\u3068\u5171\u8457\u8005\u305f\u3061\u306f\u3001 \u30a2\u30eb\u30ab\u30a4\u30c0\u306b\u95a2\u3059\u308b183\u306e\u516c\u958b\u6587\u66f8\u3092\u8981\u7d04\u3057\u305f\u308a\u5b66\u7fd2\u3059\u308b\u65b9\u6cd5\u3092\u30c6\u30b9\u30c8\u3057\u305f\u3002 \u4e00\u3064\u306e\u65b9\u6cd5\u306f\u3001\u4eba\u9593\u306b\u95a2\u3059\u308b\u30a4\u30f3\u30c6\u30ea\u30b8\u30a7\u30f3\u30b9\u306e\u5206\u6790\u8005\u304c\u5358\u7d14\u306b\u305d\u308c\u3089\u3092\u8aad\u3080\u3068\u3044\u3046\u3082\u306e\u3060\u3002"
+    "source_url": "https://x.com/Iykconic/status/2089978415151452345",
+    "title": "Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository. I'm still figuring o"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 17,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 4,
     "initial_collected": 25,
@@ -322,8 +322,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.282,
-      "projected_minutes_per_30d": 301.52,
+      "measured_seconds": 4.741,
+      "projected_minutes_per_30d": 227.55,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -337,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -361,11 +361,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T07:02:59Z",
+  "updated_at": "2026-08-19T07:51:48Z",
   "version": 1
 }
