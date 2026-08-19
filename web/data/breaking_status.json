@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/NATO_ACT/status/2090090165964267990"
+      ],
+      "id": "story-9929abe98ddc2dd9877416f0",
+      "reason": "Human intelligence, or HUMINT, remains critical to how #NATO understands complex threats. The NATO HUMINT Centre of Excellence is advancing how Allies assess information, tackle cognitive bias and use AI to support, not replace, human judgement. \ud83d\udd17 https://t.co/4sN3eFFMSZ #WeAreNA",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-19T19:00:11Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T18:33:57Z",
+      "source_url": "https://x.com/NATO_ACT/status/2090090165964267990",
+      "status": "x-intel",
+      "title": "@NATO_ACT: Human intelligence, or HUMINT, remains critical to how #NATO understands complex threats. The NATO HUMINT Centre of Excellence is advancing",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/amtvmedia/status/2089836379517989022"
@@ -285,42 +309,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/hnamekawa/status/2089906682407334273"
-      ],
-      "id": "story-47ee2936b0fcee8b9eb3996f",
-      "reason": "Project Maven P.31\u3088\u308a 2008\u5e741\u6708\u306e\u6587\u66f8\u306b\u3066\u3001\uff08\u8a33\u6ce8 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8 \u30e1\u30fc\u30d9\u30f3\u306e\u4e2d\u5fc3\u4eba\u7269\u3067\u3042\u308b\uff09\u30af\u30fc\u30ab\u30fc\u3068\u5171\u8457\u8005\u305f\u3061\u306f\u3001 \u30a2\u30eb\u30ab\u30a4\u30c0\u306b\u95a2\u3059\u308b183\u306e\u516c\u958b\u6587\u66f8\u3092\u8981\u7d04\u3057\u305f\u308a\u5b66\u7fd2\u3059\u308b\u65b9\u6cd5\u3092\u30c6\u30b9\u30c8\u3057\u305f\u3002 \u4e00\u3064\u306e\u65b9\u6cd5\u306f\u3001\u4eba\u9593\u306b\u95a2\u3059\u308b\u30a4\u30f3\u30c6\u30ea\u30b8\u30a7\u30f3\u30b9\u306e\u5206\u6790\u8005\u304c\u5358\u7d14\u306b\u305d\u308c\u3089\u3092\u8aad\u3080\u3068\u3044\u3046\u3082\u306e\u3060\u3002",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T04:30:59Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T02:45:56Z",
-      "source_url": "https://x.com/hnamekawa/status/2089906682407334273",
-      "status": "x-intel",
-      "title": "Project Maven P.31\u3088\u308a 2008\u5e741\u6708\u306e\u6587\u66f8\u306b\u3066\u3001\uff08\u8a33\u6ce8 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8 \u30e1\u30fc\u30d9\u30f3\u306e\u4e2d\u5fc3\u4eba\u7269\u3067\u3042\u308b\uff09\u30af\u30fc\u30ab\u30fc\u3068\u5171\u8457\u8005\u305f\u3061\u306f\u3001 \u30a2\u30eb\u30ab\u30a4\u30c0\u306b\u95a2\u3059\u308b183\u306e\u516c\u958b\u6587\u66f8\u3092\u8981\u7d04\u3057\u305f\u308a\u5b66\u7fd2\u3059\u308b\u65b9\u6cd5\u3092\u30c6\u30b9\u30c8\u3057\u305f\u3002 \u4e00\u3064\u306e\u65b9\u6cd5\u306f\u3001\u4eba\u9593\u306b\u95a2\u3059\u308b\u30a4\u30f3\u30c6\u30ea\u30b8\u30a7\u30f3\u30b9\u306e\u5206\u6790\u8005\u304c\u5358\u7d14\u306b\u305d\u308c\u3089\u3092\u8aad\u3080\u3068\u3044\u3046\u3082\u306e\u3060\u3002",
-      "webswarm_evidence_terms": [
-        "Project Maven"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T17:18:07Z",
+    "alerted_at": "2026-08-19T19:00:11Z",
     "confidence": 0,
-    "source_url": "https://x.com/amtvmedia/status/2089836379517989022",
-    "title": "The greatest weapon the government and elites have ever possessed or controlled is not bombs, nukes or military assets like tanks. It\u2019s the Internet, social med"
+    "source_url": "https://x.com/NATO_ACT/status/2090090165964267990",
+    "title": "@NATO_ACT: Human intelligence, or HUMINT, remains critical to how #NATO understands complex threats. The NATO HUMINT Centre of Excellence is advancing"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -332,8 +333,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.367,
-      "projected_minutes_per_30d": 353.6,
+      "measured_seconds": 6.887,
+      "projected_minutes_per_30d": 330.56,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -371,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T18:19:41Z",
+  "updated_at": "2026-08-19T19:00:11Z",
   "version": 1
 }
