@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/shabbadoda/status/2089820610893369819"
+      ],
+      "id": "story-2dd69ac16abbef72acc38c73",
+      "reason": "AUTONOMOUS WEAPONS: The BATTLEFIELD moves into a brand new world https://t.co/HSeAHwxP9h via @YouTube",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-19T19:28:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T21:03:55Z",
+      "source_url": "https://x.com/shabbadoda/status/2089820610893369819",
+      "status": "x-intel",
+      "title": "AUTONOMOUS WEAPONS: The BATTLEFIELD moves into a brand new world https://t.co/HSeAHwxP9h via @YouTube",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons",
+        "DoD"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/NATO_ACT/status/2090090165964267990"
@@ -284,38 +310,13 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Iykconic/status/2089978415151452345"
-      ],
-      "id": "story-d4af8fa6c2e0cb0b03d5b880",
-      "reason": "Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository. I'm still figuring out what to call it. One of the sections is what I call the Pentagon AI. The idea is simple. You don't need to stick to o",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-19T07:51:48Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T07:30:58Z",
-      "source_url": "https://x.com/Iykconic/status/2089978415151452345",
-      "status": "x-intel",
-      "title": "Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository. I'm still figuring o",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T19:00:11Z",
+    "alerted_at": "2026-08-19T19:28:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/NATO_ACT/status/2090090165964267990",
-    "title": "@NATO_ACT: Human intelligence, or HUMINT, remains critical to how #NATO understands complex threats. The NATO HUMINT Centre of Excellence is advancing"
+    "source_url": "https://x.com/shabbadoda/status/2089820610893369819",
+    "title": "AUTONOMOUS WEAPONS: The BATTLEFIELD moves into a brand new world https://t.co/HSeAHwxP9h via @YouTube"
   },
   "last_run": {
     "alerted_now": 1,
@@ -326,15 +327,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.887,
-      "projected_minutes_per_30d": 330.56,
+      "measured_seconds": 7.183,
+      "projected_minutes_per_30d": 344.8,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +349,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -377,6 +378,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T19:00:11Z",
+  "updated_at": "2026-08-19T19:28:50Z",
   "version": 1
 }
