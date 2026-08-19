@@ -5,6 +5,31 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/amtvmedia/status/2089836379517989022"
+      ],
+      "id": "story-a4ef1a41bbab16df347e196c",
+      "reason": "The greatest weapon the government and elites have ever possessed or controlled is not bombs, nukes or military assets like tanks. It\u2019s the Internet, social media, algorithms and now superintelligent AI. Your phone is the most powerful weapon they\u2019ve ever deployed. It will be soo",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-19T17:18:07Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T22:06:34Z",
+      "source_url": "https://x.com/amtvmedia/status/2089836379517989022",
+      "status": "x-intel",
+      "title": "The greatest weapon the government and elites have ever possessed or controlled is not bombs, nukes or military assets like tanks. It\u2019s the Internet, social med",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/AyaksSevket/status/2090106927871152513"
@@ -283,56 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/startupwire_in/status/2089918125626298473"
-      ],
-      "id": "story-29ee10baa6240d5778efa84d",
-      "reason": "NeoGeo, a geospatial intelligence startup, has raised $20 million in Series A funding to fuel global expansion while scaling its AI-powered intelligence and software products. #NeoGeo #Geospatial #AI #SeriesA #IndiaRising #Innovation #Deeptech https://t.co/OA6jmBpmPF",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-19T03:56:38Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T03:31:24Z",
-      "source_url": "https://x.com/startupwire_in/status/2089918125626298473",
-      "status": "x-intel",
-      "title": "NeoGeo, a geospatial intelligence startup, has raised $20 million in Series A funding to fuel global expansion while scaling its AI-powered intelligence and sof",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T16:54:03Z",
+    "alerted_at": "2026-08-19T17:18:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/AyaksSevket/status/2090106927871152513",
-    "title": "Pentagon AI Push Drives Smack Technologies\u2019 $61 Million Funding Round The funding reflects growing Pentagon demand for faster, decentralized AI systems designed"
+    "source_url": "https://x.com/amtvmedia/status/2089836379517989022",
+    "title": "The greatest weapon the government and elites have ever possessed or controlled is not bombs, nukes or military assets like tanks. It\u2019s the Internet, social med"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 17,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.549,
-      "projected_minutes_per_30d": 266.33,
+      "measured_seconds": 6.535,
+      "projected_minutes_per_30d": 313.67,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -375,6 +376,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T16:54:03Z",
+  "updated_at": "2026-08-19T17:18:07Z",
   "version": 1
 }
