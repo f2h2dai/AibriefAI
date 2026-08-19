@@ -4,6 +4,35 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2090171820351906293",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
+        "https://x.com/MizarVision/status/2089380181551002017"
+      ],
+      "id": "story-eb8987c6a76ecd901c2a997d",
+      "reason": "Ukraine\u2019s General Staff says the Aug. 15 missile strike damaged a production facility at Russia\u2019s Progress Rocket Space Centre in Samara. New Vantor satellite imagery shows significant roof damage at the Soyuz-2 production complex. Coordinates: 53.2207\u00b0N, 50.3012\u00b0E https://t.co/l",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-19T21:16:46Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T20:19:30Z",
+      "source_url": "https://x.com/MizarVision/status/2090171820351906293",
+      "status": "x-intel",
+      "title": "Ukraine\u2019s General Staff says the Aug. 15 missile strike damaged a production facility at Russia\u2019s Progress Rocket Space Centre in Samara. New Vantor satellite i",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "military",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -280,43 +309,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/IPS_DC/status/2089744475216023747"
-      ],
-      "id": "story-9c43bdc56c41b92d0baab7ae",
-      "reason": "The Trump administration\u2019s request for $54.6 billion in funding for autonomous weapons\u2014a 24,000% increase from the previous year\u2014sets a dangerous precedent at a time when many Americans are struggling to afford necessities. Anavi Khanna on @natpriorities https://t.co/w6tKIbmR4z",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T14:50:45Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T16:01:23Z",
-      "source_url": "https://x.com/IPS_DC/status/2089744475216023747",
-      "status": "x-intel",
-      "title": "The Trump administration\u2019s request for $54.6 billion in funding for autonomous weapons\u2014a 24,000% increase from the previous year\u2014sets a dangerous precedent at a",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T20:15:53Z",
+    "alerted_at": "2026-08-19T21:16:46Z",
     "confidence": 0,
-    "source_url": "https://x.com/Microinteracti1/status/2089461099041079461",
-    "title": "Ukrainian drone teams have gained something that eluded them for most of this war: satellite intelligence delivered almost instantly. According to reporting by"
+    "source_url": "https://x.com/MizarVision/status/2090171820351906293",
+    "title": "Ukraine\u2019s General Staff says the Aug. 15 missile strike damaged a production facility at Russia\u2019s Progress Rocket Space Centre in Samara. New Vantor satellite i"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 19,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -328,8 +333,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.178,
-      "projected_minutes_per_30d": 200.54,
+      "measured_seconds": 8.146,
+      "projected_minutes_per_30d": 390.99,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +348,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 18,
+    "stage1_survivors": 17,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T20:51:04Z",
+  "updated_at": "2026-08-19T21:16:46Z",
   "version": 1
 }
