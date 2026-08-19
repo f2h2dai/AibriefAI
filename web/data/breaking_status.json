@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/MWI_editor/status/2090102740982919454"
+      ],
+      "id": "story-9559d91f36f7138499046e85",
+      "reason": "Autonomous weapons need rules that roll back what they're permitted to do when conditions deteriorate\u2014when data links are severed or sensors are degraded, for example. But restoring conditions should not automatically restore those permissions. https://t.co/S868dKAo1z",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-19T23:56:34Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T18:33:57Z",
+      "source_url": "https://x.com/MWI_editor/status/2090102740982919454",
+      "status": "x-intel",
+      "title": "@MWI_editor: Autonomous weapons need rules that roll back what they're permitted to do when conditions deteriorate\u2014when data links are severed or sensors",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/PacificForum/status/2090197180803928502"
@@ -283,42 +307,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/amtvmedia/status/2089836379517989022"
-      ],
-      "id": "story-a4ef1a41bbab16df347e196c",
-      "reason": "The greatest weapon the government and elites have ever possessed or controlled is not bombs, nukes or military assets like tanks. It\u2019s the Internet, social media, algorithms and now superintelligent AI. Your phone is the most powerful weapon they\u2019ve ever deployed. It will be soo",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T17:18:07Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T22:06:34Z",
-      "source_url": "https://x.com/amtvmedia/status/2089836379517989022",
-      "status": "x-intel",
-      "title": "The greatest weapon the government and elites have ever possessed or controlled is not bombs, nukes or military assets like tanks. It\u2019s the Internet, social med",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T23:00:30Z",
+    "alerted_at": "2026-08-19T23:56:34Z",
     "confidence": 0,
-    "source_url": "https://x.com/PacificForum/status/2090197180803928502",
-    "title": "\ud83c\udf10 James JB Park, #PacificForum senior fellow, wrote a piece in @Diplomat_APAC on the use of #AI combat systems and their #interoperability among allies with San"
+    "source_url": "https://x.com/MWI_editor/status/2090102740982919454",
+    "title": "@MWI_editor: Autonomous weapons need rules that roll back what they're permitted to do when conditions deteriorate\u2014when data links are severed or sensors"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 17,
+    "alerted_now": 1,
+    "clustered": 21,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
@@ -332,8 +331,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.18,
-      "projected_minutes_per_30d": 296.62,
+      "measured_seconds": 4.691,
+      "projected_minutes_per_30d": 225.18,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 18,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-19T23:34:06Z",
+  "updated_at": "2026-08-19T23:56:34Z",
   "version": 1
 }
