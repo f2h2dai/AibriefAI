@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/stratheia/status/2090242442272371195"
+      ],
+      "id": "story-d3c8aced134ec68515f43757",
+      "reason": "When conventional and nuclear systems share satellites, radars and command networks, a conventional AI attack can be mistaken for a nuclear one. #NuclearSecurity #MilitaryAI #CyberWarfare #Escalation https://t.co/OGbyKLk8Ib",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T03:56:38Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T01:00:07Z",
+      "source_url": "https://x.com/stratheia/status/2090242442272371195",
+      "status": "x-intel",
+      "title": "When conventional and nuclear systems share satellites, radars and command networks, a conventional AI attack can be mistaken for a nuclear one. #NuclearSecurit",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/ShephardNews/status/2090085842345775234"
       ],
       "id": "story-f420f0cae0a05ab7e7d2a228",
@@ -283,57 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/MAGAsFix/status/2089543039719018905"
-      ],
-      "id": "story-ba8641a4e0d8a935e73ca021",
-      "reason": "Is AI the real threat\u2026 or is it secondary? The real threat isn\u2019t the technology itself. It\u2019s the power structure racing to own it. When a system pours unimaginable money, energy, land, and our children\u2019s future into AI while simultaneously placing military assets at the data cent",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T19:50:08Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T02:40:57Z",
-      "source_url": "https://x.com/MAGAsFix/status/2089543039719018905",
-      "status": "x-intel",
-      "title": "Is AI the real threat\u2026 or is it secondary? The real threat isn\u2019t the technology itself. It\u2019s the power structure racing to own it. When a system pours unimagina",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T03:09:04Z",
+    "alerted_at": "2026-08-20T03:56:38Z",
     "confidence": 0,
-    "source_url": "https://x.com/ShephardNews/status/2090085842345775234",
-    "title": "The US plans to progressively expand VENOM/AIR testing from single-aircraft flights to multi-platform autonomous operations over the next 12\u201324 months, generati"
+    "source_url": "https://x.com/stratheia/status/2090242442272371195",
+    "title": "When conventional and nuclear systems share satellites, radars and command networks, a conventional AI attack can be mistaken for a nuclear one. #NuclearSecurit"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.041,
-      "projected_minutes_per_30d": 241.96,
+      "measured_seconds": 6.486,
+      "projected_minutes_per_30d": 311.33,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -376,6 +376,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T03:09:04Z",
+  "updated_at": "2026-08-20T03:56:38Z",
   "version": 1
 }
