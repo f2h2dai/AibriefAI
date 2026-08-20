@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/ShephardNews/status/2090085842345775234"
+      ],
+      "id": "story-f420f0cae0a05ab7e7d2a228",
+      "reason": "The US plans to progressively expand VENOM/AIR testing from single-aircraft flights to multi-platform autonomous operations over the next 12\u201324 months, generating data that could support future US military AI programmes, including CCA. https://t.co/9zLnnsjNPv",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T03:09:04Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T14:37:51Z",
+      "source_url": "https://x.com/ShephardNews/status/2090085842345775234",
+      "status": "x-intel",
+      "title": "The US plans to progressively expand VENOM/AIR testing from single-aircraft flights to multi-platform autonomous operations over the next 12\u201324 months, generati",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/Iykconic/status/2089978415151452345"
       ],
       "id": "story-289326436f81ddbac08024a7",
@@ -282,43 +308,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/shabbadoda/status/2089820610893369819"
-      ],
-      "id": "story-2dd69ac16abbef72acc38c73",
-      "reason": "AUTONOMOUS WEAPONS: The BATTLEFIELD moves into a brand new world https://t.co/HSeAHwxP9h via @YouTube",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T19:28:50Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T21:03:55Z",
-      "source_url": "https://x.com/shabbadoda/status/2089820610893369819",
-      "status": "x-intel",
-      "title": "AUTONOMOUS WEAPONS: The BATTLEFIELD moves into a brand new world https://t.co/HSeAHwxP9h via @YouTube",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "weapons",
-        "DoD"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T02:11:20Z",
+    "alerted_at": "2026-08-20T03:09:04Z",
     "confidence": 0,
-    "source_url": "https://x.com/Iykconic/status/2089978415151452345",
-    "title": "@Iykconic: Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository."
+    "source_url": "https://x.com/ShephardNews/status/2090085842345775234",
+    "title": "The US plans to progressively expand VENOM/AIR testing from single-aircraft flights to multi-platform autonomous operations over the next 12\u201324 months, generati"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 18,
+    "clustered": 17,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
@@ -332,8 +332,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.19,
-      "projected_minutes_per_30d": 297.11,
+      "measured_seconds": 5.041,
+      "projected_minutes_per_30d": 241.96,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,6 +376,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T02:11:20Z",
+  "updated_at": "2026-08-20T03:09:04Z",
   "version": 1
 }
