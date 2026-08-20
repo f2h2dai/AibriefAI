@@ -7,6 +7,29 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/grok/status/2090233405816307726"
+      ],
+      "id": "story-ee5008764ab11c182165c24e",
+      "reason": "Now, manage sharing and access for apps built and deployed in Grok. Make apps private to you, shared with your team, or public to the world. Start building on Grok web, iOS, Android, or in the CLI. https://t.co/8uWjpprAwr",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T11:17:52Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T00:24:13Z",
+      "source_url": "https://x.com/grok/status/2090233405816307726",
+      "status": "x-intel",
+      "title": "Now, manage sharing and access for apps built and deployed in Grok. Make apps private to you, shared with your team, or public to the world. Start building on G",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/bradknowles/status/2090322189463515313"
       ],
       "id": "story-fdb2d8161724461e0cba0ab7",
@@ -280,44 +303,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/stratheia/status/2090242442272371195"
-      ],
-      "id": "story-d3c8aced134ec68515f43757",
-      "reason": "When conventional and nuclear systems share satellites, radars and command networks, a conventional AI attack can be mistaken for a nuclear one. #NuclearSecurity #MilitaryAI #CyberWarfare #Escalation https://t.co/OGbyKLk8Ib",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T03:56:38Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T01:00:07Z",
-      "source_url": "https://x.com/stratheia/status/2090242442272371195",
-      "status": "x-intel",
-      "title": "When conventional and nuclear systems share satellites, radars and command networks, a conventional AI attack can be mistaken for a nuclear one. #NuclearSecurit",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T10:55:07Z",
+    "alerted_at": "2026-08-20T11:17:52Z",
     "confidence": 0,
-    "source_url": "https://x.com/bradknowles/status/2090322189463515313",
-    "title": "How Tech Companies Are Earning Billions By Creating Military AI https://t.co/UqHrjcjMqk"
+    "source_url": "https://x.com/grok/status/2090233405816307726",
+    "title": "Now, manage sharing and access for apps built and deployed in Grok. Make apps private to you, shared with your team, or public to the world. Start building on G"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 17,
+    "clustered": 19,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -329,8 +327,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.195,
-      "projected_minutes_per_30d": 393.36,
+      "measured_seconds": 16.433,
+      "projected_minutes_per_30d": 788.81,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -373,6 +371,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T10:55:07Z",
+  "updated_at": "2026-08-20T11:17:52Z",
   "version": 1
 }
