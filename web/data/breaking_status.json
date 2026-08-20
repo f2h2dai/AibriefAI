@@ -5,6 +5,31 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Iykconic/status/2089978415151452345"
+      ],
+      "id": "story-289326436f81ddbac08024a7",
+      "reason": "Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository. I'm still figuring out what to call it. One of the sections is what I call the Pentagon AI. The idea is simple. You don't need to stick to o",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T02:11:20Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T18:33:57Z",
+      "source_url": "https://x.com/Iykconic/status/2089978415151452345",
+      "status": "x-intel",
+      "title": "@Iykconic: Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository.",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/MWI_editor/status/2090102740982919454"
@@ -283,56 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/NATO_ACT/status/2090090165964267990"
-      ],
-      "id": "story-9929abe98ddc2dd9877416f0",
-      "reason": "Human intelligence, or HUMINT, remains critical to how #NATO understands complex threats. The NATO HUMINT Centre of Excellence is advancing how Allies assess information, tackle cognitive bias and use AI to support, not replace, human judgement. \ud83d\udd17 https://t.co/4sN3eFFMSZ #WeAreNA",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-19T19:00:11Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T18:33:57Z",
-      "source_url": "https://x.com/NATO_ACT/status/2090090165964267990",
-      "status": "x-intel",
-      "title": "@NATO_ACT: Human intelligence, or HUMINT, remains critical to how #NATO understands complex threats. The NATO HUMINT Centre of Excellence is advancing",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-19T23:56:34Z",
+    "alerted_at": "2026-08-20T02:11:20Z",
     "confidence": 0,
-    "source_url": "https://x.com/MWI_editor/status/2090102740982919454",
-    "title": "@MWI_editor: Autonomous weapons need rules that roll back what they're permitted to do when conditions deteriorate\u2014when data links are severed or sensors"
+    "source_url": "https://x.com/Iykconic/status/2089978415151452345",
+    "title": "@Iykconic: Bio says building and learning in public. I've been building something. You can call it an AI Toolkit, library, guide or even a repository."
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 21,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.585,
-      "projected_minutes_per_30d": 220.1,
+      "measured_seconds": 6.19,
+      "projected_minutes_per_30d": 297.11,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 17,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,11 +371,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T00:53:26Z",
+  "updated_at": "2026-08-20T02:11:20Z",
   "version": 1
 }
