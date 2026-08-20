@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/bradknowles/status/2090322189463515313"
+      ],
+      "id": "story-fdb2d8161724461e0cba0ab7",
+      "reason": "How Tech Companies Are Earning Billions By Creating Military AI https://t.co/UqHrjcjMqk",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T10:55:07Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T06:17:00Z",
+      "source_url": "https://x.com/bradknowles/status/2090322189463515313",
+      "status": "x-intel",
+      "title": "How Tech Companies Are Earning Billions By Creating Military AI https://t.co/UqHrjcjMqk",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/PalantirTech/status/2090174536637685839"
       ],
       "id": "story-32d5c49632d5e41992e37695",
@@ -279,58 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ShephardNews/status/2090085842345775234"
-      ],
-      "id": "story-f420f0cae0a05ab7e7d2a228",
-      "reason": "The US plans to progressively expand VENOM/AIR testing from single-aircraft flights to multi-platform autonomous operations over the next 12\u201324 months, generating data that could support future US military AI programmes, including CCA. https://t.co/9zLnnsjNPv",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T03:09:04Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T14:37:51Z",
-      "source_url": "https://x.com/ShephardNews/status/2090085842345775234",
-      "status": "x-intel",
-      "title": "The US plans to progressively expand VENOM/AIR testing from single-aircraft flights to multi-platform autonomous operations over the next 12\u201324 months, generati",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T09:48:21Z",
+    "alerted_at": "2026-08-20T10:55:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/PalantirTech/status/2090174536637685839",
-    "title": "Palantir CEO Alex Karp predicts the future business landscape will be defined by companies that got sovereignty right competing against the frontier labs: \u201cI am"
+    "source_url": "https://x.com/bradknowles/status/2090322189463515313",
+    "title": "How Tech Companies Are Earning Billions By Creating Military AI https://t.co/UqHrjcjMqk"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 0,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.938,
-      "projected_minutes_per_30d": 477.02,
+      "measured_seconds": 8.195,
+      "projected_minutes_per_30d": 393.36,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 8,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T10:20:03Z",
+  "updated_at": "2026-08-20T10:55:07Z",
   "version": 1
 }
