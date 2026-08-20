@@ -4,6 +4,29 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Disgrusting/status/2090181681521045593"
+      ],
+      "id": "story-b1e5ace876f47eebe93de65c",
+      "reason": "@1776General_ @grok is this real?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T07:54:32Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T20:58:41Z",
+      "source_url": "https://x.com/Disgrusting/status/2090181681521045593",
+      "status": "x-intel",
+      "title": "@1776General_ @grok is this real?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 6,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -31,29 +54,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Disgrusting/status/2090181681521045593"
-      ],
-      "id": "story-b1e5ace876f47eebe93de65c",
-      "reason": "@1776General_ @grok is this real?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T07:54:32Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T20:58:41Z",
-      "source_url": "https://x.com/Disgrusting/status/2090181681521045593",
-      "status": "x-intel",
-      "title": "@1776General_ @grok is this real?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -310,27 +310,27 @@
   "last_alert": {
     "alerted_at": "2026-08-20T07:54:32Z",
     "confidence": 0,
-    "source_url": "https://x.com/GCHRAGD/status/2090345211075473715",
-    "title": "\ud83e\udd16 When machines make decisions over life and death, who is responsible? The development of autonomous weapons raises questions that go well beyond #technology."
+    "source_url": "https://x.com/Disgrusting/status/2090181681521045593",
+    "title": "@1776General_ @grok is this real?"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 16,
+    "alerted_now": 0,
+    "clustered": 14,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.911,
-      "projected_minutes_per_30d": 475.73,
+      "measured_seconds": 6.113,
+      "projected_minutes_per_30d": 293.41,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T07:54:32Z",
+  "updated_at": "2026-08-20T08:25:40Z",
   "version": 1
 }
