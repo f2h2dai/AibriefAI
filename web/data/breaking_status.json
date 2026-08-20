@@ -4,6 +4,34 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/gulVasikova/status/2089752785520927160",
+        "https://x.com/BCISLEMAN/status/2090556807156797445",
+        "https://x.com/ICRC_uk/status/2090401592440680538"
+      ],
+      "id": "story-3e718fd2a1101437300e54d9",
+      "reason": "\ud83d\udfe2 $KTOS \u2014 Analysts See Significant Upside in Kratos Defense Kratos Defense & Security Solutions ($KTOS) is getting increasingly bullish coverage from Wall Street. KeyBanc: Buy \u2014 $130 target Clear Street: Buy \u2014 $86 target Consensus: Strong Buy \u2014 $98.20 Previous close: $63.29 That ",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-20T22:16:40Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T16:34:24Z",
+      "source_url": "https://x.com/gulVasikova/status/2089752785520927160",
+      "status": "x-intel",
+      "title": "\ud83d\udfe2 $KTOS \u2014 Analysts See Significant Upside in Kratos Defense Kratos Defense & Security Solutions ($KTOS) is getting increasingly bullish coverage from Wall Stree",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "defense",
+        "military AI",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -277,55 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/hnamekawa/status/2089976861128569116"
-      ],
-      "id": "story-bcb763af2c4e0d6a362e01a7",
-      "reason": "\u306a\u304a\u3001Project Maven\u306eP.31\u306e\u5f8c\u308d\u306e\u65b9\u306b\u3088\u308b\u3068\u3001\u8a55\u4fa1\u306b\u4f7f\u3063\u305f\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30c6\u30ad\u30b9\u30c8\u5206\u6790\u306e\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u306f\u3001CMU\u3067\u3059\u3067\u306bCIA\u5411\u3051\u306b\u958b\u767a\u30fb\u8a55\u4fa1\u304c\u6e08\u3093\u3067\u3044\u305f\u3082\u306e\u3092\u6d41\u7528\u3057\u305f\u3068\u306e\u3053\u3068\u3002",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-20T18:32:53Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T07:24:48Z",
-      "source_url": "https://x.com/hnamekawa/status/2089976861128569116",
-      "status": "x-intel",
-      "title": "\u306a\u304a\u3001Project Maven\u306eP.31\u306e\u5f8c\u308d\u306e\u65b9\u306b\u3088\u308b\u3068\u3001\u8a55\u4fa1\u306b\u4f7f\u3063\u305f\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30c6\u30ad\u30b9\u30c8\u5206\u6790\u306e\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u306f\u3001CMU\u3067\u3059\u3067\u306bCIA\u5411\u3051\u306b\u958b\u767a\u30fb\u8a55\u4fa1\u304c\u6e08\u3093\u3067\u3044\u305f\u3082\u306e\u3092\u6d41\u7528\u3057\u305f\u3068\u306e\u3053\u3068\u3002",
-      "webswarm_evidence_terms": [
-        "Project Maven"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T20:53:42Z",
+    "alerted_at": "2026-08-20T22:16:40Z",
     "confidence": 0,
-    "source_url": "https://x.com/UAPWatchers/status/2090405534725710279",
-    "title": "\ud83d\udea8What Do They Know? Why UAP Whistleblowers Are Appealing Directly to Trump Something has recently changed in the way people inside the UFO disclosure effort are"
+    "source_url": "https://x.com/gulVasikova/status/2089752785520927160",
+    "title": "\ud83d\udfe2 $KTOS \u2014 Analysts See Significant Upside in Kratos Defense Kratos Defense & Security Solutions ($KTOS) is getting increasingly bullish coverage from Wall Stree"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 13,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.57,
-      "projected_minutes_per_30d": 315.35,
+      "measured_seconds": 7.538,
+      "projected_minutes_per_30d": 361.85,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T21:51:04Z",
+  "updated_at": "2026-08-20T22:16:40Z",
   "version": 1
 }
