@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Baptiste_Fri/status/2089859899492577637",
+        "https://x.com/CodingNoobie/status/2090131385067688394"
+      ],
+      "id": "story-b35874470713505fadf16e38",
+      "reason": "\"My name is David Grush. I'm a former career Air Force intelligence officer and former senior official at the National Geospatial Intelligence Agency. I've already provided classified testimony and evidence to the intelligence community inspector general and Congress about what I",
+      "score": 55,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T17:30:11Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T23:40:02Z",
+      "source_url": "https://x.com/Baptiste_Fri/status/2089859899492577637",
+      "status": "x-intel",
+      "title": "\"My name is David Grush. I'm a former career Air Force intelligence officer and former senior official at the National Geospatial Intelligence Agency. I've alre",
+      "webswarm_evidence_terms": [
+        "geospatial",
+        "geospatial intelligence"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -274,58 +299,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/techmeditator/status/2089990449037738112",
-        "https://x.com/GCHRAGD/status/2090345211075473715"
-      ],
-      "id": "story-73c507478a879e020ebaac72",
-      "reason": "Dario Amodei and Anthropic\u2019s stance is that they: - Think it\u2019s possible to cure most human disease in ~5-10 years - Think we may be only 1\u20132 years away where AI autonomously builds the next-gen AI. - Do not support a ban on open-weights models. - Warn Open-weights models can be m",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-20T15:24:32Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T08:18:47Z",
-      "source_url": "https://x.com/techmeditator/status/2089990449037738112",
-      "status": "x-intel",
-      "title": "Dario Amodei and Anthropic\u2019s stance is that they: - Think it\u2019s possible to cure most human disease in ~5-10 years - Think we may be only 1\u20132 years away where AI",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "defense",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T16:25:03Z",
+    "alerted_at": "2026-08-20T17:30:11Z",
     "confidence": 0,
-    "source_url": "https://x.com/alicharts/status/2090402651460534426",
-    "title": "XRP WHALES GO CRAZY! More than 300 million $XRP have been scooped up by whales in just 96 hours. https://t.co/4Pv9ME8tEr"
+    "source_url": "https://x.com/Baptiste_Fri/status/2089859899492577637",
+    "title": "\"My name is David Grush. I'm a former career Air Force intelligence officer and former senior official at the National Geospatial Intelligence Agency. I've alre"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 16,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.366,
-      "projected_minutes_per_30d": 401.59,
+      "measured_seconds": 7.164,
+      "projected_minutes_per_30d": 343.87,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,11 +362,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T16:59:22Z",
+  "updated_at": "2026-08-20T17:30:11Z",
   "version": 1
 }
