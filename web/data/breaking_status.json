@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/PalantirTech/status/2090174536637685839"
+      ],
+      "id": "story-32d5c49632d5e41992e37695",
+      "reason": "Palantir CEO Alex Karp predicts the future business landscape will be defined by companies that got sovereignty right competing against the frontier labs: \u201cI am quite certain that the companies that get this right will just be the dominant companies, because de facto, it'll be yo",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T09:48:21Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T20:30:17Z",
+      "source_url": "https://x.com/PalantirTech/status/2090174536637685839",
+      "status": "x-intel",
+      "title": "Palantir CEO Alex Karp predicts the future business landscape will be defined by companies that got sovereignty right competing against the frontier labs: \u201cI am",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -51,30 +75,6 @@
       "webswarm_evidence_terms": [
         "AI",
         "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/PalantirTech/status/2090174536637685839"
-      ],
-      "id": "story-32d5c49632d5e41992e37695",
-      "reason": "Palantir CEO Alex Karp predicts the future business landscape will be defined by companies that got sovereignty right competing against the frontier labs: \u201cI am quite certain that the companies that get this right will just be the dominant companies, because de facto, it'll be yo",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T09:48:21Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T20:30:17Z",
-      "source_url": "https://x.com/PalantirTech/status/2090174536637685839",
-      "status": "x-intel",
-      "title": "Palantir CEO Alex Karp predicts the future business landscape will be defined by companies that got sovereignty right competing against the frontier labs: \u201cI am",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -310,27 +310,27 @@
   "last_alert": {
     "alerted_at": "2026-08-20T09:48:21Z",
     "confidence": 0,
-    "source_url": "https://x.com/goodalexander/status/2089906200817066108",
-    "title": "My take on society and crypto is really simple. If you have societal level investment, you are accountable for societal level returns. Things are not getting be"
+    "source_url": "https://x.com/PalantirTech/status/2090174536637685839",
+    "title": "Palantir CEO Alex Karp predicts the future business landscape will be defined by companies that got sovereignty right competing against the frontier labs: \u201cI am"
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 18,
+    "alerted_now": 0,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 14,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 15.707,
-      "projected_minutes_per_30d": 753.94,
+      "measured_seconds": 9.938,
+      "projected_minutes_per_30d": 477.02,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T09:48:21Z",
+  "updated_at": "2026-08-20T10:20:03Z",
   "version": 1
 }
