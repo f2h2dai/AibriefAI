@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/stratheia/status/2090302834839335038"
+      ],
+      "id": "story-82154b1363377d02fc904dac",
+      "reason": "AI-enabled military systems should never operate without meaningful human oversight. In nuclear-risk environments, an algorithmic error can become a strategic crisis. #HumanControl #AIWarfare #NuclearRisk #AI https://t.co/OGbyKLk8Ib",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T05:09:43Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T05:00:06Z",
+      "source_url": "https://x.com/stratheia/status/2090302834839335038",
+      "status": "x-intel",
+      "title": "AI-enabled military systems should never operate without meaningful human oversight. In nuclear-risk environments, an algorithmic error can become a strategic c",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/stratheia/status/2090242442272371195"
       ],
       "id": "story-d3c8aced134ec68515f43757",
@@ -282,42 +307,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/NunnSchoolGT/status/2089760132389335414"
-      ],
-      "id": "story-a35eb087bca0a4fc17b16f42",
-      "reason": "Jon Lindsay spoke with NPR's Short Wave about military AI. https://t.co/pXzgrWXs9A",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-19T20:15:53Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T17:03:36Z",
-      "source_url": "https://x.com/NunnSchoolGT/status/2089760132389335414",
-      "status": "x-intel",
-      "title": "Jon Lindsay spoke with NPR's Short Wave about military AI. https://t.co/pXzgrWXs9A",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T03:56:38Z",
+    "alerted_at": "2026-08-20T05:09:43Z",
     "confidence": 0,
-    "source_url": "https://x.com/stratheia/status/2090242442272371195",
-    "title": "When conventional and nuclear systems share satellites, radars and command networks, a conventional AI attack can be mistaken for a nuclear one. #NuclearSecurit"
+    "source_url": "https://x.com/stratheia/status/2090302834839335038",
+    "title": "AI-enabled military systems should never operate without meaningful human oversight. In nuclear-risk environments, an algorithmic error can become a strategic c"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 16,
     "collected": 25,
     "corroborated_count": 1,
@@ -325,15 +324,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.592,
-      "projected_minutes_per_30d": 268.42,
+      "measured_seconds": 9.426,
+      "projected_minutes_per_30d": 452.44,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T04:31:39Z",
+  "updated_at": "2026-08-20T05:09:43Z",
   "version": 1
 }
