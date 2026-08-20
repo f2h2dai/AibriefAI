@@ -4,6 +4,33 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/PoliSciChick84/status/2089789160509108442",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ"
+      ],
+      "id": "story-e2d3ded2f49ffbc76e7832fc",
+      "reason": "Whether Trump has committed treason in the constitutional sense is a question for evidence, investigation, and ultimately the courts. Whether history judges him as having betrayed the United States is a broader question. 1. He has weakened our alliances across Europe, the Asia-Pa",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-20T23:47:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-18T18:58:56Z",
+      "source_url": "https://x.com/PoliSciChick84/status/2089789160509108442",
+      "status": "x-intel",
+      "title": "Whether Trump has committed treason in the constitutional sense is a question for evidence, investigation, and ultimately the courts. Whether history judges him",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -279,57 +306,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2090408260851450080"
-      ],
-      "id": "story-b970ea261bd517b581e71aee",
-      "reason": "New White House strategy clarifies military tech priorities: undersea, outer space and AI https://t.co/m4OcogdLu1",
-      "score": 45,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T19:17:47Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T18:37:57Z",
-      "source_url": "https://x.com/BreakingDefense/status/2090408260851450080",
-      "status": "x-intel",
-      "title": "@BreakingDefense: New White House strategy clarifies military tech priorities: undersea, outer space and AI https://t.co/m4OcogdLu1",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T22:51:47Z",
+    "alerted_at": "2026-08-20T23:47:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/feerlessoftruth/status/2090403033947558092",
-    "title": "If AI is so fucking smart, why did it run the entire iranian war ,, target all our missiles ,, and fail to get any results other than murdered school children?"
+    "source_url": "https://x.com/PoliSciChick84/status/2089789160509108442",
+    "title": "Whether Trump has committed treason in the constitutional sense is a question for evidence, investigation, and ultimately the courts. Whether history judges him"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 17,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.424,
-      "projected_minutes_per_30d": 356.33,
+      "measured_seconds": 6.802,
+      "projected_minutes_per_30d": 326.5,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +369,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T23:16:39Z",
+  "updated_at": "2026-08-20T23:47:03Z",
   "version": 1
 }
