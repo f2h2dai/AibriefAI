@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/almosttomorrowe/status/2090525847757221996"
+      ],
+      "id": "story-da9470fa9f7603962616ddde",
+      "reason": "A U.S. government order shut down two Anthropic AI models for every customer\u2014not because the order applied to everyone, but because the system could not distinguish who it targeted. This investigative documentary follows the AI shutdown through Washington, Anthropic, U.S. nationa",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-20T19:52:37Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T19:46:16Z",
+      "source_url": "https://x.com/almosttomorrowe/status/2090525847757221996",
+      "status": "x-intel",
+      "title": "A U.S. government order shut down two Anthropic AI models for every customer\u2014not because the order applied to everyone, but because the system could not disting",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/BreakingDefense/status/2090438740954988786"
@@ -270,55 +296,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/GlassBoxgg/status/2090437850940723459"
-      ],
-      "id": "story-1adc1fc31f7a6874845acd36",
-      "reason": "@DonPudgy Yep, death of an ecosystem. Had a bad feeling when they announced 4 projects launching in 96 hours\u2026 gonna miss the innovation.. maybe they\u2019ll be back, but this was a tough one to mess up this bad.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T16:25:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T13:56:36Z",
-      "source_url": "https://x.com/GlassBoxgg/status/2090437850940723459",
-      "status": "x-intel",
-      "title": "@DonPudgy Yep, death of an ecosystem. Had a bad feeling when they announced 4 projects launching in 96 hours\u2026 gonna miss the innovation.. maybe they\u2019ll be back,",
-      "webswarm_evidence_terms": [
-        "96 hours"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T19:17:47Z",
+    "alerted_at": "2026-08-20T19:52:37Z",
     "confidence": 0,
-    "source_url": "https://x.com/BreakingDefense/status/2090438740954988786",
-    "title": "@BreakingDefense: Army Cyber training AI agents in cyber \u2018work roles\u2019 alongside human counterparts https://t.co/yOfJKmzsjm"
+    "source_url": "https://x.com/almosttomorrowe/status/2090525847757221996",
+    "title": "A U.S. government order shut down two Anthropic AI models for every customer\u2014not because the order applied to everyone, but because the system could not disting"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 12,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.423,
-      "projected_minutes_per_30d": 356.32,
+      "measured_seconds": 11.687,
+      "projected_minutes_per_30d": 560.95,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -332,7 +335,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 7,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -356,11 +359,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T19:17:47Z",
+  "updated_at": "2026-08-20T19:52:37Z",
   "version": 1
 }
