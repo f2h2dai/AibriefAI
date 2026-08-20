@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/space42ai/status/2090041866150400176"
+      ],
+      "id": "story-de401332b0c37c238ec7cb23",
+      "reason": "Governments and enterprises today have access to more geospatial data than any generation before them. The real challenge sits in the gap between all that intelligence, and the decisions that need to be made from it.\u200b \u200b In his article for The Orbit, Hasan Al Hosani, Chief Executi",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-20T05:44:07Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T11:43:06Z",
+      "source_url": "https://x.com/space42ai/status/2090041866150400176",
+      "status": "x-intel",
+      "title": "Governments and enterprises today have access to more geospatial data than any generation before them. The real challenge sits in the gap between all that intel",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/stratheia/status/2090302834839335038"
       ],
       "id": "story-82154b1363377d02fc904dac",
@@ -281,58 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/tcmackin/status/2089764764184399915"
-      ],
-      "id": "story-7f909b0a5b8250664a04b6da",
-      "reason": "@Microinteracti1 I'm reading \"Project Maven\" by Katrina Manson which is about the journey to advocate for AI within the US military by means of COL Drew Cukor, USMC, a very forceful personality. The Ukrainians are near realtime targeting. https://t.co/R5vCwVpP8h",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-19T20:15:53Z",
-      "source": "x",
-      "source_published_at": "2026-08-18T17:22:00Z",
-      "source_url": "https://x.com/tcmackin/status/2089764764184399915",
-      "status": "x-intel",
-      "title": "@Microinteracti1 I'm reading \"Project Maven\" by Katrina Manson which is about the journey to advocate for AI within the US military by means of COL Drew Cukor,",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T05:09:43Z",
+    "alerted_at": "2026-08-20T05:44:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/stratheia/status/2090302834839335038",
-    "title": "AI-enabled military systems should never operate without meaningful human oversight. In nuclear-risk environments, an algorithmic error can become a strategic c"
+    "source_url": "https://x.com/space42ai/status/2090041866150400176",
+    "title": "Governments and enterprises today have access to more geospatial data than any generation before them. The real challenge sits in the gap between all that intel"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 16,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.426,
-      "projected_minutes_per_30d": 452.44,
+      "measured_seconds": 7.186,
+      "projected_minutes_per_30d": 344.91,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -375,6 +373,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T05:09:43Z",
+  "updated_at": "2026-08-20T05:44:07Z",
   "version": 1
 }
