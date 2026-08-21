@@ -7,30 +7,6 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/secureainow/status/2090498960385351693"
-      ],
-      "id": "story-6f7feced9177efbf263f4d88",
-      "reason": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American innovation can, in the wrong hands, accelerate cyberattacks, autonomous weapons, and the surveillance regimes of authorita",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T04:52:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T17:59:26Z",
-      "source_url": "https://x.com/secureainow/status/2090498960385351693",
-      "status": "x-intel",
-      "title": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American in",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
         "https://x.com/shimauma_works/status/2090259717058888026"
       ],
       "id": "story-4fe8789707774a7dacb7fcca",
@@ -43,6 +19,30 @@
       "source_url": "https://x.com/shimauma_works/status/2090259717058888026",
       "status": "x-intel",
       "title": "It has been reported that Ukraine is studying Russian drone attacks and applying those insights to improve its own drones. This war has fundamentally transforme",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/secureainow/status/2090498960385351693"
+      ],
+      "id": "story-6f7feced9177efbf263f4d88",
+      "reason": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American innovation can, in the wrong hands, accelerate cyberattacks, autonomous weapons, and the surveillance regimes of authorita",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T04:52:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T17:59:26Z",
+      "source_url": "https://x.com/secureainow/status/2090498960385351693",
+      "status": "x-intel",
+      "title": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American in",
       "webswarm_evidence_terms": [
         "autonomous weapons",
         "weapons"
@@ -307,11 +307,11 @@
   "last_alert": {
     "alerted_at": "2026-08-21T04:52:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/secureainow/status/2090498960385351693",
-    "title": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American in"
+    "source_url": "https://x.com/shimauma_works/status/2090259717058888026",
+    "title": "It has been reported that Ukraine is studying Russian drone attacks and applying those insights to improve its own drones. This war has fundamentally transforme"
   },
   "last_run": {
-    "alerted_now": 2,
+    "alerted_now": 0,
     "clustered": 15,
     "collected": 25,
     "corroborated_count": 2,
@@ -326,8 +326,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.083,
-      "projected_minutes_per_30d": 291.98,
+      "measured_seconds": 6.95,
+      "projected_minutes_per_30d": 333.58,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -365,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T04:52:03Z",
+  "updated_at": "2026-08-21T05:23:55Z",
   "version": 1
 }
