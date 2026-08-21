@@ -4,6 +4,40 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 6,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2090658708099387714",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ",
+        "https://x.com/MizarVision/status/2090521470351151196",
+        "https://x.com/theeyeofchange/status/2090529867414876419",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xZ2FRZ1ExWWlkR0I3bkVKOVJ3d2tyYXp3Y1l2YzVVUGphckdCdDE5LWJodmc0SklCblJlY05YUHl4cG0xSkN6NkZxRjU5T25oVWdoNURyeVFqdmNvTEE"
+      ],
+      "id": "story-e109b4351f85ff886bd40110",
+      "reason": "NEW SATELLITE IMAGERY \u2014 SYRIA High-resolution Airbus satellite imagery published by Soar Atlas provides a clearer look at the damage caused by Israeli airstrikes on Abu al-Duhur Military Airbase in northwestern Syria. Coordinates: 35.734\u00b0N, 37.102\u00b0E The strikes were carried out o",
+      "score": 95,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T20:14:52Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T04:34:13Z",
+      "source_url": "https://x.com/MizarVision/status/2090658708099387714",
+      "status": "x-intel",
+      "title": "NEW SATELLITE IMAGERY \u2014 SYRIA High-resolution Airbus satellite imagery published by Soar Atlas provides a clearer look at the damage caused by Israeli airstrike",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "Project Maven",
+        "military",
+        "military AI",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -275,44 +309,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/DAWNmenaorg/status/2090811947524514030",
-        "https://x.com/ICRC_uk/status/2090401592440680538"
-      ],
-      "id": "story-d81633e9749f16ac9b60283f",
-      "reason": "US\u2013Saudi strikes on Iraq \"enabled armed factions to appear as both challengers to state authority and defenders of sovereignty. They did not erase objections to autonomous weapons but raised the cost of pressing the issue,\" writes @bakir_hazem in @DAWN_Journal. Read more: https:/",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T15:00:43Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T14:43:08Z",
-      "source_url": "https://x.com/DAWNmenaorg/status/2090811947524514030",
-      "status": "x-intel",
-      "title": "US\u2013Saudi strikes on Iraq \"enabled armed factions to appear as both challengers to state authority and defenders of sovereignty. They did not erase objections to",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T19:35:28Z",
+    "alerted_at": "2026-08-21T20:14:52Z",
     "confidence": 0,
-    "source_url": "https://x.com/RobotFightMMA/status/2090871845280956772",
-    "title": "\u26a1 Military AI drives robot combat! US Navy investing $50M in Shield AI's X-BAT autonomous fighter. South Korea partnering with Hyundai for Physical AI combat sy"
+    "source_url": "https://x.com/MizarVision/status/2090658708099387714",
+    "title": "NEW SATELLITE IMAGERY \u2014 SYRIA High-resolution Airbus satellite imagery published by Soar Atlas provides a clearer look at the damage caused by Israeli airstrike"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 18,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -324,8 +333,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.03,
-      "projected_minutes_per_30d": 337.44,
+      "measured_seconds": 7.074,
+      "projected_minutes_per_30d": 339.54,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +348,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,11 +372,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T19:55:13Z",
+  "updated_at": "2026-08-21T20:14:52Z",
   "version": 1
 }
