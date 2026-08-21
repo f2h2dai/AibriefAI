@@ -4,31 +4,6 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/manolo63921/status/2090937659770515856"
-      ],
-      "id": "story-efcaea15388533e2f513f823",
-      "reason": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer scientist Prof. Dr. Karl Hans Bl\u00e4sius examines one of the most dangerous intersections of modern technology and militar",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T23:25:39Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T23:02:40Z",
-      "source_url": "https://x.com/manolo63921/status/2090937659770515856",
-      "status": "x-intel",
-      "title": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -53,6 +28,31 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/manolo63921/status/2090937659770515856"
+      ],
+      "id": "story-efcaea15388533e2f513f823",
+      "reason": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer scientist Prof. Dr. Karl Hans Bl\u00e4sius examines one of the most dangerous intersections of modern technology and militar",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T23:25:39Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T23:02:40Z",
+      "source_url": "https://x.com/manolo63921/status/2090937659770515856",
+      "status": "x-intel",
+      "title": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -313,27 +313,27 @@
   "last_alert": {
     "alerted_at": "2026-08-21T23:25:39Z",
     "confidence": 0,
-    "source_url": "https://x.com/manolo63921/status/2090937659770515856",
-    "title": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer"
+    "source_url": "https://x.com/IlsaRuthen/status/2090881610031792322",
+    "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/MABadOdB47"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 15,
+    "alerted_now": 0,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 6,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.993,
-      "projected_minutes_per_30d": 287.66,
+      "measured_seconds": 6.275,
+      "projected_minutes_per_30d": 301.22,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,11 +371,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T23:25:39Z",
+  "updated_at": "2026-08-21T23:45:17Z",
   "version": 1
 }
