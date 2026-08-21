@@ -4,6 +4,32 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/theprogressive/status/2090831649793568807"
+      ],
+      "id": "story-73dbce04d1f17d3cb818de7c",
+      "reason": "The world\u2019s militaries are in an arms race to develop the use of AI in warfare. Despite calls from civil society and AI experts to ban its use in military operations, given the devastation that inaccurate AI targeting can cause. #AI #Warfare https://t.co/Y00ikLQZ5I",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T16:20:28Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T16:01:25Z",
+      "source_url": "https://x.com/theprogressive/status/2090831649793568807",
+      "status": "x-intel",
+      "title": "The world\u2019s militaries are in an arms race to develop the use of AI in warfare. Despite calls from civil society and AI experts to ban its use in military opera",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -280,56 +306,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/theTKResearch/status/2090708008925893015"
-      ],
-      "id": "story-77e15334d9ad2e509fd9c812",
-      "reason": "$PLTR Palantir \u7edd\u975e\u88ab AI \u98a0\u8986\u7684 SaaS\uff0c\u800c\u662fAI \u65f6\u4ee3\u7684\u201c\u4f01\u4e1a\u6570\u5b57\u5206\u8eab\u201d\u3002Ontology \u7b51\u8d77\u6781\u9ad8\u7684\u66ff\u6362\u6210\u672c\uff0c\u4e0e NVIDIA \u5e03\u5c40\u4e3b\u6743 AI \u66f4\u662f\u628a\u6570\u636e\u5b89\u5168\u4fdd\u62a4\u505a\u5230\u6781\u81f4\uff0c\u4f46\u76ee\u524d\u7684\u9ad8\u4f30\u503c\u5374\u8ba9\u4eba\u671b\u800c\u5374\u6b65\uff0c\u5f53\u4e0b\u5230\u5e95\u8be5\u76f4\u63a5\u8ffd\u9ad8\u8fd8\u662f\u7b49\u5f85\u56de\u8e29\uff1f \u5b8c\u6574\u5206\u6790\ud83d\udc47 #Palantir #\u7f8e\u80a1 https://t.co/qTjWGKW1Pw",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T08:03:24Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T07:50:07Z",
-      "source_url": "https://x.com/theTKResearch/status/2090708008925893015",
-      "status": "x-intel",
-      "title": "$PLTR Palantir \u7edd\u975e\u88ab AI \u98a0\u8986\u7684 SaaS\uff0c\u800c\u662fAI \u65f6\u4ee3\u7684\u201c\u4f01\u4e1a\u6570\u5b57\u5206\u8eab\u201d\u3002Ontology \u7b51\u8d77\u6781\u9ad8\u7684\u66ff\u6362\u6210\u672c\uff0c\u4e0e NVIDIA \u5e03\u5c40\u4e3b\u6743 AI \u66f4\u662f\u628a\u6570\u636e\u5b89\u5168\u4fdd\u62a4\u505a\u5230\u6781\u81f4\uff0c\u4f46\u76ee\u524d\u7684\u9ad8\u4f30\u503c\u5374\u8ba9\u4eba\u671b\u800c\u5374\u6b65\uff0c\u5f53\u4e0b\u5230\u5e95\u8be5\u76f4\u63a5\u8ffd\u9ad8\u8fd8\u662f\u7b49\u5f85\u56de\u8e29\uff1f \u5b8c\u6574\u5206\u6790\ud83d\udc47 #Palantir #\u7f8e\u80a1 https://t.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T15:00:43Z",
+    "alerted_at": "2026-08-21T16:20:28Z",
     "confidence": 0,
-    "source_url": "https://x.com/DAWNmenaorg/status/2090811947524514030",
-    "title": "US\u2013Saudi strikes on Iraq \"enabled armed factions to appear as both challengers to state authority and defenders of sovereignty. They did not erase objections to"
+    "source_url": "https://x.com/theprogressive/status/2090831649793568807",
+    "title": "The world\u2019s militaries are in an arms race to develop the use of AI in warfare. Despite calls from civil society and AI experts to ban its use in military opera"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 14,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.51,
-      "projected_minutes_per_30d": 312.46,
+      "measured_seconds": 7.538,
+      "projected_minutes_per_30d": 361.82,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -367,11 +369,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T15:45:51Z",
+  "updated_at": "2026-08-21T16:20:28Z",
   "version": 1
 }
