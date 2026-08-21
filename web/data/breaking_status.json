@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/AbraxasHudson/status/2090887348447850710"
+      ],
+      "id": "story-f55b418abc799dab2d9bc215",
+      "reason": "The great inversion: Palantir, Anduril partner with US state dept for 'digital freedom of expression' program Both firms are known for producing tools for mass surveillance and AI-operated autonomous weapons https://t.co/bGy6Ci0FjS",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T22:13:40Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T19:42:45Z",
+      "source_url": "https://x.com/AbraxasHudson/status/2090887348447850710",
+      "status": "x-intel",
+      "title": "The great inversion: Palantir, Anduril partner with US state dept for 'digital freedom of expression' program Both firms are known for producing tools for mass",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -282,37 +306,13 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/boneGPT/status/2090135792924479720"
-      ],
-      "id": "story-6e2e3912aa025c03e95a9c0a",
-      "reason": "years ago my friend was paying for google adwords for \"dry cleaning\" for his father's business this does not work i said visualize your customers, who are they, who do you want more of, what do they buy, where do they shop he says a lot of women are bringing in their uggs because",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T17:56:18Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T17:56:20Z",
-      "source_url": "https://x.com/boneGPT/status/2090135792924479720",
-      "status": "x-intel",
-      "title": "years ago my friend was paying for google adwords for \"dry cleaning\" for his father's business this does not work i said visualize your customers, who are they,",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T21:46:55Z",
+    "alerted_at": "2026-08-21T22:13:40Z",
     "confidence": 0,
-    "source_url": "https://x.com/TishmanFern/status/2090546807172448702",
-    "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/hhVyrbcEnP"
+    "source_url": "https://x.com/AbraxasHudson/status/2090887348447850710",
+    "title": "The great inversion: Palantir, Anduril partner with US state dept for 'digital freedom of expression' program Both firms are known for producing tools for mass"
   },
   "last_run": {
     "alerted_now": 1,
@@ -323,15 +323,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.27,
-      "projected_minutes_per_30d": 348.96,
+      "measured_seconds": 6.422,
+      "projected_minutes_per_30d": 308.27,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -345,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -374,6 +374,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T21:46:55Z",
+  "updated_at": "2026-08-21T22:13:40Z",
   "version": 1
 }
