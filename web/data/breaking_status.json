@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/DominaDivineNC/status/2090579596550815978",
+        "https://x.com/BCISLEMAN/status/2090556807156797445"
+      ],
+      "id": "story-2fd8b83f8ecfeabcaede97ee",
+      "reason": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/Dh497SlxtQ",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T20:59:33Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T23:19:51Z",
+      "source_url": "https://x.com/DominaDivineNC/status/2090579596550815978",
+      "status": "x-intel",
+      "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/Dh497SlxtQ",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -281,59 +306,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/orfonline/status/2090763343548338312",
-        "https://x.com/secureainow/status/2090498960385351693",
-        "https://x.com/orfonline/status/2090446255444951056"
-      ],
-      "id": "story-0688f9aff2f86f4d13d31d81",
-      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T16:58:40Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T11:30:00Z",
-      "source_url": "https://x.com/orfonline/status/2090763343548338312",
-      "status": "x-intel",
-      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T20:42:07Z",
+    "alerted_at": "2026-08-21T20:59:33Z",
     "confidence": 0,
-    "source_url": "https://x.com/Inc42/status/2089980361153380638",
-    "title": "\ud83d\udef0\ufe0f NeoGeo raises $20 Mn to scale its full-stack geospatial business \ud83d\udc47 Geospatial technology startup NeoGeo, founded by Sreeramam GV and Brahmam GVS, has raised"
+    "source_url": "https://x.com/DominaDivineNC/status/2090579596550815978",
+    "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/Dh497SlxtQ"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 18,
+    "clustered": 17,
     "collected": 25,
     "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.885,
-      "projected_minutes_per_30d": 330.46,
+      "measured_seconds": 9.103,
+      "projected_minutes_per_30d": 436.96,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,6 +374,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T20:42:07Z",
+  "updated_at": "2026-08-21T20:59:33Z",
   "version": 1
 }
