@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/InterstellarUAP/status/2089871215166918708"
+      ],
+      "id": "story-2122698bb0f46de847a1f156",
+      "reason": "David Grusch: \u201cI had folks from the retrieval program exfiltrate audio & visual evidence for me to see, both video and photos of the recovered craft, some of the dead ALIENS that were recovered, call it the pilots.\u201d \ud83d\udc7d\ud83d\udef8 The former Air Force major, National Geospatial-Intelligence ",
+      "score": 70,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-21T22:41:44Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T00:25:00Z",
+      "source_url": "https://x.com/InterstellarUAP/status/2089871215166918708",
+      "status": "x-intel",
+      "title": "David Grusch: \u201cI had folks from the retrieval program exfiltrate audio & visual evidence for me to see, both video and photos of the recovered craft, some of th",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/AbraxasHudson/status/2090887348447850710"
@@ -280,58 +304,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/UAEEmbassyUS/status/2090864616058364177"
-      ],
-      "id": "story-0ca8d5def699883b307c158c",
-      "reason": "The US &amp; UAE have launched Task Force Talon Synapse, the first bilateral task force dedicated to military AI. Based in Abu Dhabi, it brings together experts in AI, data &amp; cybersecurity to advance intelligence, infrastructure protection &amp; regional security. https://t.c",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T18:26:23Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T18:12:25Z",
-      "source_url": "https://x.com/UAEEmbassyUS/status/2090864616058364177",
-      "status": "x-intel",
-      "title": "The US &amp; UAE have launched Task Force Talon Synapse, the first bilateral task force dedicated to military AI. Based in Abu Dhabi, it brings together experts",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T22:13:40Z",
+    "alerted_at": "2026-08-21T22:41:44Z",
     "confidence": 0,
-    "source_url": "https://x.com/AbraxasHudson/status/2090887348447850710",
-    "title": "The great inversion: Palantir, Anduril partner with US state dept for 'digital freedom of expression' program Both firms are known for producing tools for mass"
+    "source_url": "https://x.com/InterstellarUAP/status/2089871215166918708",
+    "title": "David Grusch: \u201cI had folks from the retrieval program exfiltrate audio & visual evidence for me to see, both video and photos of the recovered craft, some of th"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 14,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.422,
-      "projected_minutes_per_30d": 308.27,
+      "measured_seconds": 6.321,
+      "projected_minutes_per_30d": 303.4,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -345,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -374,6 +372,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T22:13:40Z",
+  "updated_at": "2026-08-21T22:41:44Z",
   "version": 1
 }
