@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/manolo63921/status/2090594487689179247"
+      ],
+      "id": "story-6f67f13d36f4fed02e3c6614",
+      "reason": "AI researcher Prof. Dr. Karl Hans Bl\u00e4sius warns that humanity has already lost control over artificial intelligence. In a recent interview on the Everlast AI channel, the long-time AI expert (researching the field since 1981 and former professor of computer science at Hochschule ",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T00:42:37Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T00:19:01Z",
+      "source_url": "https://x.com/manolo63921/status/2090594487689179247",
+      "status": "x-intel",
+      "title": "AI researcher Prof. Dr. Karl Hans Bl\u00e4sius warns that humanity has already lost control over artificial intelligence. In a recent interview on the Everlast AI ch",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -282,56 +307,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2090438740954988786"
-      ],
-      "id": "story-216fc82aca0d816363e5ef85",
-      "reason": "Army Cyber training AI agents in cyber \u2018work roles\u2019 alongside human counterparts https://t.co/yOfJKmzsjm",
-      "score": 46,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-20T19:17:47Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T18:37:57Z",
-      "source_url": "https://x.com/BreakingDefense/status/2090438740954988786",
-      "status": "x-intel",
-      "title": "@BreakingDefense: Army Cyber training AI agents in cyber \u2018work roles\u2019 alongside human counterparts https://t.co/yOfJKmzsjm",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-20T23:47:03Z",
+    "alerted_at": "2026-08-21T00:42:37Z",
     "confidence": 0,
-    "source_url": "https://x.com/PoliSciChick84/status/2089789160509108442",
-    "title": "Whether Trump has committed treason in the constitutional sense is a question for evidence, investigation, and ultimately the courts. Whether history judges him"
+    "source_url": "https://x.com/manolo63921/status/2090594487689179247",
+    "title": "AI researcher Prof. Dr. Karl Hans Bl\u00e4sius warns that humanity has already lost control over artificial intelligence. In a recent interview on the Everlast AI ch"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 16,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.802,
-      "projected_minutes_per_30d": 326.5,
+      "measured_seconds": 6.111,
+      "projected_minutes_per_30d": 293.32,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -345,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 17,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -374,6 +375,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-20T23:47:03Z",
+  "updated_at": "2026-08-21T00:42:37Z",
   "version": 1
 }
