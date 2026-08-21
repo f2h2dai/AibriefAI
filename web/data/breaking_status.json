@@ -5,6 +5,58 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/manolo63921/status/2090937659770515856"
+      ],
+      "id": "story-efcaea15388533e2f513f823",
+      "reason": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer scientist Prof. Dr. Karl Hans Bl\u00e4sius examines one of the most dangerous intersections of modern technology and militar",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T23:25:39Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T23:02:40Z",
+      "source_url": "https://x.com/manolo63921/status/2090937659770515856",
+      "status": "x-intel",
+      "title": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/IlsaRuthen/status/2090881610031792322",
+        "https://x.com/BCISLEMAN/status/2090556807156797445",
+        "https://x.com/TishmanFern/status/2090546807172448702"
+      ],
+      "id": "story-ae522414c87f0cd0777d84d2",
+      "reason": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/MABadOdB47",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T23:25:39Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T19:19:57Z",
+      "source_url": "https://x.com/IlsaRuthen/status/2090881610031792322",
+      "status": "x-intel",
+      "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/MABadOdB47",
+      "webswarm_evidence_terms": [
+        "DoD",
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/InterstellarUAP/status/2089871215166918708"
@@ -256,80 +308,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2090819220606951767"
-      ],
-      "id": "story-4358dcc80863f333a9aa9721",
-      "reason": "Army cyber defenses need \u2018dedicated funding\u2019 for AI, top official says https://t.co/DQrbbMyagd",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T19:05:34Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T18:35:21Z",
-      "source_url": "https://x.com/BreakingDefense/status/2090819220606951767",
-      "status": "x-intel",
-      "title": "@BreakingDefense: Army cyber defenses need \u2018dedicated funding\u2019 for AI, top official says https://t.co/DQrbbMyagd",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2090786257034977751"
-      ],
-      "id": "story-b322fd27e2db04506ce3f7ee",
-      "reason": "\u2018Hot competition\u2019: NSA deputy sounds alarm on China threat, AI race https://t.co/RCrpFdStt7",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T19:05:34Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T18:35:21Z",
-      "source_url": "https://x.com/BreakingDefense/status/2090786257034977751",
-      "status": "x-intel",
-      "title": "@BreakingDefense: \u2018Hot competition\u2019: NSA deputy sounds alarm on China threat, AI race https://t.co/RCrpFdStt7",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T22:41:44Z",
+    "alerted_at": "2026-08-21T23:25:39Z",
     "confidence": 0,
-    "source_url": "https://x.com/InterstellarUAP/status/2089871215166918708",
-    "title": "David Grusch: \u201cI had folks from the retrieval program exfiltrate audio & visual evidence for me to see, both video and photos of the recovered craft, some of th"
+    "source_url": "https://x.com/manolo63921/status/2090937659770515856",
+    "title": "AI AND WAR: What Happens When Humans Lose Control? In his 2026 book Artificial Intelligence and War: What Risks Arise When Humans Lose Control?, German computer"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 13,
+    "alerted_now": 2,
+    "clustered": 15,
     "collected": 25,
     "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.542,
-      "projected_minutes_per_30d": 362.03,
+      "measured_seconds": 5.993,
+      "projected_minutes_per_30d": 287.66,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +347,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +371,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T22:59:37Z",
+  "updated_at": "2026-08-21T23:25:39Z",
   "version": 1
 }
