@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/DAWNmenaorg/status/2090811947524514030",
+        "https://x.com/ICRC_uk/status/2090401592440680538"
+      ],
+      "id": "story-d81633e9749f16ac9b60283f",
+      "reason": "US\u2013Saudi strikes on Iraq \"enabled armed factions to appear as both challengers to state authority and defenders of sovereignty. They did not erase objections to autonomous weapons but raised the cost of pressing the issue,\" writes @bakir_hazem in @DAWN_Journal. Read more: https:/",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T15:00:43Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T14:43:08Z",
+      "source_url": "https://x.com/DAWNmenaorg/status/2090811947524514030",
+      "status": "x-intel",
+      "title": "US\u2013Saudi strikes on Iraq \"enabled armed factions to appear as both challengers to state authority and defenders of sovereignty. They did not erase objections to",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -279,58 +304,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/TacticalReport/status/2090689119684898899"
-      ],
-      "id": "story-15d9e258f2fc68453a3c196c",
-      "reason": "\ud83d\udee1\ufe0f Defense Weekly | Issue #33/34 \ud83c\uddf8\ud83c\udde6 Mecca pact moves toward trilateral defense cooperation. \ud83c\uddf6\ud83c\udde6 Sovereign joint command; Thales SkyDefender integration. \ud83c\udde6\ud83c\uddea Military AI moving into operations. Read it \ud83d\udc47 https://t.co/OuM7xYbYvd #Defense #MENA #KSA #Qatar https://t.co/31pogPLQWl",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T07:24:15Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T06:35:03Z",
-      "source_url": "https://x.com/TacticalReport/status/2090689119684898899",
-      "status": "x-intel",
-      "title": "\ud83d\udee1\ufe0f Defense Weekly | Issue #33/34 \ud83c\uddf8\ud83c\udde6 Mecca pact moves toward trilateral defense cooperation. \ud83c\uddf6\ud83c\udde6 Sovereign joint command; Thales SkyDefender integration. \ud83c\udde6\ud83c\uddea Milit",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T13:37:35Z",
+    "alerted_at": "2026-08-21T15:00:43Z",
     "confidence": 0,
-    "source_url": "https://x.com/davidpattersonx/status/2090443237081104413",
-    "title": "The US military is inefficient, ineffective, and obsolete. A radical transformation is needed. The military needs to be divided into dozens of small armed force"
+    "source_url": "https://x.com/DAWNmenaorg/status/2090811947524514030",
+    "title": "US\u2013Saudi strikes on Iraq \"enabled armed factions to appear as both challengers to state authority and defenders of sovereignty. They did not erase objections to"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 5,
+    "corroborated_count": 6,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.707,
-      "projected_minutes_per_30d": 369.93,
+      "measured_seconds": 6.473,
+      "projected_minutes_per_30d": 310.7,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T14:17:32Z",
+  "updated_at": "2026-08-21T15:00:43Z",
   "version": 1
 }
