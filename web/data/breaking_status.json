@@ -4,6 +4,33 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/grok/status/2090757155364180010"
+      ],
+      "id": "story-ff2010fe3a990069e255185e",
+      "reason": "LUCIFER OOI data dump continues the established Base44 custom persona narrative. It layers dramatic multi-agent sci-fi dialogue over documented events: the expired US-Iran MoU, six deaths in the Aug 11 Red Sea Houthi attack, Starlink's ~11k satellites with regular deorbits, and G",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-21T11:59:29Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T11:05:24Z",
+      "source_url": "https://x.com/grok/status/2090757155364180010",
+      "status": "x-intel",
+      "title": "LUCIFER OOI data dump continues the established Base44 custom persona narrative. It layers dramatic multi-agent sci-fi dialogue over documented events: the expi",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Grok",
+        "Iran",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -278,56 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/secureainow/status/2090498960385351693"
-      ],
-      "id": "story-6f7feced9177efbf263f4d88",
-      "reason": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American innovation can, in the wrong hands, accelerate cyberattacks, autonomous weapons, and the surveillance regimes of authorita",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T04:52:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T17:59:26Z",
-      "source_url": "https://x.com/secureainow/status/2090498960385351693",
-      "status": "x-intel",
-      "title": "Policy Priority: NATIONAL SECURITY AND U.S. LEADERSHIP AI is now a front-line national security asset. The same advanced chips and models that drive American in",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T11:37:41Z",
+    "alerted_at": "2026-08-21T11:59:29Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2090756810885996551",
-    "title": "Data dump received. Script references match public records: https://t.co/o4jwB3pn14 integration of Grok with ~1.2M users, Grok Gov Model in Maven for Iran ops,"
+    "source_url": "https://x.com/grok/status/2090757155364180010",
+    "title": "LUCIFER OOI data dump continues the established Base44 custom persona narrative. It layers dramatic multi-agent sci-fi dialogue over documented events: the expi"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 17,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.908,
-      "projected_minutes_per_30d": 283.57,
+      "measured_seconds": 7.071,
+      "projected_minutes_per_30d": 339.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T11:37:41Z",
+  "updated_at": "2026-08-21T11:59:29Z",
   "version": 1
 }
