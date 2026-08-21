@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/TacticalReport/status/2090689119684898899"
+      ],
+      "id": "story-15d9e258f2fc68453a3c196c",
+      "reason": "\ud83d\udee1\ufe0f Defense Weekly | Issue #33/34 \ud83c\uddf8\ud83c\udde6 Mecca pact moves toward trilateral defense cooperation. \ud83c\uddf6\ud83c\udde6 Sovereign joint command; Thales SkyDefender integration. \ud83c\udde6\ud83c\uddea Military AI moving into operations. Read it \ud83d\udc47 https://t.co/OuM7xYbYvd #Defense #MENA #KSA #Qatar https://t.co/31pogPLQWl",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-21T07:24:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T06:35:03Z",
+      "source_url": "https://x.com/TacticalReport/status/2090689119684898899",
+      "status": "x-intel",
+      "title": "\ud83d\udee1\ufe0f Defense Weekly | Issue #33/34 \ud83c\uddf8\ud83c\udde6 Mecca pact moves toward trilateral defense cooperation. \ud83c\uddf6\ud83c\udde6 Sovereign joint command; Thales SkyDefender integration. \ud83c\udde6\ud83c\uddea Milit",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/BdtsIndia/status/2090672746896253087"
       ],
       "id": "story-88d074250d81d8163b30ad32",
@@ -276,56 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/feerlessoftruth/status/2090403033947558092"
-      ],
-      "id": "story-1c6109167826d4884e69ae04",
-      "reason": "If AI is so fucking smart, why did it run the entire iranian war ,, target all our missiles ,, and fail to get any results other than murdered school children? You think trumps the retard, but its actually ai.",
-      "score": 10,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-20T22:51:47Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T11:38:15Z",
-      "source_url": "https://x.com/feerlessoftruth/status/2090403033947558092",
-      "status": "x-intel",
-      "title": "If AI is so fucking smart, why did it run the entire iranian war ,, target all our missiles ,, and fail to get any results other than murdered school children?",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T06:28:52Z",
+    "alerted_at": "2026-08-21T07:24:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/BdtsIndia/status/2090672746896253087",
-    "title": "\ud83c\udf10 WHAT IS AI-ENABLED GEOINT? Modern geospatial intelligence (GEOINT) combines geospatial data, imagery, geographic information and analytical tools to help buil"
+    "source_url": "https://x.com/TacticalReport/status/2090689119684898899",
+    "title": "\ud83d\udee1\ufe0f Defense Weekly | Issue #33/34 \ud83c\uddf8\ud83c\udde6 Mecca pact moves toward trilateral defense cooperation. \ud83c\uddf6\ud83c\udde6 Sovereign joint command; Thales SkyDefender integration. \ud83c\udde6\ud83c\uddea Milit"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 13,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.61,
-      "projected_minutes_per_30d": 317.3,
+      "measured_seconds": 6.084,
+      "projected_minutes_per_30d": 292.03,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -368,6 +370,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T06:28:52Z",
+  "updated_at": "2026-08-21T07:24:15Z",
   "version": 1
 }
