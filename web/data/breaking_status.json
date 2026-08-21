@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/MahmoudJavadi2/status/2090678645383643356"
+      ],
+      "id": "story-f6e89acdac9822c4ca339cbd",
+      "reason": "My new open-access journal article with @GloblSociety on what it takes to turn fragmented military AI governance into a more organized institutional order is now out! Please read it here: https://t.co/Y55zVY7RaW Hope you find it worth a read.",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-21T05:54:56Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T05:53:26Z",
+      "source_url": "https://x.com/MahmoudJavadi2/status/2090678645383643356",
+      "status": "x-intel",
+      "title": "My new open-access journal article with @GloblSociety on what it takes to turn fragmented military AI governance into a more organized institutional order is no",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/shimauma_works/status/2090259717058888026"
@@ -276,45 +302,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/Tango711th/status/2090215616968093739"
-      ],
-      "id": "story-500049fcbe5ab10f83e5ec7f",
-      "reason": "Proof US AI Targeting Hacked, Iran's Military Untouched by Attacks https://t.co/DPDUBo3pGy https://t.co/BoGAG2hwfd",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-20T22:51:47Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T23:13:32Z",
-      "source_url": "https://x.com/Tango711th/status/2090215616968093739",
-      "status": "x-intel",
-      "title": "Proof US AI Targeting Hacked, Iran's Military Untouched by Attacks https://t.co/DPDUBo3pGy https://t.co/BoGAG2hwfd",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-21T04:52:03Z",
+    "alerted_at": "2026-08-21T05:54:56Z",
     "confidence": 0,
-    "source_url": "https://x.com/shimauma_works/status/2090259717058888026",
-    "title": "It has been reported that Ukraine is studying Russian drone attacks and applying those insights to improve its own drones. This war has fundamentally transforme"
+    "source_url": "https://x.com/MahmoudJavadi2/status/2090678645383643356",
+    "title": "My new open-access journal article with @GloblSociety on what it takes to turn fragmented military AI governance into a more organized institutional order is no"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -326,8 +326,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.95,
-      "projected_minutes_per_30d": 333.58,
+      "measured_seconds": 6.22,
+      "projected_minutes_per_30d": 298.55,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-21T05:23:55Z",
+  "updated_at": "2026-08-21T05:54:56Z",
   "version": 1
 }
