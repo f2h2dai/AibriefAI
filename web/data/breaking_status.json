@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/trtworld/status/2091187336616767584"
+      ],
+      "id": "story-e1135e3bf857f413189503d5",
+      "reason": "US Ambassador to T\u00fcrkiye and Syria envoy Tom Barrack says Israel\u2019s intelligence suggesting T\u00fcrkiye was moving military assets to an abandoned air base in northern Syria was false. \u201cWe consulted our intelligence agencies, and the answer we received was that this claim was not true",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-22T17:34:29Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T15:34:48Z",
+      "source_url": "https://x.com/trtworld/status/2091187336616767584",
+      "status": "x-intel",
+      "title": "US Ambassador to T\u00fcrkiye and Syria envoy Tom Barrack says Israel\u2019s intelligence suggesting T\u00fcrkiye was moving military assets to an abandoned air base in northe",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/WestAsiaWatch/status/2091186445918543937"
@@ -281,57 +307,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/dana916/status/2090852229712375878"
-      ],
-      "id": "story-640125bfa12ff4d4ba67e136",
-      "reason": "\ud83c\uddfa\ud83c\uddf8\u2694\ufe0f\ud83c\uddee\ud83c\uddf7On the US military contingent in the Middle East It has been nearly six months since the start of Operation \"Epic Fury,\" yet Washington continues to hotly debate its ultimate objective. Regardless, there is still no sign of clear de-escalation. The deployment of US forces w",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-22T13:07:35Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T17:23:12Z",
-      "source_url": "https://x.com/dana916/status/2090852229712375878",
-      "status": "x-intel",
-      "title": "\ud83c\uddfa\ud83c\uddf8\u2694\ufe0f\ud83c\uddee\ud83c\uddf7On the US military contingent in the Middle East It has been nearly six months since the start of Operation \"Epic Fury,\" yet Washington continues to hotly",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T15:56:41Z",
+    "alerted_at": "2026-08-22T17:34:29Z",
     "confidence": 0,
-    "source_url": "https://x.com/WestAsiaWatch/status/2091186445918543937",
-    "title": "\ud835\udc14\ud835\udc00\ud835\udc04-\ud835\udc14\ud835\udc12 \ud835\udc0c\ud835\udc22\ud835\udc25\ud835\udc22\ud835\udc2d\ud835\udc1a\ud835\udc2b\ud835\udc32 \ud835\udc00\ud835\udc08 \ud835\udc13\ud835\udc1a\ud835\udc2c\ud835\udc24 \ud835\udc05\ud835\udc28\ud835\udc2b\ud835\udc1c\ud835\udc1e \ud835\udc0b\ud835\udc1a\ud835\udc2e\ud835\udc27\ud835\udc1c\ud835\udc21\ud835\udc1e\ud835\udc2c \ud835\udc00\ud835\udc1f\ud835\udc2d\ud835\udc1e\ud835\udc2b \ud835\udc18\ud835\udc1e\ud835\udc1a\ud835\udc2b\ud835\udc2c \ud835\udc28\ud835\udc1f \ud835\udc09\ud835\udc28\ud835\udc22\ud835\udc27\ud835\udc2d \ud835\udc13\ud835\udc1e\ud835\udc1c\ud835\udc21\ud835\udc27\ud835\udc28\ud835\udc25\ud835\udc28\ud835\udc20\ud835\udc32 \ud835\udc13\ud835\udc1e\ud835\udc2c\ud835\udc2d\ud835\udc22\ud835\udc27\ud835\udc20 The UAE and United States have launched a military artificial intelligence task f"
+    "source_url": "https://x.com/trtworld/status/2091187336616767584",
+    "title": "US Ambassador to T\u00fcrkiye and Syria envoy Tom Barrack says Israel\u2019s intelligence suggesting T\u00fcrkiye was moving military assets to an abandoned air base in northe"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 21,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.051,
-      "projected_minutes_per_30d": 338.46,
+      "measured_seconds": 8.055,
+      "projected_minutes_per_30d": 386.65,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -345,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 18,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -369,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T17:12:00Z",
+  "updated_at": "2026-08-22T17:34:29Z",
   "version": 1
 }
