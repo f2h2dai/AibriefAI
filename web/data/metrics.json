@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T18:35:21Z",
+  "generated_at": "2026-08-22T12:14:00Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,7 +9,7 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-21T18:35:21Z",
+  "latest_successful_run": "2026-08-22T12:14:00Z",
   "highest_ranked_signal": {
     "id": "twitter-030",
     "title": "@GoogleDeepMind: Games have been an important testbed for our AI research for over 15 years. 🎮 From mastering Atari to reaching Grandmaster in StarCraft II, ",
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 34.924,
+  "runtime_seconds": 31.682,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-21T18:35:21Z",
+    "planned_at": "2026-08-22T12:14:00Z",
     "production_threshold": 70.0
   }
 }
