@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/PZaith/status/2090524718784733465"
+      ],
+      "id": "story-57e5ab81284baa9fad0df5f6",
+      "reason": "@litecoin_bull Project Maven comes to mind - most of that is classified, so one can only speculate as to the level of sophistication available at this point.",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-22T05:21:56Z",
+      "source": "x",
+      "source_published_at": "2026-08-20T19:41:47Z",
+      "source_url": "https://x.com/PZaith/status/2090524718784733465",
+      "status": "x-intel",
+      "title": "@litecoin_bull Project Maven comes to mind - most of that is classified, so one can only speculate as to the level of sophistication available at this point.",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/Amybartram6/status/2090885191807926394"
       ],
       "id": "story-336302c34d22f05bb053460e",
@@ -280,57 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/DominaDivineNC/status/2090579596550815978",
-        "https://x.com/BCISLEMAN/status/2090556807156797445"
-      ],
-      "id": "story-2fd8b83f8ecfeabcaede97ee",
-      "reason": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/Dh497SlxtQ",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T20:59:33Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T23:19:51Z",
-      "source_url": "https://x.com/DominaDivineNC/status/2090579596550815978",
-      "status": "x-intel",
-      "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/Dh497SlxtQ",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T04:57:14Z",
+    "alerted_at": "2026-08-22T05:21:56Z",
     "confidence": 0,
-    "source_url": "https://x.com/Amybartram6/status/2090885191807926394",
-    "title": "AI targeting schools and teens systematically. Distribution matters more than model specs."
+    "source_url": "https://x.com/PZaith/status/2090524718784733465",
+    "title": "@litecoin_bull Project Maven comes to mind - most of that is classified, so one can only speculate as to the level of sophistication available at this point."
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 15,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 6,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.131,
-      "projected_minutes_per_30d": 342.27,
+      "measured_seconds": 7.698,
+      "projected_minutes_per_30d": 369.51,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -373,6 +373,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T04:57:14Z",
+  "updated_at": "2026-08-22T05:21:56Z",
   "version": 1
 }
