@@ -7,6 +7,31 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/Amybartram6/status/2090885191807926394"
+      ],
+      "id": "story-336302c34d22f05bb053460e",
+      "reason": "AI targeting schools and teens systematically. Distribution matters more than model specs.",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-22T04:57:14Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T19:34:11Z",
+      "source_url": "https://x.com/Amybartram6/status/2090885191807926394",
+      "status": "x-intel",
+      "title": "AI targeting schools and teens systematically. Distribution matters more than model specs.",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/craigling10/status/2090625537417118180"
       ],
       "id": "story-7682a11976a3502463623d53",
@@ -280,57 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Inc42/status/2089980361153380638"
-      ],
-      "id": "story-fdcce29643b399c982a7b277",
-      "reason": "\ud83d\udef0\ufe0f NeoGeo raises $20 Mn to scale its full-stack geospatial business \ud83d\udc47 Geospatial technology startup NeoGeo, founded by Sreeramam GV and Brahmam GVS, has raised around $20 Mn (\u20b9191 Cr) in a Series A round co-led by Neev II Fund and Aavishkaar Capital. The Gurugram-based startup wi",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-21T20:42:07Z",
-      "source": "x",
-      "source_published_at": "2026-08-19T07:38:42Z",
-      "source_url": "https://x.com/Inc42/status/2089980361153380638",
-      "status": "x-intel",
-      "title": "\ud83d\udef0\ufe0f NeoGeo raises $20 Mn to scale its full-stack geospatial business \ud83d\udc47 Geospatial technology startup NeoGeo, founded by Sreeramam GV and Brahmam GVS, has raised",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "satellite imagery",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T03:33:47Z",
+    "alerted_at": "2026-08-22T04:57:14Z",
     "confidence": 0,
-    "source_url": "https://x.com/craigling10/status/2090625537417118180",
-    "title": "LOSING OUR MINDS For years, scientists have embarked on systematic research to illuminate how human-machine interactions affect cognition. The findings are comp"
+    "source_url": "https://x.com/Amybartram6/status/2090885191807926394",
+    "title": "AI targeting schools and teens systematically. Distribution matters more than model specs."
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 4,
+    "corroborated_count": 6,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.199,
-      "projected_minutes_per_30d": 297.56,
+      "measured_seconds": 7.131,
+      "projected_minutes_per_30d": 342.27,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T04:16:24Z",
+  "updated_at": "2026-08-22T04:57:14Z",
   "version": 1
 }
