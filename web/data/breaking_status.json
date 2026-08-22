@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/news89com/status/2091202758548627473"
+      ],
+      "id": "story-11740fdc48b1b7f5a9f0ad23",
+      "reason": "UAE-US Military AI Task Force Launches After Years Of Joint Technology Testing | https://t.co/ARodbTabmK https://t.co/EKKPSjXCJC",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-22T19:56:00Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T16:36:04Z",
+      "source_url": "https://x.com/news89com/status/2091202758548627473",
+      "status": "x-intel",
+      "title": "UAE-US Military AI Task Force Launches After Years Of Joint Technology Testing | https://t.co/ARodbTabmK https://t.co/EKKPSjXCJC",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/BSmnan53146/status/2091174341190791348"
       ],
       "id": "story-253d1f36b10d48b8df7c03c6",
@@ -278,42 +304,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/anacondaprocL/status/2091163913283121215"
-      ],
-      "id": "story-b23c6603faade86455544ca1",
-      "reason": "Deconstructing the Machine: How Military AI Subverts Agent Architecture When standard AI Agent frameworks (Perception, Memory, Reasoning, Action, Observability) are adapted for kinetic targeting systems like #LavenderAI and Fire Factory, systemic audit failures aren't incidental\u2014",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-22T14:18:48Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T14:01:43Z",
-      "source_url": "https://x.com/anacondaprocL/status/2091163913283121215",
-      "status": "x-intel",
-      "title": "Deconstructing the Machine: How Military AI Subverts Agent Architecture When standard AI Agent frameworks (Perception, Memory, Reasoning, Action, Observability)",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T19:16:03Z",
+    "alerted_at": "2026-08-22T19:56:00Z",
     "confidence": 0,
-    "source_url": "https://x.com/BSmnan53146/status/2091174341190791348",
-    "title": "\u26a0\ufe0f \u0628\u064a\u0627\u0646 \u062a\u0648\u0636\u064a\u062d\u064a \u0633\u0627\u062e\u0631 \u2014 \u0645\u062d\u062a\u0648\u0649 \u062e\u064a\u0627\u0644\u064a \u062a\u0646\u0648\u064a\u0647 \u0645\u0647\u0645: \u0647\u0630\u0627 \u0627\u0644\u0628\u064a\u0627\u0646 \u0648\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u0645\u0631\u0641\u0642\u0629 \u0639\u0645\u0644\u064c \u062e\u064a\u0627\u0644\u064a \u0633\u0627\u062e\u0631 \u062a\u0645 \u0625\u0646\u0634\u0627\u0624\u0647 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0648\u0644\u0627 \u064a\u0645\u062b\u0644 \u0648\u0627\u0642\u0639\u0629 \u062d\u0642\u064a\u0642\u064a\u0629 \u0623\u0648 \u0628\u064a\u0627\u0646\u064b\u0627 \u0635\u0627\u062f"
+    "source_url": "https://x.com/news89com/status/2091202758548627473",
+    "title": "UAE-US Military AI Task Force Launches After Years Of Joint Technology Testing | https://t.co/ARodbTabmK https://t.co/EKKPSjXCJC"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 19,
     "collected": 25,
     "corroborated_count": 4,
@@ -321,15 +321,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.076,
-      "projected_minutes_per_30d": 291.67,
+      "measured_seconds": 6.211,
+      "projected_minutes_per_30d": 298.15,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 17,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T19:43:10Z",
+  "updated_at": "2026-08-22T19:56:00Z",
   "version": 1
 }
