@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/MarioNawfal/status/2090995108887867622"
+      ],
+      "id": "story-cdcdd2413661c39d9132b2ef",
+      "reason": "\ud83c\uddfa\ud83c\uddf8 Drones, AI, and long-range fires are rewriting the rules of war, but they still can\u2019t hold the ground. A new report makes the case crystal clear: U.S. land forces remain irreplaceable for giving policymakers options that air, sea, and cyber alone can\u2019t deliver: Persistent pres",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-22T07:43:46Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T02:50:57Z",
+      "source_url": "https://x.com/MarioNawfal/status/2090995108887867622",
+      "status": "x-intel",
+      "title": "\ud83c\uddfa\ud83c\uddf8 Drones, AI, and long-range fires are rewriting the rules of war, but they still can\u2019t hold the ground. A new report makes the case crystal clear: U.S. land f",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/PZaith/status/2090524718784733465"
       ],
       "id": "story-57e5ab81284baa9fad0df5f6",
@@ -280,57 +306,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/TishmanFern/status/2090546807172448702",
-        "https://x.com/BCISLEMAN/status/2090556807156797445"
-      ],
-      "id": "story-57161f53feded9e9e3fa5af2",
-      "reason": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/hhVyrbcEnP",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-21T21:46:55Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T21:09:33Z",
-      "source_url": "https://x.com/TishmanFern/status/2090546807172448702",
-      "status": "x-intel",
-      "title": "I just wrote a @theactionnet letter: Tell Congress: Ban Lethal Autonomous Weapons. Write one here: https://t.co/hhVyrbcEnP",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T05:21:56Z",
+    "alerted_at": "2026-08-22T07:43:46Z",
     "confidence": 0,
-    "source_url": "https://x.com/PZaith/status/2090524718784733465",
-    "title": "@litecoin_bull Project Maven comes to mind - most of that is classified, so one can only speculate as to the level of sophistication available at this point."
+    "source_url": "https://x.com/MarioNawfal/status/2090995108887867622",
+    "title": "\ud83c\uddfa\ud83c\uddf8 Drones, AI, and long-range fires are rewriting the rules of war, but they still can\u2019t hold the ground. A new report makes the case crystal clear: U.S. land f"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.152,
-      "projected_minutes_per_30d": 295.28,
+      "measured_seconds": 6.48,
+      "projected_minutes_per_30d": 311.05,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 18,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +369,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T07:07:20Z",
+  "updated_at": "2026-08-22T07:43:46Z",
   "version": 1
 }
