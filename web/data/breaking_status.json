@@ -5,6 +5,29 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/YonatanAdiri/status/2090153231200485790"
+      ],
+      "id": "story-5260ce37721b7307ecc65c44",
+      "reason": "Why would israel notify Turkey? Is Turkey sovereign in the area? According to international media - israel engaged personally with the Syrian FM - who represents the sovereign government of Syria 96 hours ahead of the action.",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-22T14:59:13Z",
+      "source": "x",
+      "source_published_at": "2026-08-19T19:05:38Z",
+      "source_url": "https://x.com/YonatanAdiri/status/2090153231200485790",
+      "status": "x-intel",
+      "title": "Why would israel notify Turkey? Is Turkey sovereign in the area? According to international media - israel engaged personally with the Syrian FM - who represent",
+      "webswarm_evidence_terms": [
+        "96 hours"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/anacondaprocL/status/2091163913283121215"
@@ -278,40 +301,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2090861707866337554"
-      ],
-      "id": "story-caf617b5cfb43c73f1d1e66b",
-      "reason": "How can energy collection in space transform the future of data centers? Former Director of the National Geospatial-Intelligence Agency, @cardillogroup and @SethGJones discuss space as an emerging domain of modern warfare. Listen to the Last Line of Defense: https://t.co/56YcYknu",
-      "score": 43,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-22T12:22:17Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T12:14:00Z",
-      "source_url": "https://x.com/CSIS/status/2090861707866337554",
-      "status": "x-intel",
-      "title": "@CSIS: How can energy collection in space transform the future of data centers? Former Director of the National Geospatial-Intelligence Agency, @ca",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T14:18:48Z",
+    "alerted_at": "2026-08-22T14:59:13Z",
     "confidence": 0,
-    "source_url": "https://x.com/anacondaprocL/status/2091163913283121215",
-    "title": "Deconstructing the Machine: How Military AI Subverts Agent Architecture When standard AI Agent frameworks (Perception, Memory, Reasoning, Action, Observability)"
+    "source_url": "https://x.com/YonatanAdiri/status/2090153231200485790",
+    "title": "Why would israel notify Turkey? Is Turkey sovereign in the area? According to international media - israel engaged personally with the Syrian FM - who represent"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 19,
     "collected": 25,
     "corroborated_count": 2,
@@ -319,15 +318,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.602,
-      "projected_minutes_per_30d": 364.9,
+      "measured_seconds": 11.871,
+      "projected_minutes_per_30d": 569.8,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +340,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +364,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T14:44:29Z",
+  "updated_at": "2026-08-22T14:59:13Z",
   "version": 1
 }
