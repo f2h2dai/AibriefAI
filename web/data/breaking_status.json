@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/John_Connor42/status/2091166451554214237"
+      ],
+      "id": "story-0acdd3bd1fd1927d0d0e4428",
+      "reason": "Well... that's going to put a new target on the back of the UAE! UAE and US launch military AI task force in Abu Dhabi https://t.co/pwbjXgbkbn",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-22T20:40:01Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T18:29:19Z",
+      "source_url": "https://x.com/John_Connor42/status/2091166451554214237",
+      "status": "x-intel",
+      "title": "@John_Connor42: Well... that's going to put a new target on the back of the UAE! UAE and US launch military AI task force in Abu Dhabi https://t.co/pwbjXgbk",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/news89com/status/2091202758548627473"
       ],
       "id": "story-11740fdc48b1b7f5a9f0ad23",
@@ -278,42 +304,16 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Aysha__Mohamed/status/2091184505281462709"
-      ],
-      "id": "story-e6ba4d5b1a912d7c0c74d7dd",
-      "reason": "The UAE\u2013US partnership is entering a new phase. The launch of Task Force Talon Synapse, the first bilateral task force dedicated to military AI, brings together expertise in AI, data and cybersecurity to strengthen intelligence, protect critical infrastructure and enhance regiona",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-22T15:42:57Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T15:23:33Z",
-      "source_url": "https://x.com/Aysha__Mohamed/status/2091184505281462709",
-      "status": "x-intel",
-      "title": "The UAE\u2013US partnership is entering a new phase. The launch of Task Force Talon Synapse, the first bilateral task force dedicated to military AI, brings together",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T19:56:00Z",
+    "alerted_at": "2026-08-22T20:40:01Z",
     "confidence": 0,
-    "source_url": "https://x.com/news89com/status/2091202758548627473",
-    "title": "UAE-US Military AI Task Force Launches After Years Of Joint Technology Testing | https://t.co/ARodbTabmK https://t.co/EKKPSjXCJC"
+    "source_url": "https://x.com/John_Connor42/status/2091166451554214237",
+    "title": "@John_Connor42: Well... that's going to put a new target on the back of the UAE! UAE and US launch military AI task force in Abu Dhabi https://t.co/pwbjXgbk"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 19,
     "collected": 25,
     "corroborated_count": 3,
@@ -321,15 +321,15 @@
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.408,
-      "projected_minutes_per_30d": 307.59,
+      "measured_seconds": 7.728,
+      "projected_minutes_per_30d": 370.96,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T20:14:03Z",
+  "updated_at": "2026-08-22T20:40:01Z",
   "version": 1
 }
