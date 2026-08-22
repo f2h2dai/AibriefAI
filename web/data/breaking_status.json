@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/NATO_ACT/status/2091122006678794401"
+      ],
+      "id": "story-7847fedfdc13789b3b97f98d",
+      "reason": "What happens when AI becomes part of the information battlefield? You study it. Test it. Build the capabilities to operate in it. A new AI Laboratory at the NATO Strategic Communications Centre of Excellence @STRATCOMCOE is exploring how artificial intelligence can strengthen NAT",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-22T18:55:07Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T18:29:19Z",
+      "source_url": "https://x.com/NATO_ACT/status/2091122006678794401",
+      "status": "x-intel",
+      "title": "@NATO_ACT: What happens when AI becomes part of the information battlefield? You study it. Test it. Build the capabilities to operate in it. A new AI L",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/UAEEmbassyUS/status/2090864616058364177"
       ],
       "id": "story-2c3d75281b925afd55db31d5",
@@ -282,45 +306,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/gulf_news/status/2091146552223867385"
-      ],
-      "id": "story-82f2d74acd9484a31cb80286",
-      "reason": "UAE and US launch Task Force Talon Synapse, the world\u2019s first bilateral military AI unit in Abu Dhabi to boost defence, intelligence and infrastructure security. https://t.co/84FfAtK41H https://t.co/C0ICU7Gtsf",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-22T13:58:10Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T12:52:44Z",
-      "source_url": "https://x.com/gulf_news/status/2091146552223867385",
-      "status": "x-intel",
-      "title": "UAE and US launch Task Force Talon Synapse, the world\u2019s first bilateral military AI unit in Abu Dhabi to boost defence, intelligence and infrastructure security",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T18:17:19Z",
+    "alerted_at": "2026-08-22T18:55:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/UAEEmbassyUS/status/2090864616058364177",
-    "title": "@UAEEmbassyUS: The US &amp; UAE have launched Task Force Talon Synapse, the first bilateral task force dedicated to military AI. Based in Abu Dhabi, it bri"
+    "source_url": "https://x.com/NATO_ACT/status/2091122006678794401",
+    "title": "@NATO_ACT: What happens when AI becomes part of the information battlefield? You study it. Test it. Build the capabilities to operate in it. A new AI L"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 22,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -332,8 +330,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.437,
-      "projected_minutes_per_30d": 452.99,
+      "measured_seconds": 10.327,
+      "projected_minutes_per_30d": 495.7,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -347,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 19,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,6 +374,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T18:17:19Z",
+  "updated_at": "2026-08-22T18:55:07Z",
   "version": 1
 }
