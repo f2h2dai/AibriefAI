@@ -5,6 +5,57 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/jamesbangell/status/2091305252792443032"
+      ],
+      "id": "story-ca14bb5ce6dfefaac648fb7d",
+      "reason": "@PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United States Department of Defense (#DOW) initiative launched in 2017 to accelerate the adoption of machine learning and data integration across US ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-22T23:42:20Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T23:23:21Z",
+      "source_url": "https://x.com/jamesbangell/status/2091305252792443032",
+      "status": "x-intel",
+      "title": "@PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United States Department of D",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/JiteshUdasi13/status/2091162080959410324"
+      ],
+      "id": "story-24926cbde3812fe583f42f92",
+      "reason": "AI Future Scenarios \"AI Futures : Three Scenarios, Not Predictions...\" This is not prophecy. It is scenario analysis grounded in current technological, economic, demographic, and geopolitical trajectories. Probabilities are subjective confidence weights, not objective odds. Treat",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-22T23:42:20Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T13:54:26Z",
+      "source_url": "https://x.com/JiteshUdasi13/status/2091162080959410324",
+      "status": "x-intel",
+      "title": "AI Future Scenarios \"AI Futures : Three Scenarios, Not Predictions...\" This is not prophecy. It is scenario analysis grounded in current technological, economic",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons",
+        "defense"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/John_Connor42/status/2091166451554214237"
@@ -253,83 +304,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/John_Connor42/status/2091166451554214237"
-      ],
-      "id": "story-45899774593f5abda589b30b",
-      "reason": "Well... that's going to put a new target on the back of the UAE! UAE and US launch military AI task force in Abu Dhabi https://t.co/pwbjXgbkbn",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-22T15:42:57Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T14:11:48Z",
-      "source_url": "https://x.com/John_Connor42/status/2091166451554214237",
-      "status": "x-intel",
-      "title": "Well... that's going to put a new target on the back of the UAE! UAE and US launch military AI task force in Abu Dhabi https://t.co/pwbjXgbkbn",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/SAMERNAJ1/status/2090879593297383582"
-      ],
-      "id": "story-702e63299362e7c173922e27",
-      "reason": "WoW Is Google's AI targeting White Folks!!",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-22T15:42:57Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T19:11:56Z",
-      "source_url": "https://x.com/SAMERNAJ1/status/2090879593297383582",
-      "status": "x-intel",
-      "title": "WoW Is Google's AI targeting White Folks!!",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-22T20:40:01Z",
+    "alerted_at": "2026-08-22T23:42:20Z",
     "confidence": 0,
-    "source_url": "https://x.com/John_Connor42/status/2091166451554214237",
-    "title": "@John_Connor42: Well... that's going to put a new target on the back of the UAE! UAE and US launch military AI task force in Abu Dhabi https://t.co/pwbjXgbk"
+    "source_url": "https://x.com/jamesbangell/status/2091305252792443032",
+    "title": "@PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United States Department of D"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 17,
+    "alerted_now": 2,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.183,
-      "projected_minutes_per_30d": 344.8,
+      "measured_seconds": 7.012,
+      "projected_minutes_per_30d": 336.59,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-22T23:20:42Z",
+  "updated_at": "2026-08-22T23:42:20Z",
   "version": 1
 }
