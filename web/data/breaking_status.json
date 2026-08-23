@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Navneet65191719/status/2091371884374020102",
+        "https://x.com/Navneet65191719/status/2091372620092723527"
+      ],
+      "id": "story-9474d27ae0aa4e4ada3104be",
+      "reason": "@airtelindia @Airtel_Presence \"My Airtel number 9691689797 has been completely dead for the last 96 hours due to an EID block issue. Visited the Airtel store but no resolution yet. Extremely frustrated with this service! Please help immediately.",
+      "score": 25,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-23T16:22:17Z",
+      "source": "x",
+      "source_published_at": "2026-08-23T03:48:07Z",
+      "source_url": "https://x.com/Navneet65191719/status/2091371884374020102",
+      "status": "x-intel",
+      "title": "@airtelindia @Airtel_Presence \"My Airtel number 9691689797 has been completely dead for the last 96 hours due to an EID block issue. Visited the Airtel store bu",
+      "webswarm_evidence_terms": [
+        "AI",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -24,31 +49,6 @@
         "x.com",
         "AI",
         "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/ikfgz24362589/status/2090473459616719201"
-      ],
-      "id": "story-6cba0ad6c5b36ac908290c0f",
-      "reason": "the copper industry hasn't found a big new deposit since 2015 i know copper, it's my whole supply chain. every crash box is burnt stators and stripped windings i rewind myself budgets went up discoveries didn't $NRED is running AI targeting on a BC copper project to change that M",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T14:57:52Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T16:18:06Z",
-      "source_url": "https://x.com/ikfgz24362589/status/2090473459616719201",
-      "status": "x-intel",
-      "title": "the copper industry hasn't found a big new deposit since 2015 i know copper, it's my whole supply chain. every crash box is burnt stators and stripped windings",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -306,29 +306,29 @@
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-23T15:58:07Z",
+    "alerted_at": "2026-08-23T16:22:17Z",
     "confidence": 0,
-    "source_url": "https://x.com/jamesbangell/status/2091305252792443032",
-    "title": "@jamesbangell: @PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United St"
+    "source_url": "https://x.com/Navneet65191719/status/2091371884374020102",
+    "title": "@airtelindia @Airtel_Presence \"My Airtel number 9691689797 has been completely dead for the last 96 hours due to an EID block issue. Visited the Airtel store bu"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 18,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 14,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.018,
-      "projected_minutes_per_30d": 384.85,
+      "measured_seconds": 8.105,
+      "projected_minutes_per_30d": 389.06,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -342,7 +342,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 8,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -371,6 +371,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T15:58:07Z",
+  "updated_at": "2026-08-23T16:22:17Z",
   "version": 1
 }
