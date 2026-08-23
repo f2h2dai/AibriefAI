@@ -7,29 +7,6 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/JoyJuaneza/status/2091553817498173933"
-      ],
-      "id": "story-c6a663f66d67a38b60742f44",
-      "reason": "Interesting discussion of Palantir @PalantirTech, from a UK perspective. Rowland @rowlsmanthorpe does a great job keeping a balanced perspective. He notes that Apple and Google refused to work on Project Maven, unlike PLTR but he forgot to mention this: https://t.co/YNA6VdqnJL",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T22:58:50Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T15:51:03Z",
-      "source_url": "https://x.com/JoyJuaneza/status/2091553817498173933",
-      "status": "x-intel",
-      "title": "Interesting discussion of Palantir @PalantirTech, from a UK perspective. Rowland @rowlsmanthorpe does a great job keeping a balanced perspective. He notes that",
-      "webswarm_evidence_terms": [
-        "Project Maven"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
         "https://x.com/davidpattersonx/status/2091398799511978161"
       ],
       "id": "story-9ac11ef7de21003455d9aae1",
@@ -49,6 +26,29 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/JoyJuaneza/status/2091553817498173933"
+      ],
+      "id": "story-c6a663f66d67a38b60742f44",
+      "reason": "Interesting discussion of Palantir @PalantirTech, from a UK perspective. Rowland @rowlsmanthorpe does a great job keeping a balanced perspective. He notes that Apple and Google refused to work on Project Maven, unlike PLTR but he forgot to mention this: https://t.co/YNA6VdqnJL",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-23T22:58:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-23T15:51:03Z",
+      "source_url": "https://x.com/JoyJuaneza/status/2091553817498173933",
+      "status": "x-intel",
+      "title": "Interesting discussion of Palantir @PalantirTech, from a UK perspective. Rowland @rowlsmanthorpe does a great job keeping a balanced perspective. He notes that",
+      "webswarm_evidence_terms": [
+        "Project Maven"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     {
       "confidence": 0,
@@ -310,27 +310,27 @@
   "last_alert": {
     "alerted_at": "2026-08-23T22:58:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/JoyJuaneza/status/2091553817498173933",
-    "title": "Interesting discussion of Palantir @PalantirTech, from a UK perspective. Rowland @rowlsmanthorpe does a great job keeping a balanced perspective. He notes that"
+    "source_url": "https://x.com/davidpattersonx/status/2091398799511978161",
+    "title": "There are two problems: The Second Amendment is obsolete, since drones would make rifles ineffective against a government that tried to gain authoritarian power"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 19,
+    "alerted_now": 0,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.222,
-      "projected_minutes_per_30d": 442.68,
+      "measured_seconds": 6.77,
+      "projected_minutes_per_30d": 324.97,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T22:58:50Z",
+  "updated_at": "2026-08-23T23:20:29Z",
   "version": 1
 }
