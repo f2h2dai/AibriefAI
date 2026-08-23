@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/digismarties/status/2091230986960867352"
+      ],
+      "id": "story-c400b830259eda64feba5f00",
+      "reason": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBImbW0z",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-23T09:50:17Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T18:28:15Z",
+      "source_url": "https://x.com/digismarties/status/2091230986960867352",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBI",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/KMan168/status/2091413363704434696"
       ],
       "id": "story-506349c8034a13e7d1effb16",
@@ -281,58 +307,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/jamesbangell/status/2091305252792443032"
-      ],
-      "id": "story-ca14bb5ce6dfefaac648fb7d",
-      "reason": "@PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United States Department of Defense (#DOW) initiative launched in 2017 to accelerate the adoption of machine learning and data integration across US ",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-22T23:42:20Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T23:23:21Z",
-      "source_url": "https://x.com/jamesbangell/status/2091305252792443032",
-      "status": "x-intel",
-      "title": "@PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United States Department of D",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-23T08:46:15Z",
+    "alerted_at": "2026-08-23T09:50:17Z",
     "confidence": 0,
-    "source_url": "https://x.com/KMan168/status/2091413363704434696",
-    "title": "As extreme heat becomes more frequent, convergence of geospatial intelligence, weather forecasting and real-time decision support will become an essential part"
+    "source_url": "https://x.com/digismarties/status/2091230986960867352",
+    "title": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBI"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 20,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.534,
-      "projected_minutes_per_30d": 457.63,
+      "measured_seconds": 6.377,
+      "projected_minutes_per_30d": 306.09,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +346,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 19,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -370,11 +370,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T09:18:41Z",
+  "updated_at": "2026-08-23T09:50:17Z",
   "version": 1
 }
