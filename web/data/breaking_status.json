@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/PShannon30308/status/2091487462484836463"
+      ],
+      "id": "story-581a949004bc7f426148ba0f",
+      "reason": "Autonomous Weapons Systems Requirements From Complexity to Clarity in Weeks https://t.co/lC5TEfnV0W https://t.co/lDMwHU7hIa",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-23T11:42:44Z",
+      "source": "x",
+      "source_published_at": "2026-08-23T11:27:23Z",
+      "source_url": "https://x.com/PShannon30308/status/2091487462484836463",
+      "status": "x-intel",
+      "title": "Autonomous Weapons Systems Requirements From Complexity to Clarity in Weeks https://t.co/lC5TEfnV0W https://t.co/lDMwHU7hIa",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -275,55 +299,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/joshuakeating/status/2091334499221061643"
-      ],
-      "id": "story-7e0eca442acbc3e6e1fb2a78",
-      "reason": "@dylanmatt For my stuff: Chip War by Chris Miller Project Maven by Katrina Manson Army of None by Paul Scharre",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T02:36:26Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T01:19:34Z",
-      "source_url": "https://x.com/joshuakeating/status/2091334499221061643",
-      "status": "x-intel",
-      "title": "@dylanmatt For my stuff: Chip War by Chris Miller Project Maven by Katrina Manson Army of None by Paul Scharre",
-      "webswarm_evidence_terms": [
-        "Project Maven"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-23T10:57:30Z",
+    "alerted_at": "2026-08-23T11:42:44Z",
     "confidence": 0,
-    "source_url": "https://x.com/orfonline/status/2091442821521674476",
-    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
+    "source_url": "https://x.com/PShannon30308/status/2091487462484836463",
+    "title": "Autonomous Weapons Systems Requirements From Complexity to Clarity in Weeks https://t.co/lC5TEfnV0W https://t.co/lDMwHU7hIa"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 21,
+    "alerted_now": 1,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 24,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.944,
-      "projected_minutes_per_30d": 477.34,
+      "measured_seconds": 8.032,
+      "projected_minutes_per_30d": 385.52,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -337,7 +338,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 18,
+    "stage1_survivors": 19,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -361,11 +362,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T11:17:28Z",
+  "updated_at": "2026-08-23T11:42:44Z",
   "version": 1
 }
