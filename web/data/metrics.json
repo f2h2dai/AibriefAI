@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T12:14:42Z",
+  "generated_at": "2026-08-23T18:28:15Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,16 +9,16 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-23T12:14:42Z",
+  "latest_successful_run": "2026-08-23T18:28:15Z",
   "highest_ranked_signal": {
-    "id": "twitter-036",
-    "title": "@PennyGWizz: What is cognitive warfare using BAN and WBAN: The integration of Body Area Networks (BAN) and Wireless Body Area Networks (WBAN) represents ",
-    "action_score": 79.0,
-    "url": "https://x.com/PennyGWizz/status/2091421795438207247"
+    "id": "github-009",
+    "title": "RYZENNAVI/ai-playground",
+    "action_score": 80.25,
+    "url": "https://github.com/RYZENNAVI/ai-playground"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 7
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 30.403,
+  "runtime_seconds": 39.385,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-23T12:14:42Z",
+    "planned_at": "2026-08-23T18:28:15Z",
     "production_threshold": 70.0
   }
 }
