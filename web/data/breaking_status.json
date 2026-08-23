@@ -139,31 +139,6 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/kirby_mari5279/status/2090519279598788880"
-      ],
-      "id": "story-d9f590453073753564c8f050",
-      "reason": "@ikfgz24362589 we've already skimmed the rich stuff. average grade's off 40% since 1991 and only 5% of the deposits found in 35 years turned up in the last decade. throwing more budget at the ground doesn't put metal in it. that's why running AI targeting on a BC project matters.",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T14:57:52Z",
-      "source": "x",
-      "source_published_at": "2026-08-20T19:20:10Z",
-      "source_url": "https://x.com/kirby_mari5279/status/2090519279598788880",
-      "status": "x-intel",
-      "title": "@ikfgz24362589 we've already skimmed the rich stuff. average grade's off 40% since 1991 and only 5% of the deposits found in 35 years turned up in the last deca",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/Adrik_Inc/status/2091482988781400366"
@@ -311,6 +286,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/digismarties/status/2091230986960867352"
+      ],
+      "id": "story-c400b830259eda64feba5f00",
+      "reason": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBImbW0z",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-23T09:50:17Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T18:28:15Z",
+      "source_url": "https://x.com/digismarties/status/2091230986960867352",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBI",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
@@ -321,22 +322,22 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "clustered": 17,
+    "clustered": 18,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.133,
-      "projected_minutes_per_30d": 390.4,
+      "measured_seconds": 11.735,
+      "projected_minutes_per_30d": 563.27,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -350,7 +351,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -379,6 +380,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T19:15:51Z",
+  "updated_at": "2026-08-23T19:42:28Z",
   "version": 1
 }
