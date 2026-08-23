@@ -5,6 +5,30 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/turbo_sloot/status/2091014103267762220"
+      ],
+      "id": "story-8b1dc62af96154cbc9478a51",
+      "reason": "@Waggoner_ww @theojaffee Don't forget that they're also using AI for mass surveillance, and frequently claim they might wipe out humanity in some unknown way. But in case they don't achieve superintelligence, they already have autonomous weapons that can kill people with no human",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-23T23:42:07Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T04:06:26Z",
+      "source_url": "https://x.com/turbo_sloot/status/2091014103267762220",
+      "status": "x-intel",
+      "title": "@Waggoner_ww @theojaffee Don't forget that they're also using AI for mass surveillance, and frequently claim they might wipe out humanity in some unknown way. B",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/GODDESSInLoveA1/status/2091672223081721886"
@@ -27,30 +51,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/turbo_sloot/status/2091014103267762220"
-      ],
-      "id": "story-8b1dc62af96154cbc9478a51",
-      "reason": "@Waggoner_ww @theojaffee Don't forget that they're also using AI for mass surveillance, and frequently claim they might wipe out humanity in some unknown way. But in case they don't achieve superintelligence, they already have autonomous weapons that can kill people with no human",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T23:42:07Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T04:06:26Z",
-      "source_url": "https://x.com/turbo_sloot/status/2091014103267762220",
-      "status": "x-intel",
-      "title": "@Waggoner_ww @theojaffee Don't forget that they're also using AI for mass surveillance, and frequently claim they might wipe out humanity in some unknown way. B",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -311,27 +311,27 @@
   "last_alert": {
     "alerted_at": "2026-08-23T23:42:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/GODDESSInLoveA1/status/2091672223081721886",
-    "title": "@CENTCOM I have seen videos of thousands of China's military AI robots stored in containers. Their robots can do karate too."
+    "source_url": "https://x.com/turbo_sloot/status/2091014103267762220",
+    "title": "@Waggoner_ww @theojaffee Don't forget that they're also using AI for mass surveillance, and frequently claim they might wipe out humanity in some unknown way. B"
   },
   "last_run": {
-    "alerted_now": 2,
+    "alerted_now": 0,
     "clustered": 18,
     "collected": 25,
-    "corroborated_count": 0,
+    "corroborated_count": 3,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 13,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 83.632,
-      "projected_minutes_per_30d": 4014.34,
+      "measured_seconds": 7.719,
+      "projected_minutes_per_30d": 370.51,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -345,7 +345,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -369,11 +369,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T23:42:07Z",
+  "updated_at": "2026-08-23T23:56:37Z",
   "version": 1
 }
