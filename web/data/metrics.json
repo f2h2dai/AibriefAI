@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T18:29:19Z",
+  "generated_at": "2026-08-23T12:14:42Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,16 +9,16 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-22T18:29:19Z",
+  "latest_successful_run": "2026-08-23T12:14:42Z",
   "highest_ranked_signal": {
-    "id": "twitter-028",
-    "title": "@GoogleDeepMind: Games have been an important testbed for our AI research for over 15 years. 🎮 From mastering Atari to reaching Grandmaster in StarCraft II, ",
-    "action_score": 78.0,
-    "url": "https://x.com/GoogleDeepMind/status/2090772922818286080"
+    "id": "twitter-036",
+    "title": "@PennyGWizz: What is cognitive warfare using BAN and WBAN: The integration of Body Area Networks (BAN) and Wireless Body Area Networks (WBAN) represents ",
+    "action_score": 79.0,
+    "url": "https://x.com/PennyGWizz/status/2091421795438207247"
   },
   "source_contribution": {
-    "github": 7,
-    "twitter": 5
+    "twitter": 5,
+    "github": 7
   },
   "failed_sources": [
     {
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 29.13,
+  "runtime_seconds": 30.403,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-22T18:29:19Z",
+    "planned_at": "2026-08-23T12:14:42Z",
     "production_threshold": 70.0
   }
 }
