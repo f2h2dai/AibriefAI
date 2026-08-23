@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/GoogleDeepMind/status/2090772922818286080"
+      ],
+      "id": "story-503b6aa8bec6adcb0a0d7cf0",
+      "reason": "Games have been an important testbed for our AI research for over 15 years. \ud83c\udfae From mastering Atari to reaching Grandmaster in StarCraft II, they have driven some of our biggest AI breakthroughs. Our work with SIMA taught agents how to understand 3D worlds, but learning to navigat",
+      "score": 20,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-23T18:49:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-21T12:08:04Z",
+      "source_url": "https://x.com/GoogleDeepMind/status/2090772922818286080",
+      "status": "x-intel",
+      "title": "@GoogleDeepMind: Games have been an important testbed for our AI research for over 15 years. \ud83c\udfae From mastering Atari to reaching Grandmaster in StarCraft II,",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 7,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -287,58 +311,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/digismarties/status/2091230986960867352"
-      ],
-      "id": "story-c400b830259eda64feba5f00",
-      "reason": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBImbW0z",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-23T09:50:17Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T18:28:15Z",
-      "source_url": "https://x.com/digismarties/status/2091230986960867352",
-      "status": "x-intel",
-      "title": "\ud83d\udea8 UAE and US are taking military AI to the next level! #ArtificialIntelligence #Cybersecurity #AbuDhabi #DefenseTechnology #AI #DigiSmartiens https://t.co/PSfBI",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-23T17:12:23Z",
+    "alerted_at": "2026-08-23T18:49:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/MizarVision/status/2091556552171765787",
-    "title": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massiv"
+    "source_url": "https://x.com/GoogleDeepMind/status/2090772922818286080",
+    "title": "@GoogleDeepMind: Games have been an important testbed for our AI research for over 15 years. \ud83c\udfae From mastering Atari to reaching Grandmaster in StarCraft II,"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.343,
-      "projected_minutes_per_30d": 352.46,
+      "measured_seconds": 10.266,
+      "projected_minutes_per_30d": 492.78,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -352,7 +350,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -376,11 +374,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T18:15:08Z",
+  "updated_at": "2026-08-23T18:49:03Z",
   "version": 1
 }
