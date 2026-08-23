@@ -4,6 +4,40 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 7,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2091556552171765787",
+        "https://x.com/MizarVision/status/2091224162811429222",
+        "https://x.com/MizarVision/status/2090658708099387714",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ",
+        "https://x.com/MizarVision/status/2090521470351151196",
+        "https://x.com/PennyGWizz/status/2091421795438207247"
+      ],
+      "id": "story-c84202e33227276115ad38c3",
+      "reason": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massive warehouse complex appear heavily burned and structurally damaged following the August 22 attack. Ozon confirmed that t",
+      "score": 96,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-23T17:12:23Z",
+      "source": "x",
+      "source_published_at": "2026-08-23T16:01:55Z",
+      "source_url": "https://x.com/MizarVision/status/2091556552171765787",
+      "status": "x-intel",
+      "title": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massiv",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "military",
+        "military AI",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 2,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -279,56 +313,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/KMan168/status/2091413363704434696"
-      ],
-      "id": "story-506349c8034a13e7d1effb16",
-      "reason": "As extreme heat becomes more frequent, convergence of geospatial intelligence, weather forecasting and real-time decision support will become an essential part of building more resilient communities. #ClimateRisk #Wildfires #ExtremeWeather #ClimateResilience #WeatherNavigator htt",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-23T08:46:15Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T06:32:57Z",
-      "source_url": "https://x.com/KMan168/status/2091413363704434696",
-      "status": "x-intel",
-      "title": "As extreme heat becomes more frequent, convergence of geospatial intelligence, weather forecasting and real-time decision support will become an essential part",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-23T16:22:17Z",
+    "alerted_at": "2026-08-23T17:12:23Z",
     "confidence": 0,
-    "source_url": "https://x.com/Navneet65191719/status/2091371884374020102",
-    "title": "@airtelindia @Airtel_Presence \"My Airtel number 9691689797 has been completely dead for the last 96 hours due to an EID block issue. Visited the Airtel store bu"
+    "source_url": "https://x.com/MizarVision/status/2091556552171765787",
+    "title": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massiv"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 17,
+    "alerted_now": 1,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 15,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.326,
-      "projected_minutes_per_30d": 399.64,
+      "measured_seconds": 10.037,
+      "projected_minutes_per_30d": 481.79,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -342,7 +352,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 8,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -366,11 +376,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-23T16:48:37Z",
+  "updated_at": "2026-08-23T17:12:23Z",
   "version": 1
 }
