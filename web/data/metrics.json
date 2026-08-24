@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T18:28:15Z",
+  "generated_at": "2026-08-24T12:21:11Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-23T18:28:15Z",
+  "latest_successful_run": "2026-08-24T12:21:11Z",
   "highest_ranked_signal": {
-    "id": "github-009",
-    "title": "RYZENNAVI/ai-playground",
-    "action_score": 80.25,
-    "url": "https://github.com/RYZENNAVI/ai-playground"
+    "id": "github-005",
+    "title": "gamedev-skills/awesome-gamedev-agent-skills",
+    "action_score": 78.5,
+    "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills"
   },
   "source_contribution": {
     "github": 7,
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 39.385,
+  "runtime_seconds": 32.561,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-23T18:28:15Z",
+    "planned_at": "2026-08-24T12:21:11Z",
     "production_threshold": 70.0
   }
 }
