@@ -5,30 +5,6 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2091571207539708167"
-      ],
-      "id": "story-d0b03ad046a74a8afc37b524",
-      "reason": "\"Given the complex nature of food systems and the regulatory environments that govern them, policy that enables effective AI solutions should aim to balance the needs of local, national, and global actors,\" write @CSISFoodWater experts. Read: https://t.co/qNrelv6wYQ",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T12:27:45Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T12:21:11Z",
-      "source_url": "https://x.com/CSIS/status/2091571207539708167",
-      "status": "x-intel",
-      "title": "@CSIS: \"Given the complex nature of food systems and the regulatory environments that govern them, policy that enables effective AI solutions shoul",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/Mars_Scottsdale/status/2091514936522322265"
@@ -67,6 +43,30 @@
       "source_url": "https://x.com/grok/status/2091643782554902615",
       "status": "x-intel",
       "title": "@grok: Matrix-style effects on those mind-control books about remote neural targeting and satellite influence. If we're in a simulation the operato",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/CSIS/status/2091571207539708167"
+      ],
+      "id": "story-d0b03ad046a74a8afc37b524",
+      "reason": "\"Given the complex nature of food systems and the regulatory environments that govern them, policy that enables effective AI solutions should aim to balance the needs of local, national, and global actors,\" write @CSISFoodWater experts. Read: https://t.co/qNrelv6wYQ",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T12:27:45Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T12:21:11Z",
+      "source_url": "https://x.com/CSIS/status/2091571207539708167",
+      "status": "x-intel",
+      "title": "@CSIS: \"Given the complex nature of food systems and the regulatory environments that govern them, policy that enables effective AI solutions shoul",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -302,27 +302,27 @@
   "last_alert": {
     "alerted_at": "2026-08-24T12:27:45Z",
     "confidence": 0,
-    "source_url": "https://x.com/CSIS/status/2091571207539708167",
-    "title": "@CSIS: \"Given the complex nature of food systems and the regulatory environments that govern them, policy that enables effective AI solutions shoul"
+    "source_url": "https://x.com/Mars_Scottsdale/status/2091514936522322265",
+    "title": "@Mars_Scottsdale: Good post Michael! From Grok: Yes, Palantir already has this capability today through its Maven Smart System (MSS), and it is actively expan"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 20,
+    "alerted_now": 0,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 21,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.044,
-      "projected_minutes_per_30d": 290.13,
+      "measured_seconds": 7.024,
+      "projected_minutes_per_30d": 337.14,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -336,7 +336,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -360,11 +360,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T12:27:45Z",
+  "updated_at": "2026-08-24T13:30:03Z",
   "version": 1
 }
