@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/DMissionist1/status/2091270713181139233"
+      ],
+      "id": "story-349e6e01afc91ba39fff8199",
+      "reason": "\"Oracle, Larry Ellison says that every single country should start tracking their population data so that we have AI-powered #surveillance. This way citizens and the police will be on their best behavior.\" https://t.co/qT4Miyjz6a",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T11:18:32Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T21:06:06Z",
+      "source_url": "https://x.com/DMissionist1/status/2091270713181139233",
+      "status": "x-intel",
+      "title": "\"Oracle, Larry Ellison says that every single country should start tracking their population data so that we have AI-powered #surveillance. This way citizens an",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/MizarVision/status/2091800775659749529"
       ],
       "id": "story-423d9d5bc59c5f978b5bcdd4",
@@ -271,56 +295,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/addictcoaching/status/2091679946313802199"
-      ],
-      "id": "story-69881c4993c7b0658a320f5c",
-      "reason": "@SecScottBessent I thought he dismantled Irans military capabilities 1 year ago. Didn\u2019t Trump say that @grok ?",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T07:43:08Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T00:12:15Z",
-      "source_url": "https://x.com/addictcoaching/status/2091679946313802199",
-      "status": "x-intel",
-      "title": "@SecScottBessent I thought he dismantled Irans military capabilities 1 year ago. Didn\u2019t Trump say that @grok ?",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T10:02:11Z",
+    "alerted_at": "2026-08-24T11:18:32Z",
     "confidence": 0,
-    "source_url": "https://x.com/MizarVision/status/2091800775659749529",
-    "title": "\ud83c\udde6\ud83c\uddea Massive protective cages have appeared around fuel tanks near Dubai International Airport. Satellite imagery shows large steel frameworks surrounding the DXB"
+    "source_url": "https://x.com/DMissionist1/status/2091270713181139233",
+    "title": "\"Oracle, Larry Ellison says that every single country should start tracking their population data so that we have AI-powered #surveillance. This way citizens an"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.425,
-      "projected_minutes_per_30d": 356.42,
+      "measured_seconds": 6.227,
+      "projected_minutes_per_30d": 298.9,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +334,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 16,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -358,11 +358,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T10:50:59Z",
+  "updated_at": "2026-08-24T11:18:32Z",
   "version": 1
 }
