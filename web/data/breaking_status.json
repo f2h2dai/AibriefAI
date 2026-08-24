@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/alextorrentera/status/2091175455260836286"
+      ],
+      "id": "story-c5c8810f61931652bd3cc747",
+      "reason": "A treaty banning certain types of autonomous weapons systems, dubbed \"killer robots,\" is adopted by a majority of UN members. #KillerRobots #AITreaty #Disarmament",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-24T05:51:15Z",
+      "source": "x",
+      "source_published_at": "2026-08-22T14:47:35Z",
+      "source_url": "https://x.com/alextorrentera/status/2091175455260836286",
+      "status": "x-intel",
+      "title": "A treaty banning certain types of autonomous weapons systems, dubbed \"killer robots,\" is adopted by a majority of UN members. #KillerRobots #AITreaty #Disarmame",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/orfonline/status/2091699513950191850"
       ],
       "id": "story-88b7da5c00f2ebeaeea9d7a2",
@@ -278,66 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 7,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2091556552171765787",
-        "https://x.com/MizarVision/status/2091224162811429222",
-        "https://x.com/MizarVision/status/2090658708099387714",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ",
-        "https://x.com/MizarVision/status/2090521470351151196",
-        "https://x.com/PennyGWizz/status/2091421795438207247"
-      ],
-      "id": "story-c84202e33227276115ad38c3",
-      "reason": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massive warehouse complex appear heavily burned and structurally damaged following the August 22 attack. Ozon confirmed that t",
-      "score": 96,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T17:12:23Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T16:01:55Z",
-      "source_url": "https://x.com/MizarVision/status/2091556552171765787",
-      "status": "x-intel",
-      "title": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massiv",
-      "webswarm_evidence_terms": [
-        "AI",
-        "MizarVision",
-        "military",
-        "military AI",
-        "satellite imagery",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T04:21:09Z",
+    "alerted_at": "2026-08-24T05:51:15Z",
     "confidence": 0,
-    "source_url": "https://x.com/orfonline/status/2091699513950191850",
-    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
+    "source_url": "https://x.com/alextorrentera/status/2091175455260836286",
+    "title": "A treaty banning certain types of autonomous weapons systems, dubbed \"killer robots,\" is adopted by a majority of UN members. #KillerRobots #AITreaty #Disarmame"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 20,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.128,
-      "projected_minutes_per_30d": 390.13,
+      "measured_seconds": 7.739,
+      "projected_minutes_per_30d": 371.48,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -351,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -375,11 +365,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T05:08:43Z",
+  "updated_at": "2026-08-24T05:51:15Z",
   "version": 1
 }
