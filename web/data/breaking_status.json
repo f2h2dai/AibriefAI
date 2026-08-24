@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/MizarVision/status/2091800775659749529"
+      ],
+      "id": "story-423d9d5bc59c5f978b5bcdd4",
+      "reason": "\ud83c\udde6\ud83c\uddea Massive protective cages have appeared around fuel tanks near Dubai International Airport. Satellite imagery shows large steel frameworks surrounding the DXB fuel storage area. The structures are assessed as passive anti-drone protection, designed to intercept or trigger incom",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T10:02:11Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T08:12:23Z",
+      "source_url": "https://x.com/MizarVision/status/2091800775659749529",
+      "status": "x-intel",
+      "title": "\ud83c\udde6\ud83c\uddea Massive protective cages have appeared around fuel tanks near Dubai International Airport. Satellite imagery shows large steel frameworks surrounding the DXB",
+      "webswarm_evidence_terms": [
+        "MizarVision",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/techslogcore/status/2091507845573575103"
       ],
       "id": "story-172482ca8b667c7c75e10683",
@@ -271,56 +295,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/VaticanNews/status/2090765456185430420"
-      ],
-      "id": "story-855088357ead14fa2b9b0c0d",
-      "reason": "Pope Leo XIV tells Catholic legislators from around the world that artificial intelligence must be led by human intelligence illuminated by charity, so that AI may serve the common good. https://t.co/jNtiALUy9b",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T07:43:08Z",
-      "source": "x",
-      "source_published_at": "2026-08-21T11:38:23Z",
-      "source_url": "https://x.com/VaticanNews/status/2090765456185430420",
-      "status": "x-intel",
-      "title": "Pope Leo XIV tells Catholic legislators from around the world that artificial intelligence must be led by human intelligence illuminated by charity, so that AI",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T08:26:08Z",
+    "alerted_at": "2026-08-24T10:02:11Z",
     "confidence": 0,
-    "source_url": "https://x.com/techslogcore/status/2091507845573575103",
-    "title": "Daniela came from the other end. Literature degree, congressional campaign, then Stripe as a recruiter \u2014 where she ended up running the program that screened ou"
+    "source_url": "https://x.com/MizarVision/status/2091800775659749529",
+    "title": "\ud83c\udde6\ud83c\uddea Massive protective cages have appeared around fuel tanks near Dubai International Airport. Satellite imagery shows large steel frameworks surrounding the DXB"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 22,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.193,
-      "projected_minutes_per_30d": 297.29,
+      "measured_seconds": 5.889,
+      "projected_minutes_per_30d": 282.68,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +334,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 19,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -358,11 +358,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T09:11:32Z",
+  "updated_at": "2026-08-24T10:02:11Z",
   "version": 1
 }
