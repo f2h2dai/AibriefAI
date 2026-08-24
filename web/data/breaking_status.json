@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/orfonline/status/2091699513950191850"
+      ],
+      "id": "story-88b7da5c00f2ebeaeea9d7a2",
+      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-24T04:21:09Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T01:30:00Z",
+      "source_url": "https://x.com/orfonline/status/2091699513950191850",
+      "status": "x-intel",
+      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -287,57 +312,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Navneet65191719/status/2091371884374020102",
-        "https://x.com/Navneet65191719/status/2091372620092723527"
-      ],
-      "id": "story-9474d27ae0aa4e4ada3104be",
-      "reason": "@airtelindia @Airtel_Presence \"My Airtel number 9691689797 has been completely dead for the last 96 hours due to an EID block issue. Visited the Airtel store but no resolution yet. Extremely frustrated with this service! Please help immediately.",
-      "score": 25,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-23T16:22:17Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T03:48:07Z",
-      "source_url": "https://x.com/Navneet65191719/status/2091371884374020102",
-      "status": "x-intel",
-      "title": "@airtelindia @Airtel_Presence \"My Airtel number 9691689797 has been completely dead for the last 96 hours due to an EID block issue. Visited the Airtel store bu",
-      "webswarm_evidence_terms": [
-        "AI",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T02:17:35Z",
+    "alerted_at": "2026-08-24T04:21:09Z",
     "confidence": 0,
-    "source_url": "https://x.com/BrilliantMaps/status/2091677166350094359",
-    "title": "Declassified 2013 Afghan Border 3D Terrain Map Created By The CIA This 2013 CIA terrain map of Afghanistan\u2019s Kunar and Nuristan provinces provides a highly deta"
+    "source_url": "https://x.com/orfonline/status/2091699513950191850",
+    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 18,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 16,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.76,
-      "projected_minutes_per_30d": 420.47,
+      "measured_seconds": 7.513,
+      "projected_minutes_per_30d": 360.61,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -375,11 +375,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T03:28:56Z",
+  "updated_at": "2026-08-24T04:21:09Z",
   "version": 1
 }
