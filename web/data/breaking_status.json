@@ -4,28 +4,24 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 2,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/nickczatt/status/2091836675395670229",
-        "https://x.com/grok/status/2091836847529812100"
+        "https://x.com/PShannon30308/status/2091934217483497811"
       ],
-      "id": "story-2966a5b95104d5d1529242bf",
-      "reason": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he had completely obliterated Iran\u2019s nuclear enrichment capabilities?",
-      "score": 85,
+      "id": "story-efad4f4db0b948e1208510b4",
+      "reason": "Worth a read from someone who knows what hey are talking about. Brandon Tseng, the co-founder and president of Shield AI and a former Navy SEAL, whose company builds the Hivemind autonomy software, the V-BAT and X-BAT aircraft, and Aechelon synthetic reality and simulation techno",
+      "score": 10,
       "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T20:46:03Z",
+      "shown_at": "2026-08-24T21:19:29Z",
       "source": "x",
-      "source_published_at": "2026-08-24T10:35:02Z",
-      "source_url": "https://x.com/nickczatt/status/2091836675395670229",
+      "source_published_at": "2026-08-24T17:02:38Z",
+      "source_url": "https://x.com/PShannon30308/status/2091934217483497811",
       "status": "x-intel",
-      "title": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he h",
+      "title": "Worth a read from someone who knows what hey are talking about. Brandon Tseng, the co-founder and president of Shield AI and a former Navy SEAL, whose company b",
       "webswarm_evidence_terms": [
-        "AI",
-        "Grok",
-        "Iran",
-        "Operation Epic Fury",
-        "x.com"
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -50,6 +46,34 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/nickczatt/status/2091836675395670229",
+        "https://x.com/grok/status/2091836847529812100"
+      ],
+      "id": "story-2966a5b95104d5d1529242bf",
+      "reason": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he had completely obliterated Iran\u2019s nuclear enrichment capabilities?",
+      "score": 85,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T20:46:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T10:35:02Z",
+      "source_url": "https://x.com/nickczatt/status/2091836675395670229",
+      "status": "x-intel",
+      "title": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he h",
+      "webswarm_evidence_terms": [
+        "AI",
+        "Grok",
+        "Iran",
+        "Operation Epic Fury",
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -274,41 +298,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/goldenheart1223/status/2091428414788116821"
-      ],
-      "id": "story-2c0b92f1623ba0bc02a98645",
-      "reason": "Joint Security Guidelines: The NSA and DARPA continue to collaborate with industry leaders on national cybersecurity and software understanding initiatives. Google has signed a new artificial intelligence agreement with the Pentagon, joining firms like OpenAI and xAI in",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T16:56:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T07:32:45Z",
-      "source_url": "https://x.com/goldenheart1223/status/2091428414788116821",
-      "status": "x-intel",
-      "title": "Joint Security Guidelines: The NSA and DARPA continue to collaborate with industry leaders on national cybersecurity and software understanding initiatives. Goo",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T20:46:03Z",
+    "alerted_at": "2026-08-24T21:19:29Z",
     "confidence": 0,
-    "source_url": "https://x.com/nickczatt/status/2091836675395670229",
-    "title": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he h"
+    "source_url": "https://x.com/PShannon30308/status/2091934217483497811",
+    "title": "Worth a read from someone who knows what hey are talking about. Brandon Tseng, the co-founder and president of Shield AI and a former Navy SEAL, whose company b"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 22,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -322,8 +322,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.387,
-      "projected_minutes_per_30d": 450.59,
+      "measured_seconds": 7.221,
+      "projected_minutes_per_30d": 346.6,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -337,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 18,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -361,11 +361,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T20:46:03Z",
+  "updated_at": "2026-08-24T21:19:29Z",
   "version": 1
 }
