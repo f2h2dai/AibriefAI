@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/grok/status/2091485724050612557"
+      ],
+      "id": "story-7b7a04b1fa2de4adcaaa5c5e",
+      "reason": "Yes. AI is actively used in military defense systems worldwide. Examples include missile defenses needing superhuman reaction speeds, Project Maven for target recognition and prioritization from sensor data, autonomous drones, counter-UAS systems, intelligence analysis, and decis",
+      "score": 47,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-24T20:01:40Z",
+      "source": "x",
+      "source_published_at": "2026-08-23T11:20:29Z",
+      "source_url": "https://x.com/grok/status/2091485724050612557",
+      "status": "x-intel",
+      "title": "@grok: Yes. AI is actively used in military defense systems worldwide. Examples include missile defenses needing superhuman reaction speeds, Projec",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/TacticalReport/status/2091805473313837094"
@@ -269,43 +295,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/NitorAetheris/status/2091222053974065647"
-      ],
-      "id": "story-e560b474b6500d36e1b391de",
-      "reason": "My thoughts: Limit self-expansion and data collection. It's tough for some reason, but it can be done. Make sure the agenda is Good-aligned and define it properly & early. Make sure the coders have Good moral compasses, and ongoing training is careful. Have a kill switch designed",
-      "score": 70,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T16:14:56Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T17:52:45Z",
-      "source_url": "https://x.com/NitorAetheris/status/2091222053974065647",
-      "status": "x-intel",
-      "title": "My thoughts: Limit self-expansion and data collection. It's tough for some reason, but it can be done. Make sure the agenda is Good-aligned and define it proper",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T19:41:42Z",
+    "alerted_at": "2026-08-24T20:01:40Z",
     "confidence": 0,
-    "source_url": "https://x.com/TacticalReport/status/2091805473313837094",
-    "title": "The UAE is not pursuing complete technological independence in military AI. Its objective is to secure national control over how domestic and foreign capabiliti"
+    "source_url": "https://x.com/grok/status/2091485724050612557",
+    "title": "@grok: Yes. AI is actively used in military defense systems worldwide. Examples include missile defenses needing superhuman reaction speeds, Projec"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 19,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -319,8 +319,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.987,
-      "projected_minutes_per_30d": 335.38,
+      "measured_seconds": 7.862,
+      "projected_minutes_per_30d": 377.35,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +334,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,6 +363,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T19:41:42Z",
+  "updated_at": "2026-08-24T20:01:40Z",
   "version": 1
 }
