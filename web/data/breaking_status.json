@@ -4,6 +4,34 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 5,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2091799818641256673",
+        "https://x.com/MizarVision/status/2091800775659749529",
+        "https://x.com/MizarVision/status/2091224162811429222",
+        "https://x.com/MizarVision/status/2091556552171765787",
+        "https://x.com/MizarVision/status/2091800600660914333"
+      ],
+      "id": "story-aad003d14d2ea249aa7d243e",
+      "reason": "\ud83c\uddee\ud83c\uddf7 A new underground complex is being built near Karaj, Iran. Satellite imagery shows new roads, excavation and possible tunnel entrances appearing since around May 21. \ud83d\udccd 35.776436, 51.064582 GEOIMINT assesses the site as IRGC-linked, but that affiliation has not yet been indepen",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-24T11:50:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T08:08:35Z",
+      "source_url": "https://x.com/MizarVision/status/2091799818641256673",
+      "status": "x-intel",
+      "title": "\ud83c\uddee\ud83c\uddf7 A new underground complex is being built near Karaj, Iran. Satellite imagery shows new roads, excavation and possible tunnel entrances appearing since around",
+      "webswarm_evidence_terms": [
+        "MizarVision",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -269,43 +297,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/ICRC/status/2091786676557275545",
-        "https://x.com/PShannon30308/status/2091487462484836463",
-        "https://x.com/marqueandrepris/status/2091060929689505894"
-      ],
-      "id": "story-549dd9857712b8663a33f43c",
-      "reason": "Machines with the power and discretion to take lives without human involvement threaten to transform warfare in ways with grave humanitarian consequences. States need to act now to set clear international regulations on autonomous weapons systems. Read more on the ICRC\u2019s concerns",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-24T07:43:08Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T07:16:21Z",
-      "source_url": "https://x.com/ICRC/status/2091786676557275545",
-      "status": "x-intel",
-      "title": "Machines with the power and discretion to take lives without human involvement threaten to transform warfare in ways with grave humanitarian consequences. State",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T11:18:32Z",
+    "alerted_at": "2026-08-24T11:50:51Z",
     "confidence": 0,
-    "source_url": "https://x.com/DMissionist1/status/2091270713181139233",
-    "title": "\"Oracle, Larry Ellison says that every single country should start tracking their population data so that we have AI-powered #surveillance. This way citizens an"
+    "source_url": "https://x.com/MizarVision/status/2091799818641256673",
+    "title": "\ud83c\uddee\ud83c\uddf7 A new underground complex is being built near Karaj, Iran. Satellite imagery shows new roads, excavation and possible tunnel entrances appearing since around"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 20,
+    "clustered": 18,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -319,8 +321,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.227,
-      "projected_minutes_per_30d": 298.9,
+      "measured_seconds": 6.904,
+      "projected_minutes_per_30d": 331.41,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +336,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 14,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -363,6 +365,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T11:18:32Z",
+  "updated_at": "2026-08-24T11:50:51Z",
   "version": 1
 }
