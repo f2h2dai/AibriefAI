@@ -7,6 +7,32 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
+        "https://x.com/TrendingTopicsA/status/2091975349168951721"
+      ],
+      "id": "story-a334869c596166ad8fe0691b",
+      "reason": "Britain Taps Ukraine\u2019s Combat Data to Train Military AI: https://t.co/NfR9xv4hLf",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T23:35:16Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T19:46:04Z",
+      "source_url": "https://x.com/TrendingTopicsA/status/2091975349168951721",
+      "status": "x-intel",
+      "title": "Britain Taps Ukraine\u2019s Combat Data to Train Military AI: https://t.co/NfR9xv4hLf",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
         "https://x.com/Daseingram/status/2091645099281420358"
       ],
       "id": "story-d977d49f6a006b3b745e45b4",
@@ -276,57 +302,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/ameyg11/status/2091915568035320042"
-      ],
-      "id": "story-7d0e8fd6b7856f4c5b4d1612",
-      "reason": "We used to imagine autonomous weapons as futuristic military technology. Turns out the hardware can look a lot more like something you'd buy for an AI/robotics project. https://t.co/ocNNjNciE7",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-24T19:08:39Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T15:48:31Z",
-      "source_url": "https://x.com/ameyg11/status/2091915568035320042",
-      "status": "x-intel",
-      "title": "We used to imagine autonomous weapons as futuristic military technology. Turns out the hardware can look a lot more like something you'd buy for an AI/robotics",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T23:14:08Z",
+    "alerted_at": "2026-08-24T23:35:16Z",
     "confidence": 0,
-    "source_url": "https://x.com/Daseingram/status/2091645099281420358",
-    "title": "\ud83c\udf1f \ud83c\udf0d\ud83d\udd10 https://t.co/7IF1LH5FAW \u2014 where geography meets biological identity. https://t.co/7IF1LH5FAW A sophisticated .com combining two technical concepts: Geo \u2014 l"
+    "source_url": "https://x.com/TrendingTopicsA/status/2091975349168951721",
+    "title": "Britain Taps Ukraine\u2019s Combat Data to Train Military AI: https://t.co/NfR9xv4hLf"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 16,
+    "clustered": 17,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.055,
-      "projected_minutes_per_30d": 386.64,
+      "measured_seconds": 7.937,
+      "projected_minutes_per_30d": 380.97,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -340,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -369,6 +370,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T23:14:08Z",
+  "updated_at": "2026-08-24T23:35:16Z",
   "version": 1
 }
