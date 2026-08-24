@@ -4,6 +4,58 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/nickczatt/status/2091836675395670229",
+        "https://x.com/grok/status/2091836847529812100"
+      ],
+      "id": "story-2966a5b95104d5d1529242bf",
+      "reason": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he had completely obliterated Iran\u2019s nuclear enrichment capabilities?",
+      "score": 85,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T20:46:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T10:35:02Z",
+      "source_url": "https://x.com/nickczatt/status/2091836675395670229",
+      "status": "x-intel",
+      "title": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he h",
+      "webswarm_evidence_terms": [
+        "AI",
+        "Grok",
+        "Iran",
+        "Operation Epic Fury",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/CSIS/status/2091933772321038759"
+      ],
+      "id": "story-19871c8a13ef81225c466d10",
+      "reason": "How does Starlink give Ukraine a communications lifeline against Russian jamming efforts? @cardillogroup, Former Director of the National Geospatial-Intelligence Agency, and @SethGJones discuss the role of space assets in the wars in Ukraine and Iran. Listen: https://t.co/56YcYkn",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T20:46:03Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T17:00:52Z",
+      "source_url": "https://x.com/CSIS/status/2091933772321038759",
+      "status": "x-intel",
+      "title": "How does Starlink give Ukraine a communications lifeline against Russian jamming efforts? @cardillogroup, Former Director of the National Geospatial-Intelligenc",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -246,66 +298,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2091556552171765787",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ"
-      ],
-      "id": "story-3d3bb7cfffb4bb58e1b25530",
-      "reason": "Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large sections of the massive warehouse complex appear heavily burned and structurally damaged following the August 22 attack. Ozon confirmed that t",
-      "score": 88,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-24T16:56:03Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T12:21:11Z",
-      "source_url": "https://x.com/MizarVision/status/2091556552171765787",
-      "status": "x-intel",
-      "title": "@MizarVision: Satellite imagery shows the aftermath of the Ukrainian drone strike on the Ozon logistics hub in Chapayevsk, Samara region, Russia. Large se",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/PierceLilholt/status/2091197573352640884"
-      ],
-      "id": "story-9cf96fee3f9c3ff45fb92ff3",
-      "reason": "Will you feel safe if AI programs defense systems to operate autonomously with its own agenda?",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T16:14:56Z",
-      "source": "x",
-      "source_published_at": "2026-08-22T16:15:28Z",
-      "source_url": "https://x.com/PierceLilholt/status/2091197573352640884",
-      "status": "x-intel",
-      "title": "Will you feel safe if AI programs defense systems to operate autonomously with its own agenda?",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T20:01:40Z",
+    "alerted_at": "2026-08-24T20:46:03Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2091485724050612557",
-    "title": "@grok: Yes. AI is actively used in military defense systems worldwide. Examples include missile defenses needing superhuman reaction speeds, Projec"
+    "source_url": "https://x.com/nickczatt/status/2091836675395670229",
+    "title": "@grok didn\u2019t president trump claim victory one or two days into operation fury? Didn\u2019t President trump also claim several months before operation fury that he h"
   },
   "last_run": {
-    "alerted_now": 1,
-    "clustered": 19,
+    "alerted_now": 2,
+    "clustered": 16,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -319,8 +322,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.862,
-      "projected_minutes_per_30d": 377.35,
+      "measured_seconds": 9.387,
+      "projected_minutes_per_30d": 450.59,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -334,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 15,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -358,11 +361,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 1
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T20:01:40Z",
+  "updated_at": "2026-08-24T20:46:03Z",
   "version": 1
 }
