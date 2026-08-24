@@ -4,6 +4,38 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 5,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/BrilliantMaps/status/2091677166350094359",
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ",
+        "https://x.com/MizarVision/status/2090658708099387714",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
+        "https://x.com/MizarVision/status/2091556552171765787"
+      ],
+      "id": "story-a9eb81255196cf3d75afd2ee",
+      "reason": "Declassified 2013 Afghan Border 3D Terrain Map Created By The CIA This 2013 CIA terrain map of Afghanistan\u2019s Kunar and Nuristan provinces provides a highly detailed three-dimensional visualization of one of the most strategically difficult regions of the Afghanistan\u2013Pakistan bord",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-24T02:17:35Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T00:01:12Z",
+      "source_url": "https://x.com/BrilliantMaps/status/2091677166350094359",
+      "status": "x-intel",
+      "title": "Declassified 2013 Afghan Border 3D Terrain Map Created By The CIA This 2013 CIA terrain map of Afghanistan\u2019s Kunar and Nuristan provinces provides a highly deta",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "military",
+        "military AI",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -280,58 +312,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/jamesbangell/status/2091305252792443032"
-      ],
-      "id": "story-5289c51895f6a820aa924808",
-      "reason": "@PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United States Department of Defense (#DOW) initiative launched in 2017 to accelerate the adoption of machine learning and data integration across US ",
-      "score": 80,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-23T15:58:07Z",
-      "source": "x",
-      "source_published_at": "2026-08-23T12:14:42Z",
-      "source_url": "https://x.com/jamesbangell/status/2091305252792443032",
-      "status": "x-intel",
-      "title": "@jamesbangell: @PalantirTech's #Maven, not just for genocide in #Gaza: \u201cProject Maven (officially Algorithmic Warfare Cross Functional Team) is a United St",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-23T23:42:07Z",
+    "alerted_at": "2026-08-24T02:17:35Z",
     "confidence": 0,
-    "source_url": "https://x.com/turbo_sloot/status/2091014103267762220",
-    "title": "@Waggoner_ww @theojaffee Don't forget that they're also using AI for mass surveillance, and frequently claim they might wipe out humanity in some unknown way. B"
+    "source_url": "https://x.com/BrilliantMaps/status/2091677166350094359",
+    "title": "Declassified 2013 Afghan Border 3D Terrain Map Created By The CIA This 2013 CIA terrain map of Afghanistan\u2019s Kunar and Nuristan provinces provides a highly deta"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 15,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 7,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 13,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.634,
-      "projected_minutes_per_30d": 366.43,
+      "measured_seconds": 8.831,
+      "projected_minutes_per_30d": 423.88,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -345,7 +351,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 6,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -369,11 +375,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T00:55:13Z",
+  "updated_at": "2026-08-24T02:17:35Z",
   "version": 1
 }
