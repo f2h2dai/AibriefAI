@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/United24media/status/2092003516428562595"
+      ],
+      "id": "story-067f36e246d9d576e5a90dc1",
+      "reason": "\ud83c\uddec\ud83c\udde7\ud83c\uddfa\ud83c\udde6 Ukraine and the UK signed a landmark military AI partnership, giving Britain access to Ukraine\u2019s AI Avengers Labs battlefield dataset. As the first foreign partner to access the real-world data, the UK will use it to train defense systems.",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-24T22:15:55Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T21:38:00Z",
+      "source_url": "https://x.com/United24media/status/2092003516428562595",
+      "status": "x-intel",
+      "title": "\ud83c\uddec\ud83c\udde7\ud83c\uddfa\ud83c\udde6 Ukraine and the UK signed a landmark military AI partnership, giving Britain access to Ukraine\u2019s AI Avengers Labs battlefield dataset. As the first foreign",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/llmgram/status/2091952646420664513"
@@ -276,41 +302,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/DefenceIND/status/2091868840837923326"
-      ],
-      "id": "story-7750233a35f043e374d0e2d2",
-      "reason": "DGI 2027: Shaping the Future of Geospatial Intelligence Explore the latest developments in GEOINT, ISR, AI, autonomy, space-based intelligence, and multi-source data fusion at DGI 2027. \ud83d\udd17 https://t.co/J6ki4VGOn1 https://t.co/w7sIPCrHX3",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T17:54:59Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T12:42:51Z",
-      "source_url": "https://x.com/DefenceIND/status/2091868840837923326",
-      "status": "x-intel",
-      "title": "DGI 2027: Shaping the Future of Geospatial Intelligence Explore the latest developments in GEOINT, ISR, AI, autonomy, space-based intelligence, and multi-source",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T21:51:13Z",
+    "alerted_at": "2026-08-24T22:15:55Z",
     "confidence": 0,
-    "source_url": "https://x.com/llmgram/status/2091952646420664513",
-    "title": "The UK becomes the first foreign nation to gain access to Ukrainian combat data used to train AI models to strike Russian targets Allied military AI programs ma"
+    "source_url": "https://x.com/United24media/status/2092003516428562595",
+    "title": "\ud83c\uddec\ud83c\udde7\ud83c\uddfa\ud83c\udde6 Ukraine and the UK signed a landmark military AI partnership, giving Britain access to Ukraine\u2019s AI Avengers Labs battlefield dataset. As the first foreign"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 19,
+    "clustered": 15,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -324,8 +326,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.981,
-      "projected_minutes_per_30d": 479.08,
+      "measured_seconds": 10.48,
+      "projected_minutes_per_30d": 503.03,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -339,7 +341,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 16,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,6 +370,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-24T21:51:13Z",
+  "updated_at": "2026-08-24T22:15:55Z",
   "version": 1
 }
