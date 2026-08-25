@@ -5,6 +5,54 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/AsiaOne_News/status/2092309662138085568"
+      ],
+      "id": "story-042f0e0f3baf7729e7ed7f38",
+      "reason": "Autonomous Weapons Under Scrutiny | Asia One News #AsiaOne #asiaonenews #AutonomousWeapons #AI #MilitaryTechnology #Technology #Security https://t.co/x6A3aYOzcO",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-25T19:07:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T17:54:31Z",
+      "source_url": "https://x.com/AsiaOne_News/status/2092309662138085568",
+      "status": "x-intel",
+      "title": "Autonomous Weapons Under Scrutiny | Asia One News #AsiaOne #asiaonenews #AutonomousWeapons #AI #MilitaryTechnology #Technology #Security https://t.co/x6A3aYOzcO",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Tec_Mundo/status/2092239565268402558"
+      ],
+      "id": "story-04a024ae01786e7c08604a2b",
+      "reason": "IA na guerra: o que s\u00e3o Project Maven e Palantir? https://t.co/VttU69fSbU https://t.co/hzXthCiw7R",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-25T19:07:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T18:38:04Z",
+      "source_url": "https://x.com/Tec_Mundo/status/2092239565268402558",
+      "status": "x-intel",
+      "title": "@Tec_Mundo: IA na guerra: o que s\u00e3o Project Maven e Palantir? https://t.co/VttU69fSbU https://t.co/hzXthCiw7R",
+      "webswarm_evidence_terms": [
+        "Project Maven"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/Eva7Cfc/status/2092168288130208036"
@@ -285,83 +333,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/BorderWatchUS/status/2091921348893516126"
-      ],
-      "id": "story-ffdcf3bd617bd514097bcb58",
-      "reason": "ANTI-ICE CRITICS ARE TARGETING THE WRONG PALANTIR SYSTEM. Maven is a Pentagon AI battlefield platform designed to combine sensor and intelligence data for military operations. Calling it an ICE deportation tool misses what the system actually does. https://t.co/lMOM1KDrC0",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-25T14:12:36Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T16:11:30Z",
-      "source_url": "https://x.com/BorderWatchUS/status/2091921348893516126",
-      "status": "x-intel",
-      "title": "ANTI-ICE CRITICS ARE TARGETING THE WRONG PALANTIR SYSTEM. Maven is a Pentagon AI battlefield platform designed to combine sensor and intelligence data for milit",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/Tec_Mundo/status/2092239565268402558",
-        "https://x.com/CalzaslargasPpi/status/2091799909456310397",
-        "https://x.com/Tec_Mundo/status/2091861950472822821"
-      ],
-      "id": "story-3c58ba706fbcc07a172c81bb",
-      "reason": "IA na guerra: o que s\u00e3o Project Maven e Palantir? https://t.co/VttU69fSbU https://t.co/hzXthCiw7R",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-25T13:27:46Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T13:15:58Z",
-      "source_url": "https://x.com/Tec_Mundo/status/2092239565268402558",
-      "status": "x-intel",
-      "title": "IA na guerra: o que s\u00e3o Project Maven e Palantir? https://t.co/VttU69fSbU https://t.co/hzXthCiw7R",
-      "webswarm_evidence_terms": [
-        "Project Maven"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-25T17:14:21Z",
+    "alerted_at": "2026-08-25T19:07:19Z",
     "confidence": 0,
-    "source_url": "https://x.com/Eva7Cfc/status/2092168288130208036",
-    "title": "@MosabAbuToha @grok Saying you have no military involvement in what\u2019s going on in Gaza is a bloody lie from you &amp; your boss You\u2019re being used for precision"
+    "source_url": "https://x.com/AsiaOne_News/status/2092309662138085568",
+    "title": "Autonomous Weapons Under Scrutiny | Asia One News #AsiaOne #asiaonenews #AutonomousWeapons #AI #MilitaryTechnology #Technology #Security https://t.co/x6A3aYOzcO"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 12,
+    "alerted_now": 2,
+    "clustered": 16,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 7.652,
-      "projected_minutes_per_30d": 367.29,
+      "measured_seconds": 88.442,
+      "projected_minutes_per_30d": 4245.23,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -375,7 +372,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -399,11 +396,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-25T18:24:33Z",
+  "updated_at": "2026-08-25T19:07:19Z",
   "version": 1
 }
