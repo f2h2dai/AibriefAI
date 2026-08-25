@@ -4,6 +4,33 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/andreabox0/status/2092034527983960574",
+        "https://x.com/ORFMumbai/status/2092031703477092804",
+        "https://x.com/DreyXAI/status/2092012566801190936"
+      ],
+      "id": "story-302cdb038df14f14584bf671",
+      "reason": "Fully autonomous Russian drone kills three Ukrainians \ud83d\udde3\ufe0f Autonomous weapons just turned accountability into a software feature; who decides when an algorithm has crossed the line from tool to combatant, and #AIethics #Fully #autonomous \ud83d\udd3d https://t.co/Mu3MQpXg86",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-25T02:12:43Z",
+      "source": "x",
+      "source_published_at": "2026-08-24T23:41:14Z",
+      "source_url": "https://x.com/andreabox0/status/2092034527983960574",
+      "status": "x-intel",
+      "title": "Fully autonomous Russian drone kills three Ukrainians \ud83d\udde3\ufe0f Autonomous weapons just turned accountability into a software feature; who decides when an algorithm ha",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -278,56 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ThomAsterJourno/status/2091956689712849033"
-      ],
-      "id": "story-4d475d88c3bda6368dcf0174",
-      "reason": "\ud83d\udea8EXCLUSIVE: America restricts foreign access to Americans\u2019 health data as a national-security risk. At the same time, it is seeking extensive health-data access abroad while building classified AI infrastructure at home. New from Thom Aster. https://t.co/tnZ8amKfI9",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-24T19:08:39Z",
-      "source": "x",
-      "source_published_at": "2026-08-24T18:31:56Z",
-      "source_url": "https://x.com/ThomAsterJourno/status/2091956689712849033",
-      "status": "x-intel",
-      "title": "\ud83d\udea8EXCLUSIVE: America restricts foreign access to Americans\u2019 health data as a national-security risk. At the same time, it is seeking extensive health-data access",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-24T23:35:16Z",
+    "alerted_at": "2026-08-25T02:12:43Z",
     "confidence": 0,
-    "source_url": "https://x.com/TrendingTopicsA/status/2091975349168951721",
-    "title": "Britain Taps Ukraine\u2019s Combat Data to Train Military AI: https://t.co/NfR9xv4hLf"
+    "source_url": "https://x.com/andreabox0/status/2092034527983960574",
+    "title": "Fully autonomous Russian drone kills three Ukrainians \ud83d\udde3\ufe0f Autonomous weapons just turned accountability into a software feature; who decides when an algorithm ha"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 15,
+    "alerted_now": 1,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 19,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.122,
-      "projected_minutes_per_30d": 389.87,
+      "measured_seconds": 8.035,
+      "projected_minutes_per_30d": 385.68,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -341,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -365,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-25T00:51:03Z",
+  "updated_at": "2026-08-25T02:12:43Z",
   "version": 1
 }
