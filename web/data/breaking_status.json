@@ -4,6 +4,29 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Eva7Cfc/status/2092179547131126058"
+      ],
+      "id": "story-65e9d5812a987ae1f882d88c",
+      "reason": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observers?",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-25T22:53:01Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T09:17:29Z",
+      "source_url": "https://x.com/Eva7Cfc/status/2092179547131126058",
+      "status": "x-intel",
+      "title": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observer",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 3,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -30,29 +53,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Eva7Cfc/status/2092179547131126058"
-      ],
-      "id": "story-65e9d5812a987ae1f882d88c",
-      "reason": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observers?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-25T22:53:01Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T09:17:29Z",
-      "source_url": "https://x.com/Eva7Cfc/status/2092179547131126058",
-      "status": "x-intel",
-      "title": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observer",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -334,14 +334,14 @@
   "last_alert": {
     "alerted_at": "2026-08-25T22:53:01Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2092179684209328215",
-    "title": "Verified evidence means primary sources such as official Pentagon reports, declassified targeting logs, or confirmed statements from military authorities showin"
+    "source_url": "https://x.com/Eva7Cfc/status/2092179547131126058",
+    "title": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observer"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 17,
+    "alerted_now": 0,
+    "clustered": 14,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -353,8 +353,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.865,
-      "projected_minutes_per_30d": 281.54,
+      "measured_seconds": 5.823,
+      "projected_minutes_per_30d": 279.49,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -368,7 +368,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -392,11 +392,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-25T22:53:01Z",
+  "updated_at": "2026-08-25T23:17:13Z",
   "version": 1
 }
