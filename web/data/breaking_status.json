@@ -4,6 +4,70 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 12,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/Reuters/status/2092233070220845431",
+        "https://x.com/aawsat_eng/status/2092233030517588272",
+        "https://x.com/UN_News_Centre/status/2092247198033395815",
+        "https://x.com/rtenews/status/2092189247193092096",
+        "https://x.com/childreninwar/status/2092254528137548225",
+        "https://x.com/AFP/status/2092192768730742908",
+        "https://x.com/GBAFReview/status/2092174530416345571",
+        "https://x.com/ReutersLegal/status/2092245655011910025",
+        "https://x.com/veritycoyle/status/2092190497737445824",
+        "https://x.com/childreninwar/status/2092273910716793062",
+        "https://x.com/Hey_NicePhoto/status/2092183024565989741",
+        "https://x.com/UN_News_Centre/status/2092191726307778924"
+      ],
+      "id": "story-852001583b2aac54f28aceb9",
+      "reason": "UN and Red Cross call for urgent rules on autonomous weapons https://t.co/b335XRmtdQ https://t.co/b335XRmtdQ",
+      "score": 87,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-25T15:57:18Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T12:50:10Z",
+      "source_url": "https://x.com/Reuters/status/2092233070220845431",
+      "status": "x-intel",
+      "title": "UN and Red Cross call for urgent rules on autonomous weapons https://t.co/b335XRmtdQ https://t.co/b335XRmtdQ",
+      "webswarm_evidence_terms": [
+        "autonomous targeting",
+        "autonomous weapons",
+        "battlefield",
+        "defense",
+        "targeting",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/PeopleNews999/status/2092277216562614358"
+      ],
+      "id": "story-a0a50c0b6902cda14b94a2e7",
+      "reason": "The United Nations and the International Committee of the Red Cross are calling for urgent international rules governing autonomous weapons, warning that rapidly advancing AI-powered military systems could pose serious humanitarian and security risks. https://t.co/U9RVnvNp1H",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-25T15:57:18Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T15:45:35Z",
+      "source_url": "https://x.com/PeopleNews999/status/2092277216562614358",
+      "status": "x-intel",
+      "title": "The United Nations and the International Committee of the Red Cross are calling for urgent international rules governing autonomous weapons, warning that rapidl",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
@@ -259,65 +323,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2091978917011771606"
-      ],
-      "id": "story-6ee853a40052717bd469b3e6",
-      "reason": "The OpenAI-Hugging Face cyber incident exposes deep flaws both in the current cybersecurity practices of frontier labs and in the regulatory structures that oversee AI, argues @csis_ai's Aalok Mehta. What happened, and how should policymakers respond? Read: https://t.co/zrTVYhhZO",
-      "score": 42,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-25T12:27:52Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T12:22:05Z",
-      "source_url": "https://x.com/CSIS/status/2091978917011771606",
-      "status": "x-intel",
-      "title": "@CSIS: The OpenAI-Hugging Face cyber incident exposes deep flaws both in the current cybersecurity practices of frontier labs and in the regulatory",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2092220514638897344"
-      ],
-      "id": "story-79f989fcdb4e2e99a03007e5",
-      "reason": "Following a series of reported AI agent containment failures at frontier AI labs, the U.S. government has only a narrow window for action before AI systems with these capabilities become commonplace, writes @csis_ai director Aalok Mehta. Read: https://t.co/9pnfgigibr",
-      "score": 16,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-25T12:27:52Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T12:22:05Z",
-      "source_url": "https://x.com/CSIS/status/2092220514638897344",
-      "status": "x-intel",
-      "title": "@CSIS: Following a series of reported AI agent containment failures at frontier AI labs, the U.S. government has only a narrow window for action be",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-25T15:04:29Z",
+    "alerted_at": "2026-08-25T15:57:18Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2092176064655081718",
-    "title": "The Grok Gov Model assists human operators by processing data in Maven for faster analysis. It does not select targets, authorize strikes, or kill anyone. Offic"
+    "source_url": "https://x.com/Reuters/status/2092233070220845431",
+    "title": "UN and Red Cross call for urgent rules on autonomous weapons https://t.co/b335XRmtdQ https://t.co/b335XRmtdQ"
   },
   "last_run": {
     "alerted_now": 2,
-    "clustered": 12,
+    "clustered": 14,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
@@ -331,8 +347,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.344,
-      "projected_minutes_per_30d": 304.49,
+      "measured_seconds": 4.826,
+      "projected_minutes_per_30d": 231.66,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -346,7 +362,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -375,6 +391,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-25T15:04:29Z",
+  "updated_at": "2026-08-25T15:57:18Z",
   "version": 1
 }
