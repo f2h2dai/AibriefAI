@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-08-25T12:22:05Z",
+  "generated_at": "2026-08-25T18:38:04Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-25T12:22:05Z",
+  "latest_successful_run": "2026-08-25T18:38:04Z",
   "highest_ranked_signal": {
-    "id": "github-011",
-    "title": "lendmind-protocol/LMP",
-    "action_score": 75.5,
-    "url": "https://github.com/lendmind-protocol/LMP"
+    "id": "github-005",
+    "title": "Siddhesh1420/TravelMind-AI",
+    "action_score": 77.25,
+    "url": "https://github.com/Siddhesh1420/TravelMind-AI"
   },
   "source_contribution": {
-    "github": 6,
-    "twitter": 5,
-    "arxiv": 1
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
@@ -27,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 30.477,
+  "runtime_seconds": 32.169,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-25T12:22:05Z",
+    "planned_at": "2026-08-25T18:38:04Z",
     "production_threshold": 70.0
   }
 }
