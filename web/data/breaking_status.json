@@ -4,6 +4,30 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/POLITICOEurope/status/2092271568428679308"
+      ],
+      "id": "story-fc43ae40f63ab9e48f1eb176",
+      "reason": "Countries should ban or restrict the use of autonomous weaponry, United Nations Secretary-General Ant\u00f3nio Guterres has said in a joint appeal with the Red Cross. https://t.co/Q2p3agQc9B",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-25T21:40:48Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T15:23:09Z",
+      "source_url": "https://x.com/POLITICOEurope/status/2092271568428679308",
+      "status": "x-intel",
+      "title": "Countries should ban or restrict the use of autonomous weaponry, United Nations Secretary-General Ant\u00f3nio Guterres has said in a joint appeal with the Red Cross",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 12,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -319,57 +343,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/PeopleNews999/status/2092277216562614358"
-      ],
-      "id": "story-a0a50c0b6902cda14b94a2e7",
-      "reason": "The United Nations and the International Committee of the Red Cross are calling for urgent international rules governing autonomous weapons, warning that rapidly advancing AI-powered military systems could pose serious humanitarian and security risks. https://t.co/U9RVnvNp1H",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-25T15:57:18Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T15:45:35Z",
-      "source_url": "https://x.com/PeopleNews999/status/2092277216562614358",
-      "status": "x-intel",
-      "title": "The United Nations and the International Committee of the Red Cross are calling for urgent international rules governing autonomous weapons, warning that rapidl",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-25T20:43:16Z",
+    "alerted_at": "2026-08-25T21:40:48Z",
     "confidence": 0,
-    "source_url": "https://x.com/rtenews/status/2092189247193092096",
-    "title": "The United Nations and Red Cross have warned that the world is \"dangerously close\" to a future where autonomous weapons - so-called \"killer robots\" - could targ"
+    "source_url": "https://x.com/POLITICOEurope/status/2092271568428679308",
+    "title": "Countries should ban or restrict the use of autonomous weaponry, United Nations Secretary-General Ant\u00f3nio Guterres has said in a joint appeal with the Red Cross"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 12,
+    "alerted_now": 1,
+    "clustered": 14,
     "collected": 25,
     "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 22,
+    "initial_x_relevant": 21,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.982,
-      "projected_minutes_per_30d": 239.16,
+      "measured_seconds": 7.002,
+      "projected_minutes_per_30d": 336.09,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -383,7 +382,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 9,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -407,11 +406,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-25T21:02:51Z",
+  "updated_at": "2026-08-25T21:40:48Z",
   "version": 1
 }
