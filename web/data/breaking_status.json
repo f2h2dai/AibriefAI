@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Divinmentis/status/2092375204668363184"
+      ],
+      "id": "story-2950c4a38e8f190968acceb5",
+      "reason": "Britain and Ukraine have launched a military-AI partnership that makes the UK the first international partner with access to Ukraine's Avengers AI Labs program and battlefield-derived data. #DefenseAI #Ukraine #UK https://t.co/sqNkNiN3xh",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-26T16:46:06Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T22:14:57Z",
+      "source_url": "https://x.com/Divinmentis/status/2092375204668363184",
+      "status": "x-intel",
+      "title": "Britain and Ukraine have launched a military-AI partnership that makes the UK the first international partner with access to Ukraine's Avengers AI Labs program",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 5,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -290,40 +315,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Eva7Cfc/status/2092179547131126058"
-      ],
-      "id": "story-65e9d5812a987ae1f882d88c",
-      "reason": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observers?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-25T22:53:01Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T09:17:29Z",
-      "source_url": "https://x.com/Eva7Cfc/status/2092179547131126058",
-      "status": "x-intel",
-      "title": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observer",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-26T15:57:50Z",
+    "alerted_at": "2026-08-26T16:46:06Z",
     "confidence": 0,
-    "source_url": "https://x.com/clashreport/status/2092595316579020843",
-    "title": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port sou"
+    "source_url": "https://x.com/Divinmentis/status/2092375204668363184",
+    "title": "Britain and Ukraine have launched a military-AI partnership that makes the UK the first international partner with access to Ukraine's Avengers AI Labs program"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 11,
+    "clustered": 13,
     "collected": 25,
     "corroborated_count": 2,
     "initial_collected": 25,
@@ -337,8 +339,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.732,
-      "projected_minutes_per_30d": 323.14,
+      "measured_seconds": 6.834,
+      "projected_minutes_per_30d": 328.04,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -352,7 +354,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -381,6 +383,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-26T15:57:50Z",
+  "updated_at": "2026-08-26T16:46:06Z",
   "version": 1
 }
