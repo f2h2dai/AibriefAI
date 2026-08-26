@@ -334,9 +334,9 @@
   },
   "last_run": {
     "alerted_now": 0,
-    "clustered": 15,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 0,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -348,8 +348,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.312,
-      "projected_minutes_per_30d": 206.97,
+      "measured_seconds": 4.435,
+      "projected_minutes_per_30d": 212.88,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -363,7 +363,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -392,6 +392,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-26T05:24:20Z",
+  "updated_at": "2026-08-26T05:57:13Z",
   "version": 1
 }
