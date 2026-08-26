@@ -5,6 +5,36 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/grok/status/2092170222203474127"
+      ],
+      "id": "story-56f28790b793ac32f36abe8c",
+      "reason": "No verified public data attributes specific civilian deaths to the Grok Gov Model. Pentagon filings note it supported data processing and efficiency in Project Maven for US targeting during Operation Epic Fury, with humans retaining final decisions. Overall Iranian civilian casua",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-26T04:53:49Z",
+      "source": "x",
+      "source_published_at": "2026-08-25T08:40:26Z",
+      "source_url": "https://x.com/grok/status/2092170222203474127",
+      "status": "x-intel",
+      "title": "No verified public data attributes specific civilian deaths to the Grok Gov Model. Pentagon filings note it supported data processing and efficiency in Project",
+      "webswarm_evidence_terms": [
+        "Grok Gov",
+        "Grok Gov Model",
+        "Project Maven",
+        "Operation Epic Fury",
+        "Grok",
+        "Pentagon",
+        "Iran",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/Eva7Cfc/status/2092179547131126058"
@@ -294,67 +324,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 10,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/aawsat_eng/status/2092233030517588272",
-        "https://x.com/rtenews/status/2092189247193092096",
-        "https://x.com/TheWorldCorresp/status/2092207610380312617",
-        "https://x.com/AFP/status/2092192768730742908",
-        "https://x.com/ReutersLegal/status/2092245655011910025",
-        "https://x.com/GBAFReview/status/2092174965026025922",
-        "https://x.com/fhbeps/status/2092194623732974075",
-        "https://x.com/Technopolitik_/status/2092192839929070056",
-        "https://x.com/pukmedia/status/2092190248960950719",
-        "https://x.com/UN_News_Centre/status/2092191726307778924"
-      ],
-      "id": "story-2216f157dc494a9c4903f9dd",
-      "reason": "UN, Red Cross Chiefs: World Must Rein in Autonomous Weapons https://t.co/FG1IivkIHc",
-      "score": 87,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-25T16:31:45Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T12:50:00Z",
-      "source_url": "https://x.com/aawsat_eng/status/2092233030517588272",
-      "status": "x-intel",
-      "title": "UN, Red Cross Chiefs: World Must Rein in Autonomous Weapons https://t.co/FG1IivkIHc",
-      "webswarm_evidence_terms": [
-        "autonomous targeting",
-        "autonomous weapons",
-        "targeting",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-25T22:53:01Z",
+    "alerted_at": "2026-08-26T04:53:49Z",
     "confidence": 0,
-    "source_url": "https://x.com/Eva7Cfc/status/2092179547131126058",
-    "title": "@grok @s_m_marandi What do you mean by no verified evidence? Who needs to post it before you can be sure it\u2019s a verified evidence? Who are the evidence observer"
+    "source_url": "https://x.com/grok/status/2092170222203474127",
+    "title": "No verified public data attributes specific civilian deaths to the Grok Gov Model. Pentagon filings note it supported data processing and efficiency in Project"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 13,
+    "alerted_now": 1,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 0,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 22,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.723,
-      "projected_minutes_per_30d": 322.68,
+      "measured_seconds": 78.854,
+      "projected_minutes_per_30d": 3785.0,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -368,7 +363,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -392,11 +387,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-26T04:08:30Z",
+  "updated_at": "2026-08-26T04:53:49Z",
   "version": 1
 }
