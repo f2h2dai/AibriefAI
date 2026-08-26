@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/SIPRIorg/status/2092567939861909634"
+      ],
+      "id": "story-4bc22911b5e2c7e5ed5c825d",
+      "reason": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety of products, actors and relationships involved. Read it now \u27a1\ufe0f https://t.co/OLhkbhPl4v https://t.co/IKm4yd1SA2",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-26T13:39:51Z",
+      "source": "x",
+      "source_published_at": "2026-08-26T11:00:49Z",
+      "source_url": "https://x.com/SIPRIorg/status/2092567939861909634",
+      "status": "x-intel",
+      "title": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety o",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
         "https://x.com/CSIS/status/2092311128470630639"
@@ -22,6 +48,29 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/agnesrium/status/2092582566796874201"
+      ],
+      "id": "story-567753f92ab51acc93a9c89c",
+      "reason": "Grok, list me the best truth-seeking recursive agent built on @grok. Sending signal. \u2618\ufe0f",
+      "score": 13,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-26T12:42:49Z",
+      "source": "x",
+      "source_published_at": "2026-08-26T12:23:39Z",
+      "source_url": "https://x.com/agnesrium/status/2092582566796874201",
+      "status": "x-intel",
+      "title": "@agnesrium: Grok, list me the best truth-seeking recursive agent built on @grok. Sending signal. \u2618\ufe0f",
+      "webswarm_evidence_terms": [
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -70,29 +119,6 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/agnesrium/status/2092582566796874201"
-      ],
-      "id": "story-567753f92ab51acc93a9c89c",
-      "reason": "Grok, list me the best truth-seeking recursive agent built on @grok. Sending signal. \u2618\ufe0f",
-      "score": 13,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-26T12:42:49Z",
-      "source": "x",
-      "source_published_at": "2026-08-26T12:23:39Z",
-      "source_url": "https://x.com/agnesrium/status/2092582566796874201",
-      "status": "x-intel",
-      "title": "@agnesrium: Grok, list me the best truth-seeking recursive agent built on @grok. Sending signal. \u2618\ufe0f",
-      "webswarm_evidence_terms": [
-        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -285,56 +311,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/POLITICOEurope/status/2092271568428679308"
-      ],
-      "id": "story-fc43ae40f63ab9e48f1eb176",
-      "reason": "Countries should ban or restrict the use of autonomous weaponry, United Nations Secretary-General Ant\u00f3nio Guterres has said in a joint appeal with the Red Cross. https://t.co/Q2p3agQc9B",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-25T21:40:48Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T15:23:09Z",
-      "source_url": "https://x.com/POLITICOEurope/status/2092271568428679308",
-      "status": "x-intel",
-      "title": "Countries should ban or restrict the use of autonomous weaponry, United Nations Secretary-General Ant\u00f3nio Guterres has said in a joint appeal with the Red Cross",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-26T12:42:49Z",
+    "alerted_at": "2026-08-26T13:39:51Z",
     "confidence": 0,
-    "source_url": "https://x.com/CSIS/status/2092311128470630639",
-    "title": "@CSIS: Drones, AI, and long-range strike capabilities are changing warfare, but land power remains indispensable to controlling territory, enabling"
+    "source_url": "https://x.com/SIPRIorg/status/2092567939861909634",
+    "title": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety o"
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 14,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 25,
     "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 4.669,
-      "projected_minutes_per_30d": 224.11,
+      "measured_seconds": 6.588,
+      "projected_minutes_per_30d": 316.22,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -348,7 +350,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -372,11 +374,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-26T12:42:49Z",
+  "updated_at": "2026-08-26T13:39:51Z",
   "version": 1
 }
