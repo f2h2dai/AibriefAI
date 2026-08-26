@@ -4,6 +4,37 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 5,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/clashreport/status/2092595316579020843",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
+        "https://x.com/MizarVision/status/2092559305832636505",
+        "https://x.com/MizarVision/status/2092558103153635339"
+      ],
+      "id": "story-55244adbda53a850b396fa87",
+      "reason": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port south of Kaohsiung, dated around August 12. The images label a missile launcher, mobile phased-array radar, and resupply ve",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-26T15:57:50Z",
+      "source": "x",
+      "source_published_at": "2026-08-26T12:49:36Z",
+      "source_url": "https://x.com/clashreport/status/2092595316579020843",
+      "status": "x-intel",
+      "title": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port sou",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "military",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -282,48 +313,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2092179684209328215",
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0",
-        "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWVta2VwYm5KcUItRGo1Wl9GSWZ0NDRnZXpTR2pGbTI0VDN6SUxfMTAwSGtuUVNZc2NXaTZwUkQ5QzZ5SnBndjNxeU1mUVE2NUFrVHIwaG9tNVN5NnZieDVLZ0RBX0VmcEo0eXRWWXVPNEh0TDB5ZGJVdVZjZkg3ZUpzR0RzRXpGMENhSTNTMW92emZZNjdGb3BPQXM2OExUREFsOF9HS2ZfU3RhRWNrQTB5WWJoRkIzZVY3REZMVkowbXVZdkF4Zkx5bjE"
-      ],
-      "id": "story-f6f81163dd0c22084aa92a9b",
-      "reason": "Verified evidence means primary sources such as official Pentagon reports, declassified targeting logs, or confirmed statements from military authorities showing the Grok Gov Model specifically labeled the school as military. Public prelim findings and accounts instead cite outda",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-25T22:53:01Z",
-      "source": "x",
-      "source_published_at": "2026-08-25T09:18:02Z",
-      "source_url": "https://x.com/grok/status/2092179684209328215",
-      "status": "x-intel",
-      "title": "Verified evidence means primary sources such as official Pentagon reports, declassified targeting logs, or confirmed statements from military authorities showin",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok Gov Model",
-        "Grok",
-        "Pentagon",
-        "targeting"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-26T13:39:51Z",
+    "alerted_at": "2026-08-26T15:57:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/SIPRIorg/status/2092567939861909634",
-    "title": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety o"
+    "source_url": "https://x.com/clashreport/status/2092595316579020843",
+    "title": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port sou"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 12,
+    "alerted_now": 1,
+    "clustered": 11,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -335,8 +337,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 6.913,
-      "projected_minutes_per_30d": 331.81,
+      "measured_seconds": 6.732,
+      "projected_minutes_per_30d": 323.14,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -350,7 +352,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -374,11 +376,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-26T14:24:42Z",
+  "updated_at": "2026-08-26T15:57:50Z",
   "version": 1
 }
