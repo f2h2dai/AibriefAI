@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T19:46:24Z",
+  "generated_at": "2026-08-27T21:22:44Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-26T19:46:24Z",
+  "latest_successful_run": "2026-08-27T21:22:44Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
-    "title": "@AndrewYNg: OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just released a new version with many featur",
-    "action_score": 78.25,
-    "url": "https://x.com/AndrewYNg/status/2092315079576555806"
+    "id": "github-010",
+    "title": "sudo-ai-git/agent-skills",
+    "action_score": 77.5,
+    "url": "https://github.com/sudo-ai-git/agent-skills"
   },
   "source_contribution": {
     "github": 7,
@@ -26,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 30.907,
+  "runtime_seconds": 31.983,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-26T19:46:24Z",
+    "planned_at": "2026-08-27T21:22:44Z",
     "production_threshold": 70.0
   }
 }
