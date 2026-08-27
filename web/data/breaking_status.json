@@ -4,33 +4,84 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 5,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/clashreport/status/2092595316579020843",
-        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
-        "https://x.com/MizarVision/status/2092559305832636505",
-        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNlFsZkFEaG9pWTczM0NqOTFtVXlKZk1GOGw2OGtVVjREd3ppNFBaWHpFcTBla3hzaW16WmxIaC03NlNqVnZ2djB5U2g3OUh3N1V3LW55TjBOTG8xNXhJdTFocDUwSl9SUlEtdHRWajl4ZXFYcmJfMEFsaW5ISHBobEJWRkwwTnN3WG9FVU1B"
+        "https://x.com/Technopolitik_/status/2092192839929070056"
       ],
-      "id": "story-d3b3ca0ec486d1d34af48385",
-      "reason": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port south of Kaohsiung, dated around August 12. The images label a missile launcher, mobile phased-array radar, and resupply ve",
-      "score": 90,
+      "id": "story-2614c2064b9366de3550f816",
+      "reason": "BREAKING - UN and Red Cross warn the world is close to autonomous weapons targeting humans, urging intl. regulations.",
+      "score": 70,
       "sensitive_military_claim": true,
-      "shown_at": "2026-08-27T00:57:19Z",
+      "shown_at": "2026-08-27T10:52:01Z",
       "source": "x",
-      "source_published_at": "2026-08-26T19:46:24Z",
-      "source_url": "https://x.com/clashreport/status/2092595316579020843",
+      "source_published_at": "2026-08-25T10:10:18Z",
+      "source_url": "https://x.com/Technopolitik_/status/2092192839929070056",
       "status": "x-intel",
-      "title": "@clashreport: Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civil",
+      "title": "BREAKING - UN and Red Cross warn the world is close to autonomous weapons targeting humans, urging intl. regulations.",
       "webswarm_evidence_terms": [
-        "AI",
-        "MizarVision",
-        "satellite imagery",
-        "x.com"
+        "autonomous weapons",
+        "targeting",
+        "weapons"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 9,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/UNGeneva/status/2092462068582453546",
+        "https://x.com/Reuters/status/2092233070220845431",
+        "https://x.com/rtenews/status/2092189247193092096",
+        "https://x.com/AnnaAnderssonW/status/2092895048178225459",
+        "https://x.com/Reuters/status/2092171437540876381",
+        "https://x.com/AFP/status/2092192768730742908",
+        "https://x.com/rohanpaul_ai/status/2092668907396215244",
+        "https://x.com/volker_turk/status/2092299276093108263",
+        "https://x.com/ArtyLunch/status/2092639228655968523"
+      ],
+      "id": "story-0b26544d782a834f51d01c84",
+      "reason": "In a joint statement, UN Secretary-General @antonioguterres &amp; @ICRC President Mirjana Spoljaric renewed their call on States to urgently adopt new international rules on autonomous weapons systems. #LAWS \u201cInnovation must serve humanity, not endanger it\u201d https://t.co/DZoRRBcfc",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-27T10:52:01Z",
+      "source": "x",
+      "source_published_at": "2026-08-26T04:00:07Z",
+      "source_url": "https://x.com/UNGeneva/status/2092462068582453546",
+      "status": "x-intel",
+      "title": "In a joint statement, UN Secretary-General @antonioguterres &amp; @ICRC President Mirjana Spoljaric renewed their call on States to urgently adopt new internati",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/_JVigo/status/2092901314523214270"
+      ],
+      "id": "story-126034838eacb2445a0dc056",
+      "reason": "UN Warns of Autonomous Weapons by Abdul Rahman https://t.co/6Qt1qEEUcy https://t.co/JRUTwrzvs0",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-27T10:52:01Z",
+      "source": "x",
+      "source_published_at": "2026-08-27T09:05:32Z",
+      "source_url": "https://x.com/_JVigo/status/2092901314523214270",
+      "status": "x-intel",
+      "title": "UN Warns of Autonomous Weapons by Abdul Rahman https://t.co/6Qt1qEEUcy https://t.co/JRUTwrzvs0",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -71,6 +122,60 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/shashj/status/2092638570511036744"
+      ],
+      "id": "story-ce76fe3fdd84175200549259",
+      "reason": "Autonomous weapons with human on loop vs in loop:",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-27T00:57:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-26T15:41:29Z",
+      "source_url": "https://x.com/shashj/status/2092638570511036744",
+      "status": "x-intel",
+      "title": "Autonomous weapons with human on loop vs in loop:",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 5,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/clashreport/status/2092595316579020843",
+        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
+        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
+        "https://x.com/MizarVision/status/2092559305832636505",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNlFsZkFEaG9pWTczM0NqOTFtVXlKZk1GOGw2OGtVVjREd3ppNFBaWHpFcTBla3hzaW16WmxIaC03NlNqVnZ2djB5U2g3OUh3N1V3LW55TjBOTG8xNXhJdTFocDUwSl9SUlEtdHRWajl4ZXFYcmJfMEFsaW5ISHBobEJWRkwwTnN3WG9FVU1B"
+      ],
+      "id": "story-d3b3ca0ec486d1d34af48385",
+      "reason": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port south of Kaohsiung, dated around August 12. The images label a missile launcher, mobile phased-array radar, and resupply ve",
+      "score": 90,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-27T00:57:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-26T19:46:24Z",
+      "source_url": "https://x.com/clashreport/status/2092595316579020843",
+      "status": "x-intel",
+      "title": "@clashreport: Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civil",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/thetect0nic/status/2092334607857299521"
@@ -93,30 +198,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/shashj/status/2092638570511036744"
-      ],
-      "id": "story-ce76fe3fdd84175200549259",
-      "reason": "Autonomous weapons with human on loop vs in loop:",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-27T00:57:19Z",
-      "source": "x",
-      "source_published_at": "2026-08-26T15:41:29Z",
-      "source_url": "https://x.com/shashj/status/2092638570511036744",
-      "status": "x-intel",
-      "title": "Autonomous weapons with human on loop vs in loop:",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     {
       "confidence": 0,
@@ -247,113 +328,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 5,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/clashreport/status/2092595316579020843",
-        "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZy1jSC15LVhHeDlwTXQ4eEJiTDVZdVpqQ1VpX3FqaDBLSE96WHhuelhKVjFWcUU3cldNQTlIQUFOS1ZLMDRJeFBJdWZaeU5WQXZlUUVWRl95cWM1a0t3c1c1UXdWV1ZmOTZpYVZoQUVQVFhHMFJEY0NPUUY2aWhyWmxIVXVQVF9zVXFoTl8zNFpYNzhsemVrV25FbUcwanFhN01CZA",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQa3lHbklHN0RHaFFYMGNhN0ZMU2tLWE5vYUtYLU5WTUhpV3JGRjIyaVZMUFhRSnlfTkRYa0NRZmdIR3BoVU5Na2lyZEloYlJLUXpZM0FRMFRMQUR5UGZKbFJCN2dfeWZhMmZET0t6WXFHN2hUUlJ4eEVxSG1ORWM3M1RIM0hEcGR0VHhtYkNqcE9YZDgzSW1oUnMyS1pRWWpkakp2bWlNWHBoQXk3VUxmRktRYXNlMWpRb2gtbmhvQnRzZTZGSkhEaVkwVHNXLVRNSzJfWVotcXFkTEt4YlZnUQ",
-        "https://x.com/MizarVision/status/2092559305832636505",
-        "https://x.com/MizarVision/status/2092558103153635339"
-      ],
-      "id": "story-55244adbda53a850b396fa87",
-      "reason": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port south of Kaohsiung, dated around August 12. The images label a missile launcher, mobile phased-array radar, and resupply ve",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-26T15:57:50Z",
-      "source": "x",
-      "source_published_at": "2026-08-26T12:49:36Z",
-      "source_url": "https://x.com/clashreport/status/2092595316579020843",
-      "status": "x-intel",
-      "title": "Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civilian fishing port sou",
-      "webswarm_evidence_terms": [
-        "AI",
-        "MizarVision",
-        "military",
-        "satellite imagery",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/SIPRIorg/status/2092567939861909634"
-      ],
-      "id": "story-4bc22911b5e2c7e5ed5c825d",
-      "reason": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety of products, actors and relationships involved. Read it now \u27a1\ufe0f https://t.co/OLhkbhPl4v https://t.co/IKm4yd1SA2",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-26T13:39:51Z",
-      "source": "x",
-      "source_published_at": "2026-08-26T11:00:49Z",
-      "source_url": "https://x.com/SIPRIorg/status/2092567939861909634",
-      "status": "x-intel",
-      "title": "This timely backgrounder maps the military AI industry to help policymakers, as well as civil society and academic researchers, to understand the wide variety o",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2092311128470630639"
-      ],
-      "id": "story-1b088afa2de14fb2a4b7b61b",
-      "reason": "Drones, AI, and long-range strike capabilities are changing warfare, but land power remains indispensable to controlling territory, enabling the joint force, and deterring adversaries, argue @McGinnJerry and A.J. Dilts. How must land forces in the U.S. Army and Marine Corps evolv",
-      "score": 72,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-26T12:42:49Z",
-      "source": "x",
-      "source_published_at": "2026-08-26T12:23:39Z",
-      "source_url": "https://x.com/CSIS/status/2092311128470630639",
-      "status": "x-intel",
-      "title": "@CSIS: Drones, AI, and long-range strike capabilities are changing warfare, but land power remains indispensable to controlling territory, enabling",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-27T00:57:19Z",
+    "alerted_at": "2026-08-27T10:52:01Z",
     "confidence": 0,
-    "source_url": "https://x.com/clashreport/status/2092595316579020843",
-    "title": "@clashreport: Chinese AI firm MizarVision published satellite imagery appearing to show a dispersed Taiwan Sky Bow III air defense deployment near a civil"
+    "source_url": "https://x.com/Technopolitik_/status/2092192839929070056",
+    "title": "BREAKING - UN and Red Cross warn the world is close to autonomous weapons targeting humans, urging intl. regulations."
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 11,
+    "alerted_now": 3,
+    "clustered": 12,
     "collected": 25,
     "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 5.43,
-      "projected_minutes_per_30d": 260.64,
+      "measured_seconds": 7.919,
+      "projected_minutes_per_30d": 380.1,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -367,7 +367,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -391,11 +391,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 3
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-27T00:57:19Z",
+  "updated_at": "2026-08-27T10:52:01Z",
   "version": 1
 }
