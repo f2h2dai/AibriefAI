@@ -1,37 +1,32 @@
 {
-  "generated_at": "2026-08-28T02:03:07Z",
+  "generated_at": "2026-08-28T21:33:54Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-28T02:03:07Z",
+  "latest_successful_run": "2026-08-28T21:33:54Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "08822407d/Mnemosyne",
-    "action_score": 75.5,
-    "url": "https://github.com/08822407d/Mnemosyne"
+    "id": "github-011",
+    "title": "AutomatosAI/automatos-ai",
+    "action_score": 78.0,
+    "url": "https://github.com/AutomatosAI/automatos-ai"
   },
   "source_contribution": {
-    "github": 5,
-    "twitter": 5,
-    "hackernews": 2
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
-    {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
     {
       "source": "GroqRouter",
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 39.018,
+  "runtime_seconds": 27.967,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-28T02:03:07Z",
+    "planned_at": "2026-08-28T21:33:54Z",
     "production_threshold": 70.0
   }
 }
