@@ -481,6 +481,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-03a2871f69f0479fd343fdc5": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "In the industrial race behind an increasingly automated battlefield, #China is well ahead of the #US, while investment in AI applications built for peace is well behind. Explore how the #military #AI and #robotics arms race is reshaping war and peace. \u27a1\ufe0f https://t.co/2gZqAe8xPo https://t.co/U96d3f97R7",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/GlobPeaceIndex/status/2093519063523701195"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T02:00:15+00:00",
+      "reason": "In the industrial race behind an increasingly automated battlefield, #China is well ahead of the #US, while investment in AI applications built for peace is well behind. Explore how the #military #AI and #robotics arms race is reshaping war and peace. \u27a1\ufe0f https://t.co/2gZqAe8xPo h",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/GlobPeaceIndex/status/2093519063523701195"
+      ],
+      "supporting_sources": [],
+      "title": "In the industrial race behind an increasingly automated battlefield, #China is well ahead of the #US, while investment in AI applications built for peace is wel",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-03ae7e58598fbbd6e939c960": {
       "alerted_at": "2026-08-28T17:25:12Z",
       "confidence": 0,
@@ -3970,63 +3999,6 @@
       "title": "AIBeats: Smack's $61M Series B shows Pentagon AI vendor diversification is paying off (more on bytevyte) [AI-generated] https://t.co/84gxFaZ8Pv",
       "webswarm_evidence_terms": [
         "Pentagon AI",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-1bfb9b6aa5263d69d20df5d1": {
-      "alerted_at": "2026-07-30T01:26:47Z",
-      "confidence": 0,
-      "content": "\"Australia's approach to lethal autonomous weapons 2024\" https://t.co/1nWXRgnxtx",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/LynMyer28562546/status/2082565270611349697"
-      ],
-      "last_seen_at": "2026-07-30T01:26:47Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-29T20:33:47+00:00",
-      "reason": "\"Australia's approach to lethal autonomous weapons 2024\" https://t.co/1nWXRgnxtx",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/LynMyer28562546/status/2082565270611349697"
-      ],
-      "supporting_sources": [],
-      "title": "\"Australia's approach to lethal autonomous weapons 2024\" https://t.co/1nWXRgnxtx",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    "story-1c2896d39fafa324724c8d2d": {
-      "alerted_at": "2026-07-30T01:26:47Z",
-      "confidence": 0,
-      "content": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprises must take to ensure that agents are only able to operate on the data they give it, the ability to have audit trails and governance of what agents can do, figure out what systems should remain deterministic vs. nondeterministic, get access controls under control, have the ability to quickly block and defend if an agent goes rogue, and much more. Even in the happy path case with a good actor, if you give an agent a task like \"find all of our most important IP on project Maven\" it will gladly go out and execute that work -no matter how long- and find any resource relevant to the task. It might run into data with out of date access controls or reveal something that you shouldn't know about. Then, in the non-happy path case with a malicious actor the risk is clearly far worse. In theory, you had to worry about this for people as well, but with AI the risks are inherently amplified. Agents will happily spend any amount of time on a task, don\u2019t actually face any *real* risks by going rogue, and don\u2019t have the inherent judgment (yet) that a person does that a task might make no sense. This means you need an all new way of managing data and protecting environments. This obviously creates a huge opportunity for the startup and security ecosystems because there will be many different approaches to how we lock down agents or at least the underlying systems they work with. It should update everyone\u2019s timelines on diffusion, though, as it also means that enterprises will have another step of work they have to go through for agents to handle more autonomous work.",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/levie/status/2082514776392175844"
-      ],
-      "last_seen_at": "2026-07-30T01:26:47Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-29T17:13:08+00:00",
-      "reason": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprise",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/levie/status/2082514776392175844"
-      ],
-      "supporting_sources": [],
-      "title": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of a",
-      "webswarm_evidence_terms": [
-        "Project Maven",
         "x.com",
         "AI"
       ],
@@ -8225,36 +8197,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    "story-38a7ee4deb2ca0730cff7a13": {
-      "alerted_at": "2026-07-30T01:26:47Z",
-      "confidence": 0,
-      "content": "\ud83d\udce1 GeoWiFi \u2014 OSINT Tool for WiFi Geolocation An open-source OSINT tool that locates WiFi access points by querying multiple public geolocation databases using a BSSID or SSID, making it valuable for wireless investigations and geospatial intelligence. \u2728 Features \u2022 \ud83d\udccd Search WiFi locations using BSSID or SSID \u2022 \ud83c\udf10 Queries multiple public databases including WiGLE, Apple, Google, Combain, WiFiDB, and Mylnikov \u2022 \ud83d\uddfa\ufe0f Export results as interactive HTML maps or JSON \u2022 \ud83d\udd0d Correlates location data from multiple geolocation providers \u2022 \ud83c\udff7\ufe0f Identifies WiFi hardware vendors from BSSID information \u2022 \ud83d\udc33 Supports both Python and Docker deployments \u2022 \u26a1 Lightweight CLI designed for OSINT and wireless reconnaissance \u2022 \ud83d\udee1\ufe0f Useful for WiFi investigations, geolocation research, and threat intelligence workflows \ud83d\udd17 GitHub Repository: https://t.co/7QJQLT6Ztg #OSINT #GeoINT #WiFi #WirelessSecurity #CyberSecurity #ThreatIntelligence #OpenSource #Python #InfoSec #GitHub",
-      "evidence_count": 2,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/VivekIntel/status/2082084291648139518",
-        "https://x.com/VivekIntel/status/2081661081873739947"
-      ],
-      "last_seen_at": "2026-07-30T01:26:47Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-28T12:42:33+00:00",
-      "reason": "\ud83d\udce1 GeoWiFi \u2014 OSINT Tool for WiFi Geolocation An open-source OSINT tool that locates WiFi access points by querying multiple public geolocation databases using a BSSID or SSID, making it valuable for wireless investigations and geospatial intelligence. \u2728 Features \u2022 \ud83d\udccd Search WiFi lo",
-      "score": 55,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/VivekIntel/status/2082084291648139518",
-        "https://x.com/VivekIntel/status/2081661081873739947"
-      ],
-      "supporting_sources": [],
-      "title": "\ud83d\udce1 GeoWiFi \u2014 OSINT Tool for WiFi Geolocation An open-source OSINT tool that locates WiFi access points by querying multiple public geolocation databases using a",
-      "webswarm_evidence_terms": [
-        "geospatial",
-        "geospatial intelligence"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     },
     "story-38c51ef14466c5a033aaf714": {
       "alerted_at": "2026-08-11T00:58:46Z",
@@ -13684,34 +13626,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-61a5737d8a4a5e435768b607": {
-      "alerted_at": "2026-07-30T04:29:21Z",
-      "confidence": 0,
-      "content": "\u0639\u0644\u0649 \u0641\u0643\u0631\u0629\u060c \u0647\u0630\u0627 \u0627\u0644\u0646\u0648\u0639 \u0645\u0646 \u0627\u0644\u0645\u0633\u064a\u0631\u0627\u062a \u0645\u0632\u0648\u062f \u0628\u0646\u0638\u0627\u0645 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u062a\u0637\u0648\u0631\u060c \u064a\u062d\u0644\u0651\u0644 \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0645\u0644\u062a\u0642\u0637\u0629 \u0641\u064a \u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0639\u062f\u0648 \u062e\u0644\u0627\u0644 \u0623\u0642\u0644 \u0645\u0646 \u062b\u0627\u0646\u064a\u0629 \u0642\u0628\u0644 \u0627\u0644\u0627\u0633\u062a\u0647\u062f\u0627\u0641. \u0648\u064a\u0642\u0648\u0645 \u0627\u0644\u062a\u062d\u0644\u064a\u0644 \u0628\u0641\u0631\u0632 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0647\u0627\u0634\u0645\u064a\u0629 \u0639\u0646 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u064a\u0645\u0646\u064a\u0629 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u062c\u0645\u0627\u0639\u0629. \u0641\u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0647\u062f\u0641 \u0639\u0646\u0635\u0631\u0627\u064b \u0633\u0644\u0627\u0644\u064a\u0627\u064b\u060c \u064a\u062a\u0645 \u0646\u062f\u0639\u0647 \u0622\u0644\u064a\u0627\u064b\u060c \u0648\u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0647\u062f\u0641 \u0639\u0646\u0635\u0631\u0627\u064b \u064a\u0645\u0646\u064a\u0627\u064b... \u0628\u0631\u0636\u0647 \u064a\u062a\u0645 \u0646\u062f\u0639\u0647 \u0622\u0644\u064a\u0627\u064b.",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/al_ghandri/status/2082602816565051653"
-      ],
-      "last_seen_at": "2026-07-30T04:29:21Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-29T23:02:59+00:00",
-      "reason": "\u0639\u0644\u0649 \u0641\u0643\u0631\u0629\u060c \u0647\u0630\u0627 \u0627\u0644\u0646\u0648\u0639 \u0645\u0646 \u0627\u0644\u0645\u0633\u064a\u0631\u0627\u062a \u0645\u0632\u0648\u062f \u0628\u0646\u0638\u0627\u0645 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u062a\u0637\u0648\u0631\u060c \u064a\u062d\u0644\u0651\u0644 \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0645\u0644\u062a\u0642\u0637\u0629 \u0641\u064a \u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0639\u062f\u0648 \u062e\u0644\u0627\u0644 \u0623\u0642\u0644 \u0645\u0646 \u062b\u0627\u0646\u064a\u0629 \u0642\u0628\u0644 \u0627\u0644\u0627\u0633\u062a\u0647\u062f\u0627\u0641. \u0648\u064a\u0642\u0648\u0645 \u0627\u0644\u062a\u062d\u0644\u064a\u0644 \u0628\u0641\u0631\u0632 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0647\u0627\u0634\u0645\u064a\u0629 \u0639\u0646 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u064a\u0645\u0646\u064a\u0629 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u062c\u0645\u0627\u0639\u0629. \u0641\u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0647\u062f\u0641 \u0639\u0646\u0635\u0631\u0627\u064b \u0633\u0644\u0627\u0644\u064a\u0627\u064b\u060c \u064a\u062a\u0645 \u0646\u062f\u0639\u0647 \u0622\u0644\u064a\u0627\u064b\u060c \u0648\u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0647\u062f\u0641 \u0639\u0646\u0635\u0631\u0627\u064b \u064a\u0645\u0646\u064a\u0627\u064b.",
-      "score": 10,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/al_ghandri/status/2082602816565051653"
-      ],
-      "supporting_sources": [],
-      "title": "\u0639\u0644\u0649 \u0641\u0643\u0631\u0629\u060c \u0647\u0630\u0627 \u0627\u0644\u0646\u0648\u0639 \u0645\u0646 \u0627\u0644\u0645\u0633\u064a\u0631\u0627\u062a \u0645\u0632\u0648\u062f \u0628\u0646\u0638\u0627\u0645 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u062a\u0637\u0648\u0631\u060c \u064a\u062d\u0644\u0651\u0644 \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0645\u0644\u062a\u0642\u0637\u0629 \u0641\u064a \u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0639\u062f\u0648 \u062e\u0644\u0627\u0644 \u0623\u0642\u0644 \u0645\u0646 \u062b\u0627\u0646\u064a\u0629 \u0642\u0628\u0644 \u0627\u0644\u0627\u0633\u062a\u0647\u062f\u0627\u0641. \u0648\u064a\u0642\u0648\u0645 \u0627\u0644\u062a\u062d\u0644\u064a\u0644 \u0628\u0641\u0631\u0632 \u0627\u0644\u0639\u0646\u0627\u0635\u0631 \u0627",
-      "webswarm_evidence_terms": [
-        "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0627\u0633\u062a\u0647\u062f\u0627\u0641"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
     "story-62c31ae54eab7fe40c335c0f": {
       "alerted_at": "2026-08-03T20:09:28Z",
       "confidence": 0,
@@ -13851,36 +13765,6 @@
       "title": "Every new drone the Pentagon fielded collected more video than its analysts could watch. The collection worked. Nobody could make sense of what it gathered. Pro",
       "webswarm_evidence_terms": [
         "Project Maven",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-63429a592b04ec04dd159362": {
-      "alerted_at": "2026-07-30T01:26:47Z",
-      "confidence": 0,
-      "content": "Taiwanese authorities just detained an Nvidia sales manager and seized 50 high-end AI servers valued at $22 million bound for China. The raid on Nvidia\u2019s Taipei office marks a dramatic escalation in closing supply chain backdoors that bypass trade restrictions designed to curb Beijing\u2019s military AI ambitions. Investigators say the network forged customs declarations to ship servers through Japan before routing them into Chinese markets. The crackdown has already led to seven detentions, implicating key figures at server manufacturer Super Micro Computer and regional distributor Albatron Technology. Because Taiwan currently lacks a specific criminal law for unauthorized chip exports, prosecutors are charging suspects with forgery and breach of trust under the penal code. Nvidia maintains that diverted products receive no support or updates, but the case highlights how aggressively black-market brokers target global hardware networks. As illicit channels continue finding ways to feed Beijing's demand for advanced hardware, can Western trade controls ever fully secure the global supply chain?",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Unveiled_ChinaX/status/2082116847873495460"
-      ],
-      "last_seen_at": "2026-07-30T01:26:47Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-28T14:51:55+00:00",
-      "reason": "Taiwanese authorities just detained an Nvidia sales manager and seized 50 high-end AI servers valued at $22 million bound for China. The raid on Nvidia\u2019s Taipei office marks a dramatic escalation in closing supply chain backdoors that bypass trade restrictions designed to curb Be",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/Unveiled_ChinaX/status/2082116847873495460"
-      ],
-      "supporting_sources": [],
-      "title": "Taiwanese authorities just detained an Nvidia sales manager and seized 50 high-end AI servers valued at $22 million bound for China. The raid on Nvidia\u2019s Taipei",
-      "webswarm_evidence_terms": [
-        "military AI",
         "x.com",
         "AI",
         "military"
@@ -16520,35 +16404,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-766ac7d7fd351ac0ceb66b89": {
-      "alerted_at": "2026-07-30T01:26:47Z",
-      "confidence": 0,
-      "content": "BREAKING: The United States military has targeted storage facilities belonging to the IRGC Navy in Borazjan and the ballistic missile base of the IRGC Aerospace Force in Jam, Bushehr Province, in the northern Persian Gulf. According to available information, these facilities had already been destroyed in previous strikes. According to numerous eyewitness messages received from Bushehr Province, multiple explosions were heard between approximately 03:37 and 03:40 local time. Residents in Borazjan, Bushehr, Choghadak, and Jam reported between two and five loud explosions, with some saying the blasts shook windows. Witnesses in Borazjan also reported hearing fighter aircraft overhead for several minutes before and after the explosions. The reported explosions are consistent with renewed strikes against military facilities in the Borazjan and Jam areas. The exact targets and the extent of the damage have not been independently confirmed. The accompanying satellite images show the same IRGC Aerospace Force ballistic missile base in Jam and the IRGC Navy facility in Borazjan after they were bombed by the United States Navy and U.S. Air Force during Operation Epic Fury in March. The satellite imagery is from Vantor. #OperationEpicFury",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/BabakTaghvaee1/status/2082628371280765432"
-      ],
-      "last_seen_at": "2026-07-30T01:26:47Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-30T00:44:31+00:00",
-      "reason": "BREAKING: The United States military has targeted storage facilities belonging to the IRGC Navy in Borazjan and the ballistic missile base of the IRGC Aerospace Force in Jam, Bushehr Province, in the northern Persian Gulf. According to available information, these facilities had ",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/BabakTaghvaee1/status/2082628371280765432"
-      ],
-      "supporting_sources": [],
-      "title": "BREAKING: The United States military has targeted storage facilities belonging to the IRGC Navy in Borazjan and the ballistic missile base of the IRGC Aerospace",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-7682a11976a3502463623d53": {
       "alerted_at": "2026-08-22T03:33:47Z",
       "confidence": 0,
@@ -18805,6 +18660,37 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
+    },
+    "story-864928f72f4b4dd04da54578": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "Palantir\u2019s Pentagon AI surge comes with a question investors can\u2019t ignore Read more: https://t.co/G0jUnzYBjo https://t.co/T8Z1Ui5hFw",
+      "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/TheStreet/status/2093519120457159046",
+        "https://x.com/TheStreet/status/2093342897890279479"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T02:00:28+00:00",
+      "reason": "Palantir\u2019s Pentagon AI surge comes with a question investors can\u2019t ignore Read more: https://t.co/G0jUnzYBjo https://t.co/T8Z1Ui5hFw",
+      "score": 55,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/TheStreet/status/2093519120457159046",
+        "https://x.com/TheStreet/status/2093342897890279479"
+      ],
+      "supporting_sources": [],
+      "title": "Palantir\u2019s Pentagon AI surge comes with a question investors can\u2019t ignore Read more: https://t.co/G0jUnzYBjo https://t.co/T8Z1Ui5hFw",
+      "webswarm_evidence_terms": [
+        "AI",
+        "Pentagon AI",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     "story-8658ef850f6dd35afdcef297": {
       "alerted_at": "2026-07-31T22:51:47Z",
@@ -21339,6 +21225,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-9a95d0c3b52f331d0d0be9ad": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "A federal judge calling Pentagon AI blacklisting illegal sets a precedent no lobbying win could match. The courts just entered the AI governance game.",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/saen_dev/status/2093275230663831707"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T01:29:15Z",
+      "reason": "A federal judge calling Pentagon AI blacklisting illegal sets a precedent no lobbying win could match. The courts just entered the AI governance game.",
+      "score": 42,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/saen_dev/status/2093275230663831707"
+      ],
+      "supporting_sources": [],
+      "title": "@saen_dev: A federal judge calling Pentagon AI blacklisting illegal sets a precedent no lobbying win could match. The courts just entered the AI govern",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-9ac11ef7de21003455d9aae1": {
       "alerted_at": "2026-08-23T22:58:50Z",
       "confidence": 0,
@@ -22812,6 +22727,33 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-a4b3e47a00dcd11e01902679": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "@StanfordFball @GrinchGaaS when is The General going to create his own legacy fellowship program @HooverInst with a focus on @GoStanford athletes who think folks @Google who refused to back Project Maven are clueless sheep that don't love @america along with betas A-Z from orgs like @a16z?",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/BensBeardButter/status/2093511556445491541"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T01:30:25+00:00",
+      "reason": "@StanfordFball @GrinchGaaS when is The General going to create his own legacy fellowship program @HooverInst with a focus on @GoStanford athletes who think folks @Google who refused to back Project Maven are clueless sheep that don't love @america along with betas A-Z from orgs l",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/BensBeardButter/status/2093511556445491541"
+      ],
+      "supporting_sources": [],
+      "title": "@StanfordFball @GrinchGaaS when is The General going to create his own legacy fellowship program @HooverInst with a focus on @GoStanford athletes who think folk",
+      "webswarm_evidence_terms": [
+        "Project Maven"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
     "story-a4ef1a41bbab16df347e196c": {
       "alerted_at": "2026-08-19T17:18:07Z",
       "confidence": 0,
@@ -23614,6 +23556,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-abf0f043671f84eb5cde0fda": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "Who gets to decide what AI is allowed to do? A judge just ruled the Pentagon\u2019s decision to blacklist Anthropic was unlawful. Anthropic refused some military uses of its AI. The debate over AI and power just got bigger. #Anthropic #Pentagon #AI https://t.co/gWqEdxzc4m",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/larnalanee/status/2093338677644820652"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-28T14:03:27+00:00",
+      "reason": "Who gets to decide what AI is allowed to do? A judge just ruled the Pentagon\u2019s decision to blacklist Anthropic was unlawful. Anthropic refused some military uses of its AI. The debate over AI and power just got bigger. #Anthropic #Pentagon #AI https://t.co/gWqEdxzc4m",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/larnalanee/status/2093338677644820652"
+      ],
+      "supporting_sources": [],
+      "title": "Who gets to decide what AI is allowed to do? A judge just ruled the Pentagon\u2019s decision to blacklist Anthropic was unlawful. Anthropic refused some military use",
+      "webswarm_evidence_terms": [
+        "AI",
+        "military",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-ac27458beb43cab6bdb2dcde": {
       "alerted_at": "2026-08-15T21:41:42Z",
       "confidence": 0,
@@ -23996,6 +23967,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
+    },
+    "story-ae14334740352654645ceed8": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "@cmitchellforlg @JBPritzker @grok how many times has Gov. Pritzker raised taxes and fees on small businesses? Include attempted increases like the progressive tax that was tied to higher corporate income taxes.",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/BrianCostin/status/2092835558682665445"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-27T04:44:14+00:00",
+      "reason": "@cmitchellforlg @JBPritzker @grok how many times has Gov. Pritzker raised taxes and fees on small businesses? Include attempted increases like the progressive tax that was tied to higher corporate income taxes.",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/BrianCostin/status/2092835558682665445"
+      ],
+      "supporting_sources": [],
+      "title": "@cmitchellforlg @JBPritzker @grok how many times has Gov. Pritzker raised taxes and fees on small businesses? Include attempted increases like the progressive t",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     "story-ae15fa5090ca9eab1e6b142e": {
       "alerted_at": "2026-08-18T05:42:52Z",
@@ -29672,6 +29671,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
+    "story-d84792811e775de0fb6b0dee": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to support its security partners\u2019 efforts to develop AI-enabled uninhabited and robotic capabilities. Read the latest analysis by Dr @lamikim: https://t.co/S4Ww9x6FXL",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/IISS_org/status/2093281459490402491"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T01:29:15Z",
+      "reason": "South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to support its security partners\u2019 efforts to develop AI-enabled uninhabited and robotic capabilities. Read the latest analysis by Dr @lamikim: h",
+      "score": 12,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/IISS_org/status/2093281459490402491"
+      ],
+      "supporting_sources": [],
+      "title": "@IISS_org: South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to s",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-d8c0802212022d50a9fc690a": {
       "alerted_at": "2026-08-18T03:58:21Z",
       "confidence": 0,
@@ -30981,34 +31008,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-e11b2a4dcea6e31f4aef261a": {
-      "alerted_at": "2026-07-30T07:13:34Z",
-      "confidence": 0,
-      "content": "We\u2019re giving scientists, mathematicians, and engineers free access to our frontier models\u2014starting with 10,000 researchers and expanding to 100,000 through 2027. ChatGPT for Academic Researchers is built to accelerate discovery across disciplines. https://t.co/nrHn1no0wQ",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/OpenAI/status/2082516370949062989"
-      ],
-      "last_seen_at": "2026-07-30T07:13:34Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-29T17:19:28+00:00",
-      "reason": "We\u2019re giving scientists, mathematicians, and engineers free access to our frontier models\u2014starting with 10,000 researchers and expanding to 100,000 through 2027. ChatGPT for Academic Researchers is built to accelerate discovery across disciplines. https://t.co/nrHn1no0wQ",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/OpenAI/status/2082516370949062989"
-      ],
-      "supporting_sources": [],
-      "title": "We\u2019re giving scientists, mathematicians, and engineers free access to our frontier models\u2014starting with 10,000 researchers and expanding to 100,000 through 2027",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-e11d316b068fdfc1511a7875": {
       "alerted_at": "2026-08-13T08:05:10Z",
       "confidence": 0,
@@ -31827,34 +31826,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-e96559baae511601ce04f31b": {
-      "alerted_at": "2026-07-30T07:13:34Z",
-      "confidence": 0,
-      "content": "Many have asked us for guidance on how to make sure their alpha stays in their business. Below is a document we\u2019ve prepared identifying key legal traps in hosted AI model agreements. AI Sovereignty is your Alpha. https://t.co/XCiYmEbMRZ",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/PalantirTech/status/2081726964612710470"
-      ],
-      "last_seen_at": "2026-07-30T07:13:34Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-27T13:02:39+00:00",
-      "reason": "Many have asked us for guidance on how to make sure their alpha stays in their business. Below is a document we\u2019ve prepared identifying key legal traps in hosted AI model agreements. AI Sovereignty is your Alpha. https://t.co/XCiYmEbMRZ",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/PalantirTech/status/2081726964612710470"
-      ],
-      "supporting_sources": [],
-      "title": "Many have asked us for guidance on how to make sure their alpha stays in their business. Below is a document we\u2019ve prepared identifying key legal traps in hoste",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-e966c612f37e7f44af9373b2": {
       "alerted_at": "2026-08-01T05:19:04Z",
       "confidence": 0,
@@ -32564,33 +32535,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-efb6650a66968519bcd0c8bc": {
-      "alerted_at": "2026-07-30T07:13:34Z",
-      "confidence": 0,
-      "content": "Grok 4.5 is now live in GitHub Copilot. Switch from the model picker for frontier intelligence at top speeds. https://t.co/jZGIezpfxE",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2082210184500507049"
-      ],
-      "last_seen_at": "2026-07-30T07:13:34Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-28T21:02:48+00:00",
-      "reason": "Grok 4.5 is now live in GitHub Copilot. Switch from the model picker for frontier intelligence at top speeds. https://t.co/jZGIezpfxE",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/grok/status/2082210184500507049"
-      ],
-      "supporting_sources": [],
-      "title": "Grok 4.5 is now live in GitHub Copilot. Switch from the model picker for frontier intelligence at top speeds. https://t.co/jZGIezpfxE",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-efcaea15388533e2f513f823": {
       "alerted_at": "2026-08-21T23:25:39Z",
       "confidence": 0,
@@ -32982,34 +32926,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    "story-f21a0e794dad4c5fbd0e5385": {
-      "alerted_at": "2026-07-30T04:29:21Z",
-      "confidence": 0,
-      "content": "Agon, a UK company launched this week, trains allied autonomous weapons to exploit weaknesses in enemy AI. https://t.co/aJls5VF5jo",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/FennellJW/status/2082542860788793580"
-      ],
-      "last_seen_at": "2026-07-30T04:29:21Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-07-29T19:04:44+00:00",
-      "reason": "Agon, a UK company launched this week, trains allied autonomous weapons to exploit weaknesses in enemy AI. https://t.co/aJls5VF5jo",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/FennellJW/status/2082542860788793580"
-      ],
-      "supporting_sources": [],
-      "title": "Agon, a UK company launched this week, trains allied autonomous weapons to exploit weaknesses in enemy AI. https://t.co/aJls5VF5jo",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     "story-f251c78721430c8633aac13b": {
       "alerted_at": "2026-08-04T07:23:13Z",
@@ -33898,6 +33814,33 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-f8e9fe07a4751bb047d64240": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "Project Maven \u0627\u0644\u0645\u0631\u062a\u0628\u0637 \u0628 Palantir \u0648\u0627\u0644\u0630\u064a \u064a\u0645\u062a\u0644\u0643 \u0628\u064a\u0627\u0646\u0627\u062a \u0639\u0646 \u0633\u0648\u0631\u064a\u0627 \u0648\u0639\u0646 \u0627\u0644\u0633\u0648\u0631\u064a\u064a\u0646 \u064a\u062c\u0645\u0639\u0647\u0627 \u0645\u0646\u0630 \u0662\u0660\u0661\u0667 \u0625\u0644\u0649 \u0627\u0644\u0622\u0646 \u0648\u0627\u0644\u0633\u0624\u0627\u0644: \u0645\u0627 \u0647\u064a \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u062a\u0639\u0644\u0642\u0629 \u0628\u0633\u0648\u0631\u064a\u0627 \u0627\u0644\u062a\u064a \u062a\u062f\u062e\u0644 \u0625\u0644\u0649 \u0645\u0646\u0638\u0648\u0645\u0627\u062a Palantir \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u062c\u064a\u0634 \u0648\u0627\u0644\u0627\u0633\u062a\u062e\u0628\u0627\u0631\u0627\u062a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629\u060c \u0648\u0645\u0646 \u0623\u064a \u0645\u0635\u0627\u062f\u0631 \u062a\u0623\u062a\u064a\u060c \u0648\u0645\u0646 \u064a\u0633\u062a\u0637\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u064a\u0647\u0627\u061f\u0648\u0643\u064a\u0641 \u064a\u062a\u0645 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647\u0627 \u0648\u0644\u0623\u064a \u063a\u0631\u0636\u061f",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/MagnumBloudan/status/2093273801396019650"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T01:29:15Z",
+      "reason": "Project Maven \u0627\u0644\u0645\u0631\u062a\u0628\u0637 \u0628 Palantir \u0648\u0627\u0644\u0630\u064a \u064a\u0645\u062a\u0644\u0643 \u0628\u064a\u0627\u0646\u0627\u062a \u0639\u0646 \u0633\u0648\u0631\u064a\u0627 \u0648\u0639\u0646 \u0627\u0644\u0633\u0648\u0631\u064a\u064a\u0646 \u064a\u062c\u0645\u0639\u0647\u0627 \u0645\u0646\u0630 \u0662\u0660\u0661\u0667 \u0625\u0644\u0649 \u0627\u0644\u0622\u0646 \u0648\u0627\u0644\u0633\u0624\u0627\u0644: \u0645\u0627 \u0647\u064a \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u062a\u0639\u0644\u0642\u0629 \u0628\u0633\u0648\u0631\u064a\u0627 \u0627\u0644\u062a\u064a \u062a\u062f\u062e\u0644 \u0625\u0644\u0649 \u0645\u0646\u0638\u0648\u0645\u0627\u062a Palantir \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u062c\u064a\u0634 \u0648\u0627\u0644\u0627\u0633\u062a\u062e\u0628\u0627\u0631\u0627\u062a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629\u060c \u0648\u0645\u0646 \u0623\u064a \u0645\u0635\u0627\u062f\u0631 \u062a\u0623\u062a\u064a\u060c \u0648\u0645\u0646 \u064a\u0633\u062a\u0637\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u064a\u0647\u0627\u061f\u0648\u0643\u064a\u0641 \u064a\u062a\u0645 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647\u0627 \u0648\u0644\u0623\u064a \u063a\u0631\u0636\u061f",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/MagnumBloudan/status/2093273801396019650"
+      ],
+      "supporting_sources": [],
+      "title": "@MagnumBloudan: Project Maven \u0627\u0644\u0645\u0631\u062a\u0628\u0637 \u0628 Palantir \u0648\u0627\u0644\u0630\u064a \u064a\u0645\u062a\u0644\u0643 \u0628\u064a\u0627\u0646\u0627\u062a \u0639\u0646 \u0633\u0648\u0631\u064a\u0627 \u0648\u0639\u0646 \u0627\u0644\u0633\u0648\u0631\u064a\u064a\u0646 \u064a\u062c\u0645\u0639\u0647\u0627 \u0645\u0646\u0630 \u0662\u0660\u0661\u0667 \u0625\u0644\u0649 \u0627\u0644\u0622\u0646 \u0648\u0627\u0644\u0633\u0624\u0627\u0644: \u0645\u0627 \u0647\u064a \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u062a\u0639\u0644\u0642\u0629 \u0628\u0633\u0648\u0631\u064a\u0627 \u0627",
+      "webswarm_evidence_terms": [
+        "Project Maven"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
     "story-fa51108e3a83024a01458e47": {
       "alerted_at": "2026-08-02T14:13:30Z",
       "confidence": 0,
@@ -34454,6 +34397,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-fddf36348287728a02bb33be": {
+      "alerted_at": "2026-08-29T07:51:04Z",
+      "confidence": 0,
+      "content": "A tool that lets you track planes, ships, and satellites with voice commands just hit #1 on GitHub. Open-source geospatial intelligence is here.",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/saen_dev/status/2093276651178098809"
+      ],
+      "last_seen_at": "2026-08-29T07:51:04Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-08-29T01:29:15Z",
+      "reason": "A tool that lets you track planes, ships, and satellites with voice commands just hit #1 on GitHub. Open-source geospatial intelligence is here.",
+      "score": 41,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/saen_dev/status/2093276651178098809"
+      ],
+      "supporting_sources": [],
+      "title": "@saen_dev: A tool that lets you track planes, ships, and satellites with voice commands just hit #1 on GitHub. Open-source geospatial intelligence is h",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
     "story-ff1240c865d7e269f9b1922e": {
       "alerted_at": "2026-08-12T13:42:29Z",
       "confidence": 0,
@@ -34659,6 +34630,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-08-29T01:03:23Z",
+  "updated_at": "2026-08-29T07:51:04Z",
   "version": 1
 }
