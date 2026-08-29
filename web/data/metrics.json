@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-08-29T01:29:15Z",
+  "generated_at": "2026-08-29T15:50:10Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-08-29T01:29:15Z",
+  "latest_successful_run": "2026-08-29T15:50:10Z",
   "highest_ranked_signal": {
-    "id": "github-004",
-    "title": "code-azeemahmad/Learn-AI-Agents",
-    "action_score": 77.75,
-    "url": "https://github.com/code-azeemahmad/Learn-AI-Agents"
+    "id": "github-007",
+    "title": "lingxiaozzz/Overseas-Student-AI-Agent",
+    "action_score": 76.75,
+    "url": "https://github.com/lingxiaozzz/Overseas-Student-AI-Agent"
   },
   "source_contribution": {
-    "github": 6,
-    "twitter": 5,
-    "hackernews": 1
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
@@ -27,7 +26,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 27.281,
+  "runtime_seconds": 29.713,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-08-29T01:29:15Z",
+    "planned_at": "2026-08-29T15:50:10Z",
     "production_threshold": 70.0
   }
 }
