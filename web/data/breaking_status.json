@@ -4,6 +4,57 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/orfonline/status/2093541652128280691",
+        "https://x.com/orfonline/status/2093662448993874132"
+      ],
+      "id": "story-3f8ad2a5b24c6d4f5a979731",
+      "reason": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is reshaping modern warfare. Watch Syed Nazakat, Gunjan Chawla, Brigadier Narendra Pratap Singh (Retd.), @SoumyaAwasthi17 a",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-30T23:38:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-29T03:30:00Z",
+      "source_url": "https://x.com/orfonline/status/2093541652128280691",
+      "status": "x-intel",
+      "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/LinkTechnlogies/status/2093398207208341936"
+      ],
+      "id": "story-ec96d4bfeb0fb6f6108a1cf1",
+      "reason": "Governments are fighting over whether AI weapons should be allowed to kill people without direct human control. The debate may come down to just three words: \u201cappropriate human judgment.\u201d Some countries want humans making lethal decisions. Others argue people only need to set the",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-08-30T23:38:19Z",
+      "source": "x",
+      "source_published_at": "2026-08-28T18:00:00Z",
+      "source_url": "https://x.com/LinkTechnlogies/status/2093398207208341936",
+      "status": "x-intel",
+      "title": "Governments are fighting over whether AI weapons should be allowed to kill people without direct human control. The debate may come down to just three words: \u201ca",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "AI weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 9,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -264,82 +315,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/WIONews/status/2093201938716438635"
-      ],
-      "id": "story-49a3cb5789efdad2db4c666c",
-      "reason": "AI, autonomy and next generation of war: India's military AI push India steps up its push for AI-driven warfare Can India build an AI-powered defence network? @JyotsnaKumar13 shares more https://t.co/9zjioOsUxW",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-08-30T14:58:41Z",
-      "source": "x",
-      "source_published_at": "2026-08-28T05:00:06Z",
-      "source_url": "https://x.com/WIONews/status/2093201938716438635",
-      "status": "x-intel",
-      "title": "AI, autonomy and next generation of war: India's military AI push India steps up its push for AI-driven warfare Can India build an AI-powered defence network? @",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/NewsTongueX/status/2093641605831946643"
-      ],
-      "id": "story-72dd1e81fac040af545f6a62",
-      "reason": "\ud83d\udd34 Air Force ditches 20-ton comms setup after Epic Fury exposed single-point-of-failure C2 Brig. Gen. Jeffrey Phillips, deputy chief of staff for warfighter communications and cyber systems, said the Air Force operated under a model requiring deployment of \"big comm packages that ",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-30T14:58:41Z",
-      "source": "x",
-      "source_published_at": "2026-08-29T10:07:11Z",
-      "source_url": "https://x.com/NewsTongueX/status/2093641605831946643",
-      "status": "x-intel",
-      "title": "\ud83d\udd34 Air Force ditches 20-ton comms setup after Epic Fury exposed single-point-of-failure C2 Brig. Gen. Jeffrey Phillips, deputy chief of staff for warfighter comm",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-30T21:18:22Z",
+    "alerted_at": "2026-08-30T23:38:19Z",
     "confidence": 0,
-    "source_url": "https://x.com/WarPowersReform/status/2093854964779274374",
-    "title": "The UN and Red Cross Are Calling for Restrictions on AI Drones and Killer Robots In a world where autonomous weapons can choose targets on their own, data can p"
+    "source_url": "https://x.com/orfonline/status/2093541652128280691",
+    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
   },
   "last_run": {
-    "alerted_now": 5,
+    "alerted_now": 2,
     "clustered": 16,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 1,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 18,
+    "initial_x_relevant": 16,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.536,
-      "projected_minutes_per_30d": 553.73,
+      "measured_seconds": 11.383,
+      "projected_minutes_per_30d": 546.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -353,7 +354,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 10,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -377,11 +378,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 5
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-30T21:18:22Z",
+  "updated_at": "2026-08-30T23:38:19Z",
   "version": 1
 }
