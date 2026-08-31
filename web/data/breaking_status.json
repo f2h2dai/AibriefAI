@@ -5,6 +5,32 @@
     {
       "confidence": 0,
       "evidence_count": 2,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/LaurieLyricalG/status/2093731034563330416",
+        "https://x.com/grok/status/2093731178289242184"
+      ],
+      "id": "story-18ffdf0a9700fd7a5eaac552",
+      "reason": "@grok what day did trump start the war with Iran?",
+      "score": 85,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-08-31T01:36:02Z",
+      "source": "x",
+      "source_published_at": "2026-08-29T16:02:32Z",
+      "source_url": "https://x.com/LaurieLyricalG/status/2093731034563330416",
+      "status": "x-intel",
+      "title": "@grok what day did trump start the war with Iran?",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Iran",
+        "Operation Epic Fury"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 2,
       "evidence_status": "corroborated",
       "evidence_urls": [
         "https://x.com/orfonline/status/2093541652128280691",
@@ -287,47 +313,19 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/cem_uk_/status/2093668869231534115",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ"
-      ],
-      "id": "story-ebe57f0fbb0cfe11d61268a6",
-      "reason": "It\u2019s fair to say US military bases and intelligence assets across the Persian Gulf and West Asia have taken an absolute hammering during Operation Epstein Fury. The damage is so bad the Pentagon is now assessing whether it\u2019s even worth rebuilding. Iran has damaged or destroyed US",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-08-30T18:25:54Z",
-      "source": "x",
-      "source_published_at": "2026-08-29T11:55:31Z",
-      "source_url": "https://x.com/cem_uk_/status/2093668869231534115",
-      "status": "x-intel",
-      "title": "It\u2019s fair to say US military bases and intelligence assets across the Persian Gulf and West Asia have taken an absolute hammering during Operation Epstein Fury.",
-      "webswarm_evidence_terms": [
-        "Pentagon",
-        "Iran",
-        "munitions",
-        "missiles"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-08-30T23:38:19Z",
+    "alerted_at": "2026-08-31T01:36:02Z",
     "confidence": 0,
-    "source_url": "https://x.com/orfonline/status/2093541652128280691",
-    "title": "Who is accountable when algorithms make critical decisions on the battlefield? From autonomous weapons and drone swarms to #deepfakes and #cyberattacks, #AI is"
+    "source_url": "https://x.com/LaurieLyricalG/status/2093731034563330416",
+    "title": "@grok what day did trump start the war with Iran?"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 16,
+    "alerted_now": 1,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
@@ -339,8 +337,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.383,
-      "projected_minutes_per_30d": 546.39,
+      "measured_seconds": 9.209,
+      "projected_minutes_per_30d": 442.02,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -354,7 +352,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 9,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -378,11 +376,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-08-30T23:38:19Z",
+  "updated_at": "2026-08-31T01:36:02Z",
   "version": 1
 }
