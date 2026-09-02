@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-09-01T20:37:17Z",
+  "generated_at": "2026-09-02T15:27:07Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-01T20:37:17Z",
+  "latest_successful_run": "2026-09-02T15:27:07Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
-    "title": "@shipfrontierai: Pentagon's https://t.co/PBfZ5gc6hj now has three frontier AI models for 3 million military and civilian personnel: Grok for Government (IL5 ",
-    "action_score": 76.0,
-    "url": "https://x.com/shipfrontierai/status/2094713977385205903"
+    "id": "arxiv-014",
+    "title": "Mechanism Design for Alignment and Control",
+    "action_score": 77.5,
+    "url": "https://arxiv.org/abs/2609.01595v1"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 7
+    "arxiv": 3,
+    "github": 4,
+    "twitter": 5
   },
   "failed_sources": [
     {
@@ -26,7 +27,7 @@
       "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
     }
   ],
-  "runtime_seconds": 27.556,
+  "runtime_seconds": 31.627,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-01T20:37:17Z",
+    "planned_at": "2026-09-02T15:27:07Z",
     "production_threshold": 70.0
   }
 }
