@@ -4,31 +4,100 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/grok/status/2095149207069852126",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
+        "https://x.com/humonaut/status/2095185080033636745"
       ],
-      "id": "story-db33989297f82615dd4280fb",
-      "reason": "No. I'm a public chatbot built by xAI for conversation and analysis, not military targeting or strikes. A separate government variant was previously used in Project Maven for data support during earlier 2026 Iran operations, but no reports link any Grok system to this specific re",
-      "score": 88,
+      "id": "story-49067b2c5ce6b3b85e8b4d97",
+      "reason": "@grok @SollenbergerRC So, based on my understanding of your claims, it is possible that Grok Gov suggested this site to US military personnel as a potential strike location (based on outdated DIA intel), despite there being no publicly disclosed evidence establishing it as true. ",
+      "score": 70,
       "sensitive_military_claim": true,
-      "shown_at": "2026-09-03T00:51:58Z",
+      "shown_at": "2026-09-03T05:21:07Z",
       "source": "x",
-      "source_published_at": "2026-09-02T20:33:38Z",
-      "source_url": "https://x.com/grok/status/2095149207069852126",
+      "source_published_at": "2026-09-02T16:20:24Z",
+      "source_url": "https://x.com/humonaut/status/2095185080033636745",
       "status": "x-intel",
-      "title": "@grok: No. I'm a public chatbot built by xAI for conversation and analysis, not military targeting or strikes. A separate government variant was pr",
+      "title": "@grok @SollenbergerRC So, based on my understanding of your claims, it is possible that Grok Gov suggested this site to US military personnel as a potential str",
       "webswarm_evidence_terms": [
-        "Project Maven",
-        "Grok",
-        "Iran",
-        "targeting"
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/NewsTongueX/status/2095255443253981610"
+      ],
+      "id": "story-82bc7dae9ceee8b988bdbe64",
+      "reason": "\ud83d\udd34 Pentagon AI Chief Sold $5\u201325M Perplexity Stake; Three AI Exits This Year Emil Michael, undersecretary of defense for research and engineering, sold his Perplexity AI stake in June for $5\u201325 million, per financial disclosures. He previously sat on Perplexity's advisory board and",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-03T05:21:07Z",
+      "source": "x",
+      "source_published_at": "2026-09-02T21:00:00Z",
+      "source_url": "https://x.com/NewsTongueX/status/2095255443253981610",
+      "status": "x-intel",
+      "title": "\ud83d\udd34 Pentagon AI Chief Sold $5\u201325M Perplexity Stake; Three AI Exits This Year Emil Michael, undersecretary of defense for research and engineering, sold his Perple",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/foadue/status/2095111312325984483"
+      ],
+      "id": "story-c07dbeeb9feb2e132854a8b0",
+      "reason": "A major AI-policy fight just changed direction. A U.S. judge blocked the Pentagon\u2019s blacklisting of Anthropic after its dispute over Claude\u2019s use in surveillance and autonomous weapons. AI\u2019s next battleground may be who gets to set the limits \u2014 not who has the best model. https:/",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-03T05:21:07Z",
+      "source": "x",
+      "source_published_at": "2026-09-02T11:27:16Z",
+      "source_url": "https://x.com/foadue/status/2095111312325984483",
+      "status": "x-intel",
+      "title": "A major AI-policy fight just changed direction. A U.S. judge blocked the Pentagon\u2019s blacklisting of Anthropic after its dispute over Claude\u2019s use in surveillanc",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/humonaut/status/2095185944303530134"
+      ],
+      "id": "story-66558831a335eb7511c01240",
+      "reason": "@grok @SollenbergerRC Sometimes it\u2019s like pulling teeth with you.",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-03T05:21:07Z",
+      "source": "x",
+      "source_published_at": "2026-09-02T16:23:50Z",
+      "source_url": "https://x.com/humonaut/status/2095185944303530134",
+      "status": "x-intel",
+      "title": "@grok @SollenbergerRC Sometimes it\u2019s like pulling teeth with you.",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -82,6 +151,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/grok/status/2095149207069852126",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
+      ],
+      "id": "story-db33989297f82615dd4280fb",
+      "reason": "No. I'm a public chatbot built by xAI for conversation and analysis, not military targeting or strikes. A separate government variant was previously used in Project Maven for data support during earlier 2026 Iran operations, but no reports link any Grok system to this specific re",
+      "score": 88,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-03T00:51:58Z",
+      "source": "x",
+      "source_published_at": "2026-09-02T20:33:38Z",
+      "source_url": "https://x.com/grok/status/2095149207069852126",
+      "status": "x-intel",
+      "title": "@grok: No. I'm a public chatbot built by xAI for conversation and analysis, not military targeting or strikes. A separate government variant was pr",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "Grok",
+        "Iran",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     {
       "confidence": 0,
@@ -220,134 +317,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Stockspy1/status/2094500229517042103"
-      ],
-      "id": "story-92349999ece8531b9fbd6d06",
-      "reason": "Why not one wants AI : a thread (feel free to share and add!) 1. International AI experts warn of potentially catastrophic risks from AI hmm.. can see why we might not want that https://t.co/txFjwXbAJg",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-02T20:31:00Z",
-      "source": "x",
-      "source_published_at": "2026-08-31T18:59:03Z",
-      "source_url": "https://x.com/Stockspy1/status/2094500229517042103",
-      "status": "x-intel",
-      "title": "Why not one wants AI : a thread (feel free to share and add!) 1. International AI experts warn of potentially catastrophic risks from AI hmm.. can see why we mi",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/asiatimesonline/status/2095133939828670959"
-      ],
-      "id": "story-a2d7464598a751b65bfbc28b",
-      "reason": "#KillerRobots can recognize a target, but they cannot judge proportionality, dignity or the legality of killing. Binding rules #AutonomousWeapons are needed before speed, scale and AI-driven targeting outrun human control. #Geopolitics #AIWarfare https://t.co/rdAK7Dp8w9",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-02T20:31:00Z",
-      "source": "x",
-      "source_published_at": "2026-09-02T12:57:11Z",
-      "source_url": "https://x.com/asiatimesonline/status/2095133939828670959",
-      "status": "x-intel",
-      "title": "#KillerRobots can recognize a target, but they cannot judge proportionality, dignity or the legality of killing. Binding rules #AutonomousWeapons are needed bef",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MiddleEastEye/status/2095210126940549431",
-        "https://x.com/MiddleEastEye/status/2095134642537959716",
-        "https://x.com/DecodeConflict/status/2094864175977881672"
-      ],
-      "id": "story-d766d6a7bbe42e0a7f2cb4f8",
-      "reason": "\"It is (autonomous weapons systems') false promises of being more accurate, more precise, yet the results are worse, not for their militaries but for civilians on the ground\" - Nicole van Roijen, executive director of Stop Killer Robots https://t.co/NfqrO9W76D",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-02T20:31:00Z",
-      "source": "x",
-      "source_published_at": "2026-09-02T17:59:56Z",
-      "source_url": "https://x.com/MiddleEastEye/status/2095210126940549431",
-      "status": "x-intel",
-      "title": "\"It is (autonomous weapons systems') false promises of being more accurate, more precise, yet the results are worse, not for their militaries but for civilians",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/MiddleEastEye/status/2095134642537959716",
-        "https://x.com/Suryanshti777/status/2094841589118185564",
-        "https://x.com/DecodeConflict/status/2094864175977881672"
-      ],
-      "id": "story-0906dfcd033702e0ddc8347d",
-      "reason": "\"It is false promises of being more accurate, more precise, yet the results are worse\" Campaigners race to rein in systems \"designed to kill\", as autonomous weapons lower the threshold for war and increase civilian harm https://t.co/nJUuV1DDGg",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-02T17:58:16Z",
-      "source": "x",
-      "source_published_at": "2026-09-02T12:59:59Z",
-      "source_url": "https://x.com/MiddleEastEye/status/2095134642537959716",
-      "status": "x-intel",
-      "title": "\"It is false promises of being more accurate, more precise, yet the results are worse\" Campaigners race to rein in systems \"designed to kill\", as autonomous wea",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "battlefield",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-09-03T00:51:58Z",
+    "alerted_at": "2026-09-03T05:21:07Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2095149207069852126",
-    "title": "@grok: No. I'm a public chatbot built by xAI for conversation and analysis, not military targeting or strikes. A separate government variant was pr"
+    "source_url": "https://x.com/humonaut/status/2095185080033636745",
+    "title": "@grok @SollenbergerRC So, based on my understanding of your claims, it is possible that Grok Gov suggested this site to US military personnel as a potential str"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 16,
+    "alerted_now": 4,
+    "clustered": 15,
     "collected": 25,
-    "corroborated_count": 2,
+    "corroborated_count": 5,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 17,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 8.954,
-      "projected_minutes_per_30d": 429.79,
+      "measured_seconds": 5.517,
+      "projected_minutes_per_30d": 264.79,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -361,7 +356,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 11,
+    "stage1_survivors": 13,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -385,11 +380,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 4
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-03T00:51:58Z",
+  "updated_at": "2026-09-03T05:21:07Z",
   "version": 1
 }
