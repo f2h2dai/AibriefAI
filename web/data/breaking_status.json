@@ -31,30 +31,6 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/tectonicdefense/status/2094900076111950057"
-      ],
-      "id": "story-f7c5afaec3d4fdf0f4f448d9",
-      "reason": "Geospatial intelligence giant @vantortech won a four-year US Navy contract to deliver its Maritime Sentry product (designed for tracking \"dark ships\") in support of the Naval Information Warfare Center (NIWC) Pacific's work with the Indian Navy. \ud83d\udd17 Full story linked below https://",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-03T17:50:13Z",
-      "source": "x",
-      "source_published_at": "2026-09-01T21:27:54Z",
-      "source_url": "https://x.com/tectonicdefense/status/2094900076111950057",
-      "status": "x-intel",
-      "title": "Geospatial intelligence giant @vantortech won a four-year US Navy contract to deliver its Maritime Sentry product (designed for tracking \"dark ships\") in suppor",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
         "https://x.com/testingcatalog/status/2095468042398404869"
       ],
       "id": "story-ec0b4b1b635699998f1e92eb",
@@ -73,6 +49,30 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/tectonicdefense/status/2094900076111950057"
+      ],
+      "id": "story-f7c5afaec3d4fdf0f4f448d9",
+      "reason": "Geospatial intelligence giant @vantortech won a four-year US Navy contract to deliver its Maritime Sentry product (designed for tracking \"dark ships\") in support of the Naval Information Warfare Center (NIWC) Pacific's work with the Indian Navy. \ud83d\udd17 Full story linked below https://",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-03T17:50:13Z",
+      "source": "x",
+      "source_published_at": "2026-09-01T21:27:54Z",
+      "source_url": "https://x.com/tectonicdefense/status/2094900076111950057",
+      "status": "x-intel",
+      "title": "Geospatial intelligence giant @vantortech won a four-year US Navy contract to deliver its Maritime Sentry product (designed for tracking \"dark ships\") in suppor",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
     },
     {
       "confidence": 0,
@@ -314,23 +314,23 @@
     "title": "@thewarzonewire: The U.S. Navy\u2019s newest stated requirements for its Collaborative Combat Aircraft (CCA) effort point toward a drone that sounds very much lik"
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 14,
+    "alerted_now": 0,
+    "clustered": 17,
     "collected": 25,
-    "corroborated_count": 1,
+    "corroborated_count": 4,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 20,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.066,
-      "projected_minutes_per_30d": 483.16,
+      "measured_seconds": 10.667,
+      "projected_minutes_per_30d": 512.0,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -368,11 +368,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-03T17:50:13Z",
+  "updated_at": "2026-09-03T20:17:24Z",
   "version": 1
 }
