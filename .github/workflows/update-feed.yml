@@ -155,9 +155,9 @@ jobs:
           TOPIC = "AI agents"
 
           GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-          GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash").strip()
+          GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash").strip()
           GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
-          GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+          GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b").strip()
           NTFY_TOPIC = os.getenv("NTFY_TOPIC", "").strip()
           GITHUB_EVENT_NAME = os.getenv("GITHUB_EVENT_NAME", "").strip()
           GITHUB_EVENT_SCHEDULE = os.getenv("GITHUB_EVENT_SCHEDULE", "").strip()
@@ -894,18 +894,14 @@ jobs:
                           "thinkingConfig": {
                               "thinkingLevel": "low"
                           },
-                          "responseFormat": {
-                              "text": {
-                                  "mimeType": "APPLICATION_JSON",
-                                  "schema": {
-                                      "type": "object",
-                                      "properties": {
-                                          "en": {"type": "string"},
-                                          "ar": {"type": "string"}
-                                      },
-                                      "required": ["en", "ar"]
-                                  }
-                              }
+                          "responseMimeType": "application/json",
+                          "responseJsonSchema": {
+                              "type": "object",
+                              "properties": {
+                                  "en": {"type": "string"},
+                                  "ar": {"type": "string"}
+                              },
+                              "required": ["en", "ar"]
                           }
                       }
                   }).encode("utf-8")
@@ -941,7 +937,7 @@ jobs:
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
                       err = f"Gemini HTTP {e.code}: {body[:300]}"
-                      if e.code == 429:
+                      if 400 <= e.code < 500:
                           GEMINI_QUOTA_EXHAUSTED = True
                       log_event("warning", "GeminiRouter", err)
 
