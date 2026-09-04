@@ -35,9 +35,9 @@ env:
   LIGHTPANDA_VERSION: "0.3.6"
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-  GEMINI_MODEL: gemini-2.0-flash
+  GEMINI_MODEL: gemini-3.6-flash
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-  GROQ_MODEL: llama-3.3-70b-versatile
+  GROQ_MODEL: openai/gpt-oss-120b
   TWITTER_COOKIE: ${{ secrets.TWITTER_COOKIE }}
   X_INFLUENCERS: ${{ vars.X_INFLUENCERS }}
 
