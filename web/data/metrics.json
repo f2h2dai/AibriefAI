@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T03:42:54Z",
+  "generated_at": "2026-09-04T03:46:23Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,7 +9,7 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-04T03:42:54Z",
+  "latest_successful_run": "2026-09-04T03:46:23Z",
   "highest_ranked_signal": {
     "id": "arxiv-020",
     "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
@@ -18,16 +18,16 @@
   },
   "source_contribution": {
     "arxiv": 4,
-    "twitter": 5,
-    "github": 3
+    "github": 3,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
+      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 838)"
     }
   ],
-  "runtime_seconds": 28.778,
+  "runtime_seconds": 414.339,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-04T03:42:54Z",
+    "planned_at": "2026-09-04T03:46:23Z",
     "production_threshold": 70.0
   }
 }
