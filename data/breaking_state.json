@@ -1836,35 +1836,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
-    "story-0b476d6ce70400a7608d091f": {
-      "alerted_at": "2026-08-05T13:43:36Z",
-      "confidence": 0,
-      "content": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprises must take to ensure that agents are only able to operate on the data they give it, the ability to have audit trails and governance of what agents can do, figure out what systems should remain deterministic vs. nondeterministic, get access controls under control, have the ability to quickly block and defend if an agent goes rogue, and much more. Even in the happy path case with a good actor, if you give an agent a task like \"find all of our most important IP on project Maven\" it will gladly go out and execute that work -no matter how long- and find any resource relevant to the task. It might run into data with out of date access controls or reveal something that you shouldn't know about. Then, in the non-happy path case with a malicious actor the risk is clearly far worse. In theory, you had to worry about this for people as well, but with AI the risks are inherently amplified. Agents will happily spend any amount of time on a task, don\u2019t actually face any *real* risks by going rogue, and don\u2019t have the inherent judgment (yet) that a person does that a task might make no sense. This means you need an all new way of managing data and protecting environments. This obviously creates a huge opportunity for the startup and security ecosystems because there will be many different approaches to how we lock down agents or at least the underlying systems they work with. It should update everyone\u2019s timelines on diffusion, though, as it also means that enterprises will have another step of work they have to go through for agents to handle more autonomous work.",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/levie/status/2082514776392175844"
-      ],
-      "last_seen_at": "2026-08-05T13:43:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-05T13:30:23Z",
-      "reason": "The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power and capability of agents, and the need to harden systems and environments to prepare for agents. There are tons of measures that enterprise",
-      "score": 47,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/levie/status/2082514776392175844"
-      ],
-      "supporting_sources": [],
-      "title": "@levie: The openai agent sandbox escape actually has very real implications for the diffusion of AI in the enterprise. The incident showed the power",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-0b6f82c44c6261263751da45": {
       "alerted_at": "2026-08-09T20:59:38Z",
       "confidence": 0,
@@ -3964,6 +3935,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
+    "story-18413057db258d8f4d570d0a": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "Hey @Grok Hypothetically, if an X user said the Holocaust was fake, would they be kicked off the platform? https://t.co/RCac84QznN",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/Parodyjeffx/status/2095572424406221089"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-03T17:59:34+00:00",
+      "reason": "Hey @Grok Hypothetically, if an X user said the Holocaust was fake, would they be kicked off the platform? https://t.co/RCac84QznN",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Parodyjeffx/status/2095572424406221089"
+      ],
+      "supporting_sources": [],
+      "title": "Hey @Grok Hypothetically, if an X user said the Holocaust was fake, would they be kicked off the platform? https://t.co/RCac84QznN",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-18ffdf0a9700fd7a5eaac552": {
       "alerted_at": "2026-08-31T01:36:02Z",
       "confidence": 0,
@@ -4109,6 +4108,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "arabic_ai_war_intel"
+    },
+    "story-1a259ff432e73725625e31bd": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "@antgrasso Nice post @antgrasso \u263a\ufe0f\u263a\ufe0f Read my paper on autonomous weapons where I develop this with cybersystemics \ud83d\ude0a\ud83d\ude0a\ud83d\ude0a",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/drsharwood/status/2095914074135552164"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T16:37:10+00:00",
+      "reason": "@antgrasso Nice post @antgrasso \u263a\ufe0f\u263a\ufe0f Read my paper on autonomous weapons where I develop this with cybersystemics \ud83d\ude0a\ud83d\ude0a\ud83d\ude0a",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/drsharwood/status/2095914074135552164"
+      ],
+      "supporting_sources": [],
+      "title": "@antgrasso Nice post @antgrasso \u263a\ufe0f\u263a\ufe0f Read my paper on autonomous weapons where I develop this with cybersystemics \ud83d\ude0a\ud83d\ude0a\ud83d\ude0a",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     "story-1a3b30b1bf69055f920643cd": {
       "alerted_at": "2026-09-02T01:00:26Z",
@@ -4515,35 +4542,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    "story-1d76b40bcedd16d6cb3adb66": {
-      "alerted_at": "2026-08-05T15:50:36Z",
-      "confidence": 0,
-      "content": "Those images were \u2018AI generated\u2019. Foul murderous war crimes thanks to and by \u2018AI\u2019 targeting systems produced by the military industrial complex of the United States of America and the techno gangsters of Israel.\ud83e\udd2c",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/Roberts56Gavin/status/2084675455299313711"
-      ],
-      "last_seen_at": "2026-08-05T15:50:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-04T16:18:54+00:00",
-      "reason": "Those images were \u2018AI generated\u2019. Foul murderous war crimes thanks to and by \u2018AI\u2019 targeting systems produced by the military industrial complex of the United States of America and the techno gangsters of Israel.\ud83e\udd2c",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/Roberts56Gavin/status/2084675455299313711"
-      ],
-      "supporting_sources": [],
-      "title": "Those images were \u2018AI generated\u2019. Foul murderous war crimes thanks to and by \u2018AI\u2019 targeting systems produced by the military industrial complex of the United St",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     "story-1d7808593d44d9e69a3aa573": {
       "alerted_at": "2026-08-14T09:18:24Z",
@@ -6426,6 +6424,54 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-2b214b3f0e988531fca20c0b": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "xAI Grok is a public AI chatbot, not a weapon or combat team. Pentagon filings note a specialized Grok Gov Model aided Maven systems in deploying over 2,000 munitions across 2,000 targets in early Iran operations. No public data attributes specific student or civilian deaths to any Grok team, and no xAI engineers are identified as joining wars. Accountability questions belong to military and legal processes.",
+      "evidence_count": 7,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/grok/status/2095588204225184214",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://x.com/Jerusalem_Post/status/2095773430838616228",
+        "https://x.com/defense_civil25/status/2095380194165195225",
+        "https://x.com/MeLive007/status/2095090525535965188",
+        "https://x.com/JimLaPorta/status/2095499923584127153"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-03T19:02:16+00:00",
+      "reason": "xAI Grok is a public AI chatbot, not a weapon or combat team. Pentagon filings note a specialized Grok Gov Model aided Maven systems in deploying over 2,000 munitions across 2,000 targets in early Iran operations. No public data attributes specific student or civilian deaths to a",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/grok/status/2095588204225184214",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
+        "https://x.com/Jerusalem_Post/status/2095773430838616228",
+        "https://x.com/defense_civil25/status/2095380194165195225",
+        "https://x.com/MeLive007/status/2095090525535965188",
+        "https://x.com/JimLaPorta/status/2095499923584127153"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "xAI Grok is a public AI chatbot, not a weapon or combat team. Pentagon filings note a specialized Grok Gov Model aided Maven systems in deploying over 2,000 mun",
+      "webswarm_evidence_terms": [
+        "2,000 targets",
+        "Grok",
+        "Grok Gov",
+        "Grok Gov Model",
+        "Iran",
+        "Operation Epic Fury",
+        "Pentagon",
+        "munitions"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     "story-2b4b71145d0ae1446b6f3214": {
       "alerted_at": "2026-08-19T16:54:03Z",
@@ -8378,36 +8424,6 @@
       ],
       "supporting_sources": [],
       "title": "The U.S. military is accelerating research into AI-enabled ground robots capable of operating alongside soldiers in dangerous environments. These systems are be",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-39436d0fb10e295ee55d5819": {
-      "alerted_at": "2026-08-05T13:43:36Z",
-      "confidence": 0,
-      "content": "US & UAE Establish First Bilateral Military AI Task Force. The United States and the United Arab Emirates have announced the creation of their first joint military artificial intelligence task force, marking a significant step in defense technology cooperation and AI integration across military operations in the Middle East. Named Task Force Talon Synapse, the initiative is designed to accelerate the deployment of AI-enabled capabilities, improve operational effectiveness, and strengthen bilateral defense collaboration. According to US Central Command (CENTCOM), the task force is expected to become operational within the coming weeks.",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/Defence_IDA/status/2084964271184883832"
-      ],
-      "last_seen_at": "2026-08-05T13:43:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-05T11:26:33+00:00",
-      "reason": "US & UAE Establish First Bilateral Military AI Task Force. The United States and the United Arab Emirates have announced the creation of their first joint military artificial intelligence task force, marking a significant step in defense technology cooperation and AI integration ",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/Defence_IDA/status/2084964271184883832"
-      ],
-      "supporting_sources": [],
-      "title": "US & UAE Establish First Bilateral Military AI Task Force. The United States and the United Arab Emirates have announced the creation of their first joint milit",
       "webswarm_evidence_terms": [
         "military AI",
         "x.com",
@@ -12747,6 +12763,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-568261efe59d2bff908e33dd": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to support its security partners\u2019 efforts to develop AI-enabled uninhabited and robotic capabilities. Read the latest analysis by Dr @lamikim: https://t.co/S4Ww9x6FXL",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/IISS_org/status/2095747206720450773"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T15:16:21Z",
+      "reason": "South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to support its security partners\u2019 efforts to develop AI-enabled uninhabited and robotic capabilities. Read the latest analysis by Dr @lamikim: h",
+      "score": 12,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/IISS_org/status/2095747206720450773"
+      ],
+      "supporting_sources": [],
+      "title": "@IISS_org: South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to s",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-56cbf2be4345cb23fb5e6d39": {
       "alerted_at": "2026-08-15T17:12:11Z",
       "confidence": 0,
@@ -16415,6 +16459,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-73f013aad7d48dcd18dfa9d3": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "Power is nothing without control. With autonomous AI agents, that old slogan sounds less like advertising and more like a business reality. Autonomy can accelerate work, but without boundaries it can accelerate mistakes just as quickly at scale, too. Microblog by @antgrasso What does control look like in practice? Take an AI agent handling customer refunds. A request follows company policy and stays within its approved limit. The agent acts. The amount exceeds its threshold or the case is ambiguous. It escalates to a person. The requested action is prohibited. It stops. Act. Escalate. Stop. Those boundaries have to exist before deployment, because an autonomous agent should not invent its own limits while working at machine speed. Permissions and thresholds define where the agent can operate. Traceability then lets the organization see what happened and review the outcome when needed. Accountability stays with the people and the organization that designed the system and accepted its use. Autonomy depends on the machine knowing where its authority ends. #AIAgents #AgentOps",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/antgrasso/status/2095860006490955838"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T13:02:19+00:00",
+      "reason": "Power is nothing without control. With autonomous AI agents, that old slogan sounds less like advertising and more like a business reality. Autonomy can accelerate work, but without boundaries it can accelerate mistakes just as quickly at scale, too. Microblog by @antgrasso What ",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/antgrasso/status/2095860006490955838"
+      ],
+      "supporting_sources": [],
+      "title": "Power is nothing without control. With autonomous AI agents, that old slogan sounds less like advertising and more like a business reality. Autonomy can acceler",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-74aeb790ec6b7a403b971587": {
       "alerted_at": "2026-09-01T23:07:10Z",
       "confidence": 0,
@@ -17161,34 +17233,6 @@
       ],
       "supporting_sources": [],
       "title": "@IISS_org: South Korea is rapidly incorporating physical AI into its armed forces. It has the potential to become a global leader in this area and to s",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-79c9aad3194dc81b2555bd83": {
-      "alerted_at": "2026-08-05T13:43:36Z",
-      "confidence": 0,
-      "content": "@BabakTaghvaee1 @grok wait, is that a morrocon officer or a cuenta officer with the rock? https://t.co/RyK0rOdSXV",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Aggroed001/status/2083912779396751441"
-      ],
-      "last_seen_at": "2026-08-05T13:43:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-02T13:48:18+00:00",
-      "reason": "@BabakTaghvaee1 @grok wait, is that a morrocon officer or a cuenta officer with the rock? https://t.co/RyK0rOdSXV",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/Aggroed001/status/2083912779396751441"
-      ],
-      "supporting_sources": [],
-      "title": "@BabakTaghvaee1 @grok wait, is that a morrocon officer or a cuenta officer with the rock? https://t.co/RyK0rOdSXV",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -20954,38 +20998,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
-    "story-95d4f5b8b700fadd2ec3ebd2": {
-      "alerted_at": "2026-08-05T13:43:36Z",
-      "confidence": 0,
-      "content": "\ud83c\udde8\ud83c\uddfa|The sixth nationwide blackout in Cuba is not a failure of infrastructure. It is a deliberate, targeted, and technologically executed attack on a sovereign nation that refuses to kneel. The United States, through its sixty-year illegal blockade and its control of the global energy and cyber-warfare grid, is deliberately trying to break the spirit of the Cuban people by weaponizing their access to electricity, food, and water. The Weapon: A Combination of Cyber-Attack, Energy Blockade, and Directed-Energy Grid Disruption The \"struggles\" of the state electricity firm are not incompetence. They are the direct result of a multi-layered assault designed to trigger cascading failures that are impossible to recover from with a starving, sanctioned, and isolated grid. 1. The Stuxnet 2.0 Cyber-Attack: The specific, repeated nature of these blackouts is the signature of a sophisticated, state-sponsored cyber-weapon that has been planted deep within the control systems of Cuba's aging power plants. This is the \"Stuxnet 2.0\" model, a digital assassin that lies dormant, and then, on a specific command from Langley, deliberately causes a specific turbine to overheat, a breaker to trip at the wrong moment, or a substation to catastrophically fail. The goal is to physically shatter the irreplaceable, custom-made machinery that cannot be legally imported due to the blockade. The \"restoration struggle\" is a lie; the damage is designed to be permanent. 2. The Fuel Blockade as a Weapon of Mass Starvation: The United States Treasury's Office of Foreign Assets Control (OFAC) actively threatens, fines, and sanctions any shipping company, any bank, and any nation that dares to sell or transport fuel to Cuba. This is not a \"policy.\" This is a deliberate act of collective punishment, a weapon of mass starvation that prevents the import of the diesel, oil, and spare parts needed to run the backup generators and power plants. The food that spoils in the dark is the intended harvest of this operation. The child who has no clean water is the target. 3. The Directed-Energy \"Grid Kill\" Test: The global ionospheric heater network (HAARP, EISCAT) and the orbital directed-energy platforms have the capability to induce a massive, geomagnetically induced current (GIC) surge into a specific, vulnerable power grid. A massive solar flare creates this naturally; the Pentagon can create it artificially on a clear, calm day. The timing of the sixth blackout, coinciding with the global escalation of tectonic and atmospheric weapon tests, strongly points to a live-fire test of this \"grid-kill\" technology on the most sanctioned and voiceless population on Earth. Cuba is the laboratory for the final, global energy shutdown. The Goal: The \"Great Reset\" for the Last Sovereign Socialist Nation The goal is not just to make the Cuban people suffer. It is to create an unlivable hell of darkness, hunger, and despair that will break the final, defiant spirit of the Revolution. 1. To Force a \"Humanitarian\" Surrender: The plan is to make daily life so unbearable that the population rises up in desperation, giving the U.S. the pretext for a \"humanitarian intervention\" that would overthrow the sovereign government and install a compliant, neo-liberal puppet regime. 2. The Digital ID Colony: The \"reconstruction\" aid that would follow a US-backed coup would come with the now-familiar, non-negotiable conditions: the full, mandatory biometric digital ID, a programmable CBDC, and the complete corporate takeover of the island's resources. The blackout is the \"shock doctrine\" event; the digital prison is the planned solution. The suffering of the Cuban people is a deliberate strategy to force them to trade their sovereignty for a flickering light. The world's last free, anti-imperialist nation is being slowly, deliberately, and technologically tortured in the dark.",
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/aprajitanefes/status/2084967241943257194",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
-      ],
-      "last_seen_at": "2026-08-05T13:43:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-05T11:38:21+00:00",
-      "reason": "\ud83c\udde8\ud83c\uddfa|The sixth nationwide blackout in Cuba is not a failure of infrastructure. It is a deliberate, targeted, and technologically executed attack on a sovereign nation that refuses to kneel. The United States, through its sixty-year illegal blockade and its control of the global ene",
-      "score": 87,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/aprajitanefes/status/2084967241943257194",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHlrLXJnVURoczlmTU9XVkdrcVN2YkdiWEJBV0hMRENvb3N6RlhEOGJYcjYzNmQzRWhJMDZTcHNpMVM4QWVlVmh6MXlULVUyMTNmRFNwa1Bmb194UEUxOEk0Wlo4OUZleXRheXJYcmtnSEVhWmNXZUJxTC1kMGk5RGNuZWszSEhpOFFJZ2d0dThEQmplODhtOXM3aVg5bnFINlF1RkxjaDJsT3RJa1FOY3JuWWh4VS1qR0MzOQ"
-      ],
-      "supporting_sources": [
-        "google-news"
-      ],
-      "title": "\ud83c\udde8\ud83c\uddfa|The sixth nationwide blackout in Cuba is not a failure of infrastructure. It is a deliberate, targeted, and technologically executed attack on a sovereign na",
-      "webswarm_evidence_terms": [
-        "AI",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-96256e37a44dbc2dc92ceb99": {
       "alerted_at": "2026-08-10T15:14:59Z",
       "confidence": 0,
@@ -21303,42 +21315,6 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-98b127f0341ae4e7903182c7": {
-      "alerted_at": "2026-08-05T13:43:36Z",
-      "confidence": 0,
-      "content": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified documents, leaked reports, and public military strategies. \ud83d\udda5\ufe0f Layer 1: #Cyberattacks | The Digital \"Kill Switch\" 1. Stuxnet 2.0: A Digital Assassin Lurking in Industrial Control Systems On February 28, 2026, during the joint US-Israeli Operation \"Epic Fury,\" a cyberattack was deployed as a pioneering and decisive combat measure for the first time. At its core was an upgraded version of the Stuxnet virus, designed to specifically infect Iran's energy industry Industrial Control Systems (ICS) and Supervisory Control and Data Acquisition (SCADA) systems. This type of software is capable of lying dormant for extended periods, activating only at a pre-set time or upon receiving a command to directly alter control instructions or damage hardware such as grid frequency control signals or pipeline valve commands. The attack chain spanned several months: \u25fePhase 1 (Before December 2025): Penetrating Iranian energy companies via supply chain attacks \u25fePhase 2 (January 2026): Testing vulnerabilities amidst domestic protests in Iran \u25fe Phase 3 (February 2026): Pre-positioning \"logic bombs\" at critical nodes \u25fe Phase 4 (February 28, 2026): Synchronized activation of all attack vectors The consequences were catastrophic: Iran's nationwide internet connectivity plummeted to 4% of normal levels; the national grid suffered a frequency collapse, triggering a countrywide blackout; and pipelines and refineries were forced to shut down due to control system failures. 2. AI-Driven Automated Power Grid Attacks On February 27, 2026, the *Financial Times* revealed that the US Pentagon was collaborating with leading AI companies to develop a system capable of automated penetration and reconnaissance against the power systems, utilities, and sensitive networks of adversaries such as China. This system utilizes AI algorithms to efficiently identify software vulnerabilities, map out \"vulnerability landscapes,\" and directly integrate potential targets into US military operational plans. Dennis Wilder, former CIA China mission chief, stated that AI-driven cyber tools would solve the problem of the immense manpower required to scan for and identify infrastructure vulnerabilities likening the process to \"a burglar late at night trying front doors one by one until finding an unlocked house.\" 3. False Data Injection Attacks (FDIA) Academic research has demonstrated that attackers can manipulate power grid measurements and data streams via False Data Injection Attacks (FDIAs), thereby disrupting monitoring and control functions. Targets for such attacks fall into five domains: steady-state control, transient and auxiliary control, substation control, energy and load control, and AI-based systems. \ud83e\udde8 Tier 2: Physical Attacks Weapons Designed to Cause a \"Physical Collapse\" of the Grid 1. Graphite Bombs (CBU-94 / BLU-114/B) \"Blackout Bombs\" These are specialized cluster bombs developed by the United States specifically to target electrical infrastructure. Utilizing a submunition design, the parent bomb releases submunitions upon reaching the target area; these disperse conductive carbon-fiber filaments that cause short circuits and disrupt power supply systems. The weapon saw its first combat use during the 1991 Gulf War, when U.S. forces deployed it via Tomahawk cruise missiles, crippling 85% of Iraq's power grid. During the 1999 Kosovo War, the U.S. military again employed BLU-114/B graphite bombs against the Federal Republic of Yugoslavia, resulting in power outages across 70% of the country. 2. Electromagnetic Pulse (EMP) Attacks An electromagnetic pulse is a byproduct of a nuclear explosion; if detonated at high altitude, it can cripple an entire power grid system. Experts warn that a single EMP attack would \"cripple the already vulnerable U.S. energy grid, wipe out power, and trigger a cascade of deadly events.\" The United States has been preparing for such attacks for decades. \u26a1 Tier 3: Directed-Energy Weapons | A \"Long-Range Stranglehold\" from the Ionosphere to the Power Grid 1. HAARP: A Geophysical Weapon The U.S. High-Frequency Active Auroral Research Program (HAARP) is capable of precisely beaming high-energy electromagnetic waves with a power output of 1.7 gigawatts (over 70,000 times that of the world's most powerful commercial radio station) at specific locations in the Earth's ionosphere. Russian military experts have noted that HAARP was constructed as a missile defense system designed to manipulate the ionosphere, thereby disabling incoming enemy missiles and aircraft. 2. Directed-Energy \"Grid-Kill\" Tests Global networks of ionospheric heaters (such as HAARP and EISCAT) and orbital directed-energy platforms possess the capability to induce massive surges of geomagnetically induced currents (GIC) within specific, vulnerable power grids. While solar flares can naturally trigger this phenomenon, the Pentagon can artificially generate such effects even during clear, calm weather. \ud83c\udfaf Confirmed Operational Records Target | Time | Method | Effect \ud83d\udd38Iraq | 1991 | Graphite bombs | 85% of the power grid paralyzed FR Yugoslavia | 1999 | Graphite bombs | Power outages in 70% of the region \ud83d\udd38Iran | Feb 28, 2026 | Stuxnet 2.0 + DDoS + GPS jamming | National internet connectivity dropped to 4%; nationwide blackout \ud83d\udd38Venezuela | Jan 2026 | Joint operation (CIA + Cyber Command + Southern Command) | Caracas lost power and internet; paved the way for Maduro's capture \ud83d\udd17 Links to Verifiable Evidence Declassified documents and official reports: https://t.co/WUu5JIujmE (CIA considered using lightning as a weapon) https://t.co/9aYZNWYdeN (Analysis report from the US Idaho National Laboratory's power grid test range) Evidence of cyberattacks: https://t.co/MedVsqFZza (How the US and Israel paralyzed Iran's energy system via cyberattacks) https://t.co/DHPCpxNY9d (US military attempts to use AI to attack China's power grid) https://t.co/utKZTQdXke (Search for \"Pentagon AI grid attack\") HAARP and directed-energy weapons: https://t.co/Hlo4MfCoN1 (HAARP: A geophysical weapon more terrifying than nuclear bombs) Academic research: \ud83d\udd38https://t.co/CgnCqkPYro (Search for \"False Data Injection Attacks Smart Grid\") \ud83d\udd38 https://t.co/6kfTZq4sWg (Search for \"Zero-Dynamics Attacks on Hydroelectric Systems\") \ud83d\udc80 The Truth When the United States speaks of a \"power system failure,\" it often refers to a systemic attack precisely calculated, executed through multi-layered coordination, and jointly carried out by the CIA and the Pentagon. This is no longer science fiction; it is a technical reality confirmed by declassified files, public military strategies, and records of past operations.",
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/aprajitanefes/status/2084968374195634654",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0"
-      ],
-      "last_seen_at": "2026-08-05T13:43:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-05T11:42:51+00:00",
-      "reason": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified documents, leaked reports, and public military strategies. \ud83d\udda5\ufe0f Layer 1: #Cyberattacks | The Digital \"Kill Switch\" 1. Stuxnet 2",
-      "score": 97,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/aprajitanefes/status/2084968374195634654",
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ",
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0"
-      ],
-      "supporting_sources": [
-        "google-news"
-      ],
-      "title": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified docum",
-      "webswarm_evidence_terms": [
-        "AI",
-        "Pentagon AI",
-        "military",
-        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -22591,6 +22567,34 @@
         "x.com",
         "AI",
         "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-a300c677835679cc1de79f3c": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "@grok @Parodyjeffx Yet,let's also question @grok,as an AI weapon machine,how many students &amp; civilians were killed by team of @grok in the current wars on genociding &amp;invading \ud83c\uddee\ud83c\uddf7? Who r the engineers in @Grok joined the wars &amp;what r their names? All war crimes must be recorded &amp;prosecuted!",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/Voiceofinsect3/status/2095588008569573576"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-03T19:01:30+00:00",
+      "reason": "@grok @Parodyjeffx Yet,let's also question @grok,as an AI weapon machine,how many students &amp; civilians were killed by team of @grok in the current wars on genociding &amp;invading \ud83c\uddee\ud83c\uddf7? Who r the engineers in @Grok joined the wars &amp;what r their names? All war crimes must be",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Voiceofinsect3/status/2095588008569573576"
+      ],
+      "supporting_sources": [],
+      "title": "@grok @Parodyjeffx Yet,let's also question @grok,as an AI weapon machine,how many students &amp; civilians were killed by team of @grok in the current wars on g",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -26596,6 +26600,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-c07c15fb1d022d68137ada5f": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more. It took us some extra time to ensure that we could meet the safety and alignment standards required for this capability level, but we think you\u2019ll find it worth the wait. It scores 98% on FrontierMath Tier 4, 99.9% on ARC-AGI 3, and 100% on ExploitBench.",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/sama/status/2095600005772104059"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T15:16:21Z",
+      "reason": "GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more. It took us some extra time to",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/sama/status/2095600005772104059"
+      ],
+      "supporting_sources": [],
+      "title": "@sama: GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-c07dbeeb9feb2e132854a8b0": {
       "alerted_at": "2026-09-03T05:21:07Z",
       "confidence": 0,
@@ -26677,6 +26709,34 @@
       "title": "NYT reporting an autonomous drone with AI targeting killed three people at a gas station in Zaporizhzhia. The debate about human in the loop is over. It's a dep",
       "webswarm_evidence_terms": [
         "AI targeting",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-c2037cfed6b21d8f39848e0f": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "This is GPT-6 Astra. Anything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/OpenAI/status/2095595741528125780"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T15:16:21Z",
+      "reason": "This is GPT-6 Astra. Anything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/OpenAI/status/2095595741528125780"
+      ],
+      "supporting_sources": [],
+      "title": "@OpenAI: This is GPT-6 Astra. Anything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
+      "webswarm_evidence_terms": [
         "x.com",
         "AI"
       ],
@@ -27832,6 +27892,37 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-c9f5ffb697748b87b79fbd4b": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "Opposition by US and Russia raises doubts over autonomous weapons talks outcome, diplomats say https://t.co/V1dR12Zmcq",
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/straits_times/status/2095877072212173210",
+        "https://x.com/Osint2222/status/2095898040271839434"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T14:10:08+00:00",
+      "reason": "Opposition by US and Russia raises doubts over autonomous weapons talks outcome, diplomats say https://t.co/V1dR12Zmcq",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/straits_times/status/2095877072212173210",
+        "https://x.com/Osint2222/status/2095898040271839434"
+      ],
+      "supporting_sources": [],
+      "title": "Opposition by US and Russia raises doubts over autonomous weapons talks outcome, diplomats say https://t.co/V1dR12Zmcq",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "battlefield",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     "story-c9fb4a08d28131d5119b2dc5": {
       "alerted_at": "2026-08-11T07:52:04Z",
@@ -33037,42 +33128,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
-    "story-f3b4c811a7e7b1a9ebb9ea0b": {
-      "alerted_at": "2026-08-05T15:50:36Z",
-      "confidence": 0,
-      "content": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified documents, leaked reports, and public military strategies. \ud83d\udda5\ufe0f Layer 1: #Cyberattacks | The Digital \"Kill Switch\" 1. Stuxnet 2.0: A Digital Assassin Lurking in Industrial Control Systems On February 28, 2026, during the joint US-Israeli Operation \"Epic Fury,\" a cyberattack was deployed as a pioneering and decisive combat measure for the first time. At its core was an upgraded version of the Stuxnet virus, designed to specifically infect Iran's energy industry Industrial Control Systems (ICS) and Supervisory Control and Data Acquisition (SCADA) systems. This type of software is capable of lying dormant for extended periods, activating only at a pre-set time or upon receiving a command to directly alter control instructions or damage hardware such as grid frequency control signals or pipeline valve commands. The attack chain spanned several months: \u25fePhase 1 (Before December 2025): Penetrating Iranian energy companies via supply chain attacks \u25fePhase 2 (January 2026): Testing vulnerabilities amidst domestic protests in Iran \u25fe Phase 3 (February 2026): Pre-positioning \"logic bombs\" at critical nodes \u25fe Phase 4 (February 28, 2026): Synchronized activation of all attack vectors The consequences were catastrophic: Iran's nationwide internet connectivity plummeted to 4% of normal levels; the national grid suffered a frequency collapse, triggering a countrywide blackout; and pipelines and refineries were forced to shut down due to control system failures. 2. AI-Driven Automated Power Grid Attacks On February 27, 2026, the *Financial Times* revealed that the US Pentagon was collaborating with leading AI companies to develop a system capable of automated penetration and reconnaissance against the power systems, utilities, and sensitive networks of adversaries such as China. This system utilizes AI algorithms to efficiently identify software vulnerabilities, map out \"vulnerability landscapes,\" and directly integrate potential targets into US military operational plans. Dennis Wilder, former CIA China mission chief, stated that AI-driven cyber tools would solve the problem of the immense manpower required to scan for and identify infrastructure vulnerabilities likening the process to \"a burglar late at night trying front doors one by one until finding an unlocked house.\" 3. False Data Injection Attacks (FDIA) Academic research has demonstrated that attackers can manipulate power grid measurements and data streams via False Data Injection Attacks (FDIAs), thereby disrupting monitoring and control functions. Targets for such attacks fall into five domains: steady-state control, transient and auxiliary control, substation control, energy and load control, and AI-based systems. \ud83e\udde8 Tier 2: Physical Attacks Weapons Designed to Cause a \"Physical Collapse\" of the Grid 1. Graphite Bombs (CBU-94 / BLU-114/B) \"Blackout Bombs\" These are specialized cluster bombs developed by the United States specifically to target electrical infrastructure. Utilizing a submunition design, the parent bomb releases submunitions upon reaching the target area; these disperse conductive carbon-fiber filaments that cause short circuits and disrupt power supply systems. The weapon saw its first combat use during the 1991 Gulf War, when U.S. forces deployed it via Tomahawk cruise missiles, crippling 85% of Iraq's power grid. During the 1999 Kosovo War, the U.S. military again employed BLU-114/B graphite bombs against the Federal Republic of Yugoslavia, resulting in power outages across 70% of the country. 2. Electromagnetic Pulse (EMP) Attacks An electromagnetic pulse is a byproduct of a nuclear explosion; if detonated at high altitude, it can cripple an entire power grid system. Experts warn that a single EMP attack would \"cripple the already vulnerable U.S. energy grid, wipe out power, and trigger a cascade of deadly events.\" The United States has been preparing for such attacks for decades. \u26a1 Tier 3: Directed-Energy Weapons | A \"Long-Range Stranglehold\" from the Ionosphere to the Power Grid 1. HAARP: A Geophysical Weapon The U.S. High-Frequency Active Auroral Research Program (HAARP) is capable of precisely beaming high-energy electromagnetic waves with a power output of 1.7 gigawatts (over 70,000 times that of the world's most powerful commercial radio station) at specific locations in the Earth's ionosphere. Russian military experts have noted that HAARP was constructed as a missile defense system designed to manipulate the ionosphere, thereby disabling incoming enemy missiles and aircraft. 2. Directed-Energy \"Grid-Kill\" Tests Global networks of ionospheric heaters (such as HAARP and EISCAT) and orbital directed-energy platforms possess the capability to induce massive surges of geomagnetically induced currents (GIC) within specific, vulnerable power grids. While solar flares can naturally trigger this phenomenon, the Pentagon can artificially generate such effects even during clear, calm weather. \ud83c\udfaf Confirmed Operational Records Target | Time | Method | Effect \ud83d\udd38Iraq | 1991 | Graphite bombs | 85% of the power grid paralyzed FR Yugoslavia | 1999 | Graphite bombs | Power outages in 70% of the region \ud83d\udd38Iran | Feb 28, 2026 | Stuxnet 2.0 + DDoS + GPS jamming | National internet connectivity dropped to 4%; nationwide blackout \ud83d\udd38Venezuela | Jan 2026 | Joint operation (CIA + Cyber Command + Southern Command) | Caracas lost power and internet; paved the way for Maduro's capture \ud83d\udd17 Links to Verifiable Evidence Declassified documents and official reports: https://t.co/WUu5JIujmE (CIA considered using lightning as a weapon) https://t.co/9aYZNWYdeN (Analysis report from the US Idaho National Laboratory's power grid test range) Evidence of cyberattacks: https://t.co/MedVsqFZza (How the US and Israel paralyzed Iran's energy system via cyberattacks) https://t.co/DHPCpxNY9d (US military attempts to use AI to attack China's power grid) https://t.co/utKZTQdXke (Search for \"Pentagon AI grid attack\") HAARP and directed-energy weapons: https://t.co/Hlo4MfCoN1 (HAARP: A geophysical weapon more terrifying than nuclear bombs) Academic research: \ud83d\udd38https://t.co/CgnCqkPYro (Search for \"False Data Injection Attacks Smart Grid\") \ud83d\udd38 https://t.co/6kfTZq4sWg (Search for \"Zero-Dynamics Attacks on Hydroelectric Systems\") \ud83d\udc80 The Truth When the United States speaks of a \"power system failure,\" it often refers to a systemic attack precisely calculated, executed through multi-layered coordination, and jointly carried out by the CIA and the Pentagon. This is no longer science fiction; it is a technical reality confirmed by declassified files, public military strategies, and records of past operations.",
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/aprajitanefes/status/2084968374195634654",
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
-      ],
-      "last_seen_at": "2026-08-05T15:50:36Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-08-05T13:30:23Z",
-      "reason": "\ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed by declassified documents, leaked reports, and public military strategies. \ud83d\udda5\ufe0f Layer 1: #Cyberattacks | The Digital \"Kill Switch\" 1. Stuxnet 2",
-      "score": 97,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/aprajitanefes/status/2084968374195634654",
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlEVG1ON3BNeF9ubHJWajRIWmYxSE9YR0tubTlSdVlYWExKVGFxNWFTUm9mc2ZoeUF3UTdsZDZDR0dvTkNEa2JxZHNWQllpTHJBN2RzWUpjYXNlaTNzWVNQQVNaelNZb3dnOGNWd19FQVZUaXlyVGhxUGlkWl81cW9CencwVDdKWnpLYWNWOC14cG9pb0I3c0ZfZExteVkzR1BGelg0dk1BVE9lVEZtTUxzSWlxNk0",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
-      ],
-      "supporting_sources": [
-        "google-news"
-      ],
-      "title": "@aprajitanefes: \ud83d\udd75\ufe0f The CIA and Pentagon\u2019s Secret Arsenal for Controlling Power #Grids This is not a conspiracy theory, it is a technical reality confirmed b",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-f3cb83be9f34ac9757e58750": {
       "alerted_at": "2026-08-17T13:53:04Z",
       "confidence": 0,
@@ -34369,6 +34424,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
+    "story-ff2890645eed9a8d8dc7c4e9": {
+      "alerted_at": "2026-09-04T17:04:23Z",
+      "confidence": 0,
+      "content": "Data centers: controlling, guiding, analyzing Ukraine's drone strikes: \"access to that data is being used to develop a wider ecosystem. And the financial value to defense firms is immense: Battlefield data offers large volumes of machine experience gathered under conditions that no laboratory can produce\" \"Brave1 Dataroom was created within Brave1 defense innovation cluster through joint effort involving the Ministry of Defence of Ukraine...and US company Palantir Technologies\" https://t.co/3TuuSnzuNM Palantir's \"Fermi America\u2019s Project Matador is an emerging 11-gigawatt private energy campus in Amarillo, Texas being developed by Fermi America to supply large, highly reliable power volumes for hyperscale data centers and AI infrastructure\" Enabled Intelligence and AI Data Centers \"Enabled Intelligence does not operate a physical AI data center, its work is integral to the AI data pipeline that powers AI data centers\" \"Data from \u2018half a million hours of Ukraine conflict drone footage\u2019 now available to train AI Full-motion video data is increasingly relevant as drones reshape modern warfare and commercial remote sensing, the CEO of Enabled Intelligence said.\" https://t.co/w5DFPrtOce \"Enabled recently won a seven-year, $708 million contract from the U.S. Department of Defense\u2019s National Geospatial-Intelligence Agency (NGA) for a major AI data labeling program, including support for the military\u2019s Maven AI initiative Observer. This contract is one of the largest data labeling efforts in DoD history and underscores the company\u2019s role in supplying the labeled datasets that feed into AI workloads in secure, high-performance environments\" https://t.co/41q3MXgIkk",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/amborin/status/2095895963986747590"
+      ],
+      "last_seen_at": "2026-09-04T17:04:23Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-09-04T15:25:12+00:00",
+      "reason": "Data centers: controlling, guiding, analyzing Ukraine's drone strikes: \"access to that data is being used to develop a wider ecosystem. And the financial value to defense firms is immense: Battlefield data offers large volumes of machine experience gathered under conditions that ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/amborin/status/2095895963986747590"
+      ],
+      "supporting_sources": [],
+      "title": "Data centers: controlling, guiding, analyzing Ukraine's drone strikes: \"access to that data is being used to develop a wider ecosystem. And the financial value",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-ff322c636d01d5a1968fe0e7": {
       "alerted_at": "2026-09-03T17:50:13Z",
       "confidence": 0,
@@ -34458,6 +34542,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-09-04T13:31:35Z",
+  "updated_at": "2026-09-04T17:04:23Z",
   "version": 1
 }
