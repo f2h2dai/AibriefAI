@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T03:57:49Z",
+  "generated_at": "2026-09-04T04:01:03Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,25 +9,25 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-04T03:57:49Z",
+  "latest_successful_run": "2026-09-04T04:01:03Z",
   "highest_ranked_signal": {
-    "id": "arxiv-020",
-    "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
-    "action_score": 79.25,
-    "url": "https://arxiv.org/abs/2609.04075v1"
+    "id": "github-008",
+    "title": "MusadiqUrRahman/whaagent",
+    "action_score": 80.0,
+    "url": "https://github.com/MusadiqUrRahman/whaagent"
   },
   "source_contribution": {
-    "arxiv": 4,
     "github": 3,
+    "arxiv": 4,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7818, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7579, Req"
     }
   ],
-  "runtime_seconds": 93.094,
+  "runtime_seconds": 42.322,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-04T03:57:49Z",
+    "planned_at": "2026-09-04T04:01:03Z",
     "production_threshold": 70.0
   }
 }

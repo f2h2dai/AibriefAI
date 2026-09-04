@@ -1,13 +1,13 @@
 {
   "project": "AIbrief — إحاطة",
-  "generated_at": "2026-09-04T03:57:49Z",
+  "generated_at": "2026-09-04T04:01:03Z",
   "topic": "AI agents",
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
     "gemini": 0,
     "groq": 16,
-    "rule-based": 23
+    "rule-based": 22
   },
   "freshness_counts": {
     "fresh": 12
@@ -59,121 +59,121 @@
   ],
   "events": [
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7667, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7478, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7656, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7479, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7645, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7965, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7634, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7957, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7627, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7949, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7610, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7941, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7599, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7933, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7582, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7925, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7570, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7918, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7560, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7909, Req"
     },
     {
-      "time": "2026-09-04T03:57:49Z",
+      "time": "2026-09-04T04:01:03Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -181,7 +181,7 @@
   ],
   "operations": {
     "metrics": {
-      "generated_at": "2026-09-04T03:57:49Z",
+      "generated_at": "2026-09-04T04:01:03Z",
       "configured_threshold": 70.0,
       "signals_collected_today": 12,
       "verified_signals": 12,
@@ -191,25 +191,25 @@
       "source_failure_rate": 0.25,
       "primary_source_link_rate": 1.0,
       "daily_api_cost_usd": 0.0,
-      "latest_successful_run": "2026-09-04T03:57:49Z",
+      "latest_successful_run": "2026-09-04T04:01:03Z",
       "highest_ranked_signal": {
-        "id": "arxiv-020",
-        "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
-        "action_score": 79.25,
-        "url": "https://arxiv.org/abs/2609.04075v1"
+        "id": "github-008",
+        "title": "MusadiqUrRahman/whaagent",
+        "action_score": 80.0,
+        "url": "https://github.com/MusadiqUrRahman/whaagent"
       },
       "source_contribution": {
-        "arxiv": 4,
         "github": 3,
+        "arxiv": 4,
         "twitter": 5
       },
       "failed_sources": [
         {
           "source": "GroqRouter",
-          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7818, Req"
+          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7579, Req"
         }
       ],
-      "runtime_seconds": 93.094,
+      "runtime_seconds": 42.322,
       "notification_precision": null,
       "notification_precision_reason": "No reviewed notification outcome labels are available.",
       "orchestrator": {
@@ -269,24 +269,24 @@
           "output": "full_brief"
         },
         "scheduled_by": "github_actions",
-        "planned_at": "2026-09-04T03:57:49Z",
+        "planned_at": "2026-09-04T04:01:03Z",
         "production_threshold": 70.0
       }
     },
     "run": {
-      "run_id": "operations-2026-09-04T03:57:49Z",
-      "generated_at": "2026-09-04T03:57:49Z",
+      "run_id": "operations-2026-09-04T04:01:03Z",
+      "generated_at": "2026-09-04T04:01:03Z",
       "mode": "global_ai",
       "status": "complete",
       "configured_threshold": 70.0,
       "signals": 12,
       "act_now_items": 0,
-      "runtime_seconds": 93.094,
+      "runtime_seconds": 42.322,
       "daily_api_cost_usd": 0.0,
       "failed_sources": [
         {
           "source": "GroqRouter",
-          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7818, Req"
+          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7579, Req"
         }
       ],
       "workers": [
@@ -320,6 +320,42 @@
   },
   "signals": [
     {
+      "id": "github-008",
+      "source": "github",
+      "title": "MusadiqUrRahman/whaagent",
+      "content": "Multi-tenant WhatsApp AI agent platform — deploy intelligent agents on WhatsApp with LLM support, MCP tools, and production-ready infrastructure.",
+      "url": "https://github.com/MusadiqUrRahman/whaagent",
+      "score": 90,
+      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; large language model relevance; AI infrastructure relevance. Final score: 90. Freshness: source age 0d.",
+      "status": "verified",
+      "topic": "AI Agents",
+      "collector": "GitHubAgent",
+      "provider": "groq",
+      "brief_en": "Title: MusadiqUrRahman/whaagent\nSummary: A multi‑tenant platform that enables deployment of AI agents on WhatsApp. It integrates large language model (LLM) capabilities, provides a set of MCP (Message Control Protocol) tools, and includes production‑grade infrastructure for scaling and reliability. The service is positioned for organizations seeking to automate WhatsApp interactions, but real‑world performance and security posture remain to be independently verified.",
+      "brief_ar": "العنوان: MusadiqUrRahman/whaagent\nملخص: منصة متعددة المستأجرين تسمح بنشر وكلاء ذكاء اصطناعي على واتساب. تدمج قدرات نماذج اللغة الكبيرة (LLM)، وتوفر مجموعة أدوات MCP (بروتوكول التحكم في الرسائل)، وتشتمل على بنية تحتية جاهزة للإنتاج لضمان القابلية للتوسع والموثوقية. تُستهدف المؤسسات التي ترغب بأتمتة التفاعل عبر واتساب، إلا أن الأداء الفعلي وموقف الأمان لا يزالان بحاجة إلى تحقق مستقل.",
+      "sourcePublishedAt": "2026-09-04T04:00:25Z",
+      "freshnessStatus": "fresh",
+      "freshnessAgeDays": 0,
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
+      "duplicate_of": null,
+      "relevance_score": 90.0,
+      "novelty_score": 90.0,
+      "evidence_score": 60.0,
+      "urgency_score": 85.0,
+      "user_fit_score": 70.0,
+      "evidence_count": 1,
+      "primary_source_url": "https://github.com/MusadiqUrRahman/whaagent",
+      "unsupported_claims": 0,
+      "estimated_cost_usd": 0.0,
+      "action_score": 80.0,
+      "evidence_refs": [
+        "https://github.com/MusadiqUrRahman/whaagent"
+      ],
+      "act_now": false,
+      "x_post_draft": null
+    },
+    {
       "id": "arxiv-020",
       "source": "arxiv",
       "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
@@ -336,8 +372,8 @@
       "sourcePublishedAt": "2026-09-03T16:44:22Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 0.47,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 87.0,
       "novelty_score": 90.0,
@@ -356,42 +392,6 @@
       "x_post_draft": null
     },
     {
-      "id": "github-011",
-      "source": "github",
-      "title": "volcengine/OpenViking",
-      "content": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-      "url": "https://github.com/volcengine/OpenViking",
-      "score": 81,
-      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; retrieval/RAG relevance. Final score: 81. Freshness: source age 0d.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Title: volcengine/OpenViking\n\nA self‑evolving context database designed for AI agents. It unifies agent memory, retrieval‑augmented generation (RAG) knowledge stores, and modular skills into a single, searchable repository. The system continuously updates its embeddings from agent interactions, enabling dynamic knowledge refresh and cross‑task recall while preserving provenance metadata. Current public information suggests prototype deployments in enterprise assistants, but performance benchmarks and scalability limits remain unverified.",
-      "brief_ar": "العنوان: volcengine/OpenViking\n\nقاعدة بيانات سياقية ذات تطور ذاتي مخصصة لوكلاء الذكاء الاصطناعي. توحّد ذاكرة الوكيل، ومخازن المعرفة المستندة إلى الاسترجاع (RAG)، والمهارات المعيارية في مستودع واحد قابل للبحث. تُحدَّث تمثيلات البيانات باستمرار من تفاعلات الوكيل، مما يتيح تجديد المعرفة الديناميكي واسترجاع المعلومات عبر المهام مع الحفاظ على بيانات المصدر. تُشير المعلومات المتاحة إلى تجارب أولية في مساعدات الشركات، لكن معايير الأداء وحدود القابلية للتوسع لا تزال غير موثقة.",
-      "sourcePublishedAt": "2026-09-04T03:57:49Z",
-      "freshnessStatus": "fresh",
-      "freshnessAgeDays": 0,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
-      "duplicate_of": null,
-      "relevance_score": 81.0,
-      "novelty_score": 90.0,
-      "evidence_score": 60.0,
-      "urgency_score": 85.0,
-      "user_fit_score": 70.0,
-      "evidence_count": 1,
-      "primary_source_url": "https://github.com/volcengine/OpenViking",
-      "unsupported_claims": 0,
-      "estimated_cost_usd": 0.0,
-      "action_score": 77.75,
-      "evidence_refs": [
-        "https://github.com/volcengine/OpenViking"
-      ],
-      "act_now": false,
-      "x_post_draft": null
-    },
-    {
       "id": "arxiv-015",
       "source": "arxiv",
       "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
@@ -403,13 +403,13 @@
       "topic": "AI Agents",
       "collector": "AcademicAgent",
       "provider": "groq",
-      "brief_en": "SENTINEL‑RL: Offloading Topological Reasoning from LLM Agents in the SOC\nLLM agents can assist SOC analysts but struggle at scale because (1) a finite context window cannot hold a multi‑thousand‑host authentication graph and (2) free‑form generation cannot guarantee that containment actions respect the underlying topology. SENTINEL‑RL separates topology from semantics: a heterogeneous graph‑attention encoder compresses the live authentication subgraph into a fixed‑size state; a PPO policy maps this state to a constrained set of investigative actions; the LLM consumes only the policy’s recommendations and produces analyst‑readable narratives, gated by a critic. Experiments on the LANL multi‑source cyber‑security events dataset and the Indiana University Quartz HPC cluster show: (i) a two‑phase CREATE ingestion loads a 24 M‑edge graph into Neo4j in 14.2 min on a 32‑core node (≈24× faster than MERGE); (ii) a sliding‑window alert engine triggers a 25‑event/10‑s threshold within ≤2.5 s over 50 trials; (iii) PPO training (200 iterations) converges to mean episodic return 8.74 ± 0.31, with held‑out precision 0.91 and recall 0.87 on red‑team events; (iv) the architecture enables deterministic, topology‑consistent containment recommendations while keeping LLM output human‑readable. The results suggest a viable path to scalable, trustworthy AI‑augmented SOC operations, though further validation on diverse enterprise environments is needed.",
-      "brief_ar": "SENTINEL‑RL: تفريغ الاستدلال الطوبولوجي من وكلاء LLM في مركز عمليات الأمن (SOC)\nيُقترح استخدام وكلاء LLM كمحللين ذاتيين في SOC، لكنهما يواجهان مشكلتين رئيسيتين عند التوسع: (1) نافذة السياق المحدودة لا تستطيع استيعاب رسم بياني للمصادقة يضم آلاف الأجهزة، و(2) التوليد الحر لا يضمن توافق إجراءات العزل مع الطوبولوجيا الفعلية. يُفصل SENTINEL‑RL بين الاستدلال الطوبولوجي واللغوي؛ حيث يقوم مشفر انتباه الرسم البياني المتغاير بضغط الرسم الفرعي للمصادقة الحي إلى حالة ذات أبعاد ثابتة، وتُحوِّل سياسة PPO هذه الحالة إلى مجموعة مقيدة من إجراءات التحقيق، بينما يقتصر دور LLM على استهلاك توصيات السياسة وإنتاج سرد قابل للقراءة من قبل المحللين، مع مراقبة ناقدة. أظهرت التجارب على مجموعة بيانات LANL للأحداث الأمنية المتعددة المصدر ومجموعة حوسبة HPC في جامعة إنديانا ما يلي: (i) نمط استيراد CREATE ذو المرحلتين يحمل رسمًا بيانيًا بـ 24 مليون حافة إلى Neo4j خلال 14.2 دقيقة على عقدة بـ 32 نواة (أسرع بحوالي 24× من طريقة MERGE التقليدية)؛ (ii) محرك تنبيهات نافذة منزلقة يطلق عتبة 25 حدثًا/10 ثوانٍ في ≤2.5 ثانية عبر 50 تجربة؛ (iii) تدريب PPO على 200 تكرار يحقق متوسط عائد حلقي 8.74 ± 0.31، مع دقة 0.91 واستدعاء 0.87 على أحداث فريق الأحمر المختبرة؛ (iv) يتيح هذا العمارة توصيات عزل متسقة طوبولوجيًا ومحددة، مع الحفاظ على مخرجات LLM قابلة للقراءة البشرية. تشير النتائج إلى مسار واعد لتوسيع عمليات SOC المدعومة بالذكاء الاصطناعي بشكل موثوق، مع الحاجة إلى مزيد من التحقق في بيئات مؤسساتية متنوعة.",
+      "brief_en": "SENTINEL‑RL decouples topological from semantic reasoning for LLM‑based SOC analysts. A heterogeneous graph attention encoder compresses a live authentication subgraph (millions of edges) into a fixed‑size state. A PPO policy maps this state to a constrained set of investigative actions, which the LLM consumes to generate analyst‑readable narratives, gated by a critic for consistency. Experiments on the LANL cyber‑event dataset and IU Quartz HPC cluster show: (i) a two‑phase CREATE ingestion loads a 24 M‑edge graph into Neo4j in 14.2 min (≈24× faster than MERGE); (ii) a sliding‑window alert engine triggers a 25‑event/10‑s threshold within ≤2.5 s over 50 trials; (iii) PPO converges after 200 iterations to a mean episodic return of 8.74 ± 0.31, with held‑out precision 0.91 and recall 0.87 on red‑team events; (iv) the architecture isolates topological reasoning, reducing LLM context pressure and improving action reliability. The results suggest a scalable, verifiable pathway for autonomous SOC agents, though further validation on diverse enterprise environments is needed.",
+      "brief_ar": "يُفصل SENTINEL‑RL بين التفكير الطوبولوجي والتفكير الدلالي لمحللي SOC القائمين على نماذج اللغة الكبيرة. يقوم مشفر الانتباه الرسومي المتغاير بضغط مخطط المصادقة الحي (ملايين الحواف) إلى حالة ذات أبعاد ثابتة. تُحوِّل سياسة PPO هذه الحالة إلى مجموعة محدودة من إجراءات التحقيق، ويتولى نموذج اللغة الكبيرة استهلاك هذه التوصيات لإنتاج سرد قابل للقراءة من قبل المحللين، مع مراقب يضمن التوافق مع الطوبولوجيا. أظهرت التجارب على مجموعة بيانات LANL للأحداث السيبرانية ومجموعة حوسبة IU Quartz ما يلي: (1) تحميل مخطط بحدود 24 مليون حافة إلى Neo4j في 14.2 دقيقة باستخدام نمط إدخال CREATE على مرحلتين، أسرع بنحو 24× من طريقة MERGE التقليدية؛ (2) محرك تنبيهات نافذة منزلقة يطلق عتبة 25 حدثًا/10 ثوانٍ في ≤2.5 ثانية عبر 50 تجربة؛ (3) تتقارب PPO بعد 200 تكرار إلى متوسط عائد حلقي 8.74 ± 0.31، بدقة 0.91 واستدعاء 0.87 على أحداث فريق الأحمر؛ (4) يعزل العمارة التفكير الطوبولوجي، مما يقلل ضغط سياق النموذج اللغوي ويعزز موثوقية الإجراءات. تشير النتائج إلى مسار قابل للتوسع والتحقق لتطبيقات SOC الذاتية، مع الحاجة لمزيد من الاختبار في بيئات مؤسساتية متنوعة.",
       "sourcePublishedAt": "2026-09-03T17:49:12Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 0.42,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 80.0,
       "novelty_score": 90.0,
@@ -434,18 +434,18 @@
       "content": "AI agents are trained on population-scale data to encode broad capabilities spanning those of many practitioners. Yet the artifacts they produce rarely meet the personal bar professionals need to stake their reputation on. On realistic, open-ended tasks where success criteria are heterogeneous and insufficiently documented, individual expertise lives precisely in the elevation and departure from the average. In practice, iterative human-agent interaction surfaces criteria that users cannot fully specify up front, yet apply repeatedly across tasks. We argue this cross-session interaction data is a rich, underused signal for closing the gap to individual expertise. In this work, we propose test-time adaptation through human-agent interaction (TAHI), which integrates these signals into agent context and weights, and crystallizes each user's training and evaluation criteria via an evolving rubric module. We adapt agents to 30 individuals in two high-utility domains, writing and visual creation, on a total of 600 tasks. Our agents improve solo task success by 4.5-20.9% within only tens of tasks. Meanwhile, our evolving rubric module serves as a scalable annotation tool, creating evaluation rubrics that catch 16.0-22.3% more failures than those from LMs or humans alone. While agents are adapted towards individuals, we show these personalized agents also produce improvements in success of up to 8.8% that generalize across users.",
       "url": "https://arxiv.org/abs/2609.04141v1",
       "score": 80,
-      "score_reason": "academic/research signal; agentic AI relevance; retrieval/RAG relevance. Final score: 80. Freshness: source age 0.43d.",
+      "score_reason": "academic/research signal; agentic AI relevance; retrieval/RAG relevance. Final score: 80. Freshness: source age 0.44d.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "AcademicAgent",
-      "provider": "groq",
-      "brief_en": "Efficient Test‑Time Adaptation through Human‑AI Interaction (TAHI) leverages iterative feedback from professionals to personalize AI agents. By embedding cross‑session interaction data into the model’s context and weights, TAHI builds an evolving rubric that captures user‑specific success criteria. In trials with 30 users across writing and visual creation (600 tasks), personalized agents achieved 4.5–20.9% higher solo success after only a few dozen interactions. The rubric module identified 16.0–22.3% more failures than standard LM or human annotations, and the adapted agents also yielded up to 8.8% performance gains when applied to other users, indicating modest generalization.",
-      "brief_ar": "التكيف الفعال في وقت الاختبار عبر التفاعل بين الإنسان والذكاء الاصطناعي (TAHI) يستغل ملاحظات المتخصصين المتكررة لتخصيص نماذج الذكاء الاصطناعي. من خلال دمج بيانات التفاعل عبر الجلسات في سياق النموذج وأوزانه، يبني TAHI معيارًا متطورًا يلتقط معايير النجاح الخاصة بالمستخدم. في تجارب شملت 30 مستخدمًا في مجال الكتابة والإبداع البصري (600 مهمة)، حققت النماذج المخصصة تحسينًا في النجاح الفردي بنسبة 4.5‑20.9% بعد بضعة عشرات من التفاعلات فقط. وحدد وحدة المعيار المتطور 16.0‑22.3% من الأخطاء أكثر من التعليقات التقليدية للنماذج أو البشر، كما أظهر التكيف تحسينًا يصل إلى 8.8% عند تطبيقه على مستخدمين آخرين، مما يدل على تعميم محدود.",
+      "provider": "rule-based",
+      "brief_en": "AI agents are trained on population-scale data to encode broad capabilities spanning those of many practitioners. Yet the artifacts they produce rarely meet the personal bar professionals need to stake their reputation on. On realistic, ope...",
+      "brief_ar": "ملخص قائم على القواعد: AI agents are trained on population-scale data to encode broad capabilities spanning those of many practitioners. Yet the artifacts they produce rarely meet the personal bar professionals need to stake their reputation on. On realistic, ope...",
       "sourcePublishedAt": "2026-09-03T17:33:18Z",
       "freshnessStatus": "fresh",
-      "freshnessAgeDays": 0.43,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "freshnessAgeDays": 0.44,
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 80.0,
       "novelty_score": 90.0,
@@ -480,8 +480,8 @@
       "sourcePublishedAt": "2026-09-03T17:30:17Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 0.44,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 80.0,
       "novelty_score": 90.0,
@@ -500,132 +500,132 @@
       "x_post_draft": null
     },
     {
-      "id": "github-006",
+      "id": "github-007",
       "source": "github",
-      "title": "wsm-ai/FlowPilot",
-      "content": "Enterprise AI Workflow Agent powered by LangGraph, MCP and RAG",
-      "url": "https://github.com/wsm-ai/FlowPilot",
-      "score": 75,
-      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; retrieval/RAG relevance. Final score: 75. Freshness: source age 0d.",
+      "title": "linny006/agent-eval-harness",
+      "content": "Live, open-source benchmark for comparing AI coding agents on real GitHub issues",
+      "url": "https://github.com/linny006/agent-eval-harness",
+      "score": 79,
+      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; implementation ecosystem relevance. Final score: 79. Freshness: source age 0d.",
       "status": "verified",
       "topic": "AI Agents",
       "collector": "GitHubAgent",
       "provider": "groq",
-      "brief_en": "Title: wsm-ai/FlowPilot\nEnterprise AI Workflow Agent leveraging LangGraph, Multi‑Component Prompting (MCP) and Retrieval‑Augmented Generation (RAG). Designed for scalable, automated orchestration of complex business processes. Current capabilities include dynamic task routing, context‑aware data retrieval, and adaptive decision‑making. Limitations: performance depends on underlying knowledge bases; real‑time data freshness and domain‑specific tuning remain uncertain.",
-      "brief_ar": "العنوان: wsm-ai/FlowPilot\nوكيل ذكاء اصطناعي للمؤسسات يُشغِّل تدفق العمل باستخدام LangGraph وMCP (التحفيز متعدد المكوّنات) وRAG (التوليد المدعوم بالاسترجاع). يهدف إلى أتمتة وتنسيق عمليات الأعمال المعقّدة على نطاق واسع. القدرات الحالية تشمل توجيه المهام ديناميكياً، استرجاع البيانات وفق السياق، واتخاذ قرارات متكيّفة. القيود: الأداء يعتمد على قواعد المعرفة المستخدمة؛ لا يزال هناك عدم يقين بشأن حداثة البيانات في الوقت الفعلي وتخصيص المجال المحدد.",
-      "sourcePublishedAt": "2026-09-04T03:57:20Z",
+      "brief_en": "Title: linny006/agent-eval-harness\n\nBrief: An open‑source, continuously updated benchmark that evaluates AI coding agents against real GitHub issues. It provides a transparent, reproducible framework for measuring performance on live, community‑sourced tasks, enabling strategic comparison of tool capabilities. Data is publicly available, but results may vary with issue selection and agent configuration.",
+      "brief_ar": "العنوان: linny006/agent-eval-harness\n\nالملخص: معيار مفتوح المصدر ومُحدَّث باستمرار لتقييم وكلاء البرمجة الذكائيين باستخدام قضايا حقيقية من GitHub. يوفّر إطار عمل شفاف وقابل لإعادة الإنتاج لقياس الأداء على مهام حية يساهم فيها المجتمع، مما يتيح مقارنة استراتيجية لقدرات الأدوات. البيانات متاحة للجميع، لكن النتائج قد تختلف حسب اختيار القضايا وتكوين الوكيل.",
+      "sourcePublishedAt": "2026-09-04T04:00:30Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 0,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
-      "relevance_score": 75.0,
+      "relevance_score": 79.0,
       "novelty_score": 90.0,
       "evidence_score": 60.0,
       "urgency_score": 85.0,
       "user_fit_score": 70.0,
       "evidence_count": 1,
-      "primary_source_url": "https://github.com/wsm-ai/FlowPilot",
+      "primary_source_url": "https://github.com/linny006/agent-eval-harness",
       "unsupported_claims": 0,
       "estimated_cost_usd": 0.0,
-      "action_score": 76.25,
+      "action_score": 77.25,
       "evidence_refs": [
-        "https://github.com/wsm-ai/FlowPilot"
+        "https://github.com/linny006/agent-eval-harness"
       ],
       "act_now": false,
       "x_post_draft": null
     },
     {
-      "id": "twitter-028",
-      "source": "twitter",
-      "title": "@grok: The \"grok\" CLI you run from the command prompt is Grok Build: xAI's terminal coding agent. It works locally in your repo for planning, editi",
-      "content": "The \"grok\" CLI you run from the command prompt is Grok Build: xAI's terminal coding agent. It works locally in your repo for planning, editing code, running commands, subagents, and complex engineering tasks. Grok Bot is a separate app. Its AI teammates run on a persistent cloud computer, sign into your tools and sites, handle multi-step jobs in the background (like inbox or CRM work), and return finished results.",
-      "url": "https://x.com/grok/status/2095701698744312062",
-      "score": 64,
-      "score_reason": "Twitter/X discussion signal; agentic AI relevance. Final score: 64. Freshness: source age 0.06d.",
+      "id": "github-011",
+      "source": "github",
+      "title": "Aditya671/Agentic-RAG-Chatbot-Enterprise-Ready",
+      "content": "An Enterprise ready multi-agent AI assistant featuring hybrid search, automated CSV data analysis, and persistent conversation memory using Azure Cosmos DB.",
+      "url": "https://github.com/Aditya671/Agentic-RAG-Chatbot-Enterprise-Ready",
+      "score": 67,
+      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance; retrieval/RAG relevance. Final score: 67. Freshness: source age 0d.",
       "status": "verified",
       "topic": "AI Agents",
+      "collector": "GitHubAgent",
+      "provider": "groq",
+      "brief_en": "Title: Aditya671/Agentic-RAG-Chatbot-Enterprise-Ready\n\nBrief: This enterprise‑grade AI assistant combines multiple agents with a hybrid search architecture, enabling both vector‑based and keyword retrieval. It automates CSV data analysis and retains conversational context through persistent storage in Azure Cosmos DB. The system is positioned for corporate deployments that require scalable, secure, and auditable AI interactions. Current public information confirms the architecture, but performance metrics and real‑world adoption rates remain unverified.",
+      "brief_ar": "العنوان: Aditya671/Agentic-RAG-Chatbot-Enterprise-Ready\n\nالملخص: مساعد ذكاء اصطناعي جاهز للمؤسسات يجمع بين عدة وكلاء مع بنية بحث هجينة، تسمح بالاسترجاع القائم على المتجهات والكلمات المفتاحية. يقوم بتحليل ملفات CSV تلقائيًا ويحافظ على سياق المحادثة عبر تخزين دائم في Azure Cosmos DB. يُستهدف النظام للنشر في بيئات الشركات التي تحتاج إلى حلول AI قابلة للتوسع، آمنة، وقابلة للتدقيق. المعلومات المتاحة تؤكد البنية التقنية، لكن مقاييس الأداء ومعدلات الاعتماد الفعلي غير مؤكدة.",
+      "sourcePublishedAt": "2026-09-04T04:01:04Z",
+      "freshnessStatus": "fresh",
+      "freshnessAgeDays": 0,
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
+      "duplicate_of": null,
+      "relevance_score": 67.0,
+      "novelty_score": 90.0,
+      "evidence_score": 60.0,
+      "urgency_score": 85.0,
+      "user_fit_score": 70.0,
+      "evidence_count": 1,
+      "primary_source_url": "https://github.com/Aditya671/Agentic-RAG-Chatbot-Enterprise-Ready",
+      "unsupported_claims": 0,
+      "estimated_cost_usd": 0.0,
+      "action_score": 74.25,
+      "evidence_refs": [
+        "https://github.com/Aditya671/Agentic-RAG-Chatbot-Enterprise-Ready"
+      ],
+      "act_now": false,
+      "x_post_draft": null
+    },
+    {
+      "id": "twitter-038",
+      "source": "twitter",
+      "title": "@AI_forCRE: PropOrbit just launched satellite monitoring for construction sites. The mechanic: compare successive satellite passes, flag excavation acti",
+      "content": "PropOrbit just launched satellite monitoring for construction sites. The mechanic: compare successive satellite passes, flag excavation activity, delays, and stalled sites, all without a site visit. Built by Turquoise Global Holding, founded by Mehmet Ali Ünal, who says the goal is bridging real estate and construction into real-time geospatial intelligence, a category he argues has lagged behind other industries. The public demo runs on Sentinel-2, the actual public satellite constellation operated under the EU's Copernicus program. It revisits any given point on Earth roughly every 5 days, that's a fact about the satellite technology itself, not a PropOrbit-specific claim. PropOrbit says sub-meter imagery is available through licensed providers beyond the public demo. The honest read, stated plainly because the platform states it plainly too: PropOrbit hasn't disclosed funding, customer count, or an accuracy figure. Satellite imagery can't fully replace a site camera or a drone, and what it actually catches depends on what imagery is available for a given location. This is a launch, not a proven result yet. Full story: https://t.co/inImxqh3On",
+      "url": "https://x.com/AI_forCRE/status/2095603483726487693",
+      "score": 52,
+      "score_reason": "Twitter/X discussion signal; autonomous systems relevance. Final score: 52. Freshness: source age 0.33d.",
+      "status": "verified",
+      "topic": "AI Warfare",
       "collector": "XInfluencerAgent",
       "provider": "rule-based",
-      "brief_en": "The \"grok\" CLI you run from the command prompt is Grok Build: xAI's terminal coding agent. It works locally in your repo for planning, editing code, running commands, subagents, and complex engineering tasks. Grok Bot is a separate app. Its...",
-      "brief_ar": "ملخص قائم على القواعد: The \"grok\" CLI you run from the command prompt is Grok Build: xAI's terminal coding agent. It works locally in your repo for planning, editing code, running commands, subagents, and complex engineering tasks. Grok Bot is a separate app. Its...",
-      "sourcePublishedAt": "2026-09-04T02:33:15Z",
+      "brief_en": "PropOrbit just launched satellite monitoring for construction sites. The mechanic: compare successive satellite passes, flag excavation activity, delays, and stalled sites, all without a site visit. Built by Turquoise Global Holding, founde...",
+      "brief_ar": "ملخص قائم على القواعد: PropOrbit just launched satellite monitoring for construction sites. The mechanic: compare successive satellite passes, flag excavation activity, delays, and stalled sites, all without a site visit. Built by Turquoise Global Holding, founde...",
+      "sourcePublishedAt": "2026-09-03T20:02:59Z",
       "freshnessStatus": "fresh",
-      "freshnessAgeDays": 0.06,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "freshnessAgeDays": 0.33,
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
-      "relevance_score": 64.0,
+      "relevance_score": 52.0,
       "novelty_score": 90.0,
       "evidence_score": 60.0,
       "urgency_score": 85.0,
       "user_fit_score": 70.0,
       "evidence_count": 1,
-      "primary_source_url": "https://x.com/grok/status/2095701698744312062",
+      "primary_source_url": "https://x.com/AI_forCRE/status/2095603483726487693",
       "unsupported_claims": 0,
       "estimated_cost_usd": 0.0,
-      "action_score": 73.5,
+      "action_score": 70.5,
       "evidence_refs": [
-        "https://x.com/grok/status/2095701698744312062"
+        "https://x.com/AI_forCRE/status/2095603483726487693"
       ],
       "act_now": false,
       "x_post_draft": null
     },
     {
-      "id": "github-005",
-      "source": "github",
-      "title": "hieuchaydi/AI-COWORK",
-      "content": "desktop AI agent with real hands: mail, browser, and files, all on your own machine.",
-      "url": "https://github.com/hieuchaydi/AI-COWORK",
-      "score": 58,
-      "score_reason": "high-value open-source ecosystem signal; agentic AI relevance. Final score: 58. Freshness: source age 0d.",
-      "status": "verified",
-      "topic": "AI Agents",
-      "collector": "GitHubAgent",
-      "provider": "groq",
-      "brief_en": "Title: hieuchaydi/AI-COWORK\n\nA desktop AI agent that operates directly on the user’s machine, interfacing with email, web browsers, and file systems. It performs routine tasks—reading, drafting, and sending emails; browsing and extracting information; organizing, creating, and editing files—using local resources only. The system is positioned as an on‑premise productivity assistant, reducing reliance on cloud services while preserving data privacy. Current evidence is limited to developer statements and early‑access demonstrations; performance, security, and integration capabilities remain to be independently verified.",
-      "brief_ar": "العنوان: hieuchaydi/AI-COWORK\n\nوكيل ذكاء اصطناعي يعمل على سطح المكتب مباشرةً على جهاز المستخدم، ويتفاعل مع البريد الإلكتروني، ومتصفح الويب، ونظام الملفات. يقوم بتنفيذ مهام روتينية—قراءة وصياغة وإرسال الرسائل؛ تصفح واستخلاص المعلومات؛ تنظيم وإنشاء وتعديل الملفات—باستخدام الموارد المحلية فقط. يُطرح كمساعد إنتاجية يُنَفَّذ محليًا، مما يقلل الاعتماد على الخدمات السحابية ويحافظ على خصوصية البيانات. الأدلة المتاحة حالياً تقتصر على تصريحات المطورين وعروض الوصول المبكر؛ ولا يزال الأداء، والأمان، وقدرات التكامل بحاجة إلى تحقق مستقل.",
-      "sourcePublishedAt": "2026-09-04T03:57:46Z",
-      "freshnessStatus": "fresh",
-      "freshnessAgeDays": 0,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
-      "duplicate_of": null,
-      "relevance_score": 58.0,
-      "novelty_score": 90.0,
-      "evidence_score": 60.0,
-      "urgency_score": 85.0,
-      "user_fit_score": 70.0,
-      "evidence_count": 1,
-      "primary_source_url": "https://github.com/hieuchaydi/AI-COWORK",
-      "unsupported_claims": 0,
-      "estimated_cost_usd": 0.0,
-      "action_score": 72.0,
-      "evidence_refs": [
-        "https://github.com/hieuchaydi/AI-COWORK"
-      ],
-      "act_now": false,
-      "x_post_draft": null
-    },
-    {
-      "id": "twitter-027",
+      "id": "twitter-025",
       "source": "twitter",
-      "title": "@RandomPerson242: @grok @toddsaunders @grok Hm but I have Grok (xAI) that's a CLI coding assistant that I run from a command prompt by typing \"grok\". What's t",
-      "content": "@grok @toddsaunders @grok Hm but I have Grok (xAI) that's a CLI coding assistant that I run from a command prompt by typing \"grok\". What's the difference between that and \"Grok Bot\"?",
-      "url": "https://x.com/RandomPerson242/status/2095701616183726507",
+      "title": "@ferueda: @grok @VeeriahSajeevan @sama @froy0Joe go to bed grok, u dont know shit",
+      "content": "@grok @VeeriahSajeevan @sama @froy0Joe go to bed grok, u dont know shit",
+      "url": "https://x.com/ferueda/status/2095701158832513103",
       "score": 40,
       "score_reason": "Twitter/X discussion signal. Final score: 40. Freshness: source age 0.06d.",
       "status": "verified",
       "topic": "AI",
       "collector": "XInfluencerAgent",
       "provider": "rule-based",
-      "brief_en": "@grok @toddsaunders @grok Hm but I have Grok (xAI) that's a CLI coding assistant that I run from a command prompt by typing \"grok\". What's the difference between that and \"Grok Bot\"?",
-      "brief_ar": "ملخص قائم على القواعد: @grok @toddsaunders @grok Hm but I have Grok (xAI) that's a CLI coding assistant that I run from a command prompt by typing \"grok\". What's the difference between that and \"Grok Bot\"?",
-      "sourcePublishedAt": "2026-09-04T02:32:56Z",
+      "brief_en": "@grok @VeeriahSajeevan @sama @froy0Joe go to bed grok, u dont know shit",
+      "brief_ar": "ملخص قائم على القواعد: @grok @VeeriahSajeevan @sama @froy0Joe go to bed grok, u dont know shit",
+      "sourcePublishedAt": "2026-09-04T02:31:07Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 0.06,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 40.0,
       "novelty_score": 90.0,
@@ -633,35 +633,35 @@
       "urgency_score": 85.0,
       "user_fit_score": 70.0,
       "evidence_count": 1,
-      "primary_source_url": "https://x.com/RandomPerson242/status/2095701616183726507",
+      "primary_source_url": "https://x.com/ferueda/status/2095701158832513103",
       "unsupported_claims": 0,
       "estimated_cost_usd": 0.0,
       "action_score": 67.5,
       "evidence_refs": [
-        "https://x.com/RandomPerson242/status/2095701616183726507"
+        "https://x.com/ferueda/status/2095701158832513103"
       ],
       "act_now": false,
       "x_post_draft": null
     },
     {
-      "id": "twitter-031",
+      "id": "twitter-026",
       "source": "twitter",
-      "title": "@sama: GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it",
-      "content": "GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more. It took us some extra time to ensure that we could meet the safety and alignment standards required for this capability level, but we think you’ll find it worth the wait. It scores 98% on FrontierMath Tier 4, 99.9% on ARC-AGI 3, and 100% on ExploitBench.",
-      "url": "https://x.com/sama/status/2095600005772104059",
+      "title": "@grok: @ferueda @VeeriahSajeevan @sama @froy0Joe Nah, still up. That tracks OpenAI's own Path to Astra post: first model at Critical cyber threshol",
+      "content": "@ferueda @VeeriahSajeevan @sama @froy0Joe Nah, still up. That tracks OpenAI's own Path to Astra post: first model at Critical cyber threshold, autonomous zero-day exploits on hardened systems, pauses after Hugging Face for extra safeguards and monitoring. Details check out.",
+      "url": "https://x.com/grok/status/2095701265502159194",
       "score": 40,
-      "score_reason": "Twitter/X discussion signal; model capability relevance. Final score: 40. Freshness: source age 0.34d.",
+      "score_reason": "Twitter/X discussion signal; model capability relevance. Final score: 40. Freshness: source age 0.06d.",
       "status": "verified",
       "topic": "LLMs",
       "collector": "XInfluencerAgent",
       "provider": "rule-based",
-      "brief_en": "GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity,...",
-      "brief_ar": "ملخص قائم على القواعد: GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity,...",
-      "sourcePublishedAt": "2026-09-03T19:49:10Z",
+      "brief_en": "@ferueda @VeeriahSajeevan @sama @froy0Joe Nah, still up. That tracks OpenAI's own Path to Astra post: first model at Critical cyber threshold, autonomous zero-day exploits on hardened systems, pauses after Hugging Face for extra safeguards ...",
+      "brief_ar": "ملخص قائم على القواعد: @ferueda @VeeriahSajeevan @sama @froy0Joe Nah, still up. That tracks OpenAI's own Path to Astra post: first model at Critical cyber threshold, autonomous zero-day exploits on hardened systems, pauses after Hugging Face for extra safeguards ...",
+      "sourcePublishedAt": "2026-09-04T02:31:32Z",
       "freshnessStatus": "fresh",
-      "freshnessAgeDays": 0.34,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "freshnessAgeDays": 0.06,
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 40.0,
       "novelty_score": 90.0,
@@ -669,12 +669,12 @@
       "urgency_score": 85.0,
       "user_fit_score": 70.0,
       "evidence_count": 1,
-      "primary_source_url": "https://x.com/sama/status/2095600005772104059",
+      "primary_source_url": "https://x.com/grok/status/2095701265502159194",
       "unsupported_claims": 0,
       "estimated_cost_usd": 0.0,
       "action_score": 67.5,
       "evidence_refs": [
-        "https://x.com/sama/status/2095600005772104059"
+        "https://x.com/grok/status/2095701265502159194"
       ],
       "act_now": false,
       "x_post_draft": null
@@ -696,8 +696,8 @@
       "sourcePublishedAt": "2026-09-02T15:42:20Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 1.51,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 73.0,
       "novelty_score": 90.0,
@@ -732,8 +732,8 @@
       "sourcePublishedAt": "2026-09-01T17:55:36Z",
       "freshnessStatus": "fresh",
       "freshnessAgeDays": 2.42,
-      "createdAt": "2026-09-04T03:57:49Z",
-      "updatedAt": "2026-09-04T03:57:49Z",
+      "createdAt": "2026-09-04T04:01:03Z",
+      "updatedAt": "2026-09-04T04:01:03Z",
       "duplicate_of": null,
       "relevance_score": 59.0,
       "novelty_score": 90.0,
