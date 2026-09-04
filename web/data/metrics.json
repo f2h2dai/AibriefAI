@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T03:46:23Z",
+  "generated_at": "2026-09-04T03:55:27Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,7 +9,7 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-04T03:46:23Z",
+  "latest_successful_run": "2026-09-04T03:55:27Z",
   "highest_ranked_signal": {
     "id": "arxiv-020",
     "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
@@ -24,10 +24,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 838)"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6712, Req"
     }
   ],
-  "runtime_seconds": 414.339,
+  "runtime_seconds": 46.674,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-04T03:46:23Z",
+    "planned_at": "2026-09-04T03:55:27Z",
     "production_threshold": 70.0
   }
 }
