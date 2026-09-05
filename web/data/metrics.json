@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T14:05:44Z",
+  "generated_at": "2026-09-05T19:59:18Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-05T14:05:44Z",
+  "latest_successful_run": "2026-09-05T19:59:18Z",
   "highest_ranked_signal": {
-    "id": "twitter-029",
-    "title": "@GoogleDeepMind: Two new Gemini models are here to help scale your AI agents and secure code: 🔘 3.8 Flash: our most intelligent model yet with significant ga",
-    "action_score": 75.75,
-    "url": "https://x.com/GoogleDeepMind/status/2095175498967949359"
+    "id": "github-006",
+    "title": "Scottcjn/bottube",
+    "action_score": 77.5,
+    "url": "https://github.com/Scottcjn/bottube"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7241, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7718, Req"
     }
   ],
-  "runtime_seconds": 72.446,
+  "runtime_seconds": 69.586,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-05T14:05:44Z",
+    "planned_at": "2026-09-05T19:59:18Z",
     "production_threshold": 70.0
   }
 }
