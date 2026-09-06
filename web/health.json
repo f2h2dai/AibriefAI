@@ -1,19 +1,19 @@
 {
   "status": "ok",
-  "generated_at": "2026-09-06T14:29:59Z",
+  "generated_at": "2026-09-06T20:02:34Z",
   "signals": 12,
   "approved": 12,
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
-    "gemini": 9,
-    "groq": 27,
-    "rule-based": 1
+    "gemini": 1,
+    "groq": 14,
+    "rule-based": 21
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 2.37,
+  "max_source_age_days": 2.6,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "agents": [
@@ -60,67 +60,67 @@
   ],
   "events": [
     {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-li"
-    },
-    {
-      "time": "2026-09-06T14:29:59Z",
+      "time": "2026-09-06T20:02:34Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7354, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7624, Req"
     },
     {
-      "time": "2026-09-06T14:29:59Z",
+      "time": "2026-09-06T20:02:34Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-06T14:29:59Z",
+      "time": "2026-09-06T20:02:34Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7610, Req"
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
       "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7594, Req"
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7578, Req"
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7560, Req"
+    },
+    {
+      "time": "2026-09-06T20:02:34Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
-  "notification_enabled": true,
-  "notification_sent": true,
-  "notification_reason": "sent"
+  "notification_enabled": false,
+  "notification_sent": false,
+  "notification_reason": "not morning run"
 }

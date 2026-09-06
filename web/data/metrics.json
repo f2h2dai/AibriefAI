@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T14:29:59Z",
+  "generated_at": "2026-09-06T20:02:34Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-06T14:29:59Z",
+  "latest_successful_run": "2026-09-06T20:02:34Z",
   "highest_ranked_signal": {
     "id": "github-007",
-    "title": "red-orbita/bulwark-gateway",
-    "action_score": 74.5,
-    "url": "https://github.com/red-orbita/bulwark-gateway"
+    "title": "naveen6gowda/Portfolio",
+    "action_score": 76.75,
+    "url": "https://github.com/naveen6gowda/Portfolio"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7354, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7541, Req"
     }
   ],
-  "runtime_seconds": 403.36,
+  "runtime_seconds": 46.843,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-06T14:29:59Z",
+    "planned_at": "2026-09-06T20:02:34Z",
     "production_threshold": 70.0
   }
 }
