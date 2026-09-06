@@ -4,6 +4,31 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/tkatsumi06j/status/2096448828845240688",
+        "https://x.com/ptptin/status/2096398354825826722"
+      ],
+      "id": "story-f737c9597e12aad0e70fbf81",
+      "reason": "LAWS: Lethal Autonomous Weapons System \u81ea\u5f8b\u578b\u81f4\u6b7b\u5175\u5668\u30b7\u30b9\u30c6\u30e0\uff08LAWS\uff09\u306b\u3064\u3044\u3066 | \u5916\u52d9\u7701 https://t.co/Np5N4gfc5O",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-06T06:46:31Z",
+      "source": "x",
+      "source_published_at": "2026-09-06T04:02:05Z",
+      "source_url": "https://x.com/tkatsumi06j/status/2096448828845240688",
+      "status": "x-intel",
+      "title": "LAWS: Lethal Autonomous Weapons System \u81ea\u5f8b\u578b\u81f4\u6b7b\u5175\u5668\u30b7\u30b9\u30c6\u30e0\uff08LAWS\uff09\u306b\u3064\u3044\u3066 | \u5916\u52d9\u7701 https://t.co/Np5N4gfc5O",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 4,
       "evidence_status": "corroborated",
       "evidence_urls": [
@@ -280,57 +305,32 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/MilitaryTimes/status/2095898658113814569"
-      ],
-      "id": "story-7a8c0c24f1cea8a91cc846e7",
-      "reason": "Opposition from the U.S. and Russia has raised doubts that countries meeting Friday will agree on international rules about the use of autonomous weapons. https://t.co/I6LFsOfZmk",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-05T20:22:06Z",
-      "source": "x",
-      "source_published_at": "2026-09-04T15:35:54Z",
-      "source_url": "https://x.com/MilitaryTimes/status/2095898658113814569",
-      "status": "x-intel",
-      "title": "Opposition from the U.S. and Russia has raised doubts that countries meeting Friday will agree on international rules about the use of autonomous weapons. https",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-09-06T01:56:58Z",
+    "alerted_at": "2026-09-06T06:46:31Z",
     "confidence": 0,
-    "source_url": "https://x.com/arabnews/status/2096392943116399006",
-    "title": "Over 130 countries agreed on Saturday to define lethal autonomous weapons systems - \"killer robots\" to their critics - the first step toward a possible treaty r"
+    "source_url": "https://x.com/tkatsumi06j/status/2096448828845240688",
+    "title": "LAWS: Lethal Autonomous Weapons System \u81ea\u5f8b\u578b\u81f4\u6b7b\u5175\u5668\u30b7\u30b9\u30c6\u30e0\uff08LAWS\uff09\u306b\u3064\u3044\u3066 | \u5916\u52d9\u7701 https://t.co/Np5N4gfc5O"
   },
   "last_run": {
     "alerted_now": 1,
-    "clustered": 15,
+    "clustered": 16,
     "collected": 25,
-    "corroborated_count": 3,
+    "corroborated_count": 2,
     "initial_collected": 25,
     "initial_source_counts": {
       "x": 25
     },
-    "initial_x_relevant": 15,
+    "initial_x_relevant": 18,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 17.871,
-      "projected_minutes_per_30d": 857.81,
+      "measured_seconds": 11.484,
+      "projected_minutes_per_30d": 551.21,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -344,7 +344,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 7,
+    "stage1_survivors": 10,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -373,6 +373,6 @@
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-06T01:56:58Z",
+  "updated_at": "2026-09-06T06:46:31Z",
   "version": 1
 }
