@@ -825,10 +825,12 @@ jobs:
 
               return max(0, min(100, score))
 
-          def topic_for(title, content):
+          def topic_for(title, content, source=""):
               text = f"{title} {content}".lower()
 
-              if is_before_trend_candidate({"title": title, "content": content}):
+              if source in {"twitter", "google-news"} and is_before_trend_candidate(
+                  {"title": title, "content": content}
+              ):
                   return "Before Trend"
               if "military" in text or "defense" in text or "drone" in text or "warfare" in text:
                   return "AI Warfare"
@@ -1188,7 +1190,7 @@ jobs:
               log_event("warning", "XInfluencerAgent", f"X influencer search failed before collection: {type(e).__name__}: {safe_log_text(e)}")
 
           try:
-              before_trend_news = collect_public_ai_intel_news(os.environ, limit=10)
+              before_trend_news = collect_public_ai_intel_news(os.environ, limit=12)
               items.extend(before_trend_news)
               log_event("info", "NewsAgent", f"Collected {len(before_trend_news)} early public-news signals.")
           except Exception as e:
@@ -1263,7 +1265,7 @@ jobs:
                   "score": score,
                   "score_reason": score_note,
                   "status": "verified" if score >= 40 else "held",
-                  "topic": topic_for(raw["title"], raw["content"]),
+                  "topic": topic_for(raw["title"], raw["content"], raw["source"]),
                   "collector": raw.get("collector", "CollectorAgent"),
                   "provider": provider,
                   "brief_en": en,
@@ -1285,10 +1287,24 @@ jobs:
               reverse=True,
           )
           x_signal_quota = 5
-          x_signals = [signal for signal in ranked_signals if signal["source"] == "twitter"][:x_signal_quota]
-          other_signals = [signal for signal in ranked_signals if signal["source"] != "twitter"]
+          priority_x_urls = {post["url"] for post in DEFAULT_X_PRIORITY_POSTS}
+          priority_x_signals = [
+              signal for signal in ranked_signals
+              if signal["source"] == "twitter" and signal["url"] in priority_x_urls
+          ]
+          remaining_x_signals = [
+              signal for signal in ranked_signals
+              if signal["source"] == "twitter" and signal["url"] not in priority_x_urls
+          ]
+          x_signals = (priority_x_signals + remaining_x_signals)[:x_signal_quota]
+          before_trend_news = [
+              signal for signal in ranked_signals
+              if signal["source"] == "google-news" and signal["topic"] == "Before Trend"
+          ][:2]
+          selected_ids = {signal["id"] for signal in x_signals + before_trend_news}
+          other_signals = [signal for signal in ranked_signals if signal["id"] not in selected_ids]
           signals = sorted(
-              x_signals + other_signals[:12 - len(x_signals)],
+              x_signals + before_trend_news + other_signals[:12 - len(x_signals) - len(before_trend_news)],
               key=lambda x: (freshness_rank(x), x["score"]),
               reverse=True,
           )

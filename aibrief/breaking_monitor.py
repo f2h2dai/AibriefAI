@@ -52,17 +52,17 @@ DEFAULT_X_INTEL_QUERY = (
     'OR "جيميناي" OR "البنتاغون" OR "إيران" OR "ايران"'
 )
 DEFAULT_AI_INTEL_NEWS_QUERIES = [
+    '"LG TV" privacy microphone standby security investigation',
+    '"smart TV" surveillance privacy telemetry vulnerability',
+    '"Saudi government app" private key "Saudi National Bank" Nusuk',
+    '(Saudi OR KSA OR Riyadh) (AI OR cyber OR surveillance OR defense OR security)',
+    '(السعودية OR الرياض) (أمن سيبراني OR اختراق OR تسريب OR مراقبة OR ذكاء اصطناعي)',
     '"Grok AI" Pentagon Iran 2000 targets 96 hours',
     '"Grok Gov Model" "Project Maven"',
     '"MizarVision" AI satellite Iran "Prince Sultan Air Base"',
     '"AI targeting" Pentagon Iran',
     '"military AI" "Project Maven"',
     '"geospatial intelligence" AI "Middle East"',
-    '"LG TV" privacy microphone standby security investigation',
-    '"smart TV" surveillance privacy telemetry vulnerability',
-    '"Saudi government app" private key "Saudi National Bank" Nusuk',
-    '(Saudi OR KSA OR Riyadh) (AI OR cyber OR surveillance OR defense OR security)',
-    '(السعودية OR الرياض) (أمن سيبراني OR اختراق OR تسريب OR مراقبة OR ذكاء اصطناعي)',
 ]
 DEFAULT_X_QUERY_FAMILIES = [
     '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "Pentagon AI" OR "DoD AI"',
@@ -2211,8 +2211,10 @@ def collect_public_ai_intel_news(
         return []
     collected = []
     seen = set()
-    per_query_limit = max(1, safe_int(env.get("BREAKING_NEWS_FALLBACK_PER_QUERY"), 5))
-    for query in ai_intel_news_queries(env):
+    queries = ai_intel_news_queries(env)
+    configured_per_query = max(1, safe_int(env.get("BREAKING_NEWS_FALLBACK_PER_QUERY"), 5))
+    per_query_limit = min(configured_per_query, max(1, limit // max(1, len(queries))))
+    for query in queries:
         encoded = urllib.parse.quote_plus(query)
         url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
         request = urllib.request.Request(url, headers={"User-Agent": "AibriefAI/1.0"})

@@ -47,6 +47,13 @@ class UpdateFeedXFreshnessTests(unittest.TestCase):
         self.assertLess(freshness_gate, ranking)
         self.assertIn("Rejected stale X post before ranking.", workflow)
 
+    def test_update_feed_reserves_space_for_priority_x_and_before_trend_news(self):
+        workflow = WORKFLOW.read_text(encoding="utf-8")
+
+        self.assertIn('priority_x_urls = {post["url"] for post in DEFAULT_X_PRIORITY_POSTS}', workflow)
+        self.assertIn('signal["source"] == "google-news" and signal["topic"] == "Before Trend"', workflow)
+        self.assertIn("x_signals + before_trend_news + other_signals", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
