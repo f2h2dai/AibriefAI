@@ -58,6 +58,11 @@ DEFAULT_AI_INTEL_NEWS_QUERIES = [
     '"AI targeting" Pentagon Iran',
     '"military AI" "Project Maven"',
     '"geospatial intelligence" AI "Middle East"',
+    '"LG TV" privacy microphone standby security investigation',
+    '"smart TV" surveillance privacy telemetry vulnerability',
+    '"Saudi government app" private key "Saudi National Bank" Nusuk',
+    '(Saudi OR KSA OR Riyadh) (AI OR cyber OR surveillance OR defense OR security)',
+    '(السعودية OR الرياض) (أمن سيبراني OR اختراق OR تسريب OR مراقبة OR ذكاء اصطناعي)',
 ]
 DEFAULT_X_QUERY_FAMILIES = [
     '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "Pentagon AI" OR "DoD AI"',
@@ -65,12 +70,16 @@ DEFAULT_X_QUERY_FAMILIES = [
     '"MizarVision" OR "AI-tagged satellite" OR "geospatial intelligence" OR "military assets"',
     '"Operation Epic Fury" OR "Grok missiles" OR "2,000 targets" OR "96 hours"',
     '"الذكاء الاصطناعي" عسكري OR "غروك" البنتاغون OR "ذكاء اصطناعي" استهداف OR "طائرات مسيرة"',
+    '("Saudi" OR "KSA" OR "Riyadh" OR "Nusuk" OR "Saudi National Bank") (AI OR cyber OR security OR surveillance OR leaked OR exposed)',
+    '("LG TV" OR "smart TV" OR "connected device") (privacy OR surveillance OR microphone OR telemetry OR vulnerability)',
+    '(السعودية OR الرياض OR نسك) (اختراق OR تسريب OR مراقبة OR أمن سيبراني OR ذكاء اصطناعي)',
 ]
 DEFAULT_X_ACCOUNT_QUERY = (
     '"AI" OR "Grok" OR "Project Maven" OR "autonomous" OR "targeting" '
     'OR "geospatial" OR "satellite" OR "الذكاء الاصطناعي" OR "غروك"'
 )
 DEFAULT_X_PRIORITY_ACCOUNTS = [
+    "iam_zachi",
     "DeptofDefense",
     "DoD_CDAO",
     "CENTCOM",
@@ -94,6 +103,20 @@ DEFAULT_X_PRIORITY_ACCOUNTS = [
     "shieldaitech",
     "xai",
     "Grok",
+]
+DEFAULT_X_PRIORITY_POSTS = [
+    {
+        "author": "iam_zachi",
+        "url": "https://x.com/iam_zachi/status/2097427204967657959",
+        "created_at": "2026-09-08T20:49:48Z",
+        "text": (
+            "Security researcher reports that a Saudi government app with more than 10 million "
+            "installs shipped a Saudi National Bank private key and bank API credentials. The "
+            "affected material was removed and the vendor says credentials were rotated; rotation "
+            "could not be independently verified. No secret values are reproduced here."
+        ),
+        "velocity": 95,
+    },
 ]
 DEFAULT_X_INFLUENCERS = [
     "karpathy",
@@ -403,6 +426,58 @@ X_INTEL_EVENT_MARKERS = [
     "استخدام",
     "نشر",
     "استهداف",
+]
+
+BEFORE_TREND_EVENT_MARKERS = [
+    "investigation",
+    "researcher reports",
+    "researchers found",
+    "disclosed",
+    "discovery",
+    "exposed",
+    "leaked",
+    "shipped",
+    "hardcoded",
+    "vulnerability",
+    "breach",
+    "fixed and rotated",
+    "denies",
+    "scanning",
+    "recording",
+    "كشف",
+    "تحقيق",
+    "تسريب",
+    "ثغرة",
+    "مكشوف",
+    "نفى",
+]
+
+BEFORE_TREND_STRATEGIC_MARKERS = [
+    "saudi",
+    "ksa",
+    "riyadh",
+    "nusuk",
+    "saudi national bank",
+    "government app",
+    "private key",
+    "api credentials",
+    "cyber",
+    "security",
+    "privacy",
+    "surveillance",
+    "smart tv",
+    "lg tv",
+    "connected device",
+    "microphone",
+    "telemetry",
+    "السعودية",
+    "الرياض",
+    "نسك",
+    "البنك الأهلي السعودي",
+    "مفتاح خاص",
+    "أمن سيبراني",
+    "خصوصية",
+    "مراقبة",
 ]
 
 HIGH_IMPACT_PATTERNS = {
@@ -1313,11 +1388,24 @@ def ai_war_relevant(candidate: dict) -> bool:
     return x_intel_relevance_score(candidate) >= DEFAULT_MIN_X_RELEVANCE
 
 
+def is_before_trend_candidate(candidate: dict) -> bool:
+    text = normalize_text(
+        " ".join(
+            str(candidate.get(key, ""))
+            for key in ("title", "content", "text", "reason", "alert")
+        )
+    ).lower()
+    return (
+        any(marker in text for marker in BEFORE_TREND_EVENT_MARKERS)
+        and any(marker in text for marker in BEFORE_TREND_STRATEGIC_MARKERS)
+    )
+
+
 def x_intel_relevance_score(candidate: dict) -> int:
     text = normalize_text(
         " ".join(
             str(candidate.get(key, ""))
-            for key in ("title", "content", "reason", "alert")
+            for key in ("title", "content", "text", "reason", "alert")
         )
     ).lower()
     if not text:
@@ -1334,6 +1422,8 @@ def x_intel_relevance_score(candidate: dict) -> int:
         score += 1
     if event_hit and (ai_hit or score >= 4):
         score += 1
+    if is_before_trend_candidate(candidate):
+        score += 4
     return score
 
 
@@ -1967,7 +2057,13 @@ def normalize_x_record(record: dict, handle: str = "") -> dict | None:
             or record.get("date")
             or ""
         ),
-        "velocity": int(record.get("score") or record.get("likes") or record.get("like_count") or 40),
+        "velocity": int(
+            record.get("velocity")
+            or record.get("score")
+            or record.get("likes")
+            or record.get("like_count")
+            or 40
+        ),
     }
 
 
@@ -2036,7 +2132,12 @@ def x_cli_env(env: dict[str, str]) -> dict[str, str]:
 
 
 def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
-    collected = []
+    collected = [
+        candidate
+        for record in DEFAULT_X_PRIORITY_POSTS
+        for candidate in [normalize_x_record(record, str(record.get("author", "")))]
+        if candidate and x_post_is_fresh(candidate, env)
+    ]
     command_env = x_cli_env(env)
     for query in x_search_queries(env):
         for command in x_search_commands(query):
@@ -2172,6 +2273,8 @@ def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
         candidates.extend(collect_birdclaw_export(env))
         candidates.extend(collect_x_cli(env))
         candidates.extend(collect_local_signals(source_focus=source_focus))
+        if truthy(env.get("BREAKING_PUBLISH_NEWS_FALLBACK"), False):
+            candidates.extend(collect_public_ai_intel_news(env, limit=10))
         if candidates:
             evidence_candidates = []
             if truthy(env.get("BREAKING_ENABLE_SECONDARY_EVIDENCE"), True) and any(

@@ -138,8 +138,11 @@ jobs:
 
           from aibrief.agents.orchestrator import AgentOperationsOrchestrator, write_operations_artifacts
           from aibrief.breaking_monitor import (
+              DEFAULT_X_PRIORITY_POSTS,
               DEFAULT_X_PRIORITY_ACCOUNTS,
               canonical_x_post_url,
+              collect_public_ai_intel_news,
+              is_before_trend_candidate,
               normalize_x_record,
               source_published_timestamp,
               x_record_handle,
@@ -712,6 +715,21 @@ jobs:
               collected = []
               seen_urls = set()
               since_date = (NOW_DT - timedelta(days=X_MAX_SOURCE_AGE_DAYS)).strftime("%Y-%m-%d")
+              for priority_post in DEFAULT_X_PRIORITY_POSTS:
+                  normalized = normalize_x_record(
+                      priority_post,
+                      str(priority_post.get("author") or ""),
+                  )
+                  published_dt = source_published_timestamp(normalized or {})
+                  if not normalized or not published_dt:
+                      continue
+                  if not timedelta(minutes=-10) <= NOW_DT - published_dt <= timedelta(days=X_MAX_SOURCE_AGE_DAYS):
+                      continue
+                  normalized["collector"] = "XInfluencerAgent"
+                  normalized["source_published_at"] = isoformat_dt(published_dt)
+                  collected.append(normalized)
+                  seen_urls.add(normalized["url"])
+
               base_queries = sorted(
                   build_x_search_queries(os.environ),
                   key=lambda query: 0 if "from:" in query else 1,
@@ -772,6 +790,19 @@ jobs:
                   "defense": 12,
                   "drone": 12,
                   "surveillance": 10,
+                  "privacy": 12,
+                  "cyber": 12,
+                  "vulnerability": 12,
+                  "private key": 14,
+                  "hardcoded": 10,
+                  "leaked": 10,
+                  "exposed": 10,
+                  "saudi": 9,
+                  "riyadh": 8,
+                  "smart tv": 9,
+                  "lg tv": 10,
+                  "microphone": 8,
+                  "telemetry": 8,
                   "osint": 10,
                   "geopolitics": 9,
                   "infrastructure": 8,
@@ -783,6 +814,7 @@ jobs:
                   "arxiv": 30,
                   "reddit": 18,
                   "twitter": 28,
+                  "google-news": 30,
                   "youtube": 18,
                   "fallback": 20,
               }.get(source, 15)
@@ -796,6 +828,8 @@ jobs:
           def topic_for(title, content):
               text = f"{title} {content}".lower()
 
+              if is_before_trend_candidate({"title": title, "content": content}):
+                  return "Before Trend"
               if "military" in text or "defense" in text or "drone" in text or "warfare" in text:
                   return "AI Warfare"
               if "agent" in text:
@@ -1152,6 +1186,13 @@ jobs:
                   log_event("warning", "XInfluencerAgent", "X influencer search returned zero items. Configure X access and influencer handles.")
           except Exception as e:
               log_event("warning", "XInfluencerAgent", f"X influencer search failed before collection: {type(e).__name__}: {safe_log_text(e)}")
+
+          try:
+              before_trend_news = collect_public_ai_intel_news(os.environ, limit=10)
+              items.extend(before_trend_news)
+              log_event("info", "NewsAgent", f"Collected {len(before_trend_news)} early public-news signals.")
+          except Exception as e:
+              log_event("warning", "NewsAgent", f"Early public-news collection unavailable: {type(e).__name__}")
 
           try:
               from aibrief.connectors.agent_reach import fetch_reddit_deep, fetch_youtube

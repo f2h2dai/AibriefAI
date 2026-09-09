@@ -10,6 +10,7 @@ from pathlib import Path
 from aibrief.breaking_monitor import (
     DEFAULT_X_INFLUENCERS,
     DEFAULT_X_INTEL_QUERY,
+    DEFAULT_X_PRIORITY_POSTS,
     DEFAULT_X_PRIORITY_ACCOUNTS,
     annotate_secondary_evidence,
     canonical_x_post_url,
@@ -19,6 +20,7 @@ from aibrief.breaking_monitor import (
     collect_local_signals,
     event_similarity,
     isoformat,
+    is_before_trend_candidate,
     projected_monthly_runner_usage,
     public_breaking_status,
     run_monitor_cycle,
@@ -30,6 +32,7 @@ from aibrief.breaking_monitor import (
     x_cli_env,
     x_influencer_handles,
     x_post_is_fresh,
+    x_intel_relevance_score,
     normalize_x_record,
     parse_x_cli_output,
     x_search_commands,
@@ -424,6 +427,40 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertTrue(any("from:DeptofDefense" in query for query in queries))
         self.assertTrue(any("الذكاء الاصطناعي" in query for query in queries))
         self.assertTrue(any("MizarVision" in query for query in queries))
+
+    def test_default_x_queries_cover_saudi_and_device_security_before_trend(self):
+        queries = x_search_queries(
+            {
+                "BREAKING_MAX_X_HANDLES": "10",
+                "BREAKING_X_HANDLE_BATCH_SIZE": "10",
+                "BREAKING_MAX_X_QUERIES": "16",
+            }
+        )
+
+        self.assertIn("iam_zachi", DEFAULT_X_PRIORITY_ACCOUNTS)
+        self.assertTrue(any("Saudi National Bank" in query for query in queries))
+        self.assertTrue(any("LG TV" in query and "privacy" in query for query in queries))
+        self.assertTrue(any("السعودية" in query and "أمن سيبراني" in query for query in queries))
+
+    def test_priority_saudi_post_is_public_redacted_and_before_trend(self):
+        [post] = DEFAULT_X_PRIORITY_POSTS
+
+        self.assertEqual(post["url"], "https://x.com/iam_zachi/status/2097427204967657959")
+        self.assertNotIn("CLIENT_SECRET", post["text"])
+        self.assertNotIn("ELrf", post["text"])
+        self.assertTrue(is_before_trend_candidate(post))
+        self.assertGreaterEqual(x_intel_relevance_score(post), 4)
+
+    def test_lg_tv_security_investigation_is_before_trend_without_ai_keyword(self):
+        candidate = {
+            "source": "google-news",
+            "title": "Investigation alleges LG TV privacy and microphone risks; LG denies recording",
+            "content": "Researchers found smart TV telemetry and connected-device scanning behavior.",
+            "url": "https://example.test/lg-tv-investigation",
+        }
+
+        self.assertTrue(is_before_trend_candidate(candidate))
+        self.assertGreaterEqual(x_intel_relevance_score(candidate), 4)
 
     def test_sensitive_x_claim_gets_second_source_metadata(self):
         [candidate] = annotate_secondary_evidence(
