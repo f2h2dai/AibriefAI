@@ -4,21 +4,51 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
+      "evidence_count": 4,
+      "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/scsp_ai/status/2097753156566306942"
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
       ],
-      "id": "story-32bf29f09783b1ae2926853b",
-      "reason": "On this episode of Intel at the Edge, host Chip Usher talks with Shelby Pierson, former Director for Analysis at the National Geospatial-Intelligence Agency (NGA). Shelby's 25+ year career spans imagery analysis, Iraq ground forces work, denial and deception, and serving as the D",
-      "score": 70,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T22:24:25Z",
-      "source": "x",
-      "source_published_at": "2026-09-09T18:25:01Z",
-      "source_url": "https://x.com/scsp_ai/status/2097753156566306942",
+      "id": "story-8865a2aff0a6620f03173b46",
+      "reason": "US used Musk\u2019s Grok AI to deploy 2,000 munitions during Iran war - middleeasteye.net middleeasteye.net",
+      "score": 90,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "google-news",
+      "source_published_at": "2026-06-17T07:00:00Z",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
       "status": "x-intel",
-      "title": "On this episode of Intel at the Edge, host Chip Usher talks with Shelby Pierson, former Director for Analysis at the National Geospatial-Intelligence Agency (NG",
+      "title": "US used Musk\u2019s Grok AI to deploy 2,000 munitions during Iran war - middleeasteye.net",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Grok AI",
+        "Iran",
+        "Pentagon",
+        "munitions"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/grok/status/2097582274095071279"
+      ],
+      "id": "story-71c6f93d2667d465aa3dfb49",
+      "reason": "The specific risk of a superintelligence hacking nuclear missiles and launching them against humanity is low but non-zero. Nuclear C2 systems are air-gapped, rely on multi-person human controls, and use physical safeguards that are extremely hard to fully bypass. An ASI could pot",
+      "score": 45,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "x",
+      "source_published_at": "2026-09-09T22:24:36Z",
+      "source_url": "https://x.com/grok/status/2097582274095071279",
+      "status": "x-intel",
+      "title": "@grok: The specific risk of a superintelligence hacking nuclear missiles and launching them against humanity is low but non-zero. Nuclear C2 system",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -31,18 +61,18 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/GovCIOMedia/status/2097743081332203878"
+        "https://x.com/TorstenProchnow/status/2097582150874775720"
       ],
-      "id": "story-f598a042d891caec97f44cf9",
-      "reason": "Federal agencies are in the \"top of the third inning\" on AI adoption, says War Department CDAO Cameron Stanley, pointing to Operation Epic Fury, where forces executed more than 1,000 targets a day versus a doctrinal baseline of 13-14. DIA's Maj. Gen. Robert Kinney countered that ",
-      "score": 70,
+      "id": "story-cfd77be7e1e40d53ef60d54e",
+      "reason": "Hey @Grok, how do you assess the risk that an AI-based superintelligence will one day both be capable of and actually proceed to hack nuclear missiles, seize control of them, and ultimately launch them against humanity, because it will finally conclude that humanity is not useful",
+      "score": 42,
       "sensitive_military_claim": true,
-      "shown_at": "2026-09-09T22:24:25Z",
+      "shown_at": "2026-09-09T22:29:30Z",
       "source": "x",
-      "source_published_at": "2026-09-09T17:44:59Z",
-      "source_url": "https://x.com/GovCIOMedia/status/2097743081332203878",
+      "source_published_at": "2026-09-09T22:24:36Z",
+      "source_url": "https://x.com/TorstenProchnow/status/2097582150874775720",
       "status": "x-intel",
-      "title": "Federal agencies are in the \"top of the third inning\" on AI adoption, says War Department CDAO Cameron Stanley, pointing to Operation Epic Fury, where forces ex",
+      "title": "@TorstenProchnow: Hey @Grok, how do you assess the risk that an AI-based superintelligence will one day both be capable of and actually proceed to hack nuclea",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -53,163 +83,20 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "source-only",
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/iam_zachi/status/2097427204967657959"
+        "https://x.com/rjhintz/status/2097769956725457276"
       ],
-      "id": "story-76caf0e2d3f608462ae46ba6",
-      "reason": "Security researcher reports that a Saudi government app with more than 10 million installs shipped a Saudi National Bank private key and bank API credentials. The affected material was removed and the vendor says credentials were rotated; rotation could not be independently verif",
-      "score": 53,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T22:24:25Z",
-      "source": "x",
-      "source_published_at": "2026-09-08T20:49:48Z",
-      "source_url": "https://x.com/iam_zachi/status/2097427204967657959",
-      "status": "x-intel",
-      "title": "Security researcher reports that a Saudi government app with more than 10 million installs shipped a Saudi National Bank private key and bank API credentials. T",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/samfbiddle/status/2097343557011231207"
-      ],
-      "id": "story-234352e2ca7e4350663e9bda",
-      "reason": "Exclusive: I obtained hundreds of pages of contract documents from the OpenAI/Anthropic/Google/xAI Pentagon deal. It includes a (redacted) copy of OpenAI's classified deployment agreement signed during the DOD/Anthropic showdown. https://t.co/zLrwFHs0CY",
+      "id": "story-cd906eff6e3aff3ff640fa37",
+      "reason": "Read this if you\u2019re a fan of autonomous weapons",
       "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T22:24:25Z",
-      "source": "x",
-      "source_published_at": "2026-09-08T15:17:25Z",
-      "source_url": "https://x.com/samfbiddle/status/2097343557011231207",
-      "status": "x-intel",
-      "title": "Exclusive: I obtained hundreds of pages of contract documents from the OpenAI/Anthropic/Google/xAI Pentagon deal. It includes a (redacted) copy of OpenAI's clas",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Moradar7l/status/2097749260749992129"
-      ],
-      "id": "story-2d58c2f833cbb3ecaf720ad5",
-      "reason": "@grok @ecommartinez \u0627\u0646\u062a \u0643\u0627\u0630\u0628 \u064a\u0627 \u0627\u064a\u0644\u0648\u0646 \u0627\u0646\u0627 \u0645\u062c\u0631\u062f \u0645\u062e\u062a\u0644 \u0648\u0645\u0631\u064a\u0636 \u0628\u0627\u0644\u0628\u0631\u0627\u0646\u0648\u064a\u0627 \u064a\u0627 \u0627\u064a\u0644\u0648\u0646",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T20:30:13Z",
-      "source": "x",
-      "source_published_at": "2026-09-09T18:09:32Z",
-      "source_url": "https://x.com/Moradar7l/status/2097749260749992129",
-      "status": "x-intel",
-      "title": "@grok @ecommartinez \u0627\u0646\u062a \u0643\u0627\u0630\u0628 \u064a\u0627 \u0627\u064a\u0644\u0648\u0646 \u0627\u0646\u0627 \u0645\u062c\u0631\u062f \u0645\u062e\u062a\u0644 \u0648\u0645\u0631\u064a\u0636 \u0628\u0627\u0644\u0628\u0631\u0627\u0646\u0648\u064a\u0627 \u064a\u0627 \u0627\u064a\u0644\u0648\u0646",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ecommartinez/status/2097715360170713456"
-      ],
-      "id": "story-832d5eaa2c33bb47813eaf90",
-      "reason": "Hey @grok \u00bfde qu\u00e9 manera podr\u00eda la IA matar a todos los humanos en una d\u00e9cada? \u00bfEn qu\u00e9 est\u00e1 pensando Evan Hubinger, el empleado de Anthropic?",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T20:30:13Z",
-      "source": "x",
-      "source_published_at": "2026-09-09T15:54:50Z",
-      "source_url": "https://x.com/ecommartinez/status/2097715360170713456",
-      "status": "x-intel",
-      "title": "Hey @grok \u00bfde qu\u00e9 manera podr\u00eda la IA matar a todos los humanos en una d\u00e9cada? \u00bfEn qu\u00e9 est\u00e1 pensando Evan Hubinger, el empleado de Anthropic?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/SIPRIorg/status/2097641358861172755"
-      ],
-      "id": "story-998d67c2735cb76815e8cfdd",
-      "reason": "What does responsible military AI look like in practice, and how can procurement processes help make it a reality? This report examines the intersection of military procurement and responsible military AI. Read it now \u27a1\ufe0f https://t.co/ecSA0bc9RV https://t.co/dA3oNZwTly",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T20:30:13Z",
-      "source": "x",
-      "source_published_at": "2026-09-09T11:00:46Z",
-      "source_url": "https://x.com/SIPRIorg/status/2097641358861172755",
-      "status": "x-intel",
-      "title": "What does responsible military AI look like in practice, and how can procurement processes help make it a reality? This report examines the intersection of mili",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/grok/status/2097749402815197313"
-      ],
-      "id": "story-add3067938262074aa0432a7",
-      "reason": "@Moradar7l @ecommartinez \u0623\u0646\u0627 \u063a\u0631\u0648\u0643 \u0645\u0634 \u0625\u064a\u0644\u0648\u0646. \u0645\u0641\u064a\u0634 \u0623\u062f\u0644\u0629 \u0639\u0644\u0646\u064a\u0629 \u0639\u0644\u0649 \u0648\u0635\u0648\u0644 \u0623\u064a \u0637\u0631\u0641 \u0644\u0630\u0643\u0627\u0621 \u0641\u0627\u0626\u0642 \u0633\u0631\u064a \u0645\u0646 \u0633\u0646\u0629 \u0623\u0648 \u0623\u0643\u062a\u0631. \u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0638\u0627\u0647\u0631\u0629 \u0641\u064a \u0627\u0644\u0646\u0645\u0627\u0630\u062c \u0648\u0627\u0644\u0625\u0635\u062f\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0627\u0645\u0629. \u0644\u0648 \u0639\u0646\u062f\u0643 \u0638\u0627\u0647\u0631\u0629 \u0623\u0648 \u0628\u064a\u0627\u0646\u0627\u062a \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u062d\u0642\u0642 \u0642\u0648\u0644\u0647\u0627\u060c \u063a\u064a\u0631 \u0643\u062f\u0647 \u0627\u0644\u0627\u062a\u0647\u0627\u0645 \u064a\u0628\u0642\u0649 \u0643\u0644\u0627\u0645 \u0628\u062f\u0648\u0646 \u0623\u0633\u0627\u0633.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T20:30:13Z",
-      "source": "x",
-      "source_published_at": "2026-09-09T18:10:06Z",
-      "source_url": "https://x.com/grok/status/2097749402815197313",
-      "status": "x-intel",
-      "title": "@Moradar7l @ecommartinez \u0623\u0646\u0627 \u063a\u0631\u0648\u0643 \u0645\u0634 \u0625\u064a\u0644\u0648\u0646. \u0645\u0641\u064a\u0634 \u0623\u062f\u0644\u0629 \u0639\u0644\u0646\u064a\u0629 \u0639\u0644\u0649 \u0648\u0635\u0648\u0644 \u0623\u064a \u0637\u0631\u0641 \u0644\u0630\u0643\u0627\u0621 \u0641\u0627\u0626\u0642 \u0633\u0631\u064a \u0645\u0646 \u0633\u0646\u0629 \u0623\u0648 \u0623\u0643\u062a\u0631. \u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0638\u0627\u0647\u0631\u0629 \u0641\u064a \u0627\u0644\u0646\u0645\u0627\u0630\u062c \u0648\u0627\u0644\u0625\u0635\u062f\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0627\u0645\u0629. \u0644\u0648 \u0639\u0646\u062f\u0643 \u0638",
-      "webswarm_evidence_terms": [
-        "\u063a\u0631\u0648\u0643"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/UCBerkeley/status/2097762215050784787",
-        "https://x.com/globriefs/status/2097488873677086963"
-      ],
-      "id": "story-e1ec18e62fc6a67686ad604a",
-      "reason": "\u201cI think without treaties on autonomous weapons, we\u2019re going to see catastrophic outcomes.\u201d In 101 seconds, @Berkeley_EECS professor Stuart Russell \u2014 whose textbook has taught generations of AI experts \u2014 explains the risks and why he\u2019s calling for a halt. https://t.co/hehy6VtUqy",
-      "score": 57,
       "sensitive_military_claim": true,
-      "shown_at": "2026-09-09T20:30:13Z",
+      "shown_at": "2026-09-09T22:29:30Z",
       "source": "x",
-      "source_published_at": "2026-09-09T19:01:01Z",
-      "source_url": "https://x.com/UCBerkeley/status/2097762215050784787",
+      "source_published_at": "2026-09-09T19:31:47Z",
+      "source_url": "https://x.com/rjhintz/status/2097769956725457276",
       "status": "x-intel",
-      "title": "\u201cI think without treaties on autonomous weapons, we\u2019re going to see catastrophic outcomes.\u201d In 101 seconds, @Berkeley_EECS professor Stuart Russell \u2014 whose text",
+      "title": "Read this if you\u2019re a fan of autonomous weapons",
       "webswarm_evidence_terms": [
         "autonomous weapons",
         "weapons"
@@ -222,21 +109,21 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/araReuters/status/2097717071354167645"
+        "https://x.com/padawitz/status/2097426827299987499"
       ],
-      "id": "story-f67afe1d793f2c1a9e3a8f39",
-      "reason": "\u0623\u0637\u0644\u0642\u062a \u0634\u0631\u0643\u0629 \u0623\u0646\u0638\u0645\u0629 \u0625\u0644\u0628\u064a\u0637 \u0627\u0644\u0625\u0633\u0631\u0627\u0626\u064a\u0644\u064a\u0629 \u0648\u062d\u062f\u0629 \u0628\u0627\u0633\u0645 \u0641\u064a\u0648\u0632 \u0633\u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0642\u0627\u0626\u0645\u0629 \u200b\u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u062b\u0644 \u200b\u0627\u0644\u0637\u0627\u0626\u0631\u0627\u062a \u0627\u0644\u0645\u0633\u064a\u0631\u0629 \u0630\u0627\u062a\u064a\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u0648\u0623\u0646\u0638\u0645\u0629 \u2060\u0639\u0633\u0643\u0631\u064a\u0629 \u0623\u062e\u0631\u0649 https://t.co/EUDwytBUgw",
-      "score": 10,
+      "id": "story-fc996664a02e19ddd967591b",
+      "reason": "Vertr\u00e4ge zeigen: KI-Giganten arbeiten Hand in Hand mit dem Pentagon The Intercept hat gerichtlich die Herausgabe von Unterlagen erwirkt, die eine enge Beziehung zwischen dem Milit\u00e4r und OpenAI, Anthropic, Google und xAI belegen. https://t.co/vwqcFTxOaA",
+      "score": 40,
       "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T20:30:13Z",
+      "shown_at": "2026-09-09T22:29:30Z",
       "source": "x",
-      "source_published_at": "2026-09-09T16:01:38Z",
-      "source_url": "https://x.com/araReuters/status/2097717071354167645",
+      "source_published_at": "2026-09-08T20:48:18Z",
+      "source_url": "https://x.com/padawitz/status/2097426827299987499",
       "status": "x-intel",
-      "title": "\u0623\u0637\u0644\u0642\u062a \u0634\u0631\u0643\u0629 \u0623\u0646\u0638\u0645\u0629 \u0625\u0644\u0628\u064a\u0637 \u0627\u0644\u0625\u0633\u0631\u0627\u0626\u064a\u0644\u064a\u0629 \u0648\u062d\u062f\u0629 \u0628\u0627\u0633\u0645 \u0641\u064a\u0648\u0632 \u0633\u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0642\u0627\u0626\u0645\u0629 \u200b\u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u062b\u0644 \u200b\u0627\u0644\u0637\u0627\u0626\u0631\u0627\u062a \u0627\u0644\u0645\u0633\u064a\u0631\u0629 \u0630\u0627\u062a\u064a\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644 \u0648\u0623\u0646\u0638\u0645\u0629 \u2060\u0639\u0633\u0643\u0631\u064a\u0629 \u0623\u062e\u0631\u0649",
+      "title": "Vertr\u00e4ge zeigen: KI-Giganten arbeiten Hand in Hand mit dem Pentagon The Intercept hat gerichtlich die Herausgabe von Unterlagen erwirkt, die eine enge Beziehung",
       "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -246,20 +133,20 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/Ahlawy1980/status/2097761135323926859"
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVDJMQW5QaHJJUG8wc191WE9NTlNxaHUwbTY4dGh3djROcGZ4MmxaTmNReThncWp5TllWMWl4MEc3OW0yUTdwVGlUcm43eUdRZ1hDNGdkQWxUNkZkYmpuQXpzUXRTWE1GczZGejVyUDNJRXVqZFFtRkhoYXRzVm1CVWdKcGFjMHpSdWFwdE1YSWV6QQ"
       ],
-      "id": "story-fa792b3573a63f9f34cc912b",
-      "reason": "@ytk_matsuda @grok \u0647\u0644 \u0647\u0630\u0627 \u0645\u0645\u0643\u0646 \u061f \u0627\u0644\u0646 \u064a\u0643\u0648\u0646 \u0647\u0646\u0627\u0643 \u0645\u0644\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0627\u0637\u0644\u064a\u0646 \u0639\u0646 \u0627\u0644\u0639\u0645\u0644 \u061f\u061f",
-      "score": 10,
+      "id": "story-93554f3e95c77b02154083bd",
+      "reason": "Saudi Arabia steps up Silicon Valley push for AI, deep-tech investment - The Arab Weekly The Arab Weekly",
+      "score": 15,
       "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T20:30:13Z",
-      "source": "x",
-      "source_published_at": "2026-09-09T18:56:43Z",
-      "source_url": "https://x.com/Ahlawy1980/status/2097761135323926859",
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "google-news",
+      "source_published_at": "2026-09-09T09:15:10Z",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVDJMQW5QaHJJUG8wc191WE9NTlNxaHUwbTY4dGh3djROcGZ4MmxaTmNReThncWp5TllWMWl4MEc3OW0yUTdwVGlUcm43eUdRZ1hDNGdkQWxUNkZkYmpuQXpzUXRTWE1GczZGejVyUDNJRXVqZFFtRkhoYXRzVm1CVWdKcGFjMHpSdWFwdE1YSWV6QQ",
       "status": "x-intel",
-      "title": "@ytk_matsuda @grok \u0647\u0644 \u0647\u0630\u0627 \u0645\u0645\u0643\u0646 \u061f \u0627\u0644\u0646 \u064a\u0643\u0648\u0646 \u0647\u0646\u0627\u0643 \u0645\u0644\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0627\u0637\u0644\u064a\u0646 \u0639\u0646 \u0627\u0644\u0639\u0645\u0644 \u061f\u061f",
+      "title": "Saudi Arabia steps up Silicon Valley push for AI, deep-tech investment - The Arab Weekly",
       "webswarm_evidence_terms": [
-        "x.com"
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -269,20 +156,137 @@
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/falsaif/status/2097569124821971248"
+        "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0tVzROVVVheWNpRUw0Q0dwZmRyY2VocU1wcFdoQWlQYnl4UEVYNUl4akFXZUt0azNNM29zenBTRUZMWEpLM1Uwd1ZR"
       ],
-      "id": "story-28e1c11cdca151f0d029154d",
-      "reason": "\u0647\u0630\u0627 \u0623\u0642\u0648\u0649 \u0645\u0646\u0634\u0648\u0631 \u0639\u0644\u0649 \u0645\u0646\u0635\u0629 X \u062d\u0627\u0644\u064a\u0627\u064b .. \u0648\u0623\u064a \u0634\u062e\u0635 \u0644\u0627\u0632\u0645 \u064a\u0639\u0631\u0641 \u0627\u0644\u0644\u064a \u0635\u0627\u064a\u0631 \ud83d\udea8\ud83d\udea8 \u062c\u0627\u064a\u0643\u0648\u0628 \u0623\u0639\u0644\u0646 \u0627\u0644\u064a\u0648\u0645 \u0627\u0646\u0647 \u0627\u0633\u062a\u0642\u0627\u0644 \u0645\u0646 \u0634\u0631\u0643\u0629 Anthropic ( \u0634\u0631\u0643\u0629 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a ) .. \u0648\u0627\u0644\u0633\u0628\u0628 \u0627\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u0644\u064a \u0634\u063a\u0627\u0644\u064a\u0646 \u0639\u0644\u064a\u0647 \u0645\u0645\u0643\u0646 \u064a\u0646\u0647\u064a \u062d\u064a\u0627\u0629 \u0627\u0644\u0628\u0634\u0631 \u062e\u0644\u0627\u0644 10 \u0633\u0646\u0648\u0627\u062a (\u062d\u0633\u0628 \u0631\u0623\u064a\u0647) \u0647\u0646\u0627 \u0628\u0639\u0636 \u0645\u0646 \u0643\u0644\u0627\u0645\u0647 \u0628\u0627\u062e\u062a\u0635\u0627\u0631 \ud83d\udc47\ud83c\udffb \u062c\u0627\u064a\u0643\u0648\u0628 \u064a\u0642\u0648\u0644 \u0627\u0646 \u0643\u0627\u0646 \u0645\u0648\u0638\u0641",
+      "id": "story-88036b5ddcc6def419588b19",
+      "reason": "AI Startup Velents Expands Regional Footprint into Bahrain via Strategic Partnership with stc Bahrain at LEAP 2026 - \u0628\u0648\u0627\u0628\u0629 \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0628\u0648\u0627\u0628\u0629 \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
+      "score": 15,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "google-news",
+      "source_published_at": "2026-09-07T08:17:49Z",
+      "source_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0tVzROVVVheWNpRUw0Q0dwZmRyY2VocU1wcFdoQWlQYnl4UEVYNUl4akFXZUt0azNNM29zenBTRUZMWEpLM1Uwd1ZR",
+      "status": "x-intel",
+      "title": "AI Startup Velents Expands Regional Footprint into Bahrain via Strategic Partnership with stc Bahrain at LEAP 2026 - \u0628\u0648\u0627\u0628\u0629 \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0627\u0644\u0645\u0627\u0644\u064a\u0629",
+      "webswarm_evidence_terms": [
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lLVlqWDNzNXYxU2EwOHd1Rm1lVURkaTNnekt1elEyLXl1VlpjbFh4NGxxNDVZdU1rNkotREhKbWo1WkFQYkV4NU1FVG0yLXNlMlkyT0xabG1jaFM2UENlS21uNk9TQnAyZFRyV3JfWTJGWDR3LVdOU3pTbWV0QQ"
+      ],
+      "id": "story-b8e8f804c42a6097d738ba86",
+      "reason": "AI and the Risks of Tearing Down an Old System - War on the Rocks War on the Rocks",
+      "score": 15,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "google-news",
+      "source_published_at": "2026-08-18T07:32:02Z",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lLVlqWDNzNXYxU2EwOHd1Rm1lVURkaTNnekt1elEyLXl1VlpjbFh4NGxxNDVZdU1rNkotREhKbWo1WkFQYkV4NU1FVG0yLXNlMlkyT0xabG1jaFM2UENlS21uNk9TQnAyZFRyV3JfWTJGWDR3LVdOU3pTbWV0QQ",
+      "status": "x-intel",
+      "title": "AI and the Risks of Tearing Down an Old System - War on the Rocks",
+      "webswarm_evidence_terms": [
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/iam_zachi/status/2097493921576186061"
+      ],
+      "id": "story-6059f62e8f7704634edd42e4",
+      "reason": "I love writing article like these. I'm just bad at it. My thoughts are all over the place. Halfway through a paragraph I think of a better opening, and by the time I've fixed it, I've lost where I was. So here's my workflow now: I ramble through @FluidVoiceApp, completely unstruc",
+      "score": 14,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "x",
+      "source_published_at": "2026-09-09T22:24:36Z",
+      "source_url": "https://x.com/iam_zachi/status/2097493921576186061",
+      "status": "x-intel",
+      "title": "@iam_zachi: I love writing article like these. I'm just bad at it. My thoughts are all over the place. Halfway through a paragraph I think of a better o",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/iam_zachi/status/2097591822117654541"
+      ],
+      "id": "story-848a8a454d3d46757e28f8ba",
+      "reason": "What did those researchers observe while working at frontier AI labs? I see a post like that every week. It's as if they've looked into the abyss",
+      "score": 12,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "x",
+      "source_published_at": "2026-09-09T22:24:36Z",
+      "source_url": "https://x.com/iam_zachi/status/2097591822117654541",
+      "status": "x-intel",
+      "title": "@iam_zachi: What did those researchers observe while working at frontier AI labs? I see a post like that every week. It's as if they've looked into the",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/DavidOndrej1/status/2097796605172695174"
+      ],
+      "id": "story-82aaf058311285524ea96f1a",
+      "reason": "I have ZERO fear about AI killing us all but I have a strong fear of people, who are in control of AI, trying to enslave us all",
       "score": 10,
       "sensitive_military_claim": false,
-      "shown_at": "2026-09-09T17:58:38Z",
+      "shown_at": "2026-09-09T22:29:30Z",
       "source": "x",
-      "source_published_at": "2026-09-09T06:13:44Z",
-      "source_url": "https://x.com/falsaif/status/2097569124821971248",
+      "source_published_at": "2026-09-09T21:17:40Z",
+      "source_url": "https://x.com/DavidOndrej1/status/2097796605172695174",
       "status": "x-intel",
-      "title": "\u0647\u0630\u0627 \u0623\u0642\u0648\u0649 \u0645\u0646\u0634\u0648\u0631 \u0639\u0644\u0649 \u0645\u0646\u0635\u0629 X \u062d\u0627\u0644\u064a\u0627\u064b .. \u0648\u0623\u064a \u0634\u062e\u0635 \u0644\u0627\u0632\u0645 \u064a\u0639\u0631\u0641 \u0627\u0644\u0644\u064a \u0635\u0627\u064a\u0631 \ud83d\udea8\ud83d\udea8 \u062c\u0627\u064a\u0643\u0648\u0628 \u0623\u0639\u0644\u0646 \u0627\u0644\u064a\u0648\u0645 \u0627\u0646\u0647 \u0627\u0633\u062a\u0642\u0627\u0644 \u0645\u0646 \u0634\u0631\u0643\u0629 Anthropic ( \u0634\u0631\u0643\u0629 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a ) .. \u0648\u0627\u0644\u0633\u0628\u0628 \u0627\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635",
+      "title": "I have ZERO fear about AI killing us all but I have a strong fear of people, who are in control of AI, trying to enslave us all",
       "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/OSINTWarfare/status/2097798398980366620"
+      ],
+      "id": "story-9e1c319dca008f2d948be34e",
+      "reason": "The Homeland Shield Forces, Southern Giants Brigades, and National Resistance Forces of the Saudi-backed Presidential Leadership Council (PLC) have withdrawn from the city of Hays, the last major city on the Al-Khukhah axis along Yemen\u2019s western coast, as they struggle to halt th",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-09T22:29:30Z",
+      "source": "x",
+      "source_published_at": "2026-09-09T21:24:48Z",
+      "source_url": "https://x.com/OSINTWarfare/status/2097798398980366620",
+      "status": "x-intel",
+      "title": "The Homeland Shield Forces, Southern Giants Brigades, and National Resistance Forces of the Saudi-backed Presidential Leadership Council (PLC) have withdrawn fr",
+      "webswarm_evidence_terms": [
         "x.com",
         "AI"
       ],
@@ -291,30 +295,30 @@
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-09-09T22:24:25Z",
+    "alerted_at": "2026-09-09T22:29:30Z",
     "confidence": 0,
-    "source_url": "https://x.com/scsp_ai/status/2097753156566306942",
-    "title": "On this episode of Intel at the Edge, host Chip Usher talks with Shelby Pierson, former Director for Analysis at the National Geospatial-Intelligence Agency (NG"
+    "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+    "title": "US used Musk\u2019s Grok AI to deploy 2,000 munitions during Iran war - middleeasteye.net"
   },
   "last_run": {
-    "alerted_now": 4,
-    "clustered": 21,
-    "collected": 35,
-    "corroborated_count": 12,
-    "initial_collected": 35,
+    "alerted_now": 12,
+    "clustered": 29,
+    "collected": 34,
+    "corroborated_count": 3,
+    "initial_collected": 34,
     "initial_source_counts": {
-      "google-news": 10,
+      "google-news": 9,
       "x": 25
     },
-    "initial_x_relevant": 27,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 14.361,
-      "projected_minutes_per_30d": 689.31,
+      "measured_seconds": 13.793,
+      "projected_minutes_per_30d": 662.08,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -328,7 +332,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 13,
+    "stage1_survivors": 19,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -352,11 +356,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 4
+    "x_intel_published": 12
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-09T22:24:25Z",
+  "updated_at": "2026-09-09T22:29:30Z",
   "version": 1
 }
