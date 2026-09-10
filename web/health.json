@@ -1,19 +1,19 @@
 {
   "status": "ok",
-  "generated_at": "2026-09-09T22:29:48Z",
+  "generated_at": "2026-09-10T10:02:25Z",
   "signals": 12,
   "approved": 12,
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
-    "gemini": 3,
-    "groq": 15,
-    "rule-based": 30
+    "gemini": 6,
+    "groq": 13,
+    "rule-based": 28
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 1.07,
+  "max_source_age_days": 2.84,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "agents": [
@@ -60,61 +60,61 @@
   ],
   "events": [
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7559, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7447, Req"
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7552, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7437, Req"
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7539, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7416, Req"
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7907, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7400, Req"
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7900, Req"
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7383, Req"
     },
     {
-      "time": "2026-09-09T22:29:48Z",
+      "time": "2026-09-10T10:02:25Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
@@ -122,5 +122,5 @@
   ],
   "notification_enabled": false,
   "notification_sent": false,
-  "notification_reason": "not morning run"
+  "notification_reason": "manual run without notification"
 }
