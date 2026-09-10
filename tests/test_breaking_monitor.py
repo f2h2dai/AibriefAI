@@ -462,6 +462,16 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertTrue(is_before_trend_candidate(candidate))
         self.assertGreaterEqual(x_intel_relevance_score(candidate), 4)
 
+    def test_lg_tv_live_headline_is_before_trend(self):
+        candidate = {
+            "source": "google-news",
+            "title": "LG TV flaws could let attackers listen in, even in standby mode",
+            "content": "Malwarebytes",
+            "url": "https://example.test/lg-tv-flaws",
+        }
+
+        self.assertTrue(is_before_trend_candidate(candidate))
+
     def test_sensitive_x_claim_gets_second_source_metadata(self):
         [candidate] = annotate_secondary_evidence(
             [
