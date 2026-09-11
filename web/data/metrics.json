@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T20:28:03Z",
+  "generated_at": "2026-09-11T15:22:07Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -7,27 +7,27 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-10T20:28:03Z",
+  "latest_successful_run": "2026-09-11T15:22:07Z",
   "highest_ranked_signal": {
-    "id": "twitter-038",
-    "title": "@edleonklinger: Lots of discussion about AI ending the world but surprisingly little mention of how that might actually happen in practice. Spoiler alert: i",
-    "action_score": 81.5,
-    "url": "https://x.com/edleonklinger/status/2097802728202285193"
+    "id": "arxiv-016",
+    "title": "BlueSTAR: Tiered Agentic Architecture for Autonomous Cyber Defense",
+    "action_score": 78.5,
+    "url": "https://arxiv.org/abs/2609.11852v1"
   },
   "source_contribution": {
-    "twitter": 5,
+    "arxiv": 1,
     "github": 6,
-    "google-news": 1
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7762, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7449, Req"
     }
   ],
-  "runtime_seconds": 85.876,
+  "runtime_seconds": 290.161,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-10T20:28:03Z",
+    "planned_at": "2026-09-11T15:22:07Z",
     "production_threshold": 70.0
   }
 }
