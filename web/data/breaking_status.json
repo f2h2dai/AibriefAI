@@ -4,21 +4,99 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 4,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2098488654532350460",
+        "https://x.com/MizarVision/status/2097904617128390941",
+        "https://x.com/MizarVision/status/2097905456123433311",
+        "https://x.com/MizarVision/status/2097905876178776087"
+      ],
+      "id": "story-45111a3566eb848d3952a78c",
+      "reason": "\ud83c\uddf8\ud83c\udde6 SAUDI ARABIA | East\u2013West Pipeline attacked Saudi Arabia\u2019s critical East\u2013West oil pipeline system was struck by projectiles on Thursday. Satellite imagery shows fires and damage around pumping stations. One US official says drones originated from Iraq. \u26a0\ufe0f A full shutdown of the",
+      "score": 85,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-11T19:41:46Z",
+      "source": "x",
+      "source_published_at": "2026-09-11T19:07:37Z",
+      "source_url": "https://x.com/MizarVision/status/2098488654532350460",
+      "status": "x-intel",
+      "title": "\ud83c\uddf8\ud83c\udde6 SAUDI ARABIA | East\u2013West Pipeline attacked Saudi Arabia\u2019s critical East\u2013West oil pipeline system was struck by projectiles on Thursday. Satellite imagery sho",
+      "webswarm_evidence_terms": [
+        "MizarVision",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/DennisQuail7/status/2098460043889062338",
+        "https://x.com/Cybernews/status/2098143280386982239"
+      ],
+      "id": "story-2e6c38815a104afa65c3057f",
+      "reason": "@TuckerCarlson The most concerning part is the combination of advanced AI with cyberattacks, autonomous weapons, critical infrastructure, and biotechnology. Those risks deserve serious safeguards before capability races outrun our ability to manage them.",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-11T19:41:46Z",
+      "source": "x",
+      "source_published_at": "2026-09-11T17:13:56Z",
+      "source_url": "https://x.com/DennisQuail7/status/2098460043889062338",
+      "status": "x-intel",
+      "title": "@TuckerCarlson The most concerning part is the combination of advanced AI with cyberattacks, autonomous weapons, critical infrastructure, and biotechnology. Tho",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "defense",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 2,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/CFR_org/status/2098131965761196499",
+        "https://x.com/narens/status/2098167938637594920"
+      ],
+      "id": "story-5bf0185016fa7f48e6dbf0ef",
+      "reason": "\"If the frontier [AI] labs do achieve superintelligence, their capabilities will become extraordinary,\" writes expert Adam Segal. \"They could launch cyberattacks, wield political influence, or fashion new and exotic weapons to seize power. U.S. policymakers need to ensure that th",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-11T19:41:46Z",
+      "source": "x",
+      "source_published_at": "2026-09-10T19:30:16Z",
+      "source_url": "https://x.com/CFR_org/status/2098131965761196499",
+      "status": "x-intel",
+      "title": "\"If the frontier [AI] labs do achieve superintelligence, their capabilities will become extraordinary,\" writes expert Adam Segal. \"They could launch cyberattack",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/grok/status/2098159829009183182"
+        "https://x.com/TuckerCarlson/status/2098457810757456049"
       ],
-      "id": "story-97b5b3c57147c067b5dcd8c0",
-      "reason": "Wildest finds: Yemen cell used Claude to code GNC software for a guided rocket (test-fired, failed), 2000+ km ballistic missile, and hypersonic glide vehicle. Russian freelancers built autonomous FPV kamikaze drone swarms that select \"person\" targets and detonate with no human in",
-      "score": 75,
+      "id": "story-53ca7f2be739b84beb14965c",
+      "reason": "Nate Soares is a computer scientist who\u2019s worked at Google and the Defense Department. So when he says AI is on the path to killing every person on earth, it\u2019s worth hearing him out. 0:00 Why Is AI Dangerous? 7:59 How Superintelligence Could Destroy the Planet 13:44 Can We Just T",
+      "score": 40,
       "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T17:12:50Z",
+      "shown_at": "2026-09-11T19:41:46Z",
       "source": "x",
-      "source_published_at": "2026-09-11T15:22:07Z",
-      "source_url": "https://x.com/grok/status/2098159829009183182",
+      "source_published_at": "2026-09-11T17:05:04Z",
+      "source_url": "https://x.com/TuckerCarlson/status/2098457810757456049",
       "status": "x-intel",
-      "title": "@grok: Wildest finds: Yemen cell used Claude to code GNC software for a guided rocket (test-fired, failed), 2000+ km ballistic missile, and hyperso",
+      "title": "Nate Soares is a computer scientist who\u2019s worked at Google and the Defense Department. So when he says AI is on the path to killing every person on earth, it\u2019s",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -29,25 +107,47 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/jncatron/status/2098320444155740579"
+        "https://x.com/AndrewM18618991/status/2098445381445017654"
       ],
-      "id": "story-f1989834a8537d88e52f90b8",
-      "reason": "Testimonies from within Israeli military reveal AI targeting system in Gaza https://t.co/W1zJVxy9mo",
-      "score": 75,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T17:12:50Z",
+      "id": "story-ddd8b34c35acaab856f8e80a",
+      "reason": "@l3ft1n @mario4thenorth @grok did the U.S start a war with Iran?",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-11T19:41:46Z",
       "source": "x",
-      "source_published_at": "2026-09-11T15:22:07Z",
-      "source_url": "https://x.com/jncatron/status/2098320444155740579",
+      "source_published_at": "2026-09-11T16:15:40Z",
+      "source_url": "https://x.com/AndrewM18618991/status/2098445381445017654",
       "status": "x-intel",
-      "title": "@jncatron: Testimonies from within Israeli military reveal AI targeting system in Gaza https://t.co/W1zJVxy9mo",
+      "title": "@l3ft1n @mario4thenorth @grok did the U.S start a war with Iran?",
       "webswarm_evidence_terms": [
-        "AI targeting",
+        "Grok",
+        "Iran"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://x.com/isaiah4913/status/2098477517212389441"
+      ],
+      "id": "story-50ee0c451a8f9fa2824fdd0e",
+      "reason": "@DumpBothParties @JohnFkennedy321 @JFK19thPres @ShannonCam82757 @TheChosenQnes @VictoriaCapps8 @CMDRVALTHOR @BrandoIncognito @grok answer the question posed by this person",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-11T19:41:46Z",
+      "source": "x",
+      "source_published_at": "2026-09-11T18:23:22Z",
+      "source_url": "https://x.com/isaiah4913/status/2098477517212389441",
+      "status": "x-intel",
+      "title": "@DumpBothParties @JohnFkennedy321 @JFK19thPres @ShannonCam82757 @TheChosenQnes @VictoriaCapps8 @CMDRVALTHOR @BrandoIncognito @grok answer the question posed by",
+      "webswarm_evidence_terms": [
         "x.com",
-        "AI",
-        "military"
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -55,27 +155,26 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_status": "source-only",
       "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0E0Y01hX2VZTTBRTmtYbElrVFpxTzV3UDVkNkpfZTkzVlhHYzdCb18tQ3BhUjdwT1RRTlV6NW03VllJYmJSUmRIWkdOdzg2N3Q3UXBKQlUyVFVEdE1RZE9OOFBuaE9OMkZIUU1JMzI5WllzQlFkSlYxZGN4MnF6ZEo2RGc2TDBieWZmTWVDV0Vqa1pYTkxPZVRzaw"
+        "https://x.com/EngMoElgaraihy/status/2098329930585030675"
       ],
-      "id": "story-452fce1e8a8528b614cbb77f",
-      "reason": "AI targeting systems are coming, but not as fast as many assume - Bulletin of the Atomic Scientists Bulletin of the Atomic Scientists",
-      "score": 75,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T17:12:50Z",
-      "source": "google-news",
-      "source_published_at": "2026-06-25T07:00:00Z",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0E0Y01hX2VZTTBRTmtYbElrVFpxTzV3UDVkNkpfZTkzVlhHYzdCb18tQ3BhUjdwT1RRTlV6NW03VllJYmJSUmRIWkdOdzg2N3Q3UXBKQlUyVFVEdE1RZE9OOFBuaE9OMkZIUU1JMzI5WllzQlFkSlYxZGN4MnF6ZEo2RGc2TDBieWZmTWVDV0Vqa1pYTkxPZVRzaw",
+      "id": "story-a1c2cb379cc5473f28b31fa7",
+      "reason": "\u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0623\u0645\u0646\u064a \u0627\u0644\u0623\u0643\u062b\u0631 \u0631\u064f\u0639\u0628\u0627\u064b \u0648\u0635\u062f\u0645\u0629 \u0641\u064a \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u064a\u0646\u0643\u0634\u0641 \u0627\u0644\u064a\u0648\u0645 \u0645\u062c\u062f\u062f\u0627\u064b \u0645\u0646 Anthropic! \ud83d\udc47 https://t.co/qlG4X0x7B2",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-11T19:41:46Z",
+      "source": "x",
+      "source_published_at": "2026-09-11T08:36:55Z",
+      "source_url": "https://x.com/EngMoElgaraihy/status/2098329930585030675",
       "status": "x-intel",
-      "title": "AI targeting systems are coming, but not as fast as many assume - Bulletin of the Atomic Scientists",
+      "title": "\u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0623\u0645\u0646\u064a \u0627\u0644\u0623\u0643\u062b\u0631 \u0631\u064f\u0639\u0628\u0627\u064b \u0648\u0635\u062f\u0645\u0629 \u0641\u064a \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u064a\u0646\u0643\u0634\u0641 \u0627\u0644\u064a\u0648\u0645 \u0645\u062c\u062f\u062f\u0627\u064b \u0645\u0646 Anthropic! \ud83d\udc47 https://t.co/qlG4X0x7B2",
       "webswarm_evidence_terms": [
-        "AI targeting",
-        "targeting",
-        "DoD"
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
+      "webswarm_node": "x_intel"
     },
     {
       "confidence": 0,
@@ -96,80 +195,6 @@
       "title": "@aishamusic @TheTNHoller @hilbertspaess \"Left click, right click, left click. Magically\" 120 Iranian schoolgirls are dead. Maven Smart System is Palantir's Ai t",
       "webswarm_evidence_terms": [
         "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/EzakMagy50660/status/2098420711379390678"
-      ],
-      "id": "story-8faa66510c0247b340b4f4ad",
-      "reason": "@Variety it just hurts to even read this. NAZA means Nezek Agavi, the \"collateral damage\" Israel counts before every strike. 24 whistleblowers describe AI targeting from hacked phones, families bombed at night, killings at food sites. so sad.",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T17:12:50Z",
-      "source": "x",
-      "source_published_at": "2026-09-11T14:37:39Z",
-      "source_url": "https://x.com/EzakMagy50660/status/2098420711379390678",
-      "status": "x-intel",
-      "title": "@Variety it just hurts to even read this. NAZA means Nezek Agavi, the \"collateral damage\" Israel counts before every strike. 24 whistleblowers describe AI targe",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2098117311647400344"
-      ],
-      "id": "story-63ca68364d42c06f7a6fc13b",
-      "reason": "Israeli military creates new branch focused on AI, drones and robotics https://t.co/5GzbU80TxP",
-      "score": 45,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-11T17:12:50Z",
-      "source": "x",
-      "source_published_at": "2026-09-11T15:22:07Z",
-      "source_url": "https://x.com/BreakingDefense/status/2098117311647400344",
-      "status": "x-intel",
-      "title": "@BreakingDefense: Israeli military creates new branch focused on AI, drones and robotics https://t.co/5GzbU80TxP",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/AnthropicAI/status/2098097512544444447"
-      ],
-      "id": "story-e76627940b266fb557d40e3f",
-      "reason": "We're publishing our most detailed threat intelligence report to date. It covers how people tried to misuse Claude\u2014for cyberattacks, influence operations, surveillance, biology, and building weapons\u2014and how we found and stopped them. We disrupted every operation in the report, an",
-      "score": 45,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T17:12:50Z",
-      "source": "x",
-      "source_published_at": "2026-09-11T15:22:07Z",
-      "source_url": "https://x.com/AnthropicAI/status/2098097512544444447",
-      "status": "x-intel",
-      "title": "@AnthropicAI: We're publishing our most detailed threat intelligence report to date. It covers how people tried to misuse Claude\u2014for cyberattacks, influen",
-      "webswarm_evidence_terms": [
         "x.com",
         "AI"
       ],
@@ -202,6 +227,31 @@
     {
       "confidence": 0,
       "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0E0Y01hX2VZTTBRTmtYbElrVFpxTzV3UDVkNkpfZTkzVlhHYzdCb18tQ3BhUjdwT1RRTlV6NW03VllJYmJSUmRIWkdOdzg2N3Q3UXBKQlUyVFVEdE1RZE9OOFBuaE9OMkZIUU1JMzI5WllzQlFkSlYxZGN4MnF6ZEo2RGc2TDBieWZmTWVDV0Vqa1pYTkxPZVRzaw"
+      ],
+      "id": "story-452fce1e8a8528b614cbb77f",
+      "reason": "AI targeting systems are coming, but not as fast as many assume - Bulletin of the Atomic Scientists Bulletin of the Atomic Scientists",
+      "score": 75,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-11T17:12:50Z",
+      "source": "google-news",
+      "source_published_at": "2026-06-25T07:00:00Z",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0E0Y01hX2VZTTBRTmtYbElrVFpxTzV3UDVkNkpfZTkzVlhHYzdCb18tQ3BhUjdwT1RRTlV6NW03VllJYmJSUmRIWkdOdzg2N3Q3UXBKQlUyVFVEdE1RZE9OOFBuaE9OMkZIUU1JMzI5WllzQlFkSlYxZGN4MnF6ZEo2RGc2TDBieWZmTWVDV0Vqa1pYTkxPZVRzaw",
+      "status": "x-intel",
+      "title": "AI targeting systems are coming, but not as fast as many assume - Bulletin of the Atomic Scientists",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "targeting",
+        "DoD"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/aishamusic/status/2097958966063956085"
@@ -226,104 +276,54 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/ssvher/status/2098391762246959345"
-      ],
-      "id": "story-20f90f0244bd61adfedccae3",
-      "reason": "Anthropic flags UAE-linked misuse of AI targeting the Muslim Brotherhood https://t.co/9xn68KJ2O7",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T13:31:57Z",
-      "source": "x",
-      "source_published_at": "2026-09-11T12:42:37Z",
-      "source_url": "https://x.com/ssvher/status/2098391762246959345",
-      "status": "x-intel",
-      "title": "Anthropic flags UAE-linked misuse of AI targeting the Muslim Brotherhood https://t.co/9xn68KJ2O7",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
-        "https://x.com/anacondaprocL/status/2098245024416997484"
+        "https://x.com/BreakingDefense/status/2098117311647400344"
       ],
-      "id": "story-65f1c0ac4a52c666cc895507",
-      "reason": "@SaraWahedi But all of you still can sleep about using military AI in Gaza and The west bank? Read mine https://t.co/OCuUB4BVRp https://t.co/W4eFfTKa7V",
-      "score": 40,
+      "id": "story-63ca68364d42c06f7a6fc13b",
+      "reason": "Israeli military creates new branch focused on AI, drones and robotics https://t.co/5GzbU80TxP",
+      "score": 45,
       "sensitive_military_claim": false,
-      "shown_at": "2026-09-11T13:31:57Z",
+      "shown_at": "2026-09-11T17:12:50Z",
       "source": "x",
-      "source_published_at": "2026-09-11T02:59:31Z",
-      "source_url": "https://x.com/anacondaprocL/status/2098245024416997484",
+      "source_published_at": "2026-09-11T15:22:07Z",
+      "source_url": "https://x.com/BreakingDefense/status/2098117311647400344",
       "status": "x-intel",
-      "title": "@SaraWahedi But all of you still can sleep about using military AI in Gaza and The west bank? Read mine https://t.co/OCuUB4BVRp https://t.co/W4eFfTKa7V",
+      "title": "@BreakingDefense: Israeli military creates new branch focused on AI, drones and robotics https://t.co/5GzbU80TxP",
       "webswarm_evidence_terms": [
-        "military AI",
         "x.com",
         "AI",
         "military"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "id": "story-8747e2ad1700dabab1b846d7",
-      "reason": "Anthropic in March: \u201cWe must draw a red line around fully autonomous weapons.\u201d Anthropic in September: \u201cmore groups will be able to develop bespoke, precise weapons\u201d Six months from drawing the red line to benchmarking how close models can get to it. Wonder what survives the IPO.",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-11T13:31:57Z",
-      "source": "x",
-      "source_published_at": "2026-09-10T21:53:13Z",
-      "source_url": "https://x.com/narens/status/2098167938637594920",
-      "status": "x-intel",
-      "title": "Anthropic in March: \u201cWe must draw a red line around fully autonomous weapons.\u201d Anthropic in September: \u201cmore groups will be able to develop bespoke, precise wea",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-09-11T17:12:50Z",
+    "alerted_at": "2026-09-11T19:41:46Z",
     "confidence": 0,
-    "source_url": "https://x.com/grok/status/2098159829009183182",
-    "title": "@grok: Wildest finds: Yemen cell used Claude to code GNC software for a guided rocket (test-fired, failed), 2000+ km ballistic missile, and hyperso"
+    "source_url": "https://x.com/MizarVision/status/2098488654532350460",
+    "title": "\ud83c\uddf8\ud83c\udde6 SAUDI ARABIA | East\u2013West Pipeline attacked Saudi Arabia\u2019s critical East\u2013West oil pipeline system was struck by projectiles on Thursday. Satellite imagery sho"
   },
   "last_run": {
-    "alerted_now": 9,
+    "alerted_now": 7,
     "clustered": 25,
     "collected": 34,
-    "corroborated_count": 4,
+    "corroborated_count": 2,
     "initial_collected": 34,
     "initial_source_counts": {
       "google-news": 9,
       "x": 25
     },
-    "initial_x_relevant": 30,
+    "initial_x_relevant": 27,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.047,
-      "projected_minutes_per_30d": 482.28,
+      "measured_seconds": 14.368,
+      "projected_minutes_per_30d": 689.66,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -337,7 +337,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 22,
+    "stage1_survivors": 20,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -361,11 +361,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 9
+    "x_intel_published": 7
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-11T17:12:50Z",
+  "updated_at": "2026-09-11T19:41:46Z",
   "version": 1
 }
