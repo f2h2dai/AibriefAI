@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-09-12T14:30:19Z",
+  "generated_at": "2026-09-12T20:14:05Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-12T14:30:19Z",
+  "latest_successful_run": "2026-09-12T20:14:05Z",
   "highest_ranked_signal": {
-    "id": "twitter-035",
-    "title": "@LibertyLynx: Pete Hegseth mandated speed, Emil Michael (his go-to Musk buddy techbro w/ deep China exposure now DoD CTO) centralized the defense tech arc",
-    "action_score": 77.75,
-    "url": "https://x.com/LibertyLynx/status/2098524768442196107"
+    "id": "github-011",
+    "title": "graceupperclass437/agent-skills-collection",
+    "action_score": 78.0,
+    "url": "https://github.com/graceupperclass437/agent-skills-collection"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 6,
-    "hackernews": 1
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7312, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7176, Req"
     }
   ],
-  "runtime_seconds": 55.322,
+  "runtime_seconds": 157.851,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-12T14:30:19Z",
+    "planned_at": "2026-09-12T20:14:05Z",
     "production_threshold": 70.0
   }
 }
