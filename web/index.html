@@ -429,8 +429,6 @@
         transition-duration: .01ms !important;
       }
     }
-    /* Editorial publication: true white, navy ink, teal rules, open columns. */
-    .brand-text strong { color: var(--accent); }
     .publication-opening { order: -2; display: grid; grid-template-columns: 44% 56%; min-height: 300px; background: #102337; color: white; }
     .publication-copy { padding: 42px 36px; align-self: center; }
     .publication-copy h1 { font: 500 clamp(32px, 3.2vw, 49px)/1.08 Georgia, serif; letter-spacing: -.035em; margin: 0 0 24px; text-transform: none; }
@@ -439,84 +437,60 @@
     .city-composition img { width: 100%; height: 100%; position: absolute; object-fit: cover; }
     .city-composition figcaption { position: absolute; inset: auto 20px 16px; display: flex; justify-content: space-between; color: white; font-size: 11px; letter-spacing: .1em; }
     .city-composition figcaption span { background: #102337; padding: 5px 8px; }
-    .publication-summary { order: -1; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; border-bottom: 1px solid var(--border); }
-    .publication-summary h2 { font: 500 clamp(25px, 2.5vw, 36px)/1.2 Georgia, serif; margin: 0 0 10px; color: #102337; }
-    .publication-summary .briefing-meta { display: flex; gap: 18px; padding: 0; margin: 0; border: 0; font-size: 12px; }
-    .publication-summary .radar-side { display: grid; grid-template-columns: 112px 160px; gap: 3px 16px; align-items: center; }
-    .publication-summary .radar { grid-column: 1; grid-row: 1 / 4; width: 112px; height: 112px; margin: 0; }
-    .publication-summary .card-title { grid-column: 2; margin: 0; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
-    .publication-summary .radar-count, .publication-summary .radar-note { grid-column: 2; margin: 0; font-size: 10px; }
-    .publication-summary .radar-count strong { font-size: 17px; }
-    .front-grid { display: grid; grid-template-columns: minmax(0, 40%) minmax(0, 60%); order: 1; padding: 28px 0; border-bottom: 1px solid var(--border); }
-    .front-grid .act-now-editorial { margin: 0; padding: 0 28px 0 0; border: 0; }
-    .front-grid .hero { display: block; margin: 0; min-width: 0; padding-left: 28px; border-left: 1px solid var(--border); }
-    .front-grid .radar-card { display: block; margin: 0; padding: 0; border: 0; }
-    .front-grid .radar-main { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 12px; }
-    .front-grid .radar-main .intel-head { padding: 0; align-self: center; }
-    .front-grid .radar-main .radar-tools { margin: 0; padding: 0; border: 0; }
-    .front-grid .radar-table, .front-grid .view-intelligence { grid-column: 1 / -1; }
-    .front-grid .view-intelligence { justify-self: start; }
-    .intel-head h2, .front-grid .intel-head h2, .x-title h2 { font: 600 14px/1.4 Inter, Arial, sans-serif; letter-spacing: .15em; color: #102337; text-transform: uppercase; }
-    .intel-head h2::after, .x-title h2::after { content: ''; display: block; width: 48px; height: 2px; background: var(--accent); margin-top: 12px; }
-    .front-grid .intel-head p { display: none; }
-    .front-grid .intel-head, .streams-grid .intel-head { border-bottom: 0; }
-    .front-grid .act-record { display: grid; grid-template-columns: 40px 1fr; gap: 10px; padding: 20px 0; }
-    .front-grid .act-content { grid-column: 1 / -1; }
-    .front-grid .act-content h3 { font: 500 25px/1.25 Georgia, serif; }
-    .front-grid .act-context { display: flex; gap: 12px; align-items: center; }
-    .front-grid .intel-link { grid-column: 1 / -1; }
-    .radar-tools { grid-template-columns: minmax(100px, 1fr) 130px 120px; gap: 8px; margin-top: 20px; }
-    .radar-table td { padding: 12px 6px; font-size: 12px; }
-    .front-grid .radar-table small { font-size: 12px; }
-    .front-grid .radar-table:not(.expanded) small { display: none !important; }
-    .radar-table th { padding: 10px 6px; font-size: 10px; }
-    .view-intelligence { border: 0; padding: 16px 0 0; background: none; color: var(--accent); font: 500 12px Inter, Arial, sans-serif; cursor: pointer; }
-    .streams-grid { order: 3; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 32px 0; }
-    .streams-grid > section { margin: 0; padding: 0 0 0 28px; border: 0; border-left: 1px solid var(--border); min-width: 0; }
-    .streams-grid > section:first-child { border: 0; padding: 0; }
-    .streams-grid #saudi { order: 0; }
-    .streams-grid #research { order: 1; }
-    .streams-grid #breaking { order: 2; }
-    .streams-grid .intel-head p, .streams-grid .x-title p { font-size: 12px; line-height: 1.6; }
-    .streams-grid .intel-head { display: block; }
-    .streams-grid .editorial-record { display: flex; flex-direction: column; gap: 8px; padding: 18px 0; }
-    .streams-grid .editorial-meta { font-size: 11px; }
-    .streams-grid .editorial-meta br { display: none; }
-    .streams-grid .editorial-copy h3 { font: 500 21px/1.3 Georgia, serif; }
-    .streams-grid .editorial-copy p { font-size: 12px; }
-    .streams-grid .editorial-side { text-align: left; font-size: 11px; }
-    .streams-grid .x-columns { display: none; }
-    .streams-grid .x-record { grid-template-columns: 65px 1fr; gap: 8px; font-size: 11px; }
-    .streams-grid .x-record .signal { grid-column: 1 / -1; }
-    .streams-grid .x-record .signal a { font: 500 19px/1.3 Georgia, serif; }
-    .streams-grid .x-record .signal small { font-size: 12px; }
-    .footer a { color: var(--text-secondary); margin-inline-start: 18px; }
-    .methodology { order: 8; border-top: 1px solid var(--border); padding: 20px 0; font-size: 12px; color: var(--text-secondary); }
-    .methodology summary { cursor: pointer; color: var(--text); }
-    @media (max-width: 960px) {
-      .publication-copy { padding: 30px 24px; }
-      .front-grid { grid-template-columns: minmax(0, 35%) minmax(0, 65%); }
-      .streams-grid { gap: 18px; }
-      .streams-grid > section { padding-left: 18px; }
-      .radar-tools { grid-template-columns: 1fr 1fr; }
-      .radar-tools input { grid-column: 1 / -1; }
-      .front-grid .radar-main { display: block; }
-      .front-grid .radar-main .radar-tools { margin: 16px 0; }
-    }
+
+    .publication-opening { margin-bottom: 24px; }
     @media (max-width: 760px) {
       .publication-opening { grid-template-columns: 1fr; }
+      .publication-copy { padding: 30px 24px; }
       .publication-copy h1 { font-size: 36px; }
       .city-composition { min-height: 190px; }
-      .publication-summary { gap: 14px; align-items: flex-start; }
-      .publication-summary .radar-side { display: block; width: 78px; flex: 0 0 78px; }
-      .publication-summary .radar { width: 78px; height: 78px; }
-      .publication-summary .card-title, .publication-summary .radar-count, .publication-summary .radar-note { display: none; }
-      .publication-summary .briefing-meta { flex-direction: column; gap: 6px; }
-      .front-grid { display: block; }
-      .front-grid .act-now-editorial { padding: 0 0 24px; }
-      .front-grid .hero { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--border); }
-      .streams-grid { grid-template-columns: 1fr; gap: 32px; }
-      .streams-grid > section { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--border); }
+    }
+    /* Quiet application chrome around the restored intelligence layout. */
+    :root { --text: #202124; --text-secondary: #62656d; --border: #e8e9ec; --border-strong: #d9dbe0; }
+    body { -webkit-font-smoothing: antialiased; }
+    .nav { min-height: 60px; gap: 24px; }
+    .brand-text strong { font: 650 19px/1.2 Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: -.045em; }
+    .links { gap: 6px; align-self: center; }
+    .links a { padding: 7px 10px; border-radius: 5px; font-size: 12px; transition: background-color 120ms ease, color 120ms ease; }
+    .links a:hover { color: var(--text); background: #f4f5f7; }
+    .links a[aria-current="location"] { background: #f0f1f3; color: var(--text); }
+    .links a[aria-current="location"]::after { display: none; }
+    .nav-actions #briefingLanguage { border: 1px solid var(--border); border-radius: 5px; color: var(--text-secondary); }
+    .nav-actions #briefingLanguage:hover { background: #f4f5f7; }
+    .nav-time { font-size: 11px; }
+    .intel-head h1, .intel-head h2, .x-title h2, .operations-head h2 { font: 600 20px/1.35 Inter, ui-sans-serif, system-ui, sans-serif; text-transform: none; letter-spacing: -.035em; }
+    .intel-head { align-items: center; padding-bottom: 16px; border-color: var(--border); }
+    .intel-head p, .x-title p { font-size: 12px; color: var(--text-secondary); }
+    .intel-section { margin-top: 36px; }
+    .radar-card { margin-top: 36px; grid-template-columns: 160px minmax(0, 1fr); gap: 28px; }
+    .radar-side { padding-right: 20px; border-right: 1px solid var(--border); }
+    .radar { width: 136px; height: 136px; }
+    .radar-tools { grid-template-columns: minmax(180px, 1fr) 170px 150px; padding: 14px 0; gap: 8px; }
+    .field, .select { min-height: 34px; padding: 7px 10px; font-size: 12px; border-radius: 5px; border-color: var(--border-strong); }
+    .field:hover, .select:hover { border-color: #aeb2bc; }
+    .radar-table th, .ops-table th { background: #fafafb; color: #676b74; font-size: 10px; font-weight: 550; letter-spacing: .045em; }
+    .radar-table td { padding: 14px 12px; }
+    .radar-table strong { font-size: 13px; font-weight: 600; letter-spacing: -.01em; }
+    .radar-table small { max-width: 76ch; font-size: 12px; line-height: 1.6; }
+    .radar-table tbody tr:hover { background: #fafafb; }
+    .act-content h3, .editorial-copy h3 { font: 600 21px/1.4 Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: -.025em; }
+    .act-sequence { font: 500 28px/1.2 var(--mono); color: #8b909a; }
+    .act-content p, .editorial-copy p { font-size: 13px; line-height: 1.7; }
+    .x-record { font-size: 12px; }
+    .x-record .signal a { font-weight: 600; }
+    .ops-panel h3, .health h2 { font-family: Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: -.02em; }
+    @media (max-width: 1024px) { .nav { gap: 12px; } .links a { padding: 7px; } .nav-time { display: none; } }
+    @media (max-width: 760px) {
+      .nav { padding-top: 12px; padding-bottom: 8px; }
+      .links { gap: 3px; scrollbar-width: none; }
+      .links a { min-height: 36px; flex-shrink: 0; }
+      .radar-card { grid-template-columns: 1fr; }
+      .radar-side { padding-right: 0; padding-bottom: 16px; border-right: 0; border-bottom: 1px solid var(--border); }
+      .radar-tools { grid-template-columns: 1fr 1fr; }
+      .radar-tools input { grid-column: 1 / -1; }
+      .field, .select { min-height: 44px; }
+      .radar-table td { padding: 0; }
+      .intel-head h2, .x-title h2 { font-size: 19px; }
     }
   </style>
 </head>
@@ -534,7 +508,8 @@
         <a href="#signals">Intelligence</a>
         <a href="#saudi">Saudi</a>
         <a href="#research">Research</a>
-        <a href="#breaking">X</a>
+        <a href="#breaking">Security</a>
+        <a href="#source-system">Sources</a>
         <a href="#operations">System</a>
       </div>
       <div class="nav-actions">
@@ -555,18 +530,11 @@
             <figcaption><span>RIYADH</span><span>MIAMI · VISUAL ILLUSTRATION</span></figcaption>
           </figure>
         </section>
-        <section class="publication-summary" aria-label="Current intelligence summary">
-          <div>
-            <h2 id="attentionSummary" aria-live="polite">Checking today’s intelligence…</h2>
-            <div class="briefing-meta">
+        <div class="briefing-meta">
           <span id="briefingDate">Current briefing</span>
           <span id="briefingUpdated">Last updated --:--</span>
-            </div>
-          </div>
-          <div id="summaryRadar"></div>
-        </section>
+        </div>
 
-        <div class="front-grid">
         <section class="intel-section act-now-editorial" id="act-now" aria-labelledby="actNowEditorialTitle">
           <div class="intel-head">
             <h2 id="actNowEditorialTitle">Act Now</h2>
@@ -635,7 +603,6 @@
                   <tr><td colspan="5">Loading briefing radar...</td></tr>
                 </tbody>
               </table>
-              <button class="view-intelligence" id="viewAllIntelligence" type="button" aria-expanded="false" aria-controls="radarRows">View all intelligence →</button>
               <div class="hero-summary">
                 <div class="summary-item"><strong id="translatedCount">--</strong><span>items translated</span></div>
                 <div class="summary-item"><strong id="groqCount">--</strong><span>Groq routes</span></div>
@@ -645,9 +612,7 @@
             </div>
           </section>
         </div>
-        </div>
 
-        <div class="streams-grid">
         <section class="intel-section saudi-intelligence" id="saudi" aria-labelledby="saudiTitle">
           <div class="intel-head">
             <h2 id="saudiTitle">Saudi Intelligence</h2>
@@ -661,7 +626,7 @@
         <section class="x-lane" id="breaking" aria-label="X intel lane">
           <div class="x-title">
             <div>
-              <h2>X / Early Signals</h2>
+              <h2>X Intelligence</h2>
               <p>Chronological public-source signals with evidence context.</p>
             </div>
             <div class="x-glyph" aria-hidden="true">X</div>
@@ -684,7 +649,6 @@
           </div>
         </section>
 
-        </div>
         <section class="section-grid" id="source-system">
           <div class="intel-head" style="grid-column:1 / -1;"><h2>Source / System Summary</h2><p>Coverage and operational checks from the current briefing.</p></div>
           <p id="sourceCoverage" style="grid-column:1 / -1;margin:0;color:var(--text-secondary);font-size:13px;">Loading source coverage…</p>
@@ -834,10 +798,6 @@
             </section>
 <div id="actNowList" hidden></div>
         </section>
-        <details class="methodology" id="methodology">
-          <summary>Methodology / المنهجية</summary>
-          <p>Public-source records retain their source links and evidence context. Act Now uses the existing production evidence gate and configured threshold. Regional streams are derived from available text and metadata; missing coverage is shown explicitly. The radar markers and city composition are illustrative, not live tracking or news-event photography.</p>
-        </details>
       </section>
 
       <!-- Legacy section names retained only for existing source-level tests:
@@ -849,7 +809,7 @@
 
     <footer class="footer">
       <span>© 2026 AIbrief / إحاطة</span>
-      <span><a href="#source-system">Sources</a><a href="#methodology">Methodology</a><a href="#operations">System</a></span>
+      <span>Public-source intelligence · Evidence before action</span>
     </footer>
   </div>
 
@@ -865,7 +825,6 @@
       search: '',
       source: 'all',
       sort: 'latest',
-      radarExpanded: false,
       language: 'en',
       scenarioThreshold: 70
     };
@@ -988,14 +947,13 @@
     }
 
     function renderRadarRows(signals) {
-      document.querySelector('.radar-table').classList.toggle('expanded', state.radarExpanded);
-      const rows = signals.slice(0, state.radarExpanded ? 20 : 4).map(function(signal) {
+      const rows = signals.slice(0, 20).map(function(signal) {
         const status = signal.status || 'new';
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         return '<tr>' +
           '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
           '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
-          '<td lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><a href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener"><strong>' + escapeHTML(shortText(signal.title, 120)) + '</strong></a><small style="display:block;color:var(--text-secondary);margin-top:4px;">' + escapeHTML(shortText(signalText(signal), state.radarExpanded ? 180 : 110)) + '</small></td>' +
+          '<td lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><a href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener"><strong>' + escapeHTML(shortText(signal.title, 120)) + '</strong></a><small style="display:block;color:var(--text-secondary);margin-top:4px;">' + escapeHTML(shortText(signalText(signal), 180)) + '</small></td>' +
           '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
           '<td><span class="' + (status === 'held' ? 'warn' : 'ok') + '">' + escapeHTML(status) + '</span></td>' +
         '</tr>';
@@ -1190,12 +1148,8 @@
         return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
       }).filter(function(signal) {
         return window.AIbriefScenario.qualifiesForActNow(signal, threshold);
-      });
-      document.getElementById('attentionSummary').textContent = state.language === 'ar'
-        ? (records.length ? records.length + ' عناصر تستدعي الانتباه اليوم' : 'لا توجد إجراءات مطلوبة اليوم.')
-        : (records.length ? records.length + (records.length === 1 ? ' item requires' : ' items require') + ' attention today' : 'No action required today.');
-      document.getElementById('attentionSummary').setAttribute('dir', state.language === 'ar' ? 'rtl' : 'ltr');
-      document.getElementById('actNowEditorial').innerHTML = records.slice(0, 5).map(function(signal, index) {
+      }).slice(0, 5);
+      document.getElementById('actNowEditorial').innerHTML = records.map(function(signal, index) {
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
         const url = signal.primary_source_url || signal.url || '#';
@@ -1461,7 +1415,6 @@
         document.getElementById('actNowList').textContent = 'Evidence gate unavailable.';
         document.getElementById('sourceContribution').textContent = 'Source mix unavailable.';
         document.getElementById('sourceCoverage').textContent = 'Source coverage unavailable.';
-        document.getElementById('attentionSummary').textContent = 'Current intelligence unavailable.';
         document.getElementById('actNowEditorial').innerHTML = '<span class="stream-empty">Act Now unavailable while the briefing feed is offline.</span>';
         document.getElementById('saudiRows').innerHTML = '<span class="stream-empty">Saudi intelligence unavailable.</span>';
         document.getElementById('researchRows').innerHTML = '<span class="stream-empty">Research unavailable.</span>';
@@ -1502,13 +1455,6 @@
       state.sort = this.value;
       renderRadarRows(filteredSignals());
       renderSignalRows();
-    });
-
-    document.getElementById('viewAllIntelligence').addEventListener('click', function() {
-      state.radarExpanded = !state.radarExpanded;
-      this.setAttribute('aria-expanded', String(state.radarExpanded));
-      this.textContent = state.radarExpanded ? 'Show latest four ↑' : 'View all intelligence →';
-      renderRadarRows(filteredSignals());
     });
 
     document.getElementById('sourceTabs').addEventListener('click', function(event) {
@@ -1553,7 +1499,6 @@
     }
     window.addEventListener('hashchange', updateNavigation);
     updateNavigation();
-    document.getElementById('summaryRadar').appendChild(document.querySelector('.radar-side'));
     setClock();
     loadBreakingWatch();
     loadBriefing();
