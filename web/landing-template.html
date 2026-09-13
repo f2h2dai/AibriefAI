@@ -185,7 +185,9 @@
     .act-facts b { margin-right: 7px; color: var(--text); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
     .intel-link { align-self: center; color: var(--accent); font-weight: 650; text-decoration: none; white-space: nowrap; }
     .radar-card {
-      display: block;
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 28px;
       margin-top: 48px;
       padding: 0;
       border: 0;
@@ -194,6 +196,40 @@
       box-shadow: none;
       overflow: visible;
     }
+    .radar-side { display: block; padding-top: 8px; }
+    .radar-side .card-title { margin: 0 0 14px; font-size: 12px; font-weight: 650; }
+    .radar {
+      position: relative;
+      width: 154px;
+      height: 154px;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .radar::before, .radar::after {
+      content: "";
+      position: absolute;
+      border: 1px solid var(--border-strong);
+      border-radius: 50%;
+      inset: 24px;
+    }
+    .radar::after { inset: 49px; }
+    .sweep {
+      position: absolute;
+      left: 50%; top: 50%; width: 50%; height: 1px;
+      background: var(--accent);
+      transform-origin: left center;
+      animation: radar-sweep 12s linear infinite;
+    }
+    @keyframes radar-sweep { to { transform: rotate(360deg); } }
+    .blip { position: absolute; width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+    .blip.high { left: 62%; top: 28%; }
+    .blip.mid { left: 29%; top: 45%; }
+    .blip.low { left: 55%; top: 71%; }
+    .radar-count { margin-top: 12px; font-size: 12px; color: var(--text-secondary); }
+    .radar-count strong { font-family: var(--mono); color: var(--text); }
+    .radar-note { font-size: 11px; color: var(--text-secondary); line-height: 1.5; margin: 6px 0 0; }
     .radar-main { padding: 0; }
     .radar-tools {
       grid-template-columns: minmax(260px, 1fr) 220px 180px;
@@ -365,6 +401,12 @@
       .act-context { grid-column: 2; }
       .act-content, .act-record .intel-link { grid-column: 1 / -1; }
       .radar-tools { grid-template-columns: 1fr; }
+      .radar-card { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+      .radar-side { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 4px 16px; align-items: center; }
+      .radar-side .card-title, .radar-count, .radar-note { grid-column: 2; margin: 0; }
+      .radar-side .radar { grid-column: 1; grid-row: 1 / 4; width: 96px; height: 96px; }
+      .radar::before { inset: 15px; }
+      .radar::after { inset: 30px; }
       .radar-table, .radar-table tbody, .radar-table tr, .radar-table td { display: block; width: 100%; }
       .radar-table thead { display: none; }
       .radar-table tr { display: grid; grid-template-columns: 72px 1fr 58px; gap: 4px 12px; padding: 15px 0; border-bottom: 1px solid var(--border); }
@@ -450,8 +492,9 @@
               </div>
               <div class="radar-count">
                 <strong id="radarSourceCount">--</strong>
-                <span>sources scanned</span>
+                <span>sources in this briefing</span>
               </div>
+              <p class="radar-note">Briefing overview. Markers are illustrative, not live tracking.</p>
             </div>
             <div class="radar-main">
               <div class="intel-head">
@@ -879,7 +922,7 @@
 
       document.getElementById('generatedStamp').textContent = 'Generated ' + formatDate(payload.generated_at);
       document.getElementById('heroSignalCount').textContent = String(signals.length);
-      document.getElementById('radarSourceCount').textContent = String(Math.max(sources.size * 6, signals.length));
+      document.getElementById('radarSourceCount').textContent = String(sources.size);
       document.getElementById('heroProviderMode').textContent = String(payload.mode || 'live');
       document.getElementById('providerMode').textContent = String(payload.model || payload.mode || 'active');
       document.getElementById('translatedCount').textContent = String(signals.filter(function(signal) { return signal.brief_ar; }).length);
