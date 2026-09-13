@@ -82,7 +82,7 @@
       min-height: 66px;
       padding: 0 max(24px, calc((100vw - 1280px) / 2));
       border-bottom: 1px solid var(--border);
-      background: rgba(255,255,255,.97);
+      background: var(--surface);
       box-shadow: none;
     }
     .brand { gap: 0; }
@@ -98,9 +98,10 @@
       align-items: center;
       color: var(--text-secondary);
       font-size: 13px;
-      font-weight: 650;
+      font-weight: 550;
     }
-    .links a:first-child::after {
+    .links a[aria-current="location"] { color: var(--text); }
+    .links a[aria-current="location"]::after {
       position: absolute;
       right: 0;
       bottom: -1px;
@@ -127,7 +128,7 @@
     .research-intelligence { order: 5; }
     .section-grid { order: 6; }
     .operations-console { order: 7; }
-    .hero-copy, .radar-side, .hero-summary, .signal-desk, .pipeline { display: none; }
+    .hero-copy, .hero-summary, .signal-desk, .pipeline { display: none; }
     .briefing-meta {
       display: flex;
       gap: 18px;
@@ -140,7 +141,7 @@
       border-left: 1px solid var(--border-strong);
       padding-left: 18px;
     }
-    .intel-section { margin-top: 48px; scroll-margin-top: 82px; }
+    .intel-section { margin-top: 40px; scroll-margin-top: 82px; }
     .intel-head {
       display: flex;
       align-items: end;
@@ -151,11 +152,11 @@
     }
     .intel-head h1, .intel-head h2 {
       margin: 0;
-      font: 700 clamp(26px, 3vw, 39px)/1 Georgia, "Times New Roman", serif;
+      font: 700 clamp(26px, 3vw, 34px)/1.1 Georgia, "Times New Roman", serif;
       letter-spacing: -.025em;
       text-transform: uppercase;
     }
-    .intel-head h2 { font-size: clamp(23px, 2.4vw, 31px); }
+    .intel-head h2 { font-size: clamp(23px, 2.4vw, 28px); }
     .intel-head p {
       max-width: 620px;
       margin: 0;
@@ -188,7 +189,7 @@
       display: grid;
       grid-template-columns: 180px minmax(0, 1fr);
       gap: 28px;
-      margin-top: 48px;
+      margin-top: 40px;
       padding: 0;
       border: 0;
       border-radius: 0;
@@ -202,30 +203,25 @@
       position: relative;
       width: 154px;
       height: 154px;
-      border: 1px solid var(--accent);
+      border: 0;
       border-radius: 50%;
       overflow: hidden;
       background: var(--surface);
     }
-    .radar::before, .radar::after {
-      content: "";
-      position: absolute;
-      border: 1px solid var(--border-strong);
-      border-radius: 50%;
-      inset: 24px;
-    }
-    .radar::after { inset: 49px; }
+    .radar-grid { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--border-strong); stroke-width: 1; }
+    .radar-grid .radar-rim { stroke: var(--accent); }
+    .radar-grid .radar-axis { stroke: var(--border); }
     .sweep {
       position: absolute;
-      left: 50%; top: 50%; width: 50%; height: 1px;
+      left: 50%; top: 50%; width: 44%; height: 1px;
       background: var(--accent);
       transform-origin: left center;
-      animation: radar-sweep 12s linear infinite;
+      animation: radar-sweep 16s linear infinite;
     }
     @keyframes radar-sweep { to { transform: rotate(360deg); } }
-    .blip { position: absolute; width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+    .blip { position: absolute; width: 6px; height: 6px; background: var(--surface); border: 1.5px solid var(--accent); border-radius: 50%; }
     .blip.high { left: 62%; top: 28%; }
-    .blip.mid { left: 29%; top: 45%; }
+    .blip.medium { left: 29%; top: 45%; }
     .blip.low { left: 55%; top: 71%; }
     .radar-count { margin-top: 12px; font-size: 12px; color: var(--text-secondary); }
     .radar-count strong { font-family: var(--mono); color: var(--text); }
@@ -233,16 +229,16 @@
     .radar-main { padding: 0; }
     .radar-tools {
       grid-template-columns: minmax(260px, 1fr) 220px 180px;
-      gap: 12px;
-      padding: 16px 0;
+      gap: 10px;
+      padding: 12px 0;
       border-bottom: 1px solid var(--border);
     }
     .field, .select {
-      min-height: 40px;
+      min-height: 36px;
       border: 1px solid var(--border-strong);
       border-radius: var(--radius);
       background: var(--surface);
-      font: 600 13px Inter, sans-serif;
+      font: 500 13px Inter, ui-sans-serif, system-ui, sans-serif;
     }
     .radar-table { font-size: 13px; }
     .radar-table th {
@@ -252,7 +248,8 @@
       font-size: 10px;
       letter-spacing: .06em;
     }
-    .radar-table td { padding: 13px 12px; border-bottom-color: var(--border); }
+    .radar-table td { padding: 10px 12px; border-bottom-color: var(--border); }
+    .radar-table tbody tr:hover { background: #f7f9fa; }
     .radar-table td:first-child, .radar-table td:nth-child(4) {
       font-family: var(--mono);
       font-variant-numeric: tabular-nums;
@@ -274,7 +271,7 @@
       border-bottom: 1px solid var(--border-strong);
       background: transparent;
     }
-    .x-title h2 { color: var(--text); font: 700 clamp(23px, 2.4vw, 31px)/1 Georgia, serif; }
+    .x-title h2 { color: var(--text); font: 700 clamp(23px, 2.4vw, 28px)/1.1 Georgia, serif; }
     .x-title p { max-width: 620px; margin: 7px 0 0; color: var(--text-secondary); }
     .x-glyph, .status-pill { display: none; }
     .x-feed { display: block; overflow: visible; }
@@ -405,8 +402,7 @@
       .radar-side { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 4px 16px; align-items: center; }
       .radar-side .card-title, .radar-count, .radar-note { grid-column: 2; margin: 0; }
       .radar-side .radar { grid-column: 1; grid-row: 1 / 4; width: 96px; height: 96px; }
-      .radar::before { inset: 15px; }
-      .radar::after { inset: 30px; }
+      .field, .select { min-height: 44px; }
       .radar-table, .radar-table tbody, .radar-table tr, .radar-table td { display: block; width: 100%; }
       .radar-table thead { display: none; }
       .radar-table tr { display: grid; grid-template-columns: 72px 1fr 58px; gap: 4px 12px; padding: 15px 0; border-bottom: 1px solid var(--border); }
@@ -485,6 +481,14 @@
             <div class="radar-side">
               <p class="card-title">Live briefing radar</p>
               <div class="radar" aria-hidden="true">
+                <svg class="radar-grid" viewBox="0 0 160 160" focusable="false">
+                  <circle class="radar-rim" cx="80" cy="80" r="76" stroke-dasharray="1 5" />
+                  <circle class="radar-rim" cx="80" cy="80" r="70" />
+                  <circle cx="80" cy="80" r="47" />
+                  <circle cx="80" cy="80" r="24" />
+                  <path class="radar-axis" d="M10 80h140M80 10v140" />
+                  <circle cx="80" cy="80" r="2" class="radar-rim" />
+                </svg>
                 <span class="sweep"></span>
                 <span class="blip high"></span>
                 <span class="blip medium"></span>
@@ -1409,6 +1413,15 @@
       renderThresholdScenario();
     });
 
+    function updateNavigation() {
+      const active = window.location.hash || '#signals';
+      document.querySelectorAll('.links a').forEach(function(link) {
+        if (link.getAttribute('href') === active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('hashchange', updateNavigation);
+    updateNavigation();
     setClock();
     loadBreakingWatch();
     loadBriefing();
