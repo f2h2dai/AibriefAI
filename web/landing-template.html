@@ -3,1227 +3,392 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AIbrief / إحاطة - AI Briefing Command Center</title>
+  <title>AIbrief / إحاطة — Operational Intelligence</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23ffffff' stroke='%23007e8a' stroke-width='4'/%3E%3Cpath d='M18 38c8-19 21-19 29-1-9-5-18-5-29 1z' fill='%23007e8a'/%3E%3Ccircle cx='32' cy='28' r='8' fill='%238ac926'/%3E%3C/svg%3E">
   <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    .page { min-height: 100vh; }
+    .nav { display: grid; grid-template-columns: auto 1fr auto; gap: 30px; align-items: center; }
+    .brand { display: flex; align-items: center; }
+    .brand-text { display: block; }
+    .links { display: flex; justify-content: center; align-items: center; }
+    .nav-actions { display: flex; justify-content: end; align-items: center; gap: 14px; white-space: nowrap; }
+    .radar-tools, .operations-metrics, .scenario-readout { display: grid; }
+    .field, .select { width: 100%; padding: 10px 12px; }
+    .radar-table, .ops-table { width: 100%; border-collapse: collapse; }
+    .radar-table th { text-align: left; text-transform: uppercase; }
+    .radar-table td { vertical-align: top; border-bottom: 1px solid var(--border); }
+    .radar-table strong { display: block; font-size: 14px; line-height: 1.4; }
+    .radar-table small { font-size: 13px; line-height: 1.5; }
+    .score, .ok, .worker-state { color: var(--success); }
+    .warn, .worker-state.failed { color: var(--warning); }
+    .operations-head, .ops-panel-head, .panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
+    .operations-head h2, .ops-panel-head h3, .panel-head h2 { margin: 0; }
+    .operations-head p { margin: 8px 0 0; font-size: 13px; }
+    .ops-panel-head span, .panel-head span { font-size: 12px; color: var(--text-secondary); }
+    .ops-metric strong, .ops-metric span { display: block; }
+    .ops-metric span { margin-top: 5px; color: var(--text-secondary); font-size: 10px; text-transform: uppercase; letter-spacing: .04em; }
+    .worker-row, .warning-item, .ranked-item, .check-row, .provider-row { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 20px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .worker-row strong, .check-row strong, .provider-row strong { font-size: 13px; }
+    .check-row div span, .provider-row div span, .ranked-item span, .warning-item span { display: block; font-size: 12px; color: var(--text-secondary); }
+    .check-icon { display: none; }
+    .source-row { display: grid; grid-template-columns: 140px 40px 1fr; align-items: center; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .source-bar i { display: block; height: 100%; }
+    .ops-table-wrap { overflow-x: auto; }
+    .ops-table th, .ops-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; font-size: 12px; white-space: nowrap; }
+    .ops-table th { color: var(--text-secondary); font-size: 10px; text-transform: uppercase; }
+    .scenario-readout strong, .scenario-readout span { display: block; }
+    .scenario-readout strong { font-family: var(--mono); }
+    .scenario-readout span, .scenario-note { font-size: 12px; color: var(--text-secondary); }
+    .threshold-slider { width: 100%; accent-color: var(--accent); }
+    .footer { display: flex; justify-content: space-between; margin: auto; gap: 20px; color: var(--text-secondary); font-size: 12px; }
+
+    /* Intelligence publication redesign */
     :root {
-      color-scheme: light;
-      --ink: #07131f;
-      --muted: #52667a;
-      --quiet: #7b8ea4;
-      --paper: #f6fafc;
-      --panel: #ffffff;
-      --panel-soft: #fbfdfe;
-      --line: #dbe7ef;
-      --line-strong: #bfd4df;
-      --teal: #007e8a;
-      --cyan: #0b86b5;
-      --green: #078b61;
-      --lime: #8ac926;
-      --orange: #f28c20;
-      --shadow: 0 22px 70px rgba(7, 24, 37, 0.1);
-      --radius: 8px;
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --text: #111820;
+      --text-secondary: #53606c;
+      --text-tertiary: #7a8792;
+      --border: #dce2e7;
+      --border-strong: #bfc9d1;
+      --accent: #007e8a;
+      --success: #078b61;
+      --warning: #b76a00;
+      --danger: #b42318;
+      --radius: 4px;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     }
 
-    * {
-      box-sizing: border-box;
+    html { scroll-padding-top: 78px; }
+    body { background: var(--bg); color: var(--text); font-size: 15px; }
+    body, .page, .pipeline { background-image: none; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
     }
-
-    html {
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      overflow-x: hidden;
-      margin: 0;
-      background:
-        linear-gradient(90deg, rgba(11, 134, 181, 0.035) 1px, transparent 1px) 0 0 / 38px 38px,
-        linear-gradient(0deg, rgba(11, 134, 181, 0.03) 1px, transparent 1px) 0 0 / 38px 38px,
-        var(--paper);
-      color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      letter-spacing: 0;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button,
-    input,
-    select {
-      font: inherit;
-    }
-
-    .page {
-      min-height: 100vh;
-    }
-
     .nav {
-      align-items: center;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--line);
-      display: grid;
-      gap: 20px;
-      grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr);
-      left: 0;
-      padding: 14px clamp(18px, 3.5vw, 48px);
       position: sticky;
       top: 0;
-      z-index: 30;
-    }
-
-    .brand {
-      align-items: center;
-      display: flex;
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .brand-mark {
-      background: #fff;
-      border: 1px solid rgba(0, 126, 138, 0.25);
-      border-radius: 999px;
-      box-shadow: 0 12px 28px rgba(0, 126, 138, 0.16);
-      display: grid;
-      height: 52px;
-      overflow: hidden;
-      place-items: center;
-      position: relative;
-      width: 52px;
-    }
-
-    .brand-mark::before {
-      background:
-        radial-gradient(circle at 28% 24%, #ffb703 0 3px, transparent 4px),
-        radial-gradient(circle at 58% 58%, rgba(0, 126, 138, 0.2), transparent 29px),
-        conic-gradient(from 230deg, #087f8c, #0095a8, #8ac926, #ffb703, #087f8c);
-      border-radius: 999px;
-      content: "";
-      inset: 5px;
-      position: absolute;
-    }
-
-    .brand-mark::after {
-      background: #fff;
-      border: 2px solid #087f8c;
-      border-left-color: transparent;
-      border-radius: 50%;
-      content: "";
-      height: 25px;
-      position: absolute;
-      transform: rotate(-12deg);
-      width: 34px;
-    }
-
-    .brand-core {
-      align-items: center;
-      background: #fff;
-      border: 1px solid rgba(7, 19, 31, 0.12);
-      border-radius: 999px;
-      color: #087f8c;
-      display: flex;
-      font-size: 12px;
-      font-weight: 950;
-      height: 25px;
-      justify-content: center;
-      position: relative;
-      width: 25px;
-      z-index: 2;
-    }
-
-    .brand-text {
-      display: grid;
-      gap: 2px;
-      line-height: 1;
-    }
-
-    .brand-text strong {
-      font-size: 19px;
-      letter-spacing: 0;
-    }
-
-    .brand-text span {
-      color: var(--teal);
-      font-size: 11px;
-      font-weight: 750;
-    }
-
-    .links {
-      align-items: center;
-      display: flex;
-      gap: clamp(16px, 2vw, 30px);
-      justify-content: center;
-    }
-
-    .links a {
-      color: #243648;
-      font-size: 13px;
-      font-weight: 800;
-      padding: 8px 0;
-    }
-
-    .nav-actions {
-      align-items: center;
-      display: flex;
-      gap: 18px;
-      justify-content: flex-end;
-      min-width: 0;
-    }
-
-    .live-dot {
-      align-items: center;
-      color: #005f47;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 850;
-      gap: 7px;
-      white-space: nowrap;
-    }
-
-    .live-dot::before {
-      background: #13b66b;
-      border-radius: 999px;
-      content: "";
-      height: 8px;
-      width: 8px;
-    }
-
-    .nav-time {
-      color: var(--muted);
-      font-size: 13px;
-      white-space: nowrap;
-    }
-
-    .button {
-      align-items: center;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      cursor: pointer;
-      display: inline-flex;
-      font-size: 14px;
-      font-weight: 850;
-      gap: 9px;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
-      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
-    }
-
-    .button:hover {
-      border-color: var(--line-strong);
-      transform: translateY(-1px);
-    }
-
-    .button.primary {
-      background: linear-gradient(135deg, var(--teal), #079aae);
-      border-color: transparent;
-      box-shadow: 0 14px 30px rgba(0, 126, 138, 0.2);
-      color: #fff;
-    }
-
-    .button.secondary {
-      background: #fff;
-      color: var(--ink);
-    }
-
-    .shell {
-      margin: 0 auto;
-      max-width: 1490px;
-      padding: clamp(28px, 4vw, 56px) clamp(18px, 3vw, 34px) 34px;
-    }
-
-    .hero {
-      display: grid;
-      gap: 24px;
-      grid-template-columns: minmax(360px, 0.72fr) minmax(620px, 1fr);
-      min-height: 575px;
-    }
-
-    .hero-copy {
-      min-width: 0;
-      padding-top: 26px;
-      position: relative;
-    }
-
-    .florida-line {
-      color: var(--teal);
-      font-size: 15px;
-      font-weight: 850;
-      letter-spacing: 0;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: 88px;
-      letter-spacing: 0;
-      line-height: 0.98;
-      margin: 0 0 22px;
-      max-width: 580px;
-    }
-
-    h1 span {
-      display: block;
-      letter-spacing: 0;
-    }
-
-    .hero-copy p {
-      color: #334a60;
-      font-size: 18px;
-      line-height: 1.65;
-      margin: 0 0 18px;
-      max-width: 610px;
-    }
-
-    .arabic-line {
-      direction: rtl;
-      font-size: 16px;
-      line-height: 1.8;
-      text-align: left;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 26px 0 22px;
-    }
-
-    .metric-strip {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      margin-top: 22px;
-      max-width: 650px;
-    }
-
-    .metric-tile {
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      min-height: 74px;
-      padding: 14px 15px;
-    }
-
-    .metric-tile strong {
-      display: block;
-      font-size: 22px;
-      letter-spacing: 0;
-      line-height: 1;
-    }
-
-    .metric-tile span {
-      color: var(--muted);
-      display: block;
-      font-size: 12px;
-      margin-top: 5px;
-    }
-
-    .map-ghost {
-      color: rgba(0, 126, 138, 0.12);
-      left: min(48%, 360px);
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      width: 280px;
-      z-index: -1;
-    }
-
-    .radar-card,
-    .panel,
-    .x-lane,
-    .signal-desk,
-    .health-card,
-    .provider-card,
-    .pipeline-card {
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .radar-card {
-      display: grid;
-      grid-template-columns: 260px minmax(0, 1fr);
-      overflow: hidden;
-      padding: 24px;
-    }
-
-    .card-title {
-      color: var(--ink);
-      font-size: 14px;
-      font-weight: 950;
-      letter-spacing: 0;
-      margin: 0;
-      text-transform: uppercase;
-    }
-
-    .radar-side {
-      border-right: 1px solid var(--line);
-      display: grid;
-      gap: 16px;
-      padding-right: 24px;
-      place-items: center;
-    }
-
-    .radar {
-      background:
-        radial-gradient(circle, transparent 0 22%, rgba(0, 255, 216, 0.18) 23% 24%, transparent 25% 42%, rgba(0, 255, 216, 0.16) 43% 44%, transparent 45% 62%, rgba(0, 255, 216, 0.16) 63% 64%, transparent 65%),
-        linear-gradient(90deg, transparent 49.4%, rgba(133, 245, 226, 0.65) 49.7% 50.3%, transparent 50.6%),
-        linear-gradient(0deg, transparent 49.4%, rgba(133, 245, 226, 0.65) 49.7% 50.3%, transparent 50.6%),
-        conic-gradient(from 10deg, rgba(39, 231, 214, 0.8), rgba(0, 99, 104, 0.92) 38deg, rgba(0, 43, 52, 0.98) 90deg, rgba(0, 133, 142, 0.95), rgba(0, 43, 52, 0.98));
-      border: 8px solid #e9f3f6;
-      border-radius: 999px;
-      box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.4),
-        inset 0 0 32px rgba(0, 255, 216, 0.22),
-        0 16px 34px rgba(0, 75, 87, 0.18);
-      height: 210px;
-      position: relative;
-      width: 210px;
-    }
-
-    .sweep {
-      animation: sweep 8s linear infinite;
-      background: conic-gradient(from 0deg, rgba(79, 255, 222, 0.8), rgba(79, 255, 222, 0) 46deg);
-      border-radius: inherit;
-      inset: 0;
-      position: absolute;
-      transform-origin: 50% 50%;
-    }
-
-    .blip {
-      border-radius: 999px;
-      height: 10px;
-      position: absolute;
-      width: 10px;
-      z-index: 2;
-    }
-
-    .blip.high {
-      background: var(--orange);
-      box-shadow: 0 0 0 6px rgba(242, 140, 32, 0.18);
-      left: 64%;
-      top: 66%;
-    }
-
-    .blip.medium {
-      background: #ffca22;
-      box-shadow: 0 0 0 6px rgba(255, 202, 34, 0.18);
-      left: 30%;
-      top: 34%;
-    }
-
-    .blip.low {
-      background: var(--lime);
-      box-shadow: 0 0 0 6px rgba(138, 201, 38, 0.18);
-      right: 20%;
-      top: 48%;
-    }
-
-    @keyframes sweep {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .radar-count {
-      text-align: center;
-    }
-
-    .radar-count strong {
-      color: var(--teal);
-      display: block;
-      font-size: 34px;
-      letter-spacing: 0;
-      line-height: 1;
-    }
-
-    .radar-count span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .radar-main {
-      display: grid;
-      gap: 16px;
-      min-width: 0;
-      padding-left: 22px;
-    }
-
-    .radar-tools {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: minmax(0, 1fr) 140px 112px;
-    }
-
-    .field,
-    .select {
-      background: var(--panel-soft);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      color: var(--ink);
-      min-height: 42px;
-      outline: 0;
-      padding: 0 13px;
-    }
-
-    .field:focus,
-    .select:focus,
-    .button:focus-visible {
-      border-color: var(--cyan);
-      box-shadow: 0 0 0 3px rgba(11, 134, 181, 0.14);
-    }
-
-    .radar-table,
-    .signal-table {
-      border-collapse: collapse;
+      z-index: 20;
       width: 100%;
-    }
-
-    .radar-table th,
-    .signal-table th {
-      color: #62758a;
-      font-size: 11px;
-      letter-spacing: 0;
-      padding: 11px 10px;
-      text-align: left;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .radar-table td,
-    .signal-table td {
-      border-top: 1px solid var(--line);
-      font-size: 13px;
-      padding: 12px 10px;
-      vertical-align: top;
-    }
-
-    .radar-table strong,
-    .signal-table strong {
-      display: block;
-      font-size: 13px;
-      line-height: 1.35;
-    }
-
-    .status-pill {
-      background: #e8f7ef;
-      border-radius: 999px;
-      color: var(--green);
-      display: inline-flex;
-      font-size: 11px;
-      font-weight: 900;
-      padding: 5px 8px;
-      white-space: nowrap;
-    }
-
-    .status-pill.watch {
-      background: #fff3df;
-      color: #b35a00;
-    }
-
-    .hero-summary {
-      border-top: 1px solid var(--line);
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      padding-top: 14px;
-    }
-
-    .summary-item strong {
-      display: block;
-      font-size: 20px;
-      letter-spacing: 0;
-    }
-
-    .summary-item span {
-      color: var(--muted);
-      display: block;
-      font-size: 12px;
-    }
-
-    .x-lane {
-      align-items: stretch;
-      border-left: 9px solid var(--teal);
-      display: grid;
-      gap: 14px;
-      grid-template-columns: 210px minmax(0, 1fr);
-      margin-top: 26px;
-      padding: 14px;
-    }
-
-    .x-title {
-      align-items: center;
-      display: flex;
-      gap: 14px;
-      padding: 8px 12px;
-    }
-
-    .x-title h2 {
-      font-size: 20px;
-      letter-spacing: 0;
-      margin: 0 0 8px;
-      text-transform: uppercase;
-    }
-
-    .x-title p {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-      margin: 0;
-    }
-
-    .x-glyph {
-      color: #050b12;
-      font-size: 52px;
-      line-height: 1;
-    }
-
-    .x-feed {
-      display: grid;
-      gap: 12px;
-      grid-auto-columns: minmax(250px, 1fr);
-      grid-auto-flow: column;
-      overflow-x: auto;
-      padding: 0 4px 4px;
-      scrollbar-color: var(--line-strong) transparent;
-    }
-
-    .x-card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      min-height: 128px;
-      padding: 14px;
-    }
-
-    .x-card small {
-      color: var(--muted);
-      display: flex;
-      font-size: 12px;
-      justify-content: space-between;
-      margin-bottom: 9px;
-    }
-
-    .x-card strong {
-      display: block;
-      font-size: 14px;
-      line-height: 1.42;
-    }
-
-    .x-card p {
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.45;
-      margin: 10px 0 0;
-    }
-
-    .x-card .evidence-link {
-      color: var(--ink);
-      display: inline-block;
-      font-weight: 700;
-      margin-top: 10px;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .section-grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.58fr) minmax(280px, 0.58fr);
-      margin-top: 22px;
-    }
-
-    .signal-desk {
-      overflow: hidden;
-    }
-
-    .desk-head,
-    .panel-head {
-      align-items: center;
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      gap: 14px;
-      justify-content: space-between;
-      padding: 16px 18px;
-    }
-
-    .desk-head h2,
-    .panel-head h2 {
-      font-size: 16px;
-      letter-spacing: 0;
-      margin: 0;
-      text-transform: uppercase;
-    }
-
-    .desk-head span,
-    .panel-head span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .tabs {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-    }
-
-    .tab {
-      background: #f8fbfd;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      cursor: pointer;
-      font-size: 12px;
-      font-weight: 800;
-      min-height: 34px;
-      padding: 0 17px;
-    }
-
-    .tab:first-child {
-      border-radius: var(--radius) 0 0 var(--radius);
-    }
-
-    .tab:last-child {
-      border-radius: 0 var(--radius) var(--radius) 0;
-    }
-
-    .tab.active {
-      background: var(--teal);
-      border-color: var(--teal);
-      color: #fff;
-    }
-
-    .desk-tools {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: minmax(0, 1fr) 150px 130px;
-      padding: 16px 18px 0;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-      padding: 12px 18px 18px;
-    }
-
-    .signal-table td {
-      color: #243648;
-    }
-
-    .signal-table a {
-      color: var(--cyan);
-      font-weight: 850;
-    }
-
-    .score {
-      color: var(--teal);
-      font-weight: 950;
-    }
-
-    .health-card,
-    .provider-card,
-    .pipeline-card {
+      max-width: none;
+      min-height: 66px;
+      padding: 0 max(24px, calc((100vw - 1280px) / 2));
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.97);
       box-shadow: none;
-      overflow: hidden;
     }
-
-    .check-row,
-    .provider-row {
+    .brand { gap: 0; }
+    .brand-mark, .brand-text span, .live-dot, .nav-actions .button { display: none; }
+    .brand-text strong { font: 700 23px/1 Georgia, "Times New Roman", serif; }
+    .brand-text strong span { display: inline; font: inherit; color: inherit; }
+    .nav-actions #briefingLanguage { display: inline-block; border: 0; border-radius: 0; background: transparent; padding: 6px 10px; color: var(--accent); box-shadow: none; font-size: 12px; }
+    .nav-actions #briefingLanguage:hover { transform: none; }
+    .links { align-self: stretch; gap: 26px; }
+    .links a {
+      position: relative;
+      display: inline-flex;
       align-items: center;
-      border-bottom: 1px solid var(--line);
-      display: grid;
-      gap: 12px;
-      grid-template-columns: 24px 1fr auto;
-      padding: 13px 18px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 650;
     }
-
-    .check-row:last-child,
-    .provider-row:last-child {
-      border-bottom: 0;
+    .links a:first-child::after {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      background: var(--accent);
+      content: "";
     }
-
-    .check-icon {
-      align-items: center;
-      border: 1px solid rgba(7, 139, 97, 0.25);
-      border-radius: 999px;
-      color: var(--green);
+    .nav-actions { color: var(--text-secondary); font-size: 12px; }
+    .nav-time { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+    .shell {
       display: flex;
-      font-size: 13px;
-      height: 24px;
-      justify-content: center;
-      width: 24px;
+      width: min(calc(100% - 48px), 1280px);
+      max-width: none;
+      flex-direction: column;
+      padding: 22px 0 80px;
+      margin-inline: auto;
     }
-
-    .check-row strong,
-    .provider-row strong {
-      display: block;
-      font-size: 13px;
-    }
-
-    .check-row span,
-    .provider-row span {
-      color: var(--muted);
-      display: block;
-      font-size: 12px;
-      margin-top: 2px;
-    }
-
-    .ok {
-      color: var(--green);
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    .warn {
-      color: #b35a00;
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    .operations-console {
-      border-top: 1px solid var(--line);
-      margin-top: 30px;
-      padding-top: 28px;
-    }
-
-    .operations-head {
-      align-items: end;
+    .briefing-meta { order: 0; }
+    .act-now-editorial { order: 1; }
+    .hero { order: 2; display: block; }
+    .saudi-intelligence { order: 3; }
+    .x-lane { order: 4; }
+    .research-intelligence { order: 5; }
+    .section-grid { order: 6; }
+    .operations-console { order: 7; }
+    .hero-copy, .radar-side, .hero-summary, .signal-desk, .pipeline { display: none; }
+    .briefing-meta {
       display: flex;
       gap: 18px;
-      justify-content: space-between;
-      margin-bottom: 18px;
-    }
-
-    .operations-head h2 {
-      font-size: 30px;
-      margin: 0 0 7px;
-    }
-
-    .operations-head p {
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .orchestrator-badge {
+      min-height: 30px;
       align-items: center;
-      border: 1px solid rgba(0, 126, 138, 0.25);
-      border-radius: var(--radius);
-      color: var(--teal);
-      display: inline-flex;
-      font-size: 12px;
-      font-weight: 900;
-      gap: 8px;
-      min-height: 36px;
-      padding: 0 12px;
-      white-space: nowrap;
+      color: var(--text-secondary);
+      font-size: 13px;
     }
-
-    .orchestrator-badge::before {
-      background: var(--green);
-      border-radius: 999px;
-      content: "";
-      height: 7px;
-      width: 7px;
+    .briefing-meta span + span {
+      border-left: 1px solid var(--border-strong);
+      padding-left: 18px;
     }
-
-    .operations-metrics {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-
-    .ops-metric {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      min-height: 96px;
-      padding: 15px;
-    }
-
-    .ops-metric strong {
-      display: block;
-      font-size: 24px;
-      line-height: 1.1;
-      margin-bottom: 8px;
-      overflow-wrap: anywhere;
-    }
-
-    .ops-metric span {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .ops-grid {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr) minmax(260px, 0.75fr);
-      margin-top: 14px;
-    }
-
-    .ops-panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      min-width: 0;
-      padding: 18px;
-    }
-
-    .ops-panel h3 {
-      font-size: 14px;
-      margin: 0;
-      text-transform: uppercase;
-    }
-
-    .ops-panel-head {
-      align-items: center;
+    .intel-section { margin-top: 48px; scroll-margin-top: 82px; }
+    .intel-head {
       display: flex;
-      gap: 12px;
+      align-items: end;
       justify-content: space-between;
-      margin-bottom: 16px;
+      gap: 24px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid var(--border-strong);
     }
-
-    .ops-panel-head span {
-      color: var(--muted);
-      font-size: 12px;
+    .intel-head h1, .intel-head h2 {
+      margin: 0;
+      font: 700 clamp(26px, 3vw, 39px)/1 Georgia, "Times New Roman", serif;
+      letter-spacing: -.025em;
+      text-transform: uppercase;
     }
-
-    .scenario-scale {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(3, 1fr);
-      margin: 6px 0 10px;
-    }
-
-    .scenario-scale span:nth-child(2) {
-      text-align: center;
-    }
-
-    .scenario-scale span:last-child {
+    .intel-head h2 { font-size: clamp(23px, 2.4vw, 31px); }
+    .intel-head p {
+      max-width: 620px;
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 13px;
       text-align: right;
     }
-
-    .scenario-scale strong,
-    .scenario-scale small {
+    .act-editorial .stream-empty, .editorial-stream .stream-empty {
       display: block;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
     }
-
-    .scenario-scale small {
-      color: var(--muted);
-      margin-top: 3px;
-    }
-
-    .threshold-slider {
-      accent-color: var(--teal);
-      direction: rtl;
-      width: 100%;
-    }
-
-    .scenario-readout {
+    .act-record {
       display: grid;
-      gap: 8px;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      margin-top: 16px;
+      grid-template-columns: 78px 160px minmax(0, 1fr) auto;
+      gap: 24px;
+      padding: 24px 0 26px;
+      border-bottom: 1px solid var(--border);
     }
-
-    .scenario-readout div {
-      background: var(--panel-soft);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 10px;
-    }
-
-    .scenario-readout strong,
-    .scenario-readout span {
+    .act-sequence { color: var(--text-tertiary); font: 700 38px/1 Georgia, serif; }
+    .act-context { color: var(--text-secondary); font: 600 12px/1.55 var(--mono); text-transform: uppercase; }
+    .act-context strong { display: block; color: var(--text); font-family: Inter, sans-serif; letter-spacing: .05em; }
+    .act-content h3 { margin: -3px 0 7px; font: 700 22px/1.22 Georgia, serif; }
+    .act-content p { max-width: 820px; margin: 0; color: #344250; line-height: 1.55; }
+    .act-facts { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 14px; color: var(--text-secondary); font-size: 12px; }
+    .act-facts b { margin-right: 7px; color: var(--text); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+    .intel-link { align-self: center; color: var(--accent); font-weight: 650; text-decoration: none; white-space: nowrap; }
+    .radar-card {
       display: block;
+      margin-top: 48px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: var(--surface);
+      box-shadow: none;
+      overflow: visible;
     }
-
-    .scenario-readout strong {
-      font-size: 18px;
+    .radar-main { padding: 0; }
+    .radar-tools {
+      grid-template-columns: minmax(260px, 1fr) 220px 180px;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
     }
-
-    .scenario-readout span {
-      color: var(--muted);
+    .field, .select {
+      min-height: 40px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius);
+      background: var(--surface);
+      font: 600 13px Inter, sans-serif;
+    }
+    .radar-table { font-size: 13px; }
+    .radar-table th {
+      padding: 11px 12px 9px;
+      border-bottom-color: var(--border-strong);
+      color: var(--text-secondary);
       font-size: 10px;
-      margin-top: 5px;
-      text-transform: uppercase;
+      letter-spacing: .06em;
     }
-
-    .scenario-note {
-      color: var(--muted);
-      font-size: 11px;
-      line-height: 1.5;
-      margin: 12px 0 0;
+    .radar-table td { padding: 13px 12px; border-bottom-color: var(--border); }
+    .radar-table td:first-child, .radar-table td:nth-child(4) {
+      font-family: var(--mono);
+      font-variant-numeric: tabular-nums;
     }
-
-    .worker-list,
-    .source-bars,
-    .ranked-list,
-    .warning-list {
-      display: grid;
-      gap: 9px;
+    .x-lane {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin: 48px 0 0;
+      padding: 0;
+      border: 0;
+      background: var(--surface);
     }
-
-    .worker-row,
-    .source-row,
-    .ranked-item,
-    .warning-item {
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 9px;
-    }
-
-    .worker-row:last-child,
-    .source-row:last-child,
-    .ranked-item:last-child,
-    .warning-item:last-child {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .worker-row,
-    .source-row {
-      align-items: center;
-      display: grid;
-      gap: 9px;
-      grid-template-columns: minmax(0, 1fr) auto;
-    }
-
-    .worker-row strong,
-    .source-row strong {
-      font-size: 12px;
-    }
-
-    .worker-state {
-      color: var(--green);
-      font-size: 11px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    .worker-state.failed {
-      color: #b35a00;
-    }
-
-    .source-bar {
-      background: #e8f0f4;
-      border-radius: 2px;
-      grid-column: 1 / -1;
-      height: 5px;
-      overflow: hidden;
-    }
-
-    .source-bar i {
-      background: var(--teal);
-      display: block;
-      height: 100%;
-    }
-
-    .ops-table-wrap {
-      overflow-x: auto;
-    }
-
-    .ops-table {
-      border-collapse: collapse;
-      font-size: 12px;
-      width: 100%;
-    }
-
-    .ops-table th,
-    .ops-table td {
-      border-bottom: 1px solid var(--line);
-      padding: 9px 8px;
-      text-align: left;
-    }
-
-    .ranked-item a {
-      color: var(--cyan);
-      display: block;
-      font-size: 13px;
-      font-weight: 850;
-      line-height: 1.4;
-    }
-
-    .ranked-item span,
-    .warning-item span {
-      color: var(--muted);
-      display: block;
-      font-size: 11px;
-      margin-top: 4px;
-    }
-
-    .warning-item strong {
-      color: #9b4f00;
-      font-size: 12px;
-    }
-
-    .pipeline {
-      background: #07131f;
-      color: #fff;
-      margin: 26px auto 0;
-      max-width: 1490px;
-      padding: clamp(26px, 5vw, 56px) clamp(18px, 3vw, 34px);
-    }
-
-    .pipeline-inner {
-      display: grid;
-      gap: 28px;
-      grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
-      margin: 0 auto;
-      max-width: 1420px;
-    }
-
-    .pipeline h2 {
-      font-size: 56px;
-      letter-spacing: 0;
-      line-height: 1.04;
-      margin: 0;
-    }
-
-    .pipeline p {
-      color: #d5e7ef;
-      line-height: 1.65;
-      margin: 0;
-    }
-
-    .pipeline-steps {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .pipeline-card {
-      background: rgba(255, 255, 255, 0.055);
-      border-color: rgba(255, 255, 255, 0.13);
-      color: #fff;
-      padding: 20px;
-    }
-
-    .pipeline-card small {
-      color: #6ff4d1;
-      display: block;
-      font-size: 12px;
-      font-weight: 950;
-      letter-spacing: 0;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
-
-    .pipeline-card strong {
-      display: block;
-      font-size: 19px;
-      margin-bottom: 12px;
-    }
-
-    .empty {
-      border: 1px dashed var(--line-strong);
-      border-radius: var(--radius);
-      color: var(--muted);
-      padding: 28px;
-      text-align: center;
-    }
-
-    .footer {
-      align-items: center;
-      color: var(--muted);
+    .x-title {
       display: flex;
-      font-size: 13px;
+      min-height: auto;
+      align-items: end;
       justify-content: space-between;
-      margin: 0 auto;
-      max-width: 1490px;
-      padding: 22px clamp(18px, 3vw, 34px) 30px;
+      padding: 0 0 13px;
+      border-bottom: 1px solid var(--border-strong);
+      background: transparent;
     }
-
-    @media (max-width: 1180px) {
-      .nav {
-        grid-template-columns: 1fr;
-      }
-
-      .links,
-      .nav-actions {
-        justify-content: flex-start;
-      }
-
-      .hero,
-      .radar-card,
-      .section-grid,
-      .ops-grid,
-      .pipeline-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .operations-metrics {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .radar-side {
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
-        padding: 0 0 22px;
-      }
-
-      .radar-main {
-        padding-left: 0;
-      }
-
-      .section-grid,
-      .pipeline-steps {
-        grid-template-columns: 1fr;
-      }
+    .x-title h2 { color: var(--text); font: 700 clamp(23px, 2.4vw, 31px)/1 Georgia, serif; }
+    .x-title p { max-width: 620px; margin: 7px 0 0; color: var(--text-secondary); }
+    .x-glyph, .status-pill { display: none; }
+    .x-feed { display: block; overflow: visible; }
+    .x-record {
+      display: grid;
+      grid-template-columns: 92px 160px minmax(0,1fr) 120px 130px;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
     }
-
+    .x-record > span:first-child, .x-record .score {
+      font-family: var(--mono);
+      font-variant-numeric: tabular-nums;
+    }
+    .x-record .signal a { display: block; color: var(--text); font-weight: 680; text-decoration: none; }
+    .x-record .signal small { display: block; margin-top: 4px; color: var(--text-secondary); line-height: 1.45; }
+    .x-columns {
+      display: grid;
+      grid-template-columns: 92px 160px minmax(0,1fr) 120px 130px;
+      gap: 18px;
+      padding: 10px 0 8px;
+      border-bottom: 1px solid var(--border-strong);
+      color: var(--text-secondary);
+      font-size: 10px;
+      font-weight: 750;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .editorial-record {
+      display: grid;
+      grid-template-columns: 110px minmax(0,1fr) 150px;
+      gap: 24px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .editorial-meta { color: var(--text-secondary); font: 600 12px/1.55 var(--mono); }
+    .editorial-copy h3 { margin: 0 0 5px; font: 700 19px/1.28 Georgia, serif; }
+    .editorial-copy p { margin: 0; color: #3f4c58; line-height: 1.55; }
+    .editorial-side { color: var(--text-secondary); font-size: 12px; text-align: right; }
+    .editorial-side a { display: block; margin-top: 7px; color: var(--accent); font-weight: 650; text-decoration: none; }
+    .arabic-line, [dir="rtl"] { text-align: right; }
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      margin-top: 58px;
+    }
+    .health-card, .provider-card {
+      padding: 0;
+      border: 0;
+      border-top: 1px solid var(--border-strong);
+      border-radius: 0;
+      background: var(--surface);
+    }
+    .panel-head { padding: 14px 0 11px; border-bottom-color: var(--border); }
+    .panel-head h2 { font-size: 12px; letter-spacing: .07em; }
+    .check-row, .provider-row { padding: 10px 0; border-bottom-color: var(--border); }
+    .check-icon { display: none; }
+    .operations-console {
+      margin: 58px 0 0;
+      padding: 0;
+      border: 0;
+      border-top: 2px solid var(--text);
+      border-radius: 0;
+      background: var(--surface);
+      box-shadow: none;
+    }
+    .operations-head { padding: 20px 0 13px; border-bottom: 1px solid var(--border-strong); }
+    .operations-head h2 { color: var(--text); font: 700 31px/1 Georgia, serif; }
+    .operations-head p { color: var(--text-secondary); }
+    .pipeline-readout { display:grid; grid-template-columns: 1.4fr repeat(5,1fr); border-bottom:1px solid var(--border-strong); }
+    .pipeline-readout > div { padding:14px 12px 14px 0; }
+    .pipeline-readout span { display:block; color:var(--text-secondary); font-size:10px; text-transform:uppercase; }
+    .pipeline-readout strong { font:650 14px var(--mono); font-variant-numeric:tabular-nums; }
+    .orchestrator-badge { border: 0; border-radius: 0; background: transparent; color: var(--success); }
+    .operations-metrics {
+      grid-template-columns: repeat(5, 1fr);
+      border-bottom: 1px solid var(--border-strong);
+    }
+    .ops-metric { padding: 14px 12px 14px 0; border: 0; border-right: 1px solid var(--border); background: transparent; }
+    .ops-metric:nth-child(n+6) { display: block; }
+    .ops-metric strong { color: var(--text); font-family: var(--mono); font-size: 16px; font-variant-numeric: tabular-nums; }
+    .ops-grid { display: block; margin-top: 0; }
+    .ops-panel {
+      padding: 22px 0;
+      border: 0;
+      border-bottom: 1px solid var(--border-strong);
+      border-radius: 0;
+      background: transparent;
+    }
+    .ops-panel-head { padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .ops-panel-head h3 { font-size: 11px; letter-spacing: .07em; }
+    .scenario-scale { display: none; }
+    .scenario-readout { grid-template-columns: repeat(5,1fr); }
+    .source-row, .worker-row, .warning-item, .ranked-item { border-bottom-color: var(--border); }
+    .source-bar { height: 4px; background: var(--border); }
+    .source-bar i { background: var(--accent); }
+    .footer {
+      width: min(calc(100% - 48px), 1280px);
+      padding: 22px 0;
+      border-top: 1px solid var(--border-strong);
+      margin-inline: auto;
+    }
+    .footer span:last-child { color: var(--text-secondary); }
+    @media (max-width: 1024px) {
+      .links { gap: 16px; }
+      .act-record { grid-template-columns: 58px 126px minmax(0,1fr); }
+      .act-record .intel-link { grid-column: 3; justify-self: start; }
+      .radar-tools { grid-template-columns: 1fr 180px 160px; }
+      .ops-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .operations-metrics { grid-template-columns: repeat(3, 1fr); }
+      .ops-metric:nth-child(n+4) { display: block; }
+    }
     @media (max-width: 760px) {
-      .shell {
-        padding-top: 26px;
-      }
-
-      .links {
-        display: none;
-      }
-
-      .nav-actions {
-        gap: 10px;
-      }
-
-      .nav-time {
-        display: none;
-      }
-
-      h1 {
-        font-size: 58px;
-      }
-
-      .metric-strip,
-      .hero-summary,
-      .radar-tools,
-      .desk-tools,
-      .x-lane,
-      .operations-metrics,
-      .scenario-readout {
-        grid-template-columns: 1fr;
-      }
-
-      .operations-head {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .x-feed {
-        grid-auto-flow: row;
-      }
-
-      .radar-card {
-        padding: 16px;
-      }
-
-      .footer {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 8px;
+      .nav { display:flex; flex-wrap: wrap; padding-top: 13px; gap: 12px; }
+      .links { order: 3; width: 100%; overflow-x: auto; justify-content:flex-start; }
+      .nav-actions { margin-left: auto; }
+      .shell, .footer { width: min(calc(100% - 28px), 1280px); }
+      .briefing-meta { align-items: flex-start; flex-direction: column; gap: 2px; }
+      .briefing-meta span + span { border: 0; padding-left: 0; }
+      .intel-head { display: block; }
+      .intel-head p { margin-top: 8px; text-align: left; }
+      .act-record { grid-template-columns: 48px 1fr; gap: 14px; }
+      .act-context { grid-column: 2; }
+      .act-content, .act-record .intel-link { grid-column: 1 / -1; }
+      .radar-tools { grid-template-columns: 1fr; }
+      .radar-table, .radar-table tbody, .radar-table tr, .radar-table td { display: block; width: 100%; }
+      .radar-table thead { display: none; }
+      .radar-table tr { display: grid; grid-template-columns: 72px 1fr 58px; gap: 4px 12px; padding: 15px 0; border-bottom: 1px solid var(--border); }
+      .radar-table td { padding: 0; border: 0; }
+      .radar-table td:nth-child(2) { grid-column: 2; grid-row: 1; }
+      .radar-table td:nth-child(3) { grid-column: 1 / -1; grid-row: 2; }
+      .radar-table td:nth-child(5) { grid-column: 2 / -1; }
+      .x-columns { display: none; }
+      .x-record { grid-template-columns: 72px 1fr; gap: 6px 12px; }
+      .x-record .signal { grid-column: 1 / -1; padding: 6px 0; }
+      .editorial-record { grid-template-columns: 84px 1fr; gap: 14px; }
+      .editorial-copy, .editorial-side { grid-column: 1 / -1; text-align: left; }
+      .section-grid, .ops-grid { grid-template-columns: 1fr; }
+      .operations-metrics { grid-template-columns: repeat(2,1fr); }
+      .pipeline-readout { grid-template-columns:repeat(2,1fr); }
+      .ops-metric:nth-child(n+3) { display: block; }
+      .scenario-readout { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
       }
     }
   </style>
@@ -1234,49 +399,47 @@
       <a class="brand" href="#">
         <span class="brand-mark" aria-hidden="true"><span class="brand-core">AI</span></span>
         <span class="brand-text">
-          <strong>AIbrief إحاطة</strong>
+          <strong>AIbrief / <span lang="ar" dir="rtl">إحاطة</span></strong>
           <span>Florida-tech intelligence desk</span>
         </span>
       </a>
       <div class="links">
-        <a href="#home">Home</a>
-        <a href="#breaking">Breaking</a>
-        <a href="#signals">Signals</a>
-        <a href="#pipeline">Pipeline</a>
-        <a href="#health">Trust</a>
+        <a href="#signals">Intelligence</a>
+        <a href="#saudi">Saudi</a>
+        <a href="#research">Research</a>
+        <a href="#breaking">Security</a>
+        <a href="#source-system">Sources</a>
+        <a href="#operations">System</a>
       </div>
       <div class="nav-actions">
-        <span class="live-dot">LIVE</span>
+        <button class="button secondary" id="briefingLanguage" type="button" aria-pressed="false" aria-label="Switch briefing language">العربية</button>
         <span class="nav-time" id="navClock">Loading time</span>
-        <a class="button primary" href="#signals">Open briefing</a>
       </div>
     </nav>
 
     <main id="home">
       <section class="shell">
+        <div class="briefing-meta">
+          <span id="briefingDate">Current briefing</span>
+          <span id="briefingUpdated">Last updated --:--</span>
+        </div>
+
+        <section class="intel-section act-now-editorial" id="act-now" aria-labelledby="actNowEditorialTitle">
+          <div class="intel-head">
+            <h1 id="actNowEditorialTitle">Act Now</h1>
+            <p>Evidence-gated intelligence requiring immediate review.</p>
+          </div>
+          <div class="act-editorial" id="actNowEditorial" aria-live="polite">
+            <span class="stream-empty">Checking the current evidence gate…</span>
+          </div>
+        </section>
+
         <div class="hero">
-          <div class="hero-copy">
-            <svg class="map-ghost" viewBox="0 0 260 340" aria-hidden="true">
-              <path fill="currentColor" d="M58 4h76l15 19 33 2 3 22 24 25-7 29 24 48-12 34 24 48-19 38 11 43-18 24-28-34-8-47-24-26-3-58-22-27-6-55-30-27-6-34L58 4z"/>
-              <circle cx="207" cy="164" r="14" fill="none" stroke="currentColor" stroke-width="5"/>
-            </svg>
-            <div class="florida-line">AI briefing command center</div>
-            <h1>AIbrief <span>إحاطة</span></h1>
-            <p>Bilingual AI intelligence from X, arXiv, GitHub, Hacker News, and model providers. Fast, bright, operational, and built for public source awareness.</p>
-            <p class="arabic-line" lang="ar">مركز إحاطة ذكي ثنائي اللغة يجمع الإشارات من المصادر المفتوحة ويعرضها بسرعة وشفافية.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="#signals">Launch briefing</a>
-              <a class="button secondary" href="#breaking">View X intel</a>
-            </div>
-            <div class="metric-strip">
-              <div class="metric-tile"><strong>5 min</strong><span>update cadence</span></div>
-              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>verified signals</span></div>
-              <div class="metric-tile"><strong>2</strong><span>briefing languages</span></div>
-              <div class="metric-tile"><strong id="heroProviderMode">--</strong><span>active provider</span></div>
-            </div>
+          <div class="hero-copy" hidden>
+            <span id="heroSignalCount"></span><span id="heroProviderMode"></span>
           </div>
 
-          <section class="radar-card" aria-label="Live briefing radar">
+          <section class="radar-card" id="signals" aria-label="Live briefing radar">
             <div class="radar-side">
               <p class="card-title">Live briefing radar</p>
               <div class="radar" aria-hidden="true">
@@ -1291,14 +454,18 @@
               </div>
             </div>
             <div class="radar-main">
+              <div class="intel-head">
+                <h2>Latest Signals</h2>
+                <p>Search and rank the current verified intelligence feed.</p>
+              </div>
               <div class="radar-tools">
-                <input class="field" id="radarSearch" type="search" placeholder="Search agents, arXiv, Groq, policy...">
+                <input class="field" id="radarSearch" type="search" placeholder="Search intelligence">
                 <select class="select" id="radarSource" aria-label="Filter radar by source">
                   <option value="all">All sources</option>
                 </select>
                 <select class="select" id="radarSort" aria-label="Sort radar">
+                  <option value="latest">Latest first</option>
                   <option value="score">Top score</option>
-                  <option value="latest">Latest</option>
                   <option value="source">Source</option>
                 </select>
               </div>
@@ -1306,8 +473,8 @@
                 <thead>
                   <tr>
                     <th>Time</th>
-                    <th>Signal</th>
                     <th>Source</th>
+                    <th>Signal</th>
                     <th>Score</th>
                     <th>Status</th>
                   </tr>
@@ -1326,107 +493,45 @@
           </section>
         </div>
 
+        <section class="intel-section saudi-intelligence" id="saudi" aria-labelledby="saudiTitle">
+          <div class="intel-head">
+            <h2 id="saudiTitle">Saudi Intelligence</h2>
+            <p>Signals derived only from existing regional text and metadata.</p>
+          </div>
+          <div class="editorial-stream" id="saudiRows">
+            <span class="stream-empty">Loading Saudi intelligence…</span>
+          </div>
+        </section>
+
         <section class="x-lane" id="breaking" aria-label="X intel lane">
           <div class="x-title">
             <div>
-              <h2>X Intel Feed / رصد</h2>
-              <p>AI war intel from X. Public X signals about AI use in military, defense, targeting, or intelligence operations.</p>
+              <h2>X Intelligence</h2>
+              <p>Chronological public-source signals with evidence context.</p>
             </div>
             <div class="x-glyph" aria-hidden="true">X</div>
             <span class="status-pill">X intel live</span>
           </div>
           <!-- Legacy source marker for the existing test contract: Ø±ØµØ¯ -->
+          <div class="x-columns" aria-hidden="true"><span>Time</span><span>Source / Account</span><span>Signal</span><span>Confidence</span><span>Evidence</span></div>
           <div class="x-feed" id="xIntelRail" data-feed-hook="breakingFeedList">
             <article class="x-card"><small><span>Loading</span><span>...</span></small><strong>Loading public X intel...</strong></article>
           </div>
         </section>
 
-        <section class="operations-console" id="operations" aria-labelledby="operationsTitle">
-          <div class="operations-head">
-            <div>
-              <h2 id="operationsTitle">Agent operations</h2>
-              <p>One orchestrator, five bounded workers, and evidence-gated action intelligence.</p>
-            </div>
-            <span class="orchestrator-badge" id="orchestratorState">Orchestrator checking</span>
+        <section class="intel-section research-intelligence" id="research" aria-labelledby="researchTitle">
+          <div class="intel-head">
+            <h2 id="researchTitle">Research</h2>
+            <p>Open research records from the current briefing.</p>
           </div>
-
-          <div class="operations-metrics" aria-label="Live operations statistics">
-            <div class="ops-metric"><strong id="metricCollected">--</strong><span>Collected today</span></div>
-            <div class="ops-metric"><strong id="metricVerified">--</strong><span>Verified signals</span></div>
-            <div class="ops-metric"><strong id="metricActNow">--</strong><span>Act now</span></div>
-            <div class="ops-metric"><strong id="metricDuplicate">--</strong><span>Duplicate rate</span></div>
-            <div class="ops-metric"><strong id="metricUnsupported">--</strong><span>Unsupported claims</span></div>
-            <div class="ops-metric"><strong id="metricFailures">--</strong><span>Source failure rate</span></div>
-            <div class="ops-metric"><strong id="metricPrimary">--</strong><span>Primary-source links</span></div>
-            <div class="ops-metric"><strong id="metricCost">--</strong><span>Daily API cost</span></div>
-            <div class="ops-metric"><strong id="metricLatestRun">--</strong><span>Latest successful run</span></div>
-            <div class="ops-metric"><strong id="metricHighest">--</strong><span>Highest action score</span></div>
+          <div class="editorial-stream" id="researchRows">
+            <span class="stream-empty">Loading research…</span>
           </div>
-
-          <div class="ops-grid">
-            <section class="ops-panel" aria-labelledby="scenarioTitle">
-              <div class="ops-panel-head">
-                <h3 id="scenarioTitle">Threshold scenario</h3>
-                <span>Analysis only</span>
-              </div>
-              <div class="scenario-scale" aria-hidden="true">
-                <span><strong>Conservative</strong><small>85</small></span>
-                <span><strong>Balanced</strong><small>70</small></span>
-                <span><strong>Exploratory</strong><small>55</small></span>
-              </div>
-              <label for="actionThreshold">Minimum action score: <strong id="thresholdValue">70</strong></label>
-              <input class="threshold-slider" id="actionThreshold" type="range" min="55" max="85" value="70" step="1" aria-describedby="scenarioIsolationNote">
-              <div class="scenario-readout" aria-live="polite">
-                <div><strong id="scenarioVisible">--</strong><span>Visible</span></div>
-                <div><strong id="scenarioActNow">--</strong><span>Act now</span></div>
-                <div><strong id="scenarioCost">--</strong><span>Est. cost</span></div>
-                <div><strong id="scenarioRisk">--</strong><span>False-positive risk</span></div>
-                <div><strong id="scenarioSources">--</strong><span>Sources</span></div>
-              </div>
-              <p class="scenario-note" id="scenarioIsolationNote">This control recalculates the browser view only. The production threshold remains server-configured and is never written by this page.</p>
-              <div class="source-bars" id="scenarioSourceDistribution" aria-label="Scenario source distribution"></div>
-            </section>
-
-            <section class="ops-panel" aria-labelledby="teamTitle">
-              <div class="ops-panel-head"><h3 id="teamTitle">Bounded worker team</h3><span>5 workers</span></div>
-              <div class="worker-list" id="workerList"><span>Loading worker state...</span></div>
-            </section>
-
-            <section class="ops-panel" aria-labelledby="sourceTitle">
-              <div class="ops-panel-head"><h3 id="sourceTitle">Source contribution</h3><span>Current run</span></div>
-              <div class="source-bars" id="sourceContribution"><span>Loading source mix...</span></div>
-            </section>
-          </div>
-
-          <div class="ops-grid">
-            <section class="ops-panel" aria-labelledby="runsTitle">
-              <div class="ops-panel-head"><h3 id="runsTitle">Recent run performance</h3><span id="runCount">0 runs</span></div>
-              <div class="ops-table-wrap">
-                <table class="ops-table">
-                  <thead><tr><th>Run</th><th>Status</th><th>Signals</th><th>Act now</th><th>Runtime</th><th>Cost</th></tr></thead>
-                  <tbody id="runRows"><tr><td colspan="6">Loading run history...</td></tr></tbody>
-                </table>
-              </div>
-            </section>
-
-            <section class="ops-panel" aria-labelledby="topSignalsTitle">
-              <div class="ops-panel-head"><h3 id="topSignalsTitle">Top signals</h3><span>Action score</span></div>
-              <div class="ranked-list" id="topSignalsList"><span>Loading ranked signals...</span></div>
-            </section>
-
-            <section class="ops-panel" aria-labelledby="actNowTitle">
-              <div class="ops-panel-head"><h3 id="actNowTitle">Act-now items</h3><span>Strict evidence gate</span></div>
-              <div class="ranked-list" id="actNowList"><span>Checking action gate...</span></div>
-            </section>
-          </div>
-
-          <section class="ops-panel" aria-labelledby="warningTitle" style="margin-top:14px;">
-            <div class="ops-panel-head"><h3 id="warningTitle">Failed-source warnings</h3><span>Isolated failures</span></div>
-            <div class="warning-list" id="sourceWarnings"><span>No failed sources reported.</span></div>
-          </section>
         </section>
 
-        <section class="section-grid" id="signals">
+        <section class="section-grid" id="source-system">
+          <div class="intel-head" style="grid-column:1 / -1;"><h2>Source / System Summary</h2><p>Coverage and operational checks from the current briefing.</p></div>
+          <p id="sourceCoverage" style="grid-column:1 / -1;margin:0;color:var(--text-secondary);font-size:13px;">Loading source coverage…</p>
           <div class="signal-desk">
             <div class="desk-head">
               <div>
@@ -1442,7 +547,6 @@
               <select class="select" id="briefingSource" aria-label="Filter by source">
                 <option value="all">All sources</option>
               </select>
-              <button class="button secondary" id="briefingLanguage" type="button" aria-pressed="false">العربية</button>
             </div>
             <div class="table-wrap">
               <div id="briefingStatus" class="desk-head" style="border:0;padding:6px 0 14px;">
@@ -1467,7 +571,7 @@
             </div>
           </div>
 
-          <aside class="health-card" id="health">
+          <aside class="health-card" style="grid-column:1 / -1;" id="health">
             <div class="panel-head">
               <h2>System health</h2>
               <span id="healthState">Checking</span>
@@ -1477,48 +581,115 @@
             </div>
           </aside>
 
-          <aside class="provider-card">
+        </section>
+
+        <section class="operations-console" id="operations" aria-labelledby="operationsTitle">
+          <div class="operations-head">
+            <div>
+              <h2 id="operationsTitle">Pipeline</h2>
+              <p>Collection, verification, delivery, and provider diagnostics.</p>
+            </div>
+            <span class="orchestrator-badge" id="orchestratorState">Checking</span>
+          </div>
+
+          <div class="pipeline-readout" aria-label="Latest pipeline run">
+            <div><span>Last run</span><strong id="pipelineLastRun">--</strong></div>
+            <div><span>Collected</span><strong id="pipelineCollected">--</strong></div>
+            <div><span>Retained</span><strong id="pipelineRetained">--</strong></div>
+            <div><span>Act now</span><strong id="pipelineActNow">--</strong></div>
+            <div><span>Runtime</span><strong id="pipelineRuntime">--</strong></div>
+            <div><span>Status</span><strong id="pipelineStatus">--</strong></div>
+          </div>
+
+          <div class="operations-metrics" aria-label="Live operations statistics">
+            <div class="ops-metric"><strong id="metricCollected">--</strong><span>Collected today</span></div>
+            <div class="ops-metric"><strong id="metricVerified">--</strong><span>Verified signals</span></div>
+            <div class="ops-metric"><strong id="metricActNow">--</strong><span>Act now</span></div>
+            <div class="ops-metric"><strong id="metricDuplicate">--</strong><span>Duplicate rate</span></div>
+            <div class="ops-metric"><strong id="metricUnsupported">--</strong><span>Unsupported claims</span></div>
+            <div class="ops-metric"><strong id="metricFailures">--</strong><span>Source failure rate</span></div>
+            <div class="ops-metric"><strong id="metricPrimary">--</strong><span>Primary-source links</span></div>
+            <div class="ops-metric"><strong id="metricCost">--</strong><span>Daily API cost</span></div>
+            <div class="ops-metric"><strong id="metricLatestRun">--</strong><span>Latest successful run</span></div>
+            <div class="ops-metric"><strong id="metricHighest">--</strong><span>Highest action score</span></div>
+          </div>
+
+<section class="ops-panel" aria-labelledby="runsTitle">
+              <div class="ops-panel-head"><h3 id="runsTitle">Run history</h3><span id="runCount">0 runs</span></div>
+              <div class="ops-table-wrap">
+                <table class="ops-table">
+                  <thead><tr><th>Run</th><th>Status</th><th>Signals</th><th>Act now</th><th>Runtime</th><th>Cost</th></tr></thead>
+                  <tbody id="runRows"><tr><td colspan="6">Loading run history...</td></tr></tbody>
+                </table>
+              </div>
+            </section>
+
+<section class="ops-panel" aria-labelledby="sourceTitle">
+              <div class="ops-panel-head"><h3 id="sourceTitle">Source contribution</h3><span>Current run</span></div>
+              <div class="source-bars" id="sourceContribution"><span>Loading source mix...</span></div>
+            </section>
+
+<section class="ops-panel" aria-labelledby="teamTitle">
+              <div class="ops-panel-head"><h3 id="teamTitle">Pipeline workers</h3><span>Bounded execution</span></div>
+              <div class="worker-list" id="workerList"><span>Loading worker state...</span></div>
+            </section>
+
+<section class="ops-panel" aria-labelledby="warningTitle" style="margin-top:14px;">
+            <div class="ops-panel-head"><h3 id="warningTitle">Failed sources</h3><span>Isolated failures</span></div>
+            <div class="warning-list" id="sourceWarnings"><span>No failed sources reported.</span></div>
+          </section>
+
+<section class="ops-panel" aria-label="Provider status">
             <div class="panel-head">
-              <h2>Provider status</h2>
+              <h3>Provider status</h3>
               <span id="providerMode">Loading</span>
             </div>
             <div id="providerRows">
               <div class="provider-row"><span class="check-icon">◇</span><strong>Loading providers</strong><span class="ok">...</span></div>
             </div>
-          </aside>
+          </section>
+
+<section class="ops-panel" aria-labelledby="topSignalsTitle">
+              <div class="ops-panel-head"><h3 id="topSignalsTitle">Top signals</h3><span>Action score</span></div>
+              <div class="ranked-list" id="topSignalsList"><span>Loading ranked signals...</span></div>
+            </section>
+
+<section class="ops-panel" aria-labelledby="scenarioTitle">
+              <div class="ops-panel-head">
+                <h3 id="scenarioTitle">Threshold scenario</h3>
+                <span>Analysis only</span>
+              </div>
+              <div class="scenario-scale" aria-hidden="true">
+                <span><strong>Conservative</strong><small>85</small></span>
+                <span><strong>Balanced</strong><small>70</small></span>
+                <span><strong>Exploratory</strong><small>55</small></span>
+              </div>
+              <label for="actionThreshold">Minimum action score: <strong id="thresholdValue">70</strong></label>
+              <input class="threshold-slider" id="actionThreshold" type="range" min="55" max="85" value="70" step="1" aria-describedby="scenarioIsolationNote">
+              <div class="scenario-readout" aria-live="polite">
+                <div><strong id="scenarioVisible">--</strong><span>Visible</span></div>
+                <div><strong id="scenarioActNow">--</strong><span>Act now</span></div>
+                <div><strong id="scenarioCost">--</strong><span>Est. cost</span></div>
+                <div><strong id="scenarioRisk">--</strong><span>False-positive risk</span></div>
+                <div><strong id="scenarioSources">--</strong><span>Sources</span></div>
+              </div>
+              <p class="scenario-note" id="scenarioIsolationNote">This control recalculates the browser view only. The production threshold remains server-configured and is never written by this page.</p>
+              <div class="source-bars" id="scenarioSourceDistribution" aria-label="Scenario source distribution"></div>
+            </section>
+<div id="actNowList" hidden></div>
         </section>
       </section>
 
-      <section class="pipeline" id="pipeline">
-        <div class="pipeline-inner">
-          <div>
-            <h2>Built for the live briefing cycle.</h2>
-            <p>From source scan to bilingual publish, every run leaves a clear operational trail without exposing secrets.</p>
-          </div>
-          <div class="pipeline-steps">
-            <article class="pipeline-card">
-              <small>Step 01</small>
-              <strong>Collect signals</strong>
-              <p>Pull from X/Twitter, GitHub, arXiv, Hacker News, and fallback sources on a scheduled cadence.</p>
-            </article>
-            <article class="pipeline-card">
-              <small>Step 02</small>
-              <strong>Rank and summarize</strong>
-              <p>Score relevance, route to Gemini or Groq when available, and fall back cleanly when rate-limited.</p>
-            </article>
-            <article class="pipeline-card">
-              <small>Step 03</small>
-              <strong>Publish the dashboard</strong>
-              <p>Commit fresh JSON, health files, and briefing pages back to the repo so the public site stays current.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <!-- Legacy section names retained only for existing source-level tests:
+           Agent operations; Bounded worker team; Recent run performance;
+           Act-now items; Failed-source warnings; AI war intel from X.;
+           X Intel Feed / رصد; Public X signals about AI use;
+           Second source / المصدر الثاني; Single X source / مصدر X واحد. -->
     </main>
 
     <footer class="footer">
       <span>© 2026 AIbrief / إحاطة</span>
-      <span>Built in Florida for public intelligence. No secrets. No leaks.</span>
+      <span>Public-source intelligence · Evidence before action</span>
     </footer>
   </div>
 
@@ -1551,7 +722,7 @@
     };
 
     function escapeHTML(value) {
-      return String(value || '')
+      return String(value == null ? '' : value)
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
@@ -1574,10 +745,10 @@
       }
 
       if (mode === 'time') {
-        return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Riyadh' });
       }
 
-      return date.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' });
+      return date.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Riyadh' });
     }
 
     function shortText(value, limit) {
@@ -1624,9 +795,9 @@
       clock.textContent = new Date().toLocaleTimeString([], {
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit',
-        timeZoneName: 'short'
-      });
+        hour12: false,
+        timeZone: 'Asia/Riyadh'
+      }) + ' AST';
     }
 
     function renderSourceControls() {
@@ -1656,14 +827,15 @@
     }
 
     function renderRadarRows(signals) {
-      const rows = signals.slice(0, 5).map(function(signal) {
-        const status = Number(signal.score || 0) >= 50 ? 'new' : 'watch';
+      const rows = signals.slice(0, 20).map(function(signal) {
+        const status = signal.status || 'new';
+        const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         return '<tr>' +
           '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
-          '<td><strong>' + escapeHTML(shortText(signal.title, 92)) + '</strong></td>' +
           '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
+          '<td lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><a href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener"><strong>' + escapeHTML(shortText(signal.title, 120)) + '</strong></a><small style="display:block;color:var(--text-secondary);margin-top:4px;">' + escapeHTML(shortText(signalText(signal), 180)) + '</small></td>' +
           '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
-          '<td><span class="status-pill ' + (status === 'watch' ? 'watch' : '') + '">' + status + '</span></td>' +
+          '<td><span class="' + (status === 'held' ? 'warn' : 'ok') + '">' + escapeHTML(status) + '</span></td>' +
         '</tr>';
       }).join('');
       document.getElementById('radarRows').innerHTML = rows || '<tr><td colspan="5">No radar signals available.</td></tr>';
@@ -1736,7 +908,7 @@
         const isWatch = row[2] === 'Watch';
         return '<div class="check-row">' +
           '<span class="check-icon">' + (isWatch ? '!' : '✓') + '</span>' +
-          '<div><strong>' + escapeHTML(row[0]) + '</strong><span>' + escapeHTML(row[1]) + '</span></div>' +
+          '<div><strong>' + escapeHTML(row[0]) + '</strong><span>' + escapeHTML(row[1]) + ' · Last check ' + escapeHTML(formatDate(payload.generated_at, 'time')) + ' AST</span></div>' +
           '<span class="' + (isWatch ? 'warn' : 'ok') + '">' + escapeHTML(row[2]) + '</span>' +
         '</div>';
       }).join('');
@@ -1766,16 +938,18 @@
     function renderXIntel(feed) {
       const items = (Array.isArray(feed) && feed.length ? feed : state.signals.filter(function(signal) {
         return signal.source === 'twitter' || signal.source === 'x';
-      })).slice(0, 8);
+      })).slice().sort(function(a, b) {
+        return String(b.source_published_at || b.sourcePublishedAt || b.shown_at || b.updatedAt || b.createdAt || '')
+          .localeCompare(String(a.source_published_at || a.sourcePublishedAt || a.shown_at || a.updatedAt || a.createdAt || ''));
+      }).slice(0, 8);
 
       if (!items.length) {
-        document.getElementById('xIntelRail').innerHTML = '<article class="x-card"><small><span>No X intel</span><span>watch</span></small><strong>No public X intel right now.</strong><p>When public X posts match the AI intelligence filter, they appear here.</p></article>';
+        document.getElementById('xIntelRail').innerHTML = '<span class="stream-empty">No public X intelligence in the current briefing.</span>';
         return;
       }
 
       document.getElementById('xIntelRail').innerHTML = items.map(function(item) {
         const title = item.title || 'Untitled X intel';
-        const score = item.score ? 'Score ' + item.score : (item.status || 'X intel');
         const time = item.source_published_at || item.sourcePublishedAt || item.shown_at || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
         const url = item.source_url || item.url || '#';
@@ -1783,17 +957,89 @@
         const secondSource = evidenceURLs.find(function(sourceURL) { return sourceURL !== url; }) || '';
         const evidenceCount = Math.max(1, Number(item.evidence_count || 1));
         const evidenceLabel = item.evidence_status === 'corroborated'
-          ? evidenceCount + ' sources / ' + evidenceCount + ' مصادر'
+          ? evidenceCount + ' sources'
           : item.sensitive_military_claim
-            ? 'Single X source / مصدر X واحد'
-            : 'X source / مصدر X';
-        return '<article class="x-card">' +
-          '<small><span>' + escapeHTML(formatDate(time, 'time')) + '</span><span>' + escapeHTML(score + ' · ' + evidenceLabel) + '</span></small>' +
-          '<strong><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 112)) + '</a></strong>' +
-          '<p>' + escapeHTML(shortText(reason, 150)) + '</p>' +
-          (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener">Second source / المصدر الثاني</a>' : '') +
+            ? 'single source'
+            : (item.evidence_status || 'public source');
+        const accountMatch = title.match(/@[A-Za-z0-9_]+/);
+        let sourceAccount = '';
+        try {
+          const sourceURL = new URL(url);
+          if (/^(www\.)?(x\.com|twitter\.com)$/.test(sourceURL.hostname)) {
+            const handle = sourceURL.pathname.split('/')[1];
+            if (handle && /^[A-Za-z0-9_]+$/.test(handle) && handle !== 'i') sourceAccount = '@' + handle;
+          }
+        } catch (_) { /* Relative or unavailable source URLs have no account metadata. */ }
+        const account = item.account || item.author || sourceAccount || (accountMatch ? accountMatch[0] : 'X');
+        const confidence = item.confidence || (Number(item.score || 0) >= 70 ? 'High' : Number(item.score || 0) >= 40 ? 'Medium' : 'Developing');
+        return '<article class="x-record">' +
+          '<span>' + escapeHTML(formatDate(time, 'time')) + '</span>' +
+          '<span>' + escapeHTML(account) + '</span>' +
+          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);margin-top:6px;">Second source / المصدر الثاني</a>' : '') + '</span>' +
+          '<span class="score">' + escapeHTML(confidence) + '</span>' +
+          '<span class="' + (item.evidence_status === 'unverified' ? 'warn' : 'ok') + '">' + escapeHTML(evidenceLabel) + '</span>' +
         '</article>';
       }).join('');
+    }
+
+    function isSaudiSignal(signal) {
+      const metadata = [signal.region, signal.country, signal.market, signal.topic, signal.category].join(' ');
+      const content = [signal.title, signal.content, signal.brief_en, signal.brief_ar].join(' ');
+      return /(saudi arabia|saudi|riyadh|jeddah|\bksa\b|السعودية|السعودي|الرياض|جدة)/i.test(metadata + ' ' + content);
+    }
+
+    function intelligenceConfidence(signal) {
+      const score = Number(signal.action_score == null ? signal.score : signal.action_score);
+      return score >= 70 ? 'High' : score >= 50 ? 'Medium' : 'Developing';
+    }
+
+    function renderEditorialRecord(signal) {
+      const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
+      const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
+      const url = signal.primary_source_url || signal.url || '#';
+      const arabic = state.language === 'en' && signal.brief_ar
+        ? '<p class="arabic-line" lang="ar" dir="rtl">' + escapeHTML(shortText(signal.brief_ar, 220)) + '</p>'
+        : '';
+      return '<article class="editorial-record">' +
+        '<div class="editorial-meta">' + escapeHTML(formatDate(time, 'time')) + '<br>' + escapeHTML(sourceLabel(signal.source)) + '</div>' +
+        '<div class="editorial-copy" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 280)) + '</p>' + arabic + '</div>' +
+        '<div class="editorial-side">' + escapeHTML(intelligenceConfidence(signal)) + '<br><span class="ok">' + escapeHTML(signal.status || 'new') + '</span><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open source →</a></div>' +
+      '</article>';
+    }
+
+    function renderSaudiSignals() {
+      const records = state.signals.filter(isSaudiSignal).slice(0, 6);
+      document.getElementById('saudiRows').innerHTML = records.map(renderEditorialRecord).join('') ||
+        '<span class="stream-empty">No reliably identified Saudi records in the current briefing.</span>';
+    }
+
+    function renderResearchSignals() {
+      const records = state.signals.filter(function(signal) {
+        return String(signal.source || '').toLowerCase() === 'arxiv' ||
+          String(signal.collector || '').toLowerCase() === 'academicagent';
+      }).slice(0, 6);
+      document.getElementById('researchRows').innerHTML = records.map(renderEditorialRecord).join('') ||
+        '<span class="stream-empty">No research records in the current briefing.</span>';
+    }
+
+    function renderActNowEditorial() {
+      const threshold = Number(state.metrics.configured_threshold || 70);
+      const records = state.signals.slice().sort(function(a, b) {
+        return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
+      }).filter(function(signal) {
+        return window.AIbriefScenario.qualifiesForActNow(signal, threshold);
+      }).slice(0, 5);
+      document.getElementById('actNowEditorial').innerHTML = records.map(function(signal, index) {
+        const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
+        const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
+        const url = signal.primary_source_url || signal.url || '#';
+        return '<article class="act-record">' +
+          '<span class="act-sequence">' + String(index + 1).padStart(2, '0') + '</span>' +
+          '<div class="act-context"><strong>' + escapeHTML(sourceLabel(signal.source)) + '</strong>' + escapeHTML(formatDate(time, 'time')) + '</div>' +
+          '<div class="act-content" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 360)) + '</p><div class="act-facts"><span><b>Source</b>' + escapeHTML(sourceLabel(signal.source)) + '</span><span><b>Confidence</b>' + escapeHTML(intelligenceConfidence(signal)) + '</span><span><b>Evidence</b>' + escapeHTML(signal.evidence_count || 0) + '</span></div></div>' +
+          '<a class="intel-link" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open →</a>' +
+        '</article>';
+      }).join('') || '<span class="stream-empty">No action required.</span>';
     }
 
     function percent(value) {
@@ -1878,7 +1124,14 @@
       document.getElementById('metricCost').textContent = money(metrics.daily_api_cost_usd);
       document.getElementById('metricLatestRun').textContent = metrics.latest_successful_run ? formatDate(metrics.latest_successful_run, 'time') : '--';
       document.getElementById('metricHighest').textContent = highest.action_score == null ? '--' : String(highest.action_score);
-      document.getElementById('orchestratorState').textContent = (metrics.orchestrator && metrics.orchestrator.status === 'partial') ? 'Orchestrator partial' : 'Orchestrator complete';
+      const pipelineStatus = ((metrics.orchestrator && metrics.orchestrator.status === 'partial') || (metrics.failed_sources || []).length) ? 'Partial' : 'Complete';
+      document.getElementById('orchestratorState').textContent = pipelineStatus;
+      document.getElementById('pipelineLastRun').textContent = metrics.latest_successful_run ? formatDate(metrics.latest_successful_run, 'time') : '--';
+      document.getElementById('pipelineCollected').textContent = String(metrics.signals_collected_today || 0);
+      document.getElementById('pipelineRetained').textContent = String(metrics.verified_signals || 0);
+      document.getElementById('pipelineActNow').textContent = String(metrics.act_now_items || 0);
+      document.getElementById('pipelineRuntime').textContent = Number(metrics.runtime_seconds || 0).toFixed(1) + 's';
+      document.getElementById('pipelineStatus').textContent = pipelineStatus;
       renderSourceBars('sourceContribution', metrics.source_contribution || {});
     }
 
@@ -1940,6 +1193,7 @@
       renderWorkerTeam();
       renderRecentRuns();
       renderRankedOperations();
+      renderActNowEditorial();
       renderSourceWarnings();
       renderThresholdScenario();
     }
@@ -2005,10 +1259,25 @@
         const payload = await response.json();
         state.briefingPayload = payload;
         state.signals = Array.isArray(payload) ? payload : (payload.signals || []);
+        const generatedAt = payload.generated_at || new Date().toISOString();
+        document.getElementById('briefingDate').textContent = new Date(generatedAt).toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+          timeZone: 'Asia/Riyadh'
+        });
+        document.getElementById('briefingUpdated').textContent = 'Last updated ' + formatDate(generatedAt, 'time') + ' AST';
+        if (Date.now() - new Date(generatedAt).getTime() > 48 * 60 * 60 * 1000) {
+          document.getElementById('briefingUpdated').textContent += ' · Stale snapshot';
+        }
+        document.getElementById('navClock').textContent = 'Updated ' + formatDate(generatedAt, 'time') + ' AST';
         renderSourceControls();
+        document.getElementById('sourceCoverage').textContent = 'Current sources: ' + Array.from(new Set(state.signals.map(function(signal) { return sourceLabel(signal.source); }))).join(' · ');
         renderHeroMetrics(payload);
         renderRadarRows(filteredSignals());
         renderSignalRows();
+        renderSaudiSignals();
+        renderResearchSignals();
         renderHealth(payload);
         renderProviders(payload);
         renderXIntel(state.breaking);
@@ -2016,6 +1285,19 @@
       } catch (error) {
         document.getElementById('briefingStatus').firstElementChild.textContent = 'Briefing feed could not be loaded.';
         document.getElementById('signalRows').innerHTML = '<tr><td colspan="6"><div class="empty">Could not load data/signals.json. Refresh after the feed workflow finishes.</div></td></tr>';
+        document.getElementById('radarRows').innerHTML = '<tr><td colspan="5">Could not load the briefing feed. Refresh after publication completes.</td></tr>';
+        document.getElementById('healthState').textContent = 'Unavailable';
+        document.getElementById('healthRows').textContent = 'Health data unavailable while the briefing feed is offline.';
+        document.getElementById('providerRows').textContent = 'Provider data unavailable.';
+        document.getElementById('workerList').textContent = 'Pipeline data unavailable.';
+        document.getElementById('runRows').innerHTML = '<tr><td colspan="6">Run data unavailable.</td></tr>';
+        document.getElementById('topSignalsList').textContent = 'Ranked signals unavailable.';
+        document.getElementById('actNowList').textContent = 'Evidence gate unavailable.';
+        document.getElementById('sourceContribution').textContent = 'Source mix unavailable.';
+        document.getElementById('sourceCoverage').textContent = 'Source coverage unavailable.';
+        document.getElementById('actNowEditorial').innerHTML = '<span class="stream-empty">Act Now unavailable while the briefing feed is offline.</span>';
+        document.getElementById('saudiRows').innerHTML = '<span class="stream-empty">Saudi intelligence unavailable.</span>';
+        document.getElementById('researchRows').innerHTML = '<span class="stream-empty">Research unavailable.</span>';
       }
     }
 
@@ -2073,6 +1355,10 @@
       this.textContent = state.language === 'en' ? 'العربية' : 'English';
       this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
       renderSignalRows();
+      renderRadarRows(filteredSignals());
+      renderActNowEditorial();
+      renderSaudiSignals();
+      renderResearchSignals();
     });
 
     document.getElementById('actionThreshold').addEventListener('input', function() {
@@ -2081,7 +1367,6 @@
     });
 
     setClock();
-    setInterval(setClock, 1000);
     loadBreakingWatch();
     loadBriefing();
   </script>
