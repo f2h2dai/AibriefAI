@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T20:14:05Z",
+  "generated_at": "2026-09-13T15:10:38Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -7,26 +7,32 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-12T20:14:05Z",
+  "latest_successful_run": "2026-09-13T15:10:38Z",
   "highest_ranked_signal": {
-    "id": "github-011",
-    "title": "graceupperclass437/agent-skills-collection",
-    "action_score": 78.0,
-    "url": "https://github.com/graceupperclass437/agent-skills-collection"
+    "id": "github-004",
+    "title": "OpenOSINT/OpenOSINT",
+    "action_score": 76.25,
+    "url": "https://github.com/OpenOSINT/OpenOSINT"
   },
   "source_contribution": {
-    "github": 7,
+    "github": 5,
+    "google-news": 1,
+    "hackernews": 1,
     "twitter": 5
   },
   "failed_sources": [
     {
+      "source": "AcademicAgent",
+      "reason": "The read operation timed out"
+    },
+    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7176, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7530, Req"
     }
   ],
-  "runtime_seconds": 157.851,
+  "runtime_seconds": 502.486,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +92,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-12T20:14:05Z",
+    "planned_at": "2026-09-13T15:10:38Z",
     "production_threshold": 70.0
   }
 }
