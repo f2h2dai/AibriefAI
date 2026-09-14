@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-09-13T20:23:20Z",
+  "generated_at": "2026-09-14T17:08:16Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.5,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.4,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-13T20:23:20Z",
+  "latest_successful_run": "2026-09-14T17:08:16Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "Cooperpersonal373/academic-agent-toolkit",
-    "action_score": 77.25,
-    "url": "https://github.com/Cooperpersonal373/academic-agent-toolkit"
+    "id": "github-011",
+    "title": "RajdeepDas012/codex-cerebrum",
+    "action_score": 76.75,
+    "url": "https://github.com/RajdeepDas012/codex-cerebrum"
   },
   "source_contribution": {
-    "github": 7,
+    "github": 6,
+    "hackernews": 1,
     "twitter": 5
   },
   "failed_sources": [
@@ -27,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7375, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7838, Req"
     }
   ],
-  "runtime_seconds": 61.638,
+  "runtime_seconds": 92.451,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -90,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-13T20:23:20Z",
+    "planned_at": "2026-09-14T17:08:16Z",
     "production_threshold": 70.0
   }
 }
