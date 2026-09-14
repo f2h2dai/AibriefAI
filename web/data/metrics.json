@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T17:08:16Z",
+  "generated_at": "2026-09-14T21:33:04Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-14T17:08:16Z",
+  "latest_successful_run": "2026-09-14T21:33:04Z",
   "highest_ranked_signal": {
     "id": "github-011",
-    "title": "RajdeepDas012/codex-cerebrum",
-    "action_score": 76.75,
-    "url": "https://github.com/RajdeepDas012/codex-cerebrum"
+    "title": "Retsumdk/Retsumdk",
+    "action_score": 74.0,
+    "url": "https://github.com/Retsumdk/Retsumdk"
   },
   "source_contribution": {
     "github": 6,
@@ -24,14 +24,14 @@
   "failed_sources": [
     {
       "source": "AcademicAgent",
-      "reason": "The read operation timed out"
+      "reason": "HTTP Error 429: Unknown Error"
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7838, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7900, Req"
     }
   ],
-  "runtime_seconds": 92.451,
+  "runtime_seconds": 97.903,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-14T17:08:16Z",
+    "planned_at": "2026-09-14T21:33:04Z",
     "production_threshold": 70.0
   }
 }
