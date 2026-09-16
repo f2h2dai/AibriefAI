@@ -1,33 +1,35 @@
 {
-  "generated_at": "2026-09-15T20:54:37Z",
+  "generated_at": "2026-09-16T15:39:49Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.1667,
+  "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-15T20:54:37Z",
+  "latest_successful_run": "2026-09-16T15:39:49Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "kody-w/rappterbook-agent-exchange",
-    "action_score": 75.5,
-    "url": "https://github.com/kody-w/rappterbook-agent-exchange"
+    "id": "arxiv-015",
+    "title": "Agentic Societies Need a Social Harness",
+    "action_score": 79.25,
+    "url": "https://arxiv.org/abs/2609.17527v1"
   },
   "source_contribution": {
-    "github": 6,
+    "arxiv": 3,
+    "github": 2,
+    "hackernews": 1,
     "google-news": 1,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7496, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7465, Req"
     }
   ],
-  "runtime_seconds": 74.603,
+  "runtime_seconds": 79.936,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +89,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-15T20:54:37Z",
+    "planned_at": "2026-09-16T15:39:49Z",
     "production_threshold": 70.0
   }
 }
