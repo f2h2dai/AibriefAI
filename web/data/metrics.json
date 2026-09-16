@@ -1,35 +1,37 @@
 {
-  "generated_at": "2026-09-16T15:39:49Z",
+  "generated_at": "2026-09-16T20:55:16Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 12,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.1667,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.4,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-16T15:39:49Z",
+  "latest_successful_run": "2026-09-16T20:55:16Z",
   "highest_ranked_signal": {
-    "id": "arxiv-015",
-    "title": "Agentic Societies Need a Social Harness",
-    "action_score": 79.25,
-    "url": "https://arxiv.org/abs/2609.17527v1"
+    "id": "github-012",
+    "title": "diakhurmi/CareerAI",
+    "action_score": 77.25,
+    "url": "https://github.com/diakhurmi/CareerAI"
   },
   "source_contribution": {
-    "arxiv": 3,
-    "github": 2,
-    "hackernews": 1,
-    "google-news": 1,
-    "twitter": 5
+    "github": 6,
+    "twitter": 5,
+    "google-news": 1
   },
   "failed_sources": [
     {
+      "source": "AcademicAgent",
+      "reason": "HTTP Error 406: Not Acceptable"
+    },
+    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7465, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7438, Req"
     }
   ],
-  "runtime_seconds": 79.936,
+  "runtime_seconds": 76.731,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -89,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-16T15:39:49Z",
+    "planned_at": "2026-09-16T20:55:16Z",
     "production_threshold": 70.0
   }
 }
