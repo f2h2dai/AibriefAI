@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-09-16T20:55:16Z",
+  "generated_at": "2026-09-17T15:45:29Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 12,
+  "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-16T20:55:16Z",
+  "latest_successful_run": "2026-09-17T15:45:29Z",
   "highest_ranked_signal": {
-    "id": "github-012",
-    "title": "diakhurmi/CareerAI",
-    "action_score": 77.25,
-    "url": "https://github.com/diakhurmi/CareerAI"
+    "id": "twitter-026",
+    "title": "@EconomicTimes: When autonomous weapon systems enter the battlefield, human judgment faces its ultimate test | Speaking at China's flagship defence conferen",
+    "action_score": 76.0,
+    "url": "https://x.com/EconomicTimes/status/2100537896889401476"
   },
   "source_contribution": {
-    "github": 6,
     "twitter": 5,
+    "github": 6,
     "google-news": 1
   },
   "failed_sources": [
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7438, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7755, Req"
     }
   ],
-  "runtime_seconds": 76.731,
+  "runtime_seconds": 52.391,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-16T20:55:16Z",
+    "planned_at": "2026-09-17T15:45:29Z",
     "production_threshold": 70.0
   }
 }
