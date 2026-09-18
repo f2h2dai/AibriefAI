@@ -4,25 +4,24 @@
   "feed": [
     {
       "confidence": 0,
-      "evidence_count": 3,
-      "evidence_status": "corroborated",
+      "evidence_count": 1,
+      "evidence_status": "single-source",
       "evidence_urls": [
-        "https://x.com/ocalnet/status/2100155937558298674",
-        "https://x.com/kibee/status/2100719354270683255",
-        "https://x.com/HeidyKhlaaf/status/2100640601037328398"
+        "https://x.com/YWN/status/2100693381110190117"
       ],
-      "id": "story-9cb5a72d06a067305e36a68b",
-      "reason": "One of AI\u2019s Fiercest Critics Says All the Doom Talk Is \u2018Meant to Distract Us\u2019 Timnit Gebru argues that AI companies are stoking fears of extinction to avoid discussing actual harms, like autonomous weapons https://t.co/dRwlmaiWHh",
-      "score": 55,
+      "id": "story-1a051eba511f6760ac69fb78",
+      "reason": "AI ON THE BATTLEFIELD: Military Leaders Push For Human Safeguards As Autonomous Weapons Advance https://t.co/Yy2aSFXBlj via - @YWN",
+      "score": 40,
       "sensitive_military_claim": true,
       "shown_at": "2026-09-17T22:57:50Z",
       "source": "x",
-      "source_published_at": "2026-09-16T09:32:49Z",
-      "source_url": "https://x.com/ocalnet/status/2100155937558298674",
+      "source_published_at": "2026-09-17T21:08:25Z",
+      "source_url": "https://x.com/YWN/status/2100693381110190117",
       "status": "x-intel",
-      "title": "One of AI\u2019s Fiercest Critics Says All the Doom Talk Is \u2018Meant to Distract Us\u2019 Timnit Gebru argues that AI companies are stoking fears of extinction to avoid dis",
+      "title": "AI ON THE BATTLEFIELD: Military Leaders Push For Human Safeguards As Autonomous Weapons Advance https://t.co/Yy2aSFXBlj via - @YWN",
       "webswarm_evidence_terms": [
         "autonomous weapons",
+        "battlefield",
         "weapons"
       ],
       "webswarm_mode": "x_intel",
@@ -55,24 +54,25 @@
     },
     {
       "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "single-source",
+      "evidence_count": 3,
+      "evidence_status": "corroborated",
       "evidence_urls": [
-        "https://x.com/YWN/status/2100693381110190117"
+        "https://x.com/ocalnet/status/2100155937558298674",
+        "https://x.com/kibee/status/2100719354270683255",
+        "https://x.com/HeidyKhlaaf/status/2100640601037328398"
       ],
-      "id": "story-1a051eba511f6760ac69fb78",
-      "reason": "AI ON THE BATTLEFIELD: Military Leaders Push For Human Safeguards As Autonomous Weapons Advance https://t.co/Yy2aSFXBlj via - @YWN",
-      "score": 40,
+      "id": "story-9cb5a72d06a067305e36a68b",
+      "reason": "One of AI\u2019s Fiercest Critics Says All the Doom Talk Is \u2018Meant to Distract Us\u2019 Timnit Gebru argues that AI companies are stoking fears of extinction to avoid discussing actual harms, like autonomous weapons https://t.co/dRwlmaiWHh",
+      "score": 55,
       "sensitive_military_claim": true,
       "shown_at": "2026-09-17T22:57:50Z",
       "source": "x",
-      "source_published_at": "2026-09-17T21:08:25Z",
-      "source_url": "https://x.com/YWN/status/2100693381110190117",
+      "source_published_at": "2026-09-16T09:32:49Z",
+      "source_url": "https://x.com/ocalnet/status/2100155937558298674",
       "status": "x-intel",
-      "title": "AI ON THE BATTLEFIELD: Military Leaders Push For Human Safeguards As Autonomous Weapons Advance https://t.co/Yy2aSFXBlj via - @YWN",
+      "title": "One of AI\u2019s Fiercest Critics Says All the Doom Talk Is \u2018Meant to Distract Us\u2019 Timnit Gebru argues that AI companies are stoking fears of extinction to avoid dis",
       "webswarm_evidence_terms": [
         "autonomous weapons",
-        "battlefield",
         "weapons"
       ],
       "webswarm_mode": "x_intel",
@@ -336,28 +336,28 @@
   "last_alert": {
     "alerted_at": "2026-09-17T22:57:50Z",
     "confidence": 0,
-    "source_url": "https://x.com/ocalnet/status/2100155937558298674",
-    "title": "One of AI\u2019s Fiercest Critics Says All the Doom Talk Is \u2018Meant to Distract Us\u2019 Timnit Gebru argues that AI companies are stoking fears of extinction to avoid dis"
+    "source_url": "https://x.com/YWN/status/2100693381110190117",
+    "title": "AI ON THE BATTLEFIELD: Military Leaders Push For Human Safeguards As Autonomous Weapons Advance https://t.co/Yy2aSFXBlj via - @YWN"
   },
   "last_run": {
-    "alerted_now": 3,
-    "clustered": 23,
+    "alerted_now": 0,
+    "clustered": 19,
     "collected": 34,
-    "corroborated_count": 3,
+    "corroborated_count": 5,
     "initial_collected": 34,
     "initial_source_counts": {
       "google-news": 9,
       "x": 25
     },
-    "initial_x_relevant": 24,
+    "initial_x_relevant": 23,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 11.364,
-      "projected_minutes_per_30d": 545.49,
+      "measured_seconds": 12.308,
+      "projected_minutes_per_30d": 590.77,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -371,7 +371,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 12,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -395,11 +395,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 3
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-17T22:57:50Z",
+  "updated_at": "2026-09-18T00:59:57Z",
   "version": 1
 }
