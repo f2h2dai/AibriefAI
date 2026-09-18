@@ -7,6 +7,30 @@
       "evidence_count": 1,
       "evidence_status": "single-source",
       "evidence_urls": [
+        "https://x.com/HeidyKhlaaf/status/2100640601037328398"
+      ],
+      "id": "story-d2ff8e90eae4b29bbad7bcb3",
+      "reason": "Back in the reality of actual and critical risks, I spoke to the FT about the accelerated adoption of AI-driven autonomous weapons systems, and warned against their lack of reliability and accuracy that persists, despite claims that state otherwise. https://t.co/TqbW0S4Qe0",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-18T05:37:54Z",
+      "source": "x",
+      "source_published_at": "2026-09-17T17:38:41Z",
+      "source_url": "https://x.com/HeidyKhlaaf/status/2100640601037328398",
+      "status": "x-intel",
+      "title": "Back in the reality of actual and critical risks, I spoke to the FT about the accelerated adoption of AI-driven autonomous weapons systems, and warned against t",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
         "https://x.com/YWN/status/2100693381110190117"
       ],
       "id": "story-1a051eba511f6760ac69fb78",
@@ -307,57 +331,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/shieldaitech/status/2099957381543133521"
-      ],
-      "id": "story-ff7d552c8e8de9dfd5239a18",
-      "reason": "Powered by Hivemind: Building AI factories with @nvidia's AI stack In a recent demonstration, Hivemind brought NVIDIA\u2019s Cosmos 2 reasoning model together with Aechelon\u2019s simulation capabilities to execute a four-agent wide-area search mission. Operators orchestrated team intent i",
-      "score": 45,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-17T17:22:16Z",
-      "source": "x",
-      "source_published_at": "2026-09-15T20:23:49Z",
-      "source_url": "https://x.com/shieldaitech/status/2099957381543133521",
-      "status": "x-intel",
-      "title": "@shieldaitech: Powered by Hivemind: Building AI factories with @nvidia's AI stack In a recent demonstration, Hivemind brought NVIDIA\u2019s Cosmos 2 reasoning m",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-09-17T22:57:50Z",
+    "alerted_at": "2026-09-18T05:37:54Z",
     "confidence": 0,
-    "source_url": "https://x.com/YWN/status/2100693381110190117",
-    "title": "AI ON THE BATTLEFIELD: Military Leaders Push For Human Safeguards As Autonomous Weapons Advance https://t.co/Yy2aSFXBlj via - @YWN"
+    "source_url": "https://x.com/HeidyKhlaaf/status/2100640601037328398",
+    "title": "Back in the reality of actual and critical risks, I spoke to the FT about the accelerated adoption of AI-driven autonomous weapons systems, and warned against t"
   },
   "last_run": {
-    "alerted_now": 0,
+    "alerted_now": 1,
     "clustered": 19,
     "collected": 34,
-    "corroborated_count": 5,
+    "corroborated_count": 3,
     "initial_collected": 34,
     "initial_source_counts": {
       "google-news": 9,
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 19,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 12.308,
-      "projected_minutes_per_30d": 590.77,
+      "measured_seconds": 10.843,
+      "projected_minutes_per_30d": 520.49,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -371,7 +371,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 12,
+    "stage1_survivors": 11,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -395,11 +395,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 1
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-18T00:59:57Z",
+  "updated_at": "2026-09-18T05:37:54Z",
   "version": 1
 }
