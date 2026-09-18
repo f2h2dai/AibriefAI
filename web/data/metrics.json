@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T20:58:58Z",
+  "generated_at": "2026-09-18T15:18:59Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-17T20:58:58Z",
+  "latest_successful_run": "2026-09-18T15:18:59Z",
   "highest_ranked_signal": {
-    "id": "github-004",
-    "title": "Retsumdk/Retsumdk",
-    "action_score": 74.0,
-    "url": "https://github.com/Retsumdk/Retsumdk"
+    "id": "github-005",
+    "title": "Spinmoodiness1112/HackSmarter_Swarm",
+    "action_score": 78.0,
+    "url": "https://github.com/Spinmoodiness1112/HackSmarter_Swarm"
   },
   "source_contribution": {
     "github": 5,
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7671, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7641, Req"
     }
   ],
-  "runtime_seconds": 72.879,
+  "runtime_seconds": 73.573,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-17T20:58:58Z",
+    "planned_at": "2026-09-18T15:18:59Z",
     "production_threshold": 70.0
   }
 }
