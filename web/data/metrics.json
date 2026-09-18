@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:18:59Z",
+  "generated_at": "2026-09-18T20:27:54Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-18T15:18:59Z",
+  "latest_successful_run": "2026-09-18T20:27:54Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "Spinmoodiness1112/HackSmarter_Swarm",
-    "action_score": 78.0,
-    "url": "https://github.com/Spinmoodiness1112/HackSmarter_Swarm"
+    "id": "github-012",
+    "title": "dfrostar/neuralmind",
+    "action_score": 75.5,
+    "url": "https://github.com/dfrostar/neuralmind"
   },
   "source_contribution": {
     "github": 5,
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7641, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7222, Req"
     }
   ],
-  "runtime_seconds": 73.573,
+  "runtime_seconds": 76.993,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-18T15:18:59Z",
+    "planned_at": "2026-09-18T20:27:54Z",
     "production_threshold": 70.0
   }
 }
