@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T20:06:56Z",
+  "generated_at": "2026-09-20T14:59:20Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 10,
@@ -7,19 +7,19 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.4,
-  "primary_source_link_rate": 0.75,
+  "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-19T20:06:56Z",
+  "latest_successful_run": "2026-09-20T14:59:20Z",
   "highest_ranked_signal": {
-    "id": "github-010",
-    "title": "Sinity/polylogue",
-    "action_score": 75.0,
-    "url": "https://github.com/Sinity/polylogue"
+    "id": "github-003",
+    "title": "Unjuno/agent-interface",
+    "action_score": 75.5,
+    "url": "https://github.com/Unjuno/agent-interface"
   },
   "source_contribution": {
-    "google-news": 3,
-    "github": 4,
-    "twitter": 5
+    "github": 5,
+    "twitter": 5,
+    "google-news": 2
   },
   "failed_sources": [
     {
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7584, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7609, Req"
     }
   ],
-  "runtime_seconds": 58.788,
+  "runtime_seconds": 65.642,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-19T20:06:56Z",
+    "planned_at": "2026-09-20T14:59:20Z",
     "production_threshold": 70.0
   }
 }
