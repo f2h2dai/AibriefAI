@@ -4,6 +4,65 @@
   "feed": [
     {
       "confidence": 0,
+      "evidence_count": 7,
+      "evidence_status": "corroborated",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2101288043864850619",
+        "https://x.com/MizarVision/status/2100671446402080930",
+        "https://x.com/MizarVision/status/2100672240014520791",
+        "https://x.com/MizarVision/status/2101288635735675316",
+        "https://x.com/MizarVision/status/2101296229250486743",
+        "https://x.com/MizarVision/status/2100969333803327753",
+        "https://x.com/MizarVision/status/2100603344112722037"
+      ],
+      "id": "story-1aed49a1d79ea04b0cbe5b85",
+      "reason": "\ud83c\uddf8\ud83c\udde6 RIYADH | AIRPORT SMOKE VISIBLE FROM SPACE \ud83d\udd34 EUMETSAT/Meteosat satellite imagery shows a smoke plume developing around Riyadh's King Khalid International Airport. The sequence appears to show two more pronounced smoke-emission episodes. Reuters has confirmed that a large column",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-20T05:32:35Z",
+      "source": "x",
+      "source_published_at": "2026-09-19T12:31:24Z",
+      "source_url": "https://x.com/MizarVision/status/2101288043864850619",
+      "status": "x-intel",
+      "title": "\ud83c\uddf8\ud83c\udde6 RIYADH | AIRPORT SMOKE VISIBLE FROM SPACE \ud83d\udd34 EUMETSAT/Meteosat satellite imagery shows a smoke plume developing around Riyadh's King Khalid International Airp",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "military",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "source-only",
+      "evidence_urls": [
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
+      ],
+      "id": "story-29688cd7339b93d50a367a8e",
+      "reason": "Pentagon reveals Musk\u2019s Grok AI used in Iran war - aa.com.tr aa.com.tr",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-09-20T05:32:35Z",
+      "source": "google-news",
+      "source_published_at": "2026-06-17T07:00:00Z",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+      "status": "x-intel",
+      "title": "Pentagon reveals Musk\u2019s Grok AI used in Iran war - aa.com.tr",
+      "webswarm_evidence_terms": [
+        "Grok AI",
+        "Grok",
+        "Pentagon",
+        "Iran"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "confidence": 0,
       "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
@@ -256,93 +315,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 7,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/VaibhavSisinty/status/2101053723418169629",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNUc3V2plM3E1M0hsd3ltQTQ0UVhIMXNCc2c5TWNGSUFPb2t3bkhHcjdSOEhsVWl2WDJiUk9JNGcwSjZpdGtBRTFVWjFfWEh5clJFVE4zdVZ1UmppWDhIRXJyNW5IcHA1eGt4bnZtbmh2UVdXTFZ3cWxnWTd1ZlBoLTh3SjdlYTc1dmcyRmxUd1BpeXYyaU54NE90SEFOWVpLWEtKMlViNU14SjFNQXc0T29hS3Nnb0VDTURGMFl3Z1hlZHB3ZUlr",
-        "https://x.com/MarioNawfal/status/2101068753014558853",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE"
-      ],
-      "id": "story-ad874def523da2b196db3f4e",
-      "reason": "An AI hallucination almost started a war between the United States and China. This is not a hypothetical. CNN just reported it happened this spring. Here's the full story. \u2192 A US Special Operations Command analyst was reviewing intelligence on a Chinese ship in the Middle East du",
-      "score": 90,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-19T21:10:52Z",
-      "source": "x",
-      "source_published_at": "2026-09-18T21:00:18Z",
-      "source_url": "https://x.com/VaibhavSisinty/status/2101053723418169629",
-      "status": "x-intel",
-      "title": "An AI hallucination almost started a war between the United States and China. This is not a hypothetical. CNN just reported it happened this spring. Here's the",
-      "webswarm_evidence_terms": [
-        "AI",
-        "AI targeting",
-        "Grok",
-        "Iran",
-        "Pentagon",
-        "military",
-        "military AI",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2101326506668482590"
-      ],
-      "id": "story-ecc46855a49be746c26ff446",
-      "reason": "Recent developments in AI technology have caused industry insiders to call progress to slow down. @csis_ai's Aalok Mehta shares what worries him about the latest AI capabilities, and what role government might play in regulating the technology and restoring public trust. https://",
-      "score": 12,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-09-19T21:10:52Z",
-      "source": "x",
-      "source_published_at": "2026-09-19T20:06:56Z",
-      "source_url": "https://x.com/CSIS/status/2101326506668482590",
-      "status": "x-intel",
-      "title": "@CSIS: Recent developments in AI technology have caused industry insiders to call progress to slow down. @csis_ai's Aalok Mehta shares what worries",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-09-19T22:59:40Z",
+    "alerted_at": "2026-09-20T05:32:35Z",
     "confidence": 0,
-    "source_url": "https://x.com/odefinn/status/2101433378641744295",
-    "title": "N\u00e4ink\u00f6 AI kupla puhkeaa? \u2622 Hommat ei oo oikeen hanskassa. https://t.co/FrCU3saAGs"
+    "source_url": "https://x.com/MizarVision/status/2101288043864850619",
+    "title": "\ud83c\uddf8\ud83c\udde6 RIYADH | AIRPORT SMOKE VISIBLE FROM SPACE \ud83d\udd34 EUMETSAT/Meteosat satellite imagery shows a smoke plume developing around Riyadh's King Khalid International Airp"
   },
   "last_run": {
-    "alerted_now": 0,
-    "clustered": 22,
+    "alerted_now": 2,
+    "clustered": 20,
     "collected": 34,
-    "corroborated_count": 5,
+    "corroborated_count": 6,
     "initial_collected": 34,
     "initial_source_counts": {
       "google-news": 9,
       "x": 25
     },
-    "initial_x_relevant": 30,
+    "initial_x_relevant": 29,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 10.439,
-      "projected_minutes_per_30d": 501.08,
+      "measured_seconds": 9.775,
+      "projected_minutes_per_30d": 469.2,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -356,7 +355,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 20,
+    "stage1_survivors": 18,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -380,11 +379,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 0
+    "x_intel_published": 2
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-20T00:47:22Z",
+  "updated_at": "2026-09-20T05:32:35Z",
   "version": 1
 }
