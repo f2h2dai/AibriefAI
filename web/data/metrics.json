@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-09-21T17:17:01Z",
+  "generated_at": "2026-09-21T21:44:26Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-21T17:17:01Z",
+  "latest_successful_run": "2026-09-21T21:44:26Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "zaidwhy/CivilizationOS",
-    "action_score": 78.0,
-    "url": "https://github.com/zaidwhy/CivilizationOS"
+    "id": "twitter-023",
+    "title": "@AndrewYNg: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexp",
+    "action_score": 82.5,
+    "url": "https://x.com/AndrewYNg/status/2102140576498065758"
   },
   "source_contribution": {
-    "github": 5,
-    "hackernews": 1,
     "twitter": 5,
+    "github": 6,
     "google-news": 1
   },
   "failed_sources": [
@@ -29,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7423, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7515, Req"
     }
   ],
-  "runtime_seconds": 114.408,
+  "runtime_seconds": 106.736,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -92,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-21T17:17:01Z",
+    "planned_at": "2026-09-21T21:44:26Z",
     "production_threshold": 70.0
   }
 }
