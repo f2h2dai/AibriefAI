@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-09-20T20:23:21Z",
+  "generated_at": "2026-09-21T17:17:01Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 10,
+  "verified_signals": 11,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-20T20:23:21Z",
+  "latest_successful_run": "2026-09-21T17:17:01Z",
   "highest_ranked_signal": {
-    "id": "github-010",
-    "title": "MarkDSchulze/udaplay-ai-research-agent",
-    "action_score": 76.0,
-    "url": "https://github.com/MarkDSchulze/udaplay-ai-research-agent"
+    "id": "github-005",
+    "title": "zaidwhy/CivilizationOS",
+    "action_score": 78.0,
+    "url": "https://github.com/zaidwhy/CivilizationOS"
   },
   "source_contribution": {
     "github": 5,
+    "hackernews": 1,
     "twitter": 5,
-    "google-news": 2
+    "google-news": 1
   },
   "failed_sources": [
     {
@@ -28,10 +29,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7322, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7423, Req"
     }
   ],
-  "runtime_seconds": 73.49,
+  "runtime_seconds": 114.408,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +92,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-20T20:23:21Z",
+    "planned_at": "2026-09-21T17:17:01Z",
     "production_threshold": 70.0
   }
 }
