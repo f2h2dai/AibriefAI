@@ -1746,6 +1746,7 @@
 .brand-text strong,.intel-head h2,.x-title h2,.operations-head h2 {letter-spacing:0}
 @media(max-width:760px){.place-visuals{grid-template-columns:1fr}.place-visuals img{height:auto;aspect-ratio:3/2}.hero-copy h1{font-size:38px}}
 </style>
+  <link rel="stylesheet" href="assets/editorial.css">
 </head>
 <body>
   <div class="page">
@@ -1754,14 +1755,14 @@
         <span class="brand-mark" aria-hidden="true"><span class="brand-core">AI</span></span>
         <span class="brand-text">
           <strong>AIbrief / <span lang="ar" dir="rtl">إحاطة</span></strong>
-          <span>Florida-tech intelligence desk</span>
+          <span>Intelligence for a more certain tomorrow</span>
         </span>
       </a>
       <div class="links">
         <a href="#signals">Intelligence</a>
         <a href="#saudi">Saudi</a>
         <a href="#research">Research</a>
-        <a href="#breaking">Security</a>
+        <a href="#breaking">X</a>
         <a href="#source-system">Sources</a>
         <a href="#operations">System</a>
       </div>
@@ -1773,46 +1774,31 @@
 
     <main id="home">
       <section class="shell">
-        <section class="place-visuals" aria-label="Tampa and University of Wyoming">
-<figure><img src="assets/tampa.webp" alt="City of Tampa mural with waterfront landmarks" width="3840" height="2560"><figcaption>Tampa, Florida</figcaption></figure>
-<figure><img src="assets/university-of-wyoming.jpg" alt="University of Wyoming Old Main surrounded by snow-covered trees" width="1200" height="800"><figcaption>University of Wyoming</figcaption></figure>
-</section>
         <div class="briefing-meta">
           <span id="briefingDate">Current briefing</span>
           <span id="briefingUpdated">Last updated --:--</span>
         </div>
 
-        <section class="intel-section act-now-editorial" id="act-now" aria-labelledby="actNowEditorialTitle">
-          <div class="intel-head">
-            <h2 id="actNowEditorialTitle">Act Now</h2>
-            <p>Evidence-gated intelligence requiring immediate review.</p>
-          </div>
-          <div class="act-editorial" id="actNowEditorial" aria-live="polite">
-            <span class="stream-empty">Checking the current evidence gate…</span>
-          </div>
-        </section>
-
         <div class="hero">
           <div class="hero-copy">
-            <svg class="map-ghost" viewBox="0 0 260 340" aria-hidden="true">
-              <path fill="currentColor" d="M58 4h76l15 19 33 2 3 22 24 25-7 29 24 48-12 34 24 48-19 38 11 43-18 24-28-34-8-47-24-26-3-58-22-27-6-55-30-27-6-34L58 4z"/>
-              <circle cx="207" cy="164" r="14" fill="none" stroke="currentColor" stroke-width="5"/>
-            </svg>
-            <div class="florida-line">AI briefing command center</div>
-            <h1>AIbrief <span>إحاطة</span></h1>
-            <p>Bilingual AI intelligence from X, arXiv, GitHub, Hacker News, and model providers. Fast, bright, operational, and built for public source awareness.</p>
-            <p class="arabic-line" lang="ar">مركز إحاطة ذكي ثنائي اللغة يجمع الإشارات من المصادر المفتوحة ويعرضها بسرعة وشفافية.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="#signals">Launch briefing</a>
-              <a class="button secondary" href="#breaking">View X intel</a>
-            </div>
+            <div class="florida-line">AI / SAUDI ARABIA / TECHNOLOGY / GLOBAL INTELLIGENCE</div>
+            <h1>Know what matters<br>before it becomes noise.</h1>
+            <p>Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia.</p>
             <div class="metric-strip">
-              
-              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>verified signals</span></div>
-              <div class="metric-tile"><strong>2</strong><span>briefing languages</span></div>
-              <div class="metric-tile"><strong id="heroProviderMode">--</strong><span>active provider</span></div>
+              <div class="metric-tile"><strong id="heroActCount">--</strong><span>Require attention</span></div>
+              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>Signals today</span></div>
+              <div class="metric-tile"><strong id="heroSourceCount">--</strong><span>Key sources</span></div>
             </div>
           </div>
+          <p class="hero-quote">“A more informed region builds a stronger tomorrow.”<span lang="ar" dir="rtl">مستقبل أكثر وضوحًا لبناء منطقة أقوى.</span></p>
+        </div>
+
+        <div class="news-grid">
+          <section class="intel-section act-now-editorial" id="act-now" aria-labelledby="actNowEditorialTitle">
+            <div class="intel-head"><h2 id="actNowEditorialTitle">Act Now</h2><p>Evidence-gated intelligence requiring review.</p></div>
+            <div class="act-editorial" id="actNowEditorial" aria-live="polite"><span class="stream-empty">Checking the current evidence gate…</span></div>
+            <figure class="tampa-photo"><img src="assets/tampa.webp" alt="City of Tampa mural with waterfront landmarks" width="3840" height="2560"><figcaption>Tampa, Florida</figcaption></figure>
+          </section>
 
           <section class="radar-card" id="signals" aria-label="Live briefing radar">
             <div class="radar-side">
@@ -1882,6 +1868,7 @@
             <h2 id="saudiTitle">Saudi Intelligence</h2>
             <p>Signals derived only from existing regional text and metadata.</p>
           </div>
+          <img class="saudi-photo" src="assets/riyadh-skyline.png" alt="Illustrative Riyadh skyline" width="2172" height="724" loading="lazy">
           <div class="editorial-stream" id="saudiRows">
             <span class="stream-empty">Loading Saudi intelligence…</span>
           </div>
@@ -2264,7 +2251,7 @@
       document.getElementById('generatedStamp').textContent = 'Generated ' + formatDate(payload.generated_at);
       document.getElementById('heroSignalCount').textContent = String(signals.length);
       document.getElementById('radarSourceCount').textContent = String(sources.size);
-      document.getElementById('heroProviderMode').textContent = String(payload.mode || 'live');
+      document.getElementById('heroSourceCount').textContent = String(sources.size);
       document.getElementById('providerMode').textContent = String(payload.model || payload.mode || 'active');
       document.getElementById('translatedCount').textContent = String(signals.filter(function(signal) { return signal.brief_ar; }).length);
       document.getElementById('groqCount').textContent = String(providerCounts.groq || 0);
@@ -2325,7 +2312,7 @@
       })).slice().sort(function(a, b) {
         return String(b.source_published_at || b.sourcePublishedAt || b.shown_at || b.updatedAt || b.createdAt || '')
           .localeCompare(String(a.source_published_at || a.sourcePublishedAt || a.shown_at || a.updatedAt || a.createdAt || ''));
-      }).slice(0, 8);
+      });
 
       if (!items.length) {
         document.getElementById('xIntelRail').innerHTML = '<span class="stream-empty">No public X intelligence in the current briefing.</span>';
@@ -2413,6 +2400,7 @@
       }).filter(function(signal) {
         return window.AIbriefScenario.qualifiesForActNow(signal, threshold);
       }).slice(0, 5);
+      document.getElementById('heroActCount').textContent = String(records.length);
       document.getElementById('actNowEditorial').innerHTML = records.map(function(signal, index) {
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
