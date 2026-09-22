@@ -5,30 +5,6 @@
     {
       "confidence": 0,
       "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/AndrewYNg/status/2102140576498065758"
-      ],
-      "id": "story-91164d134b990415ecc7a1b9",
-      "reason": "The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexpected, dangerous turn, but the hype around it \u2014 propelled by what appears to be a well orchestrated PR campaign \u2014 has drummed up considerabl",
-      "score": 85,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-09-21T22:40:32Z",
-      "source": "x",
-      "source_published_at": "2026-09-21T21:44:26Z",
-      "source_url": "https://x.com/AndrewYNg/status/2102140576498065758",
-      "status": "x-intel",
-      "title": "@AndrewYNg: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexp",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "confidence": 0,
-      "evidence_count": 1,
       "evidence_status": "source-only",
       "evidence_urls": [
         "https://x.com/OpenAI/status/2102093145051943229"
@@ -43,6 +19,30 @@
       "source_url": "https://x.com/OpenAI/status/2102093145051943229",
       "status": "x-intel",
       "title": "@OpenAI: We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics. The grou",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "confidence": 0,
+      "evidence_count": 1,
+      "evidence_status": "single-source",
+      "evidence_urls": [
+        "https://x.com/AndrewYNg/status/2102140576498065758"
+      ],
+      "id": "story-91164d134b990415ecc7a1b9",
+      "reason": "The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexpected, dangerous turn, but the hype around it \u2014 propelled by what appears to be a well orchestrated PR campaign \u2014 has drummed up considerabl",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-09-21T22:40:32Z",
+      "source": "x",
+      "source_published_at": "2026-09-21T21:44:26Z",
+      "source_url": "https://x.com/AndrewYNg/status/2102140576498065758",
+      "status": "x-intel",
+      "title": "@AndrewYNg: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexp",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -308,12 +308,12 @@
   "last_alert": {
     "alerted_at": "2026-09-21T22:40:32Z",
     "confidence": 0,
-    "source_url": "https://x.com/AndrewYNg/status/2102140576498065758",
-    "title": "@AndrewYNg: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. AI technology has not taken some unexp"
+    "source_url": "https://x.com/OpenAI/status/2102093145051943229",
+    "title": "@OpenAI: We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics. The grou"
   },
   "last_run": {
-    "alerted_now": 2,
-    "clustered": 22,
+    "alerted_now": 0,
+    "clustered": 23,
     "collected": 34,
     "corroborated_count": 4,
     "initial_collected": 34,
@@ -321,15 +321,15 @@
       "google-news": 9,
       "x": 25
     },
-    "initial_x_relevant": 23,
+    "initial_x_relevant": 25,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 9.311,
-      "projected_minutes_per_30d": 446.95,
+      "measured_seconds": 9.146,
+      "projected_minutes_per_30d": 439.0,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -343,7 +343,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 14,
+    "stage1_survivors": 15,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -367,11 +367,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 2
+    "x_intel_published": 0
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-09-21T22:40:32Z",
+  "updated_at": "2026-09-22T01:09:15Z",
   "version": 1
 }
