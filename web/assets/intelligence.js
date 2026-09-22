@@ -61,7 +61,7 @@ function render(){
  $('floridaList').innerHTML=state.signals.filter(s=>matches(s,'United States','')).slice(0,3).map(compact).join('')||empty();
  $('researchList').innerHTML=state.signals.filter(s=>matches(s,'','Research')).slice(0,3).map(compact).join('')||empty();
  const x=state.x.filter(s=>matches(s));
- $('xList').innerHTML=x.slice(0,12).map(compact).join('')||empty();
+ $('xList').innerHTML=x.map(compact).join('')||empty();
  $('xCount').textContent=x.length+' '+t('public-source posts','منشورًا من مصادر عامة');
  $('healthStatus').textContent=!state.metrics?t('Status unavailable','الحالة غير متاحة'):Number(state.metrics.source_failure_rate)>0?t('Some sources need attention','بعض المصادر تحتاج متابعة'):t('No source failures reported','لم تُسجّل أخطاء في المصادر');
  $('filterbar').hidden=!(state.region||state.topic||state.query);

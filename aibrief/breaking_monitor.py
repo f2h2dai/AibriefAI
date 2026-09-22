@@ -1188,7 +1188,7 @@ def public_feed_recent(entry: dict, now: datetime | None = None, max_age_hours: 
     return timedelta(minutes=-10) <= age <= timedelta(hours=max_age_hours)
 
 
-def public_feed_entries(state: dict, limit: int = 12) -> list[dict]:
+def public_feed_entries(state: dict, limit: int = 60) -> list[dict]:
     entries = []
     now = utc_now()
     for fingerprint, entry in state.get("alerted", {}).items():
@@ -2145,7 +2145,10 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
         if candidate and x_post_is_fresh(candidate, env)
     ]
     command_env = x_cli_env(env)
-    for query in x_search_queries(env):
+    queries = x_search_queries(env)
+    per_query_limit = max(1, (limit + len(queries) - 1) // max(1, len(queries)))
+    seen_urls = {candidate.get("url") for candidate in collected}
+    for query in queries:
         for command in x_search_commands(query):
             try:
                 completed = subprocess.run(
@@ -2180,7 +2183,15 @@ def collect_x_cli(env: dict[str, str], limit: int = 20) -> list[dict]:
                 if x_post_is_fresh(candidate, env)
             ]
             if parsed:
-                collected.extend(parsed)
+                added = 0
+                for candidate in parsed:
+                    if candidate.get("url") in seen_urls:
+                        continue
+                    seen_urls.add(candidate.get("url"))
+                    collected.append(candidate)
+                    added += 1
+                    if added >= per_query_limit:
+                        break
                 break
             if parsed_all:
                 print(
@@ -2279,7 +2290,7 @@ def collect_candidates(env: dict[str, str] | None = None) -> list[dict]:
     candidates: list[dict] = []
     if source_focus in {"x", "twitter"}:
         candidates.extend(collect_birdclaw_export(env))
-        candidates.extend(collect_x_cli(env))
+        candidates.extend(collect_x_cli(env, limit=max(20, min(120, safe_int(env.get("BREAKING_MAX_X_POSTS"), 80)))))
         candidates.extend(collect_local_signals(source_focus=source_focus))
         if truthy(env.get("BREAKING_PUBLISH_NEWS_FALLBACK"), False):
             candidates.extend(collect_public_ai_intel_news(env, limit=10))
