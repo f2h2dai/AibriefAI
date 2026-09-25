@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T16:01:34Z",
+  "generated_at": "2026-09-25T21:08:39Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
@@ -9,17 +9,17 @@
   "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-25T16:01:34Z",
+  "latest_successful_run": "2026-09-25T21:08:39Z",
   "highest_ranked_signal": {
-    "id": "github-006",
-    "title": "sudosubin/agents.nix",
-    "action_score": 75.5,
-    "url": "https://github.com/sudosubin/agents.nix"
+    "id": "twitter-029",
+    "title": "@carlesdijous: #Ukraine’s new #military #AI does more than watch the #battlefield—it helps commanders plan what comes next. The Defense Ministry’s AI cente",
+    "action_score": 76.0,
+    "url": "https://x.com/carlesdijous/status/2103581052476571749"
   },
   "source_contribution": {
     "google-news": 2,
-    "github": 5,
-    "twitter": 5
+    "twitter": 5,
+    "github": 5
   },
   "failed_sources": [
     {
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7479, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7562, Req"
     }
   ],
-  "runtime_seconds": 96.27,
+  "runtime_seconds": 55.842,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-25T16:01:34Z",
+    "planned_at": "2026-09-25T21:08:39Z",
     "production_threshold": 70.0
   }
 }
