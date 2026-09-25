@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T21:11:27Z",
+  "generated_at": "2026-09-25T16:01:34Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 11,
@@ -9,16 +9,16 @@
   "source_failure_rate": 0.4,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-24T21:11:27Z",
+  "latest_successful_run": "2026-09-25T16:01:34Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "muhammdumardev-hash/AI-Powered-E-Commerce-Customer-Support-Agent--",
-    "action_score": 76.75,
-    "url": "https://github.com/muhammdumardev-hash/AI-Powered-E-Commerce-Customer-Support-Agent--"
+    "id": "github-006",
+    "title": "sudosubin/agents.nix",
+    "action_score": 75.5,
+    "url": "https://github.com/sudosubin/agents.nix"
   },
   "source_contribution": {
-    "github": 5,
     "google-news": 2,
+    "github": 5,
     "twitter": 5
   },
   "failed_sources": [
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7639, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7479, Req"
     }
   ],
-  "runtime_seconds": 64.384,
+  "runtime_seconds": 96.27,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-24T21:11:27Z",
+    "planned_at": "2026-09-25T16:01:34Z",
     "production_threshold": 70.0
   }
 }
