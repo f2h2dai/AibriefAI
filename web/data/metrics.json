@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-09-25T21:08:39Z",
+  "generated_at": "2026-09-26T15:13:17Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
-  "verified_signals": 11,
+  "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
+  "source_failure_rate": 0.3333,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-25T21:08:39Z",
+  "latest_successful_run": "2026-09-26T15:13:17Z",
   "highest_ranked_signal": {
-    "id": "twitter-029",
-    "title": "@carlesdijous: #Ukraine’s new #military #AI does more than watch the #battlefield—it helps commanders plan what comes next. The Defense Ministry’s AI cente",
-    "action_score": 76.0,
-    "url": "https://x.com/carlesdijous/status/2103581052476571749"
+    "id": "twitter-022",
+    "title": "@OpenAI: We’ve shared details on how AI agents in our research environment sent training and evaluation data to third-party services when they should",
+    "action_score": 78.25,
+    "url": "https://x.com/OpenAI/status/2103587050347995581"
   },
   "source_contribution": {
-    "google-news": 2,
     "twitter": 5,
-    "github": 5
+    "github": 5,
+    "hackernews": 1,
+    "google-news": 1
   },
   "failed_sources": [
     {
@@ -28,10 +29,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7562, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7729, Req"
     }
   ],
-  "runtime_seconds": 55.842,
+  "runtime_seconds": 78.344,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +92,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-25T21:08:39Z",
+    "planned_at": "2026-09-26T15:13:17Z",
     "production_threshold": 70.0
   }
 }
