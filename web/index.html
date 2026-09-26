@@ -1782,11 +1782,11 @@
         <div class="hero">
           <div class="hero-copy">
             <div class="florida-line">AI / SAUDI ARABIA / TECHNOLOGY / GLOBAL INTELLIGENCE</div>
-            <h1>Know what matters<br>before it becomes noise.</h1>
+            <h1 id="publicationTitle">Know what matters<br>before it becomes noise.</h1>
             <p>Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia.</p>
             <div class="metric-strip">
               <div class="metric-tile"><strong id="heroActCount">--</strong><span>Require attention</span></div>
-              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>Signals today</span></div>
+              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>Unique signals in snapshot</span></div>
               <div class="metric-tile"><strong id="heroSourceCount">--</strong><span>Key sources</span></div>
             </div>
           </div>
@@ -1826,7 +1826,7 @@
             <div class="radar-main">
               <div class="intel-head">
                 <h2>Latest Signals</h2>
-                <p>Search and rank the current verified intelligence feed.</p>
+                <p>Search current claims and reviewed evidence. Relevance is not verification.</p>
               </div>
               <div class="radar-tools">
                 <input class="field" id="radarSearch" type="search" placeholder="Search intelligence">
@@ -2055,7 +2055,7 @@
            Agent operations; Bounded worker team; Recent run performance;
            Act-now items; Failed-source warnings; AI war intel from X.;
            X Intel Feed / رصد; Public X signals about AI use;
-           Second source / المصدر الثاني; Single X source / مصدر X واحد. -->
+           Related link / رابط ذو صلة; Single X source / مصدر X واحد. -->
     </main>
 
     <footer class="footer">
@@ -2064,6 +2064,7 @@
     </footer>
   </div>
 
+  <script src="evidence-policy.js"></script>
   <script src="operations-dashboard.js"></script>
   <script>
     const state = {
@@ -2101,6 +2102,15 @@
         .replace(/'/g, '&#039;');
     }
 
+    function allSignals() { return window.AIbriefEvidence.combine(state.signals, state.breaking); }
+
+    function refreshEvidenceViews() {
+      renderSourceControls(); renderSignalRows(); renderRadarRows(filteredSignals()); renderSaudiSignals();
+      if (state.briefingPayload) renderHeroMetrics(state.briefingPayload);
+      document.getElementById("heroSignalCount").textContent = String(allSignals().length);
+      document.getElementById("metricVerified").textContent = String(allSignals().filter(s => s.evidence_status === "verified").length);
+    }
+
     function sourceLabel(source) {
       return sourceLabels[source] || source || 'Source';
     }
@@ -2129,14 +2139,14 @@
 
     function signalText(signal) {
       if (state.language === 'ar') {
-        return signal.brief_ar || signal.brief_en || signal.content || '';
+        return signal.brief_ar || signal.brief_en || signal.content || signal.reason || '';
       }
-      return signal.brief_en || signal.content || signal.brief_ar || '';
+      return signal.brief_en || signal.content || signal.brief_ar || signal.reason || '';
     }
 
     function filteredSignals() {
       const query = state.search.trim().toLowerCase();
-      const filtered = state.signals.filter(function(signal) {
+      const filtered = allSignals().filter(function(signal) {
         const sourceMatch = state.source === 'all' || signal.source === state.source;
         const searchText = [
           signal.title,
@@ -2172,7 +2182,7 @@
     }
 
     function renderSourceControls() {
-      const sources = Array.from(new Set(state.signals.map(function(signal) {
+      const sources = Array.from(new Set(allSignals().map(function(signal) {
         return signal.source || 'unknown';
       }))).sort();
 
@@ -2199,7 +2209,7 @@
 
     function renderRadarRows(signals) {
       const rows = signals.slice(0, 20).map(function(signal) {
-        const status = signal.status || 'new';
+        const status = signal.evidence_status || 'unverified';
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         return '<tr>' +
           '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
@@ -2217,7 +2227,7 @@
       const dir = state.language === 'ar' ? 'rtl' : 'ltr';
       const lang = state.language === 'ar' ? 'AR' : 'EN';
 
-      document.getElementById('briefingCount').textContent = rows.length + ' of ' + state.signals.length + ' signals';
+      document.getElementById('briefingCount').textContent = rows.length + ' of ' + allSignals().length + ' unique signals · radar shows up to 20';
       document.getElementById('briefingStatus').firstElementChild.textContent =
         rows.length ? 'Sorted briefing feed. Use filters to narrow the desk.' : 'No briefing signals match this view.';
 
@@ -2228,7 +2238,7 @@
 
       document.getElementById('signalRows').innerHTML = rows.map(function(signal) {
         const url = signal.url || '#';
-        const status = signal.status || 'verified';
+        const status = signal.evidence_status || 'unverified';
         const statusClass = status === 'held' ? 'watch' : '';
         return '<tr dir="' + dir + '">' +
           '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
@@ -2242,7 +2252,7 @@
     }
 
     function renderHeroMetrics(payload) {
-      const signals = state.signals;
+      const signals = allSignals();
       const providerCounts = payload.provider_counts || {};
       const events = Array.isArray(payload.events) ? payload.events : [];
       const sources = new Set(signals.map(function(signal) { return signal.source || 'unknown'; }));
@@ -2307,19 +2317,14 @@
     }
 
     function renderXIntel(feed) {
-      const items = (Array.isArray(feed) && feed.length ? feed : state.signals.filter(function(signal) {
-        return signal.source === 'twitter' || signal.source === 'x';
-      })).slice().sort(function(a, b) {
-        return String(b.source_published_at || b.sourcePublishedAt || b.shown_at || b.updatedAt || b.createdAt || '')
-          .localeCompare(String(a.source_published_at || a.sourcePublishedAt || a.shown_at || a.updatedAt || a.createdAt || ''));
-      });
+      const items = window.AIbriefEvidence.combine(feed || [], state.signals.filter(s => ['x','twitter'].includes(s.source))).sort((a,b) => String(b.sourcePublishedAt || '').localeCompare(String(a.sourcePublishedAt || '')));
 
       if (!items.length) {
-        document.getElementById('xIntelRail').innerHTML = '<span class="stream-empty">No public X intelligence in the current briefing.</span>';
+        document.getElementById('xIntelRail').innerHTML = state.breakingFailed ? '<p class="warn">X source unavailable.</p>' : '<span class="stream-empty">No public X intelligence in the current briefing.</span>';
         return;
       }
 
-      document.getElementById('xIntelRail').innerHTML = items.map(function(item) {
+      document.getElementById('xIntelRail').innerHTML = (state.breakingFailed ? '<p class="warn">X source unavailable; showing only available briefing posts.</p>' : '') + items.map(function(item) {
         const title = item.title || 'Untitled X intel';
         const time = item.source_published_at || item.sourcePublishedAt || item.shown_at || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
@@ -2327,11 +2332,7 @@
         const evidenceURLs = Array.isArray(item.evidence_urls) ? item.evidence_urls.filter(Boolean) : [];
         const secondSource = evidenceURLs.find(function(sourceURL) { return sourceURL !== url; }) || '';
         const evidenceCount = Math.max(1, Number(item.evidence_count || 1));
-        const evidenceLabel = item.evidence_status === 'corroborated'
-          ? evidenceCount + ' sources'
-          : item.sensitive_military_claim
-            ? 'single source'
-            : (item.evidence_status || 'public source');
+        const evidenceLabel = item.evidence_status;
         const accountMatch = title.match(/@[A-Za-z0-9_]+/);
         let sourceAccount = '';
         try {
@@ -2342,11 +2343,11 @@
           }
         } catch (_) { /* Relative or unavailable source URLs have no account metadata. */ }
         const account = item.account || item.author || sourceAccount || (accountMatch ? accountMatch[0] : 'X');
-        const confidence = item.confidence || (Number(item.score || 0) >= 70 ? 'High' : Number(item.score || 0) >= 40 ? 'Medium' : 'Developing');
+        const confidence = 'Relevance ' + Number(item.score || 0);
         return '<article class="x-record">' +
           '<span>' + escapeHTML(formatDate(time, 'time')) + '</span>' +
           '<span>' + escapeHTML(account) + '</span>' +
-          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);margin-top:6px;">Second source / المصدر الثاني</a>' : '') + '</span>' +
+          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);margin-top:6px;">Related link / رابط ذو صلة</a>' : '') + '</span>' +
           '<span class="score">' + escapeHTML(confidence) + '</span>' +
           '<span class="' + (item.evidence_status === 'unverified' ? 'warn' : 'ok') + '">' + escapeHTML(evidenceLabel) + '</span>' +
         '</article>';
@@ -2354,38 +2355,35 @@
     }
 
     function isSaudiSignal(signal) {
-      const metadata = [signal.region, signal.country, signal.market, signal.topic, signal.category].join(' ');
-      const content = [signal.title, signal.content, signal.brief_en, signal.brief_ar].join(' ');
-      return /(saudi arabia|saudi|riyadh|jeddah|\bksa\b|السعودية|السعودي|الرياض|جدة)/i.test(metadata + ' ' + content);
+      return window.AIbriefEvidence.saudi(signal);
     }
 
     function intelligenceConfidence(signal) {
-      const score = Number(signal.action_score == null ? signal.score : signal.action_score);
-      return score >= 70 ? 'High' : score >= 50 ? 'Medium' : 'Developing';
+      return signal.evidence_status || 'unverified';
     }
 
     function renderEditorialRecord(signal) {
       const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
       const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
-      const url = signal.primary_source_url || signal.url || '#';
+      const url = window.AIbriefEvidence.url(signal.primary_source_url || signal.url || signal.source_url) || '#';
       const arabic = state.language === 'en' && signal.brief_ar
         ? '<p class="arabic-line" lang="ar" dir="rtl">' + escapeHTML(shortText(signal.brief_ar, 220)) + '</p>'
         : '';
       return '<article class="editorial-record">' +
         '<div class="editorial-meta">' + escapeHTML(formatDate(time, 'time')) + '<br>' + escapeHTML(sourceLabel(signal.source)) + '</div>' +
         '<div class="editorial-copy" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 280)) + '</p>' + arabic + '</div>' +
-        '<div class="editorial-side">' + escapeHTML(intelligenceConfidence(signal)) + '<br><span class="ok">' + escapeHTML(signal.status || 'new') + '</span><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open source →</a></div>' +
+        '<div class="editorial-side">' + escapeHTML(intelligenceConfidence(signal)) + '<br><span class="ok">' + escapeHTML(signal.evidence_status || 'unverified') + '</span><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open source →</a></div>' +
       '</article>';
     }
 
     function renderSaudiSignals() {
-      const records = state.signals.filter(isSaudiSignal).slice(0, 6);
+      const records = allSignals().filter(isSaudiSignal).slice(0, 6);
       document.getElementById('saudiRows').innerHTML = records.map(renderEditorialRecord).join('') ||
         '<span class="stream-empty">No reliably identified Saudi records in the current briefing.</span>';
     }
 
     function renderResearchSignals() {
-      const records = state.signals.filter(function(signal) {
+      const records = allSignals().filter(function(signal) {
         return String(signal.source || '').toLowerCase() === 'arxiv' ||
           String(signal.collector || '').toLowerCase() === 'academicagent';
       }).slice(0, 6);
@@ -2395,7 +2393,7 @@
 
     function renderActNowEditorial() {
       const threshold = Number(state.metrics.configured_threshold || 70);
-      const records = state.signals.slice().sort(function(a, b) {
+      const records = allSignals().slice().sort(function(a, b) {
         return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
       }).filter(function(signal) {
         return window.AIbriefScenario.qualifiesForActNow(signal, threshold);
@@ -2404,11 +2402,11 @@
       document.getElementById('actNowEditorial').innerHTML = records.map(function(signal, index) {
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
-        const url = signal.primary_source_url || signal.url || '#';
+        const url = window.AIbriefEvidence.url(signal.primary_source_url || signal.url || signal.source_url) || '#';
         return '<article class="act-record">' +
           '<span class="act-sequence">' + String(index + 1).padStart(2, '0') + '</span>' +
           '<div class="act-context"><strong>' + escapeHTML(sourceLabel(signal.source)) + '</strong>' + escapeHTML(formatDate(time, 'time')) + '</div>' +
-          '<div class="act-content" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 360)) + '</p><div class="act-facts"><span><b>Source</b>' + escapeHTML(sourceLabel(signal.source)) + '</span><span><b>Confidence</b>' + escapeHTML(intelligenceConfidence(signal)) + '</span><span><b>Evidence</b>' + escapeHTML(signal.evidence_count || 0) + '</span></div></div>' +
+          '<div class="act-content" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 360)) + '</p><div class="act-facts"><span><b>Source</b>' + escapeHTML(sourceLabel(signal.source)) + '</span><span><b>Evidence status</b>' + escapeHTML(intelligenceConfidence(signal)) + '</span><span><b>Evidence</b>' + escapeHTML(signal.evidence_count || 0) + '</span></div></div>' +
           '<a class="intel-link" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open →</a>' +
         '</article>';
       }).join('') || '<span class="stream-empty">No action required.</span>';
@@ -2424,9 +2422,9 @@
 
     function fallbackMetrics(payload) {
       const total = state.signals.length;
-      const duplicates = state.signals.filter(function(signal) { return Boolean(signal.duplicate_of); }).length;
-      const unsupported = state.signals.filter(function(signal) { return Number(signal.unsupported_claims || 0) > 0; }).length;
-      const primary = state.signals.filter(function(signal) { return Boolean(signal.primary_source_url); }).length;
+      const duplicates = allSignals().filter(function(signal) { return Boolean(signal.duplicate_of); }).length;
+      const unsupported = allSignals().filter(function(signal) { return Number(signal.unsupported_claims || 0) > 0; }).length;
+      const primary = allSignals().filter(function(signal) { return Boolean(signal.primary_source_url); }).length;
       const distribution = {};
       state.signals.forEach(function(signal) {
         const source = String(signal.source || 'unknown');
@@ -2444,14 +2442,14 @@
       });
       const failedSources = Object.values(failedBySource);
       const scenario = window.AIbriefScenario.recalculate(state.signals, 70);
-      const highest = state.signals.slice().sort(function(a, b) {
+      const highest = allSignals().slice().sort(function(a, b) {
         return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
       })[0];
       return {
         generated_at: payload.generated_at,
         configured_threshold: 70,
         signals_collected_today: total,
-        verified_signals: state.signals.filter(function(signal) { return signal.status === 'verified'; }).length,
+        verified_signals: allSignals().filter(function(signal) { return signal.evidence_status === 'verified'; }).length,
         act_now_items: scenario.act_now_count,
         duplicate_rate: total ? duplicates / total : 0,
         unsupported_claim_rate: total ? unsupported / total : 0,
@@ -2526,7 +2524,7 @@
     }
 
     function renderRankedOperations() {
-      const ranked = state.signals.slice().sort(function(a, b) {
+      const ranked = allSignals().slice().sort(function(a, b) {
         return window.AIbriefScenario.actionScore(b) - window.AIbriefScenario.actionScore(a);
       });
       document.getElementById('topSignalsList').innerHTML = ranked.slice(0, 5).map(function(signal) {
@@ -2612,11 +2610,13 @@
           ? payload.feed
           : (Array.isArray(payload.pending_feed) ? payload.pending_feed : []);
         renderXIntel(state.breaking);
+        refreshEvidenceViews();
         if (state.briefingPayload) {
           renderHealth(state.briefingPayload);
           renderProviders(state.briefingPayload);
         }
       } catch (error) {
+        state.breakingFailed = true;
         renderXIntel([]);
       }
     }
@@ -2644,7 +2644,7 @@
         }
         document.getElementById('navClock').textContent = 'Updated ' + formatDate(generatedAt, 'time') + ' AST';
         renderSourceControls();
-        document.getElementById('sourceCoverage').textContent = 'Current sources: ' + Array.from(new Set(state.signals.map(function(signal) { return sourceLabel(signal.source); }))).join(' · ');
+        document.getElementById('sourceCoverage').textContent = 'Current sources: ' + Array.from(new Set(allSignals().map(function(signal) { return sourceLabel(signal.source); }))).join(' · ');
         renderHeroMetrics(payload);
         renderRadarRows(filteredSignals());
         renderSignalRows();
@@ -2653,7 +2653,9 @@
         renderHealth(payload);
         renderProviders(payload);
         renderXIntel(state.breaking);
+        refreshEvidenceViews();
         await loadOperations(payload);
+        refreshEvidenceViews();
       } catch (error) {
         document.getElementById('briefingStatus').firstElementChild.textContent = 'Briefing feed could not be loaded.';
         document.getElementById('signalRows').innerHTML = '<tr><td colspan="6"><div class="empty">Could not load data/signals.json. Refresh after the feed workflow finishes.</div></td></tr>';
@@ -2727,9 +2729,9 @@
       this.textContent = state.language === 'en' ? 'العربية' : 'English';
       this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
       const publicationTitle = document.getElementById('publicationTitle');
-      publicationTitle.textContent = state.language === 'ar' ? 'اعرف ما يهم قبل أن يتحول إلى ضجيج.' : 'Know what matters before it becomes noise.';
-      publicationTitle.setAttribute('lang', state.language);
-      publicationTitle.setAttribute('dir', state.language === 'ar' ? 'rtl' : 'ltr');
+      publicationTitle.innerHTML = state.language === 'ar'
+        ? '<span lang="ar" dir="rtl">اعرف ما يهم قبل أن يتحول إلى ضجيج.</span>'
+        : 'Know what matters before it becomes noise.';
       renderSignalRows();
       renderRadarRows(filteredSignals());
       renderActNowEditorial();

@@ -14,6 +14,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+from aibrief.evidence_policy import load_reviews, normalize_signal
 from aibrief.security_gateway import SecurityGateway
 from aibrief.webswarm import (
     annotate_candidates as annotate_webswarm_candidates,
@@ -1022,7 +1023,7 @@ def candidate_from_raw(raw: dict) -> dict:
         "evidence_urls": source_urls,
         "supporting_sources": supporting_sources,
         "evidence_count": evidence_count,
-        "evidence_status": raw.get("evidence_status", "source-only"),
+        "evidence_status": "unverified",
         "sensitive_military_claim": bool(raw.get("sensitive_military_claim")),
         "authoritative": bool(raw.get("authoritative")) or is_authoritative(url),
         "domain_hits": domain_hits,
@@ -1069,10 +1070,7 @@ def merge_cluster(existing: dict, candidate: dict) -> dict:
     existing["sensitive_military_claim"] = bool(existing.get("sensitive_military_claim")) or bool(
         candidate.get("sensitive_military_claim")
     )
-    if existing.get("sensitive_military_claim"):
-        existing["evidence_status"] = "corroborated" if existing["evidence_count"] >= 2 else "single-source"
-    else:
-        existing["evidence_status"] = "source-only"
+    existing["evidence_status"] = "unverified"
     existing["source_count"] = max(int(existing.get("source_count", 1)), len(sources), len(evidence_urls))
     existing["velocity"] = max(int(existing.get("velocity", 0)), int(candidate.get("velocity", 0)))
     existing["authoritative"] = bool(existing.get("authoritative")) or bool(candidate.get("authoritative"))
@@ -1306,10 +1304,11 @@ def public_last_run(summary: dict | None) -> dict:
 
 def public_breaking_status(state: dict, summary: dict | None = None) -> dict:
     pending = state.get("pending", {})
-    feed_entries = public_feed_entries(state)
+    reviews = load_reviews()
+    feed_entries = [normalize_signal(e, reviews=reviews) for e in public_feed_entries(state)]
     latest = feed_entries[0] if feed_entries else None
     status = "clear"
-    pending_entries = public_pending_entries(state)
+    pending_entries = [normalize_signal(e, reviews=reviews) for e in public_pending_entries(state)]
     if any(entry.get("status") == "approved" for entry in pending.values()):
         status = "retry-pending"
     elif pending:
@@ -1509,11 +1508,7 @@ def annotate_secondary_evidence(candidates: list[dict], evidence_candidates: lis
         candidate["supporting_sources"] = supporting_sources
         candidate["evidence_count"] = max(1, len(evidence_urls))
         candidate["sensitive_military_claim"] = sensitive
-        candidate["evidence_status"] = (
-            "corroborated" if sensitive and len(evidence_urls) >= 2
-            else "single-source" if sensitive
-            else "source-only"
-        )
+        candidate["evidence_status"] = "unverified"
         candidate["source_count"] = max(safe_int(candidate.get("source_count"), 1), len(evidence_urls))
         annotated.append(candidate)
     return annotated

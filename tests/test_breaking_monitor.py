@@ -493,7 +493,7 @@ class BreakingMonitorTests(unittest.TestCase):
         )
 
         self.assertTrue(candidate["sensitive_military_claim"])
-        self.assertEqual(candidate["evidence_status"], "corroborated")
+        self.assertEqual(candidate["evidence_status"], "unverified")
         self.assertEqual(candidate["evidence_count"], 2)
         self.assertEqual(candidate["source_urls"][0], "https://x.com/defense_ai/status/2081765135425613925")
         self.assertIn("https://news.example.test/project-maven-grok", candidate["evidence_urls"])
@@ -520,7 +520,7 @@ class BreakingMonitorTests(unittest.TestCase):
             status = json.loads(status_path.read_text(encoding="utf-8"))
 
         self.assertEqual(summary["x_intel_published"], 1)
-        self.assertEqual(status["feed"][0]["evidence_status"], "single-source")
+        self.assertEqual(status["feed"][0]["evidence_status"], "unverified")
         self.assertEqual(status["feed"][0]["evidence_count"], 1)
 
     def test_generic_x_homepage_is_not_published_as_original_post(self):
@@ -572,7 +572,7 @@ class BreakingMonitorTests(unittest.TestCase):
 
         self.assertEqual(status["feed"][0]["source_url"], urls[0])
         self.assertEqual(status["feed"][0]["evidence_urls"], urls)
-        self.assertEqual(status["feed"][0]["evidence_status"], "corroborated")
+        self.assertEqual(status["feed"][0]["evidence_status"], "unverified")
 
     def test_x_cli_env_exports_common_cookie_aliases(self):
         env = x_cli_env({"TWITTER_COOKIE": "auth_token=auth123; ct0=csrf456"})
@@ -1125,7 +1125,7 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("Public X signals about AI use", html)
         self.assertIn("pending_feed", html)
         self.assertIn("X intel live", html)
-        self.assertIn("Second source / المصدر الثاني", html)
+        self.assertIn("Related link / رابط ذو صلة", html)
         self.assertIn("Single X source / مصدر X واحد", html)
         self.assertNotIn("Website-only feed", html)
         self.assertNotIn("Not confirmed breaking yet", html)
