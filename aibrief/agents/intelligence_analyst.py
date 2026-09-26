@@ -16,7 +16,7 @@ class IntelligenceAnalyst:
         duplicates = sum(bool(signal.get("duplicate_of")) for signal in signals)
         unsupported = sum(int(signal.get("unsupported_claims") or 0) > 0 for signal in signals)
         primary = sum(bool(signal.get("primary_source_url")) for signal in signals)
-        verified = sum(str(signal.get("status") or "").lower() == "verified" for signal in signals)
+        verified = sum(str(signal.get("evidence_status") or "").lower() == "verified" for signal in signals)
         act_now = sum(qualifies_for_act_now(signal, threshold) for signal in signals)
         source_distribution = dict(Counter(str(signal.get("source") or "unknown") for signal in signals))
         failures = list(context.get("source_failures") or [])

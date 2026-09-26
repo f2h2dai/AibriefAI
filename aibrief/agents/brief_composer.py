@@ -2,19 +2,14 @@
 
 from __future__ import annotations
 
+from aibrief.evidence_policy import is_saudi
 from aibrief.scoring.action_score import qualifies_for_act_now
 
 
 NO_ACTION_TEXT = "No action required today."
 
 
-def _is_saudi(signal: dict) -> bool:
-    text = " ".join(
-        str(signal.get(field) or "")
-        for field in ("region", "topic", "title", "content", "brief_en", "brief_ar")
-    ).lower()
-    return "saudi" in text or "ksa" in text or "kingdom of saudi arabia" in text
-
+_is_saudi = is_saudi
 
 class BriefComposer:
     name = "Brief Composer"

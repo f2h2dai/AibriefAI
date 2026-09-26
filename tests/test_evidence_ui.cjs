@@ -1,0 +1,12 @@
+const assert = require('node:assert/strict');
+require('../web/evidence-policy.js');
+const p = globalThis.AIbriefEvidence;
+assert.equal(p.status({status:'verified', evidence_count:100}), 'unverified');
+const raw = {title:'ادعاء عن السعودية', source_url:'https://twitter.com/a/status/123?s=20', score:99};
+assert.equal(p.combine([raw], [{...raw,source_url:'https://x.com/b/status/123'}]).length,1);
+assert.equal(p.combine([raw])[0].saudi_relevant,true);
+assert.equal(p.combine([{...raw,source_url:'javascript:alert(1)'}])[0].url,'#');
+assert.equal(p.saudi({title:'KSAware unrelated company'}),false);
+assert.equal(p.normalize({...raw,source_url:'https://x.com/grok/status/123'}).score,20);
+assert.equal(p.normalize({...raw,evidence_status:'corroborated'}).evidence_status,'unverified');
+console.log('7 evidence UI assertions passed');

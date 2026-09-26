@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from aibrief.evidence_policy import load_reviews, normalize_signal
+
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -84,7 +86,9 @@ class AgentOperationsOrchestrator:
         enriched = scout_result.get("signals", [dict(signal) for signal in signals])
         watcher = self._execute(self.watcher, enriched, context, statuses)
         composed = self._execute(self.composer, enriched, context, statuses)
-        output_signals = composed.get("signals", enriched)
+        reviews = load_reviews()
+        output_signals = [normalize_signal(s, reviews=reviews, observed_at=generated_at)
+                          for s in composed.get("signals", enriched)]
         analysis = self._execute(self.analyst, output_signals, context, statuses)
 
         metrics = analysis.get("metrics", {})
