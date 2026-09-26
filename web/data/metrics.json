@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-09-26T15:13:17Z",
+  "generated_at": "2026-09-26T20:41:41Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.4,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-26T15:13:17Z",
+  "latest_successful_run": "2026-09-26T20:41:41Z",
   "highest_ranked_signal": {
-    "id": "twitter-022",
-    "title": "@OpenAI: We’ve shared details on how AI agents in our research environment sent training and evaluation data to third-party services when they should",
-    "action_score": 78.25,
-    "url": "https://x.com/OpenAI/status/2103587050347995581"
+    "id": "github-008",
+    "title": "sudosubin/agents.nix",
+    "action_score": 75.5,
+    "url": "https://github.com/sudosubin/agents.nix"
   },
   "source_contribution": {
+    "github": 6,
     "twitter": 5,
-    "github": 5,
-    "hackernews": 1,
     "google-news": 1
   },
   "failed_sources": [
@@ -29,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7729, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7576, Req"
     }
   ],
-  "runtime_seconds": 78.344,
+  "runtime_seconds": 64.058,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -92,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-26T15:13:17Z",
+    "planned_at": "2026-09-26T20:41:41Z",
     "production_threshold": 70.0
   }
 }
