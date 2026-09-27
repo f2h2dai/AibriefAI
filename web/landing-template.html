@@ -1746,7 +1746,7 @@
 .brand-text strong,.intel-head h2,.x-title h2,.operations-head h2 {letter-spacing:0}
 @media(max-width:760px){.place-visuals{grid-template-columns:1fr}.place-visuals img{height:auto;aspect-ratio:3/2}.hero-copy h1{font-size:38px}}
 </style>
-  <link rel="stylesheet" href="assets/editorial.css">
+  <link rel="stylesheet" href="assets/command-center.css">
 </head>
 <body>
   <div class="page">
@@ -1759,18 +1759,41 @@
         </span>
       </a>
       <div class="links">
-        <a href="#signals">Intelligence</a>
-        <a href="#saudi">Saudi</a>
-        <a href="#research">Research</a>
+        <a href="#signals" data-i18n-en="Intelligence" data-i18n-ar="الاستخبارات">Intelligence</a>
+        <a href="#saudi" data-i18n-en="Saudi" data-i18n-ar="السعودية">Saudi</a>
+        <a href="#research" data-i18n-en="Research" data-i18n-ar="الأبحاث">Research</a>
         <a href="#breaking">X</a>
-        <a href="#source-system">Sources</a>
-        <a href="#operations">System</a>
+        <a href="#source-system" data-i18n-en="Sources" data-i18n-ar="المصادر">Sources</a>
+        <a href="#operations" data-i18n-en="System" data-i18n-ar="النظام">System</a>
       </div>
       <div class="nav-actions">
         <button class="button secondary" id="briefingLanguage" type="button" aria-pressed="false" aria-label="Switch briefing language">العربية</button>
         <span class="nav-time" id="navClock">Loading time</span>
       </div>
     </nav>
+
+    <aside class="ops-rail" aria-label="Intelligence workspace">
+      <a class="rail-link active" href="#home">
+        <span class="rail-icon" aria-hidden="true">⌂</span><span data-i18n-en="Overview" data-i18n-ar="نظرة عامة">Overview</span>
+      </a>
+      <a class="rail-link" href="#signals">
+        <span class="rail-icon" aria-hidden="true">▤</span><span data-i18n-en="Intelligence" data-i18n-ar="الاستخبارات">Intelligence</span>
+      </a>
+      <a class="rail-link" href="#act-now">
+        <span class="rail-icon" aria-hidden="true">◇</span><span data-i18n-en="Validate" data-i18n-ar="التحقق">Validate</span>
+      </a>
+      <a class="rail-link" href="#operations">
+        <span class="rail-icon" aria-hidden="true">◷</span><span data-i18n-en="Activity" data-i18n-ar="النشاط">Activity</span>
+      </a>
+      <a class="rail-link" href="#research">
+        <span class="rail-icon" aria-hidden="true">▱</span><span data-i18n-en="Reports" data-i18n-ar="التقارير">Reports</span>
+      </a>
+      <div class="rail-context">
+        <strong>Saudi Arabia</strong>
+        <span>Global intelligence</span>
+        <small>Evidence before action</small>
+      </div>
+    </aside>
 
     <main id="home">
       <section class="shell">
@@ -1783,7 +1806,7 @@
           <div class="hero-copy">
             <div class="florida-line">AI / SAUDI ARABIA / TECHNOLOGY / GLOBAL INTELLIGENCE</div>
             <h1 id="publicationTitle">Know what matters<br>before it becomes noise.</h1>
-            <p>Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia.</p>
+            <p data-i18n-en="Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia." data-i18n-ar="استخبارات مستقلة حول الذكاء الاصطناعي والتقنية والتطورات العالمية، مع تركيز خاص على المملكة العربية السعودية.">Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia.</p>
             <div class="metric-strip">
               <div class="metric-tile"><strong id="heroActCount">--</strong><span>Require attention</span></div>
               <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>Unique signals in snapshot</span></div>
@@ -1829,7 +1852,7 @@
                 <p>Search current claims and reviewed evidence. Relevance is not verification.</p>
               </div>
               <div class="radar-tools">
-                <input class="field" id="radarSearch" type="search" placeholder="Search intelligence">
+                <input class="field" id="radarSearch" type="search" placeholder="Search intelligence" aria-label="Search intelligence signals">
                 <select class="select" id="radarSource" aria-label="Filter radar by source">
                   <option value="all">All sources</option>
                 </select>
@@ -1914,7 +1937,7 @@
               </div>
             </div>
             <div class="desk-tools">
-              <input class="field" id="briefingSearch" type="search" placeholder="Search title, source, topic, summary">
+              <input class="field" id="briefingSearch" type="search" placeholder="Search title, source, topic, summary" aria-label="Search briefing records">
               <select class="select" id="briefingSource" aria-label="Filter by source">
                 <option value="all">All sources</option>
               </select>
@@ -2057,6 +2080,42 @@
            X Intel Feed / رصد; Public X signals about AI use;
            Related link / رابط ذو صلة; Single X source / مصدر X واحد. -->
     </main>
+
+    <aside class="eval-rail" aria-label="Evaluation status">
+      <section class="eval-section">
+        <span class="eval-kicker" data-i18n-en="Evaluation lab" data-i18n-ar="مختبر التقييم">Evaluation lab</span>
+        <h2 data-i18n-en="Verifier Status" data-i18n-ar="حالة التحقق">Verifier Status</h2>
+        <p data-i18n-en="Deterministic evaluation of evidence, source quality and output contracts." data-i18n-ar="تقييم حتمي للأدلة وجودة المصادر وضوابط المخرجات.">Deterministic evaluation of evidence, source quality and output contracts.</p>
+      </section>
+      <dl class="verifier-list">
+        <div><dt>Verified signals</dt><dd id="railVerified">--</dd></div>
+        <div><dt>Unsupported claims</dt><dd id="railUnsupported">--</dd></div>
+        <div><dt>Primary-source links</dt><dd id="railPrimary">--</dd></div>
+        <div><dt>Source failure rate</dt><dd id="railFailures">--</dd></div>
+      </dl>
+      <section class="eval-current">
+        <span>Current run</span>
+        <strong id="railRunState">Checking evidence</strong>
+        <p>Evidence before action. Policy remains deterministic and fail-closed.</p>
+      </section>
+      <section class="eval-block">
+        <h3>Evidence</h3>
+        <p>Reviewed sources · Canonical claims · Primary records</p>
+      </section>
+      <section class="eval-block">
+        <h3>Evaluation pipeline</h3>
+        <ol>
+          <li><span>01</span>Collection</li>
+          <li><span>02</span>Evidence</li>
+          <li><span>03</span>Classification</li>
+          <li><span>04</span>Delivery gate</li>
+        </ol>
+      </section>
+      <section class="eval-block">
+        <h3>Environment</h3>
+        <p>AIbrief · Saudi Arabia<br><span id="railUpdated">Waiting for run</span></p>
+      </section>
+    </aside>
 
     <footer class="footer">
       <span>© 2026 AIbrief / إحاطة</span>
@@ -2502,6 +2561,14 @@
       document.getElementById('pipelineActNow').textContent = String(metrics.act_now_items || 0);
       document.getElementById('pipelineRuntime').textContent = Number(metrics.runtime_seconds || 0).toFixed(1) + 's';
       document.getElementById('pipelineStatus').textContent = pipelineStatus;
+      document.getElementById('railVerified').textContent = String(metrics.verified_signals || 0);
+      document.getElementById('railUnsupported').textContent = percent(metrics.unsupported_claim_rate);
+      document.getElementById('railPrimary').textContent = percent(metrics.primary_source_link_rate);
+      document.getElementById('railFailures').textContent = percent(metrics.source_failure_rate);
+      document.getElementById('railRunState').textContent = pipelineStatus === 'Complete' ? 'Ready for evidence' : 'Review required';
+      document.getElementById('railUpdated').textContent = metrics.latest_successful_run
+        ? 'Updated ' + formatDate(metrics.latest_successful_run, 'time')
+        : 'Waiting for run';
       renderSourceBars('sourceContribution', metrics.source_contribution || {});
     }
 
@@ -2726,6 +2793,11 @@
 
     document.getElementById('briefingLanguage').addEventListener('click', function() {
       state.language = state.language === 'en' ? 'ar' : 'en';
+      document.documentElement.lang = state.language;
+      document.documentElement.dir = state.language === 'ar' ? 'rtl' : 'ltr';
+      document.querySelectorAll('[data-i18n-en]').forEach(function(element) {
+        element.textContent = element.getAttribute(state.language === 'ar' ? 'data-i18n-ar' : 'data-i18n-en');
+      });
       this.textContent = state.language === 'en' ? 'العربية' : 'English';
       this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
       const publicationTitle = document.getElementById('publicationTitle');
