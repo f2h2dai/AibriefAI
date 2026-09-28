@@ -640,7 +640,7 @@
         return;
       }
 
-      document.getElementById('xIntelRail').innerHTML = (state.breakingFailed ? '<p class="warn">X source unavailable; showing only available briefing posts.</p>' : '') + items.map(function(item) {
+      document.getElementById('xIntelRail').innerHTML = (state.breakingFailed ? '<p class="warn">X source unavailable; showing only available briefing posts.</p>' : '') + items.map(function(item, index) {
         const title = item.title || 'Untitled X intel';
         const time = item.source_published_at || item.sourcePublishedAt || item.shown_at || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
@@ -660,12 +660,14 @@
         } catch (_) { /* Relative or unavailable source URLs have no account metadata. */ }
         const account = item.account || item.author || sourceAccount || (accountMatch ? accountMatch[0] : 'X');
         const confidence = 'Relevance ' + Number(item.score || 0);
-        return '<article class="x-record">' +
+        const previewId = 'x-preview-' + index;
+        return '<article class="x-record" tabindex="0" role="group" aria-label="Preview X intelligence: ' + escapeHTML(shortText(title, 80)) + '">' +
           '<span>' + escapeHTML(formatDate(time, 'time')) + '</span>' +
           '<span>' + escapeHTML(account) + '</span>' +
           '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);margin-top:6px;">Related link / رابط ذو صلة</a>' : '') + '</span>' +
           '<span class="score">' + escapeHTML(confidence) + '</span>' +
           '<span class="' + (item.evidence_status === 'unverified' ? 'warn' : 'ok') + '">' + escapeHTML(evidenceLabel) + '</span>' +
+          '<span class="x-preview" id="' + previewId + '" role="tooltip" aria-hidden="true"><strong>' + escapeHTML(title) + '</strong>' + escapeHTML(reason || 'No additional context available.') + '</span>' +
         '</article>';
       }).join('');
     }

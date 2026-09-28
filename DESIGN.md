@@ -325,7 +325,7 @@ On narrow screens, the operations rail becomes a horizontally scrollable navigat
 - source and verification status;
 - evaluation rail backed by operations metrics;
 - Saudi intelligence list;
-- chronological X intelligence lane;
+- chronological X intelligence lane with full-width records and a pointer/focus preview for complete context;
 - research records;
 - pipeline run history and worker state;
 - failed-source diagnostics;
