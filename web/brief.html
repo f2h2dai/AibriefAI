@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AIbrief / إحاطة — Operational Intelligence</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23ffffff' stroke='%23007e8a' stroke-width='4'/%3E%3Cpath d='M18 38c8-19 21-19 29-1-9-5-18-5-29 1z' fill='%23007e8a'/%3E%3Ccircle cx='32' cy='28' r='8' fill='%238ac926'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="assets/command-center.css">
+  <link rel="stylesheet" href="assets/aibrief.css">
 </head>
 <body>
   <div class="page">
@@ -22,8 +21,8 @@
         <a href="#saudi" data-i18n-en="Saudi" data-i18n-ar="السعودية">Saudi</a>
         <a href="#research" data-i18n-en="Research" data-i18n-ar="الأبحاث">Research</a>
         <a href="#breaking">X</a>
-        <a href="#source-system" data-i18n-en="Sources" data-i18n-ar="المصادر">Sources</a>
-        <a href="#operations" data-i18n-en="System" data-i18n-ar="النظام">System</a>
+        <a href="#radarSearch" data-i18n-en="Search" data-i18n-ar="البحث">Search</a>
+        <a href="#system" data-open-system data-i18n-en="System" data-i18n-ar="النظام">System</a>
       </div>
       <div class="nav-actions">
         <button class="button secondary" id="briefingLanguage" type="button" aria-pressed="false" aria-label="Switch briefing language">العربية</button>
@@ -31,49 +30,15 @@
       </div>
     </nav>
 
-    <aside class="ops-rail" aria-label="Intelligence workspace">
-      <a class="rail-link active" href="#home">
-        <span class="rail-icon" aria-hidden="true">⌂</span><span data-i18n-en="Overview" data-i18n-ar="نظرة عامة">Overview</span>
-      </a>
-      <a class="rail-link" href="#signals">
-        <span class="rail-icon" aria-hidden="true">▤</span><span data-i18n-en="Intelligence" data-i18n-ar="الاستخبارات">Intelligence</span>
-      </a>
-      <a class="rail-link" href="#act-now">
-        <span class="rail-icon" aria-hidden="true">◇</span><span data-i18n-en="Validate" data-i18n-ar="التحقق">Validate</span>
-      </a>
-      <a class="rail-link" href="#operations">
-        <span class="rail-icon" aria-hidden="true">◷</span><span data-i18n-en="Activity" data-i18n-ar="النشاط">Activity</span>
-      </a>
-      <a class="rail-link" href="#research">
-        <span class="rail-icon" aria-hidden="true">▱</span><span data-i18n-en="Reports" data-i18n-ar="التقارير">Reports</span>
-      </a>
-      <div class="rail-context">
-        <strong>Saudi Arabia</strong>
-        <span>Global intelligence</span>
-        <small>Evidence before action</small>
-      </div>
-    </aside>
+
 
     <main id="home">
       <section class="shell">
-        <div class="briefing-meta">
-          <span id="briefingDate">Current briefing</span>
-          <span id="briefingUpdated">Last updated --:--</span>
-        </div>
-
-        <div class="hero">
-          <div class="hero-copy">
-            <div class="florida-line">AI / SAUDI ARABIA / TECHNOLOGY / GLOBAL INTELLIGENCE</div>
-            <h1 id="publicationTitle">Know what matters<br>before it becomes noise.</h1>
-            <p data-i18n-en="Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia." data-i18n-ar="استخبارات مستقلة حول الذكاء الاصطناعي والتقنية والتطورات العالمية، مع تركيز خاص على المملكة العربية السعودية.">Independent intelligence on AI, technology and global developments with special focus on Saudi Arabia.</p>
-            <div class="metric-strip">
-              <div class="metric-tile"><strong id="heroActCount">--</strong><span>Require attention</span></div>
-              <div class="metric-tile"><strong id="heroSignalCount">--</strong><span>Unique signals in snapshot</span></div>
-              <div class="metric-tile"><strong id="heroSourceCount">--</strong><span>Key sources</span></div>
-            </div>
-          </div>
-          <p class="hero-quote">“A more informed region builds a stronger tomorrow.”<span lang="ar" dir="rtl">مستقبل أكثر وضوحًا لبناء منطقة أقوى.</span></p>
-        </div>
+        <header class="briefing-header" aria-labelledby="publicationTitle">
+          <p class="briefing-date" id="briefingDate">Current briefing</p>
+          <h1 id="publicationTitle">Morning Intelligence</h1>
+          <p class="briefing-status"><strong id="heroActCount">--</strong> require review <span aria-hidden="true">·</span> <span id="briefingUpdated">Updated --:--</span></p>
+        </header>
 
         <div class="news-grid">
           <section class="intel-section act-now-editorial" id="act-now" aria-labelledby="actNowEditorialTitle">
@@ -81,46 +46,25 @@
             <div class="act-editorial" id="actNowEditorial" aria-live="polite"><span class="stream-empty">Checking the current evidence gate…</span></div>
           </section>
 
-          <section class="radar-card" id="signals" aria-label="Live briefing radar">
-            <div class="radar-side">
-              <p class="card-title">Live briefing radar</p>
-              <div class="radar" aria-hidden="true">
-                <svg class="radar-grid" viewBox="0 0 160 160" focusable="false">
-                  <circle class="radar-rim" cx="80" cy="80" r="76" stroke-dasharray="1 5" />
-                  <circle class="radar-rim" cx="80" cy="80" r="70" />
-                  <circle cx="80" cy="80" r="47" />
-                  <circle cx="80" cy="80" r="24" />
-                  <path class="radar-axis" d="M10 80h140M80 10v140" />
-                  <circle cx="80" cy="80" r="2" class="radar-rim" />
-                </svg>
-                <span class="sweep"></span>
-                <span class="blip high"></span>
-                <span class="blip medium"></span>
-                <span class="blip low"></span>
-              </div>
-              <div class="radar-count">
-                <strong id="radarSourceCount">--</strong>
-                <span>sources in this briefing</span>
-              </div>
-              <p class="radar-note">Briefing overview. Markers are illustrative, not live tracking.</p>
-            </div>
-            <div class="radar-main">
+          <section class="latest-intelligence" id="signals" aria-labelledby="latestIntelligenceTitle">
+
+            <div class="latest-main">
               <div class="intel-head">
-                <h2>Latest Signals</h2>
+                <h2 id="latestIntelligenceTitle">Latest Intelligence</h2>
                 <p>Search current claims and reviewed evidence. Relevance is not verification.</p>
               </div>
-              <div class="radar-tools">
+              <div class="latest-tools">
                 <input class="field" id="radarSearch" type="search" placeholder="Search intelligence" aria-label="Search intelligence signals">
-                <select class="select" id="radarSource" aria-label="Filter radar by source">
+                <select class="select" id="radarSource" aria-label="Filter intelligence by source">
                   <option value="all">All sources</option>
                 </select>
-                <select class="select" id="radarSort" aria-label="Sort radar">
+                <select class="select" id="radarSort" aria-label="Sort intelligence">
                   <option value="latest">Latest first</option>
                   <option value="score">Top score</option>
                   <option value="source">Source</option>
                 </select>
               </div>
-              <table class="radar-table">
+              <table class="latest-table">
                 <thead>
                   <tr>
                     <th>Time</th>
@@ -131,15 +75,10 @@
                   </tr>
                 </thead>
                 <tbody id="radarRows">
-                  <tr><td colspan="5">Loading briefing radar...</td></tr>
+                  <tr><td colspan="5">Loading latest intelligence...</td></tr>
                 </tbody>
               </table>
-              <div class="hero-summary">
-                <div class="summary-item"><strong id="translatedCount">--</strong><span>items translated</span></div>
-                <div class="summary-item"><strong id="groqCount">--</strong><span>Groq routes</span></div>
-                <div class="summary-item"><strong id="fallbackCount">--</strong><span>fallbacks</span></div>
-                <div class="summary-item"><strong id="pipelineErrorCount">--</strong><span>pipeline errors</span></div>
-              </div>
+
             </div>
           </section>
         </div>
@@ -159,9 +98,9 @@
             <div>
               <h2>X Intelligence</h2>
               <p>Chronological public-source signals with evidence context.</p>
+              <span class="visually-hidden">X intel live</span>
             </div>
-            <div class="x-glyph" aria-hidden="true">X</div>
-            <span class="status-pill">X intel live</span>
+
           </div>
           <!-- Legacy source marker for the existing test contract: Ø±ØµØ¯ -->
           <div class="x-columns" aria-hidden="true"><span>Time</span><span>Source / Account</span><span>Signal</span><span>Confidence</span><span>Evidence</span></div>
@@ -180,6 +119,9 @@
           </div>
         </section>
 
+        <details class="system-section" id="system">
+          <summary>System &amp; diagnostics</summary>
+          <div class="system-content">
         <section class="section-grid" id="source-system">
           <div class="intel-head" style="grid-column:1 / -1;"><h2>Source / System Summary</h2><p>Coverage and operational checks from the current briefing.</p></div>
           <p id="sourceCoverage" style="grid-column:1 / -1;margin:0;color:var(--text-secondary);font-size:13px;">Loading source coverage…</p>
@@ -329,6 +271,30 @@
             </section>
 <div id="actNowList" hidden></div>
         </section>
+          <section class="system-evaluation" aria-label="Evaluation status">
+            <div class="system-heading">
+              <h2>Evidence and evaluation</h2>
+              <p>Deterministic review of evidence, source quality, and output contracts.</p>
+            </div>
+            <dl class="verifier-list">
+              <div><dt>Verified signals</dt><dd id="railVerified">--</dd></div>
+              <div><dt>Unsupported claims</dt><dd id="railUnsupported">--</dd></div>
+              <div><dt>Primary-source links</dt><dd id="railPrimary">--</dd></div>
+              <div><dt>Source failure rate</dt><dd id="railFailures">--</dd></div>
+            </dl>
+            <p class="system-run"><span>Current run</span> <strong id="railRunState">Checking evidence</strong> · <span id="railUpdated">Waiting for run</span></p>
+            <div class="system-facts" aria-label="Secondary processing statistics">
+              <span><strong id="heroSignalCount">--</strong> signals</span>
+              <span><strong id="heroSourceCount">--</strong> sources</span>
+              <span class="visually-hidden" id="radarSourceCount">--</span>
+              <span><strong id="translatedCount">--</strong> translated</span>
+              <span><strong id="groqCount">--</strong> routed</span>
+              <span><strong id="fallbackCount">--</strong> fallbacks</span>
+              <span><strong id="pipelineErrorCount">--</strong> errors</span>
+            </div>
+          </section>
+          </div>
+        </details>
       </section>
 
       <!-- Legacy section names retained only for existing source-level tests:
@@ -338,41 +304,7 @@
            Related link / رابط ذو صلة; Single X source / مصدر X واحد. -->
     </main>
 
-    <aside class="eval-rail" aria-label="Evaluation status">
-      <section class="eval-section">
-        <span class="eval-kicker" data-i18n-en="Evaluation lab" data-i18n-ar="مختبر التقييم">Evaluation lab</span>
-        <h2 data-i18n-en="Verifier Status" data-i18n-ar="حالة التحقق">Verifier Status</h2>
-        <p data-i18n-en="Deterministic evaluation of evidence, source quality and output contracts." data-i18n-ar="تقييم حتمي للأدلة وجودة المصادر وضوابط المخرجات.">Deterministic evaluation of evidence, source quality and output contracts.</p>
-      </section>
-      <dl class="verifier-list">
-        <div><dt>Verified signals</dt><dd id="railVerified">--</dd></div>
-        <div><dt>Unsupported claims</dt><dd id="railUnsupported">--</dd></div>
-        <div><dt>Primary-source links</dt><dd id="railPrimary">--</dd></div>
-        <div><dt>Source failure rate</dt><dd id="railFailures">--</dd></div>
-      </dl>
-      <section class="eval-current">
-        <span>Current run</span>
-        <strong id="railRunState">Checking evidence</strong>
-        <p>Evidence before action. Policy remains deterministic and fail-closed.</p>
-      </section>
-      <section class="eval-block">
-        <h3>Evidence</h3>
-        <p>Reviewed sources · Canonical claims · Primary records</p>
-      </section>
-      <section class="eval-block">
-        <h3>Evaluation pipeline</h3>
-        <ol>
-          <li><span>01</span>Collection</li>
-          <li><span>02</span>Evidence</li>
-          <li><span>03</span>Classification</li>
-          <li><span>04</span>Delivery gate</li>
-        </ol>
-      </section>
-      <section class="eval-block">
-        <h3>Environment</h3>
-        <p>AIbrief · Saudi Arabia<br><span id="railUpdated">Waiting for run</span></p>
-      </section>
-    </aside>
+
 
     <footer class="footer">
       <span>© 2026 AIbrief / إحاطة</span>
@@ -664,7 +596,7 @@
         return '<article class="x-record" tabindex="0" role="group" aria-label="Preview X intelligence: ' + escapeHTML(shortText(title, 80)) + '">' +
           '<span>' + escapeHTML(formatDate(time, 'time')) + '</span>' +
           '<span>' + escapeHTML(account) + '</span>' +
-          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);margin-top:6px;">Related link / رابط ذو صلة</a>' : '') + '</span>' +
+          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--critical);margin-top:6px;">Related link / رابط ذو صلة</a>' : '') + '</span>' +
           '<span class="score">' + escapeHTML(confidence) + '</span>' +
           '<span class="' + (item.evidence_status === 'unverified' ? 'warn' : 'ok') + '">' + escapeHTML(evidenceLabel) + '</span>' +
           '<span class="x-preview" id="' + previewId + '" role="tooltip" aria-hidden="true"><strong>' + escapeHTML(title) + '</strong>' + escapeHTML(reason || 'No additional context available.') + '</span>' +
@@ -1061,8 +993,8 @@
       this.setAttribute('aria-pressed', state.language === 'ar' ? 'true' : 'false');
       const publicationTitle = document.getElementById('publicationTitle');
       publicationTitle.innerHTML = state.language === 'ar'
-        ? '<span lang="ar" dir="rtl">اعرف ما يهم قبل أن يتحول إلى ضجيج.</span>'
-        : 'Know what matters before it becomes noise.';
+        ? '<span lang="ar" dir="rtl">الإحاطة الصباحية</span>'
+        : 'Morning Intelligence';
       renderSignalRows();
       renderRadarRows(filteredSignals());
       renderActNowEditorial();
@@ -1073,6 +1005,10 @@
     document.getElementById('actionThreshold').addEventListener('input', function() {
       state.scenarioThreshold = Number(this.value);
       renderThresholdScenario();
+    });
+
+    document.querySelector('[data-open-system]').addEventListener('click', function() {
+      document.getElementById('system').open = true;
     });
 
     function updateNavigation() {

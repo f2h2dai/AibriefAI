@@ -3,42 +3,43 @@ version: "alpha"
 name: "AibriefAI"
 description: "Canonical UI contract for AibriefAI, an evidence-gated public-source intelligence workspace."
 colors:
-  primary: "#072B43"
-  secondary: "#103B57"
+  primary: "#181818"
+  secondary: "#686868"
   tertiary: "#FFFFFF"
-  neutral: "#F4F1E9"
+  neutral: "#FAFAFA"
   surface: "#FFFFFF"
-  surface-subtle: "#ECE8DE"
-  text: "#151719"
-  text-muted: "#62605B"
-  border: "#CBC6BC"
-  accent: "#A83A32"
-  success: "#3F7162"
-  warning: "#9A7026"
-  danger: "#A62F2F"
+  surface-subtle: "#F7F7F7"
+  text: "#181818"
+  text-muted: "#949494"
+  border: "#E7E7E7"
+  border-strong: "#D2D2D2"
+  accent: "#B9342B"
+  success: "#39705C"
+  warning: "#95671F"
+  danger: "#B9342B"
   on-primary: "#FFFFFF"
-  on-tertiary: "#151719"
+  on-tertiary: "#181818"
   on-accent: "#FFFFFF"
   on-success: "#FFFFFF"
   on-warning: "#FFFFFF"
   on-danger: "#FFFFFF"
   light-surface: "#FFFFFF"
-  light-text: "#151719"
+  light-text: "#181818"
 typography:
   display:
-    fontFamily: "Georgia, Times New Roman, serif"
-    fontSize: "2.9375rem"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
+    fontSize: "2.625rem"
     fontWeight: "700"
-    lineHeight: "0.98"
+    lineHeight: "1.08"
     letterSpacing: "-0.03em"
   h1:
-    fontFamily: "Georgia, Times New Roman, serif"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
     fontSize: "2rem"
     fontWeight: "700"
     lineHeight: "1.08"
     letterSpacing: "-0.02em"
   h2:
-    fontFamily: "Georgia, Times New Roman, serif"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
     fontSize: "1.5rem"
     fontWeight: "700"
     lineHeight: "1.15"
@@ -107,23 +108,23 @@ components:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.text}"
     typography: "{typography.body-md}"
-    rounded: "{rounded.sm}"
-    padding: "16px"
+    rounded: "{rounded.none}"
+    padding: "0px"
   surface-subtle:
     backgroundColor: "{colors.surface-subtle}"
     textColor: "{colors.text}"
     typography: "{typography.body-md}"
-    rounded: "{rounded.sm}"
-    padding: "16px"
+    rounded: "{rounded.none}"
+    padding: "0px"
   evidence-surface:
     backgroundColor: "{colors.light-surface}"
     textColor: "{colors.light-text}"
     typography: "{typography.body-md}"
-    rounded: "{rounded.md}"
-    padding: "16px"
+    rounded: "{rounded.none}"
+    padding: "0px"
   navigation:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.on-primary}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text}"
     typography: "{typography.label}"
     rounded: "{rounded.none}"
     padding: "12px"
@@ -131,21 +132,21 @@ components:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
     typography: "{typography.label}"
-    rounded: "{rounded.sm}"
+    rounded: "{rounded.xs}"
     padding: "12px"
     height: "40px"
   button-primary-hover:
     backgroundColor: "{colors.accent}"
     textColor: "{colors.on-accent}"
     typography: "{typography.label}"
-    rounded: "{rounded.sm}"
+    rounded: "{rounded.xs}"
     padding: "12px"
     height: "40px"
   button-accent:
     backgroundColor: "{colors.accent}"
     textColor: "{colors.on-accent}"
     typography: "{typography.label}"
-    rounded: "{rounded.sm}"
+    rounded: "{rounded.xs}"
     padding: "12px"
     height: "40px"
   alert-critical:
@@ -164,7 +165,7 @@ components:
     backgroundColor: "{colors.success}"
     textColor: "{colors.on-success}"
     typography: "{typography.label}"
-    rounded: "{rounded.pill}"
+    rounded: "{rounded.xs}"
     padding: "8px"
   editorial-accent:
     backgroundColor: "{colors.tertiary}"
@@ -198,7 +199,7 @@ x-project:
   density: "medium"
   tone: "editorial, operational, evidence-first, restrained"
   aiTemplatePolicy: "reject-unjustified-generic-patterns"
-  brandAccentPolicy: "#072B43 is reserved for identity and navigation; editorial red and muted status colors communicate meaning"
+  brandAccentPolicy: "The application shell is neutral and nearly monochrome; color communicates state only"
   rtlSupport: true
   accessibilityTarget: "WCAG 2.2 AA where applicable"
   implementationPolicy: "DESIGN.md-is-canonical"
@@ -305,17 +306,13 @@ Every major screen should help the user move through one or more parts of that s
 
 ### Current workspace composition
 
-The production shell uses three coordinated regions on wide screens:
+The production shell is a single content column with a white navigation bar and a maximum content width of 1180px. Its reading sequence is fixed: compact Morning Intelligence header, Act Now, Latest Intelligence, Saudi Intelligence, X Intelligence, Research, then a collapsed System and diagnostics disclosure.
 
-1. A restrained brand navigation rail for Overview, Intelligence, Validate, Activity, and Reports.
-2. A paper-led editorial workspace for the briefing masthead, Act Now state, live signal table, regional intelligence, research, and operations detail.
-3. A secondary evaluation rail for evidence metrics, verifier state, pipeline stages, and environment context.
+The logo, signal table, and full-width X records are identity and workflow anchors. Preserve their semantics and data wiring during incremental work.
 
-This is a product-specific composition. Do not copy it to another project without the same operational need.
+Operations, evaluation, pipeline state, and source diagnostics remain available under the System disclosure. They must not frame the primary intelligence reading workflow.
 
-The existing logo and live signal table are identity and workflow anchors. Preserve their role, semantics, and data wiring during incremental work.
-
-On narrow screens, the operations rail becomes a horizontally scrollable navigation row, the evaluation rail moves below the main workflow, and the signal table prioritizes time, source, and signal content. Touch targets must remain at least 44px where practical.
+On narrow screens, navigation may scroll horizontally, tables scroll inside their own section, and records become stacked reading rows. Touch targets must remain at least 44px where practical.
 
 ### Domain components
 
@@ -323,7 +320,7 @@ On narrow screens, the operations rail becomes a horizontally scrollable navigat
 - Act Now evidence gate;
 - live signal search, source filter, sort control, and comparison table;
 - source and verification status;
-- evaluation rail backed by operations metrics;
+- expandable system diagnostics backed by operations metrics;
 - Saudi intelligence list;
 - chronological X intelligence lane with full-width records and a pointer/focus preview for complete context;
 - research records;
@@ -343,14 +340,12 @@ On narrow screens, the operations rail becomes a horizontally scrollable navigat
 ### Explicitly enabled visual patterns
 
 - Large skyline imagery is excluded from the operational interface so the intelligence workflow remains above the fold.
-- `#072B43` is restricted to the brand and navigation shell. It must not turn the content workspace into a command center.
-- Paper and white surfaces carry intelligence content. Editorial red marks important intelligence; muted green, ochre, and dark red are semantic status colors only.
-- Purple, neon blue, cyan, lime, glow, and decorative AI colors are prohibited.
-- The masthead topic line uses editorial red on paper.
-- The circular logo mark is an established brand exception to the otherwise compact radius system.
-- The circular logo mark preserves the established identity without defining the global interface palette.
-- The masthead may use editorial display type, but its desktop height must remain bounded and it must not displace the live signal workflow on narrow screens.
-- Tables, rows, separators, and operational structures remain square or compact. Typography and rules establish hierarchy before containers.
+- The canvas is `#FAFAFA`; navigation and bounded evidence previews are white.
+- The shell uses black and neutral gray. Red, green, and ochre communicate critical, verified, and warning states only.
+- Purple, neon blue, cyan, lime, glow, beige paper, navy shells, and decorative AI colors are prohibited.
+- The circular logo mark is an established identity exception and does not define the interface palette.
+- The compact masthead uses interface sans-serif typography and must not displace the live signal workflow on narrow screens.
+- Tables, rows, separators, and operational structures remain square or use a 2px radius. Typography and rules establish hierarchy before containers.
 
 ### Information hierarchy
 
@@ -454,13 +449,13 @@ Do not invent one-off hex values in components. Add a token here if a new semant
 
 ### Editorial evidence theme
 
-AibriefAI uses a paper-led semantic palette. The interface should read as an intelligence publication and evidence workspace.
+AibriefAI uses a neutral, high-contrast semantic palette. The interface should read as a clear intelligence publication and evidence workspace.
 
-- `neutral` is the warm paper canvas.
-- `surface` and `surface-subtle` separate reading and evaluation regions.
-- `text` and `text-muted` preserve a high-contrast reading hierarchy.
-- `primary` and `secondary` are reserved for brand identity and navigation.
-- `accent` is editorial red for important intelligence, never general decoration.
+- `neutral` is the near-white application canvas.
+- `surface` is white and `surface-subtle` is the quiet hover treatment.
+- `text` and neutral text tokens preserve the reading hierarchy.
+- `primary` is ink; `secondary` is supporting text.
+- `accent` is critical red and must not become a general brand treatment.
 - `success`, `warning`, and `danger` communicate verified, caution, and critical states only.
 
 Do not introduce a second visual palette inside a component. Color communicates meaning, not technology.
@@ -469,13 +464,12 @@ Do not introduce a second visual palette inside a component. Color communicates 
 
 ### Type system
 
-AibriefAI uses three locally available roles so the public briefing does not depend on network font loading:
+AibriefAI uses two locally available roles so the public briefing does not depend on network font loading:
 
-- **Editorial display:** `Georgia` with `Times New Roman` fallback for the logo wordmark, briefing masthead, and selected high-level narrative moments.
-- **Interface:** `Inter` when available, with `Segoe UI` and `Arial` fallbacks, for body text, navigation, controls, and operational labels.
-- **Data:** `Consolas` with `Cascadia Mono` fallback for timestamps, identifiers, confidence values, source labels, hashes, technical metadata, and compact data rows.
+- **Interface and display:** `Inter` when available, with `Segoe UI` and `Arial` fallbacks, for the shell, wordmark, masthead, body text, controls, and operational labels.
+- **Data:** `Consolas` with `Cascadia Mono` fallback for identifiers, hashes, and technical metadata when monospace materially improves comparison.
 
-This separation helps distinguish narrative, interface, and evidence.
+The visible application shell is sans-serif throughout.
 
 ### Typography rules
 
@@ -511,19 +505,19 @@ Use the page structure that best fits the task:
 - map for geography;
 - graph for relationships;
 - feed for incoming signals;
-- detail rail for metadata;
+- inline disclosure for secondary metadata;
 - workspace for investigation;
 - card only when information forms a bounded unit.
 
 ### Grid
 
-Use a 12-column page grid for wide screens when a grid is useful. Do not force all pages into equal columns.
+The primary application uses one full-width content column inside `min(1180px, calc(100% - 48px))`. Nested grids may align fields within a record, but they must not recreate side rails or a dashboard shell.
 
 Preferred content behavior:
 
-- primary work area: 7–9 columns;
-- supporting rail: 3–5 columns;
-- full-width evidence or timeline: 12 columns;
+- primary work area: full content width;
+- evidence tables and chronological records: full content width;
+- secondary operational information: collapsed under System and diagnostics;
 - reading width for prose: approximately 60–75 characters per line.
 
 ### Density
@@ -566,7 +560,7 @@ When reducing width:
 
 1. Keep primary information visible.
 2. Move secondary metadata into a disclosure or lower section.
-3. Convert side rails into drawers or inline detail sections.
+3. Keep secondary diagnostics inside the System disclosure and keep tables internally scrollable.
 4. Preserve action access.
 5. Preserve evidence/source context.
 6. Avoid horizontal scrolling except for content that inherently requires it, such as wide data tables.
