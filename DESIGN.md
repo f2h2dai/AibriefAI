@@ -5,25 +5,25 @@ description: "Canonical UI contract for AibriefAI, an evidence-gated public-sour
 colors:
   primary: "#072B43"
   secondary: "#103B57"
-  tertiary: "#122238"
-  neutral: "#07111F"
-  surface: "#0C1B2E"
-  surface-subtle: "#101F33"
-  text: "#F4F7FB"
-  text-muted: "#9EABC0"
-  border: "#22354F"
-  accent: "#D9E0E5"
-  success: "#4B9B86"
-  warning: "#E6C35C"
-  danger: "#FF727D"
+  tertiary: "#FFFFFF"
+  neutral: "#F4F1E9"
+  surface: "#FFFFFF"
+  surface-subtle: "#ECE8DE"
+  text: "#151719"
+  text-muted: "#62605B"
+  border: "#CBC6BC"
+  accent: "#A83A32"
+  success: "#3F7162"
+  warning: "#9A7026"
+  danger: "#A62F2F"
   on-primary: "#FFFFFF"
-  on-tertiary: "#FFFFFF"
-  on-accent: "#072B43"
-  on-success: "#061522"
-  on-warning: "#142033"
-  on-danger: "#142033"
-  light-surface: "#F4F7FB"
-  light-text: "#142033"
+  on-tertiary: "#151719"
+  on-accent: "#FFFFFF"
+  on-success: "#FFFFFF"
+  on-warning: "#FFFFFF"
+  on-danger: "#FFFFFF"
+  light-surface: "#FFFFFF"
+  light-text: "#151719"
 typography:
   display:
     fontFamily: "Georgia, Times New Roman, serif"
@@ -55,23 +55,23 @@ typography:
     lineHeight: "1.55"
   body-md:
     fontFamily: "Inter, Segoe UI, Arial, sans-serif"
-    fontSize: "0.875rem"
+    fontSize: "1rem"
     fontWeight: "400"
     lineHeight: "1.5"
   body-sm:
     fontFamily: "Inter, Segoe UI, Arial, sans-serif"
-    fontSize: "0.75rem"
+    fontSize: "0.875rem"
     fontWeight: "400"
     lineHeight: "1.45"
   label:
     fontFamily: "Inter, Segoe UI, Arial, sans-serif"
-    fontSize: "0.6875rem"
+    fontSize: "0.75rem"
     fontWeight: "700"
     lineHeight: "1.2"
     letterSpacing: "0.045em"
   data:
     fontFamily: "Consolas, Cascadia Mono, monospace"
-    fontSize: "0.6875rem"
+    fontSize: "0.8125rem"
     fontWeight: "500"
     lineHeight: "1.35"
     letterSpacing: "0em"
@@ -190,15 +190,15 @@ x-project:
   productName: "AibriefAI"
   productType: "intelligence-platform"
   deploymentContext: "public web"
-  operatingMode: "evolve"
+  operatingMode: "redesign"
   baseline: "existing-repository"
   primaryUser: "analyst or decision-maker reviewing public-source intelligence"
   primaryTask: "detect, understand, verify, connect, and act on signals"
-  visualWorld: "navy systems-expert workspace + intelligence operations desk + restrained Riyadh context"
-  density: "medium-high"
+  visualWorld: "independent intelligence publication + evidence workspace"
+  density: "medium"
   tone: "editorial, operational, evidence-first, restrained"
   aiTemplatePolicy: "reject-unjustified-generic-patterns"
-  brandAccentPolicy: "#072B43 anchors the shell; white and neutral gray mark selection and focus; teal is limited to the established logo and verified state"
+  brandAccentPolicy: "#072B43 is reserved for identity and navigation; editorial red and muted status colors communicate meaning"
   rtlSupport: true
   accessibilityTarget: "WCAG 2.2 AA where applicable"
   implementationPolicy: "DESIGN.md-is-canonical"
@@ -279,11 +279,21 @@ The interface should feel like a working environment for signals, events, entiti
 
 The visual reference is:
 
-**navy systems-expert workspace + intelligence operations desk + restrained Riyadh context**
+**independent intelligence publication + evidence workspace**
 
-Riyadh is environmental context, not a decorative theme. Use it through geography, source imagery, regional context, and the restrained skyline masthead. Do not turn the interface into a tourism motif.
+Riyadh is product context, not a decorative theme. Express it through geography, source metadata, entities, and reporting context rather than a large skyline image.
 
 AI operates behind the product. AI is not the visual theme.
+
+Permanent product principles:
+
+- editorial before technological;
+- information before decoration;
+- typography before containers;
+- evidence before AI;
+- color communicates meaning, not technology;
+- hierarchy before effects;
+- real data before dashboard decoration.
 
 ### Primary user sequence
 
@@ -297,9 +307,9 @@ Every major screen should help the user move through one or more parts of that s
 
 The production shell uses three coordinated regions on wide screens:
 
-1. A dark navy operations rail for Overview, Intelligence, Validate, Activity, and Reports.
-2. A central editorial workspace for the briefing masthead, Act Now state, live signal table, regional intelligence, research, and operations detail.
-3. A light evaluation rail for evidence metrics, verifier state, pipeline stages, and environment context.
+1. A restrained brand navigation rail for Overview, Intelligence, Validate, Activity, and Reports.
+2. A paper-led editorial workspace for the briefing masthead, Act Now state, live signal table, regional intelligence, research, and operations detail.
+3. A secondary evaluation rail for evidence metrics, verifier state, pipeline stages, and environment context.
 
 This is a product-specific composition. Do not copy it to another project without the same operational need.
 
@@ -309,7 +319,7 @@ On narrow screens, the operations rail becomes a horizontally scrollable navigat
 
 ### Domain components
 
-- briefing masthead with restrained Riyadh context;
+- compact publication masthead with restrained Riyadh context;
 - Act Now evidence gate;
 - live signal search, source filter, sort control, and comparison table;
 - source and verification status;
@@ -332,15 +342,15 @@ On narrow screens, the operations rail becomes a horizontally scrollable navigat
 
 ### Explicitly enabled visual patterns
 
-- The Riyadh skyline is allowed only as contextual masthead imagery.
-- A restrained image-to-surface fade is allowed in that masthead to preserve text legibility; it is not a reusable decorative gradient.
-- The operational shell uses the explicit dark token set in this file. Off-white surfaces are reserved for evidence gates and bounded reading tasks that require contrast from monitoring regions.
-- `#072B43` anchors the shell. White and neutral gray mark selected navigation, focus, and mode labels. Purple, neon blue, and decorative AI colors are prohibited. Teal remains limited to the established logo and verified or healthy states.
-- The masthead topic line uses muted light ink against the dark shell.
+- Large skyline imagery is excluded from the operational interface so the intelligence workflow remains above the fold.
+- `#072B43` is restricted to the brand and navigation shell. It must not turn the content workspace into a command center.
+- Paper and white surfaces carry intelligence content. Editorial red marks important intelligence; muted green, ochre, and dark red are semantic status colors only.
+- Purple, neon blue, cyan, lime, glow, and decorative AI colors are prohibited.
+- The masthead topic line uses editorial red on paper.
 - The circular logo mark is an established brand exception to the otherwise compact radius system.
-- Dark lettering inside the circular teal logo mark preserves contrast. Small interface text on teal uses `on-success` dark ink.
+- The circular logo mark preserves the established identity without defining the global interface palette.
 - The masthead may use editorial display type, but its desktop height must remain bounded and it must not displace the live signal workflow on narrow screens.
-- Medium radii are explicitly enabled for top-level systems-expert panels. Tables, rows, separators, and nested operational structures remain square or compact.
+- Tables, rows, separators, and operational structures remain square or compact. Typography and rules establish hierarchy before containers.
 
 ### Information hierarchy
 
@@ -442,18 +452,18 @@ Do not color-code information unless the meaning remains understandable without 
 
 Do not invent one-off hex values in components. Add a token here if a new semantic color is required.
 
-### Dark operational theme
+### Editorial evidence theme
 
-AibriefAI uses the complete dark semantic palette defined in the front matter. It is a deliberate systems-expert workspace, not an automatic inversion.
+AibriefAI uses a paper-led semantic palette. The interface should read as an intelligence publication and evidence workspace.
 
-- `neutral` is the midnight workspace canvas.
-- `surface` and `surface-subtle` separate operational regions.
-- `text` and `text-muted` preserve reading hierarchy.
-- `accent` is neutral gray for selection, focus, and mode against the navy shell.
-- `success` is teal for verified and healthy state.
-- `light-surface` and `light-text` create bounded evidence-reading surfaces.
+- `neutral` is the warm paper canvas.
+- `surface` and `surface-subtle` separate reading and evaluation regions.
+- `text` and `text-muted` preserve a high-contrast reading hierarchy.
+- `primary` and `secondary` are reserved for brand identity and navigation.
+- `accent` is editorial red for important intelligence, never general decoration.
+- `success`, `warning`, and `danger` communicate verified, caution, and critical states only.
 
-Do not derive new dark values by inversion or introduce a second dark palette inside a component.
+Do not introduce a second visual palette inside a component. Color communicates meaning, not technology.
 
 ## Typography
 
