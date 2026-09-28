@@ -1,73 +1,74 @@
 ---
 version: "alpha"
 name: "AibriefAI"
-description: "Canonical design contract for an intelligence product. Copy this file to any AI-generated project and replace the project profile, tokens, and component rules before redesign work."
+description: "Canonical UI contract for AibriefAI, an evidence-gated public-source intelligence workspace."
 colors:
-  primary: "#0B1520"
-  secondary: "#44515C"
-  tertiary: "#C94B3C"
-  neutral: "#F3F0E8"
+  primary: "#072B43"
+  secondary: "#5D6975"
+  tertiary: "#103B57"
+  neutral: "#FFFFFF"
   surface: "#FFFFFF"
-  surface-subtle: "#E9E6DE"
-  text: "#0B1520"
-  text-muted: "#5D6872"
-  border: "#C9C4BA"
-  accent: "#007C83"
-  success: "#1E6B50"
-  warning: "#8A5300"
-  danger: "#B42318"
+  surface-subtle: "#F4F7F8"
+  text: "#111820"
+  text-muted: "#5D6975"
+  border: "#D9E0E5"
+  accent: "#008B7C"
+  success: "#008B7C"
+  warning: "#9A6A00"
+  danger: "#E3262E"
   on-primary: "#FFFFFF"
   on-tertiary: "#FFFFFF"
-  on-accent: "#FFFFFF"
+  on-accent: "#000000"
+  on-success: "#000000"
   on-status: "#FFFFFF"
 typography:
   display:
-    fontFamily: "Source Serif 4, Georgia, serif"
-    fontSize: "3.75rem"
-    fontWeight: "600"
-    lineHeight: "1.02"
+    fontFamily: "Georgia, Times New Roman, serif"
+    fontSize: "2.9375rem"
+    fontWeight: "700"
+    lineHeight: "0.98"
     letterSpacing: "-0.03em"
   h1:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
-    fontSize: "2.5rem"
-    fontWeight: "650"
+    fontFamily: "Georgia, Times New Roman, serif"
+    fontSize: "2rem"
+    fontWeight: "700"
     lineHeight: "1.08"
     letterSpacing: "-0.02em"
   h2:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
-    fontSize: "1.75rem"
-    fontWeight: "650"
+    fontFamily: "Georgia, Times New Roman, serif"
+    fontSize: "1.5rem"
+    fontWeight: "700"
     lineHeight: "1.15"
     letterSpacing: "-0.015em"
   h3:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
     fontSize: "1.25rem"
     fontWeight: "650"
     lineHeight: "1.2"
   body-lg:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
     fontSize: "1.125rem"
     fontWeight: "400"
     lineHeight: "1.55"
   body-md:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
-    fontSize: "1rem"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
+    fontSize: "0.875rem"
     fontWeight: "400"
     lineHeight: "1.5"
   body-sm:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
-    fontSize: "0.875rem"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
+    fontSize: "0.75rem"
     fontWeight: "400"
     lineHeight: "1.45"
   label:
-    fontFamily: "Source Sans 3, Segoe UI, sans-serif"
-    fontSize: "0.75rem"
-    fontWeight: "650"
+    fontFamily: "Inter, Segoe UI, Arial, sans-serif"
+    fontSize: "0.6875rem"
+    fontWeight: "700"
     lineHeight: "1.2"
     letterSpacing: "0.045em"
   data:
-    fontFamily: "IBM Plex Mono, Consolas, monospace"
-    fontSize: "0.8125rem"
+    fontFamily: "Consolas, Cascadia Mono, monospace"
+    fontSize: "0.6875rem"
     fontWeight: "500"
     lineHeight: "1.35"
     letterSpacing: "0em"
@@ -152,7 +153,7 @@ components:
     padding: "8px"
   status-success:
     backgroundColor: "{colors.success}"
-    textColor: "{colors.on-status}"
+    textColor: "{colors.on-success}"
     typography: "{typography.label}"
     rounded: "{rounded.pill}"
     padding: "8px"
@@ -170,19 +171,27 @@ components:
     padding: "4px"
   divider:
     backgroundColor: "{colors.border}"
-    textColor: "{colors.secondary}"
+    textColor: "{colors.text}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.none}"
     height: "1px"
     padding: "0px"
 x-project:
   id: "aibriefai"
+  productName: "AibriefAI"
   productType: "intelligence-platform"
-  operatingMode: "redesign"
-  baseline: "existing-production-ui"
-  visualWorld: "intelligence operations desk + investigative newsroom + restrained Miami context"
-  primaryUserTask: "detect, understand, verify, connect, and act on signals"
-  aiTemplatePolicy: "reject-generic-ai-patterns"
+  deploymentContext: "public web"
+  operatingMode: "evolve"
+  baseline: "existing-repository"
+  primaryUser: "analyst or decision-maker reviewing public-source intelligence"
+  primaryTask: "detect, understand, verify, connect, and act on signals"
+  visualWorld: "intelligence operations desk + investigative newsroom + restrained Riyadh context"
+  density: "medium-high"
+  tone: "editorial, operational, evidence-first, restrained"
+  aiTemplatePolicy: "reject-unjustified-generic-patterns"
+  brandAccentPolicy: "teal marks selection, verification, focus, and the established logo; it is not decoration"
+  rtlSupport: true
+  accessibilityTarget: "WCAG 2.2 AA where applicable"
   implementationPolicy: "DESIGN.md-is-canonical"
 x-governance:
   authority: "DESIGN.md controls visible design decisions unless an explicit product requirement overrides it."
@@ -261,9 +270,9 @@ The interface should feel like a working environment for signals, events, entiti
 
 The visual reference is:
 
-**intelligence operations desk + investigative newsroom + restrained Miami context**
+**intelligence operations desk + investigative newsroom + restrained Riyadh context**
 
-Miami is environmental context, not a decorative theme. Use it through light, climate, map/geographic references, imagery, or selected accent behavior when relevant. Do not turn the interface into a tourism motif.
+Riyadh is environmental context, not a decorative theme. Use it through geography, source imagery, regional context, and the restrained skyline masthead. Do not turn the interface into a tourism motif.
 
 AI operates behind the product. AI is not the visual theme.
 
@@ -271,9 +280,54 @@ AI operates behind the product. AI is not the visual theme.
 
 Design around this sequence:
 
-**Signal → Context → Evidence → Relationship → Confidence → Action**
+**Signal → Context → Evidence → Decision → Action**
 
 Every major screen should help the user move through one or more parts of that sequence.
+
+### Current workspace composition
+
+The production shell uses three coordinated regions on wide screens:
+
+1. A dark navy operations rail for Overview, Intelligence, Validate, Activity, and Reports.
+2. A central editorial workspace for the briefing masthead, Act Now state, live signal table, regional intelligence, research, and operations detail.
+3. A light evaluation rail for evidence metrics, verifier state, pipeline stages, and environment context.
+
+This is a product-specific composition. Do not copy it to another project without the same operational need.
+
+The existing logo and live signal table are identity and workflow anchors. Preserve their role, semantics, and data wiring during incremental work.
+
+On narrow screens, the operations rail becomes a horizontally scrollable navigation row, the evaluation rail moves below the main workflow, and the signal table prioritizes time, source, and signal content. Touch targets must remain at least 44px where practical.
+
+### Domain components
+
+- briefing masthead with restrained Riyadh context;
+- Act Now evidence gate;
+- live signal search, source filter, sort control, and comparison table;
+- source and verification status;
+- evaluation rail backed by operations metrics;
+- Saudi intelligence list;
+- chronological X intelligence lane;
+- research records;
+- pipeline run history and worker state;
+- failed-source diagnostics;
+- threshold scenario control that never writes production state.
+
+### Project-specific prohibitions
+
+- Do not replace the signal table with a decorative card feed.
+- Do not display evaluation values that are not derived from current operations artifacts.
+- Do not style unverified claims as confirmed evidence.
+- Do not hide failed sources or partial pipeline state to make the interface appear healthy.
+- Do not remove the Arabic language control or reduce RTL support.
+- Do not change the established logo without an explicit brand task.
+
+### Explicitly enabled visual patterns
+
+- The Riyadh skyline is allowed only as contextual masthead imagery.
+- A restrained image-to-surface fade is allowed in that masthead to preserve text legibility; it is not a reusable decorative gradient.
+- The circular logo mark is an established brand exception to the otherwise compact radius system.
+- White lettering inside the circular logo mark is a brand mark, not interface text. Small interface text on teal uses `on-accent` or `on-success` dark ink to meet contrast requirements.
+- The masthead may use editorial display type, but its desktop height must remain bounded and it must not displace the live signal workflow on narrow screens.
 
 ### Information hierarchy
 
@@ -385,11 +439,11 @@ If dark mode becomes a requirement, define a complete semantic dark palette and 
 
 ### Type system
 
-AibriefAI uses three roles:
+AibriefAI uses three locally available roles so the public briefing does not depend on network font loading:
 
-- **Editorial display:** `Source Serif 4` for selected high-level narrative moments, not routine controls.
-- **Interface:** `Source Sans 3` for headings, body text, navigation, and actions.
-- **Data:** `IBM Plex Mono` for timestamps, identifiers, confidence values, source labels, hashes, technical metadata, and compact data rows.
+- **Editorial display:** `Georgia` with `Times New Roman` fallback for the logo wordmark, briefing masthead, and selected high-level narrative moments.
+- **Interface:** `Inter` when available, with `Segoe UI` and `Arial` fallbacks, for body text, navigation, controls, and operational labels.
+- **Data:** `Consolas` with `Cascadia Mono` fallback for timestamps, identifiers, confidence values, source labels, hashes, technical metadata, and compact data rows.
 
 This separation helps distinguish narrative, interface, and evidence.
 
@@ -781,7 +835,7 @@ Avoid sparkles, magic-wand icons, brains, robots, neural nodes, or stars as gene
 
 Imagery must belong to the product world.
 
-For AibriefAI, acceptable uses include geography, source imagery, event imagery, evidence, location context, and selected Miami environmental references.
+For AibriefAI, acceptable uses include geography, source imagery, event imagery, evidence, location context, and selected Riyadh environmental references.
 
 Avoid generic stock images of servers, humanoid robots, glowing brains, matrix code, or abstract digital waves unless the content itself concerns them.
 
@@ -930,6 +984,21 @@ For a newly generated project:
 6. Review whether it resembles a generic AI/SaaS template.
 7. If it does, correct `DESIGN.md` before generating the rest of the product.
 8. Expand the system only after the representative screen passes review.
+
+### Required review gates
+
+Before completing a frontend change, record the checks actually executed:
+
+- **Product fit:** the screen prioritizes the current task, exposes important system state, and makes the next action understandable.
+- **Template drift:** no generic AI/SaaS pattern, foreign palette, decorative gradient, or unsupported card treatment was introduced.
+- **System consistency:** tokens and shared patterns are reused; justified permanent values are added to this contract.
+- **Data integrity:** operational metrics and states come from application data; derived values remain distinguishable from source evidence.
+- **Interaction:** keyboard, pointer, touch, focus, and asynchronous behavior work for the changed controls.
+- **Responsive behavior:** the primary workflow remains usable at desktop and narrow widths, with deliberate navigation and table behavior.
+- **Localization:** English text can expand; Arabic uses document-level RTL where enabled; URLs, timestamps, code, and Latin identifiers remain readable.
+- **Accessibility:** semantic structure, accessible names, visible focus, contrast, status announcements, and error meaning are adequate for the changed surface.
+
+Never report a gate as passed unless it was exercised. State any unexecuted check or known limitation in the final report.
 
 ### Validation
 
