@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T20:56:46Z",
+  "generated_at": "2026-09-28T18:50:46Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -7,19 +7,19 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.4,
-  "primary_source_link_rate": 0.8333,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-27T20:56:46Z",
+  "latest_successful_run": "2026-09-28T18:50:46Z",
   "highest_ranked_signal": {
-    "id": "twitter-029",
-    "title": "@MizarVision: Israel unveils EROS NOVA — a new generation of 25 cm-class satellite intelligence Israel’s ImageSat International has unveiled EROS NOVA, it",
-    "action_score": 76.25,
-    "url": "https://x.com/MizarVision/status/2103878441028218938"
+    "id": "github-010",
+    "title": "lalith2k5/ai-opportunity-platform",
+    "action_score": 77.75,
+    "url": "https://github.com/lalith2k5/ai-opportunity-platform"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 5,
-    "google-news": 2
+    "github": 6,
+    "google-news": 1,
+    "twitter": 5
   },
   "failed_sources": [
     {
@@ -28,10 +28,10 @@
     },
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7628, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7353, Req"
     }
   ],
-  "runtime_seconds": 65.786,
+  "runtime_seconds": 72.95,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-27T20:56:46Z",
+    "planned_at": "2026-09-28T18:50:46Z",
     "production_threshold": 70.0
   }
 }
