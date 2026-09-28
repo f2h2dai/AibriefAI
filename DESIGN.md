@@ -4,23 +4,26 @@ name: "AibriefAI"
 description: "Canonical UI contract for AibriefAI, an evidence-gated public-source intelligence workspace."
 colors:
   primary: "#072B43"
-  secondary: "#5D6975"
-  tertiary: "#103B57"
-  neutral: "#FFFFFF"
-  surface: "#FFFFFF"
-  surface-subtle: "#F4F7F8"
-  text: "#111820"
-  text-muted: "#5D6975"
-  border: "#D9E0E5"
-  accent: "#008B7C"
-  success: "#008B7C"
-  warning: "#9A6A00"
-  danger: "#E3262E"
+  secondary: "#103B57"
+  tertiary: "#122238"
+  neutral: "#07111F"
+  surface: "#0C1B2E"
+  surface-subtle: "#101F33"
+  text: "#F4F7FB"
+  text-muted: "#9EABC0"
+  border: "#22354F"
+  accent: "#D9E0E5"
+  success: "#4B9B86"
+  warning: "#E6C35C"
+  danger: "#FF727D"
   on-primary: "#FFFFFF"
   on-tertiary: "#FFFFFF"
-  on-accent: "#000000"
-  on-success: "#000000"
-  on-status: "#FFFFFF"
+  on-accent: "#072B43"
+  on-success: "#061522"
+  on-warning: "#142033"
+  on-danger: "#142033"
+  light-surface: "#F4F7FB"
+  light-text: "#142033"
 typography:
   display:
     fontFamily: "Georgia, Times New Roman, serif"
@@ -74,10 +77,10 @@ typography:
     letterSpacing: "0em"
 rounded:
   none: "0px"
-  xs: "2px"
-  sm: "4px"
-  md: "8px"
-  lg: "12px"
+  xs: "4px"
+  sm: "8px"
+  md: "12px"
+  lg: "14px"
   pill: "999px"
 spacing:
   0: "0px"
@@ -112,6 +115,12 @@ components:
     typography: "{typography.body-md}"
     rounded: "{rounded.sm}"
     padding: "16px"
+  evidence-surface:
+    backgroundColor: "{colors.light-surface}"
+    textColor: "{colors.light-text}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "16px"
   navigation:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
@@ -141,13 +150,13 @@ components:
     height: "40px"
   alert-critical:
     backgroundColor: "{colors.danger}"
-    textColor: "{colors.on-status}"
+    textColor: "{colors.on-danger}"
     typography: "{typography.label}"
     rounded: "{rounded.xs}"
     padding: "8px"
   alert-warning:
     backgroundColor: "{colors.warning}"
-    textColor: "{colors.on-status}"
+    textColor: "{colors.on-warning}"
     typography: "{typography.label}"
     rounded: "{rounded.xs}"
     padding: "8px"
@@ -185,11 +194,11 @@ x-project:
   baseline: "existing-repository"
   primaryUser: "analyst or decision-maker reviewing public-source intelligence"
   primaryTask: "detect, understand, verify, connect, and act on signals"
-  visualWorld: "intelligence operations desk + investigative newsroom + restrained Riyadh context"
+  visualWorld: "navy systems-expert workspace + intelligence operations desk + restrained Riyadh context"
   density: "medium-high"
   tone: "editorial, operational, evidence-first, restrained"
   aiTemplatePolicy: "reject-unjustified-generic-patterns"
-  brandAccentPolicy: "teal marks selection, verification, focus, and the established logo; it is not decoration"
+  brandAccentPolicy: "#072B43 anchors the shell; white and neutral gray mark selection and focus; teal is limited to the established logo and verified state"
   rtlSupport: true
   accessibilityTarget: "WCAG 2.2 AA where applicable"
   implementationPolicy: "DESIGN.md-is-canonical"
@@ -270,7 +279,7 @@ The interface should feel like a working environment for signals, events, entiti
 
 The visual reference is:
 
-**intelligence operations desk + investigative newsroom + restrained Riyadh context**
+**navy systems-expert workspace + intelligence operations desk + restrained Riyadh context**
 
 Riyadh is environmental context, not a decorative theme. Use it through geography, source imagery, regional context, and the restrained skyline masthead. Do not turn the interface into a tourism motif.
 
@@ -325,9 +334,13 @@ On narrow screens, the operations rail becomes a horizontally scrollable navigat
 
 - The Riyadh skyline is allowed only as contextual masthead imagery.
 - A restrained image-to-surface fade is allowed in that masthead to preserve text legibility; it is not a reusable decorative gradient.
+- The operational shell uses the explicit dark token set in this file. Off-white surfaces are reserved for evidence gates and bounded reading tasks that require contrast from monitoring regions.
+- `#072B43` anchors the shell. White and neutral gray mark selected navigation, focus, and mode labels. Purple, neon blue, and decorative AI colors are prohibited. Teal remains limited to the established logo and verified or healthy states.
+- The masthead topic line uses muted light ink against the dark shell.
 - The circular logo mark is an established brand exception to the otherwise compact radius system.
-- White lettering inside the circular logo mark is a brand mark, not interface text. Small interface text on teal uses `on-accent` or `on-success` dark ink to meet contrast requirements.
+- Dark lettering inside the circular teal logo mark preserves contrast. Small interface text on teal uses `on-success` dark ink.
 - The masthead may use editorial display type, but its desktop height must remain bounded and it must not displace the live signal workflow on narrow screens.
+- Medium radii are explicitly enabled for top-level systems-expert panels. Tables, rows, separators, and nested operational structures remain square or compact.
 
 ### Information hierarchy
 
@@ -429,11 +442,18 @@ Do not color-code information unless the meaning remains understandable without 
 
 Do not invent one-off hex values in components. Add a token here if a new semantic color is required.
 
-### Dark mode
+### Dark operational theme
 
-Do not auto-generate a dark theme by inverting this palette.
+AibriefAI uses the complete dark semantic palette defined in the front matter. It is a deliberate systems-expert workspace, not an automatic inversion.
 
-If dark mode becomes a requirement, define a complete semantic dark palette and verify contrast and hierarchy independently.
+- `neutral` is the midnight workspace canvas.
+- `surface` and `surface-subtle` separate operational regions.
+- `text` and `text-muted` preserve reading hierarchy.
+- `accent` is neutral gray for selection, focus, and mode against the navy shell.
+- `success` is teal for verified and healthy state.
+- `light-surface` and `light-text` create bounded evidence-reading surfaces.
+
+Do not derive new dark values by inversion or introduce a second dark palette inside a component.
 
 ## Typography
 
