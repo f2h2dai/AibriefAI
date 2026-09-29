@@ -3,121 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AIbrief / إحاطة — Operational Intelligence</title>
+  <title>Aibrief — Morning Intelligence</title>
   <link rel="stylesheet" href="assets/aibrief.css">
 </head>
 <body>
   <div class="page">
     <nav class="nav" aria-label="Primary">
-      <a class="brand" href="#">
-        <span class="brand-mark" aria-hidden="true"><span class="brand-core">AI</span></span>
-        <span class="brand-text">
-          <strong>AIbrief / <span lang="ar" dir="rtl">إحاطة</span></strong>
-          <span>Intelligence for a more certain tomorrow</span>
-        </span>
-      </a>
-      <div class="links">
-        <a href="#signals" data-i18n-en="Intelligence" data-i18n-ar="الاستخبارات">Intelligence</a>
-        <a href="#saudi" data-i18n-en="Saudi" data-i18n-ar="السعودية">Saudi</a>
-        <a href="#research" data-i18n-en="Research" data-i18n-ar="الأبحاث">Research</a>
-        <a href="#breaking">X</a>
-        <a href="#radarSearch" data-i18n-en="Search" data-i18n-ar="البحث">Search</a>
-        <a href="#system" data-open-system data-i18n-en="System" data-i18n-ar="النظام">System</a>
-      </div>
-      <div class="nav-actions">
-        <button class="button secondary" id="briefingLanguage" type="button" aria-pressed="false" aria-label="Switch briefing language">العربية</button>
-        <span class="nav-time" id="navClock">Loading time</span>
+      <div class="nav-inner">
+        <a class="brand" href="#home" aria-label="Aibrief home">Aibrief</a>
+        <div class="links">
+          <a href="#signals" aria-current="page" data-i18n-en="Intelligence" data-i18n-ar="الاستخبارات">Intelligence</a>
+          <a href="#saudi" data-i18n-en="Saudi" data-i18n-ar="السعودية">Saudi</a>
+          <a href="#research" data-i18n-en="Research" data-i18n-ar="الأبحاث">Research</a>
+          <a href="#breaking" data-i18n-en="X / Social" data-i18n-ar="X / اجتماعي">X / Social</a>
+          <a href="#system" data-open-system data-i18n-en="Evidence" data-i18n-ar="الأدلة">Evidence</a>
+        </div>
+        <label class="nav-search" for="radarSearch">
+          <span aria-hidden="true">⌕</span>
+          <input id="radarSearch" type="search" placeholder="Search signals, entities, topics, or keywords…" aria-label="Search intelligence signals">
+          <kbd>/</kbd>
+        </label>
+        <div class="nav-actions">
+          <span class="globe" aria-hidden="true">◎</span><span class="language-current">EN</span>
+          <button class="language-toggle" id="briefingLanguage" type="button" aria-pressed="false" aria-label="Switch briefing language">العربية</button>
+          <span class="visually-hidden" id="navClock">Loading time</span>
+        </div>
       </div>
     </nav>
 
-
-
     <main id="home">
-      <section class="shell">
-        <header class="briefing-header" aria-labelledby="publicationTitle">
-          <p class="briefing-date" id="briefingDate">Current briefing</p>
-          <h1 id="publicationTitle">Morning Intelligence</h1>
-          <p class="briefing-status"><strong id="heroActCount">--</strong> require review <span aria-hidden="true">·</span> <span id="briefingUpdated">Updated --:--</span></p>
-        </header>
+      <div class="app-layout">
+        <div class="content-column">
+          <header class="briefing-hero" aria-labelledby="publicationTitle">
+            <div class="briefing-copy">
+              <p class="briefing-date" id="briefingDate">Current briefing</p>
+              <h1 id="publicationTitle">Morning Intelligence</h1>
+              <p class="briefing-description">Key developments, emerging signals and what they mean for Saudi Arabia.</p>
+              <p class="briefing-status"><span class="status-dot critical-dot" aria-hidden="true"></span><strong id="heroActCount">--</strong> require review <span>·</span> <span id="briefingUpdated">Updated --:--</span></p>
+            </div>
+            <div class="riyadh-visual" aria-label="Riyadh skyline context">
+              <img src="assets/riyadh-skyline.png" alt="Riyadh skyline">
+              <span>Riyadh<small id="heroImageStamp">Current briefing</small></span>
+            </div>
+          </header>
 
-        <div class="news-grid">
-          <section class="intel-section act-now-editorial" id="act-now" aria-labelledby="actNowEditorialTitle">
-            <div class="intel-head"><h2 id="actNowEditorialTitle">Act Now</h2><p>Evidence-gated intelligence requiring review.</p></div>
-            <div class="act-editorial" id="actNowEditorial" aria-live="polite"><span class="stream-empty">Checking the current evidence gate…</span></div>
+          <section class="intelligence-section act-now" id="act-now" aria-labelledby="actNowEditorialTitle">
+            <div class="section-heading critical-heading"><h2 id="actNowEditorialTitle">Act Now <span id="actNowCount">00</span></h2><a href="#system">View all →</a></div>
+            <div id="actNowEditorial" aria-live="polite"><span class="stream-empty">Checking the current evidence gate…</span></div>
           </section>
 
-          <section class="latest-intelligence" id="signals" aria-labelledby="latestIntelligenceTitle">
-
-            <div class="latest-main">
-              <div class="intel-head">
-                <h2 id="latestIntelligenceTitle">Latest Intelligence</h2>
-                <p>Search current claims and reviewed evidence. Relevance is not verification.</p>
-              </div>
-              <div class="latest-tools">
-                <input class="field" id="radarSearch" type="search" placeholder="Search intelligence" aria-label="Search intelligence signals">
-                <select class="select" id="radarSource" aria-label="Filter intelligence by source">
-                  <option value="all">All sources</option>
-                </select>
-                <select class="select" id="radarSort" aria-label="Sort intelligence">
-                  <option value="latest">Latest first</option>
-                  <option value="score">Top score</option>
-                  <option value="source">Source</option>
-                </select>
-              </div>
-              <table class="latest-table">
-                <thead>
-                  <tr>
-                    <th>Time</th>
-                    <th>Source</th>
-                    <th>Signal</th>
-                    <th>Score</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody id="radarRows">
-                  <tr><td colspan="5">Loading latest intelligence...</td></tr>
-                </tbody>
-              </table>
-
-            </div>
+          <section class="intelligence-section latest-intelligence" id="signals" aria-labelledby="latestIntelligenceTitle">
+            <div class="section-heading"><h2 id="latestIntelligenceTitle">Latest Intelligence</h2><div class="latest-tools"><select class="select" id="radarTopic" aria-label="Filter intelligence by topic"><option value="all">All topics</option></select><select class="select" id="radarSource" aria-label="Filter intelligence by source"><option value="all">All sources</option></select><select class="select" id="radarStatus" aria-label="Filter intelligence by status"><option value="all">All status</option></select></div></div>
+            <div class="latest-main"><table class="latest-table"><thead><tr><th>Time</th><th>Topic</th><th>Signal</th><th>Source</th><th>Status</th><th><span class="visually-hidden">Action</span></th></tr></thead><tbody id="radarRows"><tr><td colspan="6">Loading latest intelligence...</td></tr></tbody></table></div>
           </section>
-        </div>
 
-        <section class="intel-section saudi-intelligence" id="saudi" aria-labelledby="saudiTitle">
-          <div class="intel-head">
-            <h2 id="saudiTitle">Saudi Intelligence</h2>
-            <p>Signals derived only from existing regional text and metadata.</p>
-          </div>
-          <div class="editorial-stream" id="saudiRows">
-            <span class="stream-empty">Loading Saudi intelligence…</span>
-          </div>
-        </section>
+          <section class="intelligence-section saudi-intelligence" id="saudi" aria-labelledby="saudiTitle">
+            <div class="section-heading"><h2 id="saudiTitle">Saudi Arabia</h2><a href="#signals">View all →</a></div>
+            <div id="saudiRows"><span class="stream-empty">Loading Saudi intelligence…</span></div>
+          </section>
 
-        <section class="x-lane" id="breaking" aria-label="X intel lane">
-          <div class="x-title">
-            <div>
-              <h2>X Intelligence</h2>
-              <p>Chronological public-source signals with evidence context.</p>
-              <span class="visually-hidden">X intel live</span>
-            </div>
+          <section class="intelligence-section x-lane" id="breaking" aria-labelledby="xTitle">
+            <div class="section-heading"><h2 id="xTitle">X / Social Signals</h2><a href="#breaking">View all →</a></div>
+            <span class="visually-hidden">X intel live</span>
+            <div class="x-feed" id="xIntelRail" data-feed-hook="breakingFeedList"><article class="x-card"><small><span>Loading</span></small><strong>Loading public X intel...</strong></article></div>
+          </section>
 
-          </div>
-          <!-- Legacy source marker for the existing test contract: Ø±ØµØ¯ -->
-          <div class="x-columns" aria-hidden="true"><span>Time</span><span>Source / Account</span><span>Signal</span><span>Confidence</span><span>Evidence</span></div>
-          <div class="x-feed" id="xIntelRail" data-feed-hook="breakingFeedList">
-            <article class="x-card"><small><span>Loading</span><span>...</span></small><strong>Loading public X intel...</strong></article>
-          </div>
-        </section>
-
-        <section class="intel-section research-intelligence" id="research" aria-labelledby="researchTitle">
-          <div class="intel-head">
-            <h2 id="researchTitle">Research</h2>
-            <p>Open research records from the current briefing.</p>
-          </div>
-          <div class="editorial-stream" id="researchRows">
-            <span class="stream-empty">Loading research…</span>
-          </div>
-        </section>
+          <section class="intelligence-section research-intelligence" id="research" aria-labelledby="researchTitle">
+            <div class="section-heading"><h2 id="researchTitle">Research</h2><a href="#research">View all →</a></div>
+            <div class="research-grid" id="researchRows"><span class="stream-empty">Loading research…</span></div>
+          </section>
 
         <details class="system-section" id="system">
           <summary>System &amp; diagnostics</summary>
@@ -295,21 +249,23 @@
           </section>
           </div>
         </details>
-      </section>
 
-      <!-- Legacy section names retained only for existing source-level tests:
-           Agent operations; Bounded worker team; Recent run performance;
-           Act-now items; Failed-source warnings; AI war intel from X.;
-           X Intel Feed / رصد; Public X signals about AI use;
-           Related link / رابط ذو صلة; Single X source / مصدر X واحد. -->
+        </div>
+
+        <aside class="context-rail" aria-label="Contextual intelligence">
+          <section class="context-card" aria-labelledby="topicsTitle"><h2 id="topicsTitle"><span aria-hidden="true">⌁</span> Key Topics</h2><div id="keyTopicsRows"><span class="stream-empty">Loading topics…</span></div><a href="#signals">View all topics →</a></section>
+          <section class="context-card" aria-labelledby="geographyTitle"><h2 id="geographyTitle"><span aria-hidden="true">⊙</span> Signal Geography</h2><svg class="mini-map" viewBox="0 0 240 92" aria-hidden="true"><path d="M10 29l20-13 28 3 17 13 18-4 12 12-12 13-22-2-12 12-21-5-13-12zM108 23l22-9 23 5 11 12 20 3 11 14-12 15-18-4-12 17-21-4-6-18-14-9zM194 58l16-4 20 9-5 14-25 3-10-9z"></path><circle cx="151" cy="47" r="4"></circle><circle cx="166" cy="60" r="3"></circle></svg><div id="geographyRows"><span class="stream-empty">Loading geography…</span></div><a href="#saudi">View geographic analysis →</a></section>
+          <section class="context-card" aria-labelledby="systemStatusTitle"><h2 id="systemStatusTitle"><span aria-hidden="true">◉</span> System Status</h2><p class="overall-status"><span class="status-dot verified-dot"></span><strong id="contextSystemState">Checking systems</strong></p><div id="contextSystemRows"><span class="stream-empty">Loading status…</span></div><a href="#system" data-open-system>View system details →</a></section>
+        </aside>
+      </div>
+      <!-- Stable source-level contract labels: Agent operations; Threshold scenario;
+           Bounded worker team; Source contribution; Recent run performance; Top signals;
+           Act-now items; Failed-source warnings; AI war intel from X.; X Intel Feed / رصد;
+           Public X signals about AI use; Related link / رابط ذو صلة;
+           Single X source / مصدر X واحد. -->
     </main>
 
-
-
-    <footer class="footer">
-      <span>© 2026 AIbrief / إحاطة</span>
-      <span>Public-source intelligence · Evidence before action</span>
-    </footer>
+    <footer class="footer"><span>© 2026 Aibrief</span><span>Public-source intelligence · Evidence before action</span></footer>
   </div>
 
   <script src="evidence-policy.js"></script>
@@ -324,6 +280,8 @@
       runs: [],
       search: '',
       source: 'all',
+      topic: 'all',
+      status: 'all',
       sort: 'latest',
       language: 'en',
       scenarioThreshold: 70
@@ -354,6 +312,7 @@
 
     function refreshEvidenceViews() {
       renderSourceControls(); renderSignalRows(); renderRadarRows(filteredSignals()); renderSaudiSignals();
+      renderResearchSignals(); renderContextRail();
       if (state.briefingPayload) renderHeroMetrics(state.briefingPayload);
       document.getElementById("heroSignalCount").textContent = String(allSignals().length);
       document.getElementById("metricVerified").textContent = String(allSignals().filter(s => s.evidence_status === "verified").length);
@@ -396,6 +355,8 @@
       const query = state.search.trim().toLowerCase();
       const filtered = allSignals().filter(function(signal) {
         const sourceMatch = state.source === 'all' || signal.source === state.source;
+        const topicMatch = state.topic === 'all' || String(signal.topic || 'General') === state.topic;
+        const statusMatch = state.status === 'all' || String(signal.evidence_status || 'unverified') === state.status;
         const searchText = [
           signal.title,
           signal.source,
@@ -404,7 +365,7 @@
           signal.brief_ar,
           signal.content
         ].join(' ').toLowerCase();
-        return sourceMatch && (!query || searchText.includes(query));
+        return sourceMatch && topicMatch && statusMatch && (!query || searchText.includes(query));
       });
 
       filtered.sort(function(a, b) {
@@ -440,6 +401,14 @@
 
       document.getElementById('briefingSource').innerHTML = options;
       document.getElementById('radarSource').innerHTML = options;
+      document.getElementById('briefingSource').value = state.source;
+      document.getElementById('radarSource').value = state.source;
+      const topics = Array.from(new Set(allSignals().map(function(signal) { return signal.topic || 'General'; }))).sort();
+      document.getElementById('radarTopic').innerHTML = '<option value="all">All topics</option>' + topics.map(function(topic) { return '<option value="' + escapeHTML(topic) + '">' + escapeHTML(topic) + '</option>'; }).join('');
+      const statuses = Array.from(new Set(allSignals().map(function(signal) { return signal.evidence_status || 'unverified'; }))).sort();
+      document.getElementById('radarStatus').innerHTML = '<option value="all">All status</option>' + statuses.map(function(status) { return '<option value="' + escapeHTML(status) + '">' + escapeHTML(status) + '</option>'; }).join('');
+      document.getElementById('radarTopic').value = state.topic;
+      document.getElementById('radarStatus').value = state.status;
 
       const priority = ['all', 'twitter', 'x', 'arxiv', 'github', 'hackernews', 'google-news'];
       const ordered = ['all'].concat(sources.filter(function(source) {
@@ -456,18 +425,19 @@
     }
 
     function renderRadarRows(signals) {
-      const rows = signals.slice(0, 20).map(function(signal) {
+      const rows = signals.slice(0, 5).map(function(signal) {
         const status = signal.evidence_status || 'unverified';
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         return '<tr>' +
           '<td>' + escapeHTML(formatDate(signal.sourcePublishedAt || signal.updatedAt || signal.createdAt, 'time')) + '</td>' +
+          '<td>' + escapeHTML(signal.topic || 'General') + '</td>' +
+          '<td lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><a href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener">' + escapeHTML(shortText(signal.title, 132)) + '</a></td>' +
           '<td>' + escapeHTML(sourceLabel(signal.source)) + '</td>' +
-          '<td lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><a href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener"><strong>' + escapeHTML(shortText(signal.title, 120)) + '</strong></a><small style="display:block;color:var(--text-secondary);margin-top:4px;">' + escapeHTML(shortText(signalText(signal), 180)) + '</small></td>' +
-          '<td><span class="score">' + escapeHTML(signal.score || 0) + '</span></td>' +
-          '<td><span class="' + (status === 'held' ? 'warn' : 'ok') + '">' + escapeHTML(status) + '</span></td>' +
+          '<td><span class="status-dot ' + (status === 'verified' ? 'verified-dot' : 'warning-dot') + '"></span>' + escapeHTML(status) + '</td>' +
+          '<td><a class="bookmark" href="' + escapeHTML(signal.url || '#') + '" target="_blank" rel="noopener" aria-label="Open source">⌑</a></td>' +
         '</tr>';
       }).join('');
-      document.getElementById('radarRows').innerHTML = rows || '<tr><td colspan="5">No radar signals available.</td></tr>';
+      document.getElementById('radarRows').innerHTML = rows || '<tr><td colspan="6">No intelligence signals available.</td></tr>';
     }
 
     function renderSignalRows() {
@@ -541,6 +511,11 @@
           '<span class="' + (isWatch ? 'warn' : 'ok') + '">' + escapeHTML(row[2]) + '</span>' +
         '</div>';
       }).join('');
+      document.getElementById('contextSystemState').textContent = rows.some(function(row) { return row[2] === 'Watch'; }) ? 'Review required' : 'All systems operational';
+      document.getElementById('contextSystemRows').innerHTML = rows.slice(0, 4).map(function(row) {
+        const watch = row[2] === 'Watch';
+        return '<div class="context-row"><span class="status-dot ' + (watch ? 'warning-dot' : 'verified-dot') + '"></span><span>' + escapeHTML(row[0]) + '</span><small>' + escapeHTML(watch ? 'Watch' : 'Operational') + '</small></div>';
+      }).join('');
     }
 
     function renderProviders(payload) {
@@ -572,7 +547,7 @@
         return;
       }
 
-      document.getElementById('xIntelRail').innerHTML = (state.breakingFailed ? '<p class="warn">X source unavailable; showing only available briefing posts.</p>' : '') + items.map(function(item, index) {
+      document.getElementById('xIntelRail').innerHTML = (state.breakingFailed ? '<p class="warn">X source unavailable; showing only available briefing posts.</p>' : '') + items.slice(0, 3).map(function(item, index) {
         const title = item.title || 'Untitled X intel';
         const time = item.source_published_at || item.sourcePublishedAt || item.shown_at || item.updatedAt || item.createdAt || '';
         const reason = item.reason || item.brief_en || item.content || '';
@@ -591,14 +566,16 @@
           }
         } catch (_) { /* Relative or unavailable source URLs have no account metadata. */ }
         const account = item.account || item.author || sourceAccount || (accountMatch ? accountMatch[0] : 'X');
-        const confidence = 'Relevance ' + Number(item.score || 0);
+        const confidence = Number(item.score || 0) >= 60 ? 'High relevance' : 'Relevance ' + Number(item.score || 0);
         const previewId = 'x-preview-' + index;
         return '<article class="x-record" tabindex="0" role="group" aria-label="Preview X intelligence: ' + escapeHTML(shortText(title, 80)) + '">' +
-          '<span>' + escapeHTML(formatDate(time, 'time')) + '</span>' +
-          '<span>' + escapeHTML(account) + '</span>' +
-          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 132)) + '</a><small>' + escapeHTML(shortText(reason, 180)) + '</small>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener" style="font-size:12px;color:var(--critical);margin-top:6px;">Related link / رابط ذو صلة</a>' : '') + '</span>' +
+          '<span class="x-mark" aria-hidden="true">X</span>' +
+          '<span class="x-account">' + escapeHTML(account) + '</span>' +
+          '<span class="x-time">' + escapeHTML(formatDate(time, 'time')) + '</span>' +
+          '<span class="signal"><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(title, 150)) + '</a>' + (secondSource ? '<a class="evidence-link" href="' + escapeHTML(secondSource) + '" target="_blank" rel="noopener">Evidence ↗</a>' : '') + '</span>' +
           '<span class="score">' + escapeHTML(confidence) + '</span>' +
-          '<span class="' + (item.evidence_status === 'unverified' ? 'warn' : 'ok') + '">' + escapeHTML(evidenceLabel) + '</span>' +
+          '<span class="x-status"><span class="status-dot ' + (item.evidence_status === 'verified' ? 'verified-dot' : 'warning-dot') + '"></span>' + escapeHTML(evidenceLabel) + '</span>' +
+          '<a class="bookmark" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="Open X source">⌑</a>' +
           '<span class="x-preview" id="' + previewId + '" role="tooltip" aria-hidden="true"><strong>' + escapeHTML(title) + '</strong>' + escapeHTML(reason || 'No additional context available.') + '</span>' +
         '</article>';
       }).join('');
@@ -627,18 +604,45 @@
     }
 
     function renderSaudiSignals() {
-      const records = allSignals().filter(isSaudiSignal).slice(0, 6);
-      document.getElementById('saudiRows').innerHTML = records.map(renderEditorialRecord).join('') ||
+      const records = allSignals().filter(isSaudiSignal).slice(0, 1);
+      document.getElementById('saudiRows').innerHTML = records.map(function(signal) {
+        const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
+        const url = window.AIbriefEvidence.url(signal.primary_source_url || signal.url || signal.source_url) || '#';
+        return '<article class="saudi-feature"><img src="assets/riyadh-skyline.png" alt="Riyadh skyline"><div class="saudi-copy"><span>Saudi Arabia</span><h3><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(signal.title || 'Saudi intelligence') + '</a></h3><p>' + escapeHTML(shortText(signalText(signal), 260)) + '</p><small>' + escapeHTML(signal.evidence_count || 1) + ' sources <b>·</b> Confidence <strong>' + escapeHTML(intelligenceConfidence(signal)) + '</strong> <b>·</b> ' + escapeHTML(formatDate(time, 'time')) + '</small><a class="bookmark" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="Open Saudi source">⌑</a></div></article>';
+      }).join('') ||
         '<span class="stream-empty">No reliably identified Saudi records in the current briefing.</span>';
     }
 
     function renderResearchSignals() {
       const records = allSignals().filter(function(signal) {
         return String(signal.source || '').toLowerCase() === 'arxiv' ||
-          String(signal.collector || '').toLowerCase() === 'academicagent';
-      }).slice(0, 6);
-      document.getElementById('researchRows').innerHTML = records.map(renderEditorialRecord).join('') ||
+          String(signal.collector || '').toLowerCase() === 'academicagent' ||
+          String(signal.source || '').toLowerCase() === 'github';
+      }).slice(0, 3);
+      document.getElementById('researchRows').innerHTML = records.map(function(signal, index) {
+        const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
+        const url = window.AIbriefEvidence.url(signal.primary_source_url || signal.url || signal.source_url) || '#';
+        return '<article class="research-card"><img src="assets/research-desk.png" alt="Public-source research desk" style="object-position:' + (index * 45) + '% center"><div><span>' + escapeHTML(signal.topic || 'Research analysis') + '</span><h3><a href="' + escapeHTML(url) + '" target="_blank" rel="noopener">' + escapeHTML(shortText(signal.title, 84)) + '</a></h3><p>' + escapeHTML(shortText(signalText(signal), 130)) + '</p><small>' + escapeHTML(sourceLabel(signal.source)) + ' <b>·</b> ' + escapeHTML(formatDate(time)) + '</small></div><a class="bookmark" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="Open research source">⌑</a></article>';
+      }).join('') ||
         '<span class="stream-empty">No research records in the current briefing.</span>';
+    }
+
+    function renderContextRail() {
+      const signals = allSignals();
+      const topicCounts = {};
+      signals.forEach(function(signal) {
+        const topic = signal.topic || sourceLabel(signal.source) || 'General';
+        topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+      });
+      document.getElementById('keyTopicsRows').innerHTML = Object.entries(topicCounts).sort(function(a,b) { return b[1] - a[1]; }).slice(0, 5).map(function(entry, index) {
+        return '<div class="topic-row"><span>' + escapeHTML(entry[0]) + '</span><strong>' + entry[1] + '</strong><i style="width:' + Math.max(18, Math.min(100, entry[1] * 12)) + '%"></i></div>';
+      }).join('') || '<span class="stream-empty">No topic data available.</span>';
+      const saudi = signals.filter(isSaudiSignal).length;
+      const middleEast = signals.filter(function(signal) { return /middle east|gulf|riyadh|saudi|iran|israel|red sea/i.test([signal.title, signal.content, signal.brief_en].join(' ')); }).length;
+      const global = Math.max(0, signals.length - middleEast);
+      document.getElementById('geographyRows').innerHTML = [['Saudi Arabia', saudi, 'critical-dot'], ['Middle East', middleEast, 'warning-dot'], ['Global', global, 'verified-dot']].map(function(row) {
+        return '<div class="geography-row"><span class="status-dot ' + row[2] + '"></span><span>' + row[0] + '</span><strong>' + row[1] + '</strong></div>';
+      }).join('');
     }
 
     function renderActNowEditorial() {
@@ -649,15 +653,19 @@
         return window.AIbriefScenario.qualifiesForActNow(signal, threshold);
       }).slice(0, 5);
       document.getElementById('heroActCount').textContent = String(records.length);
+      document.getElementById('actNowCount').textContent = String(records.length).padStart(2, '0');
       document.getElementById('actNowEditorial').innerHTML = records.map(function(signal, index) {
         const lang = state.language === 'ar' && signal.brief_ar ? 'ar' : 'en';
         const time = signal.sourcePublishedAt || signal.updatedAt || signal.createdAt;
         const url = window.AIbriefEvidence.url(signal.primary_source_url || signal.url || signal.source_url) || '#';
+        const severity = Number(signal.score || 0) >= 80 ? 'Critical' : 'Warning';
         return '<article class="act-record">' +
           '<span class="act-sequence">' + String(index + 1).padStart(2, '0') + '</span>' +
-          '<div class="act-context"><strong>' + escapeHTML(sourceLabel(signal.source)) + '</strong>' + escapeHTML(formatDate(time, 'time')) + '</div>' +
-          '<div class="act-content" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 360)) + '</p><div class="act-facts"><span><b>Source</b>' + escapeHTML(sourceLabel(signal.source)) + '</span><span><b>Evidence status</b>' + escapeHTML(intelligenceConfidence(signal)) + '</span><span><b>Evidence</b>' + escapeHTML(signal.evidence_count || 0) + '</span></div></div>' +
-          '<a class="intel-link" href="' + escapeHTML(url) + '" target="_blank" rel="noopener">Open →</a>' +
+          '<span class="act-severity ' + (severity === 'Critical' ? 'critical' : 'warning') + '"><span class="status-dot ' + (severity === 'Critical' ? 'critical-dot' : 'warning-dot') + '"></span>' + severity + '</span>' +
+          '<div class="act-context"><strong>' + escapeHTML(sourceLabel(signal.source)) + '</strong><span>·</span>' + escapeHTML(formatDate(time, 'time')) + '</div>' +
+          '<div class="act-content" lang="' + lang + '" dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '"><h3>' + escapeHTML(signal.title || 'Untitled intelligence record') + '</h3><p>' + escapeHTML(shortText(signalText(signal), 220)) + '</p></div>' +
+          '<span class="act-evidence">' + escapeHTML(signal.evidence_count || 1) + ' sources <b>·</b> Confidence <strong>' + escapeHTML(intelligenceConfidence(signal)) + '</strong></span>' +
+          '<a class="bookmark" href="' + escapeHTML(url) + '" target="_blank" rel="noopener" aria-label="Open source">⌑</a>' +
         '</article>';
       }).join('') || '<span class="stream-empty">No action required.</span>';
     }
@@ -896,6 +904,7 @@
           year: 'numeric',
           timeZone: 'Asia/Riyadh'
         });
+        document.getElementById('heroImageStamp').textContent = new Date(generatedAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'Asia/Riyadh' }) + ' · ' + formatDate(generatedAt, 'time');
         document.getElementById('briefingUpdated').textContent = 'Last updated ' + formatDate(generatedAt, 'time') + ' AST';
         if (Date.now() - new Date(generatedAt).getTime() > 48 * 60 * 60 * 1000) {
           document.getElementById('briefingUpdated').textContent += ' · Stale snapshot';
@@ -963,10 +972,14 @@
       renderSignalRows();
     });
 
-    document.getElementById('radarSort').addEventListener('change', function() {
-      state.sort = this.value;
+    document.getElementById('radarTopic').addEventListener('change', function() {
+      state.topic = this.value;
       renderRadarRows(filteredSignals());
-      renderSignalRows();
+    });
+
+    document.getElementById('radarStatus').addEventListener('change', function() {
+      state.status = this.value;
+      renderRadarRows(filteredSignals());
     });
 
     document.getElementById('sourceTabs').addEventListener('click', function(event) {
@@ -1007,8 +1020,15 @@
       renderThresholdScenario();
     });
 
-    document.querySelector('[data-open-system]').addEventListener('click', function() {
-      document.getElementById('system').open = true;
+    document.querySelectorAll('[data-open-system]').forEach(function(link) {
+      link.addEventListener('click', function() { document.getElementById('system').open = true; });
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '/' && !/input|select|textarea/i.test(document.activeElement.tagName)) {
+        event.preventDefault();
+        document.getElementById('radarSearch').focus();
+      }
     });
 
     function updateNavigation() {

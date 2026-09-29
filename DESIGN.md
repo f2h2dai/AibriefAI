@@ -282,7 +282,7 @@ The visual reference is:
 
 **independent intelligence publication + evidence workspace**
 
-Riyadh is product context, not a decorative theme. Express it through geography, source metadata, entities, and reporting context rather than a large skyline image.
+Riyadh is product context, not a decorative theme. Express it through geography, source metadata, entities, reporting context, and a restrained masthead image that supports the morning briefing hierarchy.
 
 AI operates behind the product. AI is not the visual theme.
 
@@ -306,24 +306,25 @@ Every major screen should help the user move through one or more parts of that s
 
 ### Current workspace composition
 
-The production shell is a single content column with a white navigation bar and a maximum content width of 1180px. Its reading sequence is fixed: compact Morning Intelligence header, Act Now, Latest Intelligence, Saudi Intelligence, X Intelligence, Research, then a collapsed System and diagnostics disclosure.
+The production shell uses a white navigation bar and a maximum content width of 1440px. On desktop, the reading workspace and contextual rail form an approximately 80/20 split. The primary sequence is fixed: compact Morning Intelligence header, Act Now, Latest Intelligence, Saudi Intelligence, X / Social Signals, and Research. The right rail contains Key Topics, Signal Geography, and System Status derived from current data.
 
 The logo, signal table, and full-width X records are identity and workflow anchors. Preserve their semantics and data wiring during incremental work.
 
-Operations, evaluation, pipeline state, and source diagnostics remain available under the System disclosure. They must not frame the primary intelligence reading workflow.
+Operations, evaluation, pipeline state, and source diagnostics remain available under the System disclosure. The right rail may summarize their current state, but detailed controls and diagnostics must not frame the primary intelligence reading workflow.
 
-On narrow screens, navigation may scroll horizontally, tables scroll inside their own section, and records become stacked reading rows. Touch targets must remain at least 44px where practical.
+At 1100px and below, the contextual rail moves below the primary workspace. On narrow screens, navigation may scroll horizontally, tables scroll inside their own section, filters wrap as a full-width group, and records become stacked reading rows. Touch targets must remain at least 44px where practical.
 
 ### Domain components
 
-- compact publication masthead with restrained Riyadh context;
+- compact publication masthead with a restrained Riyadh panorama and timestamp context;
 - Act Now evidence gate;
 - live signal search, source filter, sort control, and comparison table;
 - source and verification status;
 - expandable system diagnostics backed by operations metrics;
-- Saudi intelligence list;
+- single featured Saudi intelligence record with real source and confidence metadata;
 - chronological X intelligence lane with full-width records and a pointer/focus preview for complete context;
-- research records;
+- three concise research previews sourced from current records;
+- contextual desktop rail for data-derived key topics, signal geography, and system status;
 - pipeline run history and worker state;
 - failed-source diagnostics;
 - threshold scenario control that never writes production state.
@@ -339,13 +340,14 @@ On narrow screens, navigation may scroll horizontally, tables scroll inside thei
 
 ### Explicitly enabled visual patterns
 
-- Large skyline imagery is excluded from the operational interface so the intelligence workflow remains above the fold.
+- Skyline imagery is limited to the compact briefing masthead and Saudi feature; it must not become a full-screen hero or displace the intelligence workflow.
 - The canvas is `#FAFAFA`; navigation and bounded evidence previews are white.
 - The shell uses black and neutral gray. Red, green, and ochre communicate critical, verified, and warning states only.
 - Purple, neon blue, cyan, lime, glow, beige paper, navy shells, and decorative AI colors are prohibited.
 - The circular logo mark is an established identity exception and does not define the interface palette.
 - The compact masthead uses interface sans-serif typography and must not displace the live signal workflow on narrow screens.
 - Tables, rows, separators, and operational structures remain square or use a 2px radius. Typography and rules establish hierarchy before containers.
+- Cards are limited to the contextual rail, the Saudi feature, and research previews. Act Now, Latest Intelligence, and X / Social Signals use rows and rules.
 
 ### Information hierarchy
 
@@ -511,13 +513,14 @@ Use the page structure that best fits the task:
 
 ### Grid
 
-The primary application uses one full-width content column inside `min(1180px, calc(100% - 48px))`. Nested grids may align fields within a record, but they must not recreate side rails or a dashboard shell.
+The primary application uses `min(1440px, calc(100% - 48px))`. On wide screens its outer grid is `minmax(0, 1fr) 232px`, producing an approximately 80/20 primary-workspace-to-context ratio without a left sidebar. Nested grids align fields within records.
 
 Preferred content behavior:
 
-- primary work area: full content width;
-- evidence tables and chronological records: full content width;
-- secondary operational information: collapsed under System and diagnostics;
+- primary work area: the dominant grid column;
+- evidence tables and chronological records: full width within the primary column;
+- contextual information: the 232px right rail on desktop, moved below the workspace at 1100px and below;
+- detailed operational information: collapsed under System and diagnostics;
 - reading width for prose: approximately 60–75 characters per line.
 
 ### Density
