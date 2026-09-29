@@ -1,34 +1,35 @@
 {
-  "generated_at": "2026-09-28T22:58:13Z",
+  "generated_at": "2026-09-29T17:08:06Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.2,
+  "source_failure_rate": 0.1667,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-09-28T22:58:13Z",
+  "latest_successful_run": "2026-09-29T17:08:06Z",
   "highest_ranked_signal": {
-    "id": "twitter-034",
-    "title": "@AndrewYNg: The OpenAI-Hugging Face hack was enabled by weak sandboxing. It is great that Nvidia is releasing open source tools for sandboxing AI agents",
-    "action_score": 81.5,
-    "url": "https://x.com/AndrewYNg/status/2104660347730969087"
+    "id": "arxiv-015",
+    "title": "AI Agent Swarms as Researchers: Progress, Challenges, and Open Questions",
+    "action_score": 79.25,
+    "url": "https://arxiv.org/abs/2609.35719v1"
   },
   "source_contribution": {
+    "arxiv": 3,
+    "hackernews": 1,
+    "github": 2,
     "twitter": 5,
-    "github": 5,
-    "google-news": 1,
-    "hackernews": 1
+    "google-news": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7242, Req"
     }
   ],
-  "runtime_seconds": 68.176,
+  "runtime_seconds": 77.708,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +89,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-09-28T22:58:13Z",
+    "planned_at": "2026-09-29T17:08:06Z",
     "production_threshold": 70.0
   }
 }
