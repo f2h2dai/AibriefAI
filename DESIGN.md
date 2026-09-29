@@ -191,8 +191,12 @@ x-project:
   productName: "AibriefAI"
   productType: "intelligence-platform"
   deploymentContext: "public web"
-  operatingMode: "redesign"
-  baseline: "existing-repository"
+  operatingMode: "preserve"
+  baseline: "approved-ui-2026-09-29@4fb5958"
+  approvedUiCommit: "4fb5958"
+  approvedUiTag: "approved-ui-2026-09-29"
+  allowedVisibleChanges: "news types, images in existing slots, existing pointer/focus popup"
+  uiLockPolicy: "all other visible UI is immutable"
   primaryUser: "analyst or decision-maker reviewing public-source intelligence"
   primaryTask: "detect, understand, verify, connect, and act on signals"
   visualWorld: "independent intelligence publication + evidence workspace"
@@ -253,6 +257,24 @@ For any UI task, an agent must use this order of authority:
 6. Agent preference.
 
 Agent preference is never sufficient reason to introduce a new visual pattern.
+
+### Approved immutable baseline
+
+The interface deployed from commit `4fb5958` and tagged `approved-ui-2026-09-29` is the approved
+visual baseline. Preserve it indefinitely. Its navigation, information architecture, section order,
+layout, desktop ratio, responsive behavior, typography, palette, spacing, borders, cards, rows,
+tables, controls, labels, logo, signal bar, and interaction patterns are locked.
+
+Visible changes are permitted only when the user explicitly requests one of these surfaces:
+
+1. News types or categories, using real source-backed data.
+2. Images displayed inside the existing masthead, Saudi feature, or research image slots.
+3. The content or behavior of the existing X / Social pointer-and-keyboard popup.
+
+Apply permitted work inside the existing composition. Do not move, resize, restyle, add, or remove
+other interface elements while completing it. Data ingestion and backend maintenance must preserve
+the rendered UI contract. Restore the exact visual baseline from `approved-ui-2026-09-29` if an
+unintended interface change occurs.
 
 ### Operating modes
 
