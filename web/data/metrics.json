@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T21:52:14Z",
+  "generated_at": "2026-10-03T15:18:53Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-02T21:52:14Z",
+  "latest_successful_run": "2026-10-03T15:18:53Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "sudosubin/agents.nix",
+    "id": "github-004",
+    "title": "MontrealAI/skillos",
     "action_score": 75.5,
-    "url": "https://github.com/sudosubin/agents.nix"
+    "url": "https://github.com/MontrealAI/skillos"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7451, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7568, Req"
     }
   ],
-  "runtime_seconds": 81.789,
+  "runtime_seconds": 65.245,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-02T21:52:14Z",
+    "planned_at": "2026-10-03T15:18:53Z",
     "production_threshold": 70.0
   }
 }
