@@ -19,7 +19,7 @@
     return groups.size < 2 ? 'unverified' : records.some(e => e.primary === true) ? 'verified' : 'corroborated';
   }
   function saudi(s) {
-    return /\b(saudi|ksa|riyadh|jeddah|neom)\b|السعودي|الرياض|جدة|نيوم/i.test(
+    return /\b(saudi|ksa|riyadh|jeddah|neom)\b|السعودي|الرياض(?![\u0600-\u06ff])|(?<![\u0600-\u06ff])(?:جدة|نيوم)(?![\u0600-\u06ff])/i.test(
       ['title','content','text','reason','brief_en','brief_ar','country','region','topic','market'].map(k => s[k] || '').join(' '));
   }
   function normalize(s) {

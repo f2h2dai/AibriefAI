@@ -30,7 +30,9 @@ class FeedSourceTests(unittest.TestCase):
         self.assertIn("sort=updated", workflow)
         self.assertIn("freshness_counts", workflow)
         self.assertIn("sort: 'latest'", workflow)
-        self.assertIn("sourcePublishedAt || signal.updatedAt", landing)
+        browser_js = (ROOT / "web/assets/command-center.js").read_text(encoding="utf-8")
+        self.assertIn("s.event_time || s.sourcePublishedAt", browser_js)
+        self.assertNotIn("s.updatedAt", browser_js)
 
 
 if __name__ == "__main__":

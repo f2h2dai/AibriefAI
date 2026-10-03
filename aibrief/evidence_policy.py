@@ -65,7 +65,7 @@ def freshness(event_time, observation_time, now, max_age_hours=48):
 def is_saudi(signal):
     text = " ".join(str(signal.get(k) or "") for k in (
         "title", "content", "text", "reason", "brief_en", "brief_ar", "country", "region", "topic", "market"))
-    return bool(re.search(r"\b(saudi|ksa|riyadh|jeddah|neom)\b|السعودي|الرياض|جدة|نيوم", text, re.I))
+    return bool(re.search(r"\b(saudi|ksa|riyadh|jeddah|neom)\b|السعودي|الرياض(?![\u0600-\u06ff])|(?<![\u0600-\u06ff])(?:جدة|نيوم)(?![\u0600-\u06ff])", text, re.I))
 
 
 def source_tier(signal):

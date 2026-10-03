@@ -49,6 +49,7 @@ class EvidencePolicyTests(unittest.TestCase):
         self.assertEqual(normalize_signal(normalized, observed_at=NOW), normalized)
         self.assertTrue(is_saudi({"reason": "ادعاء عن الرياض"}))
         self.assertFalse(is_saudi({"title": "KSAware unrelated product"}))
+        self.assertFalse(is_saudi({"title": "مسائل في الرياضيات والفيزياء"}))
 
     def test_fresh_observation_cannot_refresh_old_event(self):
         self.assertEqual(freshness("2026-09-01T10:00:00Z", NOW, NOW), "stale")

@@ -11,26 +11,18 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class OperationsDashboardTests(unittest.TestCase):
-    def test_dashboard_has_required_operations_sections(self):
+    def test_dashboard_has_approved_sections_and_details(self):
         html = (ROOT / "web" / "landing-template.html").read_text(encoding="utf-8")
         for marker in [
-            "Agent operations",
-            "Threshold scenario",
-            "Bounded worker team",
-            "Source contribution",
-            "Recent run performance",
-            "Top signals",
-            "Act-now items",
-            "Failed-source warnings",
+            "Act Now", "Latest Signals", "Saudi Intelligence",
+            "Miami / United States", "Research", 'id="detailContent"',
+            'id="detailDialog"', 'href="health/"',
         ]:
             self.assertIn(marker, html)
 
-    def test_slider_is_client_only_and_has_no_production_write(self):
-        html = (ROOT / "web" / "landing-template.html").read_text(encoding="utf-8")
+    def test_scenario_calculation_has_no_production_write(self):
         scenario_js = (ROOT / "web" / "operations-dashboard.js").read_text(encoding="utf-8")
-        self.assertIn('id="actionThreshold"', html)
-        self.assertIn("browser view only", html)
-        self.assertNotIn("saveThreshold", html)
+        self.assertNotIn("saveThreshold", scenario_js)
         self.assertNotIn("fetch(", scenario_js)
         self.assertNotIn("localStorage", scenario_js)
 
