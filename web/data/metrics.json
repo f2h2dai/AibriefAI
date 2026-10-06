@@ -1,34 +1,33 @@
 {
-  "generated_at": "2026-10-06T17:30:12Z",
+  "generated_at": "2026-10-06T22:22:43Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.2,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-06T17:30:12Z",
+  "latest_successful_run": "2026-10-06T22:22:43Z",
   "highest_ranked_signal": {
-    "id": "arxiv-016",
-    "title": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
-    "action_score": 80.5,
-    "url": "https://arxiv.org/abs/2610.06748v1"
+    "id": "twitter-037",
+    "title": "@RamAbdu: Eric Schmidt, former Google CEO, has invested heavily in military AI, surveillance and defense tech, potentially benefiting from wartime use",
+    "action_score": 77.75,
+    "url": "https://x.com/RamAbdu/status/2107064630673870981"
   },
   "source_contribution": {
-    "arxiv": 4,
-    "github": 2,
+    "github": 6,
     "google-news": 1,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7646, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7166, Req"
     }
   ],
-  "runtime_seconds": 68.426,
+  "runtime_seconds": 100.53,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-06T17:30:12Z",
+    "planned_at": "2026-10-06T22:22:43Z",
     "production_threshold": 70.0
   }
 }
