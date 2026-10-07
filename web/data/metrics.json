@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:22:43Z",
+  "generated_at": "2026-10-07T18:02:14Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -7,27 +7,27 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-06T22:22:43Z",
+  "latest_successful_run": "2026-10-07T18:02:14Z",
   "highest_ranked_signal": {
-    "id": "twitter-037",
-    "title": "@RamAbdu: Eric Schmidt, former Google CEO, has invested heavily in military AI, surveillance and defense tech, potentially benefiting from wartime use",
-    "action_score": 77.75,
-    "url": "https://x.com/RamAbdu/status/2107064630673870981"
+    "id": "arxiv-014",
+    "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+    "action_score": 77.5,
+    "url": "https://arxiv.org/abs/2610.08775v1"
   },
   "source_contribution": {
-    "github": 6,
-    "google-news": 1,
+    "arxiv": 2,
+    "github": 5,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7166, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7349, Req"
     }
   ],
-  "runtime_seconds": 100.53,
+  "runtime_seconds": 83.216,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-06T22:22:43Z",
+    "planned_at": "2026-10-07T18:02:14Z",
     "production_threshold": 70.0
   }
 }
