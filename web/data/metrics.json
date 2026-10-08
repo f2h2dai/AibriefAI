@@ -1,32 +1,33 @@
 {
-  "generated_at": "2026-10-07T22:47:01Z",
+  "generated_at": "2026-10-08T18:04:10Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-07T22:47:01Z",
+  "latest_successful_run": "2026-10-08T18:04:10Z",
   "highest_ranked_signal": {
-    "id": "github-006",
-    "title": "headroomlabs-ai/headroom",
-    "action_score": 76.75,
-    "url": "https://github.com/headroomlabs-ai/headroom"
+    "id": "twitter-034",
+    "title": "@TheNavroopSingh: The relationship between major technology companies, the Defense Advanced Research Projects Agency (DARPA), and the Central Intelligence Age",
+    "action_score": 77.75,
+    "url": "https://x.com/TheNavroopSingh/status/2107897363528643006"
   },
   "source_contribution": {
-    "github": 7,
-    "twitter": 5
+    "twitter": 5,
+    "github": 6,
+    "google-news": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7599, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7872, Req"
     }
   ],
-  "runtime_seconds": 74.843,
+  "runtime_seconds": 104.343,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-07T22:47:01Z",
+    "planned_at": "2026-10-08T18:04:10Z",
     "production_threshold": 70.0
   }
 }
