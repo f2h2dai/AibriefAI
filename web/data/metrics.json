@@ -1,33 +1,34 @@
 {
-  "generated_at": "2026-10-08T22:58:31Z",
+  "generated_at": "2026-10-09T17:37:32Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.2,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-08T22:58:31Z",
+  "latest_successful_run": "2026-10-09T17:37:32Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "VTSTech/AgentKthx",
-    "action_score": 75.0,
-    "url": "https://github.com/VTSTech/AgentKthx"
+    "id": "arxiv-012",
+    "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+    "action_score": 82.5,
+    "url": "https://arxiv.org/abs/2610.12463v1"
   },
   "source_contribution": {
-    "github": 6,
+    "arxiv": 3,
+    "github": 3,
     "twitter": 5,
-    "google-news": 1
+    "hackernews": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7238, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7637, Req"
     }
   ],
-  "runtime_seconds": 81.969,
+  "runtime_seconds": 102.695,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-08T22:58:31Z",
+    "planned_at": "2026-10-09T17:37:32Z",
     "production_threshold": 70.0
   }
 }
