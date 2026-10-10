@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T22:19:25Z",
+  "generated_at": "2026-10-10T16:28:16Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -7,27 +7,27 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-09T22:19:25Z",
+  "latest_successful_run": "2026-10-10T16:28:16Z",
   "highest_ranked_signal": {
-    "id": "github-006",
-    "title": "souzalrns/network-agents-setup",
-    "action_score": 77.75,
-    "url": "https://github.com/souzalrns/network-agents-setup"
+    "id": "github-011",
+    "title": "V1nter111/ai-agent-watchdog",
+    "action_score": 75.5,
+    "url": "https://github.com/V1nter111/ai-agent-watchdog"
   },
   "source_contribution": {
     "github": 6,
-    "google-news": 1,
-    "twitter": 5
+    "twitter": 5,
+    "hackernews": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7384, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7738, Req"
     }
   ],
-  "runtime_seconds": 238.634,
+  "runtime_seconds": 69.033,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-09T22:19:25Z",
+    "planned_at": "2026-10-10T16:28:16Z",
     "production_threshold": 70.0
   }
 }
