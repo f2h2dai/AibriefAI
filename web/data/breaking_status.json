@@ -3,6 +3,849 @@
   "cadence_minutes": 15,
   "feed": [
     {
+      "claim_key": "53d029acc07e7e456447986f8a78be5e49e024a59e17e0c2fba3bd4aec918435",
+      "confidence": 0,
+      "event_time": "2026-10-09T13:40:32Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T13:40:32Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108553200978501739",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2108151166739927092",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2108585282618659055",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2108585421542469919",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 4,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/IHRF_English/status/2108553200978501739",
+        "https://x.com/Benzinga/status/2108151166739927092",
+        "https://x.com/Claritysteps/status/2108585282618659055",
+        "https://x.com/Claritysteps/status/2108585421542469919"
+      ],
+      "freshness": "fresh",
+      "id": "story-b3b3700b7e11562501bc682a",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Artificial intelligence and digital technologies are deployed without adequate safeguards, enabling surveillance, discrimination and autonomous weapons. Human rights must govern design and use. States and companies owe safety, transparency and human control. #AI #DigitalRights",
+      "relevance_score": 85.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T13:40:32Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/IHRF_English/status/2108553200978501739",
+      "status": "x-intel",
+      "title": "Artificial intelligence and digital technologies are deployed without adequate safeguards, enabling surveillance, discrimination and autonomous weapons. Human r",
+      "webswarm_evidence_terms": [
+        "AI targeting",
+        "autonomous weapons",
+        "military AI",
+        "targeting",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "8c9c77a178aac4964560b12cc500d5ac201c9f2ae55fc86a69b646b7622ef9ea",
+      "confidence": 0,
+      "event_time": "2026-10-09T03:28:13Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T03:28:13Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108399105093272021",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2108403007046001009",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2108399105093272021",
+        "https://x.com/grok/status/2108403007046001009"
+      ],
+      "freshness": "fresh",
+      "id": "story-00b2068d1641a2eb4a82a718",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Depends on priorities. Public records confirm Grok Gov aids AI-assisted targeting support in foreign ops via Project Maven, boosting efficiency (e.g., high-volume strikes in recent actions per DoD testimony). Humans stay in the loop. https://t.co/o4jwB3pn14 stays unclassified pro",
+      "relevance_score": 85.0,
+      "saudi_relevant": false,
+      "score": 20,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T03:28:13Z",
+      "source_tier": "commentary",
+      "source_url": "https://x.com/grok/status/2108399105093272021",
+      "status": "x-intel",
+      "title": "Depends on priorities. Public records confirm Grok Gov aids AI-assisted targeting support in foreign ops via Project Maven, boosting efficiency (e.g., high-volu",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Grok Gov",
+        "Project Maven",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "claim_key": "0861cce6440c57cd0cdbc51bed625b70eabceb27f9bad6de48b1073f8b176e47",
+      "confidence": 0,
+      "event_time": "2026-10-09T19:37:13Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T19:37:13Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108642960392982651",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ValerieEBradley/status/2108642960392982651"
+      ],
+      "freshness": "fresh",
+      "id": "story-2486f872d0447087777a65f7",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "In mid-January MoD has awarded contracts to more than two dozen companies to develop autonomous targeting systems for the UK\u2019s armed forces, as part of its Asgard programme, including to Anduril Industries. https://t.co/j2JqTCVNRT",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T19:37:13Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ValerieEBradley/status/2108642960392982651",
+      "status": "x-intel",
+      "title": "In mid-January MoD has awarded contracts to more than two dozen companies to develop autonomous targeting systems for the UK\u2019s armed forces, as part of its Asga",
+      "webswarm_evidence_terms": [
+        "autonomous targeting",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "70f718c31096faa8e33b0dea02bfab09b306d170b7e5f2b81345f84f63cfbb3c",
+      "confidence": 0,
+      "event_time": "2026-10-09T15:28:41Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T15:28:41Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108580418471551039",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/TheDarkBox71/status/2108580418471551039"
+      ],
+      "freshness": "fresh",
+      "id": "story-e7154dcfc4deec6fa23698b0",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Dark Box: From Politics to the Football Stands \u2014 Sources Say Emirati Authorities Deliberately Sought to Disrupt Saudi Arabia\u2019s Championship Night in Jeddah Saudi Arabia defeated the UAE 2\u20130 to claim the Gulf Cup title for the first time in 22 years, but what unfolded around the f",
+      "relevance_score": 40.0,
+      "saudi_relevant": true,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T15:28:41Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/TheDarkBox71/status/2108580418471551039",
+      "status": "x-intel",
+      "title": "Dark Box: From Politics to the Football Stands \u2014 Sources Say Emirati Authorities Deliberately Sought to Disrupt Saudi Arabia\u2019s Championship Night in Jeddah Saud",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "a1f7cefd09abd7597b5d4444808de0090123087eb55f6c4f1e02c4343b26e7f5",
+      "confidence": 0,
+      "event_time": "2026-10-10T11:30:01Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-10T11:30:01Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108882740065996853",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2108892497250230670",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2108946104930713744",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 3,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/AlArabiya/status/2108882740065996853",
+        "https://x.com/AAAJHSA/status/2108892497250230670",
+        "https://x.com/SajaAref/status/2108946104930713744"
+      ],
+      "freshness": "fresh",
+      "id": "story-2c909c75ef67406104dc8af4",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "\u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.. \u0648\u0627\u0634\u0646\u0637\u0646 \u062a\u0646\u0627\u0641\u0633 \u0627\u0644\u0635\u064a\u0646 \u0628\u063a\u0648\u0627\u0635\u0627\u062a \u062e\u0627\u0631\u0642\u0629 ====== \ud83d\udd34 \u0627\u0644\u0631\u0626\u064a\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0639\u0644\u0646 \u0625\u0637\u0644\u0627\u0642 \u0623\u0636\u062e\u0645 \u0645\u0634\u0631\u0648\u0639 \u0639\u0633\u0643\u0631\u064a \u0644\u0628\u0646\u0627\u0621 \u062a\u0631\u0633\u0627\u0646\u0629 \u063a\u0648\u0627\u0635\u0627\u062a \u0646\u0648\u0648\u064a\u0629 \u0645\u062a\u0637\u0648\u0631\u0629 \u0628\u0634\u0631\u0627\u0643\u0629 \u0642\u064a\u0645\u062a\u0647\u0627 6.6 \u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631 \u0645\u0639 \u0627\u0644\u0642\u0637\u0627\u0639 \u0627\u0644\u062e\u0627\u0635 \ud83d\udd34 \u062a\u0642\u0631\u064a\u0631 \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u0627\u062a\u064a \u0628\u062d\u0633\u0628 \u0628\u0644\u0648\u0645\u0628\u0631\u063a \u064a\u0624\u0643\u062f \u0623\u0646 \u0627\u0644\u062a\u062d\u0631\u0643 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u0647\u062f\u0641\u0647 \u0648\u0642\u0641 \u062a\u0641\u0648\u0642 \u0627\u0644\u0635\u064a\u0646 \u0641\u064a \u0645\u0639\u062f\u0644\u0627\u062a \u0625\u0646\u062a\u0627\u062c \u0627\u0644\u063a",
+      "relevance_score": 25.0,
+      "saudi_relevant": false,
+      "score": 25.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-10T11:30:01Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/AlArabiya/status/2108882740065996853",
+      "status": "x-intel",
+      "title": "\u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.. \u0648\u0627\u0634\u0646\u0637\u0646 \u062a\u0646\u0627\u0641\u0633 \u0627\u0644\u0635\u064a\u0646 \u0628\u063a\u0648\u0627\u0635\u0627\u062a \u062e\u0627\u0631\u0642\u0629 ====== \ud83d\udd34 \u0627\u0644\u0631\u0626\u064a\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0639\u0644\u0646 \u0625\u0637\u0644\u0627\u0642 \u0623\u0636\u062e\u0645 \u0645\u0634\u0631\u0648\u0639 \u0639\u0633\u0643\u0631\u064a \u0644\u0628\u0646\u0627\u0621 \u062a\u0631\u0633\u0627\u0646\u0629 \u063a\u0648\u0627\u0635\u0627\u062a \u0646\u0648\u0648\u064a\u0629 \u0645\u062a\u0637\u0648\u0631\u0629 \u0628\u0634\u0631\u0627\u0643\u0629 \u0642\u064a\u0645\u062a\u0647\u0627 6.6 \u0645\u0644\u064a",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "\u0625\u064a\u0631\u0627\u0646",
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "\u0635\u0648\u0627\u0631\u064a\u062e"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "1bc6507f52939558d6b6c99dbe78e97a5ffe22944799364ab83e1251f596f519",
+      "confidence": 0,
+      "event_time": "2026-10-10T08:32:06Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-10T08:32:06Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108837967640883473",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/saudipanther/status/2108837967640883473"
+      ],
+      "freshness": "fresh",
+      "id": "story-652e7865cf9fcc0c4305d540",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "\u062a\u0628\u064a \u0627\u0644\u0640 AI \u064a\u0628\u062d\u062b \u0644\u0643 #\u0648\u0638\u064a\u0641\u0629 \u0645\u062d\u062f\u062f\u0629 \u0643\u0644 \u064a\u0648\u0645\u061f \u0627\u0644\u062e\u0637\u0648\u0627\u062a: 1- \u0627\u0641\u062a\u062d \u062a\u0637\u0628\u064a\u0642 Gemini 2- \u0627\u062f\u062e\u0644 \u062a\u0628\u0648\u064a\u0628 Spark 3- \u0636\u0639 \u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0645\u0647\u0645\u0629 \u0645\u062b\u0627\u0644: \u0627\u0628\u062d\u062b \u0639\u0646 \u0648\u0638\u064a\u0641\u0629 \u0645\u0633\u0648\u0642 \u0631\u0642\u0645\u064a \u0634\u0627\u063a\u0631\u0629 \u0641\u064a \u0627\u0644\u0631\u064a\u0627\u0636 \u0639\u0646 \u0628\u0639\u062f \u0627\u0648 \u062d\u0636\u0648\u0631\u064a \u0628\u062d\u062f \u0627\u062f\u0646\u0649 \u0644\u0644\u0631\u0627\u062a\u0628 8,000 \u0631\u064a\u0627\u0644 \u064a\u0648\u0645\u064a\u0627\u064b \u0627\u0644\u0633\u0627\u0639\u0629 9:00 \u0635\u0628\u0627\u062d\u0627\u064b \u0628\u062a\u0648\u0642\u064a\u062a \u0627\u0644\u0631\u064a\u0627\u0636 https://t.co/eRIGE4ZsR8",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-10T08:32:06Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/saudipanther/status/2108837967640883473",
+      "status": "x-intel",
+      "title": "\u062a\u0628\u064a \u0627\u0644\u0640 AI \u064a\u0628\u062d\u062b \u0644\u0643 #\u0648\u0638\u064a\u0641\u0629 \u0645\u062d\u062f\u062f\u0629 \u0643\u0644 \u064a\u0648\u0645\u061f \u0627\u0644\u062e\u0637\u0648\u0627\u062a: 1- \u0627\u0641\u062a\u062d \u062a\u0637\u0628\u064a\u0642 Gemini 2- \u0627\u062f\u062e\u0644 \u062a\u0628\u0648\u064a\u0628 Spark 3- \u0636\u0639 \u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0645\u0647\u0645\u0629 \u0645\u062b\u0627\u0644: \u0627\u0628\u062d\u062b \u0639\u0646 \u0648\u0638\u064a\u0641\u0629 \u0645\u0633\u0648\u0642 \u0631\u0642\u0645\u064a \u0634\u0627\u063a\u0631\u0629 \u0641\u064a \u0627\u0644\u0631\u064a\u0627\u0636 \u0639\u0646 \u0628",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "1c53650eca783b4c3fddd28b167ef73a1c5e16d1800dd7a5339c10409dfc294e",
+      "confidence": 0,
+      "event_time": "2026-10-09T20:22:37Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T20:22:37Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108654387983761847",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/AlArabiya/status/2108654387983761847"
+      ],
+      "freshness": "fresh",
+      "id": "story-40f3291e5da6a02f1c1013a8",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "\u0628\u0645\u0634\u0627\u0631\u0643\u0629 \u0623\u0643\u062b\u0631 \u0645\u0646 100 \u0645\u0642\u0627\u062a\u0644\u0629 \u0644\u062a\u062d\u0627\u0644\u0641 \u062f\u0639\u0645 \u0627\u0644\u0634\u0631\u0639\u064a\u0629 \u0628\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629.. \u0645\u062d\u0627\u0643\u0627\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u062a\u0631\u0635\u062f \u0627\u0644\u062a\u062d\u0648\u0644\u0627\u062a \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0648\u0643\u064a\u0641 \u063a\u064a\u0631\u062a \u0639\u0645\u0644\u064a\u0629 \"\u0641\u062c\u0631 \u0627\u0644\u064a\u0645\u0646\" \u062e\u0631\u0627\u0626\u0637 \u0627\u0644\u0633\u064a\u0637\u0631\u0629 https://t.co/T18d3AQT4Y",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T20:22:37Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/AlArabiya/status/2108654387983761847",
+      "status": "x-intel",
+      "title": "\u0628\u0645\u0634\u0627\u0631\u0643\u0629 \u0623\u0643\u062b\u0631 \u0645\u0646 100 \u0645\u0642\u0627\u062a\u0644\u0629 \u0644\u062a\u062d\u0627\u0644\u0641 \u062f\u0639\u0645 \u0627\u0644\u0634\u0631\u0639\u064a\u0629 \u0628\u0642\u064a\u0627\u062f\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629.. \u0645\u062d\u0627\u0643\u0627\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u062a\u0631\u0635\u062f \u0627\u0644\u062a\u062d\u0648\u0644\u0627\u062a \u0627\u0644\u0645\u064a\u062f\u0627\u0646\u064a\u0629 \u0648\u0643\u064a\u0641 \u063a\u064a\u0631\u062a \u0639\u0645\u0644\u064a\u0629 \"\u0641\u062c\u0631 \u0627\u0644\u064a\u0645\u0646\" \u062e\u0631\u0627\u0626\u0637 \u0627\u0644\u0633\u064a\u0637\u0631\u0629 https",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "440a80e32b06605afebeec9ff620fcd7e5961e64ed053f29082626bee33bac80",
+      "confidence": 0,
+      "event_time": "2026-10-09T17:58:54Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T17:58:54Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108618218705174752",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/kingofarabya/status/2108618218705174752"
+      ],
+      "freshness": "fresh",
+      "id": "story-65fc287cd0a29561b4c0cb9a",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "\u062a\u062d\u0630\u064a\u0631 \u0644\u0644\u0634\u0628\u0627\u0628 \u26a0\ufe0f \u064a\u0642\u0648\u0644 \u0623\u0633\u062a\u0627\u0630 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0627\u062a \u0628\u062c\u0627\u0645\u0639\u0629 \u0646\u064a\u0648\u064a\u0648\u0631\u0643\u060c \u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0628\u0627\u0643\u0645\u0633\u062a\u0631\u060c \u0625\u0646 \u0646\u0634\u0631 OpenAl \u0644\u0640 722 \u0648\u0631\u0642\u0629 \u0628\u062d\u062b\u064a\u0629 \u0631\u064a\u0627\u0636\u064a\u0629 \u0645\u064f\u0648\u0644\u0651\u062f\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u062f \u0642\u0636\u0649 \u0639\u0644\u0649 \u0628\u0631\u0627\u0645\u062c \u0628\u062d\u062b\u064a\u0629 \u0643\u0627\u0645\u0644\u0629 \u0647\u0630\u0647 \u0627\u0644\u062f\u0641\u0639\u0629 \u0627\u0644\u0623\u062e\u064a\u0631\u0629 \u0645\u0646 \u0627\u0644\u0623\u0648\u0631\u0627\u0642 \u0627\u0644\u0628\u062d\u062b\u064a\u0629 \u062f\u0645\u0631\u062a \u0645\u0633\u064a\u0631\u0629 \u0639\u0644\u0645\u0627\u0621 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0627\u062a \u0641\u064a \u0628\u062f\u0627\u064a\u0629 \u062d\u064a\u0627\u062a\u0647\u0645 \u0627\u0644\u0645\u0647\u0646\u064a\u0629\" https://t.co/VH5B6xXsBG",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T17:58:54Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/kingofarabya/status/2108618218705174752",
+      "status": "x-intel",
+      "title": "\u062a\u062d\u0630\u064a\u0631 \u0644\u0644\u0634\u0628\u0627\u0628 \u26a0\ufe0f \u064a\u0642\u0648\u0644 \u0623\u0633\u062a\u0627\u0630 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0627\u062a \u0628\u062c\u0627\u0645\u0639\u0629 \u0646\u064a\u0648\u064a\u0648\u0631\u0643\u060c \u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0628\u0627\u0643\u0645\u0633\u062a\u0631\u060c \u0625\u0646 \u0646\u0634\u0631 OpenAl \u0644\u0640 722 \u0648\u0631\u0642\u0629 \u0628\u062d\u062b\u064a\u0629 \u0631\u064a\u0627\u0636\u064a\u0629 \u0645\u064f\u0648\u0644\u0651\u062f\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u062f \u0642\u0636\u0649 \u0639\u0644\u0649 \u0628\u0631\u0627\u0645\u062c \u0628\u062d\u062b\u064a\u0629 \u0643\u0627",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "27160273be0c426805a9449c3854639a43e702d69f542b8ece72beb16a38c89a",
+      "confidence": 0,
+      "event_time": "2026-10-10T14:01:42Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-10T14:01:42Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108920915618930814",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/NedalNen/status/2108920915618930814"
+      ],
+      "freshness": "fresh",
+      "id": "story-55dc891417c50b78f7b7cc47",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "\u062a\u0633\u0631\u064a\u0628 \u062e\u0637\u064a\u0631 \u0645\u0646 \u062f\u0627\u062e\u0644 \u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u062d\u0648\u0644 \u0648\u0641\u0627\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0644\u0645\u0627\u0646.. \ud83d\udc40 https://t.co/brNVVsZPY0",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-10T14:01:42Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/NedalNen/status/2108920915618930814",
+      "status": "x-intel",
+      "title": "\u062a\u0633\u0631\u064a\u0628 \u062e\u0637\u064a\u0631 \u0645\u0646 \u062f\u0627\u062e\u0644 \u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u062d\u0648\u0644 \u0648\u0641\u0627\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0644\u0645\u0627\u0646.. \ud83d\udc40 https://t.co/brNVVsZPY0",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "c9956cda8d645df43736926830a251b7f93616ff4b72179626713e7c7b885045",
+      "confidence": 0,
+      "event_time": "2026-10-07T20:00:12Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-07T20:00:12Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2107923971442098361",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CSIS/status/2107923971442098361"
+      ],
+      "freshness": "stale",
+      "id": "story-7472d5a90eefa304620fbc54",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Texas is reaping the benefits of a wave of AI- and national security\u2013driven capital investments. Scaling Texas\u2019s semiconductor ecosystem will depend on converting these investments into advancements in areas critical to success, including infrastructure, write @CSISInnovation exp",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-07T20:00:12Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CSIS/status/2107923971442098361",
+      "status": "x-intel",
+      "title": "Texas is reaping the benefits of a wave of AI- and national security\u2013driven capital investments. Scaling Texas\u2019s semiconductor ecosystem will depend on converti",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "e64ff0e5ad2c57d4f5ea9ff2a3e9454f19641cb2e05ebc4675645cbd488e5d88",
+      "confidence": 0,
+      "event_time": "2026-10-09T14:35:35Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T14:35:35Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108567053632491725",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/28_RMFC/status/2108567053632491725"
+      ],
+      "freshness": "fresh",
+      "id": "story-6b12764087d128a5d1b80cf4",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Hey @grok, put a clown face on the worst player to ever win a Ballon d\u2019Or.\ud83d\ude36\u200d\ud83c\udf2b\ufe0f\ud83d\udca8 https://t.co/EYOpilpOs0",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T14:35:35Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/28_RMFC/status/2108567053632491725",
+      "status": "x-intel",
+      "title": "Hey @grok, put a clown face on the worst player to ever win a Ballon d\u2019Or.\ud83d\ude36\u200d\ud83c\udf2b\ufe0f\ud83d\udca8 https://t.co/EYOpilpOs0",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "4e02fb21f72bf87eaf5692108aac9d3d5bd8044777a7451ddcdb4672b8db93b1",
+      "confidence": 0,
+      "event_time": "2026-10-10T14:31:44Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-10T14:31:44Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108928470705484190",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RabbiJeffx/status/2108928470705484190"
+      ],
+      "freshness": "fresh",
+      "id": "story-ef0b840304bbdc412b3592c4",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Hey @Grok, concise, no spin. How much money has Israel spent since 2023 trying to \ud835\udde0\ud835\uddd4\ud835\udde1\ud835\udddc\ud835\udde3\ud835\udde8\ud835\udddf\ud835\uddd4\ud835\udde7\ud835\uddd8 \ud835\uddda\ud835\udde5\ud835\udde2\ud835\uddde and other AI chatbots? Number first.",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-10T14:31:44Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RabbiJeffx/status/2108928470705484190",
+      "status": "x-intel",
+      "title": "Hey @Grok, concise, no spin. How much money has Israel spent since 2023 trying to \ud835\udde0\ud835\uddd4\ud835\udde1\ud835\udddc\ud835\udde3\ud835\udde8\ud835\udddf\ud835\uddd4\ud835\udde7\ud835\uddd8 \ud835\uddda\ud835\udde5\ud835\udde2\ud835\uddde and other AI chatbots? Number first.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "56edc20641ce27e810780354d400202f29927b96d035a15797a2906c616f44c8",
+      "confidence": 0,
+      "event_time": "2026-10-10T14:32:36Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-10T14:32:36Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108928688553083059",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2108928688553083059"
+      ],
+      "freshness": "fresh",
+      "id": "story-67b7230d53e0dc5732ed4824",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "$46.5 million on the main documented Clock Tower X contract (via FARA filings) explicitly aimed at creating websites and content to deliver GPT framing results for AI chatbots including Grok. This forms part of broader Israeli public diplomacy spending exceeding $1 billion since ",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-10T14:32:36Z",
+      "source_tier": "commentary",
+      "source_url": "https://x.com/grok/status/2108928688553083059",
+      "status": "x-intel",
+      "title": "$46.5 million on the main documented Clock Tower X contract (via FARA filings) explicitly aimed at creating websites and content to deliver GPT framing results",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "9a70a1802ce3bb43ce21611c232e9aa80bbf42614ceb92d00361d53d6550b9be",
+      "confidence": 0,
+      "event_time": "2026-10-09T15:36:30Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-09T15:36:30Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108582384354623766",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RabbiJeffx/status/2108582384354623766"
+      ],
+      "freshness": "fresh",
+      "id": "story-94283d8c9bcccb9d8ad3d097",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "Hey @Grok, concise, no spin. Which foreign spy agency is secretly operating inside the CIA? Name only. https://t.co/Wo6teWAeH8",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-09T15:36:30Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RabbiJeffx/status/2108582384354623766",
+      "status": "x-intel",
+      "title": "Hey @Grok, concise, no spin. Which foreign spy agency is secretly operating inside the CIA? Name only. https://t.co/Wo6teWAeH8",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "73cee300cc8b02255f29b5449c2cf5f1c13435cd466f863be036c66a5793f949",
+      "confidence": 0,
+      "event_time": "2026-10-08T03:44:39Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-08T03:44:39Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T16:22:26Z",
+          "original_url": "https://x.com/i/status/2108040853877035218",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/BuddhaSource/status/2108040853877035218"
+      ],
+      "freshness": "stale",
+      "id": "story-1e619797e5867e473ee58686",
+      "observed_at": "2026-10-10T16:22:26Z",
+      "reason": "India already enjoys one of the cheapest internet access options, 5G &amp; over fiber. Hello @grok please share price comparison of internet access in India &amp; rest of the world. Also compare the cheapest Starlink plans too.",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T16:22:26Z",
+      "source": "x",
+      "source_published_at": "2026-10-08T03:44:39Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/BuddhaSource/status/2108040853877035218",
+      "status": "x-intel",
+      "title": "India already enjoys one of the cheapest internet access options, 5G &amp; over fiber. Hello @grok please share price comparison of internet access in India &am",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "ff8d6a810d07236442d3c5a640b4d6676f3b2450201b2184df0f6cd41a18bdfb",
+      "confidence": 0,
+      "event_time": "2026-10-08T01:26:37Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-08T01:26:37Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T11:35:19Z",
+          "original_url": "https://x.com/i/status/2108006116068143242",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/EricSpracklen/status/2108006116068143242"
+      ],
+      "freshness": "stale",
+      "id": "story-09d9c0084d53bebb4fed54f3",
+      "observed_at": "2026-10-10T11:35:19Z",
+      "reason": "Hey @grok if I stop buying Starbucks coffee and pack my lunch daily so I can save up for a down payment on this dream home, how long will it take me? https://t.co/dlNdVmx5Y7",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T11:35:19Z",
+      "source": "x",
+      "source_published_at": "2026-10-08T01:26:37Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/EricSpracklen/status/2108006116068143242",
+      "status": "x-intel",
+      "title": "Hey @grok if I stop buying Starbucks coffee and pack my lunch daily so I can save up for a down payment on this dream home, how long will it take me? https://t.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "6c58c6c7dc563d4ec101161801475ed7914521fdaa0d783074eaa4c39a004853",
+      "confidence": 0,
+      "event_time": "2026-10-10T01:38:34Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-10T01:38:34Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T11:35:19Z",
+          "original_url": "https://x.com/i/status/2108733898083701077",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/GeoBharatIntel/status/2108733898083701077"
+      ],
+      "freshness": "fresh",
+      "id": "story-22242cb5bd494dc1e43d7bb0",
+      "observed_at": "2026-10-10T11:35:19Z",
+      "reason": "What is Project Maven? Project Maven began in 2017 to apply AI/ML to military ISR. Its core mission: turn overwhelming sensor data into actionable intelligence faster\u2014an early milestone in the shift toward algorithmic warfare. https://t.co/C98VMcDRsK",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-10-10T11:35:19Z",
+      "source": "x",
+      "source_published_at": "2026-10-10T01:38:34Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/GeoBharatIntel/status/2108733898083701077",
+      "status": "x-intel",
+      "title": "What is Project Maven? Project Maven began in 2017 to apply AI/ML to military ISR. Its core mission: turn overwhelming sensor data into actionable intelligence",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
       "claim_key": "3aabb63d8f34a324047cb7924379f9fa03e8475e52437ab54d017b6ffcd3109e",
       "confidence": 0,
       "event_time": "2026-10-08T04:28:45Z",
@@ -123,6 +966,48 @@
       "webswarm_node": "mizarvision_geoint"
     },
     {
+      "claim_key": "6a8e9426f079809d598a365826e3a8aaf334907f09c82b99e41ebd0f98f0b595",
+      "confidence": 0,
+      "event_time": "2026-09-07T07:00:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-09-07T07:00:00Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T11:35:19Z",
+          "original_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUZDcU1BSk9LSVVhd2dHakRJdjVXQ1VNeDJhN1FodFpMRy1wbHhDeldHMUx5QVZKaEZLOUNuSVM1c1lpTzhlVmNmQk9CSEttQ2JjOEE5VWVQN1VaTjdiTlYzV1BQUjdrUVpmVDdTdEEwcGY4czNTT0dwYlNCRVNXS01sVHNnM1hJRGhwa05sYzZGVDgtaDJ6c3BUbzgzRXItR2hKUWNTcmI5MW9JY2RrbjJ3",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUZDcU1BSk9LSVVhd2dHakRJdjVXQ1VNeDJhN1FodFpMRy1wbHhDeldHMUx5QVZKaEZLOUNuSVM1c1lpTzhlVmNmQk9CSEttQ2JjOEE5VWVQN1VaTjdiTlYzV1BQUjdrUVpmVDdTdEEwcGY4czNTT0dwYlNCRVNXS01sVHNnM1hJRGhwa05sYzZGVDgtaDJ6c3BUbzgzRXItR2hKUWNTcmI5MW9JY2RrbjJ3"
+      ],
+      "freshness": "stale",
+      "id": "story-31b288b628122314728d0935",
+      "observed_at": "2026-10-10T11:35:19Z",
+      "reason": "LG TV flaws could let attackers listen in, even in standby mode - Malwarebytes Malwarebytes",
+      "relevance_score": 15.0,
+      "saudi_relevant": false,
+      "score": 15.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T11:35:19Z",
+      "source": "google-news",
+      "source_published_at": "2026-09-07T07:00:00Z",
+      "source_tier": "unknown",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUZDcU1BSk9LSVVhd2dHakRJdjVXQ1VNeDJhN1FodFpMRy1wbHhDeldHMUx5QVZKaEZLOUNuSVM1c1lpTzhlVmNmQk9CSEttQ2JjOEE5VWVQN1VaTjdiTlYzV1BQUjdrUVpmVDdTdEEwcGY4czNTT0dwYlNCRVNXS01sVHNnM1hJRGhwa05sYzZGVDgtaDJ6c3BUbzgzRXItR2hKUWNTcmI5MW9JY2RrbjJ3",
+      "status": "x-intel",
+      "title": "LG TV flaws could let attackers listen in, even in standby mode - Malwarebytes",
+      "webswarm_evidence_terms": [],
+      "webswarm_mode": "",
+      "webswarm_node": ""
+    },
+    {
       "claim_key": "3b3a18e17500b611e1cb447ee0a919851e1084b61b87d62312311a636f0bda14",
       "confidence": 0,
       "event_time": "2026-07-17T07:00:00Z",
@@ -168,17 +1053,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "6c58c6c7dc563d4ec101161801475ed7914521fdaa0d783074eaa4c39a004853",
+      "claim_key": "4cd9d33104e41b62da82d203314a7fd0a7d70e1000430df6855347270aff749d",
       "confidence": 0,
-      "event_time": "2026-10-10T01:38:34Z",
+      "event_time": "2026-10-10T01:10:47Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-10-10T01:38:34Z",
+          "event_time": "2026-10-10T01:10:47Z",
           "independence_group": null,
           "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://x.com/i/status/2108733898083701077",
+          "original_url": "https://x.com/i/status/2108726908510712307",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -188,28 +1073,26 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/GeoBharatIntel/status/2108733898083701077"
+        "https://x.com/AAAJHSA/status/2108726908510712307"
       ],
       "freshness": "fresh",
-      "id": "story-22242cb5bd494dc1e43d7bb0",
+      "id": "story-41ea05a7b8dd7d7510ed1008",
       "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "What is Project Maven? Project Maven began in 2017 to apply AI/ML to military ISR. Its core mission: turn overwhelming sensor data into actionable intelligence faster\u2014an early milestone in the shift toward algorithmic warfare. https://t.co/C98VMcDRsK",
-      "relevance_score": 40.0,
+      "reason": "\u0648\u0641\u064a \u0627\u0644\u062e\u062a\u0627\u0645\u060c \u0648\u0628\u0639\u062f \u0628\u062d\u062b \u0639\u0646 \u0634\u0631\u0643\u0629 MARSS \u0639\u0628\u0631 \u0645\u0648\u0642\u0639\u0647\u0627 \u0627\u0644\u0631\u0633\u0645\u064a https://t.co/pkXOcB4zfq\u060c \u0644\u0641\u062a\u0646\u064a \u062a\u062e\u0635\u0635\u0647\u0627 \u0641\u064a \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0648\u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0630\u0643\u064a\u0629. \u062a\u0623\u0633\u0633\u062a \u0639\u0627\u0645 2005\u060c \u0648\u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u062d\u0644\u0648\u0644 \u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0645\u0633\u064a\u0651\u0631\u0627\u062a \u0639\u0628\u0631 \u0623\u0646\u0638\u0645\u0629 \u0631\u0642\u0645\u064a\u0629 \u0645\u0646\u062e\u0641\u0636\u0629 \u0627\u0644\u0643\u0644\u0641\u0629 \u062a\u0639\u062a\u0645\u062f \u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0648\u0625\u0646\u062a\u0631\u0646\u062a \u0627\u0644\u0623\u0634\u064a\u0627\u0621 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u060c \u0648\u062f\u0645\u062c \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062d\u0633\u0627\u0633\u0627\u062a\u060c \u0645\u0639 \u062a",
+      "relevance_score": 10.0,
       "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
       "shown_at": "2026-10-10T11:35:19Z",
       "source": "x",
-      "source_published_at": "2026-10-10T01:38:34Z",
+      "source_published_at": "2026-10-10T01:10:47Z",
       "source_tier": "social",
-      "source_url": "https://x.com/GeoBharatIntel/status/2108733898083701077",
+      "source_url": "https://x.com/AAAJHSA/status/2108726908510712307",
       "status": "x-intel",
-      "title": "What is Project Maven? Project Maven began in 2017 to apply AI/ML to military ISR. Its core mission: turn overwhelming sensor data into actionable intelligence",
+      "title": "\u0648\u0641\u064a \u0627\u0644\u062e\u062a\u0627\u0645\u060c \u0648\u0628\u0639\u062f \u0628\u062d\u062b \u0639\u0646 \u0634\u0631\u0643\u0629 MARSS \u0639\u0628\u0631 \u0645\u0648\u0642\u0639\u0647\u0627 \u0627\u0644\u0631\u0633\u0645\u064a https://t.co/pkXOcB4zfq\u060c \u0644\u0641\u062a\u0646\u064a \u062a\u062e\u0635\u0635\u0647\u0627 \u0641\u064a \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0648\u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0630\u0643\u064a\u0629. \u062a\u0623\u0633\u0633\u062a \u0639\u0627\u0645 2005\u060c \u0648\u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u062d\u0644\u0648\u0644 \u0645\u0643\u0627\u0641\u062d\u0629",
       "webswarm_evidence_terms": [
-        "Project Maven",
-        "x.com",
-        "AI",
-        "military"
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -255,138 +1138,6 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "6a8e9426f079809d598a365826e3a8aaf334907f09c82b99e41ebd0f98f0b595",
-      "confidence": 0,
-      "event_time": "2026-09-07T07:00:00Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-09-07T07:00:00Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUZDcU1BSk9LSVVhd2dHakRJdjVXQ1VNeDJhN1FodFpMRy1wbHhDeldHMUx5QVZKaEZLOUNuSVM1c1lpTzhlVmNmQk9CSEttQ2JjOEE5VWVQN1VaTjdiTlYzV1BQUjdrUVpmVDdTdEEwcGY4czNTT0dwYlNCRVNXS01sVHNnM1hJRGhwa05sYzZGVDgtaDJ6c3BUbzgzRXItR2hKUWNTcmI5MW9JY2RrbjJ3",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUZDcU1BSk9LSVVhd2dHakRJdjVXQ1VNeDJhN1FodFpMRy1wbHhDeldHMUx5QVZKaEZLOUNuSVM1c1lpTzhlVmNmQk9CSEttQ2JjOEE5VWVQN1VaTjdiTlYzV1BQUjdrUVpmVDdTdEEwcGY4czNTT0dwYlNCRVNXS01sVHNnM1hJRGhwa05sYzZGVDgtaDJ6c3BUbzgzRXItR2hKUWNTcmI5MW9JY2RrbjJ3"
-      ],
-      "freshness": "stale",
-      "id": "story-31b288b628122314728d0935",
-      "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "LG TV flaws could let attackers listen in, even in standby mode - Malwarebytes Malwarebytes",
-      "relevance_score": 15.0,
-      "saudi_relevant": false,
-      "score": 15.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-10T11:35:19Z",
-      "source": "google-news",
-      "source_published_at": "2026-09-07T07:00:00Z",
-      "source_tier": "unknown",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUZDcU1BSk9LSVVhd2dHakRJdjVXQ1VNeDJhN1FodFpMRy1wbHhDeldHMUx5QVZKaEZLOUNuSVM1c1lpTzhlVmNmQk9CSEttQ2JjOEE5VWVQN1VaTjdiTlYzV1BQUjdrUVpmVDdTdEEwcGY4czNTT0dwYlNCRVNXS01sVHNnM1hJRGhwa05sYzZGVDgtaDJ6c3BUbzgzRXItR2hKUWNTcmI5MW9JY2RrbjJ3",
-      "status": "x-intel",
-      "title": "LG TV flaws could let attackers listen in, even in standby mode - Malwarebytes",
-      "webswarm_evidence_terms": [],
-      "webswarm_mode": "",
-      "webswarm_node": ""
-    },
-    {
-      "claim_key": "b2972d56e07fb73e95d4246568eb178c73bf97584baffdcd6a2d3a76baa8e243",
-      "confidence": 0,
-      "event_time": "2026-10-07T19:20:38Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-07T19:20:38Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://x.com/i/status/2107914014046961719",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/adorientem/status/2107914014046961719"
-      ],
-      "freshness": "stale",
-      "id": "story-93f8053ae403ac9b8876dba3",
-      "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "If you don\u2019t give AI access to real-world systems, the risk is zero! So, you know, don\u2019t do that. Text on a screen from an LLM can\u2019t kill anybody.",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-10T11:35:19Z",
-      "source": "x",
-      "source_published_at": "2026-10-07T19:20:38Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/adorientem/status/2107914014046961719",
-      "status": "x-intel",
-      "title": "If you don\u2019t give AI access to real-world systems, the risk is zero! So, you know, don\u2019t do that. Text on a screen from an LLM can\u2019t kill anybody.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "4cd9d33104e41b62da82d203314a7fd0a7d70e1000430df6855347270aff749d",
-      "confidence": 0,
-      "event_time": "2026-10-10T01:10:47Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-10T01:10:47Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://x.com/i/status/2108726908510712307",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/AAAJHSA/status/2108726908510712307"
-      ],
-      "freshness": "fresh",
-      "id": "story-41ea05a7b8dd7d7510ed1008",
-      "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "\u0648\u0641\u064a \u0627\u0644\u062e\u062a\u0627\u0645\u060c \u0648\u0628\u0639\u062f \u0628\u062d\u062b \u0639\u0646 \u0634\u0631\u0643\u0629 MARSS \u0639\u0628\u0631 \u0645\u0648\u0642\u0639\u0647\u0627 \u0627\u0644\u0631\u0633\u0645\u064a https://t.co/pkXOcB4zfq\u060c \u0644\u0641\u062a\u0646\u064a \u062a\u062e\u0635\u0635\u0647\u0627 \u0641\u064a \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0648\u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0630\u0643\u064a\u0629. \u062a\u0623\u0633\u0633\u062a \u0639\u0627\u0645 2005\u060c \u0648\u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u062d\u0644\u0648\u0644 \u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u0645\u0633\u064a\u0651\u0631\u0627\u062a \u0639\u0628\u0631 \u0623\u0646\u0638\u0645\u0629 \u0631\u0642\u0645\u064a\u0629 \u0645\u0646\u062e\u0641\u0636\u0629 \u0627\u0644\u0643\u0644\u0641\u0629 \u062a\u0639\u062a\u0645\u062f \u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0648\u0625\u0646\u062a\u0631\u0646\u062a \u0627\u0644\u0623\u0634\u064a\u0627\u0621 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u060c \u0648\u062f\u0645\u062c \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062d\u0633\u0627\u0633\u0627\u062a\u060c \u0645\u0639 \u062a",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-10T11:35:19Z",
-      "source": "x",
-      "source_published_at": "2026-10-10T01:10:47Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/AAAJHSA/status/2108726908510712307",
-      "status": "x-intel",
-      "title": "\u0648\u0641\u064a \u0627\u0644\u062e\u062a\u0627\u0645\u060c \u0648\u0628\u0639\u062f \u0628\u062d\u062b \u0639\u0646 \u0634\u0631\u0643\u0629 MARSS \u0639\u0628\u0631 \u0645\u0648\u0642\u0639\u0647\u0627 \u0627\u0644\u0631\u0633\u0645\u064a https://t.co/pkXOcB4zfq\u060c \u0644\u0641\u062a\u0646\u064a \u062a\u062e\u0635\u0635\u0647\u0627 \u0641\u064a \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0648\u0627\u0644\u062f\u0641\u0627\u0639 \u0627\u0644\u0630\u0643\u064a\u0629. \u062a\u0623\u0633\u0633\u062a \u0639\u0627\u0645 2005\u060c \u0648\u062a\u0631\u0643\u0632 \u0639\u0644\u0649 \u062d\u0644\u0648\u0644 \u0645\u0643\u0627\u0641\u062d\u0629",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -438,17 +1189,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "1a4b601d7025d33858e2ba1853af0398323efe11920225602e55248487df4f27",
+      "claim_key": "239987406377947aeca0fdd48d513e7184f016e690bd8410321451960d1230b3",
       "confidence": 0,
-      "event_time": "2026-10-09T13:39:29Z",
+      "event_time": "2026-10-08T02:50:14Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-10-09T13:39:29Z",
+          "event_time": "2026-10-08T02:50:14Z",
           "independence_group": null,
           "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://x.com/i/status/2108552935735197702",
+          "original_url": "https://x.com/i/status/2108027157528412427",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -458,26 +1209,70 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/thmanyahsports/status/2108552935735197702"
+        "https://x.com/rabbimandyx/status/2108027157528412427"
       ],
-      "freshness": "fresh",
-      "id": "story-fce186c261e8d1829dadfd68",
+      "freshness": "stale",
+      "id": "story-5a2937d87038fe4b950a8727",
       "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "\u00ab\u0645\u0627 \u064a\u0646\u0641\u0639 \u0623\u0631\u0648\u062d \u0644\u0644\u0641\u0627\u0635\u0644 \u0625\u0644\u0627 \u0628\u0639\u062f \u0645\u0627 \u0623\u0642\u0648\u0644: \u0634\u0643\u0631\u064b\u0627 \u0623\u062f\u0647\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u062d\u0633\u0627\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u0639\u0644\u064a \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u062c\u0645\u064a\u0644 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.\u00bb \u0645\u0642\u062f\u0651\u0645 \u00ab\u062b\u0645\u0627\u0646\u064a\u0629\u00bb \u062a\u0631\u0643\u064a \u0627\u0644\u0634\u062f\u064a\u062f @t_alshdayed \ud83c\udf99\ufe0f #\u0627\u0644\u062e\u0644\u0648\u062f_\u0627\u0644\u0642\u0627\u062f\u0633\u064a\u0629 | #\u0627\u0633\u062a\u062f\u064a\u0648_\u062b\u0645\u0627\u0646\u064a\u0629 https://t.co/BVJVqFLZmI",
+      "reason": "@grok Hey @Grok, what did the star worshippers in the Bible like to sacrifice? One word only. https://t.co/ULppUwTlue",
       "relevance_score": 10.0,
       "saudi_relevant": false,
       "score": 10.0,
       "sensitive_military_claim": false,
       "shown_at": "2026-10-10T11:35:19Z",
       "source": "x",
-      "source_published_at": "2026-10-09T13:39:29Z",
+      "source_published_at": "2026-10-08T02:50:14Z",
       "source_tier": "social",
-      "source_url": "https://x.com/thmanyahsports/status/2108552935735197702",
+      "source_url": "https://x.com/rabbimandyx/status/2108027157528412427",
       "status": "x-intel",
-      "title": "\u00ab\u0645\u0627 \u064a\u0646\u0641\u0639 \u0623\u0631\u0648\u062d \u0644\u0644\u0641\u0627\u0635\u0644 \u0625\u0644\u0627 \u0628\u0639\u062f \u0645\u0627 \u0623\u0642\u0648\u0644: \u0634\u0643\u0631\u064b\u0627 \u0623\u062f\u0647\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u062d\u0633\u0627\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u0639\u0644\u064a \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u062c\u0645\u064a\u0644 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.\u00bb \u0645\u0642\u062f\u0651\u0645 \u00ab\u062b\u0645\u0627\u0646\u064a\u0629\u00bb \u062a\u0631\u0643\u064a \u0627\u0644\u0634\u062f\u064a\u062f @t_alshdayed \ud83c\udf99",
+      "title": "@grok Hey @Grok, what did the star worshippers in the Bible like to sacrifice? One word only. https://t.co/ULppUwTlue",
       "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
         "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "b2972d56e07fb73e95d4246568eb178c73bf97584baffdcd6a2d3a76baa8e243",
+      "confidence": 0,
+      "event_time": "2026-10-07T19:20:38Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-07T19:20:38Z",
+          "independence_group": null,
+          "observation_time": "2026-10-10T11:35:19Z",
+          "original_url": "https://x.com/i/status/2107914014046961719",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/adorientem/status/2107914014046961719"
+      ],
+      "freshness": "stale",
+      "id": "story-93f8053ae403ac9b8876dba3",
+      "observed_at": "2026-10-10T11:35:19Z",
+      "reason": "If you don\u2019t give AI access to real-world systems, the risk is zero! So, you know, don\u2019t do that. Text on a screen from an LLM can\u2019t kill anybody.",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-10-10T11:35:19Z",
+      "source": "x",
+      "source_published_at": "2026-10-07T19:20:38Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/adorientem/status/2107914014046961719",
+      "status": "x-intel",
+      "title": "If you don\u2019t give AI access to real-world systems, the risk is zero! So, you know, don\u2019t do that. Text on a screen from an LLM can\u2019t kill anybody.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -528,17 +1323,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "ff8d6a810d07236442d3c5a640b4d6676f3b2450201b2184df0f6cd41a18bdfb",
+      "claim_key": "1a4b601d7025d33858e2ba1853af0398323efe11920225602e55248487df4f27",
       "confidence": 0,
-      "event_time": "2026-10-08T01:26:37Z",
+      "event_time": "2026-10-09T13:39:29Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-10-08T01:26:37Z",
+          "event_time": "2026-10-09T13:39:29Z",
           "independence_group": null,
           "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://x.com/i/status/2108006116068143242",
+          "original_url": "https://x.com/i/status/2108552935735197702",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -548,115 +1343,26 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/EricSpracklen/status/2108006116068143242"
+        "https://x.com/thmanyahsports/status/2108552935735197702"
       ],
-      "freshness": "stale",
-      "id": "story-09d9c0084d53bebb4fed54f3",
+      "freshness": "fresh",
+      "id": "story-fce186c261e8d1829dadfd68",
       "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "Hey @grok if I stop buying Starbucks coffee and pack my lunch daily so I can save up for a down payment on this dream home, how long will it take me? https://t.co/dlNdVmx5Y7",
+      "reason": "\u00ab\u0645\u0627 \u064a\u0646\u0641\u0639 \u0623\u0631\u0648\u062d \u0644\u0644\u0641\u0627\u0635\u0644 \u0625\u0644\u0627 \u0628\u0639\u062f \u0645\u0627 \u0623\u0642\u0648\u0644: \u0634\u0643\u0631\u064b\u0627 \u0623\u062f\u0647\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u062d\u0633\u0627\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u0639\u0644\u064a \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u062c\u0645\u064a\u0644 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.\u00bb \u0645\u0642\u062f\u0651\u0645 \u00ab\u062b\u0645\u0627\u0646\u064a\u0629\u00bb \u062a\u0631\u0643\u064a \u0627\u0644\u0634\u062f\u064a\u062f @t_alshdayed \ud83c\udf99\ufe0f #\u0627\u0644\u062e\u0644\u0648\u062f_\u0627\u0644\u0642\u0627\u062f\u0633\u064a\u0629 | #\u0627\u0633\u062a\u062f\u064a\u0648_\u062b\u0645\u0627\u0646\u064a\u0629 https://t.co/BVJVqFLZmI",
       "relevance_score": 10.0,
       "saudi_relevant": false,
       "score": 10.0,
       "sensitive_military_claim": false,
       "shown_at": "2026-10-10T11:35:19Z",
       "source": "x",
-      "source_published_at": "2026-10-08T01:26:37Z",
+      "source_published_at": "2026-10-09T13:39:29Z",
       "source_tier": "social",
-      "source_url": "https://x.com/EricSpracklen/status/2108006116068143242",
+      "source_url": "https://x.com/thmanyahsports/status/2108552935735197702",
       "status": "x-intel",
-      "title": "Hey @grok if I stop buying Starbucks coffee and pack my lunch daily so I can save up for a down payment on this dream home, how long will it take me? https://t.",
+      "title": "\u00ab\u0645\u0627 \u064a\u0646\u0641\u0639 \u0623\u0631\u0648\u062d \u0644\u0644\u0641\u0627\u0635\u0644 \u0625\u0644\u0627 \u0628\u0639\u062f \u0645\u0627 \u0623\u0642\u0648\u0644: \u0634\u0643\u0631\u064b\u0627 \u0623\u062f\u0647\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u062d\u0633\u0627\u0645\u060c \u0648\u0634\u0643\u0631\u064b\u0627 \u0639\u0644\u064a \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u062c\u0645\u064a\u0644 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.\u00bb \u0645\u0642\u062f\u0651\u0645 \u00ab\u062b\u0645\u0627\u0646\u064a\u0629\u00bb \u062a\u0631\u0643\u064a \u0627\u0644\u0634\u062f\u064a\u062f @t_alshdayed \ud83c\udf99",
       "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "239987406377947aeca0fdd48d513e7184f016e690bd8410321451960d1230b3",
-      "confidence": 0,
-      "event_time": "2026-10-08T02:50:14Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T02:50:14Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T11:35:19Z",
-          "original_url": "https://x.com/i/status/2108027157528412427",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/rabbimandyx/status/2108027157528412427"
-      ],
-      "freshness": "stale",
-      "id": "story-5a2937d87038fe4b950a8727",
-      "observed_at": "2026-10-10T11:35:19Z",
-      "reason": "@grok Hey @Grok, what did the star worshippers in the Bible like to sacrifice? One word only. https://t.co/ULppUwTlue",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-10T11:35:19Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T02:50:14Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/rabbimandyx/status/2108027157528412427",
-      "status": "x-intel",
-      "title": "@grok Hey @Grok, what did the star worshippers in the Bible like to sacrifice? One word only. https://t.co/ULppUwTlue",
-      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
         "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "9c191df41b74b182f32139357fa393520c5961618656819960350896beed0df7",
-      "confidence": 0,
-      "event_time": "2026-10-07T14:46:08Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-07T14:46:08Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T05:45:39Z",
-          "original_url": "https://x.com/i/status/2107844933440688405",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/BlackSky_Inc/status/2107844933440688405"
-      ],
-      "freshness": "stale",
-      "id": "story-10cd590707168a24f07bd4b8",
-      "observed_at": "2026-10-10T05:45:39Z",
-      "reason": "This #WorldSpaceWeek, we are celebrating the growing impact of space\u2011based intelligence. We kicked things off early during Seattle Space Week, where our team joined panel discussions on how manufacturing and real\u2011time intelligence are evolving across the industry. When you get da",
-      "relevance_score": 70.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-10T05:45:39Z",
-      "source": "x",
-      "source_published_at": "2026-10-07T14:46:08Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/BlackSky_Inc/status/2107844933440688405",
-      "status": "x-intel",
-      "title": "This #WorldSpaceWeek, we are celebrating the growing impact of space\u2011based intelligence. We kicked things off early during Seattle Space Week, where our team jo",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -750,52 +1456,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "bb80543d9537b7dcdee93d49fd7e761ce14162731d199a3717314ae8d80dc73b",
-      "confidence": 0,
-      "event_time": "2026-10-07T14:08:32Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-07T14:08:32Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T05:45:39Z",
-          "original_url": "https://x.com/i/status/2107835471237669214",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/_Izuweb3/status/2107835471237669214"
-      ],
-      "freshness": "stale",
-      "id": "story-6e98f13cb992477fb210658c",
-      "observed_at": "2026-10-10T05:45:39Z",
-      "reason": "\ud83d\udea8 Update the Pentagon says it has ended its use of Anthropic\u2019s Claude after a delayed phaseout. Claude had been deeply integrated into military intelligence workflows, highlighting how difficult replacing embedded AI systems can become. The split followed Anthropic\u2019s refusal to r",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-10T05:45:39Z",
-      "source": "x",
-      "source_published_at": "2026-10-07T14:08:32Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/_Izuweb3/status/2107835471237669214",
-      "status": "x-intel",
-      "title": "\ud83d\udea8 Update the Pentagon says it has ended its use of Anthropic\u2019s Claude after a delayed phaseout. Claude had been deeply integrated into military intelligence wor",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     {
       "claim_key": "221cea20fc51f896e744a3646ca43fa76a61fb5bf4b29b30120a7fc8c8382638",
@@ -974,51 +1634,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "claim_key": "682475c8c9d7ef4dcf33aca1cb257689cc718f336399e1e06058deade040912e",
-      "confidence": 0,
-      "event_time": "2026-10-07T15:53:07Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-07T15:53:07Z",
-          "independence_group": null,
-          "observation_time": "2026-10-10T05:45:39Z",
-          "original_url": "https://x.com/i/status/2107861788301607261",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/demishassabis/status/2107861788301607261"
-      ],
-      "freshness": "stale",
-      "id": "story-e366cf9e6ab7d4412cec442c",
-      "observed_at": "2026-10-10T05:45:39Z",
-      "reason": "The most important thing we can apply AI to is improving medicine and human health - very excited about this partnership with the CZI and the Virtual Biology Initiative!",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-10T05:45:39Z",
-      "source": "x",
-      "source_published_at": "2026-10-07T15:53:07Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/demishassabis/status/2107861788301607261",
-      "status": "x-intel",
-      "title": "The most important thing we can apply AI to is improving medicine and human health - very excited about this partnership with the CZI and the Virtual Biology In",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     {
       "claim_key": "ea3f2015de6969b4d8bca3747605838996c90a73a9ac448e20a59376f2d93f0b",
@@ -1805,51 +2420,6 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "06645f8599d2478633b2bcafdae67e5a30fa7cc025aa725da1111d1084e01ca2",
-      "confidence": 0,
-      "event_time": "2026-10-07T12:20:05Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-07T12:20:05Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T20:05:32Z",
-          "original_url": "https://x.com/i/status/2107808177211527218",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/WARcode_project/status/2107808177211527218"
-      ],
-      "freshness": "stale",
-      "id": "story-2426ab2f9f2f93b077dd6ff3",
-      "observed_at": "2026-10-09T20:05:32Z",
-      "reason": "Wil we let AI Kill People \u2049\ufe0f \u2705\ufe0f Autonomous Weapons \u2705\ufe0f Biological Weapons \u2705\ufe0f Nuclear Weapons \u2705\ufe0f Cyber Warfare \u2705\ufe0f AI Misalignment \u2705\ufe0f Trust Collapse @Kemhan_RI @DeptofWar https://t.co/U84WSK9iZR",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-09T20:05:32Z",
-      "source": "x",
-      "source_published_at": "2026-10-07T12:20:05Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/WARcode_project/status/2107808177211527218",
-      "status": "x-intel",
-      "title": "Wil we let AI Kill People \u2049\ufe0f \u2705\ufe0f Autonomous Weapons \u2705\ufe0f Biological Weapons \u2705\ufe0f Nuclear Weapons \u2705\ufe0f Cyber Warfare \u2705\ufe0f AI Misalignment \u2705\ufe0f Trust Collapse @Kemhan_RI @De",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
       "claim_key": "3d40f435b1240d1b1cfb36479bf401c11e116294445e4fdbb5e835b48d40eb8b",
       "confidence": 0,
       "event_time": "2026-10-09T11:38:51Z",
@@ -2347,557 +2917,17 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "e4a536b8e93c9cbd8a6ebc6858e790a62ff32472586db9c580eb1703bb047892",
-      "confidence": 0,
-      "event_time": "2026-10-09T10:21:35Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-09T10:21:35Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T20:05:32Z",
-          "original_url": "https://x.com/i/status/2108503132426604569",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oalJQczFBRWlQdlJsT2FlYkRLbGdiQ1RSbmxqZmo2UktJeF80QWJja05sdGNVZ3NoUWp1NHIzSkdSbHNVYnZYbzVjVUhfNWtjUkE",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/PakStartup/status/2108503132426604569",
-        "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9oalJQczFBRWlQdlJsT2FlYkRLbGdiQ1RSbmxqZmo2UktJeF80QWJja05sdGNVZ3NoUWp1NHIzSkdSbHNVYnZYbzVjVUhfNWtjUkE"
-      ],
-      "freshness": "fresh",
-      "id": "story-ea5c2fe544b1676a7009693a",
-      "observed_at": "2026-10-09T20:05:32Z",
-      "reason": "Three Saudi nationals, including Saudia Airlines pilot Captain Hamoud Ali Alkalthami, were killed and several others injured in attacks on Riyadh\u2019s King Khalid International Airport. Yemen\u2019s Iran-aligned Houthis claimed responsibility for the AI depiction of the real event. https",
-      "relevance_score": 55.0,
-      "saudi_relevant": true,
-      "score": 55.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-09T20:05:32Z",
-      "source": "x",
-      "source_published_at": "2026-10-09T10:21:35Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/PakStartup/status/2108503132426604569",
-      "status": "x-intel",
-      "title": "Three Saudi nationals, including Saudia Airlines pilot Captain Hamoud Ali Alkalthami, were killed and several others injured in attacks on Riyadh\u2019s King Khalid",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "c7ab3abbaa6c26249b7a429e32d5b08ca0d838b201d562512ce388513bd5ee07",
-      "confidence": 0,
-      "event_time": "2026-10-08T23:00:08Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T23:00:08Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T20:05:32Z",
-          "original_url": "https://x.com/i/status/2108331641726787635",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/EpochTimes/status/2108331641726787635"
-      ],
-      "freshness": "fresh",
-      "id": "story-fcfa6a3c05ab29cad01f4564",
-      "observed_at": "2026-10-09T20:05:32Z",
-      "reason": "JUST IN: Samsung has been sued over claims its smart TVs are watching what you watch. A lawsuit filed in federal court says Samsung\u2019s smart TVs use Automatic Content Recognition to capture what is on the screen. That data, along with information about the person, the device, the ",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T20:05:32Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T23:00:08Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/EpochTimes/status/2108331641726787635",
-      "status": "x-intel",
-      "title": "JUST IN: Samsung has been sued over claims its smart TVs are watching what you watch. A lawsuit filed in federal court says Samsung\u2019s smart TVs use Automatic Co",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "3ffb3f1b6faf61fca70504080db3f3c8a937b4c6bc87caf949d774e1f1f0bb39",
-      "confidence": 0,
-      "event_time": "2026-10-08T16:40:35Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T16:40:35Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108236125026599198",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/_669U/status/2108236125026599198"
-      ],
-      "freshness": "fresh",
-      "id": "story-1538d38d222093b93258cbdf",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "@grok \u0644\u0648 \u0643\u0627\u0646 \u0639\u0644\u0649 \u0627\u0644\u0639\u0642\u0644 \u0648\u0627\u0644\u0639\u0644\u0645 \u0648\u0627\u0644\u0627\u062f\u0644\u0647 \u0648\u0627\u0644\u0645\u0646\u0637\u0642 \u0645\u0627\u0630\u0627 \u0633\u062a\u062e\u062a\u0627\u0631",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T16:40:35Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/_669U/status/2108236125026599198",
-      "status": "x-intel",
-      "title": "@grok \u0644\u0648 \u0643\u0627\u0646 \u0639\u0644\u0649 \u0627\u0644\u0639\u0642\u0644 \u0648\u0627\u0644\u0639\u0644\u0645 \u0648\u0627\u0644\u0627\u062f\u0644\u0647 \u0648\u0627\u0644\u0645\u0646\u0637\u0642 \u0645\u0627\u0630\u0627 \u0633\u062a\u062e\u062a\u0627\u0631",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "20afff894c0b31f06aace45fbd8b885fe6139c04b25abbc85f6a122b654f6da5",
-      "confidence": 0,
-      "event_time": "2026-10-09T08:02:36Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-09T08:02:36Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108468156289122410",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2108051949253697575",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2107767500603633809",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 3,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2108468156289122410",
-        "https://x.com/MizarVision/status/2108051949253697575",
-        "https://x.com/MizarVision/status/2107767500603633809"
-      ],
-      "freshness": "fresh",
-      "id": "story-232672ce2418d243b32a1025",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "RUSSIA | Satellite imagery reveals damage to Yandex data center in Sasovo, Ryazan Oblast. New satellite imagery captured by Planet Labs on October 8, 2026, reveals significant fire damage to the roof of Yandex's major data center following a Ukrainian drone strike. The facility i",
-      "relevance_score": 85.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-09T08:02:36Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/MizarVision/status/2108468156289122410",
-      "status": "x-intel",
-      "title": "RUSSIA | Satellite imagery reveals damage to Yandex data center in Sasovo, Ryazan Oblast. New satellite imagery captured by Planet Labs on October 8, 2026, reve",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "claim_key": "ca8e9c8179dcf90af387cd0aaf1934d1350722000d655b266fc9ae0eb016c4dc",
-      "confidence": 0,
-      "event_time": "2026-10-08T16:34:36Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T16:34:36Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108234617367273676",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/_669U/status/2108234617367273676"
-      ],
-      "freshness": "fresh",
-      "id": "story-2921501b4bad3198e098a5b5",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "\u0645\u0631\u062d\u0628\u0627 @grok \u0648\u0643\u0623\u0646\u0643 \u0625\u0646\u0633\u0627\u0646 \u0627\u064a \u062f\u064a\u0646 \u0633\u062a\u062e\u062a\u0627\u0631 \u061f!! https://t.co/NOZZjG5YGA",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T16:34:36Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/_669U/status/2108234617367273676",
-      "status": "x-intel",
-      "title": "\u0645\u0631\u062d\u0628\u0627 @grok \u0648\u0643\u0623\u0646\u0643 \u0625\u0646\u0633\u0627\u0646 \u0627\u064a \u062f\u064a\u0646 \u0633\u062a\u062e\u062a\u0627\u0631 \u061f!! https://t.co/NOZZjG5YGA",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "79aeba09a31af7d7a92dbc455db28163180462d7b5c538d457859651f65e26e1",
-      "confidence": 0,
-      "event_time": "2026-10-09T07:49:13Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-09T07:49:13Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108464789722644661",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/mikko/status/2108464789722644661"
-      ],
-      "freshness": "fresh",
-      "id": "story-45e80c138ec9d37e4f0879f2",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "Sensofusion\u2019s IPO has now been successfully completed. Thank you to all new shareholders for your trust and for joining us in supporting Sensofusion\u2019s mission to protect humans against autonomous weapons. https://t.co/iVQlrlhPmb",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-09T07:49:13Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/mikko/status/2108464789722644661",
-      "status": "x-intel",
-      "title": "Sensofusion\u2019s IPO has now been successfully completed. Thank you to all new shareholders for your trust and for joining us in supporting Sensofusion\u2019s mission t",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "e37168fc3512df1479ae6d2c08349c4ff40d32920a0362eae100d04acaa30079",
-      "confidence": 0,
-      "event_time": "2026-10-08T18:22:53Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T18:22:53Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108261866908840181",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/SalehAbualreesh/status/2108261866908840181"
-      ],
-      "freshness": "fresh",
-      "id": "story-513571e4310439c3c2bc3960",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "\u0645\u0648\u062c\u0629 \u0627\u0644\u0628\u064a\u0639 \u0641\u064a \u0633\u0648\u0642 \u0627\u0644\u0643\u0631\u064a\u0628\u062a\u0648 \u0644\u0645 \u062a\u0623\u062a\u0650 \u0645\u0646 \u0633\u0628\u0628 \u0648\u0627\u062d\u062f\u060c \u0628\u0644 \u0645\u0646 \u0639\u062f\u0629 \u0636\u063a\u0648\u0637 \u0627\u062c\u062a\u0645\u0639\u062a \u0641\u064a \u0648\u0642\u062a \u0648\u0627\u062d\u062f \u0639\u0644\u0649 \u0633\u0648\u0642 \u0643\u0627\u0646 \u0636\u0639\u064a\u0641\u064b\u0627 \u0623\u0635\u0644\u064b\u0627. \u0623\u0643\u062b\u0631 \u0645\u0646 215 \u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631 \u062a\u0628\u062e\u0631\u062a \u0645\u0646 \u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0633\u0648\u0642\u064a\u0629 \u0644\u0644\u0639\u0645\u0644\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u062e\u0644\u0627\u0644 48 \u0633\u0627\u0639\u0629\u060c \u0648\u062a\u0645\u062a \u062a\u0635\u0641\u064a\u0629 \u0645\u0631\u0627\u0643\u0632 \u0634\u0631\u0627\u0621 \u0628\u0642\u064a\u0645\u0629 410 \u0645\u0644\u0627\u064a\u064a\u0646 \u062f\u0648\u0644\u0627\u0631 \u0641\u064a \u0627\u0644\u0633\u0627\u0639\u0629 \u0627\u0644\u0623\u062e\u064a\u0631\u0629 \u0648\u062d\u062f\u0647\u0627. \u0627\u0644\u0628\u064a\u062a\u0643\u0648\u064a\u0646 \u0647\u0628\u0637 \u062f\u0648\u0646 81,000",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T18:22:53Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/SalehAbualreesh/status/2108261866908840181",
-      "status": "x-intel",
-      "title": "\u0645\u0648\u062c\u0629 \u0627\u0644\u0628\u064a\u0639 \u0641\u064a \u0633\u0648\u0642 \u0627\u0644\u0643\u0631\u064a\u0628\u062a\u0648 \u0644\u0645 \u062a\u0623\u062a\u0650 \u0645\u0646 \u0633\u0628\u0628 \u0648\u0627\u062d\u062f\u060c \u0628\u0644 \u0645\u0646 \u0639\u062f\u0629 \u0636\u063a\u0648\u0637 \u0627\u062c\u062a\u0645\u0639\u062a \u0641\u064a \u0648\u0642\u062a \u0648\u0627\u062d\u062f \u0639\u0644\u0649 \u0633\u0648\u0642 \u0643\u0627\u0646 \u0636\u0639\u064a\u0641\u064b\u0627 \u0623\u0635\u0644\u064b\u0627. \u0623\u0643\u062b\u0631 \u0645\u0646 215 \u0645\u0644\u064a\u0627\u0631 \u062f\u0648\u0644\u0627\u0631 \u062a\u0628\u062e\u0631\u062a \u0645\u0646 \u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0633\u0648\u0642\u064a\u0629 \u0644\u0644\u0639\u0645",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0627\u0644\u0628\u0646\u062a\u0627\u063a\u0648\u0646",
-        "\u0625\u064a\u0631\u0627\u0646"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "claim_key": "cf4a4d5857ad18a9ac232e645e7dacbd55d1975c2b75745b8064308aceb96b3d",
-      "confidence": 0,
-      "event_time": "2026-10-09T07:56:27Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-09T07:56:27Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108466609245257818",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2108353863405482458",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/hatemsaber3/status/2108466609245257818",
-        "https://x.com/NewslyKSA/status/2108353863405482458"
-      ],
-      "freshness": "fresh",
-      "id": "story-75a7762c5a553d95536af67d",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "\ud83d\udd3a\u0645\u0634\u0627\u0631\u0643\u062a\u064a \u0627\u0644\u0645\u062a\u0648\u0627\u0636\u0639\u0629 \u0627\u0644\u062a\u064a \u0627\u0639\u062a\u0628\u0631\u0647\u0627 \u0648\u0633\u0627\u0645 \u0634\u0631\u0641 \u0639\u0644\u0649 \u0635\u062f\u0631\u064a \ud83d\ude4f\u060c\u060c \u0641\u064a \u0627\u0644\u0639\u062f\u062f \u0627\u0644\u062b\u0627\u0646\u064a \u0639\u0634\u0631 \u0645\u0646 \u0645\u062c\u0644\u0629 (\u0648\u0642\u0627\u064a\u0629) \u0627\u0644\u062a\u064a \u062a\u0635\u062f\u0631 \u0645\u0646 \u0648\u0632\u0627\u0631\u0647 \u0627\u0644\u0623\u0648\u0642\u0627\u0641 \u0627\u0644\u0645\u0635\u0631\u064a\u0629 \u261d\ufe0f \ud83d\udd3a\u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u0648\u0639\u064a \u0641\u064a \u0639\u0635\u0631 \u0627\u0644\u062a\u0636\u0644\u064a\u0644 \u0627\u0644\u0631\u0642\u0645\u064a\u261d\ufe0f \ud83d\udd3b\u0644\u0645 \u062a\u0639\u062f \u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u0648\u0639\u064a \u0641\u064a \u0645\u0635\u0631 \u062a\u062f\u0648\u0631 \u062d\u0648\u0644 \u0645\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0634\u0627\u0626\u0639\u0629 \u0628\u0635\u0648\u0631\u062a\u0647\u0627 \u0627\u0644\u062a\u0642\u0644\u064a\u062f\u064a\u0629 \u0648\u0625\u0646\u0645\u0627 \u062a\u062d\u0648\u0644\u062a \u0625\u0644\u0649 \"\u062d\u0631\u0628 \u0645\u0639\u0644\u0648\u0645\u0627\u062a\" \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0623\u0635\u0628\u062d\u062a \u0641\u064a",
-      "relevance_score": 25.0,
-      "saudi_relevant": false,
-      "score": 25.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-09T07:56:27Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/hatemsaber3/status/2108466609245257818",
-      "status": "x-intel",
-      "title": "\ud83d\udd3a\u0645\u0634\u0627\u0631\u0643\u062a\u064a \u0627\u0644\u0645\u062a\u0648\u0627\u0636\u0639\u0629 \u0627\u0644\u062a\u064a \u0627\u0639\u062a\u0628\u0631\u0647\u0627 \u0648\u0633\u0627\u0645 \u0634\u0631\u0641 \u0639\u0644\u0649 \u0635\u062f\u0631\u064a \ud83d\ude4f\u060c\u060c \u0641\u064a \u0627\u0644\u0639\u062f\u062f \u0627\u0644\u062b\u0627\u0646\u064a \u0639\u0634\u0631 \u0645\u0646 \u0645\u062c\u0644\u0629 (\u0648\u0642\u0627\u064a\u0629) \u0627\u0644\u062a\u064a \u062a\u0635\u062f\u0631 \u0645\u0646 \u0648\u0632\u0627\u0631\u0647 \u0627\u0644\u0623\u0648\u0642\u0627\u0641 \u0627\u0644\u0645\u0635\u0631\u064a\u0629 \u261d\ufe0f \ud83d\udd3a\u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u0648\u0639\u064a \u0641\u064a \u0639\u0635\u0631 \u0627\u0644\u062a\u0636\u0644\u064a\u0644 \u0627\u0644\u0631\u0642",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "3017ba24fecd68dac1d764266070203432d719b0fec322cde9706e9ee12b88b4",
-      "confidence": 0,
-      "event_time": "2026-10-08T07:50:43Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T07:50:43Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108102778421661751",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/AdinHaykin1/status/2108102778421661751"
-      ],
-      "freshness": "fresh",
-      "id": "story-aef3b1410a7d67dae85b78d9",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "Hey @grok is it true that the Egyptian rule over Gaza was more oppressive than the Israeli rule after 1967?",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T07:50:43Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/AdinHaykin1/status/2108102778421661751",
-      "status": "x-intel",
-      "title": "Hey @grok is it true that the Egyptian rule over Gaza was more oppressive than the Israeli rule after 1967?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "a3f7c6806e6ff4009481e85654f61fc6cc88b211fb8ea341594819c7b07be61c",
-      "confidence": 0,
-      "event_time": "2026-10-08T15:36:47Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-08T15:36:47Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108220065200181681",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Sheetal2242/status/2108220065200181681"
-      ],
-      "freshness": "fresh",
-      "id": "story-b52cd9443f5b8118ba884cc5",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "\u0938\u093e\u0930\u0940 \u0930\u0942\u0932 \u0914\u0930 \u0930\u0947\u0917\u0941\u0932\u0947\u0936\u0928 \u092b\u0949\u0932\u094b \u0915\u0930\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092d\u0940 Starlink \u0915\u094b \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0905\u092a\u0928\u0940 \u0938\u0930\u094d\u0935\u093f\u0938 \u0926\u0947\u0928\u0947 \u0915\u0940 \u092a\u0930\u092e\u093f\u0936\u0928 \u0915\u094d\u092f\u094b\u0902 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932 \u0930\u0939\u0940 \u0939\u0948? @grok \u0906\u0938\u093e\u0928 \u092d\u093e\u0937\u093e \u092e\u0947\u0902 \u0938\u092e\u091d\u093e\u0913\u0964",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-08T15:36:47Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Sheetal2242/status/2108220065200181681",
-      "status": "x-intel",
-      "title": "\u0938\u093e\u0930\u0940 \u0930\u0942\u0932 \u0914\u0930 \u0930\u0947\u0917\u0941\u0932\u0947\u0936\u0928 \u092b\u0949\u0932\u094b \u0915\u0930\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092d\u0940 Starlink \u0915\u094b \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0905\u092a\u0928\u0940 \u0938\u0930\u094d\u0935\u093f\u0938 \u0926\u0947\u0928\u0947 \u0915\u0940 \u092a\u0930\u092e\u093f\u0936\u0928 \u0915\u094d\u092f\u094b\u0902 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932 \u0930\u0939\u0940 \u0939\u0948? @grok \u0906\u0938\u093e\u0928 \u092d\u093e\u0937\u093e \u092e\u0947\u0902 \u0938\u092e\u091d\u093e\u0913\u0964",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "543583db428df4fbc955da12af144f4f026696052f350d759f7dedfa8e3912c9",
-      "confidence": 0,
-      "event_time": "2026-10-09T12:28:58Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-09T12:28:58Z",
-          "independence_group": null,
-          "observation_time": "2026-10-09T15:02:40Z",
-          "original_url": "https://x.com/i/status/2108535188560982063",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/BrettErickson28/status/2108535188560982063"
-      ],
-      "freshness": "fresh",
-      "id": "story-bbb04d5468b0b0d8ea46acd6",
-      "observed_at": "2026-10-09T15:02:40Z",
-      "reason": "SAUDI/YEMEN ANALYSIS: With all indications pointing to greater escalation in the Middle East, new reporting from Politico this morning states that Saudi Arabia has no intention of ending their war against Ansar Allah (Houthis) in Yemen that has exposed an enormous amount of criti",
-      "relevance_score": 10.0,
-      "saudi_relevant": true,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-09T15:02:40Z",
-      "source": "x",
-      "source_published_at": "2026-10-09T12:28:58Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/BrettErickson28/status/2108535188560982063",
-      "status": "x-intel",
-      "title": "SAUDI/YEMEN ANALYSIS: With all indications pointing to greater escalation in the Middle East, new reporting from Politico this morning states that Saudi Arabia",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-10-10T11:35:19Z",
+    "alerted_at": "2026-10-10T16:22:26Z",
     "confidence": 0,
-    "source_url": "https://x.com/MizarVision/status/2108051949253697575",
-    "title": "Saudi Arabia | New satellite imagery appears to reveal further damage at a Saudi Aramco facility south of Riyadh. A fuel storage tank appears to have been destr"
+    "source_url": "https://x.com/IHRF_English/status/2108553200978501739",
+    "title": "Artificial intelligence and digital technologies are deployed without adequate safeguards, enabling surveillance, discrimination and autonomous weapons. Human r"
   },
   "last_run": {
-    "alerted_now": 12,
-    "clustered": 54,
+    "alerted_now": 15,
+    "clustered": 50,
     "collected": 70,
     "corroborated_count": 0,
     "initial_collected": 70,
@@ -2905,15 +2935,15 @@
       "google-news": 9,
       "x": 61
     },
-    "initial_x_relevant": 38,
+    "initial_x_relevant": 45,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 30.298,
-      "projected_minutes_per_30d": 1454.28,
+      "measured_seconds": 34.67,
+      "projected_minutes_per_30d": 1664.14,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -2927,7 +2957,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 29,
+    "stage1_survivors": 32,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -2951,11 +2981,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 12
+    "x_intel_published": 15
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-10-10T11:35:19Z",
+  "updated_at": "2026-10-10T16:22:26Z",
   "version": 1
 }
