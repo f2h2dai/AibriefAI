@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T16:52:54Z",
+  "generated_at": "2026-10-11T21:33:01Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,24 +9,24 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-11T16:52:54Z",
+  "latest_successful_run": "2026-10-11T21:33:01Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "smikees/armada",
-    "action_score": 75.0,
-    "url": "https://github.com/smikees/armada"
+    "id": "twitter-027",
+    "title": "@karpathy: Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of peo",
+    "action_score": 80.0,
+    "url": "https://x.com/karpathy/status/2109361546505966046"
   },
   "source_contribution": {
-    "github": 7,
-    "twitter": 5
+    "twitter": 5,
+    "github": 7
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7003, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7387, Req"
     }
   ],
-  "runtime_seconds": 67.298,
+  "runtime_seconds": 131.497,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-11T16:52:54Z",
+    "planned_at": "2026-10-11T21:33:01Z",
     "production_threshold": 70.0
   }
 }
