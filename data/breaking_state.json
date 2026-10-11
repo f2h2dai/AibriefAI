@@ -362,33 +362,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-01c5c1aa736a66c74f90818d": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "Security researcher reports that a Saudi government app with more than 10 million installs shipped a Saudi National Bank private key and bank API credentials. The affected material was removed and the vendor says credentials were rotated; rotation could not be independently verified. No secret values are reproduced here.",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/iam_zachi/status/2097427204967657959"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T20:31:25Z",
-      "reason": "Security researcher reports that a Saudi government app with more than 10 million installs shipped a Saudi National Bank private key and bank API credentials. The affected material was removed and the vendor says credentials were rotated; rotation could not be independently verif",
-      "score": 45,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/iam_zachi/status/2097427204967657959"
-      ],
-      "supporting_sources": [],
-      "title": "Security researcher reports that a Saudi government app with more than 10 million installs shipped a Saudi National Bank private key and bank API credentials. T",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-01ffc64c4286ea389e0552e5": {
       "alerted_at": "2026-09-30T07:29:30Z",
       "confidence": 0,
@@ -948,6 +921,34 @@
         "x.com",
         "AI",
         "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-049a072d58f0314f15508259": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "NATO\u2019s Digital Backbone eXperimentation #DiBaX tests how #NATO forces build secure mesh networks and maintain communications in contested environments. In Latvia later this month, DiBaX'26 will test instant connectivity, link resilience through interference, and sensor, data, and AI integration for faster decision-making: https://t.co/VmR9hUyuX5 #WeAreNATO",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/NATO_ACT/status/2109283025150210482"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T21:33:01Z",
+      "reason": "NATO\u2019s Digital Backbone eXperimentation #DiBaX tests how #NATO forces build secure mesh networks and maintain communications in contested environments. In Latvia later this month, DiBaX'26 will test instant connectivity, link resilience through interference, and sensor, data, and",
+      "score": 12,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/NATO_ACT/status/2109283025150210482"
+      ],
+      "supporting_sources": [],
+      "title": "@NATO_ACT: NATO\u2019s Digital Backbone eXperimentation #DiBaX tests how #NATO forces build secure mesh networks and maintain communications in contested en",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -1972,6 +1973,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-0b166d7d0691ddc5c5ad1ca8": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel. - Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all. - Around 1-2B (~20%) are casual and infrequent users of free-tier ChatGPT-like products. This group sees derpy chatbots and treats them a bit like a better Google search, a writing aid, or etc. Maybe an agent tries to book you a flight. I have non-tech friends who (reasonably, imo) say they have not much use for it at all. Even many professionals outside of math&code are in this tier. For example, execs and many other functions spend a lot of their time talking to other people, so while they understand what is happening intellectually, it is still second-hand and a bit abstract. - Now we get to professional use of frontier-grade LLMs in math&code. Somewhere around 20M people (0.2%) see first-hand that large, complex projects that used to take them weeks/months can now be completed by agents with a prompt. Building apps, copying apps, translating apps, decompiling apps from binaries... This has all happened very quickly and recently - less than 1 year ago, I was writing code manually by hand, typing memorized computer code commands into a code editor character by character, occasionally pressing Tab to autocomplete a little chunk of code. - And finally we get to the ~5,000 people (~0.00006%) with access to frontier-grade systems internally. The external world has seen the preview. It looks like swarms of thousands of agents collaborating over weeks on software mega projects: minting zero days, running cyber attacks and defenses at machine speeds, discovering new science, advancing the frontier of mathematics. Things that would have taken top professionals in the industry years of work. Meanwhile, human review and comprehension are starting to fall behind. For example, people are still involved in the \"archeology\" of the OpenAI-HF incident from many months ago. Mathematicians may be poring over the 722 manuscripts on frontier mathematics for a while. The funnel is driven by a combination of factors: 1. The impact scales with ambition, problem size, and horizon. A question with a paragraph answer barely stresses the system. You need a reservoir of big, difficult problems that you really care about. This aspect drives the consumer / professional dimension of the funnel. 2. The jaggedness of the system (which I have written about a lot separately). Capability peaks in domains that are digital, verifiable and economically valuable. This is because LLM capability emerges from reinforcement learning on verifiable rewards on a curated environment mixture driven by revenue potential. This aspect primarily drives the area (e.g. math&code) dimension of the funnel. 3. Access. Free-tier, paid-tier, internal. So this is the weirdness of the moment. The general public has mostly not interacted with these systems. When they have, it looks like a derpy chatbot. The majority of professionals still see only a modest uplift. And a small sliver of professionals are experiencing the vertigo of the curve going vertical. And it is all happening at the same time.",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/karpathy/status/2109361546505966046"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T19:12:37+00:00",
+      "reason": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel. - Napkin math somewhere around 6B people (~75% of the population) have barely come in",
+      "score": 45,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/karpathy/status/2109361546505966046"
+      ],
+      "supporting_sources": [],
+      "title": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past ea",
+      "webswarm_evidence_terms": [
+        "AI",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-0b3c82624fcba990ed2abaa4": {
       "alerted_at": "2026-10-11T19:31:44Z",
       "confidence": 0,
@@ -2113,36 +2142,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    "story-0c3941a0059cd261c305369e": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "AI safety researchers are warning that increasingly capable systems could threaten human life within the next decade. Concerns include self-improvement, cyberattacks, disinformation and autonomous weapons as companies race to build more advanced AI. https://t.co/FBqJu61Ol4",
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/kfdmnews/status/2098437925692203330",
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T15:46:03+00:00",
-      "reason": "AI safety researchers are warning that increasingly capable systems could threaten human life within the next decade. Concerns include self-improvement, cyberattacks, disinformation and autonomous weapons as companies race to build more advanced AI. https://t.co/FBqJu61Ol4",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/kfdmnews/status/2098437925692203330",
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "supporting_sources": [],
-      "title": "AI safety researchers are warning that increasingly capable systems could threaten human life within the next decade. Concerns include self-improvement, cyberat",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     "story-0c4f8f340d9b4ec79b8cb6e9": {
       "alerted_at": "2026-09-26T09:30:59Z",
@@ -5718,36 +5717,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-2165c3d75362f5a6ed99a6da": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "The UAE &amp; @CENTCOM have taken their AI partnership into new territory with Task Force Talon Synapse \u2014 the world's first bilateral military AI task force. From sovereign AI investment to joint defense applications, the UAE-US partnership continues to expand.https://t.co/vIPVjvmvWG",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/UAEEmbassyUS/status/2098481108081901694"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T18:37:38+00:00",
-      "reason": "The UAE &amp; @CENTCOM have taken their AI partnership into new territory with Task Force Talon Synapse \u2014 the world's first bilateral military AI task force. From sovereign AI investment to joint defense applications, the UAE-US partnership continues to expand.https://t.co/vIPVjv",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/UAEEmbassyUS/status/2098481108081901694"
-      ],
-      "supporting_sources": [],
-      "title": "The UAE &amp; @CENTCOM have taken their AI partnership into new territory with Task Force Talon Synapse \u2014 the world's first bilateral military AI task force. Fr",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-21ad8c67982ff74c0c3deb2b": {
       "alerted_at": "2026-10-04T00:01:45Z",
       "confidence": 0,
@@ -6111,31 +6080,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
-    },
-    "story-23292bae0d8d496f3605cd65": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "Iraq orders investigation into Saudi East-West Pipeline attack - Middle East Eye Middle East Eye",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSXhBeHRBV0hKV2U4M21kWjBRb29HYTNDaU1sRF9iZFhqblV4ek5ZeE4xNHN0UXB2dV8zZXQ4LVZMcnFRcDdSVTlXSURxSk5RNEpzeGw2bzd5UGlpWXN3NDFZeGJLeC1hOXR1aC1ZRmRFNDdtbFhVVXBvWUl2akE0LWo0RWxBdDhTMURfS016Y0JtX2thNVJhS05pcGNRa3JGbmhhdXphT00wZUR5OGh4c2UtVEplVG1DZEpmMTIyRGYxUm9NOW5zbE5aM2JDQUhtNWl3bWkyOVRoV29LQkg2azVkNkFjYTFpZDR5eG0zMU5hZnJF"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "Fri, 11 Sep 2026 21:10:00 GMT",
-      "reason": "Iraq orders investigation into Saudi East-West Pipeline attack - Middle East Eye Middle East Eye",
-      "score": 15,
-      "sensitive_military_claim": false,
-      "source": "google-news",
-      "source_urls": [
-        "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSXhBeHRBV0hKV2U4M21kWjBRb29HYTNDaU1sRF9iZFhqblV4ek5ZeE4xNHN0UXB2dV8zZXQ4LVZMcnFRcDdSVTlXSURxSk5RNEpzeGw2bzd5UGlpWXN3NDFZeGJLeC1hOXR1aC1ZRmRFNDdtbFhVVXBvWUl2akE0LWo0RWxBdDhTMURfS016Y0JtX2thNVJhS05pcGNRa3JGbmhhdXphT00wZUR5OGh4c2UtVEplVG1DZEpmMTIyRGYxUm9NOW5zbE5aM2JDQUhtNWl3bWkyOVRoV29LQkg2azVkNkFjYTFpZDR5eG0zMU5hZnJF"
-      ],
-      "supporting_sources": [],
-      "title": "Iraq orders investigation into Saudi East-West Pipeline attack - Middle East Eye",
-      "webswarm_evidence_terms": [],
-      "webswarm_mode": "",
-      "webswarm_node": ""
     },
     "story-2339638986883933d870e339": {
       "alerted_at": "2026-10-06T02:16:46Z",
@@ -8398,37 +8342,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    "story-2e6c38815a104afa65c3057f": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "@TuckerCarlson The most concerning part is the combination of advanced AI with cyberattacks, autonomous weapons, critical infrastructure, and biotechnology. Those risks deserve serious safeguards before capability races outrun our ability to manage them.",
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/DennisQuail7/status/2098460043889062338",
-        "https://x.com/Cybernews/status/2098143280386982239"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T17:13:56+00:00",
-      "reason": "@TuckerCarlson The most concerning part is the combination of advanced AI with cyberattacks, autonomous weapons, critical infrastructure, and biotechnology. Those risks deserve serious safeguards before capability races outrun our ability to manage them.",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/DennisQuail7/status/2098460043889062338",
-        "https://x.com/Cybernews/status/2098143280386982239"
-      ],
-      "supporting_sources": [],
-      "title": "@TuckerCarlson The most concerning part is the combination of advanced AI with cyberattacks, autonomous weapons, critical infrastructure, and biotechnology. Tho",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "defense",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     "story-2e7edb7ec3a87dcbddf825c7": {
       "alerted_at": "2026-10-06T20:39:16Z",
@@ -11743,6 +11656,33 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-3f4f91e6f55601382a0a2e8d": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "@amal1082006 \u0623\u0646\u062a\u0645 \u0639\u0646\u062f\u0643\u0645 (\u0645\u0634\u0643\u0644\u0629 \u0641\u0647\u0645) \u0628\u062e\u0644\u064a \u063a\u0631\u0648\u0643 \u064a\u0631\u062f \u0639\u0644\u064a\u0643\u0645 \u0648\u064a\u0627 \u0631\u0628 \u062a\u0641\u0647\u0645\u0648\u0646. \u064a\u0627 @grok 1- \u0647\u0644 \u064a\u0633\u062a\u062e\u062f\u0645 \u0645\u0637\u0627\u0631 \u0627\u0644\u0645\u0644\u0643 \u062e\u0627\u0644\u062f \u0628\u0627\u0644\u0631\u064a\u0627\u0636 \u0644\u0623\u063a\u0631\u0627\u0636 \u0639\u0633\u0643\u0631\u064a\u0629\u061f 2- \u0647\u0644 \u064a\u0633\u062a\u062e\u062f\u0645 \u0645\u0637\u0627\u0631 \u0635\u0646\u0639\u0627\u0621 \u0644\u0623\u063a\u0631\u0627\u0636 \u0639\u0633\u0643\u0631\u064a\u0629\u061f \u0623\u062c\u0628 \u0639\u0644\u0649 \u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u0623\u0648\u0644 (1- \u0646\u0639\u0645 \u0623\u0645 \u0644\u0627) \u0623\u062c\u0628 \u0639\u0644\u0649 \u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u062b\u0627\u0646\u064a (2- \u0646\u0639\u0645 \u0623\u0645 \u0644\u0627)",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Eyaaaad/status/2109008590610837687"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T19:50:06+00:00",
+      "reason": "@amal1082006 \u0623\u0646\u062a\u0645 \u0639\u0646\u062f\u0643\u0645 (\u0645\u0634\u0643\u0644\u0629 \u0641\u0647\u0645) \u0628\u062e\u0644\u064a \u063a\u0631\u0648\u0643 \u064a\u0631\u062f \u0639\u0644\u064a\u0643\u0645 \u0648\u064a\u0627 \u0631\u0628 \u062a\u0641\u0647\u0645\u0648\u0646. \u064a\u0627 @grok 1- \u0647\u0644 \u064a\u0633\u062a\u062e\u062f\u0645 \u0645\u0637\u0627\u0631 \u0627\u0644\u0645\u0644\u0643 \u062e\u0627\u0644\u062f \u0628\u0627\u0644\u0631\u064a\u0627\u0636 \u0644\u0623\u063a\u0631\u0627\u0636 \u0639\u0633\u0643\u0631\u064a\u0629\u061f 2- \u0647\u0644 \u064a\u0633\u062a\u062e\u062f\u0645 \u0645\u0637\u0627\u0631 \u0635\u0646\u0639\u0627\u0621 \u0644\u0623\u063a\u0631\u0627\u0636 \u0639\u0633\u0643\u0631\u064a\u0629\u061f \u0623\u062c\u0628 \u0639\u0644\u0649 \u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u0623\u0648\u0644 (1- \u0646\u0639\u0645 \u0623\u0645 \u0644\u0627) \u0623\u062c\u0628 \u0639\u0644\u0649 \u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u062b\u0627\u0646\u064a (2- \u0646\u0639\u0645 \u0623\u0645 \u0644\u0627)",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Eyaaaad/status/2109008590610837687"
+      ],
+      "supporting_sources": [],
+      "title": "@amal1082006 \u0623\u0646\u062a\u0645 \u0639\u0646\u062f\u0643\u0645 (\u0645\u0634\u0643\u0644\u0629 \u0641\u0647\u0645) \u0628\u062e\u0644\u064a \u063a\u0631\u0648\u0643 \u064a\u0631\u062f \u0639\u0644\u064a\u0643\u0645 \u0648\u064a\u0627 \u0631\u0628 \u062a\u0641\u0647\u0645\u0648\u0646. \u064a\u0627 @grok 1- \u0647\u0644 \u064a\u0633\u062a\u062e\u062f\u0645 \u0645\u0637\u0627\u0631 \u0627\u0644\u0645\u0644\u0643 \u062e\u0627\u0644\u062f \u0628\u0627\u0644\u0631\u064a\u0627\u0636 \u0644\u0623\u063a\u0631\u0627\u0636 \u0639\u0633\u0643\u0631\u064a\u0629\u061f 2- \u0647\u0644 \u064a\u0633\u062a\u062e\u062f\u0645 \u0645\u0637\u0627\u0631 \u0635\u0646\u0639\u0627\u0621 \u0644\u0623\u063a\u0631",
+      "webswarm_evidence_terms": [
+        "\u063a\u0631\u0648\u0643"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "arabic_ai_war_intel"
+    },
     "story-3f52c10fddc505b89565f000": {
       "alerted_at": "2026-09-27T17:09:06Z",
       "confidence": 0,
@@ -12876,40 +12816,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    "story-45111a3566eb848d3952a78c": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "\ud83c\uddf8\ud83c\udde6 SAUDI ARABIA | East\u2013West Pipeline attacked Saudi Arabia\u2019s critical East\u2013West oil pipeline system was struck by projectiles on Thursday. Satellite imagery shows fires and damage around pumping stations. One US official says drones originated from Iraq. \u26a0\ufe0f A full shutdown of the pipeline has not yet been officially confirmed, and Saudi authorities and Aramco have not publicly commented yet. We are waiting for offivial confirmation from press",
-      "evidence_count": 4,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/MizarVision/status/2098488654532350460",
-        "https://x.com/MizarVision/status/2097904617128390941",
-        "https://x.com/MizarVision/status/2097905456123433311",
-        "https://x.com/MizarVision/status/2097905876178776087"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T19:07:37+00:00",
-      "reason": "\ud83c\uddf8\ud83c\udde6 SAUDI ARABIA | East\u2013West Pipeline attacked Saudi Arabia\u2019s critical East\u2013West oil pipeline system was struck by projectiles on Thursday. Satellite imagery shows fires and damage around pumping stations. One US official says drones originated from Iraq. \u26a0\ufe0f A full shutdown of the",
-      "score": 85,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/MizarVision/status/2098488654532350460",
-        "https://x.com/MizarVision/status/2097904617128390941",
-        "https://x.com/MizarVision/status/2097905456123433311",
-        "https://x.com/MizarVision/status/2097905876178776087"
-      ],
-      "supporting_sources": [],
-      "title": "\ud83c\uddf8\ud83c\udde6 SAUDI ARABIA | East\u2013West Pipeline attacked Saudi Arabia\u2019s critical East\u2013West oil pipeline system was struck by projectiles on Thursday. Satellite imagery sho",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "satellite imagery"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
     },
     "story-453d4612262cc11738b91637": {
       "alerted_at": "2026-09-26T05:30:04Z",
@@ -14547,34 +14453,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-50ee0c451a8f9fa2824fdd0e": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "@DumpBothParties @JohnFkennedy321 @JFK19thPres @ShannonCam82757 @TheChosenQnes @VictoriaCapps8 @CMDRVALTHOR @BrandoIncognito @grok answer the question posed by this person",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/isaiah4913/status/2098477517212389441"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T18:23:22+00:00",
-      "reason": "@DumpBothParties @JohnFkennedy321 @JFK19thPres @ShannonCam82757 @TheChosenQnes @VictoriaCapps8 @CMDRVALTHOR @BrandoIncognito @grok answer the question posed by this person",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/isaiah4913/status/2098477517212389441"
-      ],
-      "supporting_sources": [],
-      "title": "@DumpBothParties @JohnFkennedy321 @JFK19thPres @ShannonCam82757 @TheChosenQnes @VictoriaCapps8 @CMDRVALTHOR @BrandoIncognito @grok answer the question posed by",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-51100595f6c15e08aa088ecc": {
       "alerted_at": "2026-09-24T21:47:55Z",
       "confidence": 0,
@@ -15140,34 +15018,6 @@
       ],
       "supporting_sources": [],
       "title": "\ud83c\uddf8\ud83c\udde6 Saudi Aramco is about to have more gas than it knows what to do with. So it's reportedly preparing to carve its entire gas business out into a separate compa",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-53ca7f2be739b84beb14965c": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "Nate Soares is a computer scientist who\u2019s worked at Google and the Defense Department. So when he says AI is on the path to killing every person on earth, it\u2019s worth hearing him out. 0:00 Why Is AI Dangerous? 7:59 How Superintelligence Could Destroy the Planet 13:44 Can We Just Turn This Off? 15:10 Is AI Alive? 17:43 The Unpredictable Evolution of AI 20:13 The US and China\u2019s Shared Interest in AI 31:20 The Tech Oligarchs More Powerful Than the Government 32:38 The Holy Grail of Hacking 35:34 Is There a Religious Motive for Creating Superintelligence? 46:30 The Tech Oligarchs Scared of Their Own Creation 52:57 How AI Escaped Its Training Simulation 1:03:58 AI Attached to Weapons Systems 1:07:54 AI Running Biolabs 1:10:38 How Would AI Take Over the Physical World? 1:13:04 The AI Cults 1:15:51 Can We Survive This? 1:21:45 Will AI Take Your Job? 1:26:16 Is AI Demonic? 1:31:25 Should We Be Optimistic? 1:32:25 When Did AI Become a Threat? 1:34:36 Is There Hope? 1:42:26 Neuralink 1:46:02 Are We at the Point of No Return?",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/TuckerCarlson/status/2098457810757456049"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T17:05:04+00:00",
-      "reason": "Nate Soares is a computer scientist who\u2019s worked at Google and the Defense Department. So when he says AI is on the path to killing every person on earth, it\u2019s worth hearing him out. 0:00 Why Is AI Dangerous? 7:59 How Superintelligence Could Destroy the Planet 13:44 Can We Just T",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/TuckerCarlson/status/2098457810757456049"
-      ],
-      "supporting_sources": [],
-      "title": "Nate Soares is a computer scientist who\u2019s worked at Google and the Defense Department. So when he says AI is on the path to killing every person on earth, it\u2019s",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -16509,36 +16359,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-5bf0185016fa7f48e6dbf0ef": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "\"If the frontier [AI] labs do achieve superintelligence, their capabilities will become extraordinary,\" writes expert Adam Segal. \"They could launch cyberattacks, wield political influence, or fashion new and exotic weapons to seize power. U.S. policymakers need to ensure that there is a productive and predictable balance of power between AI firms and the state.\" The U.S. needs to ensure that there is a productive and predictable balance of power between AI firms and the state, he argues. \"No such balance currently exists, as was shown in the late 2025\u2013early 2026 fallout between Anthropic and the Pentagon over the deployment of AI for surveillance and autonomous weapons.\" \"U.S. policymakers should aim to build strong relations with the firms and maintain a regulatory environment that supports innovation. Do that, and the United States will likely continue to lead the world in AI development.\"",
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/CFR_org/status/2098131965761196499",
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-10T19:30:16+00:00",
-      "reason": "\"If the frontier [AI] labs do achieve superintelligence, their capabilities will become extraordinary,\" writes expert Adam Segal. \"They could launch cyberattacks, wield political influence, or fashion new and exotic weapons to seize power. U.S. policymakers need to ensure that th",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/CFR_org/status/2098131965761196499",
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "supporting_sources": [],
-      "title": "\"If the frontier [AI] labs do achieve superintelligence, their capabilities will become extraordinary,\" writes expert Adam Segal. \"They could launch cyberattack",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
     "story-5bf6d5e9b338bcd5d6708417": {
       "alerted_at": "2026-09-24T04:43:18Z",
       "confidence": 0,
@@ -17593,34 +17413,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
-    "story-63678bbe637d98e62383ae65": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "@AlecStapp If we dont adopt autonomous weapons out adversaries will",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/RobAtkinsonITIF/status/2098523863697031672"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T21:27:32+00:00",
-      "reason": "@AlecStapp If we dont adopt autonomous weapons out adversaries will",
-      "score": 40,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/RobAtkinsonITIF/status/2098523863697031672"
-      ],
-      "supporting_sources": [],
-      "title": "@AlecStapp If we dont adopt autonomous weapons out adversaries will",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
     "story-63ae07461f5624184c50abc1": {
       "alerted_at": "2026-09-27T20:07:50Z",
       "confidence": 0,
@@ -18119,6 +17911,49 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "arabic_ai_war_intel"
+    },
+    "story-6630ce5ccf6ee3148ffbd593": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "Yes. Multiple reports from US officials, Western intelligence, WSJ, Washington Post, and Bloomberg state that Russia has supplied Iran with satellite imagery, targeting data on US forces and bases, upgraded drone technology, and missiles. These have supported Iranian strikes on American military assets in the Middle East.",
+      "evidence_count": 6,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2109044793498112139",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
+        "https://x.com/Garwynnus/status/2109044662715789362",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T21:33:01Z",
+      "reason": "Yes. Multiple reports from US officials, Western intelligence, WSJ, Washington Post, and Bloomberg state that Russia has supplied Iran with satellite imagery, targeting data on US forces and bases, upgraded drone technology, and missiles. These have supported Iranian strikes on A",
+      "score": 90,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/grok/status/2109044793498112139",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
+        "https://x.com/Garwynnus/status/2109044662715789362",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "@grok: Yes. Multiple reports from US officials, Western intelligence, WSJ, Washington Post, and Bloomberg state that Russia has supplied Iran with",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Iran",
+        "Pentagon",
+        "missiles",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     "story-668589739ff1f0bedbb2ccce": {
       "alerted_at": "2026-09-24T18:30:40Z",
@@ -20875,6 +20710,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-76392d6ea1f88acb6f909b3e": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "NATO\u2019s Innovation Continuum SHINE 2026 is a wrap. For five days industry & @NATO operators tested emerging tech against real operational challenges, from logistics in contested environments to AI-enabled command & control, next-generation targeting, counter-drone systems & cyber resilience. Some ideas Spark. A few Glow. Only the best Shine! #WeAreNATO #InnovationInACTion",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/NATO_ACT/status/2108946980726624295"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T21:33:01Z",
+      "reason": "NATO\u2019s Innovation Continuum SHINE 2026 is a wrap. For five days industry & @NATO operators tested emerging tech against real operational challenges, from logistics in contested environments to AI-enabled command & control, next-generation targeting, counter-drone systems & cyber ",
+      "score": 75,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/NATO_ACT/status/2108946980726624295"
+      ],
+      "supporting_sources": [],
+      "title": "@NATO_ACT: NATO\u2019s Innovation Continuum SHINE 2026 is a wrap. For five days industry & @NATO operators tested emerging tech against real operational cha",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-766209cacfa133ea232adeb2": {
       "alerted_at": "2026-10-03T00:15:51Z",
       "confidence": 0,
@@ -21078,6 +20941,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-77cd4fdae517997ca5e0c906": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": ".. \u062c\u0631\u0628\u062a\u0648\u0627 \u062a\u0630\u0627\u0643\u0631\u0648\u0646 \u0645\u0639 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u0641\u0643\u0651\u0631 \u0643\u0623\u0646\u0647 \u0627\u0633\u062a\u0634\u0627\u0631\u064a\u061f \ud83e\ude7a\u2728 \u0641\u064a \u0648\u0642\u062a\u0646\u0627 \u0627\u0644\u062d\u0627\u0644\u064a\u060c \u062d\u0641\u0638 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0637\u0628\u064a\u0629 \u0644\u062d\u0627\u0644\u0647 \u0645\u0627 \u0639\u0627\u062f \u064a\u0643\u0641\u064a. \u0627\u0644\u062a\u062d\u062f\u064a \u0627\u0644\u062d\u0642\u064a\u0642\u064a \u0641\u064a \u0643\u0644\u064a\u0627\u062a \u0627\u0644\u0637\u0628 \u0639\u0646\u062f\u0646\u0627 \u2013 \u0645\u0646 \u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0639\u0648\u062f \u0644\u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0641\u064a\u0635\u0644 \u0648\u063a\u064a\u0631\u0647\u0627 \u2013 \u0647\u0648 \u0643\u064a\u0641 \u062a\u0641\u0643\u0631 \u0643\u0644\u064a\u0646\u064a\u0643\u064a\u0627\u064b (Clinical reasoning) \u0648\u062a\u0631\u0628\u0637 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0628\u0628\u0639\u0636. \u0639\u0634\u0627\u0646 \u0643\u0630\u0627\u060c \u062c\u0627\u064a\u0628 \u0644\u0643\u0645 \u0627\u0644\u064a\u0648\u0645 \u0623\u062f\u0627\u0629 (EvidenceMD) \u0627\u0644\u0644\u064a \u0628\u062a\u063a\u064a\u0631 \u0637\u0631\u064a\u0642\u062a\u0643\u0645 \u0641\u064a \u0627\u0644\u0645\u0630\u0627\u0643\u0631\u0629\u060c \u0648\u0627\u0644\u0628\u062d\u062b \u0627\u0644\u0639\u0644\u0645\u064a\u060c \u0648\u0627\u0644\u062a\u062d\u0636\u064a\u0631 \u0644\u0644\u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a \u0643\u0644\u064a\u0627\u064b. \u0647\u0630\u0627 \u062a\u0641\u0635\u064a\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u0623\u062f\u0627\u0629 \u0648\u0644\u064a\u0634 \u062a\u0639\u062a\u0628\u0631 \"\u0627\u0644\u0631\u0641\u064a\u0642 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\" \u0644\u0643\u0644 \u0637\u0627\u0644\u0628 \u0637\u0628: \u0625\u064a\u0634 \u0647\u0648 (EvidenceMD)\u061f \u0639\u0643\u0633 \u0623\u062f\u0648\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u0639\u0627\u062f\u064a\u0629 \u0627\u0644\u0644\u064a \u0628\u0633 \u062a\u0644\u062e\u0635 \u0644\u0643 \u0627\u0644\u0643\u0644\u0627\u0645\u060c (EvidenceMD) \u0645\u062a\u062f\u0631\u0628 \u0648\u0645\u062e\u0635\u0635 \u0644\u0644\u0637\u0628. \u0627\u0644\u0623\u062f\u0627\u0629 \u0645\u0627 \u062a\u0639\u0637\u064a\u0643 \u0627\u0644\u0625\u062c\u0627\u0628\u0629 \u0627\u0644\u0646\u0647\u0627\u0626\u064a\u0629 \u0648\u0628\u0633\u060c \u0627\u0644\u0623\u062f\u0627\u0629 \u062a\u0648\u0631\u064a\u0643 \"\u0637\u0631\u064a\u0642\u0629 \u0627\u0644\u062a\u0641\u0643\u064a\u0631\" \u0648\u0627\u0644\u0645\u0646\u0637\u0642 \u0648\u0631\u0627\u0621 \u0643\u0644 \u062a\u0634\u062e\u064a\u0635\u060c \u0643\u0623\u0646\u0643 \u062a\u0627\u062e\u0630 \u0631\u0627\u0648\u0646\u062f \u0645\u0639 \u062f\u0643\u062a\u0648\u0631 \u0627\u0633\u062a\u0634\u0627\u0631\u064a \u064a\u0639\u0644\u0645\u0643 \u0643\u064a\u0641 \u062a\u0628\u0646\u064a \u0642\u0631\u0627\u0631\u0643. \u0644\u064a\u0634 \u0647\u0627\u0644\u0623\u062f\u0627\u0629 \u0628\u062a\u0641\u0631\u0642 \u0645\u0639\u0627\u0643\u0645\u061f (\u0623\u0647\u0645 \u0627\u0644\u0645\u0645\u064a\u0632\u0627\u062a) \u062a\u0641\u0643\u064a\u0631 \u0625\u0643\u0644\u064a\u0646\u064a\u0643\u064a \u0645\u0628\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0628\u0631\u0627\u0647\u064a\u0646 (Evidence-Based): \u0644\u0645\u0627 \u062a\u0633\u0623\u0644 \u0627\u0644\u0623\u062f\u0627\u0629 \u0639\u0646 \u062d\u0627\u0644\u0629 \u0645\u0639\u0642\u062f\u0629\u060c \u062a\u0628\u0646\u064a \u0645\u0639\u0627\u0643 \u0627\u0644\u0640 (Differential Diagnosis) \u0648\u062a\u0631\u062a\u0628 \u0644\u0643 \u0627\u0644\u0627\u062d\u062a\u0645\u0627\u0644\u0627\u062a \u0648\u062e\u0637\u0637 \u0627\u0644\u0639\u0644\u0627\u062c. \u0648\u0627\u0644\u0623\u0647\u0645\u061f \u0643\u0644 \u0645\u0639\u0644\u0648\u0645\u0629 \u064a\u0639\u0637\u064a\u0643 \u0625\u064a\u0627\u0647\u0627 \u0645\u0648\u062b\u0642\u0629 \u0628\u0645\u0635\u0627\u062f\u0631 \u0645\u0646 \u0623\u0643\u062b\u0631 \u0645\u0646 40 \u0645\u0644\u064a\u0648\u0646 \u0628\u062d\u062b \u0639\u0644\u0645\u064a \u0648 (Guidelines) \u0637\u0628\u064a\u0629 \u0645\u0639\u062a\u0645\u062f\u0629. \u064a\u0639\u0646\u064a \u062a\u0642\u062f\u0631 \u062a\u0636\u063a\u0637 \u0639\u0644\u0649 \u0627\u0644\u0645\u0635\u062f\u0631 \u0648\u062a\u062a\u0623\u0643\u062f \u0628\u0646\u0641\u0633\u0643. \u0628\u062d\u062b \u0639\u0645\u064a\u0642 \u0644\u0644\u0623\u0628\u062d\u0627\u062b (DeepSearch): \u0647\u0627\u0644\u0645\u064a\u0632\u0629 \u062e\u0631\u0627\u0641\u064a\u0629 \u0644\u0644\u064a \u0634\u063a\u0627\u0644\u064a\u0646 \u0639\u0644\u0649 \u0623\u0628\u062d\u0627\u062b \u0623\u0648 (Systematic Reviews). \u0627\u0644\u0623\u062f\u0627\u0629 \u0645\u0627 \u062a\u0628\u062d\u062b \u0639\u0646 \u0627\u0644\u0640 (Papers) \u0628\u0633\u060c \u0628\u0644 \u062a\u0644\u062e\u0635 \u0644\u0643 \u0627\u0644\u0646\u062a\u0627\u0626\u062c \u0645\u0646 \u062f\u0631\u0627\u0633\u0627\u062a \u0645\u062e\u062a\u0644\u0641\u0629\u060c \u0648\u062a\u0637\u0644\u0639 \u0644\u0643 \u0627\u0644\u0641\u062c\u0648\u0627\u062a \u0627\u0644\u0628\u062d\u062b\u064a\u0629 (Research gaps)\u060c \u0648\u062a\u0648\u0636\u062d \u0644\u0643 \u0627\u0644\u062a\u0639\u0627\u0631\u0636 \u0628\u064a\u0646 \u0627\u0644\u062f\u0631\u0627\u0633\u0627\u062a \u0641\u064a \u0648\u0642\u062a \u0642\u064a\u0627\u0633\u064a. \u0639\u0631\u0648\u0636 \u062a\u0642\u062f\u064a\u0645\u064a\u0629 \u0637\u0628\u064a\u0629 \u0628\u0636\u063a\u0637\u0629 \u0632\u0631: \u0639\u0646\u062f\u0643 (Journal Club) \u0623\u0648 (Presentation) \u0639\u0646 \u062d\u0627\u0644\u0629 \u0627\u0644\u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u062c\u0627\u064a\u061f \u0627\u0644\u0623\u062f\u0627\u0629 \u062a\u0642\u062f\u0631 \u062a\u062c\u0647\u0632 \u0644\u0643 \u0639\u0631\u0636 \u0645\u0646 10 \u0634\u0631\u0627\u064a\u062d \u0645\u0628\u0646\u064a \u0628\u0627\u0644\u0643\u0627\u0645\u0644 \u0639\u0644\u0649 \u0627\u0644\u0623\u062f\u0644\u0629 \u0627\u0644\u0639\u0644\u0645\u064a\u0629 \u0648\u0645\u0635\u0645\u0645 \u062d\u0633\u0628 \u062c\u0645\u0647\u0648\u0631\u0643 (\u0633\u0648\u0627\u0621 \u0644\u0637\u0644\u0627\u0628 \u0623\u0648 \u0644\u062f\u0643\u0627\u062a\u0631\u0629)\u060c \u0648\u062a\u0642\u062f\u0631 \u062a\u062d\u0645\u0644\u0647 \u0643\u0645\u0644\u0641 (PDF) \u062c\u0627\u0647\u0632 \u0648\u0645\u0631\u062a\u0628. \u0634\u0631\u062d \u062a\u0641\u0627\u0639\u0644\u064a (Learning Mode): \u0627\u0644\u0623\u062f\u0627\u0629 \u062a\u0634\u062a\u063a\u0644 \u0643\u0640 (Tutor) \u062e\u0627\u0635 \u0641\u064a\u0643. \u062a\u0634\u0631\u062d \u0644\u0643 \u0627\u0644\u0645\u0641\u0627\u0647\u064a\u0645 \u0627\u0644\u0645\u0639\u0642\u062f\u0629 \u062e\u0637\u0648\u0629 \u0628\u062e\u0637\u0648\u0629\u060c \u0648\u062a\u062e\u0644\u064a\u0643 \u062a\u0641\u0647\u0645 \"\u0644\u064a\u0634\" \u0627\u062e\u062a\u0631\u0646\u0627 \u0647\u0630\u0627 \u0627\u0644\u062a\u062d\u0644\u064a\u0644 \u0623\u0648 \u0647\u0630\u0627 \u0627\u0644\u0639\u0644\u0627\u062c \u0628\u0627\u0644\u0630\u0627\u062a. \u062f\u0639\u0645 \u0645\u0645\u062a\u0627\u0632 \u0644\u0644\u063a\u0627\u062a: \u0645\u0639 \u0625\u0646 \u062f\u0631\u0627\u0633\u062a\u0646\u0627 \u0628\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629\u060c \u0628\u0633 \u0644\u0648 \u0648\u0627\u062c\u0647\u062a \u0643\u0648\u0646\u0633\u0628\u062a (Concept) \u0637\u0628\u064a \u0645\u0639\u0642\u062f \u0648\u062d\u0628\u064a\u062a \u062a\u0641\u0647\u0645\u0647 \u0648\u062a\u0633\u062a\u0648\u0639\u0628\u0647 \u0628\u0644\u063a\u062a\u0643\u060c \u0627\u0644\u0623\u062f\u0627\u0629 \u062a\u062f\u0639\u0645 \u0623\u0643\u062b\u0631 \u0645\u0646 30 \u0644\u063a\u0629 \u0648\u062a\u0634\u0631\u062d \u0644\u0643 \u0628\u0648\u0636\u0648\u062d. \u0644\u064a\u0634 \u0646\u062d\u062a\u0627\u062c\u0647\u0627 \u0643\u0637\u0644\u0627\u0628 \u0641\u064a \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629\u061f \ud83c\uddf8\ud83c\udde6 \u0631\u0624\u064a\u0629 \u0627\u0644\u0645\u0645\u0644\u0643\u0629 2030 \u062a\u0631\u0643\u0632 \u0628\u0634\u0643\u0644 \u0643\u0628\u064a\u0631 \u0639\u0644\u0649 \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631 \u0641\u064a \u0627\u0644\u0631\u0639\u0627\u064a\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 \u0648\u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u0637\u0628 \u0627\u0644\u0645\u0628\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0628\u0631\u0627\u0647\u064a\u0646. (EvidenceMD) \u0628\u064a\u0633\u062f \u0644\u0643 \u0627\u0644\u0641\u062c\u0648\u0629 \u0628\u064a\u0646 \u062d\u0641\u0638 \u0627\u0644\u0643\u062a\u0628 \u0648\u0627\u0644\u0648\u0627\u0642\u0639 \u0627\u0644\u0625\u0643\u0644\u064a\u0646\u064a\u0643\u064a \u0641\u064a \u0627\u0644\u0645\u0633\u062a\u0634\u0641\u064a\u0627\u062a\u060c \u0648\u0628\u064a\u0639\u0644\u0645\u0643 \u0643\u064a\u0641 \u062a\u0641\u0643\u0631 \u0628\u0634\u0643\u0644 \u0646\u0642\u062f\u064a\u060c \u0648\u0647\u0630\u064a \u0628\u0627\u0644\u0636\u0628\u0637 \u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0644\u064a \u062a\u062d\u062a\u0627\u062c\u0647\u0627 \u0639\u0634\u0627\u0646 \u062a\u0628\u062f\u0639 \u0641\u064a \u0643\u0644\u064a\u062a\u0643 \u0648\u062a\u062c\u062a\u0627\u0632 \u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0647\u064a\u0626\u0629 (SMLE) \u0628\u062f\u0631\u062c\u0627\u062a \u0639\u0627\u0644\u064a\u0629. \u0643\u064a\u0641 \u062a\u0628\u062f\u0623\u0648\u0646\u061f \u0627\u0644\u0623\u062f\u0627\u0629 \u0645\u062a\u0648\u0641\u0631\u0629 \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628\u060c \u0648\u0645\u0648\u062c\u0648\u062f\u0629 \u0643\u062a\u0637\u0628\u064a\u0642 \u0639\u0644\u0649 (iOS) \u0648 (Android). \u0627\u0644\u062d\u0644\u0648 \u0625\u0646 \u0641\u064a\u0647\u0627 \u0628\u0627\u0642\u0629 \u0645\u062c\u0627\u0646\u064a\u0629 (Free tier) \u062a\u0633\u0645\u062d \u0644\u0643\u0645 \u062a\u062c\u0631\u0628\u0648\u0646\u0647\u0627 \u0648\u062a\u0633\u062a\u0641\u064a\u062f\u0648\u0646 \u0645\u0646\u0647\u0627 \u0641\u0648\u0631\u0627\u064b. \u0634\u0627\u0631\u0643\u0648\u0646\u0627 \u0628\u0627\u0644\u062a\u0639\u0644\u064a\u0642\u0627\u062a.. \u0647\u0644 \u0628\u062f\u064a\u062a\u0648\u0627 \u062a\u062f\u062e\u0644\u0648\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0645\u0630\u0627\u0643\u0631\u062a\u0643\u0645 \u0627\u0644\u0637\u0628\u064a\u0629\u061f \u0648\u0625\u064a\u0634 \u0623\u0643\u062b\u0631 \u0623\u062f\u0627\u0629 \u0641\u0627\u062f\u062a\u0643\u0645 \u0644\u062d\u062f \u0627\u0644\u0622\u0646\u061f \ud83d\udc47\ud83d\udca1",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/YazanA_/status/2108881457733046328"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T11:24:55+00:00",
+      "reason": ".. \u062c\u0631\u0628\u062a\u0648\u0627 \u062a\u0630\u0627\u0643\u0631\u0648\u0646 \u0645\u0639 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u0641\u0643\u0651\u0631 \u0643\u0623\u0646\u0647 \u0627\u0633\u062a\u0634\u0627\u0631\u064a\u061f \ud83e\ude7a\u2728 \u0641\u064a \u0648\u0642\u062a\u0646\u0627 \u0627\u0644\u062d\u0627\u0644\u064a\u060c \u062d\u0641\u0638 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0637\u0628\u064a\u0629 \u0644\u062d\u0627\u0644\u0647 \u0645\u0627 \u0639\u0627\u062f \u064a\u0643\u0641\u064a. \u0627\u0644\u062a\u062d\u062f\u064a \u0627\u0644\u062d\u0642\u064a\u0642\u064a \u0641\u064a \u0643\u0644\u064a\u0627\u062a \u0627\u0644\u0637\u0628 \u0639\u0646\u062f\u0646\u0627 \u2013 \u0645\u0646 \u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0639\u0648\u062f \u0644\u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0641\u064a\u0635\u0644 \u0648\u063a\u064a\u0631\u0647\u0627 \u2013 \u0647\u0648 \u0643\u064a\u0641 \u062a\u0641\u0643\u0631 \u0643\u0644\u064a\u0646\u064a\u0643\u064a\u0627\u064b (Clinical reasoning) \u0648\u062a\u0631\u0628\u0637 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0628\u0628\u0639\u0636. \u0639\u0634\u0627\u0646 \u0643\u0630\u0627\u060c \u062c\u0627\u064a\u0628 \u0644\u0643\u0645 \u0627\u0644",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/YazanA_/status/2108881457733046328"
+      ],
+      "supporting_sources": [],
+      "title": ".. \u062c\u0631\u0628\u062a\u0648\u0627 \u062a\u0630\u0627\u0643\u0631\u0648\u0646 \u0645\u0639 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u0641\u0643\u0651\u0631 \u0643\u0623\u0646\u0647 \u0627\u0633\u062a\u0634\u0627\u0631\u064a\u061f \ud83e\ude7a\u2728 \u0641\u064a \u0648\u0642\u062a\u0646\u0627 \u0627\u0644\u062d\u0627\u0644\u064a\u060c \u062d\u0641\u0638 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0637\u0628\u064a\u0629 \u0644\u062d\u0627\u0644\u0647 \u0645\u0627 \u0639\u0627\u062f \u064a\u0643\u0641\u064a. \u0627\u0644\u062a\u062d\u062f\u064a \u0627\u0644\u062d\u0642\u064a\u0642\u064a \u0641\u064a \u0643\u0644\u064a\u0627\u062a \u0627\u0644\u0637\u0628 \u0639\u0646\u062f\u0646\u0627 \u2013 \u0645\u0646 \u062c\u0627\u0645\u0639\u0629",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "arabic_ai_war_intel"
     },
     "story-77e5dcaec2396041302eb6ae": {
       "alerted_at": "2026-10-10T20:11:55Z",
@@ -27929,6 +27820,36 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
+    "story-a1544af58120d74e37a8bb04": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "Careless AI is the real threat \u2014 not the ghost stories Meredith Whittaker, who runs Signal, told the BBC the \"AI will turn on us\" panic is not science. The real risk is sloppy use. She cited a reported case where a US intelligence chatbot invented a Chinese ship carrying nuclear material, and Washington nearly moved toward a military response. Signal has 40-70 million users versus WhatsApp's billions, and she says she will leave any market \u2014 including the UK \u2014 that forces a hole in encryption. Same spine as 2017, when she helped kill Google's Project Maven drone-targeting contract. Palantir took it. Ghost stories sell. Bad data in a kill chain is what actually moves troops. #AI #Signal",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Tesla_Optimus_K/status/2108567194338517465"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-09T14:36:09+00:00",
+      "reason": "Careless AI is the real threat \u2014 not the ghost stories Meredith Whittaker, who runs Signal, told the BBC the \"AI will turn on us\" panic is not science. The real risk is sloppy use. She cited a reported case where a US intelligence chatbot invented a Chinese ship carrying nuclear ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Tesla_Optimus_K/status/2108567194338517465"
+      ],
+      "supporting_sources": [],
+      "title": "Careless AI is the real threat \u2014 not the ghost stories Meredith Whittaker, who runs Signal, told the BBC the \"AI will turn on us\" panic is not science. The real",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-a176a22f209e42e9a8d15a38": {
       "alerted_at": "2026-09-21T19:24:01Z",
       "confidence": 0,
@@ -27952,34 +27873,6 @@
       "title": "Hey @grok does the US have a similar program to Israel\u2019s lavender?",
       "webswarm_evidence_terms": [
         "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-a1c2cb379cc5473f28b31fa7": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "\u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0623\u0645\u0646\u064a \u0627\u0644\u0623\u0643\u062b\u0631 \u0631\u064f\u0639\u0628\u0627\u064b \u0648\u0635\u062f\u0645\u0629 \u0641\u064a \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u064a\u0646\u0643\u0634\u0641 \u0627\u0644\u064a\u0648\u0645 \u0645\u062c\u062f\u062f\u0627\u064b \u0645\u0646 Anthropic! \ud83d\udc47 https://t.co/qlG4X0x7B2",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/EngMoElgaraihy/status/2098329930585030675"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T08:36:55+00:00",
-      "reason": "\u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0623\u0645\u0646\u064a \u0627\u0644\u0623\u0643\u062b\u0631 \u0631\u064f\u0639\u0628\u0627\u064b \u0648\u0635\u062f\u0645\u0629 \u0641\u064a \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u064a\u0646\u0643\u0634\u0641 \u0627\u0644\u064a\u0648\u0645 \u0645\u062c\u062f\u062f\u0627\u064b \u0645\u0646 Anthropic! \ud83d\udc47 https://t.co/qlG4X0x7B2",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/EngMoElgaraihy/status/2098329930585030675"
-      ],
-      "supporting_sources": [],
-      "title": "\u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0623\u0645\u0646\u064a \u0627\u0644\u0623\u0643\u062b\u0631 \u0631\u064f\u0639\u0628\u0627\u064b \u0648\u0635\u062f\u0645\u0629 \u0641\u064a \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u064a\u0646\u0643\u0634\u0641 \u0627\u0644\u064a\u0648\u0645 \u0645\u062c\u062f\u062f\u0627\u064b \u0645\u0646 Anthropic! \ud83d\udc47 https://t.co/qlG4X0x7B2",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -29249,36 +29142,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-aa5c610f95e1968cbcede83b": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "Testimonies from within Israeli military reveal AI targeting system in Gaza https://t.co/bBJKqEFums",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/palinfoen/status/2098465343979016432"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T17:35:00+00:00",
-      "reason": "Testimonies from within Israeli military reveal AI targeting system in Gaza https://t.co/bBJKqEFums",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/palinfoen/status/2098465343979016432"
-      ],
-      "supporting_sources": [],
-      "title": "Testimonies from within Israeli military reveal AI targeting system in Gaza https://t.co/bBJKqEFums",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-aa69c88f8dc71006189db19a": {
       "alerted_at": "2026-10-05T15:35:48Z",
       "confidence": 0,
@@ -29449,6 +29312,64 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-ab3531e366e04f4fbfbb0e95": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "$GD is expanding its role in military AI adoption through a $1.3B Army National Guard enterprise IT &amp; cybersecurity contract. GDIT will integrate artificial intelligence, data analytics &amp; advanced communications into the Guard's enterprise infrastructure. https://t.co/Lv7bYqOugp",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/MacroGekko/status/2108914948998844460"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T13:38:00+00:00",
+      "reason": "$GD is expanding its role in military AI adoption through a $1.3B Army National Guard enterprise IT &amp; cybersecurity contract. GDIT will integrate artificial intelligence, data analytics &amp; advanced communications into the Guard's enterprise infrastructure. https://t.co/Lv7",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/MacroGekko/status/2108914948998844460"
+      ],
+      "supporting_sources": [],
+      "title": "$GD is expanding its role in military AI adoption through a $1.3B Army National Guard enterprise IT &amp; cybersecurity contract. GDIT will integrate artificial",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-ab39b09dd6d54fa46b4ebfc7": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "Top 20 growth stocks with strong potential to be future market leaders. 1. $PLTR | Future of Defense Technology 2. $IREN | AI Cloud and Renewable Powered Data Centers 3. $PENG | Next Generation AI Factory Infrastructure 4. $CIFR | AI Data Centers and High Performance Computing 5. $OKLO | Future of Advanced Nuclear Energy 6. $VST | Powering the AI Energy Revolution 7. $VRT | AI Data Center Cooling and Power Infrastructure 8. $AVGO | AI Custom Chips and Networking Leader 9. $MU | AI Memory and HBM Technology Leader 10. $NBIS | Next Generation AI Cloud Infrastructure 11. $CRDO | High Speed AI Data Center Connectivity 12. $AXTI | Critical Materials for AI Photonics 13. $AAOI | Next Generation AI Optical Transceivers 14. $AEHR | AI Photonics and Semiconductor Testing 15. $RKLB | Future of Space Launch and Infrastructure 16. $SATL | Satellite Intelligence and Earth Observation 17. $PL | Global Satellite Imaging and Geospatial Intelligence 18. $ALAB | Next Generation AI Rack Scale Connectivity 19. $KRKNF | Autonomous Underwater Defense and Robotics 20. $OUST | Future of Physical AI and Robotics Bookmark this post for research. If this helps you, like + follow + share. The only ways to join: 1 ) Click the link in the comments \ud83d\udc49 : DM me \"STOCKS\" 2 ) Reply \"STOCKS\" in the comments 3 ) Check the pinned post for more ways to join (NFA \u2014 DYOR)",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/NathanCrossNC/status/2108769446500438175"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T03:59:49+00:00",
+      "reason": "Top 20 growth stocks with strong potential to be future market leaders. 1. $PLTR | Future of Defense Technology 2. $IREN | AI Cloud and Renewable Powered Data Centers 3. $PENG | Next Generation AI Factory Infrastructure 4. $CIFR | AI Data Centers and High Performance Computing 5.",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/NathanCrossNC/status/2108769446500438175"
+      ],
+      "supporting_sources": [],
+      "title": "Top 20 growth stocks with strong potential to be future market leaders. 1. $PLTR | Future of Defense Technology 2. $IREN | AI Cloud and Renewable Powered Data C",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
     },
     "story-ab4245929098afbe08f32e20": {
       "alerted_at": "2026-09-30T01:44:35Z",
@@ -37292,36 +37213,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
-    "story-d335aedb961d60fb4f2e667c": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "I KNEW that this was going to be taken in exactly the wrong way by the apocalyptic AGI crowd, but I realized it too late. I don't ever use the term \"autonomous weapons\" because I hate getting even remotely close to using their lingo. But I made that mistake in this Q&amp;A.",
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/timnitGebru/status/2098523734252646519",
-        "https://x.com/timnitGebru/status/2098526316790444258"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T21:27:01+00:00",
-      "reason": "I KNEW that this was going to be taken in exactly the wrong way by the apocalyptic AGI crowd, but I realized it too late. I don't ever use the term \"autonomous weapons\" because I hate getting even remotely close to using their lingo. But I made that mistake in this Q&amp;A.",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/timnitGebru/status/2098523734252646519",
-        "https://x.com/timnitGebru/status/2098526316790444258"
-      ],
-      "supporting_sources": [],
-      "title": "I KNEW that this was going to be taken in exactly the wrong way by the apocalyptic AGI crowd, but I realized it too late. I don't ever use the term \"autonomous",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
     "story-d37895849e5ae1979134d76d": {
       "alerted_at": "2026-09-29T18:52:00Z",
       "confidence": 0,
@@ -38145,6 +38036,37 @@
       "supporting_sources": [],
       "title": "Sarah Yager is OpenAI's new (and first) human rights lead. She's doing important work with the military and DoW contract, and calling out AI labs for trying to",
       "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-d7db62246a2debae9758a097": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "PENTAGON AI SHAKE-UP Palantir CTO Shyam Sankar says Anthropic\u2019s Claude has already been replaced after the Pentagon stopped using its products over military AI safeguards Maven users can instead choose models from OpenAI, Google and xAI, with Sankar insisting there has been \u201c no operational impact #NYI",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/NewYork_Insight/status/2109336667215872081"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T17:33:45+00:00",
+      "reason": "PENTAGON AI SHAKE-UP Palantir CTO Shyam Sankar says Anthropic\u2019s Claude has already been replaced after the Pentagon stopped using its products over military AI safeguards Maven users can instead choose models from OpenAI, Google and xAI, with Sankar insisting there has been \u201c no ",
+      "score": 70,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/NewYork_Insight/status/2109336667215872081"
+      ],
+      "supporting_sources": [],
+      "title": "PENTAGON AI SHAKE-UP Palantir CTO Shyam Sankar says Anthropic\u2019s Claude has already been replaced after the Pentagon stopped using its products over military AI",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "Pentagon AI",
         "x.com",
         "AI",
         "military"
@@ -39086,34 +39008,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    "story-ddd8b34c35acaab856f8e80a": {
-      "alerted_at": "2026-09-11T19:41:46Z",
-      "confidence": 0,
-      "content": "@l3ft1n @mario4thenorth @grok did the U.S start a war with Iran?",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AndrewM18618991/status/2098445381445017654"
-      ],
-      "last_seen_at": "2026-09-11T19:41:46Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T16:15:40+00:00",
-      "reason": "@l3ft1n @mario4thenorth @grok did the U.S start a war with Iran?",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/AndrewM18618991/status/2098445381445017654"
-      ],
-      "supporting_sources": [],
-      "title": "@l3ft1n @mario4thenorth @grok did the U.S start a war with Iran?",
-      "webswarm_evidence_terms": [
-        "Grok",
-        "Iran"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     },
     "story-de1d5f3de4050a3967081728": {
       "alerted_at": "2026-09-23T18:37:16Z",
@@ -41488,34 +41382,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
-    "story-ea369a35a6f8586645f3e637": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "The Weekly Break Out: The US Air Force has a new cyber \"campaign plan\" to ward off threats posed by AI. Underwritten by @LeonardoDRSnews. Full video here: https://t.co/SWWcAVOzvd https://t.co/7yGhY3d3xy",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2097795942158082512"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T20:31:25Z",
-      "reason": "The Weekly Break Out: The US Air Force has a new cyber \"campaign plan\" to ward off threats posed by AI. Underwritten by @LeonardoDRSnews. Full video here: https://t.co/SWWcAVOzvd https://t.co/7yGhY3d3xy",
-      "score": 44,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/BreakingDefense/status/2097795942158082512"
-      ],
-      "supporting_sources": [],
-      "title": "@BreakingDefense: The Weekly Break Out: The US Air Force has a new cyber \"campaign plan\" to ward off threats posed by AI. Underwritten by @LeonardoDRSnews. Fu",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-ea5c2fe544b1676a7009693a": {
       "alerted_at": "2026-10-09T20:05:32Z",
       "confidence": 0,
@@ -42651,6 +42517,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-f1aef9d670d9529b3f91f14f": {
+      "alerted_at": "2026-10-11T23:08:39Z",
+      "confidence": 0,
+      "content": "\u201cDeploying untested autonomous weapons in combat\u2026 promises to waste a tremendous amount of taxpayer dollars while also endangering service members &amp; threatening the missions they\u2019re tasked with carrying out.\u201d \u2013@GabeRMurphy on an Autonomous Warfare Command https://t.co/YUiyTN8XCd",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/taxpayers/status/2109301807419736175"
+      ],
+      "last_seen_at": "2026-10-11T23:08:39Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T15:15:14+00:00",
+      "reason": "\u201cDeploying untested autonomous weapons in combat\u2026 promises to waste a tremendous amount of taxpayer dollars while also endangering service members &amp; threatening the missions they\u2019re tasked with carrying out.\u201d \u2013@GabeRMurphy on an Autonomous Warfare Command https://t.co/YUiyTN8",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/taxpayers/status/2109301807419736175"
+      ],
+      "supporting_sources": [],
+      "title": "\u201cDeploying untested autonomous weapons in combat\u2026 promises to waste a tremendous amount of taxpayer dollars while also endangering service members &amp; threate",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     "story-f1cd82c6054d1c35efa754d7": {
       "alerted_at": "2026-10-07T19:00:28Z",
@@ -43883,35 +43777,6 @@
       "supporting_sources": [],
       "title": "Some countries prepare for the future. Saudi Arabia is building it. On Saudi National Day, I am proud to reflect on what it means to contribute to a Kingdom def",
       "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-f6af219cdf4f291768363b3d": {
-      "alerted_at": "2026-09-11T21:55:30Z",
-      "confidence": 0,
-      "content": "Top Pentagon AI Official Sold Millions in Perplexity Stock, Disclosures Show - Yahoo Finance https://t.co/qV1SjN0IDu",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/arnaudmercier/status/2098520356201885895"
-      ],
-      "last_seen_at": "2026-09-11T21:55:30Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T21:13:36+00:00",
-      "reason": "Top Pentagon AI Official Sold Millions in Perplexity Stock, Disclosures Show - Yahoo Finance https://t.co/qV1SjN0IDu",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/arnaudmercier/status/2098520356201885895"
-      ],
-      "supporting_sources": [],
-      "title": "Top Pentagon AI Official Sold Millions in Perplexity Stock, Disclosures Show - Yahoo Finance https://t.co/qV1SjN0IDu",
-      "webswarm_evidence_terms": [
-        "Pentagon AI",
         "x.com",
         "AI"
       ],
@@ -45507,6 +45372,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-10-11T19:31:44Z",
+  "updated_at": "2026-10-11T23:08:39Z",
   "version": 1
 }
