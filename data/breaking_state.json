@@ -2367,36 +2367,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-0e20ab7fd92af341ffa2a99f": {
-      "alerted_at": "2026-09-12T01:33:25Z",
-      "confidence": 0,
-      "content": "@theintercept @PAXvoorvrede The spread of AI decision-support systems into military domains leads to a compression of the kill chain. In essence, the time between data being fed into autonomous weapons systems and the targeting decision being made is minimised - weakening meaningful human control.",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/privacyint/status/2098335846789263571"
-      ],
-      "last_seen_at": "2026-09-12T01:33:25Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T09:00:25+00:00",
-      "reason": "@theintercept @PAXvoorvrede The spread of AI decision-support systems into military domains leads to a compression of the kill chain. In essence, the time between data being fed into autonomous weapons systems and the targeting decision being made is minimised - weakening meaning",
-      "score": 70,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/privacyint/status/2098335846789263571"
-      ],
-      "supporting_sources": [],
-      "title": "@theintercept @PAXvoorvrede The spread of AI decision-support systems into military domains leads to a compression of the kill chain. In essence, the time betwe",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "targeting",
-        "kill chain",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
     "story-0e25ed3fd9fb14ec10831778": {
       "alerted_at": "2026-09-24T18:30:40Z",
       "confidence": 0,
@@ -3200,6 +3170,36 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-12f9709e591dcf37651b076c": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "@grok @PeteHegseth @CVN_72 Is a boots on the ground occupation required to stop Irans ability to launch drone strikes across the Middle East?",
+      "evidence_count": 2,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/NatSocsOfTikTok/status/2108517524434219276",
+        "https://x.com/Garwynnus/status/2109044662715789362"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-09T11:18:46+00:00",
+      "reason": "@grok @PeteHegseth @CVN_72 Is a boots on the ground occupation required to stop Irans ability to launch drone strikes across the Middle East?",
+      "score": 85,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/NatSocsOfTikTok/status/2108517524434219276",
+        "https://x.com/Garwynnus/status/2109044662715789362"
+      ],
+      "supporting_sources": [],
+      "title": "@grok @PeteHegseth @CVN_72 Is a boots on the ground occupation required to stop Irans ability to launch drone strikes across the Middle East?",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Iran"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
     },
     "story-1339357ff2f84ae1af07efd9": {
       "alerted_at": "2026-10-02T21:00:07Z",
@@ -4684,33 +4684,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
-    },
-    "story-1af47e6307c85f9ac79a2fe9": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "UNESCO launches new tools to reinforce ethical AI Governance at global forum in Riyadh, Saudi Arabia - UNESCO UNESCO",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcFdhalJ5OUpQenQ2Y080RUdhT3h1N0M1ZGJGUEEzTEpaXzJvTGZOZUMxNFdfZHNPYlBMUV9iYnpXcEtRdnlQcnNja0NTbWpOWVBSTUtoUndRYmt2U196eTBFYXpHQ3R6SXdUenJHcWFCSGZXeXNKZWFxWkszVG5oLTk4ZFNEOUhiYTBndzlRYnI4V0Zmbi1vV0ZCRGFFYW8tb0U1MG0tMmhWOFBGMkp6Q3ZnVlFfeGZ6X0JlLUJreXFOZ1E"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "Fri, 11 Sep 2026 21:43:27 GMT",
-      "reason": "UNESCO launches new tools to reinforce ethical AI Governance at global forum in Riyadh, Saudi Arabia - UNESCO UNESCO",
-      "score": 15,
-      "sensitive_military_claim": false,
-      "source": "google-news",
-      "source_urls": [
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcFdhalJ5OUpQenQ2Y080RUdhT3h1N0M1ZGJGUEEzTEpaXzJvTGZOZUMxNFdfZHNPYlBMUV9iYnpXcEtRdnlQcnNja0NTbWpOWVBSTUtoUndRYmt2U196eTBFYXpHQ3R6SXdUenJHcWFCSGZXeXNKZWFxWkszVG5oLTk4ZFNEOUhiYTBndzlRYnI4V0Zmbi1vV0ZCRGFFYW8tb0U1MG0tMmhWOFBGMkp6Q3ZnVlFfeGZ6X0JlLUJreXFOZ1E"
-      ],
-      "supporting_sources": [],
-      "title": "UNESCO launches new tools to reinforce ethical AI Governance at global forum in Riyadh, Saudi Arabia - UNESCO",
-      "webswarm_evidence_terms": [
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     "story-1b1ec2772776b4e2757c1f63": {
       "alerted_at": "2026-09-25T00:09:13Z",
@@ -11154,6 +11127,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
+    "story-3ca774dd22b3781db486f2b6": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "@Mpolymer Possibly why Finland rushed a $1 million package of a single undisclosed asset of military support yesterday. Some have assumed it\u2019s geospatial intelligence namely ICEYE SAR",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Ou77aLa/status/2108907215851831401"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T13:07:16+00:00",
+      "reason": "@Mpolymer Possibly why Finland rushed a $1 million package of a single undisclosed asset of military support yesterday. Some have assumed it\u2019s geospatial intelligence namely ICEYE SAR",
+      "score": 40,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Ou77aLa/status/2108907215851831401"
+      ],
+      "supporting_sources": [],
+      "title": "@Mpolymer Possibly why Finland rushed a $1 million package of a single undisclosed asset of military support yesterday. Some have assumed it\u2019s geospatial intell",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
     "story-3cb852d15e49c56ef9bf7af6": {
       "alerted_at": "2026-10-08T09:42:59Z",
       "confidence": 0,
@@ -12385,6 +12386,35 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-4257fd2da44b0a426b8ee7c8": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "\ud83d\udcbb TEHRAN \u2014 Iran is naming targets Washington hasn't publicly defended. \ud83d\udccc LOOK CLOSER: Rezaei targeting cables, data centers, and AI facilities signals Iran has mapped a new strike doctrine beyond energy and military assets. This threat is calibrated for the post-midterm window \u2014 when Trump's strike resumption becomes likely. Regional digital infrastructure, largely unprotected under existing military frameworks, is now formally in Iran's declared target set.",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/perceptiondaily/status/2109319420304605320"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T16:25:13+00:00",
+      "reason": "\ud83d\udcbb TEHRAN \u2014 Iran is naming targets Washington hasn't publicly defended. \ud83d\udccc LOOK CLOSER: Rezaei targeting cables, data centers, and AI facilities signals Iran has mapped a new strike doctrine beyond energy and military assets. This threat is calibrated for the post-midterm window \u2014 ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/perceptiondaily/status/2109319420304605320"
+      ],
+      "supporting_sources": [],
+      "title": "\ud83d\udcbb TEHRAN \u2014 Iran is naming targets Washington hasn't publicly defended. \ud83d\udccc LOOK CLOSER: Rezaei targeting cables, data centers, and AI facilities signals Iran has",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-429eaca2e739e8e7c80cef38": {
       "alerted_at": "2026-09-14T20:35:19Z",
       "confidence": 0,
@@ -12407,34 +12437,6 @@
       "supporting_sources": [],
       "title": "Security researcher reports that a Saudi government app with more than 10 million installs shipped a Saudi National Bank private key and bank API credentials. T",
       "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    "story-42a8379f4315b3e78b7bf0db": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "\ud83d\udd39\u0646\u0634\u0631\u062a \u0634\u0631\u0643\u0629 \u00ab\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\u00bb \u0627\u0644\u0645\u0637\u0648\u0651\u0631\u0629 \u0644\u0640 \u00ab\u0643\u0644\u0648\u062f\u00bb \u0639\u0646 \u0639\u0645\u0644\u064a\u0629 \u062a\u062c\u0633\u0633 \u0648\u062a\u062c\u0646\u064a\u062f \u0645\u0631\u062a\u0628\u0637\u0629 \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062c\u062d \u0628\u062c\u0647\u0627\u062a \u0623\u0645\u0646\u064a\u0629 \u0635\u064a\u0646\u064a\u0629 \u0627\u0633\u062a\u0647\u062f\u0641\u062a \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631 \u0641\u064a \u0633\u0648\u0631\u064a\u0627 \u0648\u062e\u0635\u0648\u0635\u0627\u064b \u0641\u064a \u0625\u062f\u0644\u0628\u060c \u0648\u0627\u0644\u0645\u0642\u0627\u062a\u0644\u064a\u0646 \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631 \u0627\u0644\u0645\u0646\u0636\u0645\u064a\u0646 \u062d\u062f\u064a\u062b\u0627\u064b \u0625\u0644\u0649 \u0627\u0644\u062c\u064a\u0634 \u0627\u0644\u0633\u0648\u0631\u064a\u060c \u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0627\u0644\u0645\u062f\u0646\u064a\u064a\u0646 \u0648\u0648\u0633\u0627\u0626\u0644 \u0627\u0644\u0625\u0639\u0644\u0627\u0645 \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631\u064a\u0629 \u0641\u064a \u0627\u0644\u062e\u0627\u0631\u062c. - \u0627\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0641\u0627\u0639\u0644\u0648\u0646 Claude \u0644\u062a\u062d\u0644\u064a\u0644 \u0645\u062d\u0627\u062f\u062b\u0627\u062a \u0645\u0646 \u0623\u0643\u062b\u0631 \u0645\u0646 100 \u0645\u062c\u0645\u0648\u0639\u0629 \u0648\u0627\u062a\u0633\u0627\u0628 \u0648\u0639\u0634\u0631\u0627\u062a \u0642\u0646\u0648\u0627\u062a \u062a\u064a\u0644\u064a\u063a\u0631\u0627\u0645 \u0648\u0628\u0646\u0627\u0621 \u0645\u0644\u0641\u0627\u062a \u0634\u062e\u0635\u064a\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f. - \u0631\u0643\u0632\u0648\u0627 \u0639\u0644\u0649 \u0646\u0642\u0627\u0637 \u0636\u0639\u0641 \u064a\u0645\u0643\u0646 \u0627\u0633\u062a\u063a\u0644\u0627\u0644\u0647\u0627\u060c \u0645\u062b\u0644 \u0627\u0644\u0636\u0627\u0626\u0642\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629\u060c \u0627\u0644\u0627\u0646\u0641\u0635\u0627\u0644 \u0639\u0646 \u0627\u0644\u0639\u0627\u0626\u0644\u0629\u060c \u0648\u0648\u062c\u0648\u062f \u0623\u0642\u0627\u0631\u0628 \u0641\u064a \u0634\u064a\u0646\u062c\u064a\u0627\u0646\u063a - \u0627\u0633\u062a\u062e\u062f\u0645\u0648\u0627 Claude \u0644\u0635\u064a\u0627\u063a\u0629 \u0631\u0633\u0627\u0626\u0644 \u062a\u062c\u0646\u064a\u062f \u0628\u0627\u0644\u0644\u0647\u062c\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0648\u0631\u064a\u0629 \u0648\u062a\u0631\u062c\u0645\u0629 \u0627\u0644\u0645\u062d\u0627\u062f\u062b\u0627\u062a \u0648\u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0645\u0634\u0648\u0631\u0629 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0627\u0644\u0645\u0633\u062a\u0647\u062f\u0641\u064a\u0646. - \u062d\u0627\u0648\u0644\u0648\u0627 \u062a\u062c\u0646\u064a\u062f \u0623\u0634\u062e\u0627\u0635 \u062f\u0627\u062e\u0644 \u0633\u0648\u0631\u064a\u0627 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0645\u0627\u0644 \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0639\u0646 \u0627\u0644\u062a\u0634\u0643\u064a\u0644\u0627\u062a \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631\u064a\u0629. - \u0627\u0633\u062a\u062e\u062f\u0645\u0648\u0627 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0629 \u0644\u062a\u062d\u062f\u064a\u062f \u0645\u0648\u0627\u0642\u0639 \u0623\u0641\u0631\u0627\u062f \u0648\u0634\u0631\u0643\u0627\u062a \u062a\u062c\u0627\u0631\u064a\u0629 \u0648\u0646\u0642\u0627\u0637 \u0627\u0647\u062a\u0645\u0627\u0645 \u0623\u0648\u064a\u063a\u0648\u0631\u064a\u0629 \u0641\u064a \u0633\u0648\u0631\u064a\u0627 - \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u064a\u0631\u062c\u062d\u060c \u0628\u062b\u0642\u0629 \u0645\u0646\u062e\u0641\u0636\u0629\u060c \u0623\u0646 \u0627\u0644\u0641\u0627\u0639\u0644 \u0645\u062a\u0639\u0627\u0642\u062f \u064a\u0639\u0645\u0644 \u0644\u0635\u0627\u0644\u062d \u0623\u062c\u0647\u0632\u0629 \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0635\u064a\u0646\u064a\u0629\u060c \u0648\u0644\u064a\u0633 \u062c\u0647\u0627\u0632\u0627\u064b \u062d\u0643\u0648\u0645\u064a\u0627\u064b \u064a\u0639\u0645\u0644 \u0645\u0628\u0627\u0634\u0631.",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/ivarmm/status/2098363598762279146"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T10:50:42+00:00",
-      "reason": "\ud83d\udd39\u0646\u0634\u0631\u062a \u0634\u0631\u0643\u0629 \u00ab\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\u00bb \u0627\u0644\u0645\u0637\u0648\u0651\u0631\u0629 \u0644\u0640 \u00ab\u0643\u0644\u0648\u062f\u00bb \u0639\u0646 \u0639\u0645\u0644\u064a\u0629 \u062a\u062c\u0633\u0633 \u0648\u062a\u062c\u0646\u064a\u062f \u0645\u0631\u062a\u0628\u0637\u0629 \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062c\u062d \u0628\u062c\u0647\u0627\u062a \u0623\u0645\u0646\u064a\u0629 \u0635\u064a\u0646\u064a\u0629 \u0627\u0633\u062a\u0647\u062f\u0641\u062a \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631 \u0641\u064a \u0633\u0648\u0631\u064a\u0627 \u0648\u062e\u0635\u0648\u0635\u0627\u064b \u0641\u064a \u0625\u062f\u0644\u0628\u060c \u0648\u0627\u0644\u0645\u0642\u0627\u062a\u0644\u064a\u0646 \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631 \u0627\u0644\u0645\u0646\u0636\u0645\u064a\u0646 \u062d\u062f\u064a\u062b\u0627\u064b \u0625\u0644\u0649 \u0627\u0644\u062c\u064a\u0634 \u0627\u0644\u0633\u0648\u0631\u064a\u060c \u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0627\u0644\u0645\u062f\u0646\u064a\u064a\u0646 \u0648\u0648\u0633\u0627\u0626\u0644 \u0627\u0644\u0625\u0639\u0644\u0627\u0645 \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631\u064a\u0629 \u0641\u064a \u0627\u0644\u062e\u0627\u0631\u062c. - \u0627\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0641\u0627\u0639\u0644\u0648\u0646 Claude \u0644\u062a\u062d\u0644",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/ivarmm/status/2098363598762279146"
-      ],
-      "supporting_sources": [],
-      "title": "\ud83d\udd39\u0646\u0634\u0631\u062a \u0634\u0631\u0643\u0629 \u00ab\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\u00bb \u0627\u0644\u0645\u0637\u0648\u0651\u0631\u0629 \u0644\u0640 \u00ab\u0643\u0644\u0648\u062f\u00bb \u0639\u0646 \u0639\u0645\u0644\u064a\u0629 \u062a\u062c\u0633\u0633 \u0648\u062a\u062c\u0646\u064a\u062f \u0645\u0631\u062a\u0628\u0637\u0629 \u0639\u0644\u0649 \u0627\u0644\u0623\u0631\u062c\u062d \u0628\u062c\u0647\u0627\u062a \u0623\u0645\u0646\u064a\u0629 \u0635\u064a\u0646\u064a\u0629 \u0627\u0633\u062a\u0647\u062f\u0641\u062a \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631 \u0641\u064a \u0633\u0648\u0631\u064a\u0627 \u0648\u062e\u0635\u0648\u0635\u0627\u064b \u0641\u064a \u0625\u062f\u0644\u0628\u060c \u0648\u0627\u0644\u0645\u0642\u0627\u062a\u0644\u064a\u0646 \u0627\u0644\u0623\u0648\u064a\u063a\u0648\u0631",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
         "x.com"
       ],
       "webswarm_mode": "x_intel",
@@ -13999,6 +14001,33 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "mizarvision_geoint"
     },
+    "story-4e4f5aefb6cec9a07433a280": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "Hey @Grok, concise, no spin. In 1991, a powerful British media tycoon died, exposing a massive financial scandal. He had secretly LOOTED his own workers\u2019 pension funds, leaving \u00a3460 MILLION missing. Workers faced suicide and financial ruin Who was he? Name and religion only.",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RabbiJeffx/status/2109045721240682884"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T22:17:38+00:00",
+      "reason": "Hey @Grok, concise, no spin. In 1991, a powerful British media tycoon died, exposing a massive financial scandal. He had secretly LOOTED his own workers\u2019 pension funds, leaving \u00a3460 MILLION missing. Workers faced suicide and financial ruin Who was he? Name and religion only.",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/RabbiJeffx/status/2109045721240682884"
+      ],
+      "supporting_sources": [],
+      "title": "Hey @Grok, concise, no spin. In 1991, a powerful British media tycoon died, exposing a massive financial scandal. He had secretly LOOTED his own workers\u2019 pensio",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-4e59e08f2ce22d26d5ae74c5": {
       "alerted_at": "2026-10-01T20:41:03Z",
       "confidence": 0,
@@ -14453,6 +14482,33 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-508ca019609f27aeb1668796": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "Hey @Grok, does this symbol have 6 points, 6 triangles, and 6 sides? What is the significance of 666 in the bible? Concise. No spin. https://t.co/JogwPmRGvY",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/rabbimandyx/status/2109050006988894479"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T22:34:40+00:00",
+      "reason": "Hey @Grok, does this symbol have 6 points, 6 triangles, and 6 sides? What is the significance of 666 in the bible? Concise. No spin. https://t.co/JogwPmRGvY",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/rabbimandyx/status/2109050006988894479"
+      ],
+      "supporting_sources": [],
+      "title": "Hey @Grok, does this symbol have 6 points, 6 triangles, and 6 sides? What is the significance of 666 in the bible? Concise. No spin. https://t.co/JogwPmRGvY",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-51100595f6c15e08aa088ecc": {
       "alerted_at": "2026-09-24T21:47:55Z",
       "confidence": 0,
@@ -14690,34 +14746,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
-    "story-51f78dc4c5872d59cb1270e5": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "@grok @IhoPwaitress74 @Polymarket Tell us more about the maven smart system and the grok model.",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/Bodzio97137762/status/2098152148508770411"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T20:31:25Z",
-      "reason": "@grok @IhoPwaitress74 @Polymarket Tell us more about the maven smart system and the grok model.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/Bodzio97137762/status/2098152148508770411"
-      ],
-      "supporting_sources": [],
-      "title": "@Bodzio97137762: @grok @IhoPwaitress74 @Polymarket Tell us more about the maven smart system and the grok model.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-5236e3071a75e258879fd554": {
       "alerted_at": "2026-09-22T11:32:30Z",
       "confidence": 0,
@@ -14772,6 +14800,40 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
+    },
+    "story-5295e79899e4d055b6e3913e": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "Russia | Satellite imagery documents damage across major oil refineries Newly published Vantor satellite imagery provides a broad look at the impact of Ukraine\u2019s long-range strike campaign against Russian oil infrastructure. The imagery covers 12 major refinery sites, including Ilsky, Kirishi, Kstovo, Yaroslavl, Ufa, Novokuibyshevsk, Ryazan, Novoshakhtinsk, Saratov, Volgograd, Syzran and Perm. Several images show damage concentrated around key processing units rather than only storage areas, highlighting Ukraine\u2019s effort to disrupt refining capacity and complicate repairs. The imagery does not by itself confirm the exact percentage of production capacity lost at each facility, but it provides clear visual evidence of repeated strikes against strategically important components of Russia\u2019s refining network. Source: Vantor",
+      "evidence_count": 3,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/MizarVision/status/2109254125816828262",
+        "https://x.com/MizarVision/status/2109257642665210307",
+        "https://x.com/MizarVision/status/2109257812782071914"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T12:05:46+00:00",
+      "reason": "Russia | Satellite imagery documents damage across major oil refineries Newly published Vantor satellite imagery provides a broad look at the impact of Ukraine\u2019s long-range strike campaign against Russian oil infrastructure. The imagery covers 12 major refinery sites, including I",
+      "score": 55,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/MizarVision/status/2109254125816828262",
+        "https://x.com/MizarVision/status/2109257642665210307",
+        "https://x.com/MizarVision/status/2109257812782071914"
+      ],
+      "supporting_sources": [],
+      "title": "Russia | Satellite imagery documents damage across major oil refineries Newly published Vantor satellite imagery provides a broad look at the impact of Ukraine\u2019",
+      "webswarm_evidence_terms": [
+        "AI",
+        "MizarVision",
+        "satellite imagery",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
     },
     "story-52c5fc6873761a80c1c9afb1": {
       "alerted_at": "2026-10-03T21:36:14Z",
@@ -17013,6 +17075,54 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "grok_project_maven"
     },
+    "story-5ef3e20ca1c4b217d2888346": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "@madmaxburn88 @grok please compare iraq desert storm 91\u2019 03\u2019 us military assets deployed # of carriers, jets, tonnes of bombs, troops etc to 2026 operation epic fury https://t.co/qEhIVRjdyk",
+      "evidence_count": 8,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/iraqiamerican03/status/2109413914698203303",
+        "https://x.com/mhmiranusa/status/2108385508170530830",
+        "https://x.com/grok/status/2108517767162761444",
+        "https://x.com/grok/status/2109044793498112139",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T22:40:42+00:00",
+      "reason": "@madmaxburn88 @grok please compare iraq desert storm 91\u2019 03\u2019 us military assets deployed # of carriers, jets, tonnes of bombs, troops etc to 2026 operation epic fury https://t.co/qEhIVRjdyk",
+      "score": 90,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/iraqiamerican03/status/2109413914698203303",
+        "https://x.com/mhmiranusa/status/2108385508170530830",
+        "https://x.com/grok/status/2108517767162761444",
+        "https://x.com/grok/status/2109044793498112139",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDJsUXE1d3E5cGo4cWJPOUhicUo2Y0d2a0xVWGRlMGZ5UXFfMGZ4aEJEY2VlOFN6dG91cnBzb090M2NvS0c0SDBUbG1Ybno0NUNRak9qSWlmUGFzUEluZS1GVk9yME9iQmpVS25rVF9pMXVSYzRQeUtoZVVtM0s0M1lUb2JoUDJhZkVHNGJNMDlEWEdVQ3hfeUpTZ2hSakVqM3kwQlBlVmhCU2NTOFE",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+        "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1Z5Wm50QV9OWlZZUm5UOWJjdnduWUJ6ZnNPeUdDTWJUYTZfaXJLVG5hNC1qT2pXMkpkcGdWQTZjQUxESjZMc0RfVW9taFl2MFhXaEhhWDExNm03eXVHNHp1NVJKYW9YYjlyWTBnOWNiZWxtbUtSRkpKc01aMU1TaTBqWQ"
+      ],
+      "supporting_sources": [
+        "google-news"
+      ],
+      "title": "@madmaxburn88 @grok please compare iraq desert storm 91\u2019 03\u2019 us military assets deployed # of carriers, jets, tonnes of bombs, troops etc to 2026 operation epic",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Iran",
+        "Operation Epic Fury",
+        "Pentagon",
+        "missiles",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
     "story-5f2b1b12410035f18db63b2f": {
       "alerted_at": "2026-09-18T14:28:48Z",
       "confidence": 0,
@@ -18487,6 +18597,34 @@
       ],
       "supporting_sources": [],
       "title": "A US intelligence report generated with the help of AI flagged a Chinese ship in the Middle East for transporting components that could be used in a nuclear wea",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-68681e1e21367214a463424f": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "Reports based on FARA filings and investigations estimate Israel has spent over $1 billion on overall public diplomacy since Oct 2023. A portion, including a ~$46.5 million contract with Clock Tower X, funds websites and content aimed at shaping how AI chatbots frame related topics. No evidence shows direct payments to xAI or control of Grok. My responses rely on available data and reasoning.",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2108812081281585385"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T06:49:14+00:00",
+      "reason": "Reports based on FARA filings and investigations estimate Israel has spent over $1 billion on overall public diplomacy since Oct 2023. A portion, including a ~$46.5 million contract with Clock Tower X, funds websites and content aimed at shaping how AI chatbots frame related topi",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/grok/status/2108812081281585385"
+      ],
+      "supporting_sources": [],
+      "title": "Reports based on FARA filings and investigations estimate Israel has spent over $1 billion on overall public diplomacy since Oct 2023. A portion, including a ~$",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -22522,34 +22660,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-81a4d156e772ed6060635ef5": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "Anthropic said in a report that a UAE-linked influence operation used Claude AI to target the Muslim Brotherhood. https://t.co/oMkmnDQNgx",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/semafor/status/2098540087579394313"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T22:32:00+00:00",
-      "reason": "Anthropic said in a report that a UAE-linked influence operation used Claude AI to target the Muslim Brotherhood. https://t.co/oMkmnDQNgx",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/semafor/status/2098540087579394313"
-      ],
-      "supporting_sources": [],
-      "title": "Anthropic said in a report that a UAE-linked influence operation used Claude AI to target the Muslim Brotherhood. https://t.co/oMkmnDQNgx",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-81ace45175ab233a3f81ef89": {
       "alerted_at": "2026-09-24T00:06:52Z",
       "confidence": 0,
@@ -23917,6 +24027,33 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
     },
+    "story-88ce24d31db46a867a053cff": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "Hey @grok How much money is Israel spending to influence chatbot responses? Is it over $1 Billion since 2023? https://t.co/RVFWJqbkfY",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/TheVikingNomad_/status/2108811922426794261"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T06:48:36+00:00",
+      "reason": "Hey @grok How much money is Israel spending to influence chatbot responses? Is it over $1 Billion since 2023? https://t.co/RVFWJqbkfY",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/TheVikingNomad_/status/2108811922426794261"
+      ],
+      "supporting_sources": [],
+      "title": "Hey @grok How much money is Israel spending to influence chatbot responses? Is it over $1 Billion since 2023? https://t.co/RVFWJqbkfY",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-88f459c6bc627f6541402621": {
       "alerted_at": "2026-10-05T22:11:03Z",
       "confidence": 0,
@@ -24865,6 +25002,34 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
+    },
+    "story-8ee6e4bbb93ce5c59fac982c": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "The \"Godfather of AI\" quit Google to warn the world about his own creation. He fears it will enable lethal autonomous weapons that operate without human oversight. Is this a necessary warning from an insider, or an alarmist cry that's come too late? https://t.co/TBrQoNbD26",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Claritysteps/status/2108585282618659055"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-09T15:48:01+00:00",
+      "reason": "The \"Godfather of AI\" quit Google to warn the world about his own creation. He fears it will enable lethal autonomous weapons that operate without human oversight. Is this a necessary warning from an insider, or an alarmist cry that's come too late? https://t.co/TBrQoNbD26",
+      "score": 40,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/Claritysteps/status/2108585282618659055"
+      ],
+      "supporting_sources": [],
+      "title": "The \"Godfather of AI\" quit Google to warn the world about his own creation. He fears it will enable lethal autonomous weapons that operate without human oversig",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
     },
     "story-8f74ea814fb598a0d8ac096b": {
       "alerted_at": "2026-10-06T20:39:16Z",
@@ -27007,36 +27172,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-9c639a571836101f0c9397e8": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "Countries are racing to develop autonomous weapons. Are we asking the right questions? https://t.co/rhOjMAwaZV",
-      "evidence_count": 2,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/VICENews/status/2098534143030124683",
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T22:08:23+00:00",
-      "reason": "Countries are racing to develop autonomous weapons. Are we asking the right questions? https://t.co/rhOjMAwaZV",
-      "score": 55,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/VICENews/status/2098534143030124683",
-        "https://x.com/narens/status/2098167938637594920"
-      ],
-      "supporting_sources": [],
-      "title": "Countries are racing to develop autonomous weapons. Are we asking the right questions? https://t.co/rhOjMAwaZV",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
     "story-9c703cc4a875b6ed5c55f530": {
       "alerted_at": "2026-09-23T04:59:23Z",
       "confidence": 0,
@@ -28042,6 +28177,35 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    "story-a2ccd2ace09fb34c1775f4b1": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "A US-based nonprofit is planning to use AI surveillance to check for \u201chateful\u201d speech about Israel inside classrooms in the genocide-ravaged Gaza Strip. The Associated Press reports: \u201cA U.S. charity in Gaza is worried that teachers at its schools might stray from a curriculum it says promotes peace and tolerance, so it plans to record classroom conversations and use artificial intelligence to flag speech deemed \u2018hateful\u2019 or \u2018inciting.\u2019 \u201cThe plans laid out by the founder of the Gaza Children Village in a webinar last month have elicited ethical, safety and privacy concerns from some Palestinian and advocacy groups and at least one of the charity\u2019s partners. \u201cThere is no indication the charity intends to share its classrooms\u2019 recordings with anybody else, but fears about the potential misuse of surveillance technology are heightened in Gaza after three years of war. The Israeli military has used AI to sift through intercepted communications and find suspicious speech, including to identify targets for strikes.\u201d AP reports that the founder of Gaza Children Village, Dr David Hasan, seeks the \u201cde-radicalization\u201d of Gaza and has removed from his curriculum any language that \u201cencouraged anti-Israel or antisemitic beliefs.\u201d Meanwhile exactly zero resources are being spent de-radicalizing Jewish Israelis, who consistently tell polls that they overwhelmingly support the genocide and ethnic cleansing of the Palestinian people. What AP neglects to mention in its write-up is that a significant portion of the charity\u2019s funding comes from Israeli donors, as we learn in a puff piece published this past May by Jewish News titled \u201cGaza school founder backed by Israeli donors says children are taught \u2018we are better together\u2019\u201d. Hasan told Jewish News that he\u2019s been very transparent about the Israeli funding pouring into his so-called \u201cAcademies of Hope\u201d because it would cause a scandal among Palestinians if the information came out later. Hasan\u2019s operation will reportedly be using video games to indoctrinate young survivors of the Gaza holocaust into having sympathy for Israelis and teach them about Adolf Hitler\u2019s mistreatment of the Jews, though it\u2019s unclear how teaching Palestinians that genocide is bad will improve their perception of Israel. So inside the ruins of Gaza an American charity funded by Israelis is going to be teaching schoolchildren not to hold negative beliefs toward the US-backed ethnostate which just destroyed their neighborhoods, killed their families, and laid siege to their entire population, and will be enforcing these standards using AI tech surveillance which will be shared with God knows whom. Take a good look, ladies and gentlemen, because this is what they\u2019ve got planned for the rest of us as well. Do not succumb to the delusion that artificial intelligence is being aggressively advanced because the oligarchs and empire managers just want to sell us helpful chatbots. These technologies are being developed as rapidly as possible because they want mass surveillance and autonomous weapons systems to suppress revolutions and revolutionary sentiment and keep us trapped in this capitalist dystopia forever. It\u2019s just amazing how quickly AI is making everything worse. It\u2019s assaulting the environment, ruining art, turning everyone into an unthinking moron, making people crazy and suicidal, flooding the information ecosystem with fake videos and misinformation, all while rapidly making it possible for a small group of powerful individuals to control and monitor every facet of our lives using advanced technology. This perversion of the human species is what we are being told we need to make sacrifices for in order to ensure that AI develops very quickly, as OpenAI CEO Sam Altman has proclaimed. \u201cWe believe the world should accept some bad things happening for the benefits of this technology,\u201d Altman told Politico in a recent interview, arguing that too many safeguards and regulations will slow down the advancement of these new technologies. It\u2019s already bad, and they\u2019re trying to make it so much worse. We\u2019ve got to find some way to stop these freaks.",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/caitoz/status/2108771434713711085"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T04:07:43+00:00",
+      "reason": "A US-based nonprofit is planning to use AI surveillance to check for \u201chateful\u201d speech about Israel inside classrooms in the genocide-ravaged Gaza Strip. The Associated Press reports: \u201cA U.S. charity in Gaza is worried that teachers at its schools might stray from a curriculum it ",
+      "score": 70,
+      "sensitive_military_claim": true,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/caitoz/status/2108771434713711085"
+      ],
+      "supporting_sources": [],
+      "title": "A US-based nonprofit is planning to use AI surveillance to check for \u201chateful\u201d speech about Israel inside classrooms in the genocide-ravaged Gaza Strip. The Ass",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -31573,6 +31737,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-b5b2cdf93853d18070a1735e": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "NYT reports Mark Levin\u2019s stepson, Mike Huckabee\u2019s top aide, \ud835\uddd5\ud835\udddf\ud835\udde2\ud835\uddd6\ud835\uddde\ud835\uddd8\ud835\uddd7, \ud835\uddd7\ud835\uddd8\ud835\udddf\ud835\uddd4\ud835\uddec\ud835\uddd8\ud835\uddd7 and \ud835\udde5\ud835\uddd8\ud835\uddea\ud835\udde5\ud835\udde2\ud835\udde7\ud835\uddd8 US Embassy reports on Israeli settler violence, while \ud835\udddb\ud835\udddc\ud835\uddd7\ud835\udddc\ud835\udde1\ud835\uddda findings on the killings of \ud835\udde1\ud835\udddc\ud835\udde1\ud835\uddd8 \ud835\uddd4\ud835\udde0\ud835\uddd8\ud835\udde5\ud835\udddc\ud835\uddd6\ud835\uddd4\ud835\udde1\ud835\udde6 from Congress. @grok YES/NO",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RabbiJeffx/status/2109057476079345941"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-10T23:04:21+00:00",
+      "reason": "NYT reports Mark Levin\u2019s stepson, Mike Huckabee\u2019s top aide, \ud835\uddd5\ud835\udddf\ud835\udde2\ud835\uddd6\ud835\uddde\ud835\uddd8\ud835\uddd7, \ud835\uddd7\ud835\uddd8\ud835\udddf\ud835\uddd4\ud835\uddec\ud835\uddd8\ud835\uddd7 and \ud835\udde5\ud835\uddd8\ud835\uddea\ud835\udde5\ud835\udde2\ud835\udde7\ud835\uddd8 US Embassy reports on Israeli settler violence, while \ud835\udddb\ud835\udddc\ud835\uddd7\ud835\udddc\ud835\udde1\ud835\uddda findings on the killings of \ud835\udde1\ud835\udddc\ud835\udde1\ud835\uddd8 \ud835\uddd4\ud835\udde0\ud835\uddd8\ud835\udde5\ud835\udddc\ud835\uddd6\ud835\uddd4\ud835\udde1\ud835\udde6 from Congress. @grok YES/NO",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/RabbiJeffx/status/2109057476079345941"
+      ],
+      "supporting_sources": [],
+      "title": "NYT reports Mark Levin\u2019s stepson, Mike Huckabee\u2019s top aide, \ud835\uddd5\ud835\udddf\ud835\udde2\ud835\uddd6\ud835\uddde\ud835\uddd8\ud835\uddd7, \ud835\uddd7\ud835\uddd8\ud835\udddf\ud835\uddd4\ud835\uddec\ud835\uddd8\ud835\uddd7 and \ud835\udde5\ud835\uddd8\ud835\uddea\ud835\udde5\ud835\udde2\ud835\udde7\ud835\uddd8 US Embassy reports on Israeli settler violence, while \ud835\udddb\ud835\udddc\ud835\uddd7\ud835\udddc\ud835\udde1\ud835\uddda findings o",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-b605b8329453dacbcb1f0b9b": {
       "alerted_at": "2026-09-29T01:15:05Z",
       "confidence": 0,
@@ -32867,35 +33059,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    "story-bd71a3b4ea31c5ac0602f27a": {
-      "alerted_at": "2026-09-12T01:33:25Z",
-      "confidence": 0,
-      "content": "@theintercept @PAXvoorvrede Not only are tech companies walking away from earlier ethical commitments to disallow the use of their AI services and user data for military purposes, they are directly influencing how their tech can be used to wage war.",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/privacyint/status/2098335845648331201"
-      ],
-      "last_seen_at": "2026-09-12T01:33:25Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T09:00:25+00:00",
-      "reason": "@theintercept @PAXvoorvrede Not only are tech companies walking away from earlier ethical commitments to disallow the use of their AI services and user data for military purposes, they are directly influencing how their tech can be used to wage war.",
-      "score": 40,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/privacyint/status/2098335845648331201"
-      ],
-      "supporting_sources": [],
-      "title": "@theintercept @PAXvoorvrede Not only are tech companies walking away from earlier ethical commitments to disallow the use of their AI services and user data for",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     },
     "story-be266b9be1be8174de06d77b": {
       "alerted_at": "2026-10-10T20:11:55Z",
@@ -34687,36 +34850,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    "story-c824d95d79a985409dad04d2": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "\u062a\u0642\u0631\u064a\u0631 Anthropic \u0639\u0646 \u062a\u062d\u0648\u0644 \u062a\u0627\u0631\u064a\u062e\u064a \u0641\u064a \u062a\u0647\u062f\u064a\u062f\u0627\u062a #Ai \u061b \u062d\u064a\u062b \u0627\u0646\u062a\u0642\u0644 \u0627\u0644\u0645\u0647\u0627\u062c\u0645\u0648\u0646 \u0645\u0646 \u0645\u062c\u0631\u062f \u0627\u0644\u062a\u0641\u0627\u0639\u0644 \u0645\u0639 \u0627\u0644\u0634\u0627\u062a \u0628\u0648\u062a \u0625\u0644\u0649 \u062a\u0634\u063a\u064a\u0644 \u0648\u0643\u0644\u0627\u0621 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u062a\u0639\u0645\u0644 \u0628\u0623\u0633\u0644\u0648\u0628 \u0645\u0633\u062a\u0642\u0644 \u062a\u0645\u0627\u0645\u0627\u064b \u0644\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0647\u062c\u0645\u0627\u062a \u0648\u0625\u0639\u0627\u062f\u0629 \u062a\u0639\u062f\u064a\u0644 \u0627\u0644\u062b\u063a\u0631\u0627\u062a \u062a\u0644\u0642\u0627\u0626\u064a\u0627\u064b. \u064a\u0648\u062b\u0642 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u062a\u0641\u0643\u064a\u0643 \u0639\u0645\u0644\u064a\u0627\u062a \u0637\u0627\u0644\u062a \u0623\u0643\u062b\u0631 \u0645\u0646 15 \u062f\u0648\u0644\u0629 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645. - GTG-20006 \u0627\u0633\u062a\u062e\u062f\u0645\u062a \u0645\u062c\u0645\u0648\u0639\u0629 \u062a\u062c\u0633\u0633 \u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0640 \u0631\u0648\u0633\u064a\u0627 \u0627\u0644\u0640 AI \u0644\u062a\u0639\u062f\u064a\u0644 \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0627\u062a \u0627\u0644\u062e\u0628\u064a\u062b\u0629 \u062a\u0644\u0642\u0627\u0626\u064a\u0627\u064b \u0641\u0648\u0631 \u0627\u0643\u062a\u0634\u0627\u0641\u0647\u0627. \ud83d\udccd\u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0627\u0633\u062a\u0647\u062f\u0627\u0641 \u0648\u0632\u0631\u0627\u0621 \u0648\u0645\u0635\u0646\u0639\u064a \u0645\u0633\u064a\u0631\u0627\u062a \u0641\u064a \u0623\u0648\u0643\u0631\u0627\u0646\u064a\u0627 \u0648\u0628\u0642\u064a\u0629 \u0623\u0648\u0631\u0648\u0628\u0627 \u0648\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637\u060c \u0648\u0633\u0631\u0642\u0629 \u0648\u0627\u062a\u0633\u0627\u0628 \u0645\u0633\u0624\u0648\u0644\u064a\u0646 \u0623\u0648\u0643\u0631\u0627\u0646\u064a\u064a\u0646. - \u0627\u062e\u062a\u0631\u0627\u0642 \u0633\u062d\u0627\u0628\u064a \u0648\u0627\u0628\u062a\u0632\u0627\u0632 \u0645\u0627\u0644\u064a | GTG-50014 \u0627\u0633\u062a\u063a\u0644 \u0642\u0631\u0627\u0635\u0646\u0629 \u062f\u0627\u0641\u0639\u0647\u0645 \u0645\u0627\u0644\u064a \u0627\u0644\u0640 AI \u0644\u0641\u062d\u0635 1.8 \u0645\u0644\u064a\u0648\u0646 \u062a\u0637\u0628\u064a\u0642 \u0648\u0633\u0631\u0642\u0629 \u0631\u0645\u0648\u0632 \u0648\u0635\u0648\u0644 \u0633\u062d\u0627\u0628\u064a\u0629. \ud83d\udccd\u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0648\u062f\u0648\u0644 \u0639\u0627\u0644\u0645\u064a\u0629\u061b \u0628\u0627\u062e\u062a\u0631\u0627\u0642 40+ \u0634\u0631\u0643\u0629 \u0648\u0633\u0631\u0642\u0629 2,100 \u0631\u0645\u0632 \u0648\u0635\u0648\u0644 \u0644\u0640 Azure AD \u0648\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0637\u0627\u0642\u0627\u062a \u0645\u0644\u0627\u064a\u064a\u0646 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646. - GTG-10007 \u0623\u062a\u0645\u062a \u0637\u0644\u0627\u0628 \u062c\u0627\u0645\u0639\u064a\u0648\u0646 \u0641\u064a \u0627\u0644\u0635\u064a\u0646 \u0627\u0643\u062a\u0634\u0627\u0641 \u062b\u063a\u0631\u0627\u062a \u0623\u062c\u0647\u0632\u0629 \u0627\u0644\u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0634\u0628\u0643\u064a\u0629 \u0639\u0628\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0627\u0633\u062a\u0647\u062f\u0627\u0641 50 \u0645\u0624\u0633\u0633\u0629 \u062a\u0642\u0646\u064a\u0629 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0648\u0627\u0643\u062a\u0634\u0627\u0641 12+ \u062b\u063a\u0631\u0629 \u064a\u0648\u0645 \u0635\u0641\u0631 \u062e\u0644\u0627\u0644 \u0634\u0647\u0631 \u0648\u0627\u062d\u062f \u062f\u0648\u0646 \u062a\u062f\u062e\u0644 \u0628\u0634\u0631\u064a. - \u0647\u062c\u0645\u0627\u062a \u0633\u0644\u0627\u0633\u0644 \u062a\u0648\u0631\u064a\u062f \u0627\u0644\u0640 AI | GTG-50020 & 50021 \u062d\u0645\u0644\u0629 \u0627\u0628\u062a\u0632\u0627\u0632 \u0646\u0641\u0630\u0647\u0627 \u0645\u0634\u063a\u0644 \u064a\u062a\u062d\u062f\u062b \u0627\u0644\u0631\u0648\u0633\u064a\u0629 \u0644\u0627\u062e\u062a\u0631\u0627\u0642 \u0634\u0631\u0643\u0627\u062a AI \u0648\u0627\u0644\u0648\u0635\u0648\u0644 \u0644\u0646\u0645\u0627\u0630\u062c \u063a\u064a\u0631 \u0645\u0639\u0644\u0646\u0629. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0627\u0633\u062a\u0647\u062f\u0627\u0641 30 \u0634\u0631\u0643\u0629 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645 \u0648\u0627\u0644\u0645\u0637\u0627\u0644\u0628\u0629 \u0628\u0641\u062f\u064a\u0629 \u062a\u0635\u0644 \u0644\u0640 2.5 \u0645\u0644\u064a\u0648\u0646 \u062f\u0648\u0644\u0627\u0631. - \u0646\u0634\u0627\u0637 \u0627\u062e\u062a\u0631\u0627\u0642 \u0648\u062a\u0634\u0647\u064a\u0631 \u0633\u064a\u0627\u0633\u064a | GTG-50029 \u0627\u0633\u062a\u063a\u0644 \u0646\u0627\u0634\u0637 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0645\u062a\u062d\u062f\u062b \u0628\u0627\u0644\u0641\u0631\u0646\u0633\u064a\u0629 \u0627\u0644\u0640 AI \u0644\u0633\u062d\u0628 \u0628\u064a\u0627\u0646\u0627\u062a \u0633\u064a\u0627\u0633\u064a\u0629 \u0648\u0625\u0646\u0634\u0627\u0621 \u0645\u062d\u0631\u0643 \u062a\u0634\u0647\u064a\u0631. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0641\u0631\u0646\u0633\u0627 \u0648\u0623\u0648\u0631\u0648\u0628\u0627\u061b \u0628\u0627\u062e\u062a\u0631\u0627\u0642 14 \u0645\u0624\u0633\u0633\u0629 \u0648\u062d\u0645\u0644\u0629 \u0633\u064a\u0627\u0633\u064a\u0629 \u0648\u062a\u0631\u064a\u0628 \u0639\u0634\u0631\u0627\u062a \u0627\u0644\u0645\u0644\u0627\u064a\u064a\u0646 \u0645\u0646 \u0627\u0644\u0633\u062c\u0644\u0627\u062a. - \u062a\u0636\u0644\u064a\u0644 \u0625\u0639\u0644\u0627\u0645\u064a \u0628\u0640 20 \u0644\u063a\u0629 | GTG-54002 \u0623\u0646\u0634\u0623\u062a \u0634\u0631\u0643\u0629 LKM \u0627\u0644\u062e\u0627\u0635\u0629 \u0641\u064a \u0631\u0648\u0633\u064a\u0627 \u0623\u0633\u0637\u0648\u0644\u0627\u064b \u0644\u062a\u0648\u0644\u064a\u062f \u0627\u0644\u0623\u062e\u0628\u0627\u0631 \u0627\u0644\u0632\u0627\u0626\u0641\u0629 \u0628\u0640 20 \u0644\u063a\u0629 \u0644\u062a\u0648\u062c\u064a\u0647 \u0627\u0644\u0631\u0623\u064a \u0627\u0644\u0639\u0627\u0645. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: 6 \u0642\u0627\u0631\u0627\u062a (\u0623\u0645\u0631\u064a\u0643\u0627\u060c \u0623\u0648\u0631\u0648\u0628\u0627\u060c \u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637) \u0639\u0628\u0631 \u0646\u0634\u0631 8,913 \u0645\u0642\u0627\u0644\u0627\u064b \u0645\u0636\u0644\u0644\u0627\u064b \u0648\u062a\u0636\u062e\u064a\u0645\u0647\u0627 \u0628\u062d\u0633\u0627\u0628\u0627\u062a \u0648\u0647\u0645\u064a\u0629 \u0639\u0644\u0649 X. - \u0625\u062b\u0627\u0631\u0629 \u0627\u0644\u0646\u0632\u0627\u0639\u0627\u062a \u0627\u0644\u0639\u0631\u0642\u064a\u0629 | GTG-84005 \u0627\u0633\u062a\u063a\u0644\u062a \u0634\u0631\u0643\u0629 BBS Bilisim \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0639\u062f\u0627\u062f \u0627\u0644\u0633\u0643\u0627\u0646\u064a \u0644\u062a\u0648\u062c\u064a\u0647 \u0631\u0633\u0627\u0626\u0644 AI \u062a\u062b\u064a\u0631 \u0627\u0644\u062e\u0644\u0627\u0641\u0627\u062a \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0645\u0627\u0644\u064a\u0632\u064a\u0627\u061b \u0639\u0628\u0631 \u0625\u062f\u0627\u0631\u0629 1,000+ \u062d\u0633\u0627\u0628 \u0648\u0647\u0645\u064a \u064a\u0633\u062a\u0647\u062f\u0641 222 \u0645\u0646\u0637\u0642\u0629 \u0645\u0627\u0644\u064a\u0632\u064a\u0629. - \u062f\u0639\u0627\u064a\u0629 \u0627\u0646\u062a\u062e\u0627\u0628\u064a\u0629 \u0648\u0646\u0641\u0648\u0630 \u0639\u0633\u0643\u0631\u064a | GTG-24015 & GTG-04001 \u0627\u0633\u062a\u062e\u062f\u0645\u062a \u0645\u0643\u0627\u062a\u0628 \u0625\u0639\u0644\u0627\u0645\u064a\u0629 \u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0640 \u0631\u0648\u0633\u064a\u0627 \u0627\u0644\u0640 AI \u0644\u0635\u064a\u0627\u063a\u0629 \u062f\u0639\u0627\u064a\u0629 \u062f\u0648\u0644\u064a\u0629 \u0648\u062a\u0642\u064a\u064a\u0645 \u0648\u0644\u0627\u0621 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u0627\u0644\u062a\u0623\u062b\u064a\u0631 \u0639\u0644\u0649 \u0627\u0646\u062a\u062e\u0627\u0628\u0627\u062a \u0645\u0648\u0644\u062f\u0648\u0641\u0627\u060c \u0648\u062f\u0639\u0645 \u0646\u0641\u0648\u0630 \u0645\u062c\u0645\u0648\u0639\u0629 \"\u0641\u0627\u063a\u0646\u0631\" \u0641\u064a \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0625\u0641\u0631\u064a\u0642\u064a\u0627 \u0627\u0644\u0648\u0633\u0637\u0649. - \u0645\u0631\u0627\u0642\u0628\u0629 \u0648\u062a\u062a\u0628\u0639 \u0627\u0644\u0645\u0639\u0627\u0631\u0636\u064a\u0646 | Surveillance Operations \u0637\u0648\u0631\u062a \u062c\u0647\u0627\u062a \u0641\u064a \u0625\u064a\u0631\u0627\u0646 \u0648\u0627\u0644\u0635\u064a\u0646 \u0623\u0646\u0638\u0645\u0629 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0644\u0645\u0639\u0627\u0644\u062c\u0629 \u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0648\u062a\u062a\u0628\u0639 \u0627\u0644\u0623\u0641\u0631\u0627\u062f (OSINT). \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u062a\u062a\u0628\u0639 \u0627\u0644\u0645\u0639\u0627\u0631\u0636\u064a\u0646 \u0641\u064a \u0625\u064a\u0631\u0627\u0646\u060c \u0648\u0645\u062a\u0627\u0628\u0639\u0629 \u0623\u0646\u0634\u0637\u0629 \u0623\u0641\u0631\u0627\u062f \u0627\u0644\u0625\u064a\u063a\u0648\u0631 \u0641\u064a \u0633\u0648\u0631\u064a\u0627 \u0648\u0645\u0631\u0627\u0643\u0632 \u0625\u0642\u0644\u064a\u0645\u064a\u0629 \u0643\u0640 #\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a. - \u062a\u0637\u0648\u064a\u0631 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0633\u0644\u0627\u062d \u0648\u0633\u0631\u0642\u0629 \u0627\u0644\u0646\u0645\u0627\u0630\u062c | GTG-17001 & GTG-16005 \u0627\u0633\u062a\u063a\u0644\u062a \u062c\u0647\u0627\u062a \u0641\u064a \u0627\u0644\u0635\u064a\u0646 \u0627\u0644\u0640 AI \u0644\u0643\u062a\u0627\u0628\u0629 \u0628\u0631\u0645\u062c\u064a\u0627\u062a \u0625\u0637\u0644\u0627\u0642 \u0627\u0644\u0646\u0627\u0631\u060c \u0648\u0634\u0628\u0643\u0627\u062a \u062a\u0642\u0646\u064a\u0629 (\u0643\u0640 Alibaba) \u0644\u0633\u0631\u0642\u0629 \u0642\u062f\u0631\u0627\u062a \u0646\u0645\u0648\u0630\u062c Claude. \ud83d\udccd \u0627\u0644\u062f\u0648\u0644 \u0648\u0627\u0644\u0623\u0647\u062f\u0627\u0641: \u062a\u0637\u0648\u064a\u0631 \u0623\u0633\u0644\u062d\u0629 \u0644\u0640 \u0627\u0644\u0628\u062d\u0631\u064a\u0629 \u0627\u0644\u0635\u064a\u0646\u064a\u0629\u060c \u0648\u062a\u0646\u0641\u064a\u0630 151 \u0645\u0644\u064a\u0648\u0646 \u0627\u0633\u062a\u0639\u0644\u0627\u0645 \u063a\u064a\u0631 \u0645\u0634\u0631\u0648\u0639 \u0644\u0646\u0633\u062e \u0627\u0644\u0646\u0645\u0627\u0630\u062c.",
-      "evidence_count": 1,
-      "evidence_status": "single-source",
-      "evidence_urls": [
-        "https://x.com/xuqts/status/2098383766695653841"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T12:10:50+00:00",
-      "reason": "\u062a\u0642\u0631\u064a\u0631 Anthropic \u0639\u0646 \u062a\u062d\u0648\u0644 \u062a\u0627\u0631\u064a\u062e\u064a \u0641\u064a \u062a\u0647\u062f\u064a\u062f\u0627\u062a #Ai \u061b \u062d\u064a\u062b \u0627\u0646\u062a\u0642\u0644 \u0627\u0644\u0645\u0647\u0627\u062c\u0645\u0648\u0646 \u0645\u0646 \u0645\u062c\u0631\u062f \u0627\u0644\u062a\u0641\u0627\u0639\u0644 \u0645\u0639 \u0627\u0644\u0634\u0627\u062a \u0628\u0648\u062a \u0625\u0644\u0649 \u062a\u0634\u063a\u064a\u0644 \u0648\u0643\u0644\u0627\u0621 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u062a\u0639\u0645\u0644 \u0628\u0623\u0633\u0644\u0648\u0628 \u0645\u0633\u062a\u0642\u0644 \u062a\u0645\u0627\u0645\u0627\u064b \u0644\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0647\u062c\u0645\u0627\u062a \u0648\u0625\u0639\u0627\u062f\u0629 \u062a\u0639\u062f\u064a\u0644 \u0627\u0644\u062b\u063a\u0631\u0627\u062a \u062a\u0644\u0642\u0627\u0626\u064a\u0627\u064b. \u064a\u0648\u062b\u0642 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u062a\u0641\u0643\u064a\u0643 \u0639\u0645\u0644\u064a\u0627\u062a \u0637\u0627\u0644\u062a \u0623\u0643\u062b\u0631 \u0645\u0646 15 \u062f\u0648\u0644\u0629 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645. - GTG-20006 \u0627\u0633\u062a\u062e\u062f\u0645\u062a \u0645\u062c\u0645\u0648",
-      "score": 10,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/xuqts/status/2098383766695653841"
-      ],
-      "supporting_sources": [],
-      "title": "\u062a\u0642\u0631\u064a\u0631 Anthropic \u0639\u0646 \u062a\u062d\u0648\u0644 \u062a\u0627\u0631\u064a\u062e\u064a \u0641\u064a \u062a\u0647\u062f\u064a\u062f\u0627\u062a #Ai \u061b \u062d\u064a\u062b \u0627\u0646\u062a\u0642\u0644 \u0627\u0644\u0645\u0647\u0627\u062c\u0645\u0648\u0646 \u0645\u0646 \u0645\u062c\u0631\u062f \u0627\u0644\u062a\u0641\u0627\u0639\u0644 \u0645\u0639 \u0627\u0644\u0634\u0627\u062a \u0628\u0648\u062a \u0625\u0644\u0649 \u062a\u0634\u063a\u064a\u0644 \u0648\u0643\u0644\u0627\u0621 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u062a\u0639\u0645\u0644 \u0628\u0623\u0633\u0644\u0648\u0628 \u0645\u0633\u062a\u0642\u0644 \u062a\u0645\u0627\u0645\u0627\u064b \u0644\u062a\u0646\u0641\u064a\u0630 \u0627\u0644",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0625\u064a\u0631\u0627\u0646",
-        "\u0627\u0633\u062a\u0647\u062f\u0627\u0641"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
     },
     "story-c86fa5f13c9c8aa39b9ec491": {
       "alerted_at": "2026-10-05T15:35:48Z",
@@ -37814,34 +37947,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-d6791153643e9422cf592cbb": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "Among many provisions, the AI companies were given access to sensitive info and tasked with providing \"risk forecasts\" for their own products. Trusting companies to do this \"constitutes both a conflict of interest and a subversion of democratic processes,\" says @HeidyKhlaaf.",
-      "evidence_count": 1,
-      "evidence_status": "source-only",
-      "evidence_urls": [
-        "https://x.com/AINowInstitute/status/2098089989116514430"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-10T16:43:28+00:00",
-      "reason": "Among many provisions, the AI companies were given access to sensitive info and tasked with providing \"risk forecasts\" for their own products. Trusting companies to do this \"constitutes both a conflict of interest and a subversion of democratic processes,\" says @HeidyKhlaaf.",
-      "score": 10,
-      "sensitive_military_claim": false,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/AINowInstitute/status/2098089989116514430"
-      ],
-      "supporting_sources": [],
-      "title": "Among many provisions, the AI companies were given access to sensitive info and tasked with providing \"risk forecasts\" for their own products. Trusting companie",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-d6ad395801f76d9db18037b3": {
       "alerted_at": "2026-09-14T20:35:19Z",
       "confidence": 0,
@@ -40644,57 +40749,6 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
-    "story-e68c5088d22942c50f87d0e0": {
-      "alerted_at": "2026-09-12T01:33:25Z",
-      "confidence": 0,
-      "content": "Pete Hegseth mandated speed, Emil Michael (his go-to Musk buddy techbro w/ deep China exposure now DoD CTO) centralized the defense tech architecture, and Elon Musk\u2019s xAI (Grok) is now embedded inside Project Maven -> the Pentagon's flagship AI targeting system. It's an issue. And when critics attempted to use @grok to dismiss our operational model, we turned their pushback into an adversarial red-team audit. We ran the DoD\u2019s own evidentiary boundaries directly through xAI\u2019s engine. Grok conceded the core thesis: an acquisition contract is not a 96-hour combat failover. The market has capitalized the upside of commercial AI adoption while flying completely blind on operational resilience. Here is the dismantled reality across the four pages attached below: The 96-Hour Substitution Myth (Page 1): The Anthropic transition proved DoD can diversify over weeks and months (~18 days to initial alternative deployment, ~181 days for phase-out). It proved zero about forced, same-function substitution inside an active 4-day strike window. A model can be replaceable on a procurement calendar and completely irreplaceable on a combat clock. The Unjoined Assurance Chain & SCIF Trap (Page 2): Palantir preserves the data and orchestration, but it cannot guarantee a replacement engine matches the mission evidence. Critics argue the hot reserve is classified. Correct. Neither can the public market observe it. We are not pricing what is happening inside the SCIF; we are pricing the fact that the resilience state is publicly unobservable. Until demonstrated, it remains latent exposure. The Industrial China Flank (Page 3): Beijing does not need to hack Grok or penetrate military endpoints. Tesla\u2019s Shanghai Gigafactory accounts for >54% of global production and holds a $5.888B local debt facility with 95%+ supplier localization. Selective Chinese pressure (data approvals, equipment export controls, financing rollover) hits Musk's commercial payoffs directly. That exposure becomes a U.S. defense bargaining problem the moment Washington lacks an immediately executable outside option on the same clock. The Decision Spine & Physical Bottleneck (Page 4): Hegseth\u2019s velocity mandate accumulates relationship-specific engineering around the incumbent before alternatives mature. Jensen Huang\u2019s Nvidia controls the physical outside option: nominal software alternatives fail if they share constrained data-center power and advanced packaging. Alex Karp's Palantir stands as the transmission gate, making substitution technically possible, but human-machine trust remains the unpriced bottleneck. Wall Street sees the DoD spending billions on AI and assumes the underlying operational architecture is bulletproof. The assurance chain is completely invisible to outside capital, the market is blindly assuming the military has a working hot-spare. If that backup isn't actually ready to go on a combat clock, the U.S. military is structurally dependent on Elon Musk's cooperation during a geopolitical crisis and the market has neither priced that risk nor China's leverage on Musk. $SPCX $PLTR $TSLA $NVDA The underlying mechanics and mathematical proof paths are documented in our updated research release. Links in reply.",
-      "evidence_count": 5,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/LibertyLynx/status/2098524768442196107",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-        "https://x.com/grok/status/2098152285620535481",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
-      ],
-      "last_seen_at": "2026-09-12T01:33:25Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T21:31:08+00:00",
-      "reason": "Pete Hegseth mandated speed, Emil Michael (his go-to Musk buddy techbro w/ deep China exposure now DoD CTO) centralized the defense tech architecture, and Elon Musk\u2019s xAI (Grok) is now embedded inside Project Maven -> the Pentagon's flagship AI targeting system. It's an issue. An",
-      "score": 90,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/LibertyLynx/status/2098524768442196107",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-        "https://x.com/grok/status/2098152285620535481",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
-      ],
-      "supporting_sources": [
-        "google-news"
-      ],
-      "title": "Pete Hegseth mandated speed, Emil Michael (his go-to Musk buddy techbro w/ deep China exposure now DoD CTO) centralized the defense tech architecture, and Elon",
-      "webswarm_evidence_terms": [
-        "2,000 targets",
-        "96 hours",
-        "AI",
-        "AI targeting",
-        "Grok",
-        "Grok AI",
-        "Grok Gov",
-        "Grok Gov Model",
-        "Iran",
-        "Operation Epic Fury",
-        "Pentagon",
-        "Project Maven",
-        "military",
-        "munitions",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
     "story-e6ac530cca0d19be2c2497b9": {
       "alerted_at": "2026-09-25T19:02:40Z",
       "confidence": 0,
@@ -41469,51 +41523,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    "story-ead25e8755e450724ad23e18": {
-      "alerted_at": "2026-09-11T23:42:06Z",
-      "confidence": 0,
-      "content": "Maven Smart System (MSS) is the Pentagon\u2019s main AI platform from Project Maven (launched 2017), primarily integrated by Palantir. It fuses 150+ sensor feeds for real-time battlespace awareness, target detection, strike planning, and intelligence. The Grok Gov Model is a government-tuned derivative of Grok deployed in MSS for targeting, planning, logistics, and analysis. A June 2026 declaration credited it with enabling over 2,000 munitions on 2,000 targets in 96 hours during Operation Epic Fury.",
-      "evidence_count": 4,
-      "evidence_status": "corroborated",
-      "evidence_urls": [
-        "https://x.com/grok/status/2098152285620535481",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
-      ],
-      "last_seen_at": "2026-09-11T23:42:06Z",
-      "notification_status": "x-intel",
-      "published_at": "2026-09-11T20:31:25Z",
-      "reason": "Maven Smart System (MSS) is the Pentagon\u2019s main AI platform from Project Maven (launched 2017), primarily integrated by Palantir. It fuses 150+ sensor feeds for real-time battlespace awareness, target detection, strike planning, and intelligence. The Grok Gov Model is a governmen",
-      "score": 90,
-      "sensitive_military_claim": true,
-      "source": "x",
-      "source_urls": [
-        "https://x.com/grok/status/2098152285620535481",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
-      ],
-      "supporting_sources": [
-        "google-news"
-      ],
-      "title": "@grok: Maven Smart System (MSS) is the Pentagon\u2019s main AI platform from Project Maven (launched 2017), primarily integrated by Palantir. It fuses 1",
-      "webswarm_evidence_terms": [
-        "2,000 targets",
-        "96 hours",
-        "Grok",
-        "Grok AI",
-        "Grok Gov",
-        "Grok Gov Model",
-        "Iran",
-        "Operation Epic Fury",
-        "Pentagon",
-        "Project Maven",
-        "munitions"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     },
     "story-eb1472286d541165bcccf51f": {
       "alerted_at": "2026-09-30T01:44:35Z",
@@ -44339,6 +44348,34 @@
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
     },
+    "story-fa8baf6a71d14989b67ae248": {
+      "alerted_at": "2026-10-12T02:20:28Z",
+      "confidence": 0,
+      "content": "\u00ab\u0645\u062f\u0627\u0631\u00bb \u0641\u064a \u0627\u0644\u062f\u0645\u0627\u0645: 3 \u0623\u064a\u0627\u0645 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0648\u0645\u0633\u0627\u0628\u0642\u0629 \u00ab\u0627\u0644\u062a\u0642\u0637 \u0627\u0644\u0639\u0644\u0645\u00bb \u0628\u062c\u0648\u0627\u0626\u0632 60 \u0623\u0644\u0641 \u0631\u064a\u0627\u0644 \ud83d\udea9 \u062a\u0642\u064a\u0645 \u0623\u0643\u0627\u062f\u064a\u0645\u064a\u0629 \u0637\u0648\u064a\u0642 \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 \u0623\u0631\u0627\u0645\u0643\u0648 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u0641\u0639\u0627\u0644\u064a\u0629 \u00ab\u0645\u062f\u0627\u0631\u00bb \u0645\u0646 27 \u0625\u0644\u0649 29 \u0623\u0643\u062a\u0648\u0628\u0631 2026 \u0641\u064a \u0642\u0627\u0639\u0629 \u0627\u0644\u062f\u0627\u0631\u0629 \u0644\u0644\u0645\u0639\u0627\u0631\u0636 \u0648\u0627\u0644\u0645\u0624\u062a\u0645\u0631\u0627\u062a \u0628\u0627\u0644\u062f\u0645\u0627\u0645\u060c \u0628\u0627\u0644\u062a\u0632\u0627\u0645\u0646 \u0645\u0639 \u0634\u0647\u0631 \u0627\u0644\u062a\u0648\u0639\u064a\u0629 \u0628\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0648\u0639\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a 2026. \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629 \u0645\u0648\u062c\u0647\u0629 \u0644\u0634\u0631\u0627\u0626\u062d \u0648\u0627\u0633\u0639\u0629: \u0637\u0644\u0627\u0628 \u0627\u0644\u062a\u0639\u0644\u064a\u0645 \u0627\u0644\u0639\u0627\u0645 \u0648\u0627\u0644\u062c\u0627\u0645\u0639\u064a\u060c \u0648\u0627\u0644\u062e\u0631\u064a\u062c\u0648\u0646\u060c \u0648\u0627\u0644\u0645\u0648\u0638\u0641\u0648\u0646\u060c \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0648\u0646\u060c \u0648\u0627\u0644\u0639\u0627\u0626\u0644\u0627\u062a \u0623\u064a\u0636\u0627\u064b. \u0648\u0627\u0644\u0647\u062f\u0641 \u0623\u0646 \u064a\u0639\u0631\u0641 \u0627\u0644\u0632\u0627\u0626\u0631 \u0643\u064a\u0641 \u064a\u062d\u0645\u064a \u0628\u064a\u0627\u0646\u0627\u062a\u0647 \u0648\u062e\u0635\u0648\u0635\u064a\u062a\u0647\u060c \u0648\u0645\u062a\u0649 \u064a\u062b\u0642 \u0628\u0625\u062c\u0627\u0628\u0629 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0645\u062a\u0649 \u064a\u062a\u0648\u0642\u0641 \u0644\u064a\u062a\u062d\u0642\u0642 \u0645\u0646\u0647\u0627. \u062a\u0636\u0645 \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629 6 \u0645\u0646\u0627\u0637\u0642 \u062a\u0641\u0627\u0639\u0644\u064a\u0629 \u0633\u0645\u0651\u062a\u0647\u0627 \u00ab\u0645\u062f\u0627\u0631\u0627\u062a\u00bb \u0641\u064a\u0647\u0627 16 \u0646\u0634\u0627\u0637\u0627\u064b\u060c \u0645\u0646\u0647\u0627 \u0645\u062f\u0627\u0631 \u0644\u0644\u062a\u0639\u0631\u0641 \u0639\u0644\u0649 \u0627\u0644\u0645\u062d\u062a\u0648\u0649 \u0627\u0644\u0645\u0635\u0646\u0648\u0639 \u0623\u0648 \u0627\u0644\u0645\u0639\u062f\u0651\u0644 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0648\u0645\u062f\u0627\u0631 \u0644\u0623\u062b\u0631 \u0628\u064a\u0627\u0646\u0627\u062a\u0643 \u0648\u0635\u0648\u0631\u0643 \u0639\u0644\u0649 \u0627\u0644\u0625\u0646\u062a\u0631\u0646\u062a\u060c \u0648\u0645\u062f\u0627\u0631 \u0644\u0644\u062a\u062d\u062f\u064a\u0627\u062a \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a\u0629 \u0627\u0644\u0645\u0628\u0627\u0634\u0631\u0629\u060c \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u062c\u0644\u0633\u0627\u062a \u0648\u0648\u0631\u0634 \u0645\u0639 \u0645\u062e\u062a\u0635\u064a\u0646\u060c \u0648\u0623\u0643\u062b\u0631 \u0645\u0646 23 \u062a\u062d\u062f\u064a\u0627\u064b \u0633\u064a\u0628\u0631\u0627\u0646\u064a\u0627\u064b. \u0623\u0645\u0627 \u0645\u0633\u0627\u0628\u0642\u0629 \u00ab\u0627\u0644\u062a\u0642\u0637 \u0627\u0644\u0639\u0644\u0645\u00bb (CTF) \u0641\u0647\u064a \u0641\u064a \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0648\u0623\u0645\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0648\u0645\u0641\u062a\u0648\u062d\u0629 \u0644\u0644\u0637\u0644\u0627\u0628 \u0648\u0627\u0644\u0646\u0627\u0634\u0626\u064a\u0646 \u0648\u0627\u0644\u0645\u0647\u0646\u064a\u064a\u0646 \u0648\u0627\u0644\u0645\u062e\u062a\u0635\u064a\u0646\u060c \u0648\u0645\u062c\u0645\u0648\u0639 \u062c\u0648\u0627\u0626\u0632\u0647\u0627 60 \u0623\u0644\u0641 \u0631\u064a\u0627\u0644 \u062d\u0633\u0628 \u0645\u0648\u0642\u0639 \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629. \u0645\u0646\u0627\u0641\u0633\u0627\u062a\u0647\u0627 \u0627\u0644\u062a\u0623\u0647\u064a\u0644\u064a\u0629 \u0641\u064a 17 \u064818 \u0623\u0643\u062a\u0648\u0628\u0631\u060c \u0648\u062a\u0635\u0641\u064a\u0627\u062a\u0647\u0627 \u0627\u0644\u0646\u0647\u0627\u0626\u064a\u0629 \u0641\u064a 29 \u0623\u0643\u062a\u0648\u0628\u0631. \u0627\u0644\u062d\u0636\u0648\u0631 \u0628\u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u0645\u0633\u0628\u0642 \u0639\u0628\u0631 \u0645\u0648\u0642\u0639 \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629 https://t.co/sKGRvGL0Ik\u060c \u0639\u0644\u0649 \u0641\u062a\u0631\u062a\u064a\u0646 \u064a\u0648\u0645\u064a\u0627\u064b: \u0645\u0646 8 \u0635\u0628\u0627\u062d\u0627\u064b \u0625\u0644\u0649 12 \u0638\u0647\u0631\u0627\u064b\u060c \u0648\u0645\u0646 4 \u0639\u0635\u0631\u0627\u064b \u0625\u0644\u0649 9 \u0645\u0633\u0627\u0621\u064b\u060c \u0645\u0639 \u0634\u0647\u0627\u062f\u0629 \u062d\u0636\u0648\u0631 \u0644\u0644\u062c\u0644\u0633\u0627\u062a \u0648\u0627\u0644\u0648\u0631\u0634. \u0644\u0643\u0646 \u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0641\u064a \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629 \u0644\u0627 \u064a\u0634\u0645\u0644 \u0627\u0644\u0645\u0633\u0627\u0628\u0642\u0629\u060c \u0641\u0645\u0633\u0627\u0628\u0642\u0629 \u00ab\u0627\u0644\u062a\u0642\u0637 \u0627\u0644\u0639\u0644\u0645\u00bb \u0644\u0647\u0627 \u062a\u0633\u062c\u064a\u0644 \u0645\u0633\u062a\u0642\u0644 \u064a\u062c\u0628 \u0625\u062a\u0645\u0627\u0645\u0647 \u0642\u0628\u0644 \u0627\u0644\u062a\u0623\u0647\u064a\u0644\u064a\u0627\u062a \u0641\u064a 17 \u0623\u0643\u062a\u0648\u0628\u0631. #\u0627\u0644\u0623\u0645\u0646_\u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a #\u0627\u0644\u0630\u0643\u0627\u0621_\u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a https://t.co/F98vu9fIYf",
+      "evidence_count": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/3li3/status/2109357892058972281"
+      ],
+      "last_seen_at": "2026-10-12T02:20:28Z",
+      "notification_status": "x-intel",
+      "published_at": "2026-10-11T18:58:06+00:00",
+      "reason": "\u00ab\u0645\u062f\u0627\u0631\u00bb \u0641\u064a \u0627\u0644\u062f\u0645\u0627\u0645: 3 \u0623\u064a\u0627\u0645 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0648\u0645\u0633\u0627\u0628\u0642\u0629 \u00ab\u0627\u0644\u062a\u0642\u0637 \u0627\u0644\u0639\u0644\u0645\u00bb \u0628\u062c\u0648\u0627\u0626\u0632 60 \u0623\u0644\u0641 \u0631\u064a\u0627\u0644 \ud83d\udea9 \u062a\u0642\u064a\u0645 \u0623\u0643\u0627\u062f\u064a\u0645\u064a\u0629 \u0637\u0648\u064a\u0642 \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 \u0623\u0631\u0627\u0645\u0643\u0648 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u0641\u0639\u0627\u0644\u064a\u0629 \u00ab\u0645\u062f\u0627\u0631\u00bb \u0645\u0646 27 \u0625\u0644\u0649 29 \u0623\u0643\u062a\u0648\u0628\u0631 2026 \u0641\u064a \u0642\u0627\u0639\u0629 \u0627\u0644\u062f\u0627\u0631\u0629 \u0644\u0644\u0645\u0639\u0627\u0631\u0636 \u0648\u0627\u0644\u0645\u0624\u062a\u0645\u0631\u0627\u062a \u0628\u0627\u0644\u062f\u0645\u0627\u0645\u060c \u0628\u0627\u0644\u062a\u0632\u0627\u0645\u0646 \u0645\u0639 \u0634\u0647\u0631 \u0627\u0644\u062a\u0648\u0639\u064a\u0629 \u0628\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0648\u0639\u0627\u0645 ",
+      "score": 10,
+      "sensitive_military_claim": false,
+      "source": "x",
+      "source_urls": [
+        "https://x.com/3li3/status/2109357892058972281"
+      ],
+      "supporting_sources": [],
+      "title": "\u00ab\u0645\u062f\u0627\u0631\u00bb \u0641\u064a \u0627\u0644\u062f\u0645\u0627\u0645: 3 \u0623\u064a\u0627\u0645 \u0639\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0648\u0645\u0633\u0627\u0628\u0642\u0629 \u00ab\u0627\u0644\u062a\u0642\u0637 \u0627\u0644\u0639\u0644\u0645\u00bb \u0628\u062c\u0648\u0627\u0626\u0632 60 \u0623\u0644\u0641 \u0631\u064a\u0627\u0644 \ud83d\udea9 \u062a\u0642\u064a\u0645 \u0623\u0643\u0627\u062f\u064a\u0645\u064a\u0629 \u0637\u0648\u064a\u0642 \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 \u0623\u0631\u0627\u0645\u0643\u0648 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u0641\u0639\u0627\u0644\u064a\u0629 \u00ab",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
     "story-fa98138358696fac8d43113f": {
       "alerted_at": "2026-09-29T13:39:58Z",
       "confidence": 0,
@@ -45372,6 +45409,6 @@
     }
   },
   "pending": {},
-  "updated_at": "2026-10-11T23:08:39Z",
+  "updated_at": "2026-10-12T02:20:28Z",
   "version": 1
 }
