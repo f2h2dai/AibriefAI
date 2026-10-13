@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-13T00:11:53Z",
+  "generated_at": "2026-10-13T18:35:00Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-13T00:11:53Z",
+  "latest_successful_run": "2026-10-13T18:35:00Z",
   "highest_ranked_signal": {
-    "id": "twitter-022",
-    "title": "@karpathy: Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of peo",
-    "action_score": 79.25,
-    "url": "https://x.com/karpathy/status/2109361546505966046"
+    "id": "twitter-038",
+    "title": "@Outli3rThe: Russia's Defense Ministry built a platform that feeds combat footage to military AI developers. More than 40 organizations already signed up",
+    "action_score": 76.0,
+    "url": "https://x.com/Outli3rThe/status/2110004013869510673"
   },
   "source_contribution": {
     "twitter": 5,
@@ -23,15 +23,11 @@
   },
   "failed_sources": [
     {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
-    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7755, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7830, Req"
     }
   ],
-  "runtime_seconds": 88.742,
+  "runtime_seconds": 50.84,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-13T00:11:53Z",
+    "planned_at": "2026-10-13T18:35:00Z",
     "production_threshold": 70.0
   }
 }
