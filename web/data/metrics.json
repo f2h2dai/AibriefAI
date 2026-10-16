@@ -1,32 +1,33 @@
 {
-  "generated_at": "2026-10-15T20:58:39Z",
+  "generated_at": "2026-10-16T15:40:02Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-15T20:58:39Z",
+  "latest_successful_run": "2026-10-16T15:40:02Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "mrktchris/taskbar-fighters",
-    "action_score": 75.0,
-    "url": "https://github.com/mrktchris/taskbar-fighters"
+    "id": "arxiv-017",
+    "title": "A team of Gemini 4 Argon agents beats Minecraft",
+    "action_score": 80.5,
+    "url": "https://arxiv.org/abs/2610.22319v1"
   },
   "source_contribution": {
-    "github": 7,
+    "arxiv": 4,
+    "github": 3,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7034, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7660, Req"
     }
   ],
-  "runtime_seconds": 57.752,
+  "runtime_seconds": 59.201,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-15T20:58:39Z",
+    "planned_at": "2026-10-16T15:40:02Z",
     "production_threshold": 70.0
   }
 }
