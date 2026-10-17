@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-16T20:33:29Z",
+  "generated_at": "2026-10-17T14:31:45Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-16T20:33:29Z",
+  "latest_successful_run": "2026-10-17T14:31:45Z",
   "highest_ranked_signal": {
-    "id": "github-011",
-    "title": "ParrvLuthra22/vesper",
-    "action_score": 74.5,
-    "url": "https://github.com/ParrvLuthra22/vesper"
+    "id": "github-005",
+    "title": "traj1152-wq/CORVQ",
+    "action_score": 75.0,
+    "url": "https://github.com/traj1152-wq/CORVQ"
   },
   "source_contribution": {
     "github": 6,
@@ -23,15 +23,11 @@
   },
   "failed_sources": [
     {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
-    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7460, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7402, Req"
     }
   ],
-  "runtime_seconds": 77.533,
+  "runtime_seconds": 143.988,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-16T20:33:29Z",
+    "planned_at": "2026-10-17T14:31:45Z",
     "production_threshold": 70.0
   }
 }
