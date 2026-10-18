@@ -1,33 +1,36 @@
 {
-  "generated_at": "2026-10-18T14:58:37Z",
+  "generated_at": "2026-10-18T20:09:46Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.5,
+  "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-18T14:58:37Z",
+  "latest_successful_run": "2026-10-18T20:09:46Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "Anureyki/Mycelial-",
-    "action_score": 74.0,
-    "url": "https://github.com/Anureyki/Mycelial-"
+    "id": "twitter-028",
+    "title": "@StarboySAR: 📢Interesting weeks ahead - let's look at some troubling details behind 👇 In December 2024, two American defense companies (Palantir & Anduri",
+    "action_score": 80.25,
+    "url": "https://x.com/StarboySAR/status/2111396170731774218"
   },
   "source_contribution": {
-    "github": 6,
-    "google-news": 1,
-    "twitter": 5
+    "google-news": 2,
+    "twitter": 10
   },
   "failed_sources": [
     {
+      "source": "GitHubAgent",
+      "reason": "HTTP Error 403: rate limit exceeded"
+    },
+    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7218, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7607, Req"
     }
   ],
-  "runtime_seconds": 72.835,
+  "runtime_seconds": 77.338,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -62,7 +65,7 @@
     }
   ],
   "public_signal_watch": {
-    "public_x_signals": 5,
+    "public_x_signals": 10,
     "rejected": 0,
     "policy": {
       "public_content_only": true,
@@ -87,7 +90,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-18T14:58:37Z",
+    "planned_at": "2026-10-18T20:09:46Z",
     "production_threshold": 70.0
   }
 }
