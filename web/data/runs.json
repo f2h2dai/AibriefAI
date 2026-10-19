@@ -1,50 +1,6 @@
 {
   "runs": [
     {
-      "run_id": "operations-2026-10-04T16:03:35Z",
-      "generated_at": "2026-10-04T16:03:35Z",
-      "mode": "global_ai",
-      "status": "complete",
-      "configured_threshold": 70.0,
-      "signals": 12,
-      "act_now_items": 0,
-      "runtime_seconds": 77.69,
-      "daily_api_cost_usd": 0.0,
-      "failed_sources": [
-        {
-          "source": "GroqRouter",
-          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7760, Req"
-        }
-      ],
-      "workers": [
-        {
-          "name": "Brief Planner",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Signal Scout",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Public Signal Watcher",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Brief Composer",
-          "status": "complete",
-          "bounded": true
-        },
-        {
-          "name": "Intelligence Analyst",
-          "status": "complete",
-          "bounded": true
-        }
-      ]
-    },
-    {
       "run_id": "operations-2026-10-04T20:55:03Z",
       "generated_at": "2026-10-04T20:55:03Z",
       "mode": "global_ai",
@@ -1306,6 +1262,50 @@
         {
           "source": "GroqRouter",
           "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7485, Req"
+        }
+      ],
+      "workers": [
+        {
+          "name": "Brief Planner",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Signal Scout",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Public Signal Watcher",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Brief Composer",
+          "status": "complete",
+          "bounded": true
+        },
+        {
+          "name": "Intelligence Analyst",
+          "status": "complete",
+          "bounded": true
+        }
+      ]
+    },
+    {
+      "run_id": "operations-2026-10-19T22:01:47Z",
+      "generated_at": "2026-10-19T22:01:47Z",
+      "mode": "global_ai",
+      "status": "complete",
+      "configured_threshold": 70.0,
+      "signals": 12,
+      "act_now_items": 0,
+      "runtime_seconds": 206.531,
+      "daily_api_cost_usd": 0.0,
+      "failed_sources": [
+        {
+          "source": "GroqRouter",
+          "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7396, Req"
         }
       ],
       "workers": [
