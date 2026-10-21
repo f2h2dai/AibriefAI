@@ -1,33 +1,37 @@
 {
-  "generated_at": "2026-10-21T16:12:31Z",
+  "generated_at": "2026-10-21T21:17:42Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.4,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-21T16:12:31Z",
+  "latest_successful_run": "2026-10-21T21:17:42Z",
   "highest_ranked_signal": {
-    "id": "arxiv-018",
-    "title": "Evolving Agent Interfaces",
-    "action_score": 79.25,
-    "url": "https://arxiv.org/abs/2610.28601v1"
+    "id": "twitter-025",
+    "title": "@PLTRs_Palantir: 🚨MORE MAVEN🚨 Marine Corps moves to expand Maven Smart System account access across its enterprise The Marine Corps has instructed organizati",
+    "action_score": 79.0,
+    "url": "https://x.com/PLTRs_Palantir/status/2112887089872228578"
   },
   "source_contribution": {
-    "arxiv": 6,
     "twitter": 5,
-    "github": 1
+    "github": 6,
+    "google-news": 1
   },
   "failed_sources": [
     {
+      "source": "AcademicAgent",
+      "reason": "The read operation timed out"
+    },
+    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7164, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7576, Req"
     }
   ],
-  "runtime_seconds": 255.187,
+  "runtime_seconds": 82.899,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +91,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-21T16:12:31Z",
+    "planned_at": "2026-10-21T21:17:42Z",
     "production_threshold": 70.0
   }
 }
