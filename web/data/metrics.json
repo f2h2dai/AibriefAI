@@ -1,33 +1,34 @@
 {
-  "generated_at": "2026-10-22T16:10:24Z",
+  "generated_at": "2026-10-22T21:14:05Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.2,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-22T16:10:24Z",
+  "latest_successful_run": "2026-10-22T21:14:05Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
+    "id": "twitter-040",
     "title": "@mirek_szczerba: Yes of course Elie. The term “Indian spy intelligence in space” refers to the rapid expansion of India’s military spy satellite and intellig",
     "action_score": 80.5,
     "url": "https://x.com/mirek_szczerba/status/2113263812706979896"
   },
   "source_contribution": {
     "twitter": 5,
-    "arxiv": 6,
-    "google-news": 1
+    "github": 5,
+    "google-news": 1,
+    "hackernews": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7614, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7257, Req"
     }
   ],
-  "runtime_seconds": 74.604,
+  "runtime_seconds": 66.322,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-22T16:10:24Z",
+    "planned_at": "2026-10-22T21:14:05Z",
     "production_threshold": 70.0
   }
 }
