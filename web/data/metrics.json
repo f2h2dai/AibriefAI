@@ -1,37 +1,33 @@
 {
-  "generated_at": "2026-10-21T21:17:42Z",
+  "generated_at": "2026-10-22T16:10:24Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
+  "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-21T21:17:42Z",
+  "latest_successful_run": "2026-10-22T16:10:24Z",
   "highest_ranked_signal": {
-    "id": "twitter-025",
-    "title": "@PLTRs_Palantir: 🚨MORE MAVEN🚨 Marine Corps moves to expand Maven Smart System account access across its enterprise The Marine Corps has instructed organizati",
-    "action_score": 79.0,
-    "url": "https://x.com/PLTRs_Palantir/status/2112887089872228578"
+    "id": "twitter-031",
+    "title": "@mirek_szczerba: Yes of course Elie. The term “Indian spy intelligence in space” refers to the rapid expansion of India’s military spy satellite and intellig",
+    "action_score": 80.5,
+    "url": "https://x.com/mirek_szczerba/status/2113263812706979896"
   },
   "source_contribution": {
     "twitter": 5,
-    "github": 6,
+    "arxiv": 6,
     "google-news": 1
   },
   "failed_sources": [
     {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
-    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7576, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7614, Req"
     }
   ],
-  "runtime_seconds": 82.899,
+  "runtime_seconds": 74.604,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-21T21:17:42Z",
+    "planned_at": "2026-10-22T16:10:24Z",
     "production_threshold": 70.0
   }
 }
