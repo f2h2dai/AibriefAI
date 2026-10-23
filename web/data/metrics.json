@@ -1,34 +1,33 @@
 {
-  "generated_at": "2026-10-22T21:14:05Z",
+  "generated_at": "2026-10-23T16:00:11Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.2,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-22T21:14:05Z",
+  "latest_successful_run": "2026-10-23T16:00:11Z",
   "highest_ranked_signal": {
-    "id": "twitter-040",
-    "title": "@mirek_szczerba: Yes of course Elie. The term “Indian spy intelligence in space” refers to the rapid expansion of India’s military spy satellite and intellig",
-    "action_score": 80.5,
-    "url": "https://x.com/mirek_szczerba/status/2113263812706979896"
+    "id": "arxiv-019",
+    "title": "Social-HUMINT: An LLM-Augmented Unified Framework for Measuring Social Media Exposure",
+    "action_score": 77.0,
+    "url": "https://arxiv.org/abs/2610.31573v1"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 5,
-    "google-news": 1,
-    "hackernews": 1
+    "arxiv": 3,
+    "github": 4,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7257, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7552, Req"
     }
   ],
-  "runtime_seconds": 66.322,
+  "runtime_seconds": 85.833,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-22T21:14:05Z",
+    "planned_at": "2026-10-23T16:00:11Z",
     "production_threshold": 70.0
   }
 }
