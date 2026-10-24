@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-10-23T21:02:37Z",
+  "generated_at": "2026-10-24T14:57:53Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-23T21:02:37Z",
+  "latest_successful_run": "2026-10-24T14:57:53Z",
   "highest_ranked_signal": {
-    "id": "twitter-038",
-    "title": "@OSINTArgus: OSINT SITREP 202610231616Q | 202610232016Z for @OSINTArgus SOURCE ANALYSIS Recent intelligence indicates a complex global security environme",
-    "action_score": 77.25,
-    "url": "https://x.com/OSINTArgus/status/2113726430882246882"
+    "id": "github-007",
+    "title": "xbsheng/cmu-agents",
+    "action_score": 75.5,
+    "url": "https://github.com/xbsheng/cmu-agents"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 6,
-    "google-news": 1
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7567, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7499, Req"
     }
   ],
-  "runtime_seconds": 80.779,
+  "runtime_seconds": 98.246,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-23T21:02:37Z",
+    "planned_at": "2026-10-24T14:57:53Z",
     "production_threshold": 70.0
   }
 }
