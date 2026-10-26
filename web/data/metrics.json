@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T20:25:39Z",
+  "generated_at": "2026-10-26T17:45:38Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,24 +9,24 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-25T20:25:39Z",
+  "latest_successful_run": "2026-10-26T17:45:38Z",
   "highest_ranked_signal": {
-    "id": "twitter-033",
-    "title": "@dsss272: Ironic when liberals rejoiced when Google pulled out of Project Maven. Google pulled out of Project Maven primarily because of intense inter",
-    "action_score": 78.5,
-    "url": "https://x.com/dsss272/status/2114405536682938535"
+    "id": "github-010",
+    "title": "gadievron/raptor",
+    "action_score": 80.25,
+    "url": "https://github.com/gadievron/raptor"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 7
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7395, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7714, Req"
     }
   ],
-  "runtime_seconds": 89.832,
+  "runtime_seconds": 87.406,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-25T20:25:39Z",
+    "planned_at": "2026-10-26T17:45:38Z",
     "production_threshold": 70.0
   }
 }
