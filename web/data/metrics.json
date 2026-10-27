@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T16:56:16Z",
+  "generated_at": "2026-10-27T21:51:12Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -7,27 +7,27 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.25,
-  "primary_source_link_rate": 1.0,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-27T16:56:16Z",
+  "latest_successful_run": "2026-10-27T21:51:12Z",
   "highest_ranked_signal": {
-    "id": "arxiv-016",
-    "title": "Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models",
-    "action_score": 82.5,
-    "url": "https://arxiv.org/abs/2610.35829v1"
+    "id": "twitter-034",
+    "title": "@dsss272: Ironic when liberals rejoiced when Google pulled out of Project Maven. Google pulled out of Project Maven primarily because of intense inter",
+    "action_score": 77.75,
+    "url": "https://x.com/dsss272/status/2114405536682938535"
   },
   "source_contribution": {
-    "arxiv": 4,
-    "twitter": 5,
-    "github": 3
+    "github": 6,
+    "google-news": 1,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7862, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7240, Req"
     }
   ],
-  "runtime_seconds": 60.042,
+  "runtime_seconds": 62.784,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-27T16:56:16Z",
+    "planned_at": "2026-10-27T21:51:12Z",
     "production_threshold": 70.0
   }
 }
