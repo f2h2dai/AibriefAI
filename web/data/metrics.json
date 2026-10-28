@@ -1,33 +1,34 @@
 {
-  "generated_at": "2026-10-27T21:51:12Z",
+  "generated_at": "2026-10-28T17:30:19Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.2,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-27T21:51:12Z",
+  "latest_successful_run": "2026-10-28T17:30:19Z",
   "highest_ranked_signal": {
-    "id": "twitter-034",
-    "title": "@dsss272: Ironic when liberals rejoiced when Google pulled out of Project Maven. Google pulled out of Project Maven primarily because of intense inter",
-    "action_score": 77.75,
-    "url": "https://x.com/dsss272/status/2114405536682938535"
+    "id": "github-010",
+    "title": "tanmoyk2/build-enterprise-agents-code-assist",
+    "action_score": 78.5,
+    "url": "https://github.com/tanmoyk2/build-enterprise-agents-code-assist"
   },
   "source_contribution": {
-    "github": 6,
-    "google-news": 1,
-    "twitter": 5
+    "github": 3,
+    "arxiv": 3,
+    "twitter": 5,
+    "hackernews": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7240, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7522, Req"
     }
   ],
-  "runtime_seconds": 62.784,
+  "runtime_seconds": 49.452,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-27T21:51:12Z",
+    "planned_at": "2026-10-28T17:30:19Z",
     "production_threshold": 70.0
   }
 }
