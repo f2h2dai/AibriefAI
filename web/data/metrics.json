@@ -1,32 +1,33 @@
 {
-  "generated_at": "2026-10-29T17:41:19Z",
+  "generated_at": "2026-10-29T22:28:22Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-29T17:41:19Z",
+  "latest_successful_run": "2026-10-29T22:28:22Z",
   "highest_ranked_signal": {
-    "id": "github-006",
-    "title": "sudosubin/agents.nix",
-    "action_score": 75.5,
-    "url": "https://github.com/sudosubin/agents.nix"
+    "id": "twitter-028",
+    "title": "@BrandonHayes52: $BRAI Force AI isn’t just another “AI Agent” story. It addresses the real bottleneck preventing enterprises from adopting large language mod",
+    "action_score": 77.75,
+    "url": "https://x.com/BrandonHayes52/status/2115216261965836669"
   },
   "source_contribution": {
-    "github": 7,
+    "github": 6,
+    "hackernews": 1,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7218, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7590, Req"
     }
   ],
-  "runtime_seconds": 93.431,
+  "runtime_seconds": 57.825,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-29T17:41:19Z",
+    "planned_at": "2026-10-29T22:28:22Z",
     "production_threshold": 70.0
   }
 }
