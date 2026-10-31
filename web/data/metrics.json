@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T16:24:52Z",
+  "generated_at": "2026-10-31T21:01:56Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,25 +9,25 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-31T16:24:52Z",
+  "latest_successful_run": "2026-10-31T21:01:56Z",
   "highest_ranked_signal": {
-    "id": "twitter-038",
-    "title": "@IsraelMilitaryC: Over 70 countries globally now operate or integrate Israeli-developed drone countermeasure technology to protect critical infrastructure, bo",
-    "action_score": 81.0,
-    "url": "https://x.com/IsraelMilitaryC/status/2116345757242704269"
+    "id": "github-006",
+    "title": "usabandit33/digital-civilization",
+    "action_score": 75.5,
+    "url": "https://github.com/usabandit33/digital-civilization"
   },
   "source_contribution": {
-    "twitter": 5,
     "github": 6,
-    "google-news": 1
+    "google-news": 1,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7593, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7798, Req"
     }
   ],
-  "runtime_seconds": 238.867,
+  "runtime_seconds": 68.206,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-31T16:24:52Z",
+    "planned_at": "2026-10-31T21:01:56Z",
     "production_threshold": 70.0
   }
 }
