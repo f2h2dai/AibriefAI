@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-10-31T21:01:56Z",
+  "generated_at": "2026-11-01T17:18:52Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-10-31T21:01:56Z",
+  "latest_successful_run": "2026-11-01T17:18:52Z",
   "highest_ranked_signal": {
-    "id": "github-006",
-    "title": "usabandit33/digital-civilization",
-    "action_score": 75.5,
-    "url": "https://github.com/usabandit33/digital-civilization"
+    "id": "github-007",
+    "title": "Larissa-Caitlin/paypal-hackathon-agent-firewall",
+    "action_score": 78.0,
+    "url": "https://github.com/Larissa-Caitlin/paypal-hackathon-agent-firewall"
   },
   "source_contribution": {
-    "github": 6,
-    "google-news": 1,
+    "github": 7,
     "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7798, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7612, Req"
     }
   ],
-  "runtime_seconds": 68.206,
+  "runtime_seconds": 55.182,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-10-31T21:01:56Z",
+    "planned_at": "2026-11-01T17:18:52Z",
     "production_threshold": 70.0
   }
 }
