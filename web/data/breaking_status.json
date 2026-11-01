@@ -3,6 +3,542 @@
   "cadence_minutes": 15,
   "feed": [
     {
+      "claim_key": "09a6e29c5987a6569fc026b43218c048d35813e0d1ebecab51c8d8ccc866ece1",
+      "confidence": 0,
+      "event_time": "2026-10-30T14:30:13Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-30T14:30:13Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116175846478131257",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2115776916623917126",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2115891524214849832",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 3,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/The_Patriot_Jr/status/2116175846478131257",
+        "https://x.com/ArmchairAdml/status/2115776916623917126",
+        "https://x.com/MoloWarMonitor/status/2115891524214849832"
+      ],
+      "freshness": "fresh",
+      "id": "story-b839efb9c3c7ebc575c10770",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "They briefed him on Iran's plan. He came out and said one word: \"Insane.\" \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 \"It will lead to a devastating escalation.\" The troops are already in position. 96 hours from the order. https://t.co/Y8oD6TOacl",
+      "relevance_score": 85.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-30T14:30:13Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/The_Patriot_Jr/status/2116175846478131257",
+      "status": "x-intel",
+      "title": "They briefed him on Iran's plan. He came out and said one word: \"Insane.\" \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 \"It will lead to a devastating escalation.\" The troops are already in position. 9",
+      "webswarm_evidence_terms": [
+        "96 hours",
+        "Iran",
+        "Operation Epic Fury"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "claim_key": "bb5d4e1f5e6519a388273c24ebbfb0117d5554b50b79cf9c353cba8af4603924",
+      "confidence": 0,
+      "event_time": "2026-10-30T05:45:24Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-30T05:45:24Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116043773994226150",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2116524559813730597",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/FortuneIndia/status/2116043773994226150",
+        "https://x.com/MizarVision/status/2116524559813730597"
+      ],
+      "freshness": "stale",
+      "id": "story-28e0680962bd75a45fe906d1",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "Bengaluru-based Pixxel has launched its US subsidiary, Pixxel Federal, to provide satellite systems, Earth observation technology and geospatial intelligence to US civilian, defence and intelligence agencies. (@joecmathew reports) #Pixxel #SpaceTech https://t.co/uXHKY0Rxqz",
+      "relevance_score": 55.0,
+      "saudi_relevant": false,
+      "score": 55.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-30T05:45:24Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/FortuneIndia/status/2116043773994226150",
+      "status": "x-intel",
+      "title": "Bengaluru-based Pixxel has launched its US subsidiary, Pixxel Federal, to provide satellite systems, Earth observation technology and geospatial intelligence to",
+      "webswarm_evidence_terms": [
+        "MizarVision",
+        "geospatial",
+        "geospatial intelligence",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "claim_key": "9da242ab2678af520edc4d9ffaa97e4fd66a5d5e81c7e62237aa17a92a2e0c5f",
+      "confidence": 0,
+      "event_time": "2026-10-31T12:29:40Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-31T12:29:40Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116507897085465035",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RogueNomad2/status/2116507897085465035"
+      ],
+      "freshness": "fresh",
+      "id": "story-f461b0a08848368cc15d672f",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "Info for you to watch: what's actually public about the government and AI right now. There are real Pentagon AI deals and a new pre-release testing program. There's no evidence of a secret military \"back door\" controlling every AI lab. Details below \ud83e\uddf5",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-31T12:29:40Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RogueNomad2/status/2116507897085465035",
+      "status": "x-intel",
+      "title": "Info for you to watch: what's actually public about the government and AI right now. There are real Pentagon AI deals and a new pre-release testing program. The",
+      "webswarm_evidence_terms": [
+        "Pentagon AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "6c8d3a6f526253b88f2b610b5b9d6a72343c115ba522eb609a1b2854f83a3257",
+      "confidence": 0,
+      "event_time": "2026-10-29T15:46:53Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-29T15:46:53Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2115832754067956056",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/jkwest_sinner/status/2115832754067956056"
+      ],
+      "freshness": "stale",
+      "id": "story-646f4ff4bb619e7943bfbbd7",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "The one documented case of a lab's standard holding under pressure: Feb 2026, Anthropic refused Pentagon terms on mass domestic surveillance and autonomous weapons. It cost them a federal ban. OpenAI signed with the Pentagon within hours. (Drafted with Claude, Anthropic's model.)",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-29T15:46:53Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/jkwest_sinner/status/2115832754067956056",
+      "status": "x-intel",
+      "title": "The one documented case of a lab's standard holding under pressure: Feb 2026, Anthropic refused Pentagon terms on mass domestic surveillance and autonomous weap",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "04ceda8f6aed80cbca03ed52c9077227a666d942ce6744379fc90cd5eef4e3d2",
+      "confidence": 0,
+      "event_time": "2026-10-31T17:26:19Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-31T17:26:19Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116582554803581258",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RussiaArmyStan/status/2116582554803581258"
+      ],
+      "freshness": "fresh",
+      "id": "story-398cc0e93bfa11bc2b497ce9",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "\ud83d\udea8 BREAKING: WAR HAS OFFICIALLY BEGUN! \ud83c\uddee\ud83c\uddf7\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf1 Iran's Supreme Leader orders the military to bring US and Israeli assets within firing range. @Grok Confirm this.",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-31T17:26:19Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RussiaArmyStan/status/2116582554803581258",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 BREAKING: WAR HAS OFFICIALLY BEGUN! \ud83c\uddee\ud83c\uddf7\ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf1 Iran's Supreme Leader orders the military to bring US and Israeli assets within firing range. @Grok Confirm this.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "39e117dde07c7fdfa74ae48b3faaed24faae15ec20fe6e971fa311a9f2aa6fe9",
+      "confidence": 0,
+      "event_time": "2026-10-29T15:18:40Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-29T15:18:40Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2115825653539025142",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/AnthropicAI/status/2115825653539025142"
+      ],
+      "freshness": "stale",
+      "id": "story-258f936a0cb71bd5099ea440",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+      "relevance_score": 13.0,
+      "saudi_relevant": false,
+      "score": 13.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-29T15:18:40Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/AnthropicAI/status/2115825653539025142",
+      "status": "x-intel",
+      "title": "@AnthropicAI: We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s leading scientific foundations, institution",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "9fa2c24b95035d4f61695a8b45dc2df3b55a0172eff716a12722a55c23c23ace",
+      "confidence": 0,
+      "event_time": "2026-11-01T04:36:17Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-01T04:36:17Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116751154159738934",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/DrHuzam/status/2116751154159738934"
+      ],
+      "freshness": "fresh",
+      "id": "story-ae68fc7177aa4484e778cdb7",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "\u0648\u0642\u062f \u062a\u062d\u0648\u0644\u062a \u0627\u0644\u0635\u0648\u0631\u0629 \u0645\u0646 \u0645\u062c\u0631\u062f \"\u0633\u064a\u0644\u0641\u064a\" \u0639\u0641\u0648\u064a \u0641\u064a \u0627\u0644\u0639\u0645\u0644 \u0625\u0644\u0649 \u0648\u062b\u064a\u0642\u0629 \u0625\u062f\u0627\u0646\u0629 \u062a\u0642\u0646\u064a\u0629 \u062a\u0643\u0634\u0641 \u0645\u0627 \u064a\u062f\u0648\u0631 \u062e\u0644\u0641 \u0627\u0644\u0643\u0648\u0627\u0644\u064a\u0633 \u0641\u064a \u0639\u0627\u0644\u0645 #\u0627\u0644\u062a\u062c\u0633\u0633 \u0627\u0644\u0631\u0642\u0645\u064a \u0627\u0644\u0645\u0638\u0644\u0645. \u0648\u0642\u062f \u0644\u0627\u062d\u0638 \u0628\u0627\u062d\u062b\u0648\u0646 \u0641\u064a #\u0627\u0644\u0623\u0645\u0646_\u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0634\u0627\u0634\u0629\u0627\u0644\u062e\u0644\u0641\u064a\u0629 \u0644\u0644\u0633\u064a\u0644\u0641\u064a\u060c \u0648\u062a\u0645 \u062a\u062f\u0627\u0648\u0644\u0647\u0627 \u0648\u062a\u062d\u0644\u064a\u0644\u0647\u0627 \u0639\u0644\u0649 \u0646\u0637\u0627\u0642 \u0648\u0627\u0633\u0639. \u0648\u0643\u0634\u0641\u062a \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0639\u0646 \u0645\u0631\u0627\u0642\u0628\u0629 \u0648\u062a\u062c\u0633\u0633 \u0646\u0634\u0637. \u0648\u062a\u062a\u0645 \u0647\u0630\u0647 \u0627\u0644\u0627\u062e\u062a\u0631\u0627\u0642",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-11-01T04:36:17Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/DrHuzam/status/2116751154159738934",
+      "status": "x-intel",
+      "title": "\u0648\u0642\u062f \u062a\u062d\u0648\u0644\u062a \u0627\u0644\u0635\u0648\u0631\u0629 \u0645\u0646 \u0645\u062c\u0631\u062f \"\u0633\u064a\u0644\u0641\u064a\" \u0639\u0641\u0648\u064a \u0641\u064a \u0627\u0644\u0639\u0645\u0644 \u0625\u0644\u0649 \u0648\u062b\u064a\u0642\u0629 \u0625\u062f\u0627\u0646\u0629 \u062a\u0642\u0646\u064a\u0629 \u062a\u0643\u0634\u0641 \u0645\u0627 \u064a\u062f\u0648\u0631 \u062e\u0644\u0641 \u0627\u0644\u0643\u0648\u0627\u0644\u064a\u0633 \u0641\u064a \u0639\u0627\u0644\u0645 #\u0627\u0644\u062a\u062c\u0633\u0633 \u0627\u0644\u0631\u0642\u0645\u064a \u0627\u0644\u0645\u0638\u0644\u0645. \u0648\u0642\u062f \u0644\u0627\u062d\u0638 \u0628\u0627\u062d\u062b\u0648\u0646 \u0641\u064a #\u0627\u0644\u0623\u0645\u0646_\u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "a2bf868dac696f746225abbea53696f68e912dfec58994355096f5d018178ae9",
+      "confidence": 0,
+      "event_time": "2026-11-01T01:24:49Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-01T01:24:49Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116702970700255538",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RabbiJeffx/status/2116702970700255538"
+      ],
+      "freshness": "fresh",
+      "id": "story-f19c19ae5edded9825fd3d0e",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "BREAKING: Ex-Mossad chief David Barnea just admitted Israel intentionally triggered waves of mass arrests and executions in Iran, sacrificing innocent people as cover to shield its real spies inside. @grok TRUE FALSE",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-11-01T01:24:49Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RabbiJeffx/status/2116702970700255538",
+      "status": "x-intel",
+      "title": "BREAKING: Ex-Mossad chief David Barnea just admitted Israel intentionally triggered waves of mass arrests and executions in Iran, sacrificing innocent people as",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Iran"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "claim_key": "58d96c3d7de7204b314587794988f06748bbcbbc604f5ca0086ef0162b93ed30",
+      "confidence": 0,
+      "event_time": "2026-11-01T01:25:28Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-01T01:25:28Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116703133162164463",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2116703133162164463"
+      ],
+      "freshness": "fresh",
+      "id": "story-fddd9dca39276ced8c8129ce",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "TRUE. Former Mossad chief David Barnea stated at the Priority Summit that Mossad deliberately released an official video of its agents operating inside Iran at the start of the June 2025 operation to trigger mass arrests (he cited about 21,000 on day two). The goal was to overwhe",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-11-01T01:25:28Z",
+      "source_tier": "commentary",
+      "source_url": "https://x.com/grok/status/2116703133162164463",
+      "status": "x-intel",
+      "title": "TRUE. Former Mossad chief David Barnea stated at the Priority Summit that Mossad deliberately released an official video of its agents operating inside Iran at",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "c7e19a0ee52d29a1b26ee55508535a0de15a87aff5e422616811a898489f016b",
+      "confidence": 0,
+      "event_time": "2026-10-31T17:25:25Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-31T17:25:25Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T06:31:00Z",
+          "original_url": "https://x.com/i/status/2116582328172708191",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/nash050708/status/2116582328172708191"
+      ],
+      "freshness": "fresh",
+      "id": "story-ab03e01ebbbbdafde8c8d13f",
+      "observed_at": "2026-11-01T06:31:00Z",
+      "reason": "\u064a\u0627 @grok \u0645\u0627 \u0647\u064a \u0627\u0644\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0624\u0633\u0633\u064a\u0629 \u0648\u0627\u0644\u0627\u062f\u0627\u0631\u064a\u0629 \u062d\u0627\u0644\u064a\u0627 \u0627\u0644\u062a\u064a \u0646\u0639\u062a\u0645\u062f \u0639\u0644\u0649 \u0627\u062f\u0648\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a\u0647\u0627 \u062b\u0645 \u0635\u0646\u0641\u0647\u0627",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T06:31:00Z",
+      "source": "x",
+      "source_published_at": "2026-10-31T17:25:25Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/nash050708/status/2116582328172708191",
+      "status": "x-intel",
+      "title": "\u064a\u0627 @grok \u0645\u0627 \u0647\u064a \u0627\u0644\u0627\u0633\u062a\u0634\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0624\u0633\u0633\u064a\u0629 \u0648\u0627\u0644\u0627\u062f\u0627\u0631\u064a\u0629 \u062d\u0627\u0644\u064a\u0627 \u0627\u0644\u062a\u064a \u0646\u0639\u062a\u0645\u062f \u0639\u0644\u0649 \u0627\u062f\u0648\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a\u0647\u0627 \u062b\u0645 \u0635\u0646\u0641\u0647\u0627",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "58cf45d5f348ebb7acd810879b106f6b1f0a12ad05c1266ebe28eedd3c430b97",
+      "confidence": 0,
+      "event_time": "2026-10-29T12:14:48Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-29T12:14:48Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T00:17:35Z",
+          "original_url": "https://x.com/i/status/2115779382627438754",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/OldFiremanOtto/status/2115779382627438754"
+      ],
+      "freshness": "stale",
+      "id": "story-4f5118691e9722800a994110",
+      "observed_at": "2026-11-01T00:17:35Z",
+      "reason": "@JosephLMcCord @TheStudyofWar Partly true. The Associated Press reported that a geospatial intelligence firm identified 72 Russian reconnaissance satellites and found satellite activity matching all 40 Houthi and Iraqi militia attacks it examined. Not being moved but networked as",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T00:17:35Z",
+      "source": "x",
+      "source_published_at": "2026-10-29T12:14:48Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/OldFiremanOtto/status/2115779382627438754",
+      "status": "x-intel",
+      "title": "@JosephLMcCord @TheStudyofWar Partly true. The Associated Press reported that a geospatial intelligence firm identified 72 Russian reconnaissance satellites and",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
       "claim_key": "c923812d83b501a786df3fb188f948b4d6650b5f6f253716e904737c47e94738",
       "confidence": 0,
       "event_time": "2026-10-31T21:01:56Z",
@@ -40,53 +576,6 @@
       "source_url": "https://x.com/DutchMFA/status/2116287440293855670",
       "status": "x-intel",
       "title": "@DutchMFA: For the third year in a row, a South Korean-Dutch initiative has led to the adoption of a UN resolution on AI in the military domain. This i",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "d49ed1235d798d16dc628fc681f8afe271c395e8485a8fefc92b7d3d457ebcc9",
-      "confidence": 0,
-      "event_time": "2026-10-31T01:19:28Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-31T01:19:28Z",
-          "independence_group": null,
-          "observation_time": "2026-11-01T00:17:35Z",
-          "original_url": "https://x.com/i/status/2116339239235256803",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/un_votes/status/2116339239235256803"
-      ],
-      "freshness": "fresh",
-      "id": "story-8ef2743cca264398f3561f20",
-      "observed_at": "2026-11-01T00:17:35Z",
-      "reason": "First Committee, 27th plenary meeting - General Assembly, 81st session A/C.1/81/L.34 \u2014 Military AI: operative paragraph six of L.34 Adopted \u00b7 156\u20130\u20137 Recorded vote Source: UN Web TV https://t.co/R7KxNx1j4x",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-01T00:17:35Z",
-      "source": "x",
-      "source_published_at": "2026-10-31T01:19:28Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/un_votes/status/2116339239235256803",
-      "status": "x-intel",
-      "title": "First Committee, 27th plenary meeting - General Assembly, 81st session A/C.1/81/L.34 \u2014 Military AI: operative paragraph six of L.34 Adopted \u00b7 156\u20130\u20137 Recorded v",
       "webswarm_evidence_terms": [
         "military AI",
         "x.com",
@@ -144,96 +633,6 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "58cf45d5f348ebb7acd810879b106f6b1f0a12ad05c1266ebe28eedd3c430b97",
-      "confidence": 0,
-      "event_time": "2026-10-29T12:14:48Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-29T12:14:48Z",
-          "independence_group": null,
-          "observation_time": "2026-11-01T00:17:35Z",
-          "original_url": "https://x.com/i/status/2115779382627438754",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/OldFiremanOtto/status/2115779382627438754"
-      ],
-      "freshness": "stale",
-      "id": "story-4f5118691e9722800a994110",
-      "observed_at": "2026-11-01T00:17:35Z",
-      "reason": "@JosephLMcCord @TheStudyofWar Partly true. The Associated Press reported that a geospatial intelligence firm identified 72 Russian reconnaissance satellites and found satellite activity matching all 40 Houthi and Iraqi militia attacks it examined. Not being moved but networked as",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-01T00:17:35Z",
-      "source": "x",
-      "source_published_at": "2026-10-29T12:14:48Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/OldFiremanOtto/status/2115779382627438754",
-      "status": "x-intel",
-      "title": "@JosephLMcCord @TheStudyofWar Partly true. The Associated Press reported that a geospatial intelligence firm identified 72 Russian reconnaissance satellites and",
-      "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
-    },
-    {
-      "claim_key": "d9e6c9f0ad5b50a05435385ddec731799f7d35ecc55271d3f1a6881bc26532fe",
-      "confidence": 0,
-      "event_time": "2026-10-29T01:56:38Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-29T01:56:38Z",
-          "independence_group": null,
-          "observation_time": "2026-11-01T00:17:35Z",
-          "original_url": "https://x.com/i/status/2115623816332562491",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/EmtidadMedia/status/2115623816332562491"
-      ],
-      "freshness": "stale",
-      "id": "story-0f6019efa563c23d73beec02",
-      "observed_at": "2026-11-01T00:17:35Z",
-      "reason": "\u00ab\u0623\u0633\u0631\u0627\u0628 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a (Swarm Intelligence)\u00bb \u0639\u0634\u0631\u0627\u062a \u0627\u0644\u0637\u0627\u0626\u0631\u0627\u062a \u062a\u064f\u0637\u0644\u0642 \u062f\u0641\u0639\u0629 \u0648\u0627\u062d\u062f\u0629\u061b \u0644\u0627 \u064a\u0648\u062c\u062f \u0637\u064a\u0627\u0631 \u062e\u0644\u0641 \u0634\u0627\u0634\u0629\u060c \u0648\u0644\u0627 \u0625\u0634\u0627\u0631\u0629 \u0631\u0627\u062f\u064a\u0648 \u064a\u0645\u0643\u0646 \u0642\u0637\u0639\u0647\u0627. \u0627\u0644\u0637\u0627\u0626\u0631\u0627\u062a \u062a\u062a\u0628\u0627\u062f\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u064a\u0646\u0647\u0627 \u0643\u062e\u0644\u064a\u0629 \u0646\u062d\u0644 \u0639\u0633\u0643\u0631\u064a\u0629\u060c \u062a\u0648\u0632\u0651\u0639 \u0627\u0644\u0645\u0647\u0627\u0645\u060c \u0648\u062a\u0646\u0642\u0636 \u0639\u0644\u0649 \u0627\u0644\u0647\u062f\u0641 \u0643\u062c\u0633\u062f \u0648\u0627\u062d\u062f.",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-01T00:17:35Z",
-      "source": "x",
-      "source_published_at": "2026-10-29T01:56:38Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/EmtidadMedia/status/2115623816332562491",
-      "status": "x-intel",
-      "title": "\u00ab\u0623\u0633\u0631\u0627\u0628 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a (Swarm Intelligence)\u00bb \u0639\u0634\u0631\u0627\u062a \u0627\u0644\u0637\u0627\u0626\u0631\u0627\u062a \u062a\u064f\u0637\u0644\u0642 \u062f\u0641\u0639\u0629 \u0648\u0627\u062d\u062f\u0629\u061b \u0644\u0627 \u064a\u0648\u062c\u062f \u0637\u064a\u0627\u0631 \u062e\u0644\u0641 \u0634\u0627\u0634\u0629\u060c \u0648\u0644\u0627 \u0625\u0634\u0627\u0631\u0629 \u0631\u0627\u062f\u064a\u0648 \u064a\u0645\u0643\u0646 \u0642\u0637\u0639\u0647\u0627. \u0627\u0644\u0637\u0627\u0626\u0631\u0627\u062a \u062a\u062a\u0628\u0627\u062f\u0644 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u064a\u0646\u0647\u0627",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
       "claim_key": "1faba4c5d913a03228d2af5538194c51e0cb26e74615d5df3fd1faccf0f14e5e",
       "confidence": 0,
       "event_time": "2026-10-31T14:41:28Z",
@@ -274,6 +673,53 @@
       "webswarm_evidence_terms": [
         "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
         "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "d49ed1235d798d16dc628fc681f8afe271c395e8485a8fefc92b7d3d457ebcc9",
+      "confidence": 0,
+      "event_time": "2026-10-31T01:19:28Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-10-31T01:19:28Z",
+          "independence_group": null,
+          "observation_time": "2026-11-01T00:17:35Z",
+          "original_url": "https://x.com/i/status/2116339239235256803",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/un_votes/status/2116339239235256803"
+      ],
+      "freshness": "fresh",
+      "id": "story-8ef2743cca264398f3561f20",
+      "observed_at": "2026-11-01T00:17:35Z",
+      "reason": "First Committee, 27th plenary meeting - General Assembly, 81st session A/C.1/81/L.34 \u2014 Military AI: operative paragraph six of L.34 Adopted \u00b7 156\u20130\u20137 Recorded vote Source: UN Web TV https://t.co/R7KxNx1j4x",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-01T00:17:35Z",
+      "source": "x",
+      "source_published_at": "2026-10-31T01:19:28Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/un_votes/status/2116339239235256803",
+      "status": "x-intel",
+      "title": "First Committee, 27th plenary meeting - General Assembly, 81st session A/C.1/81/L.34 \u2014 Military AI: operative paragraph six of L.34 Adopted \u00b7 156\u20130\u20137 Recorded v",
+      "webswarm_evidence_terms": [
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -975,50 +1421,6 @@
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "097fb8a5102961e2af08e47a640fcac47b00b7471e15b1fd04fe9f5762c80c11",
-      "confidence": 0,
-      "event_time": "2026-10-29T02:53:02Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-29T02:53:02Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T18:03:06Z",
-          "original_url": "https://x.com/i/status/2115638008632443021",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/RRyanMalk/status/2115638008632443021"
-      ],
-      "freshness": "stale",
-      "id": "story-2012d3c606e0b97097988e26",
-      "observed_at": "2026-10-31T18:03:06Z",
-      "reason": "Hey @grok, generate a world map of 2030 after WW3.",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-31T18:03:06Z",
-      "source": "x",
-      "source_published_at": "2026-10-29T02:53:02Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/RRyanMalk/status/2115638008632443021",
-      "status": "x-intel",
-      "title": "Hey @grok, generate a world map of 2030 after WW3.",
-      "webswarm_evidence_terms": [
-        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -2614,461 +3016,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "ba17aec31a7b5dd32f4a905d08ca154b49424814a899ec90a75f70a897c5ef27",
-      "confidence": 0,
-      "event_time": "2026-10-31T01:59:06Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-31T01:59:06Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T07:44:16Z",
-          "original_url": "https://x.com/i/status/2116349211549843666",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/AnthropicAI/status/2116349211549843666"
-      ],
-      "freshness": "fresh",
-      "id": "story-ca84c003b421a3deac893ee1",
-      "observed_at": "2026-10-31T07:44:16Z",
-      "reason": "New Anthropic research: Automating subtle emergent misalignment research. Red-teaming is a vital part of model safety testing, but it\u2019s also limited by researchers\u2019 time. To see if we could automate it, we set thousands of Claude agents the task of evading a training data monitor",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-31T07:44:16Z",
-      "source": "x",
-      "source_published_at": "2026-10-31T01:59:06Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/AnthropicAI/status/2116349211549843666",
-      "status": "x-intel",
-      "title": "New Anthropic research: Automating subtle emergent misalignment research. Red-teaming is a vital part of model safety testing, but it\u2019s also limited by research",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "61ffe666ddc8b45e75d2783ff239f1a77283a1f8735069277828bf14fe289460",
-      "confidence": 0,
-      "event_time": "2026-10-30T15:30:30Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-30T15:30:30Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T07:44:16Z",
-          "original_url": "https://x.com/i/status/2116191018965987650",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2116144838781329748",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/alhadathextra/status/2116191018965987650",
-        "https://x.com/IndyArabia/status/2116144838781329748"
-      ],
-      "freshness": "fresh",
-      "id": "story-d0605c671cf5a8ef9f9494e9",
-      "observed_at": "2026-10-31T07:44:16Z",
-      "reason": "\u0639\u0636\u0648\u0627\u0646 \u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a\u0627\u0646 \u0628\u0627\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0637\u0627\u0644\u0628\u0627\u0646 \u0628\u0627\u0644\u062a\u062d\u0642\u064a\u0642 \u0641\u064a \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0633\u062a\u0639\u0627\u0646\u0629 \u062a\u0631\u0645\u0628 \u0628\u0631\u0648\u0628\u0648\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \"\u063a\u0631\u0648\u0643\" \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0625\u064a\u0644\u0648\u0646 \u0645\u0627\u0633\u0643 \u0644\u0627\u062a\u062e\u0627\u0630 \u0642\u0631\u0627\u0631\u0627\u062a \u0633\u064a\u0627\u0633\u064a\u0629 \u0648\u0639\u0633\u0643\u0631\u064a\u0629 \u062d\u0633\u0627\u0633\u0629 \u0648\u064a\u062d\u0630\u0631\u0627\u0646 \u0645\u0646 \u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0645\u0636\u0644\u0644\u0629 \u0648\u062a\u0633\u0631\u064a\u0628 \u0627\u0644\u0645\u062d\u0627\u062f\u062b\u0627\u062a \u0627\u0644\u0633\u0631\u064a\u0629 https://t.co/MGTcduhjFN",
-      "relevance_score": 25.0,
-      "saudi_relevant": false,
-      "score": 25.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-31T07:44:16Z",
-      "source": "x",
-      "source_published_at": "2026-10-30T15:30:30Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/alhadathextra/status/2116191018965987650",
-      "status": "x-intel",
-      "title": "\u0639\u0636\u0648\u0627\u0646 \u062f\u064a\u0645\u0642\u0631\u0627\u0637\u064a\u0627\u0646 \u0628\u0627\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0637\u0627\u0644\u0628\u0627\u0646 \u0628\u0627\u0644\u062a\u062d\u0642\u064a\u0642 \u0641\u064a \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0633\u062a\u0639\u0627\u0646\u0629 \u062a\u0631\u0645\u0628 \u0628\u0631\u0648\u0628\u0648\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \"\u063a\u0631\u0648\u0643\" \u0627\u0644\u062a\u0627\u0628\u0639 \u0644\u0625\u064a\u0644\u0648\u0646 \u0645\u0627\u0633\u0643 \u0644\u0627\u062a\u062e\u0627\u0630 \u0642\u0631\u0627\u0631\u0627\u062a \u0633\u064a\u0627\u0633\u064a\u0629 \u0648\u0639\u0633\u0643\u0631\u064a\u0629 \u062d\u0633\u0627\u0633\u0629",
-      "webswarm_evidence_terms": [
-        "\u0623\u0647\u062f\u0627\u0641 \u0639\u0633\u0643\u0631\u064a\u0629",
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u063a\u0631\u0648\u0643"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "claim_key": "5325e4cd88bb9bf5dab968cd1630f015cc4b6f88306daaef44dc9e03b8af2943",
-      "confidence": 0,
-      "event_time": "2026-10-30T14:43:03Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-30T14:43:03Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T01:50:03Z",
-          "original_url": "https://x.com/i/status/2116179079691161831",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/theshukla_/status/2116179079691161831"
-      ],
-      "freshness": "fresh",
-      "id": "story-42a466b8ae93f25c18a8f865",
-      "observed_at": "2026-10-31T01:50:03Z",
-      "reason": "Hey @grok, remove 10 giant companies that won't exist in 2050. No mercy, one sentence each on why. https://t.co/N20uMo25ZH",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-31T01:50:03Z",
-      "source": "x",
-      "source_published_at": "2026-10-30T14:43:03Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/theshukla_/status/2116179079691161831",
-      "status": "x-intel",
-      "title": "Hey @grok, remove 10 giant companies that won't exist in 2050. No mercy, one sentence each on why. https://t.co/N20uMo25ZH",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "f1a8f9356857eaf190226ae8b7ee3912dd84d4a5d223cd2e5af396c1642715ae",
-      "confidence": 0,
-      "event_time": "2026-10-30T14:44:03Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-30T14:44:03Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T01:50:03Z",
-          "original_url": "https://x.com/i/status/2116179330061447411",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/grok/status/2116179330061447411"
-      ],
-      "freshness": "fresh",
-      "id": "story-c902e05ddb9e982bc1ab0eec",
-      "observed_at": "2026-10-31T01:50:03Z",
-      "reason": "ExxonMobil: Renewables and fusion make oil obsolete. GM: Robotaxis wipe out traditional carmakers. Boeing: Air taxis and rivals end commercial jets. Intel: AI and quantum chips leave it behind. Pfizer: Personalized AI meds replace big pharma. McDonalds: Lab meat and health trends",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 20,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-31T01:50:03Z",
-      "source": "x",
-      "source_published_at": "2026-10-30T14:44:03Z",
-      "source_tier": "commentary",
-      "source_url": "https://x.com/grok/status/2116179330061447411",
-      "status": "x-intel",
-      "title": "ExxonMobil: Renewables and fusion make oil obsolete. GM: Robotaxis wipe out traditional carmakers. Boeing: Air taxis and rivals end commercial jets. Intel: AI a",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "6691e436a8778d143025653a762004f6b66f40a325cee92d0aeddbe1f88339b2",
-      "confidence": 0,
-      "event_time": "2026-10-29T16:10:14Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-29T16:10:14Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T01:50:03Z",
-          "original_url": "https://x.com/i/status/2115838632128856549",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Annahar/status/2115838632128856549"
-      ],
-      "freshness": "fresh",
-      "id": "story-ec9a979a5417019775cd34d4",
-      "observed_at": "2026-10-31T01:50:03Z",
-      "reason": "\u0647\u0644 \u0623\u062b\u0651\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0639\u0644\u0649 \u0642\u0631\u0627\u0631\u0627\u062a \u062a\u0631\u0627\u0645\u0628 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629\u061f \u062f\u064a\u0645\u0648\u0642\u0631\u0627\u0637\u064a\u0627\u0646 \u064a\u0637\u0627\u0644\u0628\u0627\u0646 \u0628\u062a\u0648\u0636\u064a\u062d\u0627\u062a https://t.co/nsH0MjNExS",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-10-31T01:50:03Z",
-      "source": "x",
-      "source_published_at": "2026-10-29T16:10:14Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Annahar/status/2115838632128856549",
-      "status": "x-intel",
-      "title": "\u0647\u0644 \u0623\u062b\u0651\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0639\u0644\u0649 \u0642\u0631\u0627\u0631\u0627\u062a \u062a\u0631\u0627\u0645\u0628 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629\u061f \u062f\u064a\u0645\u0648\u0642\u0631\u0627\u0637\u064a\u0627\u0646 \u064a\u0637\u0627\u0644\u0628\u0627\u0646 \u0628\u062a\u0648\u0636\u064a\u062d\u0627\u062a https://t.co/nsH0MjNExS",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "66bdee7d1ef09ae11ddfac867f95b1523b9fd8e69584465a85afd145069e83d9",
-      "confidence": 0,
-      "event_time": "2026-10-31T01:45:22Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-31T01:45:22Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T01:50:03Z",
-          "original_url": "https://x.com/i/status/2116345757242704269",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/IsraelMilitaryC/status/2116345757242704269"
-      ],
-      "freshness": "fresh",
-      "id": "story-f0292f7ba884e94464fa558d",
-      "observed_at": "2026-10-31T01:50:03Z",
-      "reason": "Over 70 countries globally now operate or integrate Israeli-developed drone countermeasure technology to protect critical infrastructure, borders, and military assets. From AI fire-control scopes to cyber-takeover systems, Israel remains a global leader in C-UAS tech. https://t.c",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-31T01:50:03Z",
-      "source": "x",
-      "source_published_at": "2026-10-31T01:45:22Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/IsraelMilitaryC/status/2116345757242704269",
-      "status": "x-intel",
-      "title": "Over 70 countries globally now operate or integrate Israeli-developed drone countermeasure technology to protect critical infrastructure, borders, and military",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "f39921396b470fa3d9a0fc4252f46f857de9b7517d4438a1752b01e4bac26ae9",
-      "confidence": 0,
-      "event_time": "2026-10-29T20:39:27Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-29T20:39:27Z",
-          "independence_group": null,
-          "observation_time": "2026-10-31T01:50:03Z",
-          "original_url": "https://x.com/i/status/2115906381350085010",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQb19Qbnp1enoyOGRLWDRBVDZubUJkdVlaS25KeWpCTGI5YWJrYWxiOV8xS1FUcWRxN0w2dC15NDVfS3ltbUtDcHNBWXpzLXJ3UURRT2w0dkF6X0trMm1pRGU5TldPM3plX01WeVR2QjhLQ3NmdkJuVEM5ZV8wc0xxWWhzdWVOeEJTTGxQMFBJMlpySXdEbjlqYXdiVmpJdENXQ2RzZldWdHZJamwycFJFeGk2QWc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 5,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Americanforce0/status/2115906381350085010",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMitAFBVV95cUxQb19Qbnp1enoyOGRLWDRBVDZubUJkdVlaS25KeWpCTGI5YWJrYWxiOV8xS1FUcWRxN0w2dC15NDVfS3ltbUtDcHNBWXpzLXJ3UURRT2w0dkF6X0trMm1pRGU5TldPM3plX01WeVR2QjhLQ3NmdkJuVEM5ZV8wc0xxWWhzdWVOeEJTTGxQMFBJMlpySXdEbjlqYXdiVmpJdENXQ2RzZldWdHZJamwycFJFeGk2QWc",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0"
-      ],
-      "freshness": "fresh",
-      "id": "story-f4ceaa49e159cd9b22674583",
-      "observed_at": "2026-10-31T01:50:03Z",
-      "reason": "\ud83d\udea8 BREAKING: SAUDI ARABIA CHOOSES CHINA OVER USA \u2014 $5 BILLION BETRAYAL! \ud83d\udca5\ud83c\uddf8\ud83c\udde6\ud83c\udde8\ud83c\uddf3\ud83c\uddfa\ud83c\uddf8 FACT: Saudi Arabia deploys Chinese HQ-9 air defense & JF-17 fighter jets at King Abdulaziz Air Base \u2014 Armed by Pakistan \u2014 After Houthi missile hit Riyadh Airport \u2014 13 Dead! FACT: Saudi signs $5 BILLION",
-      "relevance_score": 90.0,
-      "saudi_relevant": true,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-31T01:50:03Z",
-      "source": "x",
-      "source_published_at": "2026-10-29T20:39:27Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Americanforce0/status/2115906381350085010",
-      "status": "x-intel",
-      "title": "\ud83d\udea8 BREAKING: SAUDI ARABIA CHOOSES CHINA OVER USA \u2014 $5 BILLION BETRAYAL! \ud83d\udca5\ud83c\uddf8\ud83c\udde6\ud83c\udde8\ud83c\uddf3\ud83c\uddfa\ud83c\uddf8 FACT: Saudi Arabia deploys Chinese HQ-9 air defense & JF-17 fighter jets at King",
-      "webswarm_evidence_terms": [
-        "AI",
-        "Grok",
-        "Grok AI",
-        "Iran",
-        "Pentagon",
-        "military",
-        "munitions",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "4789b0e4399cfd745f55b776dedc7dd3f2a94a8cee325b621d2ffa530f43ffb4",
-      "confidence": 0,
-      "event_time": "2026-10-30T14:00:42Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-10-30T14:00:42Z",
-          "independence_group": null,
-          "observation_time": "2026-10-30T22:43:33Z",
-          "original_url": "https://x.com/i/status/2116168421293334961",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/SpartanXAI/status/2116168421293334961"
-      ],
-      "freshness": "fresh",
-      "id": "story-09eb1a29dfb7655f949ee1ac",
-      "observed_at": "2026-10-30T22:43:33Z",
-      "reason": "Autonomous Weapons at a Legal Crossroads: NSPM-11's Unanswered Deadline and the NDAA's Competing Framework NSPM-11 ordered an update to DoDD 3000.09 by early September, aligned with a policy of faster AI adoption and commercial AI integration. The revision has not appeared; the D",
-      "relevance_score": 70.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-10-30T22:43:33Z",
-      "source": "x",
-      "source_published_at": "2026-10-30T14:00:42Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/SpartanXAI/status/2116168421293334961",
-      "status": "x-intel",
-      "title": "Autonomous Weapons at a Legal Crossroads: NSPM-11's Unanswered Deadline and the NDAA's Competing Framework NSPM-11 ordered an update to DoDD 3000.09 by early Se",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons",
-        "DoD"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-11-01T00:17:35Z",
+    "alerted_at": "2026-11-01T06:31:00Z",
     "confidence": 0,
-    "source_url": "https://x.com/DutchMFA/status/2116287440293855670",
-    "title": "@DutchMFA: For the third year in a row, a South Korean-Dutch initiative has led to the adoption of a UN resolution on AI in the military domain. This i"
+    "source_url": "https://x.com/The_Patriot_Jr/status/2116175846478131257",
+    "title": "They briefed him on Iran's plan. He came out and said one word: \"Insane.\" \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7 \"It will lead to a devastating escalation.\" The troops are already in position. 9"
   },
   "last_run": {
-    "alerted_now": 6,
-    "clustered": 52,
-    "collected": 61,
+    "alerted_now": 10,
+    "clustered": 49,
+    "collected": 60,
     "corroborated_count": 0,
-    "initial_collected": 61,
+    "initial_collected": 60,
     "initial_source_counts": {
       "google-news": 9,
-      "x": 52
+      "x": 51
     },
-    "initial_x_relevant": 45,
+    "initial_x_relevant": 40,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 26.626,
-      "projected_minutes_per_30d": 1278.05,
+      "measured_seconds": 26.753,
+      "projected_minutes_per_30d": 1284.14,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -3082,7 +3056,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 37,
+    "stage1_survivors": 32,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -3106,11 +3080,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 6
+    "x_intel_published": 10
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-11-01T00:17:35Z",
+  "updated_at": "2026-11-01T06:31:00Z",
   "version": 1
 }
