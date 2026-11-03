@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T18:44:03Z",
+  "generated_at": "2026-11-03T22:56:36Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -7,27 +7,27 @@
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
   "source_failure_rate": 0.25,
-  "primary_source_link_rate": 1.0,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-03T18:44:03Z",
+  "latest_successful_run": "2026-11-03T22:56:36Z",
   "highest_ranked_signal": {
-    "id": "twitter-037",
-    "title": "@foukation: Eight years after employee protests pushed Google to let its Project Maven contract expire, the company is back in talks with the Pentagon. ",
-    "action_score": 80.25,
-    "url": "https://x.com/foukation/status/2116836226254733551"
+    "id": "twitter-042",
+    "title": "@MarioNawfal: 🚨🇮🇷 IRGC has released footage showing an inspection of SECRET naval missile tunnels in southern Iran. The footage reportedly shows the Supre",
+    "action_score": 75.5,
+    "url": "https://x.com/MarioNawfal/status/2117611503063048605"
   },
   "source_contribution": {
-    "arxiv": 3,
-    "github": 4,
-    "twitter": 5
+    "twitter": 5,
+    "github": 6,
+    "google-news": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7708, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7577, Req"
     }
   ],
-  "runtime_seconds": 71.142,
+  "runtime_seconds": 58.835,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-03T18:44:03Z",
+    "planned_at": "2026-11-03T22:56:36Z",
     "production_threshold": 70.0
   }
 }
