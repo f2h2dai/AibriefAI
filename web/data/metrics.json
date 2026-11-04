@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:57:16Z",
+  "generated_at": "2026-11-04T23:15:21Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-04T18:57:16Z",
+  "latest_successful_run": "2026-11-04T23:15:21Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "arunmk-ms/dicom-agent-mcp",
-    "action_score": 75.5,
-    "url": "https://github.com/arunmk-ms/dicom-agent-mcp"
+    "id": "github-006",
+    "title": "gadievron/raptor",
+    "action_score": 80.25,
+    "url": "https://github.com/gadievron/raptor"
   },
   "source_contribution": {
     "github": 6,
@@ -24,10 +24,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7613, Req"
     }
   ],
-  "runtime_seconds": 50.136,
+  "runtime_seconds": 71.179,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-04T18:57:16Z",
+    "planned_at": "2026-11-04T23:15:21Z",
     "production_threshold": 70.0
   }
 }
