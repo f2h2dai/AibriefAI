@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:03:39Z",
+  "generated_at": "2026-11-07T21:29:05Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-07T17:03:39Z",
+  "latest_successful_run": "2026-11-07T21:29:05Z",
   "highest_ranked_signal": {
-    "id": "twitter-029",
-    "title": "@GoogleDeepMind: We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption. Guided by humans, our models",
-    "action_score": 75.25,
-    "url": "https://x.com/GoogleDeepMind/status/2118755418675765656"
+    "id": "twitter-039",
+    "title": "@arnaudmercier: Espionnage en orbite et pouvoir de l’information : https://t.co/fYMh40Ijgt \"Traduction en français : Résumé Les satellites de reconnaissance",
+    "action_score": 82.5,
+    "url": "https://x.com/arnaudmercier/status/2118993596724437449"
   },
   "source_contribution": {
     "twitter": 5,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7978, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7628, Req"
     }
   ],
-  "runtime_seconds": 51.24,
+  "runtime_seconds": 55.34,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-07T17:03:39Z",
+    "planned_at": "2026-11-07T21:29:05Z",
     "production_threshold": 70.0
   }
 }
