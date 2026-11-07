@@ -1,33 +1,32 @@
 {
-  "generated_at": "2026-11-06T22:44:59Z",
+  "generated_at": "2026-11-07T17:03:39Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-06T22:44:59Z",
+  "latest_successful_run": "2026-11-07T17:03:39Z",
   "highest_ranked_signal": {
-    "id": "github-013",
-    "title": "gadievron/raptor",
-    "action_score": 80.25,
-    "url": "https://github.com/gadievron/raptor"
+    "id": "twitter-029",
+    "title": "@GoogleDeepMind: We’re sharing new research demonstrating how AI agents can accelerate the science of stress-testing encryption. Guided by humans, our models",
+    "action_score": 75.25,
+    "url": "https://x.com/GoogleDeepMind/status/2118755418675765656"
   },
   "source_contribution": {
-    "github": 6,
-    "google-news": 1,
-    "twitter": 5
+    "twitter": 5,
+    "github": 7
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7989, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7978, Req"
     }
   ],
-  "runtime_seconds": 65.928,
+  "runtime_seconds": 51.24,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-06T22:44:59Z",
+    "planned_at": "2026-11-07T17:03:39Z",
     "production_threshold": 70.0
   }
 }
