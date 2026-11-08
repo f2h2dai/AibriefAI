@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T17:17:57Z",
+  "generated_at": "2026-11-08T21:43:12Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-08T17:17:57Z",
+  "latest_successful_run": "2026-11-08T21:43:12Z",
   "highest_ranked_signal": {
-    "id": "github-010",
-    "title": "yasinkilinc/eos-agent",
-    "action_score": 78.0,
-    "url": "https://github.com/yasinkilinc/eos-agent"
+    "id": "twitter-034",
+    "title": "@OpenAI: A new way to measure how AI agents handle the routine analyses of wet-lab science—BioBasicsBench. Developed with Ligo, a biotech company foc",
+    "action_score": 74.5,
+    "url": "https://x.com/OpenAI/status/2118782708767965238"
   },
   "source_contribution": {
     "github": 6,
@@ -24,10 +24,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7417, Req"
     }
   ],
-  "runtime_seconds": 79.311,
+  "runtime_seconds": 76.275,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-08T17:17:57Z",
+    "planned_at": "2026-11-08T21:43:12Z",
     "production_threshold": 70.0
   }
 }
