@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T21:41:06Z",
+  "generated_at": "2026-11-10T01:13:00Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-09T21:41:06Z",
+  "latest_successful_run": "2026-11-10T01:13:00Z",
   "highest_ranked_signal": {
-    "id": "github-011",
-    "title": "sudosubin/agents.nix",
+    "id": "github-010",
+    "title": "Ahmedabied/agent-guard",
     "action_score": 75.5,
-    "url": "https://github.com/sudosubin/agents.nix"
+    "url": "https://github.com/Ahmedabied/agent-guard"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7420, Req"
+      "reason": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"{\\"
     }
   ],
-  "runtime_seconds": 63.149,
+  "runtime_seconds": 57.342,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-09T21:41:06Z",
+    "planned_at": "2026-11-10T01:13:00Z",
     "production_threshold": 70.0
   }
 }
