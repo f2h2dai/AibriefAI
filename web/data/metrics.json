@@ -1,37 +1,33 @@
 {
-  "generated_at": "2026-11-12T00:06:10Z",
+  "generated_at": "2026-11-12T19:15:03Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.4,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-12T00:06:10Z",
+  "latest_successful_run": "2026-11-12T19:15:03Z",
   "highest_ranked_signal": {
-    "id": "twitter-024",
-    "title": "@GoogleDeepMind: Gemini agents generated over 6M lines of proofs in Lean, auditing the code so human experts only had to review the critical 1%. This is a ke",
-    "action_score": 78.5,
-    "url": "https://x.com/GoogleDeepMind/status/2120484249321033911"
+    "id": "twitter-031",
+    "title": "@GoogleDeepMind: Now rolling out for: Developers: Build with the Gemini API in @GoogleAIStudio and Android Studio, and in Google @Antigravity for paid Google",
+    "action_score": 73.0,
+    "url": "https://x.com/GoogleDeepMind/status/2120940342505566438"
   },
   "source_contribution": {
     "twitter": 5,
-    "github": 5,
-    "hackernews": 2
+    "google-news": 1,
+    "github": 6
   },
   "failed_sources": [
     {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
-    },
-    {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7824, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7626, Req"
     }
   ],
-  "runtime_seconds": 262.598,
+  "runtime_seconds": 207.235,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -91,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-12T00:06:10Z",
+    "planned_at": "2026-11-12T19:15:03Z",
     "production_threshold": 70.0
   }
 }
