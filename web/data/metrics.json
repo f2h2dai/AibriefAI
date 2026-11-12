@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T19:15:03Z",
+  "generated_at": "2026-11-12T23:15:06Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,25 +9,25 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-12T19:15:03Z",
+  "latest_successful_run": "2026-11-12T23:15:06Z",
   "highest_ranked_signal": {
-    "id": "twitter-031",
-    "title": "@GoogleDeepMind: Now rolling out for: Developers: Build with the Gemini API in @GoogleAIStudio and Android Studio, and in Google @Antigravity for paid Google",
-    "action_score": 73.0,
-    "url": "https://x.com/GoogleDeepMind/status/2120940342505566438"
+    "id": "github-006",
+    "title": "Retsumdk/Retsumdk",
+    "action_score": 74.0,
+    "url": "https://github.com/Retsumdk/Retsumdk"
   },
   "source_contribution": {
-    "twitter": 5,
+    "github": 6,
     "google-news": 1,
-    "github": 6
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7626, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7804, Req"
     }
   ],
-  "runtime_seconds": 207.235,
+  "runtime_seconds": 78.888,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-12T19:15:03Z",
+    "planned_at": "2026-11-12T23:15:06Z",
     "production_threshold": 70.0
   }
 }
