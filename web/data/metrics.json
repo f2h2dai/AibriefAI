@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T18:04:44Z",
+  "generated_at": "2026-11-15T22:30:36Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-15T18:04:44Z",
+  "latest_successful_run": "2026-11-15T22:30:36Z",
   "highest_ranked_signal": {
-    "id": "github-005",
-    "title": "sandhruv/Support-Desk-AI",
-    "action_score": 80.25,
-    "url": "https://github.com/sandhruv/Support-Desk-AI"
+    "id": "github-012",
+    "title": "shermansingh05/modellab",
+    "action_score": 76.0,
+    "url": "https://github.com/shermansingh05/modellab"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7550, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7793, Req"
     }
   ],
-  "runtime_seconds": 324.564,
+  "runtime_seconds": 133.644,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-15T18:04:44Z",
+    "planned_at": "2026-11-15T22:30:36Z",
     "production_threshold": 70.0
   }
 }
