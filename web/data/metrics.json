@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T01:37:37Z",
+  "generated_at": "2026-11-17T20:08:03Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-17T01:37:37Z",
+  "latest_successful_run": "2026-11-17T20:08:03Z",
   "highest_ranked_signal": {
-    "id": "twitter-028",
-    "title": "@OmegaClickOffi1: 13.000 bersagli colpiti in 38 giorni. Il software che ha aiutato a colpirli da venerdì, per decreto, si chiama «Super Intelligenza». Il 13 n",
-    "action_score": 78.75,
-    "url": "https://x.com/OmegaClickOffi1/status/2121977250979385542"
+    "id": "github-006",
+    "title": "karolkornecki/mini-agent",
+    "action_score": 78.0,
+    "url": "https://github.com/karolkornecki/mini-agent"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7111, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7872, Req"
     }
   ],
-  "runtime_seconds": 95.022,
+  "runtime_seconds": 68.972,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-17T01:37:37Z",
+    "planned_at": "2026-11-17T20:08:03Z",
     "production_threshold": 70.0
   }
 }
