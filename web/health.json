@@ -1,19 +1,19 @@
 {
   "status": "ok",
-  "generated_at": "2026-11-16T21:20:06Z",
+  "generated_at": "2026-11-17T01:37:37Z",
   "signals": 12,
   "approved": 12,
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
-    "gemini": 22,
-    "groq": 14,
-    "rule-based": 0
+    "gemini": 4,
+    "groq": 15,
+    "rule-based": 25
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 0.87,
+  "max_source_age_days": 1.45,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "agents": [
@@ -60,67 +60,67 @@
   ],
   "events": [
     {
-      "time": "2026-11-16T21:20:06Z",
+      "time": "2026-11-17T01:37:37Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7699, Req"
+    },
+    {
+      "time": "2026-11-17T01:37:37Z",
       "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-11-09\" --json --max 20 --full-text exited 0. Parsed 19 X records."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-16T21:20:06Z",
+      "time": "2026-11-17T01:37:37Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7687, Req"
+    },
+    {
+      "time": "2026-11-17T01:37:37Z",
       "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"Operation Epic Fury\\\" OR \\\"Grok missiles\\\" OR \\\"2,000 targets\\\" OR \\\"96 hours\\\" since:2026-11-09\" --json --max 20 --full-text exited 0. Parsed 19 X records."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-16T21:20:06Z",
+      "time": "2026-11-17T01:37:37Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7673, Req"
+    },
+    {
+      "time": "2026-11-17T01:37:37Z",
       "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "Collected 20 X influencer signals."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-16T21:20:06Z",
+      "time": "2026-11-17T01:37:37Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7665, Req"
+    },
+    {
+      "time": "2026-11-17T01:37:37Z",
       "level": "info",
-      "agent": "NewsAgent",
-      "message": "Collected 7 early public-news signals."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-16T21:20:06Z",
-      "level": "warning",
-      "agent": "AgentReachConnector",
-      "message": "Agent-Reach returned no optional social results."
+      "time": "2026-11-17T01:37:37Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7620, Req"
     },
     {
-      "time": "2026-11-16T21:20:06Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
-    },
-    {
-      "time": "2026-11-16T21:20:06Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
-    },
-    {
-      "time": "2026-11-16T21:20:06Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
-    },
-    {
-      "time": "2026-11-16T21:20:06Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
-    },
-    {
-      "time": "2026-11-16T21:20:06Z",
+      "time": "2026-11-17T01:37:37Z",
       "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
     }
   ],
-  "notification_enabled": true,
-  "notification_sent": true,
-  "notification_reason": "sent"
+  "notification_enabled": false,
+  "notification_sent": false,
+  "notification_reason": "not morning run"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:20:06Z",
+  "generated_at": "2026-11-17T01:37:37Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,24 +9,24 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-16T21:20:06Z",
+  "latest_successful_run": "2026-11-17T01:37:37Z",
   "highest_ranked_signal": {
-    "id": "twitter-026",
-    "title": "@MichaelARothman: 𝐂𝐇𝐈𝐍𝐄𝐒𝐄 𝐀𝐈 𝐅𝐈𝐑𝐌 𝐓𝐈𝐄𝐃 𝐓𝐎 𝐈𝐑𝐀𝐍'𝐒 𝐈𝐑𝐆𝐂 𝐓𝐑𝐀𝐂𝐊𝐄𝐃 𝐀𝐌𝐄𝐑𝐈𝐂𝐀𝐍 𝐁𝐎𝐌𝐁𝐄𝐑𝐒 𝐈𝐍 𝐁𝐑𝐈𝐓𝐀𝐈𝐍 𝐅𝐎𝐑 𝐌𝐎𝐍𝐓𝐇𝐒 A Chinese AI satellite company with ties to Iran’s Islami",
-    "action_score": 81.25,
-    "url": "https://x.com/MichaelARothman/status/2122130782085075372"
+    "id": "twitter-028",
+    "title": "@OmegaClickOffi1: 13.000 bersagli colpiti in 38 giorni. Il software che ha aiutato a colpirli da venerdì, per decreto, si chiama «Super Intelligenza». Il 13 n",
+    "action_score": 78.75,
+    "url": "https://x.com/OmegaClickOffi1/status/2121977250979385542"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 7
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
-      "source": "AcademicAgent",
-      "reason": "The read operation timed out"
+      "source": "GroqRouter",
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7111, Req"
     }
   ],
-  "runtime_seconds": 283.633,
+  "runtime_seconds": 95.022,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-16T21:20:06Z",
+    "planned_at": "2026-11-17T01:37:37Z",
     "production_threshold": 70.0
   }
 }
