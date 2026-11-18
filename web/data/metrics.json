@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T19:40:41Z",
+  "generated_at": "2026-11-18T23:55:18Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,9 +9,9 @@
   "source_failure_rate": 0.2,
   "primary_source_link_rate": 0.8333,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-18T19:40:41Z",
+  "latest_successful_run": "2026-11-18T23:55:18Z",
   "highest_ranked_signal": {
-    "id": "twitter-023",
+    "id": "twitter-025",
     "title": "@CSIS: India has disclosed its first cyber incident carried out by an AI agent rather than a human. How New Delhi and Washington respond is an earl",
     "action_score": 76.5,
     "url": "https://x.com/CSIS/status/2123114103140950489"
@@ -25,10 +25,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7495, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7467, Req"
     }
   ],
-  "runtime_seconds": 74.637,
+  "runtime_seconds": 44.076,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-18T19:40:41Z",
+    "planned_at": "2026-11-18T23:55:18Z",
     "production_threshold": 70.0
   }
 }
