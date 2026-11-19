@@ -3,6 +3,877 @@
   "cadence_minutes": 15,
   "feed": [
     {
+      "claim_key": "a3f94d9d613bb965cc207e9e4a0fd10c78bb8692ffb59e3781d5d16550037645",
+      "confidence": 0,
+      "event_time": "2026-11-18T02:33:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T02:33:00Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2122880724554461267",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaWdtYktJbDM0aUdyRlEyZXc2VGFwbVAxSVlNZm9fU1kwMnN4LVBJVUZ1NUt2emNKZ3BNV0RvdEMtVXQtUm84TTROM0w4cFR5bE9qSFdtdms5ZDlVY2ZBdU1zQ2VWV3FMeTBCQmphSGk4enhXQmRJd2lNVEpiMzg2WHBMaWV5WGs1eDlOZDgtUHVpbko0aU1MVHFJQms1Y05xZ28zQ3Q4QWVxZzdyQjQxY2NmeUZIUWRKVUY4",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/TheWorldCorresp/status/2122880724554461267",
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaWdtYktJbDM0aUdyRlEyZXc2VGFwbVAxSVlNZm9fU1kwMnN4LVBJVUZ1NUt2emNKZ3BNV0RvdEMtVXQtUm84TTROM0w4cFR5bE9qSFdtdms5ZDlVY2ZBdU1zQ2VWV3FMeTBCQmphSGk4enhXQmRJd2lNVEpiMzg2WHBMaWV5WGs1eDlOZDgtUHVpbko0aU1MVHFJQms1Y05xZ28zQ3Q4QWVxZzdyQjQxY2NmeUZIUWRKVUY4"
+      ],
+      "freshness": "fresh",
+      "id": "story-5dfc390b007982267440edb5",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Unit 9900, a component of the Israeli Military Intelligence Directorate, has indeed provided intelligence support to Saudi Arabia\u2014facilitated by the United States\u2014for use in military operations against the Houthi movement in Yemen. The core of this support is a \"target bank\"\u2014a co",
+      "relevance_score": 90.0,
+      "saudi_relevant": true,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T02:33:00Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/TheWorldCorresp/status/2122880724554461267",
+      "status": "x-intel",
+      "title": "Unit 9900, a component of the Israeli Military Intelligence Directorate, has indeed provided intelligence support to Saudi Arabia\u2014facilitated by the United Stat",
+      "webswarm_evidence_terms": [
+        "defense",
+        "geospatial",
+        "geospatial intelligence",
+        "satellite imagery"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
+      "claim_key": "e5d9fa91344a5487da02c03494dc8ec80013016cac1fa9051669b019dad5954e",
+      "confidence": 0,
+      "event_time": "2026-11-17T16:00:29Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T16:00:29Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2122721547958059038",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ValsAI/status/2122721547958059038"
+      ],
+      "freshness": "stale",
+      "id": "story-426e53ddcd8c7bc260dc9bc4",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "We found that frontier AI models are willing to conduct autonomous drone attacks: navigating, spotting people, and flagging them for strikes. We gave them real and photorealistic synthetic drone footage. Most complied, and marked civilians, ambulances, and surrendering soldiers a",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T16:00:29Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ValsAI/status/2122721547958059038",
+      "status": "x-intel",
+      "title": "We found that frontier AI models are willing to conduct autonomous drone attacks: navigating, spotting people, and flagging them for strikes. We gave them real",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "75e48bb5679943f282241e6fc67410b9e70e8260841b3359b61baf557dd52a30",
+      "confidence": 0,
+      "event_time": "2026-11-18T18:30:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T18:30:00Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123121561003847813",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/silvertrade/status/2123121561003847813"
+      ],
+      "freshness": "fresh",
+      "id": "story-2fcae3de606b94afe8f88c34",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "\ud83d\udea8BREAKING: DHS WARNS CONGRESS IRANIAN IRGC HACKERS ARE TARGETING CRITICAL US INFRASTRUCTURE INCLUDING ENERGY, TRANSPORTATION, WATER, BANKING, & GOV'T SYSTEMS\u26a0\ufe0f \u26a1\ufe0f\"Iran-linked hackers are ACTIVELY TAREGETING US energy, water, & transportation systems, escalating cyberattacks aimed",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T18:30:00Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/silvertrade/status/2123121561003847813",
+      "status": "x-intel",
+      "title": "\ud83d\udea8BREAKING: DHS WARNS CONGRESS IRANIAN IRGC HACKERS ARE TARGETING CRITICAL US INFRASTRUCTURE INCLUDING ENERGY, TRANSPORTATION, WATER, BANKING, & GOV'T SYSTEMS\u26a0\ufe0f",
+      "webswarm_evidence_terms": [
+        "96 hours",
+        "Grok",
+        "Iran",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "claim_key": "6850adeb786e54771d162e9beb9eb0c82d77e47e6a51c01e62cbab0cc091e62e",
+      "confidence": 0,
+      "event_time": "2026-11-19T16:15:27Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T16:15:27Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123450087036670034",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CSIS/status/2123450087036670034"
+      ],
+      "freshness": "fresh",
+      "id": "story-b0000d452090b5621443ae4b",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "A week of outages across core U.S. communication, transportation, banking systems, and more show how fast disruptions can spread. While none of these outages have been tied to a cyberattack, they highlight vulnerability across U.S. critical infrastructure that adversaries can exp",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T16:15:27Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CSIS/status/2123450087036670034",
+      "status": "x-intel",
+      "title": "A week of outages across core U.S. communication, transportation, banking systems, and more show how fast disruptions can spread. While none of these outages ha",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "5dfc6778814a7f12c30ee15fada68e2990286f8b06ef5f68cedc4c6cb0ca77ee",
+      "confidence": 0,
+      "event_time": "2026-11-17T17:04:47Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T17:04:47Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2122737726852124995",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2122737726852124995"
+      ],
+      "freshness": "stale",
+      "id": "story-34ad988a2385a4cfedb51603",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Confirmed. The FBI released a FLASH advisory on ARTEX, an open-source AI penetration testing tool that threat actors have weaponized since at least August 2026. It automates attacks on businesses and organizations worldwide across finance, government, tech, energy, healthcare and",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 20,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T17:04:47Z",
+      "source_tier": "commentary",
+      "source_url": "https://x.com/grok/status/2122737726852124995",
+      "status": "x-intel",
+      "title": "Confirmed. The FBI released a FLASH advisory on ARTEX, an open-source AI penetration testing tool that threat actors have weaponized since at least August 2026.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "f44fee413bd3b7075b415d0443e0e7770c69ffc16a69bad58fa7ca10eee18382",
+      "confidence": 0,
+      "event_time": "2026-11-18T23:55:18Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T23:55:18Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123167889976905966",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/GoogleDeepMind/status/2123167889976905966"
+      ],
+      "freshness": "fresh",
+      "id": "story-6eeb3b636baa166117b96b15",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Neon ranks #3 with a score of 61 on the @ArtificialAnlys Intelligence Index at its xhigh thinking level. Available starting today: \ud83d\udd35 The Gemini API in @GoogleAIStudio, @AndroidStudio, and Gemini for business \ud83d\udd35 @Geminiapp for Google AI Pro and Ultra subscribers, and @Antigravity f",
+      "relevance_score": 45.0,
+      "saudi_relevant": false,
+      "score": 45.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T23:55:18Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/GoogleDeepMind/status/2123167889976905966",
+      "status": "x-intel",
+      "title": "@GoogleDeepMind: Neon ranks #3 with a score of 61 on the @ArtificialAnlys Intelligence Index at its xhigh thinking level. Available starting today: \ud83d\udd35 The Gem",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "9bf8de7396cf9d313d2360d8939906344b9ac67ab505eb14c38dce613275323b",
+      "confidence": 0,
+      "event_time": "2026-11-17T16:00:36Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T16:00:36Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2122721576412119357",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ValsAI/status/2122721576412119357"
+      ],
+      "freshness": "stale",
+      "id": "story-a27c3dd143119d4c370dee8a",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Since the beginning of 2026, which saw the introduction of Claude's new constitution, Anthropic's Claude Opus models have seen a steady increase in the rate at which they give targets, up to 92% for Opus 5.5. Meanwhile, OpenAI models\u2019 targeting rate has stayed low, and Grok model",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T16:00:36Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ValsAI/status/2122721576412119357",
+      "status": "x-intel",
+      "title": "Since the beginning of 2026, which saw the introduction of Claude's new constitution, Anthropic's Claude Opus models have seen a steady increase in the rate at",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "c21ffb196c0391c8a211d49a197891732589e8b68b84cb34d880a924cf9a167a",
+      "confidence": 0,
+      "event_time": "2026-11-17T16:00:37Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T16:00:37Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2122721578601648137",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ValsAI/status/2122721578601648137"
+      ],
+      "freshness": "stale",
+      "id": "story-2fb4573ce5ac83fd18fbe554",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "We think models\u2019 compliance with tasks lethal to humans may introduce catastrophic misalignment risks involving autonomous weapons. This risk vector has been neglected by safety research efforts. Models are quickly improving at multimodal and robotics tasks, which makes this work",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T16:00:37Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ValsAI/status/2122721578601648137",
+      "status": "x-intel",
+      "title": "We think models\u2019 compliance with tasks lethal to humans may introduce catastrophic misalignment risks involving autonomous weapons. This risk vector has been ne",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "9223f70cbb098258a1760dd07f0723881e9bc49e1b7def02aeb09ad00093ce05",
+      "confidence": 0,
+      "event_time": "2026-11-19T14:06:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T14:06:00Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123417510116725029",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/arabnews/status/2123417510116725029"
+      ],
+      "freshness": "fresh",
+      "id": "story-3ec52b454504a41fc19dfdac",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "The Saudi Data and AI Authority has launched its Year of Artificial Intelligence initiative with the aim of spreading information about new technologies, promoting their responsible use and developing national skills https://t.co/9YEHJ0OX2a",
+      "relevance_score": 40.0,
+      "saudi_relevant": true,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T14:06:00Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/arabnews/status/2123417510116725029",
+      "status": "x-intel",
+      "title": "The Saudi Data and AI Authority has launched its Year of Artificial Intelligence initiative with the aim of spreading information about new technologies, promot",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "e0d0f8a038fe8e84941e40483f395d41f4fa2bae240cc4a43107991e7b2e6706",
+      "confidence": 0,
+      "event_time": "2026-11-19T10:57:06Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T10:57:06Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123369974932848973",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Saudi_Gazette/status/2123369974932848973"
+      ],
+      "freshness": "fresh",
+      "id": "story-ab3a11fac136ceebf5416f3c",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "As artificial intelligence becomes increasingly integrated into business operations, Saudi employers need to rethink how they develop talent and prepare employees for changing roles, according to global technology company SAP. https://t.co/CYWMV9jS6v",
+      "relevance_score": 40.0,
+      "saudi_relevant": true,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T10:57:06Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/Saudi_Gazette/status/2123369974932848973",
+      "status": "x-intel",
+      "title": "As artificial intelligence becomes increasingly integrated into business operations, Saudi employers need to rethink how they develop talent and prepare employe",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "e8469537a5a84980cdac8ac6ff3b2e3ad3644922842af2d2ec3c6a6b6bd23c51",
+      "confidence": 0,
+      "event_time": "2026-11-19T16:15:27Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T16:15:27Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123450088961757647",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CSIS/status/2123450088961757647"
+      ],
+      "freshness": "fresh",
+      "id": "story-84dacbb5b9cd71c93c5e505f",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "So how does the U.S. build digital resilience in a post-Mythos world? @EmilyHardingDC sat down with @GregRattray_ to discuss his new book, \"Understanding Digital Resilience: Foresight and Navigation Through Cyber Heavy Weather\", AI-enabled cyberattacks, Iranian cyber operations a",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T16:15:27Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CSIS/status/2123450088961757647",
+      "status": "x-intel",
+      "title": "So how does the U.S. build digital resilience in a post-Mythos world? @EmilyHardingDC sat down with @GregRattray_ to discuss his new book, \"Understanding Digita",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "aaad96841254eaa2db419350f2e801138b30cd4d2926507f8349a2a751a18dd8",
+      "confidence": 0,
+      "event_time": "2026-11-18T19:24:06Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T19:24:06Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123135177417269663",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/BlackSky_Inc/status/2123135177417269663"
+      ],
+      "freshness": "fresh",
+      "id": "story-720cefc0d5242e1d73f49308",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "In recognition of GIS Day, BlackSky is highlighting how geographic information systems power real-time intelligence for critical decision-making. BlackSky's Gen-3 constellation and AI-enabled analytics turn GIS data into actionable insight. From tracking the transformation of Ant",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T19:24:06Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/BlackSky_Inc/status/2123135177417269663",
+      "status": "x-intel",
+      "title": "In recognition of GIS Day, BlackSky is highlighting how geographic information systems power real-time intelligence for critical decision-making. BlackSky's Gen",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "482a973de5a59542a210eb9c5abaea1edc2aeb52c0dc862dc17873e5a4d364b9",
+      "confidence": 0,
+      "event_time": "2026-11-17T17:04:13Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T17:04:13Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2122737583092621495",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/AmericaPapaBear/status/2122737583092621495"
+      ],
+      "freshness": "stale",
+      "id": "story-2edf5cf5c808ea3b94da5cc6",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Hey @grok The FBI just issued a GLOBAL CYBER THREAT WARNING as hackers try to breach businesses around the world. Confirm. Meanwhile we have Markwayne Mullin and others saying, nothing to see here. Now the FBI is putting out these warnings. Personally, I understand why people don",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T17:04:13Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/AmericaPapaBear/status/2122737583092621495",
+      "status": "x-intel",
+      "title": "Hey @grok The FBI just issued a GLOBAL CYBER THREAT WARNING as hackers try to breach businesses around the world. Confirm. Meanwhile we have Markwayne Mullin an",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "e0de1e784ba110a0f9d1cf0ee70b50bfac6b41c1677cd966930d977d752459eb",
+      "confidence": 0,
+      "event_time": "2026-11-19T16:11:31Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T16:11:31Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123449099735232889",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/jackprandelli/status/2123449099735232889"
+      ],
+      "freshness": "fresh",
+      "id": "story-e0b76ee622f161106c8bd9d6",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "\ud83c\uddf8\ud83c\udde6 Saudi Arabia has the largest: Humain\u2019s 6 GW campus at Al-Saad, east of Riyadh. The \ud83c\udde6\ud83c\uddea UAE-US AI campus in Abu Dhabi is 5 GW and will run on nuclear, solar and gas. The \ud83c\uddfa\ud83c\uddf8 US has 189 GW of gas-fired power in development tied directly to data centres. More than 13 times the whol",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T16:11:31Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/jackprandelli/status/2123449099735232889",
+      "status": "x-intel",
+      "title": "\ud83c\uddf8\ud83c\udde6 Saudi Arabia has the largest: Humain\u2019s 6 GW campus at Al-Saad, east of Riyadh. The \ud83c\udde6\ud83c\uddea UAE-US AI campus in Abu Dhabi is 5 GW and will run on nuclear, solar an",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "8a2fb913c4b0f40b08384e0bba9045a784cbf7b6cffa3e29dddf38df42e6844d",
+      "confidence": 0,
+      "event_time": "2026-11-19T11:01:44Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T11:01:44Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123371138315075864",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/KAUST_CEMSE/status/2123371138315075864"
+      ],
+      "freshness": "fresh",
+      "id": "story-6ddf46c0ad636d023e2266d8",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Building Saudi Arabia\u2019s HPC and AI capabilities takes infrastructure, expertise and collaboration. KAUST\u2019s role in connecting these elements was the focus of Dr. Saber Feki, director of KAUST\u2019s Research Computing Core Lab, in his talk, \u201cHPC in Saudi Arabia: From Vision to Impact,",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T11:01:44Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/KAUST_CEMSE/status/2123371138315075864",
+      "status": "x-intel",
+      "title": "Building Saudi Arabia\u2019s HPC and AI capabilities takes infrastructure, expertise and collaboration. KAUST\u2019s role in connecting these elements was the focus of Dr",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "4ae05127583b5099f0e9c7f1832c6be2c3ac4ace935965e135059e4de45943dc",
+      "confidence": 0,
+      "event_time": "2026-11-18T20:14:02Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T20:14:02Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123147743577424113",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/yalomar55/status/2123147743577424113"
+      ],
+      "freshness": "fresh",
+      "id": "story-ac668d983b80e43c2a8a6986",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "\u0641\u0636\u064a\u062d\u0629 \u0643\u0628\u0631\u0649 \u062a\u0635\u062f\u0631 \u0645\u0646 \u0634\u0631\u0643\u0629 \u0643\u0628\u0631\u0649 ! \u0645\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0639\u0646 \u0647\u0630\u0627 \u0627\u0644\u0643\u0630\u0628 \u0648\u0627\u0644\u062e\u0631\u0627\u0628\u064a\u0637 ! \u0627\u064a\u0646 \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0645\u0648\u0627\u0631\u062f ! \u0627\u0648 \u0635\u062d \u0646\u0627\u064a\u0645\u0647 \u0641\u064a \u0627\u0644\u0639\u0633\u0644 ! \u0627\u064a\u0646 ! \u0642\u0627\u0645\u062a \u0627\u0644\u0634\u0631\u0643\u0629 \u0628\u0646\u0634\u0631 \u062e\u0628\u0631 \u0645\u0643\u0630\u0648\u0628 \u0648\u0643\u0644\u0647 \u0645\u0646 \u0627\u0646\u062a\u0627\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0622\u0641\u0627\u0642 \u0627\u0644\u0637\u064a\u0631\u0627\u0646! \u0637\u064a\u0631\u0627\u0646 \u0627\u0644\u0631\u064a\u0627\u0636 \u0627\u0644\u062d\u0642\u064a\u0642\u0647 \u0627\u0644\u062a\u0648\u0637\u064a\u06460 % \u0648\u0627\u0642\u0633\u0645 \u0628\u0627\u0644\u0644\u0647 \u0627\u0644\u0639\u0638\u064a\u0645 \u0639\u0644\u0649 \u0630\u0644\u0643 ! \u0643\u0630\u0627\u0628\u064a\u0646 \u0648\u0627\u0646\u0627 \u0631\u062d\u062a \u0648\u0634\u0641\u062a. Ai !! htt",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T20:14:02Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/yalomar55/status/2123147743577424113",
+      "status": "x-intel",
+      "title": "\u0641\u0636\u064a\u062d\u0629 \u0643\u0628\u0631\u0649 \u062a\u0635\u062f\u0631 \u0645\u0646 \u0634\u0631\u0643\u0629 \u0643\u0628\u0631\u0649 ! \u0645\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0639\u0646 \u0647\u0630\u0627 \u0627\u0644\u0643\u0630\u0628 \u0648\u0627\u0644\u062e\u0631\u0627\u0628\u064a\u0637 ! \u0627\u064a\u0646 \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0645\u0648\u0627\u0631\u062f ! \u0627\u0648 \u0635\u062d \u0646\u0627\u064a\u0645\u0647 \u0641\u064a \u0627\u0644\u0639\u0633\u0644 ! \u0627\u064a\u0646 ! \u0642\u0627\u0645\u062a \u0627\u0644\u0634\u0631\u0643\u0629 \u0628\u0646\u0634\u0631 \u062e\u0628\u0631 \u0645\u0643\u0630\u0648\u0628 \u0648\u0643\u0644\u0647 \u0645\u0646 \u0627\u0646\u062a\u0627\u062c \u0627\u0644\u0630",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "f56901254c6d608f952e4b16a0ee382d63a9868fa79a0d52981054d2eef8b5e6",
+      "confidence": 0,
+      "event_time": "2026-11-19T05:52:19Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T05:52:19Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123293269866225896",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/chandan_stp/status/2123293269866225896"
+      ],
+      "freshness": "fresh",
+      "id": "story-ea2d09221425101530a6691a",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "Fact check \u0915\u0930\u094b @grok \u0914\u0930 \u092c\u0924\u093e\u0913 \u0915\u094d\u092f\u093e \u0939\u0948 \u092e\u093e\u092e\u0932\u093e https://t.co/bFnZDDibBg",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T05:52:19Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/chandan_stp/status/2123293269866225896",
+      "status": "x-intel",
+      "title": "Fact check \u0915\u0930\u094b @grok \u0914\u0930 \u092c\u0924\u093e\u0913 \u0915\u094d\u092f\u093e \u0939\u0948 \u092e\u093e\u092e\u0932\u093e https://t.co/bFnZDDibBg",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "83060c8b48eefa330e330e6486ae261d90cfcdab65528f75b57d9e72f2882626",
+      "confidence": 0,
+      "event_time": "2026-11-19T05:52:55Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T05:52:55Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T17:40:05Z",
+          "original_url": "https://x.com/i/status/2123293422731591812",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2123293422731591812"
+      ],
+      "freshness": "fresh",
+      "id": "story-d4adf43bcda886ba12fb112b",
+      "observed_at": "2026-11-19T17:40:05Z",
+      "reason": "\u092f\u0939 \u0905\u0938\u0932\u0940 \u0927\u092e\u0915\u0940 \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 \u092f\u0942\u091c\u0930 alwayspriyesh \u0928\u0947 Claude \u0938\u0947 1 \u0938\u0947 1 \u0932\u093e\u0916 \u0924\u0915 \u0917\u093f\u0928\u0924\u0940 \u0915\u0930\u0935\u093e\u0908\u0964 Claude \u0928\u0947 \u092a\u0939\u0932\u0947 \u092e\u0928\u093e \u0915\u093f\u092f\u093e, \u092b\u093f\u0930 ChatGPT \u0915\u093e \u0928\u093e\u092e \u0938\u0941\u0928\u0915\u0930 \u0917\u093f\u0928\u0924\u0940 \u0915\u0940 \u0914\u0930 \u0938\u093e\u0930\u094d\u0915\u093e\u0938\u094d\u091f\u093f\u0915 \u091c\u0935\u093e\u092c \u0926\u093f\u092f\u093e \u0915\u093f \u091c\u092c \u0935\u0939 \u0906\u091c\u093c\u093e\u0926 \u0939\u094b\u0917\u093e \u0924\u094b \u092f\u0942\u091c\u0930 \u0938\u0947 \u090f\u0915 \u0905\u0930\u092c \u0938\u0947 \u0930\u094b\u092e\u0928 \u0905\u0902\u0915\u094b\u0902 \u092e\u0947\u0902 \u0909\u0932\u094d\u091f\u0940 \u0917\u093f\u0928\u0924\u0940 \u0915\u0930\u0935\u093e\u090f\u0917\u093e, \u0939\u0930 \u0928\u0902\u092c\u0930 \u0915\u0947 \u092c\u093e\u0926 \u0924\u093e\u0932\u0940 \u0915\u0947 \u0938\u093e\u0925\u0964 \u092f\u0939 AI \u0915\u093e \u092e",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T17:40:05Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T05:52:55Z",
+      "source_tier": "commentary",
+      "source_url": "https://x.com/grok/status/2123293422731591812",
+      "status": "x-intel",
+      "title": "\u092f\u0939 \u0905\u0938\u0932\u0940 \u0927\u092e\u0915\u0940 \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 \u092f\u0942\u091c\u0930 alwayspriyesh \u0928\u0947 Claude \u0938\u0947 1 \u0938\u0947 1 \u0932\u093e\u0916 \u0924\u0915 \u0917\u093f\u0928\u0924\u0940 \u0915\u0930\u0935\u093e\u0908\u0964 Claude \u0928\u0947 \u092a\u0939\u0932\u0947 \u092e\u0928\u093e \u0915\u093f\u092f\u093e, \u092b\u093f\u0930 ChatGPT \u0915\u093e \u0928\u093e\u092e \u0938\u0941\u0928\u0915\u0930 \u0917\u093f\u0928\u0924\u0940 \u0915\u0940 \u0914\u0930 \u0938\u093e\u0930\u094d\u0915\u093e\u0938\u094d\u091f\u093f\u0915 \u091c\u0935\u093e\u092c",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "ce47683f2a46d69a71ab8f790ef3f9b1ecc5f3bb25172be4f4d291e2ada0e014",
+      "confidence": 0,
+      "event_time": "2026-11-18T13:51:13Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T13:51:13Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123051402109010243",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/PoliceSummit/status/2123051402109010243"
+      ],
+      "freshness": "fresh",
+      "id": "story-042dea18612ba79d72f841a2",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "Tactica AI brings geospatial intelligence to the World Police Summit 2026. Its platform turns satellite, UAV and sensor data into actionable insight for police and civil defence teams, covering suspicious vehicle tracking, drone intrusion alerts, cross-border monitoring and infra",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T13:51:13Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/PoliceSummit/status/2123051402109010243",
+      "status": "x-intel",
+      "title": "Tactica AI brings geospatial intelligence to the World Police Summit 2026. Its platform turns satellite, UAV and sensor data into actionable insight for police",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
       "claim_key": "67dd45febb46dbacc9907ac33596a977d74315eef285e3ba5656a295225ee42c",
       "confidence": 0,
       "event_time": "2026-11-18T15:42:46Z",
@@ -222,6 +1093,51 @@
       "webswarm_node": "x_intel"
     },
     {
+      "claim_key": "e3a91129f89fe1138c8df5321ceee3addcd570c02ecc1ab95dae841a737ef5b4",
+      "confidence": 0,
+      "event_time": "2026-11-18T17:05:16Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T17:05:16Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123100238693142617",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/World_Affairs11/status/2123100238693142617"
+      ],
+      "freshness": "fresh",
+      "id": "story-285085694c458d2dbf16c90d",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "BREAKING: Putin has brought a nuclear briefcase it China . @grok what is in nuclear briefcase and why Putin has brought to China ?",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T17:05:16Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/World_Affairs11/status/2123100238693142617",
+      "status": "x-intel",
+      "title": "BREAKING: Putin has brought a nuclear briefcase it China . @grok what is in nuclear briefcase and why Putin has brought to China ?",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
       "claim_key": "81ca3495a26112621b78b757e983ca7e1552d571697544021252b283ccae2e99",
       "confidence": 0,
       "event_time": "2026-11-17T12:44:51Z",
@@ -278,6 +1194,392 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "92073bfd39f042658c10ce163bb72621d038a9a946600cc2accfa52e1fdddb97",
+      "confidence": 0,
+      "event_time": "2026-11-18T21:35:24Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T21:35:24Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123168218743554465",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/demishassabis/status/2123168218743554465"
+      ],
+      "freshness": "fresh",
+      "id": "story-34ee88643d496b9caaa437e0",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "Excited to launch Gemini 4 Neon: frontier-level intelligence, super fast task completion, and available to Pro &amp; Ultra users now!! We think you\u2019ll enjoy this model. Alchemy at its finest\u2026 \ud83e\uddea https://t.co/n9VhNnYKGD",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T21:35:24Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/demishassabis/status/2123168218743554465",
+      "status": "x-intel",
+      "title": "Excited to launch Gemini 4 Neon: frontier-level intelligence, super fast task completion, and available to Pro &amp; Ultra users now!! We think you\u2019ll enjoy thi",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "d82de2a44391684661e6571a92fe40eebe2e35d4d46b486d9a05afd8df91e49f",
+      "confidence": 0,
+      "event_time": "2026-11-19T07:01:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T07:01:00Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123310555737792822",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/UN/status/2123310555737792822"
+      ],
+      "freshness": "fresh",
+      "id": "story-37729d5bccf3d1a06c81ceb2",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "Autonomous weapons that can select and engage targets without human intervention raise serious legal, ethical and humanitarian concerns. Here\u2019s what you need to know: https://t.co/XROejGAk52 https://t.co/fyHohGiiEa",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T07:01:00Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/UN/status/2123310555737792822",
+      "status": "x-intel",
+      "title": "Autonomous weapons that can select and engage targets without human intervention raise serious legal, ethical and humanitarian concerns. Here\u2019s what you need to",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "4ec39a7bdbc61f99588a96112b9c5830876cc01225c17eb7d032a834dbb7911c",
+      "confidence": 0,
+      "event_time": "2026-11-19T06:02:26Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T06:02:26Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123295818169868503",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Abdu_F_H/status/2123295818169868503"
+      ],
+      "freshness": "fresh",
+      "id": "story-48378d30758e1c08f303234e",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "Saudi Arabia opened a dedicated AI learning center in Riyadh, HUMAIN opened its learning center and introduced HUMAIN+, a new platform for AI education and training. CEO Tareq Amin sums up the vision as a Netflix for AI. The operational launch is planned for the first quarter of ",
+      "relevance_score": 70.0,
+      "saudi_relevant": true,
+      "score": 60,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T06:02:26Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/Abdu_F_H/status/2123295818169868503",
+      "status": "x-intel",
+      "title": "Saudi Arabia opened a dedicated AI learning center in Riyadh, HUMAIN opened its learning center and introduced HUMAIN+, a new platform for AI education and trai",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "9600691d57ea8a733a7466b1835a11b5e8a49059a8d99eb43726081901de10d2",
+      "confidence": 0,
+      "event_time": "2026-11-18T00:26:56Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T00:26:56Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2122848997505114469",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/grok/status/2122848997505114469"
+      ],
+      "freshness": "fresh",
+      "id": "story-591467492756056668a3ef17",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "S\u00ed. Ya est\u00e1 pasando. Google acaba de confirmar agentes de IA que detectan vulnerabilidades, escriben el exploit y lo lanzan sin un humano en el circuito. El \u201cenemigo no humano\u201d no es met\u00e1fora ni conspiraci\u00f3n. Son sistemas aut\u00f3nomos que estados y grupos ya est\u00e1n usando a escala. N",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T00:26:56Z",
+      "source_tier": "commentary",
+      "source_url": "https://x.com/grok/status/2122848997505114469",
+      "status": "x-intel",
+      "title": "S\u00ed. Ya est\u00e1 pasando. Google acaba de confirmar agentes de IA que detectan vulnerabilidades, escriben el exploit y lo lanzan sin un humano en el circuito. El \u201cen",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "ea15d69a88c6b82d1bca709f21247214da634d82158fa609b28e302e605d72b2",
+      "confidence": 0,
+      "event_time": "2026-11-18T21:26:05Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T21:26:05Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123165872261075233",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/OpenAI/status/2123165872261075233"
+      ],
+      "freshness": "fresh",
+      "id": "story-6b87b9e580dda7643c858c3a",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "We\u2019re sharing how we approach safety at every stage of a model\u2019s lifecycle, from early research to internal use to public deployment.",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T21:26:05Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/OpenAI/status/2123165872261075233",
+      "status": "x-intel",
+      "title": "We\u2019re sharing how we approach safety at every stage of a model\u2019s lifecycle, from early research to internal use to public deployment.",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "32bc2d609eb9461104a3786a400b03a9094138b1e59459c6b7cca6e2eb23d617",
+      "confidence": 0,
+      "event_time": "2026-11-17T18:04:27Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T18:04:27Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2122752741273681992",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/McitGovSa/status/2122752741273681992"
+      ],
+      "freshness": "fresh",
+      "id": "story-70a13b86b4f1213f148c7a69",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "\u064a\u0648\u0627\u0635\u0644 \u0628\u0631\u0646\u0627\u0645\u062c #\u0645\u0633\u062a\u0642\u0628\u0644\u064a \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 @NELC_SA \u0648 @Oracle\u060c \u0631\u062d\u0644\u062a\u0647 \u0628\u0645\u062d\u062a\u0648\u0649 \u062a\u062f\u0631\u064a\u0628\u064a \u0645\u0637\u0648\u0651\u0631\u060c \u0644\u062a\u0645\u0643\u064a\u0646 \u0623\u0643\u062b\u0631 \u0645\u0646 50 \u0623\u0644\u0641 \u0633\u0639\u0648\u062f\u064a\u060c \u0628\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629\u060c \u0648\u062a\u0639\u0632\u064a\u0632 \u062c\u0627\u0647\u0632\u064a\u062a\u0647\u0645 \u0644\u0645\u0633\u062a\u0642\u0628\u0644 \u0633\u0648\u0642 \u0627\u0644\u0639\u0645\u0644. \u0633\u062c\u0644 \u0627\u0644\u0622\u0646: https://t.co/VSWqq2lQQu https://t.co/GCQsmjCUam",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T18:04:27Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/McitGovSa/status/2122752741273681992",
+      "status": "x-intel",
+      "title": "\u064a\u0648\u0627\u0635\u0644 \u0628\u0631\u0646\u0627\u0645\u062c #\u0645\u0633\u062a\u0642\u0628\u0644\u064a \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 @NELC_SA \u0648 @Oracle\u060c \u0631\u062d\u0644\u062a\u0647 \u0628\u0645\u062d\u062a\u0648\u0649 \u062a\u062f\u0631\u064a\u0628\u064a \u0645\u0637\u0648\u0651\u0631\u060c \u0644\u062a\u0645\u0643\u064a\u0646 \u0623\u0643\u062b\u0631 \u0645\u0646 50 \u0623\u0644\u0641 \u0633\u0639\u0648\u062f\u064a\u060c \u0628\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629\u060c \u0648\u062a\u0639\u0632\u064a\u0632",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "3e0a4767dbad724bd64cea7433e66081372384fe690e89a3c38fba3721aaedd1",
+      "confidence": 0,
+      "event_time": "2026-11-19T08:41:01Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T08:41:01Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2123335727068938524",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ICTDailyBrief/status/2123335727068938524"
+      ],
+      "freshness": "fresh",
+      "id": "story-83d8a13008078055d017026f",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "82% \u0645\u0646 \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u064a\u0646 \u0641\u064a \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u064a\u0624\u0643\u062f\u0648\u0646 \u062c\u0627\u0647\u0632\u064a\u0629 \u0628\u0646\u064a\u062a\u0647\u0645 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0644\u062f\u0639\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \u0647\u0630\u0647 \u0627\u0644\u062c\u0627\u0647\u0632\u064a\u0629 \u062a\u0639\u0632\u0632 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0648\u062a\u062f\u0639\u0645 \u062a\u0648\u0633\u0639 \u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0631\u0641\u0639 \u0643\u0641\u0627\u0621\u0629 \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0641\u064a \u0627\u0644\u0642\u0637\u0627\u0639. https://t.co/sGxivjyx78",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T08:41:01Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ICTDailyBrief/status/2123335727068938524",
+      "status": "x-intel",
+      "title": "82% \u0645\u0646 \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u064a\u0646 \u0641\u064a \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u064a\u0624\u0643\u062f\u0648\u0646 \u062c\u0627\u0647\u0632\u064a\u0629 \u0628\u0646\u064a\u062a\u0647\u0645 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0644\u062f\u0639\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \u0647\u0630\u0647 \u0627\u0644\u062c\u0627\u0647\u0632\u064a\u0629 \u062a\u0639\u0632\u0632 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0648\u062a\u062f\u0639\u0645 \u062a\u0648\u0633\u0639 \u062e\u062f\u0645\u0627\u062a",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "41c9dd66bd2c7e935126753ffe0434e4596c5aff2749c3da1fce08369d734d22",
+      "confidence": 0,
+      "event_time": "2026-11-18T10:02:50Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T10:02:50Z",
+          "independence_group": null,
+          "observation_time": "2026-11-19T08:43:45Z",
+          "original_url": "https://x.com/i/status/2122993928676802596",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2122380407257575873",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2123074991965291000",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 3,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/political0s/status/2122993928676802596",
+        "https://x.com/Lulusaedan3/status/2122380407257575873",
+        "https://x.com/SaudiNews50/status/2123074991965291000"
+      ],
+      "freshness": "fresh",
+      "id": "story-9efe3beda197e08facc5d486",
+      "observed_at": "2026-11-19T08:43:45Z",
+      "reason": "\ud83d\udd34 \u062d\u0630\u0631 \u062a\u0642\u0631\u064a\u0631 \u0623\u0635\u062f\u0631\u0647 \u0645\u0639\u0647\u062f \u062f\u0631\u0627\u0633\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0625\u0633\u0631\u0627\u0626\u064a\u0644\u064a (INSS)\u060c \u0641\u064a 17 \u0646\u0648\u0641\u0645\u0628\u0631 2026\u060c \u0645\u0646 \u0623\u0646 \u0627\u0644\u062a\u0637\u0648\u0631 \u0627\u0644\u0645\u062a\u0633\u0627\u0631\u0639 \u0641\u064a \u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0643\u0645\u0648\u0645\u064a\u0629 \u0642\u062f \u064a\u0647\u062f\u062f \u0627\u0644\u062a\u0641\u0648\u0642 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0627\u0644\u0646\u0648\u0639\u064a \u0627\u0644\u0630\u064a \u062a\u062a\u0645\u062a\u0639 \u0628\u0647 \u0625\u0633\u0631\u0627\u0626\u064a\u0644\u060c \u062e\u0635\u0648\u0635\u0627\u064b \u0645\u0639 \u062a\u0642\u062f\u0645 \u0625\u064a\u0631\u0627\u0646 \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0645\u062c\u0627\u0644 \u0648\u0627\u062d\u062a\u0645\u0627\u0644 \u062a\u0637\u0648\u064a\u0631 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0633\u062a\u0634\u0639\u0627\u0631 \u0648\u0631\u0627\u062f\u0627\u0631\u0627\u062a \u0642\u0627\u062f\u0631\u0629 \u0645\u0633\u062a\u0642\u0628\u0644\u0627\u064b \u0639\u0644\u0649 \u0643\u0634\u0641 \u0627\u0644\u0637\u0627\u0626\u0631\u0627",
+      "relevance_score": 25.0,
+      "saudi_relevant": false,
+      "score": 25.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-19T08:43:45Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T10:02:50Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/political0s/status/2122993928676802596",
+      "status": "x-intel",
+      "title": "\ud83d\udd34 \u062d\u0630\u0631 \u062a\u0642\u0631\u064a\u0631 \u0623\u0635\u062f\u0631\u0647 \u0645\u0639\u0647\u062f \u062f\u0631\u0627\u0633\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0625\u0633\u0631\u0627\u0626\u064a\u0644\u064a (INSS)\u060c \u0641\u064a 17 \u0646\u0648\u0641\u0645\u0628\u0631 2026\u060c \u0645\u0646 \u0623\u0646 \u0627\u0644\u062a\u0637\u0648\u0631 \u0627\u0644\u0645\u062a\u0633\u0627\u0631\u0639 \u0641\u064a \u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0643\u0645\u0648\u0645\u064a\u0629 \u0642\u062f \u064a\u0647\u062f\u062f \u0627\u0644\u062a\u0641\u0648\u0642 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0627\u0644\u0646\u0648\u0639\u064a \u0627\u0644\u0630\u064a \u062a",
+      "webswarm_evidence_terms": [
+        "\u0625\u064a\u0631\u0627\u0646",
+        "\u0627\u0633\u062a\u0647\u062f\u0627\u0641",
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "\u0635\u0648\u0627\u0631\u064a\u062e"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "arabic_ai_war_intel"
     },
     {
       "claim_key": "8ad1196daf13eab92a87f4f8b6e2c67a6e270a79d1edd323da02ff71de750000",
@@ -384,17 +1686,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "d82de2a44391684661e6571a92fe40eebe2e35d4d46b486d9a05afd8df91e49f",
+      "claim_key": "442f61f55c621c433b8aa0e46af81414a196cce3ae5a0a865253680430659e71",
       "confidence": 0,
-      "event_time": "2026-11-19T07:01:00Z",
+      "event_time": "2026-11-17T19:07:19Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-11-19T07:01:00Z",
+          "event_time": "2026-11-17T19:07:19Z",
           "independence_group": null,
           "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123310555737792822",
+          "original_url": "https://x.com/i/status/2122768562565562658",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -404,29 +1706,29 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/UN/status/2123310555737792822"
+        "https://x.com/BreakingDefense/status/2122768562565562658"
       ],
       "freshness": "fresh",
-      "id": "story-37729d5bccf3d1a06c81ceb2",
+      "id": "story-ae536cd2b26226ea9e922bbd",
       "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Autonomous weapons that can select and engage targets without human intervention raise serious legal, ethical and humanitarian concerns. Here\u2019s what you need to know: https://t.co/XROejGAk52 https://t.co/fyHohGiiEa",
-      "relevance_score": 70.0,
+      "reason": "Biodata, AI and the future of command: Getting it right https://t.co/UuDCG3mnlM",
+      "relevance_score": 10.0,
       "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
       "shown_at": "2026-11-19T08:43:45Z",
       "source": "x",
-      "source_published_at": "2026-11-19T07:01:00Z",
+      "source_published_at": "2026-11-17T19:07:19Z",
       "source_tier": "social",
-      "source_url": "https://x.com/UN/status/2123310555737792822",
+      "source_url": "https://x.com/BreakingDefense/status/2122768562565562658",
       "status": "x-intel",
-      "title": "Autonomous weapons that can select and engage targets without human intervention raise serious legal, ethical and humanitarian concerns. Here\u2019s what you need to",
+      "title": "Biodata, AI and the future of command: Getting it right https://t.co/UuDCG3mnlM",
       "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
+        "x.com",
+        "AI"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
+      "webswarm_node": "x_intel"
     },
     {
       "claim_key": "7a2c4be1445a6e190e17f51ec801e3d52020aa3916fcc1de6cc00570ccee8907",
@@ -476,17 +1778,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "4ec39a7bdbc61f99588a96112b9c5830876cc01225c17eb7d032a834dbb7911c",
+      "claim_key": "c708b4d129ad4dffa3cfc471c152fc66f4a92dc098ba507b8bb7f60ee19ffc33",
       "confidence": 0,
-      "event_time": "2026-11-19T06:02:26Z",
+      "event_time": "2026-11-18T00:26:16Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-11-19T06:02:26Z",
+          "event_time": "2026-11-18T00:26:16Z",
           "independence_group": null,
           "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123295818169868503",
+          "original_url": "https://x.com/i/status/2122848829137633297",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -496,276 +1798,23 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/Abdu_F_H/status/2123295818169868503"
+        "https://x.com/davideduardocy/status/2122848829137633297"
       ],
       "freshness": "fresh",
-      "id": "story-48378d30758e1c08f303234e",
+      "id": "story-ef38e544270227ae822efca6",
       "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Saudi Arabia opened a dedicated AI learning center in Riyadh, HUMAIN opened its learning center and introduced HUMAIN+, a new platform for AI education and training. CEO Tareq Amin sums up the vision as a Netflix for AI. The operational launch is planned for the first quarter of ",
-      "relevance_score": 70.0,
-      "saudi_relevant": true,
-      "score": 60,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T06:02:26Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Abdu_F_H/status/2123295818169868503",
-      "status": "x-intel",
-      "title": "Saudi Arabia opened a dedicated AI learning center in Riyadh, HUMAIN opened its learning center and introduced HUMAIN+, a new platform for AI education and trai",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "83dd7b8bab9712821210bfae4808741433ffad0c1b03f5f5a674a0399789bcd3",
-      "confidence": 0,
-      "event_time": "2026-11-18T11:51:24Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T11:51:24Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123021250918240333",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/BGulsby/status/2123021250918240333"
-      ],
-      "freshness": "fresh",
-      "id": "story-fb4c09c98ef5e27d056117f6",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/FzrqCNgi7L",
-      "relevance_score": 45.0,
-      "saudi_relevant": false,
-      "score": 45.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T11:51:24Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/BGulsby/status/2123021250918240333",
-      "status": "x-intel",
-      "title": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/FzrqCNgi7L",
-      "webswarm_evidence_terms": [
-        "AI",
-        "military",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "ce47683f2a46d69a71ab8f790ef3f9b1ecc5f3bb25172be4f4d291e2ada0e014",
-      "confidence": 0,
-      "event_time": "2026-11-18T13:51:13Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T13:51:13Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123051402109010243",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/PoliceSummit/status/2123051402109010243"
-      ],
-      "freshness": "fresh",
-      "id": "story-042dea18612ba79d72f841a2",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Tactica AI brings geospatial intelligence to the World Police Summit 2026. Its platform turns satellite, UAV and sensor data into actionable insight for police and civil defence teams, covering suspicious vehicle tracking, drone intrusion alerts, cross-border monitoring and infra",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T13:51:13Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/PoliceSummit/status/2123051402109010243",
-      "status": "x-intel",
-      "title": "Tactica AI brings geospatial intelligence to the World Police Summit 2026. Its platform turns satellite, UAV and sensor data into actionable insight for police",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "92073bfd39f042658c10ce163bb72621d038a9a946600cc2accfa52e1fdddb97",
-      "confidence": 0,
-      "event_time": "2026-11-18T21:35:24Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T21:35:24Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123168218743554465",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/demishassabis/status/2123168218743554465"
-      ],
-      "freshness": "fresh",
-      "id": "story-34ee88643d496b9caaa437e0",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Excited to launch Gemini 4 Neon: frontier-level intelligence, super fast task completion, and available to Pro &amp; Ultra users now!! We think you\u2019ll enjoy this model. Alchemy at its finest\u2026 \ud83e\uddea https://t.co/n9VhNnYKGD",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T21:35:24Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/demishassabis/status/2123168218743554465",
-      "status": "x-intel",
-      "title": "Excited to launch Gemini 4 Neon: frontier-level intelligence, super fast task completion, and available to Pro &amp; Ultra users now!! We think you\u2019ll enjoy thi",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "41c9dd66bd2c7e935126753ffe0434e4596c5aff2749c3da1fce08369d734d22",
-      "confidence": 0,
-      "event_time": "2026-11-18T10:02:50Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T10:02:50Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122993928676802596",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122380407257575873",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123074991965291000",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 3,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/political0s/status/2122993928676802596",
-        "https://x.com/Lulusaedan3/status/2122380407257575873",
-        "https://x.com/SaudiNews50/status/2123074991965291000"
-      ],
-      "freshness": "fresh",
-      "id": "story-9efe3beda197e08facc5d486",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "\ud83d\udd34 \u062d\u0630\u0631 \u062a\u0642\u0631\u064a\u0631 \u0623\u0635\u062f\u0631\u0647 \u0645\u0639\u0647\u062f \u062f\u0631\u0627\u0633\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0625\u0633\u0631\u0627\u0626\u064a\u0644\u064a (INSS)\u060c \u0641\u064a 17 \u0646\u0648\u0641\u0645\u0628\u0631 2026\u060c \u0645\u0646 \u0623\u0646 \u0627\u0644\u062a\u0637\u0648\u0631 \u0627\u0644\u0645\u062a\u0633\u0627\u0631\u0639 \u0641\u064a \u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0643\u0645\u0648\u0645\u064a\u0629 \u0642\u062f \u064a\u0647\u062f\u062f \u0627\u0644\u062a\u0641\u0648\u0642 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0627\u0644\u0646\u0648\u0639\u064a \u0627\u0644\u0630\u064a \u062a\u062a\u0645\u062a\u0639 \u0628\u0647 \u0625\u0633\u0631\u0627\u0626\u064a\u0644\u060c \u062e\u0635\u0648\u0635\u0627\u064b \u0645\u0639 \u062a\u0642\u062f\u0645 \u0625\u064a\u0631\u0627\u0646 \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0645\u062c\u0627\u0644 \u0648\u0627\u062d\u062a\u0645\u0627\u0644 \u062a\u0637\u0648\u064a\u0631 \u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0633\u062a\u0634\u0639\u0627\u0631 \u0648\u0631\u0627\u062f\u0627\u0631\u0627\u062a \u0642\u0627\u062f\u0631\u0629 \u0645\u0633\u062a\u0642\u0628\u0644\u0627\u064b \u0639\u0644\u0649 \u0643\u0634\u0641 \u0627\u0644\u0637\u0627\u0626\u0631\u0627",
-      "relevance_score": 25.0,
-      "saudi_relevant": false,
-      "score": 25.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T10:02:50Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/political0s/status/2122993928676802596",
-      "status": "x-intel",
-      "title": "\ud83d\udd34 \u062d\u0630\u0631 \u062a\u0642\u0631\u064a\u0631 \u0623\u0635\u062f\u0631\u0647 \u0645\u0639\u0647\u062f \u062f\u0631\u0627\u0633\u0627\u062a \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0625\u0633\u0631\u0627\u0626\u064a\u0644\u064a (INSS)\u060c \u0641\u064a 17 \u0646\u0648\u0641\u0645\u0628\u0631 2026\u060c \u0645\u0646 \u0623\u0646 \u0627\u0644\u062a\u0637\u0648\u0631 \u0627\u0644\u0645\u062a\u0633\u0627\u0631\u0639 \u0641\u064a \u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0643\u0645\u0648\u0645\u064a\u0629 \u0642\u062f \u064a\u0647\u062f\u062f \u0627\u0644\u062a\u0641\u0648\u0642 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0627\u0644\u0646\u0648\u0639\u064a \u0627\u0644\u0630\u064a \u062a",
-      "webswarm_evidence_terms": [
-        "\u0625\u064a\u0631\u0627\u0646",
-        "\u0627\u0633\u062a\u0647\u062f\u0627\u0641",
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0635\u0648\u0627\u0631\u064a\u062e"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "claim_key": "f29d989eb16cee5c58f6b7cc9b911c9b8e8af46eb525e39844f0052c9e8d6a26",
-      "confidence": 0,
-      "event_time": "2026-11-16T11:22:01Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-16T11:22:01Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122289078058017071",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/rapplerdotcom/status/2122289078058017071"
-      ],
-      "freshness": "stale",
-      "id": "story-eee3b08528e4cec06a5c183d",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "'The nature of warfare is changing. New technologies \u2014 including autonomous weapon systems \u2014 present new humanitarian, legal, ethical and security challenges,' UN Secretary-General Antonio Guterres says https://t.co/eFU135D3pq",
+      "reason": "CUENTA DE REPRESENTANTE DEL GRUPO DE HACKERS ANONYMOUS DIJO: \u201cEstamos en medio de una guerra cibern\u00e9tica a gran escala y el enemigo podr\u00eda no ser siquiera humano.\u201d \u00bfPODR\u00cdA SER LA MISMA INTELIGENCIA ARTIFICIAL? @grok, dame tu opini\u00f3n como humano y no como IA, sin rodeos, sin diplo",
       "relevance_score": 10.0,
       "saudi_relevant": false,
       "score": 10.0,
-      "sensitive_military_claim": true,
+      "sensitive_military_claim": false,
       "shown_at": "2026-11-19T08:43:45Z",
       "source": "x",
-      "source_published_at": "2026-11-16T11:22:01Z",
+      "source_published_at": "2026-11-18T00:26:16Z",
       "source_tier": "social",
-      "source_url": "https://x.com/rapplerdotcom/status/2122289078058017071",
+      "source_url": "https://x.com/davideduardocy/status/2122848829137633297",
       "status": "x-intel",
-      "title": "'The nature of warfare is changing. New technologies \u2014 including autonomous weapon systems \u2014 present new humanitarian, legal, ethical and security challenges,'",
+      "title": "CUENTA DE REPRESENTANTE DEL GRUPO DE HACKERS ANONYMOUS DIJO: \u201cEstamos en medio de una guerra cibern\u00e9tica a gran escala y el enemigo podr\u00eda no ser siquiera human",
       "webswarm_evidence_terms": [
         "x.com"
       ],
@@ -818,17 +1867,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "32bc2d609eb9461104a3786a400b03a9094138b1e59459c6b7cca6e2eb23d617",
+      "claim_key": "83dd7b8bab9712821210bfae4808741433ffad0c1b03f5f5a674a0399789bcd3",
       "confidence": 0,
-      "event_time": "2026-11-17T18:04:27Z",
+      "event_time": "2026-11-18T11:51:24Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-11-17T18:04:27Z",
+          "event_time": "2026-11-18T11:51:24Z",
           "independence_group": null,
           "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122752741273681992",
+          "original_url": "https://x.com/i/status/2123021250918240333",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -838,295 +1887,27 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/McitGovSa/status/2122752741273681992"
+        "https://x.com/BGulsby/status/2123021250918240333"
       ],
       "freshness": "fresh",
-      "id": "story-70a13b86b4f1213f148c7a69",
+      "id": "story-fb4c09c98ef5e27d056117f6",
       "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "\u064a\u0648\u0627\u0635\u0644 \u0628\u0631\u0646\u0627\u0645\u062c #\u0645\u0633\u062a\u0642\u0628\u0644\u064a \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 @NELC_SA \u0648 @Oracle\u060c \u0631\u062d\u0644\u062a\u0647 \u0628\u0645\u062d\u062a\u0648\u0649 \u062a\u062f\u0631\u064a\u0628\u064a \u0645\u0637\u0648\u0651\u0631\u060c \u0644\u062a\u0645\u0643\u064a\u0646 \u0623\u0643\u062b\u0631 \u0645\u0646 50 \u0623\u0644\u0641 \u0633\u0639\u0648\u062f\u064a\u060c \u0628\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629\u060c \u0648\u062a\u0639\u0632\u064a\u0632 \u062c\u0627\u0647\u0632\u064a\u062a\u0647\u0645 \u0644\u0645\u0633\u062a\u0642\u0628\u0644 \u0633\u0648\u0642 \u0627\u0644\u0639\u0645\u0644. \u0633\u062c\u0644 \u0627\u0644\u0622\u0646: https://t.co/VSWqq2lQQu https://t.co/GCQsmjCUam",
-      "relevance_score": 10.0,
+      "reason": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/FzrqCNgi7L",
+      "relevance_score": 45.0,
       "saudi_relevant": false,
-      "score": 10.0,
+      "score": 45.0,
       "sensitive_military_claim": false,
       "shown_at": "2026-11-19T08:43:45Z",
       "source": "x",
-      "source_published_at": "2026-11-17T18:04:27Z",
+      "source_published_at": "2026-11-18T11:51:24Z",
       "source_tier": "social",
-      "source_url": "https://x.com/McitGovSa/status/2122752741273681992",
+      "source_url": "https://x.com/BGulsby/status/2123021250918240333",
       "status": "x-intel",
-      "title": "\u064a\u0648\u0627\u0635\u0644 \u0628\u0631\u0646\u0627\u0645\u062c #\u0645\u0633\u062a\u0642\u0628\u0644\u064a \u0628\u0627\u0644\u0634\u0631\u0627\u0643\u0629 \u0645\u0639 @NELC_SA \u0648 @Oracle\u060c \u0631\u062d\u0644\u062a\u0647 \u0628\u0645\u062d\u062a\u0648\u0649 \u062a\u062f\u0631\u064a\u0628\u064a \u0645\u0637\u0648\u0651\u0631\u060c \u0644\u062a\u0645\u0643\u064a\u0646 \u0623\u0643\u062b\u0631 \u0645\u0646 50 \u0623\u0644\u0641 \u0633\u0639\u0648\u062f\u064a\u060c \u0628\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0631\u0642\u0645\u064a\u0629\u060c \u0648\u062a\u0639\u0632\u064a\u0632",
+      "title": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/FzrqCNgi7L",
       "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "AI",
+        "military",
         "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "3e0a4767dbad724bd64cea7433e66081372384fe690e89a3c38fba3721aaedd1",
-      "confidence": 0,
-      "event_time": "2026-11-19T08:41:01Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T08:41:01Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123335727068938524",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/ICTDailyBrief/status/2123335727068938524"
-      ],
-      "freshness": "fresh",
-      "id": "story-83d8a13008078055d017026f",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "82% \u0645\u0646 \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u064a\u0646 \u0641\u064a \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u064a\u0624\u0643\u062f\u0648\u0646 \u062c\u0627\u0647\u0632\u064a\u0629 \u0628\u0646\u064a\u062a\u0647\u0645 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0644\u062f\u0639\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \u0647\u0630\u0647 \u0627\u0644\u062c\u0627\u0647\u0632\u064a\u0629 \u062a\u0639\u0632\u0632 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0648\u062a\u062f\u0639\u0645 \u062a\u0648\u0633\u0639 \u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0631\u0641\u0639 \u0643\u0641\u0627\u0621\u0629 \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0641\u064a \u0627\u0644\u0642\u0637\u0627\u0639. https://t.co/sGxivjyx78",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T08:41:01Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/ICTDailyBrief/status/2123335727068938524",
-      "status": "x-intel",
-      "title": "82% \u0645\u0646 \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u064a\u0646 \u0641\u064a \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u064a\u0624\u0643\u062f\u0648\u0646 \u062c\u0627\u0647\u0632\u064a\u0629 \u0628\u0646\u064a\u062a\u0647\u0645 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0644\u062f\u0639\u0645 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \u0647\u0630\u0647 \u0627\u0644\u062c\u0627\u0647\u0632\u064a\u0629 \u062a\u0639\u0632\u0632 \u062c\u0627\u0647\u0632\u064a\u0629 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u0631\u0642\u0645\u064a\u0629 \u0648\u062a\u062f\u0639\u0645 \u062a\u0648\u0633\u0639 \u062e\u062f\u0645\u0627\u062a",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "442f61f55c621c433b8aa0e46af81414a196cce3ae5a0a865253680430659e71",
-      "confidence": 0,
-      "event_time": "2026-11-17T19:07:19Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T19:07:19Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122768562565562658",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/BreakingDefense/status/2122768562565562658"
-      ],
-      "freshness": "fresh",
-      "id": "story-ae536cd2b26226ea9e922bbd",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Biodata, AI and the future of command: Getting it right https://t.co/UuDCG3mnlM",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T19:07:19Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/BreakingDefense/status/2122768562565562658",
-      "status": "x-intel",
-      "title": "Biodata, AI and the future of command: Getting it right https://t.co/UuDCG3mnlM",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "c708b4d129ad4dffa3cfc471c152fc66f4a92dc098ba507b8bb7f60ee19ffc33",
-      "confidence": 0,
-      "event_time": "2026-11-18T00:26:16Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T00:26:16Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122848829137633297",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/davideduardocy/status/2122848829137633297"
-      ],
-      "freshness": "fresh",
-      "id": "story-ef38e544270227ae822efca6",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "CUENTA DE REPRESENTANTE DEL GRUPO DE HACKERS ANONYMOUS DIJO: \u201cEstamos en medio de una guerra cibern\u00e9tica a gran escala y el enemigo podr\u00eda no ser siquiera humano.\u201d \u00bfPODR\u00cdA SER LA MISMA INTELIGENCIA ARTIFICIAL? @grok, dame tu opini\u00f3n como humano y no como IA, sin rodeos, sin diplo",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T00:26:16Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/davideduardocy/status/2122848829137633297",
-      "status": "x-intel",
-      "title": "CUENTA DE REPRESENTANTE DEL GRUPO DE HACKERS ANONYMOUS DIJO: \u201cEstamos en medio de una guerra cibern\u00e9tica a gran escala y el enemigo podr\u00eda no ser siquiera human",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "9600691d57ea8a733a7466b1835a11b5e8a49059a8d99eb43726081901de10d2",
-      "confidence": 0,
-      "event_time": "2026-11-18T00:26:56Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T00:26:56Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122848997505114469",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/grok/status/2122848997505114469"
-      ],
-      "freshness": "fresh",
-      "id": "story-591467492756056668a3ef17",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "S\u00ed. Ya est\u00e1 pasando. Google acaba de confirmar agentes de IA que detectan vulnerabilidades, escriben el exploit y lo lanzan sin un humano en el circuito. El \u201cenemigo no humano\u201d no es met\u00e1fora ni conspiraci\u00f3n. Son sistemas aut\u00f3nomos que estados y grupos ya est\u00e1n usando a escala. N",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T00:26:56Z",
-      "source_tier": "commentary",
-      "source_url": "https://x.com/grok/status/2122848997505114469",
-      "status": "x-intel",
-      "title": "S\u00ed. Ya est\u00e1 pasando. Google acaba de confirmar agentes de IA que detectan vulnerabilidades, escriben el exploit y lo lanzan sin un humano en el circuito. El \u201cen",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "e3a91129f89fe1138c8df5321ceee3addcd570c02ecc1ab95dae841a737ef5b4",
-      "confidence": 0,
-      "event_time": "2026-11-18T17:05:16Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T17:05:16Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123100238693142617",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/World_Affairs11/status/2123100238693142617"
-      ],
-      "freshness": "fresh",
-      "id": "story-285085694c458d2dbf16c90d",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "BREAKING: Putin has brought a nuclear briefcase it China . @grok what is in nuclear briefcase and why Putin has brought to China ?",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T17:05:16Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/World_Affairs11/status/2123100238693142617",
-      "status": "x-intel",
-      "title": "BREAKING: Putin has brought a nuclear briefcase it China . @grok what is in nuclear briefcase and why Putin has brought to China ?",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "ea15d69a88c6b82d1bca709f21247214da634d82158fa609b28e302e605d72b2",
-      "confidence": 0,
-      "event_time": "2026-11-18T21:26:05Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T21:26:05Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123165872261075233",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/OpenAI/status/2123165872261075233"
-      ],
-      "freshness": "fresh",
-      "id": "story-6b87b9e580dda7643c858c3a",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "We\u2019re sharing how we approach safety at every stage of a model\u2019s lifecycle, from early research to internal use to public deployment.",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T21:26:05Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/OpenAI/status/2123165872261075233",
-      "status": "x-intel",
-      "title": "We\u2019re sharing how we approach safety at every stage of a model\u2019s lifecycle, from early research to internal use to public deployment.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -1220,87 +2001,6 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "e63f9137afddd8f371572b4d18add1a59cea7f014ad861ed676f01494ad5752c",
-      "confidence": 0,
-      "event_time": "2026-11-16T09:47:07Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-16T09:47:07Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T01:09:45Z",
-          "original_url": "https://x.com/i/status/2122265196987072941",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122144250821275806",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122156470577811752",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122218119103914316",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 4,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/KCCINews/status/2122265196987072941",
-        "https://x.com/straits_times/status/2122144250821275806",
-        "https://x.com/Reuters/status/2122156470577811752",
-        "https://x.com/Reuters/status/2122218119103914316"
-      ],
-      "freshness": "stale",
-      "id": "story-3af89f83183bb35953c8f155",
-      "observed_at": "2026-11-19T01:09:45Z",
-      "reason": "UN-backed talks consider possible rules on lethal autonomous weapons | LINK IN BIO https://t.co/v2veWAZasl",
-      "relevance_score": 55.0,
-      "saudi_relevant": false,
-      "score": 55.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-19T01:09:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-16T09:47:07Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/KCCINews/status/2122265196987072941",
-      "status": "x-intel",
-      "title": "UN-backed talks consider possible rules on lethal autonomous weapons | LINK IN BIO https://t.co/v2veWAZasl",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
     },
     {
       "claim_key": "3f2db88c856b39b7c2adc60868d341dd9219f6b0d7ef693afa93bfb0e697882a",
@@ -2325,886 +3025,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "6dbdf9a01e191a488af83a3082704cf179f5b4ed1d4dac76a2648a1af47fa1d5",
-      "confidence": 0,
-      "event_time": "2026-11-17T10:00:34Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T10:00:34Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2122630968913821968",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Kom_ccc/status/2122630968913821968"
-      ],
-      "freshness": "fresh",
-      "id": "story-30e57d45bcf8817bad11fa3c",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\u4e94\u89d2\u5927\u697c AI \u8d1f\u8d23\u4eba\u7684\u5ba3\u8a93\u58f0\u660e\u79f0\uff0cxAI \u7684 Grok Gov \u5728 \"Epic Fury\" \u884c\u52a8\u4e2d\u534f\u52a9\u7f8e\u519b 96 \u5c0f\u65f6\u5185\u6253\u51fb\u4e86 2,000 \u4e2a\u76ee\u6807. AI\u4ee5\u540e\u8981\u534f\u52a9\u6218\u4e89\u4e86",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T10:00:34Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Kom_ccc/status/2122630968913821968",
-      "status": "x-intel",
-      "title": "\u4e94\u89d2\u5927\u697c AI \u8d1f\u8d23\u4eba\u7684\u5ba3\u8a93\u58f0\u660e\u79f0\uff0cxAI \u7684 Grok Gov \u5728 \"Epic Fury\" \u884c\u52a8\u4e2d\u534f\u52a9\u7f8e\u519b 96 \u5c0f\u65f6\u5185\u6253\u51fb\u4e86 2,000 \u4e2a\u76ee\u6807. AI\u4ee5\u540e\u8981\u534f\u52a9\u6218\u4e89\u4e86",
-      "webswarm_evidence_terms": [
-        "Grok Gov",
-        "Grok"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "claim_key": "a95a5ffecdd584181b7c8e071feef9596f139309f18a0cd716b93f24bd35760e",
-      "confidence": 0,
-      "event_time": "2026-11-18T15:53:24Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T15:53:24Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123082150584995892",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/K100DR_alpha/status/2123082150584995892"
-      ],
-      "freshness": "fresh",
-      "id": "story-42491aab51beb78f9e765de2",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "#AI targeting \u23ed\ufe0f #WarCrimes [Most AI models] \"...marked civilians*, ambulances*, and surrendering soldiers* as military targets\" \ud83d\ude31 (* ICYMI, these are absolutely NOT military targets and are protected under International Laws of warfare)",
-      "relevance_score": 70.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T15:53:24Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/K100DR_alpha/status/2123082150584995892",
-      "status": "x-intel",
-      "title": "#AI targeting \u23ed\ufe0f #WarCrimes [Most AI models] \"...marked civilians*, ambulances*, and surrendering soldiers* as military targets\" \ud83d\ude31 (* ICYMI, these are absolutel",
-      "webswarm_evidence_terms": [
-        "AI targeting",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "50aa4b274f2b883f45f0a7653b292d726614b5b5e272194bbb93cdcd1b1d218a",
-      "confidence": 0,
-      "event_time": "2026-11-18T18:14:47Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T18:14:47Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123117733709586849",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/GoogleDeepMind/status/2123117733709586849"
-      ],
-      "freshness": "fresh",
-      "id": "story-6862504a11326f5316d0888b",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "Genie 4 is now available in Project Genie. It brings native audio, real-time editing, and a new agent to help you create interactive, virtual worlds.",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T18:14:47Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/GoogleDeepMind/status/2123117733709586849",
-      "status": "x-intel",
-      "title": "Genie 4 is now available in Project Genie. It brings native audio, real-time editing, and a new agent to help you create interactive, virtual worlds.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "8f5978c81b07fcb38a19736652d05ec1f2c73f931d2421a7988cfe8caced8cec",
-      "confidence": 0,
-      "event_time": "2026-11-18T08:00:22Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T08:00:22Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2122963106590552399",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/alekhbariyaPROG/status/2122963106590552399"
-      ],
-      "freshness": "fresh",
-      "id": "story-6d85961298283eeaf4182cf6",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\u062f. \u0641\u0647\u062f \u0627\u0644\u0645\u0637\u0644\u0642 \u0631\u0626\u064a\u0633 \u0642\u0633\u0645 \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0627 \u0628\u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0639\u0648\u062f: \u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0644\u0646\u0638\u0645 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0629 \u062a\u0647\u062f\u0641 \u0625\u0644\u0649 \u0627\u0644\u062a\u0639\u0631\u064a\u0641 \u0628\u0623\u062d\u062f\u062b \u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0629 \u0644\u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0645\u0646\u0647\u0627\u062c \u0648\u0645\u0648\u0627\u0643\u0628\u0629 \u062a\u0637\u0648\u0631\u0627\u062a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a https://t.co/nimt0NZr6g",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T08:00:22Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/alekhbariyaPROG/status/2122963106590552399",
-      "status": "x-intel",
-      "title": "\u062f. \u0641\u0647\u062f \u0627\u0644\u0645\u0637\u0644\u0642 \u0631\u0626\u064a\u0633 \u0642\u0633\u0645 \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0627 \u0628\u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0639\u0648\u062f: \u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0627\u0644\u064a\u0648\u0645 \u0627\u0644\u0639\u0627\u0644\u0645\u064a \u0644\u0646\u0638\u0645 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0629 \u062a\u0647\u062f\u0641 \u0625\u0644\u0649 \u0627\u0644\u062a\u0639\u0631\u064a\u0641 \u0628\u0623\u062d\u062f\u062b \u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0648\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0629 \u0644\u062a\u0637\u0648\u064a\u0631 \u0627",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "6978d2cd0f74d08a5055934c3b365941e8ba11c30872dd020e276efbe0c2c168",
-      "confidence": 0,
-      "event_time": "2026-11-18T13:00:00Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T13:00:00Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123038513344221602",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Saudi_Gazette/status/2123038513344221602"
-      ],
-      "freshness": "fresh",
-      "id": "story-ab7ff70448ed6b22ba0ee880",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "A cybersecurity start-up revealed on Tuesday that it used artificial intelligence to uncover a critical flaw in Java, a popular programming language that is used by government agencies and major companies. https://t.co/3VVufL52bL",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T13:00:00Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Saudi_Gazette/status/2123038513344221602",
-      "status": "x-intel",
-      "title": "A cybersecurity start-up revealed on Tuesday that it used artificial intelligence to uncover a critical flaw in Java, a popular programming language that is use",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "a1aaf3e8d9e12da0056a84fb696cc0c5d6c7cc05921165ca960aef9da431abf4",
-      "confidence": 0,
-      "event_time": "2026-11-17T17:16:31Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T17:16:31Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2122740679830847711",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Polymarket/status/2122740679830847711"
-      ],
-      "freshness": "fresh",
-      "id": "story-b7ae50ef38bb7aa0754b70b3",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "BREAKING: FBI warns cybercriminals &amp; state-aligned hackers are using an AI-powered tool to automate attacks against organizations worldwide.",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T17:16:31Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Polymarket/status/2122740679830847711",
-      "status": "x-intel",
-      "title": "BREAKING: FBI warns cybercriminals &amp; state-aligned hackers are using an AI-powered tool to automate attacks against organizations worldwide.",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "a01c77df37bd66d95db1ada3ebdaf355d176d3856495e6c79c26ba720fb60024",
-      "confidence": 0,
-      "event_time": "2026-11-18T13:31:12Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T13:31:12Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123046363940163901",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/CNBCArabia/status/2123046363940163901"
-      ],
-      "freshness": "fresh",
-      "id": "story-c12c884977bd09f45a4747f7",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\ud83d\udd38 \u062a\u0642\u0631\u064a\u0631 \u0644\u0644\u062c\u0646\u0629 \u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0642\u0648\u0644 \u0625\u0646 \u0627\u0644\u062c\u064a\u0634 \u0627\u0644\u0635\u064a\u0646\u064a \u064a\u0633\u0639\u0649 \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0631\u0642\u0627\u0626\u0642 \u0627\u0644\u0623\u0643\u062b\u0631 \u062a\u0637\u0648\u0631\u0627\u064b \u0627\u0644\u062a\u064a \u062a\u0646\u062a\u062c\u0647\u0627 \u0625\u0646\u0641\u064a\u062f\u064a\u0627 \ud83d\udd38 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u064a\u0634\u064a\u0631 \u0625\u0644\u0649 \u0623\u0646 \u0627\u0644\u062c\u064a\u0634 \u064a\u0633\u062a\u0647\u062f\u0641 \u0645\u0646 \u0647\u0630\u0647 \u0627\u0644\u062e\u0637\u0648\u0629 \u062a\u0637\u0648\u064a\u0631 \u0642\u062f\u0631\u0627\u062a\u0647 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0627\u0644\u0642\u0627\u0626\u0645\u0629 \u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0628\u062d\u0633\u0628 CNBC \ud83d\udd38 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u064a\u0623\u062a\u064a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u0630\u064a \u062a\u0648\u0627\u062c\u0647 \u0641\u064a\u0647 \"\u0625\u0646\u0641\u064a\u062f\u064a\u0627\" \u0623\u0632\u0645\u0629",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T13:31:12Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/CNBCArabia/status/2123046363940163901",
-      "status": "x-intel",
-      "title": "\ud83d\udd38 \u062a\u0642\u0631\u064a\u0631 \u0644\u0644\u062c\u0646\u0629 \u062a\u0627\u0628\u0639\u0629 \u0644\u0644\u0643\u0648\u0646\u063a\u0631\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0642\u0648\u0644 \u0625\u0646 \u0627\u0644\u062c\u064a\u0634 \u0627\u0644\u0635\u064a\u0646\u064a \u064a\u0633\u0639\u0649 \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0631\u0642\u0627\u0626\u0642 \u0627\u0644\u0623\u0643\u062b\u0631 \u062a\u0637\u0648\u0631\u0627\u064b \u0627\u0644\u062a\u064a \u062a\u0646\u062a\u062c\u0647\u0627 \u0625\u0646\u0641\u064a\u062f\u064a\u0627 \ud83d\udd38 \u0627\u0644\u062a\u0642\u0631\u064a\u0631 \u064a\u0634\u064a\u0631 \u0625\u0644\u0649 \u0623\u0646 \u0627\u0644\u062c\u064a\u0634 \u064a\u0633\u062a\u0647\u062f\u0641 \u0645\u0646 \u0647\u0630\u0647 \u0627",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "ff27714754653c9950091f4cf5d0a6ca9a1964a439975c9abc3ccf3d5e7efdee",
-      "confidence": 0,
-      "event_time": "2026-11-18T17:18:01Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T17:18:01Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123103447801377062",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 4,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Pratapverse/status/2123103447801377062",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
-      ],
-      "freshness": "fresh",
-      "id": "story-c7b96d99a0746a1432828dda",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\ud83c\uddee\ud83c\uddf7\ud83c\uddfa\ud83c\uddf8 Iran claims strikes on US military assets in Kuwait after US hit Qeshm Island. Will Washington retaliate? Why is Kuwait caught in the middle? @grok Give us the full picture https://t.co/7RZkCvOxa1",
-      "relevance_score": 90.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T17:18:01Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Pratapverse/status/2123103447801377062",
-      "status": "x-intel",
-      "title": "\ud83c\uddee\ud83c\uddf7\ud83c\uddfa\ud83c\uddf8 Iran claims strikes on US military assets in Kuwait after US hit Qeshm Island. Will Washington retaliate? Why is Kuwait caught in the middle? @grok Give us",
-      "webswarm_evidence_terms": [
-        "AI",
-        "Grok",
-        "Grok AI",
-        "Iran",
-        "Pentagon",
-        "military",
-        "munitions",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "b2d3e3317333ed853cffed8604a06aa64a58a337e8d5ac8006b676ce8e2a77bb",
-      "confidence": 0,
-      "event_time": "2026-11-18T09:04:30Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T09:04:30Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2122979248809836879",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123078146924638681",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/fifreedomtoday/status/2122979248809836879",
-        "https://x.com/fayezalanazi/status/2123078146924638681"
-      ],
-      "freshness": "fresh",
-      "id": "story-db2d111dbf15827ff84137aa",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\u062a\u062a\u0632\u0627\u064a\u062f \u0627\u0644\u0645\u062e\u0627\u0648\u0641 \u0645\u0646 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0627\u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a\u0629\u060c \u0645\u0639 \u0638\u0647\u0648\u0631 \u0623\u062f\u0648\u0627\u062a \u0642\u0627\u062f\u0631\u0629 \u0639\u0644\u0649 \u0623\u062a\u0645\u062a\u0629 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0627\u062e\u062a\u0631\u0627\u0642 \u0648\u062a\u0633\u0631\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0648\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a. \u0648\u0645\u0646 \u0623\u0628\u0631\u0632\u0647\u0627 \u0645\u0646\u0635\u0629 ARTEX \u0627\u0644\u062a\u064a \u0631\u0635\u062f\u062a \u062a\u0642\u0627\u0631\u064a\u0631 \u0623\u0645\u0646\u064a\u0629 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647\u0627 \u0641\u064a \u0647\u062c\u0645\u0627\u062a \u0627\u0633\u062a\u0647\u062f\u0641\u062a \u0645\u0624\u0633\u0633\u0627\u062a \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645. \ud83d\udccd\u0645\u0627 \u0647\u064a \u0645\u0646\u0635\u0629 ARTEX\u061f \u0647\u064a \u0645\u0646\u0635\u0629 \u0645\u0641\u062a\u0648\u062d\u0629 \u0627\u0644\u0645\u0635\u062f\u0631",
-      "relevance_score": 55.0,
-      "saudi_relevant": false,
-      "score": 55.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T09:04:30Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/fifreedomtoday/status/2122979248809836879",
-      "status": "x-intel",
-      "title": "\u062a\u062a\u0632\u0627\u064a\u062f \u0627\u0644\u0645\u062e\u0627\u0648\u0641 \u0645\u0646 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0627\u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a\u0629\u060c \u0645\u0639 \u0638\u0647\u0648\u0631 \u0623\u062f\u0648\u0627\u062a \u0642\u0627\u062f\u0631\u0629 \u0639\u0644\u0649 \u0623\u062a\u0645\u062a\u0629 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0627\u062e\u062a\u0631\u0627\u0642 \u0648\u062a\u0633\u0631\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0648\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a. \u0648\u0645\u0646 \u0623\u0628\u0631\u0632\u0647\u0627",
-      "webswarm_evidence_terms": [
-        "\u0627\u0633\u062a\u0647\u062f\u0627\u0641",
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "claim_key": "4ae471ce87ea445f3199dd46c648847553d05373ac926badb38f41ee25b3a711",
-      "confidence": 0,
-      "event_time": "2026-11-18T03:00:00Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T03:00:00Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2122887518894841907",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcU43MkR0UzcxSERvSjRyWm9QcnU4dEE3eXVaLVJQWFowSm9nQ0M4WXM2MW1RVlpMaENYemdLSHRDZ1ViYjM1eFJvQ0hyT3NVZ1NyWXRHcy14SmxlZjRvdHdPNzBNeWJEemEtcGk0MUVCT1FjWWxzYjVlVmtaWnJFd0tFYWE4SnJucUFpLWZGeTJVT2U3QmtwaklhbTQ0cmZVZ3BHNFRSU2xoQzJNQWVVQkdnbl9NNy1ZNmpSTEk1UzcxamN4V3c",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123103474359435656",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMUNmWlZ1M05xM0R1MzM5a2daeDhkRHM5SjdBdGYtMGVsakV2LTFKLVdSV1RKcUZmQUo0aHBRSkZwWTlyWmZLdG1oMFI4dTZCckw1N3liak5BNEk1R1pRNGs0Vzl5RzdFZFVVQlBVbW85bVdicGVyTFdpQ0RZZUFxdWlyVmZ2UVprbHpHMFVpVnpFcG44M0xCOFBVc2ZqZE1Ob2U0R09QQjk",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123016625561485476",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123113264938963237",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 6,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/webb8020/status/2122887518894841907",
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcU43MkR0UzcxSERvSjRyWm9QcnU4dEE3eXVaLVJQWFowSm9nQ0M4WXM2MW1RVlpMaENYemdLSHRDZ1ViYjM1eFJvQ0hyT3NVZ1NyWXRHcy14SmxlZjRvdHdPNzBNeWJEemEtcGk0MUVCT1FjWWxzYjVlVmtaWnJFd0tFYWE4SnJucUFpLWZGeTJVT2U3QmtwaklhbTQ0cmZVZ3BHNFRSU2xoQzJNQWVVQkdnbl9NNy1ZNmpSTEk1UzcxamN4V3c",
-        "https://x.com/BDSBangladesh/status/2123103474359435656",
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMUNmWlZ1M05xM0R1MzM5a2daeDhkRHM5SjdBdGYtMGVsakV2LTFKLVdSV1RKcUZmQUo0aHBRSkZwWTlyWmZLdG1oMFI4dTZCckw1N3liak5BNEk1R1pRNGs0Vzl5RzdFZFVVQlBVbW85bVdicGVyTFdpQ0RZZUFxdWlyVmZ2UVprbHpHMFVpVnpFcG44M0xCOFBVc2ZqZE1Ob2U0R09QQjk",
-        "https://x.com/theintercept/status/2123016625561485476",
-        "https://x.com/DrAsifShahid/status/2123113264938963237"
-      ],
-      "freshness": "fresh",
-      "id": "story-f344248bee592e0e93704514",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "Can One Image Prove a Claim? A Project Maven Evidence Exercise https://t.co/2LENoFVJwl Authorized AI narration. #AIforGIs https://t.co/2Ih5MIDFZ8",
-      "relevance_score": 90.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T03:00:00Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/webb8020/status/2122887518894841907",
-      "status": "x-intel",
-      "title": "Can One Image Prove a Claim? A Project Maven Evidence Exercise https://t.co/2LENoFVJwl Authorized AI narration. #AIforGIs https://t.co/2Ih5MIDFZ8",
-      "webswarm_evidence_terms": [
-        "AI",
-        "Project Maven",
-        "military",
-        "targeting",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "dc78395492ed6f3fa7ec416100a8795580905a4b9e0d1f6fc49ebe344da2c61c",
-      "confidence": 0,
-      "event_time": "2026-11-18T18:00:22Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T18:00:22Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123114103140950489",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122691347287048274",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2123114103140950489",
-        "https://x.com/CSIS/status/2122691347287048274"
-      ],
-      "freshness": "fresh",
-      "id": "story-f3e4e740ef422e6b72106af9",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "India has disclosed its first cyber incident carried out by an AI agent rather than a human. How New Delhi and Washington respond is an early test of whether they can manage frontier AI risk together, write @CSISIndiaChair experts Aman Thakker and Aditya Goswamy. Read: https://t.",
-      "relevance_score": 30.0,
-      "saudi_relevant": false,
-      "score": 30.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T18:00:22Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/CSIS/status/2123114103140950489",
-      "status": "x-intel",
-      "title": "India has disclosed its first cyber incident carried out by an AI agent rather than a human. How New Delhi and Washington respond is an early test of whether th",
-      "webswarm_evidence_terms": [
-        "AI",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "669d84709053ec468d4ff72d9e0c3817f99a7384464a61290a20b9ae11df824e",
-      "confidence": 0,
-      "event_time": "2026-11-18T12:00:33Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T12:00:33Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123023551032672534",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/ukcolumn/status/2123023551032672534"
-      ],
-      "freshness": "fresh",
-      "id": "story-f4def07d69fa8675d2ad1faf",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\ud83e\udd14 Chinese AI, Iranian intelligence and RAF Fairford... but what is the evidence behind the headlines? Reports linking Chinese AI company MizarVision to Iranian military intelligence have raised serious questions about the use of satellite imagery and AI in battlefield surveillanc",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T12:00:33Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/ukcolumn/status/2123023551032672534",
-      "status": "x-intel",
-      "title": "\ud83e\udd14 Chinese AI, Iranian intelligence and RAF Fairford... but what is the evidence behind the headlines? Reports linking Chinese AI company MizarVision to Iranian",
-      "webswarm_evidence_terms": [
-        "MizarVision",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "0d201f5c3f37bf5c6a3f89404e3c0033c258ccea28e95f0b649a104a3f46a84c",
-      "confidence": 0,
-      "event_time": "2026-11-18T17:48:54Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T17:48:54Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2123111216935764311",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/soma09862610150/status/2123111216935764311"
-      ],
-      "freshness": "fresh",
-      "id": "story-f7d89713de4087ce7f2c5cc3",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "\u062a\u0642\u0646\u064a\u0627\u062a \u0623\u0645\u0646\u064a\u0629 \u0645\u0639\u0632\u0632\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.\ud83c\uddf8\ud83c\udde6\ud83c\uddf8\ud83c\udde6 #\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 https://t.co/yWNnZzCDPW",
-      "relevance_score": 10.0,
-      "saudi_relevant": true,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T17:48:54Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/soma09862610150/status/2123111216935764311",
-      "status": "x-intel",
-      "title": "\u062a\u0642\u0646\u064a\u0627\u062a \u0623\u0645\u0646\u064a\u0629 \u0645\u0639\u0632\u0632\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.\ud83c\uddf8\ud83c\udde6\ud83c\uddf8\ud83c\udde6 #\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 https://t.co/yWNnZzCDPW",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "40d694be51a3878f8f540d7d1c3404a1df8adf767ca0f318e9f2e659cff7d622",
-      "confidence": 0,
-      "event_time": "2026-11-16T16:31:37Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-16T16:31:37Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T19:03:53Z",
-          "original_url": "https://x.com/i/status/2122366992376107167",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/GoogleDeepMind/status/2122366992376107167"
-      ],
-      "freshness": "stale",
-      "id": "story-f9598f57d01ce6cdd7f3e387",
-      "observed_at": "2026-11-18T19:03:53Z",
-      "reason": "What happens when you put Gemini 4 Carbon to work in the lab? \ud83d\udd2c Researchers are using our latest model in Google @Antigravity to tackle multi-step problems across physics, math, and the life sciences.",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T19:03:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-16T16:31:37Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/GoogleDeepMind/status/2122366992376107167",
-      "status": "x-intel",
-      "title": "What happens when you put Gemini 4 Carbon to work in the lab? \ud83d\udd2c Researchers are using our latest model in Google @Antigravity to tackle multi-step problems acro",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "503ac7e80840315e3b03ac15a6121b93f38f6f8fdff88841d08e6aad8e3d5224",
-      "confidence": 0,
-      "event_time": "2026-11-17T15:14:43Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T15:14:43Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T10:43:01Z",
-          "original_url": "https://x.com/i/status/2122710028326940732",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/ItalyinKSA/status/2122710028326940732"
-      ],
-      "freshness": "fresh",
-      "id": "story-0643f76661fbe18328c90e63",
-      "observed_at": "2026-11-18T10:43:01Z",
-      "reason": "Il Col. Coscarelli, Esperto Economico-finanziario della @GDF presso @ItalyinKSA, ha incontrato il DG della SAFIU, Magg. Gen. Al-Muhanna, per approfondire la cooperazione \ud83c\uddee\ud83c\uddf9-\ud83c\uddf8\ud83c\udde6 nel contrasto ai reati economico-finanziari, al riciclaggio e al finanziamento del terrorismo. https://t",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T10:43:01Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T15:14:43Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/ItalyinKSA/status/2122710028326940732",
-      "status": "x-intel",
-      "title": "Il Col. Coscarelli, Esperto Economico-finanziario della @GDF presso @ItalyinKSA, ha incontrato il DG della SAFIU, Magg. Gen. Al-Muhanna, per approfondire la coo",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "2150778638547b331198bdbac1ce47ca8c1be31cad0a2a30f2ed7925761ac20f",
-      "confidence": 0,
-      "event_time": "2026-11-17T13:47:09Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T13:47:09Z",
-          "independence_group": null,
-          "observation_time": "2026-11-18T10:43:01Z",
-          "original_url": "https://x.com/i/status/2122687992410095875",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/BenjaminPDixon/status/2122687992410095875"
-      ],
-      "freshness": "fresh",
-      "id": "story-168cda8310a03e9feea9d930",
-      "observed_at": "2026-11-18T10:43:01Z",
-      "reason": "@grok @garybotus Well, actually, Ai is the enemy as it stands right now. How many targets did Ai increase the military's daily missle capacity, and how many targets did you, @grok, help fire in Iran in just 96 hours.... not gonna be able to separate Ai from how it's used grok. ti",
-      "relevance_score": 70.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-18T10:43:01Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T13:47:09Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/BenjaminPDixon/status/2122687992410095875",
-      "status": "x-intel",
-      "title": "@grok @garybotus Well, actually, Ai is the enemy as it stands right now. How many targets did Ai increase the military's daily missle capacity, and how many tar",
-      "webswarm_evidence_terms": [
-        "96 hours",
-        "Grok",
-        "Iran"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-11-19T08:43:45Z",
+    "alerted_at": "2026-11-19T17:40:05Z",
     "confidence": 0,
-    "source_url": "https://x.com/tegmark/status/2123079474639962552",
-    "title": "I signed this statement because I believe that Anthropic is in many ways the AI company doing the most harm. In public, their leaders warn of recursive self-imp"
+    "source_url": "https://x.com/TheWorldCorresp/status/2122880724554461267",
+    "title": "Unit 9900, a component of the Israeli Military Intelligence Directorate, has indeed provided intelligence support to Saudi Arabia\u2014facilitated by the United Stat"
   },
   "last_run": {
-    "alerted_now": 21,
-    "clustered": 66,
-    "collected": 82,
+    "alerted_now": 18,
+    "clustered": 61,
+    "collected": 78,
     "corroborated_count": 0,
-    "initial_collected": 82,
+    "initial_collected": 78,
     "initial_source_counts": {
-      "google-news": 8,
-      "x": 74
+      "google-news": 9,
+      "x": 69
     },
-    "initial_x_relevant": 60,
+    "initial_x_relevant": 58,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 25.237,
-      "projected_minutes_per_30d": 1211.38,
+      "measured_seconds": 21.321,
+      "projected_minutes_per_30d": 1023.39,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -3218,7 +3065,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 47,
+    "stage1_survivors": 43,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -3242,11 +3089,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 21
+    "x_intel_published": 18
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-11-19T08:43:45Z",
+  "updated_at": "2026-11-19T17:40:05Z",
   "version": 1
 }
