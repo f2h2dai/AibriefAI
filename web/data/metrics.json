@@ -1,34 +1,33 @@
 {
-  "generated_at": "2026-11-18T23:55:18Z",
+  "generated_at": "2026-11-19T19:40:45Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.2,
-  "primary_source_link_rate": 0.8333,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-18T23:55:18Z",
+  "latest_successful_run": "2026-11-19T19:40:45Z",
   "highest_ranked_signal": {
-    "id": "twitter-025",
-    "title": "@CSIS: India has disclosed its first cyber incident carried out by an AI agent rather than a human. How New Delhi and Washington respond is an earl",
-    "action_score": 76.5,
-    "url": "https://x.com/CSIS/status/2123114103140950489"
+    "id": "github-007",
+    "title": "mohitmohan-innovator/sahaya",
+    "action_score": 75.25,
+    "url": "https://github.com/mohitmohan-innovator/sahaya"
   },
   "source_contribution": {
-    "twitter": 5,
-    "github": 5,
+    "github": 6,
     "google-news": 1,
-    "hackernews": 1
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7467, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7126, Req"
     }
   ],
-  "runtime_seconds": 44.076,
+  "runtime_seconds": 567.386,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-18T23:55:18Z",
+    "planned_at": "2026-11-19T19:40:45Z",
     "production_threshold": 70.0
   }
 }
