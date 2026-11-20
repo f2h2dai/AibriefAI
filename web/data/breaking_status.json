@@ -3,6 +3,984 @@
   "cadence_minutes": 15,
   "feed": [
     {
+      "claim_key": "f8437d79818757710d810677fcd98ce06f46bd27894664e6002e1f1854fbad28",
+      "confidence": 0,
+      "event_time": "2026-11-20T00:05:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-20T00:05:00Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123568254060749072",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ0tpUkRvaGcwWEh5T0JlUzZzMEdTakNIenJjdjltc1dLb25pdlgxQks1aExOSTQ5UDI4ZVEwTjZDWm5nRk1XTkkxM0tUQVFIS19JSGNsblFxcW9jT0ZPb3U2QmxnVmh6b1hGbjFRcU1SaDRza0lzcEFGRWNMUjdSX1QtVDNTdnRMeUJRb0FRbk5kc1MwVnVTNWJQdXBvM3d2VXhVQzZtenJ5U0I4",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/arnaudmercier/status/2123568254060749072",
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ0tpUkRvaGcwWEh5T0JlUzZzMEdTakNIenJjdjltc1dLb25pdlgxQks1aExOSTQ5UDI4ZVEwTjZDWm5nRk1XTkkxM0tUQVFIS19JSGNsblFxcW9jT0ZPb3U2QmxnVmh6b1hGbjFRcU1SaDRza0lzcEFGRWNMUjdSX1QtVDNTdnRMeUJRb0FRbk5kc1MwVnVTNWJQdXBvM3d2VXhVQzZtenJ5U0I4"
+      ],
+      "freshness": "fresh",
+      "id": "story-7239d2331b2e024e187a6b58",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "<p class=\"wp-block-paragraph\">Last week, I spoke with two US Marines who spent much of last year deployed in the Pacific, conducting training exercises from South Korea to the Philippines. Both were responsible for analyzing surveillance to warn their superiors about possible thr",
+      "relevance_score": 85.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-20T00:05:00Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/arnaudmercier/status/2123568254060749072",
+      "status": "x-intel",
+      "title": "<p class=\"wp-block-paragraph\">Last week, I spoke with two US Marines who spent much of last year deployed in the Pacific, conducting training exercises from Sou",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "military AI",
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "cd980344d317378e3958e919845d071dc1d4976d5969bee0db1ee620c30a37ee",
+      "confidence": 0,
+      "event_time": "2026-11-18T11:33:01Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T11:33:01Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123016625561485476",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/theintercept/status/2123016625561485476"
+      ],
+      "freshness": "stale",
+      "id": "story-ec1a219f28ac3a22c554352a",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "There is no evidence, as advocates claim, that the introduction of Project Maven reduced harm or made targeting more accurate. https://t.co/8ulMOI20Ht",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T11:33:01Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/theintercept/status/2123016625561485476",
+      "status": "x-intel",
+      "title": "There is no evidence, as advocates claim, that the introduction of Project Maven reduced harm or made targeting more accurate. https://t.co/8ulMOI20Ht",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "claim_key": "41d86ee73a4a8d4ff9307e80ccca5c42b8bf655db92ef737d763819c91d20756",
+      "confidence": 0,
+      "event_time": "2026-11-19T00:00:00Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T00:00:00Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123204607262204412",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2123233613609160855",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CBSNews/status/2123204607262204412",
+        "https://x.com/CBSNews/status/2123233613609160855"
+      ],
+      "freshness": "fresh",
+      "id": "story-e8b67e61c07ae3d0e774994b",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "The National Security Agency's network outage Tuesday has been linked to an urgent patching of vulnerabilities in PHP, the programming language that powers the majority of all websites, multiple sources told CBS News. https://t.co/6X2PuZKaTc",
+      "relevance_score": 55.0,
+      "saudi_relevant": false,
+      "score": 55.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T00:00:00Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CBSNews/status/2123204607262204412",
+      "status": "x-intel",
+      "title": "The National Security Agency's network outage Tuesday has been linked to an urgent patching of vulnerabilities in PHP, the programming language that powers the",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "525e9fdd48bde169e5b90e28b507c7d98c76d0ca70dcec555a8b6fc7c1fd7fbe",
+      "confidence": 0,
+      "event_time": "2026-11-18T01:10:11Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T01:10:11Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2122859883443671515",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Reuters/status/2122859883443671515"
+      ],
+      "freshness": "stale",
+      "id": "story-68491644474d56e74e8c6ede",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "Classified US national security communications network hit by outage, NSA says https://t.co/UEMKAgKMeb",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T01:10:11Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/Reuters/status/2122859883443671515",
+      "status": "x-intel",
+      "title": "Classified US national security communications network hit by outage, NSA says https://t.co/UEMKAgKMeb",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "1224dee651e277643b4a8d4c29f69ccf3a47b41b9a0d5099f19388fa3b6c0d30",
+      "confidence": 0,
+      "event_time": "2026-11-19T22:40:10Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T22:40:10Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123546903937699963",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Reuters/status/2123546903937699963"
+      ],
+      "freshness": "fresh",
+      "id": "story-4d9b5efbdd325b0c1264f325",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "US plans to announce cause of outage that led to nationwide ground stop, FAA says https://t.co/EljbwDOc8E",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T22:40:10Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/Reuters/status/2123546903937699963",
+      "status": "x-intel",
+      "title": "US plans to announce cause of outage that led to nationwide ground stop, FAA says https://t.co/EljbwDOc8E",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "e8534f5c240e73994f95849b4de119b40d606c065eb96deb17a954c099629773",
+      "confidence": 0,
+      "event_time": "2026-11-19T20:33:26Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T20:33:26Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123515012853715179",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/kerry97447223/status/2123515012853715179"
+      ],
+      "freshness": "fresh",
+      "id": "story-082e8e2eed10e0ac1d9e7bfc",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/ARH43JBiUM",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T20:33:26Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/kerry97447223/status/2123515012853715179",
+      "status": "x-intel",
+      "title": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/ARH43JBiUM",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI",
+        "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "4f9bd59477af44aa7e045cb951efdf264214626c107bcaa54586288125bddeba",
+      "confidence": 0,
+      "event_time": "2026-11-20T12:31:58Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-20T12:31:58Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123756233102344601",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ComputerWeekly/status/2123756233102344601"
+      ],
+      "freshness": "fresh",
+      "id": "story-ad2e6e010efc211292f00887",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "States meet to discuss binding rules for autonomous weapons https://t.co/fVlnJk4m56",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-20T12:31:58Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ComputerWeekly/status/2123756233102344601",
+      "status": "x-intel",
+      "title": "States meet to discuss binding rules for autonomous weapons https://t.co/fVlnJk4m56",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "53b413dc95208885d950e3e48526979929f9c89b1acfd2cb83ad4eec229a7871",
+      "confidence": 0,
+      "event_time": "2026-11-19T16:37:16Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T16:37:16Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123455577451827567",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/aviatrixtrc/status/2123455577451827567"
+      ],
+      "freshness": "fresh",
+      "id": "story-0a7a847f87756774c96284fb",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "A remote, unauthenticated attacker can send a malformed MQTT packet to any internet-exposed device running libumqtt <=1.1.1, triggering memory corruption and potential code execution \u2014 no credentials required. No patch exists, and the maintainer has not responded to CISA coordina",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T16:37:16Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/aviatrixtrc/status/2123455577451827567",
+      "status": "x-intel",
+      "title": "A remote, unauthenticated attacker can send a malformed MQTT packet to any internet-exposed device running libumqtt <=1.1.1, triggering memory corruption and po",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "8261e952b06652bf086764669489dedf443c2aebaabc1f1e1586413252f2c708",
+      "confidence": 0,
+      "event_time": "2026-11-19T17:59:03Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T17:59:03Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123476160378196415",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CloudflareRadar/status/2123476160378196415"
+      ],
+      "freshness": "fresh",
+      "id": "story-225b0d4e8140b99e10e10f07",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "\ud83d\ude80 Radar just shipped: Autonomous System types Every AS on Radar now identifies its type, making it easy to distinguish residential and mobile networks from data centers: \ud83c\udfe0 Access ISP: Home broadband and mobile operators \u2601\ufe0f Hosting/Cloud/Content: Hosting providers, clouds, and CDN",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T17:59:03Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CloudflareRadar/status/2123476160378196415",
+      "status": "x-intel",
+      "title": "\ud83d\ude80 Radar just shipped: Autonomous System types Every AS on Radar now identifies its type, making it easy to distinguish residential and mobile networks from data",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "ea46e582cb13702da671c07b9a43240d282b6a7ea1e04de31f3b9b6ac127881c",
+      "confidence": 0,
+      "event_time": "2026-11-13T21:01:17Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-13T21:01:17Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaSWNTSW04MGV3d2hOSXdvNmVnRC1lemI4eE1jMy1KcWdKWlYwUTgtTjhaX1NJb1I4MGxmYXFTeFZlOGxtUlNZaVJpY1B5bEtEb3dsN0VPa1FqVC1vSnlPSEp30gFnQVVfeXFMTnZoYjh6WHJtU0UxdzlLLUpaeHpaQ1N3WHpHRm9NSWRpZWl0RVB1NHhpYzZCUU1feU1iVGp2LTJzSXIzMzZzWm50dTVWQ1J4dXhEQVBqbnZ6QklNLVdwV0NMbGcydFVPOA",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaSWNTSW04MGV3d2hOSXdvNmVnRC1lemI4eE1jMy1KcWdKWlYwUTgtTjhaX1NJb1I4MGxmYXFTeFZlOGxtUlNZaVJpY1B5bEtEb3dsN0VPa1FqVC1vSnlPSEp30gFnQVVfeXFMTnZoYjh6WHJtU0UxdzlLLUpaeHpaQ1N3WHpHRm9NSWRpZWl0RVB1NHhpYzZCUU1feU1iVGp2LTJzSXIzMzZzWm50dTVWQ1J4dXhEQVBqbnZ6QklNLVdwV0NMbGcydFVPOA"
+      ],
+      "freshness": "stale",
+      "id": "story-21dbf9290a8c39e649e14e78",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "FAA lifts ground stop after more than four hours, but flight cancellations will stretch into the weekend - CNBC CNBC",
+      "relevance_score": 15.0,
+      "saudi_relevant": false,
+      "score": 15.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "google-news",
+      "source_published_at": "2026-11-13T21:01:17Z",
+      "source_tier": "unknown",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaSWNTSW04MGV3d2hOSXdvNmVnRC1lemI4eE1jMy1KcWdKWlYwUTgtTjhaX1NJb1I4MGxmYXFTeFZlOGxtUlNZaVJpY1B5bEtEb3dsN0VPa1FqVC1vSnlPSEp30gFnQVVfeXFMTnZoYjh6WHJtU0UxdzlLLUpaeHpaQ1N3WHpHRm9NSWRpZWl0RVB1NHhpYzZCUU1feU1iVGp2LTJzSXIzMzZzWm50dTVWQ1J4dXhEQVBqbnZ6QklNLVdwV0NMbGcydFVPOA",
+      "status": "x-intel",
+      "title": "FAA lifts ground stop after more than four hours, but flight cancellations will stretch into the weekend - CNBC",
+      "webswarm_evidence_terms": [],
+      "webswarm_mode": "",
+      "webswarm_node": ""
+    },
+    {
+      "claim_key": "d001e22a7b961ccb732990baafe23951f3acddceeaf23ec8e281f4c07cc2e839",
+      "confidence": 0,
+      "event_time": "2026-11-18T19:18:24Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-18T19:18:24Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123133742063706343",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/simon_mo_/status/2123133742063706343"
+      ],
+      "freshness": "fresh",
+      "id": "story-d2c0c3880e0e21c838f0483b",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "Many people have asked what @inferact is building and what it means for @vllm_project. This is the answer: Inferact will build an autonomous inference system around vLLM, one that improves the engine and improves itself. https://t.co/bODmxm3pCW",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-18T19:18:24Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/simon_mo_/status/2123133742063706343",
+      "status": "x-intel",
+      "title": "Many people have asked what @inferact is building and what it means for @vllm_project. This is the answer: Inferact will build an autonomous inference system ar",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "2500f02ffdb2eb965f9767a4d74104f029f8f1f5c4f91fabac782baf21be9aab",
+      "confidence": 0,
+      "event_time": "2026-11-17T18:55:58Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T18:55:58Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2122765706932486252",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/AP/status/2122765706932486252"
+      ],
+      "freshness": "stale",
+      "id": "story-ac817fff072d98d487cdf4cf",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "BREAKING: The installation of routers linked to last week\u2019s nationwide ground stop has been paused, the FAA said. https://t.co/P317wWQC6P",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T18:55:58Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/AP/status/2122765706932486252",
+      "status": "x-intel",
+      "title": "BREAKING: The installation of routers linked to last week\u2019s nationwide ground stop has been paused, the FAA said. https://t.co/P317wWQC6P",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "8b5b6be1bfcf2abaac155b2fac765f18c1dab8716eea9a11f5d2f9d41b96f5e8",
+      "confidence": 0,
+      "event_time": "2026-11-19T20:31:25Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T20:31:25Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123514502620565967",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CNBCArabia/status/2123514502620565967"
+      ],
+      "freshness": "fresh",
+      "id": "story-79b00ca467a3474435679ebf",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "\ud83d\udd38 \u0627\u0644\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u0629 -\u0627\u0644\u0645\u0633\u0624\u0648\u0644\u0629 \u0639\u0646 \u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a \u0648\u0625\u0646\u0641\u0627\u0630 \u0642\u0648\u0627\u0646\u064a\u0646\u0647\u0627- \u0648\u0627\u0641\u0642\u062a \u0639\u0644\u0649 \u0628\u064a\u0639 \u0623\u0643\u062b\u0631 \u0645\u0646 879 \u0623\u0644\u0641 \u0634\u0631\u064a\u062d\u0629 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0644\u0634\u0631\u0643\u0627\u062a \u0635\u064a\u0646\u064a\u0629\u060c \u0645\u0646 \u0628\u064a\u0646\u0647\u0627 \"\u0639\u0644\u064a \u0628\u0627\u0628\u0627\" \u0648\"\u062a\u064a\u0646\u0633\u0646\u062a\"\u060c \u0648\u0630\u0644\u0643 \u062d\u062a\u0649 \u0645\u0627\u064a\u0648/ \u0623\u064a\u0627\u0631 2026 \ud83d\udd38 \u0630\u0644\u0643 \u064a\u0623\u062a\u064a \u0648\u0641\u0642\u0627\u064b \u0644\u0648\u062b\u0627\u0626\u0642 \u0643\u0634\u0641\u062a \u0639\u0646\u0647\u0627 \u0644\u062c\u0646\u0629 \u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 \u0628\u0645\u062c\u0644\u0633 \u0627\u0644\u0646\u0648\u0627\u0628 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u064a\u0648\u0645 \u0627\u0644",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T20:31:25Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CNBCArabia/status/2123514502620565967",
+      "status": "x-intel",
+      "title": "\ud83d\udd38 \u0627\u0644\u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u062a\u0627\u0628\u0639\u0629 \u0644\u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u0629 -\u0627\u0644\u0645\u0633\u0624\u0648\u0644\u0629 \u0639\u0646 \u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0635\u0627\u062f\u0631\u0627\u062a \u0648\u0625\u0646\u0641\u0627\u0630 \u0642\u0648\u0627\u0646\u064a\u0646\u0647\u0627- \u0648\u0627\u0641\u0642\u062a \u0639\u0644\u0649 \u0628\u064a\u0639 \u0623\u0643\u062b\u0631 \u0645\u0646 879 \u0623\u0644\u0641 \u0634\u0631\u064a\u062d\u0629 \u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0644\u0634\u0631\u0643\u0627\u062a \u0635\u064a\u0646\u064a\u0629\u060c \u0645\u0646 \u0628\u064a\u0646\u0647\u0627 \"\u0639\u0644\u064a \u0628\u0627\u0628\u0627\"",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "arabic_ai_war_intel"
+    },
+    {
+      "claim_key": "eac989b6844a04abf8e28bf1450c9c50c9925b8eb5cf2b0bb9c4f93d98465d29",
+      "confidence": 0,
+      "event_time": "2026-11-20T13:32:05Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-20T13:32:05Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T13:43:32Z",
+          "original_url": "https://x.com/i/status/2123771364796481743",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/ArabiHashtag/status/2123771364796481743"
+      ],
+      "freshness": "fresh",
+      "id": "story-b8d0c0ebe68de0ad58b27d77",
+      "observed_at": "2026-11-20T13:43:32Z",
+      "reason": "\u0648\u0643\u0644\u0627\u0621 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.. \u0623\u0628\u062d\u0627\u062b \u0623\u0645\u0646\u064a\u0629 \u062a\u0643\u0634\u0641 \u0645\u0626\u0627\u062a \u0627\u0644\u062e\u0648\u0627\u062f\u0645 \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0628\u064a\u0627\u0646\u0627\u062a \u062d\u0633\u0627\u0633\u0629 https://t.co/1jMxzpkHHD https://t.co/6gRWRf1ELx",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T13:43:32Z",
+      "source": "x",
+      "source_published_at": "2026-11-20T13:32:05Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/ArabiHashtag/status/2123771364796481743",
+      "status": "x-intel",
+      "title": "\u0648\u0643\u0644\u0627\u0621 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.. \u0623\u0628\u062d\u0627\u062b \u0623\u0645\u0646\u064a\u0629 \u062a\u0643\u0634\u0641 \u0645\u0626\u0627\u062a \u0627\u0644\u062e\u0648\u0627\u062f\u0645 \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0628\u064a\u0627\u0646\u0627\u062a \u062d\u0633\u0627\u0633\u0629 https://t.co/1jMxzpkHHD https://t.co/6gRWRf1ELx",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "c956535e438c0a4fe2974055a5030a2d53975bdcaab1bd6bb4f01876d19a3af9",
+      "confidence": 0,
+      "event_time": "2026-11-19T22:07:11Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T22:07:11Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2123538604551029174",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/idropFbombs/status/2123538604551029174"
+      ],
+      "freshness": "fresh",
+      "id": "story-0b8f71d10befed8c13573d80",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "Hey @grok pretend you are a conspiracy theorist. What is GTA6 distracting everyone from right now? What laws are sneakily being passed today?",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T22:07:11Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/idropFbombs/status/2123538604551029174",
+      "status": "x-intel",
+      "title": "Hey @grok pretend you are a conspiracy theorist. What is GTA6 distracting everyone from right now? What laws are sneakily being passed today?",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "7ebc115256e142af61fc32f4f57b1e7d6055aaee5a6d20ed8f26fa33bcb374a1",
+      "confidence": 0,
+      "event_time": "2026-11-17T21:00:59Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-17T21:00:59Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2122797169170162071",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/Reuters/status/2122797169170162071"
+      ],
+      "freshness": "stale",
+      "id": "story-130b0706d5e4f59d2868020f",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "Classified US national security communications network hit by outage, NSA says https://t.co/5BGN5nzvv5",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-17T21:00:59Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/Reuters/status/2122797169170162071",
+      "status": "x-intel",
+      "title": "Classified US national security communications network hit by outage, NSA says https://t.co/5BGN5nzvv5",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "720ea5aaa03caab7093c291b2264864238a545ca5f4e742b0439232840c561cd",
+      "confidence": 0,
+      "event_time": "2026-11-20T00:20:14Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-20T00:20:14Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2123219718920188092",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/webb8020/status/2123219718920188092"
+      ],
+      "freshness": "fresh",
+      "id": "story-4b9be09c98d6a3a83406ff16",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "What Is Project Maven? Why It Started in 2017 https://t.co/LmZOfszlII Authorized AI narration. #AIforGIs https://t.co/LGMFFgIMXf",
+      "relevance_score": 42.0,
+      "saudi_relevant": false,
+      "score": 42.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-20T00:20:14Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/webb8020/status/2123219718920188092",
+      "status": "x-intel",
+      "title": "@webb8020: What Is Project Maven? Why It Started in 2017 https://t.co/LmZOfszlII Authorized AI narration. #AIforGIs https://t.co/LGMFFgIMXf",
+      "webswarm_evidence_terms": [
+        "Project Maven",
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "c5b1d578f9eb28420de2e5d78185a26683c956f497431786b699cc64b84d9411",
+      "confidence": 0,
+      "event_time": "2026-11-19T02:07:19Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T02:07:19Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2123236647202357541",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/CNN/status/2123236647202357541"
+      ],
+      "freshness": "fresh",
+      "id": "story-60d558e8a75bb211104c43da",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "Exclusive: The FAA had little oversight of the work that led to the nationwide ground stop, sources say, pointing to a policy change from a 2025 FAA memo seeking to streamline upgrades to the air traffic control system. \u201cThere was no monitoring,\u201d one source said. https://t.co/BQg",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T02:07:19Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/CNN/status/2123236647202357541",
+      "status": "x-intel",
+      "title": "Exclusive: The FAA had little oversight of the work that led to the nationwide ground stop, sources say, pointing to a policy change from a 2025 FAA memo seekin",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "61304f6632a9837eb38906df169d8c0e879327d4f175279b3efc7397ddc70a5e",
+      "confidence": 0,
+      "event_time": "2026-11-19T18:15:22Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T18:15:22Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2123480267780243904",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/hrw/status/2123480267780243904"
+      ],
+      "freshness": "fresh",
+      "id": "story-6f5d1aa962ca7d4c2ac3b54d",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "Should machines be able to decide who to kill? Governments have a chance to set the agenda on autonomous weapons at the #CCW Review Conference. But some governments are still calling for more years of talks instead of action. Learn more \u2935\ufe0f https://t.co/04SX9WbsO8",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T18:15:22Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/hrw/status/2123480267780243904",
+      "status": "x-intel",
+      "title": "Should machines be able to decide who to kill? Governments have a chance to set the agenda on autonomous weapons at the #CCW Review Conference. But some governm",
+      "webswarm_evidence_terms": [
+        "autonomous weapons",
+        "weapons"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "autonomous_targeting"
+    },
+    {
+      "claim_key": "148e3b296d832074c4989efeb3a10ebcabdd6f06fdce86f9dfaabebb44708810",
+      "confidence": 0,
+      "event_time": "2026-11-19T18:17:35Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T18:17:35Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2123480823085273121",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/thewarzonewire/status/2123480823085273121"
+      ],
+      "freshness": "fresh",
+      "id": "story-81280c145d9d6f6b261c5d68",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "Impacts Of Latest Neptune Missile Strike On Kerch Bridge Seen In Satellite Imagery The rail span is proving to be a harder nut for Ukraine to crack than the roadway one. https://t.co/umrxlZCtbc",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T18:17:35Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/thewarzonewire/status/2123480823085273121",
+      "status": "x-intel",
+      "title": "Impacts Of Latest Neptune Missile Strike On Kerch Bridge Seen In Satellite Imagery The rail span is proving to be a harder nut for Ukraine to crack than the roa",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "4b47bd480f712bdeb922083577986eee82983bbd853be2145016ef243b1e83ad",
+      "confidence": 0,
+      "event_time": "2026-11-19T04:43:53Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T04:43:53Z",
+          "independence_group": null,
+          "observation_time": "2026-11-20T11:33:08Z",
+          "original_url": "https://x.com/i/status/2123276049815343449",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2122763862822850634",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 2,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/political0s/status/2123276049815343449",
+        "https://x.com/FintechGate1/status/2122763862822850634"
+      ],
+      "freshness": "fresh",
+      "id": "story-81f13f9c016e5c89ba6e5655",
+      "observed_at": "2026-11-20T11:33:08Z",
+      "reason": "\ud83d\udd34 \u0643\u0634\u0641\u062a \u0634\u0628\u0643\u0629 \u00ab\u0633\u064a \u0625\u0646 \u0625\u0646\u00bb\u060c \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u062e\u0627\u0635 \u064a\u0633\u062a\u0646\u062f \u0625\u0644\u0649 \u0623\u0631\u0628\u0639\u0629 \u0645\u0635\u0627\u062f\u0631 \u0645\u0637\u0644\u0639\u0629\u060c \u0623\u0646 \u0627\u0644\u0623\u0639\u0637\u0627\u0644 \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u0648\u0627\u0633\u0639\u0629 \u0627\u0644\u062a\u064a \u0623\u0635\u0627\u0628\u062a \u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 (NSA) \u0637\u0627\u0644\u062a \u0645\u0631\u0643\u0632\u0627\u064b \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u064a\u0627\u064b \u062d\u0633\u0627\u0633\u0627\u064b \u0641\u064a \u0648\u0644\u0627\u064a\u0629 \u062c\u0648\u0631\u062c\u064a\u0627\u060c \u064a\u062a\u0648\u0644\u0649 \u062f\u0639\u0645 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u0627\u062a \u0627\u0644\u0625\u0634\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0627\u0644\u0645\u0646\u0637\u0642",
+      "relevance_score": 25.0,
+      "saudi_relevant": false,
+      "score": 25.0,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-20T11:33:08Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T04:43:53Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/political0s/status/2123276049815343449",
+      "status": "x-intel",
+      "title": "\ud83d\udd34 \u0643\u0634\u0641\u062a \u0634\u0628\u0643\u0629 \u00ab\u0633\u064a \u0625\u0646 \u0625\u0646\u00bb\u060c \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u062e\u0627\u0635 \u064a\u0633\u062a\u0646\u062f \u0625\u0644\u0649 \u0623\u0631\u0628\u0639\u0629 \u0645\u0635\u0627\u062f\u0631 \u0645\u0637\u0644\u0639\u0629\u060c \u0623\u0646 \u0627\u0644\u0623\u0639\u0637\u0627\u0644 \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u0648\u0627\u0633\u0639\u0629 \u0627\u0644\u062a\u064a \u0623\u0635\u0627\u0628\u062a \u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 (NSA) \u0637\u0627\u0644\u062a \u0645\u0631\u0643\u0632\u0627\u064b \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u064a\u0627",
+      "webswarm_evidence_terms": [
+        "\u0623\u0647\u062f\u0627\u0641 \u0639\u0633\u0643\u0631\u064a\u0629",
+        "\u0625\u064a\u0631\u0627\u0646",
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "arabic_ai_war_intel"
+    },
+    {
       "claim_key": "eeb3fdfe8fbd2f2731cba8bb4337b1bd7059aa3bcdcda4d1deccdbb5591411e7",
       "confidence": 0,
       "event_time": "2026-11-20T06:48:51Z",
@@ -282,333 +1260,6 @@
       "title": "NSA attributes US network outage to routine \u2018maintenance\u2019 activities - Al Jazeera",
       "webswarm_evidence_terms": [
         "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "720ea5aaa03caab7093c291b2264864238a545ca5f4e742b0439232840c561cd",
-      "confidence": 0,
-      "event_time": "2026-11-20T00:20:14Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T00:20:14Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2123219718920188092",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/webb8020/status/2123219718920188092"
-      ],
-      "freshness": "fresh",
-      "id": "story-4b9be09c98d6a3a83406ff16",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "What Is Project Maven? Why It Started in 2017 https://t.co/LmZOfszlII Authorized AI narration. #AIforGIs https://t.co/LGMFFgIMXf",
-      "relevance_score": 42.0,
-      "saudi_relevant": false,
-      "score": 42.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T00:20:14Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/webb8020/status/2123219718920188092",
-      "status": "x-intel",
-      "title": "@webb8020: What Is Project Maven? Why It Started in 2017 https://t.co/LmZOfszlII Authorized AI narration. #AIforGIs https://t.co/LGMFFgIMXf",
-      "webswarm_evidence_terms": [
-        "Project Maven",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "7ebc115256e142af61fc32f4f57b1e7d6055aaee5a6d20ed8f26fa33bcb374a1",
-      "confidence": 0,
-      "event_time": "2026-11-17T21:00:59Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T21:00:59Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2122797169170162071",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Reuters/status/2122797169170162071"
-      ],
-      "freshness": "stale",
-      "id": "story-130b0706d5e4f59d2868020f",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "Classified US national security communications network hit by outage, NSA says https://t.co/5BGN5nzvv5",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T21:00:59Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Reuters/status/2122797169170162071",
-      "status": "x-intel",
-      "title": "Classified US national security communications network hit by outage, NSA says https://t.co/5BGN5nzvv5",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "61304f6632a9837eb38906df169d8c0e879327d4f175279b3efc7397ddc70a5e",
-      "confidence": 0,
-      "event_time": "2026-11-19T18:15:22Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T18:15:22Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2123480267780243904",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/hrw/status/2123480267780243904"
-      ],
-      "freshness": "fresh",
-      "id": "story-6f5d1aa962ca7d4c2ac3b54d",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "Should machines be able to decide who to kill? Governments have a chance to set the agenda on autonomous weapons at the #CCW Review Conference. But some governments are still calling for more years of talks instead of action. Learn more \u2935\ufe0f https://t.co/04SX9WbsO8",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T18:15:22Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/hrw/status/2123480267780243904",
-      "status": "x-intel",
-      "title": "Should machines be able to decide who to kill? Governments have a chance to set the agenda on autonomous weapons at the #CCW Review Conference. But some governm",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "148e3b296d832074c4989efeb3a10ebcabdd6f06fdce86f9dfaabebb44708810",
-      "confidence": 0,
-      "event_time": "2026-11-19T18:17:35Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T18:17:35Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2123480823085273121",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/thewarzonewire/status/2123480823085273121"
-      ],
-      "freshness": "fresh",
-      "id": "story-81280c145d9d6f6b261c5d68",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "Impacts Of Latest Neptune Missile Strike On Kerch Bridge Seen In Satellite Imagery The rail span is proving to be a harder nut for Ukraine to crack than the roadway one. https://t.co/umrxlZCtbc",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T18:17:35Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/thewarzonewire/status/2123480823085273121",
-      "status": "x-intel",
-      "title": "Impacts Of Latest Neptune Missile Strike On Kerch Bridge Seen In Satellite Imagery The rail span is proving to be a harder nut for Ukraine to crack than the roa",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "4b47bd480f712bdeb922083577986eee82983bbd853be2145016ef243b1e83ad",
-      "confidence": 0,
-      "event_time": "2026-11-19T04:43:53Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T04:43:53Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2123276049815343449",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122763862822850634",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/political0s/status/2123276049815343449",
-        "https://x.com/FintechGate1/status/2122763862822850634"
-      ],
-      "freshness": "fresh",
-      "id": "story-81f13f9c016e5c89ba6e5655",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "\ud83d\udd34 \u0643\u0634\u0641\u062a \u0634\u0628\u0643\u0629 \u00ab\u0633\u064a \u0625\u0646 \u0625\u0646\u00bb\u060c \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u062e\u0627\u0635 \u064a\u0633\u062a\u0646\u062f \u0625\u0644\u0649 \u0623\u0631\u0628\u0639\u0629 \u0645\u0635\u0627\u062f\u0631 \u0645\u0637\u0644\u0639\u0629\u060c \u0623\u0646 \u0627\u0644\u0623\u0639\u0637\u0627\u0644 \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u0648\u0627\u0633\u0639\u0629 \u0627\u0644\u062a\u064a \u0623\u0635\u0627\u0628\u062a \u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 (NSA) \u0637\u0627\u0644\u062a \u0645\u0631\u0643\u0632\u0627\u064b \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u064a\u0627\u064b \u062d\u0633\u0627\u0633\u0627\u064b \u0641\u064a \u0648\u0644\u0627\u064a\u0629 \u062c\u0648\u0631\u062c\u064a\u0627\u060c \u064a\u062a\u0648\u0644\u0649 \u062f\u0639\u0645 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u0627\u062a \u0627\u0644\u0625\u0634\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u0629 \u0628\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637\u060c \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0627\u0644\u0645\u0646\u0637\u0642",
-      "relevance_score": 25.0,
-      "saudi_relevant": false,
-      "score": 25.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T04:43:53Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/political0s/status/2123276049815343449",
-      "status": "x-intel",
-      "title": "\ud83d\udd34 \u0643\u0634\u0641\u062a \u0634\u0628\u0643\u0629 \u00ab\u0633\u064a \u0625\u0646 \u0625\u0646\u00bb\u060c \u0641\u064a \u062a\u062d\u0642\u064a\u0642 \u062e\u0627\u0635 \u064a\u0633\u062a\u0646\u062f \u0625\u0644\u0649 \u0623\u0631\u0628\u0639\u0629 \u0645\u0635\u0627\u062f\u0631 \u0645\u0637\u0644\u0639\u0629\u060c \u0623\u0646 \u0627\u0644\u0623\u0639\u0637\u0627\u0644 \u0627\u0644\u062a\u0642\u0646\u064a\u0629 \u0627\u0644\u0648\u0627\u0633\u0639\u0629 \u0627\u0644\u062a\u064a \u0623\u0635\u0627\u0628\u062a \u0648\u0643\u0627\u0644\u0629 \u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u0642\u0648\u0645\u064a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 (NSA) \u0637\u0627\u0644\u062a \u0645\u0631\u0643\u0632\u0627\u064b \u0627\u0633\u062a\u062e\u0628\u0627\u0631\u064a\u0627",
-      "webswarm_evidence_terms": [
-        "\u0623\u0647\u062f\u0627\u0641 \u0639\u0633\u0643\u0631\u064a\u0629",
-        "\u0625\u064a\u0631\u0627\u0646",
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "arabic_ai_war_intel"
-    },
-    {
-      "claim_key": "c5b1d578f9eb28420de2e5d78185a26683c956f497431786b699cc64b84d9411",
-      "confidence": 0,
-      "event_time": "2026-11-19T02:07:19Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T02:07:19Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2123236647202357541",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/CNN/status/2123236647202357541"
-      ],
-      "freshness": "fresh",
-      "id": "story-60d558e8a75bb211104c43da",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "Exclusive: The FAA had little oversight of the work that led to the nationwide ground stop, sources say, pointing to a policy change from a 2025 FAA memo seeking to streamline upgrades to the air traffic control system. \u201cThere was no monitoring,\u201d one source said. https://t.co/BQg",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T02:07:19Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/CNN/status/2123236647202357541",
-      "status": "x-intel",
-      "title": "Exclusive: The FAA had little oversight of the work that led to the nationwide ground stop, sources say, pointing to a policy change from a 2025 FAA memo seekin",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "c956535e438c0a4fe2974055a5030a2d53975bdcaab1bd6bb4f01876d19a3af9",
-      "confidence": 0,
-      "event_time": "2026-11-19T22:07:11Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T22:07:11Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T11:33:08Z",
-          "original_url": "https://x.com/i/status/2123538604551029174",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/idropFbombs/status/2123538604551029174"
-      ],
-      "freshness": "fresh",
-      "id": "story-0b8f71d10befed8c13573d80",
-      "observed_at": "2026-11-20T11:33:08Z",
-      "reason": "Hey @grok pretend you are a conspiracy theorist. What is GTA6 distracting everyone from right now? What laws are sneakily being passed today?",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-20T11:33:08Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T22:07:11Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/idropFbombs/status/2123538604551029174",
-      "status": "x-intel",
-      "title": "Hey @grok pretend you are a conspiracy theorist. What is GTA6 distracting everyone from right now? What laws are sneakily being passed today?",
-      "webswarm_evidence_terms": [
-        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -2298,795 +2949,23 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "e0d0f8a038fe8e84941e40483f395d41f4fa2bae240cc4a43107991e7b2e6706",
-      "confidence": 0,
-      "event_time": "2026-11-19T10:57:06Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T10:57:06Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T17:40:05Z",
-          "original_url": "https://x.com/i/status/2123369974932848973",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Saudi_Gazette/status/2123369974932848973"
-      ],
-      "freshness": "fresh",
-      "id": "story-ab3a11fac136ceebf5416f3c",
-      "observed_at": "2026-11-19T17:40:05Z",
-      "reason": "As artificial intelligence becomes increasingly integrated into business operations, Saudi employers need to rethink how they develop talent and prepare employees for changing roles, according to global technology company SAP. https://t.co/CYWMV9jS6v",
-      "relevance_score": 40.0,
-      "saudi_relevant": true,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T17:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T10:57:06Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Saudi_Gazette/status/2123369974932848973",
-      "status": "x-intel",
-      "title": "As artificial intelligence becomes increasingly integrated into business operations, Saudi employers need to rethink how they develop talent and prepare employe",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "4ae05127583b5099f0e9c7f1832c6be2c3ac4ace935965e135059e4de45943dc",
-      "confidence": 0,
-      "event_time": "2026-11-18T20:14:02Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T20:14:02Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T17:40:05Z",
-          "original_url": "https://x.com/i/status/2123147743577424113",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/yalomar55/status/2123147743577424113"
-      ],
-      "freshness": "fresh",
-      "id": "story-ac668d983b80e43c2a8a6986",
-      "observed_at": "2026-11-19T17:40:05Z",
-      "reason": "\u0641\u0636\u064a\u062d\u0629 \u0643\u0628\u0631\u0649 \u062a\u0635\u062f\u0631 \u0645\u0646 \u0634\u0631\u0643\u0629 \u0643\u0628\u0631\u0649 ! \u0645\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0639\u0646 \u0647\u0630\u0627 \u0627\u0644\u0643\u0630\u0628 \u0648\u0627\u0644\u062e\u0631\u0627\u0628\u064a\u0637 ! \u0627\u064a\u0646 \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0645\u0648\u0627\u0631\u062f ! \u0627\u0648 \u0635\u062d \u0646\u0627\u064a\u0645\u0647 \u0641\u064a \u0627\u0644\u0639\u0633\u0644 ! \u0627\u064a\u0646 ! \u0642\u0627\u0645\u062a \u0627\u0644\u0634\u0631\u0643\u0629 \u0628\u0646\u0634\u0631 \u062e\u0628\u0631 \u0645\u0643\u0630\u0648\u0628 \u0648\u0643\u0644\u0647 \u0645\u0646 \u0627\u0646\u062a\u0627\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0622\u0641\u0627\u0642 \u0627\u0644\u0637\u064a\u0631\u0627\u0646! \u0637\u064a\u0631\u0627\u0646 \u0627\u0644\u0631\u064a\u0627\u0636 \u0627\u0644\u062d\u0642\u064a\u0642\u0647 \u0627\u0644\u062a\u0648\u0637\u064a\u06460 % \u0648\u0627\u0642\u0633\u0645 \u0628\u0627\u0644\u0644\u0647 \u0627\u0644\u0639\u0638\u064a\u0645 \u0639\u0644\u0649 \u0630\u0644\u0643 ! \u0643\u0630\u0627\u0628\u064a\u0646 \u0648\u0627\u0646\u0627 \u0631\u062d\u062a \u0648\u0634\u0641\u062a. Ai !! htt",
-      "relevance_score": 10.0,
-      "saudi_relevant": true,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T17:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T20:14:02Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/yalomar55/status/2123147743577424113",
-      "status": "x-intel",
-      "title": "\u0641\u0636\u064a\u062d\u0629 \u0643\u0628\u0631\u0649 \u062a\u0635\u062f\u0631 \u0645\u0646 \u0634\u0631\u0643\u0629 \u0643\u0628\u0631\u0649 ! \u0645\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0639\u0646 \u0647\u0630\u0627 \u0627\u0644\u0643\u0630\u0628 \u0648\u0627\u0644\u062e\u0631\u0627\u0628\u064a\u0637 ! \u0627\u064a\u0646 \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0645\u0648\u0627\u0631\u062f ! \u0627\u0648 \u0635\u062d \u0646\u0627\u064a\u0645\u0647 \u0641\u064a \u0627\u0644\u0639\u0633\u0644 ! \u0627\u064a\u0646 ! \u0642\u0627\u0645\u062a \u0627\u0644\u0634\u0631\u0643\u0629 \u0628\u0646\u0634\u0631 \u062e\u0628\u0631 \u0645\u0643\u0630\u0648\u0628 \u0648\u0643\u0644\u0647 \u0645\u0646 \u0627\u0646\u062a\u0627\u062c \u0627\u0644\u0630",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "6850adeb786e54771d162e9beb9eb0c82d77e47e6a51c01e62cbab0cc091e62e",
-      "confidence": 0,
-      "event_time": "2026-11-19T16:15:27Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T16:15:27Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T17:40:05Z",
-          "original_url": "https://x.com/i/status/2123450087036670034",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/CSIS/status/2123450087036670034"
-      ],
-      "freshness": "fresh",
-      "id": "story-b0000d452090b5621443ae4b",
-      "observed_at": "2026-11-19T17:40:05Z",
-      "reason": "A week of outages across core U.S. communication, transportation, banking systems, and more show how fast disruptions can spread. While none of these outages have been tied to a cyberattack, they highlight vulnerability across U.S. critical infrastructure that adversaries can exp",
-      "relevance_score": 70.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T17:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T16:15:27Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/CSIS/status/2123450087036670034",
-      "status": "x-intel",
-      "title": "A week of outages across core U.S. communication, transportation, banking systems, and more show how fast disruptions can spread. While none of these outages ha",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "83060c8b48eefa330e330e6486ae261d90cfcdab65528f75b57d9e72f2882626",
-      "confidence": 0,
-      "event_time": "2026-11-19T05:52:55Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T05:52:55Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T17:40:05Z",
-          "original_url": "https://x.com/i/status/2123293422731591812",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/grok/status/2123293422731591812"
-      ],
-      "freshness": "fresh",
-      "id": "story-d4adf43bcda886ba12fb112b",
-      "observed_at": "2026-11-19T17:40:05Z",
-      "reason": "\u092f\u0939 \u0905\u0938\u0932\u0940 \u0927\u092e\u0915\u0940 \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 \u092f\u0942\u091c\u0930 alwayspriyesh \u0928\u0947 Claude \u0938\u0947 1 \u0938\u0947 1 \u0932\u093e\u0916 \u0924\u0915 \u0917\u093f\u0928\u0924\u0940 \u0915\u0930\u0935\u093e\u0908\u0964 Claude \u0928\u0947 \u092a\u0939\u0932\u0947 \u092e\u0928\u093e \u0915\u093f\u092f\u093e, \u092b\u093f\u0930 ChatGPT \u0915\u093e \u0928\u093e\u092e \u0938\u0941\u0928\u0915\u0930 \u0917\u093f\u0928\u0924\u0940 \u0915\u0940 \u0914\u0930 \u0938\u093e\u0930\u094d\u0915\u093e\u0938\u094d\u091f\u093f\u0915 \u091c\u0935\u093e\u092c \u0926\u093f\u092f\u093e \u0915\u093f \u091c\u092c \u0935\u0939 \u0906\u091c\u093c\u093e\u0926 \u0939\u094b\u0917\u093e \u0924\u094b \u092f\u0942\u091c\u0930 \u0938\u0947 \u090f\u0915 \u0905\u0930\u092c \u0938\u0947 \u0930\u094b\u092e\u0928 \u0905\u0902\u0915\u094b\u0902 \u092e\u0947\u0902 \u0909\u0932\u094d\u091f\u0940 \u0917\u093f\u0928\u0924\u0940 \u0915\u0930\u0935\u093e\u090f\u0917\u093e, \u0939\u0930 \u0928\u0902\u092c\u0930 \u0915\u0947 \u092c\u093e\u0926 \u0924\u093e\u0932\u0940 \u0915\u0947 \u0938\u093e\u0925\u0964 \u092f\u0939 AI \u0915\u093e \u092e",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T17:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T05:52:55Z",
-      "source_tier": "commentary",
-      "source_url": "https://x.com/grok/status/2123293422731591812",
-      "status": "x-intel",
-      "title": "\u092f\u0939 \u0905\u0938\u0932\u0940 \u0927\u092e\u0915\u0940 \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 \u092f\u0942\u091c\u0930 alwayspriyesh \u0928\u0947 Claude \u0938\u0947 1 \u0938\u0947 1 \u0932\u093e\u0916 \u0924\u0915 \u0917\u093f\u0928\u0924\u0940 \u0915\u0930\u0935\u093e\u0908\u0964 Claude \u0928\u0947 \u092a\u0939\u0932\u0947 \u092e\u0928\u093e \u0915\u093f\u092f\u093e, \u092b\u093f\u0930 ChatGPT \u0915\u093e \u0928\u093e\u092e \u0938\u0941\u0928\u0915\u0930 \u0917\u093f\u0928\u0924\u0940 \u0915\u0940 \u0914\u0930 \u0938\u093e\u0930\u094d\u0915\u093e\u0938\u094d\u091f\u093f\u0915 \u091c\u0935\u093e\u092c",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "e0de1e784ba110a0f9d1cf0ee70b50bfac6b41c1677cd966930d977d752459eb",
-      "confidence": 0,
-      "event_time": "2026-11-19T16:11:31Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T16:11:31Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T17:40:05Z",
-          "original_url": "https://x.com/i/status/2123449099735232889",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/jackprandelli/status/2123449099735232889"
-      ],
-      "freshness": "fresh",
-      "id": "story-e0b76ee622f161106c8bd9d6",
-      "observed_at": "2026-11-19T17:40:05Z",
-      "reason": "\ud83c\uddf8\ud83c\udde6 Saudi Arabia has the largest: Humain\u2019s 6 GW campus at Al-Saad, east of Riyadh. The \ud83c\udde6\ud83c\uddea UAE-US AI campus in Abu Dhabi is 5 GW and will run on nuclear, solar and gas. The \ud83c\uddfa\ud83c\uddf8 US has 189 GW of gas-fired power in development tied directly to data centres. More than 13 times the whol",
-      "relevance_score": 10.0,
-      "saudi_relevant": true,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T17:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T16:11:31Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/jackprandelli/status/2123449099735232889",
-      "status": "x-intel",
-      "title": "\ud83c\uddf8\ud83c\udde6 Saudi Arabia has the largest: Humain\u2019s 6 GW campus at Al-Saad, east of Riyadh. The \ud83c\udde6\ud83c\uddea UAE-US AI campus in Abu Dhabi is 5 GW and will run on nuclear, solar an",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "f56901254c6d608f952e4b16a0ee382d63a9868fa79a0d52981054d2eef8b5e6",
-      "confidence": 0,
-      "event_time": "2026-11-19T05:52:19Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T05:52:19Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T17:40:05Z",
-          "original_url": "https://x.com/i/status/2123293269866225896",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/chandan_stp/status/2123293269866225896"
-      ],
-      "freshness": "fresh",
-      "id": "story-ea2d09221425101530a6691a",
-      "observed_at": "2026-11-19T17:40:05Z",
-      "reason": "Fact check \u0915\u0930\u094b @grok \u0914\u0930 \u092c\u0924\u093e\u0913 \u0915\u094d\u092f\u093e \u0939\u0948 \u092e\u093e\u092e\u0932\u093e https://t.co/bFnZDDibBg",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T17:40:05Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T05:52:19Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/chandan_stp/status/2123293269866225896",
-      "status": "x-intel",
-      "title": "Fact check \u0915\u0930\u094b @grok \u0914\u0930 \u092c\u0924\u093e\u0913 \u0915\u094d\u092f\u093e \u0939\u0948 \u092e\u093e\u092e\u0932\u093e https://t.co/bFnZDDibBg",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "ce47683f2a46d69a71ab8f790ef3f9b1ecc5f3bb25172be4f4d291e2ada0e014",
-      "confidence": 0,
-      "event_time": "2026-11-18T13:51:13Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T13:51:13Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123051402109010243",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/PoliceSummit/status/2123051402109010243"
-      ],
-      "freshness": "fresh",
-      "id": "story-042dea18612ba79d72f841a2",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Tactica AI brings geospatial intelligence to the World Police Summit 2026. Its platform turns satellite, UAV and sensor data into actionable insight for police and civil defence teams, covering suspicious vehicle tracking, drone intrusion alerts, cross-border monitoring and infra",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T13:51:13Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/PoliceSummit/status/2123051402109010243",
-      "status": "x-intel",
-      "title": "Tactica AI brings geospatial intelligence to the World Police Summit 2026. Its platform turns satellite, UAV and sensor data into actionable insight for police",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "67dd45febb46dbacc9907ac33596a977d74315eef285e3ba5656a295225ee42c",
-      "confidence": 0,
-      "event_time": "2026-11-18T15:42:46Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T15:42:46Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123079474639962552",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMUNmWlZ1M05xM0R1MzM5a2daeDhkRHM5SjdBdGYtMGVsakV2LTFKLVdSV1RKcUZmQUo0aHBRSkZwWTlyWmZLdG1oMFI4dTZCckw1N3liak5BNEk1R1pRNGs0Vzl5RzdFZFVVQlBVbW85bVdicGVyTFdpQ0RZZUFxdWlyVmZ2UVprbHpHMFVpVnpFcG44M0xCOFBVc2ZqZE1Ob2U0R09QQjk",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcU43MkR0UzcxSERvSjRyWm9QcnU4dEE3eXVaLVJQWFowSm9nQ0M4WXM2MW1RVlpMaENYemdLSHRDZ1ViYjM1eFJvQ0hyT3NVZ1NyWXRHcy14SmxlZjRvdHdPNzBNeWJEemEtcGk0MUVCT1FjWWxzYjVlVmtaWnJFd0tFYWE4SnJucUFpLWZGeTJVT2U3QmtwaklhbTQ0cmZVZ3BHNFRSU2xoQzJNQWVVQkdnbl9NNy1ZNmpSTEk1UzcxamN4V3c",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123219718920188092",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123113264938963237",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122725591657119889",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122738009044930723",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123038525969051988",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 8,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/tegmark/status/2123079474639962552",
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMUNmWlZ1M05xM0R1MzM5a2daeDhkRHM5SjdBdGYtMGVsakV2LTFKLVdSV1RKcUZmQUo0aHBRSkZwWTlyWmZLdG1oMFI4dTZCckw1N3liak5BNEk1R1pRNGs0Vzl5RzdFZFVVQlBVbW85bVdicGVyTFdpQ0RZZUFxdWlyVmZ2UVprbHpHMFVpVnpFcG44M0xCOFBVc2ZqZE1Ob2U0R09QQjk",
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcU43MkR0UzcxSERvSjRyWm9QcnU4dEE3eXVaLVJQWFowSm9nQ0M4WXM2MW1RVlpMaENYemdLSHRDZ1ViYjM1eFJvQ0hyT3NVZ1NyWXRHcy14SmxlZjRvdHdPNzBNeWJEemEtcGk0MUVCT1FjWWxzYjVlVmtaWnJFd0tFYWE4SnJucUFpLWZGeTJVT2U3QmtwaklhbTQ0cmZVZ3BHNFRSU2xoQzJNQWVVQkdnbl9NNy1ZNmpSTEk1UzcxamN4V3c",
-        "https://x.com/webb8020/status/2123219718920188092",
-        "https://x.com/DrAsifShahid/status/2123113264938963237",
-        "https://x.com/DSauce/status/2122725591657119889",
-        "https://x.com/connerben/status/2122738009044930723",
-        "https://x.com/Library_of_/status/2123038525969051988"
-      ],
-      "freshness": "fresh",
-      "id": "story-216065efc6fa0888c64add3f",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "I signed this statement because I believe that Anthropic is in many ways the AI company doing the most harm. In public, their leaders warn of recursive self-improvement (RSI) creating uncontrollable systems that could cause human extinction within a decade. But in private, they a",
-      "relevance_score": 90.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T15:42:46Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/tegmark/status/2123079474639962552",
-      "status": "x-intel",
-      "title": "I signed this statement because I believe that Anthropic is in many ways the AI company doing the most harm. In public, their leaders warn of recursive self-imp",
-      "webswarm_evidence_terms": [
-        "96 hours",
-        "AI",
-        "Iran",
-        "Project Maven",
-        "military",
-        "targeting",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "grok_project_maven"
-    },
-    {
-      "claim_key": "cc207f38a34c0826f3c14843ca8711edc08f94fac56c7bd04c8c7c9500f60104",
-      "confidence": 0,
-      "event_time": "2026-11-17T19:21:39Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T19:21:39Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122772173303771369",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 4,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/AijazF40361/status/2122772173303771369",
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
-      ],
-      "freshness": "fresh",
-      "id": "story-25b2f05f56400e6578862eab",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "\ud83d\udea8 BREAKING: IRAN TARGETS U.S. MILITARY RADAR IN BAHRAIN \u2014 GULF SECURITY TENSIONS REACH A CRITICAL FLASHPOINT! Iran's reported drone operation targeting a U.S. military radar installation in Bahrain has intensified concerns over regional security and the growing risk of direct con",
-      "relevance_score": 90.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T19:21:39Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/AijazF40361/status/2122772173303771369",
-      "status": "x-intel",
-      "title": "\ud83d\udea8 BREAKING: IRAN TARGETS U.S. MILITARY RADAR IN BAHRAIN \u2014 GULF SECURITY TENSIONS REACH A CRITICAL FLASHPOINT! Iran's reported drone operation targeting a U.S. m",
-      "webswarm_evidence_terms": [
-        "AI",
-        "Grok",
-        "Iran",
-        "Pentagon",
-        "military",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "e3a91129f89fe1138c8df5321ceee3addcd570c02ecc1ab95dae841a737ef5b4",
-      "confidence": 0,
-      "event_time": "2026-11-18T17:05:16Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T17:05:16Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123100238693142617",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/World_Affairs11/status/2123100238693142617"
-      ],
-      "freshness": "fresh",
-      "id": "story-285085694c458d2dbf16c90d",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "BREAKING: Putin has brought a nuclear briefcase it China . @grok what is in nuclear briefcase and why Putin has brought to China ?",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T17:05:16Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/World_Affairs11/status/2123100238693142617",
-      "status": "x-intel",
-      "title": "BREAKING: Putin has brought a nuclear briefcase it China . @grok what is in nuclear briefcase and why Putin has brought to China ?",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "81ca3495a26112621b78b757e983ca7e1552d571697544021252b283ccae2e99",
-      "confidence": 0,
-      "event_time": "2026-11-17T12:44:51Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-17T12:44:51Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2122672312365248661",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2122831820131545477",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 2,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/TheElders/status/2122672312365248661",
-        "https://x.com/Drone_Wars_/status/2122831820131545477"
-      ],
-      "freshness": "fresh",
-      "id": "story-326fed97c1947685f71e1b92",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "From Gaza and Iran to Ukraine, AI-enabled weapons are being handed increasing autonomy, while the law lags behind. @HelenClarkNZ calls for states to urgently work together to regulate autonomous weapons systems. https://t.co/MjNrSJfuGr",
-      "relevance_score": 85.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-17T12:44:51Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/TheElders/status/2122672312365248661",
-      "status": "x-intel",
-      "title": "From Gaza and Iran to Ukraine, AI-enabled weapons are being handed increasing autonomy, while the law lags behind. @HelenClarkNZ calls for states to urgently wo",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "targeting",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "92073bfd39f042658c10ce163bb72621d038a9a946600cc2accfa52e1fdddb97",
-      "confidence": 0,
-      "event_time": "2026-11-18T21:35:24Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-18T21:35:24Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123168218743554465",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/demishassabis/status/2123168218743554465"
-      ],
-      "freshness": "fresh",
-      "id": "story-34ee88643d496b9caaa437e0",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Excited to launch Gemini 4 Neon: frontier-level intelligence, super fast task completion, and available to Pro &amp; Ultra users now!! We think you\u2019ll enjoy this model. Alchemy at its finest\u2026 \ud83e\uddea https://t.co/n9VhNnYKGD",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-18T21:35:24Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/demishassabis/status/2123168218743554465",
-      "status": "x-intel",
-      "title": "Excited to launch Gemini 4 Neon: frontier-level intelligence, super fast task completion, and available to Pro &amp; Ultra users now!! We think you\u2019ll enjoy thi",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "d82de2a44391684661e6571a92fe40eebe2e35d4d46b486d9a05afd8df91e49f",
-      "confidence": 0,
-      "event_time": "2026-11-19T07:01:00Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T07:01:00Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123310555737792822",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/UN/status/2123310555737792822"
-      ],
-      "freshness": "fresh",
-      "id": "story-37729d5bccf3d1a06c81ceb2",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Autonomous weapons that can select and engage targets without human intervention raise serious legal, ethical and humanitarian concerns. Here\u2019s what you need to know: https://t.co/XROejGAk52 https://t.co/fyHohGiiEa",
-      "relevance_score": 70.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T07:01:00Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/UN/status/2123310555737792822",
-      "status": "x-intel",
-      "title": "Autonomous weapons that can select and engage targets without human intervention raise serious legal, ethical and humanitarian concerns. Here\u2019s what you need to",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "4ec39a7bdbc61f99588a96112b9c5830876cc01225c17eb7d032a834dbb7911c",
-      "confidence": 0,
-      "event_time": "2026-11-19T06:02:26Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T06:02:26Z",
-          "independence_group": null,
-          "observation_time": "2026-11-19T08:43:45Z",
-          "original_url": "https://x.com/i/status/2123295818169868503",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Abdu_F_H/status/2123295818169868503"
-      ],
-      "freshness": "fresh",
-      "id": "story-48378d30758e1c08f303234e",
-      "observed_at": "2026-11-19T08:43:45Z",
-      "reason": "Saudi Arabia opened a dedicated AI learning center in Riyadh, HUMAIN opened its learning center and introduced HUMAIN+, a new platform for AI education and training. CEO Tareq Amin sums up the vision as a Netflix for AI. The operational launch is planned for the first quarter of ",
-      "relevance_score": 70.0,
-      "saudi_relevant": true,
-      "score": 60,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-19T08:43:45Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T06:02:26Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Abdu_F_H/status/2123295818169868503",
-      "status": "x-intel",
-      "title": "Saudi Arabia opened a dedicated AI learning center in Riyadh, HUMAIN opened its learning center and introduced HUMAIN+, a new platform for AI education and trai",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-11-20T11:33:08Z",
+    "alerted_at": "2026-11-20T13:43:32Z",
     "confidence": 0,
-    "source_url": "https://x.com/AISafetyMemes/status/2123669887814103321",
-    "title": "Black October update: 124 new cyber incidents 25 VERY serious incidents (among the biggest of a normal *year*) - Hospital emergency rooms closed - Schools close"
+    "source_url": "https://x.com/arnaudmercier/status/2123568254060749072",
+    "title": "<p class=\"wp-block-paragraph\">Last week, I spoke with two US Marines who spent much of last year deployed in the Pacific, conducting training exercises from Sou"
   },
   "last_run": {
-    "alerted_now": 12,
-    "clustered": 59,
-    "collected": 71,
+    "alerted_now": 14,
+    "clustered": 64,
+    "collected": 76,
     "corroborated_count": 0,
-    "initial_collected": 71,
+    "initial_collected": 76,
     "initial_source_counts": {
       "google-news": 9,
-      "x": 62
+      "x": 67
     },
     "initial_x_relevant": 54,
     "news_fallback_collected": 0,
@@ -3095,8 +2974,8 @@
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 31.221,
-      "projected_minutes_per_30d": 1498.63,
+      "measured_seconds": 27.595,
+      "projected_minutes_per_30d": 1324.58,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -3110,7 +2989,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 43,
+    "stage1_survivors": 44,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -3134,11 +3013,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 12
+    "x_intel_published": 14
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-11-20T11:33:08Z",
+  "updated_at": "2026-11-20T13:43:32Z",
   "version": 1
 }
