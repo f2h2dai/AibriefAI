@@ -53,6 +53,9 @@ DEFAULT_X_INTEL_QUERY = (
     'OR "جيميناي" OR "البنتاغون" OR "إيران" OR "ايران"'
 )
 DEFAULT_AI_INTEL_NEWS_QUERIES = [
+    '(FAA OR airline OR airport) (outage OR "ground stop" OR "system disruption")',
+    '(AWS OR Azure OR "Google Cloud" OR Cloudflare OR "Microsoft 365") (outage OR disruption OR degraded)',
+    '(telecom OR network OR DNS OR routing) (outage OR disruption) "United States"',
     '"LG TV" privacy microphone standby security investigation',
     '"smart TV" surveillance privacy telemetry vulnerability',
     '"Saudi government app" private key "Saudi National Bank" Nusuk',
@@ -66,6 +69,8 @@ DEFAULT_AI_INTEL_NEWS_QUERIES = [
     '"geospatial intelligence" AI "Middle East"',
 ]
 DEFAULT_X_QUERY_FAMILIES = [
+    '(outage OR "service disruption" OR degraded OR unavailable) (cloud OR network OR telecom OR DNS OR routing)',
+    '("ground stop" OR "system outage" OR cancellations OR delays) (FAA OR airline OR airport OR aviation)',
     '"Grok Gov" OR "Grok Gov Model" OR "Project Maven" OR "Pentagon AI" OR "DoD AI"',
     '"AI targeting" OR "algorithmic targeting" OR "autonomous weapons" OR "military AI"',
     '"MizarVision" OR "AI-tagged satellite" OR "geospatial intelligence" OR "military assets"',
@@ -79,6 +84,32 @@ DEFAULT_X_ACCOUNT_QUERY = (
     '"AI" OR "Grok" OR "Project Maven" OR "autonomous" OR "targeting" '
     'OR "geospatial" OR "satellite" OR "الذكاء الاصطناعي" OR "غروك"'
 )
+DEFAULT_X_OUTAGE_ACCOUNT_QUERY = (
+    'outage OR "service disruption" OR degraded OR unavailable OR "ground stop" '
+    'OR cancellations OR delays OR network OR telecom OR routing OR radar'
+)
+DEFAULT_X_OUTAGE_ACCOUNTS = [
+    "FAANews",
+    "flightaware",
+    "CloudflareRadar",
+    "downdetector",
+    "ThousandEyes",
+    "CISAgov",
+    "CISACyber",
+    "awscloud",
+    "AzureSupport",
+    "GoogleCloudTech",
+    "Cloudflare",
+    "United",
+    "AmericanAir",
+    "Delta",
+    "SouthwestAir",
+    "JetBlue",
+    "AlaskaAir",
+    "ATLairport",
+    "DFWAirport",
+    "flyLAXairport",
+]
 DEFAULT_X_PRIORITY_ACCOUNTS = [
     "iam_zachi",
     "DeptofDefense",
@@ -391,6 +422,53 @@ AI_WAR_MILITARY_MARKERS = [
     "درون",
     "طائرة مسيرة",
     "طائرات مسيرة",
+]
+
+OUTAGE_EVENT_MARKERS = [
+    "outage",
+    "service disruption",
+    "systems unavailable",
+    "system unavailable",
+    "degraded performance",
+    "ground stop",
+    "grounded flights",
+    "flight cancellations",
+    "flight delays",
+    "network instability",
+    "communications failure",
+    "communications outage",
+    "انقطاع",
+    "توقف الخدمة",
+    "تعطل النظام",
+    "تأخير الرحلات",
+    "إلغاء الرحلات",
+]
+
+OUTAGE_DOMAIN_MARKERS = [
+    "faa",
+    "airline",
+    "airport",
+    "aviation",
+    "flight",
+    "air traffic control",
+    "cloud",
+    "aws",
+    "azure",
+    "google cloud",
+    "cloudflare",
+    "network",
+    "internet",
+    "telecom",
+    "routing",
+    "router",
+    "dns",
+    "radar",
+    "اتصالات",
+    "شبكة",
+    "شبكات",
+    "طيران",
+    "مطار",
+    "رحلات",
 ]
 
 X_INTEL_EVENT_MARKERS = [
@@ -1429,6 +1507,10 @@ def x_intel_relevance_score(candidate: dict) -> int:
         score += 1
     if is_before_trend_candidate(candidate):
         score += 4
+    outage_event = any(marker in text for marker in OUTAGE_EVENT_MARKERS)
+    outage_domain = any(marker in text for marker in OUTAGE_DOMAIN_MARKERS)
+    if outage_event and outage_domain:
+        score += 4
     return score
 
 
@@ -2018,6 +2100,7 @@ def x_search_queries(env: dict[str, str]) -> list[str]:
     ]
     queries = list(DEFAULT_X_QUERY_FAMILIES)
     queries.extend(batched_x_handle_queries(priority_handles, DEFAULT_X_ACCOUNT_QUERY, batch_size))
+    queries.extend(batched_x_handle_queries(DEFAULT_X_OUTAGE_ACCOUNTS, DEFAULT_X_OUTAGE_ACCOUNT_QUERY, batch_size))
     queries.extend(batched_x_handle_queries(remaining_handles, DEFAULT_X_ACCOUNT_QUERY, batch_size))
     max_queries = max(1, safe_int(env.get("BREAKING_MAX_X_QUERIES"), 12))
     return queries[:max_queries]

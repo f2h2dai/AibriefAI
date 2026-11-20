@@ -446,6 +446,37 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertTrue(any("LG TV" in query and "privacy" in query for query in queries))
         self.assertTrue(any("السعودية" in query and "أمن سيبراني" in query for query in queries))
 
+    def test_default_x_queries_cover_us_outage_accounts(self):
+        queries = x_search_queries(
+            {
+                "BREAKING_MAX_X_HANDLES": "10",
+                "BREAKING_X_HANDLE_BATCH_SIZE": "10",
+                "BREAKING_MAX_X_QUERIES": "24",
+            }
+        )
+
+        self.assertTrue(any("from:FAANews" in query and "ground stop" in query for query in queries))
+        self.assertTrue(any("from:CloudflareRadar" in query and "outage" in query for query in queries))
+        self.assertTrue(any("from:United" in query and "delays" in query for query in queries))
+
+    def test_us_aviation_and_network_outages_are_relevant(self):
+        aviation = {
+            "title": "FAA issues nationwide ground stop after communications outage",
+            "content": "Air traffic control network instability caused flight delays and cancellations.",
+        }
+        network = {
+            "title": "Cloudflare reports service disruption",
+            "content": "Network routing and DNS performance are degraded in the United States.",
+        }
+        promotion = {
+            "title": "Airline announces new route",
+            "content": "Daily flights begin next month with promotional fares.",
+        }
+
+        self.assertGreaterEqual(x_intel_relevance_score(aviation), 4)
+        self.assertGreaterEqual(x_intel_relevance_score(network), 4)
+        self.assertEqual(x_intel_relevance_score(promotion), 0)
+
     def test_priority_saudi_post_is_public_redacted_and_before_trend(self):
         [post] = DEFAULT_X_PRIORITY_POSTS
 
