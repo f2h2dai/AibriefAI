@@ -1,32 +1,33 @@
 {
-  "generated_at": "2026-11-21T22:48:31Z",
+  "generated_at": "2026-11-22T18:45:26Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.3333,
-  "primary_source_link_rate": 1.0,
+  "source_failure_rate": 0.25,
+  "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-21T22:48:31Z",
+  "latest_successful_run": "2026-11-22T18:45:26Z",
   "highest_ranked_signal": {
-    "id": "github-007",
-    "title": "Dev-Art-Solutions/EvoMesh",
-    "action_score": 75.5,
-    "url": "https://github.com/Dev-Art-Solutions/EvoMesh"
+    "id": "twitter-039",
+    "title": "@rajend86: Beyond Earth: Space-Based Computing, Satellite Intelligence and the Future of Orbital Infrastructure Introduction Space infrastructure is en",
+    "action_score": 73.75,
+    "url": "https://x.com/rajend86/status/2124552824390598922"
   },
   "source_contribution": {
-    "github": 7,
-    "twitter": 5
+    "twitter": 5,
+    "github": 6,
+    "google-news": 1
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7377, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7682, Req"
     }
   ],
-  "runtime_seconds": 49.57,
+  "runtime_seconds": 430.787,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-21T22:48:31Z",
+    "planned_at": "2026-11-22T18:45:26Z",
     "production_threshold": 70.0
   }
 }
