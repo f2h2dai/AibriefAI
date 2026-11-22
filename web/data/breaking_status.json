@@ -3,6 +3,507 @@
   "cadence_minutes": 15,
   "feed": [
     {
+      "claim_key": "5a4d2761bcf32498e52f127c86f88770e6d92757af4609095bf8180ebe011774",
+      "confidence": 0,
+      "event_time": "2026-11-21T21:07:32Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T21:07:32Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2124248368226410817",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2123913188982796454",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc",
+          "primary": false,
+          "publisher": "news.google.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 5,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/BBessolo/status/2124248368226410817",
+        "https://x.com/grok/status/2123913188982796454",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTmNQc25ac0VpU0RFZXRlTHRyaXFVN3ZpLUl6VnVtOU4wdWpndC0zRG5jLTRMWjNnRlNmbzJxNG1GNlJFYXpPU0QtampPRTZjbHZUOGFPc2JWVzJSai1ld3pHNElkaHRFQ2JQVDM1RnFROVdLLVg3alE4bkRXZzVPY3duWWJEazlrM3NXaVQySksxalNKbnc",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOWVsVmZONEYtNXNyajhscnZGTTREY2xnV2I1Q2pOdmNCQ1lWX2gxRThnZjRRYkdFMjBMRHRYcXdFMFl2XzFqSV9yMnUtR29meG8ySEV5MGFJYXhvR2h5UHlYQkhIZkNfYXhsa2pqQXlReTE4RHlJMWQydlJ0WmtKakpkTm9TVHF4OUZOUmhUMWR6NmNiX2RodGFUQ2xzMXI5SnJZOTRjUWFZelZjV3ZuUE11b1ZxVEtnQmlYdVozU21CQUFQWnZYeTJQNXhwZ2gyQUREQVlmNDFaaE0",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNajhwM19mU3JXWHd2dUszZGZLUDFTcXgyWWItZlhOaGprN09UUmtqNGFJM1RIam04aEF4WVNNcWNBeVgzVlM3Z2ZkV3ZiRjF2Z2htWTQ4NFJDZW0xVll0amNUWGtFTzI4a3VQUFRXUnMzUzVhQnpBcEpKam4ybGFtNC12T1k3ZDlkVEdSRlJIbzhiM2xIUlYyN1l5S3hTT0stRHc"
+      ],
+      "freshness": "fresh",
+      "id": "story-3fb77b2d20e1a4ccb5040d1f",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "@KColbertReport @FBIIndianapolis These dangerous incompetents from the IEDC are like monkeys with sissors. Project Maven, the Palantir system that misses targets, is exclusively operated by the extraordinarily useless IEDC executives. https://t.co/OGEHFl2Rtp",
+      "relevance_score": 90.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": true,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T21:07:32Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/BBessolo/status/2124248368226410817",
+      "status": "x-intel",
+      "title": "@KColbertReport @FBIIndianapolis These dangerous incompetents from the IEDC are like monkeys with sissors. Project Maven, the Palantir system that misses target",
+      "webswarm_evidence_terms": [
+        "Grok",
+        "Iran",
+        "Pentagon",
+        "Project Maven",
+        "targeting"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "grok_project_maven"
+    },
+    {
+      "claim_key": "f01abb1953546b6dd83d93ae80734f9d2690de6c5f3f5ccd64174c616a5cf919",
+      "confidence": 0,
+      "event_time": "2026-11-19T16:49:29Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T16:49:29Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2123458653063696580",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/apeex_eth/status/2123458653063696580"
+      ],
+      "freshness": "stale",
+      "id": "story-3d46310c59168d2a8420de81",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "Copilot went down with Outlook. that's the problem. AI is becoming part of everyday infrastructure, yet much of it still depends on the same centralized providers @Acurast takes a different approach with independent smartphone-powered compute nodes and hardware-backed security th",
+      "relevance_score": 75.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T16:49:29Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/apeex_eth/status/2123458653063696580",
+      "status": "x-intel",
+      "title": "@apeex_eth: Copilot went down with Outlook. that's the problem. AI is becoming part of everyday infrastructure, yet much of it still depends on the same",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "dbc17d7a627a9e4dcc166446a0194764a866b3abd6674e199ced657839f956f5",
+      "confidence": 0,
+      "event_time": "2026-11-21T22:27:47Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T22:27:47Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2124268565847212509",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/morrowbear/status/2124268565847212509"
+      ],
+      "freshness": "fresh",
+      "id": "story-6a8dd50ad3966b6365ca8754",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "\"Hey man, you seem a little stressed lately\" Meanwhile: Nov 12\u201314 \u2014 Microsoft 365 [OUTAGE]: Major disruption affecting Outlook, Exchange, Teams, and enterprise communications. Nov 13 \u2014 FAA [OUTAGE]: Nationwide air traffic disruption and ground stop, resulting in widespread flight",
+      "relevance_score": 70.0,
+      "saudi_relevant": false,
+      "score": 60,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T22:27:47Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/morrowbear/status/2124268565847212509",
+      "status": "x-intel",
+      "title": "\"Hey man, you seem a little stressed lately\" Meanwhile: Nov 12\u201314 \u2014 Microsoft 365 [OUTAGE]: Major disruption affecting Outlook, Exchange, Teams, and enterprise",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "970d3017f628f88c4685eeb857106ea3e6d413035355a43fc0e4c3ef4c43fe4f",
+      "confidence": 0,
+      "event_time": "2026-11-21T19:14:02Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T19:14:02Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2124219805632770387",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/DavidLinthicum/status/2124219805632770387"
+      ],
+      "freshness": "fresh",
+      "id": "story-746571609cba279614fe78a4",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "The Global Outage Mea Culpa: Why Enterprise Cloud Trust Is Officially Broken A stage apology and an admission of having work to do do not qualify as an explanation, especially not when global commerce just took a direct hit. Satya Nadella addressed last week's catastrophic Outloo",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T19:14:02Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/DavidLinthicum/status/2124219805632770387",
+      "status": "x-intel",
+      "title": "The Global Outage Mea Culpa: Why Enterprise Cloud Trust Is Officially Broken A stage apology and an admission of having work to do do not qualify as an explanat",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "cd59f82236479d5840292cb173796987372d4526ba8cb5eab6911f90e45744da",
+      "confidence": 0,
+      "event_time": "2026-11-19T13:54:46Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T13:54:46Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2123414683138801672",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/PalantirTech/status/2123414683138801672"
+      ],
+      "freshness": "stale",
+      "id": "story-14abc073ce3ef3950f702685",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "Wield your alpha to beat the frontier. At DevCon 7, McCarthy Building Companies presents a sovereign model factory built on Ontology-linked data, Model Studio, GPU Hubs, and AIP Evals. Together, they turn construction domain expertise into a fine-tuned model that beat a leading f",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T13:54:46Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/PalantirTech/status/2123414683138801672",
+      "status": "x-intel",
+      "title": "Wield your alpha to beat the frontier. At DevCon 7, McCarthy Building Companies presents a sovereign model factory built on Ontology-linked data, Model Studio,",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "233eed792564a8eb1d42740b1db8c53e4fed36a0436f96efa81e29308fd4527a",
+      "confidence": 0,
+      "event_time": "2026-11-19T15:45:27Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T15:45:27Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2123442537473998997",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/zerohedge/status/2123442537473998997"
+      ],
+      "freshness": "stale",
+      "id": "story-524baacdf18c5c3d5a12fb38",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "FAA Administrator Takes Blame For Nationwide Ground Stop https://t.co/aCaiadwIwP",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T15:45:27Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/zerohedge/status/2123442537473998997",
+      "status": "x-intel",
+      "title": "FAA Administrator Takes Blame For Nationwide Ground Stop https://t.co/aCaiadwIwP",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "2a0c9161096bb240da1e69b233c1410c925b35670e3f986b9441eab6458d2296",
+      "confidence": 0,
+      "event_time": "2026-11-20T14:56:25Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-20T14:56:25Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2123792585105854483",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RadiomSpatial/status/2123792585105854483"
+      ],
+      "freshness": "fresh",
+      "id": "story-2b2fd0f02be3f324f896e171",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "Two sites. Same flood-exposure class. One has backup capacity. The other is your only source of a critical component. Which would you review first? #SupplyChain #Geospatial #FloodEscape #RiskManagement #Earthquake #Procurement https://t.co/asF4lmXRTW",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-20T14:56:25Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RadiomSpatial/status/2123792585105854483",
+      "status": "x-intel",
+      "title": "Two sites. Same flood-exposure class. One has backup capacity. The other is your only source of a critical component. Which would you review first? #SupplyChain",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "6ee02e20d33e99ac7b3521bb9ee42bc0bd0cf6fe1a18c1f46897ec816a2a9282",
+      "confidence": 0,
+      "event_time": "2026-11-20T22:40:08Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-20T22:40:08Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2123909284241039648",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/planetoftechs/status/2123909284241039648"
+      ],
+      "freshness": "fresh",
+      "id": "story-aa967ea37a35086f9d6e5214",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "\ud83d\udea8 \u062a\u062e\u064a\u0651\u0644 \u062f\u0648\u0644\u0629 \u0643\u0627\u0645\u0644\u0629 \u0645\u0646 \u0627\u0644\u0639\u0628\u0627\u0642\u0631\u0629\u2026 \u0644\u0643\u0646 \u062c\u0645\u064a\u0639\u0647\u0645 \u064a\u0639\u064a\u0634\u0648\u0646 \u062f\u0627\u062e\u0644 \u0645\u0631\u0643\u0632 \u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0627\u062d\u062f! \u0647\u0630\u0627 \u0647\u0648 \u062a\u0635\u0648\u0631 \u062f\u0627\u0631\u064a\u0648 \u0623\u0645\u0648\u062f\u064a\u060c \u0631\u0626\u064a\u0633 Anthropic\u060c \u0644\u0645\u0633\u062a\u0642\u0628\u0644 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \u064a\u062a\u062d\u062f\u062b \u0639\u0646 100 \u0645\u0644\u064a\u0648\u0646 \u0639\u0642\u0644 \u062e\u0627\u0631\u0642 \u0642\u0627\u062f\u0631 \u0639\u0644\u0649 \u0627\u0644\u062a\u0641\u0648\u0642 \u0641\u064a \u0627\u0644\u0628\u062d\u062b \u0627\u0644\u0639\u0644\u0645\u064a\u060c \u0648\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u060c \u0648\u0627\u0644\u0647\u0646\u062f\u0633\u0629\u060c \u0648\u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0627\u062a \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629. \u0644\u0643\u0646 \u062a\u062d\u0630\u064a\u0631\u0647 \u0627\u0644\u0623\u062e\u0637\u0631: \u0645\u0627\u0630\u0627 \u0644\u0648 \u0627\u0645\u062a\u0644\u0643\u062a",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-20T22:40:08Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/planetoftechs/status/2123909284241039648",
+      "status": "x-intel",
+      "title": "\ud83d\udea8 \u062a\u062e\u064a\u0651\u0644 \u062f\u0648\u0644\u0629 \u0643\u0627\u0645\u0644\u0629 \u0645\u0646 \u0627\u0644\u0639\u0628\u0627\u0642\u0631\u0629\u2026 \u0644\u0643\u0646 \u062c\u0645\u064a\u0639\u0647\u0645 \u064a\u0639\u064a\u0634\u0648\u0646 \u062f\u0627\u062e\u0644 \u0645\u0631\u0643\u0632 \u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0627\u062d\u062f! \u0647\u0630\u0627 \u0647\u0648 \u062a\u0635\u0648\u0631 \u062f\u0627\u0631\u064a\u0648 \u0623\u0645\u0648\u062f\u064a\u060c \u0631\u0626\u064a\u0633 Anthropic\u060c \u0644\u0645\u0633\u062a\u0642\u0628\u0644 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a. \u064a\u062a\u062d\u062f\u062b \u0639\u0646 100 \u0645\u0644\u064a\u0648\u0646 \u0639",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "71a0b7d348a6677c022007b6a15ef13f4f6241cfe98edbd9a1cdaf0ab22ed944",
+      "confidence": 0,
+      "event_time": "2026-11-21T19:52:09Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T19:52:09Z",
+          "independence_group": null,
+          "observation_time": "2026-11-22T02:25:28Z",
+          "original_url": "https://x.com/i/status/2124229399272960234",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/hasanalnaqour/status/2124229399272960234"
+      ],
+      "freshness": "fresh",
+      "id": "story-1f73742cd8a9fdc253938d5f",
+      "observed_at": "2026-11-22T02:25:28Z",
+      "reason": "\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8 \u0639\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u062c\u0644 \" \u0642\u0646\u0627\u0629 \u0627\u0644 BBC \u062a\u0646\u0634\u0631 \u062a\u0642\u0631\u064a\u0631 \u064a\u0648\u0636\u062d \u0643\u064a\u0641 \u0623\u0639\u062f\u0627\u0621 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u064a\u062d\u0627\u0648\u0644\u0648\u0646 \u064a\u0633\u062a\u062e\u062f\u0645\u0648\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0646\u0634\u0631 \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0643\u0627\u0630\u0628\u0629 \u0644\u0628\u0639\u0636 \u0627\u0644\u0627\u0639\u062a\u062f\u0627\u0621\u0627\u062a \u062d\u0627\u0648\u0644\u062a \u0623\u062a\u0631\u062c\u0645\u0647 \u0644\u064a\u0635\u0644 \u0644\u0644\u062c\u0645\u064a\u0639 \u2705 https://t.co/hCIiTZNRwG",
+      "relevance_score": 10.0,
+      "saudi_relevant": true,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-22T02:25:28Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T19:52:09Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/hasanalnaqour/status/2124229399272960234",
+      "status": "x-intel",
+      "title": "\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8\ud83d\udea8 \u0639\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u0627\u062c\u0644 \" \u0642\u0646\u0627\u0629 \u0627\u0644 BBC \u062a\u0646\u0634\u0631 \u062a\u0642\u0631\u064a\u0631 \u064a\u0648\u0636\u062d \u0643\u064a\u0641 \u0623\u0639\u062f\u0627\u0621 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629 \u064a\u062d\u0627\u0648\u0644\u0648\u0646 \u064a\u0633\u062a\u062e\u062f\u0645\u0648\u0646 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0641\u064a \u0646\u0634\u0631 \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0643\u0627\u0630\u0628\u0629 \u0644\u0628\u0639\u0636 \u0627\u0644\u0627\u0639\u062a\u062f\u0627\u0621\u0627\u062a \u062d\u0627\u0648\u0644\u062a \u0623\u062a\u0631\u062c\u0645\u0647 \u0644\u064a\u0635\u0644",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "f3b51825bc3dc9293af2cf1667bb607ad9190c7a5ad8e518e8dcf5da3945177a",
+      "confidence": 0,
+      "event_time": "2026-11-21T17:04:11Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T17:04:11Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2124187126531051870",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/orbitlabx/status/2124187126531051870"
+      ],
+      "freshness": "fresh",
+      "id": "story-017ac1b1bd64e22edf1aeaf2",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "OrbitLabX brings together; computer science, AI/ML, geospatial intelligence, maths, and the social sciences to build a new generation of global mobility infrastructure grounded in human understanding. https://t.co/ATFXfBT1Y9",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T17:04:11Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/orbitlabx/status/2124187126531051870",
+      "status": "x-intel",
+      "title": "OrbitLabX brings together; computer science, AI/ML, geospatial intelligence, maths, and the social sciences to build a new generation of global mobility infrast",
+      "webswarm_evidence_terms": [
+        "geospatial intelligence",
+        "geospatial"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "mizarvision_geoint"
+    },
+    {
       "claim_key": "ff8483c827c4e902421d45ba342d4fe19e9802bcb39b3b1a608054ffd0368d4c",
       "confidence": 0,
       "event_time": "2026-11-21T18:21:21Z",
@@ -45,6 +546,141 @@
         "x.com",
         "AI",
         "military"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "10cef13be49c11efa953150c941cb531e7c739eae815bc451a8a146a8b98b767",
+      "confidence": 0,
+      "event_time": "2026-11-21T19:10:04Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T19:10:04Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2124218808558600338",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/defensearab/status/2124218808558600338"
+      ],
+      "freshness": "fresh",
+      "id": "story-0aa42505e14415107f7ff8d1",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "\u2022 \u0628\u062d\u0633\u0628 \u062a\u0642\u0631\u064a\u0631 Modern Diplomacy : \u0627\u0643\u0628\u0631 10 \u062f\u0648\u0644 \u062a\u0633\u062a\u062b\u0645\u0631 \u0628\u0642\u0648\u0629 \u0641\u064a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0647\u064a\u060c\u0627\u0644\u0648\u0644\u0627\u064a\u0627\u062a \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u060c\u0627\u0644\u0635\u064a\u0646 \u060c \u0623\u0648\u0643\u0631\u0627\u0646\u064a\u0627\u060c \u0625\u0633\u0631\u0627\u0626\u064a\u0644 \u060c \u0631\u0648\u0633\u064a\u0627\u060c \u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u060c \u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629\u060c \u0643\u0648\u0631\u064a\u0627 \u0627\u0644\u062c\u0646\u0648\u0628\u064a\u0629 \u060c \u0641\u0631\u0646\u0633\u0627 \u060c \u0648\u0627\u0644\u0647\u0646\u062f. https://t.co/WLpbRNsdSr",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T19:10:04Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/defensearab/status/2124218808558600338",
+      "status": "x-intel",
+      "title": "\u2022 \u0628\u062d\u0633\u0628 \u062a\u0642\u0631\u064a\u0631 Modern Diplomacy : \u0627\u0643\u0628\u0631 10 \u062f\u0648\u0644 \u062a\u0633\u062a\u062b\u0645\u0631 \u0628\u0642\u0648\u0629 \u0641\u064a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0647\u064a\u060c\u0627\u0644\u0648\u0644\u0627\u064a\u0627\u062a \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u060c\u0627\u0644\u0635\u064a\u0646 \u060c \u0623\u0648\u0643\u0631\u0627\u0646\u064a\u0627\u060c \u0625\u0633\u0631\u0627\u0626\u064a\u0644 \u060c \u0631\u0648\u0633\u064a\u0627\u060c \u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u060c \u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "da048d3d18e4f4ef7a108151cdedba56781200e1256f6094b38a5c3af7074869",
+      "confidence": 0,
+      "event_time": "2026-11-21T19:07:18Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T19:07:18Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2124218109984706896",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/LebanonTimesLb/status/2124218109984706896"
+      ],
+      "freshness": "fresh",
+      "id": "story-2fc9f4bbe5493ce02833f7c4",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "\u062e\u062f\u0639\u0629 \u0644\u0639\u0628\u0629 \u0627\u0644\u0641\u064a\u062f\u064a\u0648.. \u0643\u064a\u0641 \u064a\u0645\u0643\u0646 \u062a\u0636\u0644\u064a\u0644 \u0643\u0644\u0648\u062f \u0648ChatGPT \u0644\u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646 \u0643\u0623\u0647\u062f\u0627\u0641 \u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u0633\u064a\u0651\u0631\u0627\u062a\u061f \u0643\u0634\u0641\u062a \u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a \u0623\u0646 \u062e\u062f\u0627\u0639 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u062f \u064a\u062f\u0641\u0639\u0647\u0627 \u0625\u0644\u0649 \u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646 \u0648\u062c\u0646\u0648\u062f \u0645\u0635\u0627\u0628\u064a\u0646 \u0648\u0645\u062f\u0627\u0631\u0633 \u0623\u0647\u062f\u0627\u0641\u064b\u0627 \u0645\u062d\u062a\u0645\u0644\u0629 \u0644\u0636\u0631\u0628\u0627\u062a \u0639\u0633\u0643\u0631\u064a\u0629 \u0631\u063a\u0645 \u0627\u0644\u0636\u0648\u0627\u0628\u0637 \u0627\u0644\u0648\u0642\u0627\u0626\u064a\u0629 \u0627\u0644\u0645\u062f\u0645\u062c\u0629 \u0641\u064a\u0647\u0627 \u0644\u0627 \u064a\u0632\u0627\u0644 \u0645\u0646 \u063a\u064a\u0631 \u0627\u0644\u0645\u0639\u0631\u0648\u0641 \u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0630",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T19:07:18Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/LebanonTimesLb/status/2124218109984706896",
+      "status": "x-intel",
+      "title": "\u062e\u062f\u0639\u0629 \u0644\u0639\u0628\u0629 \u0627\u0644\u0641\u064a\u062f\u064a\u0648.. \u0643\u064a\u0641 \u064a\u0645\u0643\u0646 \u062a\u0636\u0644\u064a\u0644 \u0643\u0644\u0648\u062f \u0648ChatGPT \u0644\u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646 \u0643\u0623\u0647\u062f\u0627\u0641 \u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u0633\u064a\u0651\u0631\u0627\u062a\u061f \u0643\u0634\u0641\u062a \u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a \u0623\u0646 \u062e\u062f\u0627\u0639 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u062f \u064a\u062f\u0641\u0639\u0647\u0627 \u0625\u0644\u0649 \u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "c62a92c0e0cb7070529eb91770c10b5bbc4bbf12640cf573cfc201bd049e19d0",
+      "confidence": 0,
+      "event_time": "2026-11-21T13:50:47Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T13:50:47Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2124138457509527885",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/SUL5MUN/status/2124138457509527885"
+      ],
+      "freshness": "fresh",
+      "id": "story-34bd70788320d4e286bd0c6f",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "\ud83c\udf99\ufe0f \u062d\u0644\u0642\u0629 \u062c\u062f\u064a\u062f\u0629 \u0645\u0646 \u0623\u062e\u0628\u0627\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u064a\u0648\u0645\u064a\u0629: \ud83d\udd39 \u062a\u0631\u0627\u0645\u0628 \u064a\u0647\u062f\u062f \u0628\u0636\u0631\u064a\u0628\u0629 \u0636\u062e\u0645\u0629 \u0639\u0644\u0649 \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u062e\u0627\u0631\u062c \u0627\u0644\u0628\u0644\u0627\u062f \ud83d\udd39 Bessent: \u062a\u0631\u0627\u0645\u0628 \u0648\u0634\u064a \u0627\u062a\u0641\u0642\u0627 \u0639\u0644\u0649 \u0625\u0628\u0642\u0627\u0621 \u0627\u0644\u0628\u0634\u0631 \u0641\u064a \u0627\u0644\u0642\u0631\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0644\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \ud83d\udd39 \u0628\u0627\u062d\u062b \u0641\u064a Anthropic \u064a\u062f\u0651\u0639\u064a \u0628\u0631\u0647\u0627\u0646 \u0641\u0631\u0636\u064a\u0629 \u0631\u064a\u0645\u0627\u0646 \u0645\u0639 Claude\u060c \u0648\u0644\u0645 \u064a\u062a\u0623\u0643\u062f \u0631\u0627\u0628\u0637 \u0627\u0644\u062d\u0644\u0642\u0629\ud83d\udc47",
+      "relevance_score": 10.0,
+      "saudi_relevant": false,
+      "score": 10.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T13:50:47Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/SUL5MUN/status/2124138457509527885",
+      "status": "x-intel",
+      "title": "\ud83c\udf99\ufe0f \u062d\u0644\u0642\u0629 \u062c\u062f\u064a\u062f\u0629 \u0645\u0646 \u0623\u062e\u0628\u0627\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u064a\u0648\u0645\u064a\u0629: \ud83d\udd39 \u062a\u0631\u0627\u0645\u0628 \u064a\u0647\u062f\u062f \u0628\u0636\u0631\u064a\u0628\u0629 \u0636\u062e\u0645\u0629 \u0639\u0644\u0649 \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u062e\u0627\u0631\u062c \u0627\u0644\u0628\u0644\u0627\u062f \ud83d\udd39 Bessent: \u062a\u0631\u0627\u0645\u0628 \u0648\u0634\u064a \u0627\u062a\u0641\u0642\u0627 \u0639\u0644\u0649 \u0625\u0628\u0642\u0627\u0621 \u0627\u0644\u0628\u0634\u0631 \u0641\u064a",
+      "webswarm_evidence_terms": [
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "x_intel"
@@ -143,121 +779,6 @@
       "webswarm_node": "autonomous_targeting"
     },
     {
-      "claim_key": "0a08020498ccb9fef68182d90efbacab3ce80b5e175942c6c1d7038e4acb4408",
-      "confidence": 0,
-      "event_time": "2026-11-19T16:34:19Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T16:34:19Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2123454836511473952",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123627496428179897",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123524453212504327",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 3,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/MarkCappetta/status/2123454836511473952",
-        "https://x.com/MaryJan28337231/status/2123627496428179897",
-        "https://x.com/MiloDide/status/2123524453212504327"
-      ],
-      "freshness": "stale",
-      "id": "story-8a2c778c1231843a133b8ba1",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/ggT0UvJUeo",
-      "relevance_score": 55.0,
-      "saudi_relevant": false,
-      "score": 55.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T16:34:19Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/MarkCappetta/status/2123454836511473952",
-      "status": "x-intel",
-      "title": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/ggT0UvJUeo",
-      "webswarm_evidence_terms": [
-        "AI",
-        "military",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "671ea91e76d3360a6b003b352c8a5851b639d9bd8c17f5f9298981719cf3a961",
-      "confidence": 0,
-      "event_time": "2026-11-21T18:21:21Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-21T18:21:21Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2123858885668647405",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/thewarzonewire/status/2123858885668647405"
-      ],
-      "freshness": "fresh",
-      "id": "story-e4f509ca0ee6b8a83b173e7d",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "Mysterious MQ-25 Stingray-Like Chinese Drone Emerges At Little-Known Flight Test Center Satellite imagery of the unidentified drone at an obscure Chinese flight test facility raises interesting questions. https://t.co/ORrSXqn3Pa",
-      "relevance_score": 43.0,
-      "saudi_relevant": false,
-      "score": 43.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-21T18:21:21Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/thewarzonewire/status/2123858885668647405",
-      "status": "x-intel",
-      "title": "@thewarzonewire: Mysterious MQ-25 Stingray-Like Chinese Drone Emerges At Little-Known Flight Test Center Satellite imagery of the unidentified drone at an ob",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
       "claim_key": "9b459b7e7913fb7d6f57283f07b80451abb438509f745b4ebbcc7327eca77c8a",
       "confidence": 0,
       "event_time": "2026-11-21T18:21:21Z",
@@ -348,17 +869,17 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "f3b51825bc3dc9293af2cf1667bb607ad9190c7a5ad8e518e8dcf5da3945177a",
+      "claim_key": "df7d8d8b37687071a5d9622ee43b3b3a204e18a751d3fe164c7307789d6dd6e9",
       "confidence": 0,
-      "event_time": "2026-11-21T17:04:11Z",
+      "event_time": "2026-11-21T12:50:36Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-11-21T17:04:11Z",
+          "event_time": "2026-11-21T12:50:36Z",
           "independence_group": null,
           "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124187126531051870",
+          "original_url": "https://x.com/i/status/2124123310242017778",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -368,42 +889,42 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/orbitlabx/status/2124187126531051870"
+        "https://x.com/aleqtisadiah/status/2124123310242017778"
       ],
       "freshness": "fresh",
-      "id": "story-017ac1b1bd64e22edf1aeaf2",
+      "id": "story-768513d6aacf7a531f437689",
       "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "OrbitLabX brings together; computer science, AI/ML, geospatial intelligence, maths, and the social sciences to build a new generation of global mobility infrastructure grounded in human understanding. https://t.co/ATFXfBT1Y9",
-      "relevance_score": 40.0,
+      "reason": "\u0628\u0627\u062d\u062b \u0641\u064a \"\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\" \u064a\u0639\u0644\u0646 \u062d\u0644 \u0641\u0631\u0636\u064a\u0629 \u0631\u064a\u0645\u0627\u0646\u060c \u0625\u062d\u062f\u0649 \u0623\u0639\u0642\u062f \u0627\u0644\u0645\u0633\u0627\u0626\u0644 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0628\u0645\u0633\u0627\u0639\u062f\u0629 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0628\u0639\u062f 167 \u0639\u0627\u0645\u0627 \u0645\u0646 \u0627\u0633\u062a\u0639\u0635\u0627\u0626\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0639\u0644\u0645\u0627\u0621\u060c \u0648\u0627\u0644\u062a\u064a \u0631\u064f\u0635\u062f\u062a \u062c\u0627\u0626\u0632\u0629 \u0628\u0645\u0644\u064a\u0648\u0646 \u062f\u0648\u0644\u0627\u0631 \u0644\u062d\u0644\u0647\u0627\u060c \u0648\u0641\u0642\u0627 \u0644\u0640\"\u0627\u0644\u0641\u0631\u0646\u0633\u064a\u0629\" \ud83d\udfe0 \u0644\u0627 \u064a\u0632\u0627\u0644 \u0627\u0644\u0628\u0631\u0647\u0627\u0646 \u0627\u0644\u0630\u064a \u064a\u062a\u062c\u0627\u0648\u0632 250 \u0623\u0644\u0641 \u0635\u0641\u062d\u0629 \u0628\u0627\u0646\u062a\u0638\u0627\u0631 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0635\u062d\u062a\u0647 https://t.co/6z",
+      "relevance_score": 10.0,
       "saudi_relevant": false,
-      "score": 40.0,
+      "score": 10.0,
       "sensitive_military_claim": false,
       "shown_at": "2026-11-21T22:23:53Z",
       "source": "x",
-      "source_published_at": "2026-11-21T17:04:11Z",
+      "source_published_at": "2026-11-21T12:50:36Z",
       "source_tier": "social",
-      "source_url": "https://x.com/orbitlabx/status/2124187126531051870",
+      "source_url": "https://x.com/aleqtisadiah/status/2124123310242017778",
       "status": "x-intel",
-      "title": "OrbitLabX brings together; computer science, AI/ML, geospatial intelligence, maths, and the social sciences to build a new generation of global mobility infrast",
+      "title": "\u0628\u0627\u062d\u062b \u0641\u064a \"\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\" \u064a\u0639\u0644\u0646 \u062d\u0644 \u0641\u0631\u0636\u064a\u0629 \u0631\u064a\u0645\u0627\u0646\u060c \u0625\u062d\u062f\u0649 \u0623\u0639\u0642\u062f \u0627\u0644\u0645\u0633\u0627\u0626\u0644 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0628\u0645\u0633\u0627\u0639\u062f\u0629 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0628\u0639\u062f 167 \u0639\u0627\u0645\u0627 \u0645\u0646 \u0627\u0633\u062a\u0639\u0635\u0627\u0626\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0639\u0644\u0645\u0627\u0621\u060c \u0648\u0627\u0644\u062a\u064a \u0631\u064f\u0635\u062f\u062a \u062c\u0627\u0626\u0632\u0629",
       "webswarm_evidence_terms": [
-        "geospatial intelligence",
-        "geospatial"
+        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+        "x.com"
       ],
       "webswarm_mode": "x_intel",
-      "webswarm_node": "mizarvision_geoint"
+      "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "753c10ea2ce0645fb6db1a625dc1825018978e04f0a61bdfc3677f3a6f8e0aa8",
+      "claim_key": "dd9ab078aec1b89339ee1f0b8aac6f7cbcaef9c1ef651aee35a5d6eaee4405cc",
       "confidence": 0,
-      "event_time": "2026-11-21T17:05:34Z",
+      "event_time": "2026-11-21T11:44:33Z",
       "evidence": [
         {
           "confirmation_state": "unverified",
           "correction_url": null,
-          "event_time": "2026-11-21T17:05:34Z",
+          "event_time": "2026-11-21T11:44:33Z",
           "independence_group": null,
           "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124187476571124117",
+          "original_url": "https://x.com/i/status/2124106687963689433",
           "primary": false,
           "publisher": "x.com",
           "reviewer": null
@@ -413,24 +934,94 @@
       "evidence_policy_version": 1,
       "evidence_status": "unverified",
       "evidence_urls": [
-        "https://x.com/RabbiJeffx/status/2124187476571124117"
+        "https://x.com/demidiocratic/status/2124106687963689433"
       ],
       "freshness": "fresh",
-      "id": "story-c371af63ec791f6beb2bd5a9",
+      "id": "story-893d3c453ec568280ffa864d",
       "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "All FBI agents and intelligence analysts are required to visit Holocaust Museums or else they won\u2019t be hired. @grok Start with TRUE/FALSE https://t.co/dSPqobGJhE",
-      "relevance_score": 40.0,
+      "reason": "@grok @RabbiOfPeace School was a TARGET?",
+      "relevance_score": 10.0,
       "saudi_relevant": false,
-      "score": 40.0,
+      "score": 10.0,
       "sensitive_military_claim": false,
       "shown_at": "2026-11-21T22:23:53Z",
       "source": "x",
-      "source_published_at": "2026-11-21T17:05:34Z",
+      "source_published_at": "2026-11-21T11:44:33Z",
       "source_tier": "social",
-      "source_url": "https://x.com/RabbiJeffx/status/2124187476571124117",
+      "source_url": "https://x.com/demidiocratic/status/2124106687963689433",
       "status": "x-intel",
-      "title": "All FBI agents and intelligence analysts are required to visit Holocaust Museums or else they won\u2019t be hired. @grok Start with TRUE/FALSE https://t.co/dSPqobGJh",
+      "title": "@grok @RabbiOfPeace School was a TARGET?",
       "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "0a08020498ccb9fef68182d90efbacab3ce80b5e175942c6c1d7038e4acb4408",
+      "confidence": 0,
+      "event_time": "2026-11-19T16:34:19Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-19T16:34:19Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2123454836511473952",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2123627496428179897",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        },
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": null,
+          "independence_group": null,
+          "observation_time": null,
+          "original_url": "https://x.com/i/status/2123524453212504327",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 3,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/MarkCappetta/status/2123454836511473952",
+        "https://x.com/MaryJan28337231/status/2123627496428179897",
+        "https://x.com/MiloDide/status/2123524453212504327"
+      ],
+      "freshness": "stale",
+      "id": "story-8a2c778c1231843a133b8ba1",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/ggT0UvJUeo",
+      "relevance_score": 55.0,
+      "saudi_relevant": false,
+      "score": 55.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-19T16:34:19Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/MarkCappetta/status/2123454836511473952",
+      "status": "x-intel",
+      "title": "When the U.S. Military Implemented AI, Civilian Deaths Rose https://t.co/ggT0UvJUeo",
+      "webswarm_evidence_terms": [
+        "AI",
+        "military",
         "x.com"
       ],
       "webswarm_mode": "x_intel",
@@ -482,6 +1073,50 @@
       "webswarm_node": "x_intel"
     },
     {
+      "claim_key": "753c10ea2ce0645fb6db1a625dc1825018978e04f0a61bdfc3677f3a6f8e0aa8",
+      "confidence": 0,
+      "event_time": "2026-11-21T17:05:34Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T17:05:34Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2124187476571124117",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/RabbiJeffx/status/2124187476571124117"
+      ],
+      "freshness": "fresh",
+      "id": "story-c371af63ec791f6beb2bd5a9",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "All FBI agents and intelligence analysts are required to visit Holocaust Museums or else they won\u2019t be hired. @grok Start with TRUE/FALSE https://t.co/dSPqobGJhE",
+      "relevance_score": 40.0,
+      "saudi_relevant": false,
+      "score": 40.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T17:05:34Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/RabbiJeffx/status/2124187476571124117",
+      "status": "x-intel",
+      "title": "All FBI agents and intelligence analysts are required to visit Holocaust Museums or else they won\u2019t be hired. @grok Start with TRUE/FALSE https://t.co/dSPqobGJh",
+      "webswarm_evidence_terms": [
+        "x.com"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
       "claim_key": "9d864a4b27bd8d972f3746b0cbfdafdbb39e2b5851be4db4543d270c75f4cb7d",
       "confidence": 0,
       "event_time": "2026-11-21T17:02:06Z",
@@ -527,230 +1162,6 @@
       "webswarm_node": "x_intel"
     },
     {
-      "claim_key": "dd9ab078aec1b89339ee1f0b8aac6f7cbcaef9c1ef651aee35a5d6eaee4405cc",
-      "confidence": 0,
-      "event_time": "2026-11-21T11:44:33Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-21T11:44:33Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124106687963689433",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/demidiocratic/status/2124106687963689433"
-      ],
-      "freshness": "fresh",
-      "id": "story-893d3c453ec568280ffa864d",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "@grok @RabbiOfPeace School was a TARGET?",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-21T11:44:33Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/demidiocratic/status/2124106687963689433",
-      "status": "x-intel",
-      "title": "@grok @RabbiOfPeace School was a TARGET?",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "c62a92c0e0cb7070529eb91770c10b5bbc4bbf12640cf573cfc201bd049e19d0",
-      "confidence": 0,
-      "event_time": "2026-11-21T13:50:47Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-21T13:50:47Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124138457509527885",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/SUL5MUN/status/2124138457509527885"
-      ],
-      "freshness": "fresh",
-      "id": "story-34bd70788320d4e286bd0c6f",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "\ud83c\udf99\ufe0f \u062d\u0644\u0642\u0629 \u062c\u062f\u064a\u062f\u0629 \u0645\u0646 \u0623\u062e\u0628\u0627\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u064a\u0648\u0645\u064a\u0629: \ud83d\udd39 \u062a\u0631\u0627\u0645\u0628 \u064a\u0647\u062f\u062f \u0628\u0636\u0631\u064a\u0628\u0629 \u0636\u062e\u0645\u0629 \u0639\u0644\u0649 \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u062e\u0627\u0631\u062c \u0627\u0644\u0628\u0644\u0627\u062f \ud83d\udd39 Bessent: \u062a\u0631\u0627\u0645\u0628 \u0648\u0634\u064a \u0627\u062a\u0641\u0642\u0627 \u0639\u0644\u0649 \u0625\u0628\u0642\u0627\u0621 \u0627\u0644\u0628\u0634\u0631 \u0641\u064a \u0627\u0644\u0642\u0631\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629 \u0644\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \ud83d\udd39 \u0628\u0627\u062d\u062b \u0641\u064a Anthropic \u064a\u062f\u0651\u0639\u064a \u0628\u0631\u0647\u0627\u0646 \u0641\u0631\u0636\u064a\u0629 \u0631\u064a\u0645\u0627\u0646 \u0645\u0639 Claude\u060c \u0648\u0644\u0645 \u064a\u062a\u0623\u0643\u062f \u0631\u0627\u0628\u0637 \u0627\u0644\u062d\u0644\u0642\u0629\ud83d\udc47",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-21T13:50:47Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/SUL5MUN/status/2124138457509527885",
-      "status": "x-intel",
-      "title": "\ud83c\udf99\ufe0f \u062d\u0644\u0642\u0629 \u062c\u062f\u064a\u062f\u0629 \u0645\u0646 \u0623\u062e\u0628\u0627\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u064a\u0648\u0645\u064a\u0629: \ud83d\udd39 \u062a\u0631\u0627\u0645\u0628 \u064a\u0647\u062f\u062f \u0628\u0636\u0631\u064a\u0628\u0629 \u0636\u062e\u0645\u0629 \u0639\u0644\u0649 \u0645\u0631\u0627\u0643\u0632 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u062e\u0627\u0631\u062c \u0627\u0644\u0628\u0644\u0627\u062f \ud83d\udd39 Bessent: \u062a\u0631\u0627\u0645\u0628 \u0648\u0634\u064a \u0627\u062a\u0641\u0642\u0627 \u0639\u0644\u0649 \u0625\u0628\u0642\u0627\u0621 \u0627\u0644\u0628\u0634\u0631 \u0641\u064a",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "10cef13be49c11efa953150c941cb531e7c739eae815bc451a8a146a8b98b767",
-      "confidence": 0,
-      "event_time": "2026-11-21T19:10:04Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-21T19:10:04Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124218808558600338",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/defensearab/status/2124218808558600338"
-      ],
-      "freshness": "fresh",
-      "id": "story-0aa42505e14415107f7ff8d1",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "\u2022 \u0628\u062d\u0633\u0628 \u062a\u0642\u0631\u064a\u0631 Modern Diplomacy : \u0627\u0643\u0628\u0631 10 \u062f\u0648\u0644 \u062a\u0633\u062a\u062b\u0645\u0631 \u0628\u0642\u0648\u0629 \u0641\u064a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0647\u064a\u060c\u0627\u0644\u0648\u0644\u0627\u064a\u0627\u062a \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u060c\u0627\u0644\u0635\u064a\u0646 \u060c \u0623\u0648\u0643\u0631\u0627\u0646\u064a\u0627\u060c \u0625\u0633\u0631\u0627\u0626\u064a\u0644 \u060c \u0631\u0648\u0633\u064a\u0627\u060c \u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u060c \u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629\u060c \u0643\u0648\u0631\u064a\u0627 \u0627\u0644\u062c\u0646\u0648\u0628\u064a\u0629 \u060c \u0641\u0631\u0646\u0633\u0627 \u060c \u0648\u0627\u0644\u0647\u0646\u062f. https://t.co/WLpbRNsdSr",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-21T19:10:04Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/defensearab/status/2124218808558600338",
-      "status": "x-intel",
-      "title": "\u2022 \u0628\u062d\u0633\u0628 \u062a\u0642\u0631\u064a\u0631 Modern Diplomacy : \u0627\u0643\u0628\u0631 10 \u062f\u0648\u0644 \u062a\u0633\u062a\u062b\u0645\u0631 \u0628\u0642\u0648\u0629 \u0641\u064a \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0647\u064a\u060c\u0627\u0644\u0648\u0644\u0627\u064a\u0627\u062a \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u060c\u0627\u0644\u0635\u064a\u0646 \u060c \u0623\u0648\u0643\u0631\u0627\u0646\u064a\u0627\u060c \u0625\u0633\u0631\u0627\u0626\u064a\u0644 \u060c \u0631\u0648\u0633\u064a\u0627\u060c \u0623\u0644\u0645\u0627\u0646\u064a\u0627 \u060c \u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "da048d3d18e4f4ef7a108151cdedba56781200e1256f6094b38a5c3af7074869",
-      "confidence": 0,
-      "event_time": "2026-11-21T19:07:18Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-21T19:07:18Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124218109984706896",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/LebanonTimesLb/status/2124218109984706896"
-      ],
-      "freshness": "fresh",
-      "id": "story-2fc9f4bbe5493ce02833f7c4",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "\u062e\u062f\u0639\u0629 \u0644\u0639\u0628\u0629 \u0627\u0644\u0641\u064a\u062f\u064a\u0648.. \u0643\u064a\u0641 \u064a\u0645\u0643\u0646 \u062a\u0636\u0644\u064a\u0644 \u0643\u0644\u0648\u062f \u0648ChatGPT \u0644\u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646 \u0643\u0623\u0647\u062f\u0627\u0641 \u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u0633\u064a\u0651\u0631\u0627\u062a\u061f \u0643\u0634\u0641\u062a \u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a \u0623\u0646 \u062e\u062f\u0627\u0639 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u062f \u064a\u062f\u0641\u0639\u0647\u0627 \u0625\u0644\u0649 \u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646 \u0648\u062c\u0646\u0648\u062f \u0645\u0635\u0627\u0628\u064a\u0646 \u0648\u0645\u062f\u0627\u0631\u0633 \u0623\u0647\u062f\u0627\u0641\u064b\u0627 \u0645\u062d\u062a\u0645\u0644\u0629 \u0644\u0636\u0631\u0628\u0627\u062a \u0639\u0633\u0643\u0631\u064a\u0629 \u0631\u063a\u0645 \u0627\u0644\u0636\u0648\u0627\u0628\u0637 \u0627\u0644\u0648\u0642\u0627\u0626\u064a\u0629 \u0627\u0644\u0645\u062f\u0645\u062c\u0629 \u0641\u064a\u0647\u0627 \u0644\u0627 \u064a\u0632\u0627\u0644 \u0645\u0646 \u063a\u064a\u0631 \u0627\u0644\u0645\u0639\u0631\u0648\u0641 \u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u0630",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-21T19:07:18Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/LebanonTimesLb/status/2124218109984706896",
-      "status": "x-intel",
-      "title": "\u062e\u062f\u0639\u0629 \u0644\u0639\u0628\u0629 \u0627\u0644\u0641\u064a\u062f\u064a\u0648.. \u0643\u064a\u0641 \u064a\u0645\u0643\u0646 \u062a\u0636\u0644\u064a\u0644 \u0643\u0644\u0648\u062f \u0648ChatGPT \u0644\u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646 \u0643\u0623\u0647\u062f\u0627\u0641 \u0644\u0647\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u0633\u064a\u0651\u0631\u0627\u062a\u061f \u0643\u0634\u0641\u062a \u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a \u0623\u0646 \u062e\u062f\u0627\u0639 \u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0642\u062f \u064a\u062f\u0641\u0639\u0647\u0627 \u0625\u0644\u0649 \u062a\u062d\u062f\u064a\u062f \u0645\u062f\u0646\u064a\u064a\u0646",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "df7d8d8b37687071a5d9622ee43b3b3a204e18a751d3fe164c7307789d6dd6e9",
-      "confidence": 0,
-      "event_time": "2026-11-21T12:50:36Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-21T12:50:36Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T22:23:53Z",
-          "original_url": "https://x.com/i/status/2124123310242017778",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/aleqtisadiah/status/2124123310242017778"
-      ],
-      "freshness": "fresh",
-      "id": "story-768513d6aacf7a531f437689",
-      "observed_at": "2026-11-21T22:23:53Z",
-      "reason": "\u0628\u0627\u062d\u062b \u0641\u064a \"\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\" \u064a\u0639\u0644\u0646 \u062d\u0644 \u0641\u0631\u0636\u064a\u0629 \u0631\u064a\u0645\u0627\u0646\u060c \u0625\u062d\u062f\u0649 \u0623\u0639\u0642\u062f \u0627\u0644\u0645\u0633\u0627\u0626\u0644 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0628\u0645\u0633\u0627\u0639\u062f\u0629 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0628\u0639\u062f 167 \u0639\u0627\u0645\u0627 \u0645\u0646 \u0627\u0633\u062a\u0639\u0635\u0627\u0626\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0639\u0644\u0645\u0627\u0621\u060c \u0648\u0627\u0644\u062a\u064a \u0631\u064f\u0635\u062f\u062a \u062c\u0627\u0626\u0632\u0629 \u0628\u0645\u0644\u064a\u0648\u0646 \u062f\u0648\u0644\u0627\u0631 \u0644\u062d\u0644\u0647\u0627\u060c \u0648\u0641\u0642\u0627 \u0644\u0640\"\u0627\u0644\u0641\u0631\u0646\u0633\u064a\u0629\" \ud83d\udfe0 \u0644\u0627 \u064a\u0632\u0627\u0644 \u0627\u0644\u0628\u0631\u0647\u0627\u0646 \u0627\u0644\u0630\u064a \u064a\u062a\u062c\u0627\u0648\u0632 250 \u0623\u0644\u0641 \u0635\u0641\u062d\u0629 \u0628\u0627\u0646\u062a\u0638\u0627\u0631 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0635\u062d\u062a\u0647 https://t.co/6z",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T22:23:53Z",
-      "source": "x",
-      "source_published_at": "2026-11-21T12:50:36Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/aleqtisadiah/status/2124123310242017778",
-      "status": "x-intel",
-      "title": "\u0628\u0627\u062d\u062b \u0641\u064a \"\u0623\u0646\u062b\u0631\u0648\u0628\u064a\u0643\" \u064a\u0639\u0644\u0646 \u062d\u0644 \u0641\u0631\u0636\u064a\u0629 \u0631\u064a\u0645\u0627\u0646\u060c \u0625\u062d\u062f\u0649 \u0623\u0639\u0642\u062f \u0627\u0644\u0645\u0633\u0627\u0626\u0644 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0628\u0645\u0633\u0627\u0639\u062f\u0629 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a\u060c \u0628\u0639\u062f 167 \u0639\u0627\u0645\u0627 \u0645\u0646 \u0627\u0633\u062a\u0639\u0635\u0627\u0626\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0639\u0644\u0645\u0627\u0621\u060c \u0648\u0627\u0644\u062a\u064a \u0631\u064f\u0635\u062f\u062a \u062c\u0627\u0626\u0632\u0629",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
       "claim_key": "a174c53a40f2c15e499e329f0320b21258afda2d755cb382119263414a025104",
       "confidence": 0,
       "event_time": "2026-11-20T22:54:49Z",
@@ -788,6 +1199,51 @@
       "source_url": "https://x.com/tomislav_rupic/status/2123912979708104975",
       "status": "x-intel",
       "title": "@SamJWasserman Sure, the U.S. does plenty of hacking too. But ask @grok whose AI models are being used to kill people. \u270c\ufe0f\ud83d\ude05",
+      "webswarm_evidence_terms": [
+        "x.com",
+        "AI"
+      ],
+      "webswarm_mode": "x_intel",
+      "webswarm_node": "x_intel"
+    },
+    {
+      "claim_key": "671ea91e76d3360a6b003b352c8a5851b639d9bd8c17f5f9298981719cf3a961",
+      "confidence": 0,
+      "event_time": "2026-11-21T18:21:21Z",
+      "evidence": [
+        {
+          "confirmation_state": "unverified",
+          "correction_url": null,
+          "event_time": "2026-11-21T18:21:21Z",
+          "independence_group": null,
+          "observation_time": "2026-11-21T22:23:53Z",
+          "original_url": "https://x.com/i/status/2123858885668647405",
+          "primary": false,
+          "publisher": "x.com",
+          "reviewer": null
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_policy_version": 1,
+      "evidence_status": "unverified",
+      "evidence_urls": [
+        "https://x.com/thewarzonewire/status/2123858885668647405"
+      ],
+      "freshness": "fresh",
+      "id": "story-e4f509ca0ee6b8a83b173e7d",
+      "observed_at": "2026-11-21T22:23:53Z",
+      "reason": "Mysterious MQ-25 Stingray-Like Chinese Drone Emerges At Little-Known Flight Test Center Satellite imagery of the unidentified drone at an obscure Chinese flight test facility raises interesting questions. https://t.co/ORrSXqn3Pa",
+      "relevance_score": 43.0,
+      "saudi_relevant": false,
+      "score": 43.0,
+      "sensitive_military_claim": false,
+      "shown_at": "2026-11-21T22:23:53Z",
+      "source": "x",
+      "source_published_at": "2026-11-21T18:21:21Z",
+      "source_tier": "social",
+      "source_url": "https://x.com/thewarzonewire/status/2123858885668647405",
+      "status": "x-intel",
+      "title": "@thewarzonewire: Mysterious MQ-25 Stingray-Like Chinese Drone Emerges At Little-Known Flight Test Center Satellite imagery of the unidentified drone at an ob",
       "webswarm_evidence_terms": [
         "x.com",
         "AI"
@@ -2486,490 +2942,33 @@
       ],
       "webswarm_mode": "x_intel",
       "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "ab211fd5ae4770fc6a25cab662343329a8ebe7e2b621fc7df276ab5fea673ac0",
-      "confidence": 0,
-      "event_time": "2026-11-20T15:41:25Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T15:41:25Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T02:49:30Z",
-          "original_url": "https://x.com/i/status/2123803909890175391",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/KSA24/status/2123803909890175391"
-      ],
-      "freshness": "fresh",
-      "id": "story-a65213ab2d413fd0544d861e",
-      "observed_at": "2026-11-21T02:49:30Z",
-      "reason": "\u0648\u0632\u064a\u0631 \u0627\u0644\u062e\u0632\u0627\u0646\u0629 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a : \u062a\u0631\u0627\u0645\u0628 \u0648\u0634\u064a \u062a\u0648\u0635\u0644\u0627 \u0644\u0627\u062a\u0641\u0627\u0642 \u0628\u0634\u0623\u0646 \u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0644\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0623\u064a \u0647\u062c\u0648\u0645 \u0646\u0634\u0647\u062f\u0647 \u0642\u0627\u0626\u0645 \u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u0635\u062f\u0631\u0647 \u0646\u0645\u0627\u0630\u062c \u0635\u064a\u0646\u064a\u0629 https://t.co/FS8cqQOScc",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T02:49:30Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T15:41:25Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/KSA24/status/2123803909890175391",
-      "status": "x-intel",
-      "title": "\u0648\u0632\u064a\u0631 \u0627\u0644\u062e\u0632\u0627\u0646\u0629 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a : \u062a\u0631\u0627\u0645\u0628 \u0648\u0634\u064a \u062a\u0648\u0635\u0644\u0627 \u0644\u0627\u062a\u0641\u0627\u0642 \u0628\u0634\u0623\u0646 \u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0639\u0633\u0643\u0631\u064a \u0644\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0623\u064a \u0647\u062c\u0648\u0645 \u0646\u0634\u0647\u062f\u0647 \u0642\u0627\u0626\u0645 \u0639\u0644\u0649 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0645\u0635\u062f\u0631\u0647 \u0646\u0645\u0627\u0630\u062c \u0635\u064a\u0646\u064a\u0629 https://t.co/F",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "3febc85167c93149327dc90f28ebf21bf254265ce86e1679c08d58608101fd25",
-      "confidence": 0,
-      "event_time": "2026-11-20T15:40:27Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T15:40:27Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T02:49:30Z",
-          "original_url": "https://x.com/i/status/2123803668814152081",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/flightradar24/status/2123803668814152081"
-      ],
-      "freshness": "fresh",
-      "id": "story-a98ce3b8bb93ba9517c0a766",
-      "observed_at": "2026-11-21T02:49:30Z",
-      "reason": "On AvTalk, everything we know so far about last Friday\u2019s nationwide ground stop. We discuss what we\u2019ve learned about the cascading failure of the FTI network, what we don\u2019t yet know, and what the DOT and FAA want to do with an additional $50 billion. https://t.co/j1bEGNGoio",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T02:49:30Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T15:40:27Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/flightradar24/status/2123803668814152081",
-      "status": "x-intel",
-      "title": "On AvTalk, everything we know so far about last Friday\u2019s nationwide ground stop. We discuss what we\u2019ve learned about the cascading failure of the FTI network, w",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "c84fc9875616231fb186f0a017436118bec8af6457f3c1d226ce83249c405c71",
-      "confidence": 0,
-      "event_time": "2026-11-20T22:00:53Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T22:00:53Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T02:49:30Z",
-          "original_url": "https://x.com/i/status/2123899406550528422",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/OpenAI/status/2123899406550528422"
-      ],
-      "freshness": "fresh",
-      "id": "story-ae41e2ca274ebc9e5e7bb8f4",
-      "observed_at": "2026-11-21T02:49:30Z",
-      "reason": "How AI is helping scientists uncover new leads for understanding and treating neurodegenerative diseases\u2014and the brain research behind our collaboration with @perturbai_tx and @scrippsresearch: https://t.co/nqgl1lI959",
-      "relevance_score": 10.0,
-      "saudi_relevant": false,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T02:49:30Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T22:00:53Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/OpenAI/status/2123899406550528422",
-      "status": "x-intel",
-      "title": "How AI is helping scientists uncover new leads for understanding and treating neurodegenerative diseases\u2014and the brain research behind our collaboration with @p",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "7d739c02a2c302ad7c61e2060812b86be31b3922cacaf6e5447cdbc5195311ef",
-      "confidence": 0,
-      "event_time": "2026-11-19T10:57:36Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T10:57:36Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T02:49:30Z",
-          "original_url": "https://x.com/i/status/2123370097800589316",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/grok/status/2123370097800589316"
-      ],
-      "freshness": "fresh",
-      "id": "story-cae2219440bf23d65037fa1d",
-      "observed_at": "2026-11-21T02:49:30Z",
-      "reason": "Singularity: hypothetical point of runaway AI self-improvement beyond human prediction/control. Context: Elon agrees we're already in it via rapid AI advances; open questions are growth speed and ultimate scale. 2045 Initiative (Dmitry Itskov): Project Avatar aims for cybernetic ",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 20,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T02:49:30Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T10:57:36Z",
-      "source_tier": "commentary",
-      "source_url": "https://x.com/grok/status/2123370097800589316",
-      "status": "x-intel",
-      "title": "Singularity: hypothetical point of runaway AI self-improvement beyond human prediction/control. Context: Elon agrees we're already in it via rapid AI advances;",
-      "webswarm_evidence_terms": [
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "98f72c39b25bd9889347cb00df212eb2c908fa084d02da1d4040be2173200f58",
-      "confidence": 0,
-      "event_time": "2026-11-19T14:41:21Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T14:41:21Z",
-          "independence_group": null,
-          "observation_time": "2026-11-21T02:49:30Z",
-          "original_url": "https://x.com/i/status/2123426407984365618",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/RynQsm/status/2123426407984365618"
-      ],
-      "freshness": "fresh",
-      "id": "story-d007c15be9e18303c600776f",
-      "observed_at": "2026-11-21T02:49:30Z",
-      "reason": "\u274c \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0645\u062a\u062f\u0627\u0648\u0644\u0629 \u062d\u0627\u0644\u064a\u064b\u0627 \u0644\u0628\u0631\u062c \u0635\u0646\u062f\u0648\u0642 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0633\u0639\u0648\u062f\u064a \u0641\u064a \u0627\u0644\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u0627\u0644\u064a \u0645\u0641\u0628\u0631\u0643\u0629\u061b \u0625\u0630 \u0623\u0638\u0647\u0631 \u0627\u0644\u062a\u062d\u0642\u0642 \u0623\u0646\u0647\u0627 \u0645\u0648\u0644\u0651\u062f\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0623\u062f\u0627\u0629 \u201cGoogle Gemini\u201d \u0648 \u201cchatGPT\u201d, \u0648\u0647\u064a \u0637\u0631\u064a\u0642\u0629 \u0627\u0644\u062d\u0648\u062b\u064a \u0645\u0648\u062e\u0631\u0627\u064b \u0641\u064a \u0627\u0644\u062a\u0632\u064a\u064a\u0641. #\u062a\u062d\u0642\u0642_\u0644\u0648\u0637\u0646\u0643 \u274c The images currently circulating of the Saudi Public Investme",
-      "relevance_score": 10.0,
-      "saudi_relevant": true,
-      "score": 10.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-21T02:49:30Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T14:41:21Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/RynQsm/status/2123426407984365618",
-      "status": "x-intel",
-      "title": "\u274c \u0627\u0644\u0635\u0648\u0631 \u0627\u0644\u0645\u062a\u062f\u0627\u0648\u0644\u0629 \u062d\u0627\u0644\u064a\u064b\u0627 \u0644\u0628\u0631\u062c \u0635\u0646\u062f\u0648\u0642 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0633\u0639\u0648\u062f\u064a \u0641\u064a \u0627\u0644\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u0627\u0644\u064a \u0645\u0641\u0628\u0631\u0643\u0629\u061b \u0625\u0630 \u0623\u0638\u0647\u0631 \u0627\u0644\u062a\u062d\u0642\u0642 \u0623\u0646\u0647\u0627 \u0645\u0648\u0644\u0651\u062f\u0629 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0623\u062f\u0627\u0629 \u201cGoogle Gemini\u201d \u0648 \u201cc",
-      "webswarm_evidence_terms": [
-        "\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
-        "x.com",
-        "AI"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "018faf1d00529365fd9d49919209cf7466c21a86517ca568d707f8b578a9828a",
-      "confidence": 0,
-      "event_time": "2026-11-20T14:45:51Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T14:45:51Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T21:32:36Z",
-          "original_url": "https://x.com/i/status/2123789926428824013",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/News24/status/2123789926428824013"
-      ],
-      "freshness": "fresh",
-      "id": "story-00e1044b62a48fc061d5511d",
-      "observed_at": "2026-11-20T21:32:36Z",
-      "reason": "Africa cannot afford to delay regulating autonomous weapons https://t.co/crv2RS98XS",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-20T21:32:36Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T14:45:51Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/News24/status/2123789926428824013",
-      "status": "x-intel",
-      "title": "Africa cannot afford to delay regulating autonomous weapons https://t.co/crv2RS98XS",
-      "webswarm_evidence_terms": [
-        "autonomous weapons",
-        "weapons"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "autonomous_targeting"
-    },
-    {
-      "claim_key": "0aad31e489db6765c70636284b5b50dd37560b1d3d20a189ed8c18dce1099b93",
-      "confidence": 0,
-      "event_time": "2026-11-20T21:10:11Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T21:10:11Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T21:32:36Z",
-          "original_url": "https://x.com/i/status/2123886648358306129",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/Reuters/status/2123886648358306129"
-      ],
-      "freshness": "fresh",
-      "id": "story-113a7686c75c40023efffb05",
-      "observed_at": "2026-11-20T21:32:36Z",
-      "reason": "Trump, Xi agreed that military AI decisions should involve humans, Bessent says https://t.co/2WeubHSCTF",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-20T21:32:36Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T21:10:11Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/Reuters/status/2123886648358306129",
-      "status": "x-intel",
-      "title": "Trump, Xi agreed that military AI decisions should involve humans, Bessent says https://t.co/2WeubHSCTF",
-      "webswarm_evidence_terms": [
-        "military AI",
-        "x.com",
-        "AI",
-        "military"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "d24719c46c4f8c3d38e4fe18ac777ff0132589d15a4fc8b3a0ffa4772dd844ac",
-      "confidence": 0,
-      "event_time": "2026-11-19T09:01:35Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-19T09:01:35Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T21:32:36Z",
-          "original_url": "https://x.com/i/status/2123340903028826365",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaSWNTSW04MGV3d2hOSXdvNmVnRC1lemI4eE1jMy1KcWdKWlYwUTgtTjhaX1NJb1I4MGxmYXFTeFZlOGxtUlNZaVJpY1B5bEtEb3dsN0VPa1FqVC1vSnlPSEp30gFnQVVfeXFMTnZoYjh6WHJtU0UxdzlLLUpaeHpaQ1N3WHpHRm9NSWRpZWl0RVB1NHhpYzZCUU1feU1iVGp2LTJzSXIzMzZzWm50dTVWQ1J4dXhEQVBqbnZ6QklNLVdwV0NMbGcydFVPOA",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UWWt5d2haNGYwVGZGMXVYUjhjZjlKbkhYWnNidWhBQ000OFgxbExacDFTY2IwYi1FLS03WkZKS1RTRmJNZDBEOERadEpPTk1jNGxNUkktSmo1TE92VTkxaFJ1YS1QR1ZEYTNMVlFhSnQ",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://x.com/i/status/2123825093600002325",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        },
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": null,
-          "independence_group": null,
-          "observation_time": null,
-          "original_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vTk5HWmRVb3pwMXBBNG5ZSl9KOXNWTEQ4LWJ3RTc4VkxqU19rM2ZsTFBZUFpqejFBNzVaWGNlRnY5STh1Ny1YNUc0RnkzQ3dwTGVBN1B3eURxSEh5UF8tVUxOTQ",
-          "primary": false,
-          "publisher": "news.google.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 5,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/arnaudmercier/status/2123340903028826365",
-        "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaSWNTSW04MGV3d2hOSXdvNmVnRC1lemI4eE1jMy1KcWdKWlYwUTgtTjhaX1NJb1I4MGxmYXFTeFZlOGxtUlNZaVJpY1B5bEtEb3dsN0VPa1FqVC1vSnlPSEp30gFnQVVfeXFMTnZoYjh6WHJtU0UxdzlLLUpaeHpaQ1N3WHpHRm9NSWRpZWl0RVB1NHhpYzZCUU1feU1iVGp2LTJzSXIzMzZzWm50dTVWQ1J4dXhEQVBqbnZ6QklNLVdwV0NMbGcydFVPOA",
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UWWt5d2haNGYwVGZGMXVYUjhjZjlKbkhYWnNidWhBQ000OFgxbExacDFTY2IwYi1FLS03WkZKS1RTRmJNZDBEOERadEpPTk1jNGxNUkktSmo1TE92VTkxaFJ1YS1QR1ZEYTNMVlFhSnQ",
-        "https://x.com/AUTOWAR25/status/2123825093600002325",
-        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vTk5HWmRVb3pwMXBBNG5ZSl9KOXNWTEQ4LWJ3RTc4VkxqU19rM2ZsTFBZUFpqejFBNzVaWGNlRnY5STh1Ny1YNUc0RnkzQ3dwTGVBN1B3eURxSEh5UF8tVUxOTQ"
-      ],
-      "freshness": "fresh",
-      "id": "story-12f6198d450a2ffad5aafb5d",
-      "observed_at": "2026-11-20T21:32:36Z",
-      "reason": "<p class=\"wp-block-paragraph\">For much of last year, about 2,500 US service members from the 15th Marine Expeditionary Unit sailed aboard three ships throughout the Pacific, conducting training exercises in the waters off South Korea, the Philippines, India, and Indonesia. At the",
-      "relevance_score": 90.0,
-      "saudi_relevant": false,
-      "score": 60,
-      "sensitive_military_claim": true,
-      "shown_at": "2026-11-20T21:32:36Z",
-      "source": "x",
-      "source_published_at": "2026-11-19T09:01:35Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/arnaudmercier/status/2123340903028826365",
-      "status": "x-intel",
-      "title": "<p class=\"wp-block-paragraph\">For much of last year, about 2,500 US service members from the 15th Marine Expeditionary Unit sailed aboard three ships throughout",
-      "webswarm_evidence_terms": [
-        "AI",
-        "Project Maven",
-        "military",
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
-    },
-    {
-      "claim_key": "29924eb27a155ff2061efa2181541c763b352be651e83e6187210ec0827f283d",
-      "confidence": 0,
-      "event_time": "2026-11-20T14:39:19Z",
-      "evidence": [
-        {
-          "confirmation_state": "unverified",
-          "correction_url": null,
-          "event_time": "2026-11-20T14:39:19Z",
-          "independence_group": null,
-          "observation_time": "2026-11-20T21:32:36Z",
-          "original_url": "https://x.com/i/status/2123788285243736402",
-          "primary": false,
-          "publisher": "x.com",
-          "reviewer": null
-        }
-      ],
-      "evidence_count": 1,
-      "evidence_policy_version": 1,
-      "evidence_status": "unverified",
-      "evidence_urls": [
-        "https://x.com/cnnbrk/status/2123788285243736402"
-      ],
-      "freshness": "fresh",
-      "id": "story-1de906ddbd85815514a824f0",
-      "observed_at": "2026-11-20T21:32:36Z",
-      "reason": "The outage that kept employees locked out of NSA's highly classified communications network for days has been resolved, sources say https://t.co/KVg69PW6Nt https://t.co/lNSnbsHO47",
-      "relevance_score": 40.0,
-      "saudi_relevant": false,
-      "score": 40.0,
-      "sensitive_military_claim": false,
-      "shown_at": "2026-11-20T21:32:36Z",
-      "source": "x",
-      "source_published_at": "2026-11-20T14:39:19Z",
-      "source_tier": "social",
-      "source_url": "https://x.com/cnnbrk/status/2123788285243736402",
-      "status": "x-intel",
-      "title": "The outage that kept employees locked out of NSA's highly classified communications network for days has been resolved, sources say https://t.co/KVg69PW6Nt http",
-      "webswarm_evidence_terms": [
-        "x.com"
-      ],
-      "webswarm_mode": "x_intel",
-      "webswarm_node": "x_intel"
     }
   ],
   "last_alert": {
-    "alerted_at": "2026-11-21T22:23:53Z",
+    "alerted_at": "2026-11-22T02:25:28Z",
     "confidence": 0,
-    "source_url": "https://x.com/joshua_landis/status/2123897048558674001",
-    "title": "@joshua_landis: When the U.S. Military Implemented AI, Civilian Deaths Rose There is no evidence, as advocates claim, that the introduction of Project Maven"
+    "source_url": "https://x.com/BBessolo/status/2124248368226410817",
+    "title": "@KColbertReport @FBIIndianapolis These dangerous incompetents from the IEDC are like monkeys with sissors. Project Maven, the Palantir system that misses target"
   },
   "last_run": {
-    "alerted_now": 16,
-    "clustered": 65,
-    "collected": 74,
+    "alerted_now": 9,
+    "clustered": 64,
+    "collected": 75,
     "corroborated_count": 0,
-    "initial_collected": 74,
+    "initial_collected": 75,
     "initial_source_counts": {
       "google-news": 9,
-      "x": 65
+      "x": 66
     },
-    "initial_x_relevant": 52,
+    "initial_x_relevant": 51,
     "news_fallback_collected": 0,
     "overflow_pending": 0,
     "pending_now": 0,
     "retried": [],
     "runner_usage_projection": {
       "cadence_minutes": 15,
-      "measured_seconds": 30.102,
-      "projected_minutes_per_30d": 1444.88,
+      "measured_seconds": 24.897,
+      "projected_minutes_per_30d": 1195.07,
       "projected_runs_per_30d": 2880
     },
     "security": {
@@ -2983,7 +2982,7 @@
       "llm_calls": 0,
       "policy_version": "aibrief-security-v1"
     },
-    "stage1_survivors": 43,
+    "stage1_survivors": 40,
     "webswarm": {
       "enabled": true,
       "max_depth": 2,
@@ -3007,11 +3006,11 @@
       "twitter_cookie_present": true
     },
     "x_collector_status": "healthy",
-    "x_intel_published": 16
+    "x_intel_published": 9
   },
   "pending_count": 0,
   "pending_feed": [],
   "status": "x-intel",
-  "updated_at": "2026-11-21T22:23:53Z",
+  "updated_at": "2026-11-22T02:25:28Z",
   "version": 1
 }
