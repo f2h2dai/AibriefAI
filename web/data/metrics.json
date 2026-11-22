@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T18:45:26Z",
+  "generated_at": "2026-11-22T23:16:27Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,25 +9,25 @@
   "source_failure_rate": 0.25,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-22T18:45:26Z",
+  "latest_successful_run": "2026-11-22T23:16:27Z",
   "highest_ranked_signal": {
-    "id": "twitter-039",
-    "title": "@rajend86: Beyond Earth: Space-Based Computing, Satellite Intelligence and the Future of Orbital Infrastructure Introduction Space infrastructure is en",
-    "action_score": 73.75,
-    "url": "https://x.com/rajend86/status/2124552824390598922"
+    "id": "twitter-038",
+    "title": "@Orgetorix: Strategic Importance Air defense is not just about protecting military assets; it is essential for safeguarding civilian populations, critic",
+    "action_score": 74.75,
+    "url": "https://x.com/Orgetorix/status/2123717911739060394"
   },
   "source_contribution": {
-    "twitter": 5,
     "github": 6,
-    "google-news": 1
+    "google-news": 1,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7682, Req"
+      "reason": "Groq HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kv1bg4ktf7ya65ycnpsrszr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7479, Req"
     }
   ],
-  "runtime_seconds": 430.787,
+  "runtime_seconds": 65.342,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +87,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-22T18:45:26Z",
+    "planned_at": "2026-11-22T23:16:27Z",
     "production_threshold": 70.0
   }
 }
