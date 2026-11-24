@@ -169,6 +169,7 @@ jobs:
           ACTION_SCORE_THRESHOLD = float(os.getenv("ACTION_SCORE_THRESHOLD", "70"))
 
           GEMINI_QUOTA_EXHAUSTED = False
+          GROQ_RATE_LIMITED = False
           PROVIDER_COUNTS = {
               "gemini": 0,
               "groq": 0,
@@ -908,6 +909,7 @@ jobs:
 
           def llm_brief(title, content):
               global GEMINI_QUOTA_EXHAUSTED
+              global GROQ_RATE_LIMITED
               global PROVIDER_COUNTS
 
               rule_summary = summarize_rule(title, content)
@@ -919,14 +921,14 @@ jobs:
                   "Style: factual, concise, OSINT-oriented, strategic, professional Arabic.\n"
                   "Do not exaggerate claims. Preserve uncertainty.\n"
                   f"Title: {title}\n"
-                  f"Content: {content[:1500]}\n"
+                  f"Content: {content[:700]}\n"
               )
 
               if GEMINI_API_KEY and not GEMINI_QUOTA_EXHAUSTED:
                   payload = json.dumps({
                       "contents": [{"parts": [{"text": prompt}]}],
                       "generationConfig": {
-                          "maxOutputTokens": 1024,
+                          "maxOutputTokens": 512,
                           "thinkingConfig": {
                               "thinkingLevel": "low"
                           },
@@ -985,7 +987,7 @@ jobs:
                       err = f"Gemini {type(e).__name__}: {str(e)}"
                       log_event("warning", "GeminiRouter", err)
 
-              if GROQ_API_KEY:
+              if GROQ_API_KEY and not GROQ_RATE_LIMITED:
                   payload = json.dumps({
                       "model": GROQ_MODEL,
                       "messages": [
@@ -1017,7 +1019,7 @@ jobs:
                           }
                       },
                       "temperature": 0.2,
-                      "max_completion_tokens": 1024
+                      "max_completion_tokens": 384
                   }).encode("utf-8")
 
                   try:
@@ -1043,7 +1045,11 @@ jobs:
 
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
-                      log_event("error", "GroqRouter", f"Groq HTTP {e.code}: {body[:200]}")
+                      if e.code == 429:
+                          GROQ_RATE_LIMITED = True
+                          log_event("warning", "GroqRouter", "Groq rate limit reached; remaining signals use rule-based fallback.")
+                      else:
+                          log_event("error", "GroqRouter", f"Groq HTTP {e.code}: {body[:200]}")
 
                   except urllib.error.URLError as e:
                       log_event("error", "GroqRouter", f"Groq URL error: {e.reason}")
@@ -1253,7 +1259,9 @@ jobs:
                   score_reason(raw["title"], raw["content"], raw["source"], score)
                   + f" Freshness: {freshness_reason(source_published_at)}."
               )
-              en, ar, provider = llm_brief(raw["title"], raw["content"])
+              en = summarize_rule(raw["title"], raw["content"])
+              ar = summarize_rule_ar(raw["title"], raw["content"])
+              provider = "rule-based"
               age = source_age_days(source_published_at)
 
               signals.append({
@@ -1308,6 +1316,12 @@ jobs:
               key=lambda x: (freshness_rank(x), x["score"]),
               reverse=True,
           )
+          for signal in signals:
+              en, ar, provider = llm_brief(signal["title"], signal["content"])
+              signal["brief_en"] = en
+              signal["brief_ar"] = ar
+              signal["provider"] = provider
+
           source_failures_by_agent = {}
           for event in PIPELINE_EVENTS:
               if event.get("level") != "error":

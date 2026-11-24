@@ -1080,6 +1080,14 @@ class BreakingMonitorTests(unittest.TestCase):
 
         ast.parse(script)
 
+    def test_update_feed_limits_groq_after_ranking(self):
+        workflow = Path(".github/workflows/update-feed.yml").read_text(encoding="utf-8")
+        self.assertIn("GROQ_RATE_LIMITED = False", workflow)
+        self.assertIn("if GROQ_API_KEY and not GROQ_RATE_LIMITED:", workflow)
+        self.assertIn("remaining signals use rule-based fallback", workflow)
+        self.assertLess(workflow.index("signals = sorted("), workflow.index("for signal in signals:"))
+        self.assertIn('"max_completion_tokens": 384', workflow)
+
     def test_no_generated_secret_topic_is_tracked(self):
         tracked_text = "\n".join(
             path.read_text(encoding="utf-8", errors="ignore")
