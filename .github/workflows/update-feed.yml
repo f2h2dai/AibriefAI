@@ -900,7 +900,13 @@ jobs:
           def parse_llm_json(text, rule_summary):
               text = text.strip()
               text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-              parsed = json.loads(text)
+              try:
+                  parsed = json.loads(text)
+              except json.JSONDecodeError:
+                  match = re.search(r"\{.*\}", text, re.DOTALL)
+                  if not match:
+                      raise
+                  parsed = json.loads(match.group(0))
 
               return (
                   parsed.get("en") or rule_summary,
@@ -975,16 +981,19 @@ jobs:
                   except urllib.error.HTTPError as e:
                       body = e.read().decode("utf-8", "replace")
                       err = f"Gemini HTTP {e.code}: {body[:300]}"
-                      if 400 <= e.code < 500:
+                      if e.code == 429 or e.code >= 500:
                           GEMINI_QUOTA_EXHAUSTED = True
                       log_event("warning", "GeminiRouter", err)
 
                   except urllib.error.URLError as e:
                       err = f"Gemini URLError: {e.reason}"
+                      GEMINI_QUOTA_EXHAUSTED = True
                       log_event("warning", "GeminiRouter", err)
 
                   except Exception as e:
                       err = f"Gemini {type(e).__name__}: {str(e)}"
+                      if isinstance(e, TimeoutError):
+                          GEMINI_QUOTA_EXHAUSTED = True
                       log_event("warning", "GeminiRouter", err)
 
               if GROQ_API_KEY and not GROQ_RATE_LIMITED:
@@ -1002,7 +1011,6 @@ jobs:
                       ],
                       "reasoning_effort": "low",
                       "reasoning_format": "hidden",
-                      "response_format": {"type": "json_object"},
                       "temperature": 0.2,
                       "max_completion_tokens": 384
                   }).encode("utf-8")

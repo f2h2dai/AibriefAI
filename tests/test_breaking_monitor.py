@@ -1087,7 +1087,9 @@ class BreakingMonitorTests(unittest.TestCase):
         self.assertIn("remaining signals use rule-based fallback", workflow)
         self.assertLess(workflow.index("signals = sorted("), workflow.index("for signal in signals:"))
         self.assertIn('"max_completion_tokens": 384', workflow)
-        self.assertIn('"response_format": {"type": "json_object"}', workflow)
+        self.assertNotIn('"response_format": {"type": "json_object"}', workflow)
+        self.assertIn('match = re.search(r"\\{.*\\}", text, re.DOTALL)', workflow)
+        self.assertIn("if e.code == 429 or e.code >= 500:", workflow)
 
     def test_no_generated_secret_topic_is_tracked(self):
         tracked_text = "\n".join(
