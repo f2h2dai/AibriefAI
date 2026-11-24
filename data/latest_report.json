@@ -1,16 +1,16 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-11-24T17:04:36Z",
+  "generated_at": "2026-11-24T17:08:32Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
-  "errors": 3,
+  "errors": 6,
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
-    "gemini": 2,
-    "groq": 7,
-    "rule-based": 3
+    "gemini": 0,
+    "groq": 6,
+    "rule-based": 6
   },
   "freshness_counts": {
     "fresh": 12
@@ -20,124 +20,124 @@
   "stale_source_days": 21,
   "events": [
     {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-11-17\" --json --max 20 --full-text exited 0. Parsed 12 X records."
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "Collected 20 X influencer signals."
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "info",
-      "agent": "NewsAgent",
-      "message": "Collected 9 early public-news signals."
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "warning",
-      "agent": "AgentReachConnector",
-      "message": "Agent-Reach returned no optional social results."
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
+      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini TimeoutError: The read operation timed out"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+      "time": "2026-11-24T17:08:32Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini TimeoutError: The read operation timed out"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "warning",
       "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+      "message": "Gemini TimeoutError: The read operation timed out"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
+      "level": "warning",
+      "agent": "GeminiRouter",
+      "message": "Gemini HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+    },
+    {
+      "time": "2026-11-24T17:08:32Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "error",
       "agent": "GroqRouter",
       "message": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
     },
     {
-      "time": "2026-11-24T17:04:36Z",
+      "time": "2026-11-24T17:08:32Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-11-24T17:04:36Z",
-      "level": "warning",
-      "agent": "GeminiRouter",
-      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     }
   ],
   "notification_enabled": false,

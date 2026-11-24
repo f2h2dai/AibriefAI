@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:04:36Z",
+  "generated_at": "2026-11-24T17:08:32Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,7 +9,7 @@
   "source_failure_rate": 0.2,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-24T17:04:36Z",
+  "latest_successful_run": "2026-11-24T17:08:32Z",
   "highest_ranked_signal": {
     "id": "arxiv-022",
     "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
@@ -28,7 +28,7 @@
       "reason": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
     }
   ],
-  "runtime_seconds": 133.994,
+  "runtime_seconds": 151.799,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-24T17:04:36Z",
+    "planned_at": "2026-11-24T17:08:32Z",
     "production_threshold": 70.0
   }
 }
