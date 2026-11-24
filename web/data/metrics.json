@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:08:32Z",
+  "generated_at": "2026-11-24T17:12:39Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,9 +9,9 @@
   "source_failure_rate": 0.2,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-24T17:08:32Z",
+  "latest_successful_run": "2026-11-24T17:12:39Z",
   "highest_ranked_signal": {
-    "id": "arxiv-022",
+    "id": "arxiv-021",
     "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
     "action_score": 79.75,
     "url": "https://arxiv.org/abs/2611.31063v1"
@@ -25,10 +25,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"ma"
+      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1039)"
     }
   ],
-  "runtime_seconds": 151.799,
+  "runtime_seconds": 29.294,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +88,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-24T17:08:32Z",
+    "planned_at": "2026-11-24T17:12:39Z",
     "production_threshold": 70.0
   }
 }
