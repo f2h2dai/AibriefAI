@@ -1,34 +1,32 @@
 {
-  "generated_at": "2026-11-24T17:12:39Z",
+  "generated_at": "2026-11-24T21:37:26Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.2,
-  "primary_source_link_rate": 0.9167,
+  "source_failure_rate": 0.3333,
+  "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-24T17:12:39Z",
+  "latest_successful_run": "2026-11-24T21:37:26Z",
   "highest_ranked_signal": {
-    "id": "arxiv-021",
-    "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
-    "action_score": 79.75,
-    "url": "https://arxiv.org/abs/2611.31063v1"
+    "id": "github-009",
+    "title": "hivegate-ai/hivegate",
+    "action_score": 75.5,
+    "url": "https://github.com/hivegate-ai/hivegate"
   },
   "source_contribution": {
-    "arxiv": 3,
-    "github": 3,
-    "twitter": 5,
-    "hackernews": 1
+    "github": 7,
+    "twitter": 5
   },
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1039)"
+      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 802)"
     }
   ],
-  "runtime_seconds": 29.294,
+  "runtime_seconds": 85.828,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -88,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-24T17:12:39Z",
+    "planned_at": "2026-11-24T21:37:26Z",
     "production_threshold": 70.0
   }
 }
