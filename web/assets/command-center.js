@@ -32,7 +32,7 @@
   root.AIbriefView = {corpus, isX, eventTime, fresh, reviewedCount, actionable, matches};
   if (typeof document === 'undefined') return;
   const $ = id => document.getElementById(id);
-  const state = {all:[], main:[], x:[], region:'', topic:'', query:'', language:'en', expanded:false, selected:null, generated:null, xGenerated:null, failed:[], rawSource:'all'};
+  const state = {all:[], main:[], x:[], region:'', topic:'', query:'', language:'en', expanded:false, tickerPaused:false, selected:null, generated:null, xGenerated:null, failed:[], rawSource:'all'};
   const esc = v => String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const t = (en,ar) => state.language==='ar'?ar:en;
   const i18n = {
@@ -73,10 +73,14 @@
     const featured=actions.length?actions.slice(0,3):ranked.slice(0,3);
     $('actionList').innerHTML=(!actions.length?empty('No verified, fresh signal currently requires action. Top signals for review:','لا توجد إشارة مؤكدة وحديثة تستدعي إجراءً الآن. أبرز الإشارات للمراجعة:'):'')+featured.map((s,i)=>`<article class="story"><span class="number">${String(i+1).padStart(2,'0')}</span><div class="story-body"><div class="story-meta"><span>${esc(source(s))} / ${esc(s.topic||'AI')}</span><time>${time(eventTime(s))}</time></div><h3 dir="auto">${esc(short(title(s),145))}</h3><p dir="auto">${esc(short(summary(s),190))}</p><div class="chips"><span class="chip ${actionable(s)?'red':''}">${t(actionable(s)?'Action required':'Review',actionable(s)?'يتطلب إجراءً':'للمراجعة')}</span><span class="chip">${t('Reviewed evidence','أدلة مراجعة')} ${reviewedCount(s)}</span><span class="chip teal">${esc(confidence(s))}</span><button type="button" class="read" data-story="${state.all.indexOf(s)}">${t('Read briefing →','قراءة الإحاطة ←')}</button></div></div></article>`).join('');
     const latest=[...filtered].sort((a,b)=>(Date.parse(eventTime(b))||0)-(Date.parse(eventTime(a))||0));
-    const limit=state.expanded?latest.length:10;
-    $('latestList').innerHTML=latest.slice(0,limit).map(s=>`<button class="signal-row" type="button" data-story="${state.all.indexOf(s)}"><i class="dot"></i><span class="signal-copy"><span class="headline" dir="auto" title="${esc(title(s))}">${esc(title(s))}</span><span class="signal-meta"><strong>${esc(source(s))}</strong><time>${time(eventTime(s))}</time></span></span><span class="signal-arrow" aria-hidden="true">→</span></button>`).join('')||empty();
-    $('latestCount').textContent=t(`Showing ${Math.min(limit,latest.length)} of ${latest.length} matching signals · ${state.all.length} unique total`,`عرض ${Math.min(limit,latest.length)} من ${latest.length} إشارة مطابقة · الإجمالي الفريد ${state.all.length}`);
-    $('viewAll').textContent=state.expanded?t('Show less ↑','عرض أقل ↑'):t('View all →','عرض الكل ←');
+    const tickerSignals=latest.slice(0,12);
+    const tickerItem=(s,duplicate=false)=>`<button class="signal-row" type="button" data-story="${state.all.indexOf(s)}"${duplicate?' tabindex="-1" aria-hidden="true"':''}><i class="dot"></i><span class="signal-copy"><span class="headline" dir="auto" title="${esc(title(s))}">${esc(title(s))}</span><span class="signal-meta"><strong>${esc(source(s))}</strong><time>${time(eventTime(s))}</time></span></span><span class="signal-arrow" aria-hidden="true">→</span></button>`;
+    const tickerGroup=tickerSignals.map(s=>tickerItem(s)).join('');
+    const tickerClone=tickerSignals.map(s=>tickerItem(s,true)).join('');
+    $('latestList').innerHTML=tickerSignals.length?`<div class="ticker-track${state.tickerPaused?' paused':''}"><div class="ticker-group">${tickerGroup}</div><div class="ticker-group" aria-hidden="true">${tickerClone}</div></div>`:empty();
+    $('latestCount').textContent=t(`${tickerSignals.length} live signals`,`عدد الإشارات المباشرة ${tickerSignals.length}`);
+    $('viewAll').textContent=state.tickerPaused?t('Resume','تشغيل'):t('Pause','إيقاف');
+    $('viewAll').setAttribute('aria-pressed',String(state.tickerPaused));
     $('saudiList').innerHTML=filtered.filter(policy.saudi).slice(0,1).map(compact).join('')||empty('No Saudi signals match the current filters.','لا توجد إشارات سعودية مطابقة للفلاتر الحالية.');
     $('usList').innerHTML=ranked.filter(s=>matches(s,'United States')).slice(0,1).map(compact).join('')||empty();
     $('researchList').innerHTML=filtered.filter(s=>matches(s,'','Research')).slice(0,2).map(compact).join('')||empty();
@@ -121,7 +125,7 @@
   document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('details').forEach(other=>{if(other!==d)other.open=false;});}));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenus();if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('search').focus();}});
   $('search').addEventListener('input',e=>{state.query=e.target.value;render();});
-  $('viewAll').addEventListener('click',()=>{state.expanded=!state.expanded;render();});
+  $('viewAll').addEventListener('click',()=>{state.tickerPaused=!state.tickerPaused;render();});
   $('closeInspector').addEventListener('click',()=>$('workspace').classList.add('inspector-closed'));
   $('detailDialog').querySelector('.close-dialog').addEventListener('click',()=>$('detailDialog').close());
   async function json(path){const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('Feed unavailable');return r.json();}
