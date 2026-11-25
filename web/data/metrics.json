@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T21:37:26Z",
+  "generated_at": "2026-11-25T01:56:21Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-24T21:37:26Z",
+  "latest_successful_run": "2026-11-25T01:56:21Z",
   "highest_ranked_signal": {
-    "id": "github-009",
-    "title": "hivegate-ai/hivegate",
-    "action_score": 75.5,
-    "url": "https://github.com/hivegate-ai/hivegate"
+    "id": "github-010",
+    "title": "drtikov/microbrainsforagents",
+    "action_score": 74.5,
+    "url": "https://github.com/drtikov/microbrainsforagents"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 802)"
+      "reason": "Groq error: JSONDecodeError: Expecting ',' delimiter: line 3 column 661 (char 1421)"
     }
   ],
-  "runtime_seconds": 85.828,
+  "runtime_seconds": 54.254,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-24T21:37:26Z",
+    "planned_at": "2026-11-25T01:56:21Z",
     "production_threshold": 70.0
   }
 }
