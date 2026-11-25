@@ -1,146 +1,146 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-11-25T01:56:21Z",
+  "generated_at": "2026-11-25T20:45:38Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
-  "errors": 4,
+  "errors": 5,
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
     "gemini": 0,
-    "groq": 8,
-    "rule-based": 4
+    "groq": 7,
+    "rule-based": 5
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 0.51,
+  "max_source_age_days": 0.92,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "events": [
     {
-      "time": "2026-11-25T01:56:21Z",
-      "level": "info",
-      "agent": "AgentReachDoctor",
-      "message": "agent-reach doctor exited 0. Twitter/X routes: {\"schema_version\": 1, \"ok\": true, \"action\": \"doctor\", \"result\": {\"version\": \"1.6.1\", \"channels\": [{\"channel\": \"github\", .... stderr: (empty)"
-    },
-    {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"(from:iam_zachi OR from:DeptofDefense OR from:DoD_CDAO OR from:CENTCOM OR from:DARPA OR from:DIU_x OR from:NATO OR from:NATO_ACT OR from:C4ISRNET OR from:DefenseNews) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"satellite\\\" OR \\\"ا"
+      "message": "twitter search \"(outage OR \\\"service disruption\\\" OR degraded OR unavailable) (cloud OR network OR telecom OR DNS OR routing) since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 11 X records."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"(from:BreakingDefense OR from:TheWarZoneWire OR from:bellingcat OR from:IISS_org OR from:RUSI_org OR from:CSIS OR from:Maxar OR from:BlackSky_Inc OR from:planet OR from:PalantirTech) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"sa"
+      "message": "twitter search \"(\\\"ground stop\\\" OR \\\"system outage\\\" OR cancellations OR delays) (FAA OR airline OR airport OR aviation) since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 12 X records."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"(outage OR \\\"service disruption\\\" OR degraded OR unavailable) (cloud OR network OR telecom OR DNS OR routing) since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 17 X records."
+      "message": "twitter search \"\\\"Grok Gov\\\" OR \\\"Grok Gov Model\\\" OR \\\"Project Maven\\\" OR \\\"Pentagon AI\\\" OR \\\"DoD AI\\\" since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 8 X records."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"(\\\"ground stop\\\" OR \\\"system outage\\\" OR cancellations OR delays) (FAA OR airline OR airport OR aviation) since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 18 X records."
+      "message": "twitter search \"\\\"AI targeting\\\" OR \\\"algorithmic targeting\\\" OR \\\"autonomous weapons\\\" OR \\\"military AI\\\" since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 18 X records."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"Grok Gov\\\" OR \\\"Grok Gov Model\\\" OR \\\"Project Maven\\\" OR \\\"Pentagon AI\\\" OR \\\"DoD AI\\\" since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 7 X records."
+      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 17 X records."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
-      "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"AI targeting\\\" OR \\\"algorithmic targeting\\\" OR \\\"autonomous weapons\\\" OR \\\"military AI\\\" since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 16 X records."
-    },
-    {
-      "time": "2026-11-25T01:56:21Z",
-      "level": "info",
-      "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-11-18\" --json --max 20 --full-text exited 0. Parsed 15 X records."
-    },
-    {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "NewsAgent",
       "message": "Collected 9 early public-news signals."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "warning",
       "agent": "GeminiRouter",
       "message": "Gemini TimeoutError: The read operation timed out"
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Expecting ',' delimiter: line 3 column 661 (char 1421)"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1254)"
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1070)"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1038)"
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1303)"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 861)"
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 815)"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1047)"
     },
     {
-      "time": "2026-11-25T01:56:21Z",
+      "time": "2026-11-25T20:45:38Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-11-25T20:45:38Z",
+      "level": "error",
+      "agent": "GroqRouter",
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 851)"
+    },
+    {
+      "time": "2026-11-25T20:45:38Z",
+      "level": "info",
+      "agent": "RaindropTriageAgent",
+      "message": "Rule-based fallback used for one signal."
+    },
+    {
+      "time": "2026-11-25T20:45:38Z",
+      "level": "info",
+      "agent": "NotificationAgent",
+      "message": "Morning ntfy notification sent."
     }
   ],
-  "notification_enabled": false,
-  "notification_sent": false,
-  "notification_reason": "not morning run"
+  "notification_enabled": true,
+  "notification_sent": true,
+  "notification_reason": "sent"
 }
