@@ -1,33 +1,28 @@
 {
-  "generated_at": "2026-11-27T01:30:27Z",
+  "generated_at": "2026-11-27T20:24:02Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
   "act_now_items": 0,
   "duplicate_rate": 0.0,
   "unsupported_claim_rate": 0.0,
-  "source_failure_rate": 0.25,
+  "source_failure_rate": 0.0,
   "primary_source_link_rate": 0.9167,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-27T01:30:27Z",
+  "latest_successful_run": "2026-11-27T20:24:02Z",
   "highest_ranked_signal": {
-    "id": "github-008",
-    "title": "Tsunami1212/takeferry",
-    "action_score": 74.0,
-    "url": "https://github.com/Tsunami1212/takeferry"
+    "id": "twitter-035",
+    "title": "@ASPI_org: Mutually reinforcing and wrong: military AI agents in the agentic interspace | Ganna Pogrebna | https://t.co/s1bubZpMsS https://t.co/3mryDnt",
+    "action_score": 76.5,
+    "url": "https://x.com/ASPI_org/status/2126077548027408472"
   },
   "source_contribution": {
+    "twitter": 5,
     "github": 6,
-    "google-news": 1,
-    "twitter": 5
+    "google-news": 1
   },
-  "failed_sources": [
-    {
-      "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 825)"
-    }
-  ],
-  "runtime_seconds": 33.348,
+  "failed_sources": [],
+  "runtime_seconds": 63.728,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -87,7 +82,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-27T01:30:27Z",
+    "planned_at": "2026-11-27T20:24:02Z",
     "production_threshold": 70.0
   }
 }
