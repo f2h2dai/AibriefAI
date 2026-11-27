@@ -1,146 +1,140 @@
 {
   "project": "AIbrief",
-  "generated_at": "2026-11-26T20:37:59Z",
+  "generated_at": "2026-11-27T01:30:27Z",
   "signals": 12,
   "approved": 12,
   "held": 0,
-  "errors": 3,
+  "errors": 2,
   "mode": "groq",
   "model": "openai/gpt-oss-120b",
   "provider_counts": {
     "gemini": 0,
-    "groq": 9,
-    "rule-based": 3
+    "groq": 10,
+    "rule-based": 2
   },
   "freshness_counts": {
     "fresh": 12
   },
-  "max_source_age_days": 2.23,
+  "max_source_age_days": 0.98,
   "fresh_source_days": 7,
   "stale_source_days": 21,
   "events": [
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X access credential parsed OK"
+    },
+    {
+      "time": "2026-11-27T01:30:27Z",
+      "level": "INFO",
+      "agent": "twitter",
+      "message": "X session metadata parsed OK"
+    },
+    {
+      "time": "2026-11-27T01:30:27Z",
       "level": "warning",
       "agent": "GitHubAgent",
       "message": "Curated repo metadata fallback used: HTTP Error 404: Not Found"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "AgentReachDoctor",
       "message": "agent-reach doctor exited 0. Twitter/X routes: {\"schema_version\": 1, \"ok\": true, \"action\": \"doctor\", \"result\": {\"version\": \"1.6.1\", \"channels\": [{\"channel\": \"github\", .... stderr: (empty)"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"(from:iam_zachi OR from:DeptofDefense OR from:DoD_CDAO OR from:CENTCOM OR from:DARPA OR from:DIU_x OR from:NATO OR from:NATO_ACT OR from:C4ISRNET OR from:DefenseNews) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"satellite\\\" OR \\\"ا"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "twitter search \"(from:BreakingDefense OR from:TheWarZoneWire OR from:bellingcat OR from:IISS_org OR from:RUSI_org OR from:CSIS OR from:Maxar OR from:BlackSky_Inc OR from:planet OR from:PalantirTech) (\\\"AI\\\" OR \\\"Grok\\\" OR \\\"Project Maven\\\" OR \\\"autonomous\\\" OR \\\"targeting\\\" OR \\\"geospatial\\\" OR \\\"sa"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"(outage OR \\\"service disruption\\\" OR degraded OR unavailable) (cloud OR network OR telecom OR DNS OR routing) since:2026-11-19\" --json --max 20 --full-text exited 0. Parsed 12 X records."
+      "message": "twitter search \"(outage OR \\\"service disruption\\\" OR degraded OR unavailable) (cloud OR network OR telecom OR DNS OR routing) since:2026-11-20\" --json --max 20 --full-text exited 0. Parsed 16 X records."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"(\\\"ground stop\\\" OR \\\"system outage\\\" OR cancellations OR delays) (FAA OR airline OR airport OR aviation) since:2026-11-19\" --json --max 20 --full-text exited 0. Parsed 17 X records."
+      "message": "twitter search \"(\\\"ground stop\\\" OR \\\"system outage\\\" OR cancellations OR delays) (FAA OR airline OR airport OR aviation) since:2026-11-20\" --json --max 20 --full-text exited 0. Parsed 18 X records."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"Grok Gov\\\" OR \\\"Grok Gov Model\\\" OR \\\"Project Maven\\\" OR \\\"Pentagon AI\\\" OR \\\"DoD AI\\\" since:2026-11-19\" --json --max 20 --full-text exited 0. Parsed 9 X records."
+      "message": "twitter search \"\\\"Grok Gov\\\" OR \\\"Grok Gov Model\\\" OR \\\"Project Maven\\\" OR \\\"Pentagon AI\\\" OR \\\"DoD AI\\\" since:2026-11-20\" --json --max 20 --full-text exited 0. Parsed 9 X records."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"AI targeting\\\" OR \\\"algorithmic targeting\\\" OR \\\"autonomous weapons\\\" OR \\\"military AI\\\" since:2026-11-19\" --json --max 20 --full-text exited 0. Parsed 17 X records."
+      "message": "twitter search \"\\\"AI targeting\\\" OR \\\"algorithmic targeting\\\" OR \\\"autonomous weapons\\\" OR \\\"military AI\\\" since:2026-11-20\" --json --max 20 --full-text exited 0. Parsed 16 X records."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
-      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-11-19\" --json --max 20 --full-text exited 0. Parsed 15 X records."
+      "message": "twitter search \"\\\"MizarVision\\\" OR \\\"AI-tagged satellite\\\" OR \\\"geospatial intelligence\\\" OR \\\"military assets\\\" since:2026-11-20\" --json --max 20 --full-text exited 0. Parsed 17 X records."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "XInfluencerAgent",
       "message": "Collected 20 X influencer signals."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "NewsAgent",
       "message": "Collected 9 early public-news signals."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "warning",
       "agent": "AgentReachConnector",
       "message": "Agent-Reach returned no optional social results."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "warning",
       "agent": "GeminiRouter",
-      "message": "Gemini TimeoutError: The read operation timed out"
+      "message": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1179)"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 825)"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "error",
       "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 985)"
+      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1069)"
     },
     {
-      "time": "2026-11-26T20:37:59Z",
+      "time": "2026-11-27T01:30:27Z",
       "level": "info",
       "agent": "RaindropTriageAgent",
       "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-11-26T20:37:59Z",
-      "level": "error",
-      "agent": "GroqRouter",
-      "message": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1197)"
-    },
-    {
-      "time": "2026-11-26T20:37:59Z",
-      "level": "info",
-      "agent": "RaindropTriageAgent",
-      "message": "Rule-based fallback used for one signal."
-    },
-    {
-      "time": "2026-11-26T20:37:59Z",
-      "level": "info",
-      "agent": "NotificationAgent",
-      "message": "Morning ntfy notification sent."
     }
   ],
-  "notification_enabled": true,
-  "notification_sent": true,
-  "notification_reason": "sent"
+  "notification_enabled": false,
+  "notification_sent": false,
+  "notification_reason": "not morning run"
 }
