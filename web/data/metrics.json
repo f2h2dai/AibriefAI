@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:09:12Z",
+  "generated_at": "2026-11-28T19:12:51Z",
   "configured_threshold": 70.0,
   "signals_collected_today": 12,
   "verified_signals": 0,
@@ -9,12 +9,12 @@
   "source_failure_rate": 0.3333,
   "primary_source_link_rate": 1.0,
   "daily_api_cost_usd": 0.0,
-  "latest_successful_run": "2026-11-28T01:09:12Z",
+  "latest_successful_run": "2026-11-28T19:12:51Z",
   "highest_ranked_signal": {
-    "id": "github-010",
-    "title": "Aarbaab/switchboard",
-    "action_score": 75.0,
-    "url": "https://github.com/Aarbaab/switchboard"
+    "id": "github-009",
+    "title": "danishhraza/atrium-agent-orchestration",
+    "action_score": 77.75,
+    "url": "https://github.com/danishhraza/atrium-agent-orchestration"
   },
   "source_contribution": {
     "github": 7,
@@ -23,10 +23,10 @@
   "failed_sources": [
     {
       "source": "GroqRouter",
-      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1017)"
+      "reason": "Groq error: JSONDecodeError: Unterminated string starting at: line 3 column 9 (char 1095)"
     }
   ],
-  "runtime_seconds": 52.821,
+  "runtime_seconds": 51.8,
   "notification_precision": null,
   "notification_precision_reason": "No reviewed notification outcome labels are available.",
   "orchestrator": {
@@ -86,7 +86,7 @@
       "output": "full_brief"
     },
     "scheduled_by": "github_actions",
-    "planned_at": "2026-11-28T01:09:12Z",
+    "planned_at": "2026-11-28T19:12:51Z",
     "production_threshold": 70.0
   }
 }
